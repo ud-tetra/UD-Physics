@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ud-math-protocol-20261022-a1",
+  "runtime": "Codex; model identity not independently reported",
+  "task": "integration-ud-math-protocol-20261022",
+  "goal": "Develop and integrate the UD mathematical analysis protocol across runtime instructions and bootloader",
+  "created_at": "2026-10-22T16:43:47.009508+00:00",
+  "base_revision": "04bb0dfc6be8dd2b5fe755ed0f5bd41275eb88de",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-ud-math-protocol-20261022": {
+      "ref": "refs/heads/claims/integration-ud-math-protocol-20261022",
+      "sha": "8d3e1c4cded497c41fc650019748f6a8869c8615",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "UD method protocol, v1.2 instructions, bootloader v1.1 and entry-point/template updates prepared. Exact worked examples, record/link integrity and16 tooling tests passed. Publication pending.",
+  "next_action": "Publish scoped PR, integrate the documented method, and release the task claim with a retained audit marker.",
+  "working_branch": "discovery/integration-ud-math-protocol-20261022/ud-math-protocol-a1",
+  "mathematical_profile": {
+    "domains": [
+      "Z",
+      "Q",
+      "Z/mZ",
+      "real/complex metric operator conventions"
+    ],
+    "exactness_plan": "Symbolic/exact integer and Fraction checks for illustrative counts and clocks; document-only source conventions otherwise.",
+    "physical_mapping": "NONE: runtime methodology, not a physical bridge."
+  },
+  "checkpoint_at": "2026-10-22T16:48:18.771364+00:00",
+  "checkpoint_source": {
+    "revision": "04bb0dfc6be8dd2b5fe755ed0f5bd41275eb88de",
+    "dirty": true
+  }
+}

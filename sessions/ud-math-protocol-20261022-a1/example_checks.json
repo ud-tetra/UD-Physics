@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-10-22T16:47:15.120579+00:00",
+  "scope": "Constructor exact checks of the protocol worked examples; no new native UD derivation or physical identification.",
+  "objects": {
+    "toy_state_set": 192,
+    "toy_event_set": 7,
+    "typed_count_ratio": "7/192",
+    "factorization_192": {
+      "2": 6,
+      "3": 1
+    },
+    "orbit_lengths": [
+      8,
+      3
+    ],
+    "joint_common_tick_period": 24,
+    "inverse_8_mod_12_exists": false
+  },
+  "verification": "Set enumeration and explicit orbit iteration agree with integer/fraction/gcd/lcm expressions.",
+  "status": "PASS",
+  "measured_data": false
+}

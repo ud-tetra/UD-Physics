@@ -12,5 +12,11 @@
   "claims": {},
   "checks": [],
   "finding": "",
-  "next_action": ""
+  "next_action": "",
+  "mathematical_profile": {
+    "coefficient_domain": "REPLACE",
+    "exactness_or_precision_plan": "REPLACE",
+    "applicable_methods": [],
+    "clock_metric_units_conventions": "REPLACE_OR_NA"
+  }
 }

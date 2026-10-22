@@ -16,6 +16,10 @@
 
 Capture useful reasoning, decisions, and reproducible evidence. Do not save hidden reasoning traces, credentials, personal data, full private chats, or automatic environment dumps. Selected public research notes and user-authorized source files are appropriate.
 
+## Mathematical receipts
+
+Use [templates/mathematical_receipt.json](../templates/mathematical_receipt.json) for consequential calculations. Store the filled receipt in the owning candidate/session directory, link it from the journal/handoff/PR, and capture it with the calculation code and results. Preserve source versions, exact factor origins, assumed/fitted choices, clock/metric/normalization conventions and checks actually executed. Existing receipts remain historical; do not retrofit an earlier run to imply this method was followed. The receipt format is runtime guidance; current CI does not automatically validate its mathematics.
+
 ## Commands
 
 ```bash
