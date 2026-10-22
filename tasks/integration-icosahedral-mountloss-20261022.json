@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-icosahedral-mountloss-20261022",
+  "goal": "Passive four-anchor housing loss; hidden-mode observability, linear decay and breathing cost under frozen joint probes",
+  "owned_paths": [
+    "experiments/icosahedral-mountloss",
+    "candidates/icosahedral-mountloss",
+    "sessions/icosahedral-mountloss-20261022-a1",
+    "artifacts/icosahedral-mountloss-20261022-a1",
+    "tasks/integration-icosahedral-mountloss-20261022.json",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "integration-icosahedral-tolerances-20261022"
+  ],
+  "status": "complete"
+}

@@ -1,0 +1,283 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "icosahedral-mountloss-20261022-a1",
+  "run_id": "mountloss-001",
+  "created_at": "2026-10-22T20:29:27.148830+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Four-anchor120-strut passive housingloss: exact housingrank90/local274decay;nu.02 selected by9strengths;20/20budgetpulsespass;nominalworst54-modeenergy.43966;lowmasscf0halfenergytargetandmass/frictionchallengesfail.",
+  "command": "Commands executed separately from repository root: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-mountloss/exact.py --out /workspace/scratch/ed44232d6ecb/mountloss_outputs; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-mountloss/analyze.py --out /workspace/scratch/ed44232d6ecb/mountloss_outputs; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-mountloss/scope_checks.py --out /workspace/scratch/ed44232d6ecb/mountloss_outputs; python3 experiments/icosahedral-mountloss/postcheck.py --out /workspace/scratch/ed44232d6ecb/mountloss_outputs; python3 experiments/icosahedral-mountloss/draw.py --out /workspace/scratch/ed44232d6ecb/mountloss_outputs",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "83349b741cf262b2a264949f6338140d691373e6",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "analyze.py",
+      "path": "inputs/001-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/analyze.py",
+      "sha256": "109157508a787136bd04ff0600146b4899169b07dcda2566bfe9a12954add2b9",
+      "size_bytes": 12587
+    },
+    {
+      "input_id": "input-002",
+      "name": "draw.py",
+      "path": "inputs/002-draw.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/draw.py",
+      "sha256": "40671f98230aa80f8e672bc9d909aead93231767c7736aee15ab978a5d30650e",
+      "size_bytes": 2570
+    },
+    {
+      "input_id": "input-003",
+      "name": "exact.py",
+      "path": "inputs/003-exact.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/exact.py",
+      "sha256": "57c15d4458043fe52897a2d9851b66895b2f299bace01daa8ef98257e352f911",
+      "size_bytes": 2512
+    },
+    {
+      "input_id": "input-004",
+      "name": "mountloss.py",
+      "path": "inputs/004-mountloss.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/mountloss.py",
+      "sha256": "3ef430afa5de9f3508f4a72d698c16a25ed5e8626cb3e8f21af705490855741b",
+      "size_bytes": 3974
+    },
+    {
+      "input_id": "input-005",
+      "name": "postcheck.py",
+      "path": "inputs/005-postcheck.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/postcheck.py",
+      "sha256": "dad6b0b976fec4070d7e6118713335c024b820285747be3b7d5395206c65aa4d",
+      "size_bytes": 1356
+    },
+    {
+      "input_id": "input-006",
+      "name": "scope_checks.py",
+      "path": "inputs/006-scope_checks.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/scope_checks.py",
+      "sha256": "5c4ad7a203c57c1929c410a937b8228c5cae3161dee7198b8259cfa0d432da31",
+      "size_bytes": 941
+    },
+    {
+      "input_id": "input-007",
+      "name": "MOUNT_TEST.md",
+      "path": "inputs/007-MOUNT_TEST.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/MOUNT_TEST.md",
+      "sha256": "717748064ce18e0efb569d201cacbdd5b66344b5e58aca8bb2263628314883e6",
+      "size_bytes": 3560
+    },
+    {
+      "input_id": "input-008",
+      "name": "PROTOCOL.md",
+      "path": "inputs/008-PROTOCOL.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/PROTOCOL.md",
+      "sha256": "1a07b04612e5e34b62d93f1a3d605ea110d6fe82bea1c950f407de1cdfaa8064",
+      "size_bytes": 4754
+    },
+    {
+      "input_id": "input-009",
+      "name": "README.md",
+      "path": "inputs/009-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/README.md",
+      "sha256": "befe4866817e87e4543fc52f901f2d582f17d745e3c630666e012e35569f52eb",
+      "size_bytes": 9280
+    },
+    {
+      "input_id": "input-010",
+      "name": "RESULTS.md",
+      "path": "inputs/010-RESULTS.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/RESULTS.md",
+      "sha256": "2eb17f6e7ca354d0ddd36dfa93da0d2740d8f5d155ba07ed98e684b7644d3f67",
+      "size_bytes": 6997
+    },
+    {
+      "input_id": "input-011",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/011-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/icosahedral-mountloss/mathematical_receipt.json",
+      "sha256": "a999bb0c58da323e53fab28097f36b091be0b58203eb3d903babef3a2b30f33d",
+      "size_bytes": 18694
+    },
+    {
+      "input_id": "input-012",
+      "name": "hardware.py",
+      "path": "inputs/012-hardware.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/hardware.py",
+      "sha256": "dee76607e8ebe28ae48eafb05c102696150b80bf6c7eb19bbb1c96594a42183a",
+      "size_bytes": 2950
+    },
+    {
+      "input_id": "input-013",
+      "name": "analyze.py",
+      "path": "inputs/013-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/analyze.py",
+      "sha256": "df4edfe07648874e19bb80808ba0aa35ac3a4b0bcf38c174cbe799edc2842356",
+      "size_bytes": 11192
+    },
+    {
+      "input_id": "input-014",
+      "name": "damping.py",
+      "path": "inputs/014-damping.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-damping/damping.py",
+      "sha256": "5c47fd68afa10e2a1a545b7a0b8593159ca9822da312f887b1fcead28581ff7f",
+      "size_bytes": 2091
+    },
+    {
+      "input_id": "input-015",
+      "name": "analyze.py",
+      "path": "inputs/015-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-damping/analyze.py",
+      "sha256": "f1fc3fdf58b99a910c3e97d47706aaf747a9690d2c16a1972999cc4baf42ad0b",
+      "size_bytes": 12945
+    },
+    {
+      "input_id": "input-016",
+      "name": "model.py",
+      "path": "inputs/016-model.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-free3d/model.py",
+      "sha256": "171fbae15260a0bacb0cfde601159a84f8648349cb47fcacd88c6e2137d2bbb3",
+      "size_bytes": 6925
+    },
+    {
+      "input_id": "input-017",
+      "name": "network.py",
+      "path": "inputs/017-network.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/network.py",
+      "sha256": "ebcb9efe5e07212463e8b448c0b157025158d3a365dbc25599d6d14210628245",
+      "size_bytes": 3479
+    },
+    {
+      "input_id": "input-018",
+      "name": "analyze.py",
+      "path": "inputs/018-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-cone/analyze.py",
+      "sha256": "089fbed8bc59f7c785c12f57089b6b5f9be25d381c76854ba72fc893622ed8e3",
+      "size_bytes": 11982
+    },
+    {
+      "input_id": "input-019",
+      "name": "probes.json",
+      "path": "inputs/019-probes.json",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-tolerances-20261022-a1/tolerances-001/files/probes.json",
+      "sha256": "1044dda54438f359dc71cfc3726a7f0cfa2933f491996cd8022167bfc50a3ea5",
+      "size_bytes": 125921
+    },
+    {
+      "input_id": "input-020",
+      "name": "baselines.json",
+      "path": "inputs/020-baselines.json",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-tolerances-20261022-a1/tolerances-001/files/baselines.json",
+      "sha256": "6ccc482c696c9cfee16aad5bd9df930c8914b155350d5b752cf7280b7906fb45",
+      "size_bytes": 1804
+    },
+    {
+      "input_id": "input-021",
+      "name": "mount-modes.json",
+      "path": "inputs/021-mount-modes.json",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-tolerances-20261022-a1/tolerances-001/files/mount-modes.json",
+      "sha256": "79353736d659e05f655b2003e387f8da7017c41a76d77c81bd5b368af8911338",
+      "size_bytes": 1543
+    }
+  ],
+  "files": [
+    {
+      "path": "files/baselines.json",
+      "sha256": "6ccc482c696c9cfee16aad5bd9df930c8914b155350d5b752cf7280b7906fb45",
+      "size_bytes": 1804
+    },
+    {
+      "path": "files/campaign.csv",
+      "sha256": "56b03c8c5df911cff46c5338cd72c1f94a613d5e7295a1f65229142707208d78",
+      "size_bytes": 10535
+    },
+    {
+      "path": "files/checks.json",
+      "sha256": "f4597f71a553cc47c8023b4606461378917ddbbefe028bf773a9135569c5d633",
+      "size_bytes": 270
+    },
+    {
+      "path": "files/exact.json",
+      "sha256": "187e689186890a554d616115afadb5e34a7458f2a6eabe0efa9ba216bfa8a5e8",
+      "size_bytes": 1549
+    },
+    {
+      "path": "files/linear_scope_checks.json",
+      "sha256": "61d279f282bbae2056bd4bef1d93f74f63c75e563239a50b99f04380550657c4",
+      "size_bytes": 914
+    },
+    {
+      "path": "files/mountloss-summary.png",
+      "sha256": "accccc6b795a5bb411edaa79d28d7e55d7b19d4f0bb8dbe46c8388a10446f7fc",
+      "size_bytes": 156176
+    },
+    {
+      "path": "files/old-cycle-no-loss.csv",
+      "sha256": "d734a0bc91f57f3140e3443286a1bcfe3204a4295c776938f507d532896f5e49",
+      "size_bytes": 102758
+    },
+    {
+      "path": "files/old-cycle-with-loss.csv",
+      "sha256": "9918602f60f53c4d4edfed2260f6c47c4a191a9aef56c4a6aed6c307fd9ad9a7",
+      "size_bytes": 97054
+    },
+    {
+      "path": "files/probes.json",
+      "sha256": "1044dda54438f359dc71cfc3726a7f0cfa2933f491996cd8022167bfc50a3ea5",
+      "size_bytes": 125921
+    },
+    {
+      "path": "files/scan.csv",
+      "sha256": "e4e5a85177732ec3b61ae718afbde07b4c6526f01dd6d30edb04512311d40c98",
+      "size_bytes": 1367
+    },
+    {
+      "path": "files/selection.json",
+      "sha256": "68c4ff9b4b5dd376dc039ae7938f38c472cccc1e118989d24d1026c50b2a74ae",
+      "size_bytes": 544
+    },
+    {
+      "path": "files/summary.json",
+      "sha256": "b4f54c27484854c3fb112d2fc3d83e692745e8d24a53e31cd684101f2c587799",
+      "size_bytes": 11032
+    },
+    {
+      "path": "files/symmetric.json",
+      "sha256": "e6f53e6bfa85a72190ec7d3cff856c68e2e0b9247a990755e153e3a79a94ba60",
+      "size_bytes": 970
+    },
+    {
+      "path": "files/worst-hidden-with-loss.csv",
+      "sha256": "c5472404a4e9cfc7f826ae5e9b8d03a8ffc05727d07f5ea15d71b75fd9606520",
+      "size_bytes": 97032
+    },
+    {
+      "path": "files/worst_hidden_phase.npy",
+      "sha256": "22b8d1ba5929a6d64d53a00df519629b0deccd02d58901ca0685f5328ad9f51a",
+      "size_bytes": 4608
+    }
+  ]
+}

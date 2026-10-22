@@ -1,0 +1,384 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "four-anchor-housing-loss-v1",
+  "session_id": "icosahedral-mountloss-20261022-a1",
+  "candidate_id": "icosahedral-mountloss",
+  "question": "Can reciprocal central housing loss remove all54 housing-neutral modes while retaining at least80% breathing RMS in the declared finite joint budget?",
+  "evidence_labels": [
+    "FIT",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL"
+  ],
+  "objects": [
+    {
+      "object_id": "configuration",
+      "symbol": "configuration",
+      "object_type": "43 spatial masses + alpha +150 relative auxiliary coordinates",
+      "definition": "43 spatial masses + alpha +150 relative auxiliary coordinates",
+      "domain": "positive-length subset of R280",
+      "codomain": "phase R560",
+      "coefficient_domain": "R; reference Q(sqrt5)",
+      "units": "internal ell0/E_*/t0",
+      "basis_orientation": "parent ordered vertices/edges; four anchors per edge; current axis from anchor to housing",
+      "metric_measure": "diag(primarymass,mu/10,hm tensor I3)",
+      "origin": "assumed",
+      "exact_expression": "280=3*(13+30)+1+150",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "new"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1,R\u00b2=(5+sqrt5)/8; physical scales remain uncalibrated"
+    },
+    {
+      "object_id": "Rayleigh",
+      "symbol": "Rayleigh",
+      "object_type": "120 current-axis central viscous loss paths",
+      "definition": "120 current-axis central viscous loss paths",
+      "domain": "configuration and velocity R280",
+      "codomain": "nonnegative power/2",
+      "coefficient_domain": "R; reference Q(sqrt5)",
+      "units": "internal ell0/E_*/t0",
+      "basis_orientation": "parent ordered vertices/edges; four anchors per edge; current axis from anchor to housing",
+      "metric_measure": "velocity quadratic form",
+      "origin": "assumed",
+      "exact_expression": "R_h=eta/2 sum[n\u00b7(V_h-v_a)]\u00b2;eta=nu*2beta/(5R\u00b2)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "new"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1,R\u00b2=(5+sqrt5)/8; physical scales remain uncalibrated"
+    },
+    {
+      "object_id": "housing_Gram",
+      "symbol": "housing_Gram",
+      "object_type": "reference housing-only direction Gram",
+      "definition": "reference housing-only direction Gram",
+      "domain": "R3 per housing",
+      "codomain": "R3",
+      "coefficient_domain": "R; reference Q(sqrt5)",
+      "units": "dimensionless",
+      "basis_orientation": "parent ordered vertices/edges; four anchors per edge; current axis from anchor to housing",
+      "metric_measure": "Euclidean directions",
+      "origin": "derived",
+      "exact_expression": "eigenvalues2,(3\u00b1sqrt5)/3;det8/9;rank3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "new"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1,R\u00b2=(5+sqrt5)/8; physical scales remain uncalibrated"
+    },
+    {
+      "object_id": "old_hidden_sector",
+      "symbol": "old_hidden_sector",
+      "object_type": "reaction-cancelling housing modes",
+      "definition": "reaction-cancelling housing modes",
+      "domain": "ker((N diag(mh)) tensor I3)",
+      "codomain": "R90",
+      "coefficient_domain": "R; reference Q(sqrt5)",
+      "units": "internal ell0/E_*/t0",
+      "basis_orientation": "parent ordered vertices/edges; four anchors per edge; current axis from anchor to housing",
+      "metric_measure": "housing mass metric",
+      "origin": "derived",
+      "exact_expression": "dim54;108 initial position/velocity phases",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "new"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1,R\u00b2=(5+sqrt5)/8; physical scales remain uncalibrated"
+    },
+    {
+      "object_id": "reduced_loss",
+      "symbol": "reduced_loss",
+      "object_type": "reference b,c Rayleigh block",
+      "definition": "reference b,c Rayleigh block",
+      "domain": "R2 collective rates",
+      "codomain": "R2 collective damping forces",
+      "coefficient_domain": "R; reference Q(sqrt5)",
+      "units": "internal ell0/E_*/t0",
+      "basis_orientation": "parent ordered vertices/edges; four anchors per edge; current axis from anchor to housing",
+      "metric_measure": "reduced mass diag(12,12beta*rho)",
+      "origin": "derived",
+      "exact_expression": "eta[[35,10],[10,5]];homothety power60eta*b_dot\u00b2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "new"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1,R\u00b2=(5+sqrt5)/8; physical scales remain uncalibrated"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "parent",
+      "url_or_repo_path": "experiments/icosahedral-tolerances/hardware.py",
+      "version_or_commit": "83349b741cf262b2a264949f6338140d691373e6",
+      "section_or_object_id": "Hardware; conservative midpoint housing mounts",
+      "source_status": "integrated assumed mechanical model"
+    },
+    {
+      "source_id": "network",
+      "url_or_repo_path": "experiments/icosahedral-multiport/network.py",
+      "version_or_commit": "83349b741cf262b2a264949f6338140d691373e6",
+      "section_or_object_id": "Network; reciprocal device; mu2/kappa50/gamma5",
+      "source_status": "integrated conditional dynamics"
+    },
+    {
+      "source_id": "rigidity",
+      "url_or_repo_path": "experiments/icosahedral-free3d/model.py",
+      "version_or_commit": "83349b741cf262b2a264949f6338140d691373e6",
+      "section_or_object_id": "exact_rigidity; rank30 shell/rank34 primary",
+      "source_status": "exact conditional reference geometry"
+    },
+    {
+      "source_id": "frozen_probes",
+      "url_or_repo_path": "artifacts/icosahedral-tolerances-20261022-a1/tolerances-001/files/probes.json",
+      "version_or_commit": "83349b741cf262b2a264949f6338140d691373e6",
+      "section_or_object_id": "24 case bytes; baselines.json; mount-modes.json",
+      "source_status": "exposed development inputs"
+    },
+    {
+      "source_id": "new",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/README.md",
+      "version_or_commit": "v1.0; exact bytes captured in mountloss-001",
+      "section_or_object_id": "sections1\u20134; passivity, housing Gram, linear decay, common cost",
+      "source_status": "new derivation in assumed extension"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Positive parent mechanical/device parameters and reciprocal gains; unchanged finite midpoint mounts"
+    },
+    {
+      "id": "A2",
+      "statement": "120 massless current-axis central viscous housing-to-shell struts; ideal routing/anchors; no hidden strut states"
+    },
+    {
+      "id": "A3",
+      "statement": "eta=nu*2beta/(5R\u00b2), same coefficient per strut; nu selected from declared nine-value grid"
+    },
+    {
+      "id": "A4",
+      "statement": "Reference positive-length equilibrium for decay proof; finite joint probes only for nonlinear coherence"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "typed integer counting",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "120 loss paths,43 point masses,280 coordinates and54 old modes are different objects"
+    },
+    {
+      "technique": "exact rational/algebraic geometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "anchor lengths, determinants, Gram eigenvalues and reduced loss matrix"
+    },
+    {
+      "technique": "positive Rayleigh and local balance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "current central forces, torque and total primary+housing momentum"
+    },
+    {
+      "technique": "kernel/rigidity and undamped-mode exclusion",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "all274 nonrigid equilibrium modes decay; includes cf0 and positive gains"
+    },
+    {
+      "technique": "mass-metric projection and numerical spectrum",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "quotient six rigid directions; all108 hidden-sector initial phases"
+    },
+    {
+      "technique": "symmetry reduction",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "three-coordinate nonlinear manifold and actual-scale-dependent damping"
+    },
+    {
+      "technique": "frozen input sensitivity and fitting provenance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "nine strengths selected by two gates; exact-byte24-case reuse"
+    },
+    {
+      "technique": "units/calibration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "strut C_h=eta sqrt(k_b B_b) under prior engineered calibration; not measured"
+    },
+    {
+      "technique": "clock/modular arithmetic",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous dimensionless u; no finite register, modular gate or recurrence claim"
+    },
+    {
+      "technique": "prime factorization/divisibility",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "counts enter rank bookkeeping; no divisibility/mechanism question answered by factoring them"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "30*4=120 struts;3*(13+30)+1+150=280 coordinates;3*(30-12)=54 old modes;2*54=108 phases;280-6=274 nonrigid coordinates",
+    "reduced_expression": "length\u00b2=1/4,1/4,3/4,3/4;direction Gram determinant8/9;trace square64/9;C_bc/eta=[[35,10],[10,5]]",
+    "factor_origins": [
+      "30 original shell edges/housings",
+      "four anchors from two endpoints/two adjacent faces",
+      "three spatial directions",
+      "12 independent unsigned endpoint reaction rows",
+      "six global rigid directions"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless u=t/t0",
+    "modulus": null,
+    "residue_convention": "N/A",
+    "update_rule": "full560-phase passive second-order ODE plus heat",
+    "initial_phase": "alpha.1/other strains/velocities0 for pulses; housing displacement/velocity phases separate",
+    "coupling": "parent device and conservative mounts plus120 central viscous struts",
+    "period_claim": "none for damped system",
+    "physical_unit_map": "t0=sqrt(25B_b/k_b) remains uncalibrated engineered module map"
+  },
+  "dynamics_readout": {
+    "state_space": "280 configurations/560 mechanical phase variables + heat; all90 housing coordinates retained",
+    "generator_or_update": "mountloss.py:MountLoss.ode; linear M,K,C and full nonlinear reduced collective law",
+    "initial_boundary_conditions": "free assembly; protocol positive lengths; no external ground",
+    "conservation_and_sources": "total P,L conserved;Eprime minus device/input/strut positive loss powers",
+    "projection_and_kernel": "housing-only Gram rank90 detects old54; quotient global rigid6; all-phase sectorenergy via108x108 energy Gram",
+    "physical_mapping": "engineered central struts assumed; no material routing model or physical data; mount protocol UNSCORED"
+  },
+  "target_exposure": {
+    "status": "FIT/development; prior cases, readouts and screens exposed",
+    "known_targets": [
+      "80% breathing/5% mismatch/50% shape",
+      "old54 undamped housing modes",
+      "prior24 hardware probes"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Four-anchor topology",
+      "nu=.02 chosen by frozen two-gate rule from nine strengths",
+      "Housing energy<=.5 at u100 plus nominal breathing RMS>=.8",
+      "nominal beta.05/Omega10/cf.001 for selection; mass-scaled uniform eta"
+    ],
+    "search_domain_and_budget": "nine frozen nu strengths;24 frozen joint cases;2 worst-case refinements;three nonlinear ringdowns;one symmetric comparison;one seeded pulse. Three cf0 matrix checks added after selection, explicitly amended.",
+    "selection_criterion": "smallest scanned nu with worst old-sector linearenergy<=.5 at100 and nominal nonlinear breathing>=.8; nu.02 fixed before joint rerun",
+    "baseline": "original undamped/nohousing exact-byte baselines for joint probes; analytic symmetric original for scan; nu0 for housing ringdown"
+  },
+  "calculation_steps": [
+    "Define reciprocal current-axis strut loss, all reactions and exact power balance",
+    "Verify each Q(sqrt5) Gram and reference reduced matrix; import/recompute exact primary rigidity",
+    "Exclude undamped positive-frequency eigenmodes under declared assumptions",
+    "Nine-strength scan: full108-phase worst-sector linear energy plus nonlinear nominal breathing",
+    "Freeze nu.02, reuse identical24 cases/11 baselines; report all screens and failures",
+    "Tighten worst retention/mismatch cases; compare full and reduced nonlinear symmetric motion",
+    "Check original housing cycle and worst linear phase in full nonlinear ringdown; seeded worst-budget pulse",
+    "Post-selection cf0 scope audit finds lowmass half-energy target failure; preserve it and no retuning"
+  ],
+  "result": {
+    "exact_expression": "Eprime<=0,totalP/L conserved;housingGrameigenvalues2,(3\u00b1sqrt5)/3;all274 nonrigid equilibrium modes decay for positive parameters/gains andnu>0,cf>=0;C_bc=eta[[35,10],[10,5]]",
+    "approximation": "EXACT/CONDITIONAL passive central loss, rank90 housing detection and all274 nonrigid equilibrium modes decay. NUMERICAL nu.02: nominal worst108-phase energy.4396602278; nonlinear agreement1.005e-9;20/20 budget pulse cases pass, min90.1533% breathing, max.746162% mismatch. Mass20% and high-friction challenges fail. Lowmass beta.005/cf0 energy.5073523 fails half-energy-at100 target; no uniform ringdown guarantee.",
+    "units": "dimensionless reference ell0/E_*/t0; no SI measurements",
+    "precision_and_error": "float64 DOP8531e-10/1e-12; fine2e-12/2e-14, tinyhousing atol1e-15; full-vs-reduced9.602e-11; worst nonlinear-linear energy change1.005e-9; pulse E+heat residual<=4.153e-9",
+    "scope": "exact local/conditional mechanics; finite nonlinear budget; nominal fullphase housing ringdown; no continuous ringdown/coherence box bound",
+    "physical_interpretation": "HYPOTHESIS; engineered surrogate; no empirical/mainline promotion"
+  },
+  "verification": [
+    {
+      "method": "exact reference geometry",
+      "command_or_proof_path": "experiments/icosahedral-mountloss/exact.py",
+      "source_revision": "83349b741cf262b2a264949f6338140d691373e6",
+      "actual_result": "PASS Q(sqrt5) across30 housings; parent rigidity recomputed",
+      "review_relationship": "constructor; second assembly/calculation where named, no independent review"
+    },
+    {
+      "method": "local decay proof",
+      "command_or_proof_path": "experiments/icosahedral-mountloss/README.md section3",
+      "source_revision": "83349b741cf262b2a264949f6338140d691373e6",
+      "actual_result": "CONDITIONAL proof; cf0 scope numericalchecks all positive decay rates",
+      "review_relationship": "constructor; second assembly/calculation where named, no independent review"
+    },
+    {
+      "method": "central force/torque/Rayleigh and matrix Jacobian",
+      "command_or_proof_path": "experiments/icosahedral-mountloss/analyze.py:checks",
+      "source_revision": "83349b741cf262b2a264949f6338140d691373e6",
+      "actual_result": "PASS force1.08e-19,torque0,power2.71e-20; matrix5.98e-9",
+      "review_relationship": "constructor; second assembly/calculation where named, no independent review"
+    },
+    {
+      "method": "allphase linear propagator vs nonlinear ringdown",
+      "command_or_proof_path": "experiments/icosahedral-mountloss/analyze.py and postcheck.py",
+      "source_revision": "83349b741cf262b2a264949f6338140d691373e6",
+      "actual_result": "PASS worst energy fractions differ1.005e-9",
+      "review_relationship": "constructor; second assembly/calculation where named, no independent review"
+    },
+    {
+      "method": "nonlinear joint campaign and refinements",
+      "command_or_proof_path": "experiments/icosahedral-mountloss/analyze.py",
+      "source_revision": "83349b741cf262b2a264949f6338140d691373e6",
+      "actual_result": "20/20 budget pass; two challenge failures; retention/mismatch changes<=2.14e-7/1.74e-8",
+      "review_relationship": "constructor; second assembly/calculation where named, no independent review"
+    },
+    {
+      "method": "byte provenance",
+      "command_or_proof_path": "experiments/icosahedral-mountloss/postcheck.py",
+      "source_revision": "83349b741cf262b2a264949f6338140d691373e6",
+      "actual_result": "PASS exact frozen inputs; SHA256 in summary.json",
+      "review_relationship": "constructor; second assembly/calculation where named, no independent review"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Prior conservative-mount54-mode failure remains valid for old model",
+    "nu.2/.5/1 fail nominal80% breathing scan gate",
+    "mass20% and cf.02 challenge fail new joint breathing screen",
+    "postselection beta.005/cf0 worst energy.5073523 fails nominal half-energy target at100; local asymptotic decay does not imply uniform finite-time target",
+    "Hardware protocol NOT_EXECUTED; actual strut inertia/routing/anchor compliance unmodeled"
+  ],
+  "limitations": [
+    "Finite development cases and nominal initial-sector energy calculation, not whole-box certificates",
+    "Local reference all-mode decay not global nonlinear attraction or orientation theorem",
+    "120 massless struts/ideal anchors and routing; added physical masses/compliance absent",
+    "No independent manufacturing component/friction/mount-frequency uncertainty study",
+    "No physical data/native constitutive or clock derivation; mainline export not requested"
+  ],
+  "changed_dependencies": [
+    "Conservative housing extension amended with120 explicit central viscous paths; old results preserved",
+    "New assembly loss cannot inherit the bare-module leakage bound as a full assembly certificate"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/icosahedral-mountloss-20261022-a1/mountloss-001/manifest.json"
+  ],
+  "next_discriminant": "Bound and test a joint damping-strength range covering nonzero housing phases and cf0 throughout the budget; preserve lowmass and challenge failures."
+}

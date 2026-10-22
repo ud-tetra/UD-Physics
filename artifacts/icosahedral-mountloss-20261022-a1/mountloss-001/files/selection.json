@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "selected_nu": 0.02,
+  "selected": {
+    "nu": 0.02,
+    "eta": 0.0004422291236000337,
+    "worst_hidden_energy_fraction_u100": 0.4396602278153715,
+    "least_nonrigid_decay_rate": 0.0001989349771285842,
+    "min_nonrigid_stiffness": 0.12747125128782044,
+    "nominal_breathing_retention": 0.907262801947405,
+    "energy_balance_error": 3.0713892967399314e-11,
+    "passes_joint_scan_gate": true
+  },
+  "selection_rule": "smallest declared nu meeting both gates; if none, smallest housing-gate nu to quantify failure"
+}
