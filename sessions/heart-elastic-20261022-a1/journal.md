@@ -25,3 +25,7 @@ Next: Break equal spoke stiffnesses or shell inertias while retaining positive e
 Captured artifacts/heart-elastic-20261022-a1/exact-001 (EXACT): Positive-energy scalar-heart/radial-shell law, stable modal blocks, exact volume response and baselines
 
 Validation: exact calculation PASS;39 records/manifests/links PASS;all16 tooling tests PASS. Plot inspected. Static energy minimization distinguished from dynamical elimination. Constructor verification only.
+
+## Integrated closure
+
+PR17 merged at 5de0f30111b0e2bbac664a7ce82474ee5787f337. PR integrity run39825304178 completed/success. Separate push run39825298130 still reported in_progress although all reported job steps completed/success; it is not recorded as an overall completed check. Claim released with exact-SHA protocol-v2 marker cfbb22581b8b18c5ad90b240678f9d5106873d73; live ref and released payload verified. This closure follow-up changes only this session record/journal. Next: perturb unequal couplings/inertias and quantify volume-mode leakage.
