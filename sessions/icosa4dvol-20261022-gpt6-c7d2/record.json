@@ -72,10 +72,21 @@
       "result": "PASS",
       "command": "GitHub Actions workflow 39858108061 at head 0c0505f990cf4488a672f9d9d25cf61a032adc3e; scripts/validate.py PASS 85 records; unittest discover -s tests -v PASS 16 tests",
       "review_relationship": "repository_ci_integrity_not_physics"
+    },
+    {
+      "name": "locality-001 local symbolic/structural/numerical script",
+      "result": "PASS",
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 locality_audit.py",
+      "source_revision": "1bc9f2d450bde6deb85f0b05dd31109795ef2b76"
+    },
+    {
+      "name": "new locality-001 repository validator and unit tests",
+      "result": "NOT_RUN",
+      "reason": "connector-only GitHub checkout; CI not yet confirmed after appended commits"
     }
   ],
-  "finding": "EXACT/CONDITIONAL nonlinear two-coordinate 4D model has ordinary Euclidean 3D orthogonal-carriage counterpart with identical complete reduced potential, mass, damping and readout; nonlinear dimension discriminator FAILED. NUMERICAL 6 signed pulses, third-order statics, fold f=-0.05258752206 and 4 lower-mode amplitude frequency checks.",
-  "next_action": "Keep PR #39 draft pending external science review. Define permitted local isotropic reciprocal 3D null family, and compare unconstrained 4D modes/readouts. Task claim HELD until integration/abandonment; no mainline export.",
+  "finding": "EXACT/CONDITIONAL 3D local pairwise 24-node countermodel exactly matches 4D linear uniform K/M and volume transfer; full 72D rigidity rank66. NUMERICAL nonuniform/nonlinear differences. FAILED unique fourth-dimension identification.",
+  "next_action": "Freeze 3D/4D component budget and independent nonuniform spectral/force readouts; scientific review and CI for PR39 prior to integration.",
   "mathematical_profile": {
     "coefficient_domain": "Q(sqrt(5)), real algebraic radicals, positive parameters",
     "exactness_or_precision_plan": "SymPy algebra; SVD rank tolerance 1e-10; ODE DOP853 rtol1e-11 atol1e-13",
