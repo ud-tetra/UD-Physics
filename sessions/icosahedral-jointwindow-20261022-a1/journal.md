@@ -41,3 +41,11 @@ Next: Construct validated nonlinear perturbation tubes for housing-energy ball a
 Captured artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001 (NUMERICAL): Jointnu[.04,.05]window:exactcompliance/phase/initialdomainbounds;50parameter sets,all180housingphases energyupper45.667%/linearbreathinglower81.356%;64/64nonlinearendpointrecords58trajectoriespass. Raw17-nodecoarsegaps preserved;sharperprovedinequality closescoverageonsamevalues. No nonlinear/fulluncertaintybox/hardwareclaim.
 
 Validation:PASS79records,allmanifestdigests andlocaldocumentationlinks;16toolingtestsPASS. Diffcheckpassesexcludingthebyte-preservedhistoricalledgerinput;fullcheckreportsonlytheoriginaltwoMarkdownhardbreaktrailing-spacelines. Keptsourcebytesunchanged,asrequiredforimmutablecapture/provenance.
+
+## Integrated milestone and release closure
+
+Research PR37 merged at b04c03fc25b2be2931e54240921e81c6d1241b93 after integrity run39854889125 completed/success at exact head918c6b4fc00a1d2761ec754e0a4e7018c08e007c. All48 uploaded blobSHAs matched;prepared tree80a2a63fdc04ff300b680fb78370fa5186dad9e1 matched local index. Integrated remote milestone.json verified.
+
+Read live heldclaim andowner,created release child andupdated with exact expected c62806a810c2a3ed2750d3818acc9c64ff2c9c43. Live ref andpayload verified released at d02419112e3e5c3d930b3c8dbddc2972dd2523d3,released_from_sha equalsheldclaim. No branch deletion claimed. Checkout aligned only after main/index tree equality andno unstaged edits.
+
+This closure-only follow-up changes this session record andjournal under protocol2 afterrelease;research/sharedstate/immutableartifacts unchanged. Next:validated nonlinear housing-energy-ball bounds at limiting preparations,including future strut lengths and volume response. Hardware UNSCORED/mainlinepromotion0.
