@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T23:04:56.787119+00:00",
   "base_revision": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "qpb1-unit-preparation-20261022": {
       "ref": "refs/heads/claims/qpb1-unit-preparation-20261022",
-      "sha": "c104215f7cd5b263d56a91e4dbb37e865831d12f",
-      "status": "held"
+      "sha": "f82d0c11907d0b0d7d45a74d05cfcc46a71a10ac",
+      "status": "released",
+      "released_from_sha": "c104215f7cd5b263d56a91e4dbb37e865831d12f"
     }
   },
   "checks": [
@@ -31,10 +32,21 @@
     }
   ],
   "finding": "Source audit and conditional preparation models complete;integer event preparation remains possible,universal physical unit ruleOPEN;empiricalUNSCORED,promotion0.",
-  "next_action": "Integrate the scoped package,release claim;next derive a native source/reset law and its physical kick/readout with interference and energy accounting.",
+  "next_action": "Under a new task claim,construct a source/reservoir preparation model with exact support,phase,energy and reset accounting;then test whether its physical kick map fixes the dimensional reference.",
   "checkpoint_at": "2026-10-22T23:11:16.604506+00:00",
   "checkpoint_source": {
     "revision": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
     "dirty": true
+  },
+  "integration": {
+    "research_pr": "https://github.com/ud-tetra/UD-Physics/pull/50",
+    "research_head": "ec5149359c102cd9364eac6768e9723c5c941a68",
+    "research_merge": "4a0190bdba09e059922196fccc76d2ef7822b114",
+    "ci_run_id": 39870216754,
+    "ci_url": "https://github.com/ud-tetra/UD-Physics/actions/runs/39870216754",
+    "ci_head": "ec5149359c102cd9364eac6768e9723c5c941a68",
+    "ci_conclusion": "success",
+    "tree": "6a2ecd7e41e3fbcabeeb12438e4d97017efa5fae",
+    "released_claim": "f82d0c11907d0b0d7d45a74d05cfcc46a71a10ac"
   }
 }
