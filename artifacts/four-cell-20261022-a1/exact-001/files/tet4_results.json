@@ -1,0 +1,365 @@
+{
+  "scope": "Exact for labelled 1->4 central subdivision; unweighted Euclidean chain metric H=I for operators; no physical calibration.",
+  "face_vector": [
+    5,
+    10,
+    10,
+    4
+  ],
+  "boundary_face_vector": [
+    4,
+    6,
+    4,
+    0
+  ],
+  "relative_face_vector": [
+    1,
+    4,
+    6,
+    4
+  ],
+  "chain_dimensions": {
+    "parent": 15,
+    "boundary": 14,
+    "relative": 15,
+    "full": 29
+  },
+  "boundary_ranks": [
+    4,
+    6,
+    4
+  ],
+  "betti": [
+    1,
+    0,
+    0,
+    0
+  ],
+  "outer_faces": 4,
+  "shared_faces": 6,
+  "dual_cell_graph": "K4",
+  "geometry": {
+    "parent_volume": "8/3",
+    "child_volumes": [
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/3"
+    ],
+    "radial_over_outer_edge_squared": "3/8",
+    "inner_over_outer_face_area_squared": "1/6"
+  },
+  "signed_complement_intertwiner": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "relative_equals_parent_skew_dynamics_up_to_P": true,
+  "S4_duality": "rho_relative(g)*P = sign(g)*P*rho_parent(g), verified for all24 permutations",
+  "cell_gram_operators": {
+    "internal_faces": "4I-J",
+    "all_faces": "5I-J"
+  },
+  "characteristic_polynomials": {
+    "parent_and_relative": "lambda*(lambda^2+4)^7",
+    "full": "lambda*(lambda^2+1)*(lambda^2+5)^13"
+  },
+  "full_squared_frequency_multiplicities": {
+    "0": 1,
+    "1": 2,
+    "5": 26
+  },
+  "spectral_certificate": {
+    "M_definition": "-A^2",
+    "M*(M-I)*(M-5I)": 0,
+    "trace_M": 132,
+    "trace_M_squared": 652
+  },
+  "boundary_interior_coupling_rank": 14,
+  "relative_subspace_invariant_in_full_flow": false,
+  "recursive_counts_checks": [
+    {
+      "level": 0,
+      "face_vector": [
+        4,
+        6,
+        4,
+        1
+      ],
+      "equal_volume_fraction": "1"
+    },
+    {
+      "level": 1,
+      "face_vector": [
+        5,
+        10,
+        10,
+        4
+      ],
+      "equal_volume_fraction": "1/4"
+    },
+    {
+      "level": 2,
+      "face_vector": [
+        9,
+        26,
+        34,
+        16
+      ],
+      "equal_volume_fraction": "1/16"
+    }
+  ],
+  "status": "PASS"
+}
