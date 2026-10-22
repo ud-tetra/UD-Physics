@@ -1,0 +1,200 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "tet4-exact-001",
+  "session_id": "four-cell-20261022-a1",
+  "candidate_id": "four-cell-tetrahedron",
+  "question": "Does centre subdivision preserve a useful recursive tetrahedral structure and dynamical correspondence?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "objects": [
+    {
+      "object_id": "K",
+      "symbol": "K",
+      "object_type": "simplicial complex",
+      "definition": "maximal cells 0124,0134,0234,1234 with 4 the centroid",
+      "domain": "finite simplices",
+      "codomain": null,
+      "coefficient_domain": "integer incidences; rational geometry; real state space",
+      "units": "dimensionless model units",
+      "basis_orientation": "ascending vertices",
+      "metric_measure": "regular outer tetrahedron",
+      "origin": "assumed",
+      "exact_expression": null,
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit unit chain metric only"
+    },
+    {
+      "object_id": "A",
+      "symbol": "A_K",
+      "object_type": "linear generator",
+      "definition": "upper B_k, lower -B_k^T",
+      "domain": "R^29",
+      "codomain": "R^29",
+      "coefficient_domain": "integer incidences; rational geometry; real state space",
+      "units": "dimensionless model units",
+      "basis_orientation": "grade then lexicographic",
+      "metric_measure": "H=I",
+      "origin": "assumed",
+      "exact_expression": null,
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit unit chain metric only"
+    },
+    {
+      "object_id": "P",
+      "symbol": "P",
+      "object_type": "signed complement map",
+      "definition": "formula in report; reverses degree",
+      "domain": "parent R^15",
+      "codomain": "relative R^15",
+      "coefficient_domain": "integer incidences; rational geometry; real state space",
+      "units": "dimensionless model units",
+      "basis_orientation": "ascending vertices",
+      "metric_measure": "unit metrics; PP^T=I",
+      "origin": "assumed",
+      "exact_expression": null,
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit unit chain metric only"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "method",
+      "url_or_repo_path": "docs/UD_MATHEMATICAL_METHOD_v1.0.md",
+      "version_or_commit": "506808a815e3afd13630db010a6e383019db6234",
+      "section_or_object_id": "Sections 1\u20136",
+      "source_status": "runtime method"
+    },
+    {
+      "source_id": "construction",
+      "url_or_repo_path": "https://people.smp.uq.edu.au/BenjaminBurton/papers/burton11-pachner-scg.pdf",
+      "version_or_commit": "arXiv:1011.4169",
+      "section_or_object_id": "Section 2/Figure 2",
+      "source_status": "primary description of known move"
+    }
+  ],
+  "assumptions": [
+    "Four tetrahedra are the centroid stellar subdivision of one filled regular tetrahedron.",
+    "Ascending simplex orientations; real chain spaces with unit metric H=I.",
+    "Skew generator has upper blocks B_k and lower blocks -B_k^T; dimensionless parameter u and arbitrary real initial state.",
+    "No supplied native carrier definition or calibrated physical map is imported."
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/fraction",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "count faces, pair ownership, exact geometry and ranks"
+    },
+    {
+      "technique": "factorization/divisibility",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "4^n=2^(2n); geometric-series numerators divisible by 3"
+    },
+    {
+      "technique": "clock/modular",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite register or update law is proposed; distinguish continuous frequency commensurability"
+    },
+    {
+      "technique": "chain/symmetry/spectral",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "check d squared, degree reversal, all 24 S4 actions and integer spectral certificates"
+    },
+    {
+      "technique": "recursive geometry/coarse graining",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "test metric similarity and boundary projection loss"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "16 face incidences = 4 + 2*6; child determinant volume / parent determinant volume",
+    "reduced_expression": "V_child/V_parent=1/4; f_relative=(1,4,6,4)",
+    "factor_origins": [
+      "4 child cells, 4 outer faces, 6 pair interfaces",
+      "29=14 exterior-chain +15 relative-chain coordinates"
+    ],
+    "factorization": "4^n=2^(2n); no physical factors inferred",
+    "divisibility_gcd_lcm": "4^n congruent 1 mod 3; recursive count formulas integral"
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless continuous parameter u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "dz/du=A z",
+    "initial_phase": "arbitrary",
+    "coupling": "full boundary/interior block rank14",
+    "period_claim": "parent/relative active frequency2; full frequencies1,sqrt5 have no universal common nonzero period",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "full R^29; comparison parent R^15 and relative R^15",
+    "generator_or_update": "A skew under H=I",
+    "initial_boundary_conditions": "arbitrary real initial state; finite closed full operator; relative comparison drops outer-boundary simplices",
+    "conservation_and_sources": "Euclidean squared norm conserved by skewness; no physical energy identification",
+    "projection_and_kernel": "coordinate deletion of 14 boundary coordinates; kernel dimension14; not a closed full-system quotient flow",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "EXPOSED conceptual pattern, no empirical target",
+    "known_targets": [
+      "user proposed four cells with one outer and three shared faces"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "one declared central subdivision plus corner-construction comparison; no formula fitting",
+    "selection_criterion": "exact sharing and operator comparison",
+    "baseline": "Compare centre insertion with half-size corner tetrahedra; compare full 29-coordinate and relative 15-coordinate operators under the same unit metric."
+  },
+  "calculation_steps": [
+    "Enumerate simplices, incidences, ranks and rational determinants.",
+    "Build parent/full/relative skew operators and explicit signed complement map.",
+    "Check exact intertwining and all24 symmetry actions.",
+    "Certify full spectrum via polynomial in -A^2 plus traces/rank.",
+    "Prove recursive counts by insertion increments; enumerate depths0,1,2; test affine maps."
+  ],
+  "result": {
+    "exact_expression": "EXACT: f=(5,10,10,4), K4 cell graph, quarter volumes. Signed degree-reversal P intertwines parent and relative generators. Full boundary coupling has rank 14 and changes frequencies from 2 to {1,sqrt(5)}. Recursive subdivision is affine/combinatorial, not regular-copy self-similarity.",
+    "approximation": null,
+    "units": "dimensionless counts, coordinates, model parameter",
+    "precision_and_error": "integer/Fraction arithmetic; no approximate spectra",
+    "scope": "finite stated carriers and H=I only",
+    "physical_interpretation": "HYPOTHESIS; physical mapping OPEN"
+  },
+  "verification": [
+    {
+      "method": "reproducible constructor exact arithmetic with geometric/count proof in report",
+      "command_or_proof_path": "python3 experiments/four-cell-tetrahedron/analyze.py; experiments/four-cell-tetrahedron/README.md",
+      "source_revision": "base 506808a815e3afd13630db010a6e383019db6234 plus input bytes captured in exact-001",
+      "actual_result": "PASS (executed; result JSON captured)",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Four half-size regular corner tetrahedra leave an octahedral gap and do not share the specified faces.",
+    "Full generator does not preserve relative coordinate subspace.",
+    "Child radial/outer length ratio sqrt(3/8) prevents regular metric similarity.",
+    "Recursive boundary descendants retain original faces: volume refinement is not vanishing maximum mesh diameter."
+  ],
+  "limitations": [
+    "Conditional imposed metric/operator; not established native UD dynamics.",
+    "Recursive centroid insertion retains outer faces and develops slivers.",
+    "No independent implementation, empirical test or mainline promotion."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/four-cell-20261022-a1/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Derive a boundary/readout map and effective generator, then test whether parent/child duality survives gluing."
+}
