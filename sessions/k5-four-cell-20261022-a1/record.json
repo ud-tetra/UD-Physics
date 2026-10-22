@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T17:14:22.121137+00:00",
   "base_revision": "bbce8407a64ad081b2efa576584d54d23c81abb8",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "k5-four-cell-20261022": {
       "ref": "refs/heads/claims/k5-four-cell-20261022",
       "sha": "c34a6dbe0ba6583484f8f795852b04130ce77357",
-      "status": "held"
+      "status": "released",
+      "released_sha": "7e09911fd5f8496e9c1da5593ac6a854f3a4f0ca"
     }
   },
   "checks": [
@@ -38,5 +39,10 @@
     "metric": "H=I, assumed for dynamics",
     "clock": "dimensionless continuous u; no modular clock",
     "physical_mapping": "OPEN"
+  },
+  "integration": {
+    "pr": 13,
+    "merge_sha": "16504ecf77a9102c4f8893fe76659d2eb9ac9e0f",
+    "remote_checks": "both Discovery integrity checks success"
   }
 }

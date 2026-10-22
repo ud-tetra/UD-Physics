@@ -25,3 +25,7 @@ Next: Compare boundary-driven four-cell response with fifth-cell closure under o
 Captured artifacts/k5-four-cell-20261022-a1/exact-001 (EXACT): K5 graph versus four-cell filling, missing facet, symmetry and closure spectrum
 
 Validation:31 records, captured digests and documentation links PASS;16 tooling tests PASS. These validate integrity/tooling, not physical interpretation.
+
+## Integrated closure
+
+PR13 merged at 16504ecf77a9102c4f8893fe76659d2eb9ac9e0f. Both remote integrity checks succeeded. Held claim released through exact-SHA protocol-v2 marker 7e09911fd5f8496e9c1da5593ac6a854f3a4f0ca; live ref and released metadata reread and verified. This follow-up changes only this session record and journal. Next: fixed-readout boundary response comparison.
