@@ -23,3 +23,13 @@ Captured artifacts/bootstrap-20261022/framework-validation-v1 (NUMERICAL): Repos
 Checkpoint (complete): Framework prepared locally; 10 tooling tests and record integrity passed. Live GitHub publication and Actions execution remain to be checked.
 
 Next: Publish the validated framework, verify the remote revision and Actions outcome, then boot the next authorized Discovery task.
+
+## 2026-10-22T16:14:57.270819+00:00
+
+Captured artifacts/bootstrap-20261022/publication-verification-v1 (EXACT): Remote and local Git tree hashes match for all 41 framework files. CI not observed; branch protection is disabled.
+
+## 2026-10-22T16:14:57.273592+00:00
+
+Checkpoint (complete): Published framework revision 7433889f2a99395a545a468c8cfd23b99fd2d984; all 41 file objects match the validated local tree. Ten local tooling tests passed. Remote CI is not observed and main is unprotected.
+
+Next: Use BOOTLOADER.md for the next authorized Discovery task. An administrator can enable PR/check protection; validate remote Actions when available.

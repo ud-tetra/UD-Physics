@@ -20,13 +20,43 @@
       "command": "python3 -m unittest discover -s tests -v",
       "status": "PASS",
       "evidence_path": "artifacts/bootstrap-20261022/framework-validation-v1/manifest.json"
+    },
+    {
+      "command": "GitHub Actions observation",
+      "status": "NOT_RUN",
+      "reason": "No workflow run returned for the framework commit; workflow file is published."
     }
   ],
-  "finding": "Framework prepared locally; 10 tooling tests and record integrity passed. Live GitHub publication and Actions execution remain to be checked.",
-  "next_action": "Publish the validated framework, verify the remote revision and Actions outcome, then boot the next authorized Discovery task.",
-  "checkpoint_at": "2026-10-22T16:13:20.238807+00:00",
+  "finding": "Published framework revision 7433889f2a99395a545a468c8cfd23b99fd2d984; all 41 file objects match the validated local tree. Ten local tooling tests passed. Remote CI is not observed and main is unprotected.",
+  "next_action": "Use BOOTLOADER.md for the next authorized Discovery task. An administrator can enable PR/check protection; validate remote Actions when available.",
+  "checkpoint_at": "2026-10-22T16:14:57.271193+00:00",
   "checkpoint_source": {
     "revision": "UNCOMMITTED_INITIALIZATION",
     "dirty": true
+  },
+  "publication": {
+    "verified_framework_revision": "7433889f2a99395a545a468c8cfd23b99fd2d984",
+    "expected_tree_sha": "84769bb612e3716f2951bbcf74ad3ab1367183f3",
+    "observed_remote_tree_sha": "84769bb612e3716f2951bbcf74ad3ab1367183f3",
+    "observed_local_tree_sha": "84769bb612e3716f2951bbcf74ad3ab1367183f3",
+    "verified_files": 41,
+    "publication": "VERIFIED",
+    "local_tooling_tests": {
+      "total": 10,
+      "status": "PASS"
+    },
+    "remote_actions": {
+      "status": "NOT_RUN_OBSERVED",
+      "observed_runs": 0
+    },
+    "branch_protection": {
+      "observed_protected": false,
+      "configuration": "NOT_CONFIGURED_BY_AVAILABLE_CONNECTOR"
+    },
+    "limitations": [
+      "Task claims are cooperative and atomic per task ID, not multi-path transactional locks.",
+      "No independent physics result is established by repository tooling checks."
+    ],
+    "verified_at": "2026-10-22T16:14:57.267051+00:00"
   }
 }
