@@ -1,0 +1,217 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "locality-001",
+  "session_id": "icosa4dvol-20261022-gpt6-c7d2",
+  "candidate_id": "icosahedral-4d-volume-20261022",
+  "question": "Do local, reciprocal, proper-rotation-invariant 3D point-spring networks reproduce 4D apex-to-shell response?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT",
+    "FAILED"
+  ],
+  "objects": [
+    {
+      "object_id": "outer_shell",
+      "symbol": "p_i=s X_i",
+      "object_type": "12 free 3D shell points",
+      "definition": "regular outer icosahedron at equilibrium, each point free",
+      "domain": "R^36",
+      "coefficient_domain": "Q(sqrt5), R",
+      "units": "a",
+      "basis_orientation": "ordered icosahedral X_i",
+      "metric_measure": "3D Euclidean",
+      "origin": "assumed",
+      "normalization": "a=1"
+    },
+    {
+      "object_id": "inner_shell",
+      "symbol": "q_i=b X_i",
+      "object_type": "12 free 3D inner points",
+      "definition": "second concentric icosahedral orbit b0=1/4",
+      "domain": "R^36",
+      "coefficient_domain": "Q(sqrt5), R",
+      "units": "a",
+      "basis_orientation": "aligned with outer icosahedron",
+      "metric_measure": "3D Euclidean",
+      "origin": "FIT",
+      "normalization": "b=b0-gamma(z-eta)"
+    },
+    {
+      "object_id": "spring_jacobian",
+      "symbol": "J_3",
+      "object_type": "distance-constraint Jacobian",
+      "definition": "132 pairwise Hooke-length gradients",
+      "domain": "R^72",
+      "codomain": "R^132",
+      "coefficient_domain": "real algebraic",
+      "units": "dimensionless",
+      "basis_orientation": "outer then inner xyz, four spring orbit classes",
+      "metric_measure": "K=J^T diag(k) J",
+      "origin": "derived",
+      "normalization": "all reference springs unstrained"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "4d_prior",
+      "url_or_repo_path": "experiments/icosahedral-4d-volume-20261022/README.md",
+      "version_or_commit": "1bc9f2d450bde6deb85f0b05dd31109795ef2b76",
+      "section_or_object_id": "K/M, geometry, 3D null",
+      "source_status": "versioned Discovery hypothesis"
+    },
+    {
+      "source_id": "nonlinear_prior",
+      "url_or_repo_path": "PR39 nonlinear-003",
+      "version_or_commit": "1bc9f2d450bde6deb85f0b05dd31109795ef2b76",
+      "section_or_object_id": "guided 3D exact nonlinear equivalence",
+      "source_status": "prior development baseline"
+    }
+  ],
+  "assumptions": [
+    "Euclidean R3 point masses, SO(3)-covariant pairwise distance Hooke springs with positive fitted strengths and zero prestress",
+    "Two concentric regular icosahedral point orbits with equal orientation; local nearest-neighbour cross-links",
+    "Uniform collective response projected by s and b, full 72-dimensional unconstrained 3D coordinate check",
+    "Dimensionless a=1 and prior target k_r=k_e=m=1; physical time remains independent Newtonian t",
+    "Illustrative damping C=0.06M on the uniform reduced sector for pulses, not from local physical dampers"
+  ],
+  "technique_plan": [
+    {
+      "technique": "representation/symmetry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "13-node 3D no-go and invariant 2-mode subspace"
+    },
+    {
+      "technique": "integer/combinatorial",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "24 vertices; 132 springs; exact orbit class counts"
+    },
+    {
+      "technique": "exact symbolic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "solved positive spring parameters; K and M equalities"
+    },
+    {
+      "technique": "rigidity/topology",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "two rigid shells and 3 rotational cross-brace witnesses"
+    },
+    {
+      "technique": "spectral",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "full 72-coordinate mass-normalized frequencies"
+    },
+    {
+      "technique": "numerical dynamics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "DOP853 finite amplitude pulses and static Newton solves"
+    },
+    {
+      "technique": "fit/null",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "target-informed 3D parameter construction and different null classes"
+    },
+    {
+      "technique": "modular clocks / rational valuations",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "not part of present dynamical question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2*12 3D points; 30+30+12+2*30=132 springs",
+    "reduced_expression": "72 coordinates, rank66, six rigid modes",
+    "factor_origins": [
+      "icosahedral f0=12, f1=30; one inner replicated shell, 12 radial spokes, 60 nearest-neighbor cross braces"
+    ],
+    "factorization": "132=2^2*3*11, 72=2^3*3^2; factorization not a mechanism",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous Newtonian time",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "M qdd + C qdot + grad U = F",
+    "initial_phase": null,
+    "coupling": "spring network",
+    "period_claim": null,
+    "physical_unit_map": "a and sqrt(m/k) remain calibrated parameters"
+  },
+  "dynamics_readout": {
+    "state_space": "R^72 x R^72 for full3D, symmetric sector (s,z,sdot,zdot)",
+    "generator_or_update": "Hookean sum of square link-length errors and Newtonian inertia",
+    "initial_boundary_conditions": "outer X_i, inner b0 X_i, all reference springs unstrained",
+    "conservation_and_sources": "pairwise forces equal/opposite, torques cancel, total energy conserved without damping",
+    "projection_and_kernel": "uniform shell volume V3/V0=s^3; local shell point displacement reveals additional modes",
+    "physical_mapping": "no physical spacetime/GR/QFT mapping"
+  },
+  "target_exposure": {
+    "status": "EXPOSED/FIT",
+    "known_targets": [
+      "existing 4D K and M; equal-edge chosen apex; nonzero linear volume gain"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "ks,ke,ki and mi fitted exactly",
+      "gamma=1/5, b0=1/4, kc=1/20 selected illustrative"
+    ],
+    "search_domain_and_budget": "Constructive positive central-force class: one tested gamma,b0,kc triple after positivity check, local parameter scan of kc=0 to 0.2 prior to choosing 1/20; no global optimization or empirical dataset",
+    "selection_criterion": "positive stiffness, exact 2x2 K/M match, rank66 full 3D",
+    "baseline": "13-point 3D symmetry obstruction; prior exact guided 3D nonlinear equivalence; full40-coordinate 4D model"
+  },
+  "calculation_steps": [
+    "derive 3D two-shell local spring energy and exact reduced Hessian",
+    "solve fitted springs and mass in Q(sqrt5,eta,Lcross)",
+    "derive exact cross-product rotation-rigidity witness",
+    "numerically check weighted 132x72 J rank66 and full reduced invariance",
+    "test SO3 covariance and zero total force/torque",
+    "compare nonlinear cubic derivatives, equilibrium forces, pulses and nonuniform shell compliance"
+  ],
+  "result": {
+    "exact_expression": "K3=K4; M3=M4; det(cross-product witness)=(7+3sqrt5)/32 !=0; constrained 3D central displacement mixed Hessian=0 by proper icosahedral symmetry",
+    "approximation": {
+      "full3d_rank": 66,
+      "full3d_nullity": 6,
+      "cubic_difference_3d_minus_4d": -10.047705704460906,
+      "sample_shell_compliance_at_omega_0_3": {
+        "4d": 0.5272109530384629,
+        "3d": 1.087096496263831
+      }
+    },
+    "units": "dimensionless a=kr=ke=m=1 target",
+    "precision_and_error": "NumPy float64; rank tolerance 1e-9, exact SymPy identity assertions; ODE tol rtol1e-10 atol1e-12",
+    "scope": "local pairwise SO3-equivariant 24-vertex 3D network matches 4D linear scalar response; not all nonlinear or nonuniform modes",
+    "physical_interpretation": "No unique fourth-spatial-dimension evidence"
+  },
+  "verification": [
+    {
+      "method": "constructor symbolic/numeric script",
+      "command_or_proof_path": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 locality_audit.py",
+      "source_revision": "1bc9f2d450bde6deb85f0b05dd31109795ef2b76",
+      "actual_result": "PASS local",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "GitHub repository validation and tests",
+      "command_or_proof_path": "python3 scripts/validate.py; python3 -m unittest discover -s tests -v",
+      "source_revision": "1bc9f2d450bde6deb85f0b05dd31109795ef2b76",
+      "actual_result": "NOT_RUN on new commit; GitHub CI pending",
+      "review_relationship": "not run"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "FAIL unique spatial-dimensional discrimination: 24-free-vertex 3D pairwise spring network reproduces full small-signal scalar volume transfer",
+    "The 13-point central-only 3D analogue cannot linearly couple under exact symmetry; adding inner scalar modes bypasses this hypothesis",
+    "Pairwise 3D nonlinear cubic mismatch does not restore uniqueness because earlier guided 3D exact analogue matches all orders"
+  ],
+  "limitations": [
+    "Not a physical fabrication/collision-free routing design",
+    "No 3D degree-of-freedom budget matching or normal-mode equivalence across full spectra",
+    "No independent experiments, physical units, UD-native selection",
+    "Positive local stiffness modulo rigid motions does not prove global attraction"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/icosa4dvol-20261022-gpt6-c7d2/locality-001/manifest.json"
+  ],
+  "next_discriminant": "Freeze equal-complexity 3D/4D mechanical families, test full nonuniform spectra and local force-to-displacement on unused preparations."
+}
