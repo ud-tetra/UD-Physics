@@ -1,6 +1,6 @@
 # Current integrated state
 
-Updated: 2026-10-22. Milestone: joint hardware tolerances and housing-mode counterexample v1.0.
+Updated: 2026-10-22. Milestone: passive four-anchor housing loss v1.0.
 
 - Canonical Discovery instructions are v1.2; bootloader v1.1 loads the mathematical protocol before consequential work.
 - [UD mathematical analysis protocol](../docs/UD_MATHEMATICAL_METHOD_v1.0.md) and [calculation receipt template](../templates/mathematical_receipt.json) cover exact arithmetic, factorization, modular clocks, typed provenance and applicable UD structural methods.
@@ -46,7 +46,11 @@ Updated: 2026-10-22. Milestone: joint hardware tolerances and housing-mode count
 - NUMERICAL:20/20declaredjointinbudgetprobespass80%RMS/5%volume/50%shapescreen atA0.1,u0..100;minimumoriginal-undamped/nohousingbreathingRMSretention92.311%,maximumhubvolume mismatch.73757%,residualshapeRMS4.475–10.183%. Budget:ratio<=1%,nominalhousingmass<=5%,sharedc_f<=.001,uniformOmega10,declaredprimary/housing scatter. Highfrictionc_f.02challengefails at69.54%RMSretention.
 - EXACT/FAILED all-modeextension:conservative midpointmounts add54undampedhousingmodes,withcancellingprimaryreactions. Full560phasecounterexampleverified. Preparedjointprobesleave thissectorunexcited;theprior190-coordinate theoremretains itsoriginalscope. See[addendum](../experiments/icosahedral-tolerances/MOUNT_MODE_ADDENDUM.md).
 - [Module test and calibration protocol](../experiments/icosahedral-tolerances/MODULE_TEST.md) plusrawmeasurement/run templates areavailable;physicalstatusUNSCORED/NOT_EXECUTED. Independenthousingringdown isrequired alongsideprimaryvolume readout.
-- Next discriminant:construct passive mountloss thatdamps the54housingmodes;include all reactions,quantify common-breathingcost andrerun thejointbudget.150comparisonbranches remainacomplexitycost;actualpickup/routing/nativeconstitutiveselection andphysicalcalibrationremainOPEN.
+- [Four-anchor passive housing loss](../experiments/icosahedral-mountloss/README.md):120 additional central viscous paths, no added state/storage; all reactions retained. Exact reference housing loss rank90 detects all54 old neutral modes. Conditional proof excludes all nonrigid undamped equilibrium modes for positive parameters/gains andnu>0,includingcf0:274 nonrigid coordinates decay locally; global nonlinear attraction remains OPEN.
+- Common breathing has explicit cost: reference b,c loss eta[[35,10],[10,5]], homothety power60eta*b_dot². Declared nine-strength development scan selectsnu.02:nominal worst108-phase old-sector energy43.966% at100,breathing90.726%. Full nonlinear worst-phase ringdown agrees to1.005e-9; old cycle energy falls to11.270% versus100% without new loss.
+- NUMERICAL joint rerun:20/20 unchanged in-budget pulse cases pass;minimum breathing90.153%,maximum hub mismatch.746162%,shape RMS4.381–9.915%. Added retention cost1.209–2.227percentagepoints. Mass20% andc_f.02 challenges fail at77.138% and68.997%; failures preserved. [Results/artifacts](../experiments/icosahedral-mountloss/RESULTS.md).
+- Post-selection scope audit:beta.005/cf0 still locally decays but worst old-sector energy50.735% at100 fails nominal half-energy target. No uniform finite-time ringdown budget is established. [Mount test](../experiments/icosahedral-mountloss/MOUNT_TEST.md) UNSCORED/NOT_EXECUTED;120 idealstruts and150 devicebranches remain substantial complexity. Strut/routing inertia,anchor compliance,native selection andphysical calibration OPEN.
+- Next discriminant:bound and test a damping-strength range meeting both housing ringdown and breathing throughout the joint parameter budget,including nonzero housing phases andcf0;preserve lowmass and challenge failures.
 - Separate open question: whether the parent/relative chain duality survives a useful gluing/readout law.
 
 Update this file at integrated milestones under an integration claim. Live claim metadata, not this summary, determines current ownership.

@@ -1,0 +1,19 @@
+{
+  "full_vs_nonlinear_collective_error": 9.601364148181801e-11,
+  "volume_signal_leakage": 5.861812522892468e-14,
+  "shell_centroid_volume_signal_leakage": 4.846220143210646e-14,
+  "mean_volume_rms": 0.022455547556043072,
+  "shell_shape_rms": 1.0703757891717874e-15,
+  "hub_offset_rms_over_R": 7.448025589853735e-16,
+  "minimum_oriented_cell_volume_ratio": 0.9545077096181147,
+  "maximum_support_halfspace_violation_sampled": 1.6653345369377348e-16,
+  "primary_linear_momentum_exchange": 1.1045427278111343e-14,
+  "primary_angular_momentum_exchange": 5.573735907409507e-15,
+  "balance_relative_error": 3.0713892967399314e-11,
+  "total_linear_momentum_drift": 7.727752030373978e-16,
+  "total_angular_momentum_drift": 3.413236660761174e-16,
+  "remaining_total_energy_fraction": 0.9571742309232881,
+  "maximum_housing_lag_over_a": 0.0020513630752427847,
+  "maximum_auxiliary_stroke": 1.6096620246922964e-15,
+  "minimum_sampled_housing_strut_length": 0.49295978053618855
+}

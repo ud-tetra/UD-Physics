@@ -1,0 +1,44 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-mountloss",
+  "session_id": "icosahedral-mountloss-20261022-a1",
+  "question": "Can reciprocal central housing loss remove all54 housing-neutral modes while retaining at least80% breathing RMS in the declared finite joint budget?",
+  "status": "ACTIVE",
+  "evidence": [
+    "FIT",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL"
+  ],
+  "assumptions": [
+    "Positive parent mechanical/device parameters and reciprocal gains; unchanged finite midpoint mounts",
+    "120 massless current-axis central viscous housing-to-shell struts; ideal routing/anchors; no hidden strut states",
+    "eta=nu*2beta/(5R\u00b2), same coefficient per strut; nu selected from declared nine-value grid",
+    "Reference positive-length equilibrium for decay proof; finite joint probes only for nonlinear coherence"
+  ],
+  "physical_mapping": "Engineered passive mechanical surrogate; ell0/E_*/t0 uncalibrated; hardware NOT_EXECUTED",
+  "target_exposure": "Development: prior24 cases and80/5/50 screen exposed; nine-strength scan declared before execution",
+  "fitted_choices": [
+    "Four-anchor topology",
+    "nu=.02 chosen by frozen two-gate rule from nine strengths",
+    "Housing energy<=.5 at u100 plus nominal breathing RMS>=.8"
+  ],
+  "sources": [
+    {
+      "path": "experiments/icosahedral-tolerances/hardware.py",
+      "revision": "83349b741cf262b2a264949f6338140d691373e6"
+    },
+    {
+      "path": "experiments/icosahedral-multiport/network.py",
+      "revision": "83349b741cf262b2a264949f6338140d691373e6"
+    },
+    {
+      "path": "artifacts/icosahedral-tolerances-20261022-a1/tolerances-001/files/probes.json",
+      "revision": "83349b741cf262b2a264949f6338140d691373e6"
+    }
+  ],
+  "baseline": "Exact-byte frozen original-undamped/nohousing baselines; nominal symmetric analytic baseline for scan",
+  "result": "EXACT/CONDITIONAL passive central loss, rank90 housing detection and all274 nonrigid equilibrium modes decay. NUMERICAL nu.02: nominal worst108-phase energy.4396602278; nonlinear agreement1.005e-9;20/20 budget pulse cases pass, min90.1533% breathing, max.746162% mismatch. Mass20% and high-friction challenges fail. Lowmass beta.005/cf0 energy.5073523 fails half-energy-at100 target; no uniform ringdown guarantee.",
+  "next_discriminant": "Bound and test a joint damping-strength range covering nonzero housing phases and cf0 throughout the budget; preserve lowmass and challenge failures."
+}
