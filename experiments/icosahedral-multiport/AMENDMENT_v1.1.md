@@ -1,0 +1,11 @@
+# Development amendment v1.1 — readout-directed selection
+
+The initial27-point design selected(mu,kappa,gamma)=(1/5,2,1/2) by fastest worst equilibrium pole decay. That candidate preserved exact symmetric breathing and retained at least94.68% of matched mean-volume RMS across9 nonlinear preparations, but its largest hub-relative volume mismatch was17.37%;0/9 met the chosen80%/5%/50% screen. Its outputs in summary.json/campaign.csv remain preserved as Phase A.
+
+This exposed outcome motivates Phase B, still within construction/testing of the passive network. Equilibrium pole decay alone does not select a useful response to continuous disorder-induced excitation by the collective motion. This amendment is post-exposure development; it cannot support an independent prediction.
+
+Before Phase B outputs: scan mu in{1/5,2,20}, kappa in{2,10,50}, gamma in{1/2,5,50},27 parameter evaluations on the same3 exposed property points. Compute the complete *linearized initial-value pulse* over u0..100 with the internal variables retained. Uniform branch parameters allow an exact reduction to the32-dimensional image of the150 strain-difference ports; orthogonal auxiliary cycle modes are unforced from zero. Keep all primary nonrigid coordinates, including collective/shape mixing from disorder. Verify this reduction against the unreduced380-phase linearization.
+
+Compute first-order hub-relative tetrahedral volume readouts and RMS retention relative to each matched undamped linearized preparation. Choose the design with smallest maximum normalized volume mismatch across the3 points among designs retaining at least80% mean-volume RMS. Record all27 points. If no design satisfies retention, report failure. Then test the selected design using the full nonlinear380-phase model at the9 declared property/amplitude preparations and the same80%/5%/50% screen. Do not replace Phase A, hide the expanded search or call Phase B held out.
+
+Add symmetric and±0.1%/±1% ratio-error checks for Phase B. Refine its largest observed nonlinear mismatch. Report exact ideal cancellation separately from finite transducer-error sensitivity. Total engineering search:54 grid evaluations with one overlapping parameter tuple;53 distinct triples across the two phases.

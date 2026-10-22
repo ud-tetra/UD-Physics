@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-icosahedral-multiport-20261022",
+  "goal": "Explicit passive edge/radial difference network,added modes,reactions and finite imperfection tests",
+  "owned_paths": [
+    "experiments/icosahedral-multiport",
+    "candidates/icosahedral-multiport",
+    "sessions/icosahedral-multiport-20261022-a1",
+    "artifacts/icosahedral-multiport-20261022-a1",
+    "tasks/integration-icosahedral-multiport-20261022.json",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "integration-icosahedral-damping-20261022"
+  ],
+  "status": "complete",
+  "completion_evidence": "experiments/icosahedral-multiport/RESULTS.md",
+  "result": "Explicitreciprocalfiniteauxnetwork,exactconditionalkernel/stability,PhaseAfailureandPhaseBexposeddesigncaptured;mainlinepromotion0"
+}
