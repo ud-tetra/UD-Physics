@@ -1,0 +1,1 @@
+Read AGENTS.md, BOOTLOADER.md, and instructions/UD_DISCOVERY_v1.1.md before work. Follow task claims and isolated branches. Capture per-session notes and immutable artifacts. Do not treat hypothetical fits as mainline physical claims.

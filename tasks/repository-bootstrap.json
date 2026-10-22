@@ -1,0 +1,22 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "repository-bootstrap",
+  "goal": "Initialize Discovery runtime framework",
+  "owned_paths": [
+    "README.md",
+    "AGENTS.md",
+    "BOOTLOADER.md",
+    "docs",
+    "instructions",
+    "scripts",
+    "tests",
+    "templates",
+    ".github",
+    "sources",
+    "state"
+  ],
+  "dependencies": [],
+  "status": "complete",
+  "bootstrap_exception": "User-authorized initialization before task-claim refs existed."
+}

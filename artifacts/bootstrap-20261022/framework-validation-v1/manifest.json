@@ -1,0 +1,39 @@
+{
+  "record_type": "run",
+  "schema_version": 1,
+  "session_id": "bootstrap-20261022",
+  "run_id": "framework-validation-v1",
+  "created_at": "2026-10-22T16:13:20.238126+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Repository tooling validation: integrity check and 10 tests passed; includes two-client claim contention and stale release checks.",
+  "command": "python3 scripts/validate.py; python3 -m unittest discover -s tests -v",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "UNCOMMITTED_INITIALIZATION",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "name": "discovery.py",
+      "sha256": "b8be84a219f11d0a36f8d2dfcd8313136f0fd86db8dd422eb68d6aa53d1fdc0d",
+      "size_bytes": 13534
+    },
+    {
+      "name": "validate.py",
+      "sha256": "d1750680968c7af349cb3a8bbc37ee80d29945e019987d8972c9c9025a851f23",
+      "size_bytes": 7048
+    },
+    {
+      "name": "test_discovery.py",
+      "sha256": "78dca6bbbdd3e5250d088a1c7a6124109597038cd8e5c8245fa588833be106f3",
+      "size_bytes": 6114
+    }
+  ],
+  "files": [
+    {
+      "path": "files/ud_physics_bootstrap_validation.json",
+      "sha256": "4b8b0645b3cbdb81c7fd98a658ba3bb4111d9468ed9aa62c4962a51cd1857543",
+      "size_bytes": 1829
+    }
+  ]
+}

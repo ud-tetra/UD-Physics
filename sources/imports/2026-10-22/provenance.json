@@ -1,0 +1,23 @@
+{
+  "record_type": "source_import",
+  "schema_version": 1,
+  "imported_at": "2026-10-22T16:12:53.754669+00:00",
+  "sources": [
+    {
+      "original_name": "UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39(2).md",
+      "path": "UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009,
+      "origin": "User-supplied attachment",
+      "status": "Historical supplied snapshot dated 2026-08-22; latest-mainline status not asserted"
+    },
+    {
+      "original_name": "UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "path": "UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "sha256": "8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4",
+      "size_bytes": 4882,
+      "origin": "User-supplied attachment",
+      "status": "Governance proposal; adoption not inferred"
+    }
+  ]
+}
