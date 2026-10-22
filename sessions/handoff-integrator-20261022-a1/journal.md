@@ -33,3 +33,7 @@ Reviewer found v1 validator accepted malformed run.inputs and duplicate basename
 ## 2026-10-22T16:24:00.530646+00:00
 
 Scope correction: the unintegrated input-provenance patch included templates/run_manifest.json beyond the initial owned-path list. Expanded the coordinator task and same-owner claim with an exact-SHA update before integration. No writer/reviewer paths were touched. This is recorded rather than retroactively treating the initial scope as broader.
+
+## 2026-10-22T16:28:26.455244+00:00
+
+Real lifecycle blocker: writer legacy Store.release verified the held SHA but failed Git deletion because no authenticated Git push credential is configured; the connector exposes no conditional delete. Claim remains held, and v1 deletion was not claimed. Protocol amendment v2 uses child released markers and exact-SHA updates; reacquisition only from a released marker retains audit ancestry. Sixteen local tests passed, including competing reacquisition, stale release rejection, and owner checks. Reviewer will audit before integration and live releases.

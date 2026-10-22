@@ -8,7 +8,7 @@
 
 1. Verify repository identity, default-branch head, and your branch/working-tree state. Fetch or read current files; never discard uncommitted work to boot.
 2. Read AGENTS.md and the canonical Discovery instructions.
-3. Read state/CURRENT.md and the assigned task, including dependencies. Inspect relevant open PRs and live refs/heads/claims/*; a stale local task file does not prove availability.
+3. Read state/CURRENT.md and the assigned task, including dependencies. Inspect relevant open PRs and live refs/heads/claims/* metadata: missing status means held; released markers are available only through exact-SHA acquisition. A stale local task file does not prove availability.
 4. Read docs/CONCURRENCY.md, docs/ARTIFACTS.md, and relevant candidate/source records.
 5. State the runtime's actual access mode: read-only; connector write; or Git/compute. Record the model only if known, otherwise unknown.
 6. Allocate a session ID. Acquire the task claim before substantive edits. Claim acquisition can be performed in a disposable coordination workspace before creating the research branch. If occupied, choose an independent task or remain read-only.
@@ -50,4 +50,4 @@ Read and write repository files through the GitHub connector. Create one branch 
 
 ## Resume and finish
 
-On resume, reread current integrated state, your checkpoint, and the live claim. Inspect source changes before reusing earlier conclusions. At finish, save the finding, failed alternatives, artifacts, tests, and next step; open a PR. Release the claim after integration or explicit abandonment. A chat response without committed records is not a durable handoff.
+On resume, reread current integrated state, your checkpoint, and the live claim. Inspect source changes before reusing earlier conclusions. At finish, save the finding, failed alternatives, artifacts, tests, and next step; open a PR. Release the claim with a version-2 audit marker after integration or explicit abandonment. A chat response without committed records is not a durable handoff.

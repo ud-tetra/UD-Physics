@@ -63,24 +63,59 @@ def remote_claim(root, task):
     return rows[0].split()[0] if rows else None
 
 
-def publish_claim(root, claim):
-    """Compare-and-create one ref; never update an existing claim."""
-    task = identifier(claim["task"])
-    ref = "refs/heads/claims/" + task
+def claim_payload(root, task, sha):
+    ref = "refs/heads/claims/" + identifier(task)
+    git(root, "fetch", "--no-write-fetch-head", "origin", ref)
+    payload = json.loads(git(root, "show", sha + ":claim.json"))
+    if payload.get("task") != task or payload.get("status", "held") not in {"held", "released"}:
+        raise ValueError("Invalid live claim metadata")
+    return payload
+
+
+def claim_commit(root, claim, parent=None):
+    """Create an audit commit without changing the runtime's work branch."""
     blob = git(root, "hash-object", "-w", "--stdin", data=json.dumps(claim, sort_keys=True))
     tree = git(root, "mktree", data=f"100644 blob {blob}\tclaim.json\n")
-    sha = git(root, "-c", "user.name=UD Discovery coordination", "-c",
-              "user.email=discovery@users.noreply.github.com", "commit-tree", tree,
-              data=f"Claim {task} for {claim['session']}\n")
-    git(root, "push", "--porcelain", f"--force-with-lease={ref}:", "origin", f"{sha}:{ref}")
+    parents = ["-p", parent] if parent else []
+    return git(root, "-c", "user.name=UD Discovery coordination", "-c",
+               "user.email=discovery@users.noreply.github.com", "commit-tree", tree, *parents,
+               data=f"Claim {claim['task']} {claim.get('status', 'held')} for {claim['session']}\n")
+
+
+def publish_claim(root, claim):
+    """Acquire an absent ref or compare-and-swap a released marker."""
+    task = identifier(claim["task"])
+    ref = "refs/heads/claims/" + task
+    previous = remote_claim(root, task)
+    if previous and claim_payload(root, task, previous).get("status", "held") != "released":
+        raise RuntimeError("Task claim is held; acquisition rejected.")
+    claim = dict(claim, status="held", protocol_version=2)
+    if previous:
+        claim["previous_claim_sha"] = previous
+    sha = claim_commit(root, claim, previous)
+    git(root, "push", "--porcelain", f"--force-with-lease={ref}:{previous or ''}", "origin", f"{sha}:{ref}")
     return sha
 
 
 def delete_claim(root, task, expected):
+    """Legacy Git-only conditional deletion; normal releases use audit markers."""
     ref = "refs/heads/claims/" + identifier(task)
     if remote_claim(root, task) != expected:
         raise RuntimeError("Live claim differs from this session's recorded claim; release rejected.")
     git(root, "push", "--porcelain", f"--force-with-lease={ref}:{expected}", "origin", f":{ref}")
+
+
+def release_claim(root, task, expected, session):
+    ref = "refs/heads/claims/" + identifier(task)
+    if remote_claim(root, task) != expected:
+        raise RuntimeError("Live claim changed; release rejected.")
+    claim = claim_payload(root, task, expected)
+    if claim.get("session") != session or claim.get("status", "held") != "held":
+        raise RuntimeError("Release requires the current held claim's owning session.")
+    claim.update(status="released", protocol_version=2, released_at=now(), released_from_sha=expected)
+    marker = claim_commit(root, claim, expected)
+    git(root, "push", "--porcelain", f"--force-with-lease={ref}:{expected}", "origin", f"{marker}:{ref}")
+    return marker
 
 
 class Store:
@@ -227,11 +262,12 @@ class Store:
         claim = record["claims"].get(identifier(task))
         if not claim or claim["status"] != "held":
             raise ValueError("No held claim recorded for this session")
-        delete_claim(self.root, task, claim["sha"])
+        marker = release_claim(self.root, task, claim["sha"], session)
         claim["status"] = "released"
+        claim["release_marker_sha"] = marker
         claim["released_at"] = now()
         write_json(self.session_path(session), record)
-        self.note(session, f"Released claim {task}")
+        self.note(session, f"Released claim {task} with audit marker {marker}; coordination ref retained.")
 
 
 def main(argv=None):

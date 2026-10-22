@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from discovery import Store, delete_claim, git, publish_claim, remote_claim
+from discovery import Store, git, publish_claim, release_claim, remote_claim
 from validate import validate
 
 
@@ -164,11 +164,38 @@ class CoordinationTests(unittest.TestCase):
 
     def test_stale_release_cannot_delete_new_owner(self):
         first = publish_claim(self.clients[0], self.claim("first"))
-        delete_claim(self.clients[0], "same-task", first)
+        marker = release_claim(self.clients[0], "same-task", first, "first")
+        self.assertEqual(remote_claim(self.clients[0], "same-task"), marker)
         second = publish_claim(self.clients[1], self.claim("second"))
         with self.assertRaises(RuntimeError):
-            delete_claim(self.clients[0], "same-task", first)
+            release_claim(self.clients[0], "same-task", first, "first")
         self.assertEqual(remote_claim(self.clients[0], "same-task"), second)
+
+    def test_release_requires_owner_and_preserves_audit_history(self):
+        first = publish_claim(self.clients[0], self.claim("owner"))
+        with self.assertRaises(RuntimeError):
+            release_claim(self.clients[0], "same-task", first, "other-session")
+        marker = release_claim(self.clients[0], "same-task", first, "owner")
+        payload = json.loads(git(self.clients[0], "show", marker + ":claim.json"))
+        self.assertEqual(payload["status"], "released")
+        self.assertEqual(payload["released_from_sha"], first)
+        self.assertEqual(git(self.clients[0], "rev-parse", marker + "^"), first)
+
+    def test_reacquisition_of_released_marker_has_one_winner(self):
+        first = publish_claim(self.clients[0], self.claim("first"))
+        marker = release_claim(self.clients[0], "same-task", first, "first")
+        def attempt(index):
+            try:
+                return publish_claim(self.clients[index], self.claim(f"next-{index}"))
+            except RuntimeError:
+                return None
+        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+            results = list(executor.map(attempt, range(2)))
+        self.assertEqual(sum(value is not None for value in results), 1)
+        winner = next(value for value in results if value is not None)
+        self.assertEqual(remote_claim(self.clients[0], "same-task"), winner)
+        owner = results.index(winner)
+        self.assertEqual(git(self.clients[owner], "rev-parse", winner + "^"), marker)
 
     def test_dependency_blocks_claim(self):
         store = Store(self.clients[0])
