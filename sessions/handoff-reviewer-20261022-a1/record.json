@@ -8,12 +8,15 @@
   "created_at": "2026-10-22T16:20:18.889896+00:00",
   "base_revision": "fbf40e3f4daaf3f02af5db35fc1ee82f0da02190",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "handoff-reviewer-20261022": {
       "ref": "refs/heads/claims/handoff-reviewer-20261022",
       "sha": "e48cb946c47488062c6a5f7eef1be3529213991d",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "1133cf28e742ed159344591fc77a82d7ef42c866",
+      "released_at": "2026-10-22T16:32:11.047Z",
+      "release_protocol_version": 2
     }
   },
   "checks": [
@@ -47,7 +50,7 @@
     }
   ],
   "finding": "Writer frozen artifact byte-reproduces with complete FIT/exposure/units/scope provenance. Live competing claim rejected without changing owner. P2 input provenance defects reproduced, then tested fixed in coordinator amendment. No blocking writer or amendment defect.",
-  "next_action": "Coordinator integrate focused review and rerun current checks, then request exact-SHA reviewer claim release; physical mechanism remains OPEN.",
+  "next_action": "Coordinator integrate closure-only PR and finish overall trial summary/integrator lifecycle",
   "checkpoint_at": "2026-10-22T16:26:14.000155+00:00",
   "checkpoint_source": {
     "revision": "ba14e63053d3d3a6b57e3b3389f5c220bf2e9d5c",
@@ -55,5 +58,6 @@
   },
   "review_label": "same-model separate-context LLM review, not independent empirical replication",
   "frozen_writer_commit": "846a6a31c3ca87277afa584e6e4d782ef40e9168",
-  "release_protocol_review": "v2 released markers reviewed; reviewer live claim remains held until integration"
+  "release_protocol_review": "v2 own marker release verified after integrated review; ref retained as audit history",
+  "release_verification": "Live marker1133cf28e742ed159344591fc77a82d7ef42c866; status released; owner session unchanged; parent and released_from_sha e48cb946c47488062c6a5f7eef1be3529213991d; no deletion"
 }

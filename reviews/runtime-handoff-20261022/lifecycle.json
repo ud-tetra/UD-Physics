@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-10-22T16:32:53.375Z",
+  "session": "handoff-reviewer-20261022-a1",
+  "task": "handoff-reviewer-20261022",
+  "review_pr": "https://github.com/ud-tetra/UD-Physics/pull/4",
+  "review_merge_sha": "469e21db7e45fcd02f38d8abf5c6024b75307a9e",
+  "closure_base_revision": "9aaa0f1c1911fe32704785dbc39b1cc9a760412a",
+  "protocol_version": 2,
+  "held_claim_sha": "e48cb946c47488062c6a5f7eef1be3529213991d",
+  "release_marker_sha": "1133cf28e742ed159344591fc77a82d7ef42c866",
+  "release_update": {
+    "expected_sha": "e48cb946c47488062c6a5f7eef1be3529213991d",
+    "force": false,
+    "response": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "success": true
+      },
+      "isError": false
+    }
+  },
+  "claim_before": {
+    "content": "{\n  \"record_type\": \"claim\",\n  \"schema_version\": 1,\n  \"task\": \"handoff-reviewer-20261022\",\n  \"session\": \"handoff-reviewer-20261022-a1\",\n  \"created_at\": \"2026-10-22T16:20:08.804Z\",\n  \"base_revision\": \"fbf40e3f4daaf3f02af5db35fc1ee82f0da02190\",\n  \"owned_paths\": [\n    \"reviews/runtime-handoff-20261022\",\n    \"sessions/handoff-reviewer-20261022-a1\",\n    \"artifacts/handoff-reviewer-20261022-a1\"\n  ]\n}\n",
+    "encoding": "utf-8",
+    "sha": "4f66f3b2882c32fbad18a97707b27c2985e0facd",
+    "display_url": "https://github.com/ud-tetra/UD-Physics/blob/claims/handoff-reviewer-20261022/claim.json",
+    "display_title": "claim.json"
+  },
+  "claim_after": {
+    "content": "{\n  \"record_type\": \"claim\",\n  \"schema_version\": 1,\n  \"task\": \"handoff-reviewer-20261022\",\n  \"session\": \"handoff-reviewer-20261022-a1\",\n  \"created_at\": \"2026-10-22T16:20:08.804Z\",\n  \"base_revision\": \"fbf40e3f4daaf3f02af5db35fc1ee82f0da02190\",\n  \"owned_paths\": [\n    \"reviews/runtime-handoff-20261022\",\n    \"sessions/handoff-reviewer-20261022-a1\",\n    \"artifacts/handoff-reviewer-20261022-a1\"\n  ],\n  \"status\": \"released\",\n  \"protocol_version\": 2,\n  \"released_at\": \"2026-10-22T16:32:11.047Z\",\n  \"released_from_sha\": \"e48cb946c47488062c6a5f7eef1be3529213991d\"\n}\n",
+    "encoding": "utf-8",
+    "sha": "fbcfc0b2dffd6c27aafe7937ff0d77d54e745eb8",
+    "display_url": "https://github.com/ud-tetra/UD-Physics/blob/claims/handoff-reviewer-20261022/claim.json",
+    "display_title": "claim.json"
+  },
+  "verification": {
+    "live_ref_sha": "1133cf28e742ed159344591fc77a82d7ef42c866",
+    "live_status": "released",
+    "live_session": "handoff-reviewer-20261022-a1",
+    "parent_sha": "e48cb946c47488062c6a5f7eef1be3529213991d",
+    "released_from_sha": "e48cb946c47488062c6a5f7eef1be3529213991d",
+    "owned_paths_preserved": true
+  },
+  "physical_deletion": false,
+  "result": "PASS: own reviewed marker release verified after review PR integration; original audit captures unchanged",
+  "remaining": "Coordinator integrates closure-only PR and completes overall trial summary/integrator lifecycle"
+}
