@@ -36,7 +36,7 @@ The **separate initial housing energy** gives substantially better startup bound
 A_e(u)=(X_i(u)+X_j(u))/2.
 ```
 
-Each primary point and midpoint therefore obeys `|X_a(u)-X_a(0)|<(2/5)u` and `|A_e(u)-A_e(0)|<(2/5)u`. The positive primary spoke/edge potential also bounds each spoke strain by `<2/5` and each exterior-edge strain by `<3/5`; none of the corresponding 42 member lengths can vanish on any existence interval.
+Each primary point and midpoint therefore obeys `|X_a(u)-X_a(0)|<=(2/5)u` and `|A_e(u)-A_e(0)|<=(2/5)u` (strict for positive u). The positive primary spoke/edge potential also bounds each spoke strain by `<2/5` and each exterior-edge strain by `<3/5`; none of the corresponding 42 member lengths can vanish on any existence interval.
 
 ## 2. Duhamel bound on all housing displacements
 
@@ -67,7 +67,7 @@ H_e(u)-A0 = cos(10u) D0 + sin(10u)/10 H'_e(0)
 |F_e(s)|<=94/45.
 ```
 
-Apply `|cos|<=1`, `|sin x|<=min(|x|,1)`, and `|A_e(s)-A0|<(2/5)s`. For `0<=u<=1/10` this gives
+Apply `|cos|<=1`, `|sin x|<=min(|x|,1)`, and `|A_e(s)-A0|<=(2/5)s` (equality at s=0 only). For `0<=u<=1/10` this gives
 
 ```
 |H_e(u)-A0| < 1/180 + (3/50)u + (20/3)u³+(47/45)u².
@@ -81,7 +81,7 @@ For `u>=1/10`, integrate the two explicit polynomials obtained by splitting the 
        + (47/225)(u-1/20).
 ```
 
-Every reference strut has length at least `1/2` (endpoint anchors exactly `1/2`; the opposite face vertices at `sqrt(3)/2`). Using also `|X_a(u)-X_a(0)|<(2/5)u`, the triangle inequality proves for every one of 120 struts:
+Every reference strut has length at least `1/2` (endpoint anchors exactly `1/2`; the opposite face vertices at `sqrt(3)/2`). Using also `|X_a(u)-X_a(0)|<=(2/5)u`, the triangle inequality proves for every one of 120 struts:
 
 ```
 |H_e(u)-X_a(u)| > 1/2 - [1/180+(23/50)u+(47/45)u²+(20/3)u³],
@@ -93,20 +93,22 @@ Both right-hand sides decrease on the indicated nonnegative intervals and agree 
 
 ## 3. Every cell preserves oriented volume through T=2/5
 
-At reference the 3x3 matrix `A_ref=[X_a-C,X_b-C,X_c-C]` for each oriented tetrahedral cell has `sigma_min(A_ref)=1/sqrt(2)>7/10`. Every primary point moves by `<(2/5)u`, so each of the three relative spoke columns moves by `<(4/5)u`. Consequently
+At reference the 3x3 matrix `A_ref=[X_a-C,X_b-C,X_c-C]` for each oriented tetrahedral cell has `sigma_min(A_ref)=1/sqrt(2)>7/10`. Every primary point moves by `<=(2/5)u`, so each of the three relative spoke columns moves by `<=(4/5)u`. Consequently, for all `u>=0`,
 
 ```
-||A(u)-A_ref||_F < (4sqrt(3)/5)u < (7/5)u,
-||A_ref^{-1}(A(u)-A_ref)||_2 < 2u <= 4/5 <1.
+||A(u)-A_ref||_F <= (4sqrt(3)/5)u <= (7/5)u,
+||A_ref^{-1}(A(u)-A_ref)||_2 <= 2u <= 4/5 <1.
 ```
 
-The matrix remains nonsingular, with determinant sign continuous from the initial positive orientation. All singular values of `I+A_ref^{-1}(A-A_ref)` lie between `1-2u` and `1+2u`. Hence each normalized oriented volume obeys
+The first two inequalities are strict for `u>0`, while equality at the zero displacement is allowed at `u=0`.
+
+The matrix remains nonsingular, with determinant sign continuous from the initial positive orientation. All singular values of `I+A_ref^{-1}(A-A_ref)` lie between `1-2u` and `1+2u`. Hence each normalized oriented volume obeys the **non-strict** time-dependent enclosure
 
 ```
-(1-2u)^3 < V_k(u)/V_k,ref < (1+2u)^3
+(1-2u)^3 <= V_k(u)/V_k,ref <= (1+2u)^3
 ```
 
-for every `0<=u<=2/5`. In particular, `1/125 < V_k(u)/V_k,ref <729/125` on the whole interval. These are deliberately broad shape/domain bounds, **not** 80% breathing or 5% leakage guarantees.
+for every `0<=u<=2/5`. The bounds are strict for `u>0` under the stated strict velocity majorants, but at `u=0` both sides equal exactly one. In particular, the fixed constants give **strict** bounds `1/125 < V_k(u)/V_k,ref <729/125` on the whole interval including its endpoints. These are deliberately broad shape/domain bounds, **not** 80% breathing or 5% leakage guarantees.
 
 ## 4. Continuation, failure preservation, and interpretation
 
