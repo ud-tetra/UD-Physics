@@ -25,3 +25,7 @@ Next: Derive a boundary/readout map and effective generator, then test whether p
 Captured artifacts/four-cell-20261022-a1/exact-001 (EXACT): Central subdivision, signed duality, recursion and full spectral certificates under H=I
 
 Validation: initial record check rejected task status completed; corrected to allowed complete. Rerun passes. All16 repository tooling tests pass. These checks certify record integrity/tooling, not physical truth.
+
+## Integrated checkpoint and ownership closure
+
+PR #11 merged at d768bee04c549568a4c5c5eb9bb159044d53d31a. Both remote Discovery integrity checks succeeded. Exact held claim released by owner through protocol-v2 child marker 0a6795884d808b18b395499ed178f13abeaa14d6; live ref and released payload reread and verified. This follow-up changes only this session record and journal. Next action remains the boundary/readout effective generator test.
