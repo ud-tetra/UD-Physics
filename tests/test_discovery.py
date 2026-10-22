@@ -81,6 +81,55 @@ class CaptureTests(unittest.TestCase):
         path.write_text(json.dumps(obj))
         self.assertTrue(any("Referenced session" in error for error in validate(self.root)[1]))
 
+    def test_input_metadata_and_legacy_ambiguity_rejected(self):
+        folder = self.capture()
+        path = folder / "manifest.json"
+        manifest = json.loads(path.read_text())
+        manifest["schema_version"] = 1
+        manifest["inputs"] = "not an array"
+        path.write_text(json.dumps(manifest))
+        self.assertTrue(any("inputs must be an array" in error for error in validate(self.root)[1]))
+        item = {"name": "same.json", "sha256": "0" * 64, "size_bytes": 0}
+        manifest["inputs"] = [item, dict(item)]
+        path.write_text(json.dumps(manifest))
+        self.assertTrue(any("Ambiguous legacy input names" in error for error in validate(self.root)[1]))
+
+    def test_same_named_inputs_are_preserved_and_verified(self):
+        sources = []
+        for directory, value in (("a", "first"), ("b", "second")):
+            path = self.root / directory / "input.json"
+            path.parent.mkdir()
+            path.write_text(value)
+            sources.append(path)
+        folder = self.store.capture(self.session, "input-test", "OPEN", "test", "test", sources, [self.payload])
+        manifest = json.loads((folder / "manifest.json").read_text())
+        self.assertEqual(manifest["schema_version"], 2)
+        self.assertEqual([x["source_path"] for x in manifest["inputs"]], ["a/input.json", "b/input.json"])
+        self.assertNotEqual(manifest["inputs"][0]["path"], manifest["inputs"][1]["path"])
+        self.assertEqual(validate(self.root)[1], [])
+        (folder / manifest["inputs"][0]["path"]).write_text("tampered")
+        self.assertTrue(any("Captured input digest/size mismatch" in error for error in validate(self.root)[1]))
+
+    def test_captured_input_cannot_escape_and_extra_input_is_rejected(self):
+        folder = self.store.capture(self.session, "input-test", "OPEN", "test", "test", [self.payload], [self.payload])
+        manifest_path = folder / "manifest.json"
+        manifest = json.loads(manifest_path.read_text())
+        original = manifest["inputs"][0]["path"]
+        manifest["inputs"][0]["path"] = "inputs/../../../../result.json"
+        manifest_path.write_text(json.dumps(manifest))
+        self.assertTrue(any("escapes" in error for error in validate(self.root)[1]))
+        manifest["inputs"][0]["path"] = original
+        manifest_path.write_text(json.dumps(manifest))
+        (folder / "inputs" / "unrecorded.txt").write_text("extra")
+        self.assertTrue(any("Unmanifested or missing captured input" in error for error in validate(self.root)[1]))
+
+    def test_captured_markdown_is_opaque_payload(self):
+        source = self.root / "source.md"
+        source.write_text("[reference](outside-original-context.md)")
+        self.store.capture(self.session, "markdown", "OPEN", "test", "test", [source], [source])
+        source.unlink()
+        self.assertEqual(validate(self.root)[1], [])
+
 
 class CoordinationTests(unittest.TestCase):
     def setUp(self):

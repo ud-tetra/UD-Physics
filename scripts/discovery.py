@@ -161,23 +161,38 @@ class Store:
             names.add(path.name)
             originals.append(path)
         input_records = []
-        for path in inputs:
+        input_sources = []
+        for index, path in enumerate(inputs, start=1):
             path = Path(path)
             if path.is_symlink() or not path.is_file():
                 raise ValueError("Inputs must be explicit regular files")
-            input_records.append({"name": path.name, "sha256": digest(path), "size_bytes": path.stat().st_size})
+            if path.stat().st_size > 10 * 1024 * 1024:
+                raise ValueError("Input exceeds 10 MiB; use a separately configured durable destination")
+            resolved = path.resolve()
+            inside = resolved.is_relative_to(self.root)
+            input_records.append({"input_id": f"input-{index:03d}", "name": path.name,
+                                  "path": f"inputs/{index:03d}-{path.name}",
+                                  "source_location": "repository" if inside else "external",
+                                  "source_path": resolved.relative_to(self.root).as_posix() if inside else None})
+            input_sources.append(path)
         state = source_state(self.root)
         folder = self.root / "artifacts" / session / run
         folder.parent.mkdir(parents=True, exist_ok=True)
         folder.mkdir()  # exclusive: a finalized run cannot be overwritten
         try:
             (folder / "files").mkdir()
+            if input_sources:
+                (folder / "inputs").mkdir()
+            for path, metadata in zip(input_sources, input_records):
+                destination = folder / metadata["path"]
+                shutil.copyfile(path, destination)
+                metadata.update(sha256=digest(destination), size_bytes=destination.stat().st_size)
             files = []
             for path in originals:
                 destination = folder / "files" / path.name
                 shutil.copyfile(path, destination)
                 files.append({"path": "files/" + path.name, "sha256": digest(destination), "size_bytes": destination.stat().st_size})
-            manifest = {"record_type": "run", "schema_version": 1, "session_id": session,
+            manifest = {"record_type": "run", "schema_version": 2, "session_id": session,
                         "run_id": run, "created_at": now(), "evidence": evidence,
                         "summary": summary, "command": command, "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
                         "source": state, "inputs": input_records, "files": files}
