@@ -1,6 +1,6 @@
 # Current integrated state
 
-Updated: 2026-10-22. Milestone: exact 20-cell icosahedral cone audit v1.0.
+Updated: 2026-10-22. Milestone: local icosahedral coupling and passive volume candidate v1.0.
 
 - Canonical Discovery instructions are v1.2; bootloader v1.1 loads the mathematical protocol before consequential work.
 - [UD mathematical analysis protocol](../docs/UD_MATHEMATICAL_METHOD_v1.0.md) and [calculation receipt template](../templates/mathematical_receipt.json) cover exact arithmetic, factorization, modular clocks, typed provenance and applicable UD structural methods.
@@ -27,7 +27,9 @@ Updated: 2026-10-22. Milestone: exact 20-cell icosahedral cone audit v1.0.
 - Open damping track: construct or obstruct a passive geometric realization, including added modes and a force-to-volume response.
 - [Icosahedral centre-cone audit](../experiments/icosahedral-cone/README.md): exact f=(13,42,50,20), verified metric formulas and corrected outer-edge cell incidence2. Cell adjacency is the degree3 dodecahedral graph; exact graph and full/relative unit-chain-metric spectra certified.
 - Full/boundary/relative chain dimensions125/62/63. Under H=I incidence evolution, the centre seed has only static/sqrt13 vertex/spoke motion; a separate frequency1 oriented-cell/exterior-surface oscillator is invariant and orthogonal. No heart-to-cell transfer or geometric breathing follows automatically.
-- Next icosahedral discriminant: construct or obstruct a local, symmetry-compatible, energy-consistent coupling between these sectors, with an explicit volume readout.
+- [Icosahedral coupling](../experiments/icosahedral-coupling/README.md): exact inversion-even centre to odd oriented-cell/surface obstruction, plus general pure differential/adjoint obstruction. Added simplex-local W transfers declared chain energy with proper rotations and an orientation parameter;original boundaries/obstructions preserved.
+- Separate passive scalar-strain model retains all120 spatial symmetries,includes ordinary spatial edge springs and central reaction forces,and gives exact geometric volumes. Illustrative g=1,k=2/5 has collective squared frequencies8±sqrt37;full nonlinear simulation matches the analytic uniform manifold. Physical/native/material selection remains OPEN.
+- Next coupling discriminant: implement the passive preferred-radius element and relax ideal radial guides,test angular/shear stability and volume coherence under imperfections.
 - Separate open question: whether the parent/relative chain duality survives a useful gluing/readout law.
 
 Update this file at integrated milestones under an integration claim. Live claim metadata, not this summary, determines current ownership.

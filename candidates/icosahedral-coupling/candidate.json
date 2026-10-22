@@ -1,0 +1,69 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-coupling",
+  "session_id": "icosahedral-coupling-20261022-a1",
+  "question": "Which local central couplings transfer into the collective sector while respecting a declared symmetry, positive energy and volume readout?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "assumptions": [
+    "Unchanged oriented chain carrier, ascending simplex orientations and H=I for symmetry obstruction and added W.",
+    "Locality for W means centre/cell incidence within a closed tetrahedron; nearest-grade locality is not claimed.",
+    "Nonzero fixed chain coupling selects orientation and preserves proper rotations only.",
+    "Separate mechanical state alpha,q_i and velocities with positive unit generalized inertias/pins, g>0 and ordinary edge-extension springs k>=0.",
+    "Ideal radial guides, a passive dynamical scalar preferred-radius element and reference regular icosahedron assumed."
+  ],
+  "physical_mapping": "Two distinct models: chain amplitudes/declared norm energy versus radial strains/kinetic-plus-elastic energy and determinant volumes. No equality between their energies/states. Physical scales, material, native variable mapping and unconstrained mechanics OPEN.",
+  "target_exposure": "Prior heart/cell obstruction, collective Z/S sector and desired volume response exposed. No empirical data.",
+  "fitted_choices": [
+    {
+      "type": "illustrative design, not empirical fit",
+      "choice": "chain eta=0,1/4,1/2,1; display eta1/2",
+      "reason": "show exact transfer family and a rational example"
+    },
+    {
+      "type": "simplifying design, not independent numerical prediction",
+      "choice": "mechanical g=1,k=2/5,unit pins/inertias,A0=1/10",
+      "reason": "k=2/5 makes uniform ordinary-edge increment5k/2=1; prior small-strain preparation retained"
+    }
+  ],
+  "sources": [
+    {
+      "path": "experiments/icosahedral-cone/analyze.py",
+      "revision": "754d615546612bbae574921120fabc414c0c4089",
+      "section": "exact coordinates, oriented boundaries and Z/S",
+      "status": "verified Discovery constructor"
+    },
+    {
+      "path": "experiments/icosahedral-cone/README.md",
+      "revision": "754d615546612bbae574921120fabc414c0c4089",
+      "section": "sections6-7",
+      "status": "unchanged-generator obstruction and collective sector"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "revision": "754d615546612bbae574921120fabc414c0c4089",
+      "section": "Q139,Q144-Q145,Q151-Q152",
+      "status": "historical open clock/constitutive mapping; no coefficient import"
+    }
+  ],
+  "baseline": "Original A: zero Z/S from e0. Mechanical g=0: stationary initially unperturbed shell.",
+  "result": "EXACT/CONDITIONAL: inversion-even centre cannot excite odd oriented Z/S under inversion-equivariant flow; pure graded differential/adjoint flow also obstructs vertex-to-cell transfer. Added simplex-local skew coupling with a chosen orientation transfers model energy. A separate all120-symmetry passive scalar-strain model produces geometric breathing with explicit conserved energy and cell-volume readout; illustrative squared frequencies8\u00b1sqrt37. NUMERICAL: full nonlinear/analytic state agreement4.19e-11; relative energy error1.68e-10.",
+  "next_discriminant": "Derive a passive implementation of the scalar preferred-radius coupling and relax radial guides, testing angular/shear stability and volume coherence under small imperfections.",
+  "mathematical_receipts": [
+    "candidates/icosahedral-coupling/mathematical_receipt.json"
+  ],
+  "artifact": "artifacts/icosahedral-coupling-20261022-a1/coupling-001/manifest.json",
+  "limitations": [
+    "Native chain reflection obstruction remains valid for its state transformation law; mechanical scalar volumes use a different carrier.",
+    "Positive finite-energy passive motion, not autonomous sustained power.",
+    "Radial guides remove angular/shear degrees; microscopic source, apparatus and physical calibration unresolved.",
+    "Constructor verification is not non-constructor review or physical experimentation."
+  ]
+}
