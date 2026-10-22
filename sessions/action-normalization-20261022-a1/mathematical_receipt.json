@@ -1,0 +1,322 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "action-normalization-audit-v1",
+  "session_id": "action-normalization-20261022-a1",
+  "candidate_id": "action-normalization-audit",
+  "question": "Recover O09\u2013O15 and distinguish action dimensions, lifted Hodge action and a physical phase coefficient.",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "carrier",
+      "symbol": "C_*",
+      "object_type": "graded chain space",
+      "definition": "C_*(Delta3;Q), f=(4,6,4,1)",
+      "domain": "oriented simplices",
+      "codomain": "Q^15",
+      "coefficient_domain": "Q matrices, real dynamical extension",
+      "units": "dimensionless native coordinates",
+      "basis_orientation": "Ascending oriented simplices;A=d-d^T fixes positive Hodge phase",
+      "metric_measure": "H=I",
+      "origin": "imported",
+      "exact_expression": "dim15;active rank14;harmonic rank1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "Single filled tetrahedron,unit chain metric; no physical calibration"
+    },
+    {
+      "object_id": "generator",
+      "symbol": "A",
+      "object_type": "skew generator",
+      "definition": "d-d^T",
+      "domain": "Q^15",
+      "codomain": "Q^15",
+      "coefficient_domain": "Q",
+      "units": "native s^-1",
+      "basis_orientation": "Ascending oriented simplices;A=d-d^T fixes positive Hodge phase",
+      "metric_measure": "H=I",
+      "origin": "derived",
+      "exact_expression": "A^3=-4A,P=-A^2/4,J=A/2,Omega=2P",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "Single filled tetrahedron,unit chain metric; no physical calibration"
+    },
+    {
+      "object_id": "loop-action",
+      "symbol": "I",
+      "object_type": "lifted path functional",
+      "definition": "one-form integral theta=1/2<Jx,dx> on active Hodge orbit",
+      "domain": "lifted paths in rank14 active sector",
+      "codomain": "R",
+      "coefficient_domain": "Q coefficients, symbolic pi",
+      "units": "dimensionless native action",
+      "basis_orientation": "Ascending oriented simplices;A=d-d^T fixes positive Hodge phase",
+      "metric_measure": "support a=||x||^2",
+      "origin": "imported",
+      "exact_expression": "I=a*Delta_phi_lift/2=pi*n*a",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "Single filled tetrahedron,unit chain metric; no physical calibration"
+    },
+    {
+      "object_id": "unit-action",
+      "symbol": "A0",
+      "object_type": "native action unit",
+      "definition": "B0*a0^2/tau0",
+      "domain": "positive native unit anchors",
+      "codomain": "action unit",
+      "coefficient_domain": "symbolic positive reals",
+      "units": "M L^2 T^-1",
+      "basis_orientation": "Ascending oriented simplices;A=d-d^T fixes positive Hodge phase",
+      "metric_measure": "unit declaration, not measured calibration",
+      "origin": "imported",
+      "exact_expression": "A0=B0*a0^2/tau0;[B0]=M",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "Single filled tetrahedron,unit chain metric; no physical calibration"
+    },
+    {
+      "object_id": "eta",
+      "symbol": "eta_A",
+      "object_type": "directional unit ratio",
+      "definition": "A0/hbar after common action-unit map",
+      "domain": "positive action scales",
+      "codomain": "R_positive",
+      "coefficient_domain": "symbolic",
+      "units": "dimensionless",
+      "basis_orientation": "Ascending oriented simplices;A=d-d^T fixes positive Hodge phase",
+      "metric_measure": "physical unit bridge explicit",
+      "origin": "imported",
+      "exact_expression": "eta_A=A0/hbar;chi=eta_A*I only under phase-map assumption",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "Single filled tetrahedron,unit chain metric; no physical calibration"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "version_or_commit": "ud-tetra/UD@957d443e25008632ab9d9328c162343b6a651ee7",
+      "section_or_object_id": "G06,O09\u2013O15,Q282\u2013Q288,O54\u2013O55;723rows;SHA2568845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "source_status": "recovered archive labelledv0.85;inherited scientific_revisionv0.43 preserved"
+    },
+    {
+      "source_id": "S2",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "version_or_commit": "same pinned UD commit",
+      "section_or_object_id": "single filled-K4 Hodge action-phase specific scale theorem v0.1",
+      "source_status": "archived native theorem;physical bridge explicitly OPEN"
+    },
+    {
+      "source_id": "S3",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/O13_CORRECTION_OVERLAY.json",
+      "version_or_commit": "same pinned UD commit",
+      "section_or_object_id": "O13 append-only proposal",
+      "source_status": "constructor-checked,non-constructor review pending"
+    },
+    {
+      "source_id": "S4",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/verify_action_original.py",
+      "version_or_commit": "same pinned UD commit",
+      "section_or_object_id": "18equations,17source rows,monomial anchor identifiability",
+      "source_status": "reviewed source verifier reexecuted;not independent replication"
+    },
+    {
+      "source_id": "S5",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "UD-Physics@ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "G06",
+      "source_status": "supplied older historical snapshot;later entries absent"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Single filled tetrahedron,unit chain metric,Hodge active generator A=d-d^T;source one-form normalization theta=1/2<Jx,dx>."
+    },
+    {
+      "id": "A2",
+      "statement": "Native a0 length,tau0 time,B0 mass-like;SI anchor and physical time/energy map not supplied."
+    },
+    {
+      "id": "A3",
+      "statement": "Physical phase chi=S_native/hbar and same-carrier chi=Hodge phase are separate bridge hypotheses;not derived from trace or native dynamics."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/chain",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "oriented f=(4,6,4,1),d^2=0,rank14+1"
+    },
+    {
+      "technique": "rational symbolic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "matrix identities,unit exponents,negative controls,exact1/2 factors"
+    },
+    {
+      "technique": "spectral/metric",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "A,J,Omega under H=I;state support norm and active sector"
+    },
+    {
+      "technique": "phase/winding arithmetic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "phi mod2pi versus integer lifted winding;endpoint trace cannot recover accumulated action"
+    },
+    {
+      "technique": "units/identifiability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "mass-like B0,source O13 error,monomial row-span condition and scaling ambiguity"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No divisibility or prime-structure question;factor2 originates from angular frequency and one-form normalization"
+    },
+    {
+      "technique": "empirical fitting",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No data fit or empirical score;known candidate2 was exposed"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4+6+4+1=15;active14+harmonic1;18equations from17source rows;1+26+325+2600=2952anchor banks",
+    "reduced_expression": "I/(a*Delta_phi)=1/2;alpha_A=A0/2;unit-ray chi/phi=eta_A/2",
+    "factor_origins": [
+      "frequency2 of unit-metric filled-tetrahedron active sector",
+      "source one-form normalization1/2",
+      "integer winding in phi_lift=2pi*n"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "phase residue modulo2pi;no finite register modulus selected"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native s;phase phi=2s with integer winding",
+    "modulus": "phase modulo2pi",
+    "residue_convention": "phi=2pi*n maps to0",
+    "update_rule": "x_prime=Ax",
+    "initial_phase": "chosen edge basis active state;three rational amplitudes",
+    "coupling": "single-cell Hodge generator",
+    "period_claim": "s=pi for full active-state recurrence;not arbitrary glued carrier",
+    "physical_unit_map": "t=tau0*s is declared native dimensionalization;physical tau0 OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "Q^15 chain carrier extended over R;active rank14",
+    "generator_or_update": "A=d-d^T=2J on active sector",
+    "initial_boundary_conditions": "filled tetrahedron;three rational active preparations;windings-2..2",
+    "conservation_and_sources": "skew flow preserves Euclidean support;no sources/dissipation introduced",
+    "projection_and_kernel": "P active;P0 constant vertex harmonic;endpoint U/trace forget winding",
+    "physical_mapping": "O14 ratio direction verified;QPB1 phase/action identification postulated and quarantined"
+  },
+  "target_exposure": {
+    "status": "SOURCE_AUDIT_AFTER_TARGET_EXPOSURE",
+    "known_targets": [
+      "user-supplied O14 convention",
+      "already archived Q288 eta_A=2 candidate"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "No fitted parameter;source unit metric/one-form explicitly imported",
+      "Physical phase relation chi=S/hbar considered conditionally"
+    ],
+    "search_domain_and_budget": "six exact upstream source files;723inventory IDs counted;17action rows18equations;2952rational anchor banks;15support/winding cases",
+    "selection_criterion": "source completeness,dimensional consistency and explicit missing bridge",
+    "baseline": "attached historical v0.39 and source current action subsystem"
+  },
+  "calculation_steps": [
+    "Verify six source Git blob hashes and SHA256,ledger inventory and claim bins.",
+    "Reexecute reviewed original dimensional/identifiability verifier;compare output contract bytes.",
+    "Reconstruct exact15x15 tetrahedral chain generator,projectors and unit active plane.",
+    "Check action/phase and energy/frequency half factors;construct endpoint-trace winding counterexample.",
+    "Separate loop one-form action from theta-minus-H functional;state distinct conditional phase coefficients and scaling ambiguity."
+  ],
+  "result": {
+    "exact_expression": "A0=B0*a0^2/tau0;eta=A0/hbar;I=a*phi_lift/2;TrU=1+14cos(phi);chi=eta*I=(eta*a/2)*phi_lift only under phase-map hypothesis",
+    "approximation": null,
+    "units": "native action M L^2 T^-1;phase/support dimensionless",
+    "precision_and_error": "Exact Fraction matrices and integer counts;no floating physical calibration",
+    "scope": "Single filled tetrahedron and17-row action subsystem;O13 correction proposal verified,not adopted into mainline;primitive quantum-holonomy reconstruction and global723object typing not performed",
+    "physical_interpretation": "QPB1 remains a candidate,unscored;promotion0"
+  },
+  "verification": [
+    {
+      "method": "source byte hashes and exact matrices",
+      "command_or_proof_path": "python3 experiments/action-normalization-audit/audit.py --out OUTPUT",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726 plus pinned UD source957d443",
+      "actual_result": "PASS six upstream source bytes,18equations17rows,2952anchor banks,15wind cases;contract byte-identical",
+      "review_relationship": "constructor;original verifier reexecution not independent review"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Literal O13 chain equates action withdimensionless inverse ratio;rejected.",
+    "Energy-typed B0,inhomogeneous addition,dimensional sin argument rejected by original verifier.",
+    "Equal endpoint U and trace atwindings0/1 have different lifted actions.",
+    "Mass scaling preserves native dimensionless data and changes physical action ratio atfixed external hbar.",
+    "Loop one-form action is nonzero while theta-minus-H integral vanishes on chosen unforced orbit;they cannot be silently identified."
+  ],
+  "limitations": [
+    "Native one-form convention is imported,not primitive quantum normalization derived.",
+    "Physical same-carrier phase/action/time/energy map and independent A0 anchor OPEN.",
+    "Q288 value2 was exposed;no new blind prediction or empirical score.",
+    "17source rows typed,not all723;global EXIT03 remains outside scope.",
+    "Constructor checks only;non-constructor review pending;no mainline export."
+  ],
+  "changed_dependencies": [
+    "Later source availability resolves prior uncertainty about O14 registration and B0 mass-like type.",
+    "Existing O13 proposal is preserved as a proposal;source bytes unchanged."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/action-normalization-20261022-a1/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Specify primitive quantum-holonomy carrier/operator and path lift,typed action-to-phase map,and target-independent same-carrier action anchors;then test xi_act meaning and QPB1."
+}

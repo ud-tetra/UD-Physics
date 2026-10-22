@@ -1,0 +1,225 @@
+{
+  "status": "EXACT_SCOPED_SOURCE_AND_ACTION_AUDIT_PASS",
+  "source_ledger": {
+    "archive_label": "v0.85",
+    "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+    "rows": 723,
+    "unique_ids": 723,
+    "inherited_scientific_revision_field": "v0.43",
+    "source_baseline_field": "UD_COEFFICIENT_PROVENANCE_LEDGER_v0.84_OPTICAL_HASSE_TREE_VERIFICATION",
+    "warning": "Preserve inherited metadata; archive label does not mean every field was rewritten."
+  },
+  "source_bytes_verified": 6,
+  "source_verifier_reproduction": {
+    "typed_equalities": 18,
+    "source_rows_bound": 17,
+    "rational_anchor_banks": 2952,
+    "unit_contract_bytes_equal_original": true,
+    "review_relationship": "same constructor reexecution, not independent review"
+  },
+  "O13": {
+    "literal_source_chain": "DIMENSIONALLY_INVALID",
+    "existing_overlay": "CONSTRUCTOR_CHECKED_PROPOSAL; NON_CONSTRUCTOR_REVIEW_PENDING",
+    "correct_equalities": [
+      "xi_hbar[native/phys] = A0/hbar",
+      "xi_hbar[native/phys] = 1/xi_hbar[phys/native]",
+      "A0 = xi_hbar[native/phys]*hbar"
+    ],
+    "mainline_registry_edited": false
+  },
+  "exact_carrier": {
+    "f_vector": [
+      4,
+      6,
+      4,
+      1
+    ],
+    "chain_dimension": 15,
+    "boundary_squared_zero": true,
+    "active_rank": 14,
+    "harmonic_rank": 1,
+    "identities": [
+      "A^T=-A",
+      "A^3=-4A",
+      "P=-A^2/4",
+      "P^2=P",
+      "J=A/2",
+      "J^2=-P",
+      "Omega=2P"
+    ]
+  },
+  "action_normalization": {
+    "support": "a=||x||^2>0",
+    "chosen_one_form": "theta=1/2<Jx,dx>",
+    "lifted_action": "I=a*Delta_phi_lift/2",
+    "specific_dimensional_scale": "S_native/(a*Delta_phi_lift)=A0/2",
+    "energy_frequency_check": "E_native/(a*omega)=A0/2 if E_native=A0*a/tau0 and omega=2/tau0",
+    "scope": "Single filled tetrahedron,unit chain metric,Hodge loop action convention; not generic glued carrier or complete master dynamical action"
+  },
+  "winding_cases": [
+    {
+      "support": "1/4",
+      "winding": -2,
+      "phase_over_pi": -4,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "-1/2",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "1/4",
+      "winding": -1,
+      "phase_over_pi": -2,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "-1/4",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "1/4",
+      "winding": 0,
+      "phase_over_pi": 0,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "0",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "1/4",
+      "winding": 1,
+      "phase_over_pi": 2,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "1/4",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "1/4",
+      "winding": 2,
+      "phase_over_pi": 4,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "1/2",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "1",
+      "winding": -2,
+      "phase_over_pi": -4,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "-2",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "1",
+      "winding": -1,
+      "phase_over_pi": -2,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "-1",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "1",
+      "winding": 0,
+      "phase_over_pi": 0,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "0",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "1",
+      "winding": 1,
+      "phase_over_pi": 2,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "1",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "1",
+      "winding": 2,
+      "phase_over_pi": 4,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "2",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "9/4",
+      "winding": -2,
+      "phase_over_pi": -4,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "-9/2",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "9/4",
+      "winding": -1,
+      "phase_over_pi": -2,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "-9/4",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "9/4",
+      "winding": 0,
+      "phase_over_pi": 0,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "0",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "9/4",
+      "winding": 1,
+      "phase_over_pi": 2,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "9/4",
+      "endpoint_operator": "I15"
+    },
+    {
+      "support": "9/4",
+      "winding": 2,
+      "phase_over_pi": 4,
+      "phase_mod_2pi": "0",
+      "action_over_pi": "9/2",
+      "endpoint_operator": "I15"
+    }
+  ],
+  "endpoint_trace_no_go": {
+    "trace_formula": "Tr U(phi)=1+14 cos(phi)",
+    "witness": "phi=0 and2pi give identical U=I15 and trace15 but I=0 andpi*a",
+    "conclusion": "No endpoint-operator or endpoint-trace-only function recovers this lifted loop action for unrestricted windings."
+  },
+  "distinct_action_check": {
+    "loop_one_form_rate": "theta(X_prime)=a",
+    "spectral_Hamiltonian": "H=a",
+    "first_order_functional_rate": "theta(X_prime)-H=0 on this unforced orbit",
+    "conclusion": "The nonzero integrated loop one-form and the first-order theta-minus-H functional are different typed actions. Specify which action enters a proposed physical phase map."
+  },
+  "phase_map_conditions": {
+    "assumption": "physical phase chi=S_native/hbar and same-carrier phase map are an additional bridge",
+    "coefficient_of_I": "chi=eta_A*I",
+    "coefficient_of_Hodge_phi": "chi=(eta_A*a/2)*phi_lift; unit ray gives eta_A/2",
+    "unit_ray_phase_identification": "chi=phi_lift implies eta_A=2 under this postulate, matching quarantined Q287/Q288",
+    "xi_act_identity": "xi_act=eta_A only if xi_act multiplies I under the independently justified physical phase map; coefficient of raw phi is different"
+  },
+  "scale_ambiguity_examples": [
+    {
+      "B0_scale": "1/3",
+      "A0_scale": "1/3",
+      "dimensionless_A_J_I": "unchanged",
+      "eta_A_scale_at_fixed_external_hbar": "1/3"
+    },
+    {
+      "B0_scale": "1",
+      "A0_scale": "1",
+      "dimensionless_A_J_I": "unchanged",
+      "eta_A_scale_at_fixed_external_hbar": "1"
+    },
+    {
+      "B0_scale": "5/2",
+      "A0_scale": "5/2",
+      "dimensionless_A_J_I": "unchanged",
+      "eta_A_scale_at_fixed_external_hbar": "5/2"
+    }
+  ],
+  "physical_status": "No native-to-SI anchor,primitive quantum-holonomy reconstruction or empirical score; QPB1 candidate remains quarantined; promotion0",
+  "limitations": [
+    "18 typed equalities from17 source rows; not global typing of723objects",
+    "Hodge trace counterexample is not reconstruction of an unspecified primitive quantum-holonomy operator",
+    "Action one-form and lift convention explicitly imported/declared; no physical action or phase correspondence derived"
+  ]
+}
