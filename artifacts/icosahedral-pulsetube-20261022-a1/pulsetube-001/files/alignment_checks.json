@@ -1,0 +1,21 @@
+{
+  "status": "CONSTRUCTOR_ALIGNMENT_CHECKS_PASS",
+  "finite_difference_errors": [
+    {
+      "step": 0.001,
+      "derivative_error": 9.288016447078993e-09
+    },
+    {
+      "step": 0.0001,
+      "derivative_error": 9.036286455662219e-11
+    },
+    {
+      "step": 1e-05,
+      "derivative_error": 2.2943858047345217e-10
+    }
+  ],
+  "proper_rotation_det": 1.0000000000000007,
+  "rigid_transform_volume_error": 3.3306690738754696e-16,
+  "star_difference_operator_norm_exact": "2; SS^T=I+11^T has eigenvalues4,1,1",
+  "scope": "Readout frame geometry and tangent projector; no mechanical state or kinetic energy removed. No uniform nonlinear chart remainder bound."
+}

@@ -1,0 +1,9 @@
+{
+  "reference_state_max_change_at_matching_times": 1.7547913035848017e-09,
+  "mean_volume_derivative_max_change_at_matching_times": 5.57898583125431e-10,
+  "final_full_tangent_max_change": 2.541242647424724e-07,
+  "phase_vector_change": 0.00012113057314083645,
+  "first_order_rms_change_including_quadrature": 2.0603778891348234e-08,
+  "objective_diagnostic_repeat_same_reference": true,
+  "objective_diagnostic_repeat_same_tangent": true
+}
