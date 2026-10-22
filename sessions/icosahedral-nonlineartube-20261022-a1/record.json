@@ -1,0 +1,61 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "icosahedral-nonlineartube-20261022-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector write",
+  "task": "integration-icosahedral-nonlineartube-20261022",
+  "goal": "Bound future strut lengths and nonlinear volume response throughout the housing-energy ball; preserve any failed certificates.",
+  "created_at": "2026-10-22T21:16:48.302671+00:00",
+  "base_revision": "ef5e2d8f9e0cc5354086a2a3373f6c07600f6dcd",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-icosahedral-nonlineartube-20261022": {
+      "ref": "refs/heads/claims/integration-icosahedral-nonlineartube-20261022",
+      "sha": "b23999e7dba4d251d299a04447adcb75671e7d67",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/icosahedral-nonlineartube/bounds.py --out OUTPUT",
+      "result": "EXACT_CONDITIONAL_PASS rational length/Gram/volume/tube inequalities; full-pulse energy-method obstruction"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-nonlineartube/geometry_check.py --out OUTPUT",
+      "result": "PASS20exact Qsqrt5 cell Grams; direct model witnessenergy matches1/(40R²)"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-nonlineartube/check.py --out OUTPUT",
+      "result": "PASS7records/6distinct preparations;4housing-only,2pulse,1tolerance repeat; full corrected rerun"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16repository tooling tests"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS83records;manifestdigests andlocaldocumentationlinks"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL housing-only all-phase/all-time struts>987/2000, oriented volume ratios(39/40,41/40),globalexistence across continuous qualified box. Fullpulse safety throughu1/20; energy-only u100extension obstructed. Seven numerical check records pass.",
+  "next_action": "Validated trajectory-dependent nonlinear pulse tube for full housing phase ball; close domain and bound integration error.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q rational inequalities and Q(sqrt5) reference Gram; float64 ODE checks",
+    "methods": [
+      "positive-energy continuation",
+      "exact median identity",
+      "weighted Cauchy-Schwarz",
+      "Gram/singular-value determinant bounds",
+      "energy-sublevel obstruction"
+    ],
+    "clock": "continuous uncalibrated u; modular arithmetic N/A",
+    "metric": "positive full mechanical mass/storage; no rigid kinetic energy removed",
+    "physical_mapping": "unchanged ideal engineered surrogate; hardware UNSCORED, mainline promotion0"
+  },
+  "checkpoint_at": "2026-10-22T21:23:14.770227+00:00",
+  "checkpoint_source": {
+    "revision": "ef5e2d8f9e0cc5354086a2a3373f6c07600f6dcd",
+    "dirty": true
+  }
+}

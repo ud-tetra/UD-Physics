@@ -1,0 +1,48 @@
+{
+  "status": "EXACT_CONDITIONAL_PASS_WITH_FULL_PULSE_OBSTRUCTION",
+  "budgets": {
+    "housing_only_energy_max": "17/10000000",
+    "pulse_plus_housing_energy_max": "680017/10000000"
+  },
+  "housing_only_all_time": {
+    "spoke_strain_absolute_upper": "1/500",
+    "shell_edge_strain_absolute_upper": "3/1000",
+    "mount_displacement_upper": "1/200",
+    "endpoint_strut_length_lower": "987/2000",
+    "opposite_anchor_strut_length_lower": "159/200",
+    "all_strut_length_lower": "987/2000",
+    "cell_gram_frobenius_error_squared_upper": "5588859701/95000000000000",
+    "relative_gram_spectral_error_upper": "2/125",
+    "each_oriented_cell_volume_ratio_interval": [
+      "39/40",
+      "41/40"
+    ],
+    "mean_volume_ratio_interval": [
+      "39/40",
+      "41/40"
+    ],
+    "global_existence": true,
+    "deadline_half_energy": "OPEN",
+    "scope": "Every housing displacement/velocity phase of energy<=E_p/40000, alpha=0, primary reference and initially at rest, device z=zdot=0. Continuous qualified property box; nu>=0. Strict stated geometric bounds."
+  },
+  "full_pulse_all_phase_short_time": {
+    "time_interval": [
+      "0",
+      "1/20"
+    ],
+    "housing_speed_upper": "9",
+    "primary_point_speed_upper": "2/5",
+    "all_strut_length_lower": "1/40",
+    "each_oriented_cell_volume_ratio_interval": [
+      "729/1000",
+      "1331/1000"
+    ],
+    "scope": "Original alpha=1/10 pulse plus any allowed housing phase; all qualified properties. No u=100 nonlinear all-phase certificate."
+  },
+  "full_pulse_energy_only_obstruction": {
+    "witness": "Reference primary, alpha=z=0, velocities=0, one lower-beta housing moved from midpoint to either edge endpoint; other housings at midpoints.",
+    "witness_energy": "1/(40 R\u00b2) <1/36 <13/200",
+    "meaning": "The full-pulse total-energy sublevel contains a strut singularity. It cannot alone exclude collapse. This is not a trajectory from the allowed initial energy ball."
+  },
+  "evidence": "Proof inequalities and Fraction assertions; no physical calibration or interval ODE claim."
+}
