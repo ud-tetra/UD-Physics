@@ -1,6 +1,6 @@
 # Current integrated state
 
-Updated: 2026-10-22. Milestone: conditional positive-energy heart-to-volume model v1.0.
+Updated: 2026-10-22. Milestone: heart-shell imperfection and resonance analysis v1.0.
 
 - Canonical Discovery instructions are v1.2; bootloader v1.1 loads the mathematical protocol before consequential work.
 - [UD mathematical analysis protocol](../docs/UD_MATHEMATICAL_METHOD_v1.0.md) and [calculation receipt template](../templates/mathematical_receipt.json) cover exact arithmetic, factorization, modular clocks, typed provenance and applicable UD structural methods.
@@ -8,7 +8,7 @@ Updated: 2026-10-22. Milestone: conditional positive-energy heart-to-volume mode
 - Writer/reviewer operational trial passed in two fresh same-model contexts with separate clones, branches, records and task claims.
 - Frozen synthetic writer output reproduced byte-for-byte; no physical correspondence was established.
 - Review-driven input provenance schema 2 and connector-compatible claim protocol 2 are integrated; historical versions and failures remain preserved.
-- Integrated record validation and all 16 local tooling tests passed. Newest remote Actions runs were queued at the last observation.
+- Tooling validation and the16 repository tests are recorded per session; integrity checks do not certify mathematical or physical truth.
 - Writer and reviewer released their claims through exact-SHA audit markers. Coordinator closure is recorded in its session acceptance record.
 - Main branch protection is still disabled; see [administration setup](../docs/ADMIN_SETUP.md).
 - [Trial results and evidence](../docs/HANDOFF_TRIAL_RESULTS_v1.0.md)
@@ -19,7 +19,9 @@ Updated: 2026-10-22. Milestone: conditional positive-energy heart-to-volume mode
 - [Heart-shell modes](../experiments/heart-shell-modes/README.md): the original chain heart seed is confined to vertex/spoke amplitudes; fixed-shell heart displacement redistributes volume.
 - [Positive-energy heart-to-volume candidate](../experiments/heart-shell-elastic/README.md): a separately assumed scalar/radial law gives two stable collective modes, a differential triplet, explicit cell volumes, model pressure and susceptibility.
 - Native variable/constitutive selection, physical time/energy calibration and a material realization remain OPEN. No mainline promotion is inherited.
-- Next: retain positive energy while perturbing spoke stiffnesses or shell inertias; quantify differential leakage and robustness of the heart-driven volume response.
+- [Imperfection and resonance analysis](../experiments/heart-shell-robustness/README.md): positive-energy stability survives disorder; tested ±5% corner patterns give at most9.35% RMS nonuniform volume-signal fraction over u0..100. This is a finite numerical observation, not a continuous-box bound.
+- Exact harmonic counterexample: small imperfection can strongly expose a former differential mode. Coherence requires a stated preparation/frequency band, beyond stability alone.
+- Next: derive passive damping and a usable drive-frequency band to suppress differential resonance while retaining measurable collective volume response.
 - Separate open question: whether the parent/relative chain duality survives a useful gluing/readout law.
 
 Update this file at integrated milestones under an integration claim. Live claim metadata, not this summary, determines current ownership.
