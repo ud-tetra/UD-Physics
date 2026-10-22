@@ -18,5 +18,9 @@
     "templates"
   ],
   "updated_at": "2026-10-22T16:23:57.095Z",
-  "scope_amendment": "Include manual run-manifest template required by reviewed schema-2 capture amendment; no other trial owner holds this path."
+  "scope_amendment": "Include manual run-manifest template required by reviewed schema-2 capture amendment; no other trial owner holds this path.",
+  "status": "released",
+  "protocol_version": 2,
+  "released_at": "2026-10-22T16:35:50.399Z",
+  "released_from_sha": "f5d64563fd04d9a01fef97f2fe6e40a5e7178715"
 }
