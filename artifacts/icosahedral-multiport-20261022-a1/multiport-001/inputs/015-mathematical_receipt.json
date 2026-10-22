@@ -1,0 +1,393 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosahedral-passive-multiport-v1",
+  "session_id": "icosahedral-multiport-20261022-a1",
+  "candidate_id": "icosahedral-multiport",
+  "question": "Can reciprocal local difference transmissions damp all noncollective motion while protecting common breathing after finite auxiliary inertia and compliance are included?",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "config",
+      "symbol": "(x,z)",
+      "object_type": "coupled mechanical configuration",
+      "definition": "40primary and150relativeauxiliary coordinates",
+      "domain": "R190 with positive member lengths",
+      "codomain": null,
+      "coefficient_domain": "R;reference geometryQ(sqrt5)",
+      "units": "ell0,E_*,t0uncalibrated",
+      "basis_orientation": "parent vertex/edge order;sorted pair orientation and matching z sign",
+      "metric_measure": "diag(M,mu/10 I150)",
+      "origin": "assumed",
+      "exact_expression": "190=40+30+12*choose(5,2)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "free3d",
+        "network"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "reference edge1;allbranch energies scaled1/10"
+    },
+    {
+      "object_id": "pairmap",
+      "symbol": "G",
+      "object_type": "integer oriented graph incidence",
+      "definition": "localradial andedge-linegraph strain comparisons",
+      "domain": "R42",
+      "codomain": "R150",
+      "coefficient_domain": "Z",
+      "units": "dimensionlessinputstrains",
+      "basis_orientation": "parent vertex/edge order;sorted pair orientation and matching z sign",
+      "metric_measure": "Euclidean branch pairing",
+      "origin": "assumed",
+      "exact_expression": "d=G y(x)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "free3d",
+        "network"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "config"
+      ],
+      "normalization": "reference edge1;allbranch energies scaled1/10"
+    },
+    {
+      "object_id": "differential",
+      "symbol": "J",
+      "object_type": "strain derivative",
+      "definition": "exact rank32 at reference",
+      "domain": "R40",
+      "codomain": "R150",
+      "coefficient_domain": "Q(sqrt5)",
+      "units": "dimensionlessrateofstrain",
+      "basis_orientation": "parent vertex/edge order;sorted pair orientation and matching z sign",
+      "metric_measure": "Mprimary,Euclideanoutputs",
+      "origin": "derived",
+      "exact_expression": "kerJ=6rigid+alpha+uniformscale",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "free3d",
+        "network"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "pairmap"
+      ],
+      "normalization": "reference edge1;allbranch energies scaled1/10"
+    },
+    {
+      "object_id": "energy",
+      "symbol": "E",
+      "object_type": "positive mechanical storage",
+      "definition": "parentenergy+finiteinerterenergy+series-springenergy",
+      "domain": "phaseR380",
+      "codomain": "R>=0",
+      "coefficient_domain": "R",
+      "units": "E_*",
+      "basis_orientation": "parent vertex/edge order;sorted pair orientation and matching z sign",
+      "metric_measure": "M andmu/10I;positivepotential",
+      "origin": "derived",
+      "exact_expression": "Eprime=-(gamma/10)||zdot||\u00b2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "free3d",
+        "network"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "config",
+        "pairmap"
+      ],
+      "normalization": "reference edge1;allbranch energies scaled1/10"
+    },
+    {
+      "object_id": "impedance",
+      "symbol": "Z(s)",
+      "object_type": "force/relativevelocitytransfer",
+      "definition": "springseriesparallelinerter/damper",
+      "domain": "complexfrequency",
+      "codomain": "complexforce/velocity",
+      "coefficient_domain": "rationalrealcoefficients",
+      "units": "internalforceoverinternalvelocity",
+      "basis_orientation": "parent vertex/edge order;sorted pair orientation and matching z sign",
+      "metric_measure": "conjugatepowerpair",
+      "origin": "derived",
+      "exact_expression": "(kappa/10)*(mu*s+gamma)/(mu*s\u00b2+gamma*s+kappa)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "free3d",
+        "network"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "energy"
+      ],
+      "normalization": "reference edge1;allbranch energies scaled1/10"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "free3d",
+      "url_or_repo_path": "experiments/icosahedral-free3d/model.py",
+      "version_or_commit": "07358779cd0971dfade95b54688072f38001e342",
+      "section_or_object_id": "ModelU,M,collective,geometry",
+      "source_status": "integrated conditional mechanics/exactgeometry"
+    },
+    {
+      "source_id": "old-readout",
+      "url_or_repo_path": "experiments/icosahedral-damping/analyze.py",
+      "version_or_commit": "07358779cd0971dfade95b54688072f38001e342",
+      "section_or_object_id": "metrics;oldmatchedcampaign",
+      "source_status": "integratednumericalreadouts"
+    },
+    {
+      "source_id": "network",
+      "url_or_repo_path": "experiments/icosahedral-multiport/README.md",
+      "version_or_commit": "v1.0;capturedinthisrun",
+      "section_or_object_id": "\u00a7\u00a71\u20134",
+      "source_status": "newassumednetwork/conditionalderivations"
+    },
+    {
+      "source_id": "inerter",
+      "url_or_repo_path": "https://www-control.eng.cam.ac.uk/foswiki/pub/Main/MalcolmSmith/cued_control_859.pdf",
+      "version_or_commit": "Smith2002,DOI10.1109/TAC.2002.803532;retrieved2026-10-22",
+      "section_or_object_id": "\u00a7II.C,pp1649\u20131650andconclusion",
+      "source_status": "primaryliterature;importonlydefinitionandideal-elementscope,notthisnetwork"
+    },
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "historicalv0.39;sha2561281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "section_or_object_id": "Q139,Q144\u2013145,Q151\u2013152",
+      "source_status": "read-onlyhistoricalsource;nativeclock/constitutivebridgeremainsopen"
+    },
+    {
+      "source_id": "governance",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "version_or_commit": "v1.0;sha2568e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4",
+      "section_or_object_id": "\u00a7\u00a72,4,5",
+      "source_status": "proposal;noautomaticadoption/promotion"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Parent free3D potential,mass and geometric readouts unchanged"
+    },
+    {
+      "id": "A2",
+      "statement": "150 reciprocal strain-difference transmissions;ideal ratios and negligible casing/routing mass/common friction"
+    },
+    {
+      "id": "A3",
+      "statement": "Finite positive auxiliary inertance,compliance andviscosity;full190configuration/380phase model"
+    },
+    {
+      "id": "A4",
+      "statement": "Common normalization1/10 and engineering parameters are chosen"
+    },
+    {
+      "id": "A5",
+      "statement": "Three exposed\u00b15%property realizations;initial reference positions,alpha=A0,all velocities/auxiliarieszero"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integergraphincidence",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "connectedpairgraphs,rankandexactLaplacianspectra"
+    },
+    {
+      "technique": "exactfieldarithmetic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Q(sqrt5)strainkernelandexplicitbasis"
+    },
+    {
+      "technique": "spectralpositiveenergy",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "passivity,protectedcollectivekernelandtransverseequilibriumdecay"
+    },
+    {
+      "technique": "reciprocalports/localreactions",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "returnforceswithtransposemap;preserveP,L"
+    },
+    {
+      "technique": "frequency/finiteauxiliarydynamics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "positive-realZandaddedmode response"
+    },
+    {
+      "technique": "projection/readout",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "volumevscentroidpartition,rigid/scale-fitshape;exactlinearactivesubspace"
+    },
+    {
+      "technique": "modularclocks",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuousu,no finite register/update law"
+    },
+    {
+      "technique": "primefactorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no divisibility orperiodcompatibility question;countsfollowexplicitgraphs"
+    },
+    {
+      "technique": "engineeringfit/sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "preservePhaseAfailureandpostexposurePhaseBselection;separateratioerrorprobes"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "12*choose(5,2)=120edgecomparisons;+30radialcomparisons;40+150=190coordinates",
+    "reduced_expression": "150auxiliaries;380phase;rankJ32;kerJ8",
+    "factor_origins": [
+      "12shellvertices",
+      "5shellmemberspervertex",
+      "oneunorderedcomparisonpermemberpair",
+      "30icosahedronedgesforradialpairs"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "continuousdimensionlessu",
+    "modulus": null,
+    "residue_convention": "N/A",
+    "update_rule": "coupledsecondorderpoint/relativeinerter equations",
+    "initial_phase": "alpha=A0,referencepoints,zerootherstates",
+    "coupling": "reciprocaldifferenceforcesandfiniteauxiliary spring/inerter/damper",
+    "period_claim": "idealsymmetriccollective8\u00b1sqrt37;no commonperiodclaim",
+    "physical_unit_map": "t=t0*u;t0OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R380phase plusone dissipatedenergyaccumulator",
+    "generator_or_update": "network.py:Network.ode",
+    "initial_boundary_conditions": "freepoints,noexternalground;zeroauxiliaries;unforcedpulse",
+    "conservation_and_sources": "E+D=E0;P,Lconserved;heatnotresolvedmicroscopically",
+    "projection_and_kernel": "rank32J;collective+rigidkernel8;linearactiveauximage32/unforcedcycle118;full150retainednonlinearly",
+    "physical_mapping": "idealreciprocaltransmission+two-terminalinerterportrealization;housingmass/friction/material/nativeUDselectionuncalibrated"
+  },
+  "target_exposure": {
+    "status": "FIT/exposeddevelopment;PhaseBamendmentafterPhaseAoutcomes",
+    "known_targets": [
+      "previousgeometryandsoftspectrum",
+      "ordinarydashpotfailure",
+      "allthreepropertyrealizations",
+      "PhaseAfailurebeforeexpandedPhaseBselection"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "150branch local graph topology and1/10normalization",
+      "PhaseA mu{.002,.02,.2},kappa{.1,.5,2},gamma{.02,.1,.5},27evaluations",
+      "PhaseB mu{.2,2,20},kappa{2,10,50},gamma{.5,5,50},27evaluations;53distincttriples total",
+      "80%RMS/5%mismatch/50%shape screen;amplitudes.025,.1,.2;ratioerrors\u00b1.1%,\u00b11%seed713"
+    ],
+    "search_domain_and_budget": "54parameterevaluations/53distincttriples;9nonlinearpreparationsperphase;3symmetricand2ratioerrorchecksperphase;oneworstrefinementperphase",
+    "selection_criterion": "A:maxminpoledecay;B:minmaxlinearvolumemismatchsubjectto80%retention;thennonlinear80/5/50screen",
+    "baseline": "Matched undamped preparation from the previous stored campaign;linear matched pulses for PhaseBselection"
+  },
+  "calculation_steps": [
+    "Definebranchd=y_a-y_b,reciprocalforcesandfinitezinerter/spring/damper",
+    "DeriveenergyandP/L;explicitcentralendpointforceimplementation",
+    "Exactgraphmoment/polynomialcertificatesandrankJ32/kernel8",
+    "Proveunchangedhomothetyandlineartransverseasymptoticdecay",
+    "PhaseA27pointscanandfailed9pointnonlinearscreen",
+    "RecordAMENDMENTv1.1;PhaseB27pointlinearizedpulse-readoutscan",
+    "Verifyactiveauxreductionvsunreduced380phase;execute9fullnonlinearprobes,symmetricandratioerrorchecksandrefinements",
+    "Capturebothphases,sourcebytes,fitamendment,receiptandfigure"
+  ],
+  "result": {
+    "exact_expression": "Eprime=-(gamma/10)||zdot||\u00b2;rankJ32,ker8;idealcollectivefrequencysquares8\u00b1sqrt37unchanged",
+    "approximation": "PhaseBmu2,kappa50,gamma5:9/9screenspass;retention>=.9976391;maxhubL=.00578404;shapeRMSratio.0401843\u2013.0778164",
+    "units": "internalmodelunits",
+    "precision_and_error": "float64,DOP853rtol1e-10/atol1e-12;refined2e-12/2e-14;PhaseBE+Dmaxrelative1.93e-8;worstLrefinementdelta3.24e-8",
+    "scope": "exactconditionalportmodelandlocalequilibriumtheorem;finiteexposednonlineardevelopmentcampaign",
+    "physical_interpretation": "HYPOTHESIS/idealmechanicalrealization;noempiricalidentification"
+  },
+  "verification": [
+    {
+      "method": "exactgraph/kernel",
+      "command_or_proof_path": "experiments/icosahedral-multiport/exact.py",
+      "source_revision": "07358779cd0971dfade95b54688072f38001e342",
+      "actual_result": "PASSZ/Q(sqrt5)rank32,explicitkernel8",
+      "review_relationship": "constructor;separateimplementationswherestated"
+    },
+    {
+      "method": "reciprocalforce/power/finitegradient",
+      "command_or_proof_path": "experiments/icosahedral-multiport/analyze.py:check_forces",
+      "source_revision": "07358779cd0971dfade95b54688072f38001e342",
+      "actual_result": "PASS;summary.jsonresiduals",
+      "review_relationship": "constructor;separateimplementationswherestated"
+    },
+    {
+      "method": "unreducedlinearcheck",
+      "command_or_proof_path": "experiments/icosahedral-multiport/readout_design.py",
+      "source_revision": "07358779cd0971dfade95b54688072f38001e342",
+      "actual_result": "PASS1.19e-14;volumegradient1.88e-10",
+      "review_relationship": "constructor;separateimplementationswherestated"
+    },
+    {
+      "method": "nonlinear/symmetric/refinedchecks",
+      "command_or_proof_path": "experiments/icosahedral-multiport/readout_design.py",
+      "source_revision": "07358779cd0971dfade95b54688072f38001e342",
+      "actual_result": "PASS9/9chosenscreen;worstLrefinement3.24e-8",
+      "review_relationship": "constructor;separateimplementationswherestated"
+    },
+    {
+      "method": "finiteimpedance",
+      "command_or_proof_path": "experiments/icosahedral-multiport/frequency.py",
+      "source_revision": "07358779cd0971dfade95b54688072f38001e342",
+      "actual_result": "PASSpositiveReZ;fulltransversePhaseBdecay.0825214",
+      "review_relationship": "constructor;separateimplementationswherestated"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "PhaseAfastestpolemodel0/9nonlinearscreenpasses,maxL17.37%,huboffsetcanincrease5.08%",
+    "Ratioerrorsbreakexactcommoncancellationdespitetheirreciprocalpassivity",
+    "Ordinaryindependentdashpotobstructionpreserved",
+    "PhaseAfiniteprototypeimportcollisioncorrectedbeforecompletedPhaseBoutputs"
+  ],
+  "limitations": [
+    "AlltestedpropertypointsandPhaseBtargetsareexposed;noheldoutorcontinuousboxclaim",
+    "150comparatorsaremechanicalcomplexitycost;routingandhousingmassnotmodeled",
+    "Portinerter/transmissionidealsnotahardwareprototype",
+    "Alltimelengthbounddoesnotcertifyorientation/coherence;A0.2exceedscertificate",
+    "Localtransverseequilibriumdecayisnotglobalnonlinearattraction",
+    "Ratioerrorandmaterialdisorderprobesarenotjointworstcase",
+    "NoUD-nativeconstitutiveselection,physicalclockcalibrationorspacetimeidentification"
+  ],
+  "changed_dependencies": [
+    "Assumedreciprocalmultiportlawreplacesindependentaxialloss;parentpotentialandpriorobstructionsunchanged"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/icosahedral-multiport-20261022-a1/multiport-001/manifest.json"
+  ],
+  "next_discriminant": "Derive a joint tolerance budget for reciprocal ratio errors,housing/routing mass andparasiticcommon-portloss;specify a measurable module test. Consider sparse kernel-preserving topology as a complexity reduction."
+}

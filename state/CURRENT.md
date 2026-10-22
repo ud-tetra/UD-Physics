@@ -1,6 +1,6 @@
 # Current integrated state
 
-Updated: 2026-10-22. Milestone: ordinary passive icosahedral damping envelope v1.0.
+Updated: 2026-10-22. Milestone: passive differential multiport network v1.0.
 
 - Canonical Discovery instructions are v1.2; bootloader v1.1 loads the mathematical protocol before consequential work.
 - [UD mathematical analysis protocol](../docs/UD_MATHEMATICAL_METHOD_v1.0.md) and [calculation receipt template](../templates/mathematical_receipt.json) cover exact arithmetic, factorization, modular clocks, typed provenance and applicable UD structural methods.
@@ -36,7 +36,12 @@ Updated: 2026-10-22. Milestone: ordinary passive icosahedral damping envelope v1
 - Exact length-domain certificate: |A0|<sqrt(19/680) prevents spoke/edge collapse for all time across the stated ±5% g,k box and any nonnegative losses. It does not certify cell orientation or coherent motion.
 - NUMERICAL damping scan:0/363 sampled points pass the chosen80% breathing-RMS/50% soft-modal-envelope screen. Best sampled breathing retention while halving the soft envelope is74.24%. These are design thresholds and distinct observables, not a universal passive-design obstruction.
 -36 nonlinear property/amplitude/loss probes plus12 symmetric checks: combined c_s=c_e=.02 leaves45.01–50.40% of matched absolute shape RMS but retains as little as66.99% of mean-volume RMS. Edge loss alone can increase normalized hub-relative volume mismatch. Full tables preserve both hub and shell-centroid readouts.
-- Next damping discriminant: realize passive multiport edge-strain difference loss with common-mode protection, including auxiliary dynamics and reaction forces; verify soft tangential damping after adding those modes. Radial differences alone miss the soft family at first order. Internal preferred-radius realization and native/material selection remain OPEN.
+- [Passive differential multiport network](../experiments/icosahedral-multiport/README.md):120local edge-pair plus30radial-pair branches with reciprocal endpoint reactions,finite inerter/compliance/damping dynamics.190configuration/380phase variables. Ideal transmissions/casing approximations remain assumptions;no built linkage is claimed.
+- EXACT/CONDITIONAL:energy dissipation,conserved spatial momenta,rank32/kernel8 andunchanged idealhomothetic breathing. All32shape+150auxiliary coordinates decay in the symmetric equilibrium linearization forpositive branch values;this isnot anall-time finite-amplitude coherence theorem. Earlier ordinary-damper obstruction andlength-domain certificate preserved.
+- Development phases preserved:PhaseA27-point fastest-pole selection failed0/9coherence screens;post-exposure amendment declared PhaseB27-point readout selection.54evaluations/53distincttriples,allthree propertyrealizations exposed.
+- NUMERICAL PhaseB(mu,kappa,gamma)=(2,50,5):9/9declared full nonlinear preparations pass80%RMS/5%mismatch/50%shape screen. Minimum mean-volume RMSretention99.764%;maximum hub-relative volume mismatch0.5784%;absolute shell-shape RMSremaining4.018–7.782%. These arefinite development probes,not acontinuous tolerance-box orindependent prediction.
+- Separate reciprocal transmission-ratio probes withuniformmechanicalproperties:within±1% inone seededdirection retained99.7268%breathing RMS andgave0.1197%volume mismatch. Nojointmaterial/transmission guarantee.
+- Next discriminant:derive a joint tolerance budget fortransmissionratioerror,finitehousing/routingmass andparasiticcommonloss;specify a measurablemodule test.150branches areacomplexitycost;asparsekernel-preserving layoutneeds anewresponse/symmetryaudit. Internalpreferred-radius realization andnative/materialselection remainOPEN.
 - Separate open question: whether the parent/relative chain duality survives a useful gluing/readout law.
 
 Update this file at integrated milestones under an integration claim. Live claim metadata, not this summary, determines current ownership.

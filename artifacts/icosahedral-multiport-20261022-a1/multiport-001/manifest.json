@@ -1,0 +1,234 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "icosahedral-multiport-20261022-a1",
+  "run_id": "multiport-001",
+  "created_at": "2026-10-22T19:38:31.035980+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Explicitfiniteauxiliarypassivenetwork;exactprotectedkernel;PhaseAfailurepreserved;PhaseBexposedreadoutdesignpasses9/9finiteprobes",
+  "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-multiport/exact.py --out OUTPUT; OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-multiport/analyze.py --out OUTPUT; OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-multiport/readout_design.py --out OUTPUT; OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-multiport/frequency.py --out OUTPUT; python3 experiments/icosahedral-multiport/draw.py --source OUTPUT --out OUTPUT/multiport-summary.png",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "07358779cd0971dfade95b54688072f38001e342",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "network.py",
+      "path": "inputs/001-network.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/network.py",
+      "sha256": "ebcb9efe5e07212463e8b448c0b157025158d3a365dbc25599d6d14210628245",
+      "size_bytes": 3479
+    },
+    {
+      "input_id": "input-002",
+      "name": "exact.py",
+      "path": "inputs/002-exact.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/exact.py",
+      "sha256": "089c00fd9dd792bb588d645033413e240d67fce3f9bb76ce38f7fc87ccace452",
+      "size_bytes": 4491
+    },
+    {
+      "input_id": "input-003",
+      "name": "analyze.py",
+      "path": "inputs/003-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/analyze.py",
+      "sha256": "04eafe54adc1eb569fb01ec21c8f95681fa6ea6384461c841c97883efc3afb37",
+      "size_bytes": 9150
+    },
+    {
+      "input_id": "input-004",
+      "name": "readout_design.py",
+      "path": "inputs/004-readout_design.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/readout_design.py",
+      "sha256": "fd1884b4d7c8ddff5687fa61c1d87d4539b92b06857016df32d3f24f8e704dc3",
+      "size_bytes": 9480
+    },
+    {
+      "input_id": "input-005",
+      "name": "frequency.py",
+      "path": "inputs/005-frequency.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/frequency.py",
+      "sha256": "02b69a9021db9dbb06c9b4a62c634717d5e6d266dd695f9b40f394fceab36904",
+      "size_bytes": 1772
+    },
+    {
+      "input_id": "input-006",
+      "name": "draw.py",
+      "path": "inputs/006-draw.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/draw.py",
+      "sha256": "febbd35d5629705b5dfdbe3cd7a90ea764e98eb2e6bed2637f8de3d4055b9c63",
+      "size_bytes": 2567
+    },
+    {
+      "input_id": "input-007",
+      "name": "PROTOCOL.md",
+      "path": "inputs/007-PROTOCOL.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/PROTOCOL.md",
+      "sha256": "1881f61a25276f52e0a6c7d2115759158ca54c35b9b90d727ce59689bdbe6054",
+      "size_bytes": 3503
+    },
+    {
+      "input_id": "input-008",
+      "name": "AMENDMENT_v1.1.md",
+      "path": "inputs/008-AMENDMENT_v1.1.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/AMENDMENT_v1.1.md",
+      "sha256": "15c2d2055d5b72b51097b94167bae8fe36df5c73393e68ce13f929cc28bf72c4",
+      "size_bytes": 2258
+    },
+    {
+      "input_id": "input-009",
+      "name": "model.py",
+      "path": "inputs/009-model.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-free3d/model.py",
+      "sha256": "171fbae15260a0bacb0cfde601159a84f8648349cb47fcacd88c6e2137d2bbb3",
+      "size_bytes": 6925
+    },
+    {
+      "input_id": "input-010",
+      "name": "analyze.py",
+      "path": "inputs/010-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-cone/analyze.py",
+      "sha256": "089fbed8bc59f7c785c12f57089b6b5f9be25d381c76854ba72fc893622ed8e3",
+      "size_bytes": 11982
+    },
+    {
+      "input_id": "input-011",
+      "name": "analyze.py",
+      "path": "inputs/011-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-damping/analyze.py",
+      "sha256": "f1fc3fdf58b99a910c3e97d47706aaf747a9690d2c16a1972999cc4baf42ad0b",
+      "size_bytes": 12945
+    },
+    {
+      "input_id": "input-012",
+      "name": "damping.py",
+      "path": "inputs/012-damping.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-damping/damping.py",
+      "sha256": "5c47fd68afa10e2a1a545b7a0b8593159ca9822da312f887b1fcead28581ff7f",
+      "size_bytes": 2091
+    },
+    {
+      "input_id": "input-013",
+      "name": "properties.json",
+      "path": "inputs/013-properties.json",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-damping-20261022-a1/damping-001/files/properties.json",
+      "sha256": "17fad2df0630de98b11b85629bd396d9b452352d417f75f8fe761f7afad8b7df",
+      "size_bytes": 4557
+    },
+    {
+      "input_id": "input-014",
+      "name": "campaign.csv",
+      "path": "inputs/014-campaign.csv",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-damping-20261022-a1/damping-001/files/campaign.csv",
+      "sha256": "4db33f1558d16891363ea0f084f6813c01444b9bc0cf8ed5df7e9a78bee2103f",
+      "size_bytes": 11390
+    },
+    {
+      "input_id": "input-015",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/015-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/icosahedral-multiport/mathematical_receipt.json",
+      "sha256": "78b22e3ea55882db8cf524c1844371447819b966ca6174b96be492f94ece60a6",
+      "size_bytes": 16458
+    }
+  ],
+  "files": [
+    {
+      "path": "files/exact.json",
+      "sha256": "0f7064cdc857d6050c966af4a528ad02942238a483770fb1d7216d815256a31a",
+      "size_bytes": 2036
+    },
+    {
+      "path": "files/summary.json",
+      "sha256": "bb43ea2615b1e55d8e742d9660bdc7704af16ffb73ad3d22482b6e6ff58a903b",
+      "size_bytes": 7628
+    },
+    {
+      "path": "files/campaign.csv",
+      "sha256": "3df462d6c28eed8deaaf4fd9c75a75ab413dee896cb133a9808a48e6cb722806",
+      "size_bytes": 3450
+    },
+    {
+      "path": "files/linear-scan.csv",
+      "sha256": "a3e8285fcacfbef21e6863886a9964e941a9ebce5d7c16ff75298258aac68894",
+      "size_bytes": 1756
+    },
+    {
+      "path": "files/selection.json",
+      "sha256": "40a89baeaabf2c3e0da25a42e198449d9e5b2ef5201daf5c02a65c3f50f90550",
+      "size_bytes": 221
+    },
+    {
+      "path": "files/properties.json",
+      "sha256": "17fad2df0630de98b11b85629bd396d9b452352d417f75f8fe761f7afad8b7df",
+      "size_bytes": 4557
+    },
+    {
+      "path": "files/ratio-direction.json",
+      "sha256": "f4c768e10985c3debe8c7ab30ec9e037a238aa95e08b2cea0a55f66d5189ea65",
+      "size_bytes": 3427
+    },
+    {
+      "path": "files/readout-summary.json",
+      "sha256": "2118fe09b4e01647873f92c2b401b19bfbbb9fc162f216fdc987a0eb9b9067f4",
+      "size_bytes": 7130
+    },
+    {
+      "path": "files/readout-campaign.csv",
+      "sha256": "7baf589d164a4c93bd86baca607195aa60cd41319088a40586a180e283b7201a",
+      "size_bytes": 3514
+    },
+    {
+      "path": "files/readout-scan.csv",
+      "sha256": "f9f3fac5606b3421c7e156905ed3818eaf2451245186d3d9dc31e58a88690e9e",
+      "size_bytes": 1638
+    },
+    {
+      "path": "files/readout-selection.json",
+      "sha256": "d4e86272298d444c22e26f33b1ebd9f611b0a4abaa95e75711a1528f082abb73",
+      "size_bytes": 192
+    },
+    {
+      "path": "files/frequency.csv",
+      "sha256": "3de7d7c310a6b07ac336f7068c6507af0c274f2962fd0ca0493044141b3f8794",
+      "size_bytes": 26221
+    },
+    {
+      "path": "files/frequency.json",
+      "sha256": "a26a2fe8865ba64c82c780c0987052f348302e650cd4284c5c0122c85ab78441",
+      "size_bytes": 641
+    },
+    {
+      "path": "files/multiport-summary.png",
+      "sha256": "3d8e911e46fede46d7cfa5d6d26fbcd25802934f020cd494beca7ea663765504",
+      "size_bytes": 171226
+    },
+    {
+      "path": "files/README.md",
+      "sha256": "030f99e37bd15bde9d5ee59f6f490ab6f88d5bf88f44978fbea1e48e55e87b9a",
+      "size_bytes": 11176
+    },
+    {
+      "path": "files/RESULTS.md",
+      "sha256": "7e53c8eb43517f2d5bac32fd98969f10c4d754c91ec7faa942dfc8852b854e93",
+      "size_bytes": 6489
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "impedance_convention": "Z=force/relative_velocity;Smith2002 uses reciprocal naming",
+  "Z_s": "(kappa/10)*(mu*s+gamma)/(mu*s^2+gamma*s+kappa)",
+  "Re_Z_iomega": "kappa^2*gamma/[10*((kappa-mu*omega^2)^2+gamma^2*omega^2)]>0",
+  "low_frequency": "Z=gamma/10+O(s);finite auxiliary dynamics retained",
+  "records": [
+    {
+      "phase": "A",
+      "mu": 0.2,
+      "kappa": 2.0,
+      "gamma": 0.5,
+      "minimum_full_transverse_decay": 0.16952319887686124
+    },
+    {
+      "phase": "B",
+      "mu": 2.0,
+      "kappa": 50.0,
+      "gamma": 5.0,
+      "minimum_full_transverse_decay": 0.08252139588983329
+    }
+  ]
+}
