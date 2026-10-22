@@ -1,0 +1,49 @@
+{
+  "rule": "Assume an external preparation/reset x=0 followed by x_plus=e_cell. Subsequent continuous real Hodge flow has support1.",
+  "status": "ADDED_SOURCE_HYPOTHESIS",
+  "lattice_obstruction_scope": "A lattice restriction only at preparation does not conflict with continuous real motion afterward.",
+  "general_injection_balance": "Delta_a=||u||^2+2<x,u>; for a unit cell kick, Delta_a=1+2*x_cell.",
+  "two_kick_cases": [
+    {
+      "cos_phase": "1",
+      "sin_phase": "0",
+      "support_after_two_unit_kicks": "4"
+    },
+    {
+      "cos_phase": "0",
+      "sin_phase": "1",
+      "support_after_two_unit_kicks": "2"
+    },
+    {
+      "cos_phase": "-1",
+      "sin_phase": "0",
+      "support_after_two_unit_kicks": "0"
+    },
+    {
+      "cos_phase": "0",
+      "sin_phase": "-1",
+      "support_after_two_unit_kicks": "2"
+    },
+    {
+      "cos_phase": "3/5",
+      "sin_phase": "4/5",
+      "support_after_two_unit_kicks": "16/5"
+    },
+    {
+      "cos_phase": "-3/5",
+      "sin_phase": "4/5",
+      "support_after_two_unit_kicks": "4/5"
+    },
+    {
+      "cos_phase": "5/13",
+      "sin_phase": "12/13",
+      "support_after_two_unit_kicks": "36/13"
+    },
+    {
+      "cos_phase": "-5/13",
+      "sin_phase": "12/13",
+      "support_after_two_unit_kicks": "16/13"
+    }
+  ],
+  "scope": "Event count is not additive support without extra orthogonality/phase/source conditions. Reset,source energy,phase reference and physical kick magnitude are not derived."
+}

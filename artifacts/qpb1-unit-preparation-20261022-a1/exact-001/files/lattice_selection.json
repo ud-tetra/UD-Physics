@@ -1,0 +1,45 @@
+{
+  "integer_branch": "Assume Lambda=Z15 intersect imP. Nonzero squared norm is an integer >=1; active edge e attains1.",
+  "quarter_phase_image_Je": [
+    "-1/2",
+    "1/2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "-1/2",
+    "-1/2",
+    "0",
+    "0",
+    "0"
+  ],
+  "quarter_phase_leaves_integer_lattice": true,
+  "rational_support_sequence": [
+    "1",
+    "1/4",
+    "1/9",
+    "1/16",
+    "1/25",
+    "1/36",
+    "1/49",
+    "1/64",
+    "1/81",
+    "1/100",
+    "1/121",
+    "1/144"
+  ],
+  "rational_proof": "e/n belongs to the active rational carrier for every positive integer n, so positive supports have infimum0 and no minimum.",
+  "continuous_lattice_no_go": "A continuous path in a discrete lattice is constant. Nonzero active A motion cannot remain in Lambda for all times.",
+  "stroboscopic_alternative": {
+    "native_step": "pi/2",
+    "phase_step": "pi",
+    "active_update": "-I",
+    "register": "Z/2Z",
+    "nonzero_orbit_length": 2,
+    "scope": "Sampled active states only; continuous path still leaves Lambda. No physical tick or action scale follows."
+  }
+}

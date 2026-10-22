@@ -1,0 +1,96 @@
+{
+  "loose_placeholders": [
+    {
+      "filename": "02-packet_modulation_layer.md",
+      "sha256": "a3275849a09d9c29cb3f8a369fc7ca113ba3cd7529e7db443529097ccaf088ec",
+      "content": "# packet_modulation_layer.md\n\nPlaceholder content for reconstructed repository snapshot.\n",
+      "status": "placeholder; no preparation equation"
+    },
+    {
+      "filename": "03-triangular_transport_symbol_alphabet.md",
+      "sha256": "0da16aba90969fa5b08fce771f62dd7ee2c99fd0b033fc961241b94754b60606",
+      "content": "# triangular_transport_symbol_alphabet.md\n\nPlaceholder content for reconstructed repository snapshot.\n",
+      "status": "placeholder; no preparation equation"
+    },
+    {
+      "filename": "04-seam_phase_transport.md",
+      "sha256": "f1bc7725268362c47938d5487e9463dd42b5bd210230419d1b866ceb390c1b7c",
+      "content": "# seam_phase_transport.md\n\nPlaceholder content for reconstructed repository snapshot.\n",
+      "status": "placeholder; no preparation equation"
+    },
+    {
+      "filename": "07-coherence_equation.md",
+      "sha256": "002280ec6891845e7c8a087bcc2b587ad0702ccf05d89731375f085e1fe1b55c",
+      "content": "# coherence_equation.md\n\nPlaceholder content for reconstructed repository snapshot.\n",
+      "status": "placeholder; no preparation equation"
+    },
+    {
+      "filename": "08-master_action.md",
+      "sha256": "88cefa4f89a3cec06e39eb2e5d12ac87ff1d18eff0875dea1ac04fca18cce1ea",
+      "content": "# master_action.md\n\nPlaceholder content for reconstructed repository snapshot.\n",
+      "status": "placeholder; no preparation equation"
+    },
+    {
+      "filename": "09-packet_field_equation.md",
+      "sha256": "b71fa5cf7c5ad3d70af25ce18494e67485f7fd9c6f742708c86d6316fdf285b1",
+      "content": "# packet_field_equation.md\n\nPlaceholder content for reconstructed repository snapshot.\n",
+      "status": "placeholder; no preparation equation"
+    },
+    {
+      "filename": "10-DistinctionTheory_MasterTheory_v1.md",
+      "sha256": "7c80e3b180f552836840cbad3aef46f79ee37c52a4f7dd56c139294c548c3b2d",
+      "content": "# DistinctionTheory_MasterTheory_v1.md\n\nPlaceholder content for reconstructed repository snapshot.\n",
+      "status": "placeholder; no preparation equation"
+    },
+    {
+      "filename": "11-dirac_like_packet_equation.md",
+      "sha256": "fd12b120aa8e09723778a2efa5e78c2e74da6de630baef40184d19731d8118d3",
+      "content": "# dirac_like_packet_equation.md\n\nPlaceholder content for reconstructed repository snapshot.\n",
+      "status": "placeholder; no preparation equation"
+    },
+    {
+      "filename": "12-carrier_definition.md",
+      "sha256": "580a7ae37185fe7717328d4ab0b0f68b908d081cc1e03aaa9424e5c048059cd5",
+      "content": "# carrier_definition.md\n\nPlaceholder content for reconstructed repository snapshot.\n",
+      "status": "placeholder; no preparation equation"
+    }
+  ],
+  "archive": {
+    "filename": "05-DistinctionDynamics_Full_Repository_v1.zip",
+    "sha256": "e4bffc290d854eadcbd524741250544031837b34d67f90e1e737f3fcb22b04f4",
+    "entry_count": 55,
+    "inspected_entries": [
+      {
+        "path": "07_equations/master_action.md",
+        "sha256": "88cefa4f89a3cec06e39eb2e5d12ac87ff1d18eff0875dea1ac04fca18cce1ea",
+        "content": "# master_action.md\n\nPlaceholder content for reconstructed repository snapshot.\n"
+      },
+      {
+        "path": "08_infrastructure/carrier_definition.md",
+        "sha256": "580a7ae37185fe7717328d4ab0b0f68b908d081cc1e03aaa9424e5c048059cd5",
+        "content": "# carrier_definition.md\n\nPlaceholder content for reconstructed repository snapshot.\n"
+      }
+    ],
+    "scope": "Only two relevant entries read; archive not fully audited."
+  },
+  "other_read_sources": [
+    {
+      "filename": "13-artifact_dependency_map.md",
+      "sha256": "330f9d0cf1c3c596fbd0afc707367c34d9cdf8727f34eb959ee6d3575d1ff6b9",
+      "role": "Programme dependency summary; no physical unit-selection calibration"
+    },
+    {
+      "filename": "14-Gap2_FINAL_STATUS.md",
+      "sha256": "436c87fbe121d3a9a845d356d786ab299e83a6dd84285698acc92c8f3a1a514a",
+      "role": "Historical cosmological status; observational assertions not used or verified here"
+    }
+  ],
+  "not_inspected_for_this_audit": [
+    "Uploaded PDFs",
+    "Remainder of ZIP"
+  ],
+  "unavailable": [
+    "Gap2_FINAL_Finite_Genesis.png"
+  ],
+  "scope": "Availability and bounded relevance only; raw conversation backups are not imported."
+}

@@ -1,0 +1,408 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb1-unit-preparation-v1",
+  "session_id": "qpb1-unit-preparation-20261022-a1",
+  "candidate_id": "qpb1-unit-preparation",
+  "question": "Can a native rule or target-independent physical preparation select the unit action, and which scale ambiguities survive?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "carrier",
+      "symbol": "x,A,J,P",
+      "object_type": "real active chain dynamics",
+      "definition": "Single filled tetrahedron,unit metric,A=d-d^T,J=A/2,P=-A^2/4",
+      "domain": "R15;activeR14",
+      "codomain": "same carrier",
+      "coefficient_domain": "Q matrix examples and symbolic real flow/positive physical parameters",
+      "units": "dimensionless support; native parameter s",
+      "basis_orientation": "Ascending simplex orientation;A=d-d^T;native positive phase;LC charge minus native Y",
+      "metric_measure": "Unit chain metric and separately postulated canonical LC energy/form",
+      "origin": "derived or explicitly assumed as stated",
+      "exact_expression": "a=||x||^2;A^T=-A;conserved a",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native unit support and physical reference voltage distinct;C not identified with mass-like B0"
+    },
+    {
+      "object_id": "lattice",
+      "symbol": "Lambda",
+      "object_type": "alternative amplitude lattice",
+      "definition": "Z15 intersect imP;assumed all-time domain only in lattice branch",
+      "domain": "integer active chain amplitudes",
+      "codomain": "discrete state subset",
+      "coefficient_domain": "Q matrix examples and symbolic real flow/positive physical parameters",
+      "units": "dimensionless",
+      "basis_orientation": "Ascending simplex orientation;A=d-d^T;native positive phase;LC charge minus native Y",
+      "metric_measure": "Unit chain metric and separately postulated canonical LC energy/form",
+      "origin": "derived or explicitly assumed as stated",
+      "exact_expression": "min positive norm^2=1;Je has half-integer entries",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native unit support and physical reference voltage distinct;C not identified with mass-like B0"
+    },
+    {
+      "object_id": "source",
+      "symbol": "u=e_cell",
+      "object_type": "added preparation jump",
+      "definition": "Reset to zero,then top-cell unit amplitude injection;real flow afterward",
+      "domain": "active carrier with explicit preparation source",
+      "codomain": "active carrier",
+      "coefficient_domain": "Q matrix examples and symbolic real flow/positive physical parameters",
+      "units": "dimensionless native support",
+      "basis_orientation": "Ascending simplex orientation;A=d-d^T;native positive phase;LC charge minus native Y",
+      "metric_measure": "Unit chain metric and separately postulated canonical LC energy/form",
+      "origin": "derived or explicitly assumed as stated",
+      "exact_expression": "Delta_a=||u||^2+2<x,u>;two unit kicks leave2+2cos(phi)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native unit support and physical reference voltage distinct;C not identified with mass-like B0"
+    },
+    {
+      "object_id": "feedback",
+      "symbol": "gamma",
+      "object_type": "added nonlinear source/sink generator",
+      "definition": "x_prime=A*x+gamma*(1-||x||^2)*x;gamma>0",
+      "domain": "activeR14",
+      "codomain": "activeR14",
+      "coefficient_domain": "Q matrix examples and symbolic real flow/positive physical parameters",
+      "units": "gamma per native s",
+      "basis_orientation": "Ascending simplex orientation;A=d-d^T;native positive phase;LC charge minus native Y",
+      "metric_measure": "Unit chain metric and separately postulated canonical LC energy/form",
+      "origin": "derived or explicitly assumed as stated",
+      "exact_expression": "a_prime=2gamma*a*(1-a);positive a tends1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native unit support and physical reference voltage distinct;C not identified with mass-like B0"
+    },
+    {
+      "object_id": "circuit",
+      "symbol": "Phi,Q_ch",
+      "object_type": "conditional classical canonical phase space",
+      "definition": "Phi_dot=Q_ch/C,Q_ch_dot=-Phi/ell;C,ell>0",
+      "domain": "R2 physical flux-charge phase space",
+      "codomain": "same",
+      "coefficient_domain": "Q matrix examples and symbolic real flow/positive physical parameters",
+      "units": "Phi flux;Q charge;C capacitance;ell inductance",
+      "basis_orientation": "Ascending simplex orientation;A=d-d^T;native positive phase;LC charge minus native Y",
+      "metric_measure": "Unit chain metric and separately postulated canonical LC energy/form",
+      "origin": "derived or explicitly assumed as stated",
+      "exact_expression": "omega^2=1/(ell*C);E=Q^2/(2C)+Phi^2/(2ell)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native unit support and physical reference voltage distinct;C not identified with mass-like B0"
+    },
+    {
+      "object_id": "preparation",
+      "symbol": "V_ref,Phi_ref",
+      "object_type": "external reference preparation and fixed map",
+      "definition": "Q_ch(0)=C*V_ref,Phi(0)=0;Phi_ref=V_ref/omega;Phi=Phi_ref*X,Q_ch=-C*omega*Phi_ref*Y",
+      "domain": "one native active real2 plane",
+      "codomain": "ideal LC phase space",
+      "coefficient_domain": "Q matrix examples and symbolic real flow/positive physical parameters",
+      "units": "voltage and flux",
+      "basis_orientation": "Ascending simplex orientation;A=d-d^T;native positive phase;LC charge minus native Y",
+      "metric_measure": "Unit chain metric and separately postulated canonical LC energy/form",
+      "origin": "derived or explicitly assumed as stated",
+      "exact_expression": "actualV=r*V_ref gives native a=r^2 under the same map",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native unit support and physical reference voltage distinct;C not identified with mass-like B0"
+    },
+    {
+      "object_id": "scale",
+      "symbol": "J_ref",
+      "object_type": "classical map action scale",
+      "definition": "C*V_ref^2/omega;conditional source A0 identification separate",
+      "domain": "positive circuit/calibration parameters plus declared map",
+      "codomain": "positive action",
+      "coefficient_domain": "Q matrix examples and symbolic real flow/positive physical parameters",
+      "units": "M L^2 T^-1",
+      "basis_orientation": "Ascending simplex orientation;A=d-d^T;native positive phase;LC charge minus native Y",
+      "metric_measure": "Unit chain metric and separately postulated canonical LC energy/form",
+      "origin": "derived or explicitly assumed as stated",
+      "exact_expression": "loop integral=pi*a*J_ref;specific action=J_ref/2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native unit support and physical reference voltage distinct;C not identified with mass-like B0"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "url_or_repo_path": "experiments/qpb1-unit-preparation/SOURCE_ROWS.json",
+      "version_or_commit": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe;UD@957d443e25008632ab9d9328c162343b6a651ee7",
+      "section_or_object_id": "16 selected ledger rows; archivev0.85,inherited scientific_revisionv0.43; hashes preserved",
+      "source_status": "Read-only imported native mathematics and quarantined physical candidates"
+    },
+    {
+      "source_id": "S2",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "version_or_commit": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+      "section_or_object_id": "sections5-6:normalized ray is not support quantization",
+      "source_status": "Native theorem with physical scale open"
+    },
+    {
+      "source_id": "S3",
+      "url_or_repo_path": "experiments/qpb1-unit-preparation/SOURCE_AVAILABILITY.json",
+      "version_or_commit": "uploaded attachment bytes2026-10-22",
+      "section_or_object_id": "9loose placeholders,2ZIP entries,dependency map and historical Gap2 relevance",
+      "source_status": "Bounded availability audit; no physical calibration receipt recovered"
+    },
+    {
+      "source_id": "S4",
+      "url_or_repo_path": "experiments/qpb1-carrier-anchor/README.md",
+      "version_or_commit": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+      "section_or_object_id": "projective-readout obstruction,conditional oscillator map and h traceability distinction",
+      "source_status": "Prior constructor-derived Discovery results; no physical promotion"
+    },
+    {
+      "source_id": "S5",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "version_or_commit": "uploaded bytes SHA2568e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4",
+      "section_or_object_id": "sections1,4;development lane and review distinction",
+      "source_status": "Governance proposal;no registry advancement claimed"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Original filled tetrahedron with unit metric and real continuous skew Hodge flow;closed support conserved."
+    },
+    {
+      "id": "A2",
+      "statement": "Integer all-time lattice,min-support rule,isolated integer jump and nonlinear feedback are separate added branches. None is an imported native preparation law."
+    },
+    {
+      "id": "A3",
+      "statement": "Ideal isolated classical single-mode LC equations and one-active-plane map;positive external reference voltage independently chosen;no physical apparatus or full C7 quantum map."
+    },
+    {
+      "id": "A4",
+      "statement": "Physical reference,clock,unit correspondence and calibration evidence remain open;LC capacitance is not source mass-like B0."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/fraction",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Integer-lattice minimum,half-integer phase witness,rational support sequence and exact LC maps"
+    },
+    {
+      "technique": "clock/modular",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Phase rotation subgroup preserving active integer lattice isZ2;sampled update-I with native steppi/2;no physical tick inferred"
+    },
+    {
+      "technique": "chain/spectral",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Reconstruct15-dimensional generator,active projection and unit top-cell injection"
+    },
+    {
+      "technique": "support/source",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Kick interference balance and exact logistic source/sink law"
+    },
+    {
+      "technique": "units/canonical action",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Flux-charge one-form,LC action and charge/flux/readout maps;capacitance distinct from mass"
+    },
+    {
+      "technique": "calibration/scaling",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Fixed-map support versus changed-reference scale;positive interval enclosure and target-backsolve control"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No prime/divisibility mechanism;parity andZ2 clock serve explicit lattice question"
+    },
+    {
+      "technique": "empirical statistics",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No measurements;exact synthetic examples only"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4+6+4+1=15;active14;min integer support1;Je has4 entries magnitude1/2;12rational supports;8two-kick cases;16feedback identities;4LC families*4preparation ratios=16controls",
+    "reduced_expression": "J_ref=C*V_ref^2/omega=2E_ref/omega;2identical kicks yield2+2cos(phi);positive interval bounds use omega opposite endpoints",
+    "factor_origins": [
+      "Native frequency2 gives tau0=2/omega",
+      "Norm-squared amplitude scaling gives factor4 for doubled preparation voltage",
+      "Canonical half-form gives specific action J_ref/2;full winding2pi yields pi*a*J_ref"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "Only phase0,pi preserve the specific full active integer lattice;Z2 sign-flip clock,not an arbitrary finite clock inference"
+  },
+  "clock_receipt": {
+    "clock_type": "Original continuous native s;optional new sampled lattice branch",
+    "modulus": "phase2pi;alternative sampled registerZ/2Z",
+    "residue_convention": "phase0 andpi correspond to+I and-I",
+    "update_rule": "continuousx_prime=A*x;sampled active-I",
+    "initial_phase": "top-cell injectione_cell;LC unit prep(X,Y)=(0,-1)",
+    "coupling": "Closed Hodge flow;feedback and kicks explicitly added source branches",
+    "period_claim": "Active native full recurrencepi;sampled step pi/2 has orbit2;no all-time integer trajectory",
+    "physical_unit_map": "LC map tau0=2/omega assumed as physical clock correspondence;not calibrated here"
+  },
+  "dynamics_readout": {
+    "state_space": "Original activeR14 plus explicitly separate integer/jump/feedback/one-plane LC hypotheses",
+    "generator_or_update": "A=d-d^T;optional radial source gamma*(1-a)*x or impulsive unit top-cell kick",
+    "initial_boundary_conditions": "Single filled tetrahedron;reset zero plus unit seed only under added source rule;ideal LC precharge and zero flux",
+    "conservation_and_sources": "Original a conserved;feedback a_prime=2gamma*a*(1-a);jump Delta_a=||u||^2+2<x,u>;LC ideal E conserved",
+    "projection_and_kernel": "One active plane is a restriction,not full C7 implementation;phase-dependent circuit readouts do not descend to the isolated projective ray",
+    "physical_mapping": "J_ref is a reference map scale;source A0 identity and physical preparation law unestablished"
+  },
+  "target_exposure": {
+    "status": "EXPLORATORY_AFTER_ETA2_EXPOSURE",
+    "known_targets": [
+      "Archived QPB1 eta_A=2",
+      "Previous mechanical action-anchor formula"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "No measured fit",
+      "Integer min-support,unit injection,radial feedback and ideal LC model selected as explicit constructive alternatives",
+      "Reference voltage is an external calibration/preparation choice,not source-selected universal constant"
+    ],
+    "search_domain_and_budget": "16selected ledger rows,keyword scan723rows,9placeholder texts,2ZIP entries;12rational supports,8kicks,16feedback checks,4LC families,16voltage controls,8interval corners,2invalidinterval controls",
+    "selection_criterion": "Identify which choices fix native norm,physical preparation,observable and universal unit separately",
+    "baseline": "Ordinary classical LC resonator with externally chosen precharge"
+  },
+  "calculation_steps": [
+    "Bind uploaded historical ledger/governance bytes to existing imports;inspect action rows and availability without importing raw backups.",
+    "Prove conserved norm,integer-lattice obstruction and exactZ2 phase subgroup;construct rational supports approachingzero.",
+    "Construct isolated unit top-cell injection and repeated-kick interference balances;account for added sources/reset assumptions.",
+    "Derive exact added feedback support law and positive-support convergence.",
+    "DeriveLC intertwiner,canonical pullback,energy and action scale with explicit units.",
+    "Separate fixed-map amplitude interventions from changed reference;verify interval arithmetic and circular target-backsolve control."
+  ],
+  "result": {
+    "exact_expression": "Je notin Z15;min norm^2 on active integer lattice1 only under added domain/rule;Delta_a=||u||^2+2<x,u>;a_prime=2gamma*a*(1-a);J_ref=C*V_ref^2/omega;fixed-map V=rV_ref gives a=r^2",
+    "approximation": null,
+    "units": "Dimensionless native support;physical action M L^2 T^-1",
+    "precision_and_error": "Exact Fraction checks and proofs;interval example synthetic,not measured coverage",
+    "scope": "Specific original carrier/metric and explicitly added preparation/feedback/ideal LC branches;no universal preparation no-go and no quantum identification",
+    "physical_interpretation": "Reproducible analogue preparation specified conditionally;universal native-to-physical action reference remainsOPEN;UNSCORED,promotion0"
+  },
+  "verification": [
+    {
+      "method": "Exact reconstruction,source/jump identities,LC pullback and interval controls",
+      "command_or_proof_path": "python3 experiments/qpb1-unit-preparation/audit.py --out /workspace/scratch/ed44232d6ecb/unitprep_outputs",
+      "source_revision": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe plus captured working inputs",
+      "actual_result": "PASS:12rational supports,8two-kick cases,16feedback identities,4LC maps,16voltage controls,8interval corners,2invalid controls and target-backsolve identity",
+      "review_relationship": "constructor;no non-constructor review"
+    },
+    {
+      "method": "General proofs supplement finite examples",
+      "command_or_proof_path": "experiments/qpb1-unit-preparation/README.md sections2-6",
+      "source_revision": "captured working documentation",
+      "actual_result": "Conservation,lattice-continuity and phase-subgroup proofs;explicit differential solution;canonical LC equations/pullback",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Unit edge rotates to half-integer Je under original flow:all-time integer branch fails.",
+    "Rational amplitude domain has no positive support minimum.",
+    "Two unit kicks can cancel or reinforce;event count is not additive support.",
+    "Native feedback unit attractor does not fix physical amplitude or action conversion.",
+    "Changing reference voltage changes map scale;normalizing every preparation without carrying support conceals that choice.",
+    "Setting reference voltage from target action makes the purported test an identity."
+  ],
+  "limitations": [
+    "No native birth/reset/constitutive rule or physical kick map derived.",
+    "Only bounded source search;not all papers/archive entries audited.",
+    "Single-mode ideal LC is a classical analogue;no named device,measurements,loss/loading correction or full C7 quantum readout.",
+    "Target-independent external choice is not unique source-selected universal action unit.",
+    "No calibration independence/coverage certificate or independent adversarial review;proposal remainsdevelopment-only."
+  ],
+  "changed_dependencies": [
+    "Adds concrete preparation and injection bookkeeping to prior scale gap without changing its source assumptions.",
+    "Limits lattice obstruction to all-time lattice-valued flow;integer preparation alone remains possible.",
+    "Distinguishes fixed-map amplitude changes from a changed unit-reference map."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-unit-preparation-20261022-a1/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Derive a native preparation/reset/source rule with full support/phase/energy accounting,then give its target-independent physical kick and observable map;otherwise retain the calibrated analogue scope."
+}
