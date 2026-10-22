@@ -1,0 +1,388 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "icosahedral-pulsetube-20261022-a1",
+  "run_id": "pulsetube-001",
+  "created_at": "2026-10-22T21:49:21.211622+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Moving-pulse full560-state/180phase sensitivity, breathing-adverse preparations, exact conditional tube criterion and explicit nonlinear-certificate OPEN audit.",
+  "command": "Executed separately with OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 and --out OUTPUT: verify.py; variational.py normal; variational.py --which fine; adverse_checks.py --workers 1; alignment.py; variational.py --which objective; rigid_diagnostic.py; finalize.py. See journal for amendments.",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "378ecad7c8d8fc96c4d8abf55cd0ca5330ea5adc",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "adverse_checks.py",
+      "path": "inputs/001-adverse_checks.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-pulsetube/adverse_checks.py",
+      "sha256": "bc1435d9f8cb6464dbe78976de17d2d656696ad1fd491ce84a0a656b6eb5833c",
+      "size_bytes": 5356
+    },
+    {
+      "input_id": "input-002",
+      "name": "alignment.py",
+      "path": "inputs/002-alignment.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-pulsetube/alignment.py",
+      "sha256": "5cc0d60eee1b0224b62717063ce51ec3bee5cc2429b80b2bf8254c14b014ee21",
+      "size_bytes": 2851
+    },
+    {
+      "input_id": "input-003",
+      "name": "finalize.py",
+      "path": "inputs/003-finalize.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-pulsetube/finalize.py",
+      "sha256": "c9b92ccbc145b36146836a5bcbb180dee03b124f2b28a873e8a8242e04e95650",
+      "size_bytes": 7777
+    },
+    {
+      "input_id": "input-004",
+      "name": "jacobian.py",
+      "path": "inputs/004-jacobian.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-pulsetube/jacobian.py",
+      "sha256": "c5e1aaae82cb730828d78222bd85bb859feb3e9e023a743f44ed91f766331cf6",
+      "size_bytes": 5404
+    },
+    {
+      "input_id": "input-005",
+      "name": "rigid_diagnostic.py",
+      "path": "inputs/005-rigid_diagnostic.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-pulsetube/rigid_diagnostic.py",
+      "sha256": "d1a8a1f95cfb3d728afc99ccf03726d03c55ce50e8dab0c5a1f63aa255011416",
+      "size_bytes": 4406
+    },
+    {
+      "input_id": "input-006",
+      "name": "variational.py",
+      "path": "inputs/006-variational.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-pulsetube/variational.py",
+      "sha256": "7395c5f6a91b20e55122d8b9237c3a520ea82702a208fd7cfd31381ab63474be",
+      "size_bytes": 12263
+    },
+    {
+      "input_id": "input-007",
+      "name": "verify.py",
+      "path": "inputs/007-verify.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-pulsetube/verify.py",
+      "sha256": "c22f5127e63ed1949742456e3b7c6474f54e3825b8453928e46ef9e5fb9ce01d",
+      "size_bytes": 2521
+    },
+    {
+      "input_id": "input-008",
+      "name": "README.md",
+      "path": "inputs/008-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-pulsetube/README.md",
+      "sha256": "9568ddf4d2a271928572867e7724a4ad98677173c045462d721d6c42e23d1622",
+      "size_bytes": 10334
+    },
+    {
+      "input_id": "input-009",
+      "name": "PROTOCOL.md",
+      "path": "inputs/009-PROTOCOL.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-pulsetube/PROTOCOL.md",
+      "sha256": "003c01452978cdaf822a9f9003fe05d0b7516ffe2bedfc7d20ff76c78ded5eb8",
+      "size_bytes": 3671
+    },
+    {
+      "input_id": "input-010",
+      "name": "TUBE_THEOREM.md",
+      "path": "inputs/010-TUBE_THEOREM.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-pulsetube/TUBE_THEOREM.md",
+      "sha256": "5f3477514ddbe6d4e31790f38f28ddef10fcb6f10cca1ac807015d9dd6ed819d",
+      "size_bytes": 7828
+    },
+    {
+      "input_id": "input-011",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/011-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/icosahedral-pulsetube/mathematical_receipt.json",
+      "sha256": "edb6c57645e3354bdb4cde8bff30f4816996d0e2e5550af2bc5b7ebb8f3f667c",
+      "size_bytes": 21408
+    },
+    {
+      "input_id": "input-012",
+      "name": "pulsetube_variational_original.py",
+      "path": "inputs/012-pulsetube_variational_original.py",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "6ac9bc41d01d5c67b22eff2aa989258b28a1fd86665c87b8f874500a8a6b7b20",
+      "size_bytes": 8628
+    },
+    {
+      "input_id": "input-013",
+      "name": "mountloss.py",
+      "path": "inputs/013-mountloss.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/mountloss.py",
+      "sha256": "3ef430afa5de9f3508f4a72d698c16a25ed5e8626cb3e8f21af705490855741b",
+      "size_bytes": 3974
+    },
+    {
+      "input_id": "input-014",
+      "name": "hardware.py",
+      "path": "inputs/014-hardware.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/hardware.py",
+      "sha256": "dee76607e8ebe28ae48eafb05c102696150b80bf6c7eb19bbb1c96594a42183a",
+      "size_bytes": 2950
+    },
+    {
+      "input_id": "input-015",
+      "name": "network.py",
+      "path": "inputs/015-network.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/network.py",
+      "sha256": "ebcb9efe5e07212463e8b448c0b157025158d3a365dbc25599d6d14210628245",
+      "size_bytes": 3479
+    },
+    {
+      "input_id": "input-016",
+      "name": "model.py",
+      "path": "inputs/016-model.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-free3d/model.py",
+      "sha256": "171fbae15260a0bacb0cfde601159a84f8648349cb47fcacd88c6e2137d2bbb3",
+      "size_bytes": 6925
+    },
+    {
+      "input_id": "input-017",
+      "name": "analyze.py",
+      "path": "inputs/017-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-cone/analyze.py",
+      "sha256": "089fbed8bc59f7c785c12f57089b6b5f9be25d381c76854ba72fc893622ed8e3",
+      "size_bytes": 11982
+    },
+    {
+      "input_id": "input-018",
+      "name": "damping.py",
+      "path": "inputs/018-damping.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-damping/damping.py",
+      "sha256": "5c47fd68afa10e2a1a545b7a0b8593159ca9822da312f887b1fcead28581ff7f",
+      "size_bytes": 2091
+    },
+    {
+      "input_id": "input-019",
+      "name": "analyze.py",
+      "path": "inputs/019-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-damping/analyze.py",
+      "sha256": "f1fc3fdf58b99a910c3e97d47706aaf747a9690d2c16a1972999cc4baf42ad0b",
+      "size_bytes": 12945
+    },
+    {
+      "input_id": "input-020",
+      "name": "cases.json",
+      "path": "inputs/020-cases.json",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/cases.json",
+      "sha256": "40f3b07c3f90229eaed3c7d0d3796541a57dd900c8a4d7eda08a01be43b2eb36",
+      "size_bytes": 288137
+    },
+    {
+      "input_id": "input-021",
+      "name": "baselines.json",
+      "path": "inputs/021-baselines.json",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/baselines.json",
+      "sha256": "6ccc482c696c9cfee16aad5bd9df930c8914b155350d5b752cf7280b7906fb45",
+      "size_bytes": 1804
+    }
+  ],
+  "files": [
+    {
+      "path": "files/adverse-seed10422-0-boundary2-amp-1.0.csv",
+      "sha256": "d71a63ad95d8dd933bed2f66a9111485e3d095bd68d07fd2f4cf016965e8efe1",
+      "size_bytes": 96498
+    },
+    {
+      "path": "files/adverse-seed10422-0-boundary2-amp-1.0.json",
+      "sha256": "e506fffe62ca4866e60b03c89e46e093e58ea84d25252c8e6f5a11c0b2b4f923",
+      "size_bytes": 1362
+    },
+    {
+      "path": "files/adverse-seed10422-0-boundary2-amp0.0.csv",
+      "sha256": "50bf1aa24442198076df00779b6dd4ca6f9478bc98f240449cc084b0ec1f16c4",
+      "size_bytes": 96666
+    },
+    {
+      "path": "files/adverse-seed10422-0-boundary2-amp0.0.json",
+      "sha256": "8c2255aa7be79422dd6ad5799dd83652456f0f2e2943a9c642bb3db32f74820a",
+      "size_bytes": 1309
+    },
+    {
+      "path": "files/adverse-seed10422-0-boundary2-amp0.5.csv",
+      "sha256": "d934bff50c4f685aa95dbd3de6bee104d3785d4fcd2a4bf84f0b1f761b0cd4bf",
+      "size_bytes": 96398
+    },
+    {
+      "path": "files/adverse-seed10422-0-boundary2-amp0.5.json",
+      "sha256": "08ed2dea5bb5700d2d6f67cba30b5aacaccb747432a280705452526261cb4acf",
+      "size_bytes": 1362
+    },
+    {
+      "path": "files/adverse-seed10422-0-boundary2-amp1.0.csv",
+      "sha256": "5fd11e71aa9e70ed466c921bd4c30456df1216655595444598ac52c3b890cc15",
+      "size_bytes": 96479
+    },
+    {
+      "path": "files/adverse-seed10422-0-boundary2-amp1.0.json",
+      "sha256": "6b0cacbe51bc167a154b8e6a5b36c5621368cc5dcd794a2ac523f18306c364fd",
+      "size_bytes": 1362
+    },
+    {
+      "path": "files/adverse-uniform-b0.05-cf0.0-amp-1.0.csv",
+      "sha256": "3f43d044c17b760eb5f957b3b0809b8987ad0a9e81dd2e9a8cec8c2b1eae5649",
+      "size_bytes": 96424
+    },
+    {
+      "path": "files/adverse-uniform-b0.05-cf0.0-amp-1.0.json",
+      "sha256": "d68d4bceb2313ae7ce1d4c04e36c72f1d385ad13cacc54e1258abfaa6d21f1c5",
+      "size_bytes": 1356
+    },
+    {
+      "path": "files/adverse-uniform-b0.05-cf0.0-amp0.5.csv",
+      "sha256": "601cb622d23e5384a0915e09d936521ecd00690196e5dab359a6cd77de3e3122",
+      "size_bytes": 96390
+    },
+    {
+      "path": "files/adverse-uniform-b0.05-cf0.0-amp0.5.json",
+      "sha256": "7fce0055b08a05198128bdea840c8b93d990d58880ab6a7c11fceccb12e83408",
+      "size_bytes": 1360
+    },
+    {
+      "path": "files/adverse-uniform-b0.05-cf0.0-amp1.0.csv",
+      "sha256": "df3bf9c1e42d7c1e4b94abbb8f274b1829fb7d6268e048b2a6494931d77cf6e1",
+      "size_bytes": 96371
+    },
+    {
+      "path": "files/adverse-uniform-b0.05-cf0.0-amp1.0.json",
+      "sha256": "0e923d5d8d9d19a8579a588acc5236a282c655724c9620a98be0f086aaddbea0",
+      "size_bytes": 1361
+    },
+    {
+      "path": "files/adverse_checks.json",
+      "sha256": "2dea2618304034511d52ca12e18ec414ad0c2bea4f001ba79db96f004a894305",
+      "size_bytes": 10788
+    },
+    {
+      "path": "files/alignment_checks.json",
+      "sha256": "2cb55968939fc9ddb2f81662bb6386b436d436c8f21cd976c103311cea63096d",
+      "size_bytes": 670
+    },
+    {
+      "path": "files/certificate_audit.json",
+      "sha256": "1c36bcc4bf2924899d77cd16ba727c9cf206cbaabe0a3f48944c018bf7f079bc",
+      "size_bytes": 2017
+    },
+    {
+      "path": "files/jacobian_checks.json",
+      "sha256": "50b87875da2af9aa89032782cd2a61629498861607d9887d6b69a81613c2e37a",
+      "size_bytes": 4403
+    },
+    {
+      "path": "files/milestone.json",
+      "sha256": "e078410b99a458626c376a3ae054e91b0970140c53ca3761f750e9e471c2a897",
+      "size_bytes": 9819
+    },
+    {
+      "path": "files/refinement_checks.json",
+      "sha256": "9fc9c6f54a65c74d3a12af74fcfb431b2ad4b9405a00847949e5db7e9f5cc5d4",
+      "size_bytes": 442
+    },
+    {
+      "path": "files/response-seed10422-0-boundary2-fine0.csv",
+      "sha256": "156a162fb871112fc372eee9a9cdaaebe35ebb6fdab9b502f13cd709023a7e1f",
+      "size_bytes": 183868
+    },
+    {
+      "path": "files/response-seed10422-0-boundary2-fine0.json",
+      "sha256": "03f45cb5f32327bf431d818d8b9d40bb9c760757ff126c4893275494a5bbe134",
+      "size_bytes": 1626
+    },
+    {
+      "path": "files/response-seed10422-0-boundary2-fine1.csv",
+      "sha256": "5a3a82514c50994591f3c5359df93260d09c7c056f8f8041389346ea99d5e650",
+      "size_bytes": 368066
+    },
+    {
+      "path": "files/response-seed10422-0-boundary2-fine1.json",
+      "sha256": "ddc36a5a15b567d7004e80c4ec7d9e4398ae168554b44dcc49a3f971436ed3b0",
+      "size_bytes": 2255
+    },
+    {
+      "path": "files/response-seed10422-0-boundary2-objective1.csv",
+      "sha256": "5a3a82514c50994591f3c5359df93260d09c7c056f8f8041389346ea99d5e650",
+      "size_bytes": 368066
+    },
+    {
+      "path": "files/response-seed10422-0-boundary2-objective1.json",
+      "sha256": "6fc2f3b4aa3cb8458467695326add65bb354803e0d352dccc71c4c6b5c16946a",
+      "size_bytes": 2836
+    },
+    {
+      "path": "files/response-uniform-b0.05-cf0.0-fine0.csv",
+      "sha256": "d99df762cc95740db6ee98bd37435c67b87dcf8534d61212c371a43abd287682",
+      "size_bytes": 183741
+    },
+    {
+      "path": "files/response-uniform-b0.05-cf0.0-fine0.json",
+      "sha256": "d807c9e5948cf3151f49e274a56429fa57cb94dcfe8d4572bd42d3264898b706",
+      "size_bytes": 1667
+    },
+    {
+      "path": "files/rigid_diagnostic.csv",
+      "sha256": "f309b5e26553eff097d013c60f27be1da44b7e7f25e99153f84cc6354761d9d5",
+      "size_bytes": 96134
+    },
+    {
+      "path": "files/rigid_diagnostic.json",
+      "sha256": "83a549d6b3596aa0cd7689dc4252ddedc4f1bf6b6af2b36be0f974536b6a83e5",
+      "size_bytes": 6263
+    },
+    {
+      "path": "files/uncaptured_intermediates.json",
+      "sha256": "564905f0fe78a4ae313ed55dcbeee92809b0101e8aed6dd2929a1cde2323556c",
+      "size_bytes": 1150
+    },
+    {
+      "path": "files/variational-fine.json",
+      "sha256": "11df72265ba27f61de2a468b402cf3494a637431875dad82d11af90dc26882c1",
+      "size_bytes": 2573
+    },
+    {
+      "path": "files/variational-normal.json",
+      "sha256": "fc4b9611246c72d3cc325f247f1493bedaa16f96b44ec93041dff5cd6228d898",
+      "size_bytes": 3720
+    },
+    {
+      "path": "files/variational-objective.json",
+      "sha256": "2e31e4663455fce4a377588a09f97b58debeded096e2517dc6ac5d38ae46d174",
+      "size_bytes": 3182
+    },
+    {
+      "path": "files/compact_checkpoints.npz",
+      "sha256": "4b29b595cc98713372d97a6bcf3015054bb922422d0b1d0a0f6e40d94268675a",
+      "size_bytes": 2669739
+    },
+    {
+      "path": "files/RESULTS.md",
+      "sha256": "32bf72bd7008507c913348881f2e0a83d0d18010b857071152374c5c49380b3b",
+      "size_bytes": 6059
+    }
+  ]
+}

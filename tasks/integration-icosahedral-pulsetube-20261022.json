@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-icosahedral-pulsetube-20261022",
+  "goal": "Derive full moving-pulse variational dynamics, evaluate nonlinear tube conditions and record remaining validated bounds",
+  "owned_paths": [
+    "experiments/icosahedral-pulsetube/",
+    "candidates/icosahedral-pulsetube/",
+    "sessions/icosahedral-pulsetube-20261022-a1/",
+    "artifacts/icosahedral-pulsetube-20261022-a1/",
+    "state/CURRENT.md",
+    "tasks/integration-icosahedral-pulsetube-20261022.json"
+  ],
+  "dependencies": [
+    "integration-icosahedral-nonlineartube-20261022"
+  ],
+  "status": "complete"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "filename": "response-seed10422-0-boundary2-fine0.npz",
+    "sha256": "bcd50e299266986f7e72bb9831fae8d6b7b7176f627ec1e35dcb2f7e360daf53",
+    "bytes": 6676601,
+    "archived": false,
+    "reproduction": "variational.py; compact phase/Gram/final-tangent subset archived"
+  },
+  {
+    "filename": "response-uniform-b0.05-cf0.0-fine0.npz",
+    "sha256": "ba843cd06ade07c3649db4a5ba48ba8365163a05bc5606eb215251a0dddf6b8d",
+    "bytes": 4817735,
+    "archived": false,
+    "reproduction": "variational.py; compact phase/Gram/final-tangent subset archived"
+  },
+  {
+    "filename": "response-seed10422-0-boundary2-fine1.npz",
+    "sha256": "90ea54794dcb95de0640336d194570575dda35d938fe00b44670fdf841d3221b",
+    "bytes": 12334861,
+    "archived": false,
+    "reproduction": "variational.py; compact phase/Gram/final-tangent subset archived"
+  },
+  {
+    "filename": "response-seed10422-0-boundary2-objective1.npz",
+    "sha256": "90ea54794dcb95de0640336d194570575dda35d938fe00b44670fdf841d3221b",
+    "bytes": 12334861,
+    "archived": false,
+    "reproduction": "variational.py --which objective; matched reference/tangent repeat checked"
+  }
+]
