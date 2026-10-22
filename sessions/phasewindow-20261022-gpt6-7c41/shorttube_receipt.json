@@ -281,7 +281,8 @@
     "For u∈[0,1/10] bound via short polynomial; match at 1/10 with 647/1500.",
     "Point-position estimate gives ||A_cell,ref^-1 ΔA_cell||<2u<=4/5; preserve orientation and normalized volume ratios between1/125 and729/125.",
     "Bootstrap first singularity and apply finite-dimensional smooth ODE continuation.",
-    "Preserve energy-only endpoint-collapse witness and all remaining u100 goals as OPEN."
+    "Preserve energy-only endpoint-collapse witness and all remaining u100 goals as OPEN.",
+    "CORRECTION: at u=0 normalized volume and both time-dependent bounds equal 1; use weak inequalities for 0<=u<=2/5 and strict fixed bounds 1/125<Vratio<729/125 on the entire interval. New corrected source captured in shorttube-004."
   ],
   "result": {
     "exact_expression": "For all qualified 3D trajectories, all 120 housing struts >13/1500 and every cell 1/125<V_k(u)/V_k(0)<729/125 on 0<=u<=2/5, including every initial housing phase at E_h<=51/20000000.",
@@ -337,9 +338,12 @@
     "Only a mechanical surrogate with ideal current-axis massless struts, uncalibrated time and energy, hardware UNSCORED.",
     "The same runtime's algebra checks are not independent physics experiments."
   ],
-  "changed_dependencies": [],
+  "changed_dependencies": [
+    "Versioned mathematical notation correction SHORTTUBE_ERRATUM.md; u=0 forces weak time-dependent displacement/volume enclosures; captured original shorttube-003 not edited."
+  ],
   "artifact_manifest_refs": [
-    "artifacts/phasewindow-20261022-gpt6-7c41/shorttube-003/manifest.json"
+    "artifacts/phasewindow-20261022-gpt6-7c41/shorttube-003/manifest.json",
+    "artifacts/phasewindow-20261022-gpt6-7c41/shorttube-004/manifest.json"
   ],
   "next_discriminant": "Validate full560 forced Green and alignment nonlinear tube at original alpha=.1 without modifying PR44; certify strictly larger horizon or u100 coherent readout by controlled local recurrence; check source replay and independent review."
 }
