@@ -1,0 +1,256 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosahedral-cone-exact-v1",
+  "session_id": "icosahedral-cone-20261022-a1",
+  "candidate_id": "icosahedral-cone",
+  "question": "What exact structure and dynamical opportunities distinguish the 20-cell icosahedral cone from the four-cell tetrahedral cone?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL"
+  ],
+  "objects": [
+    {
+      "object_id": "icosahedral-centre-cone",
+      "symbol": "K=v0*S",
+      "object_type": "embedded simplicial 3-ball and integral chain complex",
+      "definition": "20 tetrahedra coned from regular icosahedral boundary S; full and relative chain registers",
+      "domain": "C_k(K;Z), real complexification for spectral evolution",
+      "codomain": "C_(k-1) via B_k; full R125 via skew A",
+      "coefficient_domain": "Z; Q(sqrt5) geometry; real states",
+      "units": "length a, area a^2, volume a^3; u dimensionless",
+      "basis_orientation": "ascending simplex order; consistent physical cell signs from exact determinants",
+      "metric_measure": "Euclidean geometric Gram G; separate H=I chain metric",
+      "origin": "assumed",
+      "exact_expression": "f=(13,42,50,20); partial*h+h*partial=I-P0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "user-configuration",
+        "previous-cone"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "convex supporting-face checks"
+      ],
+      "normalization": "a=1 in executable geometry; restore a by homogeneity"
+    },
+    {
+      "object_id": "dodecahedral-cell-graph",
+      "symbol": "L_D=3I-A_D",
+      "object_type": "graph Laplacian on cell amplitudes",
+      "definition": "20 nodes for cells,30 shared-interface edges",
+      "domain": "R20",
+      "codomain": "R20",
+      "coefficient_domain": "Z matrix; Q(sqrt5) spectrum",
+      "units": "dimensionless graph eigenvalues",
+      "basis_orientation": "cell order inherited from sorted boundary triangles; unoriented adjacency",
+      "metric_measure": "Euclidean",
+      "origin": "derived",
+      "exact_expression": "spec=(0^1,(3-sqrt5)^3,2^5,3^4,5^4,(3+sqrt5)^3)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "user-configuration"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "explicit cell-intersection adjacency"
+      ],
+      "normalization": "unweighted degree3 Laplacian"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "user-configuration",
+      "url_or_repo_path": "experiments/icosahedral-cone/README.md",
+      "version_or_commit": "audit v1.0,2026-10-22",
+      "section_or_object_id": "sections1-3 selected supplied mathematical claims",
+      "source_status": "user proposal, independently checked by construction"
+    },
+    {
+      "source_id": "previous-cone",
+      "url_or_repo_path": "experiments/four-cell-tetrahedron/README.md",
+      "version_or_commit": "f70871b7df8465ceea88cbb6e41fa9493dddee6b",
+      "section_or_object_id": "centre cone and relative chain convention",
+      "source_status": "prior scoped Discovery result"
+    },
+    {
+      "source_id": "ledger-v039",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "f70871b7df8465ceea88cbb6e41fa9493dddee6b",
+      "section_or_object_id": "Q139,Q144-Q145,Q151-Q152",
+      "source_status": "historical source; uploaded copy hash matches archived import"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Regular convex icosahedron with positive edge scale a; geometric centre coned to every boundary face."
+    },
+    {
+      "id": "A2",
+      "statement": "Ascending simplex basis, integer boundaries; full/relative chains over R with H=I for optional skew dynamics."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Integer/combinatorial",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Enumerate simplices, incidences and explicit radial five-cycle links"
+    },
+    {
+      "technique": "Rational/algebraic exact",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Q(sqrt5) support planes, volumes, Gram/dihedral checks"
+    },
+    {
+      "technique": "Factorization/count provenance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "125=5^3 and63=2^6-1 compared with general cone counts; no physical inference"
+    },
+    {
+      "technique": "Clock/modular",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "Spatial C5 links do not specify an update or temporal clock"
+    },
+    {
+      "technique": "Chain/homology",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Integer boundaries, cone contraction and full/relative registers"
+    },
+    {
+      "technique": "Spectral/operator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Exact annihilating polynomial and moment certificates; active seed subspaces"
+    },
+    {
+      "technique": "Locality/transport",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Cell adjacency and conditional diffusion comparison; no inferred constitutive law"
+    },
+    {
+      "technique": "Geometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Euclidean Gram metric, dihedrals, solid angles and edge deficits"
+    },
+    {
+      "technique": "Refinement/fractal",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "A one-step centre cone is not a recursive self-similarity rule"
+    },
+    {
+      "technique": "Fit/physical calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No empirical target or fitted physical scale"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "V=1+12,E=12+30,F=30+20,C=20; edge incidences12*5+30*2=20*6",
+    "reduced_expression": "125=2*62+1;63=62+1; solid-angle fraction1/20",
+    "factor_origins": [
+      "one centre",
+      "12 shell vertices",
+      "30 shell edges",
+      "20 shell faces"
+    ],
+    "factorization": "125=5^3;63=3^2*7;62=2*31;20=2^2*5",
+    "divisibility_gcd_lcm": "N/A: no symmetry quotient or temporal joint period asserted"
+  },
+  "clock_receipt": {
+    "clock_type": "optional continuous u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "cprime=(partialT-partial)c under declared H=I",
+    "initial_phase": "heart unit seed; separate cell/surface seed",
+    "coupling": "chain incidence only; no new heart-to-cell coupling",
+    "period_claim": "heart active component2pi/sqrt13; collective sector2pi in model units; no global or physical period asserted",
+    "physical_unit_map": "u=t/t0, t0 OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R125 full / R63 relative; R20 for separate conditional graph diffusion",
+    "generator_or_update": "A=partialT-partial; -A^2=Delta",
+    "initial_boundary_conditions": "heart e0 or separate oriented global cell seed; full boundary kept vs relative quotient declared",
+    "conservation_and_sources": "A skew under H=I preserves squared chain norm; no physical energy identification",
+    "projection_and_kernel": "heart cyclic3D excludes grades2,3; collective cell/surface sector2D orthogonal; boundary quotient changes top Laplacian by I",
+    "physical_mapping": "Euclidean geometry is explicit; chain amplitudes do not automatically move vertices or represent volume"
+  },
+  "target_exposure": {
+    "status": "supplied formulas and prior cone results exposed; audit not a prediction test",
+    "known_targets": [
+      "f-vector",
+      "metric invariants",
+      "dodecahedral dual",
+      "four-cell comparison"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "H=I and unit evolution rate declared, not fitted"
+    ],
+    "search_domain_and_budget": "one fully enumerated 20-cell complex; no parameter search",
+    "selection_criterion": "exact equality or exact polynomial/moment identity",
+    "baseline": "Four-cell tetrahedral cone: same one exterior/three internal faces per cell; K4 cell graph; full29 versus125 chains."
+  },
+  "calculation_steps": [
+    "Construct exact Q(sqrt5) vertices and edges, triangular faces and supporting half-spaces.",
+    "Cone all faces; enumerate complete simplex basis and integer B matrices.",
+    "Verify incidence, nilpotency and integer contraction.",
+    "Check metric invariants, Gram determinant and normal products.",
+    "Certify graph/full/relative spectra by exact annihilation and moments; compare numerical eigenvalues.",
+    "Check invariant heart space and oriented-cell/exterior-surface oscillator."
+  ],
+  "result": {
+    "exact_expression": "f=(13,42,50,20),rank B=(12,30,20); full125,boundary62,relative63; L_D spectrum0,(3\u00b1sqrt5),2,3,5; heart minimal polynomial z(z^2+13), collective z^2+1",
+    "approximation": "R/a=.9510565163,h/a=.7557613141; beta69.09484255deg",
+    "units": "geometry in powers of a; spectral rates dimensionless",
+    "precision_and_error": "Exact Q(sqrt5)/Z certificates; NumPy float64 cross-check maximum eigenvalue error7.994e-15",
+    "scope": "One explicit convex centre-cone and declared unit-metric operators",
+    "physical_interpretation": "NONE established; optional coupling candidate OPEN"
+  },
+  "verification": [
+    {
+      "method": "Exact geometric, incidence, contraction and spectral checks",
+      "command_or_proof_path": "experiments/icosahedral-cone/analyze.py and README.md",
+      "source_revision": "f70871b7df8465ceea88cbb6e41fa9493dddee6b",
+      "actual_result": "PASS",
+      "review_relationship": "constructor exact calculation"
+    },
+    {
+      "method": "Float64 eigenvalue cross-check",
+      "command_or_proof_path": "analyze.py spectral_certificate",
+      "source_revision": "f70871b7df8465ceea88cbb6e41fa9493dddee6b",
+      "actual_result": "PASS maximum discrepancy7.994e-15",
+      "review_relationship": "same constructor, distinct numerical method"
+    },
+    {
+      "method": "Coordinate-derived illustration",
+      "command_or_proof_path": "experiments/icosahedral-cone/draw.py",
+      "source_revision": "f70871b7df8465ceea88cbb6e41fa9493dddee6b",
+      "actual_result": "executed; visually inspected",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Supplied boundary-edge cell valence1 is false; corrected to2 by explicit enumeration.",
+    "Euler characteristic1 alone does not imply a3-ball; here explicit cone contraction/convex boundary supplies the result.",
+    "Central seed does not excite cell amplitudes under the chosen incidence generator.",
+    "No bulk radial curvature deficit in the stated Euclidean realization."
+  ],
+  "limitations": [
+    "H=I chain metric differs from geometric Gram metric and physical constitutive weighting.",
+    "Pure vertex-seed chain flow does not excite cells or geometric breathing.",
+    "No physical bridge, material law, native time map or independent empirical replication.",
+    "Spatial fivefold links and arithmetic counts do not define temporal modular laws or information capacities."
+  ],
+  "changed_dependencies": [
+    "New icosahedral carrier; earlier tetrahedral results preserved, not overwritten."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/icosahedral-cone-20261022-a1/audit-001/manifest.json"
+  ],
+  "next_discriminant": "Construct or obstruct a local, symmetry-compatible, energy-consistent heart-to-collective cell/surface coupling; declare the volume readout."
+}

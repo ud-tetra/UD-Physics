@@ -1,0 +1,62 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-cone",
+  "session_id": "icosahedral-cone-20261022-a1",
+  "question": "What exact structure and dynamical opportunities distinguish the 20-cell icosahedral cone from the four-cell tetrahedral cone?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL"
+  ],
+  "assumptions": [
+    "Regular convex icosahedron with positive edge scale a; geometric centre coned to every boundary face.",
+    "Ascending simplex basis, integer boundaries; full/relative chains over R with H=I for optional skew dynamics.",
+    "Cell graph, primal graph and exterior-augmented cell graph kept distinct."
+  ],
+  "physical_mapping": "Geometric Euclidean lengths/areas/volumes explicit; native amplitude-to-volume and physical clock/constitutive maps OPEN.",
+  "target_exposure": "User-provided counts, metric identities and dodecahedral dual exposed before audit. Prior tetrahedral cone and heart-mode obstruction exposed; no measured data.",
+  "fitted_choices": [
+    "No parameter fitting. Unit chain metric/rate are declared analytical conventions, not selected by geometry or physical data."
+  ],
+  "sources": [
+    {
+      "path": "user mathematical configuration, 2026-10-22",
+      "revision": "this session; selected mathematical claims transcribed in report",
+      "section": "20-cell barycentric cone, coordinates, metrics and dual graph",
+      "status": "proposal independently checked by exact construction"
+    },
+    {
+      "path": "experiments/four-cell-tetrahedron/README.md",
+      "revision": "f70871b7df8465ceea88cbb6e41fa9493dddee6b",
+      "section": "centre subdivision and boundary/relative distinction",
+      "status": "prior Discovery calculation"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "revision": "f70871b7df8465ceea88cbb6e41fa9493dddee6b",
+      "section": "Q139,Q144-Q145,Q151-Q152",
+      "status": "historical mapping/clock/constitutive limits"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "revision": "f70871b7df8465ceea88cbb6e41fa9493dddee6b",
+      "section": "sections2,4,5",
+      "status": "governance proposal; not a mathematical premise or automatic adoption"
+    }
+  ],
+  "baseline": "Four-cell tetrahedral cone: same one exterior/three internal faces per cell; K4 cell graph; full29 versus125 chains.",
+  "result": "EXACT: 20-cell icosahedral cone, f=(13,42,50,20), supplied metric formulas verified; outer-edge cell incidence corrected1->2. Exact graph and full/relative H=I chain spectra certified. Centre seed is3D with static/sqrt13 modes, no faces/cells; separate oriented-cell/exterior-surface sector is2D at unit frequency and orthogonal.",
+  "next_discriminant": "Construct or obstruct a local, symmetry-compatible, energy-consistent heart-to-collective cell/surface coupling; declare the volume readout.",
+  "mathematical_receipts": [
+    "candidates/icosahedral-cone/mathematical_receipt.json"
+  ],
+  "artifact": "artifacts/icosahedral-cone-20261022-a1/audit-001/manifest.json",
+  "limitations": [
+    "H=I chain metric differs from geometric Gram metric and physical constitutive weighting.",
+    "Pure vertex-seed chain flow does not excite cells or geometric breathing.",
+    "No physical bridge, material law, native time map or independent empirical replication.",
+    "Spatial fivefold links and arithmetic counts do not define temporal modular laws or information capacities."
+  ]
+}

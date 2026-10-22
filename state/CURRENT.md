@@ -1,6 +1,6 @@
 # Current integrated state
 
-Updated: 2026-10-22. Milestone: passive heart-shell difference damping and exact usable bands v1.0.
+Updated: 2026-10-22. Milestone: exact 20-cell icosahedral cone audit v1.0.
 
 - Canonical Discovery instructions are v1.2; bootloader v1.1 loads the mathematical protocol before consequential work.
 - [UD mathematical analysis protocol](../docs/UD_MATHEMATICAL_METHOD_v1.0.md) and [calculation receipt template](../templates/mathematical_receipt.json) cover exact arithmetic, factorization, modular clocks, typed provenance and applicable UD structural methods.
@@ -24,7 +24,10 @@ Updated: 2026-10-22. Milestone: passive heart-shell difference damping and exact
 - [Passive difference damping and usable bands](../experiments/heart-shell-damping/README.md): exact energy dissipation and preservation of symmetric breathing. For every ±5% spoke/inertia choice, gamma=1/2 certifies linear volume-signal leakage below5% and coherent gain retention above80% in squared-frequency bands [4/5,6/5] and [11/2,13/2], under prescribed heart amplitude.
 - NUMERICAL pulse campaign: 3072 damped corners plus256 interiors. At ±5%, gamma=1/2 reduces observed maximum nonlinear-volume signal leakage from9.35% to2.36%; each corner retains at least95.08% of corresponding undamped mean-volume RMS over u0..100. This finite pulse observation is distinct from the exact harmonic certificate.
 - Ordinary spatial axial edge dashpots do not implement the protected difference channel: common breathing stretches their edges. Passive geometric realization remains OPEN.
-- Next: construct or obstruct a passive geometric realization, including added modes and a force-to-volume response.
+- Open damping track: construct or obstruct a passive geometric realization, including added modes and a force-to-volume response.
+- [Icosahedral centre-cone audit](../experiments/icosahedral-cone/README.md): exact f=(13,42,50,20), verified metric formulas and corrected outer-edge cell incidence2. Cell adjacency is the degree3 dodecahedral graph; exact graph and full/relative unit-chain-metric spectra certified.
+- Full/boundary/relative chain dimensions125/62/63. Under H=I incidence evolution, the centre seed has only static/sqrt13 vertex/spoke motion; a separate frequency1 oriented-cell/exterior-surface oscillator is invariant and orthogonal. No heart-to-cell transfer or geometric breathing follows automatically.
+- Next icosahedral discriminant: construct or obstruct a local, symmetry-compatible, energy-consistent coupling between these sectors, with an explicit volume readout.
 - Separate open question: whether the parent/relative chain duality survives a useful gluing/readout law.
 
 Update this file at integrated milestones under an integration claim. Live claim metadata, not this summary, determines current ownership.
