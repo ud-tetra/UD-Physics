@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "icosahedral-4d-volume-20261022",
   "session": "icosa4dvol-20261022-gpt6-c7d2",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-22T21:00:00Z",
   "base_revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "candidates/icosahedral-4d-volume-20261022/",
     "experiments/icosahedral-4d-volume-20261022/",
     "artifacts/icosa4dvol-20261022-gpt6-c7d2/"
-  ]
+  ],
+  "released_at": "2026-10-22T22:14:00Z",
+  "released_from_sha": "23b04a0533df0bd6b26f0c7fc9f94a6864400cea",
+  "release_reason": "Explicit user-directed hypothesis parking; PR39 closed unmerged; branch checkpoint 999f201955fd597db6c3f1bf56dca4e725702ec1"
 }
