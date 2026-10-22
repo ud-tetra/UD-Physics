@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T20:37:49.280427+00:00",
   "base_revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "integration-icosahedral-jointwindow-20261022": {
       "ref": "refs/heads/claims/integration-icosahedral-jointwindow-20261022",
       "sha": "c62806a810c2a3ed2750d3818acc9c64ff2c9c43",
-      "status": "held"
+      "status": "released",
+      "released_sha": "d02419112e3e5c3d930b3c8dbddc2972dd2523d3"
     }
   },
   "checks": [
@@ -84,5 +85,11 @@
     "clock": "continuousdimensionlessu;no modularregister orrecurrenceclaim",
     "metric": "positiveM,massnormalG=diag(k,I),fullrigidkineticpart retained",
     "physical_mapping": "unchangedassumedmultiport/120masslessstrutmechanics;uncalibratedunits,hardwareUNSCORED,nativeUDselectionOPEN"
+  },
+  "integration": {
+    "pr": 37,
+    "merge_sha": "b04c03fc25b2be2931e54240921e81c6d1241b93",
+    "pull_request_integrity": "completed/success run39854889125 at exact head918c6b4fc00a1d2761ec754e0a4e7018c08e007c",
+    "tree_equality": "GitHub prepared tree equals local staged80a2a63fdc04ff300b680fb78370fa5186dad9e1;all48 new blob SHAs match"
   }
 }
