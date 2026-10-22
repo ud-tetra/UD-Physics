@@ -45,6 +45,19 @@ bytes plus an explicit coordinator task/claim expansion to `templates`; the
 earlier out-of-scope template edit and correction are disclosed. No blocking
 amendment defect was found. Old v1 evidence has not been rewritten.
 
+P1 lifecycle blocker (reported by coordinator/writer): the v1 release needed an
+authenticated Git deletion; that operation failed, and the available connector
+lacks ref deletion. No deletion was inferred. Protocol-v2 amendment
+`35df2b76b2018ef320e5181f143da513b6d83632` replaces normal deletion with a
+child released marker updated from the owner's exact held SHA, and permits
+reacquisition only from that marker with an exact-SHA update. The original v1
+protocol is archived. Review at that exact commit passed validator and all 16
+tests. A separate disposable-local-remote migration probe verified legacy
+no-status ownership, preserved parent history, held-claim takeover rejection,
+wrong-owner/double/stale release rejection, and safe new-owner reacquisition.
+No live reviewer release has occurred at this checkpoint. The marker protocol
+keeps the coordination ref; it does not claim physical deletion.
+
 Acceptance criteria 1–4 were executed and pass within this review's visibility.
 Criterion 5 has recorded findings, a tested correction and passing local checks;
 final integration checks remain the coordinator's responsibility. Criterion 6
@@ -56,6 +69,8 @@ Reproduce with the commands and exact revision guards in
 and [audit_amendment.py](audit_amendment.py). The writer and amendment checkouts
 are disposable detached worktrees under the reviewer clone's ignored `.tmp/`.
 Read the scripts for their exact `git worktree add --detach` revisions.
+The protocol-v2 check is [audit_release_v2.py](audit_release_v2.py), with results
+in [release-v2-audit.json](release-v2-audit.json).
 
 MISSION: test whether an explicitly assumed clock-label FIT can be handed off reproducibly.
 DONE: reproduced frozen writer bytes and audited boot, ownership, units and provenance.

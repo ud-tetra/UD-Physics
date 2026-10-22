@@ -45,3 +45,7 @@ Captured artifacts/handoff-reviewer-20261022-a1/frozen-writer-review-v1 (EXACT):
 ## 2026-10-22T16:27:06.076670+00:00
 
 Coordinator reports v1 lifecycle blocker observed by writer: conditional Git deletion cannot authenticate; available connector lacks conditional delete. No release/deletion claimed by reviewer. Coordinator preparing protocol-v2 released-marker CAS amendment. Reviewer will audit exact supplied patch before connector release. Original protocol-v1 and provenance-v1 evidence remain immutable.
+
+## 2026-10-22T16:29:43.811675+00:00
+
+Protocol-v2 audit at35df2b76b2018ef320e5181f143da513b6d83632 executed in own isolated worktree: validator PASS and16 tests PASS. Separate disposable local bare-remote migration probe verifies legacy no-status held claim to child released marker to child reacquired new-owner claim, preserving history; held takeover, wrong owner, double release and stale release rejected. No blocking defect found. Original authenticated-Git deletion failure retained as a v1 limitation; v2 retains ref with auditable release marker. Live reviewer release pending integration.
