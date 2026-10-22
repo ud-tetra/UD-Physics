@@ -1,6 +1,6 @@
 # Current integrated state
 
-Updated: 2026-10-22. Milestone: free3D icosahedral stability and imperfection analysis v1.0.
+Updated: 2026-10-22. Milestone: ordinary passive icosahedral damping envelope v1.0.
 
 - Canonical Discovery instructions are v1.2; bootloader v1.1 loads the mathematical protocol before consequential work.
 - [UD mathematical analysis protocol](../docs/UD_MATHEMATICAL_METHOD_v1.0.md) and [calculation receipt template](../templates/mathematical_receipt.json) cover exact arithmetic, factorization, modular clocks, typed provenance and applicable UD structural methods.
@@ -32,7 +32,11 @@ Updated: 2026-10-22. Milestone: free3D icosahedral stability and imperfection an
 - [Free3D icosahedral mechanics](../experiments/icosahedral-free3d/README.md): centre and12 shell points are free,with one internal scalar:40coordinates/80phase variables. Exact rigidityrank34 gives sixrigid motions andlocal orbital equilibrium stability. Symmetric breathing survives withoutguides.
 - Exact LDL certificate: symmetric |A0|<=1/10/defaultproperties have instantaneous nonrigid stiffness>=1/10. This doesnot establish all-time parametricstability. Finite normalgain1.267 at u400;16seeded propertyprobes retain meanvolume RMS>=99.61% (±1%) and97.83% (±5%) overu0..100.
 - Hub-relative cell-volume mismatch andboundary shape are distinct: movinghub repartitions volumes withoutchangingtotal. Bothreadouts andproper rigid/scale-fit shapeerrors are preserved.
-- Next free3D discriminant: derive an amplitude/damping operating envelope using realizable passive spoke/edge losses;quantify common-breathing cost andshape/hub-relative suppression. Internal preferred-radius realization andnative/material selection remainOPEN.
+- [Ordinary passive icosahedral damping](../experiments/icosahedral-damping/README.md): exact energy dissipation and conserved spatial momenta; collective damping d=c_s+5c_e/2. Nonzero independent axial losses cannot preserve common breathing exactly. Five soft tangential modes are invisible to radial dashpots at equilibrium.
+- Exact length-domain certificate: |A0|<sqrt(19/680) prevents spoke/edge collapse for all time across the stated ±5% g,k box and any nonnegative losses. It does not certify cell orientation or coherent motion.
+- NUMERICAL damping scan:0/363 sampled points pass the chosen80% breathing-RMS/50% soft-modal-envelope screen. Best sampled breathing retention while halving the soft envelope is74.24%. These are design thresholds and distinct observables, not a universal passive-design obstruction.
+-36 nonlinear property/amplitude/loss probes plus12 symmetric checks: combined c_s=c_e=.02 leaves45.01–50.40% of matched absolute shape RMS but retains as little as66.99% of mean-volume RMS. Edge loss alone can increase normalized hub-relative volume mismatch. Full tables preserve both hub and shell-centroid readouts.
+- Next damping discriminant: realize passive multiport edge-strain difference loss with common-mode protection, including auxiliary dynamics and reaction forces; verify soft tangential damping after adding those modes. Radial differences alone miss the soft family at first order. Internal preferred-radius realization and native/material selection remain OPEN.
 - Separate open question: whether the parent/relative chain duality survives a useful gluing/readout law.
 
 Update this file at integrated milestones under an integration claim. Live claim metadata, not this summary, determines current ownership.
