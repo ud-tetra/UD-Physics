@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T21:16:48.302671+00:00",
   "base_revision": "ef5e2d8f9e0cc5354086a2a3373f6c07600f6dcd",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "integration-icosahedral-nonlineartube-20261022": {
       "ref": "refs/heads/claims/integration-icosahedral-nonlineartube-20261022",
       "sha": "b23999e7dba4d251d299a04447adcb75671e7d67",
-      "status": "held"
+      "status": "released",
+      "released_sha": "ff7f5b6029b748c5c00d5ff08430ee8ec8bd654f"
     }
   },
   "checks": [
@@ -23,7 +24,7 @@
     },
     {
       "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-nonlineartube/geometry_check.py --out OUTPUT",
-      "result": "PASS20exact Qsqrt5 cell Grams; direct model witnessenergy matches1/(40R²)"
+      "result": "PASS20exact Qsqrt5 cell Grams; direct model witnessenergy matches1/(40R\u00b2)"
     },
     {
       "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-nonlineartube/check.py --out OUTPUT",
@@ -36,6 +37,10 @@
     {
       "command": "python3 scripts/validate.py",
       "result": "PASS83records;manifestdigests andlocaldocumentationlinks"
+    },
+    {
+      "command": "git diff --cached --check",
+      "result": "PASSall45research paths"
     }
   ],
   "finding": "EXACT/CONDITIONAL housing-only all-phase/all-time struts>987/2000, oriented volume ratios(39/40,41/40),globalexistence across continuous qualified box. Fullpulse safety throughu1/20; energy-only u100extension obstructed. Seven numerical check records pass.",
@@ -57,5 +62,11 @@
   "checkpoint_source": {
     "revision": "ef5e2d8f9e0cc5354086a2a3373f6c07600f6dcd",
     "dirty": true
+  },
+  "integration": {
+    "pr": 40,
+    "merge_sha": "dec098ec0a364a03684e15807634ece11b0d68d1",
+    "pull_request_integrity": "completed/success run39856969097 at exact head8c00ce2c4fd0de7c022370217013bdd59bb92a43",
+    "tree_equality": "All25 new uploaded blob hashes and prepared12afe15860862b41498cbcfca7d35c9f6a58ff4d match local Git objects"
   }
 }
