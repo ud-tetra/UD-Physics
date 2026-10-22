@@ -70,3 +70,11 @@ At nu .02/.04/.05 its numerical worst fixed-primary fractions are .629640489/.39
 - Full nonlinear alpha=.1 pulse with all 180 initial housing phases through u=100 remains OPEN, as does a validated forced Green/remainder tube.
 
 **Next discriminant:** obtain a positive full-state/block-norm forced Green bound and a nonlinear alignment/flow remainder under the original and enlarged energy budgets at beta=.005,c_f=0; do not reinterpret the exact housing-only safety certificate as pulse coherence.
+
+## Original-amplitude finite-time nonlinear safety addendum — shorttube-003
+
+[Full proof and exact calculator](SHORTTUBE.md) and [immutable record](../../artifacts/phasewindow-20261022-gpt6-7c41/shorttube-003/manifest.json) provide a distinct EXACT/CONDITIONAL result for the **original** `alpha0=1/10` heart pulse, enlarged housing energy `E_h<=51/20000000`, all initial 180 housing phases, and the unchanged full 560-phase ODE.
+
+For every qualified property realization and every `u in[0,2/5]`, all 120 housing struts are strictly longer than `13/1500 ell0`, all primary members remain noncollapsed, and all oriented cell ratios lie between `1/125` and `729/125`. This follows from a moving-midpoint Duhamel bound (not equilibrium linearization) plus an exact 3D Gram/singular-value orientation estimate. The previous full-pulse exact bound reached only `u=1/20`, under a smaller housing budget. At `u=39/100`, all struts exceed `257/9000>1/40`.
+
+The rational horizon `2/5` was selected after inspecting the sufficient proof polynomial (development/FIT). This **does not certify any u100 nonlinear ringdown/coherence or all-time alpha=.1 safety**. The original energy-only singular-configuration witness and separately held forced-Green recovery task PR44 retain their scopes; no files of that task were changed. For reproducibility, run `python3 shorttube.py --out /tmp/shorttube-result.json` and `python3 shorttube_check.py`.
