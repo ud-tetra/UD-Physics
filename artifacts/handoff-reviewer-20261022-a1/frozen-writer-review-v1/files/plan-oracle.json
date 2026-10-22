@@ -1,0 +1,28 @@
+{
+  "scope": "Exact oracle derived from HANDOFF_TRIAL_v1.0 synthetic plan; writer output not yet observed",
+  "residual_convention": "predicted minus label",
+  "offset_ns": "1",
+  "scale_ns_per_tick": "2",
+  "constant_baseline_ns": "3",
+  "affine_residuals_ns": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "baseline_residuals_ns": [
+    "2",
+    "0",
+    "-2",
+    "-4",
+    "-6"
+  ],
+  "baseline_training_sse_ns2": "8",
+  "baseline_evaluation_sse_ns2": "52",
+  "perturbed_evaluation_residuals_ns": [
+    "-1",
+    "0"
+  ],
+  "interpretation": "All targets exposed; exact fitted arithmetic does not establish native UD dynamics or independent physical prediction."
+}

@@ -1,0 +1,59 @@
+{
+  "record_type": "run",
+  "schema_version": 1,
+  "session_id": "handoff-reviewer-20261022-a1",
+  "run_id": "frozen-writer-review-v1",
+  "created_at": "2026-10-22T16:27:06.035035+00:00",
+  "evidence": "EXACT",
+  "summary": "Same-model separate-context reproduction of frozen synthetic FIT and protocol audit; provenance amendment checked; lifecycle integration/release OPEN",
+  "command": "python3 reviews/runtime-handoff-20261022/reproduce_writer.py; python3 reviews/runtime-handoff-20261022/audit_amendment.py; python3 reviews/runtime-handoff-20261022/plan_oracle.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "e463af06a38dc057ae401f2a5c7060e66bad9fb3",
+    "dirty": false
+  },
+  "inputs": [
+    {
+      "name": "reproduce_writer.py",
+      "sha256": "a01e33016d94ef1b95d703e67a5b87c5655c512bfac63a10abe54cec69711159",
+      "size_bytes": 4951
+    },
+    {
+      "name": "audit_amendment.py",
+      "sha256": "b431cccb5311e117a49e4c71638615cda18877ede1f05922719da8abf3c1dd59",
+      "size_bytes": 2967
+    },
+    {
+      "name": "plan_oracle.py",
+      "sha256": "166c6cf33cabe7311944aed0727fe1a9b0ecea6bd7b8915a6a56b3289e16d79a",
+      "size_bytes": 1660
+    }
+  ],
+  "files": [
+    {
+      "path": "files/writer-review.json",
+      "sha256": "85af256513fb6bc8bac2d093bcbf451c8738053905c13d012d1f3cf6718cadcb",
+      "size_bytes": 6773
+    },
+    {
+      "path": "files/amendment-audit.json",
+      "sha256": "313d129c52daa9ca47e56bbf9f995080004c5d9ee8c237556af9e8b9d1985190",
+      "size_bytes": 3726
+    },
+    {
+      "path": "files/plan-oracle.json",
+      "sha256": "85a81a93aafe176b204583158e3993d73e167170c4b8dabab9768b2a3cb70709",
+      "size_bytes": 676
+    },
+    {
+      "path": "files/boot-audit.json",
+      "sha256": "cd88af051c810d89c4f51dc2ade6a209849bf9c525918177016146de4b46b158",
+      "size_bytes": 2562
+    },
+    {
+      "path": "files/amendment-scope.json",
+      "sha256": "d994674bf40ee197b49d1aa56c3df3921aeeb6c3925720a41c6a0ec9085e78d4",
+      "size_bytes": 2583
+    }
+  ]
+}

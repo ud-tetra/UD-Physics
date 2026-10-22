@@ -37,3 +37,11 @@ Prepared exact plan-derived oracle before reading writer output: offset 1 ns, sc
 Checkpoint (handoff): Writer frozen artifact byte-reproduces with complete FIT/exposure/units/scope provenance. Live competing claim rejected without changing owner. P2 input provenance defects reproduced, then tested fixed in coordinator amendment. No blocking writer or amendment defect.
 
 Next: Coordinator integrate focused review and rerun current checks, then request exact-SHA reviewer claim release; physical mechanism remains OPEN.
+
+## 2026-10-22T16:27:06.035448+00:00
+
+Captured artifacts/handoff-reviewer-20261022-a1/frozen-writer-review-v1 (EXACT): Same-model separate-context reproduction of frozen synthetic FIT and protocol audit; provenance amendment checked; lifecycle integration/release OPEN
+
+## 2026-10-22T16:27:06.076670+00:00
+
+Coordinator reports v1 lifecycle blocker observed by writer: conditional Git deletion cannot authenticate; available connector lacks conditional delete. No release/deletion claimed by reviewer. Coordinator preparing protocol-v2 released-marker CAS amendment. Reviewer will audit exact supplied patch before connector release. Original protocol-v1 and provenance-v1 evidence remain immutable.

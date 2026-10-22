@@ -1,0 +1,62 @@
+{
+  "base_revision": "fbf40e3f4daaf3f02af5db35fc1ee82f0da02190",
+  "load_order": [
+    {
+      "path": "BOOTLOADER.md",
+      "sha256": "9df37d9ee14dde707489d75dd17dea1b56e13a90df92fabacbb68bcd70b29467"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "15aa9dfdc9680ad064aa6872e8fed214eb3a54654b3b1fbab43f8688f76d7069"
+    },
+    {
+      "path": "instructions/UD_DISCOVERY_v1.1.md",
+      "sha256": "a59b08bdfd571a6ef262ce1924f8f52835704a0a69164f217a5643b9725e5582"
+    },
+    {
+      "path": "state/CURRENT.md",
+      "sha256": "cd1b8527ccef8b592f198f6fc9979fa6d2db2b2765bbb7650988945c100a07c8"
+    },
+    {
+      "path": "docs/CONCURRENCY.md",
+      "sha256": "d3bd941390899d5a24aa32a099cb8e5ea5e503e41fb0447bca644262be6a8b6f"
+    },
+    {
+      "path": "docs/ARTIFACTS.md",
+      "sha256": "bd5faf17cefe0ea3cfada0a989fb3376f3cd178c32c21df39f99815bc3745ab0"
+    },
+    {
+      "path": "tasks/handoff-reviewer-20261022.json",
+      "sha256": "8703c736d8df840d936a8820d3a10764b63a2dd6c5dff7319877e1cd1d95f40d"
+    },
+    {
+      "path": "docs/HANDOFF_TRIAL_v1.0.md",
+      "sha256": "8408ee284ba146adc7c83f866616b82fa2f9a97c05bc8cf13bd2a226e2bf0415"
+    }
+  ],
+  "runtime": "Codex GPT-6 fresh reviewer context; same-model separate-context LLM review",
+  "capabilities": [
+    "Git/compute",
+    "GitHub connector repository and ref read/write",
+    "Python standard-library checks"
+  ],
+  "workspace": "/workspace/scratch/ed44232d6ecb/UD-Physics-handoff-reviewer",
+  "branch": "discovery/handoff-reviewer-20261022/handoff-reviewer-20261022-a1",
+  "reviewer_owned_paths": [
+    "reviews/runtime-handoff-20261022",
+    "sessions/handoff-reviewer-20261022-a1",
+    "artifacts/handoff-reviewer-20261022-a1"
+  ],
+  "writer_owned_paths": [
+    "experiments/clock-map-smoke",
+    "candidates/clock-map-smoke",
+    "sessions/handoff-writer-20261022-a1",
+    "artifacts/handoff-writer-20261022-a1"
+  ],
+  "overlap": [],
+  "live_refs": "e48cb946c47488062c6a5f7eef1be3529213991d\trefs/heads/claims/handoff-reviewer-20261022\n5481560b0e4d3edd2d4887aef0268377c6c0c8eb\trefs/heads/claims/handoff-writer-20261022\nfbf40e3f4daaf3f02af5db35fc1ee82f0da02190\trefs/heads/main\n",
+  "open_prs_at_boot": [],
+  "open_prs_note": "GitHub search is:open for ud-tetra/UD-Physics returned no issues.",
+  "evidence": "FIT/exact toy arithmetic; all labels exposed by trial; no empirical replication",
+  "baseline_amendment": "Coordinator notified of P2 malformed input metadata and basename ambiguity. Coordinator will amend scripts/tests; original baseline run remains immutable."
+}
