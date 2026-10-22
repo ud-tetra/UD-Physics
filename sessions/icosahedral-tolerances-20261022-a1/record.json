@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T19:48:10.470389+00:00",
   "base_revision": "4ddf692a11b7d21103799745d75a969f75a14c14",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "integration-icosahedral-tolerances-20261022": {
       "ref": "refs/heads/claims/integration-icosahedral-tolerances-20261022",
       "sha": "a602283330695d34ec3d57db0a06bf3f807c12b7",
-      "status": "held"
+      "status": "released",
+      "released_sha": "d74c3b9c3ba235338d10d56faa87b0a1063955f1"
     }
   },
   "checks": [
@@ -60,5 +61,11 @@
     "clock": "continuousdimensionlessu;no modularregisterclaim",
     "metric": "primaryM,mu/10Irelativeinerters,physicalhousingm/R\u00b2;E_*,ell0,t0OPEN",
     "physical_mapping": "definedmidpoint-mountedhousingmodel;realcasing/routing/mountimplementationandcalibrationOPEN"
+  },
+  "integration": {
+    "pr": 33,
+    "merge_sha": "8f5796d73629f54cc5f1714203028d6f6062ca88",
+    "pull_request_integrity": "completed/success run39845313399 at head80a3d986e40b560d3361272bea87851b0292461f",
+    "tree_equality": "GitHub prepared tree matches local staged8952f8f3f8a3970b45adde99ab3a656ec3d051f8"
   }
 }
