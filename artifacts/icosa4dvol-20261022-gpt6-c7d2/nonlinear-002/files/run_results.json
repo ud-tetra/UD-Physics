@@ -1,0 +1,316 @@
+{
+  "schema": "ud-4d-nonlinear-discrimination-v1",
+  "origin": "target-exposed regularity criterion, assumed elastic laws, no empirical data",
+  "evidence": "EXACT/CONDITIONAL for local derivatives and all-order 3D equivalence; NUMERICAL for integration",
+  "units": "a=k_r=k_e=m_s=m_a=1, independent Newtonian t, generalized force f conjugate to z; C=.06M",
+  "source_baseline": "ud-tetra/UD-Physics main@92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa; previous pulse response local audit",
+  "exact": {
+    "rho_squared": "sqrt(5)/8 + 5/8",
+    "eta": "sqrt(3/8 - sqrt(5)/8)",
+    "K": [
+      [
+        "15*sqrt(5)/8 + 285/8",
+        "sqrt(6 - 2*sqrt(5))*(3*sqrt(5)/8 + 15/8)"
+      ],
+      [
+        "sqrt(6 - 2*sqrt(5))*(3*sqrt(5)/8 + 15/8)",
+        "9/2 - 3*sqrt(5)/2"
+      ]
+    ],
+    "static_volume_series_coefficient": {
+      "f": "sqrt(3 - sqrt(5))*(-sqrt(2)/8 - sqrt(10)/20)",
+      "f2": "41*sqrt(5)/160 + 93/160",
+      "f3": "(100637*sqrt(10) + 226443*sqrt(2))/(17280*(-13 + 4*sqrt(5))*sqrt(3 - sqrt(5)))"
+    },
+    "exact_planar_equivalence": "| (rho s,0,0)-(0,z,0)|=sqrt(rho\u00b2s\u00b2+z\u00b2); U3D_planar == U4D for every (s,z) with s>0",
+    "same_mass_damping_forcing_and_observable": true,
+    "modal_constrained_slice_frequency_shift_coefficient": "g4/(16*omega\u00b2)-5*g3\u00b2/(48*omega\u2074); not full nonlinear 2-mode frequency"
+  },
+  "numeric": {
+    "coefficients": {
+      "f": -0.2927050983124842,
+      "f2": 1.154242419234321,
+      "f3": -10.423365879953792
+    },
+    "mode1_angular_frequency": 0.8867247247238018,
+    "mode2_angular_frequency": 2.007002196312076,
+    "constrained_mode_slice_g3": 6.177931691664625,
+    "constrained_mode_slice_g4": 21.58222841382196,
+    "constrained_mode_fractional_frequency_shift_per_amplitude_squared": -4.7151900762010825,
+    "free_nonlinear_mode_estimates": [
+      {
+        "initial_mass_normalized_lower_mode_amplitude": 0.005,
+        "4d": {
+          "angular_frequency": 0.8865526762097806,
+          "fractional_shift_relative_linear": -0.0001940269727730426,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 0.0003525930047668957,
+          "expected_linear_period": 7.085835245133918
+        },
+        "3d_planar_exact": {
+          "angular_frequency": 0.8865526762097555,
+          "fractional_shift_relative_linear": -0.00019402697280135328,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 0.00035259294724529857,
+          "expected_linear_period": 7.085835245133918
+        },
+        "3d_linear_null": {
+          "angular_frequency": 0.8867247246415995,
+          "fractional_shift_relative_linear": -9.270340051159565e-11,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 1.1515895995125493e-07,
+          "expected_linear_period": 7.085835245133918
+        }
+      },
+      {
+        "initial_mass_normalized_lower_mode_amplitude": 0.02,
+        "4d": {
+          "angular_frequency": 0.8838874451100766,
+          "fractional_shift_relative_linear": -0.0031997298988239997,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 0.0054372935083128295,
+          "expected_linear_period": 7.085835245133918
+        },
+        "3d_planar_exact": {
+          "angular_frequency": 0.8838874451097418,
+          "fractional_shift_relative_linear": -0.0031997298992014755,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 0.005437293486683752,
+          "expected_linear_period": 7.085835245133918
+        },
+        "3d_linear_null": {
+          "angular_frequency": 0.8867247246482444,
+          "fractional_shift_relative_linear": -8.520961713998076e-11,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 1.1502444473776678e-07,
+          "expected_linear_period": 7.085835245133918
+        }
+      },
+      {
+        "initial_mass_normalized_lower_mode_amplitude": 0.04,
+        "4d": {
+          "angular_frequency": 0.874975764930135,
+          "fractional_shift_relative_linear": -0.013249838947849812,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 0.01860822665212273,
+          "expected_linear_period": 7.085835245133918
+        },
+        "3d_planar_exact": {
+          "angular_frequency": 0.8749757649301355,
+          "fractional_shift_relative_linear": -0.013249838947849257,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 0.018608226652100802,
+          "expected_linear_period": 7.085835245133918
+        },
+        "3d_linear_null": {
+          "angular_frequency": 0.8867247246468766,
+          "fractional_shift_relative_linear": -8.675216101039496e-11,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 1.1517506440271257e-07,
+          "expected_linear_period": 7.085835245133918
+        }
+      },
+      {
+        "initial_mass_normalized_lower_mode_amplitude": 0.06,
+        "4d": {
+          "angular_frequency": 0.8592753487989039,
+          "fractional_shift_relative_linear": -0.030955915809664503,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 0.03271251737625679,
+          "expected_linear_period": 7.085835245133918
+        },
+        "3d_planar_exact": {
+          "angular_frequency": 0.8592753487989393,
+          "fractional_shift_relative_linear": -0.030955915809624535,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 0.03271251737694173,
+          "expected_linear_period": 7.085835245133918
+        },
+        "3d_linear_null": {
+          "angular_frequency": 0.8867247246499091,
+          "fractional_shift_relative_linear": -8.333211898303716e-11,
+          "number_of_peaks": 30,
+          "peak_spacing_rms": 1.1487736288246216e-07,
+          "expected_linear_period": 7.085835245133918
+        }
+      }
+    ],
+    "statics": [
+      {
+        "force": -0.05,
+        "s": 1.0072839176069692,
+        "z": 0.20847226078908787,
+        "fractional_volume": 0.022011305639590972,
+        "third_order_prediction": 0.018823781698704238,
+        "third_order_residual": 0.0031875239408867342,
+        "min_stiffness_eigenvalue": 0.1680135227464245
+      },
+      {
+        "force": -0.04,
+        "s": 1.00495684650598,
+        "z": 0.2445081446775467,
+        "fractional_volume": 0.014944372291132213,
+        "third_order_prediction": 0.014222087219591324,
+        "third_order_residual": 0.0007222850715408891,
+        "min_stiffness_eigenvalue": 0.38965257462254943
+      },
+      {
+        "force": -0.02,
+        "s": 1.0021373816800725,
+        "z": 0.28272653578283125,
+        "fractional_volume": 0.006425860005971895,
+        "third_order_prediction": 0.006399185860983043,
+        "third_order_residual": 2.667414498885249e-05,
+        "min_stiffness_eigenvalue": 0.6563423626169512
+      },
+      {
+        "force": -0.01,
+        "s": 1.0010170658299882,
+        "z": 0.2967452761910385,
+        "fractional_volume": 0.0030543018107482833,
+        "third_order_prediction": 0.003052898590928228,
+        "third_order_residual": 1.4032198200554687e-06,
+        "min_stiffness_eigenvalue": 0.7617419295867531
+      },
+      {
+        "force": 0.0,
+        "s": 1.0,
+        "z": 0.30901699437494745,
+        "fractional_volume": 0.0,
+        "third_order_prediction": 0.0,
+        "third_order_residual": 0.0,
+        "min_stiffness_eigenvalue": 0.8571439173310234
+      },
+      {
+        "force": 0.01,
+        "s": 0.9990587895508367,
+        "z": 0.3200336917713583,
+        "fractional_volume": -0.0028209745499577776,
+        "third_order_prediction": -0.0028220501070813637,
+        "third_order_residual": 1.075557123586101e-06,
+        "min_stiffness_eigenvalue": 0.9451882644579072
+      },
+      {
+        "force": 0.02,
+        "s": 0.9981765631037408,
+        "z": 0.33009429788804306,
+        "fractional_volume": -0.005460341985219275,
+        "third_order_prediction": -0.005475791925595586,
+        "third_order_residual": 1.5449940376311387e-05,
+        "min_stiffness_eigenvalue": 1.0275021604579093
+      },
+      {
+        "force": 0.04,
+        "s": 0.9965471911492074,
+        "z": 0.3480781169553202,
+        "fractional_volume": -0.010322702049501142,
+        "third_order_prediction": -0.010528511478041498,
+        "third_order_residual": 0.00020580942854035549,
+        "min_stiffness_eigenvalue": 1.178980761603661
+      },
+      {
+        "force": 0.08,
+        "s": 0.9936645352297634,
+        "z": 0.37830553266496025,
+        "fractional_volume": -0.018886234262751378,
+        "third_order_prediction": -0.021366019712435423,
+        "third_order_residual": 0.002479785449684045,
+        "min_stiffness_eigenvalue": 1.445217664881281
+      }
+    ],
+    "positive_height_spinodal": {
+      "force": -0.05258752205992735,
+      "s": 1.0090385325889093,
+      "z": 0.17700434466845882,
+      "interpretation": "negative static loading below this saddle-node loses positive-height local stable equilibrium"
+    },
+    "pulse_results": [
+      {
+        "pulse_amplitude": -0.08,
+        "4d_min_volume": -0.06943059759048453,
+        "4d_max_volume": 0.06865406457635759,
+        "4d_peak_abs_volume": 0.06943059759048453,
+        "exact_3d_planar_peak_abs_volume": 0.06943059759049064,
+        "max_abs_difference_full_trajectories_4d_vs_3d_planar": 4.230123196169444e-14,
+        "3d_linear_null_peak_abs_volume": 0.04228928392605402,
+        "max_abs_difference_4d_vs_linear_null_volume": 0.09120613503554564
+      },
+      {
+        "pulse_amplitude": -0.02,
+        "4d_min_volume": -0.010230362763199552,
+        "4d_max_volume": 0.010956162276918091,
+        "4d_peak_abs_volume": 0.010956162276918091,
+        "exact_3d_planar_peak_abs_volume": 0.01095616227726981,
+        "max_abs_difference_full_trajectories_4d_vs_3d_planar": 1.925015702397559e-12,
+        "3d_linear_null_peak_abs_volume": 0.010462975271636088,
+        "max_abs_difference_4d_vs_linear_null_volume": 0.003505283039012985
+      },
+      {
+        "pulse_amplitude": -0.01,
+        "4d_min_volume": -0.00464589643440283,
+        "4d_max_volume": 0.005341921208013023,
+        "4d_peak_abs_volume": 0.005341921208013023,
+        "exact_3d_planar_peak_abs_volume": 0.005341921207975053,
+        "max_abs_difference_full_trajectories_4d_vs_3d_planar": 3.5977887336002823e-12,
+        "3d_linear_null_peak_abs_volume": 0.005222412228740092,
+        "max_abs_difference_4d_vs_linear_null_volume": 0.0007414299800830859
+      },
+      {
+        "pulse_amplitude": 0.01,
+        "4d_min_volume": -0.0050910854385406434,
+        "4d_max_volume": 0.0038566196347173953,
+        "4d_peak_abs_volume": 0.0050910854385406434,
+        "exact_3d_planar_peak_abs_volume": 0.005091085438546306,
+        "max_abs_difference_full_trajectories_4d_vs_3d_planar": 1.77280412572145e-12,
+        "3d_linear_null_peak_abs_volume": 0.005204292901896501,
+        "max_abs_difference_4d_vs_linear_null_volume": 0.0005982070041117282
+      },
+      {
+        "pulse_amplitude": 0.02,
+        "4d_min_volume": -0.009952152363130407,
+        "4d_max_volume": 0.0070606414125296,
+        "4d_peak_abs_volume": 0.009952152363130407,
+        "exact_3d_planar_peak_abs_volume": 0.009952152363131739,
+        "max_abs_difference_full_trajectories_4d_vs_3d_planar": 9.870576578308032e-15,
+        "3d_linear_null_peak_abs_volume": 0.010390497964275602,
+        "max_abs_difference_4d_vs_linear_null_volume": 0.0021938976681193934
+      },
+      {
+        "pulse_amplitude": 0.08,
+        "4d_min_volume": -0.03523392279069404,
+        "4d_max_volume": 0.018739561548164252,
+        "4d_peak_abs_volume": 0.03523392279069404,
+        "exact_3d_planar_peak_abs_volume": 0.035233922790692374,
+        "max_abs_difference_full_trajectories_4d_vs_3d_planar": 8.570274955747685e-14,
+        "3d_linear_null_peak_abs_volume": 0.041129647008698034,
+        "max_abs_difference_4d_vs_linear_null_volume": 0.023166607761859637
+      }
+    ],
+    "pulse_samples": 8406,
+    "damping": 0.06,
+    "pulse_time_window": [
+      0,
+      70
+    ],
+    "pulse_shape": "A exp(-.5*((t-8)/1.5)\u00b2)",
+    "integrator": "DOP853",
+    "rtol": 3e-12,
+    "atol": 3e-14
+  },
+  "checks": [
+    "SymPy exact potential equivalence with planar Euclidean 3D slider geometry",
+    "exact Hessian determinant and implicit force derivatives to third order",
+    "finite difference on equilibrium branch",
+    "independent numerically coded 3D planar spring length and gradient",
+    "numerical pulse trace equality across signs and amplitudes",
+    "matched full two-mode undamped free oscillation frequencies vs matched 3D planar analogue"
+  ],
+  "known_failures_and_limits": [
+    "An unrestricted 3D mechanism can match the 4D reduced mechanics to all orders; nonlinear response is NOT a unique 4D signature.",
+    "External icosahedral shell symmetry of 3D lever involves assumed transmission and synchronous guided carriages, not native local isotropic physics.",
+    "The analytic modal frequency shift is for constrained one-mode motion; full two-mode nonlinear resonance measured as finite-time peak frequency only, no exact backbone.",
+    "Fixed shell hyperplane w=0; no GR/QFT action or physical time calibration.",
+    "Quasistatic positive-height branch has a negative-force fold at the reported spinodal; failed continuation at -0.08 is preserved.",
+    "Constitutive and drive couplings imposed and not derived from UD."
+  ]
+}
