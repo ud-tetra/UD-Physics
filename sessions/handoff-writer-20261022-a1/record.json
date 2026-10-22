@@ -8,12 +8,15 @@
   "created_at": "2026-10-22T16:20:17.922726+00:00",
   "base_revision": "fbf40e3f4daaf3f02af5db35fc1ee82f0da02190",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "handoff-writer-20261022": {
       "ref": "refs/heads/claims/handoff-writer-20261022",
       "sha": "5481560b0e4d3edd2d4887aef0268377c6c0c8eb",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "87dd43af5d8114ad8abd42a6ef644afdadc1a88a",
+      "released_at": "2026-10-22T16:30:17.541Z",
+      "protocol_version": 2
     }
   },
   "checks": [
@@ -42,8 +45,8 @@
       "detail": "Second execution matched captured output byte for byte."
     }
   ],
-  "finding": "FIT + EXACT synthetic offset 1 ns and slope 2 ns/tick reproduce zero exposed residuals; baseline SSE 8/52 ns^2. Integrity and 10 tooling tests passed. No physical promotion.",
-  "next_action": "Priority 100: separate reviewer reproduce frozen writer commit in its own workspace and record findings; coordinator then integrate and release the held claim with exact-SHA checks.",
+  "finding": "Writer artifact integrated at ed6400e41ab1315111e7fb7c2e963c74e3ae2c09; reviewer reproduction reported successful; protocol v2 exact-SHA release marker 87dd43af5d8114ad8abd42a6ef644afdadc1a88a verified. Failed v1 deletion preserved; no physical deletion or scientific promotion.",
+  "next_action": "Coordinator review/merge closure-only session record PR and own shared task/state integration updates. Writer lifecycle complete; frozen synthetic research unchanged.",
   "capabilities": [
     "GitHub connector read/write",
     "Git independent clone",
@@ -52,11 +55,66 @@
   "branch": "discovery/handoff-writer-20261022/handoff-writer-20261022-a1",
   "target_exposure": "All synthetic training and evaluation labels exposed in docs/HANDOFF_TRIAL_v1.0.md before fitting; FIT/development evaluation.",
   "source_commit": "80b8548edf5b19f876a61c478d3240c91ad0d873",
-  "review_status": "OPEN: awaiting separate reviewer execution from frozen writer commit; writer self-check only.",
-  "release_status": "Claim remains held. Coordinator will integrate and release with exact-SHA check after review.",
-  "checkpoint_at": "2026-10-22T16:22:37.367767+00:00",
+  "review_status": "Coordinator reports separate reviewer reproduced frozen 846a6a31 output byte for byte and found no blocking writer defects; not empirical replication.",
+  "release_status": "RELEASED under integrated protocol v2: same-owner child marker and exact-SHA connector CAS update verified. Coordination ref/history retained; no physical deletion claimed. Prior v1 Git deletion attempt failed and remains recorded.",
+  "checkpoint_at": "2026-10-22T16:30:56.685322+00:00",
   "checkpoint_source": {
-    "revision": "80b8548edf5b19f876a61c478d3240c91ad0d873",
+    "revision": "0301562081923dc574ad52074b6a96a79cba31dc",
     "dirty": true
-  }
+  },
+  "integration": {
+    "pull_request": "https://github.com/ud-tetra/UD-Physics/pull/2",
+    "merge_commit": "ed6400e41ab1315111e7fb7c2e963c74e3ae2c09",
+    "frozen_writer_commit": "846a6a31c3ca87277afa584e6e4d782ef40e9168",
+    "owned_path_comparison": "PASS: git diff --exit-code across all four owned paths returned 0 against fetched integrated main"
+  },
+  "release_attempt": {
+    "verified_at": "2026-10-22T16:26:13.031314+00:00",
+    "expected_sha": "5481560b0e4d3edd2d4887aef0268377c6c0c8eb",
+    "before_sha": "5481560b0e4d3edd2d4887aef0268377c6c0c8eb",
+    "method": "Store.release -> delete_claim -> exact-SHA force-with-lease Git deletion",
+    "result": "FAILED",
+    "error": "fatal: could not read Username for 'https://github.com': No such device or address",
+    "after_sha": "5481560b0e4d3edd2d4887aef0268377c6c0c8eb",
+    "after_verification": "GitHub connector GET ref confirmed claim still present at same SHA after failure."
+  },
+  "closure_checks": [
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS",
+      "detail": "13 records; manifest digests and local documentation links valid."
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS",
+      "detail": "10 tooling tests passed in 0.275s."
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS",
+      "detail": "After v2 release, current integrated tooling: 14 records; manifest digests and local documentation links valid.",
+      "source_revision": "0301562081923dc574ad52074b6a96a79cba31dc"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS",
+      "detail": "After v2 release, all 16 current tooling tests passed in 0.510s.",
+      "source_revision": "0301562081923dc574ad52074b6a96a79cba31dc"
+    }
+  ],
+  "release_evidence": {
+    "protocol_revision": "0301562081923dc574ad52074b6a96a79cba31dc",
+    "protocol_path": "docs/CONCURRENCY.md",
+    "held_sha": "5481560b0e4d3edd2d4887aef0268377c6c0c8eb",
+    "release_marker_sha": "87dd43af5d8114ad8abd42a6ef644afdadc1a88a",
+    "ref": "refs/heads/claims/handoff-writer-20261022",
+    "method": "GitHub connector create_tree; create_commit with held SHA as sole parent; update_ref(expected_sha=held SHA, force=false)",
+    "live_verification": "PASS: live ref equals release marker; full payload equals proposed same-owner marker; commit sole parent equals held SHA",
+    "marker_status": "released",
+    "released_from_sha": "5481560b0e4d3edd2d4887aef0268377c6c0c8eb",
+    "ref_retained": true,
+    "physical_deletion": false
+  },
+  "closure_validation_base": "0301562081923dc574ad52074b6a96a79cba31dc",
+  "capture_limitation": "Frozen affine-fit-001 is run schema version1: input digest metadata, with source bytes retained in versioned Git, not copied into the run. It is unchanged; no retroactive version2 capture is claimed."
 }
