@@ -86,6 +86,11 @@
       "name": "shorttube-003 final PR45 integrity/test suite",
       "result": "NOT_RUN",
       "reason": "Pending final GitHub Actions PR workflow at most recent head; local checkout absent"
+    },
+    {
+      "name": "shorttube-004 versioned correction and blob verification",
+      "result": "PASS",
+      "command": "corrected proof and erratum published; 5 source/output captures checked against local Git SHA1; SHA256 manifest finalized"
     }
   ],
   "finding": "EXACT/CONDITIONAL enlarged housing-only all-time domain/volume tube; NUMERICAL full linear 50-case/180-housing-phase window nu [.04,.05] survives Eh factor 1.5 with min overlap .0003100047, original full housing energy upper .45666607. Nonlinear full pulse all-phase remains OPEN. CONTINUATION EXACT/CONDITIONAL: for all permitted housing phases at amplified Eh, nonlinear full ODE all-time member/strut noncollapse at |alpha0|<=1/25 (120 struts>1/40); at |alpha0|<=3/100 all 20 oriented volumes preserve sign. Original alpha0=1/10 all-phase u100 remains OPEN. CONTINUATION EXACT/CONDITIONAL: original alpha=.1 plus amplified E_h<=51/20000000, all 180 housing initial phase coordinates, full nonlinear 560-phase existence and all 120 struts>13/1500, 20 oriented cell volumes in (1/125,729/125) for all u<=2/5. Eightfold previous original-amplitude exact horizon; u100 remains OPEN.",
@@ -125,8 +130,10 @@
       "729/125"
     ],
     "receipt": "sessions/phasewindow-20261022-gpt6-7c41/shorttube_receipt.json",
-    "capture": "artifacts/phasewindow-20261022-gpt6-7c41/shorttube-003/manifest.json",
+    "capture": "artifacts/phasewindow-20261022-gpt6-7c41/shorttube-004/manifest.json",
     "full_pulse_u100": "OPEN",
-    "physical_validation": "UNSCORED"
+    "physical_validation": "UNSCORED",
+    "supersedes_proof_capture": "artifacts/phasewindow-20261022-gpt6-7c41/shorttube-003/manifest.json",
+    "correction": "u=0 equality requires weak time-dependent point displacement/cell volume inequalities; final uniform strict theorem unchanged"
   }
 }
