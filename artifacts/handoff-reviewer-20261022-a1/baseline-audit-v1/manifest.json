@@ -1,0 +1,44 @@
+{
+  "record_type": "run",
+  "schema_version": 1,
+  "session_id": "handoff-reviewer-20261022-a1",
+  "run_id": "baseline-audit-v1",
+  "created_at": "2026-10-22T16:21:53.097410+00:00",
+  "evidence": "EXACT",
+  "summary": "Baseline validator and ten tests passed; live claim contention rejected unchanged owner; provenance metadata counterexamples",
+  "command": "python3 reviews/runtime-handoff-20261022/audit_baseline.py; GitHub create_branch claims/handoff-writer-20261022 at proposed 740542f633c121f7ff38fafe21e9530a7813e2d3; git ls-remote origin refs/heads/claims/handoff-writer-20261022",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "fbf40e3f4daaf3f02af5db35fc1ee82f0da02190",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "name": "audit_baseline.py",
+      "sha256": "57fb778bcfc4bea3b9a10c7ae78f9b56169b37756a7eaf95901ad2748ba59c75",
+      "size_bytes": 2254
+    },
+    {
+      "name": "discovery.py",
+      "sha256": "b8be84a219f11d0a36f8d2dfcd8313136f0fd86db8dd422eb68d6aa53d1fdc0d",
+      "size_bytes": 13534
+    },
+    {
+      "name": "validate.py",
+      "sha256": "d1750680968c7af349cb3a8bbc37ee80d29945e019987d8972c9c9025a851f23",
+      "size_bytes": 7048
+    }
+  ],
+  "files": [
+    {
+      "path": "files/baseline-audit.json",
+      "sha256": "19eafc1928172fd53279634f4297a84f297a69e72910f49472a97b8ee3ff69f2",
+      "size_bytes": 2623
+    },
+    {
+      "path": "files/claim-contention.json",
+      "sha256": "2013e7cbd7ce5736ed2eaf384c92647a482c422d3f7d500067736272b2a7672c",
+      "size_bytes": 3350
+    }
+  ]
+}

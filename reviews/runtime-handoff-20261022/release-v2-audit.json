@@ -1,0 +1,41 @@
+{
+  "revision": "35df2b76b2018ef320e5181f143da513b6d83632",
+  "scope": "Disposable local bare remote migration probes; no live release attempted",
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/validate.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 14 records; manifest digests and local documentation links valid.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_candidate_reference_and_checkpoint (test_discovery.CaptureTests.test_candidate_reference_and_checkpoint) ... ok\ntest_capture_and_tampering (test_discovery.CaptureTests.test_capture_and_tampering) ... ok\ntest_captured_input_cannot_escape_and_extra_input_is_rejected (test_discovery.CaptureTests.test_captured_input_cannot_escape_and_extra_input_is_rejected) ... ok\ntest_captured_markdown_is_opaque_payload (test_discovery.CaptureTests.test_captured_markdown_is_opaque_payload) ... ok\ntest_input_metadata_and_legacy_ambiguity_rejected (test_discovery.CaptureTests.test_input_metadata_and_legacy_ambiguity_rejected) ... ok\ntest_paths_cannot_escape (test_discovery.CaptureTests.test_paths_cannot_escape) ... ok\ntest_run_is_immutable (test_discovery.CaptureTests.test_run_is_immutable) ... ok\ntest_same_named_inputs_are_preserved_and_verified (test_discovery.CaptureTests.test_same_named_inputs_are_preserved_and_verified) ... ok\ntest_session_resume_does_not_overwrite (test_discovery.CaptureTests.test_session_resume_does_not_overwrite) ... ok\ntest_symlink_and_duplicate_inputs_rejected (test_discovery.CaptureTests.test_symlink_and_duplicate_inputs_rejected) ... ok\ntest_unmanifested_output_rejected (test_discovery.CaptureTests.test_unmanifested_output_rejected) ... ok\ntest_dependency_blocks_claim (test_discovery.CoordinationTests.test_dependency_blocks_claim) ... ok\ntest_reacquisition_of_released_marker_has_one_winner (test_discovery.CoordinationTests.test_reacquisition_of_released_marker_has_one_winner) ... ok\ntest_release_requires_owner_and_preserves_audit_history (test_discovery.CoordinationTests.test_release_requires_owner_and_preserves_audit_history) ... ok\ntest_simultaneous_claim_has_one_winner (test_discovery.CoordinationTests.test_simultaneous_claim_has_one_winner) ... ok\ntest_stale_release_cannot_delete_new_owner (test_discovery.CoordinationTests.test_stale_release_cannot_delete_new_owner) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.703s\n\nOK\n"
+    }
+  ],
+  "migration_probe": {
+    "legacy_claim_sha": "9eb86b6562c91b22d6a8e83053f0c1d25bfc4aec",
+    "released_marker_sha": "464c1d50b00ac9d28507ff3f7a43d7bed957ddc6",
+    "reacquired_claim_sha": "a786ea8b3192abb8e605e8a3b3619d03fbe0b852",
+    "held_rejection": "Task claim is held; acquisition rejected.",
+    "wrong_owner_rejection": "Release requires the current held claim's owning session.",
+    "double_release_rejection": "Release requires the current held claim's owning session.",
+    "stale_release_rejection": "Live claim changed; release rejected.",
+    "parent_chain_preserved": true,
+    "new_owner_unchanged_after_stale_release": true,
+    "result": "PASS"
+  }
+}
