@@ -1,0 +1,224 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "heart-damping-band-v1",
+  "session_id": "heart-damping-20261022-a1",
+  "candidate_id": "heart-shell-damping",
+  "question": "Can passive edge damping suppress unequal cell-volume motion while retaining collective breathing?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "radial-damping-state",
+      "symbol": "x=(a,q),P=I-J/4,C=diag(0,4gammaP)",
+      "object_type": "generalized mechanical coordinates, projection and positive semidefinite damping operator",
+      "definition": "Mxprimeprime+Cxprime+Kx=0; harmonic shell transfer at prescribed a; nonlinear volume readout for pulse",
+      "domain": "R10 phase space; complexified shell phasors C4",
+      "codomain": "same state space; volume signals R4/C4",
+      "coefficient_domain": "Q exact coefficients; R/complex state; float64 computation",
+      "units": "u and strain dimensionless; E_* model energy; t0 and E_* physical scales OPEN",
+      "basis_orientation": "heart then four labelled regular rays; graph edges unordered",
+      "metric_measure": "M=diag(1,m_i)>0; Euclidean P; trapezoidal du pulse integration",
+      "origin": "assumed",
+      "exact_expression": "C_shell=4gammaP; Eprime=-4gamma||Pqprime||^2; sigma_min(Hd)>=4gamma*omega",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "previous-model"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [
+        "positive pins",
+        "fixed-ray geometry"
+      ],
+      "normalization": "a prescribed1 for harmonic ratios; a0=1/10 for pulse"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "previous-model",
+      "url_or_repo_path": "experiments/heart-shell-robustness/README.md",
+      "version_or_commit": "bbf15511970e08330bfece2503a541a902f9f96c",
+      "section_or_object_id": "model, mismatch identity, pulse preparation",
+      "source_status": "conditional Discovery model"
+    },
+    {
+      "source_id": "historical-ledger",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "bbf15511970e08330bfece2503a541a902f9f96c",
+      "section_or_object_id": "Q139,Q144-Q145,Q151-Q152",
+      "source_status": "historical snapshot; open physical mappings preserved"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Same chosen five-coordinate fixed-ray scalar/radial energy law; no shear/angular coordinates."
+    },
+    {
+      "id": "A2",
+      "statement": "C_shell=gamma*L_K4=4*gamma*P is an assumed passive generalized-coordinate coupling."
+    },
+    {
+      "id": "A3",
+      "statement": "Frequency certificate uses prescribed heart amplitude and linearized volume phasors, positive frequency and \u00b15% independent g_i,m_i."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Integer/combinatorial",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "K4 six edges, degree3, Laplacian eigenvalue4; correct ownership of pair terms"
+    },
+    {
+      "technique": "Rational/symbolic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Exact interval certificate and design thresholds"
+    },
+    {
+      "technique": "Prime factorization/divisibility",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No arithmetic divisibility or factor-origin question beyond 4-node Laplacian"
+    },
+    {
+      "technique": "Clock/modular",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "Continuous u; no register/update or physical tick selected"
+    },
+    {
+      "technique": "Graph/spectral/passivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Kernel of damping; energy balance; contrast resolvent"
+    },
+    {
+      "technique": "Chain/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No change to simplicial carrier or boundary operator"
+    },
+    {
+      "technique": "Projection/readout",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Separate signal norm, collective gain, and energy"
+    },
+    {
+      "technique": "Geometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Exact child volume and ordinary axial-dashpot obstruction"
+    },
+    {
+      "technique": "Fit/sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Exposed design choices and finite imperfection sweep"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4*3/2=6 unordered edges; L=4I-J",
+    "reduced_expression": "epsilon=1/20,gamma=1/2; Lh limit1/20, gain limit4/5",
+    "factor_origins": [
+      "four outer nodes",
+      "each degree3",
+      "divide2 for unordered pairs"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous model parameter",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "Mxprimeprime+Cxprime+Kx=0",
+    "initial_phase": "specified heart pulse; separate e^(-i omega u) convention",
+    "coupling": "positive spokes, K4 stiffness and assumed difference damping",
+    "period_claim": "no universal period or physical clock claimed",
+    "physical_unit_map": "u=t/t0, t0 OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R10",
+    "generator_or_update": "A=[[0,I],[-M^-1K,-M^-1C]]",
+    "initial_boundary_conditions": "a0=1/10; remaining coords/velocities0; fixed rays",
+    "conservation_and_sources": "Eprime=-4gamma||dprime||^2, unforced; harmonic prescribed-heart experiment needs external work",
+    "projection_and_kernel": "P=I-J/4; rank3; kernel span1; linear volume y=3b1-d",
+    "physical_mapping": "assumed radial geometry; units/material/native law OPEN"
+  },
+  "target_exposure": {
+    "status": "FIT/design; exposed model spectrum and earlier campaign",
+    "known_targets": [
+      "collective lambda1,6; differential lambda4",
+      "prior pulse leakage",
+      "desired breathing coherence"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      {
+        "type": "target-informed engineering design",
+        "parameters": "gamma=1/2; \u00b15% tolerance; Lh<=1/20 and coherent gain retention>=4/5; lambda intervals [4/5,6/5],[11/2,13/2]",
+        "search": "pulse gamma sweep1/10,1/4,1/2; no optimum/maximal-band claim; gamma1/2 certificate chosen before pulse results"
+      }
+    ],
+    "search_domain_and_budget": "3 gamma values,4 tolerances,256 corners each;256 interiors; exact certificate100 rational subintervals per band",
+    "selection_criterion": "chosen sufficient Lh<=5%, gain>=80%; gamma1/2 certified before pulse results",
+    "baseline": "Same parameter corner without damping; symmetric prescribed-heart harmonic response b=1/(2-lambda)."
+  },
+  "calculation_steps": [
+    "Derive K4 Laplacian and energy dissipation.",
+    "Project shell harmonic system and bound singular values.",
+    "Schur complement gives invertibility and lower common response.",
+    "Certify 200 rational subintervals with integer-square-root lower bounds.",
+    "Propagate 3072 damped corners and256 interiors; compare nonlinear volume leakage and mean RMS retention.",
+    "Cross-check full harmonic solve, expm, energy balance, quadrature and geometric dashpot relation."
+  ],
+  "result": {
+    "exact_expression": "Eprime=-4gamma||dprime||^2; all-box certificate for epsilon1/20,gamma1/2 over lambda[4/5,6/5] U [11/2,13/2]",
+    "approximation": "\u00b15% pulse maximum leakage0.0235601, minimum mean RMS retention0.950809",
+    "units": "signal ratios dimensionless; angular frequency per u",
+    "precision_and_error": "Fraction certificate; float64 numerical maximum expm discrepancy4.86e-16, balance8.92e-7, fine quadrature difference3.50e-9",
+    "scope": "Exact model identities and continuous-box small-signal prescribed-heart certificate; finite pulse campaign",
+    "physical_interpretation": "HYPOTHESIS"
+  },
+  "verification": [
+    {
+      "method": "Exact proof plus rational certificate",
+      "command_or_proof_path": "experiments/heart-shell-damping/README.md sections2-4 and analyze.py certificate()",
+      "source_revision": "bbf15511970e08330bfece2503a541a902f9f96c",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "Second implementation matrix exponential vs spectral propagation",
+      "command_or_proof_path": "analyze.py trajectory()",
+      "source_revision": "bbf15511970e08330bfece2503a541a902f9f96c",
+      "actual_result": "PASS max4.86e-16",
+      "review_relationship": "same constructor; different numerical implementation"
+    },
+    {
+      "method": "Geometric axial-edge relation, energy monotonicity and refined quadrature",
+      "command_or_proof_path": "analyze.py",
+      "source_revision": "bbf15511970e08330bfece2503a541a902f9f96c",
+      "actual_result": "PASS declared checks",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Ordinary axial tetrahedron edge dashpots damp common breathing and do not implement the assumed difference-only channel.",
+    "With disorder, pulse energy can be lost even while mean-volume RMS stays substantial.",
+    "An initial tuple-unpacking programming error stopped before scan; corrected and successful full run repeated."
+  ],
+  "limitations": [
+    "Exact bands concern linear harmonic shapes and a prescribed heart, not a fixed-force or finite-amplitude guarantee.",
+    "Pulse campaign finite, corners not proven global extrema; u0..100 only.",
+    "Positive dissipation can drain imperfect breathing; no self-sustaining drive or physical realization supplied."
+  ],
+  "changed_dependencies": [
+    "Assumed passive C added to previous conservative model; native chain generator unchanged."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/heart-damping-20261022-a1/scan-001/manifest.json"
+  ],
+  "next_discriminant": "Construct or obstruct a passive geometric realization of radial-difference damping; include its additional degrees of freedom and force-to-volume response."
+}
