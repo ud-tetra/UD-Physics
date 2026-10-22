@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "integration-icosahedral-damping-20261022",
   "session": "icosahedral-damping-20261022-a1",
   "created_at": "2026-10-22T19:15:27.809Z",
@@ -14,5 +14,7 @@
     "artifacts/icosahedral-damping-20261022-a1",
     "tasks/integration-icosahedral-damping-20261022.json",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-10-22T19:24:20.853Z",
+  "released_from_sha": "bff174b9ff9671de101c81d29cf640dca0e988f1"
 }
