@@ -27,3 +27,5 @@ Audit and figure commands executed successfully; no initial failed numerical run
 Captured artifacts/icosahedral-cone-20261022-a1/audit-001 (EXACT): Exact icosahedral centre-cone incidence/metric/chain/spectral audit; separate heart and collective surface sectors
 
 Capture audit-001 completed: four explicit inputs, three outputs. Validation PASS51 records and all16 tooling tests PASS. No registry/mainline promotion. Focused integration follows.
+
+Research integrated via PR23, merge 40c7e32c413ba47519afcf1ff8244e57623cf98f, with PR integrity run39831801911 completed/success. Live held claim released through child audit marker 7b7d25e64909019140d1384b6f8f8ef9a7e4cfe5; reread ref and released payload confirmed owner/status. This closure-only follow-up edits the owning session record/journal only.
