@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T18:36:29.048955+00:00",
   "base_revision": "754d615546612bbae574921120fabc414c0c4089",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "integration-icosahedral-coupling-20261022": {
       "ref": "refs/heads/claims/integration-icosahedral-coupling-20261022",
       "sha": "9032173920b5c0f490ee5af1e20bcc67db7c6e2b",
-      "status": "held"
+      "status": "released",
+      "released_sha": "982a93d112659b4158c35ac8d324324087af40cd"
     }
   },
   "checks": [
@@ -48,5 +49,10 @@
     "clock": "continuous dimensionless u",
     "metric": "H=I chain;positive mechanical inertia;energies not identified",
     "physical_mapping": "assumed constrained mechanical realization;native/material/time scales OPEN"
+  },
+  "integration": {
+    "pr": 25,
+    "merge_sha": "11ad0c3dfd2a1103c88b93d74e4b7990c5965be5",
+    "pull_request_integrity": "completed/success run39833797336 at head31a6efa15bc24bb760527bf873353c4823773f10"
   }
 }
