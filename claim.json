@@ -1,0 +1,18 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "integration-four-cell-20261022",
+  "session": "four-cell-20261022-a1",
+  "created_at": "2026-10-22T17:00:22.890Z",
+  "base_revision": "506808a815e3afd13630db010a6e383019db6234",
+  "owned_paths": [
+    "experiments/four-cell-tetrahedron",
+    "candidates/four-cell-tetrahedron",
+    "sessions/four-cell-20261022-a1",
+    "artifacts/four-cell-20261022-a1",
+    "tasks/integration-four-cell-20261022.json",
+    "state/CURRENT.md"
+  ]
+}
