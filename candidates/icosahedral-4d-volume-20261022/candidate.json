@@ -32,8 +32,8 @@
     "experiments/icosahedral-4d-volume-20261022/LOCALITY_RESULTS.md"
   ],
   "baseline": "Prior 13-point 3D centre-only symmetry obstruction and exact 3D guided nonlinear analogue, both preserved",
-  "result": "EXACT/CONDITIONAL: fully 3D, local pairwise 132-spring model has a 2D dynamically invariant linear sector with K3=K4 and M3=M4. Structural rigidity rank66, six rigid motions. NUMERICAL: nonlinear and local nonuniform readouts differ from 4D, but 4D not uniquely identified.",
-  "next_discriminant": "Constrain component budgets and evaluate frozen families against independent nonuniform spectral/force-response tests.",
+  "result": "EXACT/CONDITIONAL: fully 3D, local pairwise 132-spring model has a 2D dynamically invariant linear sector with K3=K4 and M3=M4. Structural rigidity rank66, six rigid motions. NUMERICAL: nonlinear and local nonuniform readouts differ from 4D, but 4D not uniquely identified. Scope clarification: 3D equivalent sector is distributed 12-site inner-shell breathing, not identical single-site actuator.",
+  "next_discriminant": "Compare single-point actuation ports and equal hardware budgets, including full nonuniform spectra, with no refitting; guided exact 3D analogue and 24-node pairwise construction remain distinct.",
   "mathematical_receipts": [
     "sessions/icosa4dvol-20261022-gpt6-c7d2/mathematical_receipt.json",
     "sessions/icosa4dvol-20261022-gpt6-c7d2/mathematical_receipt_locality.json"
