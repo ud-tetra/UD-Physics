@@ -33,3 +33,5 @@
 2026-10-22T23:35Z REPRO: Local standard-library Fraction source PASS and second SymPy kernel/Gram derivation PASS. Published exact source/proof/result and byte-matching copies; immutable shorttube-003 manifest records separate SHA256. No 560-state new integration or empirical experiment.
 
 2026-10-22T23:38Z HANDOFF: Draft PR45 receives this conditional theorem on owned paths only; await integrity CI and nonconstructor review. Avoid overlapping held PR44. No mainline export.
+
+2026-10-22T23:46Z VERSIONED CORRECTION: Intermediate time-dependent volume inequality used strict < on the *closed* interval, false precisely at u=0 where reference volume ratio and envelope equal1. Captured 003 kept immutable. Corrected source SHORTTUBE.md and explicit SHORTTUBE_ERRATUM.md; captured new shorttube-004 SHA256 manifest with identical code and result. Final strict constant positive-length/orientation theorem unchanged; no model or fit adjustment.
