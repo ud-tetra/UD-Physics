@@ -21,3 +21,15 @@
 2026-10-22T22:55Z VERIFICATION: Committed exact Fraction replay.py; ran local byte-identical copy (git blob b3f3138cd5cf3d9009c27e1ccd075ad3c4ec6f9f), longer independent-form same-runtime Fraction checker and SymPy Gram eigen cross-check: PASS; no dynamics simulated. Original alpha=.1 remains OPEN, energy-sublevel collision witness preserved, no falsification claim.
 2026-10-22T22:55Z CAPTURE: Immutable pulse-safety-002 input/output SHA-256 manifest, standalone PULSE_SAFETY.md, receipt, candidate and checkpoint under owned paths. Target exposure: two rational sufficient amplitude cutoffs selected post original known failure.
 2026-10-22T22:56Z HANDOFF: Await repository CI, non-constructor mathematical review and independent replay; return to original alpha=.1 forced Green/nonlinear aligned tube only without interfering with held PR44.
+
+2026-10-22T23:12Z RESUME: Verified held claim session ownership and branch at 0391afb; main advanced to 7ae79d8 with MountLoss/hardware/nonlinear tube files byte-identical. PR44 separately owns forced-Green/alignment recovery; inspected read-only and did not write to its files.
+
+2026-10-22T23:17Z NEW QUESTION: Original alpha0=1/10 finite-time nonlinear full-state domain, all 180 housing phase directions, E_h enlarged to 51/20000000. Avoid claiming u100 certificate.
+
+2026-10-22T23:21Z EXACT: Derive housing moving-midpoint oscillator with nu/w<=1/18, passive point speed bounds primary<2/5, housing<9, *initial* housing speed<3/50 and lag<1/180; Duhamel sine envelope |sin x|<=min(|x|,1) gives all120 struts>13/1500 at u2/5. Independently check sympy integral. Primary displacement => cell relative operator norm<2u<=4/5 => all20 oriented cell-volume ratios in(1/125,729/125). Bootstrap ODE existence through u2/5; earlier original pulse u1/20 was 8x shorter.
+
+2026-10-22T23:28Z SCOPE: 2/5 rational T selected after viewing old .05 horizon, as development/FIT of a sufficient theorem; no parameter/constitutive retuning. Original alpha .1 u100, nonlinear coherence, all-time domain and physical calibration OPEN; energy-only collapse witness remains a nontrajectory configuration.
+
+2026-10-22T23:35Z REPRO: Local standard-library Fraction source PASS and second SymPy kernel/Gram derivation PASS. Published exact source/proof/result and byte-matching copies; immutable shorttube-003 manifest records separate SHA256. No 560-state new integration or empirical experiment.
+
+2026-10-22T23:38Z HANDOFF: Draft PR45 receives this conditional theorem on owned paths only; await integrity CI and nonconstructor review. Avoid overlapping held PR44. No mainline export.
