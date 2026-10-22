@@ -29,3 +29,9 @@ Captured artifacts/icosahedral-multiport-20261022-a1/multiport-001 (NUMERICAL): 
 ## Integration checkpoint
 
 Immutable multiport-001 captures both design phases, failed PhaseA screen, declared post-exposure amendment, full code/source inputs, exact kernel and spectrum checks, finite auxiliary impedance, properties/results and visually inspected figure. Validator PASS67 records and all16 tooling tests PASS. No physical build, calibration or native-law promotion is claimed. Owning task complete; session ready for focused PR/CI integration, exact-SHA release and closure record.
+
+## Integrated and released
+
+PR#31 merged at657d9b1b71d52d601eb627faa198297c6a266294 after completed/success integrity run39842117429 at exact headefd4571bd754fc0a9e4ff593fcf6aa8f03759dee. Prepared GitHub tree equals local staged tree2001d00a056a7147363ce4a7067fa79bf4800d3d. Release re-read the held owner and exact claim SHA,created a child marker and used expected-head CAS;live marker70aaf9580ddbbd60fbfa6506e130d2edc7f43f97 verified status released and matching session. This closure-only follow-up touches only this owning session record/journal under protocolv2.
+
+Handoff: derive a joint tolerance budget for ratio errors,finite housing/routing mass and parasitic common loss;specify a measurable module test. Preserve PhaseAfailure,PhaseBexposed selection,exact conditional kernel/passivity proof and finite scope. Mainline export and physical promotion remain0.
