@@ -56,10 +56,20 @@
       "name": "nonlinear-002 full repository integration checks",
       "result": "NOT_RUN",
       "reason": "No authenticated local repository checkout; GitHub connector file writes only"
+    },
+    {
+      "name": "first nonlinear-002 CI integrity",
+      "result": "FAIL",
+      "reason": "GitHub Actions run 39857539810 stopped at missing manifest source_path, prior to tests"
+    },
+    {
+      "name": "nonlinear-003 metadata-corrected immutable capture",
+      "result": "CAPTURED; AWAITING_CI",
+      "reason": "Source_location=repository and explicit source_path, matched SHA256 inputs/outputs to prior unchanged data"
     }
   ],
   "finding": "EXACT/CONDITIONAL nonlinear two-coordinate 4D model has ordinary Euclidean 3D orthogonal-carriage counterpart with identical complete reduced potential, mass, damping and readout; nonlinear dimension discriminator FAILED. NUMERICAL 6 signed pulses, third-order statics, fold f=-0.05258752206 and 4 lower-mode amplitude frequency checks.",
-  "next_action": "Define restrictive local reciprocal isotropic 3D null family and test expanded shell/apex full-mode observables. Independent reviewer and repository validators before PR integration; do not promote mainline.",
+  "next_action": "Review corrected nonlinear-003 CI and tests; scope local reciprocal/isotropic 3D null class, then compare full-mode nonlinear response. Claim remains HELD until integration/abandonment.",
   "mathematical_profile": {
     "coefficient_domain": "Q(sqrt(5)), real algebraic radicals, positive parameters",
     "exactness_or_precision_plan": "SymPy algebra; SVD rank tolerance 1e-10; ODE DOP853 rtol1e-11 atol1e-13",
@@ -74,14 +84,15 @@
     "clock_metric_units_conventions": "Euclidean R4 geometry, w independent of Newtonian t, positive spatial metric, dimensionless s and z; no empirical mapping"
   },
   "nonlinear_extension": {
-    "run_id": "nonlinear-002",
-    "artifact": "artifacts/icosa4dvol-20261022-gpt6-c7d2/nonlinear-002/manifest.json",
-    "receipt": "sessions/icosa4dvol-20261022-gpt6-c7d2/mathematical_receipt_nonlinear-002.json",
+    "run_id": "nonlinear-003",
+    "artifact": "artifacts/icosa4dvol-20261022-gpt6-c7d2/nonlinear-003/manifest.json",
+    "receipt": "sessions/icosa4dvol-20261022-gpt6-c7d2/mathematical_receipt_nonlinear-003.json",
     "report": "experiments/icosahedral-4d-volume-20261022/NONLINEAR_RESULTS.md",
     "checkpoint": "sessions/icosa4dvol-20261022-gpt6-c7d2/CHECKPOINT_NONLINEAR.md",
     "claim_status": "held",
     "validation": "constructor_pass_repo_not_run",
     "fit_exposure": "post-exposure exact 3D comparator, no physical target fit",
-    "physical_status": "not_earned"
+    "physical_status": "not_earned",
+    "correction_history": "Previous capture nonlinear-002 FAILED CI run 39857539810 due missing source_path input metadata; withdrawn from branch tree, preserved Git history; identical original bytes re-captured in nonlinear-003."
   }
 }
