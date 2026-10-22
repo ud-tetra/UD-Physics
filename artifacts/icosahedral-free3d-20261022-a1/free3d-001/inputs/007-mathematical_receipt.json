@@ -1,0 +1,270 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosahedral-free3d-stability-v1",
+  "session_id": "icosahedral-free3d-20261022-a1",
+  "candidate_id": "icosahedral-free3d",
+  "question": "Does the passive central volume response survive releasing radial guides,including angular/shear motion and small imperfections?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "free3d-mechanical-state",
+      "symbol": "x=(alpha,C,X1,...,X12),M,U",
+      "object_type": "unconstrained Euclidean point mechanics with one scalar internal coordinate",
+      "definition": "40 configuration variables;M xprimeprime=-grad U;stress-free regular icosahedral reference",
+      "domain": "R80 phase space away fromzero radial/edge lengths",
+      "codomain": "same;20 cell volumes",
+      "coefficient_domain": "Q(sqrt5) reference geometry/rank;real evolution;float64 numerics",
+      "units": "ell0=1 internally;u dimensionless;E_* andt0 OPEN",
+      "basis_orientation": "alpha,centre,12 outer points;consistent cell orientation signs imported",
+      "metric_measure": "constant positive M=diag(1,mC/R2 repeated3,mi/R2 repeated3)",
+      "origin": "assumed",
+      "exact_expression": "rank constraint=34;kernel=6 Euclidean rigid motions;T+U,P,L conserved",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "coupling",
+        "geometry"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "positive model properties",
+        "regular reference"
+      ],
+      "normalization": "unit default point mass parameters/pins/spokes,k=2/5,alpha0=1/10"
+    },
+    {
+      "object_id": "breathing-transverse-stiffness",
+      "symbol": "K(u)=K0+cr Tr+ce Te",
+      "object_type": "time-dependent Hessian and exact comparison certificate",
+      "definition": "Homothetic breathing family;cr=(2b-alpha)/(1+b),ce=b/(1+b)",
+      "domain": "configuration variations R40;32 shape coordinates aftercollective/rigid removal",
+      "codomain": "same",
+      "coefficient_domain": "Q(sqrt5) exact LDL;real time coefficients",
+      "units": "model squared-frequency stiffness relative toM",
+      "basis_orientation": "reference Euclidean rigid vectors and mass-orthogonal shape basis",
+      "metric_measure": "M;reference transverse energy-amplitude norm",
+      "origin": "derived",
+      "exact_expression": "K0-(8/59)Tr-(1/59)Te+MPrigid-(1/10)M positive definite",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "coupling",
+        "geometry"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "abs(alpha)<=1/10",
+        "abs(b)<1/60",
+        "default symmetric properties"
+      ],
+      "normalization": "remove six rigid modes;32 normal coordinates additionally exclude two collective directions"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "coupling",
+      "url_or_repo_path": "experiments/icosahedral-coupling/README.md",
+      "version_or_commit": "fbf35ff97a148b42dc57322c71bd905aec2adff5",
+      "section_or_object_id": "sections4-6",
+      "source_status": "prior hypothetical constrained positive-energy construction"
+    },
+    {
+      "source_id": "geometry",
+      "url_or_repo_path": "experiments/icosahedral-cone/analyze.py",
+      "version_or_commit": "fbf35ff97a148b42dc57322c71bd905aec2adff5",
+      "section_or_object_id": "construction,Q5,orientation signs",
+      "source_status": "verified exact constructor"
+    },
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "fbf35ff97a148b42dc57322c71bd905aec2adff5",
+      "section_or_object_id": "Q139,Q144-Q145,Q151-Q152",
+      "source_status": "historical source snapshot,physical/native maps remainopen"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Free centre C,12 free outer points Xi,internal scalar alpha;40 coordinates/80 phase variables."
+    },
+    {
+      "id": "A2",
+      "statement": "Potential uses internal/radial pins,preferred-radius spoke couplings and ordinary edge extensions;all reaction forces included. Reference regular icosahedron;default positive masses/spokes1,edge coefficients2/5;alpha inertia1."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Integer/rational/algebraic exact",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Q(sqrt5) rigidity rank,nullspaces,rigid Grams,positive LDL and reconstruction"
+    },
+    {
+      "technique": "Prime factorization/divisibility",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No new count-to-mechanism or divisibility claim"
+    },
+    {
+      "technique": "Clock/modular",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "Continuous u;two incommensurate active frequencies,no temporal register"
+    },
+    {
+      "technique": "Group/rigid geometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Separate six Euclidean motions from34 restoring coordinates"
+    },
+    {
+      "technique": "Local energy/transport",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Action/reaction,conserved energy/linear/angular momentum"
+    },
+    {
+      "technique": "Spectral/variational",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Equilibrium eigenvalues,moving-state Hessian,32-coordinate normal variational propagation"
+    },
+    {
+      "technique": "Projection/readout",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Moving-hub vsmean-shell-centre volume partition;rigid/scale-fit shell shape"
+    },
+    {
+      "technique": "Fit/sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Disclosed certificate selection,adversarial seed and16 finite property probes"
+    },
+    {
+      "technique": "Chain/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No change to simplicial boundary operators;mechanical state is a different carrier"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "1 internal+3 centre+12*3 outer=40;phase80;1 pin+12 radial+30edge rows=43;rank34;40-34=6 rigid",
+    "reduced_expression": "normal shape40-6-2=32;phase64;prestress bounds-8/59,-1/59;certificate lower1/10",
+    "factor_origins": [
+      "12 outervertices",
+      "30 shell edges",
+      "three Euclidean translation/rotation generators each"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous model u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "M xprimeprime=-grad U;normal eta primeprime+H(u)eta=0",
+    "initial_phase": "alpha0=1/10,reference points,zero velocities;specified adversarial perturbations separately",
+    "coupling": "positive centre/radial/edge energies",
+    "period_claim": "two incommensurate collectivefrequencies,no single Floquet period or physicalclock",
+    "physical_unit_map": "u=t/t0,Ephys=E_*E;pointmasses E_*t0^2 mi/R2"
+  },
+  "dynamics_readout": {
+    "state_space": "R80 full phase;R64 transverse variationalphase",
+    "generator_or_update": "Euler-Lagrange positive energy;prestress-complete Hessian",
+    "initial_boundary_conditions": "freecluster,no guides/anchor;source preparation and property samples declared",
+    "conservation_and_sources": "E,P,L conserved;finite preparedenergy,no sustained source",
+    "projection_and_kernel": "six rigid null modes,two collective directions excluded from32-dimensional normalspace",
+    "physical_mapping": "signed tetrahedraldeterminants;totalvolume independent ofcone centre;separate shell-shape readout"
+  },
+  "target_exposure": {
+    "status": "Prior guided scalar model and g1,k2/5 collective frequencies exposed. Normal lower bound1/10 chosen after numerical comparison;adversarial seed selected from exposed u100 propagator. No empirical targets.",
+    "known_targets": [
+      "guided breathing frequencies8\u00b1sqrt37",
+      "nonzero geometric volume response"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      {
+        "type": "inherited illustrative design",
+        "choice": "g1,k2/5,unit properties,A0=1/10",
+        "scope": "not fitted to observations"
+      },
+      {
+        "type": "target-informed conservative certificate",
+        "choice": "rational lower stiffness1/10 after inspecting numerical lower gap0.1955",
+        "scope": "exact checked sufficient bound,not independent prediction"
+      },
+      {
+        "type": "target-informed stress probe",
+        "choice": "leading singular vector at exposedu100;amplitudes1e-6,1e-5,1e-4",
+        "scope": "adversarial design,not held-out validation"
+      }
+    ],
+    "search_domain_and_budget": "one free3D family;16 seeded55-property probes at\u00b11/\u00b15%;3 adversarialseed amplitudes;5 variationalendpoints through400",
+    "selection_criterion": "derive rigidity/passivity/instantaneous stability;report sensitivity without empirical pass/fail threshold",
+    "baseline": "Symmetric guided collective solution;stress-free full3D equilibrium;zero-amplitude transverse energy norm."
+  },
+  "calculation_steps": [
+    "Remove centre anchor and radialguides;define free3D invariant energy and allreactionforces.",
+    "Exact rank34/nullity6 constraintproof and local orbital stability.",
+    "Retain exact homotheticcollective manifold;derive prestress Hessian.",
+    "Exact rational phasebounds and Q(sqrt5) positive LDL comparison certify stiffness>=1/10 offrigidspace.",
+    "Propagate32-coordinate shapevariations inreference-energy norm tofive endpoints through400.",
+    "Run80-state nonlinear baseline,3 adversarialseeds and16 property probes;separate hubpartition vsboundaryshape.",
+    "Refine two worst observedleakage probes and capture code/data/certificate/figure."
+  ],
+  "result": {
+    "exact_expression": "40 coordinates,rank34,sixrigid modes;conserved E,P,L;collective lambda=8\u00b1sqrt37;all-phase nonrigid stiffness>=1/10 for symmetric |A0|<=1/10",
+    "approximation": "normalgain1.267 at400;meanvolume RMSmin99.61% at\u00b11%,97.83% at\u00b15%;moving-hub leakagemax3.11%,18.62% in8probes per tolerance",
+    "units": "model frequency/energy;volume signal ratios dimensionless",
+    "precision_and_error": "Q(sqrt5) exactcertificates;float64 stateerror9.06e-10,coarse energy6.07e-9,refined energy9.51e-11,symplectic1.41e-9",
+    "scope": "local orbital equilibrium theorem and exact instantaneous moving-state bound;finite variational/nonlinear robustness evidence",
+    "physical_interpretation": "HYPOTHESIS"
+  },
+  "verification": [
+    {
+      "method": "Exact rigidity,Euclidean nullspace,LDL pivot signs and reconstruction",
+      "command_or_proof_path": "model.py exact_rigidity andcertificate.py",
+      "source_revision": "fbf35ff97a148b42dc57322c71bd905aec2adff5",
+      "actual_result": "PASS rank34/nullity6;40positive pivots;exactfactorization reconstructed",
+      "review_relationship": "constructor exact calculations"
+    },
+    {
+      "method": "80-state nonlinear vsanalytic manifold,force Hessian differences andsymplectic variationalcheck",
+      "command_or_proof_path": "analyze.py,certificate.py",
+      "source_revision": "fbf35ff97a148b42dc57322c71bd905aec2adff5",
+      "actual_result": "PASS declaredtolerances;residuals recorded",
+      "review_relationship": "same constructor,distinct numerical methods"
+    },
+    {
+      "method": "Refined integration/quadrature for observed worst propertycases",
+      "command_or_proof_path": "analyze.py worst_probe_refinements",
+      "source_revision": "fbf35ff97a148b42dc57322c71bd905aec2adff5",
+      "actual_result": "PASS leakage differences<=6.90e-7",
+      "review_relationship": "constructor convergence check"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Positive instantaneous stiffness is insufficient toprove all-time parametricstability;claimremains scoped.",
+    "Zero modes are rigid motions,not additional shear mechanisms.",
+    "Moving hubcanchange individualcellvolumes whiletotalvolume is unchanged;separategeometryreadouts added.",
+    "An added exact rigid-Gram check initially had an int/Q5 division TypeError;coercionfixed andsuccessful finalcertificate rerun."
+  ],
+  "limitations": [
+    "Local orbital equilibrium stability and positive moving-state stiffness do not prove all-time parametric stability.",
+    "Variational gains at five endpoints only;imperfections16 seeded points,not continuous-box bounds or confidence intervals.",
+    "Cell-volume signal leakage is not an energy loss fraction;hub repartition and shell deformation are distinct.",
+    "No material realization,physical calibration,native constitutive derivation or independent replication."
+  ],
+  "changed_dependencies": [
+    "Constrained scalarstate enlarged tofree Euclidean40-coordinate model;original oriented chainobstructions unchanged."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/icosahedral-free3d-20261022-a1/free3d-001/manifest.json"
+  ],
+  "next_discriminant": "Derive a robust amplitude/damping operating envelope using realizable passive spoke/edge losses,quantifying their cost to common breathing and suppression of shape/hub-relative motion."
+}
