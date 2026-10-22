@@ -1,0 +1,59 @@
+{
+  "retrieved_at": "2026-10-22T22:40:36.664Z",
+  "sources": [
+    {
+      "name": "ledger_v0.85.json",
+      "source_repo": "ud-tetra/UD",
+      "source_revision": "957d443e25008632ab9d9328c162343b6a651ee7",
+      "source_path": "captures/2026-10-21T151000Z-codex-exit03-recovery-98dc7b12/library_LEDGER_v0.85.json",
+      "source_git_blob": "93e2ca31eba625989087275a71c4857848e321c6",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    },
+    {
+      "name": "C0906.txt",
+      "source_repo": "ud-tetra/UD",
+      "source_revision": "957d443e25008632ab9d9328c162343b6a651ee7",
+      "source_path": "captures/2026-10-18T183151Z-codex-proof-provenance-2b503846/sources/C0906.txt",
+      "source_git_blob": "b64a952cfb7ea8eab8e24f442c8600b30258b58f",
+      "sha256": "4e5cdc41c1fd93f69b8d80aeb557f5cfdf8b3b335b320ef4b2028bc1b08c6739",
+      "size_bytes": 4381
+    },
+    {
+      "name": "O13_CORRECTION_OVERLAY.json",
+      "source_repo": "ud-tetra/UD",
+      "source_revision": "957d443e25008632ab9d9328c162343b6a651ee7",
+      "source_path": "captures/2026-10-21T151000Z-codex-exit03-recovery-98dc7b12/O13_CORRECTION_OVERLAY.json",
+      "source_git_blob": "e3d0000dd8cfef18c78abdf8dc45c4bf0351e0c0",
+      "sha256": "31aebcdfc690d4efa3847382b5d205abeb37cb3ffefe689671d8a1fc6100ce98",
+      "size_bytes": 647
+    },
+    {
+      "name": "ACTION_UNIT_CONTRACT_original.json",
+      "source_repo": "ud-tetra/UD",
+      "source_revision": "957d443e25008632ab9d9328c162343b6a651ee7",
+      "source_path": "captures/2026-10-21T160300Z-codex-action-identifiability-32b8a1d4/ACTION_UNIT_CONTRACT.json",
+      "source_git_blob": "c44cb256da787bc123976ec4db222c8d57bd4a29",
+      "sha256": "395d4a30f6cc3d6737ecdf23f1624b499c6dfe68797c2eb11bea2346c8dacf89",
+      "size_bytes": 10298
+    },
+    {
+      "name": "IDENTIFIABILITY_THEOREM.md",
+      "source_repo": "ud-tetra/UD",
+      "source_revision": "957d443e25008632ab9d9328c162343b6a651ee7",
+      "source_path": "captures/2026-10-21T160300Z-codex-action-identifiability-32b8a1d4/THEOREM.md",
+      "source_git_blob": "ad3548d5c107d6ffb4c50940ac0695c9f6e4ca35",
+      "sha256": "a4a0d326ccba7ceade98f69c9184fde3aa880c646ee7b87d66eb1a63161080ef",
+      "size_bytes": 4266
+    },
+    {
+      "name": "verify_action_original.py",
+      "source_repo": "ud-tetra/UD",
+      "source_revision": "957d443e25008632ab9d9328c162343b6a651ee7",
+      "source_path": "captures/2026-10-21T160300Z-codex-action-identifiability-32b8a1d4/verify_action.py",
+      "source_git_blob": "0665934cb0e56b79c1323a8ea4c5b6fbf1ded71a",
+      "sha256": "5e38d617ba8ef5b436b4d88b61a954cd1de41899790f55592c3ae2f5a2e9534a",
+      "size_bytes": 6790
+    }
+  ]
+}

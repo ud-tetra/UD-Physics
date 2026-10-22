@@ -1,0 +1,79 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "action-normalization-audit",
+  "session_id": "action-normalization-20261022-a1",
+  "question": "What do O09\u2013O15 establish about action scale and what additional map would identify primitive holonomy normalization?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Single filled tetrahedron,unit chain metric,Hodge active generator A=d-d^T;source one-form normalization theta=1/2<Jx,dx>.",
+    "Native a0 length,tau0 time,B0 mass-like;SI anchor and physical time/energy map not supplied.",
+    "Physical phase chi=S_native/hbar and same-carrier chi=Hodge phase are separate bridge hypotheses;not derived from trace or native dynamics."
+  ],
+  "physical_mapping": "OPEN;QPB1 quarantined;no empirical score;promotion0",
+  "target_exposure": {
+    "status": "SOURCE_AUDIT_AFTER_TARGET_EXPOSURE",
+    "known_targets": [
+      "user-supplied O14 convention",
+      "already archived Q288 eta_A=2 candidate"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "No fitted parameter;source unit metric/one-form explicitly imported",
+      "Physical phase relation chi=S/hbar considered conditionally"
+    ],
+    "search_domain_and_budget": "six exact upstream source files;723inventory IDs counted;17action rows18equations;2952rational anchor banks;15support/winding cases",
+    "selection_criterion": "source completeness,dimensional consistency and explicit missing bridge",
+    "baseline": "attached historical v0.39 and source current action subsystem"
+  },
+  "fitted_choices": [
+    "No fitted parameter;source unit metric/one-form explicitly imported",
+    "Physical phase relation chi=S/hbar considered conditionally"
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "version_or_commit": "ud-tetra/UD@957d443e25008632ab9d9328c162343b6a651ee7",
+      "section_or_object_id": "G06,O09\u2013O15,Q282\u2013Q288,O54\u2013O55;723rows;SHA2568845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "source_status": "recovered archive labelledv0.85;inherited scientific_revisionv0.43 preserved"
+    },
+    {
+      "source_id": "S2",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "version_or_commit": "same pinned UD commit",
+      "section_or_object_id": "single filled-K4 Hodge action-phase specific scale theorem v0.1",
+      "source_status": "archived native theorem;physical bridge explicitly OPEN"
+    },
+    {
+      "source_id": "S3",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/O13_CORRECTION_OVERLAY.json",
+      "version_or_commit": "same pinned UD commit",
+      "section_or_object_id": "O13 append-only proposal",
+      "source_status": "constructor-checked,non-constructor review pending"
+    },
+    {
+      "source_id": "S4",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/verify_action_original.py",
+      "version_or_commit": "same pinned UD commit",
+      "section_or_object_id": "18equations,17source rows,monomial anchor identifiability",
+      "source_status": "reviewed source verifier reexecuted;not independent replication"
+    },
+    {
+      "source_id": "S5",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "UD-Physics@ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "G06",
+      "source_status": "supplied older historical snapshot;later entries absent"
+    }
+  ],
+  "baseline": "attached historical v0.39 and source current action subsystem",
+  "result": "O14/O15 source-verified;literal O13 type error reproduced and existing proposal checked. Exact single-cell specific actionA0/2 and endpoint-trace winding obstruction;xi_act relation depends on phase-coordinate normalization. eta_A=2 remains a postulated bridge candidate.",
+  "next_discriminant": "Specify primitive quantum-holonomy carrier/operator and path lift,typed action-to-phase map,and target-independent same-carrier action anchors;then test xi_act meaning and QPB1.",
+  "mathematical_receipt": "sessions/action-normalization-20261022-a1/mathematical_receipt.json"
+}
