@@ -1,0 +1,42 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "k5-four-cell-20261022-a1",
+  "run_id": "exact-001",
+  "created_at": "2026-10-22T17:16:36.129371+00:00",
+  "evidence": "EXACT",
+  "summary": "K5 graph versus four-cell filling, missing facet, symmetry and closure spectrum",
+  "command": "python3 experiments/k5-four-cell/analyze.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "bbce8407a64ad081b2efa576584d54d23c81abb8",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "analyze.py",
+      "path": "inputs/001-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/k5-four-cell/analyze.py",
+      "sha256": "8a2dcdf0e905672bf8ba95a778eff363c56b81467cd231c8f510237b9e1ab3a6",
+      "size_bytes": 4362
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/k5-four-cell/mathematical_receipt.json",
+      "sha256": "891f2ba14c28de3e8b2f5293ded05954ba0ff371156dfffee01cd9b17de1a6a7",
+      "size_bytes": 9285
+    }
+  ],
+  "files": [
+    {
+      "path": "files/k5_results.json",
+      "sha256": "c6a72d5acd1d37efa702b879d7fae435512f0d03e3a7989abba1aee39e42ae28",
+      "size_bytes": 2089
+    }
+  ]
+}
