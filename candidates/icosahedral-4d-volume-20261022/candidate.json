@@ -1,0 +1,41 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-4d-volume-20261022",
+  "session_id": "icosa4dvol-20261022-gpt6-c7d2",
+  "question": "Does local reciprocal SO(3)-equivariant 3D mechanics exclude 4D apex shell-breathing transfer?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT",
+    "FAILED"
+  ],
+  "assumptions": [
+    "Euclidean 4D reference with shell in w=0; prior equal-edge geometric target",
+    "3D point-spring null has 12 outer+12 inner free xyz vertices with all 132 zero-prestress Hookean connections",
+    "3D cross-neighbor links are graph-local pairwise, no guided transmissions",
+    "Newtonian time distinct from the fourth spatial coordinate"
+  ],
+  "physical_mapping": "OPEN: 3D scalar shell-volume and mechanical clock; no GR/QFT physical calibration",
+  "target_exposure": "Exposed 4D K,M were matched exactly; no measured target fitted",
+  "fitted_choices": [
+    "gamma=1/5",
+    "inner shell reference scale b0=1/4",
+    "cross spring kc=1/20",
+    "three positive Hooke stiffnesses and one vertex mass solved to match K,M"
+  ],
+  "sources": [
+    "experiments/icosahedral-4d-volume-20261022/README.md at 1bc9f2d450bde6deb85f0b05dd31109795ef2b76",
+    "earlier nonlinear-003 exact guided-linkage comparison on PR39",
+    "experiments/icosahedral-4d-volume-20261022/LOCALITY_RESULTS.md"
+  ],
+  "baseline": "Prior 13-point 3D centre-only symmetry obstruction and exact 3D guided nonlinear analogue, both preserved",
+  "result": "EXACT/CONDITIONAL: fully 3D, local pairwise 132-spring model has a 2D dynamically invariant linear sector with K3=K4 and M3=M4. Structural rigidity rank66, six rigid motions. NUMERICAL: nonlinear and local nonuniform readouts differ from 4D, but 4D not uniquely identified.",
+  "next_discriminant": "Constrain component budgets and evaluate frozen families against independent nonuniform spectral/force-response tests.",
+  "mathematical_receipts": [
+    "sessions/icosa4dvol-20261022-gpt6-c7d2/mathematical_receipt.json",
+    "sessions/icosa4dvol-20261022-gpt6-c7d2/mathematical_receipt_locality.json"
+  ]
+}
