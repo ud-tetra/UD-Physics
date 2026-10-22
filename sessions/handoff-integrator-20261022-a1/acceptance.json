@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "scope": "Two fresh same-model LLM contexts using one GitHub account; separate clones, branches and claims. Not cross-provider or empirical physics validation.",
+  "status": "PASS_WRITER_REVIEWER_SCOPE",
+  "created_at": "2026-10-22T16:34:40.990191+00:00",
+  "boot_base_revision": "fbf40e3f4daaf3f02af5db35fc1ee82f0da02190",
+  "frozen_writer_revision": "846a6a31c3ca87277afa584e6e4d782ef40e9168",
+  "writer_output_sha256": "9a32fe7b93badd64adfadc67a7a91e6e4dd11dd489dc9fc6be134f263fb8fbd6",
+  "criteria": [
+    {
+      "id": 1,
+      "result": "PASS",
+      "evidence": "Both boot reports load the verified base and record actual capabilities."
+    },
+    {
+      "id": 2,
+      "result": "PASS",
+      "evidence": "Independent clones, branches, session IDs and disjoint owner paths verified."
+    },
+    {
+      "id": 3,
+      "result": "PASS",
+      "evidence": "Reviewer reproduced frozen writer output byte-for-byte; exact oracle, input hashes, units and fully exposed FIT labels passed."
+    },
+    {
+      "id": 4,
+      "result": "PASS",
+      "evidence": "Live competing writer claim rejected by GitHub422; original owner unchanged."
+    },
+    {
+      "id": 5,
+      "result": "PASS",
+      "evidence": "Review findings preserved and fixed; schema2 input checks and protocol2 lifecycle audited; 16 tests pass."
+    },
+    {
+      "id": 6,
+      "result": "PASS",
+      "evidence": "PRs1-6 integrated; writer/reviewer exact-SHA released markers verified; original ref history retained."
+    }
+  ],
+  "release_markers": {
+    "writer": "87dd43af5d8114ad8abd42a6ef644afdadc1a88a",
+    "reviewer": "1133cf28e742ed159344591fc77a82d7ef42c866",
+    "coordinator": null
+  },
+  "coordinator_closure": "PENDING_FINAL_INTEGRATION_AND_RELEASE",
+  "remote_ci": "Newest observed runs queued; local16 and separate-context review passed.",
+  "limitations": [
+    "Server branch protection remains disabled.",
+    "Same-model review is not independent experimental replication.",
+    "Synthetic clock labels are not measured spacetime or a native UD clock law."
+  ]
+}
