@@ -57,3 +57,11 @@ Milestoneanalysiscomplete,requestedfinite-energy-ballu100certificateexplicitlyOP
 Checkpoint (handoff): Derived full560Jacobian and exact conditional tube/readout criterion; NUMERICAL two-case moving-pulse180phase optimization, seven finite preparations and frame diagnostic. New adverse phase retains87.2207408%. Raw norm fails readout budget; aligned diagnostic helps. u100 nonlinear ball remains OPEN.
 
 Next: Validate full forced Green, nonlinear/chart and reference-error bounds in a positive full-state/block norm; aligned primary remainder<=1/1000 with domain and quadrature accounting.
+
+## Integrated milestone and verified release
+
+ResearchPR42 mergedatfcb086d081384cb7c4d4190c52687d485e18eea5 afterDiscoveryintegrityrun39860585801 completed/success at exacthead10033007488b0dbbd100fb0d6fe9fe2a00698d96. All53newblobhashes andpreparedGitHubtree762e6abf8679c25e55f2d667a0ae59f5d4e3b0ff matchedlocalGitobjects;75changedresearchpaths.
+
+Readownheldclaim/SHA,createdreleasedchildmarker8a657ac77036eb9447843156550549cbc410bbda,CASupdatedtherefwith exactheldexpectedSHA,andverifiedliveref/payloadstatus,owner andparentmarker. No branchdeletion claimed. Localresearchtree matchedfetchedmainbefore softalignment. Thisclosureonly updatesownsessionrecord/journal underprotocolv2 withoutreacquisition;no research/sharedstate/capturedartifact edits.
+
+Handoff: u100nonlinearfinite-energy-ball guaranteeexplicitlyOPEN. NextactionvalidatesfullforcedGreen andnonlinear/alignment/refdefectbounds withpositivefullstate/blocknorm andproper invariantreadout, aimingforalignedprimaryremainder<=1/1000includingfullnumerical/domainerroraccounting. Nativeconstitutive/time/physicalcorrespondencestillOPEN/UNSCORED.
