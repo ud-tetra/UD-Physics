@@ -1,0 +1,19 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-icosahedral-damping-20261022",
+  "goal": "Derive realizable passive spoke/edge damping envelope and collective-mode cost",
+  "owned_paths": [
+    "experiments/icosahedral-damping",
+    "candidates/icosahedral-damping",
+    "sessions/icosahedral-damping-20261022-a1",
+    "artifacts/icosahedral-damping-20261022-a1",
+    "tasks/integration-icosahedral-damping-20261022.json",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "integration-icosahedral-free3d-20261022"
+  ],
+  "status": "complete",
+  "result": "Candidate,receipt,code,finite design envelope and immutable damping-001 run complete;mainline promotion0"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "collective_characteristic_polynomial": "r^4+d*r^3+16*r^2+13*d*r+27",
+  "weak_loss_low_amplitude_decay_per_d": "(1+5/sqrt37)/4",
+  "weak_loss_high_amplitude_decay_per_d": "(1-5/sqrt37)/4",
+  "weak_loss_low_decay_per_ce": "(5/8)*(1+5/sqrt37)",
+  "soft_decay_per_ce": "(5+sqrt5)/16",
+  "inequality_proof": "low per ce>5/8; soft per ce<1/2 because sqrt5<3; low common mode decays faster for infinitesimal edge loss",
+  "domain_bound": {
+    "g_box": "[19/20,21/20]",
+    "k_box": "[19/50,21/50]",
+    "Gmax": "68/5",
+    "kmin": "19/50",
+    "amplitude_strict_upper": "sqrt(19/680)",
+    "amplitude_upper_approx": 0.16715614398097436,
+    "radial_strain_bound": "sqrt(68/5)*|A0|",
+    "edge_strain_bound": "sqrt(680/19)*|A0|",
+    "proof": "E(u)<=E(0)=(1+sum g) A0^2/2; U>=sum s_i^2/2 and U>=sum k_ij e_ij^2/2. Strict amplitude bound keeps each radial and edge length positive for every time and every nonnegative axial loss.",
+    "scope": "Initial undeformed points,alpha=A0,all velocities zero; positive masses; \u00b15% g,k box; no cell-orientation or convexity guarantee. A0=1/5 probes exceed this certificate."
+  }
+}

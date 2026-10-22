@@ -1,0 +1,280 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosahedral-passive-damping-v1",
+  "session_id": "icosahedral-damping-20261022-a1",
+  "candidate_id": "icosahedral-damping",
+  "question": "Can ordinary passive radial/edge dashpots suppress free3D deformation without excessive collective breathing loss?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "free3d-config",
+      "symbol": "x",
+      "object_type": "mechanical configuration",
+      "definition": "alpha,C plus12 shell points",
+      "domain": "R40 with positive spoke/edge lengths",
+      "codomain": null,
+      "coefficient_domain": "R;referenceQ(sqrt5)",
+      "units": "alpha,strains dimensionless;points inell0",
+      "basis_orientation": "ordered parent vertices and outward faces",
+      "metric_measure": "positive diagonalM",
+      "origin": "assumed",
+      "exact_expression": "40=1+3*13",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "free3d"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "reference edgea=1"
+    },
+    {
+      "object_id": "rayleigh",
+      "symbol": "R_loss",
+      "object_type": "nonnegative dissipation function",
+      "definition": "(cs sum sdot\u00b2+ce sum edot\u00b2)/2",
+      "domain": "tangent configuration space",
+      "codomain": "R>=0",
+      "coefficient_domain": "R",
+      "units": "E_*/t0 physical conversion",
+      "basis_orientation": "actual unoriented axial strains",
+      "metric_measure": "csI12,ceI30",
+      "origin": "assumed",
+      "exact_expression": "Eprime=-2R_loss",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "new-loss"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "free3d-config"
+      ],
+      "normalization": "u=t/t0"
+    },
+    {
+      "object_id": "soft-mode",
+      "symbol": "lambda_s",
+      "object_type": "squared equilibrium frequency",
+      "definition": "5D tangential eigenspace",
+      "domain": "mass-orthogonal mechanical modes",
+      "codomain": "Rpositive",
+      "coefficient_domain": "Q(sqrt5)",
+      "units": "dimensionless inverseu squared",
+      "basis_orientation": "parent physical-coordinate K,M",
+      "metric_measure": "M",
+      "origin": "derived",
+      "exact_expression": "(5+sqrt5)/20",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "free3d",
+        "new-loss"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [
+        "rayleigh"
+      ],
+      "normalization": "soft modal exponential envelope exp(-ce*R\u00b2*u/2)"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "free3d",
+      "url_or_repo_path": "experiments/icosahedral-free3d/model.py",
+      "version_or_commit": "c7d832c25b5b822572c1a82e0ef93b583cf1a4f0",
+      "section_or_object_id": "Model/potential,M,readouts",
+      "source_status": "integrated conditional candidate"
+    },
+    {
+      "source_id": "ico",
+      "url_or_repo_path": "experiments/icosahedral-cone/analyze.py",
+      "version_or_commit": "c7d832c25b5b822572c1a82e0ef93b583cf1a4f0",
+      "section_or_object_id": "construction,Q5 exact geometry",
+      "source_status": "integrated exact geometry"
+    },
+    {
+      "source_id": "new-loss",
+      "url_or_repo_path": "experiments/icosahedral-damping/README.md",
+      "version_or_commit": "v1.0,this run capture",
+      "section_or_object_id": "Rayleigh loss/collective/soft/domain",
+      "source_status": "new assumption and conditional derivations"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Parent40-coordinate passive mechanics with internal alpha and free spatial points"
+    },
+    {
+      "id": "A2",
+      "statement": "Independent central axial dashpots; uniform cs,ce>=0"
+    },
+    {
+      "id": "A3",
+      "statement": "Default g=1,k=2/5 for exact soft/collective modes;\u00b15% positive properties for length bound/probes"
+    },
+    {
+      "id": "A4",
+      "statement": "Initial undeformed points,alpha=A0,zero velocities;no sustained drive"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact integers/fractions",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "12spokes,30edges;collective mass12;coefficient5/2;exactrank35"
+    },
+    {
+      "technique": "spectral/kernel analysis",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "certify5D soft family andloss visibility"
+    },
+    {
+      "technique": "Euclidean symmetry/energy",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "centralreactions preserveP,L;deriveinvariantcollective manifold andpassivity"
+    },
+    {
+      "technique": "projection/readout",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "separatevolume mismatch,meanvolume,shape andhub"
+    },
+    {
+      "technique": "prime factorization/modular clock",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No divisibility,register orclock constraint inthiscontinuous mechanical question"
+    },
+    {
+      "technique": "sensitivity/design",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exposedtargets,finitecoefficientgrid andmatchednonlinearprobes"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "12 radial dashpots and30 ordinary edge dashpots;collective damping=(12cs+30ce)/12",
+    "reduced_expression": "cs+5ce/2",
+    "factor_origins": [
+      "12outerspokes",
+      "30icosahedron edges",
+      "12unit radial inertias"
+    ],
+    "factorization": "12=2\u00b2*3;30=2*3*5,used only forcount reduction",
+    "divisibility_gcd_lcm": "N/A:no modular constraint"
+  },
+  "clock_receipt": {
+    "clock_type": "continuousdimensionlessu",
+    "modulus": null,
+    "residue_convention": "N/A",
+    "update_rule": "M*xddot+gradU+grad_vR=0",
+    "initial_phase": "undeformed,alpha=A0,velocitieszero",
+    "coupling": "actualaxialstrainrates",
+    "period_claim": "None;dampedmodesdecay",
+    "physical_unit_map": "t=t0*u,t0OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "40configuration+40velocity;onebookkeepingdissipationintegral",
+    "generator_or_update": "damping.py:Damped.ode_loss",
+    "initial_boundary_conditions": "freepoints,noanchor,alphaA0,referencepositions,velzero",
+    "conservation_and_sources": "E+D=E0;P,Lconserved;noexternaldrive",
+    "projection_and_kernel": "P20 removesmeanvolume;properrigid/scale shellfit;softBsandalpha kernel",
+    "physical_mapping": "ordinaryaxiallossforce law assumed;nativeUD/material/time/energycalibrationOPEN"
+  },
+  "target_exposure": {
+    "status": "FIT/development",
+    "known_targets": [
+      "previousfree3Dspectrum",
+      "previous\u00b15% sample7largestvolumemismatch",
+      "selected80%retention/50%softenvelopescreen"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "cs grid0,.005,.02;ce=j/1000,j0..120",
+      "Nonlinear A0=.025,.1,.2;loss pairs(0,0),(0,.005),(0,.02),(.02,.02)",
+      "80% RMS retention/50% soft pole envelope are chosen design goals"
+    ],
+    "search_domain_and_budget": "363symmetricgridpoints;36nonlinearprobes+12symmetrychecks;oneworstleakrefinement",
+    "selection_criterion": "reportall;passifretention>=.8andsoftenvelope<=.5",
+    "baseline": "Matched undamped preparation; uniform collective solution for symmetric scan"
+  },
+  "calculation_steps": [
+    "DeclareindependentaxiallossandderiveEprime,P,L",
+    "Reducehomotheticinvariantmanifold;polynomialandweaklosspoles",
+    "Q(sqrt5)rank35ofK-lambdaM,unchangedwithBsandalpha;deriveedge-onlysoftdecay",
+    "Positivenergyyieldsalltimelengthbounds;exactfractionthreshold19/680",
+    "Executedeclaredscan,full3Ddesigncampaignandrefinement;preservefailedscreen"
+  ],
+  "result": {
+    "exact_expression": "collectived=cs+5ce/2;softlambda=(5+sqrt5)/20;|A0|<sqrt(19/680) lengthdomain",
+    "approximation": "0/363selectedscreenpasses;bestretentionhalvingsoft74.24%;strongcombinedshapeRMS45.01\u201350.40%,minbreathingretention66.99%",
+    "units": "internalmodel units",
+    "precision_and_error": "float64DOP8531e-10/1e-12;refine2e-12/2e-14;maxE+Drelativeerror8.67e-9;leakrefinementchange3.62e-7",
+    "scope": "conditionalexactidentities andfinite-design numericalfindings",
+    "physical_interpretation": "NONE;candidatepassivemechanics"
+  },
+  "verification": [
+    {
+      "method": "exactfieldrank",
+      "command_or_proof_path": "experiments/icosahedral-damping/analyze.py:exact_soft",
+      "source_revision": "c7d832c25b5b822572c1a82e0ef93b583cf1a4f0",
+      "actual_result": "PASS35/35",
+      "review_relationship": "constructor;alternative assembly where stated"
+    },
+    {
+      "method": "exactfractionboundandpolynomial",
+      "command_or_proof_path": "experiments/icosahedral-damping/bounds.py",
+      "source_revision": "c7d832c25b5b822572c1a82e0ef93b583cf1a4f0",
+      "actual_result": "PASS",
+      "review_relationship": "constructor;alternative assembly where stated"
+    },
+    {
+      "method": "forceJacobian/power/symmetricreduction/full3D",
+      "command_or_proof_path": "experiments/icosahedral-damping/analyze.py",
+      "source_revision": "c7d832c25b5b822572c1a82e0ef93b583cf1a4f0",
+      "actual_result": "PASS;summary.json containsresiduals",
+      "review_relationship": "constructor;alternative assembly where stated"
+    },
+    {
+      "method": "refinement",
+      "command_or_proof_path": "experiments/icosahedral-damping/analyze.py",
+      "source_revision": "c7d832c25b5b822572c1a82e0ef93b583cf1a4f0",
+      "actual_result": "PASS;leakdelta3.62e-7",
+      "review_relationship": "constructor;alternative assembly where stated"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Ordinaryedgeaxiallossdoesnotpreserveuniformbreathing",
+    "Radiallossdoesnotdirectlydampsofttangentialfamily",
+    "0/363designscreenpasses;edgeonlynormalizedmismatchcanincrease"
+  ],
+  "limitations": [
+    "Parent40-coordinate passive mechanics with internal alpha and free spatial points",
+    "Independent central axial dashpots; uniform cs,ce>=0",
+    "Default g=1,k=2/5 for exact soft/collective modes;\u00b15% positive properties for length bound/probes",
+    "Initial undeformed points,alpha=A0,zero velocities;no sustained drive",
+    "Finitegrid/probesare notcontinuousboxguarantees",
+    "Noalltimecellorientation/coherencecertificate",
+    "Nophysicaltests/calibration/nativeselection",
+    "Softpoleenvelopeisnotfiniteamplitudeworstcaseenergygain"
+  ],
+  "changed_dependencies": [
+    "Newindependentaxiallossassumption;parentpotentialandrigidityresultspreserved"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/icosahedral-damping-20261022-a1/damping-001/manifest.json"
+  ],
+  "next_discriminant": "Realize passive multiport edge-strain difference loss with auxiliary dynamics and central reaction forces;verify common-mode kernel and transverse damping after added modes."
+}

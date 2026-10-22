@@ -1,0 +1,44 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-damping",
+  "session_id": "icosahedral-damping-20261022-a1",
+  "question": "Can ordinary passive radial/edge dashpots suppress free3D deformation without excessive collective breathing loss?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "assumptions": [
+    "Parent40-coordinate passive mechanics with internal alpha and free spatial points",
+    "Independent central axial dashpots; uniform cs,ce>=0",
+    "Default g=1,k=2/5 for exact soft/collective modes;\u00b15% positive properties for length bound/probes",
+    "Initial undeformed points,alpha=A0,zero velocities;no sustained drive"
+  ],
+  "physical_mapping": "OPEN;E_*,ell0,t0 and preferred-radius material mechanism unspecified",
+  "target_exposure": "Development:prior spectrum and worst \u00b15% sample7 exposed; engineering80%/50% screen chosen before damping output;two fresh seeded points are additional design probes",
+  "fitted_choices": [
+    "cs grid0,.005,.02;ce=j/1000,j0..120",
+    "Nonlinear A0=.025,.1,.2;loss pairs(0,0),(0,.005),(0,.02),(.02,.02)",
+    "80% RMS retention/50% soft pole envelope are chosen design goals"
+  ],
+  "sources": [
+    {
+      "path": "experiments/icosahedral-free3d/model.py",
+      "revision": "c7d832c25b5b822572c1a82e0ef93b583cf1a4f0"
+    },
+    {
+      "path": "experiments/icosahedral-cone/analyze.py",
+      "revision": "c7d832c25b5b822572c1a82e0ef93b583cf1a4f0"
+    }
+  ],
+  "baseline": "Matched undamped preparation; uniform collective solution for symmetric scan",
+  "result": "EXACT:passive energy and momentum balances;common-breathing preservation requireszero ordinary losses;soft5D modes invisible to radial dampers. Certified all-time length domain|A0|<sqrt(19/680). NUMERICAL:0/363 scan points pass selected80/50 screen;36 nonlinear design points show stronger combined damping cuts shape RMS to45\u201350% while minimum mean-volume retention is67%.",
+  "next_discriminant": "Realize passive multiport edge-strain difference loss with auxiliary dynamics and central reaction forces;verify common-mode kernel and transverse damping after added modes.",
+  "artifacts": [
+    "artifacts/icosahedral-damping-20261022-a1/damping-001/manifest.json"
+  ],
+  "mainline_promotion": 0
+}

@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "exact_soft": {
+    "status": "PASS",
+    "field": "Q(sqrt5)",
+    "lambda_soft": "(5+sqrt5)/20",
+    "R2": "(5+sqrt5)/8",
+    "rank_K_minus_lambda_M": 35,
+    "rank_after_radial_and_alpha_rows": 35,
+    "soft_eigenspace_dimension": 5,
+    "conclusion": "Entire soft eigenspace has alpha=0 and Bs*x=0; Be^T Be*x=R2*M*x. Hence zddot+ce*R2*zdot+lambda_soft*z=0 exactly at equilibrium, independent of cs.",
+    "underdamped_modal_envelope": "exp(-ce*R2*u/2); valid ce < 2*sqrt(lambda_soft)/R2",
+    "matrix_float_crosscheck_maxerror": 1.7763568394002505e-15
+  },
+  "energy_identity": "dE/du=-cs*sum(sdot^2)-ce*sum(edot^2)",
+  "collective_equations": "alpha_ddot+13alpha-12b=0; b_ddot+(cs+5ce/2)b_dot+3b-alpha=0",
+  "exact_preservation_obstruction": "For nontrivial common breathing R=(6cs+15ce)*bdot^2; nonnegative independent dashpots protect it identically only if cs=ce=0.",
+  "small_loss_pole_derivative_per_d": {
+    "low": 0.4554987341316966,
+    "high": 0.0445012658683034
+  },
+  "soft_envelope_half_threshold_ce": 0.015326493509242943,
+  "linear_scan": {
+    "points": 363,
+    "screen_pass_count": 0,
+    "best_retention_while_halving_soft": {
+      "cs": 0.0,
+      "ce": 0.016,
+      "mean_volume_rms_retention": 0.7424179433086553,
+      "soft_envelope_at_100": 0.484999801292958,
+      "slow_collective_pole_decay": 0.0017798287356215192,
+      "fast_collective_pole_decay": 0.018220171264378332,
+      "passes_80_50_screen": false
+    },
+    "smallest_soft_envelope_while_retaining80pct": {
+      "cs": 0.0,
+      "ce": 0.01,
+      "mean_volume_rms_retention": 0.8016010345088467,
+      "soft_envelope_at_100": 0.6361923981382865,
+      "slow_collective_pole_decay": 0.001112477468920077,
+      "fast_collective_pole_decay": 0.01138752253107983,
+      "passes_80_50_screen": false
+    }
+  },
+  "nonlinear_groups": [
+    {
+      "cs": 0.0,
+      "ce": 0.0,
+      "points": 9,
+      "maximum_volume_leakage": 0.18949755419451303,
+      "minimum_mean_volume_rms_retention": 1.0,
+      "maximum_shape_rms_ratio": 1.0,
+      "minimum_shape_rms_ratio": 1.0,
+      "maximum_hub_offset_rms_ratio": 1.0
+    },
+    {
+      "cs": 0.0,
+      "ce": 0.005,
+      "points": 9,
+      "maximum_volume_leakage": 0.20344243745919444,
+      "minimum_mean_volume_rms_retention": 0.8788907320081365,
+      "maximum_shape_rms_ratio": 0.8813334487996728,
+      "minimum_shape_rms_ratio": 0.8427668065386779,
+      "maximum_hub_offset_rms_ratio": 0.9644814256557792
+    },
+    {
+      "cs": 0.0,
+      "ce": 0.02,
+      "points": 9,
+      "maximum_volume_leakage": 0.21875369771659184,
+      "minimum_mean_volume_rms_retention": 0.7158581371772679,
+      "maximum_shape_rms_ratio": 0.6808556214668804,
+      "minimum_shape_rms_ratio": 0.6108567696099176,
+      "maximum_hub_offset_rms_ratio": 0.8675618855790261
+    },
+    {
+      "cs": 0.02,
+      "ce": 0.02,
+      "points": 9,
+      "maximum_volume_leakage": 0.1753418924455922,
+      "minimum_mean_volume_rms_retention": 0.6698581313963173,
+      "maximum_shape_rms_ratio": 0.5039932878614579,
+      "minimum_shape_rms_ratio": 0.4500983312885827,
+      "maximum_hub_offset_rms_ratio": 0.6576151287910424
+    }
+  ],
+  "nonlinear_points": 36,
+  "symmetric_full3d_checks": 12,
+  "maximum_symmetric_solution_error": 1.6256291902883024e-09,
+  "force_jacobian_error": 4.336808689942018e-19,
+  "force_power_error": 1.0842021724855044e-19,
+  "collective_reduction_error": 1.5543122344752192e-15,
+  "matrix_exponential_check": 8.118505867571457e-16,
+  "maximum_energy_balance_relative_error": 8.668820108843396e-09,
+  "minimum_sampled_volume_ratio": 0.887007644844403,
+  "maximum_P_drift": 3.163518741856317e-15,
+  "maximum_L_drift": 5.904890785327715e-13,
+  "refinement": {
+    "amplitude": 0.025,
+    "property_id": "exposed-previous-7",
+    "cs": 0.0,
+    "ce": 0.02,
+    "original": {
+      "balance_relative_error": 6.601590637686898e-09,
+      "remaining_energy_fraction": 0.6376942204044774,
+      "volume_signal_leakage": 0.21875369771659184,
+      "shell_centroid_volume_signal_leakage": 0.07690996841381115,
+      "mean_volume_rms": 0.004362120263808985,
+      "shell_shape_rms": 0.0001910003361741715,
+      "hub_offset_rms_over_R": 0.0009476106834863807,
+      "linear_momentum_drift": 2.195449871928639e-16,
+      "angular_momentum_drift": 4.2491824119196714e-15,
+      "minimum_oriented_cell_volume_ratio": 0.9855686784218015,
+      "maximum_support_halfspace_violation_sampled": 1.6653345369377348e-16
+    },
+    "refined": {
+      "balance_relative_error": 9.569200616058595e-11,
+      "remaining_energy_fraction": 0.6376942235447646,
+      "volume_signal_leakage": 0.21875333592030238,
+      "shell_centroid_volume_signal_leakage": 0.07690981496561647,
+      "mean_volume_rms": 0.004362137744209833,
+      "shell_shape_rms": 0.000191000574123368,
+      "hub_offset_rms_over_R": 0.0009476126619194107,
+      "linear_momentum_drift": 2.7710397027794945e-16,
+      "angular_momentum_drift": 2.0778434542318466e-16,
+      "minimum_oriented_cell_volume_ratio": 0.9855631554647967,
+      "maximum_support_halfspace_violation_sampled": 1.6653345369377348e-16
+    },
+    "leakage_change": 3.617962894553184e-07
+  },
+  "limitations": [
+    "363 sampled coefficient points,not a continuous feasibility theorem",
+    "36 property/amplitude/loss points,not a tolerance-box guarantee",
+    "Soft envelope is a linear equilibrium modal pole measure,not finite-amplitude worst-case energy gain",
+    "Shape/hub RMS ratios are matched integrated readouts;normalized mismatch can rise as mean signal decays",
+    "No sustained drive,physical calibration,native constitutive identification or material implementation demonstrated"
+  ]
+}
