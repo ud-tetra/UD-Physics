@@ -1,0 +1,224 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "icosahedral-tolerances-20261022-a1",
+  "run_id": "tolerances-001",
+  "created_at": "2026-10-22T20:00:08.193294+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Exactnarrowmodule/frequencybudgets;20/20preparedjointprobespass;54undampedhousingcounterexample;UNSCOREDphysicalmoduleprotocol",
+  "command": "python3 experiments/icosahedral-tolerances/bounds.py --out OUTPUT; OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-tolerances/analyze.py --out OUTPUT; OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-tolerances/mount_modes.py --out OUTPUT; python3 experiments/icosahedral-tolerances/draw.py --source OUTPUT --out OUTPUT/tolerance-summary.png",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "4ddf692a11b7d21103799745d75a969f75a14c14",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "hardware.py",
+      "path": "inputs/001-hardware.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/hardware.py",
+      "sha256": "dee76607e8ebe28ae48eafb05c102696150b80bf6c7eb19bbb1c96594a42183a",
+      "size_bytes": 2950
+    },
+    {
+      "input_id": "input-002",
+      "name": "bounds.py",
+      "path": "inputs/002-bounds.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/bounds.py",
+      "sha256": "35cefb12c6a95d802c0d009ba5b14049de0dcacde1f646a189c21f740b0fb175",
+      "size_bytes": 3011
+    },
+    {
+      "input_id": "input-003",
+      "name": "analyze.py",
+      "path": "inputs/003-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/analyze.py",
+      "sha256": "df4edfe07648874e19bb80808ba0aa35ac3a4b0bcf38c174cbe799edc2842356",
+      "size_bytes": 11192
+    },
+    {
+      "input_id": "input-004",
+      "name": "mount_modes.py",
+      "path": "inputs/004-mount_modes.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/mount_modes.py",
+      "sha256": "121dd64c93779d71fcdb75e9cd593d98cfd26ee4e9876766e5d9af1c91e379be",
+      "size_bytes": 3836
+    },
+    {
+      "input_id": "input-005",
+      "name": "draw.py",
+      "path": "inputs/005-draw.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/draw.py",
+      "sha256": "34b493535b30a2a6f89efc956f1ff0ae74f81483e121749d70ff2833725b2a6d",
+      "size_bytes": 2548
+    },
+    {
+      "input_id": "input-006",
+      "name": "PROTOCOL.md",
+      "path": "inputs/006-PROTOCOL.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/PROTOCOL.md",
+      "sha256": "b497b1ebe75fe8b3ebfc907040f47f3937d9460748c7f2e7cf9ff4c6d413e04e",
+      "size_bytes": 4016
+    },
+    {
+      "input_id": "input-007",
+      "name": "MOUNT_MODE_ADDENDUM.md",
+      "path": "inputs/007-MOUNT_MODE_ADDENDUM.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/MOUNT_MODE_ADDENDUM.md",
+      "sha256": "346d45bc3d769b1155c298f43ce8da6d52101b2bcd7d35677ff5e2eae04012ed",
+      "size_bytes": 2539
+    },
+    {
+      "input_id": "input-008",
+      "name": "network.py",
+      "path": "inputs/008-network.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/network.py",
+      "sha256": "ebcb9efe5e07212463e8b448c0b157025158d3a365dbc25599d6d14210628245",
+      "size_bytes": 3479
+    },
+    {
+      "input_id": "input-009",
+      "name": "model.py",
+      "path": "inputs/009-model.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-free3d/model.py",
+      "sha256": "171fbae15260a0bacb0cfde601159a84f8648349cb47fcacd88c6e2137d2bbb3",
+      "size_bytes": 6925
+    },
+    {
+      "input_id": "input-010",
+      "name": "analyze.py",
+      "path": "inputs/010-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-cone/analyze.py",
+      "sha256": "089fbed8bc59f7c785c12f57089b6b5f9be25d381c76854ba72fc893622ed8e3",
+      "size_bytes": 11982
+    },
+    {
+      "input_id": "input-011",
+      "name": "analyze.py",
+      "path": "inputs/011-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-damping/analyze.py",
+      "sha256": "f1fc3fdf58b99a910c3e97d47706aaf747a9690d2c16a1972999cc4baf42ad0b",
+      "size_bytes": 12945
+    },
+    {
+      "input_id": "input-012",
+      "name": "damping.py",
+      "path": "inputs/012-damping.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-damping/damping.py",
+      "sha256": "5c47fd68afa10e2a1a545b7a0b8593159ca9822da312f887b1fcead28581ff7f",
+      "size_bytes": 2091
+    },
+    {
+      "input_id": "input-013",
+      "name": "properties.json",
+      "path": "inputs/013-properties.json",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-multiport-20261022-a1/multiport-001/files/properties.json",
+      "sha256": "17fad2df0630de98b11b85629bd396d9b452352d417f75f8fe761f7afad8b7df",
+      "size_bytes": 4557
+    },
+    {
+      "input_id": "input-014",
+      "name": "campaign.csv",
+      "path": "inputs/014-campaign.csv",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-damping-20261022-a1/damping-001/files/campaign.csv",
+      "sha256": "4db33f1558d16891363ea0f084f6813c01444b9bc0cf8ed5df7e9a78bee2103f",
+      "size_bytes": 11390
+    },
+    {
+      "input_id": "input-015",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/015-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/icosahedral-tolerances/mathematical_receipt.json",
+      "sha256": "87a8a5c4b8855942f57dda255d13c1df5ad8db99a8f2cc73c0151f5d416243f3",
+      "size_bytes": 15353
+    }
+  ],
+  "files": [
+    {
+      "path": "files/bounds.json",
+      "sha256": "2ed8d03b00821a56e7b885a66a025db510611e990e1f73df64259d6ce28802b5",
+      "size_bytes": 1890
+    },
+    {
+      "path": "files/summary.json",
+      "sha256": "57317751b91f9558197ca9ba3521012b498ab12fbce6588a181ff66206d47bf4",
+      "size_bytes": 7832
+    },
+    {
+      "path": "files/probes.json",
+      "sha256": "1044dda54438f359dc71cfc3726a7f0cfa2933f491996cd8022167bfc50a3ea5",
+      "size_bytes": 125921
+    },
+    {
+      "path": "files/baselines.json",
+      "sha256": "6ccc482c696c9cfee16aad5bd9df930c8914b155350d5b752cf7280b7906fb45",
+      "size_bytes": 1804
+    },
+    {
+      "path": "files/campaign.csv",
+      "sha256": "3851867ec8c873354a1c09ff63876afe501166ee9f224eea0d92bd7b94b11ae9",
+      "size_bytes": 11120
+    },
+    {
+      "path": "files/symmetric.json",
+      "sha256": "a4b62aae9ecc387b7c21af300dd2022d1acfb3475cf789d5bfb7442afed6fa8c",
+      "size_bytes": 4921
+    },
+    {
+      "path": "files/mount-modes.json",
+      "sha256": "79353736d659e05f655b2003e387f8da7017c41a76d77c81bd5b368af8911338",
+      "size_bytes": 1543
+    },
+    {
+      "path": "files/mount-mode-curve.csv",
+      "sha256": "6798cb67222bfdb10462114be0099a544c5d319bbe0aa8a888a9cbb36809f67f",
+      "size_bytes": 93290
+    },
+    {
+      "path": "files/tolerance-summary.png",
+      "sha256": "750ab23c7b955c13e045193730ee72a90f2afcb6d2bfceb15fee8e5233228479",
+      "size_bytes": 214905
+    },
+    {
+      "path": "files/README.md",
+      "sha256": "edc2ae9f735fbbbba76235157179755c0dcc803ed5529eb8d6ec16b04414cef3",
+      "size_bytes": 8189
+    },
+    {
+      "path": "files/RESULTS.md",
+      "sha256": "e6e8b5b60a2ce7d34677842306595734129da11de63ac46f6ae26e5b8fdfaa2d",
+      "size_bytes": 5651
+    },
+    {
+      "path": "files/MODULE_TEST.md",
+      "sha256": "8a647cbfd8eebe5f2e02a7fc39dc2ff5b846b9c62d8b5073504f2fdfab34f28f",
+      "size_bytes": 6983
+    },
+    {
+      "path": "files/module_measurement_template.csv",
+      "sha256": "fb2c893619ac4983d8a8cbfe28fb78721722e7818be2111c33b438c7543395ab",
+      "size_bytes": 156
+    },
+    {
+      "path": "files/module_run_template.json",
+      "sha256": "96a148e5a24cdc0d368f904975edd5f1a50fbfd7b4791b4bd420e91351b6c301",
+      "size_bytes": 661
+    }
+  ]
+}

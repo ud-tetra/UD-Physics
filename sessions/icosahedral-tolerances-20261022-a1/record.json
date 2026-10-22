@@ -1,0 +1,64 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "icosahedral-tolerances-20261022-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector write",
+  "task": "integration-icosahedral-tolerances-20261022",
+  "goal": "Joint reciprocal ratio,flexible housing mass and common-friction budget;measurable module-test specification",
+  "created_at": "2026-10-22T19:48:10.470389+00:00",
+  "base_revision": "4ddf692a11b7d21103799745d75a969f75a14c14",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-icosahedral-tolerances-20261022": {
+      "ref": "refs/heads/claims/integration-icosahedral-tolerances-20261022",
+      "sha": "a602283330695d34ec3d57db0a06bf3f807c12b7",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/icosahedral-tolerances/bounds.py --out OUTPUT",
+      "result": "PASSexactfractions,modulebandand68/71frequencyratio"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-tolerances/analyze.py --out OUTPUT",
+      "result": "PASS20/20budget;cf.02challengeFAILED;4symmetrychecks,fullenergy/P/L andworstrefinement"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-tolerances/mount_modes.py --out OUTPUT",
+      "result": "COUNTEREXAMPLE_VERIFIED:54undampedhousingmodes;integercycle andfull560phaseharmoniccheck"
+    },
+    {
+      "command": "python3 experiments/icosahedral-tolerances/draw.py --source OUTPUT --out OUTPUT/tolerance-summary.png",
+      "result": "executed;scientificfigurevisuallyinspected"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS71records,manifestdigests/localdocumentationlinks"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16repositorytoolingtests"
+    },
+    {
+      "command": "git diff --check",
+      "result": "PASS"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL:narrowmoduleimpedance/symmetrichousingfrequencybounds. NUMERICAL20/20preparedjointbudgetprobespass,retention>=92.311%,hubL<=.73757%. FAILEDall-modehardwaredecay:54undampedhousingmodes verified;moduleprotocolUNSCORED.",
+  "next_action": "Constructpassivemountlossto damp54housingmodes,quantifybreathingcostandrerun jointbudgetwithall reactions.",
+  "mathematical_profile": {
+    "coefficient_domain": "exactfractions andQ(sqrt5)nominalgeometry;realpassivedynamics;float64DOP853",
+    "methods": [
+      "power-conjugateports",
+      "positiveenergy/momentum",
+      "finiteflexiblemass",
+      "collectiveSchurcomplementfrequencybound",
+      "jointfiniteprobes"
+    ],
+    "clock": "continuousdimensionlessu;no modularregisterclaim",
+    "metric": "primaryM,mu/10Irelativeinerters,physicalhousingm/R\u00b2;E_*,ell0,t0OPEN",
+    "physical_mapping": "definedmidpoint-mountedhousingmodel;realcasing/routing/mountimplementationandcalibrationOPEN"
+  }
+}

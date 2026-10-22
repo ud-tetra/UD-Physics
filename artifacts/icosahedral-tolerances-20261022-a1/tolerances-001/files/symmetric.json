@@ -1,0 +1,126 @@
+[
+  {
+    "beta": 0.05,
+    "omega_h": 10,
+    "cf": 0,
+    "rho": 0.7236067977499788,
+    "full_vs_collective_error": 1.080603384551182e-10,
+    "conservative_angular_frequencies": [
+      1.3619517853734502,
+      3.7459892230159544,
+      10.184826265779709
+    ],
+    "low_mode_frequency_ratios": [
+      0.9836119112973188,
+      0.9982115612921341
+    ],
+    "volume_signal_leakage": 5.628145081428999e-14,
+    "shell_centroid_volume_signal_leakage": 4.555932396537644e-14,
+    "mean_volume_rms": 0.023692132433544268,
+    "shell_shape_rms": 1.0331499580877945e-15,
+    "hub_offset_rms_over_R": 7.590884188380764e-16,
+    "minimum_oriented_cell_volume_ratio": 0.9541438625851404,
+    "maximum_support_halfspace_violation_sampled": 1.6653345369377348e-16,
+    "primary_linear_momentum_exchange": 1.3271698320238391e-14,
+    "primary_angular_momentum_exchange": 7.267111210901267e-15,
+    "balance_relative_error": 2.8976393933860947e-11,
+    "total_linear_momentum_drift": 9.25454856917018e-16,
+    "total_angular_momentum_drift": 4.0402908254225933e-16,
+    "remaining_total_energy_fraction": 0.9999999999802724,
+    "maximum_housing_lag_over_a": 0.0020734244922399913,
+    "maximum_auxiliary_stroke": 1.643403905157184e-15
+  },
+  {
+    "beta": 0.05,
+    "omega_h": 10,
+    "cf": 0.001,
+    "rho": 0.7236067977499788,
+    "full_vs_collective_error": 1.0901735070234508e-10,
+    "conservative_angular_frequencies": [
+      1.3619517853734502,
+      3.7459892230159544,
+      10.184826265779709
+    ],
+    "low_mode_frequency_ratios": [
+      0.9836119112973188,
+      0.9982115612921341
+    ],
+    "volume_signal_leakage": 5.400761470587769e-14,
+    "shell_centroid_volume_signal_leakage": 4.600975440334754e-14,
+    "mean_volume_rms": 0.02301078058856093,
+    "shell_shape_rms": 1.0569012108753698e-15,
+    "hub_offset_rms_over_R": 6.687139881523793e-16,
+    "minimum_oriented_cell_volume_ratio": 0.954346639053001,
+    "maximum_support_halfspace_violation_sampled": 1.6653345369377348e-16,
+    "primary_linear_momentum_exchange": 1.5120823351340014e-14,
+    "primary_angular_momentum_exchange": 7.68630907888832e-15,
+    "balance_relative_error": 2.9479837374642896e-11,
+    "total_linear_momentum_drift": 1.048861039494192e-15,
+    "total_angular_momentum_drift": 6.623586068349781e-16,
+    "remaining_total_energy_fraction": 0.9777245268784512,
+    "maximum_housing_lag_over_a": 0.0020707631904532016,
+    "maximum_auxiliary_stroke": 1.6313631138121362e-15
+  },
+  {
+    "beta": 0.2,
+    "omega_h": 10,
+    "cf": 0,
+    "rho": 0.7236067977499788,
+    "full_vs_collective_error": 9.72674163435272e-11,
+    "conservative_angular_frequencies": [
+      1.3000644857683663,
+      3.7290874793670143,
+      10.718016367736688
+    ],
+    "low_mode_frequency_ratios": [
+      0.9389164340393668,
+      0.9937076732903463
+    ],
+    "volume_signal_leakage": 6.662262465954747e-14,
+    "shell_centroid_volume_signal_leakage": 5.5922664090391075e-14,
+    "mean_volume_rms": 0.0211759964452315,
+    "shell_shape_rms": 1.1326486748167206e-15,
+    "hub_offset_rms_over_R": 7.43311961106157e-16,
+    "minimum_oriented_cell_volume_ratio": 0.9581194014894645,
+    "maximum_support_halfspace_violation_sampled": 1.6653345369377348e-16,
+    "primary_linear_momentum_exchange": 5.0684623786679085e-14,
+    "primary_angular_momentum_exchange": 3.2596415544888053e-14,
+    "balance_relative_error": 7.8698372604982e-11,
+    "total_linear_momentum_drift": 8.706361519820661e-16,
+    "total_angular_momentum_drift": 4.250536248357493e-16,
+    "remaining_total_energy_fraction": 0.9999999999343828,
+    "maximum_housing_lag_over_a": 0.00181877993495911,
+    "maximum_auxiliary_stroke": 1.699006414636356e-15
+  },
+  {
+    "beta": 0.05,
+    "omega_h": 4,
+    "cf": 0,
+    "rho": 0.7236067977499788,
+    "full_vs_collective_error": 5.750530052139879e-10,
+    "conservative_angular_frequencies": [
+      1.3595299702995949,
+      3.718465960942231,
+      4.111395699196459
+    ],
+    "low_mode_frequency_ratios": [
+      0.9818628580788524,
+      0.990877306767946
+    ],
+    "volume_signal_leakage": 8.335661653096343e-14,
+    "shell_centroid_volume_signal_leakage": 7.06031003799974e-14,
+    "mean_volume_rms": 0.021352918770426013,
+    "shell_shape_rms": 1.434201213951681e-15,
+    "hub_offset_rms_over_R": 9.540291635521904e-16,
+    "minimum_oriented_cell_volume_ratio": 0.9543877198766286,
+    "maximum_support_halfspace_violation_sampled": 1.6653345369377348e-16,
+    "primary_linear_momentum_exchange": 4.315040768340611e-15,
+    "primary_angular_momentum_exchange": 2.429994790346042e-15,
+    "balance_relative_error": 4.772244138323981e-09,
+    "total_linear_momentum_drift": 8.8811344433692555e-16,
+    "total_angular_momentum_drift": 5.15430604741585e-16,
+    "remaining_total_energy_fraction": 0.9999999982380451,
+    "maximum_housing_lag_over_a": 0.05941839228200374,
+    "maximum_auxiliary_stroke": 2.3548013596239627e-15
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-tolerances",
+  "session_id": "icosahedral-tolerances-20261022-a1",
+  "question": "What measurable joint error,mass and friction budget preserves useful breathing in the finite passive multiport model?",
+  "status": "ACTIVE",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT",
+    "FAILED"
+  ],
+  "assumptions": [
+    "Prior150-branch reciprocal network fixedatmu2,kappa50,gamma5",
+    "Reciprocal ratio errors;uniforminput-portviscositycf/10within eachtrajectory",
+    "30finite3Dhousingmasseswithideal midpointpickup/positivevectorspring;totalmass12beta;mountstiffnessproportionaltomass",
+    "CommonmountfrequencyOmega;housingmassweightswithin\u00b110%mean;unmodeledcasing/gear/routingstatesexcluded",
+    "Primarypositiveproperties\u00b15%;alpha.1/referencegeometry/zerootherstates;windowu0..100"
+  ],
+  "physical_mapping": "Definedmechanicalhousing/mountsurrogate plus prospectivecalibratedmodule test;physicalhardwareNOT_EXECUTED;nativeUD/t0/E_*/ell0selectionOPEN",
+  "target_exposure": "Development:priorPhaseBdesign and3propertysets exposed. Protocoldeclared12boundary+8freshseededinterior+4challengeprobes before outcomes. Additionalhousingdegeneracy checkaftercampaign exposed54undampedmodes. No parameterretuning,boxcertificateorheldoutprediction.",
+  "fitted_choices": [
+    "Proposedratio1%,beta5%,cf.001,Omega10andcorrelated10%housingweights areengineeringchoices",
+    "80%RMS/5%volumemismatch/50%shapescreen inherited;24declaredprobes,1counterexample/refinement",
+    "Baremodulebandomega1..4,nominalmu2/kappa50/gamma5;noindependentcomponenttolerances"
+  ],
+  "sources": [
+    {
+      "path": "experiments/icosahedral-multiport/network.py",
+      "revision": "4ddf692a11b7d21103799745d75a969f75a14c14"
+    },
+    {
+      "path": "experiments/icosahedral-damping/analyze.py",
+      "revision": "4ddf692a11b7d21103799745d75a969f75a14c14"
+    },
+    {
+      "path": "experiments/icosahedral-damping/damping.py",
+      "revision": "4ddf692a11b7d21103799745d75a969f75a14c14"
+    }
+  ],
+  "baseline": "Matchingoriginalundamped/nohousingpreparation;stored3exposedsets and8freshcomputedbaselines. Symmetricloadedreference separatelyfrom3-coordinate equations.",
+  "result": "EXACT/CONDITIONAL:baremodulecommon/differentialdissipativeimpedance<=.0701321%onomega1..4;uniform5%housing/Om>=10lowfrequencydownshift<=2.136%. NUMERICAL20/20jointbudgetprobespass,retention>=92.311%,hubL<=.73757%,shapeRMS4.475\u201310.183%. FAILEDall-modehardwaredecay:54undampedhousingpatterns exactlycancelpointreactions;counterexampleverified.",
+  "next_discriminant": "Construct passive mount loss that damps the54 housing modes;include all reactions,quantify common-breathing cost and rerun the declared joint budget before full relaxation claims.",
+  "artifacts": [
+    "artifacts/icosahedral-tolerances-20261022-a1/tolerances-001/manifest.json"
+  ],
+  "hardware_relaxation": "FAILED forconservative midpoint-mount model;reopenwith explicitpassivemountloss",
+  "physical_test": "UNSCORED_NOT_EXECUTED",
+  "mainline_promotion": 0
+}

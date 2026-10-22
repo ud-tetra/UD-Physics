@@ -1,0 +1,361 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "joint-mechanical-tolerances-v1",
+  "session_id": "icosahedral-tolerances-20261022-a1",
+  "candidate_id": "icosahedral-tolerances",
+  "question": "What measurable joint error,mass and friction budget preserves useful breathing in the finite passive multiport model?",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT",
+    "FAILED"
+  ],
+  "objects": [
+    {
+      "object_id": "configuration",
+      "symbol": "(x,z,H)",
+      "object_type": "coupledmechanicalconfiguration",
+      "definition": "43spatialpointmasses+alpha+150relativeauxiliaries",
+      "domain": "R280positiveprimarymemberlengths",
+      "codomain": null,
+      "coefficient_domain": "R;referenceQ(sqrt5)",
+      "units": "ell0/E_*/t0uncalibrated",
+      "basis_orientation": "parentedge/vertexorder;housingperedge;reciprocalpairorientation",
+      "metric_measure": "primaryM,mu/10I150,housingdiag(mh/R\u00b2)tensorI3",
+      "origin": "assumed",
+      "exact_expression": "280=3*(13+30)+1+150",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "new"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [],
+      "normalization": "referencea1,R\u00b2=(5+sqrt5)/8;u=t/t0;energyE_*"
+    },
+    {
+      "object_id": "moduleZ",
+      "symbol": "Z_port",
+      "object_type": "reciprocal2portimpedance",
+      "definition": "power-conjugatecommon/differentialcoordinates",
+      "domain": "C\u00b2velocity",
+      "codomain": "C\u00b2force",
+      "coefficient_domain": "rationalrealcoefficients",
+      "units": "force/velocitynormalized",
+      "basis_orientation": "parentedge/vertexorder;housingperedge;reciprocalpairorientation",
+      "metric_measure": "conjugateportpower",
+      "origin": "derived",
+      "exact_expression": "Z vvT+(cf/10)diag(2,1/2),v=(-delta,1+delta/2)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "new"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [
+        "configuration"
+      ],
+      "normalization": "referencea1,R\u00b2=(5+sqrt5)/8;u=t/t0;energyE_*"
+    },
+    {
+      "object_id": "housingstorage",
+      "symbol": "T_h,U_h",
+      "object_type": "physicalmass/mountenergy",
+      "definition": "30independent3Dfinitehousingpointswithmidpointmounts",
+      "domain": "housingphaseR180",
+      "codomain": "R>=0",
+      "coefficient_domain": "R",
+      "units": "E_*",
+      "basis_orientation": "parentedge/vertexorder;housingperedge;reciprocalpairorientation",
+      "metric_measure": "mh/R\u00b2mass,kh=(mh/R\u00b2)Omega\u00b2",
+      "origin": "assumed",
+      "exact_expression": "Uh=sum kh|H-(Xi+Xj)/2|\u00b2/2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "new"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [
+        "configuration"
+      ],
+      "normalization": "referencea1,R\u00b2=(5+sqrt5)/8;u=t/t0;energyE_*"
+    },
+    {
+      "object_id": "unsignedN",
+      "symbol": "N",
+      "object_type": "unsignedendpointincidence",
+      "definition": "one1at each shell-edgeendpoint;distinctfromchainboundary",
+      "domain": "R30",
+      "codomain": "R12",
+      "coefficient_domain": "Zentries;rankoverQ/R",
+      "units": "dimensionless",
+      "basis_orientation": "parentedge/vertexorder;housingperedge;reciprocalpairorientation",
+      "metric_measure": "Euclideanweightedhousingforcepairing",
+      "origin": "derived",
+      "exact_expression": "rank12,nullity18;3spatialcopiesgive54darkmodes",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "new"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [
+        "housingstorage"
+      ],
+      "normalization": "referencea1,R\u00b2=(5+sqrt5)/8;u=t/t0;energyE_*"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "parent",
+      "url_or_repo_path": "experiments/icosahedral-multiport/network.py",
+      "version_or_commit": "4ddf692a11b7d21103799745d75a969f75a14c14",
+      "section_or_object_id": "Network;passivemodel,portmap",
+      "source_status": "integratedconditionalmodel"
+    },
+    {
+      "source_id": "readout",
+      "url_or_repo_path": "experiments/icosahedral-damping/analyze.py",
+      "version_or_commit": "4ddf692a11b7d21103799745d75a969f75a14c14",
+      "section_or_object_id": "metrics/run;matchedcampaign",
+      "source_status": "integratednumericalreadouts"
+    },
+    {
+      "source_id": "friction",
+      "url_or_repo_path": "experiments/icosahedral-damping/damping.py",
+      "version_or_commit": "4ddf692a11b7d21103799745d75a969f75a14c14",
+      "section_or_object_id": "centraldamping_force",
+      "source_status": "integratedassumedlosslaw"
+    },
+    {
+      "source_id": "new",
+      "url_or_repo_path": "experiments/icosahedral-tolerances/README.md",
+      "version_or_commit": "v1.0,capturedthisrun",
+      "section_or_object_id": "modulebounds,housingmodel,frequencyproof",
+      "source_status": "newconditionalderivation"
+    },
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "historicalv0.39",
+      "section_or_object_id": "Q139,Q144\u2013145,Q151\u2013152",
+      "source_status": "read-onlyhistoricalsource;no nativeclock/constitutivepromotion"
+    },
+    {
+      "source_id": "governance",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "version_or_commit": "v1.0",
+      "section_or_object_id": "\u00a7\u00a72,4,5",
+      "source_status": "proposal;noautomaticadoption"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Prior150-branch reciprocal network fixedatmu2,kappa50,gamma5"
+    },
+    {
+      "id": "A2",
+      "statement": "Reciprocal ratio errors;uniforminput-portviscositycf/10within eachtrajectory"
+    },
+    {
+      "id": "A3",
+      "statement": "30finite3Dhousingmasseswithideal midpointpickup/positivevectorspring;totalmass12beta;mountstiffnessproportionaltomass"
+    },
+    {
+      "id": "A4",
+      "statement": "CommonmountfrequencyOmega;housingmassweightswithin\u00b110%mean;unmodeledcasing/gear/routingstatesexcluded"
+    },
+    {
+      "id": "A5",
+      "statement": "Primarypositiveproperties\u00b15%;alpha.1/referencegeometry/zerootherstates;windowu0..100"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exactfractions",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "continuous-bandportboundsandfrequencyratio68/71"
+    },
+    {
+      "technique": "counting/provenance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "43physicalpointsaredistinctfrom13complexvertices;280configurations"
+    },
+    {
+      "technique": "positiveenergy/Noetherbalances",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "housingplusprimaryP,L andE+D;mountreactions"
+    },
+    {
+      "technique": "symmetricSchurcomplement",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "finitehousingcollectivesubsystemandfrequencybound"
+    },
+    {
+      "technique": "kernel/degeneracy",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "unsignedincidencerank12and54undampedhousingmodes"
+    },
+    {
+      "technique": "numericaljointsensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "20budget+4challengeprobeswithfrozenparameters"
+    },
+    {
+      "technique": "modularclock/factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite register,divisibility,orrecurrence law;continuousu"
+    },
+    {
+      "technique": "physicalcalibration/readout",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "moduleportunits,power-conjugacy andUNSCOREDbenchgates"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "13+30=43physicalpoints;3*43+1+150=280;3*(30-12)=54housingnullcoordinates",
+    "reduced_expression": "ReZcc<=1349/3620000;ReZdd>=39601/74528;ratio<=3141821/4479863125;frequencysquaredratio>=68/71",
+    "factor_origins": [
+      "30shell-edgehousings",
+      "12endpointvertices,unsignedincidencefullrowrankoverQ/R",
+      "3spatialaxes",
+      "portdegree5radial/8edgecomparisons"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "continuousdimensionlessu",
+    "modulus": null,
+    "residue_convention": "N/A",
+    "update_rule": "full560phasesecondorderpassiveODE;oneheatbookkeeper",
+    "initial_phase": "alpha.1/referencegeometry/zeroauxandhousingdeviation;counterexamplealpha0/housingperturbation",
+    "coupling": "reciprocaldevice+midpointmount+inputfriction",
+    "period_claim": "housingcounterexampleexactperiod2pi/Omega;no globalperiodclaim",
+    "physical_unit_map": "t=t0u;modulecalibrationt0=sqrt(25B_b/k_b),engineeredchoice,nonnative"
+  },
+  "dynamics_readout": {
+    "state_space": "560phase+oneheatstate;all90housingcoordinatesretained",
+    "generator_or_update": "hardware.py:Hardware.ode",
+    "initial_boundary_conditions": "freeassembly,noexternalground;protocolpreparation;counterexampledeclaredseparately",
+    "conservation_and_sources": "Eprime=-gamma/10||zdot||\u00b2-cf/10sumportrate\u00b2;totalprimary+housingP,L conserved",
+    "projection_and_kernel": "primaryvolumesandshape omit54housingmodes;housingdisplacementseparatereadoutrequired",
+    "physical_mapping": "definedmidpointmasssurrogate;baremodulebenchcalibrations/protocolNOT_EXECUTED;actualpickup/casing/nativeUDselectionOPEN"
+  },
+  "target_exposure": {
+    "status": "FIT/development;priorpointsanddevicechoiceexposed",
+    "known_targets": [
+      "priorPhaseB(2,50,5)",
+      "3exposedpropertysets",
+      "selectedratio/mass/frictionbudget",
+      "80/5/50screen"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Proposedratio1%,beta5%,cf.001,Omega10andcorrelated10%housingweights areengineeringchoices",
+      "80%RMS/5%volumemismatch/50%shapescreen inherited;24declaredprobes,1counterexample/refinement",
+      "Baremodulebandomega1..4,nominalmu2/kappa50/gamma5;noindependentcomponenttolerances"
+    ],
+    "search_domain_and_budget": "no retuning;12boundary+8interior+4challengecases;4symmetricchecks;onecounterexampleandoneworstbudgetrefinement",
+    "selection_criterion": "declared80%RMS/5%mismatch/50%shape;reportchallengesandnewhousingcounterexample",
+    "baseline": "Matchingoriginalundamped/nohousingpreparation;stored3exposedsets and8freshcomputedbaselines. Symmetricloadedreference separatelyfrom3-coordinate equations."
+  },
+  "calculation_steps": [
+    "Declarefinitehousingmountandreciprocal/frictionerrors;deriveallforcesandstorage",
+    "Derive2portZandcontinuous-bandfractionbounds",
+    "Derive3coordinatecollectiveandSchurcomplementfrequencyratio",
+    "Freeze24probes,execute560phaseODEswithfullmomentum/energychecks",
+    "Refineworstbudgetvolume;preservecf.02challengefailure",
+    "PostcampaigndegeneracycheckfindsrankN12,54undampedhousingmodes;exactcycleandfullODEcounterexample",
+    "PrepareuncalibratedUNSCOREDmodule/measurementtemplateswithhousingringdowngate"
+  ],
+  "result": {
+    "exact_expression": "modulecommon/diffdissipativeratio<=3141821/4479863125;uniformhousinglowfrequencyratio>=sqrt(68/71);housingdarkdimension54",
+    "approximation": "20/20budgetcasespass;RMS>=92.311%,hubL<=.73757%,shapeRMS4.475\u201310.183%;frictionchallenge69.54%RMSfails",
+    "units": "internalmodelunits;benchunitcalibrationunexecuted",
+    "precision_and_error": "float64DOP8531e-10/1e-12,refined2e-12/2e-14;worstLchange1.70e-8;E+Dmaxrelative4.78e-9;darkmode2e-12/1e-15",
+    "scope": "exactnarrowmodule/symmetricfrequencycertificates;finitejointcoherenceprobes;exactfull-housingrelaxationcounterexample",
+    "physical_interpretation": "HYPOTHESIS;benchNOT_EXECUTED"
+  },
+  "verification": [
+    {
+      "method": "exactfractionbounds",
+      "command_or_proof_path": "experiments/icosahedral-tolerances/bounds.py",
+      "source_revision": "4ddf692a11b7d21103799745d75a969f75a14c14",
+      "actual_result": "PASS;continuousband and68/71ratio",
+      "review_relationship": "constructor;alternativeassemblieswherestated"
+    },
+    {
+      "method": "mountgradient/force/torque/frictionpower",
+      "command_or_proof_path": "experiments/icosahedral-tolerances/analyze.py:force_checks",
+      "source_revision": "4ddf692a11b7d21103799745d75a969f75a14c14",
+      "actual_result": "PASS3.74e-12gradient;force/torque2.51e-17/1.62e-17",
+      "review_relationship": "constructor;alternativeassemblieswherestated"
+    },
+    {
+      "method": "symmetry/full560phase",
+      "command_or_proof_path": "experiments/icosahedral-tolerances/analyze.py:symmetric",
+      "source_revision": "4ddf692a11b7d21103799745d75a969f75a14c14",
+      "actual_result": "PASS4cases;maxcoordinateerror5.76e-10",
+      "review_relationship": "constructor;alternativeassemblieswherestated"
+    },
+    {
+      "method": "jointcampaign/refinement",
+      "command_or_proof_path": "experiments/icosahedral-tolerances/analyze.py",
+      "source_revision": "4ddf692a11b7d21103799745d75a969f75a14c14",
+      "actual_result": "PASS20/20budgetscreens;cf.02challengeFAILED;worstLrefinement1.70e-8",
+      "review_relationship": "constructor;alternativeassemblieswherestated"
+    },
+    {
+      "method": "housingkernel/counterexample",
+      "command_or_proof_path": "experiments/icosahedral-tolerances/mount_modes.py",
+      "source_revision": "4ddf692a11b7d21103799745d75a969f75a14c14",
+      "actual_result": "COUNTEREXAMPLE_VERIFIED;54neutralmodes;primaryerror1.22e-17,housingharmonicerror5.96e-14",
+      "review_relationship": "constructor;alternativeassemblieswherestated"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "cf.02challengefails80%RMSscreen at69.54%,despitesmallvolumemismatch",
+    "Full280-coordinateasymptoticmechanicalrelaxationFAILED:54undampedhousingmodes;prior190theoremscopeunchanged",
+    "Preparedvolumecoherencecannotdetectreaction-cancellinghousingsector",
+    "ActualhardwaretestNOT_EXECUTED;templatehasno measurements"
+  ],
+  "limitations": [
+    "20finiteprobesarenota continuousassemblyboxcertificate",
+    "Exactmoduleanduniformconservativefrequencybounds have narrowerscope",
+    "Housingmidpointpickup/zerorestspringisassumed;othercasing/routingstatesnotbounded",
+    "Fixednominaldeviceparameters/commoncf/commonOmega;independentcomponent/friction/mountfrequencyheterogeneitynotcovered",
+    "Noalltimecoherence/orientationclaim",
+    "Noindependentempiricalvalidation/nativeUDclock/constitutiveselection"
+  ],
+  "changed_dependencies": [
+    "90spatialhousingcoordinatesandinputfrictionadded;conservativehousingsectorpreventsallmodedecayextension"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/icosahedral-tolerances-20261022-a1/tolerances-001/manifest.json"
+  ],
+  "next_discriminant": "Construct passive mount loss that damps the54 housing modes;include all reactions,quantify common-breathing cost and rerun the declared joint budget before full relaxation claims."
+}
