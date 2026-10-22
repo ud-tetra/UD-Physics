@@ -1,0 +1,38 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-nonlineartube",
+  "session_id": "icosahedral-nonlineartube-20261022-a1",
+  "question": "Can the total-energy budget certify noncollapse and nonlinear volume response for every permitted housing phase?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Unchanged MountLoss free280-coordinate mechanical law, ideal massless struts/routing",
+    "Continuous qualified joint-window property box; nonnegative losses",
+    "Housing-only alpha=0 versus full pulse alpha=1/10 remain distinct",
+    "Initial housing energy<=reference pulse energy/40000"
+  ],
+  "physical_mapping": "Uncalibrated internal units; no physical promotion",
+  "target_exposure": "All preceding joint-window targets/cases exposed; development proof and constructor checks",
+  "fitted_choices": [
+    "Inherited qualified mass/property box and 1/40000 energy fraction; no new parameter/threshold tuning"
+  ],
+  "sources": [
+    {
+      "path": "experiments/icosahedral-jointwindow/README.md",
+      "revision": "ef5e2d8f9e0cc5354086a2a3373f6c07600f6dcd"
+    },
+    {
+      "path": "experiments/icosahedral-mountloss/mountloss.py",
+      "revision": "ef5e2d8f9e0cc5354086a2a3373f6c07600f6dcd"
+    }
+  ],
+  "baseline": "Housing-only reference volumes; pulse uses frozen nonlinear baseline, nominal comparison uses exact undamped collective solution",
+  "result": "EXACT/CONDITIONAL: housing-only all phases/all future times/continuous property box: struts>987/2000 and every cell volume ratio in(39/40,41/40); global existence. Full pulse all-phase safety/positive volume through u=1/20. Full-pulse energy-sublevel closure includes a strut singularity, so total energy alone cannot certify u100 safety. Long-time pulse tube and nonlinear half-energy-at100 remain OPEN.",
+  "next_discriminant": "Construct a validated trajectory-dependent relative-energy/variational tube around the exposed worst nonlinear pulse, retaining the complete housing phase ball."
+}

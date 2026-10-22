@@ -1,0 +1,357 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "nonlinear-housing-energy-domain-v1",
+  "session_id": "icosahedral-nonlineartube-20261022-a1",
+  "candidate_id": "icosahedral-nonlineartube",
+  "question": "Can the total-energy budget certify noncollapse and nonlinear volume response for every permitted housing phase?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "state",
+      "symbol": "state",
+      "object_type": "mechanical phase",
+      "definition": "alpha,13 primary,150 device,30 housing coordinates and velocities",
+      "domain": "positive-length subset R560 plus heat",
+      "codomain": "R or stated real matrix",
+      "coefficient_domain": "R with Q(sqrt5) reference and exact Q bounds",
+      "units": "internal ell0,E_*,u",
+      "basis_orientation": "parent vertex/edge/face ordering, oriented cell determinants",
+      "metric_measure": "full positive mechanical storage; Euclidean/Frobenius norms as stated",
+      "origin": "assumed",
+      "exact_expression": "280=1+3*(13+30)+150",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "proof"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1; R\u00b2=(5+sqrt5)/8; E_* and t0 uncalibrated"
+    },
+    {
+      "object_id": "housing_budget",
+      "symbol": "housing_budget",
+      "object_type": "energy upper bound",
+      "definition": "Total energy for alpha=0 ringdown",
+      "domain": "allowed housing phase ball",
+      "codomain": "R or stated real matrix",
+      "coefficient_domain": "R with Q(sqrt5) reference and exact Q bounds",
+      "units": "E_*",
+      "basis_orientation": "parent vertex/edge/face ordering, oriented cell determinants",
+      "metric_measure": "full positive mechanical storage; Euclidean/Frobenius norms as stated",
+      "origin": "derived",
+      "exact_expression": "17/10^7",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "proof"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1; R\u00b2=(5+sqrt5)/8; E_* and t0 uncalibrated"
+    },
+    {
+      "object_id": "strut_bound",
+      "symbol": "strut_bound",
+      "object_type": "length bound",
+      "definition": "All120 housing-anchor lengths, housing-only preparation",
+      "domain": "all u>=0 and continuous qualified property box",
+      "codomain": "R or stated real matrix",
+      "coefficient_domain": "R with Q(sqrt5) reference and exact Q bounds",
+      "units": "ell0",
+      "basis_orientation": "parent vertex/edge/face ordering, oriented cell determinants",
+      "metric_measure": "full positive mechanical storage; Euclidean/Frobenius norms as stated",
+      "origin": "derived",
+      "exact_expression": "ell>987/2000",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "proof"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1; R\u00b2=(5+sqrt5)/8; E_* and t0 uncalibrated"
+    },
+    {
+      "object_id": "cell_gram",
+      "symbol": "cell_gram",
+      "object_type": "Gram matrix",
+      "definition": "G=A^T A for 3 hub-relative cell columns",
+      "domain": "R^(3x3)",
+      "codomain": "R or stated real matrix",
+      "coefficient_domain": "R with Q(sqrt5) reference and exact Q bounds",
+      "units": "ell0\u00b2",
+      "basis_orientation": "parent vertex/edge/face ordering, oriented cell determinants",
+      "metric_measure": "full positive mechanical storage; Euclidean/Frobenius norms as stated",
+      "origin": "derived",
+      "exact_expression": "G0=I/2+(R\u00b2-1/2)11^T; ||DeltaG||F<1/125",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "proof"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1; R\u00b2=(5+sqrt5)/8; E_* and t0 uncalibrated"
+    },
+    {
+      "object_id": "volume_bound",
+      "symbol": "volume_bound",
+      "object_type": "oriented geometric readout",
+      "definition": "Every normalized cell volume and its mean",
+      "domain": "housing-only trajectory",
+      "codomain": "R or stated real matrix",
+      "coefficient_domain": "R with Q(sqrt5) reference and exact Q bounds",
+      "units": "dimensionless",
+      "basis_orientation": "parent vertex/edge/face ordering, oriented cell determinants",
+      "metric_measure": "full positive mechanical storage; Euclidean/Frobenius norms as stated",
+      "origin": "derived",
+      "exact_expression": "39/40<Vk/Vref<41/40",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "proof"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1; R\u00b2=(5+sqrt5)/8; E_* and t0 uncalibrated"
+    },
+    {
+      "object_id": "pulse_tube",
+      "symbol": "pulse_tube",
+      "object_type": "finite-time domain",
+      "definition": "Full pulse plus housing ball",
+      "domain": "0<=u<=1/20",
+      "codomain": "R or stated real matrix",
+      "coefficient_domain": "R with Q(sqrt5) reference and exact Q bounds",
+      "units": "internal units",
+      "basis_orientation": "parent vertex/edge/face ordering, oriented cell determinants",
+      "metric_measure": "full positive mechanical storage; Euclidean/Frobenius norms as stated",
+      "origin": "derived",
+      "exact_expression": "ell>1/40;729/1000<Vk/Vref<1331/1000",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "proof"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1; R\u00b2=(5+sqrt5)/8; E_* and t0 uncalibrated"
+    },
+    {
+      "object_id": "energy_witness",
+      "symbol": "energy_witness",
+      "object_type": "certificate obstruction",
+      "definition": "One low-beta housing at endpoint on reference primary",
+      "domain": "closure of full-pulse energy sublevel",
+      "codomain": "R or stated real matrix",
+      "coefficient_domain": "R with Q(sqrt5) reference and exact Q bounds",
+      "units": "E_*",
+      "basis_orientation": "parent vertex/edge/face ordering, oriented cell determinants",
+      "metric_measure": "full positive mechanical storage; Euclidean/Frobenius norms as stated",
+      "origin": "derived",
+      "exact_expression": "1/(40R\u00b2)<1/36<13/200",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "proof"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1; R\u00b2=(5+sqrt5)/8; E_* and t0 uncalibrated"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "parent",
+      "url_or_repo_path": "experiments/icosahedral-jointwindow/README.md",
+      "version_or_commit": "ef5e2d8f9e0cc5354086a2a3373f6c07600f6dcd",
+      "section_or_object_id": "1-3 and parent MountLoss energy law",
+      "source_status": "integrated assumed mechanical surrogate"
+    },
+    {
+      "source_id": "proof",
+      "url_or_repo_path": "experiments/icosahedral-nonlineartube/README.md",
+      "version_or_commit": "v1.0 in this run",
+      "section_or_object_id": "2-4",
+      "source_status": "new conditional proof"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Unchanged reciprocal positive-storage mechanical law and nonnegative losses; no physical identification."
+    },
+    {
+      "id": "A2",
+      "statement": "Qualified beta>=1/200,Omega10,w>=9/10,m>=19/20,k>=19/50; housing-only or full-pulse preparation as explicitly labeled."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact fractions",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "strict energy, norm and determinant inequalities"
+    },
+    {
+      "technique": "geometric/spectral bounds",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "median lengths and positive cell Gram determinants"
+    },
+    {
+      "technique": "continuation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "uniform positive lengths and bounded finite-time states"
+    },
+    {
+      "technique": "typed incidence counts",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "30 housings times4 anchors =120 loss paths, distinct from state coordinates"
+    },
+    {
+      "technique": "numerical refinement",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "constructor ODE checks of exposed limiting phases"
+    },
+    {
+      "technique": "modular clocks / prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no discrete register or divisibility mechanism in this bound"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "280=1+3*(13+30)+150;120=30*4;180=2*3*30 housing phase coordinates",
+    "reduced_expression": "E_h<=17/10^7; deltaG\u00b2<5588859701/95000000000000<1/125\u00b2",
+    "factor_origins": [
+      "1/40000 inherited FIT housing energy fraction",
+      "19/50 inherited minimum k",
+      "2.5%=1/40 is a conservative derived volume bound, not a fitted tolerance"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless u",
+    "modulus": null,
+    "residue_convention": "N/A",
+    "update_rule": "unchanged MountLoss ODE plus heat",
+    "initial_phase": "entire housing-only energy ball or alpha=.1 pulse plus that ball; separate",
+    "coupling": "reciprocal device/mount/central viscous paths",
+    "period_claim": "none",
+    "physical_unit_map": "t=t0 u, t0 uncalibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "R560 plus heat, positive-length domain",
+    "generator_or_update": "MountLoss.ode unchanged",
+    "initial_boundary_conditions": "free assembly; reference primary/rest; zero devices; housing energy ball; alpha labeled0 or.1",
+    "conservation_and_sources": "Eprime=-nonnegative power; total spatial P,L retained, not assumed zero",
+    "projection_and_kernel": "No quotient; nonlinear determinants use hub-relative positions",
+    "physical_mapping": "OPEN; engineered surrogate only"
+  },
+  "target_exposure": {
+    "status": "development; prior targets and limiting phases exposed",
+    "known_targets": [
+      "u100 half-energy",
+      "80% breathing and5% mismatch",
+      "prior sampled positive lengths"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Inherited qualified mass/property box and 1/40000 energy fraction; no new parameter/threshold tuning"
+    ],
+    "search_domain_and_budget": "Four housing-only exposed phases, two pulse phases and one tolerance refinement; exact proof not based on phase sampling",
+    "selection_criterion": "Preserve all valid narrower certificates and failed full-pulse energy method",
+    "baseline": "Housing-only reference volumes; pulse uses frozen nonlinear baseline, nominal comparison uses exact undamped collective solution"
+  },
+  "calculation_steps": [
+    "Derive energy strain/mount bounds",
+    "Use endpoint triangle inequality and opposite-anchor median identity",
+    "Close global existence for housing-only energy budget",
+    "Use shared energy in Gram Frobenius Cauchy bound and determinant positivity",
+    "Derive full-pulse short-time speed/singular-value tube",
+    "Construct energy-feasible strut-singularity witness; distinguish reachability",
+    "Check exact reference Gram and direct model energy",
+    "Run exposed nonlinear phases with actual energy/P/L and tolerance refinement"
+  ],
+  "result": {
+    "exact_expression": "EXACT/CONDITIONAL: housing-only all phases/all future times/continuous property box: struts>987/2000 and every cell volume ratio in(39/40,41/40); global existence. Full pulse all-phase safety/positive volume through u=1/20. Full-pulse energy-sublevel closure includes a strut singularity, so total energy alone cannot certify u100 safety. Long-time pulse tube and nonlinear half-energy-at100 remain OPEN.",
+    "approximation": "Housing-only E100/E0 .2399273\u2013.4400646 on four phases; exposed worst pulse retention .872563910933575; nominal fullphase pulse .899062529050692; sampled only.",
+    "units": "internal uncalibrated units",
+    "precision_and_error": "Fractions exact; Q(sqrt5) exact reference geometry; float64 DOP853 with tolerance repeat, not interval integration",
+    "scope": "All-phase continuous-property nonlinear domain/volume theorem for housing-only; full-pulse theorem only throughu.05",
+    "physical_interpretation": "NONE established"
+  },
+  "verification": [
+    {
+      "method": "rational inequalities",
+      "command_or_proof_path": "experiments/icosahedral-nonlineartube/bounds.py",
+      "source_revision": "ef5e2d8f9e0cc5354086a2a3373f6c07600f6dcd",
+      "actual_result": "EXACT_CONDITIONAL_PASS",
+      "review_relationship": "constructor; no independent review or empirical replication"
+    },
+    {
+      "method": "exact Qsqrt5 Gram and direct energy",
+      "command_or_proof_path": "experiments/icosahedral-nonlineartube/geometry_check.py",
+      "source_revision": "ef5e2d8f9e0cc5354086a2a3373f6c07600f6dcd",
+      "actual_result": "PASS20 exact cell Grams; witnessenergy.0276393<.065",
+      "review_relationship": "constructor; no independent review or empirical replication"
+    },
+    {
+      "method": "ODE exposed phases",
+      "command_or_proof_path": "experiments/icosahedral-nonlineartube/check.py",
+      "source_revision": "ef5e2d8f9e0cc5354086a2a3373f6c07600f6dcd",
+      "actual_result": "PASS7/7records:4housing-only,2pulse,1refinement; all exact-bound checks passed; balance error<=2.986e-9",
+      "review_relationship": "constructor; no independent review or empirical replication"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Full-pulse energy-only method cannot exclude arbitrarily short struts: witness is not a dynamical counterexample",
+    "Initial geometry/check implementations had unsupported Q5 ordering and missing nominal baseline entry; corrected without changing model/thresholds; see implementation_corrections.json"
+  ],
+  "limitations": [
+    "Full-pulse u100 all-phase/domain/volume tube OPEN",
+    "Housing-only nonlinear half-energy deadline OPEN",
+    "No convexity or non-self-intersection theorem",
+    "Finite ODE checks are sampled and floating; no verified integration",
+    "Physical tests UNSCORED; ideal routing/masslessstruts/native law selection unresolved"
+  ],
+  "changed_dependencies": [
+    "No model or budget change; preparation scopes explicitly separated; domain safety upgraded only for housing-only ringdown"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/icosahedral-nonlineartube-20261022-a1/nonlineartube-001/manifest.json"
+  ],
+  "next_discriminant": "Construct a validated trajectory-dependent relative-energy/variational tube around the exposed worst nonlinear pulse, retaining the complete housing phase ball."
+}

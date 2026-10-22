@@ -1,6 +1,6 @@
 # Current integrated state
 
-Updated: 2026-10-22. Milestone: joint housing ringdown/breathing window v1.0.
+Updated: 2026-10-22. Milestone: nonlinear housing-energy domain/volume bounds v1.0.
 
 - Canonical Discovery instructions are v1.2; bootloader v1.1 loads the mathematical protocol before consequential work.
 - [UD mathematical analysis protocol](../docs/UD_MATHEMATICAL_METHOD_v1.0.md) and [calculation receipt template](../templates/mathematical_receipt.json) cover exact arithmetic, factorization, modular clocks, typed provenance and applicable UD structural methods.
@@ -54,7 +54,10 @@ Updated: 2026-10-22. Milestone: joint housing ringdown/breathing window v1.0.
 - NUMERICAL continuous-strength enclosure for50 distinct parameter sets behind56 records,expandedtoall90housingdirections/180initialphasecoordinates withconservedrigidkineticenergy:worstenergy<=45.667% at100 andlinearbreathing>=81.356%. Coarsefullscope17-nodecoveragegaps arepreserved;asharperproveddissipationinequality closescoverageusingthe same values. This isnotverifiedintervalarithmetic orcontinuousuncertainty-boxcoverage.
 - NUMERICAL nonlinearendpointchecks withnonzerohousingenergy:64/64records(58distincttrajectories)pass,min87.256%breathing,max.758207%hubmismatch,shape4.258–9.671%. Fullhousingworstphase nonlinearenergy44.0065%/35.9171% atnu.04/.05;fouroldsectorringdowns,twofinepulsechecks,twoindependent-methodlinearODEintegrals andspatialrigid-energyassembly recorded. [Results](../experiments/icosahedral-jointwindow/RESULTS.md),[budget](../experiments/icosahedral-jointwindow/BUDGET.md),[milestoneartifact](../artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/milestone.json).
 - Theoriginalnu.02lowmassfailure andout-of-budgetmass/frictionfailures remainvalid. No uniformfullassemblyrate asbeta0/cf0 forboundednu;qualifiedcompactboxhaslocalrateexistencewithoutaquantitativetime100nonlinear guarantee. Hardware UNSCORED/nativeconstitutive-clockselectionOPEN/mainlinepromotion0.
-- Next discriminant:validatednonlinearperturbationtube forthehousing-energyball atlimitingringdown/breathingpreparations;bound futurestrutlengthsandvolumeresponsebeforeclaimingnonlinearallphase orcontinuousparameterboxcoverage.
+- [Nonlinear housing-energy bounds](../experiments/icosahedral-nonlineartube/README.md): EXACT/CONDITIONAL housing-only alpha=0 preparation, E_h<=E_p/40000, all180 housing phase coordinates and continuous qualified property box: all120 struts>987/2000; every oriented cell volume is in(39/40,41/40) of reference for all u>=0; global existence. Nonlinear half-energy-at100 remains OPEN.
+- Full alpha=.1 pulse plus every allowed housing phase: exact initial tube through u=1/20 has struts>1/40 and cell-volume ratios in(.729,1.331). Energy-only extension fails: a lower-beta housing at an endpoint costs1/(40R²)<1/36<nominal pulse energy. This is not a dynamical counterexample; full-pulse u100 nonlinear all-phase coverage remains OPEN.
+- NUMERICAL constructor checks:4 exposed housing ringdowns,2 pulses and1 tolerance repeat all pass; housing ringdown energies23.993–44.007%; worst exposed pulse breathing87.256%. [Results and captured evidence](../experiments/icosahedral-nonlineartube/RESULTS.md). Earlier sampled/linear scopes remain unchanged; hardware UNSCORED/mainline promotion0.
+- Next discriminant: a validated trajectory-dependent relative-energy/variational tube around the exposed worst nonlinear breathing pulse, retaining the full housing phase ball and closing its length domain; energy conservation alone is insufficient.
 - Separate open question: whether the parent/relative chain duality survives a useful gluing/readout law.
 
 Update this file at integrated milestones under an integration claim. Live claim metadata, not this summary, determines current ownership.

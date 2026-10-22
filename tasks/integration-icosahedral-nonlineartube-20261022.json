@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-icosahedral-nonlineartube-20261022",
+  "goal": "Nonlinear all-phase energy-domain and volume bounds at limiting preparations",
+  "owned_paths": [
+    "experiments/icosahedral-nonlineartube/",
+    "candidates/icosahedral-nonlineartube/",
+    "sessions/icosahedral-nonlineartube-20261022-a1/",
+    "artifacts/icosahedral-nonlineartube-20261022-a1/",
+    "state/CURRENT.md",
+    "tasks/integration-icosahedral-nonlineartube-20261022.json"
+  ],
+  "dependencies": [
+    "integration-icosahedral-jointwindow-20261022"
+  ],
+  "status": "complete"
+}
