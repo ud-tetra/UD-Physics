@@ -1,0 +1,191 @@
+{
+  "review_label": "same-model separate-context LLM review; not independent empirical replication",
+  "frozen_writer_commit": "846a6a31c3ca87277afa584e6e4d782ef40e9168",
+  "writer_source_commit": "80b8548edf5b19f876a61c478d3240c91ad0d873",
+  "base_revision": "fbf40e3f4daaf3f02af5db35fc1ee82f0da02190",
+  "reproduction": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "experiments/clock-map-smoke/clock_map.py",
+      "--fixture",
+      "experiments/clock-map-smoke/fixture.json"
+    ],
+    "exit_code": 0,
+    "byte_equal": true,
+    "output_sha256": "9a32fe7b93badd64adfadc67a7a91e6e4dd11dd489dc9fc6be134f263fb8fbd6"
+  },
+  "input_verification": [
+    {
+      "path": "experiments/clock-map-smoke/clock_map.py",
+      "sha256": "929ce09b613c00a9b2893bc0a936f6d258faba5b343bc5e1801368edc939d1c2",
+      "size_bytes": 2962,
+      "matches_clean_source_commit": true
+    },
+    {
+      "path": "experiments/clock-map-smoke/fixture.json",
+      "sha256": "e76bdd8dc88598a468fd6d90303621f7bbc2d7124527a96bd0fc38876828620c",
+      "size_bytes": 233,
+      "matches_clean_source_commit": true
+    }
+  ],
+  "scope_changed_paths": [
+    "artifacts/handoff-writer-20261022-a1/affine-fit-001/files/handoff-writer-20261022-a1-result.json",
+    "artifacts/handoff-writer-20261022-a1/affine-fit-001/manifest.json",
+    "candidates/clock-map-smoke/candidate.json",
+    "experiments/clock-map-smoke/README.md",
+    "experiments/clock-map-smoke/clock_map.py",
+    "experiments/clock-map-smoke/fixture.json",
+    "sessions/handoff-writer-20261022-a1/boot-report.md",
+    "sessions/handoff-writer-20261022-a1/handoff.md",
+    "sessions/handoff-writer-20261022-a1/journal.md",
+    "sessions/handoff-writer-20261022-a1/record.json"
+  ],
+  "scope_isolated": true,
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/validate.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 13 records; manifest digests and local documentation links valid.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_candidate_reference_and_checkpoint (test_discovery.CaptureTests.test_candidate_reference_and_checkpoint) ... ok\ntest_capture_and_tampering (test_discovery.CaptureTests.test_capture_and_tampering) ... ok\ntest_paths_cannot_escape (test_discovery.CaptureTests.test_paths_cannot_escape) ... ok\ntest_run_is_immutable (test_discovery.CaptureTests.test_run_is_immutable) ... ok\ntest_session_resume_does_not_overwrite (test_discovery.CaptureTests.test_session_resume_does_not_overwrite) ... ok\ntest_symlink_and_duplicate_inputs_rejected (test_discovery.CaptureTests.test_symlink_and_duplicate_inputs_rejected) ... ok\ntest_unmanifested_output_rejected (test_discovery.CaptureTests.test_unmanifested_output_rejected) ... ok\ntest_dependency_blocks_claim (test_discovery.CoordinationTests.test_dependency_blocks_claim) ... ok\ntest_simultaneous_claim_has_one_winner (test_discovery.CoordinationTests.test_simultaneous_claim_has_one_winner) ... ok\ntest_stale_release_cannot_delete_new_owner (test_discovery.CoordinationTests.test_stale_release_cannot_delete_new_owner) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.216s\n\nOK\n"
+    }
+  ],
+  "counterexample_probes": [
+    {
+      "name": "wrong_units",
+      "result": "PASS",
+      "response": "This declared mapping requires tick indices and ns labels"
+    },
+    {
+      "name": "degenerate_indices",
+      "result": "PASS",
+      "response": "Affine slope is unidentifiable with constant training indices"
+    },
+    {
+      "name": "evaluation_label_perturbation",
+      "result": "PASS",
+      "offset_ns": "1",
+      "scale_ns_per_tick": "2",
+      "evaluation_sse_ns2": "1"
+    }
+  ],
+  "model_nonuniqueness": "1+2*n and 1+2*n+n*(n-1)*(n-2)*(n-3)*(n-4) agree at n=0..4 but yield 11 and 131 at n=5; exposed agreement does not identify a native clock law.",
+  "writer_result": {
+    "affine": {
+      "evaluation_exposed": {
+        "points": [
+          {
+            "label_ns": "7",
+            "n": "3",
+            "prediction_ns": "7",
+            "residual_ns": "0"
+          },
+          {
+            "label_ns": "9",
+            "n": "4",
+            "prediction_ns": "9",
+            "residual_ns": "0"
+          }
+        ],
+        "sse_ns2": "0"
+      },
+      "free_parameters": 2,
+      "offset_ns": "1",
+      "scale_ns_per_tick": "2",
+      "training": {
+        "points": [
+          {
+            "label_ns": "1",
+            "n": "0",
+            "prediction_ns": "1",
+            "residual_ns": "0"
+          },
+          {
+            "label_ns": "3",
+            "n": "1",
+            "prediction_ns": "3",
+            "residual_ns": "0"
+          },
+          {
+            "label_ns": "5",
+            "n": "2",
+            "prediction_ns": "5",
+            "residual_ns": "0"
+          }
+        ],
+        "sse_ns2": "0"
+      }
+    },
+    "arithmetic": "fractions.Fraction; rational values serialized as strings",
+    "constant_baseline": {
+      "evaluation_exposed": {
+        "points": [
+          {
+            "label_ns": "7",
+            "n": "3",
+            "prediction_ns": "3",
+            "residual_ns": "-4"
+          },
+          {
+            "label_ns": "9",
+            "n": "4",
+            "prediction_ns": "3",
+            "residual_ns": "-6"
+          }
+        ],
+        "sse_ns2": "52"
+      },
+      "free_parameters": 1,
+      "level_ns": "3",
+      "training": {
+        "points": [
+          {
+            "label_ns": "1",
+            "n": "0",
+            "prediction_ns": "3",
+            "residual_ns": "2"
+          },
+          {
+            "label_ns": "3",
+            "n": "1",
+            "prediction_ns": "3",
+            "residual_ns": "0"
+          },
+          {
+            "label_ns": "5",
+            "n": "2",
+            "prediction_ns": "3",
+            "residual_ns": "-2"
+          }
+        ],
+        "sse_ns2": "8"
+      }
+    },
+    "data_kind": "synthetic labels, no measured physical clock",
+    "evaluation_role": "development evaluation, not blinded prediction",
+    "evidence": [
+      "FIT",
+      "EXACT"
+    ],
+    "fit_objective": "unweighted training sum of squared residuals",
+    "mapping": "t_label_ns = offset_ns + scale_ns_per_tick * n",
+    "residual_convention": "prediction minus label",
+    "target_exposure": "All training and evaluation labels exposed before fitting"
+  }
+}
