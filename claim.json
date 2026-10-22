@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "icosahedral-4d-volume-20261022",
+  "session": "icosa4dvol-20261022-gpt6-c7d2",
+  "status": "held",
+  "created_at": "2026-10-22T21:00:00Z",
+  "base_revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+  "owned_paths": [
+    "sessions/icosa4dvol-20261022-gpt6-c7d2/",
+    "candidates/icosahedral-4d-volume-20261022/",
+    "experiments/icosahedral-4d-volume-20261022/",
+    "artifacts/icosa4dvol-20261022-gpt6-c7d2/"
+  ]
+}
