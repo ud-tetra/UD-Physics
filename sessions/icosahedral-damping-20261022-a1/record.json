@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T19:15:35.984293+00:00",
   "base_revision": "c7d832c25b5b822572c1a82e0ef93b583cf1a4f0",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "integration-icosahedral-damping-20261022": {
       "ref": "refs/heads/claims/integration-icosahedral-damping-20261022",
       "sha": "bff174b9ff9671de101c81d29cf640dca0e988f1",
-      "status": "held"
+      "status": "released",
+      "released_sha": "44a9bdcaef661993ce9ff7d9f65dd026ac0641f5"
     }
   },
   "checks": [
@@ -56,5 +57,11 @@
     "clock": "continuous dimensionless u; no modular clock invoked",
     "metric": "positive mass M and geometric volume readouts",
     "physical_mapping": "ordinary central axial loss assumed; calibration/native selection OPEN"
+  },
+  "integration": {
+    "pr": 29,
+    "merge_sha": "5dba5da8d92f6080ab1d05964d8ce44a90dda0b3",
+    "pull_request_integrity": "completed/success run39839705596 at headc6bca10403767f7c162cba777babe9dd5f8f0bcf",
+    "tree_equality": "local staged tree equals prepared GitHub tree7e9355cbe0c68615c8e5f30aadaba2e239686428"
   }
 }

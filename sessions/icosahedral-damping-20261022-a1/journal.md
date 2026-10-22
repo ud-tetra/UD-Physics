@@ -29,3 +29,9 @@ Captured artifacts/icosahedral-damping-20261022-a1/damping-001 (NUMERICAL): Exac
 ## Integration checkpoint
 
 Calculation, receipt and immutable damping-001 capture complete. Figure inspected. Repository validator passes63 records and16 tooling tests pass; these check integrity, not physical truth. Corrected unsupported draft workflow status values after the first validator rejection; no captured scientific bytes changed. Candidate remains ACTIVE and its conditional evidence labels remain separate. Next: focused PR at verified main with exact tree equality, CI, merge, claim release and closure record.
+
+## Integrated and released
+
+PR#29 merged at5dba5da8d92f6080ab1d05964d8ce44a90dda0b3. Pull-request integrity run39839705596 completed/success atc6bca10403767f7c162cba777babe9dd5f8f0bcf. Published tree matches the local staged tree exactly. Re-read the held owner and exact SHA before release; child marker44a9bdcaef661993ce9ff7d9f65dd026ac0641f5 has status released and matching session, verified through the live ref and payload. This closure-only follow-up changes only this owning session record/journal under protocolv2.
+
+Handoff: build a passive multiport edge-strain difference realization, including auxiliary dynamics, common-mode kernel and soft tangential damping. Ordinary dashpot screen failed; length-domain certificate and finite shape/volume tradeoff remain reusable. No mainline export or physical promotion.
