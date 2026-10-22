@@ -1,0 +1,264 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "heart-robustness-001",
+  "session_id": "heart-robustness-20261022-a1",
+  "candidate_id": "heart-shell-robustness",
+  "question": "Does heart-driven collective cell-volume response survive unequal spoke stiffnesses and shell inertias?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "state",
+      "symbol": "state",
+      "object_type": "mechanical state",
+      "definition": "a,q_i with positive inertias and quadratic potential",
+      "domain": "R10 restricted to q_i>-1",
+      "codomain": "R10",
+      "coefficient_domain": "Fraction exact shape identities; float64 numerical modal trajectories",
+      "units": "model strains,u and energy",
+      "basis_orientation": "heart index0, shell1-4; unsigned volumes opposite shell vertex",
+      "metric_measure": "M=diag(1,m_i)",
+      "origin": "assumed",
+      "exact_expression": "a,q_i with positive inertias and quadratic potential",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit projection/denominator and model parameters; no physical normalization"
+    },
+    {
+      "object_id": "volume_signal",
+      "symbol": "volume_signal",
+      "object_type": "nonlinear geometric readout",
+      "definition": "y_i=product_(j!=i)(1+q_j)-1",
+      "domain": "radial shell strains",
+      "codomain": "R4",
+      "coefficient_domain": "Fraction exact shape identities; float64 numerical modal trajectories",
+      "units": "dimensionless fractional cell-volume change",
+      "basis_orientation": "heart index0, shell1-4; unsigned volumes opposite shell vertex",
+      "metric_measure": "unsigned volume; reference V0/4",
+      "origin": "derived",
+      "exact_expression": "y_i=product_(j!=i)(1+q_j)-1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit projection/denominator and model parameters; no physical normalization"
+    },
+    {
+      "object_id": "L_V",
+      "symbol": "L_V",
+      "object_type": "finite-window signal metric",
+      "definition": "sqrt(integral ||P y||^2 / integral ||y||^2), P=I-J/4",
+      "domain": "nonzero R4-valued volume signals on window",
+      "codomain": "[0,1]",
+      "coefficient_domain": "Fraction exact shape identities; float64 numerical modal trajectories",
+      "units": "dimensionless RMS signal fraction",
+      "basis_orientation": "heart index0, shell1-4; unsigned volumes opposite shell vertex",
+      "metric_measure": "Euclidean unweighted signal norm",
+      "origin": "derived",
+      "exact_expression": "sqrt(integral ||P y||^2 / integral ||y||^2), P=I-J/4",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit projection/denominator and model parameters; no physical normalization"
+    },
+    {
+      "object_id": "H_d",
+      "symbol": "H_d",
+      "object_type": "projected dynamic stiffness",
+      "definition": "P diag(3+g_i-lambda*m_i) P restricted to zero-sum contrasts",
+      "domain": "R3 contrasts",
+      "codomain": "R3 contrasts",
+      "coefficient_domain": "Fraction exact shape identities; float64 numerical modal trajectories",
+      "units": "model stiffness",
+      "basis_orientation": "heart index0, shell1-4; unsigned volumes opposite shell vertex",
+      "metric_measure": "P is orthogonal projector",
+      "origin": "derived",
+      "exact_expression": "P diag(3+g_i-lambda*m_i) P restricted to zero-sum contrasts",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit projection/denominator and model parameters; no physical normalization"
+    },
+    {
+      "object_id": "r",
+      "symbol": "r",
+      "object_type": "balanced harmonic shape",
+      "definition": "[epsilon*(1-lambda)+lambda*eta]/[4-lambda-epsilon^2+epsilon*lambda*eta]",
+      "domain": "declared balanced perturbation and nonzero denominator",
+      "codomain": "real ratio d/b",
+      "coefficient_domain": "Fraction exact shape identities; float64 numerical modal trajectories",
+      "units": "dimensionless",
+      "basis_orientation": "heart index0, shell1-4; unsigned volumes opposite shell vertex",
+      "metric_measure": "b nonzero; linear volume shape",
+      "origin": "derived",
+      "exact_expression": "[epsilon*(1-lambda)+lambda*eta]/[4-lambda-epsilon^2+epsilon*lambda*eta]",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit projection/denominator and model parameters; no physical normalization"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "source-0",
+      "url_or_repo_path": "experiments/heart-shell-elastic/README.md",
+      "version_or_commit": "2b2e69de470d52f888c6926279ae2dd964ece769",
+      "section_or_object_id": "Sections1-8",
+      "source_status": "chosen positive-energy model and prior analytic solution"
+    },
+    {
+      "source_id": "source-1",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "2b2e69de470d52f888c6926279ae2dd964ece769",
+      "section_or_object_id": "Q139,Q144-Q145,Q151-Q152",
+      "source_status": "historical source/clock/constitutive distinction; no native coefficients imported"
+    }
+  ],
+  "assumptions": [
+    "Same chosen scalar/radial model and unsigned determinant-volume readout; no native carrier amplitude identification.",
+    "Kh=Ks=Ih=1,Kt=1/2; each positive spoke g_i and shell inertia m_i varied.",
+    "Pulse a0=1/10, all shell coordinates and all velocities0; no forcing/damping in pulse scan.",
+    "Harmonic shape calculation is a separate small-signal experiment, with unit heart amplitude for ratios; absolute amplitudes may be rescaled.",
+    "Time u and parameters remain model-unit quantities; physical/native/material calibration OPEN."
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/fraction algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "2^8=256 corners per level; exact projected and balanced harmonic equations"
+    },
+    {
+      "technique": "positive energy",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "stability and geometric-domain bound for positive disorder"
+    },
+    {
+      "technique": "projection/spectral/resolvent",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "coherence metric, differential forcing and gap-dependent inverse bound"
+    },
+    {
+      "technique": "numerical modal evolution",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "float64 symmetric generalized eigenproblem, exact-in-time mode formula with sampled integration"
+    },
+    {
+      "technique": "clock/modular",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "u is continuous and dimensionless; no finite register law"
+    },
+    {
+      "technique": "sensitivity/design provenance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "finite corners/interiors, near-resonance counterexample and labelled exposed-mode compensation"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2^4 spoke signs times2^4 inertia signs=256 corners; four levels1024 plus256 seeded interiors",
+    "reduced_expression": "5% patterns at lambda6: Rv=100/2403,1/20,4/477,220/2421; lambda4 stiffness-only Rv=1/epsilon",
+    "factor_origins": [
+      "four shell variables split into one mean and three contrasts",
+      "factor3 in linear cell volume response3b-d_i from three radial factors per tetrahedron"
+    ],
+    "factorization": "256=2^8 enumerates the eight independent binary parameter signs; no physical inference",
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "M x_doubleprime+Kx=0 pulse; separate harmonic dynamic-stiffness calculation",
+    "initial_phase": "heart strain1/10, all other coordinates/velocities0",
+    "coupling": "unequal positive spokes and inertias with unchanged positive onsite pins and outer difference coupling",
+    "period_claim": "finite windows0..20 and0..100 only; no all-time coherence inferred",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R10 scalar/radial model",
+    "generator_or_update": "positive quadratic Hamiltonian model; analytical cosine modal propagator evaluated numerically",
+    "initial_boundary_conditions": "pulse has no forcing or damping; harmonic counterexample separately driven with amplitude rescaled to remain small",
+    "conservation_and_sources": "unforced positive energy conserved; driven shape calculation has externally supplied heart force; native stocks not identified",
+    "projection_and_kernel": "P removes uniform component; L_V measures normalized integrated nonuniform volume signal, not state-space information loss",
+    "physical_mapping": "assumed geometric readout only; physical time, energy, material/native identification OPEN"
+  },
+  "target_exposure": {
+    "status": "previous model and frequencies fully exposed",
+    "known_targets": [
+      "heart-driven breathing",
+      "reference squared frequencies1,4,6"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      {
+        "type": "target-informed design, not empirical fit",
+        "formula": "eta=5*epsilon/6 for balanced pattern",
+        "target": "retain uniform shape at the already exposed reference lambda6",
+        "scope": "one engineered mode; does not preserve both original collective modes"
+      }
+    ],
+    "search_domain_and_budget": "four relative levels,256 corners each;256 deterministic-seeded interiors at5%; balanced analytic family; no empirical fit",
+    "selection_criterion": "quantify observed leakage, prove stability, identify failure of uniform frequency claim; no empirical acceptance gate",
+    "baseline": "Perfect symmetry; arbitrary spoke disorder with equal onsite ratios; separate lambda4 forced counterexample."
+  },
+  "calculation_steps": [
+    "Replace uniform positive spoke and shell inertia coefficients with independent positive parameters.",
+    "Project exact harmonic equations; derive gap bound and exact balanced shape ratio.",
+    "Prove stability and prepared-state geometric bound; identify protected in-phase mode and driven lambda4 counterexample.",
+    "Evaluate1024 corners and256 seeded interiors with float64 modal trajectories and exact nonlinear volume readout.",
+    "Refine worst-case quadrature; compare a short-time matrix-exponential series and energy/eigen residuals."
+  ],
+  "result": {
+    "exact_expression": "EXACT/CONDITIONAL: positive-energy stability survives all positive spoke/inertia perturbations, but all-frequency coherence fails near a former differential mode. NUMERICAL: among256 corners per variation level over u0..100, max RMS differential volume-signal fractions are1.88%,9.35%,21.25%,40.68% for \u00b11%,\u00b15%,\u00b110%,\u00b120%. Exact shape identity explains reinforcement/cancellation; in-phase mode is protected when onsite stiffness/inertia ratios match.",
+    "approximation": "reported pulse leakage values are numerical; exact rational harmonic ratios and analytic bounds separately identified",
+    "units": "dimensionless model parameter, strains and volume-signal ratios",
+    "precision_and_error": "NumPy2.3.5 float64; max corner energy relative residual4.23e-15; selected series check2.78e-17; worst fine-quadrature difference8.26e-8",
+    "scope": "specified parameter family, metric, preparation/windows and finite tested patterns; harmonic bound has declared gap condition",
+    "physical_interpretation": "HYPOTHESIS, no empirical result or physical calibration"
+  },
+  "verification": [
+    {
+      "method": "constructor Fraction elimination and analytic proof",
+      "command_or_proof_path": "experiments/heart-shell-robustness/analyze.py exact_checks; README.md sections2-5",
+      "source_revision": "base 2b2e69de470d52f888c6926279ae2dd964ece769 plus captured new code bytes",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "float64 modal propagation, conserved-energy/eigen residual, second implementation short-time Taylor check, quadrature refinement",
+      "command_or_proof_path": "OPENBLAS_NUM_THREADS=1 python3 experiments/heart-shell-robustness/analyze.py --out OUTPUT_DIRECTORY",
+      "source_revision": "captured input code; NumPy2.3.5",
+      "actual_result": "PASS within recorded tolerances; results NUMERICAL",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "At5% balanced spoke disorder, reference lambda4 harmonic linear-volume signal is approximately99.88% nonuniform despite positive energy.",
+    "Finite corner maxima are not certified extrema throughout the continuous parameter box.",
+    "One exposed-mode compensation condition does not preserve both reference collective modes.",
+    "Positive-energy stability is not an all-frequency coherence guarantee."
+  ],
+  "limitations": [
+    "Finite1280 numerical probes and specified windows do not exhaust the continuous parameter box or all times.",
+    "Signal-projection norm is not energy, information, probability or a theory-confidence percentage.",
+    "Harmonic shapes and prepared-pulse metrics are different comparisons.",
+    "Restricted scalar/radial model remains hypothetical, with no empirical test or independent replication."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/heart-robustness-20261022-a1/scan-001/manifest.json"
+  ],
+  "next_discriminant": "Derive a passive damping requirement and usable drive-frequency band that suppress differential resonance while retaining measurable collective volume response."
+}

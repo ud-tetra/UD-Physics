@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "heart-robustness-20261022-a1",
+  "run_id": "scan-001",
+  "created_at": "2026-10-22T18:01:33.446440+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Exact mismatch/resonance identities plus finite-window positive-energy heart-shell imperfection scan",
+  "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/heart-shell-robustness/analyze.py --out OUTPUT_DIRECTORY",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "2b2e69de470d52f888c6926279ae2dd964ece769",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "analyze.py",
+      "path": "inputs/001-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/heart-shell-robustness/analyze.py",
+      "sha256": "04fa5c5990f69f5ce288778fbc94e840ff58b1d18c0ba5128da1d63681647d87",
+      "size_bytes": 9561
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/heart-shell-robustness/mathematical_receipt.json",
+      "sha256": "ee802392d82b7c15b917facdd5bacf5e76e6e38d2b224adf12f136c1cd8ccd9c",
+      "size_bytes": 14234
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "11cdd5db2b8c899777a5666bd5a79de45158efba2710a0adb4f08bec8c6910a7",
+      "size_bytes": 5920
+    },
+    {
+      "path": "files/corner-scan.csv",
+      "sha256": "5f698c43fe9e24541cf35d7b6521bccf938010689cd178501fdfbcb3a88407a6",
+      "size_bytes": 92106
+    }
+  ]
+}

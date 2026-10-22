@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-heart-robustness-20261022",
+  "goal": "Integrate exact mismatch identities and numerical finite-window leakage with resonance counterexample",
+  "owned_paths": [
+    "experiments/heart-shell-robustness",
+    "candidates/heart-shell-robustness",
+    "sessions/heart-robustness-20261022-a1",
+    "artifacts/heart-robustness-20261022-a1",
+    "tasks/integration-heart-robustness-20261022.json",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [],
+  "status": "complete",
+  "completion_evidence": "experiments/heart-shell-robustness/README.md"
+}
