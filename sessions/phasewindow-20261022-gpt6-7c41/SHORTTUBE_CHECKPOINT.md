@@ -34,3 +34,6 @@ All estimates use the positive nonlinear energy, exact mass bounds and initial h
 ## Negative result and next discriminant
 
 The original amplitude total-energy *sublevel* still includes the known low-beta housing-at-endpoint collapse witness with energy smaller than the nominal pulse; it is **not** known to be dynamically reached. A pure energy-only proof cannot extend this to all time. The next discriminant is obtaining a full forced Green / nonlinear chart and reference-error certificate for the limiting original-amplitude `u∈[0,100]` pulse, without taking over the separately held PR44 recovery task. A local short-time bound does not establish the inherited `80% / 5% / 50%` nonlinear readout screens.
+
+## Versioned correction
+The historical `shorttube-003` proof contained a strict-sign notation error only at `u=0` for time-dependent volume/displacement envelopes. The fixed uniform strict safety theorem is correct. Corrected proof and `SHORTTUBE_ERRATUM.md` are captured immutably as `shorttube-004`; prior `shorttube-003` stays intact for audit. Source bytes were verified against Git blob hashes. No new empirical claim or altered result.
