@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-icosahedral-cone-20261022",
+  "goal": "Verify icosahedral cone geometry, exact chain and dual spectra, and heart versus cell collective modes",
+  "owned_paths": [
+    "experiments/icosahedral-cone",
+    "candidates/icosahedral-cone",
+    "sessions/icosahedral-cone-20261022-a1",
+    "artifacts/icosahedral-cone-20261022-a1",
+    "tasks/integration-icosahedral-cone-20261022.json",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [],
+  "status": "complete",
+  "completion_evidence": "experiments/icosahedral-cone/README.md"
+}

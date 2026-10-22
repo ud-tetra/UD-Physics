@@ -1,0 +1,285 @@
+{
+  "status": "PASS",
+  "coefficient_domains": [
+    "Z boundary/operator identities",
+    "Q(sqrt(5)) geometry/moments",
+    "float64 spectral cross-check"
+  ],
+  "f_vector": [
+    13,
+    42,
+    50,
+    20
+  ],
+  "boundary_f_vector": [
+    12,
+    30,
+    20
+  ],
+  "relative_f_vector": [
+    1,
+    12,
+    30,
+    20
+  ],
+  "chain_dimensions": {
+    "full": 125,
+    "boundary": 62,
+    "relative": 63
+  },
+  "chain_ranks": [
+    12,
+    30,
+    20
+  ],
+  "betti_Q": [
+    1,
+    0,
+    0,
+    0
+  ],
+  "incidence": {
+    "radial_edge_cells": 5,
+    "boundary_edge_cells": 2,
+    "cell_neighbours": 3,
+    "radial_link_cycle_length": 5
+  },
+  "metric": {
+    "R_squared": "(5/8)+(1/8)*sqrt(5)",
+    "h_squared": "(7/24)+(1/8)*sqrt(5)",
+    "midradius_squared": "(3/8)+(1/8)*sqrt(5)",
+    "cell_volume": "(1/16)+(1/48)*sqrt(5)",
+    "total_volume": "(5/4)+(5/12)*sqrt(5)",
+    "internal_area_squared": "(3/32)+(1/32)*sqrt(5)",
+    "R": 0.9510565162951535,
+    "h": 0.7557613140761708,
+    "midradius": 0.8090169943749475,
+    "apex_angle_degrees": 63.43494882292201,
+    "base_lateral_degrees": 69.0948425521107,
+    "lateral_lateral_degrees": 72,
+    "central_solid_angle": "pi/5",
+    "Gram_matrix": "a^2/8 * [diagonal 5+sqrt(5), off-diagonal 1+sqrt(5)]"
+  },
+  "dual_laplacian": {
+    "status": "PASS",
+    "distinct_eigenvalues": 6,
+    "annihilating_polynomial_coefficients": [
+      1,
+      -16,
+      95,
+      -256,
+      304,
+      -120,
+      0
+    ],
+    "exact_moments_checked": 6,
+    "numeric_spectral_error": 3.1086244689504383e-15,
+    "eigenvalues": [
+      {
+        "value": "0",
+        "multiplicity": 1
+      },
+      {
+        "value": "(3)+(-1)*sqrt(5)",
+        "multiplicity": 3
+      },
+      {
+        "value": "2",
+        "multiplicity": 5
+      },
+      {
+        "value": "3",
+        "multiplicity": 4
+      },
+      {
+        "value": "5",
+        "multiplicity": 4
+      },
+      {
+        "value": "(3)+(1)*sqrt(5)",
+        "multiplicity": 3
+      }
+    ]
+  },
+  "icosahedral_vertex_laplacian": {
+    "status": "PASS",
+    "distinct_eigenvalues": 4,
+    "annihilating_polynomial_coefficients": [
+      1,
+      -16,
+      80,
+      -120,
+      0
+    ],
+    "exact_moments_checked": 4,
+    "numeric_spectral_error": 2.6645352591003757e-15,
+    "eigenvalues": [
+      {
+        "value": "0",
+        "multiplicity": 1
+      },
+      {
+        "value": "(5)+(-1)*sqrt(5)",
+        "multiplicity": 3
+      },
+      {
+        "value": "6",
+        "multiplicity": 5
+      },
+      {
+        "value": "(5)+(1)*sqrt(5)",
+        "multiplicity": 3
+      }
+    ]
+  },
+  "full_unit_metric_hodge_laplacian": {
+    "status": "PASS",
+    "distinct_eigenvalues": 11,
+    "annihilating_polynomial_coefficients": [
+      1,
+      -54,
+      1256,
+      -16572,
+      137194,
+      -742840,
+      2654312,
+      -6148228,
+      8771405,
+      -6890706,
+      2234232,
+      0
+    ],
+    "exact_moments_checked": 11,
+    "numeric_spectral_error": 7.105427357601002e-15,
+    "eigenvalues": [
+      {
+        "value": "0",
+        "multiplicity": 1
+      },
+      {
+        "value": "1",
+        "multiplicity": 2
+      },
+      {
+        "value": "(4)+(-1)*sqrt(5)",
+        "multiplicity": 12
+      },
+      {
+        "value": "3",
+        "multiplicity": 20
+      },
+      {
+        "value": "(6)+(-1)*sqrt(5)",
+        "multiplicity": 12
+      },
+      {
+        "value": "4",
+        "multiplicity": 16
+      },
+      {
+        "value": "6",
+        "multiplicity": 16
+      },
+      {
+        "value": "(4)+(1)*sqrt(5)",
+        "multiplicity": 12
+      },
+      {
+        "value": "7",
+        "multiplicity": 20
+      },
+      {
+        "value": "(6)+(1)*sqrt(5)",
+        "multiplicity": 12
+      },
+      {
+        "value": "13",
+        "multiplicity": 2
+      }
+    ]
+  },
+  "relative_unit_metric_hodge_laplacian": {
+    "status": "PASS",
+    "distinct_eigenvalues": 10,
+    "annihilating_polynomial_coefficients": [
+      1,
+      -44,
+      815,
+      -8348,
+      52032,
+      -203904,
+      499328,
+      -729600,
+      567360,
+      -172800,
+      0
+    ],
+    "exact_moments_checked": 10,
+    "numeric_spectral_error": 7.993605777301127e-15,
+    "eigenvalues": [
+      {
+        "value": "0",
+        "multiplicity": 1
+      },
+      {
+        "value": "(3)+(-1)*sqrt(5)",
+        "multiplicity": 6
+      },
+      {
+        "value": "2",
+        "multiplicity": 10
+      },
+      {
+        "value": "(5)+(-1)*sqrt(5)",
+        "multiplicity": 6
+      },
+      {
+        "value": "3",
+        "multiplicity": 8
+      },
+      {
+        "value": "5",
+        "multiplicity": 8
+      },
+      {
+        "value": "(3)+(1)*sqrt(5)",
+        "multiplicity": 6
+      },
+      {
+        "value": "6",
+        "multiplicity": 10
+      },
+      {
+        "value": "(5)+(1)*sqrt(5)",
+        "multiplicity": 6
+      },
+      {
+        "value": "12",
+        "multiplicity": 2
+      }
+    ]
+  },
+  "heart_seed": {
+    "cyclic_dimension": 3,
+    "minimal_polynomial": "z*(z^2+13)",
+    "active_degrees": [
+      0,
+      1
+    ],
+    "inactive_degrees": [
+      2,
+      3
+    ]
+  },
+  "oriented_cell_collective": {
+    "cyclic_dimension": 2,
+    "minimal_polynomial": "z^2+1",
+    "cell_to_boundary_face_cycle": "20 oriented cells map to20 exterior oriented faces; internal faces cancel",
+    "orthogonal_to_heart_cyclic_space": true
+  },
+  "limitations": [
+    "Unit chain metric H=I is a declared combinatorial convention, not the Euclidean Gram metric or a physical constitutive law.",
+    "No specified graph diffusion or mechanical evolution is inferred from static adjacency.",
+    "A five-cycle link is not a five-tick temporal clock; counts13,63,125 do not establish modular, qubit or physical interpretations."
+  ]
+}
