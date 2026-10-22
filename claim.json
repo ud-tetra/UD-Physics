@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "integration-four-cell-20261022",
   "session": "four-cell-20261022-a1",
   "created_at": "2026-10-22T17:00:22.890Z",
@@ -14,5 +14,7 @@
     "artifacts/four-cell-20261022-a1",
     "tasks/integration-four-cell-20261022.json",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-10-22T17:07:25.027Z",
+  "released_from_sha": "f61aa38662c9d3163deefd99eca5c68ebb426f6a"
 }
