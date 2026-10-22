@@ -1,0 +1,102 @@
+{
+  "affine": {
+    "evaluation_exposed": {
+      "points": [
+        {
+          "label_ns": "7",
+          "n": "3",
+          "prediction_ns": "7",
+          "residual_ns": "0"
+        },
+        {
+          "label_ns": "9",
+          "n": "4",
+          "prediction_ns": "9",
+          "residual_ns": "0"
+        }
+      ],
+      "sse_ns2": "0"
+    },
+    "free_parameters": 2,
+    "offset_ns": "1",
+    "scale_ns_per_tick": "2",
+    "training": {
+      "points": [
+        {
+          "label_ns": "1",
+          "n": "0",
+          "prediction_ns": "1",
+          "residual_ns": "0"
+        },
+        {
+          "label_ns": "3",
+          "n": "1",
+          "prediction_ns": "3",
+          "residual_ns": "0"
+        },
+        {
+          "label_ns": "5",
+          "n": "2",
+          "prediction_ns": "5",
+          "residual_ns": "0"
+        }
+      ],
+      "sse_ns2": "0"
+    }
+  },
+  "arithmetic": "fractions.Fraction; rational values serialized as strings",
+  "constant_baseline": {
+    "evaluation_exposed": {
+      "points": [
+        {
+          "label_ns": "7",
+          "n": "3",
+          "prediction_ns": "3",
+          "residual_ns": "-4"
+        },
+        {
+          "label_ns": "9",
+          "n": "4",
+          "prediction_ns": "3",
+          "residual_ns": "-6"
+        }
+      ],
+      "sse_ns2": "52"
+    },
+    "free_parameters": 1,
+    "level_ns": "3",
+    "training": {
+      "points": [
+        {
+          "label_ns": "1",
+          "n": "0",
+          "prediction_ns": "3",
+          "residual_ns": "2"
+        },
+        {
+          "label_ns": "3",
+          "n": "1",
+          "prediction_ns": "3",
+          "residual_ns": "0"
+        },
+        {
+          "label_ns": "5",
+          "n": "2",
+          "prediction_ns": "3",
+          "residual_ns": "-2"
+        }
+      ],
+      "sse_ns2": "8"
+    }
+  },
+  "data_kind": "synthetic labels, no measured physical clock",
+  "evaluation_role": "development evaluation, not blinded prediction",
+  "evidence": [
+    "FIT",
+    "EXACT"
+  ],
+  "fit_objective": "unweighted training sum of squared residuals",
+  "mapping": "t_label_ns = offset_ns + scale_ns_per_tick * n",
+  "residual_convention": "prediction minus label",
+  "target_exposure": "All training and evaluation labels exposed before fitting"
+}
