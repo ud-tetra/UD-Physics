@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "k5-four-cell-20261022",
   "session": "k5-four-cell-20261022-a1",
   "created_at": "2026-10-22T17:14:09.127Z",
@@ -13,5 +13,7 @@
     "sessions/k5-four-cell-20261022-a1",
     "artifacts/k5-four-cell-20261022-a1",
     "tasks/k5-four-cell-20261022.json"
-  ]
+  ],
+  "released_at": "2026-10-22T17:17:43.259Z",
+  "released_from_sha": "c34a6dbe0ba6583484f8f795852b04130ce77357"
 }
