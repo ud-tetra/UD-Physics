@@ -1,0 +1,255 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "nonlinear-003",
+  "session_id": "icosa4dvol-20261022-gpt6-c7d2",
+  "candidate_id": "icosahedral-4d-volume-20261022",
+  "question": "Are nonlinear force-to-volume and resonance responses unique to the fourth-coordinate model relative to 3D mechanics?",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED"
+  ],
+  "objects": [
+    {
+      "object_id": "Q",
+      "symbol": "(s,z)",
+      "object_type": "two-coordinate constrained configuration",
+      "definition": "s>0 homothetic icosahedral shell; z fourth-axis apex or 3D carriage scalar",
+      "domain": "(0,infinity) x R",
+      "codomain": null,
+      "coefficient_domain": "Q(sqrt5) symbolic extension to real",
+      "units": "dimensionless",
+      "basis_orientation": "shell regular icosahedron, z orthogonal Euclidean coordinate",
+      "metric_measure": "M=diag(12ms*rho²,ma); Euclidean spatial geometry",
+      "origin": "assumed",
+      "exact_expression": null,
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "UD volume study previous run"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "a=1 nominal"
+    },
+    {
+      "object_id": "L",
+      "symbol": "sqrt(rho²s²+z²)",
+      "object_type": "spring rest-length functional",
+      "definition": "4D apex radial length = ordinary 3D orthogonal carriage separation",
+      "domain": "Q",
+      "codomain": "R_nonnegative",
+      "coefficient_domain": "Q(sqrt5) radicals",
+      "units": "length/a",
+      "basis_orientation": "A=(rho*s,0,0), B=(0,z,0)",
+      "metric_measure": "positive Euclidean 3D and 4D",
+      "origin": "derived",
+      "exact_expression": "sqrt(rho²*s²+z²)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "previous model"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A3"
+      ],
+      "dependency_ids": [
+        "Q"
+      ],
+      "normalization": "length a"
+    },
+    {
+      "object_id": "V",
+      "symbol": "s³-1",
+      "object_type": "fractional 3D shell-volume readout",
+      "definition": "V3(s)/V3(1)-1",
+      "domain": "Q",
+      "codomain": "R",
+      "coefficient_domain": "Q(sqrt5), R",
+      "units": "dimensionless",
+      "basis_orientation": "shell positive outward",
+      "metric_measure": "Euclidean 3D volume",
+      "origin": "derived",
+      "exact_expression": "s**3-1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "previous model"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "Q"
+      ],
+      "normalization": "V3(1)"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "base",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics",
+      "version_or_commit": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+      "section_or_object_id": "experiments/icosahedral-4d-volume-20261022 and earlier source geometry",
+      "source_status": "integrated base; previous candidate on held research branch"
+    }
+  ],
+  "assumptions": [
+    "A1 Euclidean R4 geometry, shell constrained to w=0, homogeneous breathing",
+    "A2 identical effective kinetic and dissipative metrics with independently evolved Newtonian time",
+    "A3 3D analogue permitted orthogonal guide rails and ideal synchronized transmission",
+    "A4 12 radial rest-length springs and 30 exterior edge springs; homogeneous positive parameters",
+    "A5 unit parameters and damping=0.06 are illustrative, no physical fit"
+  ],
+  "technique_plan": [
+    {
+      "technique": "symbolic rational/radical calculus",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact implicit equilibrium force derivatives and geometric match"
+    },
+    {
+      "technique": "spectral/operator analysis",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "generalized stiffness eigenmodes, nonlinear free-oscillation frequency estimates"
+    },
+    {
+      "technique": "geometry/projection",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Euclidean 3D carriage exact distance identity; volume readout"
+    },
+    {
+      "technique": "fit/null/sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare restricted linear 3D null and exact flexible 3D analogue, positive/negative pulses and equilibrium fold"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no scale/count divisibility hypothesis"
+    },
+    {
+      "technique": "modular clocks",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous Newtonian evolution rather than discrete register"
+    },
+    {
+      "technique": "homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no new boundary/homology claim; earlier combinatorial shell remains fixed"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "12 radial springs + 30 shell edges",
+    "reduced_expression": "42 springs",
+    "factor_origins": [
+      "regular icosahedron vertex and edge counts, previous model"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous mechanical time",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "M qddot + C qdot + grad U = (0,f(t))",
+    "initial_phase": null,
+    "coupling": "off-diagonal Hessian, nonlinear radial spring",
+    "period_claim": "amplitude-dependent finite-time peak estimate only",
+    "physical_unit_map": "sqrt(m_a/k_r) after dimensional calibration"
+  },
+  "dynamics_readout": {
+    "state_space": "TQ; Q=(0,infinity)xR",
+    "generator_or_update": "second-order Newtonian conservative/damped two-coordinate ODE",
+    "initial_boundary_conditions": "shell remains in w=0; reference s=1,z=eta; Gaussian force pulses; free mode initial displacement",
+    "conservation_and_sources": "E_dot=f*z_dot - qdot^T C qdot; free C=0 conserves E",
+    "projection_and_kernel": "readout y=s³-1; z not directly included in volume",
+    "physical_mapping": "none; conventional 3D guided apparatus is a mathematical countermodel"
+  },
+  "target_exposure": {
+    "status": "geometry target-selected previously, new null model constructed post-exposure deliberately",
+    "known_targets": [
+      "prior exact 4D-to-shell readout",
+      "same linear stiffness/transfer",
+      "nonlinear discrimination",
+      "force-frequency response"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "equal-edge target geometry eta",
+      "post-exposure 3D right-angle carriage deliberately reproduces all-order length law",
+      "unit stiffness/mass, proportional damping, pulse amplitudes chosen illustrative, not fitted to empirical data"
+    ],
+    "search_domain_and_budget": "One exact guided-carriage nonlinear comparator, one matched-quadratic comparator, 6 pulse amplitudes, 4 free-mode amplitudes, 9 stable static force samples; no broad search",
+    "selection_criterion": "exact potential equality; then numerical trajectory equality",
+    "baseline": "previous 4D model and 3D axial-centre plus 3D two-coordinate matched-linear lever"
+  },
+  "calculation_steps": [
+    "derive R² and eta² from regular icosahedron/equal-edge construction",
+    "write 4D radial length sqrt(rho²s²+z²)",
+    "construct 3D Euclidean A=(rho s,0,0),B=(0,z,0) and prove |A-B|=4D radial length",
+    "set identical 2x2 kinetic/damping/forcing and volume readout; invoke uniqueness of smooth ODE solutions to show same full reduced dynamics",
+    "evaluate exact Hessian, third/fourth derivative tensors and implicit static force-volume coefficients",
+    "numerically locate Hessian fold; solve Gaussian pulses and undamped finite-mode frequency estimates"
+  ],
+  "result": {
+    "exact_expression": "U_3D(s,z) = U_4D(s,z) for all s>0, z real; volume coefficients in run_results.json",
+    "approximation": "c1=-0.2927050983124842,c2=1.154242419234321,c3=-10.423365879953792; spinodal f=-0.0525875220599; max pulse equality residual=3.6e-12",
+    "units": "nondimensional nominal example",
+    "precision_and_error": "SymPy exact symbolic, SciPy DOP853 rtol 3e-12 atol 3e-14; static root tol 1e-12; finite-time frequency estimator with drift/spacing residual",
+    "scope": "constrained two-coordinate model and ideal 3D guided-carriage counterpart",
+    "physical_interpretation": "HYPOTHESIS only; negative dimensional-identifiability result"
+  },
+  "verification": [
+    {
+      "method": "symbolic exact 3D potential equality, Hessian, derivative jets",
+      "command_or_proof_path": "python3 nonlinear_audit.py",
+      "source_revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "finite-force root and fold, two independently coded ODE gradients, nonlinear pulses and peak estimates",
+      "command_or_proof_path": "python3 nonlinear_audit.py",
+      "source_revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "repository validation/tests",
+      "command_or_proof_path": "python3 scripts/validate.py && python3 -m unittest discover -s tests -v",
+      "source_revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+      "actual_result": "NOT_RUN - no full Git checkout in this connector-only runtime",
+      "review_relationship": "not reviewed"
+    },
+    {
+      "method": "first CI integrity attempt",
+      "command_or_proof_path": "GitHub Actions 39857539810",
+      "source_revision": "d49ec5a77508ddd26a721fe103e03dc19a4dbafa",
+      "actual_result": "FAILED before repository tests: required source_path metadata omitted",
+      "review_relationship": "CI integrity"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Ordinary 3D guided planar carriages reproduce all orders and frequencies; dimensional discrimination FAILED without constraints on allowed 3D mechanism",
+    "Positive-height quasistatic equilibrium disappears under negative force past numerical fold f~-0.05258752206",
+    "Linear 3D analogue does not match nonlinear corrections; this only tests constitutive choice, not dimensionality",
+    "Invalid nonlinear-002 capture omitted required source_path; it was withdrawn from current branch tree, preserved in Git history, and data recaptured unchanged as nonlinear-003 with repository source_path."
+  ],
+  "limitations": [
+    "3D analogue requires constrained guide/transmission mechanism; not shown icosahedrally local native dynamics",
+    "Full two-coordinate nonlinear normal modes not analytically solved; frequency estimates finite-time",
+    "No physical field coupling or GR/QFT dynamics",
+    "Previous target exposure and post hoc null-model construction disclosed",
+    "No external empirical validation"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/icosa4dvol-20261022-gpt6-c7d2/nonlinear-003/manifest.json"
+  ],
+  "next_discriminant": "Define physically restricted local 3D null class and explicit 4D unconstrained mode/readout to test whether equivalence survives."
+}
