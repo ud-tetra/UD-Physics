@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T18:10:55.347525+00:00",
   "base_revision": "bbf15511970e08330bfece2503a541a902f9f96c",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "integration-heart-damping-20261022": {
       "ref": "refs/heads/claims/integration-heart-damping-20261022",
       "sha": "021766149b014371c031df3557a2ad4dc2ed80b9",
-      "status": "held"
+      "status": "released",
+      "released_sha": "fd983dae552a24bd3b685dec1cac7b88146de094"
     }
   },
   "checks": [
@@ -48,5 +49,10 @@
     "clock": "continuous dimensionless u; physical time t=t0*u OPEN",
     "metric": "positive inertia M for dynamics; Euclidean contrast/signal norm",
     "physical_mapping": "assumed fixed-ray radial geometry; material/native variable/clock/damping realization OPEN"
+  },
+  "integration": {
+    "pr": 21,
+    "merge_sha": "cbb4f7d2def8fc636ae8cdd0728db7a0a2d2362e",
+    "pull_request_integrity": "completed/success run39830021126 at head9c5102bbf7ea47c777f476267da9706061c10fbb"
   }
 }
