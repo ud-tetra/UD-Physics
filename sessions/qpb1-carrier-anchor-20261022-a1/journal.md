@@ -37,3 +37,9 @@ Next: Identify a target-independent physical unit-preparation rule and named car
 ## Pre-integration validation
 
 PASS95records including manifest byte digests/documentation links. PASS16tooling tests. These integrity checks do not establish physical correspondence. No independent review occurred.
+
+## Integrated handoff
+
+PR48 merged at83de13b434709bfcbcbeba4484ed63b9f37603d3. Exact-head CI39868933621 passed foref0f512f6790a5943999b7acc19de76e3f9c31ee. Uploaded tree matched the local staged tree1c4932e24168d484c0f4f527e9bf9fb353f59367. Claim released with compare-and-swap from the held SHA; live release marker and owner/payload verified ate348de7233de3896dfdcdfb1cb03b627979a944f.
+
+Scoped research complete. Physical amplitude/preparation rule,real reference/readout map,calibrated measurements and non-constructor review remain OPEN. Empirical UNSCORED; physical promotion0. No CURRENT or mainline changes. This closure modifies only the session record/journal. Next work requires a new owned task claim.

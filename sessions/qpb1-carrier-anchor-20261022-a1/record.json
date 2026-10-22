@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T22:51:19.590230+00:00",
   "base_revision": "5ca396d67579bfb741ea8f784045353ec144f615",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "qpb1-carrier-anchor-20261022": {
       "ref": "refs/heads/claims/qpb1-carrier-anchor-20261022",
-      "sha": "691fd0e27dbb537d393dd5a3807aa453f50e7fac",
-      "status": "held"
+      "sha": "e348de7233de3896dfdcdfb1cb03b627979a944f",
+      "status": "released",
+      "released_from_sha": "691fd0e27dbb537d393dd5a3807aa453f50e7fac"
     }
   },
   "checks": [
@@ -31,10 +32,21 @@
     }
   ],
   "finding": "Scoped exact carrier/readout audit and prospective anchor test complete; physical unit-amplitude map remains OPEN,empirical UNSCORED,promotion0.",
-  "next_action": "Identify a target-independent physical unit-preparation rule and named carrier/readout; integrate this scoped package and release claim.",
+  "next_action": "Source a target-independent physical unit-preparation/action map and a named carrier/readout or reference. Acquire a new task claim before further research.",
   "checkpoint_at": "2026-10-22T22:59:35.790362+00:00",
   "checkpoint_source": {
     "revision": "5ca396d67579bfb741ea8f784045353ec144f615",
     "dirty": true
+  },
+  "integration": {
+    "research_pr": "https://github.com/ud-tetra/UD-Physics/pull/48",
+    "research_head": "ef0f512f6790a5943999b7acc19de76e3f9c31ee",
+    "research_merge": "83de13b434709bfcbcbeba4484ed63b9f37603d3",
+    "ci_run_id": 39868933621,
+    "ci_url": "https://github.com/ud-tetra/UD-Physics/actions/runs/39868933621",
+    "ci_head": "ef0f512f6790a5943999b7acc19de76e3f9c31ee",
+    "ci_conclusion": "success",
+    "tree": "1c4932e24168d484c0f4f527e9bf9fb353f59367",
+    "released_claim": "e348de7233de3896dfdcdfb1cb03b627979a944f"
   }
 }
