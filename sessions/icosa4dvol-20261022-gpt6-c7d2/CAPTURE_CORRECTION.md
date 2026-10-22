@@ -1,0 +1,3 @@
+# Capture correction — historical invalid attempt
+
+The original `nonlinear-002` capture omitted the `source_path` key for its schema-2 input. GitHub Actions run 39857539810 correctly FAILED `scripts/validate.py`. The attempted run files were withdrawn from the PR branch tree without modifying them; all original writes remain in Git history. `nonlinear-003` re-captures identical input/output bytes, adds `source_location=repository` and `source_path=experiments/icosahedral-4d-volume-20261022/nonlinear_audit.py`, and changes no scientific calculations. Next CI result must be evaluated separately. The historical first-attempt failure is not independent mathematical refutation.
