@@ -1,0 +1,18 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "integration-icosahedral-multiport-20261022",
+  "session": "icosahedral-multiport-20261022-a1",
+  "created_at": "2026-10-22T19:27:11.815Z",
+  "base_revision": "07358779cd0971dfade95b54688072f38001e342",
+  "owned_paths": [
+    "experiments/icosahedral-multiport",
+    "candidates/icosahedral-multiport",
+    "sessions/icosahedral-multiport-20261022-a1",
+    "artifacts/icosahedral-multiport-20261022-a1",
+    "tasks/integration-icosahedral-multiport-20261022.json",
+    "state/CURRENT.md"
+  ]
+}
