@@ -83,10 +83,17 @@
       "name": "new locality-001 repository validator and unit tests",
       "result": "NOT_RUN",
       "reason": "connector-only GitHub checkout; CI not yet confirmed after appended commits"
+    },
+    {
+      "name": "PR39 CI integrity on captured locality-001 research head",
+      "result": "PASS",
+      "workflow_run_id": 39861990746,
+      "source_revision": "079498dd844694ddcd759831f6307cd6f33d88c6",
+      "detail": "91 records validated; 16 unit tests passed; repository integrity only"
     }
   ],
   "finding": "EXACT/CONDITIONAL 3D local pairwise 24-node countermodel exactly matches 4D linear uniform K/M and volume transfer; full 72D rigidity rank66. NUMERICAL nonuniform/nonlinear differences. FAILED unique fourth-dimension identification.",
-  "next_action": "Freeze 3D/4D component budget and independent nonuniform spectral/force readouts; scientific review and CI for PR39 prior to integration.",
+  "next_action": "Freeze force-port and component budget, compare single-site 3D inner-shell actuation to 4D apex, include extra modes and nonuniform shell readouts; independent scientific/physical review remains OPEN.",
   "mathematical_profile": {
     "coefficient_domain": "Q(sqrt(5)), real algebraic radicals, positive parameters",
     "exactness_or_precision_plan": "SymPy algebra; SVD rank tolerance 1e-10; ODE DOP853 rtol1e-11 atol1e-13",
