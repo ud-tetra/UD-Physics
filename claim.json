@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "k5-four-cell-20261022",
+  "session": "k5-four-cell-20261022-a1",
+  "created_at": "2026-10-22T17:14:09.127Z",
+  "base_revision": "bbce8407a64ad081b2efa576584d54d23c81abb8",
+  "owned_paths": [
+    "experiments/k5-four-cell",
+    "candidates/k5-four-cell",
+    "sessions/k5-four-cell-20261022-a1",
+    "artifacts/k5-four-cell-20261022-a1",
+    "tasks/k5-four-cell-20261022.json"
+  ]
+}
