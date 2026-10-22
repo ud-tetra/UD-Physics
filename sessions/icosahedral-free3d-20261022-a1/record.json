@@ -1,0 +1,57 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "icosahedral-free3d-20261022-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector write",
+  "task": "integration-icosahedral-free3d-20261022",
+  "goal": "Remove radial guides and test full3D equilibrium and breathing stability,rigid motions and imperfection sensitivity",
+  "created_at": "2026-10-22T18:50:26.841426+00:00",
+  "base_revision": "fbf35ff97a148b42dc57322c71bd905aec2adff5",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-icosahedral-free3d-20261022": {
+      "ref": "refs/heads/claims/integration-icosahedral-free3d-20261022",
+      "sha": "c99009f59ea2040a7d051588279f2b176e30325a",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-free3d/analyze.py --out /workspace/scratch/ed44232d6ecb/free3d_outputs",
+      "result": "PASS exactrank,nonlinear/variational andrefinement checks"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-free3d/certificate.py --out /workspace/scratch/ed44232d6ecb/free3d_outputs",
+      "result": "PASS exactLDL/reconstruction/rigidGrams andfinite-amplitude force Hessianchecks"
+    },
+    {
+      "command": "python3 experiments/icosahedral-free3d/draw.py --summary free3d_outputs/summary.json --out free3d_outputs/free3d-summary.png",
+      "result": "executed;figure visuallyinspected"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS:59 records,manifestdigests anddocumentation links"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS:16repositorytooling tests"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL: free hub+12 shell points+internal scalar gives40 coordinates,rank34/six rigid modes;equilibrium is locally orbitally stable for positive properties. Symmetric breathing survives without guides. Exact LDL all-phase nonrigid stiffness>=1/10 for A0<=1/10 at default parameters. NUMERICAL: transverse gain1.267 at u400;16 seeded property probes retain mean-volume RMS>=99.61% (\u00b11%) and97.83% (\u00b15%) overu0..100;cell-volume repartition differs from shell deformation.",
+  "next_action": "Derive a robust amplitude/damping operating envelope using realizable passive spoke/edge losses,quantifying their cost to common breathing and suppression of shape/hub-relative motion.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q(sqrt5) exact geometry/rank/LDL;real dynamics;float64integration",
+    "methods": [
+      "rigidity",
+      "Euclidean symmetry",
+      "positive energy",
+      "prestress Hessian",
+      "normal variationaldynamics",
+      "volume/shape readouts"
+    ],
+    "clock": "continuous dimensionless u;no singleperiod Floquet claim",
+    "metric": "positive M;reference normalenergy-amplitude norm;rigidmotionsprojected",
+    "physical_mapping": "assumed passive pointmechanics,material/t0/E_*native selectionOPEN"
+  }
+}

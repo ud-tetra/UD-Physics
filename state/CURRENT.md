@@ -1,6 +1,6 @@
 # Current integrated state
 
-Updated: 2026-10-22. Milestone: local icosahedral coupling and passive volume candidate v1.0.
+Updated: 2026-10-22. Milestone: free3D icosahedral stability and imperfection analysis v1.0.
 
 - Canonical Discovery instructions are v1.2; bootloader v1.1 loads the mathematical protocol before consequential work.
 - [UD mathematical analysis protocol](../docs/UD_MATHEMATICAL_METHOD_v1.0.md) and [calculation receipt template](../templates/mathematical_receipt.json) cover exact arithmetic, factorization, modular clocks, typed provenance and applicable UD structural methods.
@@ -29,7 +29,10 @@ Updated: 2026-10-22. Milestone: local icosahedral coupling and passive volume ca
 - Full/boundary/relative chain dimensions125/62/63. Under H=I incidence evolution, the centre seed has only static/sqrt13 vertex/spoke motion; a separate frequency1 oriented-cell/exterior-surface oscillator is invariant and orthogonal. No heart-to-cell transfer or geometric breathing follows automatically.
 - [Icosahedral coupling](../experiments/icosahedral-coupling/README.md): exact inversion-even centre to odd oriented-cell/surface obstruction, plus general pure differential/adjoint obstruction. Added simplex-local W transfers declared chain energy with proper rotations and an orientation parameter;original boundaries/obstructions preserved.
 - Separate passive scalar-strain model retains all120 spatial symmetries,includes ordinary spatial edge springs and central reaction forces,and gives exact geometric volumes. Illustrative g=1,k=2/5 has collective squared frequencies8±sqrt37;full nonlinear simulation matches the analytic uniform manifold. Physical/native/material selection remains OPEN.
-- Next coupling discriminant: implement the passive preferred-radius element and relax ideal radial guides,test angular/shear stability and volume coherence under imperfections.
+- [Free3D icosahedral mechanics](../experiments/icosahedral-free3d/README.md): centre and12 shell points are free,with one internal scalar:40coordinates/80phase variables. Exact rigidityrank34 gives sixrigid motions andlocal orbital equilibrium stability. Symmetric breathing survives withoutguides.
+- Exact LDL certificate: symmetric |A0|<=1/10/defaultproperties have instantaneous nonrigid stiffness>=1/10. This doesnot establish all-time parametricstability. Finite normalgain1.267 at u400;16seeded propertyprobes retain meanvolume RMS>=99.61% (±1%) and97.83% (±5%) overu0..100.
+- Hub-relative cell-volume mismatch andboundary shape are distinct: movinghub repartitions volumes withoutchangingtotal. Bothreadouts andproper rigid/scale-fit shapeerrors are preserved.
+- Next free3D discriminant: derive an amplitude/damping operating envelope using realizable passive spoke/edge losses;quantify common-breathing cost andshape/hub-relative suppression. Internal preferred-radius realization andnative/material selection remainOPEN.
 - Separate open question: whether the parent/relative chain duality survives a useful gluing/readout law.
 
 Update this file at integrated milestones under an integration claim. Live claim metadata, not this summary, determines current ownership.
