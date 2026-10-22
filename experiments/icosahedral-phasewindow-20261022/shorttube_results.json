@@ -1,0 +1,58 @@
+{
+  "additional_initial_housing_energy_max": "51/20000000",
+  "all_cell_orientation_preserved": true,
+  "all_housing_struts_length_gt_at_horizon": "13/1500",
+  "all_oriented_cell_volume_ratio_between": [
+    "1/125",
+    "729/125"
+  ],
+  "all_phase_uniform_horizon": "2/5",
+  "all_time_members_before_domain_exit": {
+    "absolute_edge_strain_lt": "3/5",
+    "absolute_spoke_strain_lt": "2/5"
+  },
+  "clock": "continuous nondimensional u=t/t0; physical t0 uncalibrated",
+  "comparison": "Earlier exact all-phase original pulse tube only through u=1/20 (same law, smaller E_h); new horizon is 8x. New extension does not use a Green matrix or restrict rigid momentum.",
+  "damping_acceleration_upper": "94/45",
+  "energy_upper": "1360051/20000000",
+  "failure_preserved": "Original alpha=0.1 total-energy sublevel contains strut endpoint collapse witness of energy below nominal pulse; not a dynamically reached state.",
+  "geometry": "Euclidean 3D 13 primary points and 30 housings, unit outer edges; no Lorentzian map",
+  "initial_phase": "Reference primary/device configurations and velocities, alpha=1/10 and arbitrary 180 initial housing position/velocity phase at Eh<=3Ep_ref/80000",
+  "mechanics": "Unchanged MountLoss model, 280 position/560 phase, 120 current-axis reciprocal loss struts, positive kinetic/elastic energies, nonnegative viscous power",
+  "not_proved": [
+    "all-time alpha=0.1 safety",
+    "u=100 nonlinear breathing >=80%",
+    "all-phase housing half-energy at u=100",
+    "actual material / clock identification",
+    "continuous full-parameter-box dynamical coherence"
+  ],
+  "ode_solution_exists_through_horizon": true,
+  "owning_phase_branch_parent": "0391afb4617db89690a5eaee9b5fc6c0ae3c9b70",
+  "parameter_box": "alpha0=1/10, beta in[1/200,1/20], w in[9/10,11/10], nu in[0,1/20], Omega=10, primary masses/g in[19/20,21/20], shell k in[19/50,21/50], cf>=0; reciprocal gains positive as parent",
+  "proof_scope": "All admitted housing initial phases and continuous qualified parameter box with nu<=1/20, including cf=0. Strict bounds for every u in[0,2/5]. Normalized lengths and volumes.",
+  "question": "Do all 180 allowed initial housing phases retain strut lengths and oriented volumes to u=2/5 with original alpha0=1/10?",
+  "source_main_revision": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+  "speed_bounds": {
+    "housing_initial_midpoint_offset_lt": "1/180",
+    "housing_initial_speed_lt": "3/50",
+    "housing_point_speed_lt": "9",
+    "primary_point_speed_lt": "2/5"
+  },
+  "status": "EXACT_CONDITIONAL_ORIGINAL_AMPLITUDE_SHORT_TUBE",
+  "strut_length_lower_at_u": {
+    "0": "89/180",
+    "1/10": "647/1500",
+    "2/5": "13/1500",
+    "39/100": "257/9000"
+  },
+  "target_exposure": "Original 0.1 amplitude and original E_h target known; horizon 2/5 selected after using these sufficient formulas (FIT/development horizon). No empirical data or validation set.",
+  "techniques": [
+    "exact rational inequalities",
+    "Duhamel oscillator solution and sine majorant",
+    "passivity/positive storage",
+    "3D Euclidean triangle inequality",
+    "Gram singular-value perturbation",
+    "ODE bootstrap continuation"
+  ],
+  "verification": "Python Fraction assertions and independent symbolic algebra; constructor checks only, no interval ODE or empirical experiment"
+}
