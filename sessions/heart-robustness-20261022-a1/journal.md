@@ -27,3 +27,7 @@ Captured artifacts/heart-robustness-20261022-a1/scan-001 (NUMERICAL): Exact mism
 Validation: exact and declared numerical checks PASS;43-record/manifest/link validation PASS;all16 repository tooling tests PASS. Figure visually inspected. No independent replication. Outer-K4 difference damping is a proposed implementation of the recorded next passive-damping step, not completed work.
 
 Publication integrity check: Git text normalization would change the captured CSV line endings in a normal index update. Preserved immutable run bytes with a session-scoped no-normalization rule; the original file/manifest are unchanged. Revalidated before integration.
+
+## Integrated closure
+
+PR19 merged at 7629c0a3b7abe1ae755a55b5a08c5679e4386be8. PR integrity run39828102419 completed/success for the final research head including captured-byte preservation. Exact-SHA protocol-v2 claim released at 90dda5239f4bec99d1b35e989e48203bddd729ff; live ref and payload reread and verified. This follow-up changes only this owning session record/journal. Next: passive outer-difference damping and a usable drive band.
