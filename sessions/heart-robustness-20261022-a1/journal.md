@@ -25,3 +25,5 @@ Next: Derive a passive damping requirement and usable drive-frequency band that 
 Captured artifacts/heart-robustness-20261022-a1/scan-001 (NUMERICAL): Exact mismatch/resonance identities plus finite-window positive-energy heart-shell imperfection scan
 
 Validation: exact and declared numerical checks PASS;43-record/manifest/link validation PASS;all16 repository tooling tests PASS. Figure visually inspected. No independent replication. Outer-K4 difference damping is a proposed implementation of the recorded next passive-damping step, not completed work.
+
+Publication integrity check: Git text normalization would change the captured CSV line endings in a normal index update. Preserved immutable run bytes with a session-scoped no-normalization rule; the original file/manifest are unchanged. Revalidated before integration.
