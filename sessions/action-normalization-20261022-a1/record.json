@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T22:40:23.194271+00:00",
   "base_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "action-normalization-audit-20261022": {
       "ref": "refs/heads/claims/action-normalization-audit-20261022",
       "sha": "601e55c7b8d87fbd5958dc1035b766f3348b85e5",
-      "status": "held"
+      "status": "released",
+      "released_sha": "59be7ff472e402d419cefa138609abd6646f410b"
     }
   },
   "checks": [
@@ -40,5 +41,18 @@
   "checkpoint_source": {
     "revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
     "dirty": true
+  },
+  "integration": {
+    "pr": 46,
+    "merge_sha": "72ead4cb12c8929700eb563dc082a991d1ff9183",
+    "exact_head_integrity": {
+      "id": 39867314049,
+      "head": "65a8b99481783d932de0fe5d0ce345905bb2ee16",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ud-tetra/UD-Physics/actions/runs/39867314049"
+    },
+    "tree_equality": "df839ea617478b244ae937af2b2a9c095b7274e4",
+    "verification": "All17new blobs matched local index;preparedtree equals GitHub tree;release ref/payload verified by exact-SHA CAS."
   }
 }

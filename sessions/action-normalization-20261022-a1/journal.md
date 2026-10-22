@@ -39,3 +39,7 @@ Checkpoint (handoff): Source O14/O15 recovered;O13 error and proposal verified;e
 Next: Specify primitive quantum-holonomy operator,path lift,typed physical phase map andindependent same-carrier action anchors;then test xi_act normalization andQPB1.
 
 Diff check exception: two Markdown hard-break trailing spaces in the original v0.39 source input are retained to preserve its exact bytes/hash. Scoped check of all other paths passes.
+
+## Integrated closure
+
+PR46 merged at72ead4cb12c8929700eb563dc082a991d1ff9183;exacthead integrity run39867314049 completed/success at65a8b99481783d932de0fe5d0ce345905bb2ee16. Claim released through exact-held-SHA childmarker59be7ff472e402d419cefa138609abd6646f410b;live ref andowner/status/released_from payload verified. All scientific source/run bytes unchanged. No sharedCURRENT or mainline UD edits. Nextscientific discriminant remains primitiveholonomy operator/lift,typedphase bridge andindependent samecarrier action anchor.
