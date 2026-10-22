@@ -1,0 +1,72 @@
+{
+  "status": "EXACT_CONDITIONAL_QPB1_CARRIER_ANCHOR_AUDIT_PASS",
+  "original_carrier_real_dimension": 15,
+  "active_real_dimension": 14,
+  "active_complex_dimension": 7,
+  "free_active_complex_flow": "U=exp(-i*2t/tau0)*I7 with i=-J",
+  "projective_readout_no_go": "rho(t)=rho(0) for scalar unitary phase; all fixed Born readouts independent of rate and eta",
+  "native_observable_witness": {
+    "edge_coordinate_squared_at_x": "1",
+    "at_Jx": "0",
+    "same_complex_projective_ray": true,
+    "J_averaged_readout_at_both": "1/2"
+  },
+  "exact_density_invariance_cases": 32,
+  "full_real_carrier_complex_structure": "Impossible on15real dimensions:det(K)^2=det(-I15)=-1",
+  "minimal_reference_extension": {
+    "real_dimension": 16,
+    "complex_dimension": 8,
+    "K_squared_minus_identity": true,
+    "commutes_with_extended_native_flow": true,
+    "phase_interference_cases": [
+      {
+        "cos_phase": "1",
+        "sin_phase": "0",
+        "p_plus": "1"
+      },
+      {
+        "cos_phase": "0",
+        "sin_phase": "1",
+        "p_plus": "1/2"
+      },
+      {
+        "cos_phase": "-1",
+        "sin_phase": "0",
+        "p_plus": "0"
+      },
+      {
+        "cos_phase": "0",
+        "sin_phase": "-1",
+        "p_plus": "1/2"
+      },
+      {
+        "cos_phase": "4/5",
+        "sin_phase": "3/5",
+        "p_plus": "9/10"
+      },
+      {
+        "cos_phase": "3/5",
+        "sin_phase": "4/5",
+        "p_plus": "4/5"
+      },
+      {
+        "cos_phase": "-3/5",
+        "sin_phase": "4/5",
+        "p_plus": "1/5"
+      },
+      {
+        "cos_phase": "-4/5",
+        "sin_phase": "3/5",
+        "p_plus": "1/10"
+      }
+    ],
+    "scope": "Added real coordinate and reference/coherent-readout assumptions;not a physical implementation or strict original-carrier closure"
+  },
+  "classical_null": "m,L,omega oscillator family preserves one native active plane and pulled-back loop action;A0=m*omega*L^2=2E/omega,B0=2m,tau0=2/omega",
+  "amplitude_ambiguity": "L->cL leaves normalized native trajectory unchanged butA0->c^2A0;unit-ray normalization alone does not fixphysical action",
+  "intake_cases": 14,
+  "real_template_status": "BLOCKED",
+  "empirical_score": "UNSCORED",
+  "next_discriminant": "Source a target-independent physical unit-preparation/amplitude map and action readout with calibration provenance;choose J-invariant observables or specify a physical relative-phase reference.",
+  "scope": "Single filled tetrahedron,unit metric anddeclared projective Born readout;doesnot obstruct other metric/generator/readout/extension branches."
+}

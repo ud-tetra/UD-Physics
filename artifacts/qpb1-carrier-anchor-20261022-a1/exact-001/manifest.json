@@ -1,0 +1,160 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-carrier-anchor-20261022-a1",
+  "run_id": "exact-001",
+  "created_at": "2026-10-22T22:59:35.789912+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "Exact projective-readout/parity obstructions, explicit reference extension and conditional classical action-anchor estimator;32density+8interference+3oscillator+14intake checks; no empirical scoring.",
+  "command": "python3 experiments/qpb1-carrier-anchor/audit.py --out /workspace/scratch/ed44232d6ecb/qpb1_outputs",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "5ca396d67579bfb741ea8f784045353ec144f615",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "ANCHOR_TEST.md",
+      "path": "inputs/001-ANCHOR_TEST.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-carrier-anchor/ANCHOR_TEST.md",
+      "sha256": "be6b8a37f2629a3b24143e5ef70061f92e947e2772565d71a825fdd95290b0ff",
+      "size_bytes": 4723
+    },
+    {
+      "input_id": "input-002",
+      "name": "ENTRY_CONTRACT_SOURCE.json",
+      "path": "inputs/002-ENTRY_CONTRACT_SOURCE.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-carrier-anchor/ENTRY_CONTRACT_SOURCE.json",
+      "sha256": "3bdcd44203e8c7c439e4089e3084a9a1b2b01caba48ced3b8fe2c3a13afb758e",
+      "size_bytes": 1488
+    },
+    {
+      "input_id": "input-003",
+      "name": "EXTERNAL_SOURCES.json",
+      "path": "inputs/003-EXTERNAL_SOURCES.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-carrier-anchor/EXTERNAL_SOURCES.json",
+      "sha256": "8b3591773995fe3d42234be28662094619b4952aa84e24592d48945b0be145a0",
+      "size_bytes": 1373
+    },
+    {
+      "input_id": "input-004",
+      "name": "MEASUREMENT_TEMPLATE.json",
+      "path": "inputs/004-MEASUREMENT_TEMPLATE.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-carrier-anchor/MEASUREMENT_TEMPLATE.json",
+      "sha256": "519cb84c65c268ee56cfbbef900e2b1458d82e1dabd17d3b9d96ed0b60fa253a",
+      "size_bytes": 1019
+    },
+    {
+      "input_id": "input-005",
+      "name": "PROTOCOL.md",
+      "path": "inputs/005-PROTOCOL.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-carrier-anchor/PROTOCOL.md",
+      "sha256": "c01db2f9fa8a71401ac00eafeb7c4f055a718c4b0dafe16608f38af7643ed177",
+      "size_bytes": 2264
+    },
+    {
+      "input_id": "input-006",
+      "name": "README.md",
+      "path": "inputs/006-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-carrier-anchor/README.md",
+      "sha256": "f7860ce47f7e6d8fedea30e7a7eb6183740616e1ed259eee9da5ee67caee23b0",
+      "size_bytes": 11624
+    },
+    {
+      "input_id": "input-007",
+      "name": "SOURCES.json",
+      "path": "inputs/007-SOURCES.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-carrier-anchor/SOURCES.json",
+      "sha256": "58f60a782712464785050cafe05371b5a8473886211cf4c7161e2507ac878c3e",
+      "size_bytes": 2090
+    },
+    {
+      "input_id": "input-008",
+      "name": "audit.py",
+      "path": "inputs/008-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-carrier-anchor/audit.py",
+      "sha256": "df46b79b531352ea88caf7a4c1b58f7a402ca9a04c3ea2029fb02d54a255969b",
+      "size_bytes": 9017
+    },
+    {
+      "input_id": "input-009",
+      "name": "intake.py",
+      "path": "inputs/009-intake.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-carrier-anchor/intake.py",
+      "sha256": "7c2f3cfe2d44a6f6c0cf4965c7c50f951785743e9aa61d71816ab8eb7ac6f01d",
+      "size_bytes": 5145
+    },
+    {
+      "input_id": "input-010",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/010-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/qpb1-carrier-anchor-20261022-a1/mathematical_receipt.json",
+      "sha256": "082eecc240eff79486aa9823c74d3e0a4393f4e4580f5bdfaf3905f70d8e9a22",
+      "size_bytes": 18737
+    },
+    {
+      "input_id": "input-011",
+      "name": "audit.py",
+      "path": "inputs/011-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/audit.py",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b",
+      "size_bytes": 9543
+    },
+    {
+      "input_id": "input-012",
+      "name": "README.md",
+      "path": "inputs/012-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/README.md",
+      "sha256": "a048fb2cb49bffe5b66313bd8ee6be6059553c2c4aeefc663e7f31213dd812b3",
+      "size_bytes": 9525
+    },
+    {
+      "input_id": "input-013",
+      "name": "C0906.txt",
+      "path": "inputs/013-C0906.txt",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "sha256": "4e5cdc41c1fd93f69b8d80aeb557f5cfdf8b3b335b320ef4b2028bc1b08c6739",
+      "size_bytes": 4381
+    },
+    {
+      "input_id": "input-014",
+      "name": "ledger_v0.85.json",
+      "path": "inputs/014-ledger_v0.85.json",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    }
+  ],
+  "files": [
+    {
+      "path": "files/carrier_anchor_results.json",
+      "sha256": "5f828317f67e329b50a5d913a54debe8de9cd9aaef31e8fb48907f0aab1f1e62",
+      "size_bytes": 2577
+    },
+    {
+      "path": "files/classical_oscillator_maps.json",
+      "sha256": "8374ab9e822372ae60f13f388370813443605d43c81f8bf41edaacd64bc136e7",
+      "size_bytes": 759
+    },
+    {
+      "path": "files/synthetic_intake_fixtures.json",
+      "sha256": "40949d1c162b202362756ea2969ee0094dd711fcf358dc3cdd41628c68b91000",
+      "size_bytes": 6315
+    }
+  ]
+}

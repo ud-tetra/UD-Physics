@@ -1,0 +1,44 @@
+{
+  "source_base": "5ca396d67579bfb741ea8f784045353ec144f615",
+  "sources": [
+    {
+      "path": "experiments/action-normalization-audit/audit.py",
+      "repository": "ud-tetra/UD-Physics",
+      "commit": "5ca396d67579bfb741ea8f784045353ec144f615",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b",
+      "git_blob": "61efd48af5fa63868b1853ace22371bda52a79f8"
+    },
+    {
+      "path": "experiments/action-normalization-audit/README.md",
+      "repository": "ud-tetra/UD-Physics",
+      "commit": "5ca396d67579bfb741ea8f784045353ec144f615",
+      "sha256": "a048fb2cb49bffe5b66313bd8ee6be6059553c2c4aeefc663e7f31213dd812b3",
+      "git_blob": "ac98233a9da239615f8e25686d3da6746b1083c7"
+    },
+    {
+      "path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "repository": "ud-tetra/UD-Physics",
+      "commit": "5ca396d67579bfb741ea8f784045353ec144f615",
+      "sha256": "4e5cdc41c1fd93f69b8d80aeb557f5cfdf8b3b335b320ef4b2028bc1b08c6739",
+      "git_blob": "b64a952cfb7ea8eab8e24f442c8600b30258b58f"
+    },
+    {
+      "path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "repository": "ud-tetra/UD-Physics",
+      "commit": "5ca396d67579bfb741ea8f784045353ec144f615",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "git_blob": "93e2ca31eba625989087275a71c4857848e321c6"
+    },
+    {
+      "path": "ENTRY_CONTRACT_SOURCE.json",
+      "repository": "ud-tetra/UD",
+      "commit": "957d443e25008632ab9d9328c162343b6a651ee7",
+      "upstream_path": "captures/2026-10-21T160300Z-codex-action-identifiability-32b8a1d4/EXPERIMENTAL_ENTRY_CONTRACT.json",
+      "sha256": "3bdcd44203e8c7c439e4089e3084a9a1b2b01caba48ced3b8fe2c3a13afb758e",
+      "git_blob": "6c9e1226be2c9685a9db6309a7b6a38b2c329d02",
+      "status": "proposed entry contract; not preregistered or satisfied"
+    }
+  ],
+  "external_source_metadata": "EXTERNAL_SOURCES.json",
+  "source_boundary": "Prior source ledger remains unchanged; no mainline registration, promotion or entry-rule amendment."
+}

@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb1-carrier-anchor-20261022",
+  "goal": "QPB1 projective-observable obstructions, explicit reference extension and target-independent classical action-anchor protocol",
+  "owned_paths": [
+    "tasks/qpb1-carrier-anchor-20261022.json",
+    "sessions/qpb1-carrier-anchor-20261022-a1/",
+    "experiments/qpb1-carrier-anchor/",
+    "candidates/qpb1-carrier-anchor/",
+    "artifacts/qpb1-carrier-anchor-20261022-a1/"
+  ],
+  "dependencies": [
+    "action-normalization-audit-20261022"
+  ],
+  "status": "complete",
+  "completion_scope": "Scoped mathematical audit and prospective protocol complete; physical correspondence and calibration remain OPEN."
+}
