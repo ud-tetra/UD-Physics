@@ -12,7 +12,7 @@
   "claims": {
     "integration-handoff-20261022": {
       "ref": "refs/heads/claims/integration-handoff-20261022",
-      "sha": "0fd7767ae60e8efa903de9c4abf7f7188dcdfbe2",
+      "sha": "f5d64563fd04d9a01fef97f2fe6e40a5e7178715",
       "status": "held"
     }
   },
@@ -24,5 +24,13 @@
     "Git/compute",
     "isolated worktree"
   ],
-  "working_branch": "discovery/integration-handoff-20261022/integrator-a1"
+  "working_branch": "discovery/integration-handoff-20261022/integrator-a1",
+  "claim_amendments": [
+    {
+      "previous_sha": "0fd7767ae60e8efa903de9c4abf7f7188dcdfbe2",
+      "current_sha": "f5d64563fd04d9a01fef97f2fe6e40a5e7178715",
+      "added_path": "templates",
+      "reason": "Reviewed input-provenance schema update also requires the manual template."
+    }
+  ]
 }

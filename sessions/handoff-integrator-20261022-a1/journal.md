@@ -29,3 +29,7 @@ Captured artifacts/handoff-integrator-20261022-a1/input-provenance-fix-v1 (NUMER
 ## 2026-10-22T16:23:21.102777+00:00
 
 Reviewer found v1 validator accepted malformed run.inputs and duplicate basenames lost source mapping. Amendment: run schema v2 captures explicit input copies, IDs and repository-relative provenance; validator checks metadata and input bytes. Legacy v1 remains supported with its missing-input-byte limitation. Fourteen tooling tests passed. Original baseline audit remains preserved in reviewer records; writer frozen v1 will be reproduced before integration.
+
+## 2026-10-22T16:24:00.530646+00:00
+
+Scope correction: the unintegrated input-provenance patch included templates/run_manifest.json beyond the initial owned-path list. Expanded the coordinator task and same-owner claim with an exact-SHA update before integration. No writer/reviewer paths were touched. This is recorded rather than retroactively treating the initial scope as broader.
