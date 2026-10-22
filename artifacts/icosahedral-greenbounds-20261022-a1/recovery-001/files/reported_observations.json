@@ -1,0 +1,161 @@
+{
+  "preservation_status": "TRANSCRIBED_FROM_SUCCESSFUL_TOOL_OUTPUTS; not original raw JSON bytes",
+  "base_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+  "case": "seed10422-0-boundary2",
+  "nu": 0.05,
+  "beta": 0.05,
+  "cf": 0.001,
+  "T": 100,
+  "scope": "One exposed limiting realization; all560 mechanical states retained; no true nonlinear-ball/continuous-property certificate.",
+  "normal_backward": {
+    "reference_step": "1/20",
+    "reference": "full-state cubic Hermite",
+    "reference_nfev": 53405,
+    "rtol": 2e-7,
+    "atol": 2e-11,
+    "nfev": 14477,
+    "force_HS_gains": {
+      "alpha": 0.825900307024303,
+      "primary": 2.479292764207629,
+      "device": 0.049195894255866054,
+      "housing": 0.48318514867927437
+    },
+    "combined": 2.657986465674908
+  },
+  "fine_backward": {
+    "reference_step": "1/40",
+    "reference": "positional cubic Hermite,velocity=q_prime",
+    "reference_nfev": 58061,
+    "rtol": 2e-8,
+    "atol": 2e-12,
+    "nfev": 17603,
+    "force_HS_gains": {
+      "alpha": 0.825900307344244,
+      "primary": 2.4792927651640224,
+      "device": 0.04919589429694164,
+      "housing": 0.48318514913514976
+    },
+    "combined": 2.65798646675005
+  },
+  "forward": {
+    "reference": "same normal full-state cubic Hermite",
+    "rtol": 2e-9,
+    "atol": 2e-11,
+    "nfev": 28397,
+    "housing_energy": 0.0000016202078370173778,
+    "minimum_first_order_RMS": 0.02130782805097025,
+    "minimum_first_order_retention": 0.8722064708925311,
+    "sampled_radii": {
+      "raw": 0.03500971980144741,
+      "centered": 0.03149571183936842,
+      "shape": 0.00024007742775530185
+    },
+    "scope": "ODE-integrated Gram/cross/Rp2;1001-point radius samples, not continuous bounds."
+  },
+  "comparisons": {
+    "same_reference_Gram_spectral_norm": 0.00411511731456545,
+    "difference_max_entry": 3.354253077549052e-10,
+    "difference_spectral_norm": 1.09748630005345e-8,
+    "relative_spectral_difference": 0.0000026669623637919127,
+    "fine_normal_housing_Gram_relative": 0.000002416131464105527,
+    "max_group_gain_relative": 9.434797278157311e-10
+  },
+  "exact_original_geometry_checks": {
+    "normal_nodes": 2001,
+    "fine_nodes": 4001,
+    "status": "PASS observed before outage; original source/raw JSON not captured",
+    "continuous_reference_singular_bounds": {
+      "minimum": ">37/20",
+      "maximum": "<39/20"
+    },
+    "radius": "4/125",
+    "polar_difference_bound": "624/33913",
+    "chart_remainder": "<=132102048/(143761446125*sqrt2)<13/20000",
+    "projected_flow_target": "<=7/20000",
+    "combined_target": "<1/1000",
+    "conditions_still_open": [
+      "True centered primary error<=4/125",
+      "Projected nonlinear/reference/derivative-flow remainder<=7/20000",
+      "Validated full-state/block Green,domains and readout errors"
+    ]
+  },
+  "smooth_forcing_checks": {
+    "rtol": 5e-10,
+    "atol": 2e-13,
+    "nfev": 18170,
+    "elapsed_seconds": 77.15597452699876,
+    "status": "4 numerical consistency cases PASS",
+    "cases": [
+      {
+        "source": "alpha",
+        "observed_RMS": 0.158029646390235,
+        "HS_expression": 3.5762532376873772,
+        "input_L2": 4.3301270212468355
+      },
+      {
+        "source": "primary",
+        "observed_RMS": 0.03706913629489193,
+        "HS_expression": 10.735652591833441,
+        "input_L2": 4.330127019558823
+      },
+      {
+        "source": "device",
+        "observed_RMS": 0.00004617281198828123,
+        "HS_expression": 0.2130244711153739,
+        "input_L2": 4.330127018925174
+      },
+      {
+        "source": "housing",
+        "observed_RMS": 0.0021251790632544486,
+        "HS_expression": 2.0922530694295642,
+        "input_L2": 4.330127018958417
+      }
+    ]
+  },
+  "cubic_defect": {
+    "method": "Composite Gauss on4000 intervals, mass-normalized acceleration-defect L2",
+    "order3": {
+      "norms": {
+        "alpha": 0.0028827977877010527,
+        "primary": 0.0008764714234451601,
+        "device": 0.00003457481155808046,
+        "housing": 0.0009851618198521098
+      },
+      "scalar_HS_expression": 0.00503164933751645
+    },
+    "order5": {
+      "norms": {
+        "alpha": 0.0028828877526292317,
+        "primary": 0.000876507331372369,
+        "device": 0.00003457906095083289,
+        "housing": 0.0009853829603687862
+      },
+      "scalar_HS_expression": 0.00503191972670863
+    },
+    "sufficient_numerical_budget": "FAILS approximate remaining breathing margin~.001764; not actual defect response, validated bound or dynamical counterexample."
+  },
+  "interrupted_attempt": {
+    "status": "INTERRUPTED_WITHOUT_RESULT",
+    "description": "Five forced columns including tiny nonsmooth reference-defect source",
+    "cpu_seconds": 350.67,
+    "exit_code": 130,
+    "reason": "Costly knot resolution; replaced extra defect-flow diagnostic with composite L2 quadrature."
+  },
+  "quintic_diagnostic": {
+    "status": "COMPLETED_NUMERICAL_DEFECT_NORM_ONLY",
+    "reference": "C2 quintic matching original q,v,a at step1/40;velocity=q_prime",
+    "cubic_to_quintic_group_L2_reduction": {
+      "alpha": 12843.217848759869,
+      "primary": 6732.375311216064,
+      "device": 2662.18126206753,
+      "housing": 1763.8030877792874
+    },
+    "limit": "Only reduction factors were recovered from visible output. Raw quintic norm JSON, new Gramian and exact continuous geometry are not captured/computed. Cubic gains must not be transferred."
+  },
+  "checks": {
+    "pre_capture_tooling_tests": "PASS16; successful local unittest output observed before outage",
+    "new_tree_local_validator": "NOT_RUN: compute environment unavailable",
+    "reconstructed_geometry_script": "NOT_RUN after reconstruction"
+  },
+  "physical_status": "Hardware UNSCORED; native law/clock and physical map OPEN; mainline promotion0"
+}

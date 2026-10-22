@@ -1,0 +1,266 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosahedral-greenbounds-recovery-v1",
+  "session_id": "icosahedral-greenbounds-20261022-a1",
+  "candidate_id": "icosahedral-greenbounds",
+  "question": "Bound proper-alignment error and forced response while retaining full mechanics; distinguish exact reference geometry from actual-flow enclosure.",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "mechanical-flow",
+      "symbol": "f",
+      "object_type": "vector field",
+      "definition": "Unchanged passive MountLoss,280generalized coordinates and560mechanical states",
+      "domain": "positive member-length domain in R560",
+      "codomain": "R560",
+      "coefficient_domain": "R; reference geometry imported from Q(sqrt5)",
+      "units": "internal u,ell0,E_* uncalibrated",
+      "basis_orientation": "Original primary/device/housing coordinate order and cell signs",
+      "metric_measure": "Positive diagonal generalized mass M; all rigid velocities and reactions retained",
+      "origin": "imported",
+      "exact_expression": "q_prime=v,Mv_prime=-gradU(q)-D(q)v",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "Original initial housing E_h<=E_p/40000"
+    },
+    {
+      "object_id": "observability",
+      "symbol": "P",
+      "object_type": "output Gramian",
+      "definition": "integral_s^T U(t,s)^T l(t)^T l(t) U(t,s)dt",
+      "domain": "[0,100]",
+      "codomain": "Sym(560,R)",
+      "coefficient_domain": "R, evaluated float64",
+      "units": "output-squared*time/state-pair",
+      "basis_orientation": "Full original mechanical state",
+      "metric_measure": "Semidefinite output Gramian, not positive full-state norm",
+      "origin": "derived",
+      "exact_expression": "-P_prime=A^TP+PA+l^Tl,P(T)=0",
+      "measured_value": null,
+      "uncertainty": "Numerical, no validated integration enclosure",
+      "source_refs": [
+        "S1"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "mechanical-flow"
+      ],
+      "normalization": "Output scalar mean normalized cell-volume RMS du/100;input mass-normalized force L2 du"
+    },
+    {
+      "object_id": "alignment",
+      "symbol": "chi_A",
+      "object_type": "proper Procrustes readout",
+      "definition": "center(A+E)Q-A,Q=polar((A+E)^TA)",
+      "domain": "centered13x3 matrices with ar<s^2",
+      "codomain": "centered13x3 matrices",
+      "coefficient_domain": "R theorem; exact Q proof budgets and dyadic node inputs",
+      "units": "internal primary-position length",
+      "basis_orientation": "Row-coordinate convention,detQ=+1",
+      "metric_measure": "Frobenius Euclidean; arithmetic13-point centering, not mass metric",
+      "origin": "derived",
+      "exact_expression": "remainder<=132102048/(143761446125*sqrt2)<13/20000 for s37/20,a39/20,r4/125",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1"
+      ],
+      "assumption_ids": [
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [],
+      "normalization": "Readout only; no energy quotient"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/",
+      "version_or_commit": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "jacobian.py,variational.py,alignment.py,TUBE_THEOREM.md",
+      "source_status": "integrated assumed mechanical model, constructor numerical evidence and conditional criterion"
+    },
+    {
+      "source_id": "S2",
+      "url_or_repo_path": "artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/",
+      "version_or_commit": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "cases.json seed10422-0-boundary2 and matched baselines.json",
+      "source_status": "frozen exposed development data"
+    },
+    {
+      "source_id": "S3",
+      "url_or_repo_path": "docs/UD_MATHEMATICAL_METHOD_v1.0.md",
+      "version_or_commit": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "typed provenance,exact arithmetic,operator/projection/metric protocol",
+      "source_status": "runtime method, not a physical theorem"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Frozen mechanical law,limiting case,nu=.05,beta=.05,cf=.001,T100; pulse alpha=.1 and housing energy budget unchanged."
+    },
+    {
+      "id": "A2",
+      "statement": "Actual centered primary error<=4/125 and projected nonlinear/reference/derivative-flow error<=7/20000 remain OPEN."
+    },
+    {
+      "id": "A3",
+      "statement": "Exact dyadic node data define rational-step Hermite reference curves; their ODE proximity is not certified."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/rational",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "560=2*(1+13*3+150+30*3); force groups1+39+150+90;exact fractions for proof budgets"
+    },
+    {
+      "technique": "spectral/operator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Full observability/forward duality;singular-value,polar and Gram bounds"
+    },
+    {
+      "technique": "geometry/projection",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Invariant readout alignment, exact dyadic Gershgorin/Bernstein reference geometry"
+    },
+    {
+      "technique": "prime/modular/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No divisibility/register or new complex/topology question; internal continuous time"
+    },
+    {
+      "technique": "fit/sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Targets exposed;method/reference amendments disclosed,no mechanical retuning"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2*(1+13*3+150+30*3)=560;1+39+150+90=280",
+    "reduced_expression": "s37/20,a39/20,r4/125,q624/33913;R<=132102048/(143761446125*sqrt2)<13/20000;13/20000+7/20000=1/1000",
+    "factor_origins": [
+      "13primary points,150devices,30spatial housings;position+velocity copies",
+      "Rational radii selected as sufficient proof budgets after target exposure"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "N/A; no structural divisibility claim"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous internal u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "unchanged mechanical ODE",
+    "initial_phase": "alpha=.1 pulse plus180-coordinate housing energy ball",
+    "coupling": "reciprocal passive mechanics",
+    "period_claim": null,
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "560 mechanical states plus independent diagnostic heat",
+    "generator_or_update": "MountLoss and analytic full Df along specified reference",
+    "initial_boundary_conditions": "Original free spatial pulse/housing energy preparation,no fixed frame/ground quotient",
+    "conservation_and_sources": "P,L and energy/heat retained; arbitrary mathematical source checks may inject net force",
+    "projection_and_kernel": "Euclidean centered primary readout normal to rotations only; not a state-energy deletion",
+    "physical_mapping": "OPEN/UNSCORED"
+  },
+  "target_exposure": {
+    "status": "DEVELOPMENT_AFTER_EXPOSURE",
+    "known_targets": [
+      "80% breathing retention",
+      "prior adverse pulse and87.22076% first-order result",
+      "aligned remainder goal1/1000"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Rational proof envelopes and budget split",
+      "Kinematic cubic reference amendment",
+      "Quintic defect-only alternative after cubic budget failed"
+    ],
+    "search_domain_and_budget": "One fixed exposed realization;two backward Grams,one forward180-column solve,four smooth source checks,two defect quadratures;fifth flow attempt interrupted;quintic defect diagnostic",
+    "selection_criterion": "Resolve named conditional-certificate dependencies",
+    "baseline": "Frozen matched undamped/no-housing RMS"
+  },
+  "calculation_steps": [
+    "Derive proper-polar alignment inequality and3D sharpening.",
+    "Verify continuous dyadic reference geometry exactly on two grids before outage.",
+    "Compute scalar forced-response Grams and forward/backward consistency numerically.",
+    "Reject coarse cubic reference-defect HS error budget numerically; test quintic defect-norm reduction only.",
+    "Recover3original NPZ datasets byte-for-byte and transcribe selected visible results after compute outage."
+  ],
+  "result": {
+    "exact_expression": "Conditional chart remainder<13/20000;combined<1/1000 if actual radius<=4/125 and projected flow remainder<=7/20000",
+    "approximation": "Selected numerical observations in recovery capture; full raw output recovery pending",
+    "units": "internal uncalibrated length,time,energy;mean volume ratio dimensionless",
+    "precision_and_error": "Exact Fraction reference checks observed before outage;float64 response/quad, no validated numerical enclosures",
+    "scope": "One fixed exposed mechanical realization;actual nonlinear ball and parameter box OPEN;partial operational capture",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "Original constructor proof/exact fraction reference checks",
+      "command_or_proof_path": "Original certify_alignment.py normal/fine;executed source currently unavailable",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "PASS observed before outage;not byte-for-byte source-captured",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "Complementary numerical solves and four smooth source checks",
+      "command_or_proof_path": "Original numerical code currently unavailable;protocol reconstructed from successful outputs",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "COMPLETE numerical results;partial observations transcribed",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "Exact retained binary digest recovery",
+      "command_or_proof_path": "Orchestrator SHA256 on retained bytes;empty/abc vectors and known primary certificate hashes checked",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "PASS3NPZ hashes;two primary hashes match prior certificates",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "New recovery geometry checker",
+      "command_or_proof_path": "experiments/icosahedral-greenbounds/recheck_geometry.py",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "NOT_RUN: reconstruction after environment outage",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Normal full-state reference has a kinematic defect;acceleration-only channels do not cover it.",
+    "Cubic defect-HS expression~.005032 exceeds~.001764 breathing margin:failed sufficient numerical budget,not dynamical counterexample.",
+    "Extra fifth defect-flow solve interrupted without result after350.67CPU seconds.",
+    "Compute outage prevented original source/raw-output capture and local new-tree validator."
+  ],
+  "limitations": [
+    "Actual centered tube/projected nonlinear error/domain/validated Green remain OPEN",
+    "Scalar output Gramian is not a positive full-state or primary-position bound",
+    "Cubic gains/geometry cannot transfer to diagnostic quintic reference",
+    "Original source bytes/raw JSON/CSV/logs and complete local receipt were not recovered",
+    "New recheck script NOT_RUN; local new-tree validator NOT_RUN;draft PR required",
+    "No continuous parameter-box certificate,independent review,experiment,native selection or physical calibration"
+  ],
+  "changed_dependencies": [
+    "Fine velocity reference representation amended to q_prime",
+    "Quintic is diagnostic only,not adopted"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/icosahedral-greenbounds-20261022-a1/recovery-001/manifest.json"
+  ],
+  "next_discriminant": "Restore/reproduce source capture and exact checks;then establish the quintic curve's own continuous geometry and forced-response bounds before nonlinear block/error enclosure."
+}

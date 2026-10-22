@@ -1,0 +1,44 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "icosahedral-greenbounds-20261022-a1",
+  "run_id": "recovery-001",
+  "created_at": "2026-10-22T22:28:01.971Z",
+  "evidence": "CONDITIONAL",
+  "summary": "Recovery checkpoint:3original NPZ byte sequences plus explicitly transcribed observations. Original executed source/full raw-output capture blocked by unavailable compute runtime;not complete reproduction.",
+  "command": "Original compute commands recorded in numerical protocol; recovery capture assembled via GitHub connector after workspace outage. No scientific recomputation performed during capture.",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/reference_primary.npz",
+      "sha256": "5097809f89171f294eb8a15bb84d6a5b4f2b08dadf7e1e9bf0169f2dbcbb64b7",
+      "size_bytes": 1170814
+    },
+    {
+      "path": "files/reference_primary-fine.npz",
+      "sha256": "0fbd67f319bfd549fc2f6fbffac24b71962169f931a2f855d60c12316a01498d",
+      "size_bytes": 2337771
+    },
+    {
+      "path": "files/compact_operators.npz",
+      "sha256": "9b5e8ffdfd386771f3e493622fd3e11f4b3fff0a0b080cacf9948169a1d81a0c",
+      "size_bytes": 1481243
+    },
+    {
+      "path": "files/reported_observations.json",
+      "sha256": "89715c13f897ba7eb1b651b0488477fe901763ce9aba814927b14e70cd0c2ca4",
+      "size_bytes": 5781
+    },
+    {
+      "path": "files/RECOVERY.md",
+      "sha256": "be0cd17da4e652292b670f504dfafbc3202b5d45770018498b5a15b0f3d204ac",
+      "size_bytes": 1990
+    }
+  ],
+  "recovery_status": "PARTIAL; original executed input bytes not captured; exact datasets and selected reported observations only."
+}
