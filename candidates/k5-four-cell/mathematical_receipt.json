@@ -1,0 +1,210 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "k5-four-cell-exact-001",
+  "session_id": "k5-four-cell-20261022-a1",
+  "candidate_id": "k5-four-cell",
+  "question": "What does the K5 label specify about the user drawn four-cell complex and its closure?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "objects": [
+    {
+      "object_id": "K",
+      "symbol": "K",
+      "object_type": "simplicial complex",
+      "definition": "maximal simplices 0123,0124,0134,0234",
+      "domain": "finite abstract simplicial complex",
+      "codomain": null,
+      "coefficient_domain": "Z incidence, Q ranks, real dynamics",
+      "units": "dimensionless",
+      "basis_orientation": "ascending vertices; grade/lexicographic ordering",
+      "metric_measure": "H=I for dynamics only",
+      "origin": "assumed",
+      "exact_expression": "maximal simplices 0123,0124,0134,0234",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit chain coordinates"
+    },
+    {
+      "object_id": "closed",
+      "symbol": "closed",
+      "object_type": "simplicial complex",
+      "definition": "all five 4-subsets of {0,1,2,3,4}",
+      "domain": "finite abstract simplicial complex",
+      "codomain": null,
+      "coefficient_domain": "Z incidence, Q ranks, real dynamics",
+      "units": "dimensionless",
+      "basis_orientation": "ascending vertices; grade/lexicographic ordering",
+      "metric_measure": "H=I for dynamics only",
+      "origin": "assumed",
+      "exact_expression": "all five 4-subsets of {0,1,2,3,4}",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit chain coordinates"
+    },
+    {
+      "object_id": "A",
+      "symbol": "A",
+      "object_type": "linear operator",
+      "definition": "upper B_k and lower -B_k^T",
+      "domain": "real chain space of declared complex",
+      "codomain": "same real chain space",
+      "coefficient_domain": "Z incidence, Q ranks, real dynamics",
+      "units": "dimensionless",
+      "basis_orientation": "ascending vertices; grade/lexicographic ordering",
+      "metric_measure": "H=I for dynamics only",
+      "origin": "assumed",
+      "exact_expression": "upper B_k and lower -B_k^T",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit chain coordinates"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "source-0",
+      "url_or_repo_path": "experiments/four-cell-tetrahedron/README.md",
+      "version_or_commit": "bbce8407a64ad081b2efa576584d54d23c81abb8",
+      "section_or_object_id": "Definition and scope; Why the full dynamics is different",
+      "source_status": "previous conditional calculation"
+    },
+    {
+      "source_id": "source-1",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "bbce8407a64ad081b2efa576584d54d23c81abb8",
+      "section_or_object_id": "Q107,Q108",
+      "source_status": "historical geometry and conditional symmetry entries, no status transfer"
+    },
+    {
+      "source_id": "source-2",
+      "url_or_repo_path": "https://graphics.stanford.edu/courses/cs368-00-spring/TA/manuals/CGAL/ref-manual2/Triangulation3/Chapter_TDS3.html",
+      "version_or_commit": "hosted CGAL manual, retrieved 2026-10-22",
+      "section_or_object_id": "Degenerate Dimensions; Software Design",
+      "source_status": "primary mathematical/software reference"
+    }
+  ],
+  "assumptions": [
+    "Repeated image labels denote shared vertices; cells are 0123,0124,0134,0234.",
+    "Ascending simplex orientation; Z incidence with Q ranks.",
+    "For dynamical comparison only: real chains, H=I, upper B_k and lower -B_k^T skew blocks, dimensionless u.",
+    "No centroid positions, physical units or physical boundary law follow from the graph alone."
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/rational chains",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "counts, incidence ranks, Betti and oriented cycle checks"
+    },
+    {
+      "technique": "permutation/group",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "enumerate all120 vertex relabellings; isolate24 complex automorphisms"
+    },
+    {
+      "technique": "spectral",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "integer polynomial/rank certificate for chosen skew operator"
+    },
+    {
+      "technique": "factorization",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "5!=120 and4!=24 symmetry counts; factor origins are permutations"
+    },
+    {
+      "technique": "clock/modular",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite update register; continuous model period is not physical time"
+    },
+    {
+      "technique": "coarse-graining",
+      "applicability": "OPEN",
+      "purpose_or_na_reason": "identify boundary/readout law rather than infer dynamics from graph"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "C(5,2)=10 edges; 4*4=4+2*6 face incidences; 5!=120 graph permutations",
+    "reduced_expression": "29=5+10+10+4; 30=29+1; 31=30+1",
+    "factor_origins": [
+      "five vertices; all pair edges; four prescribed tetrahedra",
+      "one added tetrahedron closes boundary; one added4-simplex fills it"
+    ],
+    "factorization": "120=2^3*3*5;24=2^3*3",
+    "divisibility_gcd_lcm": "24 fixes the distinguished centre;120/24=5 possible marked vertices, not a physical scale"
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless continuous u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "dz/du=A z",
+    "initial_phase": "arbitrary",
+    "coupling": "signed face incidences, H=I",
+    "period_claim": "closed-boundary universal return2*pi/sqrt(5); four-cell has no universal nonzero return due1,sqrt5",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R^29 versus R^30 (and R^31 comparison)",
+    "generator_or_update": "skew incidence generator as defined",
+    "initial_boundary_conditions": "arbitrary real initial state; respective finite complex operator, no external forcing",
+    "conservation_and_sources": "Euclidean norm squared conserved; no physical energy identification",
+    "projection_and_kernel": "no dynamical quotient or coarse map asserted",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "conceptual drawing exposed",
+    "known_targets": [
+      "user-labelled K5 four-cell configuration"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "four explicitly specified complexes and120 candidate automorphisms",
+    "selection_criterion": "exact incidence/topological discrimination",
+    "baseline": "Same K5 graph used for graph-only, four-cell ball, closed five-cell boundary and filled 4-simplex."
+  },
+  "calculation_steps": [
+    "Transcribe four maximal cells, enumerate closures and graph.",
+    "Build exact integer boundary matrices and use rational ranks.",
+    "Enumerate all120 permutations; check24 preserve the four tetrahedra.",
+    "Verify d c_K=d[1234], d^2=0, and spectral polynomial/rank certificates."
+  ],
+  "result": {
+    "exact_expression": "EXACT: primal graph K5, internal dual K4, exterior-augmented dual K5. The four-cell ball is the boundary of a 4-simplex minus one open tetrahedral facet. Adding that facet changes Betti numbers from (1,0,0,0) to (1,0,0,1) with the graph fixed. Complex vertex automorphisms:24 versus graph120. Under H=I, closed-boundary spectrum is lambda^2*(lambda^2+5)^14.",
+    "approximation": null,
+    "units": "dimensionless counts and operator units",
+    "precision_and_error": "integer/Fraction only",
+    "scope": "declared finite complexes and chosen H=I model",
+    "physical_interpretation": "HYPOTHESIS; physical map OPEN"
+  },
+  "verification": [
+    {
+      "method": "constructor exact finite enumeration and polynomial certificate",
+      "command_or_proof_path": "python3 experiments/k5-four-cell/analyze.py; experiments/k5-four-cell/README.md",
+      "source_revision": "base bbce8407a64ad081b2efa576584d54d23c81abb8 plus captured new code bytes",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Same K5 graph has four distinct filled structures and different Betti numbers.",
+    "Adding straight1234 to centre-split tetrahedron in R3 overlaps the existing cells.",
+    "Graph S5 symmetry does not preserve the distinguished-centre four-cell complex."
+  ],
+  "limitations": [
+    "No physical dimensionality, time, material or boundary law established.",
+    "Field Betti computations are not an integer torsion calculation.",
+    "Constructor checks only; no independent replication."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/k5-four-cell-20261022-a1/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Compare boundary-driven four-cell response with fifth-cell closure under one fixed readout and metric."
+}

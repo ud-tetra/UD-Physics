@@ -1,0 +1,166 @@
+{
+  "four_cells": {
+    "f": [
+      5,
+      10,
+      10,
+      4
+    ],
+    "dimension": 29,
+    "boundary_ranks": [
+      4,
+      6,
+      4
+    ],
+    "betti_Q": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "closed_boundary": {
+    "f": [
+      5,
+      10,
+      10,
+      5
+    ],
+    "dimension": 30,
+    "boundary_ranks": [
+      4,
+      6,
+      4
+    ],
+    "betti_Q": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "unit_metric_spectral_certificate": {
+      "M": "-A^2",
+      "M^2=5M": true,
+      "rank": 28,
+      "zero_multiplicity": 2,
+      "nonzero_frequency": "sqrt(5)"
+    }
+  },
+  "filled_4_simplex": {
+    "f": [
+      5,
+      10,
+      10,
+      5,
+      1
+    ],
+    "dimension": 31,
+    "boundary_ranks": [
+      4,
+      6,
+      4,
+      1
+    ],
+    "betti_Q": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unit_metric_spectral_certificate": {
+      "M": "-A^2",
+      "M^2=5M": true,
+      "rank": 30,
+      "zero_multiplicity": 1,
+      "nonzero_frequency": "sqrt(5)"
+    }
+  },
+  "graph_only": {
+    "f": [
+      5,
+      10
+    ],
+    "dimension": 15,
+    "boundary_ranks": [
+      4
+    ],
+    "betti_Q": [
+      1,
+      6
+    ],
+    "unit_metric_spectral_certificate": {
+      "M": "-A^2",
+      "M^2=5M": true,
+      "rank": 8,
+      "zero_multiplicity": 7,
+      "nonzero_frequency": "sqrt(5)"
+    }
+  },
+  "shared_faces_by_cell_pair": {
+    "1,2": [
+      0,
+      1,
+      2
+    ],
+    "1,3": [
+      0,
+      1,
+      3
+    ],
+    "1,4": [
+      0,
+      2,
+      3
+    ],
+    "2,3": [
+      0,
+      1,
+      4
+    ],
+    "2,4": [
+      0,
+      2,
+      4
+    ],
+    "3,4": [
+      0,
+      3,
+      4
+    ]
+  },
+  "outer_faces": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      1,
+      2,
+      4
+    ],
+    [
+      1,
+      3,
+      4
+    ],
+    [
+      2,
+      3,
+      4
+    ]
+  ],
+  "vertex_cell_incidence": [
+    4,
+    3,
+    3,
+    3,
+    3
+  ],
+  "complex_automorphism_count": 24,
+  "graph_automorphism_count": 120,
+  "internal_cell_graph": "K4",
+  "exterior_augmented_dual_graph": "K5",
+  "status": "PASS"
+}

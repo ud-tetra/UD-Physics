@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "k5-four-cell-20261022",
+  "goal": "Audit K5 vertex graph, four-cell complex and missing-facet closure",
+  "owned_paths": [
+    "experiments/k5-four-cell",
+    "candidates/k5-four-cell",
+    "sessions/k5-four-cell-20261022-a1",
+    "artifacts/k5-four-cell-20261022-a1",
+    "tasks/k5-four-cell-20261022.json"
+  ],
+  "dependencies": [],
+  "status": "complete",
+  "completion_evidence": "experiments/k5-four-cell/README.md"
+}
