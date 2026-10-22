@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "heart-shell-20261022-a1",
+  "run_id": "exact-001",
+  "created_at": "2026-10-22T17:31:50.377174+00:00",
+  "evidence": "EXACT",
+  "summary": "Heart cyclic modes, heart-dark cell modes, geometric volume contrasts and separate scalar-port candidate",
+  "command": "python3 experiments/heart-shell-modes/analyze.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "3689f3eda8c3d9db06069af2e09b723fa4aa65f7",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "analyze.py",
+      "path": "inputs/001-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/heart-shell-modes/analyze.py",
+      "sha256": "78374ba3193f7a8d8eec968d7fc07d63b8c2ad7031d57a0e9f4f18ace70d4c36",
+      "size_bytes": 7094
+    },
+    {
+      "input_id": "input-002",
+      "name": "analyze.py",
+      "path": "inputs/002-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/k5-four-cell/analyze.py",
+      "sha256": "8a2dcdf0e905672bf8ba95a778eff363c56b81467cd231c8f510237b9e1ab3a6",
+      "size_bytes": 4362
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/heart-shell-modes/mathematical_receipt.json",
+      "sha256": "2fb3122c2af73e14d57fc09f6c0db77ee8068e2170cd1436b7b374c0f6e4b2fb",
+      "size_bytes": 12492
+    }
+  ],
+  "files": [
+    {
+      "path": "files/heart_results.json",
+      "sha256": "86fc5b8e62b54401e484d0a61d122220df6a6b2e06a4f88888c7e1d825774a97",
+      "size_bytes": 2478
+    }
+  ]
+}
