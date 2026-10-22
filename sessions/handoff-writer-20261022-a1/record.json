@@ -1,0 +1,29 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "handoff-writer-20261022-a1",
+  "runtime": "Codex GPT-6; Git/compute and GitHub connector write",
+  "task": "handoff-writer-20261022",
+  "goal": "Reproducible synthetic affine clock-map FIT handoff",
+  "created_at": "2026-10-22T16:20:17.922726+00:00",
+  "base_revision": "fbf40e3f4daaf3f02af5db35fc1ee82f0da02190",
+  "source_dirty_at_boot": false,
+  "status": "active",
+  "claims": {
+    "handoff-writer-20261022": {
+      "ref": "refs/heads/claims/handoff-writer-20261022",
+      "sha": "5481560b0e4d3edd2d4887aef0268377c6c0c8eb",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "",
+  "next_action": "",
+  "capabilities": [
+    "GitHub connector read/write",
+    "Git independent clone",
+    "Python local computation"
+  ],
+  "branch": "discovery/handoff-writer-20261022/handoff-writer-20261022-a1",
+  "target_exposure": "All synthetic training and evaluation labels exposed in docs/HANDOFF_TRIAL_v1.0.md before fitting; FIT/development evaluation."
+}
