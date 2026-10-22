@@ -1,0 +1,38 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "icosa4dvol-20261022-gpt6-c7d2",
+  "run_id": "nonlinear-003",
+  "created_at": "2026-10-22T21:23:08.775858+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Supersedes invalid metadata-only nonlinear-002 capture. EXACT all-order nonlinear 3D/4D reduced Lagrangian equivalence; NUMERICAL pulse and mode checks; negative static fold.",
+  "command": "python3 nonlinear_audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "nonlinear_audit.py",
+      "path": "inputs/001-nonlinear_audit.py",
+      "source_location": "repository",
+      "sha256": "3671d56b684428d7396a0d88b351fb8de12b579211d14d5b2943c19703c10c51",
+      "size_bytes": 14400,
+      "source_path": "experiments/icosahedral-4d-volume-20261022/nonlinear_audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/pulse_curves_halfunit.csv",
+      "sha256": "cdc0986ec48907feda85c34de2ee07f8605a8f24047c8cda166a470920050f45",
+      "size_bytes": 94656
+    },
+    {
+      "path": "files/run_results.json",
+      "sha256": "cba199c0449a1a8e0f4f45610289c077c06292c977ffb8e890db213b3e61a448",
+      "size_bytes": 13292
+    }
+  ]
+}
