@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T17:00:22.636179+00:00",
   "base_revision": "506808a815e3afd13630db010a6e383019db6234",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "integration-four-cell-20261022": {
       "ref": "refs/heads/claims/integration-four-cell-20261022",
       "sha": "f61aa38662c9d3163deefd99eca5c68ebb426f6a",
-      "status": "held"
+      "status": "released",
+      "released_sha": "0a6795884d808b18b395499ed178f13abeaa14d6"
     }
   },
   "checks": [
@@ -46,5 +47,10 @@
       "affine recursion"
     ],
     "physical_mapping": "OPEN"
+  },
+  "integration": {
+    "pr": 11,
+    "merge_sha": "d768bee04c549568a4c5c5eb9bb159044d53d31a",
+    "remote_integrity_checks": "both success"
   }
 }
