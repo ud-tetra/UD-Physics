@@ -14,6 +14,9 @@
     "scripts",
     "tests",
     "sessions/handoff-integrator-20261022-a1",
-    "artifacts/handoff-integrator-20261022-a1"
-  ]
+    "artifacts/handoff-integrator-20261022-a1",
+    "templates"
+  ],
+  "updated_at": "2026-10-22T16:23:57.095Z",
+  "scope_amendment": "Include manual run-manifest template required by reviewed schema-2 capture amendment; no other trial owner holds this path."
 }
