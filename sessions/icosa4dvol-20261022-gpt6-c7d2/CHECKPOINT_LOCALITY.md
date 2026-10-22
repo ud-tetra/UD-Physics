@@ -11,3 +11,7 @@ Assumptions: target-exposed 4D K/M, gamma=1/5, b0=1/4, cross k=1/20, three tuned
 Executed: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 locality_audit.py` PASS with SymPy/NumPy/SciPy self checks. New repository validation and independent empirical check NOT_RUN until CI/reviewer; earlier PR CI does not certify new edits.
 
 Next: constrain node counts/component budgets and frozen 3D model family, evaluate nonuniform/spectral or controlled interventions against actual physical data. Open PR39 remains draft until review. Preserve held claim until integration or abandonment.
+
+## Post-run actuation scope clarification
+
+The exact K/M match concerns the 3D inner-shell **collective** mode, not physically identical single-site actuation. A pure symmetric 3D drive requires coherent distributed forcing; a single local force excites extra modes even if its scalar projected volume response can be calibrated to the 4D port. See `experiments/icosahedral-4d-volume-20261022/LOCALITY_ACTUATION_ADDENDUM.md`. Immutable `locality-001` artifact remains unchanged.
