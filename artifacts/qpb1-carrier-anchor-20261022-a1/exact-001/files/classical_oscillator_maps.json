@@ -1,0 +1,35 @@
+[
+  {
+    "mass": "1",
+    "unit_amplitude_L": "1",
+    "angular_frequency": "2",
+    "B0": "2",
+    "tau0": "1",
+    "A0": "2",
+    "unit_state_energy": "2",
+    "loop_action_over_pi": "A0",
+    "changing_L_to_2L_changes_A0_by": "4"
+  },
+  {
+    "mass": "3/2",
+    "unit_amplitude_L": "2/3",
+    "angular_frequency": "5/4",
+    "B0": "3",
+    "tau0": "8/5",
+    "A0": "5/6",
+    "unit_state_energy": "25/48",
+    "loop_action_over_pi": "A0",
+    "changing_L_to_2L_changes_A0_by": "4"
+  },
+  {
+    "mass": "7/5",
+    "unit_amplitude_L": "11/9",
+    "angular_frequency": "13/7",
+    "B0": "14/5",
+    "tau0": "14/13",
+    "A0": "1573/405",
+    "unit_state_energy": "20449/5670",
+    "loop_action_over_pi": "A0",
+    "changing_L_to_2L_changes_A0_by": "4"
+  }
+]

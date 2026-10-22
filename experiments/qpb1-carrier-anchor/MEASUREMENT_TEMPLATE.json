@@ -1,0 +1,22 @@
+{
+  "record_type": "prospective_action_anchor",
+  "data_status": "NOT_COLLECTED",
+  "carrier_map_receipt": null,
+  "unit_preparation_receipt": null,
+  "action_pullback_receipt": null,
+  "clock_map_receipt": null,
+  "unit_preparation_selected_using_candidate": null,
+  "independence_mode": "target_independent_disclosed_SI",
+  "calibration_nodes": [],
+  "anchors": {
+    "mass": {"unit": "kg", "interval": null, "calibration_node": null},
+    "length": {"unit": "m", "interval": null, "calibration_node": null},
+    "omega": {"unit": "rad/s", "interval": null, "calibration_node": null}
+  },
+  "candidate_eta_for_later_comparison": "2",
+  "comparison_rule": "Freeze A0 interval and all calibration/preparation provenance first; compare2*hbar with that interval only under the frozen QPB1 map. Membership is compatibility,not proof;no candidate scoring on synthetic data.",
+  "measurement_coverage_receipt": null,
+  "independent_review_receipt": null,
+  "physical_implementation": null,
+  "empirical_score": "UNSCORED"
+}

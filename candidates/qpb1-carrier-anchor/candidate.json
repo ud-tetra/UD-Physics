@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-carrier-anchor",
+  "session_id": "qpb1-carrier-anchor-20261022-a1",
+  "question": "Which QPB1 physical tests are identifiable after preserving carrier, projective readout and action calibration provenance?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Single filled tetrahedron, unit chain metric and A=d-d^T. Changed metric/generator is a separate branch.",
+    "For the scoped quantum readout use active intrinsic C7, i=-J, normalized density matrices and fixed Born effects. Full R15 is not silently complexified.",
+    "The reference extension, coherent preparation and physical oscillator map are explicit correspondence hypotheses, not derived physical implementations."
+  ],
+  "physical_mapping": "OPEN: conditional oscillator analogue and enlarged reference; physical unit preparation and readout not admitted",
+  "target_exposure": "EXPLORATORY_AFTER_TARGET_EXPOSURE; known eta_A=2",
+  "fitted_choices": [
+    "No empirical fit",
+    "i=-J chosen explicitly for positive-energy Schrodinger convention",
+    "Classical oscillator map solved from intertwiner,energy and one-form matching; not independent physical derivation"
+  ],
+  "sources": [
+    "experiments/qpb1-carrier-anchor/SOURCES.json",
+    "experiments/qpb1-carrier-anchor/EXTERNAL_SOURCES.json"
+  ],
+  "baseline": "Classical harmonic oscillator reproduces the one-plane flow/action without quantum identification",
+  "result": "rho(t)=rho(0); BJ=JB for invariant real symmetric active readouts; K^2=-I16; A0=m*omega*L^2=2E*/omega; L->cL gives A0->c^2A0; empirical UNSCORED,promotion0",
+  "next_discriminant": "Source a target-independent rule selecting physical unit amplitude/action on a named carrier, with physical invariant readouts or a justified relative-phase reference."
+}

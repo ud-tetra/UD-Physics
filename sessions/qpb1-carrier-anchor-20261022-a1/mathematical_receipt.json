@@ -1,0 +1,393 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb1-carrier-anchor-v1",
+  "session_id": "qpb1-carrier-anchor-20261022-a1",
+  "candidate_id": "qpb1-carrier-anchor",
+  "question": "Which same-carrier readouts can identify the QPB1 phase, and what could independently select its physical action scale?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "native-carrier",
+      "symbol": "C_*",
+      "object_type": "graded chain carrier",
+      "definition": "Filled tetrahedron; f=(4,6,4,1); active projector P=-A^2/4",
+      "domain": "R15",
+      "codomain": "R15",
+      "coefficient_domain": "Rational matrix coefficients, symbolic pi and positive real physical parameters",
+      "units": "dimensionless",
+      "basis_orientation": "Ascending oriented simplex basis; positive native J rotation; z=q-ip corresponds to i=-J",
+      "metric_measure": "Unit native chain metric; canonical physical oscillator form only under declared map",
+      "origin": "derived",
+      "exact_expression": "dim15=14+1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native support a=1; physical unit amplitude L remains an independent unprovided map"
+    },
+    {
+      "object_id": "active-complex",
+      "symbol": "J",
+      "object_type": "active complex structure",
+      "definition": "J=A/2, A=d-d^T, J^2=-P; choose physical i=-J on active sector",
+      "domain": "imP=R14",
+      "codomain": "imP=C7",
+      "coefficient_domain": "Rational matrix coefficients, symbolic pi and positive real physical parameters",
+      "units": "dimensionless",
+      "basis_orientation": "Ascending oriented simplex basis; positive native J rotation; z=q-ip corresponds to i=-J",
+      "metric_measure": "Unit native chain metric; canonical physical oscillator form only under declared map",
+      "origin": "derived",
+      "exact_expression": "rank14, complex dimension7",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native support a=1; physical unit amplitude L remains an independent unprovided map"
+    },
+    {
+      "object_id": "quantum-readout",
+      "symbol": "rho,M",
+      "object_type": "projective state and Born effect",
+      "definition": "rho=zz^dagger/(z^dagger z); p=Tr(Mrho)",
+      "domain": "C7 projective states and fixed effects",
+      "codomain": "[0,1]",
+      "coefficient_domain": "Rational matrix coefficients, symbolic pi and positive real physical parameters",
+      "units": "probability",
+      "basis_orientation": "Ascending oriented simplex basis; positive native J rotation; z=q-ip corresponds to i=-J",
+      "metric_measure": "Unit native chain metric; canonical physical oscillator form only under declared map",
+      "origin": "derived",
+      "exact_expression": "U=exp(-i*2t/tau0)I7 leaves rho fixed",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native support a=1; physical unit amplitude L remains an independent unprovided map"
+    },
+    {
+      "object_id": "extension",
+      "symbol": "K",
+      "object_type": "explicit extended complex structure",
+      "definition": "K=[[J,-h],[h^T,0]], h=(1/2,1/2,1/2,1/2,0...)",
+      "domain": "R16",
+      "codomain": "R16",
+      "coefficient_domain": "Rational matrix coefficients, symbolic pi and positive real physical parameters",
+      "units": "dimensionless",
+      "basis_orientation": "Ascending oriented simplex basis; positive native J rotation; z=q-ip corresponds to i=-J",
+      "metric_measure": "Unit native chain metric; canonical physical oscillator form only under declared map",
+      "origin": "derived",
+      "exact_expression": "K^2=-I16,[K,diag(A,0)]=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native support a=1; physical unit amplitude L remains an independent unprovided map"
+    },
+    {
+      "object_id": "classical-map",
+      "symbol": "T",
+      "object_type": "conditional physical phase-space map",
+      "definition": "q=LQ,p_mech=-m*omega*L*P; tau0=2/omega; B0=2m",
+      "domain": "one active R2 plane",
+      "codomain": "physical oscillator phase space",
+      "coefficient_domain": "Rational matrix coefficients, symbolic pi and positive real physical parameters",
+      "units": "q length; p momentum",
+      "basis_orientation": "Ascending oriented simplex basis; positive native J rotation; z=q-ip corresponds to i=-J",
+      "metric_measure": "Unit native chain metric; canonical physical oscillator form only under declared map",
+      "origin": "derived",
+      "exact_expression": "A0=m*omega*L^2=2E*/omega",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native support a=1; physical unit amplitude L remains an independent unprovided map"
+    },
+    {
+      "object_id": "action-scale",
+      "symbol": "A0",
+      "object_type": "physical action scale under conditional map",
+      "definition": "A0=B0*a0^2/tau0=m*omega*L^2; a0=L",
+      "domain": "positive m,L,omega plus unit-preparation correspondence",
+      "codomain": "positive physical action",
+      "coefficient_domain": "Rational matrix coefficients, symbolic pi and positive real physical parameters",
+      "units": "kg m^2 s^-1",
+      "basis_orientation": "Ascending oriented simplex basis; positive native J rotation; z=q-ip corresponds to i=-J",
+      "metric_measure": "Unit native chain metric; canonical physical oscillator form only under declared map",
+      "origin": "derived",
+      "exact_expression": "L->cL implies A0->c^2 A0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native support a=1; physical unit amplitude L remains an independent unprovided map"
+    },
+    {
+      "object_id": "ratio",
+      "symbol": "eta_A",
+      "object_type": "directional physical/native action ratio",
+      "definition": "eta_A=A0/hbar; candidate2 not assumed by estimator",
+      "domain": "action scales after common physical units",
+      "codomain": "positive dimensionless ratio",
+      "coefficient_domain": "Rational matrix coefficients, symbolic pi and positive real physical parameters",
+      "units": "dimensionless",
+      "basis_orientation": "Ascending oriented simplex basis; positive native J rotation; z=q-ip corresponds to i=-J",
+      "metric_measure": "Unit native chain metric; canonical physical oscillator form only under declared map",
+      "origin": "derived",
+      "exact_expression": "No numerical physical ratio evaluated",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [],
+      "normalization": "Native support a=1; physical unit amplitude L remains an independent unprovided map"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "version_or_commit": "5ca396d67579bfb741ea8f784045353ec144f615; upstream UD@957d443e25008632ab9d9328c162343b6a651ee7",
+      "section_or_object_id": "O09-O15,Q282-Q288; hashes in experiments/qpb1-carrier-anchor/SOURCES.json",
+      "source_status": "pinned archive v0.85; inherited scientific revision v0.43 preserved; QPB1 candidate quarantined"
+    },
+    {
+      "source_id": "S2",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "version_or_commit": "5ca396d67579bfb741ea8f784045353ec144f615",
+      "section_or_object_id": "unit-metric filled-tetrahedron Hodge action-phase theorem",
+      "source_status": "native mathematics, physical bridge open"
+    },
+    {
+      "source_id": "S3",
+      "url_or_repo_path": "experiments/qpb1-carrier-anchor/ENTRY_CONTRACT_SOURCE.json",
+      "version_or_commit": "UD@957d443e25008632ab9d9328c162343b6a651ee7",
+      "section_or_object_id": "same-carrier, independent action anchor, calibration and review requirements",
+      "source_status": "proposed; not preregistered or satisfied"
+    },
+    {
+      "source_id": "S4",
+      "url_or_repo_path": "experiments/qpb1-carrier-anchor/EXTERNAL_SOURCES.json",
+      "version_or_commit": "accessed2026-10-22; BIPM SI Brochure9,v4.01",
+      "section_or_object_id": "IBM global phase equivalence; BIPM kilogram definition and SI traceability distinction",
+      "source_status": "primary external comparison; no imported physical UD validation"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Single filled tetrahedron, unit chain metric and A=d-d^T. Changed metric/generator is a separate branch."
+    },
+    {
+      "id": "A2",
+      "statement": "For the scoped quantum readout use active intrinsic C7, i=-J, normalized density matrices and fixed Born effects. Full R15 is not silently complexified."
+    },
+    {
+      "id": "A3",
+      "statement": "The reference extension, coherent preparation and physical oscillator map are explicit correspondence hypotheses, not derived physical implementations."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/chain",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "f-count15, active14, odd-dimensional determinant obstruction and minimal16 extension"
+    },
+    {
+      "technique": "rational/symbolic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Exact Fraction matrices, complex pairs, positive interval arithmetic and oscillator maps"
+    },
+    {
+      "technique": "spectral/projective",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Degenerate active generator, global-phase quotient and invariant quadratic readouts"
+    },
+    {
+      "technique": "clock/winding",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Continuous phi=2s modulo2pi; accumulated one-form winding distinct from endpoint phase"
+    },
+    {
+      "technique": "units/provenance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Mass-length-frequency action estimator and target-dependency DAG; h traceability separately disclosed"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No divisibility or prime-structure question; factors2 arise from source frequency and energy normalization"
+    },
+    {
+      "technique": "empirical fit",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No data or physical ratio fit; known eta2 exposed before protocol"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4+6+4+1=15;14=2*7;16=2*8;det(-I15)=-1;32 density+8 interference+3 oscillator examples+14 intake cases",
+    "reduced_expression": "A0=(2m)*L^2/(2/omega)=m*omega*L^2;Bavg=(B+J^T B J)/2",
+    "factor_origins": [
+      "Native angular frequency2 and declared energy normalization yield B0=2m,tau0=2/omega",
+      "Canonical one-form normalization1/2",
+      "One auxiliary real coordinate pairs the harmonic line"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "Even real dimension necessary for intrinsic complex structure; no finite register modulus inferred"
+  },
+  "clock_receipt": {
+    "clock_type": "Continuous native s with phi=2s",
+    "modulus": "2pi phase; winding retained separately",
+    "residue_convention": "phi=2pi*n equivalent phase0",
+    "update_rule": "x_prime=A*x",
+    "initial_phase": "unit active edge vector; four rational complex states and eight rational phase pairs",
+    "coupling": "original free generator; optional explicit static reference extension",
+    "period_claim": "native active recurrence s=pi; projective density stationary",
+    "physical_unit_map": "Conditional oscillator tau0=2/omega; no calibrated physical clock admitted"
+  },
+  "dynamics_readout": {
+    "state_space": "originalR15, activeR14=C7; separate candidate extensionR16=C8",
+    "generator_or_update": "A=2J on active; diag(A,0) in extension",
+    "initial_boundary_conditions": "single filled tetrahedron, unit metric; no experimental apparatus",
+    "conservation_and_sources": "skew flow preserves support; no loss/forcing introduced",
+    "projection_and_kernel": "P active; P0=hh^T harmonic; projective readout removes common phase and normalization",
+    "physical_mapping": "Oscillator one-plane map and extended coherent reference are conditional hypotheses; unit amplitude source and physical readouts OPEN"
+  },
+  "target_exposure": {
+    "status": "EXPLORATORY_AFTER_TARGET_EXPOSURE",
+    "known_targets": [
+      "Archived Q288 eta_A=2",
+      "Source experimental-entry requirements"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "No empirical fit",
+      "i=-J chosen explicitly for positive-energy Schrodinger convention",
+      "Classical oscillator map solved from intertwiner,energy and one-form matching; not independent physical derivation"
+    ],
+    "search_domain_and_budget": "Single original15-dimensional carrier; one minimal16-dimensional extension; three rational oscillator maps;14 intake fixtures",
+    "selection_criterion": "Expose observable/scale degeneracies and identify a falsifiable conditional measurement question",
+    "baseline": "Classical harmonic oscillator reproduces the one-plane flow/action without quantum identification"
+  },
+  "calculation_steps": [
+    "Reconstruct oriented boundary and exact active J,projector and raw edge-readout witness.",
+    "Prove scalar-unitary density invariance; supplement with32exact rational cases.",
+    "Prove quadratic-readout commutator criterion and verify phase-average witness.",
+    "Prove full-real15 parity obstruction; construct exact16-dimensional extension and8interference cases.",
+    "Solve conditional oscillator intertwiner,energy and one-form pullback; verify3rational examples and amplitude scaling.",
+    "Run14synthetic/prospective intake cases, including hidden target ancestor and malformed graph controls.",
+    "Disclose SI h traceability separately from target-derived anchor inference; no physical score."
+  ],
+  "result": {
+    "exact_expression": "rho(t)=rho(0); BJ=JB for invariant real symmetric active readouts; K^2=-I16; A0=m*omega*L^2=2E*/omega; L->cL gives A0->c^2A0",
+    "approximation": null,
+    "units": "action kg m^2 s^-1; phases and Born probabilities dimensionless",
+    "precision_and_error": "Exact rational verification; universal proofs in README; prospective interval enclosure only, no measured uncertainty",
+    "scope": "Unit metric, original filled tetrahedron, isolated active Born readouts. Added reference/oscillator correspondences conditional; no universal QPB1 no-go.",
+    "physical_interpretation": "UNSCORED; physical promotion0; no empirical input"
+  },
+  "verification": [
+    {
+      "method": "Exact matrices,complex rational density identities,classical pullback and negative metadata controls",
+      "command_or_proof_path": "python3 experiments/qpb1-carrier-anchor/audit.py --out /workspace/scratch/ed44232d6ecb/qpb1_outputs",
+      "source_revision": "5ca396d67579bfb741ea8f784045353ec144f615 plus explicitly captured working inputs",
+      "actual_result": "PASS32density invariance,8reference probabilities,3oscillator maps,14intake cases;blank real templateBLOCKED/UNSCORED",
+      "review_relationship": "constructor only; no independent review or physical validation"
+    },
+    {
+      "method": "Proofs of global-phase invariance,quadratic commutator criterion and determinant parity",
+      "command_or_proof_path": "experiments/qpb1-carrier-anchor/README.md sections2-4",
+      "source_revision": "captured working documentation",
+      "actual_result": "Derived with stated hypotheses; matrix examples are supplementary",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Native edge-coordinate square differs between same complex projective ray states e and Je.",
+    "Free active scalar phase cannot identify eta from fixed isolated Born readouts.",
+    "Intrinsic complex structure impossible on full odd real15 carrier; active14 and enlarged carriers unaffected.",
+    "L-rescaling preserves normalized native motion and changes A0; ray norm alone cannot select an action unit.",
+    "Classical oscillator matches flow/action, so these agreements do not distinguish quantum correspondence.",
+    "Blank real template and declared circular/unknown/invalid calibration fixtures blocked."
+  ],
+  "limitations": [
+    "No target-independent physical unit-amplitude rule or carrier/preparation map admitted.",
+    "Reference coherence,coupling,readout and unit action calibration are hypotheses.",
+    "Metadata and receipt strings do not certify independence,scientific truth,coverage or empirical admission.",
+    "Strict h-free traceability differs from target-independent UD inference with disclosed SI traceability.",
+    "Candidate2 was exposed; no blind numerical prediction or physical holonomy reconstruction.",
+    "Constructor checks only; no mainline export or source-ledger amendment."
+  ],
+  "changed_dependencies": [
+    "Narrows the proposed isolated active-sector quantum test to invariant readouts or an explicit reference extension.",
+    "Identifies physical unit preparation/amplitude selection as a distinct unresolved action-anchor dependency."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-carrier-anchor-20261022-a1/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Source a target-independent rule selecting physical unit amplitude/action on a named carrier, with physical invariant readouts or a justified relative-phase reference."
+}

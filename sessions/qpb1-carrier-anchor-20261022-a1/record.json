@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-carrier-anchor-20261022-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and connector writes",
+  "task": "qpb1-carrier-anchor-20261022",
+  "goal": "Audit QPB1 carrier, observable and physical action-anchor identifiability.",
+  "created_at": "2026-10-22T22:51:19.590230+00:00",
+  "base_revision": "5ca396d67579bfb741ea8f784045353ec144f615",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-carrier-anchor-20261022": {
+      "ref": "refs/heads/claims/qpb1-carrier-anchor-20261022",
+      "sha": "691fd0e27dbb537d393dd5a3807aa453f50e7fac",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-carrier-anchor/audit.py --out /workspace/scratch/ed44232d6ecb/qpb1_outputs",
+      "result": "PASS:32density,8reference,3oscillator,14intake cases; no empirical score"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS:95records,manifest digests and local documentation links"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS:16tests"
+    }
+  ],
+  "finding": "Scoped exact carrier/readout audit and prospective anchor test complete; physical unit-amplitude map remains OPEN,empirical UNSCORED,promotion0.",
+  "next_action": "Identify a target-independent physical unit-preparation rule and named carrier/readout; integrate this scoped package and release claim.",
+  "checkpoint_at": "2026-10-22T22:59:35.790362+00:00",
+  "checkpoint_source": {
+    "revision": "5ca396d67579bfb741ea8f784045353ec144f615",
+    "dirty": true
+  }
+}

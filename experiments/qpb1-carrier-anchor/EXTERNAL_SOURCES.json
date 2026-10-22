@@ -1,0 +1,28 @@
+{
+  "access_date": "2026-10-22",
+  "sources": [
+    {
+      "id": "QM_GLOBAL_PHASE",
+      "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/quantum-circuits/limitations-on-quantum-information",
+      "publisher": "IBM Quantum Learning",
+      "section": "Irrelevance of global phases",
+      "use": "Standard quantum readout premise: global phases give identical outcome probabilities. The UD carrier-specific obstruction is separately derived."
+    },
+    {
+      "id": "SI_KILOGRAM",
+      "url": "https://www.bipm.org/en/si-base-units/kilogram",
+      "publisher": "BIPM",
+      "section": "SI base unit kilogram",
+      "use": "The SI mass unit is defined through a fixed numerical Planck constant. Unit traceability and target dependence in a model are distinct questions."
+    },
+    {
+      "id": "SI_BROCHURE",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf",
+      "publisher": "BIPM",
+      "version": "9th edition/version4.01",
+      "section": "2.3.1 kilogram definition",
+      "use": "Confirms h-dependent SI unit definition; no empirical UD map or physical action anchor supplied."
+    }
+  ],
+  "preservation": "URLs,versions,access date and scoped use recorded. External full-page/PDF byte snapshots were not captured. No external source is an independent review of this UD audit."
+}
