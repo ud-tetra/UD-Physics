@@ -36,10 +36,30 @@
       "name": "published minimal audit.py",
       "result": "NOT_RUN in this run",
       "reason": "same-model reproduction script committed, not executed in local runtime"
+    },
+    {
+      "name": "nonlinear-002 exact symbolic and 3D independent formulation pulse/mode checks",
+      "result": "PASS (constructor self-test)",
+      "command": "python3 nonlinear_audit.py; python3 -m py_compile nonlinear_audit.py"
+    },
+    {
+      "name": "nonlinear-002 captured file SHA256",
+      "result": "PASS",
+      "command": "Python hashlib verification of schema2 input and output files"
+    },
+    {
+      "name": "nonlinear-002 GitHub upload content verification",
+      "result": "PASS",
+      "command": "Fetched four committed files and compared exact decoded original content"
+    },
+    {
+      "name": "nonlinear-002 full repository integration checks",
+      "result": "NOT_RUN",
+      "reason": "No authenticated local repository checkout; GitHub connector file writes only"
     }
   ],
-  "finding": "EXACT/CONDITIONAL positive static volume transfer and full40 local rigidity, NUMERICAL finite pulses, FAILED unique 4D discriminator due ordinary 3D lever null",
-  "next_action": "Run repository CI on PR; independently verify dynamics and test 3D comparison at nonlinear order",
+  "finding": "EXACT/CONDITIONAL nonlinear two-coordinate 4D model has ordinary Euclidean 3D orthogonal-carriage counterpart with identical complete reduced potential, mass, damping and readout; nonlinear dimension discriminator FAILED. NUMERICAL 6 signed pulses, third-order statics, fold f=-0.05258752206 and 4 lower-mode amplitude frequency checks.",
+  "next_action": "Define restrictive local reciprocal isotropic 3D null family and test expanded shell/apex full-mode observables. Independent reviewer and repository validators before PR integration; do not promote mainline.",
   "mathematical_profile": {
     "coefficient_domain": "Q(sqrt(5)), real algebraic radicals, positive parameters",
     "exactness_or_precision_plan": "SymPy algebra; SVD rank tolerance 1e-10; ODE DOP853 rtol1e-11 atol1e-13",
@@ -52,5 +72,16 @@
       "null models"
     ],
     "clock_metric_units_conventions": "Euclidean R4 geometry, w independent of Newtonian t, positive spatial metric, dimensionless s and z; no empirical mapping"
+  },
+  "nonlinear_extension": {
+    "run_id": "nonlinear-002",
+    "artifact": "artifacts/icosa4dvol-20261022-gpt6-c7d2/nonlinear-002/manifest.json",
+    "receipt": "sessions/icosa4dvol-20261022-gpt6-c7d2/mathematical_receipt_nonlinear-002.json",
+    "report": "experiments/icosahedral-4d-volume-20261022/NONLINEAR_RESULTS.md",
+    "checkpoint": "sessions/icosa4dvol-20261022-gpt6-c7d2/CHECKPOINT_NONLINEAR.md",
+    "claim_status": "held",
+    "validation": "constructor_pass_repo_not_run",
+    "fit_exposure": "post-exposure exact 3D comparator, no physical target fit",
+    "physical_status": "not_earned"
   }
 }
