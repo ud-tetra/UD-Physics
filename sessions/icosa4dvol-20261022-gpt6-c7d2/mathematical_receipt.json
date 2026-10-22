@@ -1,0 +1,184 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "volume-001",
+  "session_id": "icosa4dvol-20261022-gpt6-c7d2",
+  "candidate_id": "icosahedral-4d-volume-20261022",
+  "question": "Can fourth-apex displacement drive 3D shell volume, and distinguish it from 3D?",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED"
+  ],
+  "objects": [
+    {
+      "object_id": "shell",
+      "symbol": "s",
+      "object_type": "homothetic 3D icosahedral shell scale",
+      "domain": "R_positive",
+      "coefficient_domain": "Q(sqrt5), real",
+      "units": "dimensionless",
+      "origin": "assumed",
+      "definition": "x_i=s*x_i0"
+    },
+    {
+      "object_id": "apex",
+      "symbol": "z",
+      "object_type": "Euclidean 4th-coordinate displacement",
+      "domain": "R",
+      "coefficient_domain": "real",
+      "units": "w/a",
+      "origin": "assumed",
+      "definition": "(x0,w)=(0,az)"
+    },
+    {
+      "object_id": "volume",
+      "symbol": "V3",
+      "object_type": "3D exterior shell volume",
+      "domain": "R_positive",
+      "codomain": "R_positive",
+      "units": "length^3",
+      "origin": "derived",
+      "definition": "5(3+sqrt5)a^3s^3/12"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "repo",
+      "url_or_repo_path": "ud-tetra/UD-Physics",
+      "version_or_commit": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+      "section_or_object_id": "BOOTLOADER, AGENTS, mathematical method",
+      "source_status": "verified integrated"
+    },
+    {
+      "source_id": "Gemini",
+      "url_or_repo_path": "user-provided Gemini geometric analysis 2026-10-22",
+      "version_or_commit": "user text",
+      "section_or_object_id": "equal-edge height",
+      "source_status": "target-exposed hypothesis"
+    }
+  ],
+  "assumptions": [
+    "Euclidean ++++ and shell constrained to w=0",
+    "12 identical radial springs rest length a; 30 shell edge springs rest length a",
+    "Newtonian time, positive masses",
+    "homothetic shell for response; full40 xyz-shell and xyz+w-apex for Hessian",
+    "a=k_r=k_e=m=1 and damping C=.06M illustrative only"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact symbolic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Hessian, determinant, static transfer"
+    },
+    {
+      "technique": "spectral/rigidity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "generalized modes and 42x40 rigidity Jacobian"
+    },
+    {
+      "technique": "clock arithmetic",
+      "applicability": "NA",
+      "purpose_or_na_reason": "no modular registers"
+    },
+    {
+      "technique": "null/fit checks",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare 3D axial null and exact 3D lever mimic"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "12 radial+30 shell springs; 36 shell xyz+3 apex xyz+1 apex w",
+    "reduced_expression": "42 constraints, 40 coords, rank34, 6 rigid zero modes",
+    "factor_origins": [
+      "icosahedral 12 vertices, 30 edges"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous Newtonian t",
+    "modulus": null,
+    "update_rule": "M qdd+C qdot+gradU=f",
+    "physical_unit_map": "sqrt(m/k); calibration OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "q=(s,z), velocities; full 40-coordinate local Hessian",
+    "generator_or_update": "positive-elastic spring energy and Newtonian second-order law",
+    "initial_boundary_conditions": "s=1,z=+sqrt((3-sqrt5)/8); shell w=0",
+    "conservation_and_sources": "unforced energy conserved if C=0; viscous power -qdot.C.qdot",
+    "projection_and_kernel": "V3 depends on s; w couples via off-diagonal Hessian",
+    "physical_mapping": "geometric shell volume only; spacetime map OPEN"
+  },
+  "target_exposure": {
+    "status": "exposed geometric equal-edge regularity; not empirical fit",
+    "known_targets": [
+      "all tetrahedra regular",
+      "volume coupling"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "assumed spring law",
+      "illustrative equal parameter values"
+    ],
+    "search_domain_and_budget": "one 4D mechanical family, axial-centre 3D null, 3D lever null, A=.01,.02,.08",
+    "selection_criterion": "nonzero force-volume transfer, positive stiffness, compare identifiability",
+    "baseline": "3D axial symmetry null and exactly matching 3D lever"
+  },
+  "calculation_steps": [
+    "exact Hessian and determinant",
+    "static transfer",
+    "full 40DOF constraint Jacobian",
+    "pulse integration",
+    "3D null exact transfer mimic"
+  ],
+  "result": {
+    "exact_expression": "det(K)=360krke eta^2; (deltaV/V)/(Fz/a^2)=-rho^2/(10 ke eta)",
+    "approximation": {
+      "omega": [
+        0.8867247247238018,
+        2.007002196312076
+      ],
+      "gain": -0.29270509831248415,
+      "rank": 34,
+      "pulse_A001_fraction": [
+        0.005091085438824194,
+        0.000004517197381370686
+      ]
+    },
+    "units": "normalized mechanical units",
+    "scope": "finite passive model, not spacetime",
+    "physical_interpretation": "hypothesis only"
+  },
+  "verification": [
+    {
+      "method": "same-runtime SymPy/numerical checks",
+      "command_or_proof_path": "local archive audit.py",
+      "source_revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "repository integrity/test suite",
+      "command_or_proof_path": "scripts/validate.py and unittest discover",
+      "source_revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+      "actual_result": "NOT_RUN",
+      "review_relationship": "not executed"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Ordinary 3D lever oscillator has exactly same quadratic energy/Hessian and transfer function; 4D not identifiable from linear response"
+  ],
+  "limitations": [
+    "no independent experiment",
+    "shell w plane imposed",
+    "no global nonlinear stability",
+    "local archived full script differs from compact committed reproduction; compact file not executed in this runtime"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "experiments/icosahedral-4d-volume-20261022/README.md",
+    "local chat archive ud_4d_volume_response_checkpoint.zip"
+  ],
+  "next_discriminant": "Nonlinear response versus equally flexible 3D mechanical alternatives and native UD selection rule"
+}
