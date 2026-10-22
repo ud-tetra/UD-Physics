@@ -64,5 +64,7 @@
     "This candidate carries no physical or mainline promotion."
   ],
   "next_discriminant": "First reproduce this frozen artifact in the separate reviewer workspace. Any physical investigation needs a defined native readout, explicit unit realization and a frozen map evaluated on genuinely unused measurements.",
-  "target_exposure": "FULLY EXPOSED before fitting: training (0,1),(1,3),(2,5) and evaluation (3,7),(4,9), labels in ns; FIT/development evaluation only."
+  "target_exposure": "FULLY EXPOSED before fitting: training (0,1),(1,3),(2,5) and evaluation (3,7),(4,9), labels in ns; FIT/development evaluation only.",
+  "artifact": "artifacts/handoff-writer-20261022-a1/affine-fit-001/manifest.json",
+  "code_source_commit": "80b8548edf5b19f876a61c478d3240c91ad0d873"
 }
