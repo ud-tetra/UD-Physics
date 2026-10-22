@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "integration-icosahedral-free3d-20261022",
   "session": "icosahedral-free3d-20261022-a1",
   "created_at": "2026-10-22T18:48:59.067Z",
@@ -14,5 +14,7 @@
     "artifacts/icosahedral-free3d-20261022-a1",
     "tasks/integration-icosahedral-free3d-20261022.json",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-10-22T19:03:41.815Z",
+  "released_from_sha": "c99009f59ea2040a7d051588279f2b176e30325a"
 }
