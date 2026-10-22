@@ -1,0 +1,18 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "integration-heart-robustness-20261022",
+  "session": "heart-robustness-20261022-a1",
+  "created_at": "2026-10-22T17:54:55.223Z",
+  "base_revision": "2b2e69de470d52f888c6926279ae2dd964ece769",
+  "owned_paths": [
+    "experiments/heart-shell-robustness",
+    "candidates/heart-shell-robustness",
+    "sessions/heart-robustness-20261022-a1",
+    "artifacts/heart-robustness-20261022-a1",
+    "tasks/integration-heart-robustness-20261022.json",
+    "state/CURRENT.md"
+  ]
+}
