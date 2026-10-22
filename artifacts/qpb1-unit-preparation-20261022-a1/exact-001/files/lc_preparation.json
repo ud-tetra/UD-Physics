@@ -1,0 +1,144 @@
+{
+  "families": [
+    {
+      "C": "1",
+      "ell": "1/4",
+      "omega": "2",
+      "precharge_V_ref": "1",
+      "Phi_ref": "1/2",
+      "E_ref": "1/2",
+      "J_LC": "1/2",
+      "controls": [
+        {
+          "voltage_ratio": "1/2",
+          "support_under_fixed_map": "1/4",
+          "loop_action_ratio": "1/4"
+        },
+        {
+          "voltage_ratio": "1",
+          "support_under_fixed_map": "1",
+          "loop_action_ratio": "1"
+        },
+        {
+          "voltage_ratio": "2",
+          "support_under_fixed_map": "4",
+          "loop_action_ratio": "4"
+        },
+        {
+          "voltage_ratio": "3",
+          "support_under_fixed_map": "9",
+          "loop_action_ratio": "9"
+        }
+      ]
+    },
+    {
+      "C": "3/2",
+      "ell": "32/75",
+      "omega": "5/4",
+      "precharge_V_ref": "2/3",
+      "Phi_ref": "8/15",
+      "E_ref": "1/3",
+      "J_LC": "8/15",
+      "controls": [
+        {
+          "voltage_ratio": "1/2",
+          "support_under_fixed_map": "1/4",
+          "loop_action_ratio": "1/4"
+        },
+        {
+          "voltage_ratio": "1",
+          "support_under_fixed_map": "1",
+          "loop_action_ratio": "1"
+        },
+        {
+          "voltage_ratio": "2",
+          "support_under_fixed_map": "4",
+          "loop_action_ratio": "4"
+        },
+        {
+          "voltage_ratio": "3",
+          "support_under_fixed_map": "9",
+          "loop_action_ratio": "9"
+        }
+      ]
+    },
+    {
+      "C": "7/5",
+      "ell": "35/169",
+      "omega": "13/7",
+      "precharge_V_ref": "11/9",
+      "Phi_ref": "77/117",
+      "E_ref": "847/810",
+      "J_LC": "5929/5265",
+      "controls": [
+        {
+          "voltage_ratio": "1/2",
+          "support_under_fixed_map": "1/4",
+          "loop_action_ratio": "1/4"
+        },
+        {
+          "voltage_ratio": "1",
+          "support_under_fixed_map": "1",
+          "loop_action_ratio": "1"
+        },
+        {
+          "voltage_ratio": "2",
+          "support_under_fixed_map": "4",
+          "loop_action_ratio": "4"
+        },
+        {
+          "voltage_ratio": "3",
+          "support_under_fixed_map": "9",
+          "loop_action_ratio": "9"
+        }
+      ]
+    },
+    {
+      "C": "2/7",
+      "ell": "63/32",
+      "omega": "4/3",
+      "precharge_V_ref": "3/5",
+      "Phi_ref": "9/20",
+      "E_ref": "9/175",
+      "J_LC": "27/350",
+      "controls": [
+        {
+          "voltage_ratio": "1/2",
+          "support_under_fixed_map": "1/4",
+          "loop_action_ratio": "1/4"
+        },
+        {
+          "voltage_ratio": "1",
+          "support_under_fixed_map": "1",
+          "loop_action_ratio": "1"
+        },
+        {
+          "voltage_ratio": "2",
+          "support_under_fixed_map": "4",
+          "loop_action_ratio": "4"
+        },
+        {
+          "voltage_ratio": "3",
+          "support_under_fixed_map": "9",
+          "loop_action_ratio": "9"
+        }
+      ]
+    }
+  ],
+  "preparation_ratio_checks": 16,
+  "action_units_M_L_T_I": [
+    1,
+    2,
+    -1,
+    0
+  ],
+  "interval_example_J_s": [
+    "32934033/67000000",
+    "101202101/199000000"
+  ],
+  "interval_vertex_checks": 8,
+  "invalid_interval_controls": 2,
+  "target_backsolve_identity": "If V_ref^2=J_target*omega/C, then J_LC=J_target by construction; inadmissible as independent test.",
+  "empirical_status": "NOT_EXECUTED_UNSCORED",
+  "scope": "Exact ideal single-mode classical equations and conditional one-active-plane map. Not a measured circuit, full C7 implementation or quantum identification."
+}

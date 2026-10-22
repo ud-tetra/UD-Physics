@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-unit-preparation-20261022-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-unit-preparation-20261022",
+  "goal": "Identify target-independent unit preparation and physical readout rules for the QPB1 action anchor.",
+  "created_at": "2026-10-22T23:04:56.787119+00:00",
+  "base_revision": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-unit-preparation-20261022": {
+      "ref": "refs/heads/claims/qpb1-unit-preparation-20261022",
+      "sha": "c104215f7cd5b263d56a91e4dbb37e865831d12f",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-unit-preparation/audit.py --out /workspace/scratch/ed44232d6ecb/unitprep_outputs",
+      "result": "PASS12rational supports,8two-kick cases,16feedback identities,4LC maps,16voltage controls,8interval corners,2invalid controls;no physical data"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS99records,manifest digests and local documentation links"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    }
+  ],
+  "finding": "Source audit and conditional preparation models complete;integer event preparation remains possible,universal physical unit ruleOPEN;empiricalUNSCORED,promotion0.",
+  "next_action": "Integrate the scoped package,release claim;next derive a native source/reset law and its physical kick/readout with interference and energy accounting.",
+  "checkpoint_at": "2026-10-22T23:11:16.604506+00:00",
+  "checkpoint_source": {
+    "revision": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+    "dirty": true
+  }
+}

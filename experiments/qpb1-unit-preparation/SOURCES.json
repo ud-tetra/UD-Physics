@@ -1,0 +1,40 @@
+{
+  "repository": "ud-tetra/UD-Physics",
+  "base": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+  "upstream_action_source": "ud-tetra/UD@957d443e25008632ab9d9328c162343b6a651ee7; imported through previous action audit",
+  "sources": [
+    {
+      "path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec"
+    },
+    {
+      "path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "sha256": "4e5cdc41c1fd93f69b8d80aeb557f5cfdf8b3b335b320ef4b2028bc1b08c6739"
+    },
+    {
+      "path": "experiments/action-normalization-audit/audit.py",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b"
+    },
+    {
+      "path": "experiments/qpb1-carrier-anchor/README.md",
+      "sha256": "f7860ce47f7e6d8fedea30e7a7eb6183740616e1ed259eee9da5ee67caee23b0"
+    },
+    {
+      "path": "experiments/qpb1-carrier-anchor/ENTRY_CONTRACT_SOURCE.json",
+      "sha256": "3bdcd44203e8c7c439e4089e3084a9a1b2b01caba48ced3b8fe2c3a13afb758e"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "sha256": "8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4"
+    }
+  ],
+  "attachment_identity_checks": {
+    "v0.39_uploaded_copy": "Byte-identical to existing imported snapshot;sha2561281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+    "governance_uploaded_copy": "Byte-identical to existing imported proposal;sha2568e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4"
+  },
+  "scope": "No mainline edits or inferred promotion. New ideal LC and feedback/jump models are assumptions derived here, not imported physical findings."
+}

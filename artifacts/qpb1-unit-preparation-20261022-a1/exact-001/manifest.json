@@ -1,0 +1,152 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-unit-preparation-20261022-a1",
+  "run_id": "exact-001",
+  "created_at": "2026-10-22T23:11:16.604112+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "Exact lattice/source/feedback and LC preparation maps;native support selection distinct from physical unit reference;no physical data or empirical score.",
+  "command": "python3 experiments/qpb1-unit-preparation/audit.py --out /workspace/scratch/ed44232d6ecb/unitprep_outputs",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "LC_PREPARATION.md",
+      "path": "inputs/001-LC_PREPARATION.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-unit-preparation/LC_PREPARATION.md",
+      "sha256": "f349c2aa47094518a4126274f0a3e024de9bf7140484297640acfa5c7443dbc9",
+      "size_bytes": 4150
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-unit-preparation/README.md",
+      "sha256": "68050601f4208acb96a8651ff8a39ad6befc310cd0d64ed7a59cc938cdc9873f",
+      "size_bytes": 12510
+    },
+    {
+      "input_id": "input-003",
+      "name": "SOURCES.json",
+      "path": "inputs/003-SOURCES.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-unit-preparation/SOURCES.json",
+      "sha256": "2d97f0b0ab8cd7a76095b3acc33131b4b6748de4c9f0583fd515abbba40f8b79",
+      "size_bytes": 1926
+    },
+    {
+      "input_id": "input-004",
+      "name": "SOURCE_AVAILABILITY.json",
+      "path": "inputs/004-SOURCE_AVAILABILITY.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-unit-preparation/SOURCE_AVAILABILITY.json",
+      "sha256": "df1abf3b8d09589cc47ce73acd7947f1b550589057babffa758c90df5f365c88",
+      "size_bytes": 4450
+    },
+    {
+      "input_id": "input-005",
+      "name": "SOURCE_ROWS.json",
+      "path": "inputs/005-SOURCE_ROWS.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-unit-preparation/SOURCE_ROWS.json",
+      "sha256": "c4bbaf5f5f6fa79db46c0206929dfee2c4237e1ffcac7dd5939643a1046a5275",
+      "size_bytes": 12258
+    },
+    {
+      "input_id": "input-006",
+      "name": "audit.py",
+      "path": "inputs/006-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-unit-preparation/audit.py",
+      "sha256": "1f2c370e178db3985a212e74ceadb48d23e13b487cfa12d2e0e212a6527a34e6",
+      "size_bytes": 10439
+    },
+    {
+      "input_id": "input-007",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/007-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/qpb1-unit-preparation-20261022-a1/mathematical_receipt.json",
+      "sha256": "55d0e5b67893a4c1d19a44efc472244106c9429fb96d804accdf28da2f29406b",
+      "size_bytes": 20556
+    },
+    {
+      "input_id": "input-008",
+      "name": "audit.py",
+      "path": "inputs/008-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/audit.py",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b",
+      "size_bytes": 9543
+    },
+    {
+      "input_id": "input-009",
+      "name": "C0906.txt",
+      "path": "inputs/009-C0906.txt",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "sha256": "4e5cdc41c1fd93f69b8d80aeb557f5cfdf8b3b335b320ef4b2028bc1b08c6739",
+      "size_bytes": 4381
+    },
+    {
+      "input_id": "input-010",
+      "name": "ledger_v0.85.json",
+      "path": "inputs/010-ledger_v0.85.json",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    },
+    {
+      "input_id": "input-011",
+      "name": "README.md",
+      "path": "inputs/011-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-carrier-anchor/README.md",
+      "sha256": "f7860ce47f7e6d8fedea30e7a7eb6183740616e1ed259eee9da5ee67caee23b0",
+      "size_bytes": 11624
+    },
+    {
+      "input_id": "input-012",
+      "name": "ENTRY_CONTRACT_SOURCE.json",
+      "path": "inputs/012-ENTRY_CONTRACT_SOURCE.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-carrier-anchor/ENTRY_CONTRACT_SOURCE.json",
+      "sha256": "3bdcd44203e8c7c439e4089e3084a9a1b2b01caba48ced3b8fe2c3a13afb758e",
+      "size_bytes": 1488
+    }
+  ],
+  "files": [
+    {
+      "path": "files/event_preparation.json",
+      "sha256": "2b0ab0494d121acd4fc99fdf9dcc48e9bcc7c9e71253765d7547aeed565261bb",
+      "size_bytes": 1481
+    },
+    {
+      "path": "files/feedback_selection.json",
+      "sha256": "e2e5c1b0daf31084f7423f0927af64875f874d48ef8e04155ef781b526463004",
+      "size_bytes": 512
+    },
+    {
+      "path": "files/lattice_selection.json",
+      "sha256": "99dd6046097f6344bced81de5b6cd23911cf9ae9bc1074c52766265d33edb881",
+      "size_bytes": 1118
+    },
+    {
+      "path": "files/lc_preparation.json",
+      "sha256": "891fe816bd48179c4906f968d72a398dd20917242273021f5c057798fd8418fe",
+      "size_bytes": 3541
+    },
+    {
+      "path": "files/results.json",
+      "sha256": "2f1d4b192654bcc423cc06d6c9e6e1a568dab8afa70838e054f5df64bf0d7764",
+      "size_bytes": 1289
+    }
+  ]
+}
