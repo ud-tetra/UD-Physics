@@ -1,0 +1,51 @@
+{
+  "status": "FULL_HOUSING_LINEAR_WINDOW_AND_NONLINEAR_ENDPOINT_PASS",
+  "base_revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+  "strength_interval": [
+    "1/25",
+    "1/20"
+  ],
+  "qualified_beta_interval": [
+    "1/200",
+    "1/20"
+  ],
+  "housing_energy_fraction": "<=1/40000 of reference alpha=.1 pulse",
+  "parameter_records": 56,
+  "unique_parameter_sets": 50,
+  "full_housing_initial_directions": 90,
+  "full_housing_initial_phase_dimension": 180,
+  "continuous_strength_energy_upper": 0.4566660701874066,
+  "continuous_strength_all_phase_linear_breathing_lower": 0.8135617928496317,
+  "nonlinear_endpoint_records": 64,
+  "distinct_nonlinear_pulses": 58,
+  "endpoint_screen_passes": 64,
+  "minimum_nonlinear_breathing_retention_coarse": 0.8725641201058646,
+  "minimum_nonlinear_breathing_retention_fine": 0.8725639109335755,
+  "maximum_hub_mismatch_fine": 0.007582070192871741,
+  "full_housing_nonlinear_ringdown_fractions": [
+    0.4400645512556207,
+    0.35917133751796737
+  ],
+  "exact_static_compliance_upper": "930/2513",
+  "exact_fixed_primary_linear_energy_upper": "722733/1749367",
+  "exact_initial_housing_domain": {
+    "housing_displacement_over_ell0": "<1/200",
+    "housing_velocity_over_ell0_per_u": "<1/20",
+    "housing_strut_length_over_ell0": ">99/200"
+  },
+  "old_sector_linear_evaluations": 450,
+  "full_housing_linear_evaluations": 850,
+  "raw_full_housing_audit_status": "OPEN_OR_FAILED",
+  "raw_status_reason": "coarse interpolation exhausted17-nodecap withgaps;allnodes passed;sharper proven inequality closescoverage on same saved values",
+  "original_input_sha256": {
+    "probes.json": "1044dda54438f359dc71cfc3726a7f0cfa2933f491996cd8022167bfc50a3ea5",
+    "baselines.json": "6ccc482c696c9cfee16aad5bd9df930c8914b155350d5b752cf7280b7906fb45"
+  },
+  "checks": "original20 physics sets and frozen nonlinear baseline bytes unchanged;64 records/58 unique trajectories and energy ratios verified",
+  "limitations": [
+    "finite50-parameter family;not continuous uncertainty-box coverage",
+    "linear all-phase and continuous-strength inequalities evaluated numerically;not verified interval arithmetic",
+    "nonlinear checks are finite endpoint phases;no nonlinear all-phase/domain theorem",
+    "120 massless struts/ideal routing and uncalibrated units;physical tests UNSCORED;mainline promotion0"
+  ]
+}

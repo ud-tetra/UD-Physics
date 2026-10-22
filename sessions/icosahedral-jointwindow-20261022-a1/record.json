@@ -1,0 +1,88 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "icosahedral-jointwindow-20261022-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector write",
+  "task": "integration-icosahedral-jointwindow-20261022",
+  "goal": "Bound and test a common ringdown/breathing strength range including nonzero housing phases and zero input friction",
+  "created_at": "2026-10-22T20:37:49.280427+00:00",
+  "base_revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-icosahedral-jointwindow-20261022": {
+      "ref": "refs/heads/claims/integration-icosahedral-jointwindow-20261022",
+      "sha": "c62806a810c2a3ed2750d3818acc9c64ff2c9c43",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/icosahedral-jointwindow/bounds.py --out OUTPUT",
+      "result": "EXACT_PASSQsqrt5gradient/fractions/compliance/fixed-primarylimit/initialdomain"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-jointwindow/analyze.py --out OUTPUT",
+      "result": "PASS50coefficients/9nodes/450oldsectorlinear evaluations;64/64pulse records58trajectories,4ringdowns,2integralchecks,2finerefinements"
+    },
+    {
+      "command": "python3 experiments/icosahedral-jointwindow/envelope.py --out OUTPUT",
+      "result": "PASScontinuousnu oldsectorenergyupper.4622882246,linearbreathinglower.8135617928"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-jointwindow/full_housing.py --out OUTPUT",
+      "result": "Allfullhousingnodespass;coarse17-nodecapOPENcoverage;850evaluations and2fullhousingnonlinear ringdowns"
+    },
+    {
+      "command": "python3 experiments/icosahedral-jointwindow/refine_full_bounds.py --out OUTPUT",
+      "result": "FULL_HOUSING_WINDOW_PASSenergyupper.4566660702 withall180phases/50parameter sets;sharperexactinequalityonsaveddata,no retuning"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-jointwindow/balancecheck.py --out OUTPUT",
+      "result": "PASS50alternativeCOM/inertia assemblies;rigidenergychange<=3.18e-22"
+    },
+    {
+      "command": "python3 experiments/icosahedral-jointwindow/finalize.py --out OUTPUT",
+      "result": "PASSoriginal20physics/baselinebytes/64records58unique/Ehfractions;milestoneindexsaved"
+    },
+    {
+      "command": "python3 experiments/icosahedral-jointwindow/draw.py --out OUTPUT",
+      "result": "executed;updatedfullhousing scientificfigurevisuallyinspected"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16repositorytoolingtests"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS79records,manifestdigests andlocaldocumentationlinks"
+    },
+    {
+      "command": "git diff --cached --check -- . :(exclude)artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/inputs/028-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "result": "PASSallchanges exceptbyte-preservedhistoricalledgerinput;fullcheck reports its2intentionalMarkdown hardbreak trailing-spaces;sourcebytespreserved"
+    }
+  ],
+  "finding": "EXACTconditional compliance/phase/domainbounds. NUMERICAL nu[.04,.05],50parameter sets,all180housingphases:energy<=45.667%,linearbreathing>=81.356%. Nonlinear64/64records(58trajectories)pass,min87.256%breathing;fullnonlinearbox/phasecoverageOPEN.",
+  "next_action": "Construct validated nonlinear perturbation tubes for housing-energy ball at limiting ringdown/breathing preparations;bound future strut lengths and volume readout.",
+  "checkpoint_at": "2026-10-22T21:05:52.384351+00:00",
+  "checkpoint_source": {
+    "revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+    "dirty": true
+  },
+  "mathematical_profile": {
+    "coefficient_domain": "Q(sqrt5) referencegeometry andrationalbounds;realoperators, float64 numericalevaluation",
+    "methods": [
+      "typedcounts andprovenance",
+      "staticcompliance/Schur/Lowner",
+      "energy-metricadjointcontraction",
+      "Duhamel andCauchySchwarz",
+      "fullphaseGram withrigidkineticenergy",
+      "continuousstrengthenvelopes",
+      "Noether spatialassembly",
+      "nonlinearpointchecks/refinement"
+    ],
+    "clock": "continuousdimensionlessu;no modularregister orrecurrenceclaim",
+    "metric": "positiveM,massnormalG=diag(k,I),fullrigidkineticpart retained",
+    "physical_mapping": "unchangedassumedmultiport/120masslessstrutmechanics;uncalibratedunits,hardwareUNSCORED,nativeUDselectionOPEN"
+  }
+}

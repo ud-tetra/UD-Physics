@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-icosahedral-jointwindow-20261022",
+  "goal": "Joint passive housing ringdown and breathing window with explicit continuous/numerical scopes",
+  "owned_paths": [
+    "experiments/icosahedral-jointwindow",
+    "candidates/icosahedral-jointwindow",
+    "sessions/icosahedral-jointwindow-20261022-a1",
+    "artifacts/icosahedral-jointwindow-20261022-a1",
+    "tasks/integration-icosahedral-jointwindow-20261022.json",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "integration-icosahedral-mountloss-20261022"
+  ],
+  "status": "complete"
+}

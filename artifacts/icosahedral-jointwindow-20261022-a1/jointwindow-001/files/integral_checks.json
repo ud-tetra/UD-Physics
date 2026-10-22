@@ -1,0 +1,18 @@
+[
+  {
+    "id": "uniform-b0.005-cf0.0",
+    "nu": 0.04,
+    "ODE_rms": 0.024497277986832086,
+    "rms_change": 3.1381355847237558e-12,
+    "ODE_sensitivity_integral": 0.0015477567887587369,
+    "sensitivity_change": 1.4554462236110455e-12
+  },
+  {
+    "id": "exposed-previous-7-boundary0",
+    "nu": 0.04,
+    "ODE_rms": 0.02157263691747905,
+    "rms_change": 7.000511281773925e-13,
+    "ODE_sensitivity_integral": 0.016656368036459437,
+    "sensitivity_change": 9.286876823111356e-13
+  }
+]

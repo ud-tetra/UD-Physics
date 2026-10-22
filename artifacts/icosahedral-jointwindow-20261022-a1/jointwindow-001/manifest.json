@@ -1,0 +1,425 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "icosahedral-jointwindow-20261022-a1",
+  "run_id": "jointwindow-001",
+  "created_at": "2026-10-22T21:07:05.998139+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Jointnu[.04,.05]window:exactcompliance/phase/initialdomainbounds;50parameter sets,all180housingphases energyupper45.667%/linearbreathinglower81.356%;64/64nonlinearendpointrecords58trajectoriespass. Raw17-nodecoarsegaps preserved;sharperprovedinequality closescoverageonsamevalues. No nonlinear/fulluncertaintybox/hardwareclaim.",
+  "command": "Executed separately from repository root: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-jointwindow/bounds.py --out /workspace/scratch/ed44232d6ecb/jointwindow_outputs; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-jointwindow/analyze.py --out /workspace/scratch/ed44232d6ecb/jointwindow_outputs; python3 experiments/icosahedral-jointwindow/envelope.py --out /workspace/scratch/ed44232d6ecb/jointwindow_outputs; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-jointwindow/full_housing.py --out /workspace/scratch/ed44232d6ecb/jointwindow_outputs; python3 experiments/icosahedral-jointwindow/refine_full_bounds.py --out /workspace/scratch/ed44232d6ecb/jointwindow_outputs; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 experiments/icosahedral-jointwindow/balancecheck.py --out /workspace/scratch/ed44232d6ecb/jointwindow_outputs; python3 experiments/icosahedral-jointwindow/finalize.py --out /workspace/scratch/ed44232d6ecb/jointwindow_outputs; python3 experiments/icosahedral-jointwindow/draw.py --out /workspace/scratch/ed44232d6ecb/jointwindow_outputs",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "analyze.py",
+      "path": "inputs/001-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/analyze.py",
+      "sha256": "c0e68dce9557aa9dd36e148b9f6cd46d39cc9e396dd547e61e3e782d9b3d71f0",
+      "size_bytes": 13976
+    },
+    {
+      "input_id": "input-002",
+      "name": "balancecheck.py",
+      "path": "inputs/002-balancecheck.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/balancecheck.py",
+      "sha256": "b1be18bf4c46464ee238dd781062aa34abe9468696a9af288ac1d7eeb8e8eab8",
+      "size_bytes": 1960
+    },
+    {
+      "input_id": "input-003",
+      "name": "bounds.py",
+      "path": "inputs/003-bounds.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/bounds.py",
+      "sha256": "a2eef7c2075362cec708d3b09472805da1108c46acd18a807e76b64f88a33fe5",
+      "size_bytes": 3782
+    },
+    {
+      "input_id": "input-004",
+      "name": "draw.py",
+      "path": "inputs/004-draw.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/draw.py",
+      "sha256": "6362b65183f361d13c5e4c7dd3591e7d0426918990e171852e8ae9fb36d83903",
+      "size_bytes": 3629
+    },
+    {
+      "input_id": "input-005",
+      "name": "envelope.py",
+      "path": "inputs/005-envelope.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/envelope.py",
+      "sha256": "32f911c223c92bdaf53904c0fdf117e714b3e377a8359b8350e5e0e569deb903",
+      "size_bytes": 2952
+    },
+    {
+      "input_id": "input-006",
+      "name": "finalize.py",
+      "path": "inputs/006-finalize.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/finalize.py",
+      "sha256": "a2cdb775f5790b05238c30135dfb873b3c5b000f60ee2164c1697f46c385bde6",
+      "size_bytes": 3984
+    },
+    {
+      "input_id": "input-007",
+      "name": "full_housing.py",
+      "path": "inputs/007-full_housing.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/full_housing.py",
+      "sha256": "46159127a1f2d5ddce425ca0549ed7da625fa188eac80c69cb0b2d90edf1ca03",
+      "size_bytes": 4888
+    },
+    {
+      "input_id": "input-008",
+      "name": "linear.py",
+      "path": "inputs/008-linear.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/linear.py",
+      "sha256": "cbc6e704996303e418c7fc8f0988651b1a3c7c81e830978490b548ca3590f079",
+      "size_bytes": 3831
+    },
+    {
+      "input_id": "input-009",
+      "name": "refine_full_bounds.py",
+      "path": "inputs/009-refine_full_bounds.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/refine_full_bounds.py",
+      "sha256": "6ae1aaaab7621ff293e29f8c6714222d06b25071bb0ef281c81606d590aa4d37",
+      "size_bytes": 3050
+    },
+    {
+      "input_id": "input-010",
+      "name": "BUDGET.md",
+      "path": "inputs/010-BUDGET.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/BUDGET.md",
+      "sha256": "ecb67044d331647020ed2e154c34fe46f4ff0046a9dc5f8adbe6ad2eb4d0f6e0",
+      "size_bytes": 3388
+    },
+    {
+      "input_id": "input-011",
+      "name": "PROTOCOL.md",
+      "path": "inputs/011-PROTOCOL.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/PROTOCOL.md",
+      "sha256": "4e91ee0251944728934b9c9a45ae2c802e45f21aae4ba5dea344b589bc9c8fae",
+      "size_bytes": 6843
+    },
+    {
+      "input_id": "input-012",
+      "name": "README.md",
+      "path": "inputs/012-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/README.md",
+      "sha256": "87698d4b677aaae831c3bbcd5599a9141188c310b1fdd4a827501de7a71b4397",
+      "size_bytes": 14268
+    },
+    {
+      "input_id": "input-013",
+      "name": "RESULTS.md",
+      "path": "inputs/013-RESULTS.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-jointwindow/RESULTS.md",
+      "sha256": "068efe8958b1312ac5befc6cc492626f759000f49fed81989ff9e46b0640d3d6",
+      "size_bytes": 9632
+    },
+    {
+      "input_id": "input-014",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/014-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/icosahedral-jointwindow/mathematical_receipt.json",
+      "sha256": "9f1105182afb2d83b4c77382e0e1e929f9c27bc0b4c32a679e9b2224a43c9b3e",
+      "size_bytes": 25752
+    },
+    {
+      "input_id": "input-015",
+      "name": "mountloss.py",
+      "path": "inputs/015-mountloss.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/mountloss.py",
+      "sha256": "3ef430afa5de9f3508f4a72d698c16a25ed5e8626cb3e8f21af705490855741b",
+      "size_bytes": 3974
+    },
+    {
+      "input_id": "input-016",
+      "name": "analyze.py",
+      "path": "inputs/016-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-mountloss/analyze.py",
+      "sha256": "109157508a787136bd04ff0600146b4899169b07dcda2566bfe9a12954add2b9",
+      "size_bytes": 12587
+    },
+    {
+      "input_id": "input-017",
+      "name": "hardware.py",
+      "path": "inputs/017-hardware.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/hardware.py",
+      "sha256": "dee76607e8ebe28ae48eafb05c102696150b80bf6c7eb19bbb1c96594a42183a",
+      "size_bytes": 2950
+    },
+    {
+      "input_id": "input-018",
+      "name": "analyze.py",
+      "path": "inputs/018-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-tolerances/analyze.py",
+      "sha256": "df4edfe07648874e19bb80808ba0aa35ac3a4b0bcf38c174cbe799edc2842356",
+      "size_bytes": 11192
+    },
+    {
+      "input_id": "input-019",
+      "name": "damping.py",
+      "path": "inputs/019-damping.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-damping/damping.py",
+      "sha256": "5c47fd68afa10e2a1a545b7a0b8593159ca9822da312f887b1fcead28581ff7f",
+      "size_bytes": 2091
+    },
+    {
+      "input_id": "input-020",
+      "name": "analyze.py",
+      "path": "inputs/020-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-damping/analyze.py",
+      "sha256": "f1fc3fdf58b99a910c3e97d47706aaf747a9690d2c16a1972999cc4baf42ad0b",
+      "size_bytes": 12945
+    },
+    {
+      "input_id": "input-021",
+      "name": "model.py",
+      "path": "inputs/021-model.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-free3d/model.py",
+      "sha256": "171fbae15260a0bacb0cfde601159a84f8648349cb47fcacd88c6e2137d2bbb3",
+      "size_bytes": 6925
+    },
+    {
+      "input_id": "input-022",
+      "name": "network.py",
+      "path": "inputs/022-network.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-multiport/network.py",
+      "sha256": "ebcb9efe5e07212463e8b448c0b157025158d3a365dbc25599d6d14210628245",
+      "size_bytes": 3479
+    },
+    {
+      "input_id": "input-023",
+      "name": "analyze.py",
+      "path": "inputs/023-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-cone/analyze.py",
+      "sha256": "089fbed8bc59f7c785c12f57089b6b5f9be25d381c76854ba72fc893622ed8e3",
+      "size_bytes": 11982
+    },
+    {
+      "input_id": "input-024",
+      "name": "probes.json",
+      "path": "inputs/024-probes.json",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-tolerances-20261022-a1/tolerances-001/files/probes.json",
+      "sha256": "1044dda54438f359dc71cfc3726a7f0cfa2933f491996cd8022167bfc50a3ea5",
+      "size_bytes": 125921
+    },
+    {
+      "input_id": "input-025",
+      "name": "baselines.json",
+      "path": "inputs/025-baselines.json",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-tolerances-20261022-a1/tolerances-001/files/baselines.json",
+      "sha256": "6ccc482c696c9cfee16aad5bd9df930c8914b155350d5b752cf7280b7906fb45",
+      "size_bytes": 1804
+    },
+    {
+      "input_id": "input-026",
+      "name": "linear_scope_checks.json",
+      "path": "inputs/026-linear_scope_checks.json",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-mountloss-20261022-a1/mountloss-001/files/linear_scope_checks.json",
+      "sha256": "61d279f282bbae2056bd4bef1d93f74f63c75e563239a50b99f04380550657c4",
+      "size_bytes": 914
+    },
+    {
+      "input_id": "input-027",
+      "name": "summary.json",
+      "path": "inputs/027-summary.json",
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-mountloss-20261022-a1/mountloss-001/files/summary.json",
+      "sha256": "b4f54c27484854c3fb112d2fc3d83e692745e8d24a53e31cd684101f2c587799",
+      "size_bytes": 11032
+    },
+    {
+      "input_id": "input-028",
+      "name": "UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "path": "inputs/028-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "source_location": "repository",
+      "source_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    },
+    {
+      "input_id": "input-029",
+      "name": "UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "path": "inputs/029-UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "source_location": "repository",
+      "source_path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "sha256": "8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4",
+      "size_bytes": 4882
+    }
+  ],
+  "files": [
+    {
+      "path": "files/baselines.json",
+      "sha256": "6ccc482c696c9cfee16aad5bd9df930c8914b155350d5b752cf7280b7906fb45",
+      "size_bytes": 1804
+    },
+    {
+      "path": "files/bounds.json",
+      "sha256": "3bf96b5dc84080b9695712bf531bf4001236903f109ae4c08ef7851b16eb93bf",
+      "size_bytes": 1847
+    },
+    {
+      "path": "files/cases.json",
+      "sha256": "40f3b07c3f90229eaed3c7d0d3796541a57dd900c8a4d7eda08a01be43b2eb36",
+      "size_bytes": 288137
+    },
+    {
+      "path": "files/coverage.json",
+      "sha256": "daa4724349d1522aaf6194e6f4ff8307bec621815249af3cc114f28c05c64cf5",
+      "size_bytes": 3341
+    },
+    {
+      "path": "files/coverage_segments.json",
+      "sha256": "df19693fb94ea9392fc5d45e800c6d1a9c038924f42aff9f24327b42bf9a43a2",
+      "size_bytes": 2386
+    },
+    {
+      "path": "files/envelopes.json",
+      "sha256": "08443ead3db93cd02e64aa2c38dbd60119acb0ac9ede583d551527332a58604a",
+      "size_bytes": 15942
+    },
+    {
+      "path": "files/full-housing-ringdown-0.04.csv",
+      "sha256": "2a289d66a3558b8536591b1b346fd4cd7062c00e0d2da6ba1dcc9a0611a3071d",
+      "size_bytes": 96990
+    },
+    {
+      "path": "files/full-housing-ringdown-0.05.csv",
+      "sha256": "05e2b0cfa17c0874b96d87fdc9cbc71bf50eedb7f68e53cd1a540ec0d7d8a549",
+      "size_bytes": 96988
+    },
+    {
+      "path": "files/full_housing_linear.csv",
+      "sha256": "b1a028216c92d9c267496bdc890fc924109c489837f139d98ef50512c279b07c",
+      "size_bytes": 105346
+    },
+    {
+      "path": "files/full_housing_refined.json",
+      "sha256": "d3fc9c63f21811b65e3d0bed04063d8f4725eaab01970602e560876ccc569427",
+      "size_bytes": 9454
+    },
+    {
+      "path": "files/full_housing_summary.json",
+      "sha256": "b8c04d56c146caadf9dec55ef8ed6c466c5bb534a7da9b68914e917618043f21",
+      "size_bytes": 5310
+    },
+    {
+      "path": "files/full_housing_worst_phase-0.04.npy",
+      "sha256": "ec766b2ece62046422b098498f9e72a4e8279a292fd2693b662167ba590c537f",
+      "size_bytes": 1568
+    },
+    {
+      "path": "files/full_housing_worst_phase-0.05.npy",
+      "sha256": "cc4f640419f8f977c07454728b4dac089ac2cd4152939558762aa43bc6e2c69d",
+      "size_bytes": 1568
+    },
+    {
+      "path": "files/integral_checks.json",
+      "sha256": "badc73be980a92f47b0927f6f9e108986cecd49967689947515c494221b6c19d",
+      "size_bytes": 491
+    },
+    {
+      "path": "files/jointwindow-summary.png",
+      "sha256": "737fd8138cd6169a24548a0dcec9238f91dc21c6df22dc0418e7cd3000caa77e",
+      "size_bytes": 187032
+    },
+    {
+      "path": "files/limit_cases.json",
+      "sha256": "790a2987796e2b14104dc9ecd99c605bcca0a4ef99f51cc9bea28beb38a2fbeb",
+      "size_bytes": 5991
+    },
+    {
+      "path": "files/limits.json",
+      "sha256": "efb42d77720ce1523b6ec5bd37828a4e9fcbee79b87d5b2972819f0bc7b5b95c",
+      "size_bytes": 3574
+    },
+    {
+      "path": "files/linear.csv",
+      "sha256": "971a8dc46bc42fc9b246ef7c20b13b9f3651d29d4704e111fa402f9e2edaf3e5",
+      "size_bytes": 175745
+    },
+    {
+      "path": "files/milestone.json",
+      "sha256": "717b120549d9db06de9884610a3fe434131596ce0094aaa9b2c758cce58eb8fd",
+      "size_bytes": 2347
+    },
+    {
+      "path": "files/pulses.csv",
+      "sha256": "e6f6684833d449a63fed7750e92cc112b4b101825f5af42f58b6fde8129d7ce2",
+      "size_bytes": 33871
+    },
+    {
+      "path": "files/rigid_energy_checks.json",
+      "sha256": "035862e94a6a19731c02749b3a81905d5b868d0b3b3ee10509ca24e3a5781305",
+      "size_bytes": 14148
+    },
+    {
+      "path": "files/ringdown-0.04-0.25.csv",
+      "sha256": "0059a881082007df97cde71d156e835041498af3d6dd69e6f69a1c7df93d0c89",
+      "size_bytes": 96830
+    },
+    {
+      "path": "files/ringdown-0.04-1.0.csv",
+      "sha256": "3dd06e4d4ba6c5a25fdfa5e92d1b2d98533b70111176e6be9ea0c7ac6b0052fc",
+      "size_bytes": 96883
+    },
+    {
+      "path": "files/ringdown-0.05-0.25.csv",
+      "sha256": "dc388251e19c8d09b4cb371760ff7febc09ee98b6cfa7a072bc4eea75e617a46",
+      "size_bytes": 96827
+    },
+    {
+      "path": "files/ringdown-0.05-1.0.csv",
+      "sha256": "a56ea4784214c5abb8989217ec7ca784afdf46d8c725878e0349bd2486ae7645",
+      "size_bytes": 96835
+    },
+    {
+      "path": "files/ringdowns.json",
+      "sha256": "fac5515df1d37362a87a1a189d3d404d4f719eaaf0cc19392a116c52a7b0ddcf",
+      "size_bytes": 2649
+    },
+    {
+      "path": "files/summary.json",
+      "sha256": "7b1b8eba123ba5cdad67f3dc1ee2be81784e2512635c7c194ee9f8e616e130df",
+      "size_bytes": 14736
+    },
+    {
+      "path": "files/vectors-high.npz",
+      "sha256": "f9ac63670cf51eee7471bd6f61b86bd6ab5b42aaa369432853e5bacf2569cc9f",
+      "size_bytes": 81082
+    },
+    {
+      "path": "files/vectors-low.npz",
+      "sha256": "776c405620452ce5a636161ce7c4a1c2de06fa88a567b0ce2f298ae8779baae3",
+      "size_bytes": 81023
+    }
+  ]
+}
