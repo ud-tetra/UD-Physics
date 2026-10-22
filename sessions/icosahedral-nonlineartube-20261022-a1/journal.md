@@ -43,3 +43,11 @@ Captured immutable nonlineartube-001:19inputs (proof/protocol/receipt/code plus 
 Checkpoint (handoff): EXACT/CONDITIONAL housing-only all-phase/all-time struts>987/2000, oriented volume ratios(39/40,41/40),globalexistence across continuous qualified box. Fullpulse safety throughu1/20; energy-only u100extension obstructed. Seven numerical check records pass.
 
 Next: Validated trajectory-dependent nonlinear pulse tube for full housing phase ball; close domain and bound integration error.
+
+## Integrated and released
+
+Research PR40 merged at dec098ec0a364a03684e15807634ece11b0d68d1 after Discovery integrity run39856969097 completed/success at exact head8c00ce2c4fd0de7c022370217013bdd59bb92a43. Prepared GitHub tree12afe15860862b41498cbcfca7d35c9f6a58ff4d matched local staged tree, and all25 new blob hashes matched.
+
+Read exact held claim owner/SHA, created released child markerff7f5b6029b748c5c00d5ff08430ee8ec8bd654f, CAS-updated ref and verified live released metadata/released_from_sha. No claim deletion claimed. Local research tree matched fetched integrated main before soft alignment. This follow-up changes only this session record/journal under the protocol's closure exception; research/captured run unchanged.
+
+Handoff: housing-only nonlinear geometry/domain guarantee is closed under the assumed mechanical law; half-energy deadline and long-time full-pulse phase-ball tube remain OPEN. Next action: a validated trajectory-dependent relative-energy/variational tube about the exposed worst breathing pulse, preserving the complete housing phase ball and domain/error bounds. Physical testing remains UNSCORED.
