@@ -1,0 +1,67 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "heart-shell-elastic",
+  "session_id": "heart-elastic-20261022-a1",
+  "question": "Can an explicit positive energy law couple an internal scalar heart to actual shell dilation and stable cell-volume breathing?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "HYPOTHESIS",
+    "CONDITIONAL",
+    "EXACT"
+  ],
+  "assumptions": [
+    "New mechanical state: one internal preferred strain a and four radial shell strains q_i, not the29-chain state.",
+    "Fixed centre; R_i=(1+q_i)r_i on regular reference rays; q_i>-1; angular/shear motion excluded.",
+    "Chosen quadratic kinetic/potential law with Ih,Is,Kc>0, Kh,Ks,Kt>=0 and Kh+Ks>0.",
+    "Equal spoke and shell coefficients give exact S4 symmetry; material and native parameter selection OPEN.",
+    "Dimensionless u, model energy coefficients and optional L; physical time/energy calibration OPEN."
+  ],
+  "physical_mapping": "ASSUMED geometry: radial strain to shell positions and determinant volumes; DERIVED model conjugate pressure; OPEN native variable, material, physical energy and time calibration.",
+  "target_exposure": "User-requested heart/breathing interpretation known; no empirical numeric target or data exposed.",
+  "fitted_choices": [],
+  "chosen_example": {
+    "purpose": "transparent rational example, not a fit or selected native constants",
+    "Kh": "1",
+    "Ks": "1",
+    "Kc": "1",
+    "Kt": "1/2",
+    "Ih": "1",
+    "Is": "1",
+    "a0": "1/10"
+  },
+  "sources": [
+    {
+      "path": "experiments/heart-shell-modes/README.md",
+      "revision": "ccd914be6dd137910fcb98c8833da6d9f1977b43",
+      "section": "Sections4-7",
+      "status": "previous chain obstruction, geometry and unpinned scalar toy"
+    },
+    {
+      "path": "experiments/k5-four-cell/README.md",
+      "revision": "ccd914be6dd137910fcb98c8833da6d9f1977b43",
+      "section": "Reading the supplied sketch; Three graph descriptions",
+      "status": "labelled topology; no material law imported"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "revision": "ccd914be6dd137910fcb98c8833da6d9f1977b43",
+      "section": "Q139,Q144-Q145,Q148,Q151-Q152",
+      "status": "historical micro/coarse and time/pressure distinctions; no coefficient imported"
+    }
+  ],
+  "baseline": "Kc=0 decouples heart from volume; Kh=Ks=0 recovers free common drift; unequal radial strains test nonlinear total volume.",
+  "result": "CONDITIONAL/EXACT: positive pinned heart-shell energy yields two coupled collective volume modes and three differential radial modes. Heart-only strain produces V_i=V0*(1+b)^3/4 in the symmetric sector, with b_doubleprime(0)=Kc*a0/Is. Collective determinant D0=Kh*Ks+Kh*Kc+4*Kc*Ks>0 proves stability. Derived pressure, susceptibility, nonlinear volume readout and bounded exact illustrative trajectory.",
+  "limitations": [
+    "Restricted radial ansatz; no full3D elastic or momentum-balance model.",
+    "Stable conditional law is chosen, not uniquely sourced from UD geometry.",
+    "Collective invariance requires symmetric parameters and preparation/forcing.",
+    "Conservative model exchanges stored energy; no active pump or selected sustained amplitude.",
+    "Constructor verification only; no material measurement or independent replication."
+  ],
+  "next_discriminant": "Break equal spoke stiffnesses or shell inertias while retaining positive energy; quantify collective response and differential volume leakage from a heart preparation.",
+  "mathematical_receipts": [
+    "candidates/heart-shell-elastic/mathematical_receipt.json"
+  ],
+  "artifact": "artifacts/heart-elastic-20261022-a1/exact-001/manifest.json"
+}
