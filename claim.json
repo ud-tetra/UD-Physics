@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "integration-icosahedral-nonlineartube-20261022",
   "session": "icosahedral-nonlineartube-20261022-a1",
   "created_at": "2026-10-22T21:16:15.722Z",
@@ -14,5 +14,7 @@
     "candidates/icosahedral-nonlineartube/",
     "artifacts/icosahedral-nonlineartube-20261022-a1/",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-10-22T21:24:45.268Z",
+  "released_from_sha": "b23999e7dba4d251d299a04447adcb75671e7d67"
 }
