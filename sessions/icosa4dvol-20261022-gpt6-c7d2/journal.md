@@ -1,0 +1,10 @@
+# Session journal — locality continuation
+
+- Session: `icosa4dvol-20261022-gpt6-c7d2`; verified held claim SHA `23b04a0533df0bd6b26f0c7fc9f94a6864400cea`; prior isolated branch `1bc9f2d450bde6deb85f0b05dd31109795ef2b76`.
+- Authorized next question: local reciprocal rotationally symmetric 3D networks vs 4D apex, preserving prior guided nonlinear equivalence.
+- EXACT/CONDITIONAL: 13-node 3D central-only model has zero mixed scalar-vector Hessian by proper icosahedral symmetry. The new 24-node, 132 pairwise-spring 3D network has target-matched exact 2x2 K/M, and two-shell structural constraint rank66 via shell rigidity, spoke relative-translation constraints, and three cross-product rotation witnesses with determinant (7+3sqrt5)/32.
+- FIT: 4D K/M exposed; chose gamma=1/5, inner reference b0=1/4, nearest-neighbor cross k=1/20; solved positive ks, ke, ki and inner vertex mass. Zero empirical target, no held-out physical validation.
+- NUMERICAL: full 72-coordinate rank66, six rigid zero modes, SO3 covariance and zero total force/torque, exact symmetric linear transfer residual <7e-16. Local nonuniform shell compliance at omega=.3 is 0.52721 (4D) vs 1.08710 (3D), while total linear volume response agrees. Positive pulse A=.08 peaks are 3.523392% (4D) vs 4.121657% (3D pairwise). Earlier 3D guided analogue remains exactly nonlinear-equivalent at all orders.
+- Executed local: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 locality_audit.py` PASS (constructor SymPy, SciPy/NumPy); original and captured inputs/results SHA-256 logged in `artifacts/icosa4dvol-20261022-gpt6-c7d2/locality-001/manifest.json`. The trace has 1401 time points.
+- New repository integrity/CI and unit tests: NOT_RUN locally; pending workflow run after new branch edits. No independent scientific review, material test, mainline export or integration.
+- Checkpoint: `sessions/icosa4dvol-20261022-gpt6-c7d2/CHECKPOINT_LOCALITY.md`; keep draft PR39 and held claim through review. Next: freeze complexity budgets and compare nonuniform spectra, then seek UD-native constraints if any.
