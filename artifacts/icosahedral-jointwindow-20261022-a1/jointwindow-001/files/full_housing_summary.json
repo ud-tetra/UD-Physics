@@ -1,0 +1,186 @@
+{
+  "status": "OPEN_OR_FAILED",
+  "exposure": "post-campaign scope extension;no retuning;not independent validation",
+  "initial_housing_coordinates": 90,
+  "initial_phase_dimension": 180,
+  "rigid_kinetic_energy": "retained in energy Gram; no zero-momentum assumption",
+  "parameter_sets": 50,
+  "nodes": [
+    {
+      "nu": 0.04,
+      "radius": 0.0002143178023245313,
+      "worst_energy": 0.44006496869742123,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.04117675473654193,
+      "radius": 0.0002530227480698825,
+      "worst_energy": 0.42964895560428834,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.04242639498275245,
+      "radius": 0.0002935976591645751,
+      "worst_energy": 0.41886364682165383,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.04367603522896297,
+      "radius": 0.0003336363427325454,
+      "worst_energy": 0.40835526400890654,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.045,
+      "radius": 0.00037547915622590397,
+      "worst_energy": 0.3975160315641625,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.04618208261361921,
+      "radius": 0.0004123426024554596,
+      "worst_energy": 0.38808749142832105,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.04743177684220563,
+      "radius": 0.000450813052509735,
+      "worst_energy": 0.37836859829525116,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.04868147107079204,
+      "radius": 0.0004887746797727997,
+      "worst_energy": 0.36889905955798385,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.05,
+      "radius": 0.0005282829640589552,
+      "worst_energy": 0.35917114523938054,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.04056902489539829,
+      "radius": 0.0002330942817400021,
+      "worst_energy": 0.43499638961775516,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.04178128740409984,
+      "radius": 0.00027271888724175194,
+      "worst_energy": 0.4243963579278283,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.04303119576407373,
+      "radius": 0.00031304210359715064,
+      "worst_energy": 0.41374366727088874,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.0443170962077348,
+      "radius": 0.0003539702204623918,
+      "worst_energy": 0.4030696347405238,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.04557260958369483,
+      "radius": 0.000393394046655042,
+      "worst_energy": 0.39291981731794084,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.04678769450288528,
+      "radius": 0.00043104965670757653,
+      "worst_energy": 0.38334608424931427,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.048037643142867306,
+      "radius": 0.0004692804233602549,
+      "worst_energy": 0.37374691774136193,
+      "worst_id": "uniform-b0.05-cf0.0"
+    },
+    {
+      "nu": 0.049320981393252944,
+      "radius": 0.0005080062504534381,
+      "worst_energy": 0.36414753591641363,
+      "worst_id": "uniform-b0.05-cf0.0"
+    }
+  ],
+  "matrix_evaluations": 850,
+  "covered_intervals": [
+    [
+      0.04,
+      0.04021431780232453
+    ],
+    [
+      0.04033593061365829,
+      0.040802119177138295
+    ],
+    [
+      0.040923731988472045,
+      0.04142977748461181
+    ],
+    [
+      0.04150856851685809,
+      0.04205400629134159
+    ],
+    [
+      0.04213279732358787,
+      0.05
+    ]
+  ],
+  "uncovered_intervals": [
+    [
+      0.04021431780232453,
+      0.04033593061365829
+    ],
+    [
+      0.040802119177138295,
+      0.040923731988472045
+    ],
+    [
+      0.04142977748461181,
+      0.04150856851685809
+    ],
+    [
+      0.04205400629134159,
+      0.04213279732358787
+    ]
+  ],
+  "ringdowns": [
+    {
+      "id": "uniform-b0.05-cf0.0",
+      "nu": 0.04,
+      "linear_energy_fraction": 0.44006496869742123,
+      "energy_balance_error": 1.3603062444829536e-10,
+      "total_P_drift": 3.18088567646476e-18,
+      "total_L_drift": 2.708812842344348e-18,
+      "initial_total_P_norm": 1.0986855937012521e-17,
+      "initial_total_L_norm": 6.029447944581767e-18,
+      "housing_energy": 1.6250000000000001e-06,
+      "housing_energy_over_reference_pulse": 2.5e-05,
+      "final_total_energy_fraction": 0.4400645512556207,
+      "maximum_housing_perturbation_initial": 6.32485147523963e-06,
+      "nonlinear_vs_linear_change": 4.174418005153946e-07
+    },
+    {
+      "id": "uniform-b0.05-cf0.0",
+      "nu": 0.05,
+      "linear_energy_fraction": 0.35917114523938054,
+      "energy_balance_error": 1.4080867214737664e-10,
+      "total_P_drift": 2.031696146355531e-18,
+      "total_L_drift": 3.421695625927113e-18,
+      "initial_total_P_norm": 6.905334051389783e-18,
+      "initial_total_L_norm": 9.762595584952737e-18,
+      "housing_energy": 1.6250000000000001e-06,
+      "housing_energy_over_reference_pulse": 2.5e-05,
+      "final_total_energy_fraction": 0.35917133751796737,
+      "maximum_housing_perturbation_initial": 6.152657143726052e-06,
+      "nonlinear_vs_linear_change": 1.9227858683024124e-07
+    }
+  ],
+  "scope": "numerical continuous-strength full-housing enclosure for finite parameter family;two nonlinear full-housing phases only;no continuous uncertainty-box/nonlinear all-phase theorem"
+}

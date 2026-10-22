@@ -1,0 +1,370 @@
+{
+  "status": "PASS",
+  "method": "all cusps and pairwise affine-piece intersections; float64 inputs,not verified interval arithmetic",
+  "maximum_housing_energy_upper": {
+    "id": "edge-p1-b0.005-cf0.0",
+    "continuous_strength_housing_energy_upper": 0.4622882245593835,
+    "housing_upper_at_nu": 0.040570525922744016,
+    "continuous_strength_all_phase_linear_retention_lower": 0.9290212949747526,
+    "retention_lower_at_nu": 0.049353225533293424
+  },
+  "minimum_all_phase_linear_retention_lower": {
+    "id": "seed10422-0-boundary2",
+    "continuous_strength_housing_energy_upper": 0.33279346219654393,
+    "housing_upper_at_nu": 0.040565689367926996,
+    "continuous_strength_all_phase_linear_retention_lower": 0.8135617928496317,
+    "retention_lower_at_nu": 0.049366836010060665
+  },
+  "per_case": [
+    {
+      "id": "edge-p0-b0.005-cf0.0",
+      "continuous_strength_housing_energy_upper": 0.4573488288755276,
+      "housing_upper_at_nu": 0.04057029335148065,
+      "continuous_strength_all_phase_linear_retention_lower": 0.9396990676748563,
+      "retention_lower_at_nu": 0.04935345865958103
+    },
+    {
+      "id": "edge-p0-b0.005-cf0.001",
+      "continuous_strength_housing_energy_upper": 0.45733339886609664,
+      "housing_upper_at_nu": 0.0405702928140743,
+      "continuous_strength_all_phase_linear_retention_lower": 0.9116419664343809,
+      "retention_lower_at_nu": 0.04935231724713404
+    },
+    {
+      "id": "edge-p1-b0.005-cf0.0",
+      "continuous_strength_housing_energy_upper": 0.4622882245593835,
+      "housing_upper_at_nu": 0.040570525922744016,
+      "continuous_strength_all_phase_linear_retention_lower": 0.9290212949747526,
+      "retention_lower_at_nu": 0.049353225533293424
+    },
+    {
+      "id": "edge-p1-b0.005-cf0.001",
+      "continuous_strength_housing_energy_upper": 0.46227149012527574,
+      "housing_upper_at_nu": 0.04057052531815342,
+      "continuous_strength_all_phase_linear_retention_lower": 0.901632124348776,
+      "retention_lower_at_nu": 0.0493521068041799
+    },
+    {
+      "id": "edge-p2-b0.005-cf0.0",
+      "continuous_strength_housing_energy_upper": 0.45181878230703687,
+      "housing_upper_at_nu": 0.0405699702290443,
+      "continuous_strength_all_phase_linear_retention_lower": 0.9360062408370844,
+      "retention_lower_at_nu": 0.049353613661761685
+    },
+    {
+      "id": "edge-p2-b0.005-cf0.001",
+      "continuous_strength_housing_energy_upper": 0.45180548429556766,
+      "housing_upper_at_nu": 0.0405699698640231,
+      "continuous_strength_all_phase_linear_retention_lower": 0.9076905259585532,
+      "retention_lower_at_nu": 0.049352444218079654
+    },
+    {
+      "id": "exposed-previous-7-boundary0",
+      "continuous_strength_housing_energy_upper": 0.3288466604721238,
+      "housing_upper_at_nu": 0.04056549670802397,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8219253081229424,
+      "retention_lower_at_nu": 0.04936729488345472
+    },
+    {
+      "id": "exposed-previous-7-boundary0-cf0",
+      "continuous_strength_housing_energy_upper": 0.32884362589292915,
+      "housing_upper_at_nu": 0.04056549651764338,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8434238252706249,
+      "retention_lower_at_nu": 0.049369800716279104
+    },
+    {
+      "id": "exposed-previous-7-boundary1",
+      "continuous_strength_housing_energy_upper": 0.3291869581705746,
+      "housing_upper_at_nu": 0.040565553107032505,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8220084905441297,
+      "retention_lower_at_nu": 0.049367309631926884
+    },
+    {
+      "id": "exposed-previous-7-boundary1-cf0",
+      "continuous_strength_housing_energy_upper": 0.32918382448507766,
+      "housing_upper_at_nu": 0.040565552906900525,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8435273604436316,
+      "retention_lower_at_nu": 0.04936981730886955
+    },
+    {
+      "id": "exposed-previous-7-boundary2",
+      "continuous_strength_housing_energy_upper": 0.33283302144924237,
+      "housing_upper_at_nu": 0.040565694003376986,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8175215068540964,
+      "retention_lower_at_nu": 0.04936685787621247
+    },
+    {
+      "id": "exposed-previous-7-boundary2-cf0",
+      "continuous_strength_housing_energy_upper": 0.3328299675871243,
+      "housing_upper_at_nu": 0.04056569381058066,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8386488018112195,
+      "retention_lower_at_nu": 0.049369313515813265
+    },
+    {
+      "id": "exposed-previous-7-boundary3",
+      "continuous_strength_housing_energy_upper": 0.32802735828494695,
+      "housing_upper_at_nu": 0.04056530587251306,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8185401551509024,
+      "retention_lower_at_nu": 0.04936701588611475
+    },
+    {
+      "id": "exposed-previous-7-boundary3-cf0",
+      "continuous_strength_housing_energy_upper": 0.32802433964166,
+      "housing_upper_at_nu": 0.0405653056816119,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8397525906972141,
+      "retention_lower_at_nu": 0.04936948821466272
+    },
+    {
+      "id": "interior0",
+      "continuous_strength_housing_energy_upper": 0.3276105678472749,
+      "housing_upper_at_nu": 0.040565212148739586,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8528746650302582,
+      "retention_lower_at_nu": 0.04936848616406216
+    },
+    {
+      "id": "interior0-cf0",
+      "continuous_strength_housing_energy_upper": 0.3276097197672694,
+      "housing_upper_at_nu": 0.040565212101300874,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8584026050247756,
+      "retention_lower_at_nu": 0.04936908641934082
+    },
+    {
+      "id": "interior1",
+      "continuous_strength_housing_energy_upper": 0.3297722462887809,
+      "housing_upper_at_nu": 0.04056553214277296,
+      "continuous_strength_all_phase_linear_retention_lower": 0.846801949768503,
+      "retention_lower_at_nu": 0.049366618286679535
+    },
+    {
+      "id": "interior1-cf0",
+      "continuous_strength_housing_energy_upper": 0.3297694028120953,
+      "housing_upper_at_nu": 0.04056553198061925,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8640215529035253,
+      "retention_lower_at_nu": 0.049368437239698935
+    },
+    {
+      "id": "interior2",
+      "continuous_strength_housing_energy_upper": 0.33812899198229207,
+      "housing_upper_at_nu": 0.040566374140616514,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8683616590292698,
+      "retention_lower_at_nu": 0.0493638279942039
+    },
+    {
+      "id": "interior2-cf0",
+      "continuous_strength_housing_energy_upper": 0.3381248910722586,
+      "housing_upper_at_nu": 0.04056637398068194,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8883101234564875,
+      "retention_lower_at_nu": 0.049365596900965245
+    },
+    {
+      "id": "interior3",
+      "continuous_strength_housing_energy_upper": 0.3267481847168092,
+      "housing_upper_at_nu": 0.04056501966430061,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8350721663809304,
+      "retention_lower_at_nu": 0.04936811678530884
+    },
+    {
+      "id": "interior3-cf0",
+      "continuous_strength_housing_energy_upper": 0.3267459535713278,
+      "housing_upper_at_nu": 0.04056501952179354,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8507419619152615,
+      "retention_lower_at_nu": 0.049369905192900604
+    },
+    {
+      "id": "interior4",
+      "continuous_strength_housing_energy_upper": 0.3307810954324784,
+      "housing_upper_at_nu": 0.04056558441802202,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8443923738241232,
+      "retention_lower_at_nu": 0.04936800917106127
+    },
+    {
+      "id": "interior4-cf0",
+      "continuous_strength_housing_energy_upper": 0.33077900633040586,
+      "housing_upper_at_nu": 0.04056558429737736,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8580452283680107,
+      "retention_lower_at_nu": 0.04936954056436354
+    },
+    {
+      "id": "interior5",
+      "continuous_strength_housing_energy_upper": 0.3309039359966583,
+      "housing_upper_at_nu": 0.04056564357986419,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8493144813182606,
+      "retention_lower_at_nu": 0.04936839864449288
+    },
+    {
+      "id": "interior5-cf0",
+      "continuous_strength_housing_energy_upper": 0.3309031897591939,
+      "housing_upper_at_nu": 0.04056564353848585,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8540210441533235,
+      "retention_lower_at_nu": 0.04936891633140819
+    },
+    {
+      "id": "interior6",
+      "continuous_strength_housing_energy_upper": 0.3301279359414019,
+      "housing_upper_at_nu": 0.04056565392773381,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8477663471169361,
+      "retention_lower_at_nu": 0.04936716294146639
+    },
+    {
+      "id": "interior6-cf0",
+      "continuous_strength_housing_energy_upper": 0.330125921868644,
+      "housing_upper_at_nu": 0.0405656538178932,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8608143175890302,
+      "retention_lower_at_nu": 0.0493685606651735
+    },
+    {
+      "id": "interior7",
+      "continuous_strength_housing_energy_upper": 0.33832532883273464,
+      "housing_upper_at_nu": 0.0405664350103849,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8678243120795646,
+      "retention_lower_at_nu": 0.04936363236024252
+    },
+    {
+      "id": "interior7-cf0",
+      "continuous_strength_housing_energy_upper": 0.3383207484640172,
+      "housing_upper_at_nu": 0.04056643483292962,
+      "continuous_strength_all_phase_linear_retention_lower": 0.889867097030694,
+      "retention_lower_at_nu": 0.04936557771963646
+    },
+    {
+      "id": "seed10422-0-boundary0",
+      "continuous_strength_housing_energy_upper": 0.3287483770482503,
+      "housing_upper_at_nu": 0.0405654860331502,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8178156610212239,
+      "retention_lower_at_nu": 0.04936726582813111
+    },
+    {
+      "id": "seed10422-0-boundary0-cf0",
+      "continuous_strength_housing_energy_upper": 0.32874533380978266,
+      "housing_upper_at_nu": 0.040565485840368676,
+      "continuous_strength_all_phase_linear_retention_lower": 0.839214008497955,
+      "retention_lower_at_nu": 0.04936977219773621
+    },
+    {
+      "id": "seed10422-0-boundary1",
+      "continuous_strength_housing_energy_upper": 0.32939344788821673,
+      "housing_upper_at_nu": 0.040565572461749466,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8180517481892065,
+      "retention_lower_at_nu": 0.04936728608295831
+    },
+    {
+      "id": "seed10422-0-boundary1-cf0",
+      "continuous_strength_housing_energy_upper": 0.32939036072952815,
+      "housing_upper_at_nu": 0.04056557226281038,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8394713596334431,
+      "retention_lower_at_nu": 0.04936979455097818
+    },
+    {
+      "id": "seed10422-0-boundary2",
+      "continuous_strength_housing_energy_upper": 0.33279346219654393,
+      "housing_upper_at_nu": 0.040565689367926996,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8135617928496317,
+      "retention_lower_at_nu": 0.049366836010060665
+    },
+    {
+      "id": "seed10422-0-boundary2-cf0",
+      "continuous_strength_housing_energy_upper": 0.3327904160052883,
+      "housing_upper_at_nu": 0.04056568917536098,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8345916118216644,
+      "retention_lower_at_nu": 0.04936929253078867
+    },
+    {
+      "id": "seed10422-0-boundary3",
+      "continuous_strength_housing_energy_upper": 0.32810314301423255,
+      "housing_upper_at_nu": 0.04056531493526543,
+      "continuous_strength_all_phase_linear_retention_lower": 0.814818820239034,
+      "retention_lower_at_nu": 0.04936699878785276
+    },
+    {
+      "id": "seed10422-0-boundary3-cf0",
+      "continuous_strength_housing_energy_upper": 0.32810010743046275,
+      "housing_upper_at_nu": 0.04056531474556925,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8359488057856083,
+      "retention_lower_at_nu": 0.04936947298082003
+    },
+    {
+      "id": "seed10422-1-boundary0",
+      "continuous_strength_housing_energy_upper": 0.32871084125811467,
+      "housing_upper_at_nu": 0.04056548397260562,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8197264293108201,
+      "retention_lower_at_nu": 0.04936748137736073
+    },
+    {
+      "id": "seed10422-1-boundary0-cf0",
+      "continuous_strength_housing_energy_upper": 0.3287077849440374,
+      "housing_upper_at_nu": 0.04056548378136924,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8414015978685746,
+      "retention_lower_at_nu": 0.04937001778944846
+    },
+    {
+      "id": "seed10422-1-boundary1",
+      "continuous_strength_housing_energy_upper": 0.32907344660438015,
+      "housing_upper_at_nu": 0.04056552940479387,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8197556375937185,
+      "retention_lower_at_nu": 0.04936747016029716
+    },
+    {
+      "id": "seed10422-1-boundary1-cf0",
+      "continuous_strength_housing_energy_upper": 0.3290703873373563,
+      "housing_upper_at_nu": 0.04056552920828594,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8414309360168967,
+      "retention_lower_at_nu": 0.049370005653286454
+    },
+    {
+      "id": "seed10422-1-boundary2",
+      "continuous_strength_housing_energy_upper": 0.33248335934048096,
+      "housing_upper_at_nu": 0.04056566352916881,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8154639146634693,
+      "retention_lower_at_nu": 0.04936704980487066
+    },
+    {
+      "id": "seed10422-1-boundary2-cf0",
+      "continuous_strength_housing_energy_upper": 0.332480259152736,
+      "housing_upper_at_nu": 0.040565663333865645,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8367799200256634,
+      "retention_lower_at_nu": 0.049369537269905416
+    },
+    {
+      "id": "seed10422-1-boundary3",
+      "continuous_strength_housing_energy_upper": 0.3275420438255458,
+      "housing_upper_at_nu": 0.04056525515125247,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8165400413377311,
+      "retention_lower_at_nu": 0.04936719601444979
+    },
+    {
+      "id": "seed10422-1-boundary3-cf0",
+      "continuous_strength_housing_energy_upper": 0.32753899687433485,
+      "housing_upper_at_nu": 0.040565254958228304,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8379244608177073,
+      "retention_lower_at_nu": 0.049369697787999156
+    },
+    {
+      "id": "uniform-b0.005-cf0.0",
+      "continuous_strength_housing_energy_upper": 0.42758676328887557,
+      "housing_upper_at_nu": 0.04056767690058982,
+      "continuous_strength_all_phase_linear_retention_lower": 0.9398645558728128,
+      "retention_lower_at_nu": 0.049353902009785386
+    },
+    {
+      "id": "uniform-b0.005-cf0.001",
+      "continuous_strength_housing_energy_upper": 0.42757678324120013,
+      "housing_upper_at_nu": 0.04056767669613265,
+      "continuous_strength_all_phase_linear_retention_lower": 0.9110233675132723,
+      "retention_lower_at_nu": 0.04935270696544545
+    },
+    {
+      "id": "uniform-b0.05-cf0.0",
+      "continuous_strength_housing_energy_upper": 0.31105534960669423,
+      "housing_upper_at_nu": 0.040563211612278285,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8405248662680526,
+      "retention_lower_at_nu": 0.049370425464930257
+    },
+    {
+      "id": "uniform-b0.05-cf0.001",
+      "continuous_strength_housing_energy_upper": 0.3110584116688845,
+      "housing_upper_at_nu": 0.04056321182886413,
+      "continuous_strength_all_phase_linear_retention_lower": 0.8186956070591863,
+      "retention_lower_at_nu": 0.049367842435507556
+    }
+  ]
+}
