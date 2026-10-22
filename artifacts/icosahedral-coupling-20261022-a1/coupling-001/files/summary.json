@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "symmetry": {
+    "exact_isometries": 120,
+    "proper": 60,
+    "improper": 60,
+    "centre_parity": 1,
+    "oriented_cell_and_surface_parity": -1,
+    "obstruction": "Any fixed real linear generator commuting with inversion keeps an even centre seed orthogonal to odd Z/S. Nonlinear inversion-equivariant unique flows have the same invariant-even-state property.",
+    "W_transformation": "R W R^T=det(R)*W; simplex-local W has40 directed nonzeros"
+  },
+  "chain_coupling": {
+    "definition": "A_g=A+g*(Z e0^T-e0 Z^T)",
+    "symmetry": "proper rotations; a nonzero fixed g selects orientation",
+    "invariant_basis_metric": [
+      1,
+      12,
+      12,
+      20,
+      20
+    ],
+    "heart_cyclic_dimension": 3,
+    "full_reduced_characteristic": "z*(z^2+1)*(z^2+13+20g^2)",
+    "checks": [
+      {
+        "g": "0",
+        "heart_active_squared_frequency": "13",
+        "maximum_cell_plus_surface_model_energy_fraction_exact": "0",
+        "maximum_cell_plus_surface_model_energy_fraction": 0.0,
+        "model_energy_residual": 4.440892098500626e-16,
+        "expm_check_error": 1.2212453270876722e-14
+      },
+      {
+        "g": "1/4",
+        "heart_active_squared_frequency": "57/4",
+        "maximum_cell_plus_surface_model_energy_fraction_exact": "5/53",
+        "maximum_cell_plus_surface_model_energy_fraction": 0.09433962264150944,
+        "model_energy_residual": 4.440892098500626e-16,
+        "expm_check_error": 1.9317880628477724e-14
+      },
+      {
+        "g": "1/2",
+        "heart_active_squared_frequency": "18",
+        "maximum_cell_plus_surface_model_energy_fraction_exact": "5/17",
+        "maximum_cell_plus_surface_model_energy_fraction": 0.29411764705882354,
+        "model_energy_residual": 6.661338147750939e-16,
+        "expm_check_error": 1.0325074129013956e-14
+      },
+      {
+        "g": "1",
+        "heart_active_squared_frequency": "33",
+        "maximum_cell_plus_surface_model_energy_fraction_exact": "5/8",
+        "maximum_cell_plus_surface_model_energy_fraction": 0.625,
+        "model_energy_residual": 6.661338147750939e-16,
+        "expm_check_error": 9.658940314238862e-14
+      }
+    ]
+  },
+  "mechanical_model": {
+    "status": "separate assumed scalar-strain realization; not a native chain derivation",
+    "parameters": {
+      "g": 1.0,
+      "k_edge": "2/5",
+      "Kh": 1,
+      "Ks": 1,
+      "Ih": 1,
+      "mi": 1,
+      "a0": 0.1
+    },
+    "collective_squared_frequencies": [
+      "8-sqrt(37)",
+      "8+sqrt(37)"
+    ],
+    "contrast_squared_frequencies": [
+      [
+        "5/2-sqrt(5)/10",
+        3
+      ],
+      [
+        "12/5",
+        5
+      ],
+      [
+        "5/2+sqrt(5)/10",
+        3
+      ]
+    ],
+    "frequency_numeric": [
+      1.3846434449712246,
+      3.7527006982036575
+    ],
+    "breathing_bound_abs": 0.01643989873053573,
+    "volume_readout": "V_C/V_C0=product_(i in outer face)(1+q_i); uniform=(1+b)^3",
+    "maximum_observed_fractional_volume_change": 0.05013288053705134,
+    "minimum_observed_fractional_volume_change": -0.048508236179294895,
+    "initial_model_energy": 0.06500000000000003,
+    "maximum_relative_energy_error": 1.6774722636588763e-10,
+    "full_nonlinear_vs_analytic_state_error": 4.1802925487485765e-11,
+    "volume_readout_error": 1.1455281168082365e-11,
+    "uniform_manifold_force_error": 4.440892098500626e-16,
+    "tangent_spectrum_certificate": "PASS exact integer annihilation and5 moments for10K",
+    "potential_force_gradient_check_error": 7.627121156872363e-12,
+    "nonlinear_full_group_equivariance_error": 2.220446049250313e-16
+  },
+  "numerics": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "dtype": "float64",
+    "method": "full nonlinear26-state DOP853 vs exact2-coordinate solution; matrix exponential vs chain analytic solution",
+    "rtol": 1e-11,
+    "atol": 1e-13,
+    "time_window": [
+      0,
+      100
+    ],
+    "samples": 4001
+  },
+  "limitations": [
+    "Energy is a declared positive model energy; no physical calibration or native source selection.",
+    "Strict oriented-chain reflection obstruction and scalar mechanical construction use different transformation laws/carriers.",
+    "Radial guides and scalar central actuator are assumed. Angular/shear modes, material/damping and apparatus implementation are OPEN.",
+    "No hypothesis of sustained autonomous breathing: prepared finite-energy motion only."
+  ]
+}

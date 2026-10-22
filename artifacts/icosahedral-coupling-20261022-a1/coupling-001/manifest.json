@@ -1,0 +1,79 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "icosahedral-coupling-20261022-a1",
+  "run_id": "coupling-001",
+  "created_at": "2026-10-22T18:42:07.523599+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Exact symmetry/grade obstructions and oriented coupling; separate passive scalar-strain volume realization and numerical checks",
+  "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-coupling/analyze.py --out /tmp/ud-icosa-coupling; python3 experiments/icosahedral-coupling/draw.py --data /tmp/ud-icosa-coupling/trajectories.csv --out /tmp/ud-icosa-coupling/coupling-comparison.png",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "754d615546612bbae574921120fabc414c0c4089",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "analyze.py",
+      "path": "inputs/001-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-coupling/analyze.py",
+      "sha256": "c7ff1df26792eb07947e0f37dd9d7caef8e5a3cb715d5dbf52b4fbd7ee651a74",
+      "size_bytes": 14001
+    },
+    {
+      "input_id": "input-002",
+      "name": "draw.py",
+      "path": "inputs/002-draw.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-coupling/draw.py",
+      "sha256": "26b5e4381e38f7656b8ce4a83cbca5985158d4772f4b692f352b3ec974629984",
+      "size_bytes": 1828
+    },
+    {
+      "input_id": "input-003",
+      "name": "analyze.py",
+      "path": "inputs/003-analyze.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-cone/analyze.py",
+      "sha256": "089fbed8bc59f7c785c12f57089b6b5f9be25d381c76854ba72fc893622ed8e3",
+      "size_bytes": 11982
+    },
+    {
+      "input_id": "input-004",
+      "name": "README.md",
+      "path": "inputs/004-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-coupling/README.md",
+      "sha256": "29543351a56cdcfaa57e0c3443b431c3160cdd20fc6303027abff01dd445a2a1",
+      "size_bytes": 13518
+    },
+    {
+      "input_id": "input-005",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/005-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/icosahedral-coupling/mathematical_receipt.json",
+      "sha256": "2fa443a616bd8b5c5736214a8a07fbce4f96d1a8fe67b8990023fb07a6b4455e",
+      "size_bytes": 13156
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "2659e9e3ec48374831ed7193b5c8533b031abc7e1938d00e8809bef67c524b19",
+      "size_bytes": 4400
+    },
+    {
+      "path": "files/trajectories.csv",
+      "sha256": "300a0139509ab29a4929f0d148ea1cab9d754d77d9e668a82b4f1fae91abc299",
+      "size_bytes": 610356
+    },
+    {
+      "path": "files/coupling-comparison.png",
+      "sha256": "e24d393dca382dc50276a8dabf3b3d3ac2b6d1349d7921d4ce770d28a6e89a3b",
+      "size_bytes": 278892
+    }
+  ]
+}

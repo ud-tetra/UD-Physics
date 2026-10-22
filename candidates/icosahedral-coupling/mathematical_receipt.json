@@ -1,0 +1,271 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosahedral-local-coupling-v1",
+  "session_id": "icosahedral-coupling-20261022-a1",
+  "candidate_id": "icosahedral-coupling",
+  "question": "Which local central couplings transfer into the collective sector while respecting a declared symmetry, positive energy and volume readout?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "oriented-chain-coupling",
+      "symbol": "A_eta=A+eta W;W=Z e0T-e0 ZT",
+      "object_type": "real skew state generator with additional simplex-local interaction",
+      "definition": "Centre seed coupled to coherent oriented cell amplitudes;5D invariant subspace in R125",
+      "domain": "R125",
+      "codomain": "R125",
+      "coefficient_domain": "Z basis/W/symmetry actions; Q eta checks; real parameter proof",
+      "units": "dimensionless u and amplitudes; separate E_* chain energy unit",
+      "basis_orientation": "ascending simplex orientations; Z consistently outward; eta pseudoscalar under improper transformations",
+      "metric_measure": "H=I; reduced diag(1,12,12,20,20)",
+      "origin": "assumed",
+      "exact_expression": "R W RT=det(R)W; Omega^2=13+20eta^2; maximum cell/surface model energy fraction20eta^2/(12+20eta^2)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "cone"
+      ],
+      "assumption_ids": [
+        "C1",
+        "C2"
+      ],
+      "dependency_ids": [
+        "Z,S from prior cone"
+      ],
+      "normalization": "unit centre seed; Z/S norms squared20"
+    },
+    {
+      "object_id": "passive-radial-mechanics",
+      "symbol": "x=(alpha,q_1,...,q_12),T+U",
+      "object_type": "constrained positive-energy mechanical candidate and geometric volume readout",
+      "definition": "Dynamical scalar preferred radius,12 scalar shell strains,ordinary spatial edge springs and ideal radial guides",
+      "domain": "R26 phase space restricted q_i>-1",
+      "codomain": "same;cell volumes R20",
+      "coefficient_domain": "Q model coefficients, exact algebraic frequencies; real geometry and float64 integration",
+      "units": "dimensionless strains,u; V_C0=(3+sqrt5)*ell0^3/48; energy E_*; time t0 OPEN",
+      "basis_orientation": "scalar coordinates permuted without chain orientation signs",
+      "metric_measure": "unit generalized inertias; collective mass diag(1,12)",
+      "origin": "assumed",
+      "exact_expression": "U=(alpha^2+sum q^2+g sum(q-alpha)^2+k sum(edge_extension)^2)/2; V_C/V_C0=product(1+q_i)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "cone",
+        "ledger"
+      ],
+      "assumption_ids": [
+        "M1",
+        "M2"
+      ],
+      "dependency_ids": [
+        "fixed radial guide geometry",
+        "dynamical reaction force included"
+      ],
+      "normalization": "g=1,k=2/5,alpha0=1/10 for illustrative run; ell0=1 in code"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "cone",
+      "url_or_repo_path": "experiments/icosahedral-cone/README.md",
+      "version_or_commit": "754d615546612bbae574921120fabc414c0c4089",
+      "section_or_object_id": "sections6-7 and exact constructor",
+      "source_status": "prior exact scoped calculation"
+    },
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "754d615546612bbae574921120fabc414c0c4089",
+      "section_or_object_id": "Q139,Q144-Q145,Q151-Q152",
+      "source_status": "historical supplied snapshot,not latest mainline claim"
+    },
+    {
+      "source_id": "governance",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "version_or_commit": "754d615546612bbae574921120fabc414c0c4089",
+      "section_or_object_id": "status and development lane",
+      "source_status": "proposal; no automatic adoption"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "C1",
+      "statement": "Unchanged oriented chain carrier, ascending simplex orientations and H=I for symmetry obstruction and added W."
+    },
+    {
+      "id": "C2",
+      "statement": "Nonzero fixed chain coupling selects orientation and preserves proper rotations only."
+    },
+    {
+      "id": "M1",
+      "statement": "Separate mechanical state alpha,q_i and velocities with positive unit generalized inertias/pins, g>0 and ordinary edge-extension springs k>=0."
+    },
+    {
+      "id": "M2",
+      "statement": "Ideal radial guides, a passive dynamical scalar preferred-radius element and reference regular icosahedron assumed."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Exact integers/fractions",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Signed permutation matrices,40 local W entries,rational invariant/energy identities and tangent certificate"
+    },
+    {
+      "technique": "Group/parity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "All120 isometries,60 proper/60 improper; inversion-even seed and odd Z/S obstruction"
+    },
+    {
+      "technique": "Prime factorization/divisibility",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No new divisibility or factor-based physical claim"
+    },
+    {
+      "technique": "Clock/modular",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "Continuous u,no modular update selected"
+    },
+    {
+      "technique": "Chain/operator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Degree-preserving A^2 obstruction; added W explicitly outside pure differential/adjoint form"
+    },
+    {
+      "technique": "Locality/energy",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Centre/cell incidence support and mechanical star/ordinary-edge forces; positive energy with reaction forces"
+    },
+    {
+      "technique": "Geometry/readout",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Exact cell determinant volumes and ordinary-edge strain"
+    },
+    {
+      "technique": "Spectral/stability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "5D chain reduction;exact13-mode mechanical tangent spectrum;Lyapunov energy bound"
+    },
+    {
+      "technique": "Fit/sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Disclose simple illustrative coefficients, no statistical fit or robustness campaign"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "20 centre/cell pairs*2 directions=40 W entries;12 radial inertias;30 edge springs;5 edges per outer vertex",
+    "reduced_expression": "eta1/2 -> Omega^2=18,max share5/17; g1,k2/5 -> lambda^2-16lambda+27",
+    "factor_origins": [
+      "cell/surface norm squared20",
+      "outer-vertex/ray norm squared12",
+      "ordinary edge derivative1/2 and degree5"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous model u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "chain cprime=A_eta*c; mechanics xprimeprime=-grad U",
+    "initial_phase": "chain unit e0; mechanics alpha0=1/10,all else0",
+    "coupling": "added W or separate positive elastic star plus ordinary edges",
+    "period_claim": "active chain period2pi/sqrt(13+20eta^2); no physical period claimed",
+    "physical_unit_map": "u=t/t0,t0 OPEN and distinct model energy scales"
+  },
+  "dynamics_readout": {
+    "state_space": "R125 chain or separate R26 mechanical state",
+    "generator_or_update": "W addition vs Euler-Lagrange T+U",
+    "initial_boundary_conditions": "see clock receipt; full shell present; ideal radial guides for mechanics",
+    "conservation_and_sources": "Chain chosen norm energy conserved; mechanical T+U conserved,central spring reactions included,finite prepared energy",
+    "projection_and_kernel": "oriented Z/S odd vs centre even under inversion; mechanical volume scalar and reflection-even",
+    "physical_mapping": "X_i=(1+q_i)r_i;V_C=V_C0 product(1+q_i); mechanical model assumptions not native identification"
+  },
+  "target_exposure": {
+    "status": "target-informed construction, not independent prediction",
+    "known_targets": [
+      "desired centre-to-cell transfer",
+      "prior obstruction",
+      "coherent volume change"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      {
+        "type": "illustrative design, not empirical fit",
+        "choice": "chain eta=0,1/4,1/2,1; display eta1/2",
+        "reason": "show exact transfer family and a rational example"
+      },
+      {
+        "type": "simplifying design, not independent numerical prediction",
+        "choice": "mechanical g=1,k=2/5,unit pins/inertias,A0=1/10",
+        "reason": "k=2/5 makes uniform ordinary-edge increment5k/2=1; prior small-strain preparation retained"
+      }
+    ],
+    "search_domain_and_budget": "exact eta family plus4 rational examples;one illustrative passive mechanical parameter set",
+    "selection_criterion": "energy consistency,declared symmetry/locality and nonzero response; no empirical success threshold",
+    "baseline": "Original A: zero Z/S from e0. Mechanical g=0: stationary initially unperturbed shell."
+  },
+  "calculation_steps": [
+    "Establish pure differential/adjoint and inversion parity obstructions.",
+    "Enumerate all120 exact isometries and signed chain actions.",
+    "Add simplex-local W,verify skew and proper-rotation law;derive invariant5D response and exact transfer bound.",
+    "Define independent scalar mechanical energy with genuine ordinary edge lengths and spring reaction forces.",
+    "Derive exact invariant uniform manifold,all-mode tangent spectrum and geometric cell volumes.",
+    "Cross-check full nonlinear26-state dynamics against analytic collective solution;check force/potential and symmetry."
+  ],
+  "result": {
+    "exact_expression": "Scoped obstructions; W coupling and energy transfer maximum20eta^2/(12+20eta^2); passive mechanical collective squared frequencies8\u00b1sqrt37; V/V0=(1+b)^3",
+    "approximation": "Illustrative mechanical sampled volume[-4.8508%,+5.0133%] over u0..100",
+    "units": "dimensionless model rates and volume ratios; uncalibrated energy/time",
+    "precision_and_error": "Exact group/rational/operator checks;float64 full nonlinear vs analytic4.19e-11,relative energy1.68e-10,expm9.66e-14",
+    "scope": "Two distinct declared state spaces;positive constrained mechanical candidate,not native source derivation",
+    "physical_interpretation": "HYPOTHESIS"
+  },
+  "verification": [
+    {
+      "method": "Exact signed symmetry,local support,skew,invariant and tangent annihilation/moment checks",
+      "command_or_proof_path": "experiments/icosahedral-coupling/analyze.py and README.md",
+      "source_revision": "754d615546612bbae574921120fabc414c0c4089",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "Analytic vs matrix exponential and full nonlinear DOP853",
+      "command_or_proof_path": "analyze.py",
+      "source_revision": "754d615546612bbae574921120fabc414c0c4089",
+      "actual_result": "PASS declared tolerances;actual errors reported",
+      "review_relationship": "same constructor,distinct numerical implementations"
+    },
+    {
+      "method": "Potential gradient and nonlinear full-group checks;figure inspection",
+      "command_or_proof_path": "analyze.py,draw.py",
+      "source_revision": "754d615546612bbae574921120fabc414c0c4089",
+      "actual_result": "PASS gradient7.63e-12,equivariance2.23e-16;figure inspected",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Inversion-equivariant centre-to-oriented-Z/S transfer is obstructed for even initial data.",
+    "Scalar mechanical volumes are a different representation and do not falsify that obstruction.",
+    "First two executions stopped at an overstrict expm3e-14 tolerance with~1e-13 error;normalized-basis recheckconfirmed scale;final tolerance1e-12 reports actual errors.",
+    "Pure incidence/adjoint weights retaining a differential cannot create C2/C3 amplitudes from C0."
+  ],
+  "limitations": [
+    "Native chain reflection obstruction remains valid for its state transformation law; mechanical scalar volumes use a different carrier.",
+    "Positive finite-energy passive motion, not autonomous sustained power.",
+    "Radial guides remove angular/shear degrees; microscopic source, apparatus and physical calibration unresolved.",
+    "Constructor verification is not non-constructor review or physical experimentation."
+  ],
+  "changed_dependencies": [
+    "Added W is a new evolution primitive;does not amend boundaries.",
+    "Mechanical state/energy/volume mapping is a separate branch assumption."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/icosahedral-coupling-20261022-a1/coupling-001/manifest.json"
+  ],
+  "next_discriminant": "Derive a passive implementation of the scalar preferred-radius coupling and relax radial guides, testing angular/shear stability and volume coherence under small imperfections."
+}
