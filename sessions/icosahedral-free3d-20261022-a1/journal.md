@@ -27,3 +27,5 @@ First campaign completed. Observed hub-relativevolumemismatch prompted separate 
 Captured artifacts/icosahedral-free3d-20261022-a1/free3d-001 (NUMERICAL): Exact free3D rigidity/stiffness and finite transverse/nonlinear imperfection checks;hub partition separated from shell shape
 
 Captured free3d-001 withseven explicitinput copies andsix outputs. Validator PASS59records;all16tooling tests PASS. Readyforfocused integration;exact/numerical scope retained.
+
+Research integrated via PR27,merge fba471a64b1118d599a45c0f039f588542564d74;PR integrity run39836624720 completed/success. Released owning claim through child audit marker 7d21a0cbb98ccf32efbf9237b8d4570548c87a6f;reread live ref/released payload verified owner/status. Closure-only follow-up edits this session record/journal only. Variational endpoints establish finite amplification observations,not a growth-rate estimate or all-time parametric stability theorem.

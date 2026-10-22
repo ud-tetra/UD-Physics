@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T18:50:26.841426+00:00",
   "base_revision": "fbf35ff97a148b42dc57322c71bd905aec2adff5",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "integration-icosahedral-free3d-20261022": {
       "ref": "refs/heads/claims/integration-icosahedral-free3d-20261022",
       "sha": "c99009f59ea2040a7d051588279f2b176e30325a",
-      "status": "held"
+      "status": "released",
+      "released_sha": "7d21a0cbb98ccf32efbf9237b8d4570548c87a6f"
     }
   },
   "checks": [
@@ -53,5 +54,10 @@
     "clock": "continuous dimensionless u;no singleperiod Floquet claim",
     "metric": "positive M;reference normalenergy-amplitude norm;rigidmotionsprojected",
     "physical_mapping": "assumed passive pointmechanics,material/t0/E_*native selectionOPEN"
+  },
+  "integration": {
+    "pr": 27,
+    "merge_sha": "fba471a64b1118d599a45c0f039f588542564d74",
+    "pull_request_integrity": "completed/success run39836624720 at head25eb4c518d76f028cdd45cd59b16ce76a14420a6"
   }
 }
