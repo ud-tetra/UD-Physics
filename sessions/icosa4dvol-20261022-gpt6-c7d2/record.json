@@ -1,0 +1,56 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "icosa4dvol-20261022-gpt6-c7d2",
+  "runtime": "GPT-6; GitHub connector write; local Python compute",
+  "task": "icosahedral-4d-volume-20261022",
+  "goal": "Exact coupled 4D apex to 3D shell volume response with 3D controls",
+  "created_at": "2026-10-22T21:00:00Z",
+  "base_revision": "92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "icosahedral-4d-volume-20261022": {
+      "ref": "refs/heads/claims/icosahedral-4d-volume-20261022",
+      "sha": "23b04a0533df0bd6b26f0c7fc9f94a6864400cea",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "name": "local full script exact symbolic + numerical audit",
+      "result": "PASS",
+      "command": "python3 audit.py in local archive"
+    },
+    {
+      "name": "repository scripts/validate.py",
+      "result": "NOT_RUN",
+      "reason": "local checkout unavailable; connector-only repository access"
+    },
+    {
+      "name": "repository tests",
+      "result": "NOT_RUN",
+      "reason": "local checkout unavailable"
+    },
+    {
+      "name": "published minimal audit.py",
+      "result": "NOT_RUN in this run",
+      "reason": "same-model reproduction script committed, not executed in local runtime"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL positive static volume transfer and full40 local rigidity, NUMERICAL finite pulses, FAILED unique 4D discriminator due ordinary 3D lever null",
+  "next_action": "Run repository CI on PR; independently verify dynamics and test 3D comparison at nonlinear order",
+  "mathematical_profile": {
+    "coefficient_domain": "Q(sqrt(5)), real algebraic radicals, positive parameters",
+    "exactness_or_precision_plan": "SymPy algebra; SVD rank tolerance 1e-10; ODE DOP853 rtol1e-11 atol1e-13",
+    "applicable_methods": [
+      "geometric counting",
+      "symbolic Hessian",
+      "Dehn rigidity",
+      "generalized eigenvalues",
+      "energy balance",
+      "null models"
+    ],
+    "clock_metric_units_conventions": "Euclidean R4 geometry, w independent of Newtonian t, positive spatial metric, dimensionless s and z; no empirical mapping"
+  }
+}
