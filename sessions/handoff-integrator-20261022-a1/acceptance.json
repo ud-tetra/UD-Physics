@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "scope": "Two fresh same-model LLM contexts using one GitHub account; separate clones, branches and claims. Not cross-provider or empirical physics validation.",
-  "status": "PASS_WRITER_REVIEWER_SCOPE",
+  "status": "PASS",
   "created_at": "2026-10-22T16:34:40.990191+00:00",
   "boot_base_revision": "fbf40e3f4daaf3f02af5db35fc1ee82f0da02190",
   "frozen_writer_revision": "846a6a31c3ca87277afa584e6e4d782ef40e9168",
@@ -41,13 +41,44 @@
   "release_markers": {
     "writer": "87dd43af5d8114ad8abd42a6ef644afdadc1a88a",
     "reviewer": "1133cf28e742ed159344591fc77a82d7ef42c866",
-    "coordinator": null
+    "coordinator": "e6f31fec2ee8ec2e85acb7b18417216c0d9acee0"
   },
-  "coordinator_closure": "PENDING_FINAL_INTEGRATION_AND_RELEASE",
+  "coordinator_closure": "COMPLETE",
   "remote_ci": "Newest observed runs queued; local16 and separate-context review passed.",
   "limitations": [
     "Server branch protection remains disabled.",
     "Same-model review is not independent experimental replication.",
     "Synthetic clock labels are not measured spacetime or a native UD clock law."
-  ]
+  ],
+  "final_live_claims": [
+    {
+      "ref": "refs/heads/claims/handoff-reviewer-20261022",
+      "sha": "1133cf28e742ed159344591fc77a82d7ef42c866",
+      "task": "handoff-reviewer-20261022",
+      "session": "handoff-reviewer-20261022-a1",
+      "status": "released",
+      "protocol_version": 2,
+      "released_from_sha": "e48cb946c47488062c6a5f7eef1be3529213991d"
+    },
+    {
+      "ref": "refs/heads/claims/handoff-writer-20261022",
+      "sha": "87dd43af5d8114ad8abd42a6ef644afdadc1a88a",
+      "task": "handoff-writer-20261022",
+      "session": "handoff-writer-20261022-a1",
+      "status": "released",
+      "protocol_version": 2,
+      "released_from_sha": "5481560b0e4d3edd2d4887aef0268377c6c0c8eb"
+    },
+    {
+      "ref": "refs/heads/claims/integration-handoff-20261022",
+      "sha": "e6f31fec2ee8ec2e85acb7b18417216c0d9acee0",
+      "task": "integration-handoff-20261022",
+      "session": "handoff-integrator-20261022-a1",
+      "status": "released",
+      "protocol_version": 2,
+      "released_from_sha": "f5d64563fd04d9a01fef97f2fe6e40a5e7178715"
+    }
+  ],
+  "milestone_merge": "f824279b6a6352941a3aec8d65a79763f3125777",
+  "closed_at": "2026-10-22T16:36:08.953391+00:00"
 }

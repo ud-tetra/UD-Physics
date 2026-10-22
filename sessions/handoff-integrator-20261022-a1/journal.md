@@ -47,3 +47,17 @@ Captured artifacts/handoff-integrator-20261022-a1/integrated-verification-v1 (NU
 Checkpoint (handoff): Both fresh runtimes completed the declared trial; exact reproduction, live contention, review fixes, combined checks and writer/reviewer release markers passed. Coordinator release follows final summary integration.
 
 Next: Merge the final milestone summary, release the coordinator claim with a child audit marker, then capture closure-only acceptance evidence.
+
+## 2026-10-22T16:36:08.953834+00:00
+
+Final live reread verified writer, reviewer and coordinator claims all status=released under protocol2, with retained audit refs/history. Coordinator marker e6f31fec2ee8ec2e85acb7b18417216c0d9acee0 is a child of the exact previously held claim. Shared milestone edits were integrated before release; this final change captures only the owning session lifecycle metadata and evidence.
+
+## 2026-10-22T16:36:08.960743+00:00
+
+Captured artifacts/handoff-integrator-20261022-a1/lifecycle-closure-v1 (EXACT): Final GitHub reread verifies all three trial claims released via protocol2 markers; no deletion and no physical bridge promotion.
+
+## 2026-10-22T16:36:08.965672+00:00
+
+Checkpoint (complete): Writer/reviewer handoff passed and all three claim releases are verified. Input provenance and connector-only lifecycle gaps were corrected; 16 tooling tests passed. Newest CI runs were queued at last observation.
+
+Next: Choose the first externally grounded Discovery candidate with an explicit map, target-exposure record, conventional baseline and discriminating consequence.
