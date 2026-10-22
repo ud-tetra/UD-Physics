@@ -35,3 +35,11 @@ Captured artifacts/icosahedral-mountloss-20261022-a1/mountloss-001 (NUMERICAL): 
 Checkpoint (handoff): EXACT/CONDITIONAL passive rank90 housingloss and local274 nonrigid decay. NUMERICAL nu.02:20/20 budgetpulsespass,min90.153% breathing;nominalworst54-modeenergy43.966%. Lowmasscf0 halfenergytarget andmass/friction challengesfail. PhysicaltestUNSCORED.
 
 Next: Derive/test a joint damping-strength range for nonzero housing phases across the budget,including cf0;preserve lowmass and challenge failures.
+
+## Integration and release closure
+
+Research PR35 merged at f45448de8e21001903fd573ec9865767cbb32a4f after integrity run39849597989 completed/success at exact headce414f86ee4283395c95dd1fb43e0515c556e936. GitHub tree matched local f882afa3be87f26bcd67bf952e52d6eb7dfb5f9a; all30 new blob hashes matched. Local checkout aligned only after verifying main/index tree equality and no unstaged edits.
+
+Read live held claim and owner,created a child release marker and exact-SHA CAS update. Live ref and released payload verified at df62bae0cfdf44aa966118d1eb80765b8856ccf8, released_from_sha e9d9c4f89b4e0862cda19dcf55400ec4e171757d. Claim is released; branch deletion is neither needed nor claimed. This closure-only follow-up changes this session record and journal under concurrency protocol2; no research/shared-state changes follow release.
+
+Next authorized recommendation:derive/test a strength range covering ringdown and breathing through the joint parameter budget,including nonzero housing phases/cf0;preserve the lowmass half-energy failure. Physical tests remain UNSCORED and mainline promotion0.
