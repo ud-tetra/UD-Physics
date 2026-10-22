@@ -10,6 +10,7 @@
 | candidates/<candidate>/candidate.json | Hypothesis, map, assumptions, fits, targets and result |
 | artifacts/<session>/<run>/manifest.json | Immutable run metadata and file digests |
 | artifacts/<session>/<run>/files/ | Intentionally captured outputs |
+| artifacts/<session>/<run>/inputs/ | Explicit input copies in run schema version 2 |
 | sources/imports/<snapshot>/ | Read-only source snapshots with provenance |
 | state/CURRENT.md | Integrated milestone summary; integrator only |
 
@@ -25,9 +26,13 @@ python3 scripts/discovery.py checkpoint --session SESSION --status handoff --fin
 python3 scripts/validate.py
 ```
 
-Commands record work; capture does not execute or validate the supplied command. Include the actual executed command and its result in your journal. A manifest digest checks bytes, not scientific correctness. Input file hashes identify source bytes; changed inputs require a new run. Keep source/input code in the repository or intentionally capture a copy when needed for reproduction.
+Commands record work; capture does not execute or validate the supplied command. Include the actual executed command and its result in your journal. A manifest digest checks bytes, not scientific correctness. Changed inputs require a new run.
 
-Run directories are immutable after capture. Use a new run ID for corrections and record which earlier run it supersedes. Validation rejects modified captured outputs. No binary artifacts, private conversation archives, or bulk source collections are imported automatically.
+New captures use run schema version 2. Each explicit input is copied into inputs/ with a unique ID, digest, size, original basename, and repository-relative source path when available. External source paths are omitted; the selected bytes and logical ID are retained. Same-named inputs remain distinct. Validation checks input metadata, captured bytes, containment, and unmanifested files as well as outputs. Explicit input copies share the 10 MiB per-file limit.
+
+Existing run schema version 1 remains readable. Its input metadata is checked for structure and ambiguous basenames, but hashes without preserved input bytes cannot independently verify historical source contents. Preserve that limitation; do not rewrite old run manifests to imply they originally captured inputs. Relative links inside artifact payloads or imported sources are data, not repository navigation links.
+
+Run directories are immutable after capture. Use a new run ID for corrections and record which earlier run it supersedes. Validation rejects modified captured outputs and version-2 inputs. No binary artifacts, private conversation archives, or bulk source collections are imported automatically.
 
 Keep normal Git files small (prefer below 10 MiB per file). Use release assets or another explicitly configured large-file destination for larger research outputs, with a durable link, digest, and provenance manifest; GitHub Actions artifacts alone are not permanent archival storage.
 

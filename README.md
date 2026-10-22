@@ -37,7 +37,7 @@ python3 -m unittest discover -s tests -v
 
 The first command prints a unique session ID and creates its running record. Use that ID with `note`, `capture`, and `checkpoint`; see `python3 scripts/discovery.py --help`.
 
-One task claim has one owner. Separate runtimes use separate branches. Per-session records avoid a shared append-only log. Pull requests integrate work; the default branch is the integrated snapshot. Claims are cooperative coordination, with atomic Git ref acquisition, not access-control permissions.
+One held task claim has one owner; released audit markers permit exact-SHA reacquisition. Separate runtimes use separate branches. Per-session records avoid a shared append-only log. Pull requests integrate work; the default branch is the integrated snapshot. Claims are cooperative coordination, with atomic Git ref acquisition, not access-control permissions.
 
 ## Evidence boundary
 

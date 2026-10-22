@@ -7,5 +7,7 @@
   "base_revision": "REPLACE_WITH_VERIFIED_COMMIT",
   "owned_paths": [
     "REPLACE_WITH_TASK_PATHS"
-  ]
+  ],
+  "protocol_version": 2,
+  "status": "held"
 }
