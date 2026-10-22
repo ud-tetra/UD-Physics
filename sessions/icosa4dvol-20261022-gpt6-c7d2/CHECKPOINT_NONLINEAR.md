@@ -13,3 +13,6 @@ Run reproduce with `python3 nonlinear_audit.py`. Requirements sympy 1.14.0, nump
 Next: examine admissible local-isotropic reciprocal 3D networks and full unconstrained shell/apex sectors, report discriminating observables or document a revised no-go. Priority 97/100. Claim remains HELD; PR #39 remains DRAFT until integrity review.
 
 CORRECTION: invalid `nonlinear-002` attempt missing `source_path` metadata (GitHub Actions 39857539810 FAILED); its files were withdrawn from the PR tree but retained in Git history. `nonlinear-003` re-captures unchanged code/data with valid repository `source_path`. New CI must validate this head; no physical verification.
+
+
+CI UPDATE: Corrected `nonlinear-003` passed Discovery integrity at head `0c0505f990cf4488a672f9d9d25cf61a032adc3e`, run `39858108061`: `scripts/validate.py` PASS 85 records and `unittest discover` PASS 16 tests. Integrity checks cannot prove a physical 4D identification. Review status DRAFT / held claim; no mainline export.
