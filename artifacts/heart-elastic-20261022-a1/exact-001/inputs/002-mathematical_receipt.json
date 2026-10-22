@@ -1,0 +1,257 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "heart-elastic-exact-001",
+  "session_id": "heart-elastic-20261022-a1",
+  "candidate_id": "heart-shell-elastic",
+  "question": "Can an explicit positive energy law couple an internal scalar heart to actual shell dilation and stable cell-volume breathing?",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "CONDITIONAL",
+    "EXACT"
+  ],
+  "objects": [
+    {
+      "object_id": "a",
+      "symbol": "a",
+      "object_type": "internal scalar strain",
+      "definition": "preferred radial strain stored at the heart",
+      "domain": "R",
+      "codomain": "R",
+      "coefficient_domain": "exact rational/symbolic algebra, real dynamics",
+      "units": "dimensionless",
+      "basis_orientation": "outer vertex indices1-4; scalar unsigned strains; oriented determinants used only to compute positive volume",
+      "metric_measure": "chosen scalar coordinate",
+      "origin": "assumed",
+      "exact_expression": "preferred radial strain stored at the heart",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit generalized inertias/stiffnesses; no physical unit identification"
+    },
+    {
+      "object_id": "q",
+      "symbol": "q",
+      "object_type": "radial deformation",
+      "definition": "R_i=(1+q_i)r_i; q_i>-1",
+      "domain": "(-1,infinity)^4",
+      "codomain": "R12 positions",
+      "coefficient_domain": "exact rational/symbolic algebra, real dynamics",
+      "units": "strain dimensionless; positions length L",
+      "basis_orientation": "outer vertex indices1-4; scalar unsigned strains; oriented determinants used only to compute positive volume",
+      "metric_measure": "Euclidean radial ansatz",
+      "origin": "assumed",
+      "exact_expression": "R_i=(1+q_i)r_i; q_i>-1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit generalized inertias/stiffnesses; no physical unit identification"
+    },
+    {
+      "object_id": "E",
+      "symbol": "E",
+      "object_type": "positive quadratic energy",
+      "definition": "T+U as in report section2",
+      "domain": "R10",
+      "codomain": "nonnegative model energy",
+      "coefficient_domain": "exact rational/symbolic algebra, real dynamics",
+      "units": "energy; u dimensionless",
+      "basis_orientation": "outer vertex indices1-4; scalar unsigned strains; oriented determinants used only to compute positive volume",
+      "metric_measure": "mass diag(Ih,Is,Is,Is,Is); positive stiffness",
+      "origin": "assumed",
+      "exact_expression": "T+U as in report section2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit generalized inertias/stiffnesses; no physical unit identification"
+    },
+    {
+      "object_id": "V",
+      "symbol": "V",
+      "object_type": "volume readout",
+      "definition": "V_i=V0/4 product_(j!=i)(1+q_j)",
+      "domain": "radial geometric domain",
+      "codomain": "positive R4",
+      "coefficient_domain": "exact rational/symbolic algebra, real dynamics",
+      "units": "L cubed",
+      "basis_orientation": "outer vertex indices1-4; scalar unsigned strains; oriented determinants used only to compute positive volume",
+      "metric_measure": "unsigned determinant volume",
+      "origin": "derived",
+      "exact_expression": "V_i=V0/4 product_(j!=i)(1+q_j)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit generalized inertias/stiffnesses; no physical unit identification"
+    },
+    {
+      "object_id": "pc",
+      "symbol": "pc",
+      "object_type": "conjugate coupling pressure",
+      "definition": "4*Kc*(a-b)/(3*V0*(1+b)^2)",
+      "domain": "uniform sector a real,b>-1",
+      "codomain": "R",
+      "coefficient_domain": "exact rational/symbolic algebra, real dynamics",
+      "units": "energy/volume",
+      "basis_orientation": "outer vertex indices1-4; scalar unsigned strains; oriented determinants used only to compute positive volume",
+      "metric_measure": "energy derivative at fixed a",
+      "origin": "derived",
+      "exact_expression": "4*Kc*(a-b)/(3*V0*(1+b)^2)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "explicit generalized inertias/stiffnesses; no physical unit identification"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "source-0",
+      "url_or_repo_path": "experiments/heart-shell-modes/README.md",
+      "version_or_commit": "ccd914be6dd137910fcb98c8833da6d9f1977b43",
+      "section_or_object_id": "Sections4-7",
+      "source_status": "previous chain obstruction, geometry and unpinned scalar toy"
+    },
+    {
+      "source_id": "source-1",
+      "url_or_repo_path": "experiments/k5-four-cell/README.md",
+      "version_or_commit": "ccd914be6dd137910fcb98c8833da6d9f1977b43",
+      "section_or_object_id": "Reading the supplied sketch; Three graph descriptions",
+      "source_status": "labelled topology; no material law imported"
+    },
+    {
+      "source_id": "source-2",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "ccd914be6dd137910fcb98c8833da6d9f1977b43",
+      "section_or_object_id": "Q139,Q144-Q145,Q148,Q151-Q152",
+      "source_status": "historical micro/coarse and time/pressure distinctions; no coefficient imported"
+    }
+  ],
+  "assumptions": [
+    "New mechanical state: one internal preferred strain a and four radial shell strains q_i, not the29-chain state.",
+    "Fixed centre; R_i=(1+q_i)r_i on regular reference rays; q_i>-1; angular/shear motion excluded.",
+    "Chosen quadratic kinetic/potential law with Ih,Is,Kc>0, Kh,Ks,Kt>=0 and Kh+Ks>0.",
+    "Equal spoke and shell coefficients give exact S4 symmetry; material and native parameter selection OPEN.",
+    "Dimensionless u, model energy coefficients and optional L; physical time/energy calibration OPEN."
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/fraction/symbolic matrices",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact mass/stiffness block identities and polynomial determinants"
+    },
+    {
+      "technique": "symmetry/modal decomposition",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "two collective modes and three independent S4 differential modes"
+    },
+    {
+      "technique": "positive energy/stability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "positive quadratic form and conservative energy identity; valid geometric domain bound"
+    },
+    {
+      "technique": "geometry/readout",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "determinant volumes, linear and nonlinear differential response"
+    },
+    {
+      "technique": "clock/modular",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite register; u dimensionless continuous; frequency ratios not universal"
+    },
+    {
+      "technique": "fit/sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "no fitting; explicit rational illustrative choices, zero-coupling and unpinned baselines; asymmetry next"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "four shell coordinates=one mean plus three zero-sum contrasts; four spokes and six outer pairs",
+    "reduced_expression": "collective stiffness determinant4*D0; D0=Kh*Ks+Kh*Kc+4*Kc*Ks; initial example energy1/40",
+    "factor_origins": [
+      "factor4 from shell-coordinate mean/mass and four heart couplings",
+      "V0/4 from each centred reference tetrahedral cell",
+      "1/5 in exact example from decomposing the five-coordinate initial heart state"
+    ],
+    "factorization": "no prime-pattern inference; rational example includes Kt=1/2,a0=1/10",
+    "divisibility_gcd_lcm": "N/A; no finite clock claim"
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless continuous u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "Euler-Lagrange oscillator equations for chosen T-U",
+    "initial_phase": "arbitrary generally; exact example a(0)=1/10, other coordinates and velocities0",
+    "coupling": "positive Kc heart-shell, Kt shell differences, Kh/Ks pinning",
+    "period_claim": "example collective frequencies1,sqrt6 are incommensurate; volume-value crossings are not full state return",
+    "physical_unit_map": "OPEN; if u=t/t0 then angular physical frequency=omega/t0"
+  },
+  "dynamics_readout": {
+    "state_space": "R10 restricted to q_i>-1",
+    "generator_or_update": "M*x_doubleprime+K*x=0; optional forcing/passive damping separately declared",
+    "initial_boundary_conditions": "symmetric coefficients; arbitrary finite state within domain; example heart strain only; closed finite model with no core forcing/damping",
+    "conservation_and_sources": "E=T+U conserved; optional forcing/damping gives explicit power balance; energy not a native UD stock",
+    "projection_and_kernel": "mean b and3 contrasts d_i; volume responds to contrasts only at second/higher order in total readout",
+    "physical_mapping": "ASSUMED radial geometry and readout; model pressure DERIVED; native/material/time maps OPEN"
+  },
+  "target_exposure": {
+    "status": "conceptual target exposed, no empirical target",
+    "known_targets": [
+      "internal heart drives collective shell dilation and volume response"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "one chosen pinned quadratic family; exact algebra; four rational determinant cases and one rational illustrative trajectory",
+    "selection_criterion": "positive energy, explicit volume response, stability and discriminating baselines",
+    "baseline": "Kc=0 decouples heart from volume; Kh=Ks=0 recovers free common drift; unequal radial strains test nonlinear total volume."
+  },
+  "calculation_steps": [
+    "Define internal scalar, radial geometry, kinetic/potential law and exact volume readout.",
+    "Block-diagonalize parameter-coefficient stiffness and mass matrices into collective and differential sectors.",
+    "Derive positive determinant, modal roots, energy conservation and geometric-domain energy bound.",
+    "Derive initial acceleration, energy-conjugate pressure, linear volume susceptibility and relaxed bulk modulus.",
+    "Verify exact prepared solution and nonlinear differential-volume counterexample."
+  ],
+  "result": {
+    "exact_expression": "CONDITIONAL/EXACT: positive pinned heart-shell energy yields two coupled collective volume modes and three differential radial modes. Heart-only strain produces V_i=V0*(1+b)^3/4 in the symmetric sector, with b_doubleprime(0)=Kc*a0/Is. Collective determinant D0=Kh*Ks+Kh*Kc+4*Kc*Ks>0 proves stability. Derived pressure, susceptibility, nonlinear volume readout and bounded exact illustrative trajectory.",
+    "approximation": "linear susceptibility and first-order volume perturbation explicitly scoped; scientific figure samples exact illustrative solution",
+    "units": "dimensionless u/strains; declared model energy and length scales",
+    "precision_and_error": "exact Fraction/matrix-polynomial identities; figure uses floating cosines for display only",
+    "scope": "chosen scalar/radial model and declared symmetric coefficients",
+    "physical_interpretation": "HYPOTHESIS with assumed readout; no empirical or native constitutive closure"
+  },
+  "verification": [
+    {
+      "method": "constructor parameter-coefficient identities plus four full polynomial determinant/energy checks and analytic proof",
+      "command_or_proof_path": "python3 experiments/heart-shell-elastic/analyze.py; experiments/heart-shell-elastic/README.md",
+      "source_revision": "base ccd914be6dd137910fcb98c8833da6d9f1977b43 plus captured new code bytes",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "No heart-to-volume transfer at Kc=0.",
+    "Common drift if Kh=Ks=0 and common initial velocity is nonzero.",
+    "Differential radial strain d=(delta,-delta,0,0) gives total V/V0=1-delta^2/2, so linear volume preservation does not extend exactly.",
+    "Damping only the heart leaves the decoupled differential triplet undamped; conservative exchange is not autonomous pumping."
+  ],
+  "limitations": [
+    "Restricted radial ansatz; no full3D elastic or momentum-balance model.",
+    "Stable conditional law is chosen, not uniquely sourced from UD geometry.",
+    "Collective invariance requires symmetric parameters and preparation/forcing.",
+    "Conservative model exchanges stored energy; no active pump or selected sustained amplitude.",
+    "Constructor verification only; no material measurement or independent replication."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/heart-elastic-20261022-a1/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Break equal spoke stiffnesses or shell inertias while retaining positive energy; quantify collective response and differential volume leakage from a heart preparation."
+}
