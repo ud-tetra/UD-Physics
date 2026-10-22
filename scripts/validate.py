@@ -39,7 +39,8 @@ def validate(root):
             try:
                 obj = json.loads(path.read_text(encoding="utf-8"))
                 kind = obj.get("record_type")
-                if kind not in REQUIRED or obj.get("schema_version") != 1:
+                version = obj.get("schema_version")
+                if kind not in REQUIRED or version not in ({1, 2} if kind == "run" else {1}):
                     raise ValueError("Unknown record type or schema version")
                 missing = REQUIRED[kind] - obj.keys()
                 if missing:
@@ -79,6 +80,45 @@ def validate(root):
                         raise ValueError("Run path mismatch")
                     if not isinstance(obj["source"].get("dirty"), bool) or not obj["source"].get("revision"):
                         raise ValueError("Invalid source revision/dirty state")
+                    if not isinstance(obj["inputs"], list):
+                        raise ValueError("Run inputs must be an array")
+                    input_names = set()
+                    input_ids = set()
+                    input_files = set()
+                    for item in obj["inputs"]:
+                        if not isinstance(item, dict) or not isinstance(item.get("name"), str) or not item["name"]:
+                            raise ValueError("Invalid input name/metadata")
+                        if not isinstance(item.get("sha256"), str) or not re.fullmatch("[0-9a-f]{64}", item["sha256"]):
+                            raise ValueError("Invalid input SHA-256")
+                        if type(item.get("size_bytes")) is not int or item["size_bytes"] < 0:
+                            raise ValueError("Invalid input size")
+                        if version == 1:
+                            if item["name"] in input_names:
+                                raise ValueError("Ambiguous legacy input names; recapture with schema version 2")
+                            input_names.add(item["name"])
+                            continue
+                        input_id = identifier(item["input_id"])
+                        if input_id in input_ids:
+                            raise ValueError("Duplicate input ID")
+                        input_ids.add(input_id)
+                        if not isinstance(item["path"], str) or not item["path"].startswith("inputs/"):
+                            raise ValueError("Captured input path must be inside inputs/")
+                        target = safe_file(path.parent, item["path"])
+                        if target in input_files:
+                            raise ValueError("Duplicate captured input path")
+                        input_files.add(target)
+                        if digest(target) != item["sha256"] or target.stat().st_size != item["size_bytes"]:
+                            raise ValueError("Captured input digest/size mismatch: " + item["path"])
+                        if item["source_location"] == "repository":
+                            source = item["source_path"]
+                            if not isinstance(source, str) or not source or Path(source).is_absolute() or ".." in Path(source).parts:
+                                raise ValueError("Invalid repository input source path")
+                        elif item["source_location"] != "external" or item["source_path"] is not None:
+                            raise ValueError("Invalid external input source metadata")
+                    if version == 2:
+                        actual_inputs = {item for item in (path.parent / "inputs").rglob("*") if item.is_file() or item.is_symlink()}
+                        if actual_inputs != input_files:
+                            raise ValueError("Unmanifested or missing captured input")
                     entries = obj["files"]
                 elif kind == "source_import":
                     entries = obj["sources"]
@@ -107,7 +147,7 @@ def validate(root):
             errors.append(f"{folder.relative_to(root)}: missing finalized run manifest")
     # Local Markdown links should resolve; URLs and fragment-only links are external.
     for path in root.rglob("*.md"):
-        if ".git" in path.parts:
+        if ".git" in path.parts or path.relative_to(root).parts[0] == "artifacts" or path.is_relative_to(root / "sources" / "imports"):
             continue
         for destination in re.findall(r"\]\(([^\s)]+)\)", path.read_text(encoding="utf-8")):
             destination = destination.split("#", 1)[0]

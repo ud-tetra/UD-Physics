@@ -53,3 +53,7 @@ Protocol-v2 audit at35df2b76b2018ef320e5181f143da513b6d83632 executed in own iso
 ## 2026-10-22T16:29:56.571684+00:00
 
 Captured artifacts/handoff-reviewer-20261022-a1/release-v2-review-v1 (EXACT): Protocol-v2 exact revision audit: validator and16 tests pass; separate local legacy migration and stale/wrong-owner rejection probe passes; live release pending integration
+
+## 2026-10-22T16:31:29.594445+00:00
+
+Pre-integration combined check: merged current main 0301562081923dc574ad52074b6a96a79cba31dc into reviewer branch without conflicts, preserving owned records. Validator PASS: 18 records; all 16 tests PASS. Original frozen writer reproduction and immutable v1 snapshots unchanged. Live reviewer claim remains held pending integration and release request.

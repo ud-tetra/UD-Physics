@@ -40,6 +40,10 @@
       "command": "python3 reviews/runtime-handoff-20261022/audit_release_v2.py",
       "source_revision": "35df2b76b2018ef320e5181f143da513b6d83632",
       "result": "PASS: validator,16 tests and separate local legacy-to-v2 migration/parent-chain/wrong-owner/double/stale-release probes"
+    },
+    {
+      "command": "Merged current main0301562081923dc574ad52074b6a96a79cba31dc; python3 scripts/validate.py; python3 -m unittest discover -s tests -v",
+      "result": "PASS: combined18 records and all16 tests; no conflicts; immutable prior artifacts intact"
     }
   ],
   "finding": "Writer frozen artifact byte-reproduces with complete FIT/exposure/units/scope provenance. Live competing claim rejected without changing owner. P2 input provenance defects reproduced, then tested fixed in coordinator amendment. No blocking writer or amendment defect.",

@@ -12,8 +12,10 @@
     "scripts",
     "tests",
     "sessions/handoff-integrator-20261022-a1",
-    "artifacts/handoff-integrator-20261022-a1"
+    "artifacts/handoff-integrator-20261022-a1",
+    "templates"
   ],
   "dependencies": [],
-  "status": "active"
+  "status": "active",
+  "scope_amendment": "Manual schema-2 run template was included in the unintegrated patch; coordinator task and same-owner claim were explicitly expanded before integration."
 }
