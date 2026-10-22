@@ -8,17 +8,40 @@
   "created_at": "2026-10-22T16:43:47.009508+00:00",
   "base_revision": "04bb0dfc6be8dd2b5fe755ed0f5bd41275eb88de",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "integration-ud-math-protocol-20261022": {
       "ref": "refs/heads/claims/integration-ud-math-protocol-20261022",
       "sha": "8d3e1c4cded497c41fc650019748f6a8869c8615",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "e570f3b6a648f9ea6b924cafea7e78e93689cbef",
+      "released_at": "2026-10-22T16:50:04.368768+00:00"
     }
   },
-  "checks": [],
-  "finding": "UD method protocol, v1.2 instructions, bootloader v1.1 and entry-point/template updates prepared. Exact worked examples, record/link integrity and16 tooling tests passed. Publication pending.",
-  "next_action": "Publish scoped PR, integrate the documented method, and release the task claim with a retained audit marker.",
+  "checks": [
+    {
+      "command": "python3 sessions/ud-math-protocol-20261022-a1/verify_examples.py",
+      "status": "PASS",
+      "scope": "Constructor exact example checks"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "status": "PASS",
+      "record_count": 23
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "status": "PASS",
+      "test_count": 16
+    },
+    {
+      "command": "GitHub live claim ref and claim.json reread",
+      "status": "PASS",
+      "marker": "e570f3b6a648f9ea6b924cafea7e78e93689cbef"
+    }
+  ],
+  "finding": "Integrated method v1.0, Discovery instructions v1.2 and bootloader v1.1 through PR9. Exact worked examples, integrity checks and16 tooling tests passed. Live exact-SHA release marker verified.",
+  "next_action": "Apply the method to the next consequential Discovery calculation, selecting relevant techniques and filling the mathematical receipt.",
   "working_branch": "discovery/integration-ud-math-protocol-20261022/ud-math-protocol-a1",
   "mathematical_profile": {
     "domains": [
@@ -30,9 +53,15 @@
     "exactness_plan": "Symbolic/exact integer and Fraction checks for illustrative counts and clocks; document-only source conventions otherwise.",
     "physical_mapping": "NONE: runtime methodology, not a physical bridge."
   },
-  "checkpoint_at": "2026-10-22T16:48:18.771364+00:00",
+  "checkpoint_at": "2026-10-22T16:50:04.369181+00:00",
   "checkpoint_source": {
     "revision": "04bb0dfc6be8dd2b5fe755ed0f5bd41275eb88de",
     "dirty": true
+  },
+  "publication": {
+    "source_commit": "87b968b75b59fe52224f4f128d3d0176661e859b",
+    "integration_commit": "37c966e424d39e062937671dd3a10022786f54e3",
+    "release_marker": "e570f3b6a648f9ea6b924cafea7e78e93689cbef",
+    "status": "released"
   }
 }

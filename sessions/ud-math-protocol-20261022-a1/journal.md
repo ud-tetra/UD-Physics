@@ -31,3 +31,9 @@ Next: Publish scoped PR, integrate the documented method, and release the task c
 ## 2026-10-22T16:49:04.025046+00:00
 
 Preserved and executed verify_examples.py for exact set/orbit enumeration; PASS. The protocol worked example is intentionally target-exposed. This executable receipt supplements the immutable mathematical-method-v1 bundle without editing that bundle.
+
+## 2026-10-22T16:50:04.375085+00:00
+
+Checkpoint (complete): Integrated method v1.0, Discovery instructions v1.2 and bootloader v1.1 through PR9. Exact worked examples, integrity checks and16 tooling tests passed. Live exact-SHA release marker verified.
+
+Next: Apply the method to the next consequential Discovery calculation, selecting relevant techniques and filling the mathematical receipt.
