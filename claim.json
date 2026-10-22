@@ -1,0 +1,18 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "integration-icosahedral-tolerances-20261022",
+  "session": "icosahedral-tolerances-20261022-a1",
+  "created_at": "2026-10-22T19:48:00.516Z",
+  "base_revision": "4ddf692a11b7d21103799745d75a969f75a14c14",
+  "owned_paths": [
+    "experiments/icosahedral-tolerances",
+    "candidates/icosahedral-tolerances",
+    "sessions/icosahedral-tolerances-20261022-a1",
+    "artifacts/icosahedral-tolerances-20261022-a1",
+    "tasks/integration-icosahedral-tolerances-20261022.json",
+    "state/CURRENT.md"
+  ]
+}
