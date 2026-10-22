@@ -33,3 +33,9 @@ Immutable tolerances-001 captures all selected code/protocol/source inputs,24cas
 ## Integration checkpoint
 
 Validator PASS71 records and all16 repository tooling tests PASS. Scientific constructor checks,exact proofs and limitations remain separately labeled. Next:focused PR at verified main,exact staged/API tree equality,CI,merge,exact-SHA claim release and closure evidence.
+
+## Integrated and released
+
+PR#33 merged at8f5796d73629f54cc5f1714203028d6f6062ca88 after completed/success integrity run39845313399 at exact head80a3d986e40b560d3361272bea87851b0292461f. Prepared/local tree equality8952f8f3f8a3970b45adde99ab3a656ec3d051f8 verified. Re-read heldclaim owner/SHA,created childrelease andusedexpectedheadCAS. Live marker d74c3b9c3ba235338d10d56faa87b0a1063955f1 verified released withmatching session. This closure-only follow-up changes only this owning sessionrecord/journal underprotocolv2.
+
+Handoff:construct passive mountloss thatdamps the54housing modes,includeall reactions,quantify commonbreathing costandrerun declaredjointbudget. Preserve thecurrentpreparedcoherence results,narrowexactcertificates,frictionfailureandfull-relaxationcounterexample. PhysicalmoduletestUNSCORED;no mainlineexport/promotion.
