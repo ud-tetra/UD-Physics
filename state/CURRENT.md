@@ -7,7 +7,7 @@ Updated: 2026-10-22. Milestone: Discovery runtime framework v1.0.
 - Startup: BOOTLOADER.md; repository-wide behavior: AGENTS.md.
 - Task/claim coordination, running notes, immutable run capture, and integrity tooling are published.
 - Framework revision: 7433889f2a99395a545a468c8cfd23b99fd2d984; all 41 file objects matched the validated local Git tree.
-- Ten local tooling tests passed. The Actions workflow is published; no remote run was observed during initialization.
+- Ten local tooling tests passed. GitHub Actions run 39812403182 completed successfully on revision f5f5d18338b585cb3b894f0ea060f367b17b796d; both integrity and concurrency/capture checks passed.
 - Initial source snapshots are historical ledger v0.39 and governance proposal v1.0.
 - No physical bridge candidate or experimental result is established by this setup.
 - Server-enforced branch protection is not configured by this content release; see docs/ADMIN_SETUP.md.

@@ -25,11 +25,17 @@
       "command": "GitHub Actions observation",
       "status": "NOT_RUN",
       "reason": "No workflow run returned for the framework commit; workflow file is published."
+    },
+    {
+      "command": "GitHub Actions Discovery integrity",
+      "status": "PASS",
+      "revision": "f5f5d18338b585cb3b894f0ea060f367b17b796d",
+      "url": "https://github.com/ud-tetra/UD-Physics/actions/runs/39812403182"
     }
   ],
-  "finding": "Published framework revision 7433889f2a99395a545a468c8cfd23b99fd2d984; all 41 file objects match the validated local tree. Ten local tooling tests passed. Remote CI is not observed and main is unprotected.",
-  "next_action": "Use BOOTLOADER.md for the next authorized Discovery task. An administrator can enable PR/check protection; validate remote Actions when available.",
-  "checkpoint_at": "2026-10-22T16:14:57.271193+00:00",
+  "finding": "Framework published and byte-verified; 10 local tooling tests passed, and GitHub Actions run 39812403182 passed on revision f5f5d18338b585cb3b894f0ea060f367b17b796d. Main remains unprotected.",
+  "next_action": "Boot the next authorized Discovery task using BOOTLOADER.md. An administrator can enable PR and required-check protection on main.",
+  "checkpoint_at": "2026-10-22T16:15:46.567131+00:00",
   "checkpoint_source": {
     "revision": "UNCOMMITTED_INITIALIZATION",
     "dirty": true
@@ -58,5 +64,25 @@
       "No independent physics result is established by repository tooling checks."
     ],
     "verified_at": "2026-10-22T16:14:57.267051+00:00"
+  },
+  "ci_verification": {
+    "run_id": 39812403182,
+    "url": "https://github.com/ud-tetra/UD-Physics/actions/runs/39812403182",
+    "revision": "f5f5d18338b585cb3b894f0ea060f367b17b796d",
+    "status": "completed",
+    "conclusion": "success",
+    "job": "Discovery integrity",
+    "steps": [
+      {
+        "name": "Validate records and captured artifacts",
+        "conclusion": "success"
+      },
+      {
+        "name": "Exercise capture and concurrent claims",
+        "conclusion": "success"
+      }
+    ],
+    "scope": "Repository integrity and tooling checks; no physical bridge evaluation",
+    "observed_at": "2026-10-22T16:15:46.562741+00:00"
   }
 }
