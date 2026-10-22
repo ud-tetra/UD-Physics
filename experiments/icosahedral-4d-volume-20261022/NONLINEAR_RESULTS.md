@@ -1,6 +1,6 @@
 # Nonlinear discrimination: 4D apex versus 3D mechanical analogues
 
-**Session:** `icosa4dvol-20261022-gpt6-c7d2` | **Run:** `nonlinear-002` | **Branch-only:** EXACT / CONDITIONAL / NUMERICAL / FAILED discriminator.
+**Session:** `icosa4dvol-20261022-gpt6-c7d2` | **Run:** `nonlinear-003` | **Branch-only:** EXACT / CONDITIONAL / NUMERICAL / FAILED discriminator.
 
 **Verified source baseline:** `ud-tetra/UD-Physics@92dbe7d99d4a5a65d3acf978fd63e192f73c4bfa`; prior 4D-to-volume experiment and exact equal-edge selection. Claim `23b04a0533df0bd6b26f0c7fc9f94a6864400cea` was checked held before continuation. This extension adds a new run; it does not modify previous captures.
 
@@ -43,3 +43,7 @@ PASS: independent 3D/4D Euclidean distance formulas and potential identity; exac
 Negative results preserved: unconstrained physical 3D analogues are not ruled out (indeed an exactly matching guided 3D mechanism exists), the 3D linear null's failure is not a physical 4D signature, and the negative-force fold invalidates simple extrapolation outside its stable branch. 3D guided carriages have ideal constraints/transmission; the 4D interpretation likewise fixes shell w to zero, and has no native UD selection or GR/QFT readout. No independent target holdout or physical time/energy calibration.
 
 **Next discriminant:** Compare constrained full 4D shell/apex normal modes with 3D *local, isotropic, reciprocal* networks of explicit complexity and equal access to internal scalar modes. State permitted linkages, materials, ports and readouts before searching for a dimensional discriminator. Priority 97/100. No mainline export.
+
+## Versioned capture correction (integrity only)
+
+First attempted capture `nonlinear-002` FAILED repository validation at GitHub Actions 39857539810 because its schema-2 input metadata omitted the required `source_path` field. This invalid attempt was withdrawn from the current branch tree, while its Git history is retained. The new `nonlinear-003` preserves unchanged code/results/pulse bytes and declares `source_location=repository` with the explicit script source path. Mathematical conclusions and target exposure are unchanged; subsequent CI status is assessed separately.
