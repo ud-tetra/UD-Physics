@@ -27,3 +27,5 @@ Successful final command reran after adding exact tangent certificate and gradie
 Captured artifacts/icosahedral-coupling-20261022-a1/coupling-001 (NUMERICAL): Exact symmetry/grade obstructions and oriented coupling; separate passive scalar-strain volume realization and numerical checks
 
 Captured coupling-001 with five explicit input copies and three outputs. Validator PASS55 records;all16 tooling tests PASS. Prepared focused integration with constructor-only evidence labels.
+
+Research integrated via PR25,merge 11ad0c3dfd2a1103c88b93d74e4b7990c5965be5;PR integrity run39833797336 completed/success. Released owning claim through child audit marker 982a93d112659b4158c35ac8d324324087af40cd;reread live ref and released payload verified owner/status. Closure-only follow-up edits this session record/journal only.
