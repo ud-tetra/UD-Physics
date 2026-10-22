@@ -1,0 +1,18 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "integration-icosahedral-cone-20261022",
+  "session": "icosahedral-cone-20261022-a1",
+  "created_at": "2026-10-22T18:23:13.608Z",
+  "base_revision": "f70871b7df8465ceea88cbb6e41fa9493dddee6b",
+  "owned_paths": [
+    "experiments/icosahedral-cone",
+    "candidates/icosahedral-cone",
+    "sessions/icosahedral-cone-20261022-a1",
+    "artifacts/icosahedral-cone-20261022-a1",
+    "tasks/integration-icosahedral-cone-20261022.json",
+    "state/CURRENT.md"
+  ]
+}
