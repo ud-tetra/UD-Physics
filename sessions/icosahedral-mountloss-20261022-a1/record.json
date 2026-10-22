@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T20:15:48.152440+00:00",
   "base_revision": "83349b741cf262b2a264949f6338140d691373e6",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "integration-icosahedral-mountloss-20261022": {
       "ref": "refs/heads/claims/integration-icosahedral-mountloss-20261022",
       "sha": "e9d9c4f89b4e0862cda19dcf55400ec4e171757d",
-      "status": "held"
+      "status": "released",
+      "released_sha": "df62bae0cfdf44aa966118d1eb80765b8856ccf8"
     }
   },
   "checks": [
@@ -70,5 +71,11 @@
     "clock": "continuousdimensionlessu,no modularregister orperiodclaim",
     "metric": "full280configuration positiveM;E,Euclidean spatialgeometry;rigid6quotient",
     "physical_mapping": "120masslesscentralstruts assumed;physical calibration/test andnativeUDselectionOPEN"
+  },
+  "integration": {
+    "pr": 35,
+    "merge_sha": "f45448de8e21001903fd573ec9865767cbb32a4f",
+    "pull_request_integrity": "completed/success run39849597989 at headce414f86ee4283395c95dd1fb43e0515c556e936",
+    "tree_equality": "GitHub prepared tree equals local staged f882afa3be87f26bcd67bf952e52d6eb7dfb5f9a; all30 uploaded blob SHAs matched"
   }
 }
