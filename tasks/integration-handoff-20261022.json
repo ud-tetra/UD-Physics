@@ -16,6 +16,7 @@
     "templates"
   ],
   "dependencies": [],
-  "status": "active",
-  "scope_amendment": "Manual schema-2 run template was included in the unintegrated patch; coordinator task and same-owner claim were explicitly expanded before integration."
+  "status": "complete",
+  "scope_amendment": "Manual schema-2 run template was included in the unintegrated patch; coordinator task and same-owner claim were explicitly expanded before integration.",
+  "completion_evidence": "docs/HANDOFF_TRIAL_RESULTS_v1.0.md"
 }

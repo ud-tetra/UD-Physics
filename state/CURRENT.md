@@ -1,16 +1,15 @@
 # Current integrated state
 
-Updated: 2026-10-22. Milestone: Discovery runtime framework v1.0.
+Updated: 2026-10-22. Milestone: fresh-runtime Discovery handoff v1.0.
 
-- Mission: hypothetical UD bridge candidates and correlations to physical spacetime.
-- Canonical runtime instructions: instructions/UD_DISCOVERY_v1.1.md.
-- Startup: BOOTLOADER.md; repository-wide behavior: AGENTS.md.
-- Task/claim coordination, running notes, immutable run capture, and integrity tooling are published.
-- Framework revision: 7433889f2a99395a545a468c8cfd23b99fd2d984; all 41 file objects matched the validated local Git tree.
-- Ten local tooling tests passed. GitHub Actions run 39812403182 completed successfully on revision f5f5d18338b585cb3b894f0ea060f367b17b796d; both integrity and concurrency/capture checks passed.
-- Initial source snapshots are historical ledger v0.39 and governance proposal v1.0.
-- No physical bridge candidate or experimental result is established by this setup.
-- Server-enforced branch protection is not configured by this content release; see docs/ADMIN_SETUP.md.
-- Next: boot two isolated runtimes on disjoint tasks, verify claim contention, and start the first user-selected physical correspondence.
+- Writer/reviewer operational trial passed in two fresh same-model contexts with separate clones, branches, records and task claims.
+- Frozen synthetic writer output reproduced byte-for-byte; no physical correspondence was established.
+- Review-driven input provenance schema 2 and connector-compatible claim protocol 2 are integrated; historical versions and failures remain preserved.
+- Integrated record validation and all 16 local tooling tests passed. Newest remote Actions runs were queued at the last observation.
+- Writer and reviewer released their claims through exact-SHA audit markers. Coordinator closure is recorded in its session acceptance record.
+- Main branch protection is still disabled; see [administration setup](../docs/ADMIN_SETUP.md).
+- [Trial results and evidence](../docs/HANDOFF_TRIAL_RESULTS_v1.0.md)
+- [Runtime bootloader](../BOOTLOADER.md) and [Discovery instructions](../instructions/UD_DISCOVERY_v1.1.md)
+- Next: select the first externally grounded Discovery bridge candidate, with explicit physical mapping, baseline and target-exposure record.
 
-Update this file only at integrated milestones under an integration task claim. Runtime-specific status belongs in sessions/.
+Update this file at integrated milestones under an integration claim. Live claim metadata, not this summary, determines current ownership.

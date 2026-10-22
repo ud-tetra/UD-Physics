@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "handoff-integrator-20261022-a1",
+  "run_id": "integrated-verification-v1",
+  "created_at": "2026-10-22T16:34:40.989831+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Integrated writer/reviewer records validate and all 16 tooling tests pass. Newest remote Actions runs were queued at the last observation.",
+  "command": "python3 scripts/validate.py; python3 -m unittest discover -s tests -v",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "90e9d0048826219485454d71c00aed7b536da279",
+    "dirty": false
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "discovery.py",
+      "path": "inputs/001-discovery.py",
+      "source_location": "repository",
+      "source_path": "scripts/discovery.py",
+      "sha256": "41ecb5972ee3bf9b600cba59c360eedd30433a5d13a61a03219d04c9e7838f8a",
+      "size_bytes": 16400
+    },
+    {
+      "input_id": "input-002",
+      "name": "validate.py",
+      "path": "inputs/002-validate.py",
+      "source_location": "repository",
+      "source_path": "scripts/validate.py",
+      "sha256": "ffe545616cd4bed64eb4ca4b8228e02544c16a3132e405c8aaebbc01bd7bb66b",
+      "size_bytes": 10104
+    },
+    {
+      "input_id": "input-003",
+      "name": "test_discovery.py",
+      "path": "inputs/003-test_discovery.py",
+      "source_location": "repository",
+      "source_path": "tests/test_discovery.py",
+      "sha256": "ca1e5325094f86f005d43bab5c3f34b965de1e97d2926b39ac36a9617e1e040c",
+      "size_bytes": 10606
+    }
+  ],
+  "files": [
+    {
+      "path": "files/handoff_integrated_validation.json",
+      "sha256": "221252005fc29001471b31c6eb96b7873103ce7106c6f6cd0c9ac4f10ec8d954",
+      "size_bytes": 2715
+    }
+  ]
+}

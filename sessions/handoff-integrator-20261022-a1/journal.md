@@ -37,3 +37,13 @@ Scope correction: the unintegrated input-provenance patch included templates/run
 ## 2026-10-22T16:28:26.455244+00:00
 
 Real lifecycle blocker: writer legacy Store.release verified the held SHA but failed Git deletion because no authenticated Git push credential is configured; the connector exposes no conditional delete. Claim remains held, and v1 deletion was not claimed. Protocol amendment v2 uses child released markers and exact-SHA updates; reacquisition only from a released marker retains audit ancestry. Sixteen local tests passed, including competing reacquisition, stale release rejection, and owner checks. Reviewer will audit before integration and live releases.
+
+## 2026-10-22T16:34:40.990171+00:00
+
+Captured artifacts/handoff-integrator-20261022-a1/integrated-verification-v1 (NUMERICAL): Integrated writer/reviewer records validate and all 16 tooling tests pass. Newest remote Actions runs were queued at the last observation.
+
+## 2026-10-22T16:34:40.996712+00:00
+
+Checkpoint (handoff): Both fresh runtimes completed the declared trial; exact reproduction, live contention, review fixes, combined checks and writer/reviewer release markers passed. Coordinator release follows final summary integration.
+
+Next: Merge the final milestone summary, release the coordinator claim with a child audit marker, then capture closure-only acceptance evidence.
