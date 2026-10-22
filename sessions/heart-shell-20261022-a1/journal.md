@@ -25,3 +25,7 @@ Next: Define an internal scalar heart variable, a shell displacement/volume read
 Captured artifacts/heart-shell-20261022-a1/exact-001 (EXACT): Heart cyclic modes, heart-dark cell modes, geometric volume contrasts and separate scalar-port candidate
 
 Validation: exact arithmetic calculation PASS;35-record/manifest/link validation PASS;16 repository tooling tests PASS. Constructor checks, not independent replication.
+
+## Integrated closure
+
+PR15 merged at 2225103233b1b9a2cbe7b5cf7af46bde9980a925. Both remote integrity checks succeeded. Claim released with exact-SHA protocol-v2 child marker 2618eaf07d5bb11474380aef6dbc2f561f8885b3; live ref and released payload verified. This follow-up changes only this session record/journal. Next: explicit scalar heart/shell volume coupling law.

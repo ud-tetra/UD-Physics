@@ -8,12 +8,13 @@
   "created_at": "2026-10-22T17:27:58.801710+00:00",
   "base_revision": "3689f3eda8c3d9db06069af2e09b723fa4aa65f7",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "heart-shell-modes-20261022": {
       "ref": "refs/heads/claims/heart-shell-modes-20261022",
       "sha": "1374214c9c96fcff8802b4859d229772d1c8625b",
-      "status": "held"
+      "status": "released",
+      "released_sha": "2618eaf07d5bb11474380aef6dbc2f561f8885b3"
     }
   },
   "checks": [
@@ -47,5 +48,10 @@
     "metric": "H=I main model; Euclidean geometry; unit port inertia",
     "clock": "dimensionless u",
     "physical_mapping": "OPEN"
+  },
+  "integration": {
+    "pr": 15,
+    "merge_sha": "2225103233b1b9a2cbe7b5cf7af46bde9980a925",
+    "remote_checks": "both Discovery integrity checks success"
   }
 }
