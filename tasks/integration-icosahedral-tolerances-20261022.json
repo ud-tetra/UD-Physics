@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-icosahedral-tolerances-20261022",
+  "goal": "Conditional module tolerance bounds,finite housing dynamics,joint numerical probes and bench protocol",
+  "owned_paths": [
+    "experiments/icosahedral-tolerances",
+    "candidates/icosahedral-tolerances",
+    "sessions/icosahedral-tolerances-20261022-a1",
+    "artifacts/icosahedral-tolerances-20261022-a1",
+    "tasks/integration-icosahedral-tolerances-20261022.json",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "integration-icosahedral-multiport-20261022"
+  ],
+  "status": "complete",
+  "completion_evidence": "experiments/icosahedral-tolerances/RESULTS.md",
+  "result": "Conditionalmodule/frequencybounds and20jointbudgetpasses captured;54undampedhousingcounterexample preventsfullrelaxation;physicalmoduletestUNSCORED"
+}
