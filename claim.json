@@ -10,5 +10,9 @@
     "candidates/clock-map-smoke",
     "sessions/handoff-writer-20261022-a1",
     "artifacts/handoff-writer-20261022-a1"
-  ]
+  ],
+  "status": "released",
+  "protocol_version": 2,
+  "released_at": "2026-10-22T16:30:17.541Z",
+  "released_from_sha": "5481560b0e4d3edd2d4887aef0268377c6c0c8eb"
 }
