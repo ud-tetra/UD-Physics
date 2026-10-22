@@ -1,0 +1,43 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ud-math-protocol-20261022-a1",
+  "run_id": "mathematical-method-v1",
+  "created_at": "2026-10-22T16:48:18.770996+00:00",
+  "evidence": "EXACT",
+  "summary": "Versioned method document, instructions, receipt template and exact worked-example receipt/checks; no physical result.",
+  "command": "Exact set and orbit enumeration using Python int/Fraction/gcd/lcm; python3 scripts/validate.py; python3 -m unittest discover -s tests -v",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "04bb0dfc6be8dd2b5fe755ed0f5bd41275eb88de",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/UD_MATHEMATICAL_METHOD_v1.0.md",
+      "sha256": "911585ef0707dba0720f5bd8465cf18c801b0b8aa5adb75b6be9504c392282a6",
+      "size_bytes": 15719
+    },
+    {
+      "path": "files/UD_DISCOVERY_v1.2.md",
+      "sha256": "cc23f4636cbb1d066d1b93ca3147543ced2bd18df68c504a007ebdcbef53a3b4",
+      "size_bytes": 10924
+    },
+    {
+      "path": "files/mathematical_receipt.json",
+      "sha256": "547e42caadd385868acbc727284521c18a9226dc82f1a709f4cff18e4f8a175c",
+      "size_bytes": 2634
+    },
+    {
+      "path": "files/mathematical_receipt_examples.json",
+      "sha256": "d2e678eb30d0f5d076fbb553e30b31319abbaffcfaea9594dd7b75fb8e681ca8",
+      "size_bytes": 6661
+    },
+    {
+      "path": "files/example_checks.json",
+      "sha256": "7cabea52a0d20b05eef6c26016f6a00e9a307d1fc16df499e9ba5eb484c7b57a",
+      "size_bytes": 629
+    }
+  ]
+}

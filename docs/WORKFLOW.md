@@ -2,7 +2,7 @@
 
 1. Boot and claim a scoped task. Record source revision and target exposure.
 2. Create a candidate record. State the question, objects, assumed map, fitted choices, and possible discriminating observable.
-3. Build the smallest useful model. Keep conventional baselines and alternative explanations visible.
+3. Apply the [UD mathematical analysis protocol](UD_MATHEMATICAL_METHOD_v1.0.md): select techniques by purpose, define typed domains and conventions, and preserve exact expressions/provenance. Create a mathematical receipt for consequential results. Build the smallest useful model. Keep conventional baselines and alternative explanations visible.
 4. Record calculations, code, inputs, exclusions, residuals, and negative results. Use FIT for target-informed selection even if the selected arithmetic is exact.
 5. Capture a run with source revision, command, explicit inputs, outputs, and SHA-256 digests. Uncommitted source is allowed in discovery, but the manifest must report a dirty source tree. Commit source before a confirmatory run.
 6. Update only the owning session journal and candidate. Check dependencies after revisions. Maintain corrections as new entries/runs rather than rewriting a failed result away.

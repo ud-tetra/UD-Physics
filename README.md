@@ -4,16 +4,18 @@ A separate Unified Dynamics research sandbox for hypothetical bridge candidates 
 
 ## Start any LLM session here
 
-Read [BOOTLOADER.md](BOOTLOADER.md), then [AGENTS.md](AGENTS.md) and the [Discovery instructions](instructions/UD_DISCOVERY_v1.1.md). Do not begin from remembered project state.
+Read [BOOTLOADER.md](BOOTLOADER.md), then [AGENTS.md](AGENTS.md) and the [Discovery instructions](instructions/UD_DISCOVERY_v1.2.md). Also load the [UD mathematical analysis protocol](docs/UD_MATHEMATICAL_METHOD_v1.0.md). Do not begin from remembered project state.
 
 Copy this into a new runtime:
 
-> Work in https://github.com/ud-tetra/UD-Physics. Read BOOTLOADER.md and follow its load order. Report the repository revision, access capabilities, task, session ID, and evidence mode. Use the Discovery sandbox rules. Claim the task before editing, use an isolated branch/worktree, capture calculations and artifacts, and leave a reproducible handoff. Read-only access permits analysis but does not establish a write claim.
+> Work in https://github.com/ud-tetra/UD-Physics. Read BOOTLOADER.md and follow its load order, including the UD mathematical analysis protocol. Report the repository revision, access capabilities, task, session ID, and evidence mode. Use the Discovery sandbox rules. Claim the task before editing, use an isolated branch/worktree, capture calculations and artifacts, and leave a reproducible handoff. Read-only access permits analysis but does not establish a write claim.
 
 ## Working routes
 
 | Need | Start here |
 | --- | --- |
+| UD mathematical techniques and exactness | [docs/UD_MATHEMATICAL_METHOD_v1.0.md](docs/UD_MATHEMATICAL_METHOD_v1.0.md) |
+| Calculation provenance receipt | [templates/mathematical_receipt.json](templates/mathematical_receipt.json) |
 | Current integrated state | [state/CURRENT.md](state/CURRENT.md) |
 | Simultaneous LLM sessions | [docs/CONCURRENCY.md](docs/CONCURRENCY.md) |
 | Research workflow | [docs/WORKFLOW.md](docs/WORKFLOW.md) |
