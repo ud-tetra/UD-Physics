@@ -47,3 +47,13 @@ READY FOR RESEARCH PR: repositoryvalidator PASS125records/digests/locallinks;16t
 ## 2026-10-23T03:41:19.369536+00:00
 
 DIFF CHECK: full default whitespacecheck flags only intentional Markdown hard-break trailing spaces in the byte-preserved historical v0.39 ledger inputs of bothcaptures. Sourcebytes retained. Authored/control paths pass defaultdiffcheck;fullstageddiff passes withblank-at-eol disabled,otherwhitespacechecks retained.
+
+## Integrated closure
+
+Research PR62 merged at a3b37c9ca6834c7bddb5547ce4ade4c668484f66 from exact head ef7df44835a36f4c53407a9a670d2128cbf85e97. Discovery integrity CI 39896396846 succeeded with head_sha verified: https://github.com/ud-tetra/UD-Physics/actions/runs/39896396846. Integrated tree 47bbba9aaa449d7a1f12b421f682d57c8eaf496a matches the staged research tree.
+
+Claim released by exact-SHA update from f7d45a66b97c331788d9d04454c0da86f0bad95a to a8683c945cddbe4b3934b4401d00bdd67c3af82f; live ref and task/session/released_from_sha payload verified. Coordination history retained. Only this session record and journal are changed after release. No CURRENT, other claims, source ledgers or mainline export.
+
+Final finding: exact Z4×Z4 discriminant and scoped natural-grid exchange obstruction; stronger integral-edge dipole preparation changes equal-weight ratio to1/3, while integer vertex charge alone retains real1/6. Absolute action/impedance remains unselected. Physical score UNSCORED;promotion0.
+
+Next: construct the finite discriminant bilinear pairing and classify phase/character choices;seek an independent primitive UD loop or holonomy rule before using finite phases as action normalization. Priority88/100 expresses judgment,not measured closure.
