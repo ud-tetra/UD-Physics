@@ -1,0 +1,60 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-continuous-phase-20261023-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-continuous-phase-20261023",
+  "goal": "Complete continuous phase/action readout and exact gauge/loop normalization audit",
+  "created_at": "2026-10-23T15:08:21.751598+00:00",
+  "base_revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+  "source_dirty_at_boot": false,
+  "status": "complete",
+  "claims": {
+    "qpb1-continuous-phase-20261023": {
+      "ref": "refs/heads/claims/qpb1-continuous-phase-20261023",
+      "sha": "dc3f9b2ff367245638a097312052ac14633189b5",
+      "status": "released",
+      "release_marker_sha": "058606df6927c4b3d4c907e028bba11e4e82f616",
+      "released_from_sha": "dc3f9b2ff367245638a097312052ac14633189b5",
+      "released_at": "2026-10-23T15:16:53.135Z",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-continuous-phase/audit.py --out /workspace/scratch/continuous-phase/outputs",
+      "result": "PASS; 14hashes,13rows,450gauge,480S4readouts,2250curvature,28native/30detuned loops; analytic radius1/10 proof in report"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS141records,manifest digests and local documentation links"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL complete alpha and gauge law; native Hol1, detuned robust nontrivial phase; eta2 only postulated weight-one identification; UNSCORED,promotion0",
+  "next_action": "Classify source-compatible S4-preserving local generator changes and whether detuning is selected; priority96",
+  "checkpoint_at": "2026-10-23T15:14:28.267251+00:00",
+  "checkpoint_source": {
+    "revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+    "dirty": true
+  },
+  "completed_at": "2026-10-23T15:17:41.707742+00:00",
+  "closure_scope": "Owning session record and journal only; no substantive research after release",
+  "integration": {
+    "research_pr": 70,
+    "url": "https://github.com/ud-tetra/UD-Physics/pull/70",
+    "head_sha": "68099ce2ca2b4b5bae8f3d4a3a3647a393f00388",
+    "merge_sha": "da957be4066e23db3e9a2ce03e9ed60d8acd3774",
+    "tree_sha": "6952e985e1f0b891100355f60df62b2f17d4be6e",
+    "ci": {
+      "id": 39976761798,
+      "head_sha": "68099ce2ca2b4b5bae8f3d4a3a3647a393f00388",
+      "conclusion": "success",
+      "url": "https://github.com/ud-tetra/UD-Physics/actions/runs/39976761798"
+    },
+    "release_verified": true
+  }
+}

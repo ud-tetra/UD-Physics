@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source_hashes": 14,
+  "selected_source_rows": 13,
+  "active_visible_hidden_ranks": [
+    14,
+    12,
+    2
+  ],
+  "state_fixtures": 10,
+  "gauge_checks": 450,
+  "S4_actions": 24,
+  "S4_readout_checks": 480,
+  "curvature_derivative_checks": 2250,
+  "curvature_rank": 12,
+  "native_loop_receipts": 28,
+  "detuned_loop_receipts": 30,
+  "exact_robustness_radius": "1/10",
+  "physical_score": "UNSCORED",
+  "physical_promotion": 0
+}
