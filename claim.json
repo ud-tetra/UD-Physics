@@ -13,5 +13,7 @@
     "artifacts/graphpub-20261023-gpt6-4f9a/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-23T15:31:53.657Z",
+  "released_from_sha": "64a49f6ae26d76f6d6cd9f1ba2e8a2b7bfbdfd42"
 }
