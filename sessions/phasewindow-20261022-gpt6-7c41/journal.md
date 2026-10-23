@@ -41,3 +41,10 @@
 2026-10-23T02:00Z CHECK: local Fraction source PASS, separate SymPy/star norm and numeric sine diagnostic PASS; mathematical proof of sine inequality in RELATIVE_TUBE.md. Constructor checks only.
 2026-10-23T02:02Z CAPTURE: immutable relative-tube-005 includes 5 exact-source input copies, proof and result with SHA256 manifest. Older shorttube-003/004 correction and original failures preserved.
 2026-10-23T02:04Z HANDOFF: full u100 coherence, hardware and physical calibration OPEN; pending PR45 CI and independent proof review. Coordinate with PR44 rather than editing that owner's branch.
+
+2026-10-23 CONTINUE: main 127c5fb995cdd218fecc479bccec8ed7a2c2bad0 verified; 4 mechanical source blobs identical to prior main; original session claim still held; PR44 Greenbounds claim separately held and untouched.
+2026-10-23 EXACT: upgraded original alpha=1/10 all180-phase finite nonlinear safety from u=9/10 to u=49/50, with each housing strut>3853/281250 and all20 oriented cell volume ratios in ((1/500)^3,(999/500)^3). Method improves shared primary speed via R²<181/200, uses combined housing initial energy and exact finite sine convolution.
+2026-10-23 CHECK: local Fraction source PASS, same-runtime separate SymPy star/Gram and sine-quadrature diagnostic PASS. An initial assertion incorrectly required 49/5-9<4/5 (in fact equality); corrected to equality, with strict r<4/5 following pi>3. No theorem/material change.
+2026-10-23 FAILED LIMIT: at u=1 the current simple primary kinetic star bound has relative error square648/625>1; this sufficient proof cannot guarantee orientation there; not evidence of collision or instability.
+2026-10-23 CAPTURE: relative-tube-006 frozen source/checker/prior input/result/proof, SHA256 schema2 manifest, all 5 Git blobs byte-identical to local executed sources. Prior relative-tube-005 remains immutable. Repository PR integrity checks pending final head.
+2026-10-23 NEXT: independent review, coherent full u100 forced-Green/alignment validation via independently claimed PR44; avoid editing that track.
