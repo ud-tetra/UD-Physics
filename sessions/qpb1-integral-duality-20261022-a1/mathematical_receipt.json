@@ -1,0 +1,337 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "tetrahedral-integral-duality-v1",
+  "session_id": "qpb1-integral-duality-20261022-a1",
+  "candidate_id": "qpb1-integral-duality",
+  "question": "Do the integral cycle/cut lattices and their pairing select charge\u2013flux normalization or constrain preparations?",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "lattices",
+      "symbol": "Lambda,Gamma,Lambda#",
+      "object_type": "Exact mathematical object in hypothetical field branch",
+      "definition": "Integral graph flows/cuts and Euclidean lattice dual in cycle space",
+      "domain": "Rank3 lattices in orthogonal subspaces of R6",
+      "codomain": null,
+      "coefficient_domain": "Z/Q for matrices and computation;R for positive model parameters",
+      "units": "dimensionless native field coordinates;physical dictionary requires A0,q0,tau0",
+      "basis_orientation": "Ascending oriented simplices,lexicographic edges01,02,03,12,13,23;canonical one-form p^T da",
+      "metric_measure": "Unit Euclidean edge metric;pairing n^T dq on natural reduced dual pair",
+      "origin": "defined lattice construction or explicit preparation hypothesis",
+      "exact_expression": "Lambda=kerB1\u2229Z6;Gamma=B1^T Z4;Lambda#=PT Z6",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "E1"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "dependency_ids": [],
+      "normalization": "Gram determinant16 versus covolume4;Lambda# lives in cycle space,not cut space;no physical unit selection"
+    },
+    {
+      "object_id": "pairing",
+      "symbol": "L,D,G",
+      "object_type": "Exact mathematical object in hypothetical field branch",
+      "definition": "Cycle basis,dual basis and exact Gram form",
+      "domain": "Z3 coefficient modules embedded in R6",
+      "codomain": null,
+      "coefficient_domain": "Z/Q for matrices and computation;R for positive model parameters",
+      "units": "dimensionless native field coordinates;physical dictionary requires A0,q0,tau0",
+      "basis_orientation": "Ascending oriented simplices,lexicographic edges01,02,03,12,13,23;canonical one-form p^T da",
+      "metric_measure": "Unit Euclidean edge metric;pairing n^T dq on natural reduced dual pair",
+      "origin": "defined lattice construction or explicit preparation hypothesis",
+      "exact_expression": "G=L^TL=4I-ww^T;D=LG^-1;L^TD=I",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "E1"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "dependency_ids": [],
+      "normalization": "Gram determinant16 versus covolume4;Lambda# lives in cycle space,not cut space;no physical unit selection"
+    },
+    {
+      "object_id": "classes",
+      "symbol": "delta,mu",
+      "object_type": "Exact mathematical object in hypothetical field branch",
+      "definition": "Discriminant residue class and minimum transverse squared norm",
+      "domain": "Lambda#/Lambda=Z4\u2295Z4",
+      "codomain": null,
+      "coefficient_domain": "Z/Q for matrices and computation;R for positive model parameters",
+      "units": "dimensionless native field coordinates;physical dictionary requires A0,q0,tau0",
+      "basis_orientation": "Ascending oriented simplices,lexicographic edges01,02,03,12,13,23;canonical one-form p^T da",
+      "metric_measure": "Unit Euclidean edge metric;pairing n^T dq on natural reduced dual pair",
+      "origin": "defined lattice construction or explicit preparation hypothesis",
+      "exact_expression": "mu(identity)=0;mu(order4)=1/2;mu(order2)=1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "E1"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "dependency_ids": [],
+      "normalization": "Gram determinant16 versus covolume4;Lambda# lives in cycle space,not cut space;no physical unit selection"
+    },
+    {
+      "object_id": "preparation",
+      "symbol": "rho,p",
+      "object_type": "Exact mathematical object in hypothetical field branch",
+      "definition": "Vertex charge and canonical edge displacement flux",
+      "domain": "rho\u2208Z4,sumrho0;p\u2208R6 or added p\u2208Z6",
+      "codomain": null,
+      "coefficient_domain": "Z/Q for matrices and computation;R for positive model parameters",
+      "units": "dimensionless native field coordinates;physical dictionary requires A0,q0,tau0",
+      "basis_orientation": "Ascending oriented simplices,lexicographic edges01,02,03,12,13,23;canonical one-form p^T da",
+      "metric_measure": "Unit Euclidean edge metric;pairing n^T dq on natural reduced dual pair",
+      "origin": "defined lattice construction or explicit preparation hypothesis",
+      "exact_expression": "Hmin_int=uL||rho||^2/8+uT*mu/2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "E1"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "dependency_ids": [],
+      "normalization": "Gram determinant16 versus covolume4;Lambda# lives in cycle space,not cut space;no physical unit selection"
+    },
+    {
+      "object_id": "exchange",
+      "symbol": "D_sigma,r,lambda",
+      "object_type": "Exact mathematical object in hypothetical field branch",
+      "definition": "Canonical exchange and relative cycle-grid scale",
+      "domain": "Neutral real reduced phase space R6 and declared discrete subgrids",
+      "codomain": null,
+      "coefficient_domain": "Z/Q for matrices and computation;R for positive model parameters",
+      "units": "dimensionless native field coordinates;physical dictionary requires A0,q0,tau0",
+      "basis_orientation": "Ascending oriented simplices,lexicographic edges01,02,03,12,13,23;canonical one-form p^T da",
+      "metric_measure": "Unit Euclidean edge metric;pairing n^T dq on natural reduced dual pair",
+      "origin": "defined lattice construction or explicit preparation hypothesis",
+      "exact_expression": "D_sigma=(sigma*p,-a/sigma);scaled grids A=rLambda,P=Lambda/r give lambda=r^2 atnu2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "E1"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "dependency_ids": [],
+      "normalization": "Gram determinant16 versus covolume4;Lambda# lives in cycle space,not cut space;no physical unit selection"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "url_or_repo_path": "experiments/qpb1-charge-field/README.md",
+      "version_or_commit": "d7980ade886ff95083e1bb17641ab5af8be2265a",
+      "section_or_object_id": "Field carrier,energy,physical dictionary and duality",
+      "source_status": "Hypothetical real classical field candidate;conditional coefficients"
+    },
+    {
+      "source_id": "S2",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "version_or_commit": "ud-tetra/UD@957d443e25008632ab9d9328c162343b6a651ee7;archivev0.85,scientificv0.43",
+      "section_or_object_id": "O10,O14;source hashes retained inSOURCES.json",
+      "source_status": "Native action unit and ratio direction retained;physical numerical ratio remainsOPEN"
+    },
+    {
+      "source_id": "E1",
+      "url_or_repo_path": "https://www.unige.ch/~laharpe/articles/19BaHaNa3fev97.pdf",
+      "version_or_commit": "1997-02-03 author preprint;published1997",
+      "section_or_object_id": "\u00a71 Props1\u20132;\u00a73 Prop8;\u00a74 Lemma1;\u00a76 complete graphs",
+      "source_status": "Primary mathematical baseline;not physical evidence"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Filled K4 tetrahedron, ascending orientations and lexicographic edges, unit Euclidean edge metric;new real canonical R12 field model retained, distinct from native active R14."
+    },
+    {
+      "id": "A2",
+      "statement": "Integer edge coordinate/momentum grids are added classical preparation or strobe hypotheses, not derived compactness, a CCR, quantum dynamics or measured charge."
+    },
+    {
+      "id": "A3",
+      "statement": "Positive S4-invariant energy uses independent uL,uT,v;optional identical-edge electric weight imposes uL=uT."
+    },
+    {
+      "id": "A4",
+      "statement": "Frequency2 matching uT*v=1 is inverse design after target exposure;lambda=(1/2)sqrt(uT/v)."
+    },
+    {
+      "id": "A5",
+      "statement": "Alternative equal/scaled-cycle phase grids are separate conventions;relative scale r and charge unit q0 are unselected."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Integer bases and exact rational projections",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Prove saturation,cut/flow distinction and perfect pairing;no floating tolerances"
+    },
+    {
+      "technique": "Factorization,gcd minors and Smith invariants",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "16=2^4;Smith1,4,4 givesZ4xZ4 and excludes determinant-as-covolume confusion"
+    },
+    {
+      "technique": "Modular residue classes",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Enumerate all16 discriminant classes using modulo4 representatives;certified64 shifts perclass"
+    },
+    {
+      "technique": "Spectral and shortest-vector bounds",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "G eigenvalues1,4,4 and dual norms certify minima and no similarity"
+    },
+    {
+      "technique": "Signed S4 symmetry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "All24 permutations,three class orbits,scalar cycle commutant and parity-twisted complement star"
+    },
+    {
+      "technique": "Canonical dynamics and modular clocks",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Distinguish preparation from continuous closure;deriveZ2/Z4 whole-grid strobe phases"
+    },
+    {
+      "technique": "Dimensional and normalization analysis",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "PreserveZ=lambda*A0/q0^2;scaled-grid counterfamily leaveslambda andphysicalchargeanchoropen"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "Gramdet16;classcounts1+3+12;dipole(uL+uT)/4 dividedby face3uT/2",
+    "reduced_expression": "Z4xZ4;integerdipole/face=(uL+uT)/(6uT),1/3atequalweights",
+    "factor_origins": [
+      "4 is tetrahedral nonzero graph/curl eigenvalue and discriminant exponent",
+      "16 is Gramdet and integer split index,not16physicalspecies",
+      "3 is triangularcycle squarednorm",
+      "1/2 is quadraticenergy prefactor;1/2 dualmin is fixedEuclidean projectionnorm",
+      "24 is exhaustive grouporder;64=4^3 is certifiedshiftbudget"
+    ],
+    "factorization": "16=2^4;24=2^3*3;64=2^6;6=2*3",
+    "divisibility_gcd_lcm": "gcd minors1,4,16;Smith1,4,4;quotient exponent4;nophysicalquantizationinferred"
+  },
+  "clock_receipt": {
+    "clock_type": "Continuous native oscillator phase plus optional discrete whole-grid strobes",
+    "modulus": "2pi phase;Z2naturalgrid,Z4matchedscaledcyclegrid",
+    "residue_convention": "theta=2s modulo2pi at matchedfrequency2",
+    "update_rule": "F(theta)=[[cosI,lambda sinI],[-sinI/lambda,cosI]]",
+    "initial_phase": "Neutral reduced phase grid at s0;chargedminimum prepared ata0 separately",
+    "coupling": "uT*v1 by exposedfrequency match;lambda positive",
+    "period_claim": "Wholegrid natural theta\u2208piZ;scaledcycle theta\u2208(pi/2)Z whenlambda=r^2;specialstatescanreturnmoreoften",
+    "physical_unit_map": "t=tau0*s;no independently anchoredphysicalclock"
+  },
+  "dynamics_readout": {
+    "state_space": "Real neutral radiativeR6;naturalintegerphasegridLambda#\u00d7Lambda,alternativegridrLambda\u00d7Lambda/r",
+    "generator_or_update": "aT_prime=uT*pT;pT_prime=-4v*aT",
+    "initial_boundary_conditions": "Closed tetrahedron,zerototalvertexcharge;integer-edgeconstraintoptionalpreparationonly",
+    "conservation_and_sources": "Undriven energy and vertexcharge conserved;integer-edgedipole has transverseenergyuT/4 andisnotstatic",
+    "projection_and_kernel": "PL/PT rank3;fullfilledH1zero;discriminant is graphlattice quotient,notnewhomology",
+    "physical_mapping": "ConditionalZ=lambda*A0/q0^2;A0/hbar directionunchanged,numericalratioOPEN"
+  },
+  "target_exposure": {
+    "status": "EXPLORATORY_AFTER_NATIVE_FREQUENCY2_ETA2_AND_REAL_1OVER6_EXPOSURE",
+    "known_targets": [
+      "Nativefrequency2",
+      "Priorrealratio1/6",
+      "Priorhypothesiseta2"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Added integer preparation hypotheses and optional alternative cycle grids",
+      "Frequency2 retained by uT*v=1;no empirical optimization"
+    ],
+    "search_domain_and_budget": "16classes,64boundedshifts/class;64classparameterenergychecks;24S4;4dipolefixtures;5scaledfamilies;analyticpositiveparameterproofs",
+    "selection_criterion": "Does lattice pairing independently selectisotropicexchange orrelativephysicalunits?",
+    "baseline": "Conventional Euclidean integral graph flow/cut lattices and real quadratic discrete gauge dynamics"
+  },
+  "calculation_steps": [
+    "Buildsaturatedcycle/cutbases andexplicitdual;deriveGram andSmithinvariants.",
+    "Certifyminimumvectors andall16cosetminima withspectralbounds.",
+    "Derivechargedpreparationminimum andcompareintegeredgewithrealvertexcharge.",
+    "Proveno Euclideansimilarity;separatecoordinateexchange,cut/cycleisometry andscaledgridconventions.",
+    "Provecontinuousclosureobstruction andwholegridZ2/Z4stroboscopicgroups."
+  ],
+  "result": {
+    "exact_expression": "Discriminant Z4xZ4;natural dual-pair scalar exchange obstructed;integer-edge dipole/face ratio=(uL+uT)/(6uT),1/3 at uL=uT;scaled cycle grids leave lambda=r^2 free;whole-grid strobes Z2/Z4",
+    "approximation": null,
+    "units": "Dimensionlessnativephase,energies andlatticenorms;Zrequiresaction/charge^2 unitmap",
+    "precision_and_error": "Exact rational calculations plus stated analytic proofs;no numericalorphysicaluncertaintyestimate",
+    "scope": "EuclideanK4latticebranch ofnewclassicalfieldmodel;notoriginalUDcarrier or quantumtheory",
+    "physical_interpretation": "HYPOTHESIS;UNSCORED;physicalpromotion0"
+  },
+  "verification": [
+    {
+      "method": "Exact rational constructor audit and analytic bounded-search/scale/clock proofs",
+      "command_or_proof_path": "python3 experiments/qpb1-integral-duality/audit.py --out /workspace/scratch/ed44232d6ecb/integral_duality_outputs;experiments/qpb1-integral-duality/README.md",
+      "source_revision": "d7980ade886ff95083e1bb17641ab5af8be2265a",
+      "actual_result": "PASS7sourcehashes,16completeclasses,64energychecks,24S4,4dipolecases,5scaledfamilies;minimumcounts8and12;no-similarity;quarter-turnwitness",
+      "review_relationship": "constructor;no separate LLM or empiricalreview"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "NaturalLambda#\u00d7Lambda forbids scalarwholegridexchange;no rotationplusuniformscale can identify the two lattices.",
+    "Coordinatecanonicalintegerexchange exists butfailsgivenisotropicenergy;no blanketno-go asserted.",
+    "Integervertexcharge alone doesnotrequireintegeredgeflux;integeredgeversion changes1/6to1/3onlyunderaddedhypotheses.",
+    "Scaledcyclefamily keepscanonicalpairingbutlambda=r^2 remainsarbitrary.",
+    "Nonzerocontinuousoscillatorcannotpreserveadiscretewholephasegridforalltimes."
+  ],
+  "limitations": [
+    "No compactgaugegroup,CCR,physicalchargespectrum,electronpreparation,apparatus,continuumlimit orindependentscaleanchor.",
+    "SameEuclideanmetricandsamesectorrequiredforobstruction;dualmesh/twistedrepresentations orchangedmetricare differentbranches.",
+    "AlternateequalcyclegridhaspairingGramdet16,notnaturalunimodularpairing;itretainsoneof16configurationcosets.",
+    "Strobesdescribewholegridmaps,notallreturntimesofindividualstates.",
+    "MissingGenesisPNGunused;historicalattachmentsnotnewauthority;no mainlineexport,ledgeramendment orindependentreview.",
+    "Capture exact-001 preserved an unsupported candidate evidence tag NO-GO;exact-002 supersedes that metadata with supported EXACT/CONDITIONAL labels. Mathematical code and outputs unchanged."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-integral-duality-20261022-a1/exact-002/manifest.json"
+  ],
+  "next_discriminant": "Construct the exact finite discriminant pairing and classify phase/character choices;seek an independent primitive UD loop/holonomy rule before using this algebra as an action-normalization bridge."
+}

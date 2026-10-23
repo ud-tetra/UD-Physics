@@ -1,0 +1,96 @@
+{
+  "dipole_cases": [
+    {
+      "u_L": "1",
+      "u_T": "1",
+      "real_minimum": "1/4",
+      "integer_edge_minimum": "1/2",
+      "real_to_face_ratio": "1/6",
+      "integer_to_face_ratio": "1/3",
+      "extra_radiative_energy": "1/4"
+    },
+    {
+      "u_L": "2",
+      "u_T": "3",
+      "real_minimum": "1/2",
+      "integer_edge_minimum": "5/4",
+      "real_to_face_ratio": "1/9",
+      "integer_to_face_ratio": "5/18",
+      "extra_radiative_energy": "3/4"
+    },
+    {
+      "u_L": "3",
+      "u_T": "1",
+      "real_minimum": "3/4",
+      "integer_edge_minimum": "1",
+      "real_to_face_ratio": "1/2",
+      "integer_to_face_ratio": "2/3",
+      "extra_radiative_energy": "1/4"
+    },
+    {
+      "u_L": "1/2",
+      "u_T": "7/5",
+      "real_minimum": "1/8",
+      "integer_edge_minimum": "19/40",
+      "real_to_face_ratio": "5/84",
+      "integer_to_face_ratio": "19/84",
+      "extra_radiative_energy": "7/20"
+    }
+  ],
+  "scaled_lattice_families": [
+    {
+      "configuration_lattice_scale": "1/2",
+      "momentum_lattice_scale": "2",
+      "canonical_pair_scale": "1",
+      "exchange_sigma_and_matched_lambda": "1/4",
+      "u_T": "1/2",
+      "v": "2"
+    },
+    {
+      "configuration_lattice_scale": "1",
+      "momentum_lattice_scale": "1",
+      "canonical_pair_scale": "1",
+      "exchange_sigma_and_matched_lambda": "1",
+      "u_T": "2",
+      "v": "1/2"
+    },
+    {
+      "configuration_lattice_scale": "3/2",
+      "momentum_lattice_scale": "2/3",
+      "canonical_pair_scale": "1",
+      "exchange_sigma_and_matched_lambda": "9/4",
+      "u_T": "9/2",
+      "v": "2/9"
+    },
+    {
+      "configuration_lattice_scale": "2",
+      "momentum_lattice_scale": "1/2",
+      "canonical_pair_scale": "1",
+      "exchange_sigma_and_matched_lambda": "4",
+      "u_T": "8",
+      "v": "1/8"
+    },
+    {
+      "configuration_lattice_scale": "3",
+      "momentum_lattice_scale": "1/3",
+      "canonical_pair_scale": "1",
+      "exchange_sigma_and_matched_lambda": "9",
+      "u_T": "18",
+      "v": "1/18"
+    }
+  ],
+  "natural_grid_quarter_turn_momentum_witness": [
+    "-1/4",
+    "1/4",
+    "0",
+    "-1/2",
+    "1/4",
+    "-1/4"
+  ],
+  "canonical_integer_coordinate_exchange": "Exists, but fails isotropic energy invariance because G squared is nonscalar",
+  "stroboscopic_whole_grid_groups": {
+    "natural_dual_pair": "Z2 at phase pi multiples",
+    "equal_scaled_cycle_pair_with_matched_lambda": "Z4 at phase pi/2 multiples"
+  },
+  "continuous_lattice_status": "Nontrivial continuous oscillator flow does not preserve a discrete phase grid at all times."
+}

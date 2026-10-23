@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "evidence": "EXACT / CONDITIONAL",
+  "cycle_cut_ranks": [
+    3,
+    3
+  ],
+  "Gram_determinants": [
+    16,
+    16
+  ],
+  "Smith_invariants": [
+    1,
+    4,
+    4
+  ],
+  "discriminant_classes": 16,
+  "class_minimizations": 16,
+  "bounded_shifts_per_class": 64,
+  "class_energy_checks": 64,
+  "S4_permutations": 24,
+  "dipole_parameter_cases": 4,
+  "scaled_pair_families": 5,
+  "natural_scalar_exchange": "OBSTRUCTED",
+  "integer_edge_dipole_to_face_ratio": "1/3 under equal edge electric weights",
+  "physical_score": "UNSCORED",
+  "physical_promotion": 0
+}
