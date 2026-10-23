@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "graphite-session-publication-20261023",
+  "session": "graphpub-20261023-gpt6-4f9a",
+  "created_at": "2026-10-23T15:16:16.082Z",
+  "base_revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+  "owned_paths": [
+    "tasks/graphite-session-publication-20261023.json",
+    "sessions/graphpub-20261023-gpt6-4f9a/",
+    "candidates/graphite-superlubricity/",
+    "experiments/graphite-superlubricity/",
+    "artifacts/graphpub-20261023-gpt6-4f9a/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
