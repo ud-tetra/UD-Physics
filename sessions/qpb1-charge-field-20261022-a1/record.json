@@ -8,12 +8,13 @@
   "created_at": "2026-10-23T03:17:41.181422+00:00",
   "base_revision": "bbf7b9ec09a86378f6503c16460771a033e48593",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "qpb1-charge-field-20261022": {
       "ref": "refs/heads/claims/qpb1-charge-field-20261022",
-      "sha": "502cbc69bad22655c6239db55fe7d04d208fbf4e",
-      "status": "held"
+      "sha": "60cffe873379bf72b07bbe36b44b8f8f2f3e34e4",
+      "status": "released",
+      "released_from_sha": "502cbc69bad22655c6239db55fe7d04d208fbf4e"
     }
   },
   "checks": [
@@ -36,5 +37,16 @@
   "checkpoint_source": {
     "revision": "bbf7b9ec09a86378f6503c16460771a033e48593",
     "dirty": true
+  },
+  "integration": {
+    "research_pr": "https://github.com/ud-tetra/UD-Physics/pull/60",
+    "research_head": "1749ca6d2bb7f0be680306580bfcc77eb15c93a3",
+    "research_merge": "c9a0caff09fc368205ff79ec019da1ec2ad6e305",
+    "ci_run_id": 39895042760,
+    "ci_url": "https://github.com/ud-tetra/UD-Physics/actions/runs/39895042760",
+    "ci_head": "1749ca6d2bb7f0be680306580bfcc77eb15c93a3",
+    "ci_conclusion": "success",
+    "tree": "be218ee1c752365cb259c065308666ed005c6430",
+    "released_claim": "60cffe873379bf72b07bbe36b44b8f8f2f3e34e4"
   }
 }
