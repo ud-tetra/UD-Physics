@@ -1,0 +1,310 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "relative-tube-006",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "For alpha(0)=1/10 and Eh<=51/20000000, can every initial housing phase guarantee all 120 struts and 20 oriented cell volumes positive beyond prior u=9/10, without modifying full 3D MountLoss dynamics?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FIT",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "X",
+      "symbol": "X_i(u)",
+      "object_type": "13 free primary points in Euclidean R^3",
+      "definition": "12 shell positions and centre, 39 Cartesian positions; m_i/R² positive mass coefficient",
+      "domain": "R^39",
+      "codomain": null,
+      "coefficient_domain": "R, reference Q(sqrt5)",
+      "units": "ell0=1",
+      "basis_orientation": "fixed Cartesian xyz; oriented reference tetrahedral faces",
+      "metric_measure": "sum m_i/R²*|Xi'|² kinetic metric",
+      "origin": "imported",
+      "exact_expression": "sum |Xi'|²< (9/25)²",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "mechanics",
+        "geometry"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "reference outer edge a=1"
+    },
+    {
+      "object_id": "H",
+      "symbol": "H_e(u)",
+      "object_type": "30 free 3D housing points",
+      "definition": "housing midpoint mounted to Ae=(Xi+Xj)/2 and four instantaneous direction dashpots",
+      "domain": "R^90",
+      "codomain": null,
+      "coefficient_domain": "R",
+      "units": "ell0",
+      "basis_orientation": "reference 30 edges, four anchors per edge, current housing-to-anchor directions",
+      "metric_measure": "mass m_h>9/5000; spring k_h>9/50",
+      "origin": "imported",
+      "exact_expression": "H''+100 H=100 A-F, |F|<911/450",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "mechanics"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "X"
+      ],
+      "normalization": "omega=10"
+    },
+    {
+      "object_id": "energy",
+      "symbol": "E(u)",
+      "object_type": "nonnegative mechanical energy and initial housing phase ball",
+      "definition": "passive 560-phase model total mechanical E≤E*; initial housing energy ≤51/20000000",
+      "domain": "R^560",
+      "codomain": "R_nonnegative",
+      "coefficient_domain": "Q upper bounds, real dynamics",
+      "units": "dimensionless E_*",
+      "basis_orientation": "alpha plus 13 free points,150 devices,30 housings",
+      "metric_measure": "positive kinetic and elastic storage, dE/du≤0",
+      "origin": "derived",
+      "exact_expression": "E* =1360051/20000000",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "mechanics",
+        "priorphase"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "uncalibrated"
+    },
+    {
+      "object_id": "oriented_cell",
+      "symbol": "A_k,V_k",
+      "object_type": "20 3x3 cell relative-column matrices and oriented volumes",
+      "definition": "A_k=[Xa-C,Xb-C,Xd-C], V=det(A)/6",
+      "domain": "R^(3x3)",
+      "codomain": "R",
+      "coefficient_domain": "reference Q(sqrt5), real trajectories",
+      "units": "ell0^3",
+      "basis_orientation": "reference positive icosahedral faces",
+      "metric_measure": "sigma_min(Aref)=1/sqrt2; Euclidean/Frobenius matrix norms",
+      "origin": "derived",
+      "exact_expression": "(1/125000000) < V/V_ref < 997002999/125000000 on u<=49/50",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "priorrelative"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "X"
+      ],
+      "normalization": "reference positive cell volume"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "mechanics",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/mountloss.py;experiments/icosahedral-tolerances/hardware.py;experiments/icosahedral-free3d/model.py;experiments/icosahedral-multiport/network.py",
+      "version_or_commit": "127c5fb995cdd218fecc479bccec8ed7a2c2bad0",
+      "section_or_object_id": "current-axis housing_loss, mount_force, positive energy, strains",
+      "source_status": "integrated read-only, blob-verified identical to prior"
+    },
+    {
+      "source_id": "geometry",
+      "url_or_repo_path": "experiments/icosahedral-nonlineartube/README.md",
+      "version_or_commit": "127c5fb995cdd218fecc479bccec8ed7a2c2bad0",
+      "section_or_object_id": "reference cell Gram eigenvalues and continuation",
+      "source_status": "integrated"
+    },
+    {
+      "source_id": "priorphase",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/PULSE_SAFETY.md",
+      "version_or_commit": "43412f65f5e64ec49223b1c713fb1649af3b29ba",
+      "section_or_object_id": "enlarged housing-phase energy and original alpha0=1/10",
+      "source_status": "branch exact conditional"
+    },
+    {
+      "source_id": "priorrelative",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/RELATIVE_TUBE.md",
+      "version_or_commit": "782cd7fb93e0001bd6bb159857d85e09f1fc4100",
+      "section_or_object_id": "relative oscillator/Duhamel identity, star-incidence estimate",
+      "source_status": "previous immutable branch result"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Unchanged positive-energy 280-coordinate 560-mechanical-phase 3D MountLoss model, Omega=10, current-axis viscous paths and reciprocal reactions; qualified properties and nu∈[0,1/20].",
+      "origin": "imported"
+    },
+    {
+      "id": "A2",
+      "statement": "Original alpha0=1/10, primary/device reference/rest, arbitrary 180 housing initial positions/velocities with energy Eh<=51/20000000; no rigidity quotient or zero-momentum assumption.",
+      "origin": "exposed target-informed preparation"
+    },
+    {
+      "id": "A3",
+      "statement": "Rational horizon T=49/50 and majorants 181/200,9/25,35/4,1/180,79/125 selected after earlier u=9/10 bound and u100 target were known.",
+      "origin": "FIT/development"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational inequalities",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "certify mass-weighted energy, strict velocity, oscillator, strut and cell-volume inequalities"
+    },
+    {
+      "technique": "continuous oscillator/Duhamel dynamics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact housing-to-anchor force response identity with moving anchor/midpoint"
+    },
+    {
+      "technique": "trigonometric integral",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "finite-horizon bound ∫|sin(10t)| <79/125 from 3<pi<22/7 and 1-cos r ≤r²/2"
+    },
+    {
+      "technique": "spectral star incidence/oriented determinant",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "3x4 star singular value2 and reference Gram sigma_min1/sqrt2 preserve all 20 orientations"
+    },
+    {
+      "technique": "ODE continuation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "positive strut/member length and bounded finite-time states exclude vector-field singularity"
+    },
+    {
+      "technique": "prime factorization/modular clock/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no divisibility, cyclic register or boundary chain question; continuous u"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "1 alpha +13*3 primary+150 auxiliary+30*3 housing=280 configurations, 2*280=560 phase; 30*4=120 struts; 2*30*3=180 housing phase coordinates",
+    "reduced_expression": "280,560,120,180; T=49/50, strut lower=3853/281250, relative gram-square upper=388962/390625",
+    "factor_origins": [
+      "12 external icosahedron vertices plus centre",
+      "30 edge housings with four anchors each"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless u=t/t0",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "M q''+∇U(q)+D(q)q'=0; heat'=q'·D(q)q'",
+    "initial_phase": "all housing displacement/velocity phases with Eh<=51/20000000",
+    "coupling": "30 housings linked to midpoint mounts and four current-axis dampers; all reactions retained",
+    "period_claim": null,
+    "physical_unit_map": "uncalibrated t0"
+  },
+  "dynamics_readout": {
+    "state_space": "R^560 mechanical plus heat bookkeeping; full 3D points and all rigid kinetic energy retained",
+    "generator_or_update": "unchanged positive definite kinetic+elastic energy E, passive dissipation E'<=0",
+    "initial_boundary_conditions": "alpha0=1/10, primary/device at reference/rest, allowed housing phase ball",
+    "conservation_and_sources": "E+heat conserved, total spatial P/L conserved by pair central reactions",
+    "projection_and_kernel": "positive normalized 20 oriented cell determinants; no projection of mechanical rigid modes",
+    "physical_mapping": "no empirical identification or material/time calibration"
+  },
+  "target_exposure": {
+    "status": "Previous u=9/10 and target u=100 exposed; T=49/50 selected using nearby rational inequalities (FIT), not pre-registered or held-out.",
+    "known_targets": [
+      "every housing phase",
+      "all struts positive",
+      "all cells positive",
+      "original u100 breathing and ringdown screens remain open"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "T=49/50 sufficient proof horizon",
+      "rational R², energy, speed, oscillator and sine integral majorants"
+    ],
+    "search_domain_and_budget": "Refinement of previous global sine-average method; inspected bound near 0.98 and noted failure at u=1 under identical orientation majorant; no new data or constitutive law.",
+    "selection_criterion": "strict positive strut margin and relative oriented-cell operator norm <1",
+    "baseline": "prior exact u=9/10 and earlier u=2/5; energy-only u100 obstruction"
+  },
+  "calculation_steps": [
+    "Prove R²=(5+sqrt5)/8<181/200; E<=1360051/20000000 and sum primary speed²< (9/25)² by R²-sensitive mass bound.",
+    "Use total initial housing phase energy to bound homogeneous oscillator combination <1/180, and full E for housing speed<35/4.",
+    "Apply exact current-axis four-anchor acceleration |F_e|<911/450 with nu/w<=1/18.",
+    "For u<=49/50, write 10T=49/5=3pi+r, 0<r<4/5; integrate |sin(10s)| to obtain <79/125.",
+    "Use relative anchor Duhamel identity, shared primary velocity coefficients, and finite sine integral to get all struts>3853/281250.",
+    "Reference star incidence norm2, sigma_min(Aref)=1/sqrt2; squared displacement operator <388962/390625<(499/500)^2; preserves cell orientation and determinant bounds.",
+    "Energy member positivity, bounded motions, and strut/domain margins imply full solution exists through T.",
+    "Failed extension: same simple star kinetic norm yields 8*(9/25)^2=648/625>1 at u=1; no orientation conclusion there."
+  ],
+  "result": {
+    "exact_expression": "For all u in [0,49/50], all 120 housing struts>3853/281250 ell0 and all 20 oriented cell ratios in ((1/500)^3,(999/500)^3); full 560-state solution exists through horizon.",
+    "approximation": {
+      "strut_fraction": 0.013699555555555555,
+      "T": 0.98
+    },
+    "units": "dimensionless u, reference ell0 and normalized oriented volumes",
+    "precision_and_error": "Exact Fraction inequalities; separate SymPy star/Gram check and numerical quadrature diagnostic (not proof); no full nonlinear u100 integration.",
+    "scope": "EXACT/CONDITIONAL on unchanged positive 3D mechanics, all housing phases and qualified continuous parameter box; finite u<=49/50.",
+    "physical_interpretation": "none; hardware UNSCORED, UD-native equations OPEN"
+  },
+  "verification": [
+    {
+      "method": "locally executed Python Fraction reproduction",
+      "command_or_proof_path": "python3 tube098.py --out result.json",
+      "source_revision": "127c5fb995cdd218fecc479bccec8ed7a2c2bad0",
+      "actual_result": "PASS; exact fractions",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate same-runtime symbolic/diagnostic check",
+      "command_or_proof_path": "python3 independent_check.py",
+      "source_revision": "127c5fb995cdd218fecc479bccec8ed7a2c2bad0",
+      "actual_result": "PASS; SymPy Gram/star plus quadrature diagnostic",
+      "review_relationship": "same-runtime, not independent replication"
+    },
+    {
+      "method": "GitHub blob-byte copies and immutable capture",
+      "command_or_proof_path": "artifacts/phasewindow-20261022-gpt6-7c41/relative-tube-006/manifest.json",
+      "source_revision": "782cd7fb93e0001bd6bb159857d85e09f1fc4100",
+      "actual_result": "byte-matching Git blob SHAs verified for 5 source/capture files; SHA256 recorded",
+      "review_relationship": "artifact integrity"
+    },
+    {
+      "method": "repository tooling CI",
+      "command_or_proof_path": "python3 scripts/validate.py; python3 -m unittest discover -s tests -v",
+      "source_revision": "final branch head after checkpoint",
+      "actual_result": "NOT_RUN at receipt creation; CI to be checked",
+      "review_relationship": "tooling only"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "At u=1 this energy-only primary velocity star-incidence majorant gives relative matrix bound squared 648/625>1, so this proof technique does not certify orientation there. This is not a dynamically reached counterexample.",
+    "Historical alpha=0.1 total energy sublevel contains a low-beta housing collision witness; energy-only all-time strut proof fails, not a trajectory counterexample.",
+    "Original finite nu=.02 low-beta housing energy half-life failure and out-of-budget challenges remain valid."
+  ],
+  "limitations": [
+    "Full nonlinear u=100 all-phase breathing, shape mismatch, and half-energy deadlines remain OPEN.",
+    "No verified forced Green, chart/nonlinear remainder or independent experiment.",
+    "Current analysis extends short-time geometric safety only.",
+    "New rational horizon target-informed, not independent prediction.",
+    "Massless ideal struts, source-native selection, physical clock/energy/material realization open."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/phasewindow-20261022-gpt6-7c41/relative-tube-006/manifest.json"
+  ],
+  "next_discriminant": "Obtain validated forced Green/proper-frame nonlinear flow remainder via separate PR44 recovery; or derive additional dynamic relative-coordinate invariant beyond the near-exhausted primary kinetic star bound."
+}
