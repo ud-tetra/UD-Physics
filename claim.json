@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "graphite-port-attribution-20261023",
   "session": "graphite-port-20261023-8f5ca436",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-23T18:51:48Z",
   "base_revision": "c05709b441da24b04aea6213418d3358a91b3ecc",
   "owned_paths": [
@@ -13,5 +13,7 @@
     "candidates/graphite-port-attribution/",
     "experiments/graphite-port-attribution/",
     "artifacts/graphite-port-20261023-8f5ca436/"
-  ]
+  ],
+  "released_at": "2026-10-23T18:58:00Z",
+  "released_from_sha": "d38cca6d0779fc7804eb8ad2621f50d92f1a02f8"
 }
