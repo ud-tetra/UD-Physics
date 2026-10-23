@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb1-native-events-20261023",
+  "goal": "Native quadrature event extraction with explicit simultaneous-event protocol and limitations",
+  "owned_paths": [
+    "tasks/qpb1-native-events-20261023.json",
+    "sessions/qpb1-native-events-20261023-a1/",
+    "experiments/qpb1-native-events/",
+    "candidates/qpb1-native-events/",
+    "artifacts/qpb1-native-events-20261023-a1/"
+  ],
+  "dependencies": [
+    "qpb1-loop-history-20261023"
+  ],
+  "status": "complete"
+}

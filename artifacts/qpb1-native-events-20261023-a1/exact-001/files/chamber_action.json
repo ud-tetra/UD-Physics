@@ -1,0 +1,25 @@
+{
+  "q": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "p": [
+    "1",
+    "3",
+    "2",
+    "5",
+    "4",
+    "7"
+  ],
+  "native_state_error_norm_bound": "1/10",
+  "minimum_radius_squared": "2",
+  "minimum_dot_margin_after_bound": "429/100",
+  "fullperiodcentralphase": "+1",
+  "certificate": "Forallnativeperturbationsnorm<=1/10,everyedgepairremainsactiveandallphasordotsnonzero;wordordercanchangeonlythroughcommutingevents",
+  "action_receipt": "ForN>0,n=event_count/(4N)overfullforwardperiods;storea,r,m;I=pi*a*(r+4m)",
+  "scope": "No amplitudequantization;invisible-onlystateN0needsanotherobserver;nosourceboundphysicalclockoractionanchor"
+}
