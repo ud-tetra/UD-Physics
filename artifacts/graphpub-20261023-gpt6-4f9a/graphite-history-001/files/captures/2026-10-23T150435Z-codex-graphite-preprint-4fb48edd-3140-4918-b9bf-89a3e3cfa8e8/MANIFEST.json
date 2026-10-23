@@ -1,0 +1,49 @@
+{
+  "capture_id": "2026-10-23T150435Z-codex-graphite-preprint-4fb48edd-3140-4918-b9bf-89a3e3cfa8e8",
+  "created_at_utc": "2026-10-23T15:08:06.765657+00:00",
+  "status": "DEVELOPMENT_GRAPHITE_STANDALONE_HYPOTHESIS_PREPRINT",
+  "provenance": {
+    "contributor": "Codex",
+    "project_author_line": "Ben W. Mayes (provisional working-preprint attribution)",
+    "repository": "ud-tetra/UD",
+    "derivation_base": "404462b1bf93f08c61c473dd57d3a6b8f84746dc",
+    "parent_draft_PR": 447,
+    "sources": [
+      "Chen et al Phys Rev Lett 137 166201 (2026), public abstract only; article/supplement inaccessible",
+      "Lebedeva et al arXiv:2511.01338 and Zenodo 10.5281/zenodo.16318186",
+      "Minkin et al Phys Rev B 108 085411 (2023)",
+      "prior UD graphite exact/mathematical and numerical replay captures",
+      "attached provenance ledger v0.39 and CRL2 governance v1.0"
+    ]
+  },
+  "verification_scope": "Standalone mathematical/editorial synthesis; two-pass pdflatex A4 two-column PDF, pdfinfo and text extraction, rendered all two pages and visually checked; references resolved and no overfull boxes. Relies on previous source replay verifiers; no new QE, experimental force data, independent review or physical identification.",
+  "scientific_status": "EXACT_ANGLE_AND_CONDITIONAL_SOURCE_NULL; DERIVED_CONVENTIONAL_STATIC_RATIO; NUMERICAL_SAME_SOURCE_DFT_REPLAY; CANDIDATE_SOURCE_FIXED_PASSIVE_LOSS; OPEN_SIGNED_KINETIC_RESIDUAL",
+  "independent_review": false,
+  "registry_entry": null,
+  "physical_promotion": 0,
+  "supersedes": [
+    "captures/2026-10-23T041457Z-codex-graphite-probe-identifiability-61717e00-44d3-4e29-8c40-64bc81f702e4/UD_GRAPHITE_SHORT_PAPER_DRAFT_v9.md"
+  ],
+  "related_to": [
+    "https://doi.org/10.1103/ly48-b4l2",
+    "https://arxiv.org/abs/2511.01338",
+    "https://doi.org/10.5281/zenodo.16318186"
+  ],
+  "files": [
+    {
+      "path": "captures/2026-10-23T150435Z-codex-graphite-preprint-4fb48edd-3140-4918-b9bf-89a3e3cfa8e8/GRAPHITE_UD_HYPOTHESIS_PREPRINT_v1.pdf",
+      "sha256": "195604ff916e97919a5c1d2d4a4b7d28aadc42ede428d2180d39d0e5ea6c5ccc",
+      "size_bytes": 116054
+    },
+    {
+      "path": "captures/2026-10-23T150435Z-codex-graphite-preprint-4fb48edd-3140-4918-b9bf-89a3e3cfa8e8/GRAPHITE_UD_HYPOTHESIS_PREPRINT_v1.tex",
+      "sha256": "b6acca67469b616deda5d66cc76e1985e6cc9a44b46787b27d073dffe0ad4a27",
+      "size_bytes": 13730
+    },
+    {
+      "path": "captures/2026-10-23T150435Z-codex-graphite-preprint-4fb48edd-3140-4918-b9bf-89a3e3cfa8e8/MANUSCRIPT_CLAIM_AND_DATA_GATE.md",
+      "sha256": "80cd2dab7209184f31ec1ac38a4e0865fb0aa127ff302b0277c11438fd5b8ac1",
+      "size_bytes": 4491
+    }
+  ]
+}

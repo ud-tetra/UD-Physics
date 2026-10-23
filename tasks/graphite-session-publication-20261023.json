@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-session-publication-20261023",
+  "goal": "Publish the graphite complementary-angle UD hypothesis, source development history, corrections, and testable residual contract in the Discovery repository",
+  "owned_paths": [
+    "tasks/graphite-session-publication-20261023.json",
+    "sessions/graphpub-20261023-gpt6-4f9a/",
+    "candidates/graphite-superlubricity/",
+    "experiments/graphite-superlubricity/",
+    "artifacts/graphpub-20261023-gpt6-4f9a/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
