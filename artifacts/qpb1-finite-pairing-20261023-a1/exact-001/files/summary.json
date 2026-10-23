@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "source_hashes": 9,
+  "selected_source_rows": 15,
+  "pairing_classes": 16,
+  "pairing_pairs": 256,
+  "symmetric_forms_screened": 64,
+  "S4_actions": 24,
+  "invariant_bilinear_forms": 4,
+  "faithful_characters": [
+    1,
+    3
+  ],
+  "quadratic_refinements": 16,
+  "homogeneous_refinements": 4,
+  "S4_invariant_refinements": 0,
+  "refinement_orbits": [
+    4,
+    6,
+    6
+  ],
+  "squared_refinement_quotient_classes": 4,
+  "characteristic_shift_checks": 1728,
+  "weyl_commutation_checks": 8192,
+  "Weyl_trace_checks": 512,
+  "winding_alias_checks": 27,
+  "conditional_eta_families": 2,
+  "physical_score": "UNSCORED",
+  "physical_promotion": 0
+}
