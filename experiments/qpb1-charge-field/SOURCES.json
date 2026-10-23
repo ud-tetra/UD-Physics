@@ -1,0 +1,42 @@
+{
+  "repository": "ud-tetra/UD-Physics",
+  "base_revision": "bbf7b9ec09a86378f6503c16460771a033e48593",
+  "upstream_repo": "ud-tetra/UD",
+  "upstream_revision": "957d443e25008632ab9d9328c162343b6a651ee7",
+  "sources": [
+    {
+      "path": "experiments/action-normalization-audit/audit.py",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b"
+    },
+    {
+      "path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec"
+    },
+    {
+      "path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "sha256": "4e5cdc41c1fd93f69b8d80aeb557f5cfdf8b3b335b320ef4b2028bc1b08c6739"
+    },
+    {
+      "path": "experiments/qpb1-impedance-selection/README.md",
+      "sha256": "e931a1009c91d0c549d5cfd1eacf44a5c3e3b2622350ffbfadb314f110479e45"
+    },
+    {
+      "path": "experiments/qpb1-impedance-selection/ENTRY_CONTRACT.md",
+      "sha256": "3f46a4112e14bc90640089a6d0da32a4a9800117b0c3e11215a9ce2bdf308020"
+    },
+    {
+      "path": "experiments/qpb1-source-reservoir/README.md",
+      "sha256": "f7510d60258353b7be8c3bd5a9204ed57db7a556cd623285d47b03541fbb3585"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "sha256": "8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4"
+    }
+  ],
+  "construction_origin": "New noncompact canonical edge-field hypothesis on retained boundary matrices;not an imported native electrical law or full UD evolution.",
+  "attachments": "Two provided ledger/governance files remain byte-identical to imports;PNG unavailable;PDFs,ZIP andprivate backups not used this turn."
+}

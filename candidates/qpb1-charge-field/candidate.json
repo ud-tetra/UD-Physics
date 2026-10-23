@@ -1,0 +1,38 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-charge-field",
+  "session_id": "qpb1-charge-field-20261022-a1",
+  "question": "Construct an explicitly hypothetical S4-invariant tetrahedral charge/field-energy functional;derive gauge/port dynamics and test constitutive-coefficient selection.",
+  "status": "ACTIVE",
+  "evidence": [
+    "HYPOTHESIS",
+    "FIT",
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "New real noncompact canonical edge-field carrier a,p,positive homogeneous quadratic gauge-invariant energy,Euclidean cochain metric and time reversal(a,p)->(-a,p). Not the original UD15-register generator.",
+    "Optional stronger independent identical electric energy on each edge setsuL=uT;S4 and incidence locality alone do not.",
+    "Field actionprefactor A0 and physical mapsPhi=A0*a/q0,Q=q0*p,t=tau0*s,E=A0*H/tau0 are new bridge premises;no hbar or quantum assumption.",
+    "Matching the known native frequency2 imposes uT*v1 by inverse design;unit modal Q=e does not establish an electron preparation or native support1."
+  ],
+  "physical_mapping": "Explicit conditional edge-field map;new primitive;UNSCORED,promotion0",
+  "target_exposure": "EXPLORATORY_AFTER_NATIVE_FREQUENCY2_ETA2_AND_7OVER960_EXPOSURE",
+  "fitted_choices": [
+    "Minimal noncompact positive gauge Hamiltonian is a new hypothesis",
+    "uT*v1 selected to match known nativefrequency2;no apparatus fit",
+    "q0=e andlambda1 not adopted as derived results"
+  ],
+  "sources": [
+    "experiments/qpb1-charge-field/SOURCES.json",
+    "experiments/qpb1-charge-field/SOURCE_ROWS.json",
+    "experiments/qpb1-charge-field/EXTERNAL_SOURCES.json"
+  ],
+  "baseline": "Ordinary noncompact linear discrete gauge/LC theory on the same tetrahedral incidence complex",
+  "result": "omega=2sqrt(uT v)/tau0;Zmode=(A0/(2q0^2))*sqrt(uT/v);EC/EF=uL/(6uT);at uL=uT=s,v=1/s,nu2 andlambda=s/2",
+  "next_discriminant": "Audit exact tetrahedral integral cycle/cut lattices and their dual pairing:can an independently sourced lattice condition constrain D_sigma,or does it only choose missing relative charge/flux units?",
+  "unsupported_role": "Automatic universal impedance/action selector under current hypotheses",
+  "retained_role": "Explicit positive reduced field-energy candidate,canonical port and conditional dimensionless prediction"
+}

@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb1-charge-field-20261022",
+  "goal": "Construct an explicitly hypothetical S4-invariant tetrahedral charge/field-energy functional;derive gauge/port dynamics and test constitutive-coefficient selection.",
+  "owned_paths": [
+    "tasks/qpb1-charge-field-20261022.json",
+    "sessions/qpb1-charge-field-20261022-a1/",
+    "experiments/qpb1-charge-field/",
+    "candidates/qpb1-charge-field/",
+    "artifacts/qpb1-charge-field-20261022-a1/"
+  ],
+  "dependencies": [
+    "qpb1-impedance-selection-20261022"
+  ],
+  "status": "complete",
+  "completion_scope": "Constructed and audited conditionalS4field functional,port,spectrum,energy ratio and coefficient freedom;physical/lattice selection remains future work."
+}
