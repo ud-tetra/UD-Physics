@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "qpb1-loop-history-20261023",
+  "session": "qpb1-loop-history-20261023-a1",
+  "created_at": "2026-10-23T03:57:13.169Z",
+  "base_revision": "92ef753389a3f2fe40f1423355d2c6f02169fbdc",
+  "owned_paths": [
+    "tasks/qpb1-loop-history-20261023.json",
+    "sessions/qpb1-loop-history-20261023-a1/",
+    "experiments/qpb1-loop-history/",
+    "candidates/qpb1-loop-history/",
+    "artifacts/qpb1-loop-history-20261023-a1/"
+  ]
+}
