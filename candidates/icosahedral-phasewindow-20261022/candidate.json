@@ -20,7 +20,7 @@
     "Housing-only safety is a different initial preparation from the full alpha=.1 pulse"
   ],
   "physical_mapping": "Assumed passive mechanical surrogate; native UD constitutive/time/material identification OPEN; hardware UNSCORED",
-  "target_exposure": "FIT/development. All previous cases, frequency band, thresholds, strengths, pulse and phase sectors already examined. Energy factor 3/2 selected to test surplus margin, not independent held-out prediction.",
+  "target_exposure": "FIT/development. All previous cases, frequency band, thresholds, strengths, pulse and phase sectors already examined. Energy factor 3/2 selected to test surplus margin, not independent held-out prediction. New 9/10 horizon is post-selection sufficient-bound choice; old original alpha=.1, u100 thresholds and previous housing energy budget all exposed.",
   "fitted_choices": [
     "E_h increased 1.5x relative to original 1/40000; preserve nu[.04,.05] and all other existing choices"
   ],
@@ -48,10 +48,11 @@
     }
   ],
   "baseline": "Original E_h<=Ep/40000 full180-phase linear numerical window (housing energy<=.4566661, linear breathing>=.8135618); unchanged failure nu=.02 low beta/cf0",
-  "result": "EXACT/CONDITIONAL housing-only all-time strut length>554/1125, oriented cell volumes in ((19/20)^(3/2),(21/20)^(3/2)) of reference at enlarged E_h. NUMERICAL 450-row 50-coefficient 9-node 180-phase linear breathing at factor 1.5 covers nu [.04,.05] with min neighbor overlap .0003100047, full housing ringdown upper .4566661 unchanged. Full nonlinear full-pulse all-phase u100 guarantee OPEN. EXACT/CONDITIONAL shorttube-003: original alpha0=1/10 with enlarged E_h in the unchanged full nonlinear 560-state assembly preserves all 120 housing struts>13/1500 and all oriented cell ratios (1/125,729/125) for every u<=2/5, all initial housing phases. No u100 result.",
-  "next_discriminant": "Own-shape original alpha=.1 u100 nonlinear forced Green/positive-length/readout tube, coordinated with separately held PR44; preserve 80/5/50 targets and disclosed 3/2 energy exploration.",
+  "result": "EXACT/CONDITIONAL housing-only all-time strut length>554/1125, oriented cell volumes in ((19/20)^(3/2),(21/20)^(3/2)) of reference at enlarged E_h. NUMERICAL 450-row 50-coefficient 9-node 180-phase linear breathing at factor 1.5 covers nu [.04,.05] with min neighbor overlap .0003100047, full housing ringdown upper .4566661 unchanged. Full nonlinear full-pulse all-phase u100 guarantee OPEN. EXACT/CONDITIONAL shorttube-003: original alpha0=1/10 with enlarged E_h in the unchanged full nonlinear 560-state assembly preserves all 120 housing struts>13/1500 and all oriented cell ratios (1/125,729/125) for every u<=2/5, all initial housing phases. No u100 result. Follow-up exact conditional original alpha=.1, every 180 housing phase at Eh<=51/20000000: full nonlinear strut lengths>11/1250 and all20 oriented cell volumes positive (27/10^6,7645373/10^6) through u<=9/10, with no u100 dynamical performance guarantee.",
+  "next_discriminant": "Use finite u<=9/10 safe domain as input to a validated full forced-Green/proper-frame nonlinear u100 continuation; PR44 owns current recovery; independent review before integration.",
   "mathematical_receipts": [
     "sessions/phasewindow-20261022-gpt6-7c41/mathematical_receipt.json",
-    "sessions/phasewindow-20261022-gpt6-7c41/shorttube_receipt.json"
+    "sessions/phasewindow-20261022-gpt6-7c41/shorttube_receipt.json",
+    "sessions/phasewindow-20261022-gpt6-7c41/relative_tube_receipt.json"
   ]
 }
