@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphidx-20261023-gpt6-9c8d",
+  "runtime": "Codex GPT-6; GitHub connector write; local Python/Git compute",
+  "task": "integration-graphite-publication-20261023",
+  "goal": "Add the integrated graphite Discovery milestone to state/CURRENT.md",
+  "created_at": "2026-10-23T15:33:46.615372+00:00",
+  "base_revision": "bcb4cb317f8f23c36d8765eb33e4940edbb69192",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-graphite-publication-20261023": {
+      "ref": "refs/heads/claims/integration-graphite-publication-20261023",
+      "sha": "b797024f401fb10f6ecada0276017c110292aefd",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS: 147 records; manifest digests and local documentation links valid"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -q",
+      "result": "PASS: 16 tests"
+    }
+  ],
+  "finding": "Integrated-state index links graphite hypothesis, selected archive and OPEN material/kinetic residual.",
+  "next_action": "Merge index PR after CI, release claim and record release marker.",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A; documentation integration only",
+    "exactness_or_precision_plan": "No new calculation; exact source links and status carried from PR #72",
+    "applicable_methods": [],
+    "clock_metric_units_conventions": "N/A; no new dynamical or physical map"
+  },
+  "checkpoint_at": "2026-10-23T15:33:53.138999+00:00",
+  "checkpoint_source": {
+    "revision": "bcb4cb317f8f23c36d8765eb33e4940edbb69192",
+    "dirty": true
+  }
+}

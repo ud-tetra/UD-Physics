@@ -1,6 +1,6 @@
 # Current integrated state
 
-Updated: 2026-10-22. Milestone: moving-pulse sensitivity and nonlinear tube audit v1.0.
+Updated: 2026-10-23. Milestone: graphite Discovery publication alongside moving-pulse sensitivity and nonlinear tube audit v1.0.
 
 - Canonical Discovery instructions are v1.2; bootloader v1.1 loads the mathematical protocol before consequential work.
 - [UD mathematical analysis protocol](../docs/UD_MATHEMATICAL_METHOD_v1.0.md) and [calculation receipt template](../templates/mathematical_receipt.json) cover exact arithmetic, factorization, modular clocks, typed provenance and applicable UD structural methods.
@@ -62,5 +62,7 @@ Updated: 2026-10-22. Milestone: moving-pulse sensitivity and nonlinear tube audi
 - [Exact conditional tube criterion](../experiments/icosahedral-pulsetube/TUBE_THEOREM.md) includes full forced Green, nonlinear/chart remainder, numerical-reference defect, positive full-state norm, continuous domain and cubic determinant readout. Current evidence leaves those validated bounds OPEN; U(t,0)B alone is insufficient. [Results and captured audit](../experiments/icosahedral-pulsetube/RESULTS.md). No u100 nonlinear phase-ball/continuous-parameter certificate; hardware UNSCORED/mainline promotion0.
 - Next discriminant: enclose the forced Green response and nonlinear/alignment/reference remainders in a frame-aware positive full-state/block norm for the limiting case. A validated aligned primary remainder<=1/1000 is a conservative design goal inside the sampled allowance.0017676, with full domain/quad/error accounting; the80% threshold is unchanged.
 - Separate open question: whether the parent/relative chain duality survives a useful gluing/readout law.
+
+- [Graphite complementary-angle hypothesis](../experiments/graphite-superlubricity/README.md): the ordinary (2,1) triangular coincidence gives exact cos(theta)=13/14 and its 60-degree complement; the seven-cell honeycomb quotient has a two-dimensional harmonic translation carrier. Uniform weighted-incidence sources cancel under the proposed UD port rule. The 44-capture selected history and standalone preprint are published; a conventional DFT-derived ideal static ratio is not kinetic friction. Material source weights, damping, a reliable two-dimensional PES and a held-out signed force/load residual remain OPEN; independent physics review NOT_RUN and mainline promotion0.
 
 Update this file at integrated milestones under an integration claim. Live claim metadata, not this summary, determines current ownership.
