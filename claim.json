@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-graphite-publication-20261023",
+  "session": "graphidx-20261023-gpt6-9c8d",
+  "created_at": "2026-10-23T15:32:58.612Z",
+  "base_revision": "d395aab46b135329fcf711ee85bef7b23f1055ad",
+  "owned_paths": [
+    "tasks/integration-graphite-publication-20261023.json",
+    "sessions/graphidx-20261023-gpt6-9c8d/",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
