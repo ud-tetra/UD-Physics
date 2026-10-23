@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "qpb1-continuous-phase-20261023",
+  "session": "qpb1-continuous-phase-20261023-a1",
+  "status": "held",
+  "created_at": "2026-10-23T15:07:30.570Z",
+  "base_revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+  "owned_paths": [
+    "tasks/qpb1-continuous-phase-20261023.json",
+    "sessions/qpb1-continuous-phase-20261023-a1/",
+    "experiments/qpb1-continuous-phase/",
+    "candidates/qpb1-continuous-phase/",
+    "artifacts/qpb1-continuous-phase-20261023-a1/"
+  ]
+}
