@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "qpb1-passive-port-20261022",
   "session": "qpb1-passive-port-20261022-a1",
   "created_at": "2026-10-23T02:37:53.019Z",
@@ -13,5 +13,7 @@
     "experiments/qpb1-passive-port/",
     "candidates/qpb1-passive-port/",
     "artifacts/qpb1-passive-port-20261022-a1/"
-  ]
+  ],
+  "released_at": "2026-10-23T02:47:34.144Z",
+  "released_from_sha": "4b1014cd2a0ba8d6568eb87d8827b3de48bc5ec8"
 }
