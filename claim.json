@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "qpb1-finite-pairing-20261023",
   "session": "qpb1-finite-pairing-20261023-a1",
   "created_at": "2026-10-23T03:45:43.019Z",
@@ -13,5 +13,7 @@
     "experiments/qpb1-finite-pairing/",
     "candidates/qpb1-finite-pairing/",
     "artifacts/qpb1-finite-pairing-20261023-a1/"
-  ]
+  ],
+  "released_at": "2026-10-23T03:52:55.382Z",
+  "released_from_sha": "31a458387d27671e807934ed0d2b0fc0409d04fc"
 }
