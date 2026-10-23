@@ -1,0 +1,25 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphportidx-20261023-2015ce3a",
+  "runtime": "Codex GPT-6; local Python/Git compute; GitHub connector write",
+  "task": "integration-graphite-port-20261023",
+  "goal": "Link the integrated graphite no-go from the original preprint entry and shared milestone state",
+  "created_at": "2026-10-23T18:57:38Z",
+  "base_revision": "c9c909191eefb885039e098b10b6e01a3dd07877",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {"integration-graphite-port-20261023": {"ref": "refs/heads/claims/integration-graphite-port-20261023", "sha": "52b75ec360fe4edbd17eb9fc6d1a96419eb81b89", "status": "held"}},
+  "checks": [
+    {"command": "python3 scripts/validate.py", "result": "PASS: 153 records; manifest digests and local documentation links valid"},
+    {"command": "python3 -m unittest discover -s tests -v", "result": "PASS: 16 tests"}
+  ],
+  "finding": "Original graphite entry and integrated state point to the conditional port universality proof without changing versioned preprint claims.",
+  "next_action": "Release claim after integration; independent material source and loss calibration remains the physics priority.",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A for navigation update; prior exact Q/R result imported at its own source revision",
+    "exactness_or_precision_plan": "No new mathematical calculation; preserve exact/conditional status of PR #77",
+    "applicable_methods": ["typed provenance and scope review; no new factorization, clock, or spectral computation"],
+    "clock_metric_units_conventions": "Inherited from graphite-port-attribution calculation; no new physical map"
+  }
+}
