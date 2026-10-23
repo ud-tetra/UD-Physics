@@ -1,0 +1,416 @@
+{
+  "mixed_tie_challenge": [
+    {
+      "epsilon": "-1/1000",
+      "central_quarter_turns": 2,
+      "batches": [
+        [
+          {
+            "clock_ray": [
+              "1",
+              "0"
+            ],
+            "type": "M",
+            "edge": 0,
+            "crossing_sign": -1,
+            "class": [
+              3,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "1",
+              "1/1000"
+            ],
+            "type": "T",
+            "edge": 1,
+            "crossing_sign": 1,
+            "class": [
+              2,
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "0",
+              "1"
+            ],
+            "type": "T",
+            "edge": 0,
+            "crossing_sign": -1,
+            "class": [
+              3,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "-1/1000",
+              "1"
+            ],
+            "type": "M",
+            "edge": 1,
+            "crossing_sign": -1,
+            "class": [
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "-1",
+              "0"
+            ],
+            "type": "M",
+            "edge": 0,
+            "crossing_sign": 1,
+            "class": [
+              1,
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "-1",
+              "-1/1000"
+            ],
+            "type": "T",
+            "edge": 1,
+            "crossing_sign": -1,
+            "class": [
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "0",
+              "-1"
+            ],
+            "type": "T",
+            "edge": 0,
+            "crossing_sign": 1,
+            "class": [
+              1,
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "1/1000",
+              "-1"
+            ],
+            "type": "M",
+            "edge": 1,
+            "crossing_sign": 1,
+            "class": [
+              2,
+              1
+            ]
+          }
+        ]
+      ],
+      "first_batch_TM_c": 0,
+      "first_batch_MT_c": 0
+    },
+    {
+      "epsilon": "0",
+      "central_quarter_turns": 0,
+      "batches": [
+        [
+          {
+            "clock_ray": [
+              "1",
+              "0"
+            ],
+            "type": "M",
+            "edge": 0,
+            "crossing_sign": -1,
+            "class": [
+              3,
+              3
+            ]
+          },
+          {
+            "clock_ray": [
+              "1",
+              "0"
+            ],
+            "type": "T",
+            "edge": 1,
+            "crossing_sign": 1,
+            "class": [
+              2,
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "0",
+              "1"
+            ],
+            "type": "T",
+            "edge": 0,
+            "crossing_sign": -1,
+            "class": [
+              3,
+              3
+            ]
+          },
+          {
+            "clock_ray": [
+              "0",
+              "1"
+            ],
+            "type": "M",
+            "edge": 1,
+            "crossing_sign": -1,
+            "class": [
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "-1",
+              "0"
+            ],
+            "type": "M",
+            "edge": 0,
+            "crossing_sign": 1,
+            "class": [
+              1,
+              1
+            ]
+          },
+          {
+            "clock_ray": [
+              "-1",
+              "0"
+            ],
+            "type": "T",
+            "edge": 1,
+            "crossing_sign": -1,
+            "class": [
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "0",
+              "-1"
+            ],
+            "type": "T",
+            "edge": 0,
+            "crossing_sign": 1,
+            "class": [
+              1,
+              1
+            ]
+          },
+          {
+            "clock_ray": [
+              "0",
+              "-1"
+            ],
+            "type": "M",
+            "edge": 1,
+            "crossing_sign": 1,
+            "class": [
+              2,
+              1
+            ]
+          }
+        ]
+      ],
+      "first_batch_TM_c": 1,
+      "first_batch_MT_c": 0
+    },
+    {
+      "epsilon": "1/1000",
+      "central_quarter_turns": 2,
+      "batches": [
+        [
+          {
+            "clock_ray": [
+              "1",
+              "0"
+            ],
+            "type": "M",
+            "edge": 0,
+            "crossing_sign": -1,
+            "class": [
+              3,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "1/1000",
+              "1"
+            ],
+            "type": "M",
+            "edge": 1,
+            "crossing_sign": -1,
+            "class": [
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "0",
+              "1"
+            ],
+            "type": "T",
+            "edge": 0,
+            "crossing_sign": -1,
+            "class": [
+              3,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "-1",
+              "1/1000"
+            ],
+            "type": "T",
+            "edge": 1,
+            "crossing_sign": -1,
+            "class": [
+              2,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "-1",
+              "0"
+            ],
+            "type": "M",
+            "edge": 0,
+            "crossing_sign": 1,
+            "class": [
+              1,
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "-1/1000",
+              "-1"
+            ],
+            "type": "M",
+            "edge": 1,
+            "crossing_sign": 1,
+            "class": [
+              2,
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "0",
+              "-1"
+            ],
+            "type": "T",
+            "edge": 0,
+            "crossing_sign": 1,
+            "class": [
+              1,
+              1
+            ]
+          }
+        ],
+        [
+          {
+            "clock_ray": [
+              "1",
+              "-1/1000"
+            ],
+            "type": "T",
+            "edge": 1,
+            "crossing_sign": 1,
+            "class": [
+              2,
+              1
+            ]
+          }
+        ]
+      ],
+      "first_batch_TM_c": 0,
+      "first_batch_MT_c": 0
+    }
+  ],
+  "vanishing_amplitude_challenge": [
+    {
+      "amplitude": "0",
+      "event_count": 0,
+      "central_quarter_turns": 0
+    },
+    {
+      "amplitude": "1/1000",
+      "event_count": 4,
+      "central_quarter_turns": 2
+    },
+    {
+      "amplitude": "1",
+      "event_count": 4,
+      "central_quarter_turns": 2
+    }
+  ],
+  "sparse_nonzero_state_challenge": [
+    {
+      "new_disjoint_edge_amplitude": "0",
+      "central_quarter_turns": 2,
+      "native_support": "1"
+    },
+    {
+      "new_disjoint_edge_amplitude": "1/1000",
+      "central_quarter_turns": 0,
+      "native_support": "1000001/1000000"
+    },
+    {
+      "new_disjoint_edge_amplitude": "1/1000000",
+      "central_quarter_turns": 0,
+      "native_support": "1000000000001/1000000000000"
+    }
+  ],
+  "priority_scope": "TMandMTgiveequalfullperiodcentralphasehere,butmixedbatchoperatorsdiffer;neitherpriorityisderivedfromnativeA",
+  "physical_promotion": 0
+}
