@@ -1,0 +1,10 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-port-20261023",
+  "goal": "Index the merged graphite passive-port attribution theorem from the original graphite entry and integrated milestone summary",
+  "owned_paths": ["tasks/integration-graphite-port-20261023.json", "sessions/graphportidx-20261023-2015ce3a/", "state/CURRENT.md", "experiments/graphite-superlubricity/README.md"],
+  "dependencies": ["graphite-port-attribution-20261023"],
+  "status": "complete",
+  "completion_scope": "Navigation and scientific-scope note for merged PR #77; no new friction calculation"
+}

@@ -8,6 +8,7 @@
 - [Long technical working paper v9](../../artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/files/captures/2026-10-23T041457Z-codex-graphite-probe-identifiability-61717e00-44d3-4e29-8c40-64bc81f702e4/UD_GRAPHITE_SHORT_PAPER_DRAFT_v9.md) has the wider derivation and references. Its duplicated equation tag (7b) and old relative figure link are known editorial defects; the standalone preprint corrects them. The long paper remains an immutable development draft.
 - [Complete selected graphite development archive](../../artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/manifest.json) retains all 37 graphite captures and seven preceding octahedral geometry/model tests, including superseded drafts, failed alternatives, verifier scripts, numerical outputs, original manifests and event receipts. [Machine-readable index](HISTORY_INDEX.json).
 - [Candidate](../../candidates/graphite-superlubricity/candidate.json), [mathematical receipt](../../candidates/graphite-superlubricity/mathematical_receipt.json), and [session handoff](../../sessions/graphpub-20261023-gpt6-4f9a/journal.md).
+- [Passive-port attribution follow-up](../graphite-port-attribution/README.md): exact conditional proof that the seven-orbit source plus an unrestricted passive bath permits every passive two-dimensional residual tensor. Independent source and loss calibration is necessary for a quantitative force/load prediction. This follow-up limits the interpretation of the versioned preprint; it is not new friction data.
 
 ## Claim at its actual scope
 
