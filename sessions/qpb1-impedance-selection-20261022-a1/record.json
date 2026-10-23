@@ -8,12 +8,13 @@
   "created_at": "2026-10-23T03:04:55.772133+00:00",
   "base_revision": "1b214f66e00e8430fed0ce7c23506da7965bc977",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "qpb1-impedance-selection-20261022": {
       "ref": "refs/heads/claims/qpb1-impedance-selection-20261022",
-      "sha": "36ffa89761c898f43707377c989423e1e905c935",
-      "status": "held"
+      "sha": "5b9a429008c4362ad7644b9e72afb5a3d2b119f4",
+      "status": "released",
+      "released_from_sha": "36ffa89761c898f43707377c989423e1e905c935"
     }
   },
   "checks": [
@@ -40,5 +41,16 @@
   "checkpoint_source": {
     "revision": "1b214f66e00e8430fed0ce7c23506da7965bc977",
     "dirty": true
+  },
+  "integration": {
+    "research_pr": "https://github.com/ud-tetra/UD-Physics/pull/58",
+    "research_head": "33a7ae3fb575495a52c002194935b1dfab8c52a1",
+    "research_merge": "6df06c690070aec05587331816b69e16cab23f72",
+    "ci_run_id": 39893768315,
+    "ci_url": "https://github.com/ud-tetra/UD-Physics/actions/runs/39893768315",
+    "ci_head": "33a7ae3fb575495a52c002194935b1dfab8c52a1",
+    "ci_conclusion": "success",
+    "tree": "4413a3a41393eb3ba2e5514fe5862cf54bd547a2",
+    "released_claim": "5b9a429008c4362ad7644b9e72afb5a3d2b119f4"
   }
 }
