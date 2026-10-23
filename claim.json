@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-port-20261023",
+  "session": "graphportidx-20261023-2015ce3a",
+  "status": "held",
+  "created_at": "2026-10-23T18:57:38Z",
+  "base_revision": "c9c909191eefb885039e098b10b6e01a3dd07877",
+  "owned_paths": [
+    "tasks/integration-graphite-port-20261023.json",
+    "sessions/graphportidx-20261023-2015ce3a/",
+    "state/CURRENT.md",
+    "experiments/graphite-superlubricity/README.md"
+  ]
+}
