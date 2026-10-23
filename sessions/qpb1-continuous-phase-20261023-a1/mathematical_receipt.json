@@ -1,0 +1,440 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "continuous-phase-exact-001",
+  "session_id": "qpb1-continuous-phase-20261023-a1",
+  "candidate_id": "qpb1-continuous-phase",
+  "question": "Can a smooth complete readout separate native action, gauge phase and relative-mode holonomy?",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "CP01",
+      "symbol": "E,P,J",
+      "object_type": "active space/projector/complex structure",
+      "definition": "E=im(P), P=-A^2/4 rank14, J=A/2,J^2=-P",
+      "domain": "C_*(Delta3;R)",
+      "codomain": "E",
+      "coefficient_domain": "Q exact matrices; R smooth states; C via i=J",
+      "units": "dimensionless native",
+      "basis_orientation": "Ascending oriented simplices; A=d-d^T; positive phase exp(J chi)",
+      "metric_measure": "Unit Euclidean chain metric",
+      "origin": "imported",
+      "exact_expression": "E=im(P), P=-A^2/4 rank14, J=A/2,J^2=-P",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "Explicit formula; ordinary fiber period2pi"
+    },
+    {
+      "object_id": "CP02",
+      "symbol": "Theta,I,S_native",
+      "object_type": "one-form and lifted native loop action",
+      "definition": "Theta=<Jx,dx>/2; I=integral Theta; S_native=A0 I",
+      "domain": "active E minus zero",
+      "codomain": null,
+      "coefficient_domain": "Q exact matrices; R smooth states; C via i=J",
+      "units": "Theta,I dimensionless; S_native action",
+      "basis_orientation": "Ascending oriented simplices; A=d-d^T; positive phase exp(J chi)",
+      "metric_measure": "Unit Euclidean chain metric",
+      "origin": "imported",
+      "exact_expression": "Theta=<Jx,dx>/2; I=integral Theta; S_native=A0 I",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "CP01"
+      ],
+      "normalization": "Explicit formula; ordinary fiber period2pi"
+    },
+    {
+      "object_id": "CP03",
+      "symbol": "alpha",
+      "object_type": "metric U(1) connection",
+      "definition": "alpha=<Jx,dx>/a=2Theta/a; alpha(Jx)=1",
+      "domain": "active E minus zero",
+      "codomain": "real one-forms",
+      "coefficient_domain": "Q exact matrices; R smooth states; C via i=J",
+      "units": "dimensionless native",
+      "basis_orientation": "Ascending oriented simplices; A=d-d^T; positive phase exp(J chi)",
+      "metric_measure": "Unit Euclidean chain metric",
+      "origin": "derived",
+      "exact_expression": "alpha=<Jx,dx>/a=2Theta/a; alpha(Jx)=1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [
+        "CP01",
+        "CP02"
+      ],
+      "normalization": "Explicit formula; ordinary fiber period2pi"
+    },
+    {
+      "object_id": "CP04",
+      "symbol": "F",
+      "object_type": "curvature",
+      "definition": "d alpha=2<Ju,v>/a-2(<x,u><Jx,v>-<x,v><Jx,u>)/a^2",
+      "domain": "active E minus zero",
+      "codomain": null,
+      "coefficient_domain": "Q exact matrices; R smooth states; C via i=J",
+      "units": "dimensionless native",
+      "basis_orientation": "Ascending oriented simplices; A=d-d^T; positive phase exp(J chi)",
+      "metric_measure": "Unit Euclidean chain metric",
+      "origin": "derived",
+      "exact_expression": "d alpha=2<Ju,v>/a-2(<x,u><Jx,v>-<x,v><Jx,u>)/a^2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [
+        "CP03"
+      ],
+      "normalization": "Explicit formula; ordinary fiber period2pi"
+    },
+    {
+      "object_id": "CP05",
+      "symbol": "Hol",
+      "object_type": "geometric parallel-transport endpoint phase",
+      "definition": "exp(i*(chi_end-integral alpha))",
+      "domain": "closed ray paths and arbitrary normalized lifts",
+      "codomain": "U(1)",
+      "coefficient_domain": "Q exact matrices; R smooth states; C via i=J",
+      "units": "dimensionless native",
+      "basis_orientation": "Ascending oriented simplices; A=d-d^T; positive phase exp(J chi)",
+      "metric_measure": "Unit Euclidean chain metric",
+      "origin": "derived",
+      "exact_expression": "exp(i*(chi_end-integral alpha))",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [
+        "CP03"
+      ],
+      "normalization": "Explicit formula; ordinary fiber period2pi"
+    },
+    {
+      "object_id": "CP06",
+      "symbol": "G",
+      "object_type": "added two-rate generator",
+      "definition": "J(omega_v P_v+omega_h P_h)",
+      "domain": "active E",
+      "codomain": "active E",
+      "coefficient_domain": "Q exact matrices; R smooth states; C via i=J",
+      "units": "dimensionless native",
+      "basis_orientation": "Ascending oriented simplices; A=d-d^T; positive phase exp(J chi)",
+      "metric_measure": "Unit Euclidean chain metric",
+      "origin": "assumed",
+      "exact_expression": "J(omega_v P_v+omega_h P_h)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A5"
+      ],
+      "dependency_ids": [
+        "CP01"
+      ],
+      "normalization": "Explicit formula; ordinary fiber period2pi"
+    },
+    {
+      "object_id": "CP07",
+      "symbol": "eta_A",
+      "object_type": "physical action ratio",
+      "definition": "A0/hbar; numerical value OPEN; eta_A/2=w integer only under added unit-support phase descent",
+      "domain": "native-to-physical action map",
+      "codomain": null,
+      "coefficient_domain": "Q exact matrices; R smooth states; C via i=J",
+      "units": "dimensionless native",
+      "basis_orientation": "Ascending oriented simplices; A=d-d^T; positive phase exp(J chi)",
+      "metric_measure": "Unit Euclidean chain metric",
+      "origin": "imported",
+      "exact_expression": "A0/hbar; numerical value OPEN; eta_A/2=w integer only under added unit-support phase descent",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A2",
+        "A3",
+        "A6"
+      ],
+      "dependency_ids": [
+        "CP02",
+        "CP03"
+      ],
+      "normalization": "Explicit formula; ordinary fiber period2pi"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "url_or_repo_path": "experiments/qpb1-continuous-phase/SOURCES.json",
+      "version_or_commit": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "section_or_object_id": "14 pinned source files and publisher abstract metadata",
+      "source_status": "Read-only imports and earlier Discovery calculations"
+    },
+    {
+      "source_id": "S2",
+      "url_or_repo_path": "experiments/qpb1-continuous-phase/SOURCE_ROWS.json",
+      "version_or_commit": "Archive v0.85; inherited scientific_revision v0.43",
+      "section_or_object_id": "13 literal source rows; O09-O15 and Q287/Q288 among dependencies",
+      "source_status": "Historical ledger; no amendment"
+    },
+    {
+      "source_id": "S3",
+      "url_or_repo_path": "https://doi.org/10.1103/PhysRevLett.51.2167",
+      "version_or_commit": "1983; publisher abstract read 2026-10-23",
+      "section_or_object_id": "abstract",
+      "source_status": "Primary comparison, no UD import"
+    },
+    {
+      "source_id": "S4",
+      "url_or_repo_path": "https://doi.org/10.1103/PhysRevLett.58.1593",
+      "version_or_commit": "1987; publisher abstract read 2026-10-23",
+      "section_or_object_id": "abstract",
+      "source_status": "Primary nonadiabatic geometric-phase comparison"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Imported filled-tetrahedron real chain carrier, ascending orientations, Euclidean unit chain metric, A=d-d^T, P=-A^2/4, J=A/2."
+    },
+    {
+      "id": "A2",
+      "statement": "Imported loop one-form Theta=<Jx,dx>/2 and native action S=A0 integral Theta; separate from full first-order action."
+    },
+    {
+      "id": "A3",
+      "statement": "Added ordinary period-2pi fiber action exp(J chi), common-phase ray quotient; nonzero active states; no physical gauge identification."
+    },
+    {
+      "id": "A4",
+      "statement": "Metric-orthogonal connection alpha=2Theta/a. Associated U(1) weight is an integer choice; no uniqueness from S4 alone."
+    },
+    {
+      "id": "A5",
+      "statement": "Added two-rate law J(omega_v P_visible+omega_h P_hidden), positive fixed rates; detuning and preparation not source-selected."
+    },
+    {
+      "id": "A6",
+      "statement": "Only for a conditional normalization comparison: unit support and physical raw-action phase exp(i eta integral Theta), positive primitive weight one. Previously exposed eta2 remains candidate."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Integer/combinatorial",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "4+6+4+1=15 registers; rank14 active; signed24 simplex actions; integer fiber winding and character weights"
+    },
+    {
+      "technique": "Rational/exact symbolic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Fraction matrices, exact derivative and gauge fixtures, analytic trigonometric integrals and norm inequalities"
+    },
+    {
+      "technique": "Prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No divisibility or scale-factor question requires a prime-pattern search"
+    },
+    {
+      "technique": "Clock/modular",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Continuous phase modulo2pi with lifted winding; ray versus full-state recurrence; no physical tick map"
+    },
+    {
+      "technique": "Group/permutation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Signed S4 covariance and explicitly declared ordinary U1 fiber"
+    },
+    {
+      "technique": "Chain/homology",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Filled tetrahedron differential and active projector; projective line patch transition/curvature flux; no integer torsion claim"
+    },
+    {
+      "technique": "Spectral/operator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Skew J and two-rate G; fixed invariant visible/hidden projectors"
+    },
+    {
+      "technique": "Projection/coarse-graining",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Fixed edge-hidden kernel versus moving curvature kernel; common-phase quotient"
+    },
+    {
+      "technique": "Geometry/continuum",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Smooth connection on nonzero E, curvature, ray holonomy"
+    },
+    {
+      "technique": "Local transport/support",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No local stock-current constitutive law established; locality is next discriminant"
+    },
+    {
+      "technique": "Recursive scaling",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No refinement/depth construction used"
+    },
+    {
+      "technique": "Physical units/calibration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Keep A0 action unit, eta ratio and physical time map OPEN"
+    },
+    {
+      "technique": "Fit/null/sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Disclose exposed eta2 and detuned hypothesis; undetuned null; analytic perturbation ball"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4+6+4+1; 15-1=14; 6+6=12; 14-12=2",
+    "reduced_expression": "rankP14,rankPv12,rankPh2; unit fiber response1 versus half response1/2",
+    "factor_origins": [
+      "Simplicial counts from filled tetrahedron",
+      "Active minus harmonic rank",
+      "Edge space and orthogonal J image",
+      "Half coefficient from imported Theta convention"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "Gauge winding m in Z; ordinary U1 character exp(i w chi) descends iff w integer. Full state recurrence requires both rate*T in2piZ; ray return only relative rate."
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native parameter and phase, with optional integer winding",
+    "modulus": "2pi for ordinary fiber; real lifted phase separate",
+    "residue_convention": "endpoint phase modulo2pi",
+    "update_rule": "native xprime=2Jx; changed G separately declared",
+    "initial_phase": "arbitrary; gauge transformations explicitly tested",
+    "coupling": "Changed two-rate law gives relative phase but no intersector support transfer",
+    "period_claim": "native state pi; changed ray2pi/abs(Delta) for mixed support; full state extra commensurability",
+    "physical_unit_map": "OPEN; no seconds calibration"
+  },
+  "dynamics_readout": {
+    "state_space": "E=imP real dimension14, x nonzero",
+    "generator_or_update": "native A=2J; optional G=J(omega_v Pv+omega_h Ph)",
+    "initial_boundary_conditions": "Filled tetrahedron; finite-dimensional closed carrier; mixed visible/hidden preparation for nonconstant rays",
+    "conservation_and_sources": "Native and changed G preserve norm; changed G preserves both sector norms; no drive/support source",
+    "projection_and_kernel": "alpha complete coverage; curvature kernel span{x,Jx} rank12; fixed edge kernel Ph is a distinct object",
+    "physical_mapping": "No physical gauge or apparatus derived; A0/hbar numeric and physical clock OPEN"
+  },
+  "target_exposure": {
+    "status": "EXPLORATORY_AFTER_ETA2_NATIVE_FREQUENCY2_AND_FINITE_EVENT_PHASE_AUDITS",
+    "known_targets": [
+      "native frequency2",
+      "Q287/Q288 eta2",
+      "Earlier finite and threshold recurrence signs"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Common-phase ray quotient and Euclidean horizontal connection are declared",
+      "Two-rate split is an added hypothesis, not native detuning selection",
+      "Positive weight one and unit support recover exposed eta2 conditionally; no empirical fit"
+    ],
+    "search_domain_and_budget": "No empirical fit or parameter optimization; three exact rate-pair fixture choices; general symbolic family proved",
+    "selection_criterion": "Complete smooth readout; explicit gauge law; robust nontrivial phase only under changed law",
+    "baseline": "Ordinary metric U(1) connection and geometric phase; native undetuned ray is constant"
+  },
+  "calculation_steps": [
+    "Rebuild d,A,P,J and invariant edge/hidden split",
+    "Derive alpha and time-dependent/radial gauge laws",
+    "Differentiate alpha and prove curvature rank/kernel; check quotient rule exactly",
+    "Integrate CP1 patches to unit curvature flux; reject half normalization for same fiber",
+    "Compare native global rotation and constant ray; derive large-gauge character condition",
+    "Solve added two-rate family; compute ray holonomy and raw action separately",
+    "Prove norm1/10 open-domain nontriviality bound; retain continuous phase and zero-detuning limit"
+  ],
+  "result": {
+    "exact_expression": "Complete smooth alpha=2Theta/a; curvature rank12 with moving kernel span{x,Jx}; native Hol1 despite I=pi*a*n; changed two-rate law Hol=exp(-2pi*i*sign(Delta)*r); norm1/10 ball has |Hol-1|>=sqrt3, exact -1 not quantized",
+    "approximation": null,
+    "units": "Dimensionless connection/phase/native I; S_native=A0 I action",
+    "precision_and_error": "Exact rational finite checks; analytic all-state proofs. No numerical integration.",
+    "scope": "Specified unit metric and declared ordinary phase quotient; detuned results require changed G",
+    "physical_interpretation": "HYPOTHESIS; UNSCORED; promotion0"
+  },
+  "verification": [
+    {
+      "method": "Exact constructor audit",
+      "command_or_proof_path": "python3 experiments/qpb1-continuous-phase/audit.py --out /workspace/scratch/continuous-phase/outputs",
+      "source_revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "actual_result": "PASS14hashes,13rows,10states,450gauge,24S4/480readouts,2250curvature,28native/30detunedreceipts",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "Analytic derivations and direct quotient-rule algebra cross-check",
+      "command_or_proof_path": "experiments/qpb1-continuous-phase/README.md sections2-5",
+      "source_revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "actual_result": "Proofs complete within listed premises; no separate-context review or empirical replication",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Native unmodified A gives only constant rays and trivial geometric Hol",
+    "Half connection exponential flips sign under odd gauge winding",
+    "Raw action phase cannot descend for arbitrary support at fixed nonzero eta",
+    "Variable support allows zero-winding gauge to shift raw action bypi/2",
+    "Exact detuned -1 not constant on an open neighborhood",
+    "Detuning period diverges as Delta approaches0; no fixed-time nontrivial native limit"
+  ],
+  "limitations": [
+    "Ordinary ray quotient and physical phase correspondence not native-derived",
+    "Detuning not source-selected or physically calibrated",
+    "Canonical connection uses declared metric; S4 alone does not select it uniquely",
+    "No independent experiment, review or target-blind eta prediction",
+    "Original uploads unavailable after reset; committed hashes verified only"
+  ],
+  "changed_dependencies": [
+    "Optional G changes generator while preserving source A as the undetuned null; no imported theorem overwritten"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-continuous-phase-20261023-a1/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Classify source-compatible S4-preserving local generator changes; test whether relative-mode detuning is permitted or selected, with explicit minimal new assumptions."
+}

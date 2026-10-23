@@ -1,0 +1,25 @@
+{
+  "carrier_dimension": 15,
+  "active_rank": 14,
+  "visible_rank": 12,
+  "hidden_rank": 2,
+  "gauge_fixture_checks": 450,
+  "S4_readout_checks": 480,
+  "curvature_derivative_checks": 2250,
+  "curvature_ranks": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "hidden_plane_curvature_at_edge_state": "2",
+  "zero_rejected": true,
+  "CP1_flux_over_2pi": "1 (analytic patch calculation in README)",
+  "normalization": "alpha=<Jx,dx>/a=2Theta/a; alpha(Jx)=1"
+}
