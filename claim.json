@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "qpb1-integral-duality-20261022",
   "session": "qpb1-integral-duality-20261022-a1",
   "created_at": "2026-10-23T03:30:06.498Z",
@@ -13,5 +13,7 @@
     "experiments/qpb1-integral-duality/",
     "candidates/qpb1-integral-duality/",
     "artifacts/qpb1-integral-duality-20261022-a1/"
-  ]
+  ],
+  "released_at": "2026-10-23T03:42:44.433Z",
+  "released_from_sha": "f7d45a66b97c331788d9d04454c0da86f0bad95a"
 }
