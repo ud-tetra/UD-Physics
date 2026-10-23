@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-loop-history-20261023-a1",
+  "runtime": "Codex;modelidentifier unknown;Git/compute and GitHub connector",
+  "task": "qpb1-loop-history-20261023",
+  "goal": "Construct composition/symmetry preserving history maps and determine action-sufficient records",
+  "created_at": "2026-10-23T03:57:51.355136+00:00",
+  "base_revision": "92ef753389a3f2fe40f1423355d2c6f02169fbdc",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-loop-history-20261023": {
+      "ref": "refs/heads/claims/qpb1-loop-history-20261023",
+      "sha": "fabd792b65b3112f995ccbebf61f6d421fa8c9c6",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-loop-history/audit.py --out /workspace/scratch/ed44232d6ecb/loop_history_outputs",
+      "result": "PASS;11hashes,13rows,24nativeS4,4372graphwalks,9362Weylwords,149792basisapplications,51actionreceipts/867carrycompositions"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS133records,digests,localdocumentationlinks"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL:naturalDprojectionkillsclosedgraphcycles;unframedscalarreceiptmaptoDzero;framedandtwo-channelwordadaptersexplicit;integercarry+supportretainsnativeaction;physicalmappingOPEN,UNSCORED,promotion0",
+  "next_action": "ConstructS4-covariantnativeedgeamplitude/J-quadratureeventrule;testT/Mrecords,degeneracy,simultaneityandactioncarryretention.",
+  "checkpoint_at": "2026-10-23T04:03:32.073419+00:00",
+  "checkpoint_source": {
+    "revision": "92ef753389a3f2fe40f1423355d2c6f02169fbdc",
+    "dirty": true
+  }
+}

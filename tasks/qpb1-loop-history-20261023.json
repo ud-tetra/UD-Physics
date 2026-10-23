@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb1-loop-history-20261023",
+  "goal": "Native loop-history,graphpath and finiteWeylword adapters with explicit kernels",
+  "owned_paths": [
+    "tasks/qpb1-loop-history-20261023.json",
+    "sessions/qpb1-loop-history-20261023-a1/",
+    "experiments/qpb1-loop-history/",
+    "candidates/qpb1-loop-history/",
+    "artifacts/qpb1-loop-history-20261023-a1/"
+  ],
+  "dependencies": [
+    "qpb1-finite-pairing-20261023"
+  ],
+  "status": "complete"
+}

@@ -1,0 +1,368 @@
+{
+  "records": [
+    {
+      "support": "1/4",
+      "winding": -8,
+      "residue": 0,
+      "integer_carry": -2,
+      "action_over_pi": "-2"
+    },
+    {
+      "support": "1/4",
+      "winding": -7,
+      "residue": 1,
+      "integer_carry": -2,
+      "action_over_pi": "-7/4"
+    },
+    {
+      "support": "1/4",
+      "winding": -6,
+      "residue": 2,
+      "integer_carry": -2,
+      "action_over_pi": "-3/2"
+    },
+    {
+      "support": "1/4",
+      "winding": -5,
+      "residue": 3,
+      "integer_carry": -2,
+      "action_over_pi": "-5/4"
+    },
+    {
+      "support": "1/4",
+      "winding": -4,
+      "residue": 0,
+      "integer_carry": -1,
+      "action_over_pi": "-1"
+    },
+    {
+      "support": "1/4",
+      "winding": -3,
+      "residue": 1,
+      "integer_carry": -1,
+      "action_over_pi": "-3/4"
+    },
+    {
+      "support": "1/4",
+      "winding": -2,
+      "residue": 2,
+      "integer_carry": -1,
+      "action_over_pi": "-1/2"
+    },
+    {
+      "support": "1/4",
+      "winding": -1,
+      "residue": 3,
+      "integer_carry": -1,
+      "action_over_pi": "-1/4"
+    },
+    {
+      "support": "1/4",
+      "winding": 0,
+      "residue": 0,
+      "integer_carry": 0,
+      "action_over_pi": "0"
+    },
+    {
+      "support": "1/4",
+      "winding": 1,
+      "residue": 1,
+      "integer_carry": 0,
+      "action_over_pi": "1/4"
+    },
+    {
+      "support": "1/4",
+      "winding": 2,
+      "residue": 2,
+      "integer_carry": 0,
+      "action_over_pi": "1/2"
+    },
+    {
+      "support": "1/4",
+      "winding": 3,
+      "residue": 3,
+      "integer_carry": 0,
+      "action_over_pi": "3/4"
+    },
+    {
+      "support": "1/4",
+      "winding": 4,
+      "residue": 0,
+      "integer_carry": 1,
+      "action_over_pi": "1"
+    },
+    {
+      "support": "1/4",
+      "winding": 5,
+      "residue": 1,
+      "integer_carry": 1,
+      "action_over_pi": "5/4"
+    },
+    {
+      "support": "1/4",
+      "winding": 6,
+      "residue": 2,
+      "integer_carry": 1,
+      "action_over_pi": "3/2"
+    },
+    {
+      "support": "1/4",
+      "winding": 7,
+      "residue": 3,
+      "integer_carry": 1,
+      "action_over_pi": "7/4"
+    },
+    {
+      "support": "1/4",
+      "winding": 8,
+      "residue": 0,
+      "integer_carry": 2,
+      "action_over_pi": "2"
+    },
+    {
+      "support": "1",
+      "winding": -8,
+      "residue": 0,
+      "integer_carry": -2,
+      "action_over_pi": "-8"
+    },
+    {
+      "support": "1",
+      "winding": -7,
+      "residue": 1,
+      "integer_carry": -2,
+      "action_over_pi": "-7"
+    },
+    {
+      "support": "1",
+      "winding": -6,
+      "residue": 2,
+      "integer_carry": -2,
+      "action_over_pi": "-6"
+    },
+    {
+      "support": "1",
+      "winding": -5,
+      "residue": 3,
+      "integer_carry": -2,
+      "action_over_pi": "-5"
+    },
+    {
+      "support": "1",
+      "winding": -4,
+      "residue": 0,
+      "integer_carry": -1,
+      "action_over_pi": "-4"
+    },
+    {
+      "support": "1",
+      "winding": -3,
+      "residue": 1,
+      "integer_carry": -1,
+      "action_over_pi": "-3"
+    },
+    {
+      "support": "1",
+      "winding": -2,
+      "residue": 2,
+      "integer_carry": -1,
+      "action_over_pi": "-2"
+    },
+    {
+      "support": "1",
+      "winding": -1,
+      "residue": 3,
+      "integer_carry": -1,
+      "action_over_pi": "-1"
+    },
+    {
+      "support": "1",
+      "winding": 0,
+      "residue": 0,
+      "integer_carry": 0,
+      "action_over_pi": "0"
+    },
+    {
+      "support": "1",
+      "winding": 1,
+      "residue": 1,
+      "integer_carry": 0,
+      "action_over_pi": "1"
+    },
+    {
+      "support": "1",
+      "winding": 2,
+      "residue": 2,
+      "integer_carry": 0,
+      "action_over_pi": "2"
+    },
+    {
+      "support": "1",
+      "winding": 3,
+      "residue": 3,
+      "integer_carry": 0,
+      "action_over_pi": "3"
+    },
+    {
+      "support": "1",
+      "winding": 4,
+      "residue": 0,
+      "integer_carry": 1,
+      "action_over_pi": "4"
+    },
+    {
+      "support": "1",
+      "winding": 5,
+      "residue": 1,
+      "integer_carry": 1,
+      "action_over_pi": "5"
+    },
+    {
+      "support": "1",
+      "winding": 6,
+      "residue": 2,
+      "integer_carry": 1,
+      "action_over_pi": "6"
+    },
+    {
+      "support": "1",
+      "winding": 7,
+      "residue": 3,
+      "integer_carry": 1,
+      "action_over_pi": "7"
+    },
+    {
+      "support": "1",
+      "winding": 8,
+      "residue": 0,
+      "integer_carry": 2,
+      "action_over_pi": "8"
+    },
+    {
+      "support": "9/4",
+      "winding": -8,
+      "residue": 0,
+      "integer_carry": -2,
+      "action_over_pi": "-18"
+    },
+    {
+      "support": "9/4",
+      "winding": -7,
+      "residue": 1,
+      "integer_carry": -2,
+      "action_over_pi": "-63/4"
+    },
+    {
+      "support": "9/4",
+      "winding": -6,
+      "residue": 2,
+      "integer_carry": -2,
+      "action_over_pi": "-27/2"
+    },
+    {
+      "support": "9/4",
+      "winding": -5,
+      "residue": 3,
+      "integer_carry": -2,
+      "action_over_pi": "-45/4"
+    },
+    {
+      "support": "9/4",
+      "winding": -4,
+      "residue": 0,
+      "integer_carry": -1,
+      "action_over_pi": "-9"
+    },
+    {
+      "support": "9/4",
+      "winding": -3,
+      "residue": 1,
+      "integer_carry": -1,
+      "action_over_pi": "-27/4"
+    },
+    {
+      "support": "9/4",
+      "winding": -2,
+      "residue": 2,
+      "integer_carry": -1,
+      "action_over_pi": "-9/2"
+    },
+    {
+      "support": "9/4",
+      "winding": -1,
+      "residue": 3,
+      "integer_carry": -1,
+      "action_over_pi": "-9/4"
+    },
+    {
+      "support": "9/4",
+      "winding": 0,
+      "residue": 0,
+      "integer_carry": 0,
+      "action_over_pi": "0"
+    },
+    {
+      "support": "9/4",
+      "winding": 1,
+      "residue": 1,
+      "integer_carry": 0,
+      "action_over_pi": "9/4"
+    },
+    {
+      "support": "9/4",
+      "winding": 2,
+      "residue": 2,
+      "integer_carry": 0,
+      "action_over_pi": "9/2"
+    },
+    {
+      "support": "9/4",
+      "winding": 3,
+      "residue": 3,
+      "integer_carry": 0,
+      "action_over_pi": "27/4"
+    },
+    {
+      "support": "9/4",
+      "winding": 4,
+      "residue": 0,
+      "integer_carry": 1,
+      "action_over_pi": "9"
+    },
+    {
+      "support": "9/4",
+      "winding": 5,
+      "residue": 1,
+      "integer_carry": 1,
+      "action_over_pi": "45/4"
+    },
+    {
+      "support": "9/4",
+      "winding": 6,
+      "residue": 2,
+      "integer_carry": 1,
+      "action_over_pi": "27/2"
+    },
+    {
+      "support": "9/4",
+      "winding": 7,
+      "residue": 3,
+      "integer_carry": 1,
+      "action_over_pi": "63/4"
+    },
+    {
+      "support": "9/4",
+      "winding": 8,
+      "residue": 0,
+      "integer_carry": 2,
+      "action_over_pi": "18"
+    }
+  ],
+  "carry_composition_checks": 867,
+  "reconstruction": "I/pi=a*(r+4m);S_native=A0*I",
+  "limitations": [
+    "Fixedsupportnativeorbitloops;changingcarrier/supportneedsseparateprocessaccounting",
+    "Nativeintegercarryisunbounded;finitephasecannotreplaceit",
+    "ActionunitA0andphysicalidentificationremainseparate"
+  ]
+}

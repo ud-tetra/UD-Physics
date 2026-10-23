@@ -1,0 +1,37 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-loop-history",
+  "session_id": "qpb1-loop-history-20261023-a1",
+  "question": "Which loop-history maps preserve composition,S4 symmetry and enough information for native action?",
+  "status": "ACTIVE",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "NativefilledtetHodgecarrier withunitEuclideanmetric,A=d-d^T,activeJ=A/2;closednonzeroorbit supporta andwindingn;compositionatfixedsupport/baseorbit.",
+    "Graphwalks and finiteWeylword alphabets are added inputdomains,notidentifiedwithnativechain-amplitudeevolution.",
+    "InheritedsignedS4action;D=Lambda#/Lambda=Z4\u00b2;unframedreceiptadapterdependssolelyon(a,n);globalcontinuousstateadapterassumesallnonzeroactiveR14states.",
+    "Directededgeframeorstrict-1linkconnectionareexplicitalternativehypotheses;twoindependentlycontrollableT/MrecordsareaddedfornoncommutingWeylholonomy.",
+    "Knownfrequency2,eta2,previousfinitephase/parityandlatticeresultsalreadyexposed;no physicalfit orindependentprediction."
+  ],
+  "physical_mapping": "OPEN;native discreteeventextractor,twochannelcoupling andphysicalactionanchor notderived;UNSCORED,promotion0",
+  "target_exposure": "EXPLORATORY_AFTER_NATIVE_FREQUENCY2_ETA2_AND_FINITE_PHASE_AUDITS",
+  "fitted_choices": [
+    "Directededgeframing and -1linkconnectionareaddedconstructions",
+    "FiniteWeylwordchannelsareproposedinputs,notnativeeventsextractedfromdata"
+  ],
+  "sources": [
+    "experiments/qpb1-loop-history/SOURCES.json",
+    "experiments/qpb1-loop-history/SOURCE_ROWS.json",
+    "experiments/qpb1-loop-history/EXTERNAL_SOURCES.json"
+  ],
+  "baseline": "Euclideangraphlatticeprojection;ordinarydiscreteconnection;finiteWeylcentralextension",
+  "result": "Naturalprojectionkillsclosedgraphcycles;scalarunframed(a,n)->Dmustzero;framedn*delta_ehas4Zkernel;endpointparitynotmultiplicative;-1linkconnectionhastrianglecurvature-1;twoWeylchannelsgivecentralphase;exacta,r,integercarryreceiptpreservesnativeaction",
+  "next_discriminant": "ConstructS4-covariant events fromnativeedgeamplitudesandJ-quadratures;testT/Mrecordindependence,degenerateandsimultaneousevents,andretainactioncarry.",
+  "retained_role": "Typedcompositionalhistoryadapters,scopedobstructions andaction-sufficientcarryreceipt",
+  "unsupported_role": "IdentificationofnativeHodgeorbitwithgraphwalkorWeylword;finiteendpointrecoveryofunrestrictedaction"
+}

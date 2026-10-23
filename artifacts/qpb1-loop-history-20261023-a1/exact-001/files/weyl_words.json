@@ -1,0 +1,35 @@
+{
+  "group_law": "(c,x,y)*(d,u,v)=(c+d+k*4b(y,u),x+u,y+v)mod4",
+  "word_convention": "Listedoperatorsmultiplylefttoright;rightmostactsfirstonstate",
+  "central_commutators": [
+    {
+      "k": 1,
+      "central_quarter_turns": 3,
+      "net_translation": [
+        0,
+        0
+      ],
+      "net_modulation": [
+        0,
+        0
+      ]
+    },
+    {
+      "k": 3,
+      "central_quarter_turns": 1,
+      "net_translation": [
+        0,
+        0
+      ],
+      "net_modulation": [
+        0,
+        0
+      ]
+    }
+  ],
+  "operator_words_checked": 9362,
+  "basis_states_per_word": 16,
+  "S4_word_covariance_checks": 28080,
+  "same_channel_isotropic_checks": 4096,
+  "source_boundary": "TwocontrollableT/Mrecordtypesareadded;nodiscreteeventextractorfromnativeHodgeflowhasbeenderived"
+}
