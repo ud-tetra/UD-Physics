@@ -129,10 +129,16 @@
     {
       "name": "new PR45 head integrity",
       "result": "NOT_RUN at record write; inspect GitHub workflow before final reporting"
+    },
+    {
+      "name": "global barrier development and exact witness",
+      "result": "PASS_LOCAL_CONSTRUCTOR_CHECKS_ONLY",
+      "command": "python barrier_audit.py --out . --starts 60; python verify_witness.py --witness flat_witness.json --out witness_result.json; OPENBLAS_NUM_THREADS=1 python independent_check.py",
+      "scope": "72 numerical multi-start and second optimization; exact rational witness energy<1/8; NOT global barrier proof"
     }
   ],
   "finding": "EXACT/CONDITIONAL enlarged housing-only all-time domain/volume tube; NUMERICAL full linear 50-case/180-housing-phase window nu [.04,.05] survives Eh factor 1.5 with min overlap .0003100047, original full housing energy upper .45666607. Nonlinear full pulse all-phase remains OPEN. CONTINUATION EXACT/CONDITIONAL: for all permitted housing phases at amplified Eh, nonlinear full ODE all-time member/strut noncollapse at |alpha0|<=1/25 (120 struts>1/40); at |alpha0|<=3/100 all 20 oriented volumes preserve sign. Original alpha0=1/10 all-phase u100 remains OPEN. CONTINUATION EXACT/CONDITIONAL: original alpha=.1 plus amplified E_h<=51/20000000, all 180 housing initial phase coordinates, full nonlinear 560-phase existence and all 120 struts>13/1500, 20 oriented cell volumes in (1/125,729/125) for all u<=2/5. Eightfold previous original-amplitude exact horizon; u100 remains OPEN. CONTINUATION EXACT/CONDITIONAL relative Duhamel: original alpha=1/10, all 180 housing phases at Eh<=51/20000000, full nonlinear mechanical law, every strut>11/1250 and 20 oriented volumes positive through u=9/10, source byte capture relative-tube-005; no u100 performance guarantee. CONTINUATION EXACT/CONDITIONAL original alpha=.1 all-180 housing phase full nonlinear positive struts/orientations through u=49/50; struts>3853/281250; volume ratios in ((1/500)^3,(999/500)^3). Prior u=9/10 preserved. U100 OPEN.",
-  "next_action": "Review exact u49/50 receipt/capture and PR45 CI; coordinate distinct PR44 forced Green/proper-alignment recovery for full u100 nonlinear certificate; current star kinetic majorant fails at u=1.",
+  "next_action": "Validate a global lower bound on flat-cell conservative energy above E0=1360051/20000000 or construct a below-E0 collapsed cell; maintain forced-Green recovery under PR44 separate ownership; original nonlinear u100 remains OPEN.",
   "mathematical_profile": {
     "coefficient_domain": "Q(sqrt5) reference geometry; exact rational comparisons and positive real mechanical energy; float64 imported linear evaluations",
     "methods": [
@@ -208,5 +214,18 @@
     "previous_horizon": "9/10",
     "u100": "OPEN",
     "physical_validation": "UNSCORED"
+  },
+  "global_cell_barrier_audit": {
+    "status": "EXACT_CONSTRUCTIVE_UPPER_WITNESS_AND_NUMERICAL_DEVELOPMENT",
+    "source_revision": "467e2208fba9da086535bd5b8a6a07f6d6f8e08b",
+    "run": "artifacts/phasewindow-20261022-gpt6-7c41/global-barrier-007/manifest.json",
+    "math_receipt": "sessions/phasewindow-20261022-gpt6-7c41/global_barrier_receipt.json",
+    "numerical_starts": 72,
+    "lowest_candidate_energy": 0.12442609483988352,
+    "exact_witness": "a flat cell with U<1/8 in the allowed lower g/k surrogate; upper bound only",
+    "local_only_flat_energy": "<0.050747479 below E0=0.06800255; excludes local-only proof but not global shell barrier",
+    "rigorous_global_minimum": "OPEN",
+    "full_pulse_u100": "OPEN",
+    "physical_status": "UNSCORED"
   }
 }
