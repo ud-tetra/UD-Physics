@@ -1,0 +1,165 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-impedance-selection-20261022-a1",
+  "run_id": "exact-001",
+  "created_at": "2026-10-23T03:11:23.567342+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "Scoped native electrical-selection audit;missing charge/constitutive map isolated;exact dimensional and anchor certificates.",
+  "command": "python3 experiments/qpb1-impedance-selection/audit.py --out /workspace/scratch/ed44232d6ecb/impedance_selection_outputs",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "1b214f66e00e8430fed0ce7c23506da7965bc977",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "ENTRY_CONTRACT.md",
+      "path": "inputs/001-ENTRY_CONTRACT.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-impedance-selection/ENTRY_CONTRACT.md",
+      "sha256": "3f46a4112e14bc90640089a6d0da32a4a9800117b0c3e11215a9ce2bdf308020",
+      "size_bytes": 1767
+    },
+    {
+      "input_id": "input-002",
+      "name": "EXTERNAL_SOURCES.json",
+      "path": "inputs/002-EXTERNAL_SOURCES.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-impedance-selection/EXTERNAL_SOURCES.json",
+      "sha256": "1de95ae9afa4cbc274d66c79d889656a257923f0485fe6053e60b42b998a84d4",
+      "size_bytes": 1321
+    },
+    {
+      "input_id": "input-003",
+      "name": "README.md",
+      "path": "inputs/003-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-impedance-selection/README.md",
+      "sha256": "e931a1009c91d0c549d5cfd1eacf44a5c3e3b2622350ffbfadb314f110479e45",
+      "size_bytes": 11617
+    },
+    {
+      "input_id": "input-004",
+      "name": "SOURCES.json",
+      "path": "inputs/004-SOURCES.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-impedance-selection/SOURCES.json",
+      "sha256": "0613a665d3f2d8e05aba7bb6a48c8520bd27f67d81fd7438e437373df42b5cf8",
+      "size_bytes": 3569
+    },
+    {
+      "input_id": "input-005",
+      "name": "SOURCE_AVAILABILITY.json",
+      "path": "inputs/005-SOURCE_AVAILABILITY.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-impedance-selection/SOURCE_AVAILABILITY.json",
+      "sha256": "b859005ce1dd69d7a99bb75350634fc7930c75b3b90335e804185de97080a3bc",
+      "size_bytes": 14550
+    },
+    {
+      "input_id": "input-006",
+      "name": "SOURCE_ROWS.json",
+      "path": "inputs/006-SOURCE_ROWS.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-impedance-selection/SOURCE_ROWS.json",
+      "sha256": "24bebac09b45046144e7a22eab34e88718519d7c2e19d46b8ff3bca701a19636",
+      "size_bytes": 15079
+    },
+    {
+      "input_id": "input-007",
+      "name": "audit.py",
+      "path": "inputs/007-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-impedance-selection/audit.py",
+      "sha256": "ad89982d06a47f8fea4f9d7a46e1b0d1fc5eb943d387b2fa3f85a0299fd52180",
+      "size_bytes": 7365
+    },
+    {
+      "input_id": "input-008",
+      "name": "ACTION_IDENTIFIABILITY.md",
+      "path": "inputs/008-ACTION_IDENTIFIABILITY.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-impedance-selection/sources/ACTION_IDENTIFIABILITY.md",
+      "sha256": "a4a0d326ccba7ceade98f69c9184fde3aa880c646ee7b87d66eb1a63161080ef",
+      "size_bytes": 4266
+    },
+    {
+      "input_id": "input-009",
+      "name": "CONSTITUTIVE_CURRENT.md",
+      "path": "inputs/009-CONSTITUTIVE_CURRENT.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-impedance-selection/sources/CONSTITUTIVE_CURRENT.md",
+      "sha256": "8f42ed08fb71bbcb3e55ebd71d9e88816169e15c68f467723054e9a4b382f06c",
+      "size_bytes": 7611
+    },
+    {
+      "input_id": "input-010",
+      "name": "HASSE_CURRENT_CURL.md",
+      "path": "inputs/010-HASSE_CURRENT_CURL.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-impedance-selection/sources/HASSE_CURRENT_CURL.md",
+      "sha256": "58effad3381e8d8bc157c221fa26b2be4110cce7f528d477926967a1c04f294b",
+      "size_bytes": 16002
+    },
+    {
+      "input_id": "input-011",
+      "name": "MANUSCRIPT_EXCERPTS.json",
+      "path": "inputs/011-MANUSCRIPT_EXCERPTS.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-impedance-selection/sources/MANUSCRIPT_EXCERPTS.json",
+      "sha256": "0bc4a6bc9fa5d2832a8941e747e5bce31466d7ff78a20686c891405893b3a186",
+      "size_bytes": 3734
+    },
+    {
+      "input_id": "input-012",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/012-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/qpb1-impedance-selection-20261022-a1/mathematical_receipt.json",
+      "sha256": "dc20e2cfc3c5de983e60cb7c1d89f72c8721514efe25201f16c0fe25c6c4e08e",
+      "size_bytes": 15179
+    },
+    {
+      "input_id": "input-013",
+      "name": "ledger_v0.85.json",
+      "path": "inputs/013-ledger_v0.85.json",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    },
+    {
+      "input_id": "input-014",
+      "name": "audit.py",
+      "path": "inputs/014-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/audit.py",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b",
+      "size_bytes": 9543
+    }
+  ],
+  "files": [
+    {
+      "path": "files/anchor_certificates.json",
+      "sha256": "73f324497a6497630eff38fa63ff8da4dbae0dba67e188f332ac5e5faf5e92b0",
+      "size_bytes": 3316
+    },
+    {
+      "path": "files/dimensional_results.json",
+      "sha256": "c22112411db2e1d8ec590df0467bad638b696f390b10e7bd28eb645767ba1c52",
+      "size_bytes": 1194
+    },
+    {
+      "path": "files/source_screen.json",
+      "sha256": "8144ee721dec0223b29f277169824529d4711816522050a513cc89b00530eb22",
+      "size_bytes": 572
+    },
+    {
+      "path": "files/summary.json",
+      "sha256": "1ebca1bdf08b3dd5c80cd15216f60223af9d3cbcecd580fc444f67a29d9897b5",
+      "size_bytes": 406
+    }
+  ]
+}

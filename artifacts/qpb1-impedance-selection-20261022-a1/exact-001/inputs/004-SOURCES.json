@@ -1,0 +1,78 @@
+{
+  "discovery_base": "1b214f66e00e8430fed0ce7c23506da7965bc977",
+  "upstream_repo": "ud-tetra/UD",
+  "upstream_commit": "957d443e25008632ab9d9328c162343b6a651ee7",
+  "upstream_main_verified_utc": "2026-10-23",
+  "upstream_tree_entries": 9259,
+  "tree_truncated": false,
+  "remote_sources": [
+    {
+      "path": "captures/2026-10-07T191951Z-codex-ud-bootstrap-5170f8b8/browse/dist/source/constitutive-current-v0.1/UD_CONSTITUTIVE_CURRENT_IDENTIFIABILITY_v0.1.md",
+      "local": "experiments/qpb1-impedance-selection/sources/CONSTITUTIVE_CURRENT.md",
+      "sha": "8ccf5a9bcfdcea1a4eab00a3444ded588966df85",
+      "sha256": "8f42ed08fb71bbcb3e55ebd71d9e88816169e15c68f467723054e9a4b382f06c",
+      "size_bytes": 7611
+    },
+    {
+      "path": "captures/2026-10-07T191951Z-codex-ud-bootstrap-5170f8b8/browse/dist/source/constitutive-current-v0.1/sources/HASSE_CURRENT_CURL_AUDIT.md",
+      "local": "experiments/qpb1-impedance-selection/sources/HASSE_CURRENT_CURL.md",
+      "sha": "f02adccc67fce3c66feeabf847d8e32425badae8",
+      "sha256": "58effad3381e8d8bc157c221fa26b2be4110cce7f528d477926967a1c04f294b",
+      "size_bytes": 16002
+    },
+    {
+      "path": "captures/2026-10-21T160300Z-codex-action-identifiability-32b8a1d4/THEOREM.md",
+      "local": "experiments/qpb1-impedance-selection/sources/ACTION_IDENTIFIABILITY.md",
+      "sha": "ad3548d5c107d6ffb4c50940ac0695c9f6e4ca35",
+      "sha256": "a4a0d326ccba7ceade98f69c9184fde3aa880c646ee7b87d66eb1a63161080ef",
+      "size_bytes": 4266
+    },
+    {
+      "path": "docs/UD_Master_Full.tex",
+      "local": null,
+      "sha": "f9a7d6dc7c3602c328caee6a21cd2fe8e9e9272f",
+      "sha256": "4c93f63cb57f9de7959919e20a7d2811f6a29832701b20aa98c4de4c99e4feb3",
+      "size_bytes": 42577,
+      "retained_excerpt": "sources/MANUSCRIPT_EXCERPTS.json"
+    },
+    {
+      "path": "docs/UD_Master_Manuscript.tex",
+      "local": null,
+      "sha": "bd994511081c30f90e98e03ae1974ffa34488299",
+      "sha256": "6079f9a8f686a51bf67c5c3b08024e29bf91512535743bf16cc9e566c3db977e",
+      "size_bytes": 24892,
+      "retained_excerpt": "sources/MANUSCRIPT_EXCERPTS.json"
+    }
+  ],
+  "local_sources": [
+    {
+      "path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec"
+    },
+    {
+      "path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "sha256": "4e5cdc41c1fd93f69b8d80aeb557f5cfdf8b3b335b320ef4b2028bc1b08c6739"
+    },
+    {
+      "path": "experiments/action-normalization-audit/audit.py",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b"
+    },
+    {
+      "path": "experiments/qpb1-quantized-charge/README.md",
+      "sha256": "c95d96c2f947d90e7cf01f0d1ba6d282a176b347839f7498dd30656c86754474"
+    },
+    {
+      "path": "experiments/qpb1-passive-port/README.md",
+      "sha256": "31a92827bbdf75c7ffc5855f7109e2b854a195d8d663dabf3e27ce6634a5fa04"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "sha256": "8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4"
+    }
+  ],
+  "scope": "Ledger screening plus selected semantic sources and manuscript sections. Repository path inventory is not a content audit of all9259 entries. PDFs and private conversation backups excluded; no universal source-absence claim."
+}

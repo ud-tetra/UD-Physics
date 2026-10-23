@@ -1,0 +1,68 @@
+{
+  "dimensions_order": [
+    "M",
+    "L",
+    "T",
+    "Q"
+  ],
+  "missing_charge_dimension_rank": [
+    3,
+    4
+  ],
+  "lambda_charge_cases": [
+    {
+      "lambda": "1",
+      "q0": "1",
+      "e": "1",
+      "A0": "3",
+      "Z": "3",
+      "A_map_over_A0": "1"
+    },
+    {
+      "lambda": "2",
+      "q0": "1",
+      "e": "1",
+      "A0": "3",
+      "Z": "6",
+      "A_map_over_A0": "2"
+    },
+    {
+      "lambda": "1",
+      "q0": "2",
+      "e": "1",
+      "A0": "5",
+      "Z": "5/4",
+      "A_map_over_A0": "1/4"
+    },
+    {
+      "lambda": "3/7",
+      "q0": "5/2",
+      "e": "4/3",
+      "A0": "7",
+      "Z": "12/25",
+      "A_map_over_A0": "64/525"
+    },
+    {
+      "lambda": "7/3",
+      "q0": "2/5",
+      "e": "1",
+      "A0": "11/9",
+      "Z": "1925/108",
+      "A_map_over_A0": "175/12"
+    },
+    {
+      "lambda": "1/2",
+      "q0": "3",
+      "e": "2",
+      "A0": "4",
+      "Z": "2/9",
+      "A_map_over_A0": "2/9"
+    }
+  ],
+  "toy_alpha_compatibility": {
+    "alpha_struct": "7/960",
+    "eta_at_zeta1": "7/240*pi",
+    "zeta_if_eta2_is_imposed": "480/7/pi",
+    "status": "Added hypotheses and inverse target requirement only; not a native prediction."
+  }
+}

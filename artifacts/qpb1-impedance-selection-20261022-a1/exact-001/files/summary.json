@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "ledger_rows_screened": 723,
+  "selected_rows_checked": 23,
+  "retained_remote_blob_checks": 3,
+  "anchor_families": 6,
+  "lambda_charge_fixtures": 6,
+  "impedance_selector": "NO_ADMITTED_LAW_IN_AUDITED_SOURCES",
+  "empirical_score": "UNSCORED",
+  "physical_promotion": 0,
+  "scope": "Scoped source audit and exact dimensional/monomial model; not proof of global source absence."
+}

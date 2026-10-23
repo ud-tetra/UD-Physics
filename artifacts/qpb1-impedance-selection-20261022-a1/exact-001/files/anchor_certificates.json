@@ -1,0 +1,236 @@
+[
+  {
+    "family": "charge",
+    "W": [
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "rank": 1,
+    "action": {
+      "identified": false,
+      "kernel_witness": [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "target_log_change_per_parameter": "1"
+    },
+    "unit_impedance": {
+      "identified": false,
+      "kernel_witness": [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "target_log_change_per_parameter": "1"
+    }
+  },
+  {
+    "family": "charge_time",
+    "W": [
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ]
+    ],
+    "rank": 2,
+    "action": {
+      "identified": false,
+      "kernel_witness": [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "target_log_change_per_parameter": "1"
+    },
+    "unit_impedance": {
+      "identified": false,
+      "kernel_witness": [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "target_log_change_per_parameter": "1"
+    }
+  },
+  {
+    "family": "charge_time_speed",
+    "W": [
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "-1",
+        "0"
+      ]
+    ],
+    "rank": 3,
+    "action": {
+      "identified": false,
+      "kernel_witness": [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "target_log_change_per_parameter": "1"
+    },
+    "unit_impedance": {
+      "identified": false,
+      "kernel_witness": [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "target_log_change_per_parameter": "1"
+    }
+  },
+  {
+    "family": "charge_energy_time",
+    "W": [
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "-2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ]
+    ],
+    "rank": 3,
+    "action": {
+      "identified": true,
+      "certificate": [
+        "0",
+        "1",
+        "1"
+      ]
+    },
+    "unit_impedance": {
+      "identified": true,
+      "certificate": [
+        "-2",
+        "1",
+        "1"
+      ]
+    }
+  },
+  {
+    "family": "charge_unit_impedance",
+    "W": [
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "-1",
+        "-2"
+      ]
+    ],
+    "rank": 2,
+    "action": {
+      "identified": true,
+      "certificate": [
+        "2",
+        "1"
+      ]
+    },
+    "unit_impedance": {
+      "identified": true,
+      "certificate": [
+        "0",
+        "1"
+      ]
+    }
+  },
+  {
+    "family": "four_independent_units",
+    "W": [
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ]
+    ],
+    "rank": 4,
+    "action": {
+      "identified": true,
+      "certificate": [
+        "0",
+        "1",
+        "2",
+        "-1"
+      ]
+    },
+    "unit_impedance": {
+      "identified": true,
+      "certificate": [
+        "-2",
+        "1",
+        "2",
+        "-1"
+      ]
+    }
+  }
+]
