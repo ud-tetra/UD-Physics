@@ -35,3 +35,13 @@ Next: Constructcompletecontinuousphase/actionreadoutincludinghiddenplane;testgau
 ## 2026-10-23T04:16:40.721815+00:00
 
 READYFORPR:validatorPASS137records;16toolingtestsPASS. Authoredpathsdefaultwhitespacecheck;capturepreserveshistoricalMarkdownhardbreakbytes,fullcheckdisablesblank-at-eolonly. ScopedcandidatePARKEDforrobustnontrivialrecurrencerole;observer/certificatekept. No mainline,sourceledgerorCURRENTchanges.
+
+## Integrated closure
+
+Research PR68 merged at 7ac02333e16cad8d59b96b20246a07c368a10616 from exacthead 0aa9f9d6e02b08e02e59ddf7ad679ec90c7b7a04. Discovery integrity CI 39899521093 PASS with head_sha verified: https://github.com/ud-tetra/UD-Physics/actions/runs/39899521093. Integrated tree f650aa31f95145c4d368c7a6befd26cab6b95857 matches staged research tree.
+
+Claim released by exact-SHA update from 1859827414835c8fef60ad7fc143856f7b59374e to 78d1f5890b12d64cefadfdc4a4c3407ce4e00d51; live ref/task/session/released_from metadata verified. Audit history retained. Only owning session metadata changes after release;other claims,CURRENT,source ledgers andmainline untouched.
+
+Finding: exact S4-covariant edgequadratureeventencoder;active/visible/hiddenranks14/12/2. Generic full-supportrecurrencephase+1;specialnontrivialsignsunstableundervanishing/tieperturbations. Norm1/10trivialphasechambercertified;restrictedwindingcountwithseparatea/carryretained. RobustnontrivialrecurrencerolePARKEDwithreopeningconditions. PhysicalscoreUNSCORED,promotion0.
+
+Next:carrier-completecontinuousphase/actionreadoutincludinghiddencell/surfaceplane;testgaugetransformation,loopnormalizationandgeometric/globalphase distinctionwithphysicalscaleexplicit. Priority88/100isjudgment,notmeasuredclosure.
