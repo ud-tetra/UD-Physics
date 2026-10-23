@@ -8,12 +8,13 @@
   "created_at": "2026-10-23T18:57:38Z",
   "base_revision": "c9c909191eefb885039e098b10b6e01a3dd07877",
   "source_dirty_at_boot": false,
-  "status": "handoff",
-  "claims": {"integration-graphite-port-20261023": {"ref": "refs/heads/claims/integration-graphite-port-20261023", "sha": "52b75ec360fe4edbd17eb9fc6d1a96419eb81b89", "status": "held"}},
+  "status": "complete",
+  "claims": {"integration-graphite-port-20261023": {"ref": "refs/heads/claims/integration-graphite-port-20261023", "sha": "52b75ec360fe4edbd17eb9fc6d1a96419eb81b89", "status": "released", "release_marker_sha": "4992913d68b9b751b9299fbd03dde1fa0eff7216", "released_from_sha": "52b75ec360fe4edbd17eb9fc6d1a96419eb81b89"}},
   "checks": [
     {"command": "python3 scripts/validate.py", "result": "PASS: 153 records; manifest digests and local documentation links valid"},
     {"command": "python3 -m unittest discover -s tests -v", "result": "PASS: 16 tests"}
   ],
+  "integration": {"pr": "https://github.com/ud-tetra/UD-Physics/pull/79", "head": "99e53fc72f65d1941524660df887ad7b40d56e09", "merge": "876cec0dc90292302cd9f3579d1820496a75a419", "ci_run_id": 40007783423, "ci_conclusion": "success", "released_claim": "4992913d68b9b751b9299fbd03dde1fa0eff7216"},
   "finding": "Original graphite entry and integrated state point to the conditional port universality proof without changing versioned preprint claims.",
   "next_action": "Release claim after integration; independent material source and loss calibration remains the physics priority.",
   "mathematical_profile": {
