@@ -1,0 +1,212 @@
+{
+  "edge_order": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "kappa_matrix_mod4": [
+    [
+      1,
+      2,
+      1,
+      1,
+      0,
+      3
+    ],
+    [
+      1,
+      1,
+      2,
+      0,
+      1,
+      1
+    ]
+  ],
+  "directed_edge_classes": [
+    {
+      "edge": [
+        0,
+        1
+      ],
+      "class": [
+        1,
+        1
+      ]
+    },
+    {
+      "edge": [
+        0,
+        2
+      ],
+      "class": [
+        2,
+        1
+      ]
+    },
+    {
+      "edge": [
+        0,
+        3
+      ],
+      "class": [
+        1,
+        2
+      ]
+    },
+    {
+      "edge": [
+        1,
+        0
+      ],
+      "class": [
+        3,
+        3
+      ]
+    },
+    {
+      "edge": [
+        1,
+        2
+      ],
+      "class": [
+        1,
+        0
+      ]
+    },
+    {
+      "edge": [
+        1,
+        3
+      ],
+      "class": [
+        0,
+        1
+      ]
+    },
+    {
+      "edge": [
+        2,
+        0
+      ],
+      "class": [
+        2,
+        3
+      ]
+    },
+    {
+      "edge": [
+        2,
+        1
+      ],
+      "class": [
+        3,
+        0
+      ]
+    },
+    {
+      "edge": [
+        2,
+        3
+      ],
+      "class": [
+        3,
+        1
+      ]
+    },
+    {
+      "edge": [
+        3,
+        0
+      ],
+      "class": [
+        3,
+        2
+      ]
+    },
+    {
+      "edge": [
+        3,
+        1
+      ],
+      "class": [
+        0,
+        3
+      ]
+    },
+    {
+      "edge": [
+        3,
+        2
+      ],
+      "class": [
+        1,
+        3
+      ]
+    }
+  ],
+  "fixed_D_subgroup": [
+    [
+      0,
+      0
+    ]
+  ],
+  "S4_fixed_additive_characters": [
+    [
+      0,
+      0
+    ]
+  ],
+  "equivariant_endomorphisms": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      2,
+      0,
+      0,
+      2
+    ],
+    [
+      3,
+      0,
+      0,
+      3
+    ]
+  ],
+  "natural_map_kernel": "Gamma+Lambda;allintegralgraphcycleskilled",
+  "native_scalar_winding_D_map": "OnlyzeroifdependssolelyonS4-invariant(a,n)",
+  "native_scalar_winding_center_maps": "n->i^(kn),fourchoiceskmod4;notselected",
+  "single_graphwalk_image_size": 13,
+  "frame_adapter_kernel": "4Z",
+  "continuous_state_map_scope": "AnycontinuousDvaluedadapterdefinedonallnonzeroactiveR14statesisconstantforeachn;equivarianceforceszero"
+}
