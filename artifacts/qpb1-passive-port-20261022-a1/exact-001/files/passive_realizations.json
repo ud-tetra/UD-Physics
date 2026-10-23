@@ -1,0 +1,221 @@
+{
+  "cases": [
+    {
+      "C_matrix": [
+        [
+          "3/2",
+          "-1/2"
+        ],
+        [
+          "-1/2",
+          "3/2"
+        ]
+      ],
+      "L_matrix": [
+        [
+          "3/2",
+          "-1/2"
+        ],
+        [
+          "-1/2",
+          "3/2"
+        ]
+      ],
+      "signed_mutual_inductance": "-1/2",
+      "magnetic_coupling_magnitude_ratio": "1/3",
+      "omega_bar": "3/4",
+      "kappa": "1/4",
+      "g_native": "2/3",
+      "tau0": "8/3",
+      "frequencies": [
+        "1",
+        "1/2"
+      ],
+      "Amap": "1",
+      "E_reference": "3/8",
+      "equal_unit_normalmode_energy_gap_over_frequency_gap": "1/2",
+      "physical_state_map": "Phi1=Phi_ref*r1,Phi2=Phi_ref*y2,Q1=-Phi_ref*r2/Z,Q2=Phi_ref*y1/Z"
+    },
+    {
+      "C_matrix": [
+        [
+          "11/6",
+          "-1/3"
+        ],
+        [
+          "-1/3",
+          "11/6"
+        ]
+      ],
+      "L_matrix": [
+        [
+          "275/96",
+          "-25/48"
+        ],
+        [
+          "-25/48",
+          "275/96"
+        ]
+      ],
+      "signed_mutual_inductance": "-25/48",
+      "magnetic_coupling_magnitude_ratio": "2/11",
+      "omega_bar": "88/195",
+      "kappa": "16/195",
+      "g_native": "4/11",
+      "tau0": "195/44",
+      "frequencies": [
+        "8/15",
+        "24/65"
+      ],
+      "Amap": "16/45",
+      "E_reference": "704/8775",
+      "equal_unit_normalmode_energy_gap_over_frequency_gap": "8/45",
+      "physical_state_map": "Phi1=Phi_ref*r1,Phi2=Phi_ref*y2,Q1=-Phi_ref*r2/Z,Q2=Phi_ref*y1/Z"
+    },
+    {
+      "C_matrix": [
+        [
+          "59/35",
+          "-2/7"
+        ],
+        [
+          "-2/7",
+          "59/35"
+        ]
+      ],
+      "L_matrix": [
+        [
+          "7139/2835",
+          "-242/567"
+        ],
+        [
+          "-242/567",
+          "7139/2835"
+        ]
+      ],
+      "signed_mutual_inductance": "-242/567",
+      "magnetic_coupling_magnitude_ratio": "10/59",
+      "omega_bar": "885/1771",
+      "kappa": "150/1771",
+      "g_native": "20/59",
+      "tau0": "3542/885",
+      "frequencies": [
+        "45/77",
+        "105/253"
+      ],
+      "Amap": "1521/539",
+      "E_reference": "1346085/1909138",
+      "equal_unit_normalmode_energy_gap_over_frequency_gap": "1521/1078",
+      "physical_state_map": "Phi1=Phi_ref*r1,Phi2=Phi_ref*y2,Q1=-Phi_ref*r2/Z,Q2=Phi_ref*y1/Z"
+    },
+    {
+      "C_matrix": [
+        [
+          "19/15",
+          "-3/5"
+        ],
+        [
+          "-3/5",
+          "19/15"
+        ]
+      ],
+      "L_matrix": [
+        [
+          "304/135",
+          "-16/15"
+        ],
+        [
+          "-16/15",
+          "304/135"
+        ]
+      ],
+      "signed_mutual_inductance": "-16/15",
+      "magnetic_coupling_magnitude_ratio": "9/19",
+      "omega_bar": "171/224",
+      "kappa": "81/224",
+      "g_native": "18/19",
+      "tau0": "448/171",
+      "frequencies": [
+        "9/8",
+        "45/112"
+      ],
+      "Amap": "25/48",
+      "E_reference": "1425/7168",
+      "equal_unit_normalmode_energy_gap_over_frequency_gap": "25/96",
+      "physical_state_map": "Phi1=Phi_ref*r1,Phi2=Phi_ref*y2,Q1=-Phi_ref*r2/Z,Q2=Phi_ref*y1/Z"
+    },
+    {
+      "C_matrix": [
+        [
+          "17/8",
+          "-7/8"
+        ],
+        [
+          "-7/8",
+          "17/8"
+        ]
+      ],
+      "L_matrix": [
+        [
+          "17/50",
+          "-7/50"
+        ],
+        [
+          "-7/50",
+          "17/50"
+        ]
+      ],
+      "signed_mutual_inductance": "-7/50",
+      "magnetic_coupling_magnitude_ratio": "7/17",
+      "omega_bar": "17/12",
+      "kappa": "7/12",
+      "g_native": "14/17",
+      "tau0": "24/17",
+      "frequencies": [
+        "2",
+        "5/6"
+      ],
+      "Amap": "45/8",
+      "E_reference": "255/64",
+      "equal_unit_normalmode_energy_gap_over_frequency_gap": "45/16",
+      "physical_state_map": "Phi1=Phi_ref*r1,Phi2=Phi_ref*y2,Q1=-Phi_ref*r2/Z,Q2=Phi_ref*y1/Z"
+    },
+    {
+      "C_matrix": [
+        [
+          "88/63",
+          "-1/9"
+        ],
+        [
+          "-1/9",
+          "88/63"
+        ]
+      ],
+      "L_matrix": [
+        [
+          "616/81",
+          "-49/81"
+        ],
+        [
+          "-49/81",
+          "616/81"
+        ]
+      ],
+      "signed_mutual_inductance": "-49/81",
+      "magnetic_coupling_magnitude_ratio": "7/88",
+      "omega_bar": "88/285",
+      "kappa": "7/285",
+      "g_native": "7/44",
+      "tau0": "285/44",
+      "frequencies": [
+        "1/3",
+        "27/95"
+      ],
+      "Amap": "48/175",
+      "E_reference": "704/16625",
+      "equal_unit_normalmode_energy_gap_over_frequency_gap": "24/175",
+      "physical_state_map": "Phi1=Phi_ref*r1,Phi2=Phi_ref*y2,Q1=-Phi_ref*r2/Z,Q2=Phi_ref*y1/Z"
+    }
+  ],
+  "scope": "Ideal positive lumped C,L matrices withsignedmutual orientation;no built apparatus or tolerance validation;exact one-addressed-plane realization,notfulltargetchain."
+}

@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-passive-port-20261022-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-passive-port-20261022",
+  "goal": "Derive an ideal passive physical source/port and test whether independent energy calibration selects a universal native action scale.",
+  "created_at": "2026-10-23T02:38:22.279121+00:00",
+  "base_revision": "127c5fb995cdd218fecc479bccec8ed7a2c2bad0",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-passive-port-20261022": {
+      "ref": "refs/heads/claims/qpb1-passive-port-20261022",
+      "sha": "4b1014cd2a0ba8d6568eb87d8827b3de48bc5ec8",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-passive-port/audit.py --out /workspace/scratch/ed44232d6ecb/passive_port_outputs",
+      "result": "PASS6circuit/preparationfamilies,24amplitudecontrols,12normalmodeenergystates,4coordinatedgatecases,4intervalcorners;no empiricalscore"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS108records,manifestdigests andlocaldocumentationlinks"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    }
+  ],
+  "finding": "Passiveport andfrozenreferencescalecalibrationderived;linearuniversalunitselectorrolePARKED;physicalA0OPEN,UNSCORED,promotion0.",
+  "next_action": "Integrateandreleasetask;nexttestanindependentunit-preparation/source laworadditionalprimitive againsttheclassicalamplitudescale null.",
+  "checkpoint_at": "2026-10-23T02:45:09.260713+00:00",
+  "checkpoint_source": {
+    "revision": "127c5fb995cdd218fecc479bccec8ed7a2c2bad0",
+    "dirty": true
+  }
+}

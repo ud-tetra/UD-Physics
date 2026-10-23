@@ -1,0 +1,166 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-passive-port-20261022-a1",
+  "run_id": "exact-001",
+  "created_at": "2026-10-23T02:45:09.259931+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "Exactidealpassiveport,inverse-designprovenance,correctcanonicalpreparation/readout andactioncalibration;linearuniversalunitroleparked byamplitudescaling;no empiricalscore.",
+  "command": "python3 experiments/qpb1-passive-port/audit.py --out /workspace/scratch/ed44232d6ecb/passive_port_outputs",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "127c5fb995cdd218fecc479bccec8ed7a2c2bad0",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "CALIBRATION_CONTRACT.md",
+      "path": "inputs/001-CALIBRATION_CONTRACT.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-passive-port/CALIBRATION_CONTRACT.md",
+      "sha256": "7531696ce19afdec9de9b3ab02139284683eb1316567b68ea56f092e8a14289b",
+      "size_bytes": 3246
+    },
+    {
+      "input_id": "input-002",
+      "name": "EXTERNAL_SOURCES.json",
+      "path": "inputs/002-EXTERNAL_SOURCES.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-passive-port/EXTERNAL_SOURCES.json",
+      "sha256": "9b2eec0ffb082940ea10d5e49da9481fede6b802df0a7fc78310106d0b99c139",
+      "size_bytes": 1497
+    },
+    {
+      "input_id": "input-003",
+      "name": "README.md",
+      "path": "inputs/003-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-passive-port/README.md",
+      "sha256": "31a92827bbdf75c7ffc5855f7109e2b854a195d8d663dabf3e27ce6634a5fa04",
+      "size_bytes": 11647
+    },
+    {
+      "input_id": "input-004",
+      "name": "SOURCES.json",
+      "path": "inputs/004-SOURCES.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-passive-port/SOURCES.json",
+      "sha256": "fab999c3d28e7ea1ab360fcee9a4b80c9638094f6de46f742afebab62cb990a8",
+      "size_bytes": 2076
+    },
+    {
+      "input_id": "input-005",
+      "name": "SOURCE_ROWS.json",
+      "path": "inputs/005-SOURCE_ROWS.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-passive-port/SOURCE_ROWS.json",
+      "sha256": "9d0137ca6958b4da3ce938eaf8f5a76051f5c1ac2a2ddc235441f05cd4a19bfa",
+      "size_bytes": 8840
+    },
+    {
+      "input_id": "input-006",
+      "name": "audit.py",
+      "path": "inputs/006-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-passive-port/audit.py",
+      "sha256": "9253a81a390a468839deff3bb864ccfcb38319541af992d6ae39039ef71be889",
+      "size_bytes": 10184
+    },
+    {
+      "input_id": "input-007",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/007-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/qpb1-passive-port-20261022-a1/mathematical_receipt.json",
+      "sha256": "fda93107adaf59999f9379544ce4039c580aab5a28380ddb6c164f2fd7acbafe",
+      "size_bytes": 20763
+    },
+    {
+      "input_id": "input-008",
+      "name": "audit.py",
+      "path": "inputs/008-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/audit.py",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b",
+      "size_bytes": 9543
+    },
+    {
+      "input_id": "input-009",
+      "name": "ledger_v0.85.json",
+      "path": "inputs/009-ledger_v0.85.json",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    },
+    {
+      "input_id": "input-010",
+      "name": "C0906.txt",
+      "path": "inputs/010-C0906.txt",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "sha256": "4e5cdc41c1fd93f69b8d80aeb557f5cfdf8b3b335b320ef4b2028bc1b08c6739",
+      "size_bytes": 4381
+    },
+    {
+      "input_id": "input-011",
+      "name": "README.md",
+      "path": "inputs/011-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-source-reservoir/README.md",
+      "sha256": "f7510d60258353b7be8c3bd5a9204ed57db7a556cd623285d47b03541fbb3585",
+      "size_bytes": 12772
+    },
+    {
+      "input_id": "input-012",
+      "name": "audit.py",
+      "path": "inputs/012-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-source-reservoir/audit.py",
+      "sha256": "b19aa94da5c21475187bb5a83c86a317f3b176ea77278672a42aa8cee5de6cee",
+      "size_bytes": 14381
+    },
+    {
+      "input_id": "input-013",
+      "name": "README.md",
+      "path": "inputs/013-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-unit-preparation/README.md",
+      "sha256": "68050601f4208acb96a8651ff8a39ad6befc310cd0d64ed7a59cc938cdc9873f",
+      "size_bytes": 12510
+    }
+  ],
+  "files": [
+    {
+      "path": "files/action_scale_controls.json",
+      "sha256": "6545b9392b217536a74f1c4faed5be7921101c24aa5d917d39947be7f86d0737",
+      "size_bytes": 8133
+    },
+    {
+      "path": "files/dimensional_gate.json",
+      "sha256": "0a8fb50cb57eb63df3312ee62427909b6d517bb22f05f647263d0e4f591c5306",
+      "size_bytes": 824
+    },
+    {
+      "path": "files/gate_matching.json",
+      "sha256": "5175f35a776cc5f3fdce4aea92d5bffe21a04a3c3758e95530f025d66aa975f3",
+      "size_bytes": 1139
+    },
+    {
+      "path": "files/passive_realizations.json",
+      "sha256": "e13214128963f04a6cfa4b9a8c9f493768a0f9362ff93c129e1b0e8632367261",
+      "size_bytes": 4901
+    },
+    {
+      "path": "files/preparation_readout.json",
+      "sha256": "17a74dfade75833561685f3d39d34074f85a7c48aadfb691f3688328b4ef4e91",
+      "size_bytes": 2147
+    },
+    {
+      "path": "files/results.json",
+      "sha256": "56bd654ea3354e995c00156c00f9fe32ee617d262e22b412cc13d49bfc3279fd",
+      "size_bytes": 825
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "families": [
+    {
+      "reference_Amap": "1",
+      "controls": [
+        {
+          "actual_voltage_ratio": "1/2",
+          "fixed_map_support": "1/4",
+          "physical_energy_ratio": "1/4",
+          "raw_twoE_over_w0": "1/4",
+          "support_divided_action_reference": "1",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "1/4"
+        },
+        {
+          "actual_voltage_ratio": "1",
+          "fixed_map_support": "1",
+          "physical_energy_ratio": "1",
+          "raw_twoE_over_w0": "1",
+          "support_divided_action_reference": "1",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "1"
+        },
+        {
+          "actual_voltage_ratio": "2",
+          "fixed_map_support": "4",
+          "physical_energy_ratio": "4",
+          "raw_twoE_over_w0": "4",
+          "support_divided_action_reference": "1",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "4"
+        },
+        {
+          "actual_voltage_ratio": "3",
+          "fixed_map_support": "9",
+          "physical_energy_ratio": "9",
+          "raw_twoE_over_w0": "9",
+          "support_divided_action_reference": "1",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "9"
+        }
+      ]
+    },
+    {
+      "reference_Amap": "16/45",
+      "controls": [
+        {
+          "actual_voltage_ratio": "1/2",
+          "fixed_map_support": "1/4",
+          "physical_energy_ratio": "1/4",
+          "raw_twoE_over_w0": "4/45",
+          "support_divided_action_reference": "16/45",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "4/45"
+        },
+        {
+          "actual_voltage_ratio": "1",
+          "fixed_map_support": "1",
+          "physical_energy_ratio": "1",
+          "raw_twoE_over_w0": "16/45",
+          "support_divided_action_reference": "16/45",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "16/45"
+        },
+        {
+          "actual_voltage_ratio": "2",
+          "fixed_map_support": "4",
+          "physical_energy_ratio": "4",
+          "raw_twoE_over_w0": "64/45",
+          "support_divided_action_reference": "16/45",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "64/45"
+        },
+        {
+          "actual_voltage_ratio": "3",
+          "fixed_map_support": "9",
+          "physical_energy_ratio": "9",
+          "raw_twoE_over_w0": "16/5",
+          "support_divided_action_reference": "16/45",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "16/5"
+        }
+      ]
+    },
+    {
+      "reference_Amap": "1521/539",
+      "controls": [
+        {
+          "actual_voltage_ratio": "1/2",
+          "fixed_map_support": "1/4",
+          "physical_energy_ratio": "1/4",
+          "raw_twoE_over_w0": "1521/2156",
+          "support_divided_action_reference": "1521/539",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "1521/2156"
+        },
+        {
+          "actual_voltage_ratio": "1",
+          "fixed_map_support": "1",
+          "physical_energy_ratio": "1",
+          "raw_twoE_over_w0": "1521/539",
+          "support_divided_action_reference": "1521/539",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "1521/539"
+        },
+        {
+          "actual_voltage_ratio": "2",
+          "fixed_map_support": "4",
+          "physical_energy_ratio": "4",
+          "raw_twoE_over_w0": "6084/539",
+          "support_divided_action_reference": "1521/539",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "6084/539"
+        },
+        {
+          "actual_voltage_ratio": "3",
+          "fixed_map_support": "9",
+          "physical_energy_ratio": "9",
+          "raw_twoE_over_w0": "13689/539",
+          "support_divided_action_reference": "1521/539",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "13689/539"
+        }
+      ]
+    },
+    {
+      "reference_Amap": "25/48",
+      "controls": [
+        {
+          "actual_voltage_ratio": "1/2",
+          "fixed_map_support": "1/4",
+          "physical_energy_ratio": "1/4",
+          "raw_twoE_over_w0": "25/192",
+          "support_divided_action_reference": "25/48",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "25/192"
+        },
+        {
+          "actual_voltage_ratio": "1",
+          "fixed_map_support": "1",
+          "physical_energy_ratio": "1",
+          "raw_twoE_over_w0": "25/48",
+          "support_divided_action_reference": "25/48",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "25/48"
+        },
+        {
+          "actual_voltage_ratio": "2",
+          "fixed_map_support": "4",
+          "physical_energy_ratio": "4",
+          "raw_twoE_over_w0": "25/12",
+          "support_divided_action_reference": "25/48",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "25/12"
+        },
+        {
+          "actual_voltage_ratio": "3",
+          "fixed_map_support": "9",
+          "physical_energy_ratio": "9",
+          "raw_twoE_over_w0": "75/16",
+          "support_divided_action_reference": "25/48",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "75/16"
+        }
+      ]
+    },
+    {
+      "reference_Amap": "45/8",
+      "controls": [
+        {
+          "actual_voltage_ratio": "1/2",
+          "fixed_map_support": "1/4",
+          "physical_energy_ratio": "1/4",
+          "raw_twoE_over_w0": "45/32",
+          "support_divided_action_reference": "45/8",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "45/32"
+        },
+        {
+          "actual_voltage_ratio": "1",
+          "fixed_map_support": "1",
+          "physical_energy_ratio": "1",
+          "raw_twoE_over_w0": "45/8",
+          "support_divided_action_reference": "45/8",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "45/8"
+        },
+        {
+          "actual_voltage_ratio": "2",
+          "fixed_map_support": "4",
+          "physical_energy_ratio": "4",
+          "raw_twoE_over_w0": "45/2",
+          "support_divided_action_reference": "45/8",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "45/2"
+        },
+        {
+          "actual_voltage_ratio": "3",
+          "fixed_map_support": "9",
+          "physical_energy_ratio": "9",
+          "raw_twoE_over_w0": "405/8",
+          "support_divided_action_reference": "45/8",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "405/8"
+        }
+      ]
+    },
+    {
+      "reference_Amap": "48/175",
+      "controls": [
+        {
+          "actual_voltage_ratio": "1/2",
+          "fixed_map_support": "1/4",
+          "physical_energy_ratio": "1/4",
+          "raw_twoE_over_w0": "12/175",
+          "support_divided_action_reference": "48/175",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "12/175"
+        },
+        {
+          "actual_voltage_ratio": "1",
+          "fixed_map_support": "1",
+          "physical_energy_ratio": "1",
+          "raw_twoE_over_w0": "48/175",
+          "support_divided_action_reference": "48/175",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "48/175"
+        },
+        {
+          "actual_voltage_ratio": "2",
+          "fixed_map_support": "4",
+          "physical_energy_ratio": "4",
+          "raw_twoE_over_w0": "192/175",
+          "support_divided_action_reference": "48/175",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "192/175"
+        },
+        {
+          "actual_voltage_ratio": "3",
+          "fixed_map_support": "9",
+          "physical_energy_ratio": "9",
+          "raw_twoE_over_w0": "432/175",
+          "support_divided_action_reference": "48/175",
+          "Aref_if_cPhi_is_chosen_as_new_unit_reference": "432/175"
+        }
+      ]
+    }
+  ],
+  "scaling_proof": "Forfixedlinearcomponents,Phi,Q ->c(Phi,Q) leavesfrequencies andnormalizedpopulations unchanged;physicalenergy andloopactionmultiplybyc^2.",
+  "conditional_energy_estimator": "Amap=2E_ref/omega_bar forafrozenunit-referencepreparation;physicalsourceA0identity remains separate.",
+  "synthetic_interval_Amap": [
+    "66/67",
+    "202/199"
+  ],
+  "interval_corner_checks": 4,
+  "conclusion": "Absolute energy calibration identifies a chosen preparation scale;itdoesnotselectwhichreferenceis thefundamentalUDunit."
+}
