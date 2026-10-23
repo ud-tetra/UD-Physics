@@ -8,12 +8,14 @@
   "created_at": "2026-10-23T15:33:46.615372+00:00",
   "base_revision": "bcb4cb317f8f23c36d8765eb33e4940edbb69192",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "integration-graphite-publication-20261023": {
       "ref": "refs/heads/claims/integration-graphite-publication-20261023",
       "sha": "b797024f401fb10f6ecada0276017c110292aefd",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "9fb82c41de094502cbaf7be0217ce827a2d5cf0a",
+      "released_from_sha": "b797024f401fb10f6ecada0276017c110292aefd"
     }
   },
   "checks": [
@@ -27,7 +29,7 @@
     }
   ],
   "finding": "Integrated-state index links graphite hypothesis, selected archive and OPEN material/kinetic residual.",
-  "next_action": "Merge index PR after CI, release claim and record release marker.",
+  "next_action": "Follow graphite candidate next discriminant under a new task claim; no index follow-up pending.",
   "mathematical_profile": {
     "coefficient_domain": "N/A; documentation integration only",
     "exactness_or_precision_plan": "No new calculation; exact source links and status carried from PR #72",
@@ -38,5 +40,13 @@
   "checkpoint_source": {
     "revision": "bcb4cb317f8f23c36d8765eb33e4940edbb69192",
     "dirty": true
+  },
+  "integration": {
+    "index_pr": "https://github.com/ud-tetra/UD-Physics/pull/75",
+    "index_head": "a5a23882e24ce354caf51046cbe38f2e27fa6da7",
+    "index_merge": "b3a9c3c4ddff95c6959a2c6ce3db74ab98bc8330",
+    "ci_run_id": 39979409591,
+    "ci_conclusion": "success",
+    "released_claim": "9fb82c41de094502cbaf7be0217ce827a2d5cf0a"
   }
 }
