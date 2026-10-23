@@ -37,3 +37,7 @@ Next: Integrate focused PR after CI/review; source independently checked 2D PES,
 ## Integration checkpoint
 
 Research PR #72 merged at `74bbf777d64f5d0d0964cd076967df79250af96c`; Discovery integrity Actions run 39978654127 succeeded on head `8ae3e78f338c148e51ead6f6da86b149dda71363`. After merging the concurrently advanced QPB1 main branch, local validation passed with 145 records and 16 tests. Independent physics review and held-out prediction remain NOT_RUN. Claim release follows this administrative closure.
+
+## Claim release
+
+Administrative closure PR #73 merged at `d395aab46b135329fcf711ee85bef7b23f1055ad` after Discovery integrity run 39978954594 succeeded. The owning held claim `64a49f6ae26d76f6d6cd9f1ba2e8a2b7bfbdfd42` was released through exact-SHA ref update to audit marker `ba915580de0dc75d25dc7e0e314187d5e0f791d1`; this follow-up records ownership only.
