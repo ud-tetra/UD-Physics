@@ -7,6 +7,7 @@
 - No material coefficient, pressure law, kinetic force dataset, or independent experimental replication entered the proof. It is a limitation on attribution, not confirmation of UD physics.
 - Check: `python3 experiments/graphite-port-attribution/verify_port_universality.py` PASS; `python3 scripts/validate.py` PASS (151 records); `python3 -m unittest discover -s tests -v` PASS (16 tests). These are constructor and repository-integrity checks.
 - Handoff: independently calibrate coupling and bath with disjoint data. Freeze the model and conventional baseline before measuring the signed paired-angle residual. If the pure source span fails beyond error, reject that mapping; if it passes, test separately whether the fixed bath predicts force and load response.
+- Closure: research PR #77 merged as `9cf779a95040a0babffa9efe36b1dcc22d12383b` after Discovery integrity CI success (run 40007321220). Exact-SHA claim release marker `ae2bed79a08c08b3ca9da78dbd658e9ad78e3522` verified. Independent physics review NOT_RUN.
 
 ## 2026-10-23T18:54:28.165700+00:00
 
