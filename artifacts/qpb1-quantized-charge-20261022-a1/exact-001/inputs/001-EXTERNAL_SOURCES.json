@@ -1,0 +1,32 @@
+{
+  "retrieved_at_utc": "2026-10-23",
+  "sources": [
+    {
+      "id": "E1",
+      "authors": "Uri Vool; Michel H. Devoret",
+      "url": "https://arxiv.org/html/1610.03438v2",
+      "version": "arXiv:1610.03438v2, 2017-06-09",
+      "sections": [
+        "3.1.2 eq3.2",
+        "3.1.4.1 eq3.11-3.17"
+      ],
+      "use": "Author-provided technical circuit quantization model: canonical flux/charge, LC Hamiltonian, occupation spectrum and vacuum moments. Used as external assumptions; not evidence of a UD correspondence.",
+      "paraphrase": "The quantum circuit model supplies a flux-charge commutator with hbar; LC eigenenergies include a vacuum term and vacuum variances depend on impedance.",
+      "retrieval_ref": "turn24view0"
+    },
+    {
+      "id": "E2",
+      "organization": "NIST",
+      "url": "https://www.nist.gov/programs-projects/applied-single-electron-metrology",
+      "version": "live program page retrieved 2026-10-23",
+      "section": "Description, electron shuttle and I=ef",
+      "paraphrase": "A clocked single-electron shuttle provides a current linked to its cycle rate.",
+      "use": "Supports the charge-transfer primitive only; does not specify our oscillator state or impedance.",
+      "retrieval_ref": "turn24view2"
+    }
+  ],
+  "rejected_or_unused_sources": [
+    "No claims imported from failed arXiv2401.08549 fetch; no Devoret lecture PDF content used."
+  ],
+  "no_external_dataset": "No data imported or empirical score computed."
+}

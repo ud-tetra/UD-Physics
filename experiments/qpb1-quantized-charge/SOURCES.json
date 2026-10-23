@@ -1,0 +1,40 @@
+{
+  "repository": "ud-tetra/UD-Physics",
+  "base_revision": "467e2208fba9da086535bd5b8a6a07f6d6f8e08b",
+  "sources": [
+    {
+      "path": "experiments/qpb1-passive-port/README.md",
+      "sha256": "31a92827bbdf75c7ffc5855f7109e2b854a195d8d663dabf3e27ce6634a5fa04"
+    },
+    {
+      "path": "experiments/qpb1-passive-port/audit.py",
+      "sha256": "9253a81a390a468839deff3bb864ccfcb38319541af992d6ae39039ef71be889"
+    },
+    {
+      "path": "experiments/qpb1-passive-port/CALIBRATION_CONTRACT.md",
+      "sha256": "7531696ce19afdec9de9b3ab02139284683eb1316567b68ea56f092e8a14289b"
+    },
+    {
+      "path": "experiments/qpb1-source-reservoir/README.md",
+      "sha256": "f7510d60258353b7be8c3bd5a9204ed57db7a556cd623285d47b03541fbb3585"
+    },
+    {
+      "path": "experiments/qpb1-unit-preparation/README.md",
+      "sha256": "68050601f4208acb96a8651ff8a39ad6befc310cd0d64ed7a59cc938cdc9873f"
+    },
+    {
+      "path": "experiments/action-normalization-audit/audit.py",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b"
+    },
+    {
+      "path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec"
+    },
+    {
+      "path": "experiments/qpb1-passive-port/SOURCE_ROWS.json",
+      "sha256": "9d0137ca6958b4da3ce938eaf8f5a76051f5c1ac2a2ddc235441f05cd4a19bfa"
+    }
+  ],
+  "upstream_action_source": "ud-tetra/UD@957d443e25008632ab9d9328c162343b6a651ee7",
+  "scope": "Prior exact constructor results imported read-only; no native quantized-charge source or impedance law assumed as established."
+}

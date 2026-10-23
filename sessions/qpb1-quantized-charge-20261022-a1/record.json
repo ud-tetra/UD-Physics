@@ -1,0 +1,44 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-quantized-charge-20261022-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-quantized-charge-20261022",
+  "goal": "Test whether an added quantized-charge source selects the passive-port action scale, including impedance freedom and quantum-state covariance.",
+  "created_at": "2026-10-23T02:53:55.233221+00:00",
+  "base_revision": "467e2208fba9da086535bd5b8a6a07f6d6f8e08b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-quantized-charge-20261022": {
+      "ref": "refs/heads/claims/qpb1-quantized-charge-20261022",
+      "sha": "1def9866adc4b12c1217804f66c8ce05147e0656",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-quantized-charge/audit.py --out /workspace/scratch/ed44232d6ecb/quantized_charge_outputs",
+      "result": "PASS:30 impedance comparisons;15 squeezed;4 correlated;5 displaced-vacuum;6 number-state cases; conditional, no empirical score."
+    },
+    {
+      "command": "Pinned dependency SHA-256 and selected source-row equality checks",
+      "result": "PASS:8 dependency hashes and12 selected v0.85 rows."
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS:112 records;manifest digests and local documentation links."
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS:16 tests."
+    }
+  ],
+  "finding": "Charge alone leaves impedance free; quantum normalization supplies chi and preparation/readout choices. Universal-selector role parked; analogue retained; UNSCORED,promotion0.",
+  "next_action": "Audit native source ledger for a dimensionally complete independent impedance/constitutive selection law; do not select Z from eta2 target.",
+  "checkpoint_at": "2026-10-23T02:57:06.992627+00:00",
+  "checkpoint_source": {
+    "revision": "467e2208fba9da086535bd5b8a6a07f6d6f8e08b",
+    "dirty": true
+  }
+}

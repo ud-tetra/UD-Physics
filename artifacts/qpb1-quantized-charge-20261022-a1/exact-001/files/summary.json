@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "evidence": "EXACT / CONDITIONAL",
+  "impedance_comparisons": 30,
+  "squeezed_cases": 15,
+  "correlated_cases": 4,
+  "displacement_cases": 5,
+  "number_state_cases": 6,
+  "empirical_score": "UNSCORED",
+  "physical_promotion": 0,
+  "scope": "Finite exact fixtures accompany the general proofs in README; no apparatus or universal action scale selected."
+}
