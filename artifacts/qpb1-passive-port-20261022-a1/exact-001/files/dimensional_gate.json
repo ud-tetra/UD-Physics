@@ -1,0 +1,55 @@
+{
+  "dimension_order": [
+    "M",
+    "L",
+    "T",
+    "I"
+  ],
+  "dimensions": {
+    "capacitance": [
+      -1,
+      -2,
+      4,
+      2
+    ],
+    "inductance": [
+      1,
+      2,
+      -2,
+      -2
+    ],
+    "resistance": [
+      1,
+      2,
+      -3,
+      -2
+    ],
+    "time": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "impedance": [
+      1,
+      2,
+      -3,
+      -2
+    ],
+    "flux": [
+      1,
+      2,
+      -2,
+      -1
+    ],
+    "action": [
+      1,
+      2,
+      -1,
+      0
+    ]
+  },
+  "annihilator": "mass exponent +current exponent/2",
+  "result": "No dimensionallyhomogeneousmonomialofC,L,R,time yieldsanactionwithoutanadditionalamplitude/charge/flux/energyprimitive.",
+  "scope": "Declaredpassivelinearparameterfamily;doesnotexcludeotherphysicalprimitivesornonlinear/quantizedsources."
+}
