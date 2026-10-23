@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "qpb1-continuous-phase-20261023",
   "session": "qpb1-continuous-phase-20261023-a1",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-23T15:07:30.570Z",
   "base_revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
   "owned_paths": [
@@ -13,5 +13,7 @@
     "experiments/qpb1-continuous-phase/",
     "candidates/qpb1-continuous-phase/",
     "artifacts/qpb1-continuous-phase-20261023-a1/"
-  ]
+  ],
+  "released_at": "2026-10-23T15:16:53.135Z",
+  "released_from_sha": "dc3f9b2ff367245638a097312052ac14633189b5"
 }
