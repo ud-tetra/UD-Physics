@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "graphite-port-attribution-20261023",
+  "session": "graphite-port-20261023-8f5ca436",
+  "status": "held",
+  "created_at": "2026-10-23T18:51:48Z",
+  "base_revision": "c05709b441da24b04aea6213418d3358a91b3ecc",
+  "owned_paths": [
+    "tasks/graphite-port-attribution-20261023.json",
+    "sessions/graphite-port-20261023-8f5ca436/",
+    "candidates/graphite-port-attribution/",
+    "experiments/graphite-port-attribution/",
+    "artifacts/graphite-port-20261023-8f5ca436/"
+  ]
+}
