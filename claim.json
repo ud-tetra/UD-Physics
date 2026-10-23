@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "qpb1-native-events-20261023",
   "session": "qpb1-native-events-20261023-a1",
   "created_at": "2026-10-23T04:09:27.266Z",
@@ -13,5 +13,7 @@
     "experiments/qpb1-native-events/",
     "candidates/qpb1-native-events/",
     "artifacts/qpb1-native-events-20261023-a1/"
-  ]
+  ],
+  "released_at": "2026-10-23T04:17:55.622Z",
+  "released_from_sha": "1859827414835c8fef60ad7fc143856f7b59374e"
 }
