@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "qpb1-impedance-selection-20261022",
+  "session": "qpb1-impedance-selection-20261022-a1",
+  "created_at": "2026-10-23T03:04:30.212Z",
+  "base_revision": "1b214f66e00e8430fed0ce7c23506da7965bc977",
+  "owned_paths": [
+    "tasks/qpb1-impedance-selection-20261022.json",
+    "sessions/qpb1-impedance-selection-20261022-a1/",
+    "experiments/qpb1-impedance-selection/",
+    "candidates/qpb1-impedance-selection/",
+    "artifacts/qpb1-impedance-selection-20261022-a1/"
+  ]
+}
