@@ -1,0 +1,42 @@
+{
+  "native_target_population": "sin(Theta)^2 for empty target,unit incoming source",
+  "readout_map": "Target-plane projector commutes with joint complex structure;coupling mixes source/target populations. This is invariant under overall joint phase.",
+  "hypothetical_quantum_energy_map": "M=K/2,physical energyoperator=(A0/tau0)*M;Schrodinger equation with hbar is an extra correspondence.",
+  "conditional_Born_population": "sin((eta_A/2)*Theta)^2;eta_A=2 matches the declared native generator",
+  "eta_examples": [
+    {
+      "eta": "1",
+      "native_generator_multiplier": "1/2",
+      "small_pulse_population_curvature_ratio": "1/4"
+    },
+    {
+      "eta": "2",
+      "native_generator_multiplier": "1",
+      "small_pulse_population_curvature_ratio": "1"
+    },
+    {
+      "eta": "3",
+      "native_generator_multiplier": "3/2",
+      "small_pulse_population_curvature_ratio": "9/4"
+    },
+    {
+      "eta": "6",
+      "native_generator_multiplier": "3",
+      "small_pulse_population_curvature_ratio": "9"
+    },
+    {
+      "eta": "10",
+      "native_generator_multiplier": "5",
+      "small_pulse_population_curvature_ratio": "25"
+    }
+  ],
+  "single_full_transfer_endpoint_positive_eta_aliases": [
+    2,
+    6,
+    10,
+    14,
+    18,
+    22
+  ],
+  "scope": "No physical source coupling,energy/readout calibration or quantum identity established;classical coherent oscillators share the native transfer curve. Unknown coupling scale remains confounded with eta."
+}

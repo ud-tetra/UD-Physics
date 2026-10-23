@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb1-source-reservoir-20261022",
+  "goal": "Exact local reservoir transfer,coherent overwrite and outgoing-state/energy/reset accounting",
+  "owned_paths": [
+    "tasks/qpb1-source-reservoir-20261022.json",
+    "sessions/qpb1-source-reservoir-20261022-a1/",
+    "experiments/qpb1-source-reservoir/",
+    "candidates/qpb1-source-reservoir/",
+    "artifacts/qpb1-source-reservoir-20261022-a1/"
+  ],
+  "dependencies": [
+    "qpb1-unit-preparation-20261022"
+  ],
+  "status": "complete",
+  "completion_scope": "Conditional local reservoir mechanism,exact accounting/robustness and cyclecontract complete;physical unit,gate/clock andrefresh implementations OPEN."
+}
