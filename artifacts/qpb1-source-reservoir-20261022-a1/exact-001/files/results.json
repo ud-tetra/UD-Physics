@@ -1,0 +1,20 @@
+{
+  "status": "EXACT_CONDITIONAL_SOURCE_RESERVOIR_PASS",
+  "joint_real_dimension": 17,
+  "active_complex_dimension_under_added_J": 8,
+  "local_port_target_support": "one topcell anditsfourboundaryfaces",
+  "rational_generator_cases": 4,
+  "S4_permutation_cases": 24,
+  "rational_transfer_cases": 192,
+  "exact_swap_cases": 24,
+  "occupied_target_error_cases": 48,
+  "detuning_cases": 12,
+  "cycle_budgets": 4,
+  "main_finding": "Matched reservoir pulse swaps one active target-plane state with the source;old state exits in the reservoir. Isolation and fresh-source/reset accounting remain necessary.",
+  "new_observable": "Invariant target-plane population varies under added coupling,unlike the prior isolated scalar phase.",
+  "source_unit": "Incoming unit support is assumed/prepared,not derived or physically calibrated.",
+  "physical_action_unit": "OPEN",
+  "empirical_status": "UNSCORED",
+  "independent_review": "NOT_PERFORMED",
+  "physical_promotion": 0
+}

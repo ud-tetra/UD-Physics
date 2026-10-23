@@ -1,0 +1,48 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-source-reservoir-20261022-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-source-reservoir-20261022",
+  "goal": "Construct a local source/reservoir preparation model with exact support,phase,energy and reset accounting.",
+  "created_at": "2026-10-23T01:55:00.934269+00:00",
+  "base_revision": "2b133c7889cde7aae9127d0c0fa2036c278884a9",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-source-reservoir-20261022": {
+      "ref": "refs/heads/claims/qpb1-source-reservoir-20261022",
+      "sha": "fcb63977d43e5d1f61b6152f14dd8187f8000111",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-source-reservoir/audit.py --out /workspace/scratch/ed44232d6ecb/source_reservoir_outputs",
+      "result": "PASS4generatorcases,24S4actions,192transfercases,24swaps,48occupiederrorcases,12detuningcases,4cyclebudgets;no empiricalscore"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS103records,digests andlocaldocumentationlinks"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    },
+    {
+      "command": "python3 experiments/qpb1-source-reservoir/audit.py --out /workspace/scratch/ed44232d6ecb/source_reservoir_outputs_v11",
+      "result": "PASS allprior identities plus24normalizedswapreadouts;self-review scopeclarificationv1.1"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS104records after exact-002 amendment;all16toolingtests rerunPASS"
+    }
+  ],
+  "finding": "Exact conditional local swap and outgoing-state accounting complete;fresh source,isolation/reset mechanism andphysicalactionunitOPEN;UNSCORED,promotion0.",
+  "next_action": "Integrate scopedpackage andreleaseclaim;next giveisolation/refreshlocaldynamics andtestboundedstate/detuning/pulseerror repeatability.",
+  "checkpoint_at": "2026-10-23T02:02:37.176205+00:00",
+  "checkpoint_source": {
+    "revision": "2b133c7889cde7aae9127d0c0fa2036c278884a9",
+    "dirty": true
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "cases": [
+    {
+      "g": "1/2",
+      "source_frequency_offset_delta": "0",
+      "kappa_squared": "1/4",
+      "maximum_support_fraction": "1"
+    },
+    {
+      "g": "1/2",
+      "source_frequency_offset_delta": "1/2",
+      "kappa_squared": "5/16",
+      "maximum_support_fraction": "4/5"
+    },
+    {
+      "g": "1/2",
+      "source_frequency_offset_delta": "1",
+      "kappa_squared": "1/2",
+      "maximum_support_fraction": "1/2"
+    },
+    {
+      "g": "1/2",
+      "source_frequency_offset_delta": "2",
+      "kappa_squared": "5/4",
+      "maximum_support_fraction": "1/5"
+    },
+    {
+      "g": "1",
+      "source_frequency_offset_delta": "0",
+      "kappa_squared": "1",
+      "maximum_support_fraction": "1"
+    },
+    {
+      "g": "1",
+      "source_frequency_offset_delta": "1/2",
+      "kappa_squared": "17/16",
+      "maximum_support_fraction": "16/17"
+    },
+    {
+      "g": "1",
+      "source_frequency_offset_delta": "1",
+      "kappa_squared": "5/4",
+      "maximum_support_fraction": "4/5"
+    },
+    {
+      "g": "1",
+      "source_frequency_offset_delta": "2",
+      "kappa_squared": "2",
+      "maximum_support_fraction": "1/2"
+    },
+    {
+      "g": "3/2",
+      "source_frequency_offset_delta": "0",
+      "kappa_squared": "9/4",
+      "maximum_support_fraction": "1"
+    },
+    {
+      "g": "3/2",
+      "source_frequency_offset_delta": "1/2",
+      "kappa_squared": "37/16",
+      "maximum_support_fraction": "36/37"
+    },
+    {
+      "g": "3/2",
+      "source_frequency_offset_delta": "1",
+      "kappa_squared": "5/2",
+      "maximum_support_fraction": "9/10"
+    },
+    {
+      "g": "3/2",
+      "source_frequency_offset_delta": "2",
+      "kappa_squared": "13/4",
+      "maximum_support_fraction": "9/13"
+    }
+  ],
+  "formula": "max addressed support/incoming support = g^2/(g^2+delta^2/4)",
+  "scope": "Empty target,resonant-plane model with constant g and constant bare-frequency detuning;maximum over time,not a fixed-pulse guarantee or arbitrary-control no-go."
+}
