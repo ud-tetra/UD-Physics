@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "qpb1-source-reservoir-20261022",
   "session": "qpb1-source-reservoir-20261022-a1",
   "created_at": "2026-10-23T01:54:08.211Z",
@@ -13,5 +13,7 @@
     "experiments/qpb1-source-reservoir/",
     "candidates/qpb1-source-reservoir/",
     "artifacts/qpb1-source-reservoir-20261022-a1/"
-  ]
+  ],
+  "released_at": "2026-10-23T02:06:17.547Z",
+  "released_from_sha": "fcb63977d43e5d1f61b6152f14dd8187f8000111"
 }
