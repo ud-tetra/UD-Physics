@@ -1,0 +1,52 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "graphite-passive-port-universality-001",
+  "session_id": "graphite-port-20261023-8f5ca436",
+  "candidate_id": "graphite-port-attribution",
+  "question": "What PSD friction tensor does the seven-orbit source port exclude when passive material response is unrestricted?",
+  "evidence_labels": ["EXACT", "CONDITIONAL"],
+  "objects": [
+    {
+      "object_id": "port", "symbol": "S(w)", "object_type": "linear map", "definition": "sum_i w_i M^T P_i B_1^T", "domain": "R^14 internal vertex displacements", "codomain": "R^2 harmonic translation coordinates", "coefficient_domain": "Q for exact source; R for arbitrary weights", "units": "abstract until material map", "basis_orientation": "archived oriented seven-cell honeycomb", "metric_measure": "unit edge metric and output G", "origin": "imported and conditionally adopted", "exact_expression": "S(w) S(w)^T = (w^T Q w) G", "measured_value": null, "uncertainty": null, "source_refs": ["graphite-source-archive"], "assumption_ids": ["physical-port"], "dependency_ids": [], "normalization": "G=[[1,1/2],[1/2,1]]"
+    },
+    {
+      "object_id": "bath", "symbol": "L", "object_type": "positive-semidefinite operator", "definition": "free passive internal low-frequency response", "domain": "R^14", "codomain": "R^14", "coefficient_domain": "R", "units": "unspecified physical response units", "basis_orientation": "same internal vertex ordering as S", "metric_measure": "Euclidean coordinate PSD", "origin": "assumed", "exact_expression": "L = R T R^T", "measured_value": null, "uncertainty": null, "source_refs": [], "assumption_ids": ["free-bath"], "dependency_ids": ["port"], "normalization": "R=S^T(SS^T)^-1"
+    },
+    {
+      "object_id": "response", "symbol": "Gamma_add", "object_type": "2x2 symmetric tensor", "definition": "added low-frequency dissipative response", "domain": "R^2", "codomain": "R^2", "coefficient_domain": "R", "units": "material force/velocity units after calibration", "basis_orientation": "output coordinates of S", "metric_measure": "coordinate PSD; Cartesian conversion invertible", "origin": "conditional derivation", "exact_expression": "S L S^T", "measured_value": null, "uncertainty": null, "source_refs": [], "assumption_ids": ["free-bath"], "dependency_ids": ["port", "bath"], "normalization": "unspecified material scale"
+    }
+  ],
+  "sources": [
+    {"source_id": "graphite-source-archive", "url_or_repo_path": "artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/files/captures/2026-10-22T214428Z-codex-graphite-harmonic-source-49d5bb28-64263b7c-7b88-4f45-a8a9-e0cb34f52956/verify_harmonic_source.py", "version_or_commit": "c05709b441da24b04aea6213418d3358a91b3ecc", "section_or_object_id": "Ks, Q, G, 4Q", "source_status": "integrated prior conditional exact constructor"},
+    {"source_id": "graphite-prior", "url_or_repo_path": "experiments/graphite-superlubricity/README.md", "version_or_commit": "c05709b441da24b04aea6213418d3358a91b3ecc", "section_or_object_id": "weighted source and passive bath", "source_status": "prior Discovery hypothesis"}
+  ],
+  "assumptions": ["physical-port: the abstract source is proposed as a graphite coupling", "free-bath: any 14x14 PSD internal low-frequency L is admitted at each pressure", "no causal frequency response inferred"],
+  "technique_plan": [
+    {"technique": "rational algebra and chain rank", "applicability": "APPLIED", "purpose_or_na_reason": "Use exact archived Q graph Laplacian and G positivity to prove source rank"},
+    {"technique": "spectral/operator factorization", "applicability": "APPLIED", "purpose_or_na_reason": "Construct PSD witness for every target and test source/null limits"},
+    {"technique": "fit/null identifiability", "applicability": "APPLIED", "purpose_or_na_reason": "Compare unrestricted passive bath against proposed source attribution"},
+    {"technique": "integer factorization and modular clock", "applicability": "N/A", "purpose_or_na_reason": "No count divisibility, register, or period is at issue"},
+    {"technique": "physical units and calibration", "applicability": "OPEN", "purpose_or_na_reason": "No independent force, pressure, or bath coefficient data"}
+  ],
+  "integer_fraction_receipt": {"raw_count_expression": "seven three-edge orbit sources; 14 internal vertex coordinates; two output coordinates", "reduced_expression": "rank Q=6; rank S=2 for w outside span(1,...,1)", "factor_origins": ["archived source verifier"], "factorization": "N/A", "divisibility_gcd_lcm": "N/A"},
+  "clock_receipt": {"clock_type": null, "modulus": null, "residue_convention": null, "update_rule": null, "initial_phase": null, "coupling": null, "period_claim": null, "physical_unit_map": null},
+  "dynamics_readout": {"state_space": "R^14 internal low-frequency linearized bath", "generator_or_update": "unspecified; static/low-frequency PSD response L", "initial_boundary_conditions": "none needed for pointwise cone theorem", "conservation_and_sources": "passive L PSD; uniform incidence source cancels", "projection_and_kernel": "S has full output rank for nonuniform weights; internal kernel dimension 12", "physical_mapping": "assumed source and uncalibrated force/velocity readout"},
+  "target_exposure": {"status": "KNOWN_DEVELOPMENT_TARGET", "known_targets": ["21.8 and 38.2 degree angles", "near-zero weak-load friction"], "fitted_parameters_or_formula_choices": ["No friction fit here; earlier seven-orbit source candidate is target-informed"], "search_domain_and_budget": "single archived source family and entire PSD bath cone", "selection_criterion": "mathematical identifiability test", "baseline": "unrestricted conventional passive linear bath"},
+  "calculation_steps": [
+    "Connected weighted Laplacian 4Q has kernel exactly uniform weights, so alpha=w^TQw>0 for every nonuniform w.",
+    "G is positive definite (determinant 3/4); SS^T=alpha G is invertible, so R=S^T(SS^T)^-1 exists and SR=I_2.",
+    "For arbitrary T PSD, L=RTR^T is PSD, and SLS^T=(SR)T(SR)^T=T.",
+    "For uniform w, S=sum_i w_i K_i=0; only the added source channel vanishes.",
+    "For positive gamma at a pressure point, arbitrary local gamma slope retains pointwise nonnegativity on a sufficiently small interval."
+  ],
+  "result": {"exact_expression": "{S(w)L S(w)^T: L symmetric PSD} = PSD_2 for every nonuniform w", "approximation": null, "units": "abstract response units", "precision_and_error": "symbolic proof and rational witness; no measurement precision", "scope": "pointwise static/low-frequency, unrestricted passive internal bath, archived seven-orbit port", "physical_interpretation": "No uniquely UD residual magnitude or load slope follows without independent bath/source calibration"},
+  "verification": [
+    {"method": "analytic right-inverse and PSD factorization", "command_or_proof_path": "experiments/graphite-port-attribution/README.md", "source_revision": "c05709b441da24b04aea6213418d3358a91b3ecc", "actual_result": "PASS exact conditional proof", "review_relationship": "constructor"},
+    {"method": "exact rational constructor", "command_or_proof_path": "python3 experiments/graphite-port-attribution/verify_port_universality.py", "source_revision": "c05709b441da24b04aea6213418d3358a91b3ecc", "actual_result": "PASS four PSD targets and rank/Gram/cancellation", "review_relationship": "constructor"}
+  ],
+  "counterexamples_and_failures": ["Nonuniform w can still yield zero response when the coupled subspace is lossless.", "A first zero-based contrast (1,-1,0,...) has alpha=3/2, not the archived 5/2 example; corrected to (0,1,-1,0,...).", "Pointwise passivity does not imply arbitrary derivative at a differentiable exact zero on a two-sided pressure interval."],
+  "limitations": ["Arbitrary PSD L may violate additional measured material and causality constraints; those must be supplied to get a prediction.", "The theorem does not cover an arbitrary frequency transfer function or establish microscopic UD coupling.", "No new force or load measurement, error model, or independent physics review."],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": ["artifacts/graphite-port-20261023-8f5ca436/exact-001/manifest.json"],
+  "next_discriminant": "Independently calibrate coupling and loss, then freeze a signed paired-angle residual and load-slope prediction before held-out force measurements."
+}

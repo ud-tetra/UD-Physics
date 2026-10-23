@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graphite-port-20261023-8f5ca436",
+  "run_id": "exact-001",
+  "created_at": "2026-10-23T18:54:28.165298+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact seven-orbit full-rank source and PSD bath-cone witness",
+  "command": "python3 experiments/graphite-port-attribution/verify_port_universality.py > /workspace/scratch/9a7ae24f2263/graphite-port-result.json",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "c05709b441da24b04aea6213418d3358a91b3ecc",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "verify_port_universality.py",
+      "path": "inputs/001-verify_port_universality.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-port-attribution/verify_port_universality.py",
+      "sha256": "3fa88621d2b1d9f7ff3f6f9bd59974dad74b3ea6c0d04b4a0e6a9bad4b89427e",
+      "size_bytes": 2379
+    },
+    {
+      "input_id": "input-002",
+      "name": "verify_honeycomb_h1.py",
+      "path": "inputs/002-verify_honeycomb_h1.py",
+      "source_location": "repository",
+      "source_path": "artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/files/captures/2026-10-22T211409Z-codex-graphite-honeycomb-5e20b9a6-101b-4fce-8c91-a1d4070ba2d8/verify_honeycomb_h1.py",
+      "sha256": "451d9935eeb5d1e7eaebfefc45a4a0080601eecb35761534c5a41abc57bb988b",
+      "size_bytes": 4201
+    },
+    {
+      "input_id": "input-003",
+      "name": "verify_harmonic_source.py",
+      "path": "inputs/003-verify_harmonic_source.py",
+      "source_location": "repository",
+      "source_path": "artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/files/captures/2026-10-22T214428Z-codex-graphite-harmonic-source-49d5bb28-64263b7c-7b88-4f45-a8a9-e0cb34f52956/verify_harmonic_source.py",
+      "sha256": "1d0e091e41c7e366c5e5519c67bc64b6bb931480509648a10921352fc64143bf",
+      "size_bytes": 3291
+    }
+  ],
+  "files": [
+    {
+      "path": "files/graphite-port-result.json",
+      "sha256": "4c5d20ca7e8a9c3a8a225788af717ec57804bde4a852569c6f44eafc58d8731a",
+      "size_bytes": 508
+    }
+  ]
+}

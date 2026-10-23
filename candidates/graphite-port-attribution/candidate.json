@@ -1,0 +1,25 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-port-attribution",
+  "session_id": "graphite-port-20261023-8f5ca436",
+  "question": "What quantitative residual or load restriction survives a general passive bath for the proposed UD seven-orbit source?",
+  "status": "PARKED",
+  "evidence": ["EXACT", "CONDITIONAL", "OPEN"],
+  "assumptions": [
+    "The archived seven-orbit source S(w) is adopted as a proposed physical map.",
+    "The internal low-frequency bath is an arbitrary symmetric PSD operator at each pressure.",
+    "The conventional baseline and contact readout are treated as separately fixed for attribution."
+  ],
+  "physical_mapping": "HYPOTHESIS: harmonic quotient source to graphite displacement-force coupling; material weights, damping and force units OPEN",
+  "target_exposure": "Observed paired angles and weak load dependence were known; no held-out friction dataset used in this calculation",
+  "fitted_choices": [],
+  "sources": [
+    "artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/files/captures/2026-10-22T214428Z-codex-graphite-harmonic-source-49d5bb28-64263b7c-7b88-4f45-a8a9-e0cb34f52956/verify_harmonic_source.py",
+    "experiments/graphite-superlubricity/README.md"
+  ],
+  "baseline": "Ordinary honeycomb/moiré coincidence plus independently measured material PES, contact and loss; an unrestricted passive conventional bath is observationally equivalent at the output",
+  "result": "EXACT/CONDITIONAL: rank S=2 for every nonuniform orbit weight and {SLS^T:L PSD} is the entire PSD cone in 2D; with pressure-varying L, the local positive-friction load slope is unrestricted. Uniform weights force this added channel to zero.",
+  "next_discriminant": "Measure source cross-Hessian and loss independently, restrict admissible L and w before a held-out signed paired-angle force/load test",
+  "mathematical_receipts": ["candidates/graphite-port-attribution/mathematical_receipt.json"]
+}
