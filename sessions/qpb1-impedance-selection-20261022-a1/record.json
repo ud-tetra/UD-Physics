@@ -1,0 +1,44 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-impedance-selection-20261022-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-impedance-selection-20261022",
+  "goal": "Audit pinned native sources for an impedance or constitutive law that independently selects the charge-referenced action scale.",
+  "created_at": "2026-10-23T03:04:55.772133+00:00",
+  "base_revision": "1b214f66e00e8430fed0ce7c23506da7965bc977",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-impedance-selection-20261022": {
+      "ref": "refs/heads/claims/qpb1-impedance-selection-20261022",
+      "sha": "36ffa89761c898f43707377c989423e1e905c935",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-impedance-selection/audit.py --out /workspace/scratch/ed44232d6ecb/impedance_selection_outputs",
+      "result": "PASS:723 ledger rows screened;23 selected rows checked;3 retained upstream source byte identities;6 anchor families;6 ratio fixtures. Initial pre-capture excerpt splitter corrected after line-count assertion."
+    },
+    {
+      "command": "Upstream Git blob and supplied/import attachment SHA-256 comparison",
+      "result": "PASS:5 retrieved upstream document identities;2 attached source/import byte identities. Source availability metadata:9/11 loose files and55/55 ZIP entries placeholders;bulk ZIP not imported."
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS:116 records;manifest digests and local documentation links."
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS:16 tests."
+    }
+  ],
+  "finding": "No electrical selector admitted from audited sources;Z=lambda A0/q0^2;source alpha conflict explicit;UNSCORED,promotion0.",
+  "next_action": "Construct an explicit S4-invariant charge/field-energy candidate as a new hypothesis,then derive port dynamics and test dimensionless coefficient selection.",
+  "checkpoint_at": "2026-10-23T03:11:23.568132+00:00",
+  "checkpoint_source": {
+    "revision": "1b214f66e00e8430fed0ce7c23506da7965bc977",
+    "dirty": true
+  }
+}
