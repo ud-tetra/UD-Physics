@@ -1,0 +1,292 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb1-quantized-charge-v1",
+  "session_id": "qpb1-quantized-charge-20261022-a1",
+  "candidate_id": "qpb1-quantized-charge",
+  "question": "Does granted quantized transferred charge determine the native action map independently of impedance and quantum-state conventions?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "charge-reference",
+      "symbol": "e",
+      "object_type": "conditional model object",
+      "definition": "Granted positive transferred charge; stored port means are a stronger separate premise",
+      "domain": "two-node classical mean carrier",
+      "codomain": "physical preparation/action readout",
+      "coefficient_domain": "positive real symbols; rational fixtures; integer occupation",
+      "units": "charge e; impedance Z; action A_map",
+      "basis_orientation": "canonical [Phi,Q]=i chi; source quarter-turn inherited; common operator domains stated in README",
+      "metric_measure": "positive C,L energy; covariance positive with determinant bound",
+      "origin": "assumed and derived as explicitly distinguished in README",
+      "exact_expression": "A_map=e^2 Z",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "E1",
+        "E2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [],
+      "normalization": "native support unit is an added reference assignment; no automatic A_map=A0"
+    },
+    {
+      "object_id": "rescaling",
+      "symbol": "s",
+      "object_type": "conditional model object",
+      "definition": "Positive component and impedance intervention preserving W",
+      "domain": "balanced ideal positive C,L family",
+      "codomain": "physical preparation/action readout",
+      "coefficient_domain": "positive real symbols; rational fixtures; integer occupation",
+      "units": "s dimensionless",
+      "basis_orientation": "canonical [Phi,Q]=i chi; source quarter-turn inherited; common operator domains stated in README",
+      "metric_measure": "positive C,L energy; covariance positive with determinant bound",
+      "origin": "assumed and derived as explicitly distinguished in README",
+      "exact_expression": "Z_s=sZ,C_s=C/s,L_s=sL,A_s=sA",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "E1",
+        "E2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [],
+      "normalization": "native support unit is an added reference assignment; no automatic A_map=A0"
+    },
+    {
+      "object_id": "quantum-state",
+      "symbol": "rho,chi,u,v,c",
+      "object_type": "conditional model object",
+      "definition": "Noncompact isolated-mode state with finite second moments; chi external",
+      "domain": "L2(R,dPhi); quantum density operators with specified domains",
+      "codomain": "physical preparation/action readout",
+      "coefficient_domain": "positive real symbols; rational fixtures; integer occupation",
+      "units": "u,v,c,chi action",
+      "basis_orientation": "canonical [Phi,Q]=i chi; source quarter-turn inherited; common operator domains stated in README",
+      "metric_measure": "positive C,L energy; covariance positive with determinant bound",
+      "origin": "assumed and derived as explicitly distinguished in README",
+      "exact_expression": "uv-c^2>=chi^2/4;2<E>/omega=e^2 Z+u+v",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "E1",
+        "E2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [],
+      "normalization": "native support unit is an added reference assignment; no automatic A_map=A0"
+    },
+    {
+      "object_id": "readout",
+      "symbol": "n,E_total,E_excess",
+      "object_type": "conditional model object",
+      "definition": "Occupation and energy convention; not transferred electron count",
+      "domain": "one harmonic mode; n nonnegative integer",
+      "codomain": "physical preparation/action readout",
+      "coefficient_domain": "positive real symbols; rational fixtures; integer occupation",
+      "units": "n dimensionless; E energy",
+      "basis_orientation": "canonical [Phi,Q]=i chi; source quarter-turn inherited; common operator domains stated in README",
+      "metric_measure": "positive C,L energy; covariance positive with determinant bound",
+      "origin": "assumed and derived as explicitly distinguished in README",
+      "exact_expression": "2E_total/omega=(2n+1)chi;2E_excess/omega=2n chi",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2",
+        "E1",
+        "E2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "dependency_ids": [],
+      "normalization": "native support unit is an added reference assignment; no automatic A_map=A0"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "url_or_repo_path": "experiments/qpb1-passive-port/README.md",
+      "version_or_commit": "467e2208fba9da086535bd5b8a6a07f6d6f8e08b",
+      "section_or_object_id": "v1.0 balanced LC dictionary and reference action",
+      "source_status": "Prior exact conditional constructor result"
+    },
+    {
+      "source_id": "S2",
+      "url_or_repo_path": "experiments/qpb1-quantized-charge/SOURCE_ROWS.json",
+      "version_or_commit": "ud-tetra/UD@957d443e25008632ab9d9328c162343b6a651ee7; archive v0.85/scientific v0.43",
+      "section_or_object_id": "O10,O14,O15,Q282-Q288 plus inherited selected context",
+      "source_status": "Read-only source excerpts; numeric eta remains OPEN"
+    },
+    {
+      "source_id": "E1",
+      "url_or_repo_path": "https://arxiv.org/html/1610.03438v2",
+      "version_or_commit": "arXiv:1610.03438v2, 2017-06-09",
+      "section_or_object_id": [
+        "3.1.2 eq3.2",
+        "3.1.4.1 eq3.11-3.17"
+      ],
+      "source_status": "External model conventions; not UD evidence"
+    },
+    {
+      "source_id": "E2",
+      "url_or_repo_path": "https://www.nist.gov/programs-projects/applied-single-electron-metrology",
+      "version_or_commit": "live program page retrieved 2026-10-23",
+      "section_or_object_id": "Description, electron shuttle and I=ef",
+      "source_status": "External model conventions; not UD evidence"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Ideal balanced lumped port L=Z^2 C and prior fixed native dictionary; no parasitic or apparatus claim."
+    },
+    {
+      "id": "A2",
+      "statement": "Grant external counted charge e. Canonical source mean Q2=e and zero other means require a separate preparation response."
+    },
+    {
+      "id": "A3",
+      "statement": "Optional isolated noncompact quantum mode with [Phi,Q]=i chi and U=exp(-iHt/chi); chi externally supplied, not derived."
+    },
+    {
+      "id": "A4",
+      "statement": "Explicit energy baseline and A_map=A0 identification are separate bridge choices; eta2 is an exposed target."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Exact rational linear algebra and scale intervention",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Preserve full physical/native generator and frequencies while varying action scale."
+    },
+    {
+      "technique": "Covariance positivity/Cauchy-Schwarz; harmonic occupation algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Separate displacement energy, vacuum/covariance and number-state excitations."
+    },
+    {
+      "technique": "Integers and fractions",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "n in 0..5 checks occupation algebra; all fixtures reduced fractions, no hbar decimal target."
+    },
+    {
+      "technique": "Prime factorization/modular clocks/topology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No divisibility, finite-register, chain or refinement question is needed; do not mine number coincidences."
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2*(n+1/2) and 2*n",
+    "reduced_expression": "2n+1 total; 2n excess",
+    "factor_origins": [
+      "2 from the declared energy-to-action proxy",
+      "1/2 from the added oscillator vacuum premise"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous linear oscillator",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "z_dot=-i omega z+i sqrt(Z) I(t)",
+    "initial_phase": "zero means before drive; Q=e reference is a separate endpoint choice",
+    "coupling": "prior g=2kappa/omega_bar; isolated mode for covariance and drive examples",
+    "period_claim": "2pi/omega for one isolated undriven mode; no new finite-clock claim",
+    "physical_unit_map": "tau0=2/omega_bar; unchanged by impedance rescaling"
+  },
+  "dynamics_readout": {
+    "state_space": "Full two-node R4 mean carrier for scaling; isolated L2(R) mode for quantum-state comparison",
+    "generator_or_update": "Prior physical G versus native G; quantum U uses the same chi as CCR",
+    "initial_boundary_conditions": "Reference means Phi=0,Q=(0,e); covariance not silently zero; finite-energy domains in report",
+    "conservation_and_sources": "Undriven energy conserved; source-drive current changes state; transferred count alone fixes integral I, not resonant component",
+    "projection_and_kernel": "Do not substitute number state, coherent state or normalized native ray for one another",
+    "physical_mapping": "A_map=e^2 Z conditional on the reference preparation; A0 identification OPEN"
+  },
+  "target_exposure": {
+    "status": "EXPLORATORY_AFTER_ETA2_EXPOSURE",
+    "known_targets": [
+      "eta_A=2 under prior postulated QPB1 bridge",
+      "standard external quantum oscillator conventions"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Balanced port is earlier inverse design",
+      "Charge reference and quantum model are added hypotheses",
+      "Z=2hbar/e^2 is discussed only as rejected target-selection circularity, not adopted"
+    ],
+    "search_domain_and_budget": "Six component fixtures x five scalings;15 squeezed,4 correlated,5 displacement,6 number-state fixtures. No empirical fitting/search.",
+    "selection_criterion": "Does an unselected scale or state/readout choice remain?",
+    "baseline": "Prior classical port with free reference amplitude"
+  },
+  "calculation_steps": [
+    "Derive positive-real impedance scaling preserving W and native G while A scales.",
+    "Solve driven mean LC response; same integrated current can yield different final action.",
+    "Derive determinant covariance bound from CCR/Cauchy-Schwarz, expand energy and equality condition.",
+    "Compare covariance/occupation formulas and total versus excess energy; check exact fixtures."
+  ],
+  "result": {
+    "exact_expression": "A_map=e^2 Z; A_s=s A;2<E>/omega=e^2 Z+u+v>=e^2 Z+chi; one-excitation excess=2chi but total=3chi",
+    "approximation": null,
+    "units": "action",
+    "precision_and_error": "Exact conditional algebra; finite rational fixtures; no measured uncertainty",
+    "scope": "Charge-only selection parked within balanced linear port; no universal all-quantum-model no-go",
+    "physical_interpretation": "HYPOTHESIS only; UNSCORED, promotion0"
+  },
+  "verification": [
+    {
+      "method": "Exact rational matrix/covariance/occupation constructor checks plus analytic proof",
+      "command_or_proof_path": "python3 experiments/qpb1-quantized-charge/audit.py --out /workspace/scratch/ed44232d6ecb/quantized_charge_outputs",
+      "source_revision": "467e2208fba9da086535bd5b8a6a07f6d6f8e08b",
+      "actual_result": "PASS30 impedance comparisons,15 squeezed,4 correlated,5 displacement,6 number-state cases",
+      "review_relationship": "constructor; no independent empirical replication"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Continuous impedance rescaling at fixed charge and native dynamics defeats charge-only scale selection.",
+    "Same transferred charge can have zero final mean oscillator energy after a full-period constant current drive.",
+    "Fixed means with squeezed covariance yield distinct total energies.",
+    "Sharp noncompact oscillator charge is not a normalizable finite-energy state.",
+    "Target-selected Z or assumed chi=hbar does not independently recover hbar."
+  ],
+  "limitations": [
+    "No actual source, device, calibration dataset, quantum channel or uncertainty budget supplied.",
+    "One-mode covariance formula is not full coupled-system total energy.",
+    "Finite fixtures are not proofs over all Hilbert domains; general conditional arguments are documented.",
+    "No claim that the native ledger supplies an impedance selection law; that search is the next task."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-quantized-charge-20261022-a1/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Audit native ledger for an actual independently source-bound constitutive/impedance selection law; otherwise retain only calibrated analogue role."
+}

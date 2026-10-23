@@ -1,0 +1,238 @@
+{
+  "squeezed": [
+    {
+      "chi": "1",
+      "t": "1/4",
+      "u": "1/8",
+      "v": "2",
+      "covariance_action": "17/8",
+      "excess_over_vacuum": "9/8"
+    },
+    {
+      "chi": "1",
+      "t": "1/2",
+      "u": "1/4",
+      "v": "1",
+      "covariance_action": "5/4",
+      "excess_over_vacuum": "1/4"
+    },
+    {
+      "chi": "1",
+      "t": "1",
+      "u": "1/2",
+      "v": "1/2",
+      "covariance_action": "1",
+      "excess_over_vacuum": "0"
+    },
+    {
+      "chi": "1",
+      "t": "2",
+      "u": "1",
+      "v": "1/4",
+      "covariance_action": "5/4",
+      "excess_over_vacuum": "1/4"
+    },
+    {
+      "chi": "1",
+      "t": "4",
+      "u": "2",
+      "v": "1/8",
+      "covariance_action": "17/8",
+      "excess_over_vacuum": "9/8"
+    },
+    {
+      "chi": "2/3",
+      "t": "1/4",
+      "u": "1/12",
+      "v": "4/3",
+      "covariance_action": "17/12",
+      "excess_over_vacuum": "3/4"
+    },
+    {
+      "chi": "2/3",
+      "t": "1/2",
+      "u": "1/6",
+      "v": "2/3",
+      "covariance_action": "5/6",
+      "excess_over_vacuum": "1/6"
+    },
+    {
+      "chi": "2/3",
+      "t": "1",
+      "u": "1/3",
+      "v": "1/3",
+      "covariance_action": "2/3",
+      "excess_over_vacuum": "0"
+    },
+    {
+      "chi": "2/3",
+      "t": "2",
+      "u": "2/3",
+      "v": "1/6",
+      "covariance_action": "5/6",
+      "excess_over_vacuum": "1/6"
+    },
+    {
+      "chi": "2/3",
+      "t": "4",
+      "u": "4/3",
+      "v": "1/12",
+      "covariance_action": "17/12",
+      "excess_over_vacuum": "3/4"
+    },
+    {
+      "chi": "7/5",
+      "t": "1/4",
+      "u": "7/40",
+      "v": "14/5",
+      "covariance_action": "119/40",
+      "excess_over_vacuum": "63/40"
+    },
+    {
+      "chi": "7/5",
+      "t": "1/2",
+      "u": "7/20",
+      "v": "7/5",
+      "covariance_action": "7/4",
+      "excess_over_vacuum": "7/20"
+    },
+    {
+      "chi": "7/5",
+      "t": "1",
+      "u": "7/10",
+      "v": "7/10",
+      "covariance_action": "7/5",
+      "excess_over_vacuum": "0"
+    },
+    {
+      "chi": "7/5",
+      "t": "2",
+      "u": "7/5",
+      "v": "7/20",
+      "covariance_action": "7/4",
+      "excess_over_vacuum": "7/20"
+    },
+    {
+      "chi": "7/5",
+      "t": "4",
+      "u": "14/5",
+      "v": "7/40",
+      "covariance_action": "119/40",
+      "excess_over_vacuum": "63/40"
+    }
+  ],
+  "correlated": [
+    {
+      "u": "1/2",
+      "v": "1/2",
+      "c": "0",
+      "chi": "1",
+      "determinant": "1/4",
+      "covariance_action": "1"
+    },
+    {
+      "u": "1",
+      "v": "1/2",
+      "c": "1/2",
+      "chi": "1",
+      "determinant": "1/4",
+      "covariance_action": "3/2"
+    },
+    {
+      "u": "2",
+      "v": "209/360",
+      "c": "-1/3",
+      "chi": "1",
+      "determinant": "21/20",
+      "covariance_action": "929/360"
+    },
+    {
+      "u": "3/4",
+      "v": "4/3",
+      "c": "0",
+      "chi": "1",
+      "determinant": "1",
+      "covariance_action": "25/12"
+    }
+  ],
+  "displaced_vacua": [
+    {
+      "Z": "1/3",
+      "chi": "3/7",
+      "charge_mean": "2/5",
+      "mean_occupation": "14/225",
+      "total_action_proxy": "253/525",
+      "excess_action_proxy": "4/75"
+    },
+    {
+      "Z": "1/2",
+      "chi": "3/7",
+      "charge_mean": "2/5",
+      "mean_occupation": "7/75",
+      "total_action_proxy": "89/175",
+      "excess_action_proxy": "2/25"
+    },
+    {
+      "Z": "1",
+      "chi": "3/7",
+      "charge_mean": "2/5",
+      "mean_occupation": "14/75",
+      "total_action_proxy": "103/175",
+      "excess_action_proxy": "4/25"
+    },
+    {
+      "Z": "2",
+      "chi": "3/7",
+      "charge_mean": "2/5",
+      "mean_occupation": "28/75",
+      "total_action_proxy": "131/175",
+      "excess_action_proxy": "8/25"
+    },
+    {
+      "Z": "7/3",
+      "chi": "3/7",
+      "charge_mean": "2/5",
+      "mean_occupation": "98/225",
+      "total_action_proxy": "421/525",
+      "excess_action_proxy": "28/75"
+    }
+  ],
+  "number_states": [
+    {
+      "n": 0,
+      "mean_Q": "0",
+      "total_action_over_chi": "1",
+      "vacuum_subtracted_action_over_chi": "0"
+    },
+    {
+      "n": 1,
+      "mean_Q": "0",
+      "total_action_over_chi": "3",
+      "vacuum_subtracted_action_over_chi": "2"
+    },
+    {
+      "n": 2,
+      "mean_Q": "0",
+      "total_action_over_chi": "5",
+      "vacuum_subtracted_action_over_chi": "4"
+    },
+    {
+      "n": 3,
+      "mean_Q": "0",
+      "total_action_over_chi": "7",
+      "vacuum_subtracted_action_over_chi": "6"
+    },
+    {
+      "n": 4,
+      "mean_Q": "0",
+      "total_action_over_chi": "9",
+      "vacuum_subtracted_action_over_chi": "8"
+    },
+    {
+      "n": 5,
+      "mean_Q": "0",
+      "total_action_over_chi": "11",
+      "vacuum_subtracted_action_over_chi": "10"
+    }
+  ]
+}
