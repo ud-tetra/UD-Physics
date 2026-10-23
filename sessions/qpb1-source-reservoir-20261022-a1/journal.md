@@ -49,3 +49,9 @@ Before remote publication, clarified that a direct-sum modal swap is not a tenso
 Captured artifacts/qpb1-source-reservoir-20261022-a1/exact-002 (CONDITIONAL): Version1.1 adds24normalized swap readouts anddirect-sum/tensor-product scope;earlier transfer/energy results unchanged;originalexact-001 preserved.
 
 Final pre-integration validation afterv1.1:PASS104records/digests/links andPASS16toolingtests.
+
+## Integrated handoff
+
+PR52 merged at52a3e89c714b8d412b183192dd5524605a5bf0bb. Exact-head CI39887674655 passed for12e894eb1aa86f86d99590d3129f1d809cc5d5f3. Uploaded tree matched local staged treebb0ba6a6ac4655fb4968c50db3ee139f7c90ca5d. Claim released by exact-SHA compare-and-swap;live marker and owner/payload verified at495d117e859345e623452c54a79129d77094be1d. Research artifacts exact-001 and latestexact-002 immutable. No CURRENT/mainline edits.
+
+Scoped source/reservoir mechanism complete under stated assumptions. Physicalsource/port/energy/preparation map remains the highest bridge dependency:more finite native control calculations alone cannot select dimensionalA0. Next specify that map and independent calibration before interpreting coupled gaps as a physical action anchor. Isolation/source-refresh dynamics remain a supporting mechanism frontier. Direct-sum amplitude swap isnot a tensor-product quantum reset. EmpiricalUNSCORED;promotion0. Further research requires a new task claim;thisclosure modifies only the session record/journal.

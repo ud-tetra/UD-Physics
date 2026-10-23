@@ -8,12 +8,13 @@
   "created_at": "2026-10-23T01:55:00.934269+00:00",
   "base_revision": "2b133c7889cde7aae9127d0c0fa2036c278884a9",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "qpb1-source-reservoir-20261022": {
       "ref": "refs/heads/claims/qpb1-source-reservoir-20261022",
-      "sha": "fcb63977d43e5d1f61b6152f14dd8187f8000111",
-      "status": "held"
+      "sha": "495d117e859345e623452c54a79129d77094be1d",
+      "status": "released",
+      "released_from_sha": "fcb63977d43e5d1f61b6152f14dd8187f8000111"
     }
   },
   "checks": [
@@ -39,10 +40,21 @@
     }
   ],
   "finding": "Exact conditional local swap and outgoing-state accounting complete;fresh source,isolation/reset mechanism andphysicalactionunitOPEN;UNSCORED,promotion0.",
-  "next_action": "Integrate scopedpackage andreleaseclaim;next giveisolation/refreshlocaldynamics andtestboundedstate/detuning/pulseerror repeatability.",
+  "next_action": "Under a new task claim,specify a physical source-and-port map with independent preparation/energy calibration;test whether the coupled energy/frequency gap identifies A0 rather than a chosen amplitude reference. Gate/isolation/source refresh remain supporting mechanism gaps.",
   "checkpoint_at": "2026-10-23T02:02:37.176205+00:00",
   "checkpoint_source": {
     "revision": "2b133c7889cde7aae9127d0c0fa2036c278884a9",
     "dirty": true
+  },
+  "integration": {
+    "research_pr": "https://github.com/ud-tetra/UD-Physics/pull/52",
+    "research_head": "12e894eb1aa86f86d99590d3129f1d809cc5d5f3",
+    "research_merge": "52a3e89c714b8d412b183192dd5524605a5bf0bb",
+    "ci_run_id": 39887674655,
+    "ci_url": "https://github.com/ud-tetra/UD-Physics/actions/runs/39887674655",
+    "ci_head": "12e894eb1aa86f86d99590d3129f1d809cc5d5f3",
+    "ci_conclusion": "success",
+    "tree": "bb0ba6a6ac4655fb4968c50db3ee139f7c90ca5d",
+    "released_claim": "495d117e859345e623452c54a79129d77094be1d"
   }
 }
