@@ -1,0 +1,37 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-finite-pairing",
+  "session_id": "qpb1-finite-pairing-20261023-a1",
+  "question": "Does the finite tetrahedral discriminant phase algebra select a primitive holonomy/action normalization?",
+  "status": "ACTIVE",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "EuclideanK4flow latticeanddual fromintegral-dualityaudit;ascendingorientations,lexicographicedges;D=Lambda#/Lambda.",
+    "Q/Zphases embeddedintoU1byr->exp(2pi*i*r);finiteWeylHilbertcarrierC[D] is added,nottheoriginalnativeUDcarrier.",
+    "Centralcharacterk and optionalquadraticrefinement are explicitchoices;fullinheritedS4actionretained.",
+    "Optionaltestdictionary mapsnormalizednativewindingactionpi*A0*n tophysicalphaseexp(i*S/hbar) andto i^(kn);thisisnot source-derived.",
+    "Knownnativefrequency2,QPB1eta2 andpriorlattice/energyresults alreadyexposed;no empiricalfit orindependentprediction."
+  ],
+  "physical_mapping": "OPEN;finitephasealgebra hasno independentlyselectedphysicalaction/charge/time map;UNSCORED,promotion0",
+  "target_exposure": "EXPLORATORY_AFTER_NATIVE_FREQUENCY2_ETA2_AND_INTEGRAL_LATTICE_AUDIT",
+  "fitted_choices": [
+    "New finite complex representation and phase convention",
+    "Optional Hodge-winding comparison dictionary is an explicit test hypothesis;not adopted as derived"
+  ],
+  "sources": [
+    "experiments/qpb1-finite-pairing/SOURCES.json",
+    "experiments/qpb1-finite-pairing/SOURCE_ROWS.json",
+    "experiments/qpb1-finite-pairing/EXTERNAL_SOURCES.json"
+  ],
+  "baseline": "Conventional discriminant quadratic functions and finite abelian Weyl algebra",
+  "result": "Perfectb onZ4\u00b2;faithfulcentralcharactersk1,3;16refinements,4homogeneous,S4orbits4/6/6,nofixedrefinement;common2q onZ2\u00b2;finiteWeyldim16;endpointloseswinding;optionaleta=k/2mod2",
+  "next_discriminant": "Construct a typed native lifted-loop-history map preserving composition and S4 covariance;test its kernel againstO09 andcompare invariantparitywithface-indexedfourthrootreadouts.",
+  "retained_role": "Exact finite phase algebra,face-refinement structure and invariant parity quotient",
+  "unsupported_role": "Automatic primitive physical holonomy/action normalization or reconstruction of unrestricted action from finite endpoints"
+}

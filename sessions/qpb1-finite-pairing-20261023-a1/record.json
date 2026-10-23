@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-finite-pairing-20261023-a1",
+  "runtime": "Codex;model identifier unknown;Git/compute and GitHub connector",
+  "task": "qpb1-finite-pairing-20261023",
+  "goal": "Construct finite discriminant pairing,phase/refinement choices and primitive holonomy source test",
+  "created_at": "2026-10-23T03:46:02.101903+00:00",
+  "base_revision": "a4e588d84ad8b7acf080a93d40a63e27b0aeb48c",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-finite-pairing-20261023": {
+      "ref": "refs/heads/claims/qpb1-finite-pairing-20261023",
+      "sha": "31a458387d27671e807934ed0d2b0fc0409d04fc",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-finite-pairing/audit.py --out /workspace/scratch/ed44232d6ecb/finite_pairing_outputs",
+      "result": "PASS;9sourcehashes,15rows,256pairs,64forms,24S4,16refinements,1728shifts,8192Weylchecks,512traces,27aliases,2etafamilies"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS129records,digests,locallinks"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL:perfectb,Z4centralcharacters1/3,16refinementsnoneS4fixed,fourfacehomogeneouschoicesandcommonZ2\u00b2parityshadow;finiteWeyldim16;physicalnormalizationOPEN,UNSCORED,promotion0",
+  "next_action": "Constructtypednativehistorymapwithcomposition/S4covariance;testkernelagainstO09andcompareparity/fourthrootreadouts.",
+  "checkpoint_at": "2026-10-23T03:51:39.408432+00:00",
+  "checkpoint_source": {
+    "revision": "a4e588d84ad8b7acf080a93d40a63e27b0aeb48c",
+    "dirty": true
+  }
+}

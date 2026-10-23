@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb1-finite-pairing-20261023",
+  "goal": "Audit finite discriminant pairing and independently selected action-phase normalization",
+  "owned_paths": [
+    "tasks/qpb1-finite-pairing-20261023.json",
+    "sessions/qpb1-finite-pairing-20261023-a1/",
+    "experiments/qpb1-finite-pairing/",
+    "candidates/qpb1-finite-pairing/",
+    "artifacts/qpb1-finite-pairing-20261023-a1/"
+  ],
+  "dependencies": [
+    "qpb1-integral-duality-20261022"
+  ],
+  "status": "complete"
+}
