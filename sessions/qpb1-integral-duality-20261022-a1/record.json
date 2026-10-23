@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-integral-duality-20261022-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-integral-duality-20261022",
+  "goal": "Audit tetrahedral integral cycle/cut lattices and dual pairing, canonical duality normalization, integer preparation energy and dynamical compatibility.",
+  "created_at": "2026-10-23T03:30:08.660248+00:00",
+  "base_revision": "d7980ade886ff95083e1bb17641ab5af8be2265a",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-integral-duality-20261022": {
+      "ref": "refs/heads/claims/qpb1-integral-duality-20261022",
+      "sha": "f7d45a66b97c331788d9d04454c0da86f0bad95a",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-integral-duality/audit.py --out /workspace/scratch/ed44232d6ecb/integral_duality_outputs",
+      "result": "PASS;exact rational constructor checks;see exact-002 outputs"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS125records;firstattempt failed unsupportedmetadata label,correctedwithsupersedingcapture"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL:Z4xZ4 lattice discriminant;naturaldualpair isotropicexchange obstructed;integeredgedipole/face1/3atequalweights;scaledgridlambda remainsfree;UNSCORED,promotion0",
+  "next_action": "Construct finite discriminant pairing and classify phase/characterchoices;seekindependentUDloop/holonomypremise beforeactionnormalization.",
+  "checkpoint_at": "2026-10-23T03:40:32.436509+00:00",
+  "checkpoint_source": {
+    "revision": "d7980ade886ff95083e1bb17641ab5af8be2265a",
+    "dirty": true
+  }
+}

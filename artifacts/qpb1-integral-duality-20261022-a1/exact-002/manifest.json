@@ -1,0 +1,165 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-integral-duality-20261022-a1",
+  "run_id": "exact-002",
+  "created_at": "2026-10-23T03:40:56.748053+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "Supersedes exact-001 metadata-only evidence-label correction;identical exact mathematical outputs",
+  "command": "python3 experiments/qpb1-integral-duality/audit.py --out /workspace/scratch/ed44232d6ecb/integral_duality_outputs",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "d7980ade886ff95083e1bb17641ab5af8be2265a",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "README.md",
+      "path": "inputs/001-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-integral-duality/README.md",
+      "sha256": "6a6c8f10003bf53814e0a32ab7bcee7c83b35087ada439bbce050a940636ecb9",
+      "size_bytes": 14149
+    },
+    {
+      "input_id": "input-002",
+      "name": "LATTICE_CONTRACT.md",
+      "path": "inputs/002-LATTICE_CONTRACT.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-integral-duality/LATTICE_CONTRACT.md",
+      "sha256": "bbb715f1cf9560e6acd947c74ac4e0673f390058095ef7dc2474e0c466ba86c7",
+      "size_bytes": 2537
+    },
+    {
+      "input_id": "input-003",
+      "name": "EXTERNAL_SOURCES.json",
+      "path": "inputs/003-EXTERNAL_SOURCES.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-integral-duality/EXTERNAL_SOURCES.json",
+      "sha256": "8d86162e6fccf993f05b08989a5f1384d65bed88a7af926cf686efc642abdef3",
+      "size_bytes": 728
+    },
+    {
+      "input_id": "input-004",
+      "name": "SOURCES.json",
+      "path": "inputs/004-SOURCES.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-integral-duality/SOURCES.json",
+      "sha256": "0e77eeb8c21eb9e53c86a1e3bb1ab1a900d0f5167c81da172f492d5a0fcd93a8",
+      "size_bytes": 1505
+    },
+    {
+      "input_id": "input-005",
+      "name": "audit.py",
+      "path": "inputs/005-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-integral-duality/audit.py",
+      "sha256": "1c394cf71a40c3d10424bfb2ad3e41b0bf2a1744d41b0e4d0a7b335adc85d9b5",
+      "size_bytes": 12454
+    },
+    {
+      "input_id": "input-006",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/006-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/qpb1-integral-duality-20261022-a1/mathematical_receipt.json",
+      "sha256": "3fc4c7cd8ceb112a698a4c84befa5eb8741e35c097e683f1575e959f556cf220",
+      "size_bytes": 16985
+    },
+    {
+      "input_id": "input-007",
+      "name": "candidate.json",
+      "path": "inputs/007-candidate.json",
+      "source_location": "repository",
+      "source_path": "candidates/qpb1-integral-duality/candidate.json",
+      "sha256": "21cbf3ef73f22d80d92aded990ab9cea9c9f1ee0808ee228d7b59e462e612f18",
+      "size_bytes": 2412
+    },
+    {
+      "input_id": "input-008",
+      "name": "audit.py",
+      "path": "inputs/008-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-charge-field/audit.py",
+      "sha256": "8964aa424d7f49ba0d9e5d6d32d70cc089e7d2c5c8be7de1f5bbcfeb67901f23",
+      "size_bytes": 10026
+    },
+    {
+      "input_id": "input-009",
+      "name": "README.md",
+      "path": "inputs/009-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-charge-field/README.md",
+      "sha256": "dba737746be6296889d8e30bd72c7ecfe8c7a04a8b72d8de75eaadc4c00ed4e9",
+      "size_bytes": 13648
+    },
+    {
+      "input_id": "input-010",
+      "name": "COEFFICIENT_CONTRACT.md",
+      "path": "inputs/010-COEFFICIENT_CONTRACT.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-charge-field/COEFFICIENT_CONTRACT.md",
+      "sha256": "da51f7a4f0e699977c87221d82d5d09dc3e21cb32d80ac53824ca4d8ca4fa049",
+      "size_bytes": 1884
+    },
+    {
+      "input_id": "input-011",
+      "name": "audit.py",
+      "path": "inputs/011-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/audit.py",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b",
+      "size_bytes": 9543
+    },
+    {
+      "input_id": "input-012",
+      "name": "ledger_v0.85.json",
+      "path": "inputs/012-ledger_v0.85.json",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    },
+    {
+      "input_id": "input-013",
+      "name": "UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "path": "inputs/013-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "source_location": "repository",
+      "source_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    },
+    {
+      "input_id": "input-014",
+      "name": "UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "path": "inputs/014-UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "source_location": "repository",
+      "source_path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "sha256": "8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4",
+      "size_bytes": 4882
+    }
+  ],
+  "files": [
+    {
+      "path": "files/discriminant_classes.json",
+      "sha256": "a78abef86c83953d1d62b880f849ac77b34b069b41e76c42e7897818128d580b",
+      "size_bytes": 7147
+    },
+    {
+      "path": "files/lattice_matrices.json",
+      "sha256": "6fe59dadd30f41c67425fefbcf2fd56496f127ded9e12e5dc728096912e5f345",
+      "size_bytes": 2865
+    },
+    {
+      "path": "files/preparation_duality.json",
+      "sha256": "9b885fd44e6639f8d1d7f4b6651250941839c9edeecc4b429627a2502ce6222d",
+      "size_bytes": 2589
+    },
+    {
+      "path": "files/summary.json",
+      "sha256": "32034b17d79894c13992789a5f4729b5be90ed2844dac5710bf2b57ef9ef24f2",
+      "size_bytes": 584
+    }
+  ]
+}

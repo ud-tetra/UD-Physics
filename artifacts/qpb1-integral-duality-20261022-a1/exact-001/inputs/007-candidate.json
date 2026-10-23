@@ -1,0 +1,37 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-integral-duality",
+  "session_id": "qpb1-integral-duality-20261022-a1",
+  "question": "Audit tetrahedral integral cycle/cut lattices and dual pairing, canonical duality normalization, integer preparation energy and dynamical compatibility.",
+  "status": "ACTIVE",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Filled K4 tetrahedron, ascending orientations and lexicographic edges, unit Euclidean edge metric;new real canonical R12 field model retained, distinct from native active R14.",
+    "Integer edge coordinate/momentum grids are added classical preparation or strobe hypotheses, not derived compactness, a CCR, quantum dynamics or measured charge.",
+    "Positive S4-invariant energy uses independent uL,uT,v;optional identical-edge electric weight imposes uL=uT.",
+    "Frequency2 matching uT*v=1 is inverse design after target exposure;lambda=(1/2)sqrt(uT/v).",
+    "Alternative equal/scaled-cycle phase grids are separate conventions;relative scale r and charge unit q0 are unselected."
+  ],
+  "physical_mapping": "OPEN; no physical charge/flux/action anchor selected;UNSCORED,promotion0",
+  "target_exposure": "EXPLORATORY_AFTER_NATIVE_FREQUENCY2_ETA2_AND_REAL_1OVER6_EXPOSURE",
+  "fitted_choices": [
+    "Added integer preparation hypotheses and optional alternative cycle grids",
+    "Frequency2 retained by uT*v=1;no empirical optimization"
+  ],
+  "sources": [
+    "experiments/qpb1-integral-duality/SOURCES.json",
+    "experiments/qpb1-integral-duality/EXTERNAL_SOURCES.json"
+  ],
+  "baseline": "Conventional Euclidean integral graph flow/cut lattices and real quadratic discrete gauge dynamics",
+  "result": "Discriminant Z4xZ4;natural dual-pair scalar exchange obstructed;integer-edge dipole/face ratio=(uL+uT)/(6uT),1/3 at uL=uT;scaled cycle grids leave lambda=r^2 free;whole-grid strobes Z2/Z4",
+  "next_discriminant": "Construct the exact finite discriminant pairing and classify phase/character choices;seek an independent primitive UD loop/holonomy rule before using this algebra as an action-normalization bridge.",
+  "retained_role": "Exact lattice/preparation constraints for the hypothetical field model",
+  "unsupported_role": "Automatic absolute action or impedance selector;all-time integer closure under the unchanged continuous oscillator"
+}

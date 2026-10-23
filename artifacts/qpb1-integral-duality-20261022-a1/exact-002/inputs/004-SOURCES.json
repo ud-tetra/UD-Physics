@@ -1,0 +1,35 @@
+{
+  "repository": "ud-tetra/UD-Physics",
+  "base_revision": "d7980ade886ff95083e1bb17641ab5af8be2265a",
+  "sources": [
+    {
+      "path": "experiments/qpb1-charge-field/audit.py",
+      "sha256": "8964aa424d7f49ba0d9e5d6d32d70cc089e7d2c5c8be7de1f5bbcfeb67901f23"
+    },
+    {
+      "path": "experiments/qpb1-charge-field/README.md",
+      "sha256": "dba737746be6296889d8e30bd72c7ecfe8c7a04a8b72d8de75eaadc4c00ed4e9"
+    },
+    {
+      "path": "experiments/qpb1-charge-field/COEFFICIENT_CONTRACT.md",
+      "sha256": "da51f7a4f0e699977c87221d82d5d09dc3e21cb32d80ac53824ca4d8ca4fa049"
+    },
+    {
+      "path": "experiments/action-normalization-audit/audit.py",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b"
+    },
+    {
+      "path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63"
+    },
+    {
+      "path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "sha256": "8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4"
+    }
+  ],
+  "scope": "Lattice analysis of the explicitly hypothetical field model;no mainline promotion or source status amendment. The uploaded historical source bytes still match imports;missingGenesisPNG not used."
+}
