@@ -1,0 +1,187 @@
+{
+  "cases": [
+    {
+      "u_L": "1/2",
+      "u_T": "1/2",
+      "v": "2",
+      "frequency_squared": "4",
+      "lambda_squared": "1/16",
+      "E_static_dipole": "1/8",
+      "E_face_cycle": "3/4",
+      "static_to_cycle_energy_ratio": "1/6",
+      "full_Hessian_rank": 9,
+      "S4_checks": 24,
+      "finite_state_checks": 3,
+      "frequency": "2",
+      "lambda_coefficient": "1/4",
+      "unit_mode_charge_support": "1/4"
+    },
+    {
+      "u_L": "1",
+      "u_T": "1",
+      "v": "1",
+      "frequency_squared": "4",
+      "lambda_squared": "1/4",
+      "E_static_dipole": "1/4",
+      "E_face_cycle": "3/2",
+      "static_to_cycle_energy_ratio": "1/6",
+      "full_Hessian_rank": 9,
+      "S4_checks": 24,
+      "finite_state_checks": 3,
+      "frequency": "2",
+      "lambda_coefficient": "1/2",
+      "unit_mode_charge_support": "1/2"
+    },
+    {
+      "u_L": "2",
+      "u_T": "2",
+      "v": "1/2",
+      "frequency_squared": "4",
+      "lambda_squared": "1",
+      "E_static_dipole": "1/2",
+      "E_face_cycle": "3",
+      "static_to_cycle_energy_ratio": "1/6",
+      "full_Hessian_rank": 9,
+      "S4_checks": 24,
+      "finite_state_checks": 3,
+      "frequency": "2",
+      "lambda_coefficient": "1",
+      "unit_mode_charge_support": "1"
+    },
+    {
+      "u_L": "3",
+      "u_T": "3",
+      "v": "1/3",
+      "frequency_squared": "4",
+      "lambda_squared": "9/4",
+      "E_static_dipole": "3/4",
+      "E_face_cycle": "9/2",
+      "static_to_cycle_energy_ratio": "1/6",
+      "full_Hessian_rank": 9,
+      "S4_checks": 24,
+      "finite_state_checks": 3,
+      "frequency": "2",
+      "lambda_coefficient": "3/2",
+      "unit_mode_charge_support": "3/2"
+    },
+    {
+      "u_L": "4",
+      "u_T": "4",
+      "v": "1/4",
+      "frequency_squared": "4",
+      "lambda_squared": "4",
+      "E_static_dipole": "1",
+      "E_face_cycle": "6",
+      "static_to_cycle_energy_ratio": "1/6",
+      "full_Hessian_rank": 9,
+      "S4_checks": 24,
+      "finite_state_checks": 3,
+      "frequency": "2",
+      "lambda_coefficient": "2",
+      "unit_mode_charge_support": "2"
+    },
+    {
+      "u_L": "7/3",
+      "u_T": "7/3",
+      "v": "3/7",
+      "frequency_squared": "4",
+      "lambda_squared": "49/36",
+      "E_static_dipole": "7/12",
+      "E_face_cycle": "7/2",
+      "static_to_cycle_energy_ratio": "1/6",
+      "full_Hessian_rank": 9,
+      "S4_checks": 24,
+      "finite_state_checks": 3,
+      "frequency": "2",
+      "lambda_coefficient": "7/6",
+      "unit_mode_charge_support": "7/6"
+    },
+    {
+      "u_L": "3/2",
+      "u_T": "2/3",
+      "v": "5/7",
+      "frequency_squared": "40/21",
+      "lambda_squared": "7/30",
+      "E_static_dipole": "3/8",
+      "E_face_cycle": "1",
+      "static_to_cycle_energy_ratio": "3/8",
+      "full_Hessian_rank": 9,
+      "S4_checks": 24,
+      "finite_state_checks": 3
+    },
+    {
+      "u_L": "2/5",
+      "u_T": "7/4",
+      "v": "3/2",
+      "frequency_squared": "21/2",
+      "lambda_squared": "7/24",
+      "E_static_dipole": "1/10",
+      "E_face_cycle": "21/8",
+      "static_to_cycle_energy_ratio": "4/105",
+      "full_Hessian_rank": 9,
+      "S4_checks": 24,
+      "finite_state_checks": 3
+    },
+    {
+      "u_L": "5",
+      "u_T": "1/3",
+      "v": "2",
+      "frequency_squared": "8/3",
+      "lambda_squared": "1/24",
+      "E_static_dipole": "5/4",
+      "E_face_cycle": "1/2",
+      "static_to_cycle_energy_ratio": "5/2",
+      "full_Hessian_rank": 9,
+      "S4_checks": 24,
+      "finite_state_checks": 3
+    },
+    {
+      "u_L": "3",
+      "u_T": "1",
+      "v": "1",
+      "frequency_squared": "4",
+      "lambda_squared": "1/4",
+      "E_static_dipole": "3/4",
+      "E_face_cycle": "3/2",
+      "static_to_cycle_energy_ratio": "1/2",
+      "full_Hessian_rank": 9,
+      "S4_checks": 24,
+      "finite_state_checks": 3,
+      "frequency": "2",
+      "lambda_coefficient": "1/2",
+      "unit_mode_charge_support": "1/2"
+    }
+  ],
+  "canonical_duality_cases": [
+    {
+      "sigma": "1/4",
+      "u_T": "1/2",
+      "v": "2",
+      "lambda": "1/4"
+    },
+    {
+      "sigma": "1/2",
+      "u_T": "1",
+      "v": "1",
+      "lambda": "1/2"
+    },
+    {
+      "sigma": "1",
+      "u_T": "2",
+      "v": "1/2",
+      "lambda": "1"
+    },
+    {
+      "sigma": "3/2",
+      "u_T": "3",
+      "v": "1/3",
+      "lambda": "3/2"
+    },
+    {
+      "sigma": "2",
+      "u_T": "4",
+      "v": "1/4",
+      "lambda": "2"
+    }
+  ]
+}
