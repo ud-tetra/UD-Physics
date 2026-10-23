@@ -35,3 +35,9 @@
 2026-10-22T23:38Z HANDOFF: Draft PR45 receives this conditional theorem on owned paths only; await integrity CI and nonconstructor review. Avoid overlapping held PR44. No mainline export.
 
 2026-10-22T23:46Z VERSIONED CORRECTION: Intermediate time-dependent volume inequality used strict < on the *closed* interval, false precisely at u=0 where reference volume ratio and envelope equal1. Captured 003 kept immutable. Corrected source SHORTTUBE.md and explicit SHORTTUBE_ERRATUM.md; captured new shorttube-004 SHA256 manifest with identical code and result. Final strict constant positive-length/orientation theorem unchanged; no model or fit adjustment.
+
+2026-10-23T01:55Z CONTINUE: verified newest main 2b133c7889cde7aae9127d0c0fa2036c278884a9, held task ownership unchanged and separate held PR44 Greenbounds task; 3 core mechanical source blobs byte-identical.
+2026-10-23T01:58Z EXACT: derived original-alpha all180-housing-phase nonlinear positive-length/volume-domain certificate to u=9/10 using direct housing-to-anchor relative Duhamel, shared kinetic velocity bound, exact sine average; struts>11/1250, all20 oriented cells positive. No changes to model or fitted nu interval; target-selected horizon disclosed.
+2026-10-23T02:00Z CHECK: local Fraction source PASS, separate SymPy/star norm and numeric sine diagnostic PASS; mathematical proof of sine inequality in RELATIVE_TUBE.md. Constructor checks only.
+2026-10-23T02:02Z CAPTURE: immutable relative-tube-005 includes 5 exact-source input copies, proof and result with SHA256 manifest. Older shorttube-003/004 correction and original failures preserved.
+2026-10-23T02:04Z HANDOFF: full u100 coherence, hardware and physical calibration OPEN; pending PR45 CI and independent proof review. Coordinate with PR44 rather than editing that owner's branch.
