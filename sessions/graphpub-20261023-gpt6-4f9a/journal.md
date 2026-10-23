@@ -33,3 +33,7 @@ Next: review the focused PR; independently measure/check off-line 2D PES with re
 Checkpoint (handoff): Imported and verified 44 development captures plus two-page graphite preprint; exact angle and conditional source rule documented; signed kinetic residual remains open.
 
 Next: Integrate focused PR after CI/review; source independently checked 2D PES, damping and force data before predictive test.
+
+## Integration checkpoint
+
+Research PR #72 merged at `74bbf777d64f5d0d0964cd076967df79250af96c`; Discovery integrity Actions run 39978654127 succeeded on head `8ae3e78f338c148e51ead6f6da86b149dda71363`. After merging the concurrently advanced QPB1 main branch, local validation passed with 145 records and 16 tests. Independent physics review and held-out prediction remain NOT_RUN. Claim release follows this administrative closure.

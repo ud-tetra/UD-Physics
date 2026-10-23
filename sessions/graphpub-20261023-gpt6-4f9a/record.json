@@ -8,7 +8,7 @@
   "created_at": "2026-10-23T15:18:13.944559+00:00",
   "base_revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
   "source_dirty_at_boot": true,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "graphite-session-publication-20261023": {
       "ref": "refs/heads/claims/graphite-session-publication-20261023",
@@ -31,7 +31,7 @@
     }
   ],
   "finding": "Imported and verified 44 development captures plus two-page graphite preprint; exact angle and conditional source rule documented; signed kinetic residual remains open.",
-  "next_action": "Integrate focused PR after CI/review; source independently checked 2D PES, damping and force data before predictive test.",
+  "next_action": "Independent 2D PES, material loss and source calibration, then a frozen signed paired-angle residual/load test; no mainline export authorized.",
   "mathematical_profile": {
     "coefficient_domain": "Z/Q for finite boundary maps and triangular coincidence; R for response matrices and measured material parameters",
     "exactness_or_precision_plan": "Exact symbolic angle, ranks, and source cancellation; numerical first-principles source replay with original precision, no invented force error bars",
@@ -47,5 +47,16 @@
   "checkpoint_source": {
     "revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
     "dirty": true
+  },
+  "integration": {
+    "research_pr": "https://github.com/ud-tetra/UD-Physics/pull/72",
+    "research_head": "8ae3e78f338c148e51ead6f6da86b149dda71363",
+    "research_merge": "74bbf777d64f5d0d0964cd076967df79250af96c",
+    "ci_run_id": 39978654127,
+    "ci_url": "https://github.com/ud-tetra/UD-Physics/actions/runs/39978654127",
+    "ci_head": "8ae3e78f338c148e51ead6f6da86b149dda71363",
+    "ci_conclusion": "success",
+    "tree": "2fdcaf77504807bd20c8dd835fa69fc77d89a031",
+    "independent_physics_review": "NOT_RUN"
   }
 }
