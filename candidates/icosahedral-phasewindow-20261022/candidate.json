@@ -50,7 +50,7 @@
   ],
   "baseline": "Original E_h<=Ep/40000 full180-phase linear numerical window (housing energy<=.4566661, linear breathing>=.8135618); unchanged failure nu=.02 low beta/cf0",
   "result": "EXACT/CONDITIONAL housing-only all-time strut length>554/1125, oriented cell volumes in ((19/20)^(3/2),(21/20)^(3/2)) of reference at enlarged E_h. NUMERICAL 450-row 50-coefficient 9-node 180-phase linear breathing at factor 1.5 covers nu [.04,.05] with min neighbor overlap .0003100047, full housing ringdown upper .4566661 unchanged. Full nonlinear full-pulse all-phase u100 guarantee OPEN. EXACT/CONDITIONAL shorttube-003: original alpha0=1/10 with enlarged E_h in the unchanged full nonlinear 560-state assembly preserves all 120 housing struts>13/1500 and all oriented cell ratios (1/125,729/125) for every u<=2/5, all initial housing phases. No u100 result. Follow-up exact conditional original alpha=.1, every 180 housing phase at Eh<=51/20000000: full nonlinear strut lengths>11/1250 and all20 oriented cell volumes positive (27/10^6,7645373/10^6) through u<=9/10, with no u100 dynamical performance guarantee. | rank3-stress-009: exact rank-3 9-vertex induced partial flat-cell witness U9<1/20; exact PSD shell adjacency stress. Full12 barrier remains OPEN; this is not physical collapse under pulse.",
-  "next_discriminant": "Full12 rank3 global energy minimization certificate, controlling reference-affine and nonaffine shell modes; test against rank4 and 9-patch adversarial witnesses.",
+  "next_discriminant": "Seek nonlinear u<=100 bound on reference nonaffine shape projector ||Z(u)||F <=1/40, or prove stronger global 12-vertex shape-energy confinement without replacing rank3; Green work remains separately owned PR44.",
   "mathematical_receipts": [
     "sessions/phasewindow-20261022-gpt6-7c41/mathematical_receipt.json",
     "sessions/phasewindow-20261022-gpt6-7c41/shorttube_receipt.json",
@@ -76,5 +76,14 @@
     "manifest": "artifacts/phasewindow-20261022-gpt6-7c41/gram-rank-008/manifest.json",
     "target_exposure": "postselected ambient dimension and rationalization from exposed numerical target; 17 dimension/seed experiments; not independent",
     "mainline_export": false
+  },
+  "nonaffine_full12_extension": {
+    "record": "affine-barrier-010",
+    "evidence": "EXACT_CONDITIONAL",
+    "statement": "Any actual 3D full12 shell cell flattened at U<=1360051/20000000 requires nonaffine reference projector norm ||Z||_F>1/40; no unconditional global energy barrier or u100 dynamics certified.",
+    "proof": "experiments/icosahedral-phasewindow-20261022/NONAFFINE_THRESHOLD.md",
+    "capture": "artifacts/phasewindow-20261022-gpt6-7c41/affine-barrier-010/manifest.json",
+    "target_exposure": "threshold and case bins selected after previous failed relaxations and pulse target known",
+    "limitation": "Full nonlinear Z(u) upper bound, strut safety, coherence and independent physical validation OPEN"
   }
 }
