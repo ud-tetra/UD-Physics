@@ -35,3 +35,13 @@ Next: Constructtypednativehistorymapwithcomposition/S4covariance;testkernelagain
 ## 2026-10-23T03:51:55.162830+00:00
 
 READY FOR PR:validatorPASS129records;16toolingtestsPASS. Authoredpathsdefaultwhitespacecheck;byte-preservedhistoricalledgerMarkdownhardbreakspacesretainedincapture,fullcheckusesblank-at-eoldisabled. No mainline/sourceledger/sharedCURRENTchanges;constructorverificationonly.
+
+## Integrated closure
+
+Research PR64 merged at 0a058176d9dd079b6aad8fa530cd8093f1fcf43c from exacthead ed96c8f7497aedc9b242e2fb3455325eb9b3b481. Discovery integrity CI 39897321413 PASS, head_sha verified: https://github.com/ud-tetra/UD-Physics/actions/runs/39897321413. Integrated tree 462cdca4ba0faf3ddeb0a2c937f7d11997db12e2 matches staged research tree.
+
+Claim released by exact-SHA update from 31a458387d27671e807934ed0d2b0fc0409d04fc to 1c7201dea6b038173a5a3e34925230f11caec477; live ref and owner/task/released_from payload verified. Coordination audit history retained;otherclaims untouched. This closure changes only the owning session record and journal, with no further scientific changes.
+
+Finding:perfect discriminant pairing;no S4-invariant scalar primitive quadratic refinement;four homogeneous face choices,common invariant Z2² sign shadow;finite Weyl representation verified. Endpoint phases lose unrestricted winding/action. Physical normalization OPEN,scoreUNSCORED,promotion0.
+
+Next: construct a typed native lifted-loop-history map preserving composition andS4 covariance;test its kernel againstO09 and compare invariant parity with face-indexed fourth-root readouts. Priority89/100 is judgment,not measuredclosure.

@@ -8,12 +8,16 @@
   "created_at": "2026-10-23T03:46:02.101903+00:00",
   "base_revision": "a4e588d84ad8b7acf080a93d40a63e27b0aeb48c",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "qpb1-finite-pairing-20261023": {
       "ref": "refs/heads/claims/qpb1-finite-pairing-20261023",
       "sha": "31a458387d27671e807934ed0d2b0fc0409d04fc",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "1c7201dea6b038173a5a3e34925230f11caec477",
+      "released_from_sha": "31a458387d27671e807934ed0d2b0fc0409d04fc",
+      "released_at": "2026-10-23T03:52:55.382Z",
+      "verified": true
     }
   },
   "checks": [
@@ -36,5 +40,22 @@
   "checkpoint_source": {
     "revision": "a4e588d84ad8b7acf080a93d40a63e27b0aeb48c",
     "dirty": true
-  }
+  },
+  "integration": {
+    "research_pr": 64,
+    "url": "https://github.com/ud-tetra/UD-Physics/pull/64",
+    "head_sha": "ed96c8f7497aedc9b242e2fb3455325eb9b3b481",
+    "merge_sha": "0a058176d9dd079b6aad8fa530cd8093f1fcf43c",
+    "tree_sha": "462cdca4ba0faf3ddeb0a2c937f7d11997db12e2",
+    "ci": {
+      "id": 39897321413,
+      "head_sha": "ed96c8f7497aedc9b242e2fb3455325eb9b3b481",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ud-tetra/UD-Physics/actions/runs/39897321413"
+    },
+    "release_verified": true
+  },
+  "completed_at": "2026-10-23T03:53:20.847441+00:00",
+  "closure_scope": "Owning session record/journal only;no substantive research after release"
 }
