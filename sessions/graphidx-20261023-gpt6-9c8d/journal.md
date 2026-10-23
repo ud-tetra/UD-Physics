@@ -17,3 +17,7 @@ Claim acquired via connector at `b797024f401fb10f6ecada0276017c110292aefd` on ve
 Checkpoint (handoff): Integrated-state index links graphite hypothesis, selected archive and OPEN material/kinetic residual.
 
 Next: Merge index PR after CI, release claim and record release marker.
+
+## Integration and release
+
+Index PR #75 merged at `b3a9c3c4ddff95c6959a2c6ce3db74ab98bc8330` after successful Discovery integrity run 39979409591. Held claim `b797024f401fb10f6ecada0276017c110292aefd` was released by exact-SHA update to marker `9fb82c41de094502cbaf7be0217ce827a2d5cf0a`. This closure changes only the owning session handoff and release metadata.
