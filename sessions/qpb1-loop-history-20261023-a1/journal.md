@@ -35,3 +35,13 @@ Next: ConstructS4-covariantnativeedgeamplitude/J-quadratureeventrule;testT/Mreco
 ## 2026-10-23T04:03:44.284294+00:00
 
 READYFORPR:repositoryvalidatorPASS133records;toolingtestsPASS16. Authoredfilesdefaultwhitespacecheck;byte-preservedhistoricalMarkdownhardbreakspacesretainedincapturedledger;fullcheckdisablesblank-at-eolonly. No sharedCURRENT,mainline orsourceledgerchanges. Constructorverificationonly.
+
+## Integrated closure
+
+Research PR66 merged at 7fd72e0514eb4ee88c66bc7c9ca364035d322a7c from exacthead c2b94dfa94aeb10b4539e7a50c6203cd412507f1. Discovery integrity CI 39898347430 PASS with head_sha verified: https://github.com/ud-tetra/UD-Physics/actions/runs/39898347430. Research tree 51d4c99af36cefca948ee681ef3d24e26949f540 matches stagedtree.
+
+Claim released through exact-SHA update from fabd792b65b3112f995ccbebf61f6d421fa8c9c6 to bf27a502622bb551e2b323feb8feef692ed10b68; live ref and task/session/released_from metadata verified. Audit history retained. Only owning session metadata is edited after release;otherclaims,CURRENT,mainline andsourceledgers untouched.
+
+Finding:typed native/graph/Weyl history domains;projection killsclosedgraphcycles,unframedscalarreceipt maptoDzero,framedandtwo-channelwordadapters explicit. Quadraticendpointparity differsfromnonflatlinkconnection. Support+residue+unboundedintegercarry preservesnativeaction exactly. Physical mappingOPEN,scoreUNSCORED,promotion0.
+
+Next:construct S4-covariant event extraction from nativeedgeamplitudes andJ-quadratures;testT/Mrecordindependence,zero-amplitude/simultaneousevents,andretainactioncarry. Priority90/100 expressesjudgment,not measuredclosure.
