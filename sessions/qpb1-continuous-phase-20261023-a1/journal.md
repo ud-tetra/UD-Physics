@@ -39,3 +39,7 @@ Pre-integration checks executed: validator PASS141records; unittest PASS16tests.
 ## 2026-10-23T15:15:07.009472+00:00
 
 Staged whitespace check found only two intentional Markdown hard-break spaces in the byte-preserved v0.39 input capture. Preserved source bytes/digest; full staged check with core.whitespace=-blank-at-eol passed. No authored whitespace issue identified.
+
+## 2026-10-23T15:17:41.708227+00:00
+
+Research PR70 merged at da957be4066e23db3e9a2ce03e9ed60d8acd3774; exact head 68099ce2ca2b4b5bae8f3d4a3a3647a393f00388 passed Discovery integrity CI 39976761798. Live claim release marker 058606df6927c4b3d4c907e028bba11e4e82f616 verified with matching owner, parent held SHA and released payload after exact-SHA CAS. Local staged tree matched integrated tree before soft reset; checkout clean. Closure changes only this session record/journal. Next: classify local symmetry-preserving generator changes and whether detuning is selected; priority96. Physical score UNSCORED, promotion0.
