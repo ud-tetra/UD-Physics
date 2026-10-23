@@ -1,0 +1,185 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "rank3-stress-009",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Can exact spectral stress or a rank-three sparse patch certify full-shell collapse energy above original pulse budget?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "reference_shell",
+      "symbol": "V",
+      "object_type": "12x3 exact Euclidean reference",
+      "definition": "Regular icosahedron, 30 edges, R²=(5+sqrt5)/8",
+      "domain": "Q(sqrt5)^12x3",
+      "coefficient_domain": "Q(sqrt5)",
+      "units": "ell0=1",
+      "basis_orientation": "canonical source order",
+      "metric_measure": "Euclidean",
+      "origin": "imported",
+      "exact_expression": "V^TV=4R² I"
+    },
+    {
+      "object_id": "stress",
+      "symbol": "Omega",
+      "object_type": "12x12 PSD adjacency stress",
+      "definition": "sqrt5 I-A+(5-sqrt5)P0",
+      "domain": "R^12",
+      "codomain": "R^12",
+      "coefficient_domain": "Q(sqrt5)",
+      "units": "dimensionless",
+      "basis_orientation": "adjacency eigenspaces",
+      "metric_measure": "Loewner PSD",
+      "origin": "derived",
+      "exact_expression": "Omega>=(1+sqrt5)(I-P0-PV)"
+    },
+    {
+      "object_id": "patch",
+      "symbol": "U9",
+      "object_type": "3D partial elastic energy",
+      "definition": "nine radial spokes+18 induced shell edges, plus alpha",
+      "domain": "R^(9x3) x R",
+      "codomain": "nonnegative R",
+      "coefficient_domain": "rational coordinates and algebraic lengths",
+      "units": "E_*",
+      "basis_orientation": "selected face (0,1,2) rank2",
+      "metric_measure": "positive g=19/20 and k=19/50",
+      "origin": "target-informed relaxation",
+      "exact_expression": "U9<1/20<Epulse"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "main",
+      "url_or_repo_path": "experiments/icosahedral-free3d/model.py",
+      "version_or_commit": "bbf7b9ec09a86378f6503c16460771a033e48593",
+      "section_or_object_id": "Model.energy_force and icosahedral graph",
+      "source_status": "read-only verified"
+    },
+    {
+      "source_id": "prior",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/GRAM_RANK_RELAXATION.md",
+      "version_or_commit": "df36c087d1261e1c24d85fe7cf31bb693d51e8e8",
+      "section_or_object_id": "rank-four no-go",
+      "source_status": "prior branch exact"
+    }
+  ],
+  "assumptions": [
+    "Drop omitted nonnegative edge/radial energies only to form a partial lower-bound objective.",
+    "Selected nine vertices, rational denominator, and alpha after seeing global target; FIT/development.",
+    "Physical full shell stays in R3; no 4D physical reinterpretation."
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer combinatorial graph",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "12/30/20 original, 9/18 induced"
+    },
+    {
+      "technique": "exact Qsqrt5 spectral",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "adjacency polynomial and PSD stress"
+    },
+    {
+      "technique": "Fraction/isqrt interval",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "strict partial witness U<1/20"
+    },
+    {
+      "technique": "physical rank3 and singular perturbation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "flat face necessary inequality"
+    },
+    {
+      "technique": "modular clocks/factorization/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "static geometric barrier, no such operative question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "12 spokes+30 edges; subset9 spokes+18 edges",
+    "reduced_expression": "42 complete vs27 partial spring terms",
+    "factor_origins": [
+      "canonical exact graph"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "static; Newtonian u imported",
+    "modulus": null,
+    "update_rule": null,
+    "physical_unit_map": "uncalibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "R3 shell and heart scalar alpha",
+    "generator_or_update": "static conservative potential only; no ODE executed",
+    "initial_boundary_conditions": "selected face det=0",
+    "conservation_and_sources": "omitted spring terms are nonnegative",
+    "projection_and_kernel": "Omega null=constant3D-affine eigenspace dim4",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "development/FIT, prior budget and baseline known",
+    "known_targets": [
+      "global E_flat>1360051/20000000"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "selected 9-vertex subset and rationalized numeric witness"
+    ],
+    "search_domain_and_budget": "84 nine subsets x7 starts,5 selected x80,36 ten x10,9 eleven x60,other post-selection repeats",
+    "selection_criterion": "strict partial U<1/20",
+    "baseline": "rankfour relaxed exact below budget; full12 numeric minimum around0.124426"
+  },
+  "calculation_steps": [
+    "exact graph charpoly and eigenvalues",
+    "Loewner gap and singular-value necessary inequality",
+    "construct exact rational 3D rank3 patch flat face",
+    "bound all sqrt norms by rational enclosures",
+    "record failed shallow numerical patch-minimizer claims"
+  ],
+  "result": {
+    "exact_expression": "Omega>=(1+sqrt5)(I-P0-PV)>=0; U9<1/20<Epulse",
+    "approximation": {
+      "partial_E": 0.0495778040193576,
+      "full12_candidate": 0.12442609483988352
+    },
+    "units": "normalized length/energy",
+    "precision_and_error": "consequential strict bounds rational-exact; optimization float64 upper candidates only",
+    "scope": "only stress identity and specific induced-patch no-go, full12 global lower bound OPEN",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "exact SymPy spectrum and rank + Fraction/sqrt",
+      "command_or_proof_path": "local exact script in downloadable archive; compact branch rank3_patch.py",
+      "actual_result": "original exact code PASS; branch compact script NOT_RUN independently",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "second same-runtime high precision",
+      "command_or_proof_path": "rank3_patch_independent.py",
+      "actual_result": "source method PASS locally, branch compact version NOT_RUN",
+      "review_relationship": "same-runtime"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Rank-free Gram failed prior; exact 9-vertex 3D patch invalidates patch-only barrier; shallow 7-start false minima overturned"
+  ],
+  "limitations": [
+    "NOT a full12 below-budget witness",
+    "No global lower bound",
+    "No u100 nonlinear time certificate",
+    "No physical calibration"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/phasewindow-20261022-gpt6-7c41/rank3-stress-009/manifest.json"
+  ],
+  "next_discriminant": "validated rankthree complete-graph global energy lower bound using stress/affine control"
+}
