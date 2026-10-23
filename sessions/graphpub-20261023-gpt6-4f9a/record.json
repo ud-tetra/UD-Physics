@@ -13,7 +13,9 @@
     "graphite-session-publication-20261023": {
       "ref": "refs/heads/claims/graphite-session-publication-20261023",
       "sha": "64a49f6ae26d76f6d6cd9f1ba2e8a2b7bfbdfd42",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "ba915580de0dc75d25dc7e0e314187d5e0f791d1",
+      "released_from_sha": "64a49f6ae26d76f6d6cd9f1ba2e8a2b7bfbdfd42"
     }
   },
   "checks": [
@@ -57,6 +59,9 @@
     "ci_head": "8ae3e78f338c148e51ead6f6da86b149dda71363",
     "ci_conclusion": "success",
     "tree": "2fdcaf77504807bd20c8dd835fa69fc77d89a031",
-    "independent_physics_review": "NOT_RUN"
+    "independent_physics_review": "NOT_RUN",
+    "closure_pr": "https://github.com/ud-tetra/UD-Physics/pull/73",
+    "closure_merge": "d395aab46b135329fcf711ee85bef7b23f1055ad",
+    "released_claim": "ba915580de0dc75d25dc7e0e314187d5e0f791d1"
   }
 }
