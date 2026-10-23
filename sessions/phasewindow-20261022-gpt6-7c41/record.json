@@ -111,10 +111,28 @@
       "name": "PR branch integrity CI",
       "result": "NOT_RUN at time of record update",
       "reason": "Latest branch-head GitHub Actions check must be inspected"
+    },
+    {
+      "name": "local exact u49/50 Fraction proof",
+      "command": "python3 tube098.py --out result.json",
+      "result": "PASS; executed"
+    },
+    {
+      "name": "separate same-runtime symbolic/diagnostic check",
+      "command": "python3 independent_check.py",
+      "result": "PASS; constructor check not independent scientific replication"
+    },
+    {
+      "name": "SHA256 and exact Git blob captures",
+      "result": "PASS; local source SHA256 and five copied Git blobs matched"
+    },
+    {
+      "name": "new PR45 head integrity",
+      "result": "NOT_RUN at record write; inspect GitHub workflow before final reporting"
     }
   ],
-  "finding": "EXACT/CONDITIONAL enlarged housing-only all-time domain/volume tube; NUMERICAL full linear 50-case/180-housing-phase window nu [.04,.05] survives Eh factor 1.5 with min overlap .0003100047, original full housing energy upper .45666607. Nonlinear full pulse all-phase remains OPEN. CONTINUATION EXACT/CONDITIONAL: for all permitted housing phases at amplified Eh, nonlinear full ODE all-time member/strut noncollapse at |alpha0|<=1/25 (120 struts>1/40); at |alpha0|<=3/100 all 20 oriented volumes preserve sign. Original alpha0=1/10 all-phase u100 remains OPEN. CONTINUATION EXACT/CONDITIONAL: original alpha=.1 plus amplified E_h<=51/20000000, all 180 housing initial phase coordinates, full nonlinear 560-phase existence and all 120 struts>13/1500, 20 oriented cell volumes in (1/125,729/125) for all u<=2/5. Eightfold previous original-amplitude exact horizon; u100 remains OPEN. CONTINUATION EXACT/CONDITIONAL relative Duhamel: original alpha=1/10, all 180 housing phases at Eh<=51/20000000, full nonlinear mechanical law, every strut>11/1250 and 20 oriented volumes positive through u=9/10, source byte capture relative-tube-005; no u100 performance guarantee.",
-  "next_action": "Review exact original-alpha relative-tube-005 and validate source-SHA capture; coordinate separate PR44 forced Green recovery; full u100 180-phase nonlinear coherence still OPEN.",
+  "finding": "EXACT/CONDITIONAL enlarged housing-only all-time domain/volume tube; NUMERICAL full linear 50-case/180-housing-phase window nu [.04,.05] survives Eh factor 1.5 with min overlap .0003100047, original full housing energy upper .45666607. Nonlinear full pulse all-phase remains OPEN. CONTINUATION EXACT/CONDITIONAL: for all permitted housing phases at amplified Eh, nonlinear full ODE all-time member/strut noncollapse at |alpha0|<=1/25 (120 struts>1/40); at |alpha0|<=3/100 all 20 oriented volumes preserve sign. Original alpha0=1/10 all-phase u100 remains OPEN. CONTINUATION EXACT/CONDITIONAL: original alpha=.1 plus amplified E_h<=51/20000000, all 180 housing initial phase coordinates, full nonlinear 560-phase existence and all 120 struts>13/1500, 20 oriented cell volumes in (1/125,729/125) for all u<=2/5. Eightfold previous original-amplitude exact horizon; u100 remains OPEN. CONTINUATION EXACT/CONDITIONAL relative Duhamel: original alpha=1/10, all 180 housing phases at Eh<=51/20000000, full nonlinear mechanical law, every strut>11/1250 and 20 oriented volumes positive through u=9/10, source byte capture relative-tube-005; no u100 performance guarantee. CONTINUATION EXACT/CONDITIONAL original alpha=.1 all-180 housing phase full nonlinear positive struts/orientations through u=49/50; struts>3853/281250; volume ratios in ((1/500)^3,(999/500)^3). Prior u=9/10 preserved. U100 OPEN.",
+  "next_action": "Review exact u49/50 receipt/capture and PR45 CI; coordinate distinct PR44 forced Green/proper-alignment recovery for full u100 nonlinear certificate; current star kinetic majorant fails at u=1.",
   "mathematical_profile": {
     "coefficient_domain": "Q(sqrt5) reference geometry; exact rational comparisons and positive real mechanical energy; float64 imported linear evaluations",
     "methods": [
@@ -172,6 +190,23 @@
     "capture": "artifacts/phasewindow-20261022-gpt6-7c41/relative-tube-005/manifest.json",
     "previous_validated_horizon": "2/5",
     "full_pulse_u100": "OPEN",
+    "physical_validation": "UNSCORED"
+  },
+  "relative_tube_098": {
+    "status": "EXACT_CONDITIONAL",
+    "source_main_revision": "127c5fb995cdd218fecc479bccec8ed7a2c2bad0",
+    "alpha": "1/10",
+    "housing_energy": "51/20000000",
+    "horizon": "49/50",
+    "strut_lower": "3853/281250",
+    "oriented_cell_volume_ratio": [
+      "1/125000000",
+      "997002999/125000000"
+    ],
+    "receipt": "sessions/phasewindow-20261022-gpt6-7c41/tube098_receipt.json",
+    "capture": "artifacts/phasewindow-20261022-gpt6-7c41/relative-tube-006/manifest.json",
+    "previous_horizon": "9/10",
+    "u100": "OPEN",
     "physical_validation": "UNSCORED"
   }
 }
