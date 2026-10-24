@@ -19,7 +19,7 @@
     },
     {
       "source_id": "checkpoint-022",
-      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/SIX_MOVING_ADJOINT_022.md",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/SIX_MOVING_022.md",
       "version_or_commit": "1b630ebd6829a7016d4d4656666a183625020cbb",
       "source_status": "development numerical source; complete computational archive held locally"
     }
