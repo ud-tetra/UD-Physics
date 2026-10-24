@@ -1,0 +1,25 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphforceidx-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, GitHub connector write",
+  "task": "integration-graphite-packet-force-contract-20261024",
+  "goal": "Index closed packet force contract in graphite study and current state",
+  "created_at": "2026-10-24T20:13:53.166232+00:00",
+  "base_revision": "8b45874938da087a11666310bd54b13fd7cdc182",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/integration-graphite-packet-force-contract-20261024",
+    "held_sha": "741e7e1334c213c2dd0b007bbf24d14cb84a9ecf",
+    "status": "held"
+  },
+  "checks": [
+    "source research PR #173 merged, claim released",
+    "independent physics review NOT_RUN",
+    "scripts/validate.py PASS 296 records",
+    "16 unit tests PASS"
+  ],
+  "finding": "Indexed PR #173 closed packet mean and reciprocal material force contract in graphite study, v2 working-paper index and integrated state; PDF remains v2.",
+  "next_action": "Independently calibrate packet-to-cross-Hessian/loss, then held-out signed force and load test."
+}
