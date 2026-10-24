@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graphrecip-20261024-01",
+  "run_id": "exact-001",
+  "created_at": "2026-10-24T20:34:29.864255+00:00",
+  "evidence": "EXACT",
+  "summary": "Native time reversal, even packet port and reciprocal power witness",
+  "command": "python3 experiments/graphite-packet-reciprocity/verify_reciprocity.py > /tmp/graphrecip-verification.json",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "f0f6b707b77467f28c8e3892384fa0e8b28a4869",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "verify_reciprocity.py",
+      "path": "inputs/001-verify_reciprocity.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-packet-reciprocity/verify_reciprocity.py",
+      "sha256": "1d9433bf711563a0a2991570adefa74f722ffec6595a99a5e8ae8fd0f718af40",
+      "size_bytes": 4278
+    }
+  ],
+  "files": [
+    {
+      "path": "files/graphrecip-verification.json",
+      "sha256": "023fa920cd50d81c15ebb4e91bb05f7e63125cab43bf41e9336174f6f3c640f1",
+      "size_bytes": 906
+    }
+  ]
+}
