@@ -1,0 +1,40 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb-quantum-extension",
+  "session_id": "qpb-qextension-20261024-gpt6-a1",
+  "question": "Can original UD incidence and full tetrahedral symmetry select a nondegenerate quantum level ladder and anharmonicity without fitted interactions?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Full signed S4 physical-invariance is provisionally imposed, native complex i=-J and Euclidean Hermiticity on original C7.",
+    "Proposed bosonic Fock Hilbert space on unique hidden complex sign irrep and its occupation number is a new quantum assumption.",
+    "Kerr interaction U*N(N-1)/2 is an added conventional nonlinear quantum coupling, not native.",
+    "Native action chi and clock tau0, physical Josephson phase/charge/port mapping not selected."
+  ],
+  "physical_mapping": "HYPOTHESIS only: hidden complex S4 sign mode -> bosonic occupation operator; physical energy epsilon=2chi*g3/tau0, chi/tau0 and Kerr U unselected, no measured mapping.",
+  "target_exposure": "Prior direct C7 spectral failure and published transmon f0j j=1..6 were known. Fock option and U=0,+1/4,-1/4 at epsilon5 in arbitrary units selected as development exemplars. No measured spectrum fitted.",
+  "fitted_choices": [
+    "No numerical physical fit; simple rational epsilon5, U ±1/4 chosen for visible algebraic examples. Any matching of transmon anharmonicity to U would be FIT.",
+    "Original class-based symmetry is mathematical, not independently identified with physical superconducting device symmetry."
+  ],
+  "sources": [
+    "ud-tetra/UD-Physics@211f2e72fc72867bac1b3c8712bf0d5c2464e509:experiments/qpb1-local-generators/README.md",
+    "ud-tetra/UD-Physics@211f2e72fc72867bac1b3c8712bf0d5c2464e509:experiments/qpb1-carrier-anchor/README.md",
+    "https://doi.org/10.1038/s41567-024-02400-8",
+    "ud-tetra/UD-Physics@21f347d1b0bb094723c6ae979dc651041e5839b7:PR149 direct spectroscopy no-go (read-only unmerged)"
+  ],
+  "baseline": "Ordinary single bosonic harmonic/Kerr Hamiltonian and standard higher-harmonic transmon rotor, identical to corresponding constructed law.",
+  "result": "EXACT: complex S4 irreps 3,3' and sign1 imply any J-linear S4 Hermitian C7 operator is three sector scalar, at most three distinct energies even if nonlocal. HYPOTHESIS: hidden boson Fock produces equally spaced ladder with native free source; Kerr term freely chooses anharmonicity, no UD selection. Negative U unbounded below on infinite bare Fock. Unique quantum physical attribution FAILED.",
+  "next_discriminant": "New independently sourced native interaction fixing U/epsilon or rotor charge/phase and physical action scales, with heldout f0j against matched conventional harmonic null.",
+  "reopening_conditions": "A versioned source-selected quantum many-body law with calibrated physical action/time/measurement dictionary and truly unused transmon data.",
+  "mathematical_receipts": [
+    "sessions/qpb-qextension-20261024-gpt6-a1/mathematical_receipt.json"
+  ]
+}

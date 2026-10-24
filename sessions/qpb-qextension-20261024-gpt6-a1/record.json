@@ -1,0 +1,56 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb-qextension-20261024-gpt6-a1",
+  "runtime": "GPT-6; GitHub connector isolated branch; local Python 3 standard-library Fraction; separate same-constructor implementation",
+  "task": "qpb-quantum-extension-20261024",
+  "goal": "Test source-selected signed-S4 quantum operators and minimal Fock extension against transmon anharmonic spectra without using measured target frequencies",
+  "created_at": "2026-10-24T17:53:23.883Z",
+  "base_revision": "211f2e72fc72867bac1b3c8712bf0d5c2464e509",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "qpb-quantum-extension-20261024": {
+      "ref": "refs/heads/claims/qpb-quantum-extension-20261024",
+      "sha": "e94c3dedb0cd3e0cebaad0345a4e4a1d7c8e8fd1",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 /mnt/data/qpb_qextension/compact.py --out /mnt/data/qpb_qextension/compact_summary.json",
+      "result": "PASS exact 24 signed S4, class characters 3,3',sign1, character Gram identity, 3 Fock/Kerr exact seven-level ladders and finite-boson boundary commutator",
+      "scope": "local constructor not external reviewer"
+    },
+    {
+      "command": "python3 /mnt/data/qpb_qextension/audit.py --out /mnt/data/qpb_qextension/summary.json",
+      "result": "PASS separate longer same-context exact Fraction implementation with equivalent characters, positivity and occupation calculations",
+      "scope": "same-assistant crosscheck, not independently sourced science"
+    },
+    {
+      "command": "sha256sum /mnt/data/qpb_qextension/compact.py /mnt/data/qpb_qextension/compact_summary.json",
+      "result": "PASS be065eb7bd5573fe972c471915c224d5ca002e421ffae0d29fbb39dab8f18242 and 0721d516583094f86977369ad31339c5b5fd1333f9c955bdb9517af12e1f2171",
+      "scope": "immutable qext-002 matches executed bytes, qext-001 retained historical"
+    },
+    {
+      "command": "python3 scripts/validate.py and python3 -m unittest discover -s tests -v",
+      "result": "NOT_RUN locally, no complete authenticated Git checkout; GitHub Actions CI pending",
+      "scope": "do not claim before actual CI"
+    }
+  ],
+  "finding": "Exact full S4+J Hermitian commutant on native C7 is real dimension3 due to inequivalent complex irreps 3+3'+1'. Direct single particle cannot lift threefold degeneracies. An assumed Fock lift creates many equally spaced levels; Kerr U provides anharmonicity but remains new unselected free coefficient, matched conventional oscillator null.",
+  "next_action": "Demand native many-body U/epsilon or physical charge/phase/clock/port selection before any heldout transmon comparison; park unique quantum physical attribution.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q exact native 15x15 incidence and S4 characters; C7 complex via J; Fock number and Kerr rational examples",
+    "exactness_or_precision_plan": "exact Fraction matrix/rank/character and rational Fock energies; no numerical physical data or uncertainties",
+    "applicable_methods": [
+      "signed simplex combinatorics and exact S4 group characters",
+      "Schur representation-theoretic classification of Hermitian commutant",
+      "bosonic occupation/Fock and exact boundary commutator",
+      "identifiability/target exposure against conventional Kerr/transmon null",
+      "physical action and time map explicitly OPEN"
+    ],
+    "clock_metric_units_conventions": "native real time s dimensionless; i=-J assumed complex sign; physical energy epsilon=2chi g3/tau0 with external action chi (Js), tau0 physical seconds; illustrative Kerr values in arbitrary non-physical units"
+  }
+}
