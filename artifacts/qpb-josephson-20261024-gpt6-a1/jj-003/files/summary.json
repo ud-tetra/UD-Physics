@@ -1,0 +1,72 @@
+{
+  "conventional_hardening_example": {
+    "leading_shift": "+1/8 a^2",
+    "positive_bounded_potential": "(1-cos(phi))*(3-cos(phi))/4",
+    "q": "-1/4"
+  },
+  "first_nonlinear_coefficient": "frequency(a)/frequency(0)=1-[(1+8q)/(16*(1+2q))]*a^2+O(a^4)",
+  "hardening_condition": "-1/2<q<-1/8; mathematical two-harmonic model, NOT measured parameter",
+  "heldout": "NOT_RUN: no calibrated classical amplitude-frequency pairs or frozen UD physical mapping",
+  "labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "EMPIRICAL_SOURCE",
+    "OPEN"
+  ],
+  "matched_null": "conventional Josephson harmonic CPR with adjustable I2 reproduces the hardening example; no new UD physical prediction",
+  "numerical_quadrature_examples": [
+    {
+      "I2_over_I1": "-1/4",
+      "leading_a_squared_coefficient": "1/8",
+      "ratio_a_0_2": 1.0049277530968677,
+      "ratio_a_0_4": 1.0188746247532021,
+      "zero_phase_curvature_in_I1_units": "1/2"
+    },
+    {
+      "I2_over_I1": "-3/25",
+      "leading_a_squared_coefficient": "-1/304",
+      "ratio_a_0_2": 0.999852903488536,
+      "ratio_a_0_4": 0.9992283570556529,
+      "zero_phase_curvature_in_I1_units": "19/25"
+    },
+    {
+      "I2_over_I1": "0",
+      "leading_a_squared_coefficient": "-1/16",
+      "ratio_a_0_2": 0.9975005188318534,
+      "ratio_a_0_4": 0.9900082042903243,
+      "zero_phase_curvature_in_I1_units": "1"
+    },
+    {
+      "I2_over_I1": "1/20",
+      "leading_a_squared_coefficient": "-7/88",
+      "ratio_a_0_2": 0.9968221168292534,
+      "ratio_a_0_4": 0.9873353116482818,
+      "zero_phase_curvature_in_I1_units": "11/10"
+    }
+  ],
+  "physical_model": "I(phi)=I1*sin(phi)+I2*sin(2phi), q=I2/I1, I1>0, M>0",
+  "potential_in_E1_units": "U(phi)=1-cos(phi)+q*(1-cos(phi)^2)",
+  "previous_sign_claim": "VALID ONLY under sine-only Josephson and positive-star mapping; NOT a universal junction sign rule",
+  "published_dataset": {
+    "code_and_data_url": "https://jugit.fz-juelich.de/qip/josephson-harmonics",
+    "correction_doi": "10.1038/s41567-024-02491-3",
+    "dataset_doi": "10.26165/JUELICH-DATA/LGRHUH",
+    "dataset_landing_file": "README.txt, 97 bytes, points to external GitLab repository",
+    "dataset_version": "V2 (landing metadata)",
+    "higher_harmonics_observed": "source reports percent-level higher harmonics, not the chosen q=-1/4",
+    "measured_observable": "transmon multi-level transition spectroscopy, not classical turning-phase a versus omega(a)",
+    "paper": "Willsch et al., Observation of Josephson harmonics in tunnel junctions, Nature Physics 20, 815-821 (2024)",
+    "paper_doi": "10.1038/s41567-024-02400-8",
+    "published_discrepancy": "f03 can differ >10 MHz from basic sinusoidal transmon model, imprecision on order 1 MHz",
+    "raw_spectroscopy_bytes": "NOT_ACQUIRED: GitLab download blocked by automated-access verification"
+  },
+  "quartic_zero_condition": "q=-1/8; next-order amplitude terms unresolved by this sign test",
+  "sine_only_example": {
+    "leading_shift": "-1/16 a^2",
+    "q": "0"
+  },
+  "stable_origin_condition": "1+2q>0",
+  "status": "PASS",
+  "verification": "exact rational leading term and positive potential; independent numerical period quadrature; outside scientific review NOT_RUN"
+}

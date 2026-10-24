@@ -1,0 +1,106 @@
+{
+  "SI_exact": {
+    "Phi0_Wb_decimal_approx": 2.0678338484619295e-15,
+    "Phi0_Wb_exact_fraction": "44173801/21362355120000000000000",
+    "e_C": "1.602176634E-19",
+    "h_Js": "6.62607015E-34"
+  },
+  "UD_positive_star": "w_UD(a)/w_UD(0)=1+lambda*kappa*a^2 with lambda>=0",
+  "backsolve_if_relaxed": "lambda*kappa=-1/16 from physical source; not selected by UD, negative bare quartic is not globally coercive",
+  "conditional_incompatibility": "physical first amplitude coefficient -1/16 versus UD lambda*kappa>=0",
+  "design_not_measurement": {
+    "Ic_A": 1e-07,
+    "ideal_no_loss": true,
+    "total_C_F": 1e-13,
+    "zero_bias": true
+  },
+  "exact_frequency": "w(a)/w0=pi/(2*K(sin(a/2)))=AGM(1,cos(a/2)); 0<=a<pi",
+  "labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "limitations": [
+    "Ic,C illustrative and unmeasured",
+    "no experimental data or physical UD 15-port mapping",
+    "no damping/bias/noise/distributed modes",
+    "not a universal no-go for modified UD constitutive laws"
+  ],
+  "mapping_hypothesis": "r3=kappa*a^2 with kappa>0 and zero mapped to zero; physical JJ phase is NOT UD J-fiber phase",
+  "ordinary_null": "ideal classical Josephson pendulum explains full amplitude-frequency curve",
+  "physical_model": "I=Ic*sin(phi), V=(Phi0/2pi)*phi_dot, U=EJ*(1-cos(phi)), EJ=Ic*Phi0/(2pi)",
+  "physical_sources": [
+    "https://www.bipm.org/en/measurement-units/si-defining-constants",
+    "https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040204",
+    "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.043091"
+  ],
+  "rows": [
+    {
+      "AGM_quadrature_difference": 0.0,
+      "exact_model_ratio_float": 1.0,
+      "linear_ratio": 1.0,
+      "phase_peak_rad": 0,
+      "positive_star_equal_slope_magnitude_toy": 1.0,
+      "scenario_frequency_hz": 8773083154.978533,
+      "series_4th": 1.0
+    },
+    {
+      "AGM_quadrature_difference": 2.9976021664879227e-15,
+      "exact_model_ratio_float": 0.9975005188319095,
+      "linear_ratio": 1.0,
+      "phase_peak_rad": 0.2,
+      "positive_star_equal_slope_magnitude_toy": 1.0025,
+      "scenario_frequency_hz": 8751154998.846571,
+      "series_4th": 0.9975005208333334
+    },
+    {
+      "AGM_quadrature_difference": 2.7755575615628914e-15,
+      "exact_model_ratio_float": 0.9900082042903813,
+      "linear_ratio": 1.0,
+      "phase_peak_rad": 0.4,
+      "positive_star_equal_slope_magnitude_toy": 1.01,
+      "scenario_frequency_hz": 8685424300.35049,
+      "series_4th": 0.9900083333333334
+    },
+    {
+      "AGM_quadrature_difference": 7.771561172376096e-16,
+      "exact_model_ratio_float": 0.9775406990892397,
+      "linear_ratio": 1.0,
+      "phase_peak_rad": 0.6,
+      "positive_star_equal_slope_magnitude_toy": 1.0225,
+      "scenario_frequency_hz": 8576045840.485747,
+      "series_4th": 0.9775421875
+    },
+    {
+      "AGM_quadrature_difference": 2.7755575615628914e-15,
+      "exact_model_ratio_float": 0.9377922580514284,
+      "linear_ratio": 1.0,
+      "phase_peak_rad": 1.0,
+      "positive_star_equal_slope_magnitude_toy": 1.0625,
+      "scenario_frequency_hz": 8227329461.980268,
+      "series_4th": 0.9378255208333334
+    }
+  ],
+  "scenario": {
+    "EJ_J": 3.291059784754533e-23,
+    "equivalent_inertia_Cphi_bar_squared": 1.0831074506828553e-44,
+    "f0_Hz": 8773083154.978533,
+    "native_time_unit_seconds_if_linear_frequency_matched": 3.6282556606471556e-11,
+    "omega0_rad_s": 55122907178.02584
+  },
+  "series_exact": {
+    "frequency_a2": "-1/16",
+    "frequency_a4": "1/3072",
+    "period_a2": "1/16",
+    "period_a4": "11/3072"
+  },
+  "status": "PASS",
+  "tests": {
+    "AGM_vs_quadrature": 5,
+    "exact_series_rationals": 4,
+    "strict_softening_sign_cases": 4
+  }
+}

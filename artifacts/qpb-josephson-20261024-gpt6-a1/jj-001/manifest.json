@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb-josephson-20261024-gpt6-a1",
+  "run_id": "jj-001",
+  "created_at": "2026-10-24T16:24:19Z",
+  "evidence": "EXACT",
+  "summary": "Source-anchored ideal Josephson amplitude frequency, exact rational series, two numerical K methods, UD positive-star sign contrast",
+  "command": "python3 /mnt/data/qpb_josephson_20261024/anchor.py --out /mnt/data/qpb_josephson_20261024/anchor_summary.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "c419562968d1702c4a839075994757cbed7e82f6",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "josephson-anchor-source",
+      "name": "anchor.py",
+      "path": "inputs/anchor.py",
+      "sha256": "1b41100ee834752da7b6874310ce1065abaf2539bc5c46069c57ae27b41a5cb3",
+      "size_bytes": 3530,
+      "source_location": "repository",
+      "source_path": "experiments/qpb-josephson-physical-anchor/anchor.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "915ef715ec7745e6c3aec1b5f83ace4feeab33a6bd4d92ce69d7d762b687cc38",
+      "size_bytes": 3779
+    }
+  ]
+}
