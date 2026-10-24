@@ -85,3 +85,8 @@ Prospective target-blind protocol: (i) independently characterize the junction's
 **Disposition:** physical source of a *conventional* nonlinearity is identified, and it gives an independent counterexample to the positive-star UD mapping; the native-to-physical correspondence, measurement data and a unique UD mechanism remain OPEN. No mainline promotion, no merge of parked phase-009 PR, and no empirical success claim.
 
 **NEXT (priority 97/100):** seek a UD-native constitutive selector that predicts *before* looking at physical data a sign and scaling different from or more constrained than the conventional Josephson null; separately specify a physical 15-port transducer and held-out experiment. Otherwise preserve this as an exact negative benchmark rather than forcing a fit.
+
+
+## JJ-002 public empirical source audit
+
+[Joint plasma fit provenance, physical-unit re-expression, and absent amplitude heldout](EMPIRICAL_SOURCE_AUDIT.md). Bias-dependent small-signal resonance is distinct from zero-bias oscillation amplitude; no experimental UD bridge is claimed.

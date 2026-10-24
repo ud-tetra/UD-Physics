@@ -29,13 +29,15 @@
     "https://doi.org/10.1103/PRXQuantum.2.040204",
     "https://www.bipm.org/en/measurement-units/si-defining-constants",
     "https://doi.org/10.1103/PhysRevResearch.2.043091",
-    "ud-tetra/UD-Physics@86d2a86570c807bc980819809312cd3255a2852a:experiments/qpb1-finite-window-phase/PHASE_COMPATIBLE_CONSTITUTIVE.md"
+    "ud-tetra/UD-Physics@86d2a86570c807bc980819809312cd3255a2852a:experiments/qpb1-finite-window-phase/PHASE_COMPATIBLE_CONSTITUTIVE.md",
+    "https://doi.org/10.1063/5.0082197 (2022 experimentally fitted DC-bias plasma data; not zero-bias amplitude sweep)"
   ],
   "baseline": "Ordinary zero-biased ideal Josephson circuit with independent Ic and C; exact elliptic frequency curve; no UD extra prediction.",
-  "result": "EXACT/CONDITIONAL Josephson relative-frequency function AGM(1,cos(a/2))<1 for 0<a<pi; positive hidden-star UD relative frequency 1+lambda*kappa*a² >=1 when lambda>=0,kappa>0. Sign mismatch for this bridge; conventional JJ fully accounts for the physical law. No observed data.",
-  "next_discriminant": "External independently calibrated device Ic,C,phase-amplitude and frequency data, and a frozen UD source-selected constitutive/port map; otherwise park positive-star Josephson identification.",
+  "result": "EXACT/CONDITIONAL Josephson relative-frequency function AGM(1,cos(a/2))<1 for 0<a<pi; positive hidden-star UD relative frequency 1+lambda*kappa*a² >=1 when lambda>=0,kappa>0. Sign mismatch for this bridge; conventional JJ fully accounts for the physical law. No observed data. JJ002 source audit: 13.28GHz/8.36uA jointly fitted; inferred total C3.6485pF is not an independent prediction. No peak-amplitude measurement/heldout residual. Physical comparison NOT_EXECUTED.",
+  "next_discriminant": "Obtain raw zero-bias amplitude-frequency pairs, independent parameter/covariance calibration and frozen physical mapping before a held-out UD-versus-Josephson null.",
   "mathematical_receipts": [
-    "sessions/qpb-josephson-20261024-gpt6-a1/mathematical_receipt.json"
+    "sessions/qpb-josephson-20261024-gpt6-a1/mathematical_receipt.json",
+    "sessions/qpb-josephson-20261024-gpt6-a1/empirical_receipt.json"
   ],
   "reopening_conditions": "A separately sourced native constitutive law with independently fixed parameters and physical map or new physical benchmark data plus distinguishable held-out response."
 }

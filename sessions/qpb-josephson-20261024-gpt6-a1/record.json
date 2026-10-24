@@ -31,10 +31,20 @@
       "command": "sha256sum /mnt/data/qpb_josephson_20261024/anchor.py /mnt/data/qpb_josephson_20261024/anchor_summary.json",
       "result": "PASS source 1b41100ee834752da7b6874310ce1065abaf2539bc5c46069c57ae27b41a5cb3; output 915ef715ec7745e6c3aec1b5f83ace4feeab33a6bd4d92ce69d7d762b687cc38",
       "scope": "immutable run jj-001 schema2 source/output captured"
+    },
+    {
+      "command": "python3 /mnt/data/jj002_stage/audit_compact.py --out /mnt/data/jj002_stage/audit_compact_result.json",
+      "result": "PASS exact SI Decimal identity, printed-range C reconstruction and five modeled bias-frequency points; not independent measurements",
+      "scope": "actual executed local path, differs from jj002 manifest repo-root reproduction command"
+    },
+    {
+      "command": "sha256sum /mnt/data/jj002_stage/audit_compact.py /mnt/data/jj002_stage/audit_compact_result.json",
+      "result": "PASS source 24f2fafd84802deab3151032d7f2cfda8e5524095c7cf575c796337abd6f1d45; output 5e14ab70528e9581eadc768a4db0f9ff0c1c23c788c0e8dc8be7c78548dcbaf5",
+      "scope": "immutable jj002 bytes"
     }
   ],
-  "finding": "EXACT/CONDITIONAL ideal Josephson amplitude response decreases: omega(a)/omega0=AGM(1,cos(a/2))<1 for 0<a<pi; positive lambda hidden-star UD with nonnegative amplitude support does not soften. FAILED simple positive-star physical mapping; conventional Josephson oscillator is complete null. HYPOTHESIS physical time/phase/port correspondence not executed.",
-  "next_action": "Non-constructor review and independently calibrated Josephson Ic,C,peak phase and amplitude-frequency data; require source-selected native coupling and realistic conventional controls before any physical promotion.",
+  "finding": "EXACT/CONDITIONAL ideal Josephson amplitude response decreases: omega(a)/omega0=AGM(1,cos(a/2))<1 for 0<a<pi; positive lambda hidden-star UD with nonnegative amplitude support does not soften. FAILED simple positive-star physical mapping; conventional Josephson oscillator is complete null. HYPOTHESIS physical time/phase/port correspondence not executed.; JJ002 published empirical joint fit fp=13.28±.05GHz Ic=8.36±.08uA and c=36.4±.04fF/um²; derived C=3.648502pF circular (same fit); no independently measured zero-bias turning amplitudes available, so physical UD held-out test FAILED / NOT_EXECUTED.",
+  "next_action": "Get an independent device zero-bias amplitude-frequency dataset and separately calibrated Ic,C with covariance; freeze a UD physical mapping before heldout evaluation. Claim HELD, draft PR; no mainline promotion.",
   "mathematical_profile": {
     "coefficient_domain": "Q exact SI defining constants and rational Taylor coefficients; R continuous ideal Josephson dynamics; complex UD phase not identified with physical Josephson phase",
     "exactness_or_precision_plan": "Exact symbolic series and monotone AGM sign; float64 AGM plus independent Simpson quadrature tolerance 1e-11; design Ic,C illustrative",
