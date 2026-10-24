@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-graphite-endogenous-gate-20261024",
+  "session": "graphendogidx-20261024-01",
+  "created_at": "2026-10-24T18:14:26.231Z",
+  "base_revision": "5efcbaf3ddc232a63611f7d4402f92fb351fb707",
+  "owned_paths": [
+    "tasks/integration-graphite-endogenous-gate-20261024.json",
+    "sessions/graphendogidx-20261024-01/",
+    "experiments/graphite-manuscript-v2/README.md",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
