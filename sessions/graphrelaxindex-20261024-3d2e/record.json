@@ -13,12 +13,15 @@
     "integration-graphite-relaxation-index-20261024": {
       "ref": "refs/heads/claims/integration-graphite-relaxation-index-20261024",
       "held_sha": "0e9a1975490a5bfdebb47914f69130c96fce93da",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "b14d22f76ff5c049c8c01dafed8e71696eb7331f",
+      "released_at": "2026-10-24T15:39:53.788Z"
     }
   },
   "checks": [
     "python3 scripts/validate.py: PASS",
-    "python3 -m unittest discover -s tests -v: PASS 16 tests"
+    "python3 -m unittest discover -s tests -v: PASS 16 tests",
+    "GitHub Discovery integrity run 40107965790: success (integrity only)"
   ],
   "finding": "Graphite entry and current state index the passive first-harmonic conventional drag and load-slope control",
   "next_action": "Freeze 2D PES, contact, complex mode loss and signed force estimator, then test UD residual on held-out traces",
