@@ -1,0 +1,49 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-meter-coupling",
+  "session_id": "qpb1-meter-coupling-20261023-a1",
+  "question": "Can a finite passive local meter preserve the finite-window phase while exposing signed hidden-plane amplitudes under explicit mismatch and readout error budgets?",
+  "status": "ACTIVE",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Original real15-register filled-tetrahedron carrier, ascending orientations, Euclidean metric, rank14 active P,J=A/2; add a second15-register classical meter.",
+    "Proposed balanced law xprime=Gx-Km,mprime=(G+E)m+Kx-Dm with shared local G; nominalK=I/4,D=I. No native constitutive selection or physical transducer is imported.",
+    "Parent commuting gain box, seed preparation ballrho1/10, finitewindow|T-2pi|<=1/100 and128maximum-gap links retained. Seed preparation occurs before one-unitwarmup; sector fractions preserved by commonU.",
+    "Known nominal scalar calibrationm/b(tau),b>1/8ontau[1,5107/700]; calibrated signed readout, electronic gains/noise, reference storage and clock obey explicit bounds.",
+    "Nonuniform balanced ports/damping and skew meter mismatch obey operator delta; initial meter norm<=e0. Full positive storage ensures contraction; unmodeled load must fit this operator budget.",
+    "Finite reset64nativeunits assumes D>=I/2,combinedresetamplitude<=11/10,off-port leakage<=e0/(4smax), and subsequent residual-preserving seed preparation.",
+    "26bitSTRICT_A retains prior overlap requirement;21bitREALLOCATED_B is explicitly amended, not strict-parent compliance. No physical accuracy, units or empirical success claimed."
+  ],
+  "physical_mapping": "OPEN; finite passive classical state-space proposal, signed transducer/matching/calibration/clock/reset/seed preparation unvalidated; UNSCORED,promotion0",
+  "target_exposure": "EXPLORATORY_AFTER_PARENT_PHASE_AND_ACQUISITION_BUDGET",
+  "fitted_choices": [
+    "Added matched15-registermeter andbalanced15ports bydesign",
+    "Nominalkappa1/4,gamma1,warmup1,reset64,fiveequalerrorallocations selected engineeringcontrols",
+    "Two inheritedADCprofiles; no empirical fit or hardware optimization",
+    "Three exposed differentialhidden-detuning controls0,.01,.05"
+  ],
+  "sources": [
+    "experiments/qpb1-meter-coupling/SOURCES.json",
+    "experiments/qpb1-meter-coupling/SOURCE_ROWS.json"
+  ],
+  "baseline": "Previous unloaded signed-amplitude acquisition contract; no-added-meter and empty-meter startup controls",
+  "result": "Matched balanced meter has same projective ray and finite-window phase while totalstorage dissipates. Nominalb>1/8; finite residual/reset and mismatch/calibration/jitter/noise budgets imply prior26bitstrict and21bitamended phase certificates. Actualhardware and practical tolerance remainOPEN.",
+  "next_discriminant": "Derive a direct projective-phase tolerance bound for differential meter mismatch, quotienting exactly harmless scalar/common-J directions; determine whether useful tolerances replace the conservative full-amplitude box; priority95.",
+  "mathematical_receipts": [
+    "sessions/qpb1-meter-coupling-20261023-a1/mathematical_receipt.json"
+  ],
+  "unsupported_roles": [
+    "Physical quantum state copying",
+    "Built meter or empirical signed sampling accuracy",
+    "Native selection of shared generator/coupling/damping/clock",
+    "Necessity or optimality of very tight sufficient tolerancebox"
+  ]
+}

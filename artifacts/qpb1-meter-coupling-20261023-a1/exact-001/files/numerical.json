@@ -1,0 +1,101 @@
+{
+  "evidence": "NUMERICAL_CONSTRUCTOR",
+  "cases": 120,
+  "max_phase_error_rad": 0.0003654654199876324,
+  "max_calibrated_raw_error": 2.7766313026589273e-08,
+  "binary64_source_and_display_only": true,
+  "post_digitization": "EXACT_INTEGER",
+  "representative_cases": [
+    {
+      "bits": 26,
+      "preparation": 0,
+      "gains": 0,
+      "error_profile": 0,
+      "max_calibrated_raw_error": 2.220446049250313e-16,
+      "phase_error_rad": 1.0332152911018966e-08
+    },
+    {
+      "bits": 26,
+      "preparation": 0,
+      "gains": 0,
+      "error_profile": 1,
+      "max_calibrated_raw_error": 6.900477633742241e-09,
+      "phase_error_rad": 2.174735303631386e-09
+    },
+    {
+      "bits": 26,
+      "preparation": 0,
+      "gains": 0,
+      "error_profile": 2,
+      "max_calibrated_raw_error": 6.7258295599614826e-09,
+      "phase_error_rad": 9.508076548314648e-09
+    },
+    {
+      "bits": 26,
+      "preparation": 0,
+      "gains": 0,
+      "error_profile": 3,
+      "max_calibrated_raw_error": 6.900477633742241e-09,
+      "phase_error_rad": 1.6952110826196076e-09
+    },
+    {
+      "bits": 21,
+      "preparation": 4,
+      "gains": 2,
+      "error_profile": 0,
+      "max_calibrated_raw_error": 1.1102230246251565e-16,
+      "phase_error_rad": 0.00014528154856627772
+    },
+    {
+      "bits": 21,
+      "preparation": 4,
+      "gains": 2,
+      "error_profile": 1,
+      "max_calibrated_raw_error": 2.7428538773577316e-08,
+      "phase_error_rad": 0.0001674035849849924
+    },
+    {
+      "bits": 21,
+      "preparation": 4,
+      "gains": 2,
+      "error_profile": 2,
+      "max_calibrated_raw_error": 2.667546716850211e-08,
+      "phase_error_rad": 0.00019151872097442554
+    },
+    {
+      "bits": 21,
+      "preparation": 4,
+      "gains": 2,
+      "error_profile": 3,
+      "max_calibrated_raw_error": 2.7428538773577316e-08,
+      "phase_error_rad": 0.00019153486039578046
+    }
+  ],
+  "full30_RK4_cross_check": [
+    {
+      "steps": 2048,
+      "maximum_coordinate_error": 9.410833223810755e-12
+    },
+    {
+      "steps": 4096,
+      "maximum_coordinate_error": 5.885014697781799e-13
+    }
+  ],
+  "differential_hidden_rate_control": [
+    {
+      "hidden_meter_gain_error": 0.0,
+      "endpoint_visibility": 1.0000000000000002,
+      "phase_difference_from_matched_rad": 1.3877787807814472e-16
+    },
+    {
+      "hidden_meter_gain_error": 0.01,
+      "endpoint_visibility": 0.9999943253092758,
+      "phase_difference_from_matched_rad": 0.0003665161457622323
+    },
+    {
+      "hidden_meter_gain_error": 0.05,
+      "endpoint_visibility": 0.9998589695321006,
+      "phase_difference_from_matched_rad": 0.009124747168430375
+    }
+  ]
+}

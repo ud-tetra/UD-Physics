@@ -1,0 +1,36 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-meter-coupling-20261023-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-meter-coupling-20261023",
+  "goal": "Balanced local meter coupling, projective loading cancellation and mismatch/calibration/synchrony bounds",
+  "created_at": "2026-10-24T02:00:34.240069+00:00",
+  "base_revision": "0abea764505989dde38fe0906d0d32c53d76b93c",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-meter-coupling-20261023": {
+      "ref": "refs/heads/claims/qpb1-meter-coupling-20261023",
+      "sha": "01f3da1a36c8c1d4be1434fdfdf77078f9396b93",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-meter-coupling/audit.py --out /workspace/scratch/ed44232d6ecb/meter-coupling-outputs",
+      "result": "PASS24hashes,13rows,30energy/28active/71pair,3intertwining,commoncomplex,24S4,50gaugepolygons,120integerwindows,witnessreplay,2RK4,3negativecontrols"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS193records;capturedbytesanddocumentationlinksvalid;24pinnedsourcehashesunchangedaftermainadvance"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    }
+  ],
+  "finding": "Matched balanced meter has same projective ray and finite-window phase while totalstorage dissipates. Nominalb>1/8; finite residual/reset and mismatch/calibration/jitter/noise budgets imply prior26bitstrict and21bitamended phase certificates. Actualhardware and practical tolerance remainOPEN.",
+  "next_action": "Derive a direct projective-phase tolerance bound for differential meter mismatch, quotienting exactly harmless scalar/common-J directions; determine whether useful tolerances replace the conservative full-amplitude box; priority95.",
+  "integration_base_revision": "96319cbce750e5c4a2fc9772783fdbbf2e34a614"
+}

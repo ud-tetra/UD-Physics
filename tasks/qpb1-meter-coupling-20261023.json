@@ -1,0 +1,19 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb1-meter-coupling-20261023",
+  "goal": "Balanced local meter coupling and loading/calibration/synchrony bounds",
+  "owned_paths": [
+    "tasks/qpb1-meter-coupling-20261023.json",
+    "sessions/qpb1-meter-coupling-20261023-a1/",
+    "experiments/qpb1-meter-coupling/",
+    "candidates/qpb1-meter-coupling/",
+    "artifacts/qpb1-meter-coupling-20261023-a1/"
+  ],
+  "dependencies": [
+    "qpb1-overlap-acquisition-20261023"
+  ],
+  "status": "complete",
+  "result": "Matched balanced meter has same projective ray and finite-window phase while totalstorage dissipates. Nominalb>1/8; finite residual/reset and mismatch/calibration/jitter/noise budgets imply prior26bitstrict and21bitamended phase certificates. Actualhardware and practical tolerance remainOPEN.",
+  "next_action": "Derive a direct projective-phase tolerance bound for differential meter mismatch, quotienting exactly harmless scalar/common-J directions; determine whether useful tolerances replace the conservative full-amplitude box; priority95."
+}
