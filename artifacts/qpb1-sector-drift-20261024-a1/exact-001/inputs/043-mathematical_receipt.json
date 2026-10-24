@@ -1,0 +1,207 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb1-sector-drift-v1",
+  "session_id": "qpb1-sector-drift-20261024-a1",
+  "candidate_id": "qpb1-sector-drift",
+  "question": "Can bounded changing differential-sector detuning retain finite-window phase and data gates?",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "DRIFT-BETA",
+      "symbol": "b_k(tau)",
+      "object_type": "ComplexscalartransferforeachJ-invariantsector",
+      "definition": "(a,b)prime=L(omega(tau))(a,b),initial(1,0)",
+      "domain": "[0,H]xboundedmeasurablerealomega",
+      "codomain": "C",
+      "coefficient_domain": "Complexflow;exactrationalmajorants;binary64trajectorychecks",
+      "units": "Nativeamplitude;gainfrequency2epsilon/nativeclock",
+      "basis_orientation": "Inheritedascending15simplexorientations,J=A/2,Pk ranks6,6,2",
+      "metric_measure": "Euclideanstorage;Hermitianhconjugate-linearfirst",
+      "origin": "assumedlaw;derivedbound",
+      "exact_expression": "X=16OmegaDelta/(1-4Omega^2),Y=4Delta(1+4Omega^2)/(1-4Omega^2)",
+      "measured_value": null,
+      "uncertainty": "Model assumptions explicit;no measurement",
+      "source_refs": [
+        "PARENT-CONSTANT",
+        "UD-ARCHIVE"
+      ],
+      "assumption_ids": [
+        "DRIFT-CAP",
+        "METER-LAW"
+      ],
+      "dependency_ids": [
+        "PARENT-CONSTANT"
+      ],
+      "normalization": "Knownpositive1/b0(tau),inverse<8"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "PARENT-CONSTANT",
+      "url_or_repo_path": "experiments/qpb1-sector-mismatch/README.md",
+      "version_or_commit": "407fe6da298ea3362886075fdd696bf1dfefd2fb",
+      "section_or_object_id": "Sections1-5;enclose.py;SECTOR_CONTRACT",
+      "source_status": "Inheritedconditionalmodelandexactintervalcertificate"
+    },
+    {
+      "source_id": "UD-ARCHIVE",
+      "url_or_repo_path": "experiments/qpb1-sector-drift/SOURCE_ROWS.json",
+      "version_or_commit": "archivev0.85/scientificv0.43at407fe6da298ea3362886075fdd696bf1dfefd2fb",
+      "section_or_object_id": "G06,G07,O09,O10,O11,O14,Q282,Q283,Q284,Q286,Q287,Q288,Q339",
+      "source_status": "13literalrows;noactionunitinferred"
+    },
+    {
+      "source_id": "HISTORICAL-UPLOADS",
+      "url_or_repo_path": "sources/imports/2026-10-22/",
+      "version_or_commit": "ledgerv0.39andCRL2proposalv1.0",
+      "section_or_object_id": "G06historicalprovenance;governance2,4,5",
+      "source_status": "Freshuploadbytesmatchimports;notlatestcanonicalsourceormandatoryadoption"
+    }
+  ],
+  "assumptions": [
+    "Inherited15realchainregisters,active14real/7complex,Euclideanmetric,ascendingorientations,J=A/2,orthogonalJinvariantPk ranks6,6,2;added15classicalmeterregisters.",
+    "Exactengineeredkappa1/4,gamma1;absoluteplantgainerror<=1/100;boundspiecewisecontinuousplantdriftallowed.",
+    "Zero-resetstructuredscalarinitial(1,0);arbitraryactual/referencepassivegeneratorremainder<=1e-7 andinitialmeterresidual<=9/12800000000 separatelybudgeted.",
+    "Activepreparationradius1/10,norm[9/10,11/10],r3[1/3,2/3];same-seedQ0=exp(-2pi*i*r3).",
+    "Warmup1;T=2pi\u00b11/100,M128,maxgapTplus/128;alltau<=5107/700.",
+    "Knownpositivenominalb0calibration,26bitnearest-evenADC[-2,2),combinedperregistersensor/referenceerror9/320000000;finitebuffers,64nativereset/offportleak/residual-preservingpreparationretained.",
+    "|epsilon_k(tau)|<=11/1000 for0<=tau<=H",
+    "EachindependentsectorLipschitzconstant<=1/200000 nativegain/nativeunit"
+  ],
+  "technique_plan": [
+    {
+      "technique": "Exactrationalandintegertoolchain",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "RationalVolterra/phasebudgets,sourcehashesandGaussianintegerreadoutreplay"
+    },
+    {
+      "technique": "Spectral/operatorandVolterraanalysis",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Passivity,real-kernelnorm,parity-awareR/Idifferencesandboundedexcursions"
+    },
+    {
+      "technique": "Projection/finitepolygongeometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Retainactive14,sectorweights,overlapcoherenceandmod2piphase"
+    },
+    {
+      "technique": "Primefactorization",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "128=2^7links,2^26ADClevels;1/200000=2^-6*5^-5isachosenrationalrate,nophysicalconstantinferred"
+    },
+    {
+      "technique": "Clock/modulararithmetic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Nativecontinuousclockandcircularphasemod2pi;nounwrappedwindingorrecurrentregisterclaim"
+    },
+    {
+      "technique": "Newhomology/group/refinementcounts",
+      "applicability": "NA",
+      "purpose_or_na_reason": "Inheritedfinitecarrier/projectorsunchanged;norefinementornewselectionlaw"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "13profiles*3windows*5preparations*3gaintriples=585;128links+1=129samples",
+    "reduced_expression": "Lipschitzrate1/200000;H=5107/700;Delta=2H/200000",
+    "factor_origins": [
+      "128linksfromparentphaseprotocol",
+      "26bitsfromparentacquisition",
+      "3independentorthogonalsectorsfromcarrier",
+      "1/200000target-exposeddevelopmentchoice"
+    ],
+    "factorization": "128=2^7;200000=2^6*5^5",
+    "divisibility_gcd_lcm": "NA;noquotientorbitormodularinverseisused"
+  },
+  "clock_receipt": {
+    "clock_type": "Continuousnativetime;finite129samplewindow",
+    "modulus": "Readoutphasemodulo2pi",
+    "residue_convention": "Principalcirculardistance;noactionconversion",
+    "update_rule": "BalancedcontinuousODE;26bitnearest-evenADCandGaussianintegerdecoder",
+    "initial_phase": "Warmup0..1;measuredwindow1..1+T",
+    "coupling": "Gsharedbyplant/meter;threechangingdifferentialmeterdetunings",
+    "period_claim": "Onlyfinitewindowcertificate;noexactglobalperiodunderdrift",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R15plantplusR15classicalmeter,active14each;unmodeledarbitrarypassiveremainderseparate",
+    "generator_or_update": "xprime=Gx-m/4;mprime=(G+2J sum epsilon_k(tau)Pk)m+x/4-m",
+    "initial_boundary_conditions": "Parentactiveball,zerostructuredmeter;resetresidualseparatelybudgeted;0<=tau<=H",
+    "conservation_and_sources": "Storednormderivative=-||m||^2;timevaryingskewtermsdonotaddstorage",
+    "projection_and_kernel": "Pactive14;harmoniclineexcludedfromstructuredseed;arbitraryleak coveredbynormbound",
+    "physical_mapping": "Proposedclassicalreadout,notnativequantummeasurementorSIcalibration"
+  },
+  "target_exposure": {
+    "status": "DEVELOPMENT_TARGETS_EXPOSED",
+    "known_targets": [
+      "0.011gainbox",
+      "phase<0.004rad",
+      "endpoint>.99,links>.999",
+      "26bitprotocol"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Fourdevelopmentrateprobes;selected1/200000;port1/4,damping1retainedassumptions;loosekernelJ2andcomponentwisebounds"
+    ],
+    "search_domain_and_budget": "4initialrationalrateprobes;13trajectoryprofiles,585windows,6doublings;notglobaloptimization",
+    "selection_criterion": "Largestpassinginitialratewithretainedgatesandmargin",
+    "baseline": "Exactzero-rateparentbudget;common-timevaryinganalogphase-null"
+  },
+  "calculation_steps": [
+    "Read/pin36sourcesand13literalrows;verifyattachmentswithoutchangingthem.",
+    "Derivekernelintegral<2fromexactalpha/betarootbounds;usepassivitytoobtain|b|<=1/4.",
+    "Subtractreal/imaginaryVolterraequationsfromconstantinitialdetuningandsolve2scalarinequalities.",
+    "Rerun512exactrationalparentintervalcells;deriveamplituderangeandphaseexcursion.",
+    "Applyfinitepolygonweight/coherenceandmomentbounds;retainseparatearbitrarygenerator/resetandsensorbudgets.",
+    "Checkexactzero-rateidentityandfaileddoubled-ratesufficientbudget.",
+    "Runbinary64changingprofiles,constantclosedformandsubstepcomparisons;quantizeandreplayexactintegerwitness."
+  ],
+  "result": {
+    "exact_expression": "|epsilon_k|<=11/1000,Lipschitz<=1/200000;totalphase<1/260<1/250,ve>.99,vl>.999",
+    "approximation": "totalphasebound0.0037605946302933443rad",
+    "units": "Nativegain/nativeclock;dimensionlesscircularphaseinradians",
+    "precision_and_error": "ExactFractioncertificateandparentrationalintervalcells;binary64normtol2e-9,phasetol5e-9;notvalidatedODEintegration",
+    "scope": "Allboundedexcursions<=H/200000aboutfixedreferenceswithincontinuousgaincap,includingLipschitzcorollary,fullparentpreparation/plant/timingdomain,26bitanddeclaredseparateerrors",
+    "physical_interpretation": "HYPOTHESIS;physicalpromotion0;hardwareNOT_MEASURED"
+  },
+  "verification": [
+    {
+      "method": "ExactconstructorproofandFractionbudgetwith512cellparentintervalrerun",
+      "command_or_proof_path": "python3 experiments/qpb1-sector-drift/audit.py --out /workspace/scratch/ed44232d6ecb/sector-drift-outputs",
+      "source_revision": "407fe6da298ea3362886075fdd696bf1dfefd2fb",
+      "actual_result": "PASS36hashes,13rows,512cells,rationalbudget,zero-rateidentity,faileddoubled-ratescreen",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "Binary64RK4,closedformulaandstepsizecomparison;exactintegerpostdigitization",
+      "command_or_proof_path": "experiments/qpb1-sector-drift/audit.py",
+      "source_revision": "407fe6da298ea3362886075fdd696bf1dfefd2fb",
+      "actual_result": "PASS585windows,90common-nullchecks,6doublings,constantclosedformula,witnessreplay;maxphaseerror0.000764421060431",
+      "review_relationship": "constructor;differentnumericalevaluationnotindependentreview"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Rate1/100000givesbound~.004177242andfailsphasecertification;notanactualdynamicalfailure.",
+    "Parentout-of-box.05counterexampleand21bitfullboxfailedsufficientextensionretainoriginalscope."
+  ],
+  "limitations": [
+    "NoSIclock/action/calibration/nativecouplingselectionorhardwaretest.",
+    "Port1/4,damping1fixedassumptions;nogeneraltolerancebox.",
+    "Lipschitzandamplitudecapapplyfrominitialpreparationthroughwarmupandwindow.",
+    "Nooptimaldriftrateclaim;per-link2Echichargeisconservative.",
+    "Arbitrarypassiveerrorfullscopeanalytic;numericalcampaignusescommutingsubset.",
+    "Non-constructorreviewandempiricalreplicationNOT_RUN."
+  ],
+  "changed_dependencies": [
+    "Noimportedsourceortheoremchanged;newassumptionallowstimevariationbutboundsitsrate/excursion."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-sector-drift-20261024-a1/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Replaceper-linkexcursionchargewithaVolterraphase-rateboundtolargendriftallowance."
+}

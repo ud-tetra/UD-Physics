@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source_hashes": 36,
+  "literal_rows": 13,
+  "parent_interval_cells": 512,
+  "native_gain_cap": "11/1000",
+  "native_gain_lipschitz_rate": "1/200000",
+  "phase_bound": "<1/260rad<1/250rad",
+  "endpoint_visibility": ">99/100",
+  "link_visibility": ">999/1000",
+  "ADC_bits": 26,
+  "integer_windows": 585,
+  "integer_witness_replay": "PASS",
+  "common_null_checks": 90,
+  "doubled_rate_sufficient_bound": "FAIL",
+  "hardware": "NOT_MEASURED",
+  "physical_promotion": 0
+}

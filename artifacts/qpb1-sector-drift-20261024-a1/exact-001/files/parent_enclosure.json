@@ -1,0 +1,82 @@
+{
+  "evidence": "EXACT_RATIONAL_INTERVAL",
+  "time_cells": 512,
+  "time_domain": [
+    "1",
+    "5107/700"
+  ],
+  "omega_domain": [
+    "-11/500",
+    "11/500"
+  ],
+  "outward_grid_denominator": 1000000000000,
+  "time_taylor_order": 100,
+  "detuning_taylor_degree": 5,
+  "time_taylor_point_error_formula": "3^17*17^101/101!",
+  "time_taylor_point_error_verified_below": "1/1000000000000000000",
+  "time_taylor_point_error_upper": "1/1000000000000",
+  "parametric_tail_rho6_upper": "221/7812500000",
+  "amplitude_omega2_coefficient": [
+    "-164023158061/200000000000",
+    "-2459196511/50000000000"
+  ],
+  "amplitude_worst_cells": [
+    369,
+    0
+  ],
+  "f_start": [
+    "208845037213/500000000000",
+    "417690074437/1000000000000"
+  ],
+  "f_end_on_699_100_to_H": [
+    "751574271943/1000000000000",
+    "775956965157/1000000000000"
+  ],
+  "normalized_coefficients_abs_upper": [
+    "62952441533/62500000000",
+    "439941973611/500000000000",
+    "77617880693/100000000000",
+    "345221444783/500000000000",
+    "124812939549/200000000000",
+    "57481932011/100000000000"
+  ],
+  "normalized_phase_rate_coefficients": {
+    "1": "459901932417/500000000000",
+    "3": "8108697249281/1000000000000",
+    "5": "37167846373069/1000000000000",
+    "7": "5562786991599/200000000000",
+    "9": "2028397131567/100000000000"
+  },
+  "phase_cubic_coefficient_upper": "405928572207/250000000000",
+  "phase_rate_over_omega_upper": "3698734869/4000000000",
+  "proved_constants": {
+    "amplitude_coefficient": "3/2",
+    "endpoint_f_difference": "2/5",
+    "phase_cubic": "10",
+    "phase_rate": "2"
+  },
+  "endpoint_cell_records": [
+    {
+      "cell": 0,
+      "time": [
+        "1",
+        "362807/358400"
+      ],
+      "amplitude_coefficient": [
+        "-112368046629/1000000000000",
+        "-2459196511/50000000000"
+      ]
+    },
+    {
+      "cell": 511,
+      "time": [
+        "372911/51200",
+        "5107/700"
+      ],
+      "amplitude_coefficient": [
+        "-178118905557/250000000000",
+        "-657926023943/1000000000000"
+      ]
+    }
+  ]
+}
