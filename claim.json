@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-linewidth-20261023",
+  "session": "graphlineidx-20261023-b4b7285a",
+  "status": "held",
+  "created_at": "2026-10-24T01:11:03Z",
+  "base_revision": "9f5c49a1d6cea34499f22ac8470bf6b3c98ab82d",
+  "owned_paths": [
+    "tasks/integration-graphite-linewidth-20261023.json",
+    "sessions/graphlineidx-20261023-b4b7285a/",
+    "state/CURRENT.md",
+    "experiments/graphite-superlubricity/README.md"
+  ]
+}
