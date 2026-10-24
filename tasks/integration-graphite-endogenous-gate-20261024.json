@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-endogenous-gate-20261024",
+  "goal": "Index merged graphite endogenous gate limit at an integrated milestone",
+  "owned_paths": [
+    "experiments/graphite-manuscript-v2/README.md",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md",
+    "sessions/graphendogidx-20261024-01"
+  ],
+  "dependencies": [
+    "graphite-endogenous-gate-20261024"
+  ],
+  "status": "complete"
+}
