@@ -1,0 +1,43 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphtraffic-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute plus GitHub connector write",
+  "task": "graphite-traffic-source-20261024",
+  "goal": "Define a target-blind candidate edge traffic and route update; test detailed balance and harmonic projection",
+  "created_at": "2026-10-24T17:28:57.164351+00:00",
+  "base_revision": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/graphite-traffic-source-20261024",
+    "held_sha": "5beb99c185c57c9a38340e9a6b47a851a49a064a",
+    "status": "held"
+  },
+  "checks": [
+    "exact rational traffic and face witness PASS",
+    "scripts/validate.py PASS (254 records)",
+    "16 unit tests PASS",
+    "after rebase onto b7bf64e: scripts/validate.py PASS (258 records), 16 unit tests PASS",
+    "git -c core.whitespace=-blank-at-eol diff --cached --check PASS; captured ledger preserves its original Markdown trailing spaces",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Target-blind typed candidate and two obstructions, with no physical source promotion.",
+  "next_action": "Derive rates and route from current UD packet contacts, then test material cross-Hessian and complex loss across quotients.",
+  "mathematical_profile": {
+    "coefficient_domain": "nonnegative real Markov rates/populations; exact rational counterexamples and integer chain matrices",
+    "exactness_or_precision_plan": "symbolic continuity and harmonic projection proofs; Fraction and integer replay",
+    "applicable_methods": [
+      "conservation and positivity of finite Markov generator",
+      "exact exchange parity",
+      "B1B2=0 and harmonic orthogonality",
+      "N/A prime/modular clock: no residue law; internal time dimensionless"
+    ],
+    "clock_metric_units_conventions": "oriented A-to-B honeycomb edges and unit edge metric; σ reverses under edge exchange; Markov time s is uncalibrated and is not physical time"
+  },
+  "checkpoint_at": "2026-10-24T17:30:36.262915+00:00",
+  "checkpoint_source": {
+    "revision": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3",
+    "dirty": true
+  }
+}
