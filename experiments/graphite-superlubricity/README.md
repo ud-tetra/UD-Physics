@@ -10,6 +10,7 @@
 - [Candidate](../../candidates/graphite-superlubricity/candidate.json), [mathematical receipt](../../candidates/graphite-superlubricity/mathematical_receipt.json), and [session handoff](../../sessions/graphpub-20261023-gpt6-4f9a/journal.md).
 - [Passive-port attribution follow-up](../graphite-port-attribution/README.md): exact conditional proof that the seven-orbit source plus an unrestricted passive bath permits every passive two-dimensional residual tensor. Independent source and loss calibration is necessary for a quantitative force/load prediction. This follow-up limits the interpretation of the versioned preprint; it is not new friction data.
 - [Four-site source-constraint follow-up](../graphite-source-constraints/README.md): two exact linear cross-Hessian relations test the *pure* seven-orbit source without fitting its weights or damping. The archived KC reconstruction fails the pure-source test; a proposed additive UD coupling requires an independently subtracted conventional baseline. No new measured friction is claimed.
+- [Mode-linewidth calibration follow-up](../graphite-linewidth-transfer/README.md): the archived conventional height spectrum gives a conditional dimensional transfer from independently measured dissipative widths of two E-mode pairs to low-frequency drag. The closed finite model has zero Ohmic drag; widths, source-specific coupling and sliding-force readout remain unmeasured.
 
 ## Claim at its actual scope
 
