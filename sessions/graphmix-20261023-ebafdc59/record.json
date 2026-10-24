@@ -8,12 +8,14 @@
   "created_at": "2026-10-24T01:22:14.466424+00:00",
   "base_revision": "53460195f74411ce764b24e0ab9d4fd772c4bd6f",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "graphite-cross-loss-20261023": {
       "ref": "refs/heads/claims/graphite-cross-loss-20261023",
       "held_sha": "3e3cb41df8e5634ff4e26edcb06028b4af6c2654",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "87e06b0d400f0836d854426d723b5301a14d0dda",
+      "released_at": "2026-10-24T01:25:08Z"
     }
   },
   "checks": [
@@ -29,10 +31,15 @@
     {
       "command": "python3 -m unittest discover -s tests -v",
       "result": "PASS 16 tests"
+    },
+    {
+      "command": "GitHub Discovery integrity PR #94",
+      "result": "PASS workflow 40049665069, job 120739300393",
+      "relationship": "automated integrity, not independent physics review"
     }
   ],
-  "finding": "Exact conditional passive cross-loss interval; 16 A equal-width diagonal coefficient ±48.7018830%, archived replay at three cutoffs, no load derivative from pair widths",
-  "next_action": "Measure pressure-resolved complex cross-mode loss, freeze conventional baseline, then test held-out signed force/load contrast",
+  "finding": "Conditional PSD cross-loss envelope \u00b148.7018830% around diagonal equal-width 16 A transfer; no signed force or load slope established",
+  "next_action": "Measure complex cross self-energy across pressure, subtract conventional baseline and test signed held-out force/load data",
   "mathematical_profile": {
     "coefficient_domain": "real PSD matrices; archived floating spectral weights",
     "exactness_or_precision_plan": "Exact operator inequality, replay archived 14/16/18 A decimals without falsely rationalizing",
