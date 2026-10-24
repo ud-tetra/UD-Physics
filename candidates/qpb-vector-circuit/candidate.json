@@ -1,0 +1,43 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb-vector-circuit",
+  "session_id": "qpb-vectorcircuit-20261024-gpt6-a1",
+  "question": "Can source-defined tetrahedral vector charge/current become a physically calibrated reciprocal multiport with a distinguishable UD prediction?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Integrated charge-field R12 canonical a,p is an extra field model, not original active R14.",
+    "New external source f_edge and charge history rho_ref'=B1 f, with gauge multiplier psi.",
+    "Physical flux/charge maps Phi=A0 a/q0, Q=q0p, t=tau0s, E=A0 H/tau0 are assumed.",
+    "Positive uL,uT,v and regular reciprocal generalized LC multiport; no fabricated apparatus."
+  ],
+  "physical_mapping": "Explicit hypothetical SI mapping to edge flux Wb, displacement Q C, conjugate voltage V, source current I, action A0 J*s and clock tau0 seconds; none calibrated.",
+  "target_exposure": "Earlier frequency=2 target, action ratio and electron source interpretations known; new model uses frequency-normalized uT*v=1 only to illustrate pulse cancellation, no empirical fit.",
+  "fitted_choices": [
+    "Use j=(1,-1,0,0) and exact neutral cycle w to isolate source responses.",
+    "Three arbitrary positive constitutive triples and rational A0,q0,tau0 illustrate power/scale; arbitrary h=1/2,2,3 tests continuum gauge.",
+    "Pulse duration pi and pi/2 selected after native harmonic frequency known, not prediction."
+  ],
+  "sources": [
+    "18a84984af40265d673b7b893c73de152a7cc8c5:experiments/qpb1-charge-field/README.md",
+    "18a84984af40265d673b7b893c73de152a7cc8c5:experiments/qpb1-source-reservoir/README.md",
+    "18a84984af40265d673b7b893c73de152a7cc8c5:experiments/qpb1-impedance-selection/README.md",
+    "https://arxiv.org/abs/0707.4470",
+    "https://doi.org/10.1103/PRXQuantum.5.020309"
+  ],
+  "baseline": "Ordinary reciprocal coupled LC Hamiltonian with identical positive capacitance matrix, semidefinite loop inductive matrix and externally driven currents.",
+  "result": "EXACT/CONDITIONAL driven continuity, gauge-compatible time-dependent source, supplied-work balance, physical V·I. Differential charge pulse stores H_C=uL r²/4; divergence-free cycle has sinc² pulse-duration response. All physical Cinv/Linv, Q/Phi, input/output conserved under continuous rescaling of U,v,A0 and native coordinate a, so independent UD physical charge/action not identifiable. No unique physical prediction.",
+  "next_discriminant": "Physical independent q0,A0 and transducer source law; calibrated port voltage/current and source-energy measurements, and new frozen UD distinctive response beyond ordinary LC.",
+  "reopening_conditions": "Independent source-derived action/charge map plus measured circuit implementation with discriminating constitutive/response prediction absent from matched LC baseline.",
+  "mathematical_receipts": [
+    "sessions/qpb-vectorcircuit-20261024-gpt6-a1/mathematical_receipt.json"
+  ]
+}
