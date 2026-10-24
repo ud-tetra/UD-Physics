@@ -8,15 +8,22 @@
   "created_at": "2026-10-24T16:16:15.734952+00:00",
   "base_revision": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "ref": "refs/heads/claims/graphite-manuscript-v2-20261024",
     "held_sha": "4b46b408d5c305e3c2439da1b55d5d151754e592",
-    "status": "held"
+    "status": "released",
+    "release_sha": "1aaff99375a3e34922736f39584cf05ba7feb804"
   },
-  "checks": [],
-  "finding": "Three-page revised preprint separates exact conventional angles, conditional UD source, conventional 2D drag and the still-open signed residual; PDF and TeX checked.",
-  "next_action": "Publish focused PR, release claim, index v2 through integration claim; obtain contact-calibrated complex loss and held-out signed force/load data.",
+  "checks": [
+    "exact first-star replay PASS",
+    "PDF compile twice and three-page visual inspection PASS",
+    "scripts/validate.py PASS (225 records)",
+    "16 unit tests PASS",
+    "GitHub Discovery integrity workflow 40111089176 success"
+  ],
+  "finding": "Revised graphite paper merged in PR #124 at 2d985e88475ad71f69afc7797c5a792372502123; no measured UD friction residual.",
+  "next_action": "Integrate index and obtain independently calibrated material source, complex loss, contact and held-out signed force/load curves.",
   "mathematical_profile": {
     "coefficient_domain": "exact integers/rationals and symbolic real PSD matrices; source-rounded DFT decimals",
     "exactness_or_precision_plan": "replay existing exact first-star script; do not infer uncertainties from DFT-fit RMS",
