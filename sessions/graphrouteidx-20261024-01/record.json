@@ -8,14 +8,15 @@
   "created_at": "2026-10-24T17:21:10.914578+00:00",
   "base_revision": "0297ac2d187d1880b1cdf26eba21ab18cf41f7fc",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "ref": "refs/heads/claims/integration-graphite-route-parity-20261024",
     "held_sha": "ef46937d28fca1094f9078595358ffebb4795b7a",
-    "status": "held"
+    "status": "released",
+    "release_sha": "d9eb952e77480000241f9697844cd4f54053fdca"
   },
-  "checks": ["scripts/validate.py PASS (250 records)", "16 unit tests PASS", "git diff --check PASS", "independent physics review NOT_RUN"],
-  "finding": "Graphite route-parity result indexed with its conditional scope; native source law remains open.",
+  "checks": ["scripts/validate.py PASS (250 records)", "16 unit tests PASS", "git diff --check PASS", "GitHub Discovery integrity workflow 40115780154 success", "independent physics review NOT_RUN"],
+  "finding": "Graphite route-parity result indexed with its conditional scope in PR #141 at 7cf91e525aac7e3373da2d5633e258cb44ee4517; native source law remains open.",
   "next_action": "Derive Q25/Q26 primitives and test signed force-speed response.",
   "mathematical_profile": {
     "coefficient_domain": "N/A editorial integration",
