@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-manuscript-v2-20261024",
+  "session": "graphpaperidx-20261024-01",
+  "status": "held",
+  "created_at": "2026-10-24T16:22:49Z",
+  "base_revision": "f868872ee6cffec911ed583935805841430dc350",
+  "owned_paths": [
+    "tasks/integration-graphite-manuscript-v2-20261024.json",
+    "sessions/graphpaperidx-20261024-01/",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md"
+  ]
+}
