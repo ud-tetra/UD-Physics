@@ -3,7 +3,7 @@
   "protocol_version": 2,
   "task": "graphite-directional-shape-20261024",
   "session": "graphshape-20261024-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-24T16:30:17Z",
   "base_revision": "a7c6b123c144d37fb7a3fcefed36a3ff764af027",
   "owned_paths": [
@@ -12,5 +12,7 @@
     "candidates/graphite-directional-shape/",
     "experiments/graphite-directional-shape/",
     "artifacts/graphshape-20261024-01/"
-  ]
+  ],
+  "released_at": "2026-10-24T16:34:27Z",
+  "released_from_sha": "a5cbb2b7be0588c0a91c2af8e6a89dd67665a7cc"
 }
