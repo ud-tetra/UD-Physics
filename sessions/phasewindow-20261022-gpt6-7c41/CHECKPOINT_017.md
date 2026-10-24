@@ -11,3 +11,12 @@
 - The original full nonlinear `u=100` cell, 120-strut, breathing/ringdown criteria remain OPEN; no Green/remainder certificate was obtained.
 - Other owner: PR #44 and `integration-icosahedral-greenbounds-20261022` are untouched.
 - Next discriminant (99/100): establish a trajectory-domain positive-length tube and bounded projected propagator plus full-state nonlinear source over every admitted phase; do not extend the initial-time inequality by assumption.
+## Capture provenance / execution distinction
+
+The complete version-2 `initial-curvature-017` archive was constructed, rehashed and ZIP-tested in the local compute runtime, **not committed as a complete GitHub artifact tree**. Download it from the associated conversation artifact.
+
+- ZIP: `UD_3D_Initial_Curvature_017_20261024.zip`, 172655 bytes; SHA-256 `b7406a8183dad992e57f523eae8c6e4f084f582c441a0ce935dc9ddc270db42f`.
+- Local schema-2 manifest SHA-256: `824b225a7a7cc763dcc150fd4b169421275658b789f15e110cb6d074d2957b7b`.
+- Inputs: 7 captured files; outputs: 6; 238 initial-phase numerical directions; 13 four-corner 560-state checks; 5 low-energy singular-approach states.
+- Executed locally (PASS): exact rational checker and source-matched constructor checks. Full nonlinear time/Green estimates **NOT_RUN**. Repo CI validates only the committed repo files; it does not prove the archived exact result.
+- Receipt included inside local ZIP. A separate peer or checkout rerun is not yet evidence of replication.
