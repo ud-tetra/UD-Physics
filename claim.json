@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "graphite-route-parity-20261024",
+  "session": "graphroute-20261024-01",
+  "created_at": "2026-10-24T17:15:20.105Z",
+  "base_revision": "407fe6da298ea3362886075fdd696bf1dfefd2fb",
+  "owned_paths": [
+    "tasks/graphite-route-parity-20261024.json",
+    "sessions/graphroute-20261024-01/",
+    "candidates/graphite-route-parity/",
+    "experiments/graphite-route-parity/",
+    "artifacts/graphroute-20261024-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
