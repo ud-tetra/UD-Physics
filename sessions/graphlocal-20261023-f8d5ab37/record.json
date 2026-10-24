@@ -13,13 +13,16 @@
     "graphite-locality-selection-20261023": {
       "ref": "refs/heads/claims/graphite-locality-selection-20261023",
       "held_sha": "221478de0cca1b4b590d4b6ee30f5ffd3be06608",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "83373133862b93c8ae81752c99eba11bf7b8d2a3",
+      "released_at": "2026-10-24T02:14:34.585Z"
     }
   },
   "checks": [
     "python3 experiments/graphite-locality-selection/replay_locality.py: PASS exact rational N=7/13/19",
     "python3 scripts/validate.py: PASS 193 records",
-    "python3 -m unittest discover -s tests -q: PASS 16 tests"
+    "python3 -m unittest discover -s tests -q: PASS 16 tests",
+    "GitHub Discovery integrity run 40053286067: success (integrity only)"
   ],
   "finding": "Exact conditional no-go: a common translation-covariant incidence-gradient edge stencil gives N-independent harmonic zero-sector port; C3 covariance kills it for every quotient",
   "next_action": "Derive independent registry/load/temperature edge law, then compare held-out signed force and load response after conventional PES baseline",
