@@ -1,0 +1,27 @@
+{
+  "bounds": {
+    "angular_spread": "2291/8750",
+    "phase_error_from_spread": "12024728171/3881753373750",
+    "preparation_phase": "11/3500",
+    "receiver_phase": "612500/606638819",
+    "total_decimal": 0.008250275741097312,
+    "total_radians": "11101676085864605533/1345612732743408915000",
+    "visibility_lower": "607251319/612500000"
+  },
+  "checks": {
+    "four_fringe_and_noise_directions": true,
+    "sample_unnoised_phase_error_max": 0.0034117372716309788,
+    "sample_visibility_min": 0.9914495580765449,
+    "seeded": 25000,
+    "structured": 243
+  },
+  "model": {
+    "complex_overlap_noise": "1/1000",
+    "dynamical_correction_error_rad": "1/1000",
+    "gain_errors": "1/100",
+    "preparation_distance": "1/2000",
+    "time_error": "1/100 native unit"
+  },
+  "review": "same-assistant alternate derivation and implementation; external review NOT_RUN",
+  "status": "PASS"
+}

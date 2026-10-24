@@ -1,0 +1,83 @@
+{
+  "claim_scope": "All independent errors in the closed box, analytic bounds; fixed state weights",
+  "conventions": "J multiplication by +i; Euclidean sector metric; zero physical calibration",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL"
+  ],
+  "limits": "No device, no noise model, no measured time, no rate-selection mechanism",
+  "odd_N_challenges": [
+    {
+      "exact_recurrence_phase": "+1",
+      "gain2_error": "1/101",
+      "minimal_exact_ray_period_over_pi": 202,
+      "odd_N": 101,
+      "open_path_phase_shift_radians": -3.012352405498686e-05,
+      "reference_phase": "-1",
+      "visibility_at_T_2pi": 0.9985495491643009
+    },
+    {
+      "exact_recurrence_phase": "+1",
+      "gain2_error": "1/1001",
+      "minimal_exact_ray_period_over_pi": 2002,
+      "odd_N": 1001,
+      "open_path_phase_shift_radians": -3.0913748074856e-08,
+      "reference_phase": "-1",
+      "visibility_at_T_2pi": 0.9999852252427507
+    },
+    {
+      "exact_recurrence_phase": "+1",
+      "gain2_error": "1/10001",
+      "minimal_exact_ray_period_over_pi": 20002,
+      "odd_N": 10001,
+      "open_path_phase_shift_radians": -3.099697972255844e-11,
+      "reference_phase": "-1",
+      "visibility_at_T_2pi": 0.9999998519855469
+    }
+  ],
+  "phase_error_upper_radians": 0.0027355301968378137,
+  "phase_error_upper_rational": "42592/15569925",
+  "reference_gains": [
+    "1",
+    "1",
+    "3/2"
+  ],
+  "reference_weights": [
+    "1/4",
+    "1/4",
+    "1/2"
+  ],
+  "sample_detail": [
+    {
+      "corrected_phase_change_radians": 0.0,
+      "first_order_uncorrected_shift_radians": -0.0,
+      "gain_errors": [
+        "-1/100",
+        "-1/100",
+        "1/100"
+      ],
+      "visibility": 0.9921147013144779
+    },
+    {
+      "corrected_phase_change_radians": -3.10369008015138e-05,
+      "first_order_uncorrected_shift_radians": -0.031415926535897934,
+      "gain_errors": [
+        "0",
+        "1/100",
+        "0"
+      ],
+      "visibility": 0.9985204119060007
+    }
+  ],
+  "sample_max_abs_phase_shift_radians": 0.0002490323134568204,
+  "sample_min_visibility": 0.9921147013144779,
+  "sampled_gain_triples": 125,
+  "status": "PASS",
+  "target_phase_error_ceiling_radians": "1/100",
+  "target_visibility_floor": "99/100",
+  "uncertainty": "|delta_gj|<=1/100 independently, including g1 != g2",
+  "visibility_lower_decimal": 0.9920979591836735,
+  "visibility_lower_rational": "30383/30625",
+  "window": "T=2*pi, dimensionless"
+}

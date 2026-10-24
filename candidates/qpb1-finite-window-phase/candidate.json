@@ -1,0 +1,62 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-finite-window-phase",
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "question": "Does endpoint-corrected open-path phase stay stable on a fixed window when g1,g2,g3 have independent errors?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Imported single filled-tetrahedron 15-coordinate, rank14 active carrier, three mutually orthogonal J-complex sectors with Euclidean metric and signed S4 equivariance.",
+    "Added local positive gains g=(1,1,3/2)+delta; each |delta_gk|<=1/100; natural time s dimensionless; T=2pi.",
+    "Declared Pancharatnam overlap endpoint correction and connection alpha=<Jx,dx>/||x||^2; normalized nonzero active states.",
+    "An operational interferometric apparatus and clock calibration are not part of the model.",
+    "Follow-up: ideal coherent four-analyzer interference measurement and separately calibrated same-gauge dynamical phase, with finite deterministic noise bounds; physical implementation OPEN.",
+    "Phase-003: short-time probes at h=1/12 and h/2; same time-independent generator across calibration and main measurement within gains 5e-6; normalized state repeatability 5e-6; complex probe error 2e-6; time metrology <=1e-7 probe / <=1e-5 main; same fiber phase gauge.",
+    "Phase-004: ideal IID Bernoulli four-analyzer events at each of two short-time delays; external phase-frame may drift independently between probes and main measurement.",
+    "Phase005: S,R,N coherent complex channels with independently measured common reference and path-matched bypass; prior phase003 D calibration remains valid; physical path matching unverified.",
+    "Phase006: physical meaning of top-cell and four oriented face/edge ports is only hypothetical; exact 15x15 signed S4 H=I generator and separately introduced one-bond symmetry-breaking perturbation.",
+    "Phase007: source-only analytic functions of A leave only cA; alternative explicitly postulates coordinate-local quartic onsite Hamiltonian with lambda>=0, not source-derived, preserving signed S4 but not prior J U1 phase dynamical equivariance.",
+    "Phase008: fully separable onsite C1 H=sum h_i with h_i'(0)=0 and full retained J energy symmetry; alternative P3 star-coupled quartic energy, conservative Poisson A and free lambda.",
+    "Phase009 positive-semidefinite symmetric sector quartic H_L; normalized reference and second states, old J/S4 and native linearization retained; PSD does not guarantee positive modal rates for arbitrary amplitude."
+  ],
+  "physical_mapping": "OPEN: no measured time, physical apparatus, native gain-selection mechanism or eta_A calibration; UNSCORED, promotion0",
+  "target_exposure": "DEVELOPMENT_AFTER_TWO_RATE_REFERENCE: g0=(1,1,3/2), r0=(1/4,1/4,1/2) and target Hol=-1 already inspected; 99% visibility/0.01 rad screens newly declared engineering diagnostics, not held-out targets",
+  "fitted_choices": [
+    "Chosen T=2pi to hit old selected ray-return reference; selected independent box epsilon=1/100 and engineering floors V>=99/100, |phase shift|<=1/100 rad for first bounded test",
+    "No empirical data fitted, parameters remain freely selectable; 125 deterministic grid and three odd-N checks are constructor development samples",
+    "Exploratory receiver screen |delta T|<=.01, state Euclidean distance<=.0005, complex overlap error<=.001, dynamical correction error<=.001 rad, phase screen .01 rad; selected, not measured.",
+    "Post-exposure h=1/12 and metrology budget optimized to pass existing <=.001 rad correction criterion; no physical fitting or instrument measurements.",
+    "After earlier eta_c exposure: selected 99% sampling threshold, 7.4e12 events/setting conservative design, and 0.002-rad external reference perturbation.",
+    "Target-informed null monitor complex error 1e-4, differential residual 5e-4 rad, 5 seeded injection scenarios incl .002 rad and 3e9 IID detected events per setting for monitor quality. No empirical optimizer or held-out data.",
+    "Post phase005 no-go: selected cell injection, signed four-face readout and a single face0-cell defect with four rational strengths; no target-independent physical data or port calibration.",
+    "Selected quartic form, lambda=1/4 and top-cell amplitudes 1 and 1/2 after earlier phase/port exposure; no physical dataset or native constitutive selection.",
+    "Post-target inverse selection lambda=1 to reproduce previously exposed g3=3/2 at hidden stock r3=1/2; quartic functional form selected during discovery, without empirical data.",
+    "Post-reference family L(t)=E33+t*(1,-1,0)(1,-1,0)^T, t>=0; second preparation and t fixtures chosen after exposure; no independent source fixed t."
+  ],
+  "sources": [
+    "ud-tetra/UD-Physics@41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb:experiments/qpb1-local-generators/README.md",
+    "ud-tetra/UD-Physics@41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb:experiments/qpb1-continuous-phase/README.md"
+  ],
+  "baseline": "Prior exact-ray recurrence Hol=-1 at g0, changes to +1 with arbitrarily small odd-N detuning when return time recalculated; naive dynamic-phase-only integral has linear fixed-T gain sensitivity.",
+  "result": "Exact all-box rational certificate: V>=30383/30625 and |delta phi|<=42592/15569925 rad at T=2pi, including g1!=g2, with baseline phase -1 at chosen reference support. 125-grid constructor passes; physical calibration remains OPEN. Follow-up phase-002 adds exact conditional joint bound error<=0.00825027574110 rad and V>=607251319/612500000, verified in 243+25000 constructor probes; requires unproved independent dynamical calibration. Phase-003 exact/conditional finite-difference calibration => kappa<=699576281715419/725760000000000000 rad, joint phase <=0.00821419808694 rad; stricter unmeasured instrument assumptions. Phase-004: sufficient 59.2e12 independent Bernoulli counts at 99% joint probe bound; 0.002-rad untracked final reference shift yields conditional worst-case budget .0102142 without changing visibility. Physical feasibility still OPEN. Phase005 conditional three-channel null correction bound <=0.008814208087935455 rad with assumed matching; 5120 synthetic tests pass. FAILED physical identifiability: conventional 3-tone spectrum/weights exactly reproduce Z(t), and unmatched drift indistinguishable from physical phase. Phase006 EXACT/CONDITIONAL: cell->four faces locked signed (1,-1,1,-1), cell->edges/vertices=0, and one-face bond defect yields edge t² coefficient epsilon*g2/2 times oriented selected-face boundary; FAILED unique attribution vs classical 15-port incidence-matched skew network. Phase007 EXACT/CONDITIONAL: source-only analytic skew functions f(A)=cA cannot detune; hypothetical quartic local Hamiltonian yields amplitude-normalized face rates 5/2 vs17/8 and a 3/8 J-equivariance defect; FAILED physical distinction vs matched classical nonlinear Hamiltonian with same Poisson matrix. Phase008 EXACT/CONDITIONAL onsite full J-invariant C1 energy reduces to common quadratic; HYPOTHESIS J/S4-compatible hidden-star quartic yields g3=1+lambda*r3 but lambda is free and matched classical Hamiltonian identical. Phase009 EXACT/CONDITIONAL: 6-parameter quartic Sym(3) reference map rank3/kernel3; a continuum of positive semidefinite L(t) matches exposed (1,1,3/2) but second-preparation gains differ; identical classical Hamiltonian. Unique physical attribution PARKED, exact math retained.",
+  "next_discriminant": "REOPEN only with independently source-selected nonlinear coefficient and calibrated held-out experiment versus parameter-budgeted classical matched null; otherwise avoid further target-fitting this family.",
+  "mathematical_receipts": [
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/mathematical_receipt.json",
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/operational_receipt.json",
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/calibration_receipt.json",
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/shot_noise_receipt.json",
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/reference_null_receipt.json",
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/multiport_receipt.json",
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/constitutive_receipt.json",
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/phase_compatible_constitutive_receipt.json",
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/coefficient_degeneracy_receipt.json"
+  ],
+  "reopening_conditions": "Independent source-derived nonlinear coefficient or law plus measured and calibrated physical port/time readout with held-out response separating an equally parameterized classical null."
+}

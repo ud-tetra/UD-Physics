@@ -1,0 +1,232 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb-phase006-multiport-selection",
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "candidate_id": "qpb1-finite-window-phase",
+  "question": "Does the original S4-invariant local tetrahedral chain operator predict restricted multiport transfer unavailable to the previously used scalar three-tone null, and does that establish unique physical attribution?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "carrier",
+      "symbol": "C",
+      "object_type": "rank15 real chain carrier",
+      "definition": "direct sum simplex chains C0..C3 of filled oriented tetrahedron",
+      "domain": "R15",
+      "codomain": null,
+      "coefficient_domain": "Q incidence; R gain and state",
+      "units": "dimensionless",
+      "basis_orientation": "ascending simplex vertices and signed S4 action",
+      "metric_measure": "H=I",
+      "origin": "imported",
+      "exact_expression": "f=(4,6,4,1)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local-source"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit coordinate basis"
+    },
+    {
+      "object_id": "generator",
+      "symbol": "G",
+      "object_type": "real skew linear evolution operator",
+      "definition": "sum gk (Dk-Dk^T), G^T=-G",
+      "domain": "R15",
+      "codomain": "R15",
+      "coefficient_domain": "Q matrix fixtures; R continuous family",
+      "units": "inverse native time",
+      "basis_orientation": "signed ascending",
+      "metric_measure": "Euclidean",
+      "origin": "imported",
+      "exact_expression": "K_iK_j=0 for i!=j; K_i^3=-4K_i",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local-source"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [
+        "carrier"
+      ],
+      "normalization": "g positive optional"
+    },
+    {
+      "object_id": "defect",
+      "symbol": "B",
+      "object_type": "single skew incidence-bond alteration",
+      "definition": "B_face0,cell=1; B_cell,face0=-1",
+      "domain": "R15",
+      "codomain": "R15",
+      "coefficient_domain": "Q",
+      "units": "inverse native time after multiplying epsilon",
+      "basis_orientation": "face0=(1,2,3), oriented opposite to vertex0",
+      "metric_measure": "H=I",
+      "origin": "assumed",
+      "exact_expression": "G_epsilon=G+epsilon B",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "generator"
+      ],
+      "normalization": "not signed S4 equivariant"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "local-source",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "section_or_object_id": "§§1-4 chain generators, signed S4, K_iK_j and sectors",
+      "source_status": "integrated source constructor"
+    },
+    {
+      "source_id": "phase005",
+      "url_or_repo_path": "experiments/qpb1-finite-window-phase/REFERENCE_NULL_PROTOCOL.md",
+      "version_or_commit": "d8e4b3cf9bbc90075d5757e01c8f660bfcd29057",
+      "section_or_object_id": "scalar overlap ordinary three-tone comparison",
+      "source_status": "branch conditional source"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Same fixed oriented tetrahedral register basis, H=I, signed S4 symmetric three-gain generator; all port coordinates assumed meaningful if physically mapped."
+    },
+    {
+      "id": "A2",
+      "description": "Additional one-face skew bond explicitly breaks original S4 source family, used only as a counterfactual intervention."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact combinatorial/incidence",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "15 cells, codimension-one boundaries and signed coefficients"
+    },
+    {
+      "technique": "rational operator and spectral",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "K products, closed propagator, 39 Taylor fixtures, S4 covariance"
+    },
+    {
+      "technique": "local support and intervention",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "top-cell to edge zeros and defect-induced t² leakage"
+    },
+    {
+      "technique": "fit/null/identifiability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare 3-tone scalar baseline with 15-port classical skew generator matched to same G"
+    },
+    {
+      "technique": "clock/modular/factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "native continuous parameter; no modular arithmetic or divisibility question"
+    },
+    {
+      "technique": "physical units/map",
+      "applicability": "OPEN",
+      "purpose_or_na_reason": "no port implementation, external metric or physical time calibration"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "dim C=4+6+4+1=15; 24 signed S4 actions; 3 gain triples ×13 Taylor orders=39; four defect epsilon fixtures",
+    "reduced_expression": "cell-face signed vector (1,-1,1,-1); defect edge coefficient (1/2,-1/2,1/2) per epsilon*g2 at t²",
+    "factor_origins": [
+      "tetrahedron simplex enumeration",
+      "two-boundary incidence, orientation deletion sign"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless real continuous t",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x'=Gx or G_epsilon x",
+    "initial_phase": "cell basis unit vector",
+    "coupling": "face/cell incidence only in initial law",
+    "period_claim": "trigonometric U(t) operator, no physical recurrence assertion",
+    "physical_unit_map": "t_phys=tau0 t unresolved"
+  },
+  "dynamics_readout": {
+    "state_space": "R15 oriented chain",
+    "generator_or_update": "G=sum_k gk Kk and optional one-bond G_epsilon",
+    "initial_boundary_conditions": "x(0)=e_cell",
+    "conservation_and_sources": "G skew => norm conserved, original sectors invariant; defect breaks prior J symmetry",
+    "projection_and_kernel": "four face amplitudes, six edge amplitudes, four vertex amplitudes, top-cell persistence",
+    "physical_mapping": "hypothetical identification of simplex register amplitudes with apparatus ports, no implementation"
+  },
+  "target_exposure": {
+    "status": "EXPLORED_AFTER_PHASE005_NO_GO",
+    "known_targets": [
+      "scalar three-tone physical identifiability failed in phase005",
+      "top cell / face port choice selected during discovery"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "select c and one opposite face defect, gain triples, four perturbation strengths"
+    ],
+    "search_domain_and_budget": "3 rational gain sets, 13 Taylor orders each, 24 signed permutations, 4 eps fixtures; no empirical search",
+    "selection_criterion": "find low-dimensional falsifiable signed/zero port predictions and compare matched conventional null",
+    "baseline": "classical 15-port real skew model with identical G; exact observational equivalence"
+  },
+  "calculation_steps": [
+    "Construct exact oriented D_k and K_k=D_k-D_k^T, verify K_iK_j=0 for i!=j and K_i³=-4 K_i.",
+    "With P_i=-K_i²/4, expand U(t)=I+sum[sin(2g_i t) K_i/2+(cos(2g_i t)-1)P_i].",
+    "For ecell, K3 ecell=sum_j (-1)^j e_face_j and P3 ecell=ecell; all other K_i annihilate ecell. Thus top-cell readout has only top and face modes, no edges/vertices at all t.",
+    "For G_epsilon=G+epsilon B with only (f0,c) bond, the edge/cell coefficient of G_epsilon² is epsilon*g2*D2(edge,f0); t² term is one-half this coefficient.",
+    "Since B breaks signed S4 and generally [G_epsilon,J]!=0, previous phase certificate is not inherited.",
+    "A conventional 15-port system with same G and readout gives same U(t) for all time; no UD-specific physical mechanism identified."
+  ],
+  "result": {
+    "exact_expression": "U_face_j,cell=(-1)^j sin(2g3t)/2, U_cell,cell=cos(2g3t), U_edge,cell=0=U_vertex,cell; defect leading edge coefficient epsilon*g2/2 D2(edge,f0)",
+    "approximation": null,
+    "units": "dimensionless amplitude; native time unit",
+    "precision_and_error": "exact rational constructor, analytic power-series identity for all real t",
+    "scope": "single oriented tetrahedron signed S4 conservative real linear time-independent operator and declared one-bond defect",
+    "physical_interpretation": "HYPOTHESIS port map; FAILED distinctiveness vs incidence-matched classical network"
+  },
+  "verification": [
+    {
+      "method": "exact rational matrices and S4 permutation enumeration",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/multiport_audit.py",
+      "source_revision": "d8e4b3cf9bbc90075d5757e01c8f660bfcd29057",
+      "actual_result": "PASS 24 permutations, 39 Taylor coefficients, four defect strengths",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent source/model physical evaluation",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "external"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "An incidence-matched classical linear network reproduces all predicted port signatures exactly; unique UD attribution fails.",
+    "One-face defect breaks signed S4 and prior J commutation; cannot reuse old phase formula without fresh gauge construction.",
+    "Face amplitude ratios undefined at their common zeros, and physical signed ports are not identified."
+  ],
+  "limitations": [
+    "All port maps, clock/energy units, source selection and physical apparatus remain OPEN.",
+    "No independent empirical or non-constructor mathematical review; target-selected intervention.",
+    "Original phase001-005 evidence preserved; no mainline export."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-006/manifest.json"
+  ],
+  "next_discriminant": "Identify a constrained physically justified UD constitutive response that differs on held-out data from classical incidence-matched 15-port null."
+}

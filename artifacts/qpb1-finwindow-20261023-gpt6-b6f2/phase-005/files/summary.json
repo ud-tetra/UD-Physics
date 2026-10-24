@@ -1,0 +1,72 @@
+{
+  "design": "Randomized common-frame and differential phase injections on three channels: signal, independent phase reference, path-matched bypass/null",
+  "estimators": {
+    "control": "Arg(N/R)",
+    "path_null": "Arg(S/N)-D",
+    "reference_only": "Arg(S/R)-D"
+  },
+  "exact_certificate": {
+    "assumed_null_complex_error": "1/10000",
+    "assumed_untracked_signal_null_differential_max": "1/2000",
+    "monitor_event_count_details": "two monitor channels x four phase settings x 3e9 trials each, 99% simultaneous complex-error <=1e-4; 16 exp(-7.5)<.01",
+    "monitor_joint_failure_bound": 0.008849349922365338,
+    "monitor_sample_count_sufficient_under_iid_Bernoulli": 24000000000,
+    "new_budget_decimal": 0.008814208087935455,
+    "new_combined_budget": "637557289480616985856355558471305849/72332906498234434704072960000000000000",
+    "null_identifiability": "without independent bound on delta_signal-delta_null, extra physical phase and unmatched optical drift are observationally equivalent",
+    "previous_combined_budget": "534794619424186500609612131837359/65106126461057096943360000000000000",
+    "remaining_screen_margin_decimal": 0.001185791912064545,
+    "three_tone_identifiability": "conventional three-frequency model with omega_k=2g_k and weights r_k reproduces Z(t) identically for all t; model families observationally identical under same noise/controls",
+    "visibility_phase_invariance": "common theta cancels in S/N and S/R; differential delta_signal-delta_null survives S/N"
+  },
+  "failure_case": "delta_signal=0.002,delta_null=0,reference theta arbitrary: path-null estimator retains exactly 0.002 rad bias despite matching fringe visibility",
+  "labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "numerical": {
+    "conventional_baseline_equal_checks": 5120,
+    "minimum_visibility": 0.9931327589489719,
+    "scenarios": {
+      "bounded_mismatch": {
+        "max_abs_null_bias": 0.000500000000000856,
+        "max_abs_null_bias_with_noise": 0.0015998521611031435,
+        "max_abs_reference_bias": 0.002000000000000913,
+        "n": 1024
+      },
+      "common_reference": {
+        "max_abs_null_bias": 0.0,
+        "max_abs_null_bias_with_noise": 0.0011030696622373881,
+        "max_abs_reference_bias": 0.0,
+        "n": 1024
+      },
+      "matched_differential": {
+        "max_abs_null_bias": 1.7763568394002505e-15,
+        "max_abs_null_bias_with_noise": 0.0011046937355843058,
+        "max_abs_reference_bias": 0.002000000000000913,
+        "n": 1024
+      },
+      "no_injection": {
+        "max_abs_null_bias": 1.7763568394002505e-15,
+        "max_abs_null_bias_with_noise": 0.001102267045457239,
+        "max_abs_reference_bias": 1.7763568394002505e-15,
+        "n": 1024
+      },
+      "unmatched_differential": {
+        "max_abs_null_bias": 0.002000000000000913,
+        "max_abs_null_bias_with_noise": 0.0031046801842989032,
+        "max_abs_reference_bias": 0.002000000000000913,
+        "n": 1024
+      }
+    },
+    "seed": 20261024,
+    "total_trajectories": 5120
+  },
+  "observables": "S=Z exp(i(theta+delta_signal)); R=exp(i theta); N=exp(i(theta+delta_null))",
+  "reference": "ud-tetra/UD-Physics:phase-004 at commit 63c4f997b68563460b54af73b04105b3f15ab687",
+  "scope": "synthetic design and conditional mathematical receiver; no lab acquisition, measured photon rates, native physical time, or independent physics test",
+  "status": "PASS"
+}
