@@ -1,0 +1,44 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-registry-convolution",
+  "session_id": "graphreg-20261024-7c09",
+  "question": "Does spatial registry modulation by itself activate a C3-symmetric harmonic port or select N=7?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "FIT",
+    "OPEN"
+  ],
+  "assumptions": [
+    "periodic connected honeycomb N=7/13/19 with unit metric",
+    "local diagonal edge weights w_t(r)",
+    "incidence-gradient vertex source x; no physical lateral identification",
+    "C3 conclusion requires full direction-permuting symmetry"
+  ],
+  "physical_mapping": "OPEN: no material coefficients, source preparation, damping, load or kinetic force map",
+  "target_exposure": {
+    "status": "KNOWN_DEVELOPMENT_TARGET",
+    "known_targets": [
+      "paired 21.8\u00b0/38.2\u00b0 detectable peaks and other commensurate control patterns"
+    ],
+    "fitted_choices": [
+      "positive-weight toy arrays",
+      "engineered quotient character labels p=2,k=5 whose sum equals seven"
+    ]
+  },
+  "fitted_choices": [
+    "p=2,k=5 is a target-informed seven-cell alias, not a physical law"
+  ],
+  "sources": [
+    "experiments/graphite-locality-selection/README.md",
+    "supplied UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39(2).md Q22/Q77-Q84"
+  ],
+  "baseline": "conventional honeycomb/moir\u00e9 geometry and two-dimensional PES",
+  "result": "For normalized uniform A/B source, only direction means of spatial edge weights enter; C3 equal means cancel for all N. Arbitrary source response is exact registry/source Fourier cross-correlation; engineered aliasing can pick seven but lacks fixed material and preparation wavelengths.",
+  "next_discriminant": "Derive common physical registry and drive spectra, damping/readout, conventional subtraction, and held-out signed force/load",
+  "mathematical_receipts": [
+    "candidates/graphite-registry-convolution/mathematical_receipt.json"
+  ]
+}
