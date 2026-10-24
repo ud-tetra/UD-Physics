@@ -1,0 +1,44 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-2d-relaxation",
+  "session_id": "graph2d-20261024-c829",
+  "question": "What angle and sliding-direction contrast follows from a shared passive bath driven by the published three-wave PES?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "published rigid first-star PES Eq2, Table4",
+    "three independent equal passive Debye coordinates driven by its three cosines",
+    "same bath and per-atom contact transfer across N7,N13 only for conditional ratio"
+  ],
+  "physical_mapping": "per upper atom low-speed drag tensor in physical units; AFM contact, UD source and measured loss OPEN",
+  "target_exposure": {
+    "status": "KNOWN_DEVELOPMENT_TARGET",
+    "known_targets": [
+      "detectable paired peaks and negligible load dependence"
+    ],
+    "fitted_choices": [
+      "equal independent bath channels are a chosen conventional null, not fitted force data"
+    ]
+  },
+  "fitted_choices": [
+    "minimal equal three-mode bath chosen for symmetry, no kinetic fit"
+  ],
+  "sources": [
+    "Lebedeva et al. arXiv:2511.01338v1 Eq2/Table4",
+    "Chen et al. PRL 137 166201 public abstract",
+    "experiments/graphite-relaxation-null/README.md",
+    "supplied UD ledger Q22/Q77-Q84"
+  ],
+  "baseline": "two-dimensional DFT first-star PES plus independent equal Debye loss",
+  "result": "Exact low-speed isotropic drag tensor 3lambda\u00b2 eta U1\u00b2g\u00b2/(4kappa\u00b2) I. First sixfold directional power term at v^6. Source-rounded shared-bath N7/N13 drag ratio 651175/6877\u224894.688818; not measured or UD-specific.",
+  "next_discriminant": "measured complex loss and contact transfer, frozen conventional 2D force/pressure/velocity prediction, held-out signed UD residual",
+  "mathematical_receipts": [
+    "candidates/graphite-2d-relaxation/mathematical_receipt.json"
+  ]
+}

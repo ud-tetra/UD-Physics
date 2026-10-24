@@ -42,3 +42,7 @@ Research PR118 merged at 24d3485f7a2b27539a1d926cbc64092960f0c5cf from exact hea
 Live claim released with exact-held-SHA CAS to 57db575a87dc9e842872b5e9d307b5f6a0fe5862; live ref and same-owner release metadata verified. This closure changes only the owning record and journal; immutable research remains unchanged.
 
 NEXT: structured three-sector near-return proof for larger differential detuning, testing uniform coverage around prior0.01passingpoint. Priority95. Arbitrarychannel andphysicalcalibration budgets remain separate; no mainlinepromotion.
+
+Closure refresh preserves disjoint graphite2D PR119 at 3df32aef5daacb2495dea24c7b665a013a7c4bb3. Only owning record/journal differ from currentmain. Normal merge of currentmain into closure branch; no forcepush. Research artifacts unchanged.
+
+Closure union checks PASS219records and16toolingtests.
