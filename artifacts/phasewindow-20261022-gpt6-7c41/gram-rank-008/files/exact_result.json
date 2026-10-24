@@ -1,0 +1,37 @@
+{
+  "alpha": "-27/10000",
+  "certified_energy_strictly_less_than": "1/20",
+  "energy_upper_float_for_display_only": 0.047842110842792135,
+  "evidence": "EXACT / CONDITIONAL rational witness, mathematical PSD Gram relaxation ONLY",
+  "face_gram_determinant": "0",
+  "face_rank": 2,
+  "full_vertex_coordinate_dimension": 4,
+  "g": "19/20",
+  "interpretation": "Any valid lower energy bound > pulse cannot hold across all PSD Gram matrices unless it includes spatial rank<=3 or equivalently restrictive 3D constraints. It does not refute the 3D barrier or physically reopen extra spatial dimensions.",
+  "k": "19/50",
+  "limits": [
+    "No lower bound for original 3D cell collapse",
+    "4D positions not permissible in original Euclidean R3 mechanics",
+    "No u100 nonlinear breathing/ringdown theorem"
+  ],
+  "member_count": {
+    "edges": 30,
+    "spokes": 12
+  },
+  "nonzero_four_by_four_minor_sign": 1,
+  "nonzero_four_by_four_minor_vertices": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "original_face_indices": [
+    0,
+    1,
+    2
+  ],
+  "original_pulse_energy": "1360051/20000000",
+  "source_exposure": "Geometry, original pulse threshold, and numerical 4D solution were examined first; rational coordinates rounded from post-exposure optimizer. This is a constructed counterexample to a relaxation, not independent prediction.",
+  "source_sha256": "2a94526f2a220f0ee87cd56d7169872a13cd87e429a8406f1ce9cd15bd7237ee",
+  "strict_pulse_comparison": "E_4Drelax <1/20<1360051/20000000"
+}

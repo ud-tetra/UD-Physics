@@ -1,0 +1,179 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "projected-coercivity-012",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Does reference-equilibrium linearized 3D energy control all housing-phase-induced nonaffine displacements for all u>=0?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "reference_shell",
+      "symbol": "V",
+      "object_type": "12x3 reference vertex matrix",
+      "definition": "regular ico with edge1, V^TV=4R²I",
+      "coefficient_domain": "Q(sqrt5)",
+      "units": "ell0"
+    },
+    {
+      "object_id": "nonaffine_projection",
+      "symbol": "W",
+      "object_type": "37x37 orthogonal projector",
+      "definition": "diag(0,(I-P0-PV) tensor I3)",
+      "coefficient_domain": "Q(sqrt5)",
+      "units": "dimensionless"
+    },
+    {
+      "object_id": "relative_shell_state",
+      "symbol": "q",
+      "object_type": "37-vector",
+      "definition": "(h,Y_1,..,Y_12), h=R² alpha, Y_i=deltaXi-deltaC",
+      "domain": "R^37",
+      "units": "internal"
+    },
+    {
+      "object_id": "quadratic_energy",
+      "symbol": "Kmin",
+      "object_type": "37x37 real symmetric",
+      "definition": "reference-Hessian at g=19/20,k=19/50",
+      "units": "internal E per normalization"
+    },
+    {
+      "object_id": "housing_phase",
+      "symbol": "B180",
+      "object_type": "180 initial displacement/velocity channels",
+      "definition": "90 housing position,90 housing velocity, positive energy metric",
+      "domain": "R^180"
+    }
+  ],
+  "sources": [
+    {
+      "url_or_repo_path": "experiments/icosahedral-free3d/model.py; experiments/icosahedral-multiport/network.py; experiments/icosahedral-mountloss/mountloss.py",
+      "version_or_commit": "79fd6d6cc8f2d40d516df0074e728e3f9428f60b",
+      "source_status": "verified integrated/read-only"
+    },
+    {
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/AFFINE_STRESS_CERTIFICATE.md",
+      "version_or_commit": "ddffa85202c2671e5f62b67808bd531b8c4b4aa2",
+      "source_status": "earlier conditional"
+    }
+  ],
+  "assumptions": [
+    "Euclidean spatial R3, separate Newtonian dimensionless u; all reference springs unstressed alpha=0",
+    "Continuous qualified g>=19/20, k>=19/50; positive hardware/device masses and mount constants",
+    "All 180 initial housing phases normalized to total Eh<=51/20000000; other reference-equilibrium perturbations vanish",
+    "All damping reciprocal/nonnegative; no new force law"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact matrix LDL over Q(sqrt5)",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "certify gauge-corrected Kmin-W/4 positive definite and reconstruct exact factor"
+    },
+    {
+      "technique": "symmetry/gauge",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "3 exact rotational nulls and nonaffine kernel"
+    },
+    {
+      "technique": "Lyapunov/passivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "uniform all-time all-phase E_lin(t)<=Eh"
+    },
+    {
+      "technique": "finite displacement comparison",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "cross-check actual full nonlinear stored potential"
+    },
+    {
+      "technique": "modular clock/topology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous oscillator mechanics; no register or homology claim"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "12*3+1=37; 12 spokes, 30 edges, 3 rotation nulls, 180 housing phase directions",
+    "reduced_expression": "rank W24, Kmin-W/4 PSD over Qsqrt5",
+    "factor_origins": [
+      "icosahedron vertices, edges and rotational moment identity"
+    ]
+  },
+  "clock_receipt": {
+    "clock_type": "continuous u",
+    "update_rule": "M qdd+C qdot+Kq=0; E_prime=-v^TCv<=0",
+    "physical_unit_map": "uncalibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "R^560 full linearized phase + heat",
+    "generator_or_update": "passive second-order linearization",
+    "initial_boundary_conditions": "reference rest alpha=0, only housing phase ball",
+    "conservation_and_sources": "initial phase energy Eh retained including rigid momentum; nonincreasing mechanical E",
+    "projection_and_kernel": "Z=(I-P0-PV)Y, nonaffine sector 24",
+    "physical_mapping": "none asserted"
+  },
+  "target_exposure": {
+    "status": "Previously used original 1/40 threshold and housing phase ball; rational gamma1/4 selected after scanning numerical coercivity",
+    "known_targets": [
+      "Z threshold 1/40",
+      "original alpha=0.1 nonlinear u100 goal remains open"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "gamma=1/4 is conservative certificate choice, not calibrated mechanical coefficient"
+    ],
+    "search_domain_and_budget": "numeric trial gammas 0.01,0.05,0.1,0.2,0.25,0.3,0.4,0.5,0.6,1,1.2; exact test at gamma1/4",
+    "selection_criterion": "all 37 exact positive pivots and projected bound<1/40"
+  },
+  "calculation_steps": [
+    "Set q=(R² alpha,δXi-δC), construct 37x37 Kmin over Qsqrt5",
+    "Construct W and orthogonal rotation projector P_rot, prove KminR=WR=0",
+    "Exact LDL^T factorize M=Kmin-W/4+P_rot; all 37 positive pivots, entrywise exact reconstruction",
+    "Project away rotations to infer Kmin-W/4 PSD and U_primary,lin>=||Z||²/8",
+    "Use full linear passive energy to give ||Z_housing,lin(u)||²<=8Eh<=51/2500000 for all u",
+    "Compare full original nonlinear finite perturbation energy at 9 random directions"
+  ],
+  "result": {
+    "exact_expression": "U_primary,linear >= ||Z||_F²/8; for all u>=0 and all housing initial phases: ||Z_housing,linear(u)||² <=51/2500000 <1/1600",
+    "approximation": {
+      "bound": 0.004516635916254486,
+      "min_double_precision_M_eigen": 0.1299999999999986,
+      "max_relative_finite_displacement_energy_error": 0.0000014239164408680338
+    },
+    "units": "ell0=1, dimensionless time, internal energy",
+    "scope": "reference-equilibrium linearized perturbation only; full original nonlinear alpha=.1 open",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "37-pivot Qsqrt5 exact LDL and reconstruction",
+      "command_or_proof_path": "Local checkpoint exact_certificate.py --out exact_result.json",
+      "actual_result": "PASS; constructor"
+    },
+    {
+      "method": "NumPy eig plus direct original nonlinear energy small-step check",
+      "command_or_proof_path": "Local checkpoint independent_check.py --out independent_result.json",
+      "actual_result": "PASS; constructor check only"
+    },
+    {
+      "method": "repository tooling at final head",
+      "command_or_proof_path": "GitHub Actions Discovery integrity",
+      "actual_result": "CHECK_SEPARATELY"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Previous exact 3D low-energy static Z>1/40 witness prevents energy-only nonlinear theorem",
+    "No bound on baseline alpha=.1 response or nonlinear flow difference"
+  ],
+  "limitations": [
+    "No independent peer or empirical verification",
+    "No u100 nonlinear orientation/strut/breathing/ringdown certificate",
+    "Full executed source/outputs are in local SHA256 ZIP; repository proof+checkpoint+typed result, not complete immutable capture"
+  ],
+  "artifact_manifest_refs": [
+    "Local chat ZIP UD_3D_Projected_Nonaffine_Coercivity_Checkpoint_20261023.zip; versioned manifest included but not committed under artifacts"
+  ],
+  "next_discriminant": "Full forced Green projected nonlinear error + bound baseline pulse nonaffine response under separate PR44 ownership."
+}

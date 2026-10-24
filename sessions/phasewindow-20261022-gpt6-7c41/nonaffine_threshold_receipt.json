@@ -1,0 +1,184 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "affine-barrier-010",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Can the complete physical 12-vertex 3D shell flatten a centre-to-face cell within the original pulse budget while staying close to the reference-affine subspace?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "Y",
+      "symbol": "Y",
+      "object_type": "12 physical shell points relative to the hub",
+      "domain": "R^(12x3)",
+      "coefficient_domain": "R; reference over Q(sqrt5)",
+      "units": "ell0=1",
+      "origin": "imported",
+      "definition": "full original 12-vertex shell"
+    },
+    {
+      "object_id": "Z",
+      "symbol": "Z",
+      "object_type": "non-affine residual",
+      "domain": "R^(12x3)",
+      "coefficient_domain": "Q(sqrt5) projector over R",
+      "units": "ell0",
+      "origin": "derived",
+      "definition": "(I-P0-PV)Y, PV=V(V^TV)^-1V^T"
+    },
+    {
+      "object_id": "U",
+      "symbol": "U",
+      "object_type": "primary positive spring energy",
+      "domain": "R_nonnegative",
+      "coefficient_domain": "R",
+      "units": "E_*",
+      "origin": "imported",
+      "definition": "one alpha, twelve radial and thirty exterior length terms"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "current-mechanics",
+      "url_or_repo_path": "experiments/icosahedral-free3d/model.py;experiments/icosahedral-mountloss/mountloss.py",
+      "version_or_commit": "0a058176d9dd079b6aad8fa530cd8093f1fcf43c",
+      "section_or_object_id": "Model.energy_force, MountLoss.ode",
+      "source_status": "read-only integrated"
+    },
+    {
+      "source_id": "prior-stress",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/RANK3_STRESS.md",
+      "version_or_commit": "36e81aca89f4441fe7f36cf0b4d8813cfbcdcc09",
+      "section_or_object_id": "exact PSD graph stress and original 3D patch failure",
+      "source_status": "branch prior"
+    }
+  ],
+  "assumptions": [
+    "Full physical ambient R3, not a rank-four relaxation",
+    "Original k_ij>=19/50, g_i>=19/20; alpha arbitrary",
+    "U<=1360051/20000000, derived from original alpha=0.1 pulse with enlarged housing phase allowance",
+    "Original icosahedral face labels, 20 triangular faces and 30 exterior edges"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact edge quartic frame",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "36 Q(sqrt5) bilinear tests and eigenvalue lower bound"
+    },
+    {
+      "technique": "antipodal parity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "spoke odd/even orthogonal energy allocations"
+    },
+    {
+      "technique": "rank-three face normal",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "lower bound affine translation from potential flattening"
+    },
+    {
+      "technique": "rational case split",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "three complete edge-norm bins each yields positive contradiction"
+    },
+    {
+      "technique": "modular/prime/homology",
+      "applicability": "NA",
+      "purpose_or_na_reason": "metric spring energy, no register or chain question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "12 radial spokes+30 exterior edges, six antipodal pairs,20 original cells,36 fourth-moment identities",
+    "reduced_expression": "E=1360051/20000000, delta=1/40, contradiction gaps 13287901/504000000;5116003/72000000;414763/72000000",
+    "factor_origins": [
+      "icosahedral combinatorics"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless Newtonian u",
+    "modulus": null,
+    "update_rule": "Mqdd+C(q)qdot+gradU=0 (unchanged parent)",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "full 560 mechanical phases; static shell result on complete 12 vertices",
+    "generator_or_update": "passive source ODE; energy decreases where struts have positive lengths",
+    "initial_boundary_conditions": "alpha0=0.1, all original allowed housing phases within declared budget",
+    "conservation_and_sources": "total mechanical energy E>=U and E'<=0",
+    "projection_and_kernel": "P0+PV removes translations and reference-affine deformations",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "Exposed original pulse and prior failed rank4, nine-vertex attempts; threshold 1/40 and 3 rational bins chosen during development",
+    "known_targets": [
+      "exclude flat cells at E_pulse",
+      "seek u100 nonlinear all-phase guarantee"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "delta=1/40",
+      "edge bins 0,1/2,11/20,3/5"
+    ],
+    "search_domain_and_budget": "one exact affine obstruction, one rank3 residual bound with three energy bins",
+    "selection_criterion": "each necessary flat-face inequality has strict positive contradiction margin",
+    "baseline": "rank4 relaxed witness and 9-vertex partial witness remain valid failures of restricted certificates"
+  },
+  "calculation_steps": [
+    "Exact 30 edge directions form isotropic fourth moment, giving Frobenius bound on affine metric strain C-I",
+    "Full spoke energy bounds antipodal odd/even strains; edge energy bounds edge strain vector",
+    "Flat 3D face gives unit normal, constraining affine translation q=B^-1 t via face-centred covariance",
+    "Antipodal squared radii plus nonaffine projection error impose necessary inequality",
+    "Three rational energy ranges all contradict that inequality for delta<=1/40",
+    "Exact PSD graph-stress inequality gives tr(Y^T Omega Y)>(1+sqrt5)/1600 if low-energy physical flat face exists"
+  ],
+  "result": {
+    "exact_expression": "U<=1360051/20000000 and flat original 3D face implies ||Z||_F>1/40",
+    "approximation": null,
+    "units": "dimensionless primary energy and reference exterior edge length",
+    "precision_and_error": "Q(sqrt5) symbolic graph tests and rational strict inequalities; no floating-error claims",
+    "scope": "necessary non-affinity; not full global energy barrier",
+    "physical_interpretation": "conditional surrogate only"
+  },
+  "verification": [
+    {
+      "method": "locally executed SymPy/Fraction edge-frame and bin test",
+      "command_or_proof_path": "affine_barrier.py and whole_shell_nonaffine.py; compact repository nonaffine_certificate.py",
+      "source_revision": "0a058176d9dd079b6aad8fa530cd8093f1fcf43c",
+      "actual_result": "PASS original local exact scripts; compact repository replay not separately executed",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent same-runtime geometric sanity checks",
+      "command_or_proof_path": "independent_check.py",
+      "source_revision": "0a058176d9dd079b6aad8fa530cd8093f1fcf43c",
+      "actual_result": "PASS; not independent replication",
+      "review_relationship": "same runtime"
+    },
+    {
+      "method": "repository integrity",
+      "command_or_proof_path": "GitHub Actions on final head",
+      "actual_result": "PENDING",
+      "review_relationship": "tooling only"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Rank-free PSD Gram admits flat rank4 witness below 1/20 (not physical R3)",
+    "Nine-vertex induced patch admits R3 flat witness below1/20 (not full 12-vertex energy)",
+    "Reflection of entire shell may flip orientation with U=0 in a disconnected component"
+  ],
+  "limitations": [
+    "No proof that nonlinear all-phase u100 trajectories keep ||Z||<=1/40",
+    "No 3D global energy minimum proof or all-time strut safety",
+    "No u100 breathing/ringdown certificate, empirical validation, hardware or clock calibration"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/phasewindow-20261022-gpt6-7c41/affine-barrier-010/manifest.json"
+  ],
+  "next_discriminant": "Bound full nonlinear nonaffine projector response in u0..100 under qualified property box and all housing phases, or strengthen global stress energy bound."
+}

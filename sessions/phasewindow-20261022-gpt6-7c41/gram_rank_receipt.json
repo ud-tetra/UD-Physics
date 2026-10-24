@@ -1,0 +1,252 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "gram-rank-008",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Can rank-unrestricted PSD Gram optimization prove every physically 3D flattened icosahedral cell has energy above E_pulse?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "NUMERICAL",
+    "FIT",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "physical-X",
+      "symbol": "X",
+      "object_type": "center-relative shell coordinates",
+      "definition": "12 centered shell vectors in physical Euclidean R^3",
+      "domain": "R^(3x12)",
+      "coefficient_domain": "Q(sqrt5) reference, real deformation",
+      "units": "ell0",
+      "basis_orientation": "original icosahedral indexed shell vertices and oriented exterior face",
+      "metric_measure": "G=X^T X PSD, rank<=3",
+      "origin": "imported",
+      "normalization": "shell edge length1"
+    },
+    {
+      "object_id": "relaxed-G",
+      "symbol": "G",
+      "object_type": "PSD rank-unrestricted Gram matrix",
+      "definition": "G=X^T X with X possibly in R^d, d>=4",
+      "domain": "S_+^12",
+      "coefficient_domain": "rational witness",
+      "units": "ell0 squared",
+      "basis_orientation": "same original indexed graph",
+      "metric_measure": "PSD Euclidean inner product",
+      "origin": "assumed relaxation",
+      "normalization": "same member-length formulas"
+    },
+    {
+      "object_id": "face-rank",
+      "symbol": "rank(X_F)",
+      "object_type": "cell degeneracy condition",
+      "definition": "three selected center-to-face vectors have rank two; det(G_FF)=0",
+      "domain": "R^(d x3)",
+      "coefficient_domain": "Q",
+      "units": "dimensionless rank",
+      "origin": "assumed test",
+      "normalization": "face (0,1,2)"
+    },
+    {
+      "object_id": "primary-energy",
+      "symbol": "U_primary",
+      "object_type": "spring length-strain potential",
+      "definition": "half sum alpha^2 + radial strains + g(s-alpha)^2 + k edge strains^2",
+      "domain": "G and alpha",
+      "coefficient_domain": "Q(sqrt5) and sqrt rational",
+      "units": "E_*",
+      "origin": "imported",
+      "normalization": "g=19/20 k=19/50 lower material endpoints"
+    },
+    {
+      "object_id": "pulse-budget",
+      "symbol": "E0",
+      "object_type": "original pulse plus enlarged initial housing energy",
+      "definition": "fixed prior all-phase energy upper bound",
+      "domain": "positive rational",
+      "coefficient_domain": "Q",
+      "units": "E_*",
+      "origin": "imported",
+      "exact_expression": "1360051/20000000"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "main",
+      "url_or_repo_path": "ud-tetra/UD-Physics",
+      "version_or_commit": "1b214f66e00e8430fed0ce7c23506da7965bc977",
+      "section_or_object_id": "free3d/model.py; multiport/network.py; tolerances/hardware.py; mountloss/mountloss.py",
+      "source_status": "verified read-only integrated mechanics"
+    },
+    {
+      "source_id": "prior",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/GLOBAL_BARRIER.md and prior global-barrier-007 run",
+      "version_or_commit": "cb02f640af058e63dd164086eac30b9d0e96b355",
+      "section_or_object_id": "flat-cell local numerical search, exact 3D upper witness",
+      "source_status": "branch predecessor, development"
+    },
+    {
+      "source_id": "capture",
+      "url_or_repo_path": "artifacts/phasewindow-20261022-gpt6-7c41/gram-rank-008/manifest.json",
+      "version_or_commit": "this branch",
+      "section_or_object_id": "exact rational rank4 witness and SHA256 copied code/data",
+      "source_status": "new constructor capture"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Only the primary model length-energy is considered, with other positive static storage set to zero; no 4D mechanical evolution is asserted.",
+      "origin": "imported/minimized static model"
+    },
+    {
+      "id": "A2",
+      "statement": "The rank-unrestricted Gram optimization relaxes rank(G)<=3 to G PSD; it is not the physical UD 3D feasible set.",
+      "origin": "hypothesis relaxation"
+    },
+    {
+      "id": "A3",
+      "statement": "g_i=19/20 and k_e=19/50, both allowed lower material endpoints; alpha and rational coordinates explicitly frozen.",
+      "origin": "target-informed adversarial choice"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/fraction algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact 4D rational witness and conservative upper potential bound"
+    },
+    {
+      "technique": "spectral/Gram/rank",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "PSD Gram, face principal determinant, full rank4 nonzero minor"
+    },
+    {
+      "technique": "real algebraic geometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact Q(sqrt5) edges and reference radius enclosure"
+    },
+    {
+      "technique": "nonconvex counterexample",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "disqualify rank-free PSD relaxation from pulse-barrier proof"
+    },
+    {
+      "technique": "numerical optimization and sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "17 targeted dimension/start choices, then rationalize witness"
+    },
+    {
+      "technique": "modular clock, homology, prime valuation",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite register, torsion, or divisibility claim"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "12 radial+30 edge=42 primary springs; 12x12 Gram; 3 face vectors rank2; 4 independent shell vectors rank4",
+    "reduced_expression": "42 members, face rank2, full rank4",
+    "factor_origins": [
+      "icosahedron graph edge set exact over Q(sqrt5)"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "none; static energy only",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": "none; original E0 value imported"
+  },
+  "dynamics_readout": {
+    "state_space": "static original 3D X, scalar alpha; relaxed X in R4 is NOT allowed physical state",
+    "generator_or_update": "no new dynamical generator",
+    "initial_boundary_conditions": "one face rank two in relaxed Gram; original initial budget used only as comparator",
+    "conservation_and_sources": "original passive energy gives energy ceiling, not a 4D trajectory",
+    "projection_and_kernel": "rank-free PSD relaxation discards physical rank<=3; this lost constraint is decisive",
+    "physical_mapping": "none; rank4 is purely adversarial mathematical relaxation"
+  },
+  "target_exposure": {
+    "status": "POST-EXPOSURE FIT; original E0 and previous 3D numerical minimizer known before target selection",
+    "known_targets": [
+      "E_3Dmin(flat)>1360051/20000000 requested",
+      "rank-free relaxation viability",
+      "previous 3D minimum found near .124426 numerical"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "d values {3,4,5,8,12}",
+      "lift scales {0,.1,.5,1}",
+      "seed 20261023",
+      "rational coordinate denominator 10000",
+      "uniform g=.95 k=.38 and rational alpha after optimization"
+    ],
+    "search_domain_and_budget": "17 dimension/starting-scale numerical minimizations; one d4 optimizer configuration rounded, then exact verification",
+    "selection_criterion": "find rank>=4, face rank2, and energy provably < pulse",
+    "baseline": "original physical 3D 72-start numerical candidate .124426; prior exact 3D witness E<1/8 but >pulse"
+  },
+  "calculation_steps": [
+    "Numerically relax shell coordinate ambient dimension to d in {3,4,5,8,12} while enforcing chosen cell rank2 by linear dependence; preserve length energy.",
+    "Select one d4 candidate below E0, round eleven shell vectors, p,q,alpha to rationals denominator10000; set dependent face vector EXACT.",
+    "Over Q, verify face 3x3 Gram determinant zero, face rank exactly2, and a nonzero full 4x4 spatial minor (rank4).",
+    "Construct all 30 reference edges EXACT over Q(sqrt5) and all 12 radial lengths with rational-square-root intervals.",
+    "Upper-bound all strain squares with Fraction intervals; prove E_witness<1/20<E0.",
+    "Conclude pure PSD / rank-free Gram certificate cannot prove E_min above pulse; rank<=3 condition remains indispensable."
+  ],
+  "result": {
+    "exact_expression": "rank(X_F)=2; rank(X)=4; G=X^T X >=0 and rank(G)=4; U_primary(X,alpha; g=19/20,k=19/50)<1/20<1360051/20000000",
+    "approximation": {
+      "rank4_witness_energy": 0.04784211084236819,
+      "d4_numerical_optimizer_energy": 0.047842091455845,
+      "high_dim_numerical_search_energy": 0.047458500687,
+      "previous_3d_numeric_candidate": 0.12442609484
+    },
+    "units": "internal E_* (uncalibrated)",
+    "precision_and_error": "strict inequality via integer isqrt/Fraction enclosures; high precision numerical separate symbolic check; numerical scan is not global optimum",
+    "scope": "mathematical rank-free Gram relaxation only, not physical R3 model",
+    "physical_interpretation": "NO 4D physical claim; 3D global lower barrier OPEN"
+  },
+  "verification": [
+    {
+      "method": "primary exact rational witness checker",
+      "command_or_proof_path": "python3 gram_rank_witness.py --witness gram_rank_witness.json --out exact_result.json",
+      "source_revision": "current branch",
+      "actual_result": "PASS exact rank, graph and upper energy bound",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate SymPy exact-rank/reference-graph checker",
+      "command_or_proof_path": "python3 gram_rank_sympy.py --witness gram_rank_witness.json --out symbolic_result.json",
+      "source_revision": "current branch",
+      "actual_result": "PASS exact rank/graph and high precision energy",
+      "review_relationship": "same-context alternate implementation, not independent replication"
+    },
+    {
+      "method": "repository validator and 16 unit tests",
+      "command_or_proof_path": "python3 scripts/validate.py; python3 -m unittest discover -s tests -v",
+      "source_revision": "current branch",
+      "actual_result": "NOT_RUN locally (repository checkout unavailable); PR CI pending",
+      "review_relationship": "tooling only"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Rank-unrestricted PSD Gram relaxation has explicit below-budget flat-cell witness; any claimed >pulse lower bound for that relaxed set is FALSE.",
+    "Physical 3D lower-bound theorem remains OPEN; 4D relaxation witness is not a permitted physical state."
+  ],
+  "limitations": [
+    "No certificate for rank<=3 constrained Gram feasible set",
+    "No 3D below-budget counterexample",
+    "No nonlinear original-pulse u100 coherence or housing-strut result",
+    "No empirical calibration or independent physical experiment"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/phasewindow-20261022-gpt6-7c41/gram-rank-008/manifest.json"
+  ],
+  "next_discriminant": "Global rank<=3 Gram inequality using all vanishing 4x4 principal minors, or exhaustive validated coordinate interval branch-and-bound; keep rational rank4 witness as regression counterexample."
+}

@@ -1,0 +1,89 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "run_id": "gram-rank-008",
+  "created_at": "2026-10-23T03:15:07.245057+00:00",
+  "evidence": "EXACT",
+  "summary": "EXACT rank4 PSD Gram flattened-face rational witness E<1/20<original pulse energy; defeats rank-unrestricted Gram lower barrier. 3D barrier remains OPEN. Numerical 17-start rank-relaxed search separately exposed.",
+  "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-phasewindow-20261022/gram_rank_relax_search.py; OPENBLAS_NUM_THREADS=1 python3 experiments/icosahedral-phasewindow-20261022/gram_rank_make_witness.py; python3 experiments/icosahedral-phasewindow-20261022/gram_rank_witness.py --witness experiments/icosahedral-phasewindow-20261022/gram_rank_witness.json --out exact_result.json; python3 experiments/icosahedral-phasewindow-20261022/gram_rank_sympy.py --witness experiments/icosahedral-phasewindow-20261022/gram_rank_witness.json --out symbolic_result.json",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "1b214f66e00e8430fed0ce7c23506da7965bc977",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "exact_witness.py",
+      "path": "inputs/001-gram_rank_witness.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/gram_rank_witness.py",
+      "sha256": "d67f114d68d97074904b54dbdac5e80fa9feb4b180a61434d98bd5d4ae4e9d61",
+      "size_bytes": 6381
+    },
+    {
+      "input_id": "input-002",
+      "name": "independent_sympy.py",
+      "path": "inputs/002-gram_rank_sympy.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/gram_rank_sympy.py",
+      "sha256": "ecfa68dc8003160dff850362a3bab0790171aacf4e512ee69cab3e4829573439",
+      "size_bytes": 2562
+    },
+    {
+      "input_id": "input-003",
+      "name": "rational_witness.json",
+      "path": "inputs/003-gram_rank_witness.json",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/gram_rank_witness.json",
+      "sha256": "2a94526f2a220f0ee87cd56d7169872a13cd87e429a8406f1ce9cd15bd7237ee",
+      "size_bytes": 1365
+    },
+    {
+      "input_id": "input-004",
+      "name": "relax_search.py",
+      "path": "inputs/004-gram_rank_relax_search.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/gram_rank_relax_search.py",
+      "sha256": "2dbe3f009f7b5032b07402d69b376a464e08c561225e7af118c2044faee91f11",
+      "size_bytes": 2602
+    },
+    {
+      "input_id": "input-005",
+      "name": "make_witness.py",
+      "path": "inputs/005-gram_rank_make_witness.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/gram_rank_make_witness.py",
+      "sha256": "1801b9938e59bf89cb2a47c38811d361d3c1616286de2ddbaabaf4147f187781",
+      "size_bytes": 1785
+    }
+  ],
+  "files": [
+    {
+      "path": "files/exact_result.json",
+      "sha256": "e0ae5fb47ac0d1c84b12c54d050f2667a597fa276f9dcb1ecdc02fe019920b44",
+      "size_bytes": 1484
+    },
+    {
+      "path": "files/symbolic_result.json",
+      "sha256": "1c68dbb41414d7943bcc9951d74b39edcd36a965c8eade84695ad4ad50b338cc",
+      "size_bytes": 351
+    },
+    {
+      "path": "files/relax_results.json",
+      "sha256": "135f0d7a4e61ba64b1020c2133d7dbebd8540da3449619bb9fc46c926975da44",
+      "size_bytes": 8447
+    },
+    {
+      "path": "files/GRAM_RANK_RELAXATION.md",
+      "sha256": "0f5d89b4b74a6a97da646d1df8763714bf32580d8a4ce01b68376a8aeceb42c4",
+      "size_bytes": 7510
+    },
+    {
+      "path": "files/mathematical_receipt.json",
+      "sha256": "ae62b693f485e7ac3d4b0eb1237e6a10d275fdcb840f5bbf80dd2c1bfd122f16",
+      "size_bytes": 11442
+    }
+  ]
+}
