@@ -1,0 +1,20 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphlineidx-20261023-b4b7285a",
+  "runtime": "Codex GPT-6; local Python/Git compute; GitHub connector write",
+  "task": "integration-graphite-linewidth-20261023",
+  "goal": "Link the conditional mode-width calibration from the original graphite entry and shared milestone state",
+  "created_at": "2026-10-24T01:11:03Z",
+  "base_revision": "9f5c49a1d6cea34499f22ac8470bf6b3c98ab82d",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {"integration-graphite-linewidth-20261023": {"ref": "refs/heads/claims/integration-graphite-linewidth-20261023", "sha": "ac6831bbf6585cc79b6ec17770dac0ec3d766357", "status": "held"}},
+  "checks": [
+    {"command": "python3 scripts/validate.py", "result": "PASS: 169 records; manifest digests and local documentation links valid"},
+    {"command": "python3 -m unittest discover -s tests -q", "result": "PASS: 16 tests"}
+  ],
+  "finding": "Original graphite entry and integrated state link to the conditional conventional linewidth transfer without implying measured material damping or friction.",
+  "next_action": "Release claim after integration; obtain independently measured dissipative widths and an additive source coupling.",
+  "mathematical_profile": {"coefficient_domain": "N/A for navigation; imported conditional numerical material model", "exactness_or_precision_plan": "No new calculation; preserve model scope and absent linewidth data", "applicable_methods": ["typed provenance and evidence-scope review"], "clock_metric_units_conventions": "Inherited physical ps/Angstrom and per-upper-atom normalization; no UD clock map"}
+}
