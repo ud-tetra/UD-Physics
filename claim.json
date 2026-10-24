@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "graphite-locality-selection-20261023",
   "session": "graphlocal-20261023-f8d5ab37",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-24T02:10:31Z",
   "base_revision": "96319cbce750e5c4a2fc9772783fdbbf2e34a614",
   "owned_paths": [
@@ -13,5 +13,7 @@
     "candidates/graphite-locality-selection/",
     "experiments/graphite-locality-selection/",
     "artifacts/graphlocal-20261023-f8d5ab37/"
-  ]
+  ],
+  "released_at": "2026-10-24T02:14:34.585Z",
+  "released_from_sha": "221478de0cca1b4b590d4b6ee30f5ffd3be06608"
 }
