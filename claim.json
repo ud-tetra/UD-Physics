@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "graphite-cross-loss-20261023",
+  "session": "graphmix-20261023-ebafdc59",
+  "status": "held",
+  "created_at": "2026-10-24T01:21:48Z",
+  "base_revision": "53460195f74411ce764b24e0ab9d4fd772c4bd6f",
+  "owned_paths": [
+    "tasks/graphite-cross-loss-20261023.json",
+    "sessions/graphmix-20261023-ebafdc59/",
+    "candidates/graphite-cross-loss/",
+    "experiments/graphite-cross-loss/",
+    "artifacts/graphmix-20261023-ebafdc59/"
+  ]
+}
