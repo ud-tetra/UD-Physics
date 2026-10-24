@@ -1,0 +1,34 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-packet-force-contract",
+  "session_id": "graphforce-20261024-01",
+  "question": "Can a finite closed directional packet produce steady friction, and what material contract is required?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "fixed real contact mask and closed finite full 0/1/2 generator; y(0)=z(0)=0",
+    "native averaging s=t/tau only for constant positive tau",
+    "reciprocal local material quadratic energy with stable K and nonnegative Rayleigh loss D",
+    "cross-Hessian addition residual formula holds common K,D"
+  ],
+  "physical_mapping": "packet-to-dimensional C_add, physical clock, contact, loss and force readout OPEN",
+  "target_exposure": "paired 21.8/38.2 degree signal and weak load trend known before analysis; no coefficient fit",
+  "fitted_choices": [],
+  "sources": [
+    "graphite-directional-packet and graphite-packet-identifiability at base 5863f5f",
+    "graphite-linewidth-transfer conventional reduction at base 5863f5f",
+    "supplied ledger v0.39(2) Q166/Q167/Q170 SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+    "supplied governance proposal v1.0 SHA256 8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4"
+  ],
+  "baseline": "full conventional 2D PES/contact and complex loss, calibrated without held-out signed force/load",
+  "result": "EXACT closed finite fixed-mask packet J and harmonic P are odd finite trigonometric sums with zero Cesaro mean. CONDITIONAL reciprocal material damping Gamma=C K^-1 D K^-1 C^T, derivative and potentially negative baseline-subtracted residual. No physical graphite coefficient.",
+  "next_discriminant": "Obtain independently registered packet-to-C_add map, material loss and pressure derivatives, then forecast signed held-out angle/speed/load forces.",
+  "mathematical_receipts": [
+    "candidates/graphite-packet-force-contract/mathematical_receipt.json"
+  ]
+}
