@@ -1,0 +1,40 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb-native-manybody",
+  "session_id": "qpb-manybody-20261024-gpt6-a1",
+  "question": "Do source-native S4, finite Weyl, loop action and bosonic composition uniquely fix quantum anharmonicity U/epsilon?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Native V=3+3prime+sign C7 and full S4 are mathematical source imports.",
+    "Bosonic Sym² V is extra quantization hypothesis.",
+    "Pair projector U|hh><hh| with U>=0 is added interaction.",
+    "Identifying primitive Weyl phase at native recurrence with interaction energy is optional FIT."
+  ],
+  "physical_mapping": "OPEN: no native source-selection for U, chi/tau0, physical charge/phase, source or port.",
+  "target_exposure": "Measured anharmonic transmon ladder known before model; no experimental frequency fitted or tested.",
+  "fitted_choices": [
+    "U/epsilon sample 0,1/8,1/4,1/2,3/4,1 only transparent fixtures",
+    "Optional k=1/3 finite-phase identification imposed for stress, not source derivation"
+  ],
+  "sources": [
+    "e8a6a40d229090a1c6c783aef2832d38c3e7784f:experiments/qpb1-local-generators/README.md",
+    "e8a6a40d229090a1c6c783aef2832d38c3e7784f:experiments/qpb1-finite-pairing/README.md",
+    "e8a6a40d229090a1c6c783aef2832d38c3e7784f:experiments/qpb1-loop-history/README.md",
+    "PR154 read-only unmerged"
+  ],
+  "baseline": "Ordinary S4-equivariant bosonic hidden pair projector with identical U, dynamically equivalent.",
+  "result": "EXACT symmetric-square dim28, irreps (3,1,3,4,2), Hermitian S4 commutant real dim39 vs one-body dim3; invariant U>=0 free; finite Weyl primitive phase plus new time/energy map yields infinite U/epsilon aliases; uniquely physical selection FAILED.",
+  "next_discriminant": "Reopen only with a versioned native interaction fixing U/epsilon, physical action/time/port map and unused data against conventional null.",
+  "reopening_conditions": "Source-derived microscopic pair energy and independently established quantum physical map before spectral target evaluation.",
+  "mathematical_receipts": [
+    "sessions/qpb-manybody-20261024-gpt6-a1/mathematical_receipt.json"
+  ]
+}
