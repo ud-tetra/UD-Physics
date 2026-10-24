@@ -8,20 +8,22 @@
   "created_at": "2026-10-24T17:43:32.495878+00:00",
   "base_revision": "211f2e72fc72867bac1b3c8712bf0d5c2464e509",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "ref": "refs/heads/claims/graphite-native-support-current-20261024",
     "held_sha": "b56165476181b80b3bcb6ddbcd9bdd4ecb0e4e0e",
-    "status": "held"
+    "status": "released",
+    "release_sha": "14c51df0465a93a9bf5c4f695ec83d5750982cf5"
   },
   "checks": [
     "exact tetra and honeycomb support-current witness PASS",
     "scripts/validate.py PASS (264 records)",
     "16 unit tests PASS",
     "git -c core.whitespace=-blank-at-eol diff --cached --check PASS; captured ledger retains original Markdown trailing spaces",
+    "GitHub Discovery integrity workflow 40117617756 success",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Native signed support current supplies formal source but not an N7-specific material friction response.",
+  "finding": "Native signed support current and formal port identity merged in PR #150 at 58c4012ead3eca0b9bdcadbfcfd5eee0e4c26337; no N7-specific material friction response.",
   "next_action": "Derive interface preparation/persistence and physical cross-Hessian/bath under one law across control angles.",
   "mathematical_profile": {
     "coefficient_domain": "real unit-metric chain amplitudes; exact integer and rational witnesses",
