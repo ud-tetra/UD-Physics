@@ -1,0 +1,310 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb-vector-circuit-001",
+  "session_id": "qpb-vectorcircuit-20261024-gpt6-a1",
+  "candidate_id": "qpb-vector-circuit",
+  "question": "Does a controlled vector charge/current source on the tetrahedral edge-field model supply a dimensionally valid physical voltage/current port and select a unique UD physical action/charge scale?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "field",
+      "symbol": "a,p,B1,B2",
+      "object_type": "hypothetical canonical 6-edge field on oriented K4",
+      "definition": "a,p in R6, B1 edge-to-vertex, B2 face-to-edge with B1B2=0",
+      "domain": "R12",
+      "codomain": "R12 with signed edge and vertex flux",
+      "coefficient_domain": "Q incidence and fixtures; R physical evolution",
+      "units": "native dimensionless",
+      "basis_orientation": "ascending simplex edge order 01,02,03,12,13,23",
+      "metric_measure": "native Euclidean edge metric H=I6",
+      "origin": "integrated read-only conditional source",
+      "exact_expression": "PL=B1^TB1/4, PT=B2B2^T/4, rank3+3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source-field"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "mode w norm1"
+    },
+    {
+      "object_id": "drive",
+      "symbol": "f,j,rho_ref",
+      "object_type": "controlled external vector current, not autonomous native law",
+      "definition": "edge current f, vertex j=B1f, prescribed charge rho_ref'=j",
+      "domain": "native-time function s->R6",
+      "codomain": "R4 zero-total vertex current",
+      "coefficient_domain": "real functions, Q test samples",
+      "units": "native momentum per native time",
+      "basis_orientation": "B1 -1 tail +1 head",
+      "metric_measure": "orthogonal longitudinal/cycle projections",
+      "origin": "new hypothesis",
+      "exact_expression": "rho'=B1f, H0'=(Up)^Tf",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source-field",
+        "variational"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "field"
+      ],
+      "normalization": "fL=B1^Tj/4; cycle fT=wF"
+    },
+    {
+      "object_id": "physical-port",
+      "symbol": "Phi,Q,V,I,E",
+      "object_type": "assumed physical charge/flux port dictionary",
+      "definition": "Phi=A0*a/q0, Q=q0*p, E=A0*H/tau0, physical time tau0s",
+      "domain": "native a,p,s",
+      "codomain": "Wb,C,J,seconds,A,V",
+      "coefficient_domain": "positive real q0,A0,tau0",
+      "units": "Phi Wb Q C energy J action Js time s",
+      "basis_orientation": "oriented edge effort/current dual",
+      "metric_measure": "Cinv=A0 U/(tau q0²), Linv=v q0² B2B2^T/(A0tau)",
+      "origin": "hypothesis physical map",
+      "exact_expression": "dE/dt=Vedge^T Iedge",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source-field",
+        "circuit"
+      ],
+      "assumption_ids": [
+        "A3"
+      ],
+      "dependency_ids": [
+        "field",
+        "drive"
+      ],
+      "normalization": "q0 and A0 not selected"
+    },
+    {
+      "object_id": "equivalence",
+      "symbol": "h",
+      "object_type": "continuous positive internal coordinate/action scale family",
+      "definition": "U->hU,v->v/h,a->ha,A0->A0/h,psi->hpsi, p,f,q0,tau fixed",
+      "domain": "h in R>0",
+      "codomain": "same physical Cinv,Linv,Q,Phi and I/O responses",
+      "coefficient_domain": "Q fixtures, R continuum proof",
+      "units": "h dimensionless",
+      "basis_orientation": "preserves oriented edge port",
+      "metric_measure": "identical SI Hamiltonian",
+      "origin": "derived exact counterfamily",
+      "exact_expression": "Cinv'=Cinv,Linv'=Linv,Q'=Q,Phi'=Phi",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source-field"
+      ],
+      "assumption_ids": [
+        "A3"
+      ],
+      "dependency_ids": [
+        "physical-port"
+      ],
+      "normalization": "physical q0/tau unchanged"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "source-field",
+      "url_or_repo_path": "experiments/qpb1-charge-field/README.md",
+      "version_or_commit": "18a84984af40265d673b7b893c73de152a7cc8c5",
+      "section_or_object_id": "§§2–7 exact projectors, H and assumed physical units",
+      "source_status": "integrated conditional mathematical analogue, read-only"
+    },
+    {
+      "source_id": "source-port",
+      "url_or_repo_path": "experiments/qpb1-source-reservoir/README.md",
+      "version_or_commit": "18a84984af40265d673b7b893c73de152a7cc8c5",
+      "section_or_object_id": "§§1–5 externally supplied coupling and reset/resource scope",
+      "source_status": "integrated source design, read-only"
+    },
+    {
+      "source_id": "source-impedance",
+      "url_or_repo_path": "experiments/qpb1-impedance-selection/README.md",
+      "version_or_commit": "18a84984af40265d673b7b893c73de152a7cc8c5",
+      "section_or_object_id": "§§2–5 charge/action/impedance scale remains unselected",
+      "source_status": "integrated negative source audit"
+    },
+    {
+      "source_id": "variational",
+      "url_or_repo_path": "https://arxiv.org/abs/0707.4470",
+      "version_or_commit": "2007-07-30",
+      "section_or_object_id": "discrete exterior calculus variational Maxwell theory",
+      "source_status": "conventional theory context, not UD empirical evidence"
+    },
+    {
+      "source_id": "circuit",
+      "url_or_repo_path": "https://doi.org/10.1103/PRXQuantum.5.020309",
+      "version_or_commit": "2024",
+      "section_or_object_id": "symplectic flux-charge physical circuit Hamiltonians",
+      "source_status": "conventional circuit physics null"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Separate R12 edge-field canonical model postulated by earlier charge-field audit, not original native R14 active chain."
+    },
+    {
+      "id": "A2",
+      "description": "External edge-current source f with prescribed charge history rho_ref'=B1f and gauge multiplier psi; no automatic source mechanism or physical circuit."
+    },
+    {
+      "id": "A3",
+      "description": "External positive q0 C,A0 Js,tau0 seconds plus linear physical flux/charge mapping; calibration not sourced independently."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer simplicial topology",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "oriented B1B2=0, exact PL/PT ranks 3 and 3, current source Gauss continuity"
+    },
+    {
+      "technique": "exact rational Hamiltonian/gauge",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "port work, gauge source boundary term, 24 mixed state fixtures and 72 h-scalings"
+    },
+    {
+      "technique": "dimensional physical map",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "native-to-SI flux, charge, action, energy, voltage, current and circuit tensors"
+    },
+    {
+      "technique": "linear response and pulse Fourier transfer",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "longitudinal charge stores integrated current; transverse cycle shows sinc² dependence"
+    },
+    {
+      "technique": "identifiability/null baseline",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "continuous physical-matrix invariant family vs ordinary reciprocal LC network"
+    },
+    {
+      "technique": "prime factorization/modular ticks/quantum Hilbert",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "purely real classical source circuit, no clock modulus or quantum CCR"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "K4: 4 vertices, 6 edges, 4 faces, B1 4x6, B2 6x4; rank PL=rank PT=3; 3 coefficient tuples times 8 states=24 rational fixtures; 3 h scaling values each=72",
+    "reduced_expression": "fL=B1^Tj/4; |fL(r=1)|²=1/2; dipole H_C=uL*r²/4; half-native-period stored fraction 4/pi²",
+    "factor_origins": [
+      "K4 incidence eigenvalue4",
+      "selected normalized w cycle",
+      "harmonic analytic rectangular pulse"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native s real continuous and separate physical time t=tau0 s",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "a'=Up+B1^Tpsi, p'=-vB2B2^Ta+f, rho'=B1f",
+    "initial_phase": "dipole zero fields or cycle zero oscillator",
+    "coupling": "added edge current source f and scalar gauge multiplier psi",
+    "period_claim": "neutral omega_native=2sqrt(uTv), normalized matched-uTv=1 period pi native; physical seconds unselected",
+    "physical_unit_map": "tau0 external, A0 Js and q0 C external"
+  },
+  "dynamics_readout": {
+    "state_space": "R12 added edge canonical field, 3 longitudinal momenta and 3 radiative oscillator pairs after fixed Gauss",
+    "generator_or_update": "source-ported linear Hamiltonian with gauge multiplier",
+    "initial_boundary_conditions": "balanced dipole j=(r',-r',0,0) and divergence-free wF(s), initial zero radiative fields",
+    "conservation_and_sources": "rho'=B1 f; sum vertex charge=0; H0'=(Up)^T f, physical work supplied externally",
+    "projection_and_kernel": "PL/PT separate charged dipole from neutral cycle; inductive form rank3 and gauge kernel",
+    "physical_mapping": "assumed SI Q=q0p/Phi=A0a/q0, no measured hardware"
+  },
+  "target_exposure": {
+    "status": "EXPOSURE_NATIVE_FREQUENCY2_AND_OLD_ACTION_RATIO",
+    "known_targets": [
+      "prior native omega=2, old action/charge/impedance target and physical transmon examples"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "new drive f chosen for longitudinal/cycle separation",
+      "uTv=1 used as frequency-matched design, not first-principles",
+      "rational test A0=5/3,q0=2/3,tau=7/4, h=.5,2,3 selected fixtures"
+    ],
+    "search_domain_and_budget": "linear positive coefficient family plus 3 rational parameter triples, 8 state/gauge drives each; two port classes; no empirical fitting",
+    "selection_criterion": "make physical work and charge balance explicit, then test whether independently observable LC multiports identify native units",
+    "baseline": "ordinary matched reciprocal linear LC Hamiltonian with externally driven charge/flux ports"
+  },
+  "calculation_steps": [
+    "Build exact B1,B2 on K4 and projectors PL=B1^TB1/4, PT=B2B2^T/4, verify exact complementary rank3 projectors and B1B2=0.",
+    "Add external source action A0 int[p.a'-H0+a.f-psi.(B1p-rho_ref)] ds with rho_ref'=B1f. Vary and derive a'=Up+B1^Tpsi,p'=-vB2B2^Ta+f,rho'=B1f.",
+    "Under a->a+B1^Tchi,psi->psi+chi', action changes only boundary A0[chi^T rho_ref] when rho_ref'=B1f. Show H0'=(Up)^T f for any psi.",
+    "For zero-sum j, fL=B1^Tj/4 has B1fL=j and PTfL=0; for cycle w with B1w=0, fT=wF has no vertex charge.",
+    "For dipole rho=r(1,-1,0,0), H_C=uLr²/4; physical Vdiff=A0uLr/(2tauq0) and Cdip=2tauq0²/(A0uL).",
+    "For neutral cycle alpha'=uT beta, beta'=-4v alpha+F(s), derive H_T(T)=uT/2 |int exp(-iomega s)F(s)ds|² and rectangular sinc².",
+    "Map Phi=A0a/q0, Q=q0p, E=A0H0/tau, Vedge=A0Up/(tauq0), I=q0 f/tau and verify dE/dt=Vedge^TI.",
+    "Exhibit h>0 family U->hU,v->v/h,a->ha,A0->A0/h,psi->hpsi, showing physical Q,Phi,Cinv,Linv and all time-domain responses exactly unchanged.",
+    "Compare standard reciprocal multiport LC baseline with same tensors; no independent unique UD physical signature."
+  ],
+  "result": {
+    "exact_expression": "rho'=B1f, H0'=(Up)^Tf, dE/dt=V^TI; H_C=uLr²/4, H_T(T)=uTF_area²/2 sinc²(sqrt(uTv)T), physical-matrix rescaling h>0 exact",
+    "approximation": "at uTv=1 and T=pi/2, H_T/H_impulse=4/pi²≈0.4052847345693511; T=pi gives zero",
+    "units": "SI Wb,C,J,s,A,V through free charge/action/time units; native variables dimensionless",
+    "precision_and_error": "exact Fraction algebra for source/gauge/port with 24 fixtures plus analytic continuous h; sinc ratio numerical only; no measured uncertainty",
+    "scope": "source-ported 6-edge classical field hypothetical model; no physical apparatus, original UD R14 not identified",
+    "physical_interpretation": "CONDITIONAL valid analogue; FAILED source-selected physical charge/action and unique UD attraction"
+  },
+  "verification": [
+    {
+      "method": "compact Python Fraction constructor",
+      "command_or_proof_path": "experiments/qpb-vector-circuit/port_audit.py --out /tmp/vector-full.json",
+      "source_revision": "18a84984af40265d673b7b893c73de152a7cc8c5",
+      "actual_result": "PASS 24 mixed state/parameter fixtures, exact source work and all h-scaled physical port matrices",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate longer exact Fraction audit",
+      "command_or_proof_path": "local /mnt/data/qpb_vector_circuit_20261024/port_audit.py",
+      "source_revision": null,
+      "actual_result": "PASS same model identities and analytic sinc, same assistant not independent reviewer",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "physical calibrated circuit and non-constructor review",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED / NOT_RUN",
+      "review_relationship": "external"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Same physical reciprocal LC multiport arises from an arbitrary h>0 continuum of native U,v,A0 and a variables; measured linear port response cannot pick native units.",
+    "Equal integrated cycle-current pulse can leave zero or positive stored energy depending on pulse timing; charge transferred not equal radiative excitation.",
+    "Purely longitudinal balanced charge drive generates no neutral cycle, while neutral cycle current has no vertex charge.",
+    "No isolated positive single electron can appear in closed zero-total vertex charge graph without compensating reservoir/source.",
+    "Original field carrier is R12, not native UD active rank14; no full-source equivalence assumed."
+  ],
+  "limitations": [
+    "No independent q0,A0,tau0 or physical current transducer/source law.",
+    "Generalized positive LC matrices not a constructed physical schematic; damping/noise/parasitics unknown.",
+    "No measured amplitudes or empirical prediction distinct from matched conventional network.",
+    "External/non-constructor independent review NOT_RUN and no mainline promotion."
+  ],
+  "changed_dependencies": [
+    "New disjoint task extends conditional integrated charge-field with explicit external current, no modification of original source or parked PR168."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb-vectorcircuit-20261024-gpt6-a1/vector-001/manifest.json"
+  ],
+  "next_discriminant": "Physical independently calibrated charge/action and clock plus full measured multiport V/I with losses, and frozen UD-only constitutive prediction absent from classical reciprocal LC null; otherwise keep unique physical attribution parked."
+}
