@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "qpb-quantum-extension-20261024",
+  "session": "qpb-qextension-20261024-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-24T18:00:00Z",
+  "base_revision": "211f2e72fc72867bac1b3c8712bf0d5c2464e509",
+  "owned_paths": [
+    "tasks/qpb-quantum-extension-20261024.json",
+    "sessions/qpb-qextension-20261024-gpt6-a1/",
+    "experiments/qpb-quantum-extension/",
+    "candidates/qpb-quantum-extension/",
+    "artifacts/qpb-qextension-20261024-gpt6-a1/"
+  ]
+}
