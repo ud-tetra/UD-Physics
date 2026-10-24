@@ -3,7 +3,7 @@
   "schema_version": 1,
   "task": "graphite-packet-force-contract-20261024",
   "session": "graphforce-20261024-01",
-  "created_at": "2026-10-24T20:08:47.084Z",
+  "created_at": "2026-10-24T20:09:10.000Z",
   "base_revision": "5863f5f28938d92f3b156cb9233b92a54e9f7d62",
   "owned_paths": [
     "tasks/graphite-packet-force-contract-20261024.json",
@@ -13,5 +13,7 @@
     "artifacts/graphforce-20261024-01"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-24T20:12:15.793Z",
+  "released_from_sha": "731ff281e1a9e23276bac65ebfc5008a609f75ee"
 }
