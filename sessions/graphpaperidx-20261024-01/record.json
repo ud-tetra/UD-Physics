@@ -1,0 +1,33 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphpaperidx-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute plus GitHub connector write",
+  "task": "integration-graphite-manuscript-v2-20261024",
+  "goal": "Index revised graphite UD paper in study entry and integrated state",
+  "created_at": "2026-10-24T16:23:00.362944+00:00",
+  "base_revision": "aa4585929042b7dca4bd0d7494120e22017b7205",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/integration-graphite-manuscript-v2-20261024",
+    "held_sha": "83d5e897f557ed11063fa9721f6423da524e9509",
+    "status": "held"
+  },
+  "checks": [],
+  "finding": "Paper v2 now linked from graphite entry and CURRENT, with v1 retained as historical draft.",
+  "next_action": "Merge index PR, release claim and record closure; next scientific task is independently calibrated source/loss/contact and held-out traces.",
+  "mathematical_profile": {
+    "coefficient_domain": "no new calculation; exact and conditional source claims inherited from versioned paper",
+    "exactness_or_precision_plan": "index only; validate links and records",
+    "applicable_methods": [
+      "N/A: integration of merged paper, no new algebra"
+    ],
+    "clock_metric_units_conventions": "inherits paper v2 scope; no new physical map"
+  },
+  "checkpoint_at": "2026-10-24T16:23:29.756121+00:00",
+  "checkpoint_source": {
+    "revision": "f868872ee6cffec911ed583935805841430dc350",
+    "dirty": true
+  }
+}
