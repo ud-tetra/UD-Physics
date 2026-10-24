@@ -19,3 +19,5 @@ Integrate PR #119 exact/conditional 2D first-star null. Source-rounded 94.688818
 Checkpoint (complete): Main graphite entry and CURRENT index the 2D conventional control and inequivalent scalar surrogate
 
 Next: Freeze measured complex loss/contact transfer and full signed force estimator, then test independent UD residual
+
+- Integrated PR #122 (`91407e4d20721539a2e96a3a12d1c9561fd7b044`) after GitHub Discovery integrity run 40108713423 succeeded. Claim released to marker `64ef2d7a76401224a46eb9121705785c7c3bed62`; live status verified. Independent physics review NOT_RUN.
