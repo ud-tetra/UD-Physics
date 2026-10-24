@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "graphite-endogenous-gate-20261024",
+  "session": "graphendog-20261024-01",
+  "created_at": "2026-10-24T18:09:43.728Z",
+  "base_revision": "ba13108ff2b30d2e1d4c38286192e59bba73b1ea",
+  "owned_paths": [
+    "tasks/graphite-endogenous-gate-20261024.json",
+    "sessions/graphendog-20261024-01/",
+    "candidates/graphite-endogenous-gate/",
+    "experiments/graphite-endogenous-gate/",
+    "artifacts/graphendog-20261024-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
