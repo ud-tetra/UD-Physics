@@ -1,0 +1,9 @@
+{
+  "positive_gain_triples_checked": 30,
+  "control_volume_checks": 450,
+  "whitening_checks": 30,
+  "gain_metric_map": "g_k=sqrt(h_(k-1)/h_k); h_k=h0/(g1*...*gk)^2",
+  "current": "j_(i<-j)=2G_ij x_i x_j; local incidence only; antisymmetric",
+  "energy": "H_g=(1/2)<x,(-JG)x>=sum_k g_k ||P_k x||^2",
+  "source_selection": "NONE; unweighted unit-metric source is exactly g1=g2=g3=1"
+}

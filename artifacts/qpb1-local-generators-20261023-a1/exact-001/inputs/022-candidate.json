@@ -1,0 +1,50 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-local-generators",
+  "session_id": "qpb1-local-generators-20261023-a1",
+  "question": "Do symmetry and simplex-incidence locality permit or select the detuned phase law, and is exact recurrence robust to rate errors?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Single filled tetrahedron, ascending chain orientations, full signed S4, original H=I, real linear time-independent generator.",
+    "Norm conservation expressed as Euclidean skewness; incidence locality means codimension-one face pairs, not spacetime locality.",
+    "Retain original J=A/2 and alpha=<Jx,dx>/||x||^2 with ordinary period2pi fiber and earlier endpoint-corrected holonomy convention; physical interpretation not imported.",
+    "Added positive incidence gains g1,g2,g3; positive-energy branch gk>0; original unit-incidence law remains g=(1,1,1).",
+    "Earlier two-rate candidate is g1=g2; optional one-parameter contrast preserves lower source rates g1=g2=1 and adds face-cell gain gamma.",
+    "Optional alternative degree-scalar positive metric H=diag(hk I); adjoint and readout transformed by H^(1/2); no metric selection theorem.",
+    "Exact-return sensitivity challenge compares newly chosen minimal ray periods, not equal-time trajectories or noisy apparatus phases."
+  ],
+  "physical_mapping": "OPEN; rate/metric selection, finite-window physical readout and action calibration unresolved; UNSCORED,promotion0",
+  "target_exposure": "EXPLORATORY_AFTER_TWO_RATE_PHASE_ETA2_AND_NATIVE_FREQUENCY2",
+  "fitted_choices": [
+    "Gain contrast and (1,1,3/2) reference chosen to test earlier omega_v2/omega_h3 candidate",
+    "Positive degree gains and optional degree metric are explicit alternative premises",
+    "No empirical optimization; six rational gain-error fixtures supplement the all-odd-N proof"
+  ],
+  "sources": [
+    "experiments/qpb1-local-generators/SOURCES.json",
+    "experiments/qpb1-local-generators/SOURCE_ROWS.json"
+  ],
+  "baseline": "Unmodified unit-metric incidence generator A; ordinary three-frequency conservative flow and ray phase",
+  "result": "Complete signedS4 Euclidean-skew family G=sum(gk Kk), dimension3; all incidence-local and J-commuting; sector ranks6/6/2; earlier two-rate law is g1=g2; detuning allowed but unselected; arbitrarily small independent g2 errors change minimal-return reference Hol -1 to +1",
+  "next_discriminant": "Define and test a finite-window phase readout with endpoint correction, a visibility/closure floor and independent gain-error bounds; avoid exact-return dependence and unproved g1=g2. Keep rate/metric selection OPEN.",
+  "retained_roles": [
+    "Complete linear classification",
+    "Explicit local realization of earlier spectral law",
+    "Positive-energy and exact local support receipts",
+    "Metric normalization map and exact-return sensitivity diagnostic"
+  ],
+  "unsupported_roles": [
+    "Native selection of nonzero detuning or g1=g2",
+    "Uniform nontrivial exact-return phase under independent gain uncertainty",
+    "Physical gauge, clock or eta_A identification"
+  ],
+  "reopening_conditions": "New local constitutive/metric selection rule or separately frozen finite-window readout and uncertainty certificate"
+}
