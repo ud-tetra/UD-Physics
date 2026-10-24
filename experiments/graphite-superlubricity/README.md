@@ -9,6 +9,7 @@
 - [Complete selected graphite development archive](../../artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/manifest.json) retains all 37 graphite captures and seven preceding octahedral geometry/model tests, including superseded drafts, failed alternatives, verifier scripts, numerical outputs, original manifests and event receipts. [Machine-readable index](HISTORY_INDEX.json).
 - [Candidate](../../candidates/graphite-superlubricity/candidate.json), [mathematical receipt](../../candidates/graphite-superlubricity/mathematical_receipt.json), and [session handoff](../../sessions/graphpub-20261023-gpt6-4f9a/journal.md).
 - [Passive-port attribution follow-up](../graphite-port-attribution/README.md): exact conditional proof that the seven-orbit source plus an unrestricted passive bath permits every passive two-dimensional residual tensor. Independent source and loss calibration is necessary for a quantitative force/load prediction. This follow-up limits the interpretation of the versioned preprint; it is not new friction data.
+- [Four-site source-constraint follow-up](../graphite-source-constraints/README.md): two exact linear cross-Hessian relations test the *pure* seven-orbit source without fitting its weights or damping. The archived KC reconstruction fails the pure-source test; a proposed additive UD coupling requires an independently subtracted conventional baseline. No new measured friction is claimed.
 
 ## Claim at its actual scope
 

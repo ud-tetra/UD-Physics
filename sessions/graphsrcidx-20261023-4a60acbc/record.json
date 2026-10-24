@@ -1,0 +1,20 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphsrcidx-20261023-4a60acbc",
+  "runtime": "Codex GPT-6; local Python/Git compute; GitHub connector write",
+  "task": "integration-graphite-source-20261023",
+  "goal": "Link exact source-constraint follow-up from original graphite entry and shared milestone state",
+  "created_at": "2026-10-24T01:01:12Z",
+  "base_revision": "03e049d37f7aba11aca59a263d1c9c7d0fc56d5b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {"integration-graphite-source-20261023": {"ref": "refs/heads/claims/integration-graphite-source-20261023", "sha": "371c32fa59d4b8803632d298bf53368bce35b93d", "status": "held"}},
+  "checks": [
+    {"command": "python3 scripts/validate.py", "result": "PASS: 163 records; manifest digests and local documentation links valid"},
+    {"command": "python3 -m unittest discover -s tests -q", "result": "PASS: 16 tests"}
+  ],
+  "finding": "The graphite hypothesis entry and integrated state link to the conditional four-site source test and label its archived KC replay accurately.",
+  "next_action": "Release claim after integration; independently measure additive cross Hessian and damping before friction prediction.",
+  "mathematical_profile": {"coefficient_domain": "N/A for navigation update; prior exact Q and numerical replay imported at their scopes", "exactness_or_precision_plan": "No new mathematics; preserve evidence labels from PR #83", "applicable_methods": ["typed provenance and evidence-scope review"], "clock_metric_units_conventions": "Inherited from graphite-source-constraints receipt; no new mapping"}
+}
