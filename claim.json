@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "graphite-manuscript-v2-20261024",
+  "session": "graphpaper-20261024-01",
+  "status": "held",
+  "created_at": "2026-10-24T12:30:00Z",
+  "base_revision": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
+  "owned_paths": [
+    "tasks/graphite-manuscript-v2-20261024.json",
+    "sessions/graphpaper-20261024-01/",
+    "experiments/graphite-manuscript-v2/",
+    "candidates/graphite-manuscript-v2/",
+    "artifacts/graphpaper-20261024-01/"
+  ]
+}
