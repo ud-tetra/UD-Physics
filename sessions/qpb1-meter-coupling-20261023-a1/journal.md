@@ -33,3 +33,14 @@ Disjoint upstream PRs100-103 fast-forwarded to 96319cbce750e5c4a2fc9772783fdbbf2
 Captured artifacts/qpb1-meter-coupling-20261023-a1/exact-001 (CONDITIONAL): Balanced local meter: exact projective loading cancellation and finite reset/mismatch/calibration/timing budgets; hardwareOPEN,UNSCORED,promotion0
 
 Captured immutable exact-001 with 33 explicit inputs and 5 outputs. Capture HEAD is disjoint integration base96319cb; mathematical dependencies remain byte-identical to source base0abea764. Validation PASS193records, tooling PASS16tests. Inputs include own report, audit, contract, receipt and candidate, 24 pinned dependencies and both supplied attachments. No independent review or empirical validation is claimed.
+
+## Integrated checkpoint and verified release
+Research PR104 merged at 59f37b0f92556fc4d009898a424a24743b867d69 from exact head cbd2815f7aebc7a3ee0ebfa469842942d853c85f. Integrity run 40053241587 verified successful for that head. Integrated tree matched local staged tree 123d0c5e10afab3a7e9c750eddaf89c1e89fb5c1 before reset-soft to fetched main; unstaged diff and checkout cleanliness verified.
+
+Task claim released by exact-SHA CAS to 93465e6c89d7fa6be9cf5b72ebac88c435fd9907; live marker and same-owner released metadata verified. This closure updates only the owning session record and journal. Research/captured inputs and outputs remain unchanged.
+
+NEXT: derive a direct projective-phase tolerance bound, separating harmless scalar/common-J directions from differential mismatch; priority95. Practical tolerances, physical signed readout and native meter selection remain OPEN; UNSCORED and promotion0.
+
+Closure integration refresh: unrelated graphite locality PR105 advanced main to b5a96aab7b9cb0a705b631b91c307c6235954e93. Changes are disjoint from both owning session files and all scientific dependencies. Preserve them and merge the new main parent into the closure branch without force-pushing. Repository checks rerun on this union.
+
+Closure union validation PASS197records; tooling PASS16tests. Scientific run unchanged.
