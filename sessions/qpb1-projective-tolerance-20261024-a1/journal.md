@@ -35,3 +35,10 @@ Disjoint graphite-relaxation PRs114-117 fast-forwarded to bb6fa4bce02e659c3f149a
 Captured artifacts/qpb1-projective-tolerance-20261024-a1/exact-001 (CONDITIONAL): Projective polygon differential meter bound;explicit phase-budget amendment,commonloadingquotient,hardwareOPEN,promotion0
 
 Captured immutable exact-001 with36explicitinputs and5outputs. CaptureHEADbb6fa4b integrationbase;scientificsourcebase4aaf0a39 remainsbyte-identicalfor27dependencies. ValidationPASS215records;toolingPASS16tests. Artifactcapture includes code/report/contract/receipt/candidate,27pinneddependenciesandtwohistoricaluploads. No independentreview/experiment.
+
+## Integrated checkpoint and verified release
+Research PR118 merged at 24d3485f7a2b27539a1d926cbc64092960f0c5cf from exact head 91d586591cd2bb10b910fdc0abe07259139ac008. Integrity run 40108428921 verified successful for that exact head. Integrated tree equals local staged tree d2fde327f35260b11643713c6e95944f18988950; clean checkout verified after safe reset-soft to integrated commit.
+
+Live claim released with exact-held-SHA CAS to 57db575a87dc9e842872b5e9d307b5f6a0fe5862; live ref and same-owner release metadata verified. This closure changes only the owning record and journal; immutable research remains unchanged.
+
+NEXT: structured three-sector near-return proof for larger differential detuning, testing uniform coverage around prior0.01passingpoint. Priority95. Arbitrarychannel andphysicalcalibration budgets remain separate; no mainlinepromotion.
