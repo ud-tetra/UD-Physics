@@ -1,0 +1,20 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-native-support-current",
+  "session_id": "graphsupport-20261024-01",
+  "question": "Can the locked Q166 support current provide the signed Q24 input and the earlier weighted harmonic port without inventing Markov rates?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT", "CONDITIONAL", "HYPOTHESIS", "OPEN"
+  ],
+  "assumptions": ["Q24 directed pair identified with a vertex-edge Hasse contact only for a conditional completion", "route sign +1 for vertex-to-edge and -1 reversed; positive traffic is an algebraic decomposition of native signed support current", "honeycomb quotient chain spaces identified with the native 0↔1 incidence lane only for a formal port test; y not identified with material stiffness"],
+  "physical_mapping": "packet to graphite site labels/edge Hessian and dimensional energy/length/time/complex damping/contact OPEN",
+  "target_exposure": "21.8/38.2 detectable peaks and weak load trend known; no target value used to choose native current, traffic activity or local witness",
+  "fitted_choices": ["none; unnormalized integer preparations are counterexample witnesses, not material fits"],
+  "sources": ["supplied UD coefficient provenance ledger v0.39(2) SHA-256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63 Q165-Q170 and Q24-Q26", "UD-Physics route-parity and traffic-source notes at base 211f2e7", "UD-Physics N7/13/19 quotient carrier at base 211f2e7"],
+  "baseline": "conventional two-dimensional PES/contact and independently measured material complex loss",
+  "result": "Exact native contact flow F_ie=2B_ie x_i y_e conserves quadratic stock. Algebraic positive traffic T±=a±F/2 yields Q24 c=eta F/2 for assumed signed route regardless of a. Aggregated edge-register injection J=2 diag(y) B1^T x has formal M^T J=2S(y)x, cancelled by uniform y but activated at N7/13/19 under same local contrast.",
+  "next_discriminant": "Native preparation and persistence law for nonuniform y, graphite material map and complex loss with held-out signed force/load controls.",
+  "mathematical_receipts": ["candidates/graphite-native-support-current/mathematical_receipt.json"]
+}
