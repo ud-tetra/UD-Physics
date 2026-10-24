@@ -8,12 +8,16 @@
   "created_at": "2026-10-24T15:32:38.352888+00:00",
   "base_revision": "4aaf0a39d24328e27bc425e333e3612baea888a5",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "qpb1-projective-tolerance-20261024": {
       "ref": "refs/heads/claims/qpb1-projective-tolerance-20261024",
       "sha": "c1fdaaf71a32fe09dbcf2327ff06c1e413407f8e",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "57db575a87dc9e842872b5e9d307b5f6a0fe5862",
+      "released_from_sha": "c1fdaaf71a32fe09dbcf2327ff06c1e413407f8e",
+      "released_at": "2026-10-24T15:46:23.767Z",
+      "verified": true
     }
   },
   "checks": [
@@ -28,9 +32,34 @@
     {
       "command": "python3 -m unittest discover -s tests -v",
       "result": "PASS16tests"
+    },
+    {
+      "command": "python3 scripts/validate.py (closure union)",
+      "result": "PASS219records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v (closure union)",
+      "result": "PASS16tests"
     }
   ],
   "finding": "Exactpolygonphasegradientannihilatesradial/verticalmotion;commonmeterloadingquotientedwithsignal>1/10. Differentialnorm1e-6/2e-7 yieldsphase<1/400and1/250rad,gatespreserved;operatorallowances>11413/>570timesold sufficientlimits,withexplicitprotocol/calibrationamendments.",
   "next_action": "Derive a structured three-sector near-return bound exploiting amplitude/phase cancellation, and test whether the prior0.01passingdetuningpoint can be enclosed uniformly; keep arbitrary channel errors and physical calibration separate; priority95.",
-  "integration_base_revision": "bb6fa4bce02e659c3f149a05f64e4d223e4ae886"
+  "integration_base_revision": "bb6fa4bce02e659c3f149a05f64e4d223e4ae886",
+  "completed_at": "2026-10-24T15:46:50.637775+00:00",
+  "integration": {
+    "research_pr": 118,
+    "url": "https://github.com/ud-tetra/UD-Physics/pull/118",
+    "head_sha": "91d586591cd2bb10b910fdc0abe07259139ac008",
+    "merge_sha": "24d3485f7a2b27539a1d926cbc64092960f0c5cf",
+    "tree_sha": "d2fde327f35260b11643713c6e95944f18988950",
+    "ci": {
+      "id": 40108428921,
+      "head_sha": "91d586591cd2bb10b910fdc0abe07259139ac008",
+      "conclusion": "success",
+      "url": "https://github.com/ud-tetra/UD-Physics/actions/runs/40108428921"
+    },
+    "release_verified": true
+  },
+  "closure_scope": "Owning record/journal only; no substantive research after verified release",
+  "closure_integration_base_revision": "3df32aef5daacb2495dea24c7b665a013a7c4bb3"
 }
