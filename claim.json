@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-graphite-packet-force-contract-20261024",
+  "session": "graphforceidx-20261024-01",
+  "created_at": "2026-10-24T20:13:22.490Z",
+  "base_revision": "8b45874938da087a11666310bd54b13fd7cdc182",
+  "owned_paths": [
+    "tasks/integration-graphite-packet-force-contract-20261024.json",
+    "sessions/graphforceidx-20261024-01",
+    "experiments/graphite-superlubricity/README.md",
+    "experiments/graphite-manuscript-v2/README.md",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
