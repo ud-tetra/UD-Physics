@@ -1,0 +1,9 @@
+# Session journal — qpb1-finwindow-20261023-gpt6-b6f2
+
+- 2026-10-24T01:00:17Z: Read BOOTLOADER, AGENTS, v1.2 instruction, mathematical protocol, CURRENT, concurrency and artifacts at 41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb; inspected live refs and latest qpb1-local-generators dependency.
+- Verified no pre-existing `claims/qpb1-finite-window-phase-20261023`, atomically created held claim e38d9b6cfba644744eba92d668b670068751487f, reread live claim.json, then created isolated connector branch from exact main base. No authenticated local Git checkout; no files from other owners changed.
+- Chose the next named discriminant from the completed qpb1-local-generators study: finite-window Pancharatnam endpoint correction, independent gain errors, visibility floor. Exposed prior -1 phase/g=(1,1,3/2) and newly selected screens recorded as such.
+- EXACT/CONDITIONAL derivation: V>=30383/30625 and |phase shift|<=42592/15569925 rad for all independent |delta_gk|<=1/100 at T=2pi, relative to fixed state's own nominal phase; no g1=g2 premise.
+- NUMERICAL constructor: executed `python3 experiments/qpb1-finite-window-phase/audit.py --out artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-001/files/summary.json` in isolated local staging. PASS 125 gain triples and 3 odd-N examples. Output SHA-256 4697f1e3bfd058d884f1c5c7daf50ab860281755a570d6365583accecc51a6c2; script SHA-256 f0aac2f6d702def770319ab3c47d9e6008370f2f84ee6029574df485a69b9f0b.
+- Captured source bytes and output in immutable schema2 artifact phase-001; repo test commands NOT_RUN because repository checkout unavailable. These constructor tests are not an independent physics validation.
+- Handoff: request full-repo validation and non-constructor review before merge; keep claim held until successful integration/explicit abandonment. Do not release while the PR is pending.

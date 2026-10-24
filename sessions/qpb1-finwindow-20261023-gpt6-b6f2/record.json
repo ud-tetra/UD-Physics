@@ -1,0 +1,53 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "runtime": "ChatGPT GPT-6; GitHub connector write; isolated local standard-library Python; no authenticated git checkout",
+  "task": "qpb1-finite-window-phase-20261023",
+  "goal": "Fixed-window phase visibility and endpoint correction under independent local incidence gain errors",
+  "created_at": "2026-10-24T01:00:17Z",
+  "base_revision": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "qpb1-finite-window-phase-20261023": {
+      "ref": "refs/heads/claims/qpb1-finite-window-phase-20261023",
+      "sha": "e38d9b6cfba644744eba92d668b670068751487f",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-finite-window-phase/audit.py --out artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-001/files/summary.json",
+      "result": "PASS: exact rational bounds; 125 numerical triples; 3 odd-N fixed-window challenges",
+      "scope": "isolated local staged files; standard-library Python"
+    },
+    {
+      "command": "sha256sum experiments/qpb1-finite-window-phase/audit.py artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-001/files/summary.json",
+      "result": "PASS: exact file checksums recorded in manifest"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "NOT_RUN: complete repository checkout unavailable"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "NOT_RUN: complete repository checkout unavailable"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL: under three-sector local skew law at T=2pi, independent +-1% gain errors retain V>=30383/30625 and phase drift <=42592/15569925 radians (relative to each state's nominal phase); rate selection and physical readout OPEN",
+  "next_action": "Run full repo validation and non-constructor review on the branch; then pursue an operational interference/noise readout. Do not claim empirical physics. Release held claim only after integration or explicit abandonment.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q exact rational weights, gains and rational enclosures; R state space; C via fixed J for phase; transcendental angles symbolic pi with pi<22/7",
+    "exactness_or_precision_plan": "Exact rational bound with analytic sin/cos inequalities; Python float64 only for 125 development samples and three odd-N counterexample checks",
+    "applicable_methods": [
+      "rational arithmetic: weight and error budgets",
+      "spectral/projective phase: U(1) overlap and connection",
+      "geometry: unit Euclidean Hermitian metric and fixed J",
+      "fit/null/sensitivity: analytic uncertainty-box bounds; compare exact-return-only baseline",
+      "integers/factorization/modular/homology: N/A, no divisibility or discrete clock assertion"
+    ],
+    "clock_metric_units_conventions": "Dimensionless continuous s, T=2pi; ascending tetrahedron orientations imported, J=A/2 as +i; Euclidean metric H=I; normalized a=1; phase radians; physical time/energy maps OPEN"
+  }
+}

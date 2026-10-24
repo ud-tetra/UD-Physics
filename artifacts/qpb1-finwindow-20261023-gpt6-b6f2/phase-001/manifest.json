@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "run_id": "phase-001",
+  "created_at": "2026-10-24T01:02:18Z",
+  "evidence": "EXACT",
+  "summary": "Exact rational all-box fixed-window phase/visibility bounds plus 125 constructor grid checks",
+  "command": "python3 experiments/qpb1-finite-window-phase/audit.py --out artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-001/files/summary.json",
+  "command_execution": "EXECUTED_LOCAL_STAGING_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "audit-source",
+      "name": "audit.py",
+      "path": "inputs/audit.py",
+      "sha256": "f0aac2f6d702def770319ab3c47d9e6008370f2f84ee6029574df485a69b9f0b",
+      "size_bytes": 4664,
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-window-phase/audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "4697f1e3bfd058d884f1c5c7daf50ab860281755a570d6365583accecc51a6c2",
+      "size_bytes": 2453
+    }
+  ]
+}

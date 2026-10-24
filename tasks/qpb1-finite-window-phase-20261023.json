@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb1-finite-window-phase-20261023",
+  "goal": "Fixed-window phase visibility and endpoint correction under independent local incidence gain errors",
+  "owned_paths": [
+    "tasks/qpb1-finite-window-phase-20261023.json",
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/",
+    "experiments/qpb1-finite-window-phase/",
+    "candidates/qpb1-finite-window-phase/",
+    "artifacts/qpb1-finwindow-20261023-gpt6-b6f2/"
+  ],
+  "dependencies": [
+    "qpb1-local-generators-20261023"
+  ],
+  "status": "active"
+}
