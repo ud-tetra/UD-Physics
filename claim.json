@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "qpb1-finite-window-20261023",
   "session": "qpb1-finite-window-20261023-a1",
   "created_at": "2026-10-24T01:02:08.296Z",
@@ -13,5 +13,7 @@
     "experiments/qpb1-finite-window/",
     "candidates/qpb1-finite-window/",
     "artifacts/qpb1-finite-window-20261023-a1/"
-  ]
+  ],
+  "released_at": "2026-10-24T01:15:57.244Z",
+  "released_from_sha": "8fe7c21b738b5233d484cc5c5406d3105e5b5557"
 }
