@@ -19,3 +19,7 @@ Held claim ad9ef2073a38ca749d61ef44d5ce8e9ab72b5ab5; exact base 5ce8e4189a6e3f3d
 Checkpoint (handoff): Indexed passive cross-loss uncertainty after merged research PR #94
 
 Next: Pressure-resolved complex loss and signed held-out force data
+
+## Integration and release
+
+PR #96 merged at `a14fc33453ad3eed2ac5b22b79e92898e5c1f821` after Discovery integrity job 120739953296 passed. Live held claim for this task/session was verified; marker `fdee5ef7a4b0afed73eccdc02f8536dd35b6c2e7` was installed with exact expected held SHA `ad9ef2073a38ca749d61ef44d5ce8e9ab72b5ab5` and read back as released. This closure updates only this session. No independent physics review.
