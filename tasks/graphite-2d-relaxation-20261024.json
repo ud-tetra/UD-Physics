@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-2d-relaxation-20261024",
+  "goal": "Derive two-dimensional isotropic drag, velocity anisotropy order and source-rounded 7/13 ratio under common bath",
+  "owned_paths": [
+    "tasks/graphite-2d-relaxation-20261024.json",
+    "sessions/graph2d-20261024-c829/",
+    "candidates/graphite-2d-relaxation/",
+    "experiments/graphite-2d-relaxation/",
+    "artifacts/graph2d-20261024-c829/"
+  ],
+  "dependencies": [
+    "graphite-relaxation-null-20261024"
+  ],
+  "status": "complete"
+}

@@ -1,0 +1,42 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graph2d-20261024-c829",
+  "run_id": "exact-001",
+  "created_at": "2026-10-24T15:45:46.881856+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact 2D first-star passive tensor, sixth-order directional power onset and conditional source-rounded N7/N13 ratio",
+  "command": "python3 experiments/graphite-2d-relaxation/replay_two_dimensional.py > /tmp/graph2d-result.json",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "bb6fa4bce02e659c3f149a05f64e4d223e4ae886",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay_two_dimensional.py",
+      "path": "inputs/001-replay_two_dimensional.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-2d-relaxation/replay_two_dimensional.py",
+      "sha256": "180baf5e2056442329bd95551cacb7557dfe1523a1f40b8bdd355e8530792d8f",
+      "size_bytes": 2529
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/graphite-2d-relaxation/mathematical_receipt.json",
+      "sha256": "124c9084467830e1e6c3883d35936d65f72ba13e948c23935b802472ebb2eb0b",
+      "size_bytes": 11544
+    }
+  ],
+  "files": [
+    {
+      "path": "files/graph2d-result.json",
+      "sha256": "431f58de0426e03ff54c1806b10079c4ae071962dad25864758fc0d487d30171",
+      "size_bytes": 1162
+    }
+  ]
+}
