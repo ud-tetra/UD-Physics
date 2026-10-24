@@ -13,13 +13,16 @@
     "graphite-registry-convolution-20261024": {
       "ref": "refs/heads/claims/graphite-registry-convolution-20261024",
       "held_sha": "a935ffeb6c36c14cf9f279809ba909a78aebe6f7",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "dd4b994e53783af3a91521a1313fb977e8981c11",
+      "released_at": "2026-10-24T13:44:49.892Z"
     }
   },
   "checks": [
     "python3 experiments/graphite-registry-convolution/replay_registry.py: PASS exact N=7/13/19",
     "python3 scripts/validate.py: PASS",
-    "python3 -m unittest discover -s tests -v: PASS 16 tests"
+    "python3 -m unittest discover -s tests -v: PASS 16 tests",
+    "GitHub Discovery integrity run 40099434626: success (integrity only)"
   ],
   "finding": "Registry modulation alone cannot activate the C3-symmetric uniform incidence port; nonuniform source coupling is an exact cross-spectrum and any seven-cell alias demonstrated here is target-informed",
   "next_action": "Source common physical registry and sliding-drive spectra, damping and conventional readout, then test held-out signed force/load residual",

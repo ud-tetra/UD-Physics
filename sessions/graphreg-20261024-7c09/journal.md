@@ -27,3 +27,5 @@ EXACT/CONDITIONAL: full C3 spatial edge response enforces equal direction averag
 Checkpoint (complete): Registry modulation alone cannot activate the C3-symmetric uniform incidence port; nonuniform source coupling is an exact cross-spectrum and any seven-cell alias demonstrated here is target-informed
 
 Next: Source common physical registry and sliding-drive spectra, damping and conventional readout, then test held-out signed force/load residual
+
+- Integrated in PR #110 (`7e3cca8dc339c015500bc628231b9f62ea63ca3c`) after GitHub Discovery integrity run 40099434626 succeeded. Claim released to marker `dd4b994e53783af3a91521a1313fb977e8981c11`; live status verified released. Independent physics review NOT_RUN.
