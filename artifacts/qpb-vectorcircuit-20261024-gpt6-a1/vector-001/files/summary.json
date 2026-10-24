@@ -1,0 +1,14 @@
+{
+  "B1B2_zero": true,
+  "PL_PT_ranks": [
+    3,
+    3
+  ],
+  "case_count": 24,
+  "pulse_energy_fraction": {
+    "full_period": 0.0,
+    "half_period": 0.4052847345693511,
+    "instant_limit": 1.0
+  },
+  "status": "PASS"
+}
