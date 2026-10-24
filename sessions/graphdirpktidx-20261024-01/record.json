@@ -12,14 +12,16 @@
   "claims": {
     "ref": "refs/heads/claims/integration-graphite-directional-packet-20261024",
     "held_sha": "54ce5be17f537e36c1a40bbd47ceb40ef929887a",
-    "status": "held"
+    "status": "released",
+    "release_sha": "953ea3237a52cbb56496629e5c5413cdfda011ce"
   },
   "checks": [
     "scripts/validate.py PASS (284 records)",
     "16 unit tests PASS",
+    "GitHub Discovery integrity workflow 40127566463 success",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Directional packet follow-up indexed without physical promotion.",
+  "finding": "Directional packet follow-up indexed in PR #166 at b814d599f591b79d6e439b3bc0a608d889f0a174 without physical promotion.",
   "next_action": "Derive measured/material packet preparation and loss/force mapping, then held-out controls.",
   "checkpoint_at": "2026-10-24T19:56:10.274915+00:00",
   "checkpoint_source": {
