@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "graphite-quotient-contrast-20261023",
+  "session": "graphcontrast-20261023-f7047e21",
+  "status": "held",
+  "created_at": "2026-10-24T01:59:29Z",
+  "base_revision": "0abea764505989dde38fe0906d0d32c53d76b93c",
+  "owned_paths": [
+    "tasks/graphite-quotient-contrast-20261023.json",
+    "sessions/graphcontrast-20261023-f7047e21/",
+    "candidates/graphite-quotient-contrast/",
+    "experiments/graphite-quotient-contrast/",
+    "artifacts/graphcontrast-20261023-f7047e21/"
+  ]
+}
