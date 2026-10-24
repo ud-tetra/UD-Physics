@@ -72,3 +72,8 @@ See [session record](../../sessions/qpb1-finwindow-20261023-gpt6-b6f2/record.jso
 ## Phase-005 independently monitored reference/null experiment
 
 [Three-channel protocol, synthetic injection tests and conventional-tone exact null comparison](REFERENCE_NULL_PROTOCOL.md) show what an independently monitored reference can cancel, and where unmatched signal-path drift remains indistinguishable. The newly captured phase-005 result is not a physical experiment or uniquely UD response.
+
+
+## Phase-006 multiport signature and classical matched null
+
+[Exact tetrahedral four-face signs, all-time transfer zeros, one-bond defect and classical 15-port equivalence](MULTIPORT_DISCRIMINANT.md). The new `phase-006` exact constructor is an interpretable controlled-port candidate, but the unrestricted classical incidence-matched null eliminates unique physical attribution.

@@ -74,10 +74,20 @@
       "command": "sha256sum /mnt/data/qpb_phase005/null_protocol.py /mnt/data/qpb_phase005/summary.json",
       "result": "PASS code 8945b9ccc1273673ecef9577e23a3ecea9679961c53bf9e57275bed6c89ec05f; output 347c9094dce14eadc1a2cbf87e4bdc56cabd18007441199ed833d90ce3b86330",
       "scope": "immutable phase-005 capture"
+    },
+    {
+      "command": "python3 /mnt/data/qpb_phase006/multiport_compact.py --out /mnt/data/qpb_phase006/compact_result.json",
+      "result": "PASS exact Fraction 15x15 incidence and signed S4, 24 permutations, three gain sets x13 Taylor orders, 4 rational bond defects; equal classical G baseline",
+      "scope": "local constructor, no external reviewer or hardware"
+    },
+    {
+      "command": "sha256sum /mnt/data/qpb_phase006/multiport_compact.py /mnt/data/qpb_phase006/compact_result.json",
+      "result": "PASS source 71996489e299f3c67d17b4e14a221d7dba2a4803983d9e74b67c50d3113d0969; output bcb99ee53d00e9a8396b4abfcebe914613423848444006f49edde0216a8f2441",
+      "scope": "phase-006 immutable schema2 bytes"
     }
   ],
-  "finding": "EXACT/CONDITIONAL: under three-sector local skew law at T=2pi, independent +-1% gain errors retain V>=30383/30625 and phase drift <=42592/15569925 radians (relative to each state's nominal phase); rate selection and physical readout OPEN; follow-up EXACT/CONDITIONAL joint receiver budget visibility>=607251319/612500000, corrected error<0.008250276 rad under declared prep/time/receiver/calibration bounds; phase-003 EXACT/CONDITIONAL Richardson short-time D estimator under stronger metrology/repeatability budget gives calibration error<=0.000963923 rad and joint phase error<=0.008214199 rad; not a physical apparatus; phase004 EXACT/CONDITIONAL: ideal iid Bernoulli shot budget 59.2e12 for 99% two-probe accuracy, and unmeasured external frame shift .002 rad voids earlier .01 rad joint physical guarantee without lowering visibility.; phase005 EXACT/CONDITIONAL 3-channel reference cancellation works when path-null matching is imposed, error<=0.0088142081 rad if all phase003 premises retained; FAILED physical attribution: same Z(t) as ordinary 3-tone model; unmatched .002 rad phase drift survives.",
-  "next_action": "Find a UD-specific source-selected dynamical residual or symmetry/scaling observable not realizable by conventional three-tone null; obtain non-constructor mathematical assessment and measured reference-path experiment before any physical claim. Claim HELD until explicit integration/abandonment.",
+  "finding": "EXACT/CONDITIONAL: under three-sector local skew law at T=2pi, independent +-1% gain errors retain V>=30383/30625 and phase drift <=42592/15569925 radians (relative to each state's nominal phase); rate selection and physical readout OPEN; follow-up EXACT/CONDITIONAL joint receiver budget visibility>=607251319/612500000, corrected error<0.008250276 rad under declared prep/time/receiver/calibration bounds; phase-003 EXACT/CONDITIONAL Richardson short-time D estimator under stronger metrology/repeatability budget gives calibration error<=0.000963923 rad and joint phase error<=0.008214199 rad; not a physical apparatus; phase004 EXACT/CONDITIONAL: ideal iid Bernoulli shot budget 59.2e12 for 99% two-probe accuracy, and unmeasured external frame shift .002 rad voids earlier .01 rad joint physical guarantee without lowering visibility.; phase005 EXACT/CONDITIONAL 3-channel reference cancellation works when path-null matching is imposed, error<=0.0088142081 rad if all phase003 premises retained; FAILED physical attribution: same Z(t) as ordinary 3-tone model; unmatched .002 rad phase drift survives.; phase006 EXACT/CONDITIONAL all-time cell->four-face signed (1,-1,1,-1) and zero cell->edge/vertex transfer under original signed S4 local G, broken at t² by selected one-bond defect; FAILED unique physical attribution versus classical matched 15-port skew model.",
+  "next_action": "Seek source-constrained physical constitutive/port law with a held-out residual not reproducible by a matched classical incidence network; independent assessment; claim HELD and PR draft.",
   "mathematical_profile": {
     "coefficient_domain": "Q exact rational weights, gains and rational enclosures; R state space; C via fixed J for phase; transcendental angles symbolic pi with pi<22/7",
     "exactness_or_precision_plan": "Exact rational bound with analytic sin/cos inequalities; Python float64 only for 125 development samples and three odd-N counterexample checks",
