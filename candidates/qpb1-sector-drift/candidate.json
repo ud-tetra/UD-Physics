@@ -1,0 +1,47 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-sector-drift",
+  "session_id": "qpb1-sector-drift-20261024-a1",
+  "question": "Does the constant three-sector certificate extend to bounded time-varying mismatch?",
+  "status": "ACTIVE",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Inherited15realchainregisters,active14real/7complex,Euclideanmetric,ascendingorientations,J=A/2,orthogonalJinvariantPk ranks6,6,2;added15classicalmeterregisters.",
+    "Exactengineeredkappa1/4,gamma1;absoluteplantgainerror<=1/100;boundspiecewisecontinuousplantdriftallowed.",
+    "Zero-resetstructuredscalarinitial(1,0);arbitraryactual/referencepassivegeneratorremainder<=1e-7 andinitialmeterresidual<=9/12800000000 separatelybudgeted.",
+    "Activepreparationradius1/10,norm[9/10,11/10],r3[1/3,2/3];same-seedQ0=exp(-2pi*i*r3).",
+    "Warmup1;T=2pi\u00b11/100,M128,maxgapTplus/128;alltau<=5107/700.",
+    "Knownpositivenominalb0calibration,26bitnearest-evenADC[-2,2),combinedperregistersensor/referenceerror9/320000000;finitebuffers,64nativereset/offportleak/residual-preservingpreparationretained."
+  ],
+  "physical_mapping": "OPEN;nativegain/nativeclockonly;noSImeasurement",
+  "target_exposure": "DEVELOPMENT;0.011cap,0.004phaseandvisibilityscreenexposed;4initialrateprobes,1/200000selected;nodatasetfitormaximalrateclaim",
+  "fitted_choices": [
+    "Fourdevelopmentrateprobes;selected1/200000;port1/4,damping1retainedassumptions;loosekernelJ2andcomponentwisebounds"
+  ],
+  "sources": [
+    {
+      "path": "experiments/qpb1-sector-drift/SOURCES.json",
+      "base_revision": "407fe6da298ea3362886075fdd696bf1dfefd2fb"
+    },
+    {
+      "path": "experiments/qpb1-sector-drift/SOURCE_ROWS.json",
+      "revision": "archivev0.85/scientificv0.43"
+    }
+  ],
+  "baseline": "Completedconstantthree-sectorcertificateatdriftrate0,exactbudgetrecovered",
+  "result": "EXACT/CONDITIONAL|epsilon|<=.011,Lipschitzrate<=1/200000,phase<1/260rad,endpoint>.99andlinks>.999with26bitandseparate1e-7generatorbudget. NUMERICAL585windows;doublingratefailsthis sufficientphasebound.",
+  "next_discriminant": "Replaceper-linkexcursionchargewithaVolterraphase-rateboundtolargendriftallowance.",
+  "physical_promotion": 0,
+  "independent_review": "NOT_RUN",
+  "artifacts": [
+    "artifacts/qpb1-sector-drift-20261024-a1/exact-001/manifest.json"
+  ]
+}

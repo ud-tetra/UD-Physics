@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-sector-drift-20261024-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-sector-drift-20261024",
+  "goal": "Certify finite native drift rates for differential sector meter mismatch",
+  "created_at": "2026-10-24T17:16:14.439128+00:00",
+  "base_revision": "407fe6da298ea3362886075fdd696bf1dfefd2fb",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-sector-drift-20261024": {
+      "ref": "refs/heads/claims/qpb1-sector-drift-20261024",
+      "sha": "56a2ca850ddc2f7d6f1d427bd290af001ec0d57f",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-sector-drift/audit.py --out /workspace/scratch/ed44232d6ecb/sector-drift-final",
+      "result": "PASS36hashes,13rows,512cells,585integerwindows,90common-nullchecks,6doublings,closedformula,witnessreplay;5outputsbyte-identicaltofirstaudit"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS248records;manifestdigestsandlinks"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    },
+    {
+      "command": "Postintegrationbase validator",
+      "result": "InitialFAILunsupportedstatusverified;correctedtohandoffandrerun"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL gaincap11/1000 andnativeLipschitzrate1/200000,phase<1/260rad,endpoint>.99,links>.999;boundedmeasurableexcursionalsoallowed. Constructor585windows;hardwareOPEN,promotion0.",
+  "next_action": "Replace the conservative per-link excursion charge with a Volterra phase-rate bound to test a larger differential drift allowance; priority94.",
+  "integration_base_revision": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3"
+}
