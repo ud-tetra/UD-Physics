@@ -1,0 +1,41 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb-josephson-physical-anchor",
+  "session_id": "qpb-josephson-20261024-gpt6-a1",
+  "question": "Does a physically sourced nonlinear Josephson current-phase law independently select a constitutive response consistent with the positive UD hidden-star quartic?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Ideal lumped lossless, zero-current-bias Josephson junction with Ic,C and physical turning amplitude a<pi",
+    "BIPM SI h and e and conventional EJ(1-cos(phi)) law; independent of prior UD phase target",
+    "Additional bridge r3=kappa*a² with kappa>0, and tau0=2/omega0 calibrated at zero amplitude",
+    "Previously considered UD Hstar=||x||²/2+lambda*r3²/4 with lambda>=0; PR87 phase009 unmerged read-only"
+  ],
+  "physical_mapping": "HYPOTHESIS only: single Josephson physical phase/action oscillator to UD hidden two-plane; native J action, register/port scale and energy conversion not derived. Physical test NOT_EXECUTED.",
+  "target_exposure": "Physical source fixes cosine sign without UD target; previously exposed UD g3=3/2/positive lambda known before comparison. Ic=100nA C=100fF are nonmeasured design inputs, not data fits.",
+  "fitted_choices": [
+    "tau0=2/omega0 chosen to match linear frequency; kappa>0 free; optional equal-magnitude hardening λκ=1/16 is comparison design only.",
+    "Allowing negative λκ=-1/16 would import/backsolve the known physical sign, not select a native UD coefficient."
+  ],
+  "sources": [
+    "https://doi.org/10.1103/PRXQuantum.2.040204",
+    "https://www.bipm.org/en/measurement-units/si-defining-constants",
+    "https://doi.org/10.1103/PhysRevResearch.2.043091",
+    "ud-tetra/UD-Physics@86d2a86570c807bc980819809312cd3255a2852a:experiments/qpb1-finite-window-phase/PHASE_COMPATIBLE_CONSTITUTIVE.md"
+  ],
+  "baseline": "Ordinary zero-biased ideal Josephson circuit with independent Ic and C; exact elliptic frequency curve; no UD extra prediction.",
+  "result": "EXACT/CONDITIONAL Josephson relative-frequency function AGM(1,cos(a/2))<1 for 0<a<pi; positive hidden-star UD relative frequency 1+lambda*kappa*a² >=1 when lambda>=0,kappa>0. Sign mismatch for this bridge; conventional JJ fully accounts for the physical law. No observed data.",
+  "next_discriminant": "External independently calibrated device Ic,C,phase-amplitude and frequency data, and a frozen UD source-selected constitutive/port map; otherwise park positive-star Josephson identification.",
+  "mathematical_receipts": [
+    "sessions/qpb-josephson-20261024-gpt6-a1/mathematical_receipt.json"
+  ],
+  "reopening_conditions": "A separately sourced native constitutive law with independently fixed parameters and physical map or new physical benchmark data plus distinguishable held-out response."
+}

@@ -1,0 +1,264 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "jj-anchor-physical-001",
+  "session_id": "qpb-josephson-20261024-gpt6-a1",
+  "candidate_id": "qpb-josephson-physical-anchor",
+  "question": "Can a physically independent Josephson constitutive relation constrain the nonlinear sign and test compatibility of the positive UD hidden-star quartic?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "jj",
+      "symbol": "phi,Ic,C,EJ",
+      "object_type": "ideal capacitive Josephson phase oscillator",
+      "definition": "phi superconducting phase difference, I=Ic sin(phi), V=Phi0/(2pi) phi_dot, EJ=Ic Phi0/(2pi)",
+      "domain": "phi in (-pi,pi); Ic>0,C>0",
+      "codomain": "physical current, voltage and energy",
+      "coefficient_domain": "real constitutive; exact rational SI h,e",
+      "units": "phi rad, Ic A, C F, EJ J, time seconds",
+      "basis_orientation": "zero-bias equilibrium phi=0; positive phase convention",
+      "metric_measure": "inertia M=C(Phi0/2pi)^2, positive physical Hamiltonian",
+      "origin": "imported conventional physical law",
+      "exact_expression": "M phi_ddot + EJ sin(phi)=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PRX",
+        "BIPM"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "linear omega0=sqrt(Ic/(C*Phi0/(2pi)))"
+    },
+    {
+      "object_id": "UDstar",
+      "symbol": "r3,lambda,Hud",
+      "object_type": "preexisting positive UD hidden-star quartic",
+      "definition": "Hud=||x||²/2+lambda*(xT P3 x)^2/4, r3=xT P3x",
+      "domain": "UD active R14 inside R15",
+      "codomain": "native Hamiltonian flow",
+      "coefficient_domain": "R, Q incidence",
+      "units": "native amplitudes and time dimensionless",
+      "basis_orientation": "ascending tetrahedral simplices; J=A/2",
+      "metric_measure": "native Euclidean H=I, constant Poisson A",
+      "origin": "read-only predecessor hypothesis",
+      "exact_expression": "omega_ud/omega_ud0=1+lambda*r3, lambda>=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "UD-prev"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "omega_ud0=2 per native time"
+    },
+    {
+      "object_id": "map",
+      "symbol": "kappa,tau0",
+      "object_type": "hypothetical native/physical bridge",
+      "definition": "r3=kappa*a², t_physical=tau0*s, tau0=2/omega0",
+      "domain": "physical amplitude a>=0 and native s",
+      "codomain": "r3 native squared support and seconds",
+      "coefficient_domain": "R positive kappa",
+      "units": "kappa rad^-2 if a is radians; tau0 seconds per native",
+      "basis_orientation": "zero amplitudes mapped to zero",
+      "metric_measure": "assumed monotone amplitude mapping",
+      "origin": "assumed",
+      "exact_expression": "lambda*kappa=-1/16 required at order a² to match JJ",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "A3"
+      ],
+      "dependency_ids": [
+        "jj",
+        "UDstar"
+      ],
+      "normalization": "linear frequency matched only"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "PRX",
+      "url_or_repo_path": "https://doi.org/10.1103/PRXQuantum.2.040204",
+      "version_or_commit": "2021-12-14",
+      "section_or_object_id": "Josephson current-phase and energy",
+      "source_status": "peer-reviewed conventional physics, not UD evidence"
+    },
+    {
+      "source_id": "BIPM",
+      "url_or_repo_path": "https://www.bipm.org/en/measurement-units/si-defining-constants",
+      "version_or_commit": "SI after 2019",
+      "section_or_object_id": "exact h and e",
+      "source_status": "metrological defining constants"
+    },
+    {
+      "source_id": "PRR",
+      "url_or_repo_path": "https://doi.org/10.1103/PhysRevResearch.2.043091",
+      "version_or_commit": "2020",
+      "section_or_object_id": "finite pendulum frequency response",
+      "source_status": "conventional physics"
+    },
+    {
+      "source_id": "UD-prev",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/blob/86d2a86570c807bc980819809312cd3255a2852a/experiments/qpb1-finite-window-phase/PHASE_COMPATIBLE_CONSTITUTIVE.md",
+      "version_or_commit": "86d2a86570c807bc980819809312cd3255a2852a",
+      "section_or_object_id": "positive-star energy and frequency",
+      "source_status": "unmerged Discovery HYPOTHESIS, read-only"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Ideal lossless lumped Josephson junction, zero bias, total C and critical Ic independently characterized, trapped oscillations 0<=a<pi."
+    },
+    {
+      "id": "A2",
+      "description": "Previously tested positive-star UD lambda>=0 and original zero-amplitude native frequency2; no source selected lambda."
+    },
+    {
+      "id": "A3",
+      "description": "Additional simple positive amplitude mapping r3=kappa*a², kappa>0, and linearized clock matching tau0=2/omega0. Josephson and UD J phases not identified without a physical transducer."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "symbolic/exact rational",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "SI defining constants and exact a²/a⁴ Taylor coefficients"
+    },
+    {
+      "technique": "nonlinear ODE and elliptic-integral",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "physical Josephson pendulum period for any trapped amplitude"
+    },
+    {
+      "technique": "units/metrology",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Ic A, C F, flux Wb, EJ J, omega rad/s, tau0 seconds"
+    },
+    {
+      "technique": "fit/null/sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare positive-star sign to physically fixed cosine law, preserve prior target exposure and ordinary Josephson null"
+    },
+    {
+      "technique": "integer counts/prime/modular/chain homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite register divisor, new topology, or modular clock relation"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "K(k)/[pi/2]=1+k²/4+9k⁴/64+...; k²=a²/4-a⁴/48+...",
+    "reduced_expression": "T/T0=1+a²/16+11a⁴/3072; omega/omega0=1-a²/16+a⁴/3072",
+    "factor_origins": [
+      "elliptic integral power series",
+      "angle-to-modulus sin(a/2)"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "physical continuous SI seconds and separate UD native continuous s",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "M phi_ddot+EJ sin phi=0; UD xprime=Ax+lambda*r3 K3x",
+    "initial_phase": "turning amplitude phi(0)=a, phi_dot(0)=0",
+    "coupling": "JJ nonlinear physical constitutive vs hypothetical native hidden-sector map",
+    "period_claim": "T(a)=4K(sin(a/2))/omega0 for trapped a<pi",
+    "physical_unit_map": "tau0=2/omega0 calibration hypothesis, physical Ic,C illustrative only"
+  },
+  "dynamics_readout": {
+    "state_space": "Josephson phi,phi_dot and separate native hidden two-plane",
+    "generator_or_update": "pendulum Hamiltonian vs UD positive-star quartic",
+    "initial_boundary_conditions": "lossless, zero bias, peak phase a<pi; native r3=kappa a² mapping assumed",
+    "conservation_and_sources": "Josephson energy EJ(1-cos phi)+M phi_dot²/2 conserved; UD H conserved independently",
+    "projection_and_kernel": "period/frequency ratio observable; no UD physical port",
+    "physical_mapping": "hypothesized, not verified"
+  },
+  "target_exposure": {
+    "status": "PHYSICAL_CONSTITUTIVE_SOURCE_INDEPENDENT_OF_PRIOR_UD_PHASE_TARGET",
+    "known_targets": [
+      "PR87 formerly exposed g3=3/2 at r3=1/2, lambda positive branch",
+      "known conventional Josephson sign considered openly before calculation"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Ic=100nA,C=100fF illustrative design, no measured values",
+      "kappa>0 arbitrary bridge map and tau0 chosen to match zero-amplitude frequency",
+      "equal-magnitude positive hardening comparison lambda*kappa=1/16 only illustrative"
+    ],
+    "search_domain_and_budget": "one physical source family, amplitudes {0,.2,.4,.6,1}rad, five float64 crosschecks, exact sign for all (0,pi)",
+    "selection_criterion": "independent physical sign and test against positive-star UD; conventional JJ full null",
+    "baseline": "ideal conventional Josephson pendulum describes same observable without UD"
+  },
+  "calculation_steps": [
+    "Import current-phase I=Ic sin phi and voltage V=(Phi0/2pi)phi_dot, derive EJ and effective inertia M=C(Phi0/2pi)^2.",
+    "Derive physical omega0=sqrt(EJ/M) and exact trapped period via elliptic K; AGM identity gives normalized frequency.",
+    "Exact rational expansions of K and sin yield -1/16 at quadratic order and +1/3072 at quartic order in amplitude.",
+    "For 0<a<pi, AGM(1,cos(a/2))<1, so physical frequency strictly softens.",
+    "For positive-star lambda>=0 and r3>=0 with zero amplitude mapped to zero, normalized native frequency>=1; incompatibility independent of amplitude scale.",
+    "If allow negative lambda and map r3=kappa a², matching first physical coefficient requires lambda*kappa=-1/16; this is a fitted physical import, not a UD derivation.",
+    "Numerical float64 AGM vs independent Simpson-K integral agree within 1e-11 for five a fixtures; sample Ic,C only design scenarios."
+  ],
+  "result": {
+    "exact_expression": "omegaJJ(a)/omega0=AGM(1,cos(a/2))<1 for 0<a<pi, series=1-a²/16+a⁴/3072+...; omegaUD(a)/omegaUD0=1+lambda*kappa*a²>=1 when lambda>=0,kappa>0",
+    "approximation": "Example Ic=1e-7 A,C=1e-13F yields f0=8.77308315498GHz; at a=.4rad, ratio=0.9900082042903813, vs positive toy ratio=1.01",
+    "units": "physical A,F,Wb,J,seconds,Hz; native dimensionless",
+    "precision_and_error": "exact sign and Fraction series; float64 AGM vs Simpson(8192) difference <=1e-11; no empirical uncertainty estimated",
+    "scope": "ideal lossless Josephson oscillator, positive star quartic, assumed simple zero-amplitude positive map",
+    "physical_interpretation": "FAILED positive-star JJ mapping; no unique UD physical mechanism"
+  },
+  "verification": [
+    {
+      "method": "Fraction rational series and AGM/independent quadrature",
+      "command_or_proof_path": "experiments/qpb-josephson-physical-anchor/anchor.py",
+      "source_revision": "c419562968d1702c4a839075994757cbed7e82f6",
+      "actual_result": "PASS exact coefficients and five float64 AGM/quadrature checks",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent laboratory Ic,C and resonance scan",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED",
+      "review_relationship": "empirical"
+    },
+    {
+      "method": "external non-constructor UD bridge audit",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "independent"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Josephson cosine softens under amplitude, contradicts positive-star hidden UD quartic hardening with monotone zero-to-zero map.",
+    "Dropping lambda>=0 permits a negative quartic coefficient matched from physical data, but bare quartic is globally unbounded below and not native selected.",
+    "Conventional Josephson circuit gives entire curve; no incremental UD physical prediction.",
+    "Physical superconducting phase is not the same typed object as UD J-fiber angle."
+  ],
+  "limitations": [
+    "No measured Ic,C, phase amplitude or resonance data; sample values intentionally illustrative.",
+    "No physical UD source-to-junction port coupling, geometry or time map derived.",
+    "Ideal no-loss zero-bias classical pendulum; real bias, dissipation, charge quantum fluctuations, harmonics and dispersion may matter.",
+    "Result scoped to the positive quartic mapping, not all UD structures."
+  ],
+  "changed_dependencies": [
+    "Independent physical family not derivable from prior native UD assumptions; PR87 phase009 remains read-only, no alteration/mainline writeback."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb-josephson-20261024-gpt6-a1/jj-001/manifest.json"
+  ],
+  "next_discriminant": "Acquire independently calibrated Ic,C,phase amplitude and time-domain resonances from a real Josephson device, freeze UD mapping/constitutive law before viewing data, and compare against full ordinary Josephson null."
+}
