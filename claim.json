@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-graphite-route-parity-20261024",
+  "session": "graphrouteidx-20261024-01",
+  "created_at": "2026-10-24T17:20:39.068Z",
+  "base_revision": "0297ac2d187d1880b1cdf26eba21ab18cf41f7fc",
+  "owned_paths": [
+    "tasks/integration-graphite-route-parity-20261024.json",
+    "sessions/graphrouteidx-20261024-01/",
+    "experiments/graphite-manuscript-v2/README.md",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
