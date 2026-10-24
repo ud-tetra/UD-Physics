@@ -12,14 +12,16 @@
   "claims": {
     "ref": "refs/heads/claims/integration-graphite-native-gate-dynamics-20261024",
     "held_sha": "757fba6167121edcffc9a7405fbae70c1c0395c4",
-    "status": "held"
+    "status": "released",
+    "release_sha": "397a02245f2b9ecb29ce3f7f778320c26862961b"
   },
   "checks": [
     "scripts/validate.py PASS (272 records)",
     "16 unit tests PASS",
+    "GitHub Discovery integrity workflow 40119168771 success",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Index links added without physical promotion or modified PDF.",
+  "finding": "Index links merged in PR #157 at 7337b9292518d561918de2d233c81ef5a2f7fafc without physical promotion or modified PDF.",
   "next_action": "Derive an independently constrained graphite gate preparation and material damping map, then held-out signed force/load test.",
   "checkpoint_at": "2026-10-24T18:05:56.658832+00:00",
   "checkpoint_source": {
