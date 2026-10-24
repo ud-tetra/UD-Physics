@@ -8,15 +8,20 @@
   "created_at": "2026-10-24T16:23:00.362944+00:00",
   "base_revision": "aa4585929042b7dca4bd0d7494120e22017b7205",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "ref": "refs/heads/claims/integration-graphite-manuscript-v2-20261024",
     "held_sha": "83d5e897f557ed11063fa9721f6423da524e9509",
-    "status": "held"
+    "status": "released",
+    "release_sha": "ea952854ba0f969d8a21e9aefbc6f60e6f9cea8e"
   },
-  "checks": [],
-  "finding": "Paper v2 now linked from graphite entry and CURRENT, with v1 retained as historical draft.",
-  "next_action": "Merge index PR, release claim and record closure; next scientific task is independently calibrated source/loss/contact and held-out traces.",
+  "checks": [
+    "scripts/validate.py PASS (227 records)",
+    "16 unit tests PASS",
+    "GitHub Discovery integrity workflow 40111358569 success"
+  ],
+  "finding": "Paper v2 indexed by PR #126 at 0a30c2f56d2b19fb350e5b4c155706aff2fa2646; no new physics or promotion.",
+  "next_action": "Independently calibrate graphite source, 2D PES, complex loss and contact; freeze held-out signed force/load forecasts.",
   "mathematical_profile": {
     "coefficient_domain": "no new calculation; exact and conditional source claims inherited from versioned paper",
     "exactness_or_precision_plan": "index only; validate links and records",
