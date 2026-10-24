@@ -7,3 +7,10 @@
 - NUMERICAL conventional charge-basis Hamiltonian H/h=4(EC/h)n²-EJ1/h cosφ-EJ2/h cos2φ: sampled EC/h .242GHz (from paper), selected EJ1/h15GHz, EJ2/h0 or .15GHz, no measured frequency data used. 25- and33-charge cutoffs match first seven model gaps within 1.2e-13GHz; strict 7 distinct levels. Standard null described, not UD signal.
 - Executed local code /mnt/data/ud_qspectra_20261024/spectral_audit.py and result summary.json PASS. Source SHA256 be0542e00211dff828aa8eee35ed4e06c54658eb72ec58a2380c420d4ce9e39a, result SHA256 f057f7af9cb5fbdf0aa15226381ae1b41dfd20f0cdfe5096718af773706639df; exact source/result Git object SHA1 match local. Immutable spectral-001 captured. Independent reviewer NOT_RUN, physical experimental UD test NOT_EXECUTED, held-out spectroscopy NOT_RUN.
 - PARK direct single-C7 transmon attribution; require source-selected quantum extension/action physical mapping and independent raw f0j for new branch. Keep PR draft and claim HELD pending reviewer/integration, no mainline writeback.
+
+## 2026-10-24T17:40:03Z — CI source-dependency integrity correction
+
+- GitHub Actions run 40117090664 FAILED `scripts/validate.py` with `tasks/qpb-quantum-spectroscopy-20261024.json: Unknown task dependency`.
+- Cause: `qpb-josephson-physical-anchor-20261024` was listed as an integrated task dependency, but exists only in separate DRAFT PR #128, not in integrated main. This does not affect the exact quantum spectrum, but violates the repository task schema.
+- CORRECTION: remove only that nonexistent integrated task ID from task.dependencies. Keep the prior JJ candidate as a **versioned read-only external branch** in documentation and candidate citations. Native integrated dependencies remain. No research formula, artifact, or earlier PR changed.
+- Await full rerun CI; do not claim success from previous failed runs.

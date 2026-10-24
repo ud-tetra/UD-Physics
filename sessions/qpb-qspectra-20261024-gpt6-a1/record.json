@@ -32,6 +32,16 @@
       "command": "python3 scripts/validate.py and python3 -m unittest discover -s tests -v",
       "result": "NOT_RUN locally: complete Git checkout unavailable; on-branch Github CI must check repository integrity/tests",
       "scope": "not physics peer review"
+    },
+    {
+      "command": "GitHub Actions run 40117090664: python3 scripts/validate.py",
+      "result": "FAILED: tasks/qpb-quantum-spectroscopy-20261024.json unknown task dependency qpb-josephson-physical-anchor-20261024; that task exists only in draft PR #128 and is not integrated in main",
+      "scope": "repository record integrity failure, not scientific calculation; corrected task dependency in this commit"
+    },
+    {
+      "command": "Correct task.dependencies and preserve JJ draft as versioned read-only external research reference",
+      "result": "CORRECTED: remove unintegrated task dependency while retaining draft PR #128 scientific citation and source status",
+      "scope": "task metadata only; immutable spectral-001 unchanged"
     }
   ],
   "finding": "Exact native C7 three-sector spectrum admits at most 3 distinct energies and at the exposed gain 2; finite seven-state charge shift has rank1 wrap defect. The direct mapped Hamiltonian cannot be the full resolved transmon 7-level ladder. Conventional quantum charge rotor has distinct illustrative levels; physical scale/mapping/data OPEN.",

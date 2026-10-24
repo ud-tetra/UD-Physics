@@ -12,8 +12,7 @@
   ],
   "dependencies": [
     "qpb1-local-generators-20261023",
-    "qpb1-carrier-anchor-20261022",
-    "qpb-josephson-physical-anchor-20261024"
+    "qpb1-carrier-anchor-20261022"
   ],
   "status": "complete",
   "result": "Exact native C7 three-sector spectrum admits at most 3 distinct energies and at the exposed gain 2; finite seven-state charge shift has rank1 wrap defect. The direct mapped Hamiltonian cannot be the full resolved transmon 7-level ladder. Conventional quantum charge rotor has distinct illustrative levels; physical scale/mapping/data OPEN.",
