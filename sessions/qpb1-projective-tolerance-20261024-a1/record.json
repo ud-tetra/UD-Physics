@@ -1,0 +1,36 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-projective-tolerance-20261024-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-projective-tolerance-20261024",
+  "goal": "Projective polygon phase variation and quotient meter mismatch tolerance",
+  "created_at": "2026-10-24T15:32:38.352888+00:00",
+  "base_revision": "4aaf0a39d24328e27bc425e333e3612baea888a5",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-projective-tolerance-20261024": {
+      "ref": "refs/heads/claims/qpb1-projective-tolerance-20261024",
+      "sha": "c1fdaaf71a32fe09dbcf2327ff06c1e413407f8e",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-projective-tolerance/audit.py --out /workspace/scratch/ed44232d6ecb/projective-tolerance-outputs",
+      "result": "PASS27hashes,13rows,100exactgradients/radialverticalnull,20finite-differencechecks,360integerwindows,witnessreplay,separatemodel/sensorphasechecks"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS215records;manifestdigestsandlocal links;27pinnedscientifichashesunchangedaftermainadvance"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    }
+  ],
+  "finding": "Exactpolygonphasegradientannihilatesradial/verticalmotion;commonmeterloadingquotientedwithsignal>1/10. Differentialnorm1e-6/2e-7 yieldsphase<1/400and1/250rad,gatespreserved;operatorallowances>11413/>570timesold sufficientlimits,withexplicitprotocol/calibrationamendments.",
+  "next_action": "Derive a structured three-sector near-return bound exploiting amplitude/phase cancellation, and test whether the prior0.01passingdetuningpoint can be enclosed uniformly; keep arbitrary channel errors and physical calibration separate; priority95.",
+  "integration_base_revision": "bb6fa4bce02e659c3f149a05f64e4d223e4ae886"
+}
