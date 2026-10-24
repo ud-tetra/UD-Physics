@@ -13,12 +13,15 @@
     "integration-graphite-locality-index-20261024": {
       "ref": "refs/heads/claims/integration-graphite-locality-index-20261024",
       "held_sha": "d1bc97f17b7255f5278312d9fbbb94c8efbc596f",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "8439f769450e3e48d77b4416e842695a5797d1f3",
+      "released_at": "2026-10-24T02:17:24.532Z"
     }
   },
   "checks": [
     "python3 scripts/validate.py: PASS",
-    "python3 -m unittest discover -s tests -v: PASS 16 tests"
+    "python3 -m unittest discover -s tests -v: PASS 16 tests",
+    "GitHub Discovery integrity run 40053523857: success (repository integrity only)"
   ],
   "finding": "Main graphite index and current milestone now reference exact, scoped local-stencil angle-selection limitation",
   "next_action": "Derive independently sourced registry-dependent material response and test force/load after conventional PES baseline",

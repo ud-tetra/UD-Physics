@@ -19,3 +19,5 @@ Integration of PR #105 exact/conditional incidence-stencil limitation; no physic
 Checkpoint (complete): Main graphite index and current milestone now reference exact, scoped local-stencil angle-selection limitation
 
 Next: Derive independently sourced registry-dependent material response and test force/load after conventional PES baseline
+
+- Integrated in PR #108 (`fee2c3096bdf9d6a9ab5b384638979cc789f1bfd`) after GitHub Discovery integrity run 40053523857 succeeded. Claim released to marker `8439f769450e3e48d77b4416e842695a5797d1f3`; live status verified released. Independent physics review NOT_RUN.
