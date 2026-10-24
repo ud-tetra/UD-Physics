@@ -27,3 +27,5 @@ EXACT/CONDITIONAL: one assumed passive q coupled to conventional first-harmonic 
 Checkpoint (complete): Derived exact passive first-harmonic drag and load-slope identity; conventional static source values permit conditional 4.33 low-speed contrast but do not identify UD residual
 
 Next: Fix 2D PES and measured complex loss/contact transfer, predict paired signed force/load after frozen conventional subtraction
+
+- Integrated PR #114 (`8bc0d0cf0908d04ecde13c79ef37e27b04c8b9a0`) after GitHub Discovery integrity run 40107764657 succeeded. Claim released to marker `09e7d7756d74de74ba2377230e5196e732d48f82`; live status verified. Independent physics review NOT_RUN.
