@@ -1,0 +1,49 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-projective-tolerance",
+  "session_id": "qpb1-projective-tolerance-20261024-a1",
+  "question": "Can a projective polygon bound separate harmless common loading and permit materially larger differential meter errors?",
+  "status": "ACTIVE",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Inherited real15-register filled-tetrahedron carrier, active real14/complex7, ascending simplex orientations, Euclidean metric,J=A/2; added15-register classical meter remains a proposed engineered law.",
+    "Parent preparation sector-fraction bound, commuting local plant gain box, one-unitwarmup, |T-2pi|<=1/100 and128maximum-gap links retained; comparison Q0 refers to same seed.",
+    "Common reference has scalarport/damping deviations<=1/1000 relative andcommon native gain detuning<=1/1000; known positive amplitude reference1/|beta_c|,signal>1/10. Common phase need not be measured or subtracted.",
+    "Actual and common-reference propagators are contractions inpositivefullstorage; differentialremainder operator norm<=delta_d, not anassertedorthogonal decomposition. Initial meter norm<=retained e0.",
+    "Calibrated sensor/reference per-registererror<=r,uniformADC[-2,2),nearest-even;bits26or21;rawsignalnorm>=9/10-B. Digital memory bit-exactbydefault;referenceerrorsmayconsumecombinedr.",
+    "Explicitphase-budget amendment: modelerrorneednotfitoldraw-amplitude/strictoverlapcondition. PHASE26doesnotretainold0.002radbonus;bothnewprofiles target0.004rad.",
+    "Previous finite64nativeunitreset/off-portleakageandresidual-preserving preparation assumed;physical clock/action/signedencoding/sensors/commoncalibration/native selection OPEN."
+  ],
+  "physical_mapping": "OPEN; engineered classical meter and exact phase contract; physical sensors/calibration/clock/native selection unvalidated; UNSCORED,promotion0",
+  "target_exposure": "EXPLORATORY_AFTER_METER_AND_ACQUISITION_PHASE_BUDGET",
+  "fitted_choices": [
+    "Explicitphase26delta1e-6andphase21delta2e-7,comparedatshared0.004radtarget",
+    "Commonreferencecontrols1e-3,positiveamplitudecalibration,andrationalqmajorantsce3/20,cl1/25selected",
+    "Triedphase21delta1e-6: sufficientcertificatefails;notimpossibility",
+    "Noempiricalfit,hardwareoptimizationorblindprediction"
+  ],
+  "sources": [
+    "experiments/qpb1-projective-tolerance/SOURCES.json",
+    "experiments/qpb1-projective-tolerance/SOURCE_ROWS.json"
+  ],
+  "baseline": "Priorfullamplitudebound8.7614e-11/3.5046e-10;exactscalar/commonJloadingnull",
+  "result": "Exactpolygonphasegradientannihilatesradial/verticalmotion;commonmeterloadingquotientedwithsignal>1/10. Differentialnorm1e-6/2e-7 yieldsphase<1/400and1/250rad,gatespreserved;operatorallowances>11413/>570timesold sufficientlimits,withexplicitprotocol/calibrationamendments.",
+  "next_discriminant": "Derive a structured three-sector near-return bound exploiting amplitude/phase cancellation, and test whether the prior0.01passingdetuningpoint can be enclosed uniformly; keep arbitrary channel errors and physical calibration separate; priority95.",
+  "mathematical_receipts": [
+    "sessions/qpb1-projective-tolerance-20261024-a1/mathematical_receipt.json"
+  ],
+  "unsupported_roles": [
+    "Retentionofoldraw-modelorstrictoverlapaccuracybudget",
+    "Measuredhardwaretolerance,secondsorphysicalaction",
+    "Necessaryoroptimalthreshold",
+    "Uniform0.01detuningcertificate"
+  ]
+}

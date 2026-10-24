@@ -1,0 +1,19 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb1-projective-tolerance-20261024",
+  "goal": "Direct projective phase tolerance after common-loading quotient",
+  "owned_paths": [
+    "tasks/qpb1-projective-tolerance-20261024.json",
+    "sessions/qpb1-projective-tolerance-20261024-a1/",
+    "experiments/qpb1-projective-tolerance/",
+    "candidates/qpb1-projective-tolerance/",
+    "artifacts/qpb1-projective-tolerance-20261024-a1/"
+  ],
+  "dependencies": [
+    "qpb1-meter-coupling-20261023"
+  ],
+  "status": "complete",
+  "result": "Exactpolygonphasegradientannihilatesradial/verticalmotion;commonmeterloadingquotientedwithsignal>1/10. Differentialnorm1e-6/2e-7 yieldsphase<1/400and1/250rad,gatespreserved;operatorallowances>11413/>570timesold sufficientlimits,withexplicitprotocol/calibrationamendments.",
+  "next_action": "Derive a structured three-sector near-return bound exploiting amplitude/phase cancellation, and test whether the prior0.01passingdetuningpoint can be enclosed uniformly; keep arbitrary channel errors and physical calibration separate; priority95."
+}

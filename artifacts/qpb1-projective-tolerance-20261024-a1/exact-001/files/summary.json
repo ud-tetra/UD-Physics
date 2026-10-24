@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "source_hashes": 27,
+  "literal_rows": 13,
+  "exact_polygon_gradient_fixtures": 100,
+  "radial_vertical_null": "PASS",
+  "numerical_derivative_cross_checks": 20,
+  "integer_windows": 360,
+  "exact_integer_witness_replay": "PASS",
+  "common_meter_signal_lower": ">1/10",
+  "phase26_delta": "1/1000000",
+  "phase21_delta": "1/5000000",
+  "phase26_total_bound": "<1/400rad",
+  "phase21_total_bound": "<1/250rad",
+  "operator_bound_improvement": [
+    ">11413",
+    ">570"
+  ],
+  "old_raw_model_budget_retained": false,
+  "hardware": "NOT_MEASURED",
+  "physical_promotion": 0
+}

@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "parent_contract": "experiments/qpb1-finite-window/READOUT_CONTRACT.json",
+  "assumptions": [
+    "Filled-tetrahedron real15-register carrier, ascending orientations, Euclidean metric, J=A/2, rank14 active projector P; harmonic line separate.",
+    "Calibrated simultaneous signed raw amplitude access to all15registers; one-hop incidence decoder, not a physical transducer derivation.",
+    "Parent finite-window preparation ball rho1/10, commuting gain errors1/100, native |T-2pi|<=1/100, M128 and max gapT_plus/128 retained.",
+    "Raw active norm in[9/10,11/10]; b-bit nearest-even uniform sampling range[-2,2), no saturation; decoded norm qualification(4/5,6/5).",
+    "Combined per-register raw sensor and decoded-reference perturbation <=r; additional quantization half-step counted once. Default reference storage is bit-exact classical words.",
+    "No unbudgeted readout loading, synchronization, gain/metric/calibration errors, or mode-mixing terms; such errors require a new combined dynamics/sensor bound."
+  ],
+  "channels": {
+    "domain": "R15",
+    "active_rank": 14,
+    "anchors": "six oriented edges and top cell",
+    "map": "q=x_anchor,p=(A x)_anchor/2",
+    "identities": [
+      "T T^T=I14",
+      "T^T T=P"
+    ],
+    "integer_unit": "2^(1-b)",
+    "decoder": "Q=2c_anchor,P_a=sum A_anchor,sigma c_sigma"
+  },
+  "profiles": {
+    "STRICT_A": {
+      "sensor_bits": 26,
+      "raw_sensor_plus_reference_error": "9/320000000",
+      "half_quantizer_step": "1/33554432",
+      "raw_total_error": "151853/2621440000000",
+      "normalized_overlap_error": "4707443/4718592000000",
+      "phase_error_bound": "4228853739347636473390170176185891694795101688460668876/2647696529861991371181599588145962661408430949443469668125",
+      "observed_endpoint_lower": "5730736665028021/5780275200000000",
+      "observed_link_lower": "5778378852382069/5780275200000000",
+      "strict_parent_link_budget_passes": true,
+      "overall_phase_budget_passes": true,
+      "raw_memory_words": 45,
+      "raw_memory_bits": 1170,
+      "phase_component_signed_bit_bound": 7225
+    },
+    "REALLOCATED_B": {
+      "sensor_bits": 21,
+      "raw_sensor_plus_reference_error": "9/80000000",
+      "half_quantizer_step": "1/1048576",
+      "raw_total_error": "87341/81920000000",
+      "normalized_overlap_error": "2707571/147456000000",
+      "phase_error_bound": "9923581399977106748655613513372820261791094709304724/2585550944925431191249247686440672638604169088744956875",
+      "observed_endpoint_lower": "179082384214453/180633600000000",
+      "observed_link_lower": "180571202569267/180633600000000",
+      "strict_parent_link_budget_passes": false,
+      "overall_phase_budget_passes": true,
+      "raw_memory_words": 45,
+      "raw_memory_bits": 945,
+      "phase_component_signed_bit_bound": 5935
+    },
+    "STRICT_25_INSUFFICIENT_BOUND": {
+      "sensor_bits": 25,
+      "raw_sensor_plus_reference_error": "9/320000000",
+      "half_quantizer_step": "1/16777216",
+      "raw_total_error": "114989/1310720000000",
+      "normalized_overlap_error": "3564659/2359296000000",
+      "phase_error_bound": "47872005122793463430241682564969348908585091328801428/28779280432001750417165836547430760073382048325236316875",
+      "observed_endpoint_lower": "2865366849115573/2890137600000000",
+      "observed_link_lower": "2889187942792597/2890137600000000",
+      "strict_parent_link_budget_passes": false,
+      "overall_phase_budget_passes": true,
+      "raw_memory_words": 45,
+      "raw_memory_bits": 1125,
+      "phase_component_signed_bit_bound": 6967
+    },
+    "REALLOCATED_20_INSUFFICIENT_BOUND": {
+      "sensor_bits": 20,
+      "raw_sensor_plus_reference_error": "9/80000000",
+      "half_quantizer_step": "1/524288",
+      "raw_total_error": "82733/40960000000",
+      "normalized_overlap_error": "2564723/73728000000",
+      "phase_error_bound": "962727304162677933383344611853225177288113973530764/161591601932067380168744239159988262485305317878713125",
+      "observed_endpoint_lower": "89539708708789/90316800000000",
+      "observed_link_lower": "22571029471549/22579200000000",
+      "strict_parent_link_budget_passes": false,
+      "overall_phase_budget_passes": false,
+      "raw_memory_words": 45,
+      "raw_memory_bits": 900,
+      "phase_component_signed_bit_bound": 5677
+    }
+  },
+  "profile_amendment": "STRICT_A satisfies prior link requirement1e-6. REALLOCATED_B explicitly relaxes link accuracy and strengthens endpoint accuracy while retaining total phase<1/250rad; not a strict-parent pass.",
+  "normalization_error_proof": "e<=sqrt15*a; unit-state error<=2e/smin; overlap error<=4sqrt15*a/smin<(31/2)*a/smin",
+  "phase_output": "nonzero Gaussian integer direction endpoint times conjugated128links; positive gcd reduction; optional atan2 display excluded",
+  "gates": {
+    "support": "16*2^(2b-2)<25N<36*2^(2b-2)",
+    "endpoint": "10000(C^2+S^2)>9801NxNy",
+    "link": "1000000(C^2+S^2)>998001NxNy"
+  },
+  "failure_statuses": [
+    "SATURATED",
+    "LOW_SUPPORT",
+    "LOW_VISIBILITY"
+  ],
+  "memory": {
+    "raw_words": 45,
+    "reference_lifetime_native_upper": "4407/700",
+    "phase_component_signed_bits": "129(2b+4)+1",
+    "additional_working_storage": "Excluded from the raw buffer plus final phase data-width figure; decoded coefficients, calibration, counters and arithmetic temporaries must also be provided.",
+    "reset": "After committing phase direction, qualification and calibration metadata; no physical erasure cost inferred"
+  },
+  "observability_limits": [
+    "Stock-only instantaneous observations insufficient; explicit equal-stock counterexample.",
+    "m<14 real linear snapshot channels insufficient for arbitrary active overlaps even with known norm; nonlinear/time-history protocols outside this no-go."
+  ],
+  "target_exposure": "EXPLORATORY_AFTER_PARENT_BUDGET; chosen illustrative precision controls, not empirical fit or blind prediction",
+  "physical_sensor_accuracy": "NOT_MEASURED",
+  "physical_score": "UNSCORED",
+  "physical_promotion": 0,
+  "next_discriminant": "Specify explicit local meter/reference coupling and bound loading, synchronization and calibration against the signed acquisition contract, including the hidden pair; priority94."
+}
