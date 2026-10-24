@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-graphite-packet-reciprocity-20261024",
+  "session": "graphrecipidx-20261024-01",
+  "created_at": "2026-10-24T20:37:04.929Z",
+  "base_revision": "7f5383bc2a855a2a6b7f8c5e176caeda514428d8",
+  "owned_paths": [
+    "tasks/integration-graphite-packet-reciprocity-20261024.json",
+    "sessions/graphrecipidx-20261024-01",
+    "experiments/graphite-superlubricity/README.md",
+    "experiments/graphite-manuscript-v2/README.md",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
