@@ -8,19 +8,21 @@
   "created_at": "2026-10-24T20:33:25.763253+00:00",
   "base_revision": "f0f6b707b77467f28c8e3892384fa0e8b28a4869",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "ref": "refs/heads/claims/graphite-packet-reciprocity-20261024",
     "held_sha": "ae1500bc6448eccf31a437dfd294c44b79d3b7f4",
-    "status": "held"
+    "status": "released",
+    "release_sha": "be636f1036f9833eba5f5a675ea0f3a30a0f9f1f"
   },
   "checks": [
     "exact integer/rational replay PASS N7/13/19 and N7 reciprocal energy witness",
     "independent physics review NOT_RUN",
     "scripts/validate.py PASS 301 records",
-    "16 unit tests PASS"
+    "16 unit tests PASS",
+    "GitHub Discovery integrity workflow 40130500701 success"
   ],
-  "finding": "Linear-y native port is odd under native reversal and is not an invariant equilibrium elastic coupling under the declared physical time-reversal identification. New even y² energy completion is reciprocal but underidentified and leading response common N7/13/19. Isotropic canonical quadratic equilibrium also has zero mean even port.",
+  "finding": "Research PR #179 merged at 978b34e11bf35a3388679b2ad5972f3ed151c461: native odd-y equilibrium coupling gate and reciprocal even-source hypothesis, with isotropic mean null and no material calibration.",
   "next_action": "Seek independently sourced even packet weight, registration, physical energy/clock and material complex loss; compare held-out signed force/load.",
   "mathematical_profile": {
     "coefficient_domain": "real finite carrier; exact integer/fraction series and rational power identity",
