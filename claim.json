@@ -13,5 +13,7 @@
     "artifacts/graphsupport-20261024-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-24T17:46:25.834Z",
+  "released_from_sha": "b56165476181b80b3bcb6ddbcd9bdd4ecb0e4e0e"
 }
