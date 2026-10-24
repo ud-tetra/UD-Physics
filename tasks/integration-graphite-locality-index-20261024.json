@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-locality-index-20261024",
+  "goal": "Index the exact locality-selection limitation after PR #105",
+  "owned_paths": [
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md",
+    "tasks/integration-graphite-locality-index-20261024.json",
+    "sessions/graphindex-20261024-22c4/"
+  ],
+  "dependencies": [
+    "graphite-locality-selection-20261023"
+  ],
+  "status": "complete"
+}
