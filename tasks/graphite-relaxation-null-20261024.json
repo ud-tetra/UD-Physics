@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-relaxation-null-20261024",
+  "goal": "Quantify conventional single-mode relaxation null for paired graphite angles",
+  "owned_paths": [
+    "tasks/graphite-relaxation-null-20261024.json",
+    "sessions/graphrelax-20261024-bb53/",
+    "candidates/graphite-relaxation-null/",
+    "experiments/graphite-relaxation-null/",
+    "artifacts/graphrelax-20261024-bb53/"
+  ],
+  "dependencies": [
+    "graphite-registry-convolution-20261024"
+  ],
+  "status": "complete"
+}

@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphrelax-20261024-bb53",
+  "runtime": "GPT-6 Codex local exact compute and GitHub connector",
+  "task": "graphite-relaxation-null-20261024",
+  "goal": "Derive passive single-mode conventional graphite first-harmonic drag and its load-response control",
+  "created_at": "2026-10-24T15:33:40.798483+00:00",
+  "base_revision": "4aaf0a39d24328e27bc425e333e3612baea888a5",
+  "source_dirty_at_boot": false,
+  "status": "complete",
+  "claims": {
+    "graphite-relaxation-null-20261024": {
+      "ref": "refs/heads/claims/graphite-relaxation-null-20261024",
+      "held_sha": "007ba93ef469c41acd85269ba0249437f3490a02",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "python3 experiments/graphite-relaxation-null/replay_relaxation.py: PASS exact rational harmonic balance/power",
+    "python3 scripts/validate.py after expanding sparse worktree: PASS 209 records",
+    "python3 -m unittest discover -s tests -v: PASS 16 tests"
+  ],
+  "finding": "Derived exact passive first-harmonic drag and load-slope identity; conventional static source values permit conditional 4.33 low-speed contrast but do not identify UD residual",
+  "next_action": "Fix 2D PES and measured complex loss/contact transfer, predict paired signed force/load after frozen conventional subtraction",
+  "mathematical_profile": {
+    "coefficient_domain": "real passive response, exact rational source-rounded ratio",
+    "exactness_or_precision_plan": "symbolic ODE/cycle average, Fraction harmonic balance and Table 6 ratio; no kinetic fit",
+    "applicable_methods": [
+      "linear harmonic balance",
+      "passive energy dissipation",
+      "logarithmic pressure derivative",
+      "conventional null comparison"
+    ],
+    "clock_metric_units_conventions": "continuous physical time assumption; per-atom energy, q dimensionless, k inverse length, eta energy*time, x=vt positive; no UD clock map"
+  },
+  "checkpoint_at": "2026-10-24T15:35:53.207517+00:00",
+  "checkpoint_source": {
+    "revision": "4aaf0a39d24328e27bc425e333e3612baea888a5",
+    "dirty": true
+  }
+}
