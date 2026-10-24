@@ -8,13 +8,16 @@
   "created_at": "2026-10-24T17:16:14.439128+00:00",
   "base_revision": "407fe6da298ea3362886075fdd696bf1dfefd2fb",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "qpb1-sector-drift-20261024": {
       "ref": "refs/heads/claims/qpb1-sector-drift-20261024",
       "sha": "56a2ca850ddc2f7d6f1d427bd290af001ec0d57f",
-      "status": "held",
-      "verified": true
+      "status": "released",
+      "verified": true,
+      "release_marker_sha": "6611511cd9bca1f7737e5dbc2cbebca9f7974e27",
+      "released_from_sha": "56a2ca850ddc2f7d6f1d427bd290af001ec0d57f",
+      "released_at": "2026-10-24T17:27:45.913Z"
     }
   },
   "checks": [
@@ -33,9 +36,29 @@
     {
       "command": "Postintegrationbase validator",
       "result": "InitialFAILunsupportedstatusverified;correctedtohandoffandrerun"
+    },
+    {
+      "command": "python3 scripts/validate.py afterdisjointmainrefreshandstatusrepair",
+      "result": "PASS254records;36scientificsourcehashesunchanged"
     }
   ],
   "finding": "EXACT/CONDITIONAL gaincap11/1000 andnativeLipschitzrate1/200000,phase<1/260rad,endpoint>.99,links>.999;boundedmeasurableexcursionalsoallowed. Constructor585windows;hardwareOPEN,promotion0.",
   "next_action": "Replace the conservative per-link excursion charge with a Volterra phase-rate bound to test a larger differential drift allowance; priority94.",
-  "integration_base_revision": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3"
+  "integration_base_revision": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3",
+  "completed_at": "2026-10-24T17:28:16.792291+00:00",
+  "integration": {
+    "research_pr": 143,
+    "url": "https://github.com/ud-tetra/UD-Physics/pull/143",
+    "head_sha": "fae83a41a47cae6dc0a0ed0175ac8d105d5b8cbc",
+    "tree_sha": "a1f5f7abf72a3a0b1cb5cbaa08c542dd2b224e9d",
+    "merge_sha": "1d7167bdf32aa6b1cab6a68016ea3ae0d2a6a485",
+    "ci": {
+      "id": 40116149439,
+      "head_sha": "fae83a41a47cae6dc0a0ed0175ac8d105d5b8cbc",
+      "conclusion": "success",
+      "url": "https://github.com/ud-tetra/UD-Physics/actions/runs/40116149439"
+    },
+    "release_verified": true
+  },
+  "closure_scope": "Owning record/journal only after released claim; scientific files and immutable run unchanged"
 }
