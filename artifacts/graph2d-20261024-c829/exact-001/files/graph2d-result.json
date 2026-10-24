@@ -1,0 +1,31 @@
+{
+  "status": "PASS_EXACT_2D_FIRST_STAR_RELAXATION",
+  "source": "Lebedeva et al. arXiv:2511.01338v1 Eq.(2), Eq.(2) wavevectors, Table 4 rigid U1; source rounded",
+  "three_wave_PES": "U1*[cos(g1.r)+cos(g2.r)+cos(g3.r)], equal |gj|=4*pi*sqrt(N)/(sqrt(3)*a)",
+  "drag_tensor_low_speed": "Gamma=lambda^2*eta*U1^2/(2*kappa^2)*sum_j(gj tensor gj)=3*lambda^2*eta*U1^2*g^2/(4*kappa^2)*I2",
+  "normalized_power_series": "P/(C*g^2*v^2)=3/2-(9/8)z^2+(15/16+3/32*cos(6phi))z^4+O(z^6), z=g*v*tau",
+  "unit_wavevector_dyad_xx_yy_xy_over_sqrt3": [
+    "3/2",
+    "3/2",
+    "0"
+  ],
+  "moments_axis_0": [
+    "3/2",
+    "9/8",
+    "33/32"
+  ],
+  "moments_axis_30_degrees": [
+    "3/2",
+    "9/8",
+    "27/32"
+  ],
+  "power_axis_0_at_z_1": "9/10",
+  "power_axis_30_at_z_1": "6/7",
+  "rigid_U1_micro_eV_per_atom": {
+    "N7": "0.0793",
+    "N13": "-0.00598"
+  },
+  "conditional_shared_bath_gamma7_over_gamma13": "651175/6877",
+  "ratio_decimal_from_rounded_values": 94.688818,
+  "scope": "identical independent Debye modes at each first-star wavevector; same lambda,eta,kappa and participating per-atom transfer across angles; low speed; no force measurement or UD residual"
+}
