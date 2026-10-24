@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-cross-loss-20261023",
+  "goal": "Quantify PSD cross-mode loss uncertainty and pressure-slope nonidentifiability in the archived graphite linewidth transfer",
+  "owned_paths": [
+    "tasks/graphite-cross-loss-20261023.json",
+    "sessions/graphmix-20261023-ebafdc59/",
+    "candidates/graphite-cross-loss/",
+    "experiments/graphite-cross-loss/",
+    "artifacts/graphmix-20261023-ebafdc59/"
+  ],
+  "dependencies": [
+    "graphite-linewidth-transfer-20261023"
+  ],
+  "status": "complete"
+}
