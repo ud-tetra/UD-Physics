@@ -12,15 +12,17 @@
   "claims": {
     "ref": "refs/heads/claims/graphite-directional-packet-20261024",
     "held_sha": "823af0e1bcc69e96382eb1de964573e59ed8d3a3",
-    "status": "held"
+    "status": "released",
+    "release_sha": "9e3e31c5a80ae2982f0f26f3d8bc5ec7861cca61"
   },
   "checks": [
     "integer/Fraction full-chain directional packet Taylor recurrence and C3 covariance through s17 PASS",
     "scripts/validate.py PASS (282 records)",
     "16 unit tests PASS",
+    "GitHub Discovery integrity workflow 40127342963 success",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Directional preparation is an exact conditional symmetry breaker but not a seven-cell friction selector.",
+  "finding": "Research merged in PR #164 at 74cfdccc0f8c5b9fdc72f0845d06e821cdb098dc. Directional preparation is an exact conditional symmetry breaker but not a seven-cell friction selector.",
   "next_action": "Independently derive graphite boundary preparation and dimensional coupling/loss, then held-out signed force/load comparison.",
   "mathematical_profile": {
     "coefficient_domain": "integer incidence and exact rational Taylor matrices",
