@@ -19,3 +19,5 @@ Integrate PR #114 exact/conditional passive conventional null. Source-rounded 4.
 Checkpoint (complete): Graphite entry and current state index the passive first-harmonic conventional drag and load-slope control
 
 Next: Freeze 2D PES, contact, complex mode loss and signed force estimator, then test UD residual on held-out traces
+
+- Integrated PR #116 (`ae826188ddad32c3c290b7d7aaf70af831d6acd0`) after GitHub Discovery integrity run 40107965790 succeeded. Claim released to marker `b14d22f76ff5c049c8c01dafed8e71696eb7331f`; live status verified. Independent physics review NOT_RUN.
