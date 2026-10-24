@@ -1,0 +1,40 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-locality-selection",
+  "session_id": "graphlocal-20261023-f8d5ab37",
+  "question": "Can one quotient-independent local incidence stencil activate the seven-cell harmonic port but suppress thirteen cells?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Periodic connected honeycomb quotient with unit edge metric",
+    "Same finite-range translation-covariant linear edge stencil K_d at every N",
+    "Incidence-gradient vertex input B1^T; harmonic edge zero-mode output M^T"
+  ],
+  "physical_mapping": "OPEN: no N-dependent material weights, UD physical clock or graphite force readout",
+  "target_exposure": {
+    "status": "KNOWN_DEVELOPMENT_TARGET",
+    "known_targets": [
+      "paired (2,1) friction peaks and other commensurate non-detections"
+    ],
+    "fitted_choices": [
+      "Illustrative orientation weights (1,2,3) selected for nonzero example, not data fit"
+    ]
+  },
+  "fitted_choices": [],
+  "sources": [
+    "experiments/graphite-quotient-contrast/README.md",
+    "supplied UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39(2).md Q22/Q77-Q84",
+    "ud-tetra/UD default f22659b9fa9e9f3ab5ca34d7215ea53ebf2adc71 named placeholder capture"
+  ],
+  "baseline": "Seven-cell harmonic weighted-incidence port and conventional moire explanation",
+  "result": "Fixed translation-covariant incidence stencil has N-independent normalized harmonic zero-sector map of rank <=1. If C3-equivariant it vanishes at every N; directional anisotropy activates every N rather than selecting seven cells.",
+  "next_discriminant": "Derive one independent registry/load/temperature edge law with nonuniform weights, transport unchanged over N=7/13/19, freeze conventional force map and test held-out signed force contrast",
+  "mathematical_receipts": [
+    "candidates/graphite-locality-selection/mathematical_receipt.json"
+  ]
+}
