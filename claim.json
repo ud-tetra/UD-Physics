@@ -13,5 +13,7 @@
     "artifacts/graphdirpkt-20261024-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-24T19:54:05.686Z",
+  "released_from_sha": "823af0e1bcc69e96382eb1de964573e59ed8d3a3"
 }
