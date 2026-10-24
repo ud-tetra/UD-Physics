@@ -1,0 +1,36 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-overlap-acquisition-20261023-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-overlap-acquisition-20261023",
+  "goal": "Local register-to-overlap acquisition, hidden-plane access, normalization, integer estimator and precision/memory bounds",
+  "created_at": "2026-10-24T01:25:55.051458+00:00",
+  "base_revision": "53460195f74411ce764b24e0ab9d4fd772c4bd6f",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-overlap-acquisition-20261023": {
+      "ref": "refs/heads/claims/qpb1-overlap-acquisition-20261023",
+      "sha": "53e1004f861dcbc1ad39d71831ac415e4df6b7cb",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-overlap-acquisition/audit.py --out /workspace/scratch/ed44232d6ecb/overlap-acquisition-outputs",
+      "result": "PASS21hashes,13rows,rank14/12/13,100decode,24S4,420quantizer,232windows,exactwitnessreplay,3negativecontrols"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS183records;manifestdigestsandlinks;21pinnedscientificsourcesunchanged aftermainfast-forward"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    }
+  ],
+  "finding": "Exact rank14 one-hop q,p acquisition, integer overlap/gates/phase output; conditional b26 strict overlap and phase<1/500rad; amended b21 phase<1/250rad; physical sensor realization OPEN",
+  "next_action": "Specify explicit local meter/reference coupling and bound loading, synchronization and calibration against the signed acquisition contract, including the hidden pair; priority94.",
+  "integration_base_revision": "d33ee90b4cd6ca0a833752296369ed616f739227"
+}

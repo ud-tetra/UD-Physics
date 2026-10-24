@@ -1,0 +1,314 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-overlap-acquisition-20261023-a1",
+  "run_id": "exact-001",
+  "created_at": "2026-10-24T01:35:00.411282+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "Local rank14 signed acquisition and exact integer phase; strict26bit and amended21bit conditional budgets; sensor realizationOPEN,UNSCORED,promotion0",
+  "command": "python3 experiments/qpb1-overlap-acquisition/audit.py --out /workspace/scratch/ed44232d6ecb/overlap-acquisition-outputs",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "d33ee90b4cd6ca0a833752296369ed616f739227",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-overlap-acquisition/audit.py",
+      "sha256": "83dc6c98e6dca5e37c2d33c101f438c692fe346369bc4247ce31dd8fbdb378b0",
+      "size_bytes": 15797
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-overlap-acquisition/README.md",
+      "sha256": "6108a052e3ec197feec5f2bda15fa1998060f946d05a646c2a5af3d148604663",
+      "size_bytes": 12919
+    },
+    {
+      "input_id": "input-003",
+      "name": "SOURCES.json",
+      "path": "inputs/003-SOURCES.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-overlap-acquisition/SOURCES.json",
+      "sha256": "d835c768f28f731417384d310d125b09730828e786ab5fd6cc6d56f81a11464c",
+      "size_bytes": 4528
+    },
+    {
+      "input_id": "input-004",
+      "name": "SOURCE_ROWS.json",
+      "path": "inputs/004-SOURCE_ROWS.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-overlap-acquisition/SOURCE_ROWS.json",
+      "sha256": "2a6fbe2317025b52a290f2cd760aff43cf6d3c6998ef2879081c75eda28dfefd",
+      "size_bytes": 10001
+    },
+    {
+      "input_id": "input-005",
+      "name": "ACQUISITION_CONTRACT.json",
+      "path": "inputs/005-ACQUISITION_CONTRACT.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-overlap-acquisition/ACQUISITION_CONTRACT.json",
+      "sha256": "f6eee292bdaa52d496a443fe28815edc56e8bdb35fd32dc60276f17e172b39bc",
+      "size_bytes": 6299
+    },
+    {
+      "input_id": "input-006",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/006-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/qpb1-overlap-acquisition-20261023-a1/mathematical_receipt.json",
+      "sha256": "e6b3be04aa3c8e38a531270e661c583490c59fd0197ca82e77ba400905780372",
+      "size_bytes": 12692
+    },
+    {
+      "input_id": "input-007",
+      "name": "candidate.json",
+      "path": "inputs/007-candidate.json",
+      "source_location": "repository",
+      "source_path": "candidates/qpb1-overlap-acquisition/candidate.json",
+      "sha256": "e79605e37d4ded1a80b5caa6f410433bad0b39942c8c9245d287b4776b9e7bc8",
+      "size_bytes": 2882
+    },
+    {
+      "input_id": "input-008",
+      "name": "audit.py",
+      "path": "inputs/008-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-loop-history/audit.py",
+      "sha256": "2d3b9c089eb29a280015508381abaf276b2230a4d3d1cc2064332f7688ba55a5",
+      "size_bytes": 12281
+    },
+    {
+      "input_id": "input-009",
+      "name": "README.md",
+      "path": "inputs/009-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-loop-history/README.md",
+      "sha256": "90f5290314bafc80e75c6bd9e8a427da0fa948336909a07eb2b970be7cd6da19",
+      "size_bytes": 13928
+    },
+    {
+      "input_id": "input-010",
+      "name": "audit.py",
+      "path": "inputs/010-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-pairing/audit.py",
+      "sha256": "81bb83d0c1008c39707aeae36080afc77b2068ac09825f123488ed3fe4637b32",
+      "size_bytes": 9804
+    },
+    {
+      "input_id": "input-011",
+      "name": "README.md",
+      "path": "inputs/011-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-pairing/README.md",
+      "sha256": "e832443b4482fcdc393418f46b9a566290c4f8579394e8144bb7f2b0dbd02c60",
+      "size_bytes": 13741
+    },
+    {
+      "input_id": "input-012",
+      "name": "audit.py",
+      "path": "inputs/012-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-integral-duality/audit.py",
+      "sha256": "1c394cf71a40c3d10424bfb2ad3e41b0bf2a1744d41b0e4d0a7b335adc85d9b5",
+      "size_bytes": 12454
+    },
+    {
+      "input_id": "input-013",
+      "name": "audit.py",
+      "path": "inputs/013-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-charge-field/audit.py",
+      "sha256": "8964aa424d7f49ba0d9e5d6d32d70cc089e7d2c5c8be7de1f5bbcfeb67901f23",
+      "size_bytes": 10026
+    },
+    {
+      "input_id": "input-014",
+      "name": "audit.py",
+      "path": "inputs/014-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/audit.py",
+      "sha256": "4387d5ccbed0852c7ea33b618fb5faef07a46197c34c6763ac1cb4da921a953b",
+      "size_bytes": 9543
+    },
+    {
+      "input_id": "input-015",
+      "name": "ledger_v0.85.json",
+      "path": "inputs/015-ledger_v0.85.json",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    },
+    {
+      "input_id": "input-016",
+      "name": "C0906.txt",
+      "path": "inputs/016-C0906.txt",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/C0906.txt",
+      "sha256": "4e5cdc41c1fd93f69b8d80aeb557f5cfdf8b3b335b320ef4b2028bc1b08c6739",
+      "size_bytes": 4381
+    },
+    {
+      "input_id": "input-017",
+      "name": "UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "path": "inputs/017-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "source_location": "repository",
+      "source_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    },
+    {
+      "input_id": "input-018",
+      "name": "UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "path": "inputs/018-UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "source_location": "repository",
+      "source_path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "sha256": "8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4",
+      "size_bytes": 4882
+    },
+    {
+      "input_id": "input-019",
+      "name": "audit.py",
+      "path": "inputs/019-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-native-events/audit.py",
+      "sha256": "bb70c6449c8fb598198886a797c796307c3c27286afc2fc89b5da7d34724869f",
+      "size_bytes": 12493
+    },
+    {
+      "input_id": "input-020",
+      "name": "README.md",
+      "path": "inputs/020-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-native-events/README.md",
+      "sha256": "48591fdba99d641d5ad8dd541ca13331dc531545d3c02d3f800c18737ce9be8c",
+      "size_bytes": 13455
+    },
+    {
+      "input_id": "input-021",
+      "name": "README.md",
+      "path": "inputs/021-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/README.md",
+      "sha256": "a048fb2cb49bffe5b66313bd8ee6be6059553c2c4aeefc663e7f31213dd812b3",
+      "size_bytes": 9525
+    },
+    {
+      "input_id": "input-022",
+      "name": "audit.py",
+      "path": "inputs/022-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-continuous-phase/audit.py",
+      "sha256": "62fb5430f4535cbc22550dbe887a50ea9bc9e8575996f40f60b2a1f9cefaf9e2",
+      "size_bytes": 10631
+    },
+    {
+      "input_id": "input-023",
+      "name": "README.md",
+      "path": "inputs/023-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-continuous-phase/README.md",
+      "sha256": "cb9cdae14fb30b4364f48285ba96a97527fcaa04fe607b5af4c775e8f7ccd3d9",
+      "size_bytes": 13849
+    },
+    {
+      "input_id": "input-024",
+      "name": "audit.py",
+      "path": "inputs/024-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-local-generators/audit.py",
+      "sha256": "8c5e937bfc7012c1d01742f2ab3752112aa4e8a65f5969b3875c4ca12148ae46",
+      "size_bytes": 11255
+    },
+    {
+      "input_id": "input-025",
+      "name": "README.md",
+      "path": "inputs/025-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-local-generators/README.md",
+      "sha256": "f4f6b166b998c4f7a9fb3da6ee62ee6728e10deec7a77963f3ddb0e97bef7bc6",
+      "size_bytes": 13839
+    },
+    {
+      "input_id": "input-026",
+      "name": "audit.py",
+      "path": "inputs/026-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-window/audit.py",
+      "sha256": "ce80e60d5ffb5ff0eb0a50ff7a6bf881839a194d9e0687f88a490e23496a0f9e",
+      "size_bytes": 15296
+    },
+    {
+      "input_id": "input-027",
+      "name": "README.md",
+      "path": "inputs/027-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-window/README.md",
+      "sha256": "24267337ddf5aa341046e1a6e096d8aaa2825e71fdfe55d4f080f3966e8fbc6b",
+      "size_bytes": 15317
+    },
+    {
+      "input_id": "input-028",
+      "name": "READOUT_CONTRACT.json",
+      "path": "inputs/028-READOUT_CONTRACT.json",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-window/READOUT_CONTRACT.json",
+      "sha256": "7c6e2f59b264056ea93f7fd2c21b8b086eabbfa94a484d269bc51da57f5c5b17",
+      "size_bytes": 3994
+    },
+    {
+      "input_id": "input-029",
+      "name": "20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "path": "inputs/029-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    },
+    {
+      "input_id": "input-030",
+      "name": "21-UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "path": "inputs/030-21-UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4",
+      "size_bytes": 4882
+    }
+  ],
+  "files": [
+    {
+      "path": "files/channels.json",
+      "sha256": "7fa2057c95bb28a1f4974c53d4480c1bbaf0a29579dc6ffc89437fde0ebec2b8",
+      "size_bytes": 4772
+    },
+    {
+      "path": "files/integer_witness.json",
+      "sha256": "1df7101d95c1c844766d4c60dfbb44c5a2439867d4e81ffefd2ebbb2abb96c6f",
+      "size_bytes": 27592
+    },
+    {
+      "path": "files/numerical.json",
+      "sha256": "b4aba121c7b6f4c1ba7e782cab0710b8537a5b2d8bcc4ff5c2876b6df6bdb20a",
+      "size_bytes": 1688
+    },
+    {
+      "path": "files/precision.json",
+      "sha256": "89e9c4cd5d84a30b35f28612fdf2047d4258dd41015fc25194db80cec826997a",
+      "size_bytes": 3438
+    },
+    {
+      "path": "files/summary.json",
+      "sha256": "3f0382a36cf21f5a33a46b34490034cdfba325d1e8a23458c04ebc05be238c7c",
+      "size_bytes": 637
+    }
+  ]
+}
