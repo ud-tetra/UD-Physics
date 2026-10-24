@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-graphite-packet-identifiability-20261024",
+  "session": "graphpktididx-20261024-01",
+  "created_at": "2026-10-24T20:03:40.413Z",
+  "base_revision": "bc0d264c4574ad5a94ef6d5257c3d44003f7fce2",
+  "owned_paths": [
+    "tasks/integration-graphite-packet-identifiability-20261024.json",
+    "sessions/graphpktididx-20261024-01/",
+    "experiments/graphite-manuscript-v2/README.md",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
