@@ -8,12 +8,16 @@
   "created_at": "2026-10-24T16:23:19.272852+00:00",
   "base_revision": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "qpb1-sector-mismatch-20261024": {
       "ref": "refs/heads/claims/qpb1-sector-mismatch-20261024",
       "sha": "4a88453754ea84a7f67643fce3f8596be6ef0e16",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "31a7e4b8612122f7a418b72c83dff316e631ce36",
+      "released_from_sha": "4a88453754ea84a7f67643fce3f8596be6ef0e16",
+      "released_at": "2026-10-24T16:44:34.716Z",
+      "verified": true
     }
   },
   "checks": [
@@ -44,5 +48,21 @@
   ],
   "finding": "Exact rational interval transfer enclosure and weighted finitepolygon bound certify every constantindependentsectorerror|epsilon_k|<=11/1000,fullparentplant/preparation/timingdomain,26bitreadout,additionalarbitraryoperator1e-7,phase<1/290rad andvisibility>.99/.999. Old0.01pointstrictlyinterior.",
   "next_action": "Derive an explicit drift-rate budget for slowly time-varying sector mismatch epsilon_k(s), retaining the constant-box phase/signal certificate and separate arbitrary-channel/calibration requirements; priority95.",
-  "integration_base_revision": "a73e2cb42c555b65d8d2b4ec6c1b06bab5259cb3"
+  "integration_base_revision": "a73e2cb42c555b65d8d2b4ec6c1b06bab5259cb3",
+  "completed_at": "2026-10-24T16:45:18.409866+00:00",
+  "integration": {
+    "research_pr": 133,
+    "url": "https://github.com/ud-tetra/UD-Physics/pull/133",
+    "head_sha": "a582d8a85683f310ca24c7ba75807d93e29c4438",
+    "merge_sha": "dfbe4819581ce0bac459cc3e4fa838d7b7672cc7",
+    "tree_sha": "c50d6e67116f2f32c9ed444a01727ba546553d4e",
+    "ci": {
+      "id": 40112852229,
+      "head_sha": "a582d8a85683f310ca24c7ba75807d93e29c4438",
+      "conclusion": "success",
+      "url": "https://github.com/ud-tetra/UD-Physics/actions/runs/40112852229"
+    },
+    "release_verified": true
+  },
+  "closure_scope": "Owning record/journal only; no substantive research after verified release"
 }

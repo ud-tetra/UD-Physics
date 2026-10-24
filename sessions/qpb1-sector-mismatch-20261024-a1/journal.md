@@ -39,3 +39,10 @@ Captured immutable exact-001 with40explicitinputs and5outputs atintegrationHEADd
 Pre-publicationdisjointindexrefreshthroughPRs131-132toa73e2cb42c555b65d8d2b4ec6c1b06bab5259cb3. All30scientificsourcehashesunchanged;immutablecapturestillrecordsitsownD25integrationHEAD. Otherowners'indexfilespreserved.
 
 RefreshedunionvalidationPASS238records;toolingPASS16tests.
+
+## Integrated checkpoint and verified release
+Research PR133 merged at dfbe4819581ce0bac459cc3e4fa838d7b7672cc7 from exact head a582d8a85683f310ca24c7ba75807d93e29c4438. Integrity run 40112852229 verified successful for that head. Local staged tree matched integrated research tree c50d6e67116f2f32c9ed444a01727ba546553d4e before safe reset-soft; checkout cleanliness verified.
+
+Live taskclaimreleasedbyexactheld-SHA CAS to 31a7e4b8612122f7a418b72c83dff316e631ce36; live ref and same-owner release metadata verified. This closure updates only owning record/journal. Immutable proof/code/results remain unchanged.
+
+NEXT: explicit drift-rate budget for epsilon_k(s), preserving separate arbitrary-channel, reset and calibration requirements; priority95. Physicalrealization/native selection remainOPEN;promotion0.
