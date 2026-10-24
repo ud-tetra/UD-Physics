@@ -8,12 +8,16 @@
   "created_at": "2026-10-24T02:00:34.240069+00:00",
   "base_revision": "0abea764505989dde38fe0906d0d32c53d76b93c",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "qpb1-meter-coupling-20261023": {
       "ref": "refs/heads/claims/qpb1-meter-coupling-20261023",
       "sha": "01f3da1a36c8c1d4be1434fdfdf77078f9396b93",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "93465e6c89d7fa6be9cf5b72ebac88c435fd9907",
+      "released_from_sha": "01f3da1a36c8c1d4be1434fdfdf77078f9396b93",
+      "released_at": "2026-10-24T02:14:03.402Z",
+      "verified": true
     }
   },
   "checks": [
@@ -32,5 +36,21 @@
   ],
   "finding": "Matched balanced meter has same projective ray and finite-window phase while totalstorage dissipates. Nominalb>1/8; finite residual/reset and mismatch/calibration/jitter/noise budgets imply prior26bitstrict and21bitamended phase certificates. Actualhardware and practical tolerance remainOPEN.",
   "next_action": "Derive a direct projective-phase tolerance bound for differential meter mismatch, quotienting exactly harmless scalar/common-J directions; determine whether useful tolerances replace the conservative full-amplitude box; priority95.",
-  "integration_base_revision": "96319cbce750e5c4a2fc9772783fdbbf2e34a614"
+  "integration_base_revision": "96319cbce750e5c4a2fc9772783fdbbf2e34a614",
+  "completed_at": "2026-10-24T02:14:28.837639+00:00",
+  "integration": {
+    "research_pr": 104,
+    "url": "https://github.com/ud-tetra/UD-Physics/pull/104",
+    "head_sha": "cbd2815f7aebc7a3ee0ebfa469842942d853c85f",
+    "merge_sha": "59f37b0f92556fc4d009898a424a24743b867d69",
+    "tree_sha": "123d0c5e10afab3a7e9c750eddaf89c1e89fb5c1",
+    "ci": {
+      "id": 40053241587,
+      "head_sha": "cbd2815f7aebc7a3ee0ebfa469842942d853c85f",
+      "conclusion": "success",
+      "url": "https://github.com/ud-tetra/UD-Physics/actions/runs/40053241587"
+    },
+    "release_verified": true
+  },
+  "closure_scope": "Owning record/journal only; no substantive research after verified task release"
 }
