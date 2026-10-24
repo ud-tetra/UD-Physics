@@ -1,0 +1,44 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-relaxation-null",
+  "session_id": "graphrelax-20261024-bb53",
+  "question": "How much paired-angle friction and load response can a shared passive first-harmonic material law explain without a UD-specific source?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "one-dimensional periodic sinusoidal PES cut and prescribed steady x=vt",
+    "one passive overdamped mode q with kappa>0,eta>=0 and assumed lambda",
+    "shared-bath/area/low-speed transfer for source-rounded 4.329888 ratio"
+  ],
+  "physical_mapping": "per upper atom drag coefficient derived in physical units, but contact transfer and UD attribution OPEN",
+  "target_exposure": {
+    "status": "KNOWN_DEVELOPMENT_TARGET",
+    "known_targets": [
+      "paired 21.8/38.2 degree detectable peaks and negligible load slope"
+    ],
+    "fitted_choices": [
+      "single passive q benchmark chosen for simplicity, no measured force fit"
+    ]
+  },
+  "fitted_choices": [
+    "single-mode conventional null selected as benchmark, no kinetic fit"
+  ],
+  "sources": [
+    "arXiv:2511.01338v1 Eq.2 and Table6",
+    "PRL 137 166201 public abstract",
+    "experiments/graphite-registry-convolution/README.md",
+    "supplied UD coefficient ledger Q22/Q77-Q84"
+  ],
+  "baseline": "rigid DFT first-harmonic static shear and conventional passive relaxation",
+  "result": "Exact passive single-mode drag and pressure slope. Under additional shared bath assumptions the source-rounded theoretical 7/13 low-speed drag ratio is 483025/111556\u22484.329888, not measured kinetic or UD-specific.",
+  "next_discriminant": "freeze common 2D PES, contact, loss and pressure response, then test held-out signed force/load residual",
+  "mathematical_receipts": [
+    "candidates/graphite-relaxation-null/mathematical_receipt.json"
+  ]
+}

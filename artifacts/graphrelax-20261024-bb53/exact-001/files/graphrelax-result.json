@@ -1,0 +1,44 @@
+{
+  "status": "PASS_EXACT_PASSIVE_RELAXATION_NULL",
+  "model": "E=U0(x)+kappa*q^2/2-lambda*A*q*cos(k*x); eta*qdot=-partial_q E; tau=eta/kappa; x=v*t",
+  "drag_law": "<F>=-lambda^2*A^2*k^2*tau*v/[2*kappa*(1+(k*v*tau)^2)]",
+  "low_velocity_gamma": "lambda^2*eta*(A*k)^2/(2*kappa^2)",
+  "load_log_slope": "2lambda'/lambda+eta'/eta+2G'/G-2kappa'/kappa; G=A*k, nonzero factors",
+  "source_rounded_rigid_static_shear_Pa": {
+    "(2,1)": "13900",
+    "(3,1)": "6680"
+  },
+  "conditional_shared_bath_drag_ratio_7_over_13": "483025/111556",
+  "ratio_decimal_from_rounded_values": 4.329888,
+  "ratio_scope": "only if same effective area-per-atom conversion and lambda,eta,kappa at both angles, same low-speed regime, G proportional to Table 6 rigid ideal shear; neither measured friction nor UD-specific",
+  "harmonic_balance_unit_parameters": [
+    {
+      "z": "0",
+      "cos_coefficient": "1",
+      "sin_coefficient": "0",
+      "mean_force": "0",
+      "dissipated_power": "0"
+    },
+    {
+      "z": "1/2",
+      "cos_coefficient": "4/5",
+      "sin_coefficient": "2/5",
+      "mean_force": "-1/5",
+      "dissipated_power": "1/10"
+    },
+    {
+      "z": "1",
+      "cos_coefficient": "1/2",
+      "sin_coefficient": "1/2",
+      "mean_force": "-1/4",
+      "dissipated_power": "1/4"
+    },
+    {
+      "z": "2",
+      "cos_coefficient": "1/5",
+      "sin_coefficient": "2/5",
+      "mean_force": "-1/5",
+      "dissipated_power": "2/5"
+    }
+  ]
+}
