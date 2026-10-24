@@ -1,0 +1,50 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "icosahedral-greenbounds-20261022-a1",
+  "runtime": "Codex; model identifier unknown; initial Git/compute, now connector-only after workspace outage",
+  "task": "integration-icosahedral-greenbounds-20261022",
+  "goal": "Bound full-pulse forced response and proper-alignment remainder toward the u100 nonlinear all-phase certificate.",
+  "created_at": "2026-10-22T22:01:51.970895+00:00",
+  "base_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+  "source_dirty_at_boot": false,
+  "status": "blocked",
+  "claims": {
+    "integration-icosahedral-greenbounds-20261022": {
+      "ref": "refs/heads/claims/integration-icosahedral-greenbounds-20261022",
+      "sha": "37591be88775425d9b24f8fd5e3792c62e483684",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "original green.py normal/fine;forward.py;certify_alignment.py normal/fine;forcing_checks.py;finalize.py;quintic_diagnostic.py",
+      "result": "Completed before outage; selected observed results transcribed. Original executed files/raw capture not yet published."
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16 before capture/outage; not a validation of reconstructed tree or scientific results."
+    },
+    {
+      "command": "python3 scripts/validate.py on recovery tree",
+      "result": "NOT_RUN locally: exec-server transport disconnected and environment unavailable."
+    },
+    {
+      "command": "recheck_geometry.py (recovery reconstruction)",
+      "result": "NOT_RUN"
+    }
+  ],
+  "finding": "EXACT conditional chart remainder<13/20000; numerical forced scalar response and cubic-reference sufficient-budget failure; quintic diagnostic reduces defect norms1764–12843x. Actual nonlinear ball remains OPEN.",
+  "next_action": "Restore original runtime/source capture or reproduce under explicit new version; recheck exact datasets and finish validation before integration; then establish quintic-reference geometry/Green bounds.",
+  "checkpoint_at": "2026-10-22T22:28:01.971Z",
+  "checkpoint_source": {
+    "revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+    "dirty": true
+  },
+  "recovery": {
+    "capture": "artifacts/icosahedral-greenbounds-20261022-a1/recovery-001/manifest.json",
+    "status": "PARTIAL_BYTE_EXACT_DATA_AND_TRANSCRIBED_OBSERVATIONS",
+    "unavailable_worktree": "/workspace/scratch/ed44232d6ecb/UD-Physics-greenbounds",
+    "mainline_promotion": 0
+  }
+}
