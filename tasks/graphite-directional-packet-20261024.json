@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-directional-packet-20261024",
+  "goal": "Compute exact directional-packet harmonic response and quotient onset across N7/13/19",
+  "owned_paths": [
+    "experiments/graphite-directional-packet",
+    "candidates/graphite-directional-packet",
+    "sessions/graphdirpkt-20261024-01",
+    "artifacts/graphdirpkt-20261024-01"
+  ],
+  "dependencies": [
+    "graphite-endogenous-gate-20261024"
+  ],
+  "status": "complete"
+}
