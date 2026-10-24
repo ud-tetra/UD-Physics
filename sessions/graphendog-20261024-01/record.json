@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphendog-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute and GitHub connector write",
+  "task": "graphite-endogenous-gate-20261024",
+  "goal": "Test local equivariant contact-trigger selection and gate transition stock",
+  "created_at": "2026-10-24T18:10:17.662007+00:00",
+  "base_revision": "ba13108ff2b30d2e1d4c38286192e59bba73b1ea",
+  "source_dirty_at_boot": false,
+  "status": "complete",
+  "claims": {
+    "ref": "refs/heads/claims/graphite-endogenous-gate-20261024",
+    "held_sha": "fc305a51f9af71949ee3919b78a2f032d1fd009f",
+    "status": "held"
+  },
+  "checks": [
+    "exact threshold orbit, full generator C3 basis commutation, stock derivative and transition replay PASS",
+    "scripts/validate.py PASS (276 records)",
+    "16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Standalone symmetric endogenous threshold FAILED; conditional C3 fixed-subspace obstruction and transition receipt EXACT.",
+  "next_action": "Independently constrain graphite symmetry-breaking preparation/boundary and gate duration, then physical force/loss map.",
+  "mathematical_profile": {
+    "coefficient_domain": "exact integer incidence and rational thresholds",
+    "exactness_or_precision_plan": "C3 equivariance proof and integer/Fraction replay on N7/13/19",
+    "applicable_methods": [
+      "chain adjoint/skew conservation",
+      "group-fixed subspace and harmonic representation",
+      "masked stock flow and hybrid transition receipt",
+      "N/A modular-clock and prime selection: quotient sizes are geometry labels, not update law"
+    ],
+    "clock_metric_units_conventions": "dimensionless native continuous s and instantaneous fixed-state gate switch; A-to-B edge orientation, unit metric; physical time/force map OPEN"
+  },
+  "checkpoint_at": "2026-10-24T18:12:20.623000+00:00",
+  "checkpoint_source": {
+    "revision": "ba13108ff2b30d2e1d4c38286192e59bba73b1ea",
+    "dirty": true
+  }
+}

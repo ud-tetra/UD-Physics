@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-endogenous-gate-20261024",
+  "goal": "Derive exact symmetry obstruction for endogenous local gate and transition receipt across N7/13/19",
+  "owned_paths": [
+    "experiments/graphite-endogenous-gate",
+    "candidates/graphite-endogenous-gate",
+    "sessions/graphendog-20261024-01",
+    "artifacts/graphendog-20261024-01"
+  ],
+  "dependencies": [
+    "graphite-native-gate-dynamics-20261024"
+  ],
+  "status": "complete"
+}

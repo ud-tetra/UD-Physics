@@ -1,0 +1,70 @@
+{
+  "evidence": "EXACT_CONDITIONAL_EQUIVARIANT_TRIGGER_OBSTRUCTION",
+  "threshold_u": "(B1^T x)_e^2+y_e^2; h_e=1 iff u_e<tau",
+  "clock": "dimensionless native s; instantaneous fixed-state mask change",
+  "result": "C3-equivariant deterministic trigger cannot choose a unique edge from C3-fixed seed; harmonic readout remains zero",
+  "transition_law": "Delta S_tilde_H=sum_e (h_new-h_old)y_e^2; full norm has zero jump",
+  "physical_gate_or_friction_inferred": false,
+  "rows": [
+    {
+      "mn": [
+        2,
+        1
+      ],
+      "N": 7,
+      "C3_multiplier": 4,
+      "closed_at_threshold_half": [
+        0,
+        7,
+        14
+      ],
+      "closed_at_threshold_three_halves": [],
+      "low_threshold_seed_frozen": true,
+      "full_generator_C3_commutation_both_masks": true,
+      "state_dependent_threshold_equivariance": true,
+      "full_norm_derivative": 0,
+      "masked_stock_flow_witness": 10,
+      "three_edge_orbit_transition_masked_stock_jump": -3
+    },
+    {
+      "mn": [
+        3,
+        1
+      ],
+      "N": 13,
+      "C3_multiplier": 9,
+      "closed_at_threshold_half": [
+        0,
+        13,
+        26
+      ],
+      "closed_at_threshold_three_halves": [],
+      "low_threshold_seed_frozen": true,
+      "full_generator_C3_commutation_both_masks": true,
+      "state_dependent_threshold_equivariance": true,
+      "full_norm_derivative": 0,
+      "masked_stock_flow_witness": 0,
+      "three_edge_orbit_transition_masked_stock_jump": -3
+    },
+    {
+      "mn": [
+        3,
+        2
+      ],
+      "N": 19,
+      "C3_multiplier": 7,
+      "closed_at_threshold_half": [
+        0,
+        19,
+        38
+      ],
+      "closed_at_threshold_three_halves": [],
+      "low_threshold_seed_frozen": true,
+      "full_generator_C3_commutation_both_masks": true,
+      "state_dependent_threshold_equivariance": true,
+      "full_norm_derivative": 0,
+      "masked_stock_flow_witness": 10,
+      "three_edge_orbit_transition_masked_stock_jump": -3
+    }
+  ]
+}
