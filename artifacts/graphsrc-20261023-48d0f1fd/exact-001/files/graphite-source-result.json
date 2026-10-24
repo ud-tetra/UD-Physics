@@ -1,0 +1,98 @@
+{
+  "status": "PASS_EXACT_CONDITIONAL_AND_ARCHIVE_REPLAY",
+  "representative_site_indices": [
+    1,
+    3,
+    7,
+    8
+  ],
+  "representative_names": [
+    "A1",
+    "A3",
+    "B0",
+    "B1"
+  ],
+  "source_rank": 6,
+  "equivariant_dimension": 8,
+  "constraint_rows": [
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      -1,
+      0,
+      1,
+      -1,
+      0,
+      1
+    ]
+  ],
+  "constraint_gram": [
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      5
+    ]
+  ],
+  "kernel_of_weight_map": "uniform weights",
+  "physical_alignment": "archived KC alignment offset 2; Cartesian-to-direct Fmap.T",
+  "material_replay": [
+    {
+      "cutoff_angstrom": 14,
+      "difference_step_angstrom": 0.0001,
+      "constraint_residual_meV_per_angstrom_per_upper_atom": [
+        -4.947122321731765,
+        -2.487054823601736
+      ],
+      "published_full_map_relative_residual": 0.15517626165331969
+    },
+    {
+      "cutoff_angstrom": 16,
+      "difference_step_angstrom": 0.001,
+      "constraint_residual_meV_per_angstrom_per_upper_atom": [
+        -4.9471223745243265,
+        -2.4870529216833575
+      ],
+      "published_full_map_relative_residual": 0.1551759014228879
+    },
+    {
+      "cutoff_angstrom": 16,
+      "difference_step_angstrom": 0.0001,
+      "constraint_residual_meV_per_angstrom_per_upper_atom": [
+        -4.947113003853587,
+        -2.4870501683386834
+      ],
+      "published_full_map_relative_residual": 0.15517556162879895
+    },
+    {
+      "cutoff_angstrom": 16,
+      "difference_step_angstrom": 1e-05,
+      "constraint_residual_meV_per_angstrom_per_upper_atom": [
+        -4.947112911070248,
+        -2.487050141480955
+      ],
+      "published_full_map_relative_residual": 0.15517555821986267
+    },
+    {
+      "cutoff_angstrom": 18,
+      "difference_step_angstrom": 0.0001,
+      "constraint_residual_meV_per_angstrom_per_upper_atom": [
+        -4.947141433798781,
+        -2.4870643877111975
+      ],
+      "published_full_map_relative_residual": 0.155176623990648
+    }
+  ]
+}
