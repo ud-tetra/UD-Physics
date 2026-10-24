@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "qpb-vector-circuit-20261024",
+  "session": "qpb-vectorcircuit-20261024-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-24T20:03:59.833Z",
+  "base_revision": "18a84984af40265d673b7b893c73de152a7cc8c5",
+  "owned_paths": [
+    "tasks/qpb-vector-circuit-20261024.json",
+    "sessions/qpb-vectorcircuit-20261024-gpt6-a1/",
+    "experiments/qpb-vector-circuit/",
+    "candidates/qpb-vector-circuit/",
+    "artifacts/qpb-vectorcircuit-20261024-gpt6-a1/"
+  ]
+}
