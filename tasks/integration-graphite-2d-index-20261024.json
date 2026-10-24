@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-2d-index-20261024",
+  "goal": "Index 2D graphite first-star control after PR #119",
+  "owned_paths": [
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md",
+    "tasks/integration-graphite-2d-index-20261024.json",
+    "sessions/graph2dindex-20261024-859a/"
+  ],
+  "dependencies": [
+    "graphite-2d-relaxation-20261024"
+  ],
+  "status": "complete"
+}
