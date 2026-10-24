@@ -1,0 +1,169 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "nonaffine-nullcurvature-016",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Does the 156-dimensional numerical kernel of the 24x180 moving-pulse non-affine initial-phase derivative remain invisible under full nonlinear 3D mechanics?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "id": "y",
+      "domain": "R^560",
+      "type": "full Newtonian mechanical state",
+      "origin": "assumed existing 3D model",
+      "units": "internal"
+    },
+    {
+      "id": "a",
+      "domain": "R^180",
+      "type": "energy normalized housing initial position/velocity phase",
+      "metric": "Euclidean norm <=1",
+      "origin": "imported"
+    },
+    {
+      "id": "G4",
+      "type": "numerically computed 24x180 phase-to-non-affine output Jacobian at u=4",
+      "rank_numeric": 24,
+      "null_dim_numeric": 156,
+      "origin": "prior captured moving-pulse adjoint 015"
+    },
+    {
+      "id": "z",
+      "domain": "R^24",
+      "type": "orthonormal non-affine shell output",
+      "metric": "Euclidean norm equals nonaffine shell Frobenius norm",
+      "origin": "geometric readout"
+    }
+  ],
+  "sources": [
+    {
+      "path": "experiments/icosahedral-mountloss/mountloss.py",
+      "commit": "0abea764505989dde38fe0906d0d32c53d76b93c",
+      "status": "read-only integrated original mechanical law"
+    },
+    {
+      "path": "artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/cases.json",
+      "commit": "0abea764505989dde38fe0906d0d32c53d76b93c",
+      "case_id": "edge-p1-b0.005-cf0.0",
+      "coefficient_sha256": "8c4d98b69171792190178b12b10a0648ca69aa545a750d3836963747015e98fd"
+    },
+    {
+      "path": "local ZIP projected-adjoint-015",
+      "status": "prior checked computational reference; exact input bytes preserved in local 016 ZIP"
+    }
+  ],
+  "assumptions": [
+    "Unchanged Euclidean 3D central reciprocal springs, 120 moving-axis viscous struts and full 560 mechanical state",
+    "No physical calibration: u=t/t0, ell0=1",
+    "Frozen nu=.05 beta=.005 c_f=0 and original property/gain/housing scatter",
+    "Additional initial housing energy 2.430311755526067e-6, epsilon=sqrt(2Eh)",
+    "Selected target time u=4 and prior first-order peak exposed"
+  ],
+  "technique_plan": [
+    {
+      "technique": "SVD, numerical rank/nullspace",
+      "status": "APPLIED",
+      "purpose": "24 first-order active directions, 156 numerical kernel"
+    },
+    {
+      "technique": "full nonlinear ODE finite even/odd differences",
+      "status": "APPLIED",
+      "purpose": "48 initial screen, 24 pure-channel, 36 mixed-cancellation phases"
+    },
+    {
+      "technique": "quadratic polarization",
+      "status": "APPLIED",
+      "purpose": "10D nullspace scalar projected Hessian slice"
+    },
+    {
+      "technique": "scalar adjoint differentiation and bilinear symmetry test",
+      "status": "APPLIED",
+      "purpose": "two Hessian-vector probes in complete nullspace; full spectrum timed out"
+    },
+    {
+      "technique": "exact differential of moving-axis viscous law",
+      "status": "APPLIED",
+      "purpose": "derive position-velocity bilinear projected acceleration forcing"
+    },
+    {
+      "technique": "modular clock/prime factorization",
+      "status": "NA",
+      "purpose": "continuous Newtonian surrogate; no finite register"
+    }
+  ],
+  "dynamics_readout": {
+    "state": "y∈R^560",
+    "law": "y'=F(y) with passive Newtonian interactions",
+    "initial": "y(0,a)=y0+epsilon B a, ||a||<=1",
+    "readout": "z(u,a)=C y(u,a), C rows orthonormal",
+    "exact_second_variation": "epsilon² C integral_0^u Phi(u,s) D²F(ybar(s))[Phi(s,0)Ba,Phi(s,0)Ba]ds",
+    "source_phase": "nu=.05 beta=.005 c_f=0",
+    "clock": "uncalibrated dimensionless u"
+  },
+  "target_exposure": {
+    "status": "Development/post-selection: first-order G and t=4 inspected before nullspace and nonlinear phase selection",
+    "selection": "48 initial selected phases, 24 pure-channel,36 mixed cancellation,10D random curvature slice, post-selected peak curvature vector",
+    "alternatives": "Full156 eigsh route timed out; probe-only finite Hessian action and 10D slice completed",
+    "holdout": false
+  },
+  "result": {
+    "exact_conditional": "Current-axis damper position-velocity quadratic cross term eta/ell[(Pperp δd)(n·δv)+n(Pperp δd·δv)], Pperp=I-nn^T",
+    "numerical": {
+      "G_rank": 24,
+      "null_dim": 156,
+      "pure_position_null_dim": 66,
+      "pure_velocity_null_dim": 66,
+      "mixed_cancellation_dim": 24,
+      "largest_sampled_mixed_even_response": 5.7140005291043954e-9,
+      "fitted_10d_even_response": 1.8129310774660971e-9,
+      "half_ratio": 0.250000204979143,
+      "quarter_ratio": 0.06250042421893628,
+      "bilinear_symmetry_residual": 5.075237548037355e-17,
+      "source_cross_predicted": 2.7923563615879092e-9,
+      "source_cross_observed": 2.7904644823024444e-9
+    },
+    "scope": "Frozen case, finite phases, observation time u=4; no uniform Hessian, phase-ball, continuous-time, or property-box certificate"
+  },
+  "verification": [
+    {
+      "method": "Local capture manifest SHA-256 and source 24x180 rank",
+      "status": "PASS"
+    },
+    {
+      "method": "48-direction screen and mixed-channel finite ODE",
+      "status": "PASS"
+    },
+    {
+      "method": "10D scalar quadratic Hessian slice and 1,1/2,1/4 amplitude scaling",
+      "status": "PASS initial run and tighter verification"
+    },
+    {
+      "method": "Five-level ODE tolerance refinement",
+      "status": "PASS numerical agreement only"
+    },
+    {
+      "method": "Full156 Hessian eigenspectrum",
+      "status": "NOT_COMPLETED runtime timeout"
+    },
+    {
+      "method": "Repository CI integrity tests",
+      "status": "PENDING newest branch head; independent scientific verification NOT PERFORMED"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "First-order phase kernel is not a nonlinear phase kernel in sampled finite directions",
+    "Full156 eigsh search exceeded compute window and no global curvature norm was reported"
+  ],
+  "limitations": [
+    "No continuous-time or all-property universal bound",
+    "Local source archive and byte-exact inputs are in user-downloadable ZIP, not GitHub data tree",
+    "No physical identification or experiment"
+  ],
+  "next_discriminant": "Bound the full 156D mixed-velocity/position curvature operator with validated full-state Green/Hessian/error machinery; then continue time and property-box coverage."
+}
