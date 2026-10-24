@@ -1,0 +1,33 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphsupportidx-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute plus GitHub connector write",
+  "task": "integration-graphite-native-support-current-20261024",
+  "goal": "Index native support current and formal graphite port identity in working paper and study state",
+  "created_at": "2026-10-24T17:48:02.047798+00:00",
+  "base_revision": "afaa6d406c6face2f7da7399b55267a989f7632d",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/integration-graphite-native-support-current-20261024",
+    "held_sha": "558077bc7e176a21630c87e616966fed2806853c",
+    "status": "held"
+  },
+  "checks": ["scripts/validate.py PASS (266 records)", "16 unit tests PASS", "git diff --check PASS", "independent physics review NOT_RUN"],
+  "finding": "Native current result indexed without seven-cell or physical promotion.",
+  "next_action": "Native preparation/selection and dimensional complex bath before paper v3.",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A editorial integration",
+    "exactness_or_precision_plan": "reference merged exact/conditional receipt; no new calculation",
+    "applicable_methods": [
+      "N/A new theorem"
+    ],
+    "clock_metric_units_conventions": "inherits linked candidate; no new physical mapping"
+  },
+  "checkpoint_at": "2026-10-24T17:48:22.944568+00:00",
+  "checkpoint_source": {
+    "revision": "afaa6d406c6face2f7da7399b55267a989f7632d",
+    "dirty": true
+  }
+}
