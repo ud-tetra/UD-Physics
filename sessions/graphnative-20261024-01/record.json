@@ -8,20 +8,22 @@
   "created_at": "2026-10-24T16:46:14.935773+00:00",
   "base_revision": "a73e2cb42c555b65d8d2b4ec6c1b06bab5259cb3",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "ref": "refs/heads/claims/graphite-native-source-gate-20261024",
     "held_sha": "8f806471e2e41e4965a2ccca363e56528fbcf6d3",
-    "status": "held"
+    "status": "released",
+    "release_sha": "07d4a059ddceb6f61980201dc0457137d0214d9e"
   },
   "checks": [
     "PASS_EXACT_NATIVE_SOURCE_GATE_WITNESS",
     "scripts/validate.py PASS (238 records)",
     "16 unit tests PASS",
-    "git diff --check PASS"
+    "git diff --check PASS",
+    "GitHub Discovery integrity workflow 40113321241 success"
   ],
-  "finding": "Scoped Q22-only graphite coupling vanishes, while dimensionless phase kernels leave positive material damping scale and local load slope unidentified; no measured residual.",
-  "next_action": "Publish and index source/loss gate; derive target-blind nonuniform edge and route law or obtain independent material calibration.",
+  "finding": "Scoped native source and loss gate merged in PR #135 at 43e84d1f2e48104edceba4538f46bf9f25eea7dd; no material coefficient or physical promotion.",
+  "next_action": "Index result; derive typed nonuniform edge/route source from current primitives and independently calibrate material damping.",
   "mathematical_profile": {
     "coefficient_domain": "exact real matrices with positive semidefinite loss and symbolic positive scale",
     "exactness_or_precision_plan": "proof by substitution and one-parameter scale families; no fitted material numbers",
@@ -31,7 +33,7 @@
       "dimensional rescaling and pressure derivative identifiability",
       "N/A modular clock: native-to-physical time map open"
     ],
-    "clock_metric_units_conventions": "unit-edge native S map in 2D lateral basis; physical time and energy absent from phase kernel; gamma has energy*time/length\u00b2 per atom"
+    "clock_metric_units_conventions": "unit-edge native S map in 2D lateral basis; physical time and energy absent from phase kernel; gamma has energy*time/length² per atom"
   },
   "checkpoint_at": "2026-10-24T16:48:04.521978+00:00",
   "checkpoint_source": {

@@ -27,3 +27,7 @@ Supplied ledger v0.39(2) SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f
 Checkpoint (handoff): Exact conditional source-zero and passive load-slope nonidentifiability; current ledger cannot supply a nonzero dimensional graphite friction coefficient.
 
 Next: Publish focused PR and release claim; derive independent native edge/route law or obtain material C,K,D_h and force data.
+
+## Release and integration
+
+PR #135 merged at 43e84d1f2e48104edceba4538f46bf9f25eea7dd after Discovery integrity workflow 40113321241 succeeded. Claim refs/heads/claims/graphite-native-source-gate-20261024 released at 07d4a059ddceb6f61980201dc0457137d0214d9e by exact expected-head lease. No independent physics review or physical promotion. Next: index result and derive a current nonuniform source law.
