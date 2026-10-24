@@ -1,0 +1,206 @@
+{
+  "evidence": "EXACT conditional PSD bound; NUMERICAL archived coefficients",
+  "units": "meV ps Angstrom^-2 per upper atom per THz of dissipative FWHM",
+  "law": "(sqrt(c_L Delta_f_L)-sqrt(c_H Delta_f_H))^2 <= gamma <= (sqrt(c_L Delta_f_L)+sqrt(c_H Delta_f_H))^2",
+  "interpretation": "Envelope only: a pressure-varying cross loss has no derivative bound from diagonal linewidths alone",
+  "results": [
+    {
+      "cutoff_angstrom": 14,
+      "pair_coefficients_per_THz": [
+        0.00027634535908569,
+        1.8676019323775218e-05
+      ],
+      "diagonal_equal_width_coefficient": 0.00029502137840946524,
+      "cross_half_range_per_THz": 0.00014368063566563098,
+      "cross_fraction_of_diagonal": 0.48701770848014325,
+      "bounds_per_THz_equal_width": [
+        0.00015134074274383426,
+        0.00043870201407509625
+      ],
+      "extremizers": [
+        {
+          "rho": -1.0,
+          "rayleigh_eigenvalues": [
+            1.1163536038688882,
+            1.1163536038688882,
+            0.0,
+            0.0
+          ],
+          "drag_per_normalized_THz_width": 0.00015134074274383426
+        },
+        {
+          "rho": 0.0,
+          "rayleigh_eigenvalues": [
+            0.5581768019344441,
+            0.5581768019344441,
+            0.5581768019344441,
+            0.5581768019344441
+          ],
+          "drag_per_normalized_THz_width": 0.00029502137840946524
+        },
+        {
+          "rho": 1.0,
+          "rayleigh_eigenvalues": [
+            0.0,
+            0.0,
+            1.1163536038688882,
+            1.1163536038688882
+          ],
+          "drag_per_normalized_THz_width": 0.00043870201407509625
+        }
+      ],
+      "pressure_pointwise_envelopes_equal_constant_width": {
+        "-2.5": {
+          "diagonal": 0.00029442704667232924,
+          "passive_min": 0.00015103912195822434,
+          "passive_max": 0.00043781497138643415,
+          "cross_half_range": 0.0001433879247141049
+        },
+        "0.0": {
+          "diagonal": 0.00029502137840946524,
+          "passive_min": 0.00015134074274383426,
+          "passive_max": 0.00043870201407509625,
+          "cross_half_range": 0.00014368063566563098
+        },
+        "2.5": {
+          "diagonal": 0.00029561607096002476,
+          "passive_min": 0.00015164253283471663,
+          "passive_max": 0.0004395896090853329,
+          "cross_half_range": 0.00014397353812530813
+        }
+      }
+    },
+    {
+      "cutoff_angstrom": 16,
+      "pair_coefficients_per_THz": [
+        0.00027634530846634995,
+        1.8676114422005547e-05
+      ],
+      "diagonal_equal_width_coefficient": 0.0002950214228883555,
+      "cross_half_range_per_THz": 0.00014368098831650582,
+      "cross_fraction_of_diagonal": 0.48701883039483135,
+      "bounds_per_THz_equal_width": [
+        0.00015134043457184967,
+        0.0004387024112048613
+      ],
+      "extremizers": [
+        {
+          "rho": -1.0,
+          "rayleigh_eigenvalues": [
+            1.1163536038688884,
+            1.1163536038688884,
+            0.0,
+            0.0
+          ],
+          "drag_per_normalized_THz_width": 0.00015134043457184967
+        },
+        {
+          "rho": 0.0,
+          "rayleigh_eigenvalues": [
+            0.5581768019344442,
+            0.5581768019344442,
+            0.5581768019344442,
+            0.5581768019344442
+          ],
+          "drag_per_normalized_THz_width": 0.0002950214228883555
+        },
+        {
+          "rho": 1.0,
+          "rayleigh_eigenvalues": [
+            0.0,
+            0.0,
+            1.1163536038688884,
+            1.1163536038688884
+          ],
+          "drag_per_normalized_THz_width": 0.0004387024112048613
+        }
+      ],
+      "pressure_pointwise_envelopes_equal_constant_width": {
+        "-2.5": {
+          "diagonal": 0.0002944270931403794,
+          "passive_min": 0.00015103881497646214,
+          "passive_max": 0.0004378153713042967,
+          "cross_half_range": 0.00014338827816391726
+        },
+        "0.0": {
+          "diagonal": 0.0002950214228883555,
+          "passive_min": 0.0001513404345718497,
+          "passive_max": 0.0004387024112048613,
+          "cross_half_range": 0.0001436809883165058
+        },
+        "2.5": {
+          "diagonal": 0.0002956161068570993,
+          "passive_min": 0.00015164222031635252,
+          "passive_max": 0.0004395899933978461,
+          "cross_half_range": 0.00014397388654074678
+        }
+      }
+    },
+    {
+      "cutoff_angstrom": 18,
+      "pair_coefficients_per_THz": [
+        0.0002763457637756565,
+        1.8676070761581987e-05
+      ],
+      "diagonal_equal_width_coefficient": 0.0002950218345372385,
+      "cross_half_range_per_THz": 0.00014368093873492866,
+      "cross_fraction_of_diagonal": 0.4870179827886361,
+      "bounds_per_THz_equal_width": [
+        0.00015134089580230982,
+        0.0004387027732721671
+      ],
+      "extremizers": [
+        {
+          "rho": -1.0,
+          "rayleigh_eigenvalues": [
+            1.1163536038688884,
+            1.1163536038688884,
+            0.0,
+            0.0
+          ],
+          "drag_per_normalized_THz_width": 0.00015134089580230982
+        },
+        {
+          "rho": 0.0,
+          "rayleigh_eigenvalues": [
+            0.5581768019344442,
+            0.5581768019344442,
+            0.5581768019344442,
+            0.5581768019344442
+          ],
+          "drag_per_normalized_THz_width": 0.0002950218345372385
+        },
+        {
+          "rho": 1.0,
+          "rayleigh_eigenvalues": [
+            0.0,
+            0.0,
+            1.1163536038688884,
+            1.1163536038688884
+          ],
+          "drag_per_normalized_THz_width": 0.0004387027732721671
+        }
+      ],
+      "pressure_pointwise_envelopes_equal_constant_width": {
+        "-2.5": {
+          "diagonal": 0.0002944275069338313,
+          "passive_min": 0.00015103927774057587,
+          "passive_max": 0.0004378157361270867,
+          "cross_half_range": 0.0001433882291932554
+        },
+        "0.0": {
+          "diagonal": 0.00029502183453723843,
+          "passive_min": 0.00015134089580230977,
+          "passive_max": 0.0004387027732721671,
+          "cross_half_range": 0.00014368093873492866
+        },
+        "2.5": {
+          "diagonal": 0.0002956165166355628,
+          "passive_min": 0.00015164268064889587,
+          "passive_max": 0.0004395903526222297,
+          "cross_half_range": 0.00014397383598666692
+        }
+      }
+    }
+  ]
+}
