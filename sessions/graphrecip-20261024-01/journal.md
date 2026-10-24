@@ -13,3 +13,6 @@ A literal linear-y equilibrium Hessian conflicts with declared native-to-physica
 Captured artifacts/graphrecip-20261024-01/exact-002 (EXACT): Revised parity, uniform-equilibrium port null and reciprocal power witness
 
 An exact equilibrium check was added after the first capture: isotropic quadratic canonical edge variance is uniform, so its mean port cancels. Immutable exact-001 is retained as a previous narrower witness; exact-002 is the current verifier.
+
+## Integrated closure
+Research PR #179 merged `978b34e11bf35a3388679b2ad5972f3ed151c461`, CI run 40130500701 success. Live claim released by exact-SHA update from `ae1500bc6448eccf31a437dfd294c44b79d3b7f4` to `be636f1036f9833eba5f5a675ea0f3a30a0f9f1f`. Independent physics review NOT_RUN.
