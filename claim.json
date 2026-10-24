@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-quotient-contrast-20261023",
+  "session": "graphcontrastidx-20261023-daeedd7c",
+  "status": "held",
+  "created_at": "2026-10-24T02:04:20Z",
+  "base_revision": "6543f6477d79ace02552d82602bc77e86db96869",
+  "owned_paths": [
+    "tasks/integration-graphite-quotient-contrast-20261023.json",
+    "sessions/graphcontrastidx-20261023-daeedd7c/",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md"
+  ]
+}
