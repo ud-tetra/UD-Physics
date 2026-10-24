@@ -1,0 +1,33 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphnativeidx-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute plus GitHub connector write",
+  "task": "integration-graphite-native-source-gate-20261024",
+  "goal": "Index native graphite source and damping gate in paper and integrated state",
+  "created_at": "2026-10-24T16:51:37.419618+00:00",
+  "base_revision": "55d3972fe9a8be5436eff3b0fd759f8a148643f4",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/integration-graphite-native-source-gate-20261024",
+    "held_sha": "e0ef94424fa4ecb8d12e0413ebef9105f11f30e7",
+    "status": "held"
+  },
+  "checks": [],
+  "finding": "Native source and dimensional damping gate indexed; physical bridge remains open.",
+  "next_action": "Merge index PR, release claim, then derive a target-blind typed nonuniform edge/route law and material loss map.",
+  "mathematical_profile": {
+    "coefficient_domain": "no new mathematics; scoped result inherited from merged PR #135",
+    "exactness_or_precision_plan": "validate links and statuses only",
+    "applicable_methods": [
+      "N/A: integrated index edit"
+    ],
+    "clock_metric_units_conventions": "inherited source/phase and material dimensions, no new mapping"
+  },
+  "checkpoint_at": "2026-10-24T16:52:00.346976+00:00",
+  "checkpoint_source": {
+    "revision": "55d3972fe9a8be5436eff3b0fd759f8a148643f4",
+    "dirty": true
+  }
+}
