@@ -1,0 +1,269 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb1-overlap-acquisition-exact-001",
+  "session_id": "qpb1-overlap-acquisition-20261023-a1",
+  "candidate_id": "qpb1-overlap-acquisition",
+  "question": "Can local signed register observations recover complete overlaps with explicit sensor, quantization and reference-storage budgets?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "carrier",
+      "symbol": "C,E,P,J",
+      "object_type": "carrier/operator",
+      "definition": "C=R15,E=imP,rankP14,J=A/2",
+      "domain": "C",
+      "codomain": "C",
+      "coefficient_domain": "Q for matrices; R for states",
+      "units": "dimensionless native coordinates; not SI",
+      "basis_orientation": "ascending simplex orientations; edge anchors then top cell",
+      "metric_measure": "Euclidean chain metric; active unit normalization",
+      "origin": "imported",
+      "exact_expression": "J^2=-P",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "local"
+      ],
+      "assumption_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dependency_ids": [],
+      "normalization": "active norm; harmonic line projected out"
+    },
+    {
+      "object_id": "channels",
+      "symbol": "T",
+      "object_type": "local linear readout",
+      "definition": "q=x_anchor,p=Jx_anchor at6edges+top",
+      "domain": "C",
+      "codomain": "R14",
+      "coefficient_domain": "Q",
+      "units": "dimensionless native coordinates; not SI",
+      "basis_orientation": "ascending simplex orientations; edge anchors then top cell",
+      "metric_measure": "Euclidean chain metric; active unit normalization",
+      "origin": "derived",
+      "exact_expression": "TT^T=I14,T^TT=P",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parent",
+        "local"
+      ],
+      "assumption_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dependency_ids": [
+        "carrier"
+      ],
+      "normalization": "active norm; harmonic line projected out"
+    },
+    {
+      "object_id": "integer",
+      "symbol": "B",
+      "object_type": "Gaussian integer phase direction",
+      "definition": "endpoint factor times conjugate128link factors from integer Q,P decoder",
+      "domain": "129 signed15-code snapshots",
+      "codomain": "nonzero Z[i] up to positive scale, or explicit failure",
+      "coefficient_domain": "Z",
+      "units": "dimensionless native coordinates; not SI",
+      "basis_orientation": "ascending simplex orientations; edge anchors then top cell",
+      "metric_measure": "Euclidean chain metric; active unit normalization",
+      "origin": "derived",
+      "exact_expression": "B=(C0M+iS0M)product(Cj-iSj)",
+      "measured_value": null,
+      "uncertainty": "Conditional sensor bound in ACQUISITION_CONTRACT.json",
+      "source_refs": [
+        "parent",
+        "local"
+      ],
+      "assumption_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dependency_ids": [
+        "channels"
+      ],
+      "normalization": "active norm; harmonic line projected out"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "parent",
+      "url_or_repo_path": "experiments/qpb1-finite-window/README.md",
+      "version_or_commit": "53460195f74411ce764b24e0ab9d4fd772c4bd6f",
+      "section_or_object_id": "sections1,3-5",
+      "source_status": "READ_ONLY_DEPENDENCY"
+    },
+    {
+      "source_id": "local",
+      "url_or_repo_path": "experiments/qpb1-local-generators/audit.py",
+      "version_or_commit": "53460195f74411ce764b24e0ab9d4fd772c4bd6f",
+      "section_or_object_id": "carrier and local-generator definitions",
+      "source_status": "READ_ONLY_DEPENDENCY"
+    },
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "version_or_commit": "53460195f74411ce764b24e0ab9d4fd772c4bd6f",
+      "section_or_object_id": "G06,O09-O14,Q282-Q288,Q339; thirteen literal selected rows",
+      "source_status": "READ_ONLY_DEPENDENCY"
+    },
+    {
+      "source_id": "manifest",
+      "url_or_repo_path": "experiments/qpb1-overlap-acquisition/SOURCES.json",
+      "version_or_commit": "this task version1.0",
+      "section_or_object_id": "21 pinned sources and two byte-matched attachments",
+      "source_status": "CURRENT_TASK_PROVENANCE"
+    }
+  ],
+  "assumptions": [
+    "Filled-tetrahedron real15-register carrier, ascending orientations, Euclidean metric, J=A/2, rank14 active projector P; harmonic line separate.",
+    "Calibrated simultaneous signed raw amplitude access to all15registers; one-hop incidence decoder, not a physical transducer derivation.",
+    "Parent finite-window preparation ball rho1/10, commuting gain errors1/100, native |T-2pi|<=1/100, M128 and max gapT_plus/128 retained.",
+    "Raw active norm in[9/10,11/10]; b-bit nearest-even uniform sampling range[-2,2), no saturation; decoded norm qualification(4/5,6/5).",
+    "Combined per-register raw sensor and decoded-reference perturbation <=r; additional quantization half-step counted once. Default reference storage is bit-exact classical words.",
+    "No unbudgeted readout loading, synchronization, gain/metric/calibration errors, or mode-mixing terms; such errors require a new combined dynamics/sensor bound."
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/fraction arithmetic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Rational matrix identities and bounds; integer decoder, gates and phase direction"
+    },
+    {
+      "technique": "factorization/gcd",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Positive gcd reduction of Gaussian integer pair preserves phase direction; no prime numerical coincidence search"
+    },
+    {
+      "technique": "clock/modular arithmetic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "129 ordered common-instant snapshots; phase modulo2pi, no lifted winding"
+    },
+    {
+      "technique": "topological/incidence analysis",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "15simplices, one-hop Hasse support, active/harmonic separation"
+    },
+    {
+      "technique": "spectral/linear algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Rank14 coisometry and rank12/13 omissions; inherited three commuting sectors"
+    },
+    {
+      "technique": "statistical inference/fit",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "Deterministic bounded error; no measurements or stochastic independence used"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "15 raw samples ->7*(q,p)=14 active channels;128links+1endpoint",
+    "reduced_expression": "zeta=(31/2)*(r+2/2^b)/(9/10)",
+    "factor_origins": [
+      "15 carrier registers",
+      "7 oriented anchors",
+      "2 from J=A/2 and unitDelta/2",
+      "31/8 rational upper bound sqrt15",
+      "129 factors in Gaussian integer phase product"
+    ],
+    "factorization": "No physically motivated prime factorization question; powers of2 originate solely in chosen ADC resolution.",
+    "divisibility_gcd_lcm": "gcd(abs(ReB),abs(ImB))>0 divides both components; positive division leaves direction unchanged."
+  },
+  "clock_receipt": {
+    "clock_type": "native continuous dynamics with simultaneous discrete acquisition",
+    "modulus": "2pi for phase only",
+    "residue_convention": "Gaussian integer direction; optional principal atan2 display",
+    "update_rule": "128links, maxnativegap<=T_plus/128",
+    "initial_phase": "arbitrary comparison-frame phase; parent reference state retained",
+    "coupling": "commuting local gains inherited; acquisition coupling assumed unloaded",
+    "period_claim": "No exact recurrence required",
+    "physical_unit_map": "OPEN; no seconds or physical action inferred"
+  },
+  "dynamics_readout": {
+    "state_space": "E=imP rank14; raw C15 with harmonic kernel separated",
+    "generator_or_update": "sum g_k(s) K_k; g*=(1,1,3/2), |g-g*|<=1/100",
+    "initial_boundary_conditions": "(e01+top)/sqrt2 plus active perturbation<=1/10;|T-2pi|<=1/100",
+    "conservation_and_sources": "raw norm and sector fractions conserved in assumed unloaded commuting model",
+    "projection_and_kernel": "T^TT=P; kernel harmonic; edge-only rank12",
+    "physical_mapping": "OPEN; signed observation and reference memory not derived from physical meter"
+  },
+  "target_exposure": {
+    "status": "EXPLORATORY_AFTER_PARENT_BUDGET_AND_REFERENCE_PHASE",
+    "known_targets": [
+      "parent phase budget1/250rad, overlaps1e-3endpoint/1e-6link",
+      "reference phase exp(-2pi*i*r_hidden)"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "b26/r=smin/32000000 to meet strict parent1e-6 overlap budget",
+      "b21/r=smin/8000000 is an explicit reallocated protocol; not strict parent compliance",
+      "No empirical fit, optimization or physical sensor accuracy measured"
+    ],
+    "search_domain_and_budget": "Four explicit bit/budget comparisons:26,25 strict and21,20 amended; no optimum claimed",
+    "selection_criterion": "Exact sufficient inequality and visibility gates",
+    "baseline": "Parent ideal full-active-overlap readout; stock-only and incomplete linear readout are scoped negative controls"
+  },
+  "calculation_steps": [
+    "Pin21sources and13literal ledger rows; compare two supplied attachments to imports.",
+    "Construct exact local T and verify coisometry, decoder/reconstruction/overlap andS4 covariance.",
+    "Prove stock-only and m<14linear-snapshot obstructions under stated hypotheses.",
+    "Bound raw, normalized and overlap errors; propagate via parent continuous gain/sampling certificate.",
+    "Implement streaming Gaussian integer phase and exact gates, nearest-even quantizer; run232synthetic windows and replay integer witness."
+  ],
+  "result": {
+    "exact_expression": "TT^T=I14,T^TT=P; STRICT_A zeta=4707443/4718592000000; REALLOCATED_B zeta=2707571/147456000000",
+    "approximation": "phase bounds approx0.001597183 and0.003838092rad, rounded upward",
+    "units": "native dimensionless amplitude and phase radians",
+    "precision_and_error": "Exact rational analytic certificate; exact post-digitization integer output; binary64 synthetic sources/display checked separately at5e-11rad",
+    "scope": "Full signed active information access assumed;26bitstrict and21bitamended sufficient designs",
+    "physical_interpretation": "HYPOTHESIS; sensor realizationOPEN,UNSCORED,promotion0"
+  },
+  "verification": [
+    {
+      "method": "Rational identities/bounds and integer acquisition audit; binary64 trajectory cross-check distinguished",
+      "command_or_proof_path": "python3 experiments/qpb1-overlap-acquisition/audit.py --out /workspace/scratch/ed44232d6ecb/overlap-acquisition-outputs; README sections1-5",
+      "source_revision": "53460195f74411ce764b24e0ab9d4fd772c4bd6f plus captured task inputs",
+      "actual_result": "PASS21hashes,13rows,rank14/12/13,100decode,24S4,420quantizer,232windows,exactwitnessreplay,3negativecontrols",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Equal stocks for e01+e02/e01-e02, overlaps1/0 against fixed reference.",
+    "Any real linear snapshot m<14 has indistinguishable normalized active states with different reference overlaps.",
+    "25bits do not meet sufficient strict overlap budget;20bits do not meet amended total bound; no impossibility or optimality claim.",
+    "SATURATED,LOW_SUPPORT,LOW_VISIBILITY and exact gate equalities reject phase."
+  ],
+  "limitations": [
+    "Signed simultaneous amplitude access, analog accuracy/calibration and no readout loading are assumed.",
+    "Classical bit-exact reference retention has no demonstrated physical lifetime/fault tolerance/erasure cost.",
+    "Quantizer does not commute with arbitrary continuous frame rotations; each reacquisition is a new bounded dataset.",
+    "No arbitrary mode mixing, metric drift, physical clock/action/eta_A or empirical bridge.",
+    "No independent reviewer or empirical replication; synthetic finite cases do not prove continuous domain."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-overlap-acquisition-20261023-a1/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Specify explicit local meter/reference coupling and bound loading, synchronization and calibration against the signed acquisition contract, including the hidden pair; priority94."
+}
