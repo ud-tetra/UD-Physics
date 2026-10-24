@@ -1,0 +1,33 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphtrafficidx-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute plus GitHub connector write",
+  "task": "integration-graphite-traffic-source-20261024",
+  "goal": "Index the typed traffic and contractible circulation result in graphite study",
+  "created_at": "2026-10-24T17:34:13.019306+00:00",
+  "base_revision": "907a64c93f189b440e759be94d62078a6b6deb9d",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/integration-graphite-traffic-source-20261024",
+    "held_sha": "7990096a11df5e6630c4bf9326d522d3555a8991",
+    "status": "held"
+  },
+  "checks": ["scripts/validate.py PASS (260 records)", "16 unit tests PASS", "git diff --check PASS", "independent physics review NOT_RUN"],
+  "finding": "Traffic source result indexed without physical promotion.",
+  "next_action": "Derive native route/rates and material map before paper revision and held-out force test.",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A editorial integration",
+    "exactness_or_precision_plan": "link verified merged research receipt; no new calculation",
+    "applicable_methods": [
+      "N/A new theorem"
+    ],
+    "clock_metric_units_conventions": "inherit linked candidate; no new physical clock or material normalization"
+  },
+  "checkpoint_at": "2026-10-24T17:34:36.126882+00:00",
+  "checkpoint_source": {
+    "revision": "907a64c93f189b440e759be94d62078a6b6deb9d",
+    "dirty": true
+  }
+}
