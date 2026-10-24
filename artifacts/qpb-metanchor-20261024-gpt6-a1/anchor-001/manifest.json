@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb-metanchor-20261024-gpt6-a1",
+  "run_id": "anchor-001",
+  "created_at": "2026-10-24T20:27:33.668Z",
+  "evidence": "EXACT",
+  "summary": "Exact BIPM/NIST charge-flux conditional action identification, native noncompactness obstruction, periodic higher-harmonic null and scale freedom",
+  "command": "python3 experiments/qpb-metrology-anchor/anchor_audit.py --out /tmp/qpb-metrology-anchor-001.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON; identical bytes captured; command is repository-root reproduction equivalent",
+  "source": {
+    "revision": "c891fb615a9a364916f6588db420b70385edf94e",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "anchor-audit",
+      "name": "anchor_audit.py",
+      "path": "inputs/anchor_audit.py",
+      "sha256": "a74484324edeab1062090a6030c5139b6bc9e29e6fa963332833c48e7f532c38",
+      "size_bytes": 6405,
+      "source_location": "repository",
+      "source_path": "experiments/qpb-metrology-anchor/anchor_audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/result.json",
+      "sha256": "5a7077ef691ebaf8e2d39f2a248ec4d9d8e9c61f516b5eac28bc92fe258e23e0",
+      "size_bytes": 5079
+    }
+  ]
+}
