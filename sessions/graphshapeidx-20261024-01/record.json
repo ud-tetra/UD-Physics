@@ -8,15 +8,20 @@
   "created_at": "2026-10-24T16:36:28.004728+00:00",
   "base_revision": "d25d7b033a2e429a50d00d0edc2936bf2ac7b291",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "ref": "refs/heads/claims/integration-graphite-directional-shape-20261024",
     "held_sha": "77e558b491d7bb75532896906466eb6f617e0eb9",
-    "status": "held"
+    "status": "released",
+    "release_sha": "67f6869dfdcb6c408590be1d9ee4d10b79df2e97"
   },
-  "checks": [],
-  "finding": "Exact conditional amplitude-free direction control indexed as follow-up; UD residual open.",
-  "next_action": "Merge index PR and release claim; independent contact, direction-force and linewidth measurements needed for held-out test.",
+  "checks": [
+    "scripts/validate.py PASS (234 records)",
+    "16 unit tests PASS",
+    "GitHub Discovery integrity workflow 40112414090 success"
+  ],
+  "finding": "Directional conventional control indexed in PR #131 at d44a896198aaf28c15446088367bf75da37a010b; UD residual remains open.",
+  "next_action": "Measure matched contact direction-resolved power and independent tau, reserve speeds and pressure for held-out test.",
   "mathematical_profile": {
     "coefficient_domain": "no new mathematics; index exact conditional result from research PR #129",
     "exactness_or_precision_plan": "validate text and links only",

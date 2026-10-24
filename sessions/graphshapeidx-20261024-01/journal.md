@@ -19,3 +19,7 @@ Indexed merged conventional direction-ratio result PR #129 into graphite paper v
 Checkpoint (handoff): Exact conditional amplitude-free direction control indexed as follow-up; UD residual open.
 
 Next: Merge index PR and release claim; independent contact, direction-force and linewidth measurements needed for held-out test.
+
+## Release and integration
+
+PR #131 merged at d44a896198aaf28c15446088367bf75da37a010b after Discovery integrity workflow 40112414090 succeeded. Integration claim released at 67f6869dfdcb6c408590be1d9ee4d10b79df2e97 by exact-head lease. No independent physics review; physical promotion 0.
