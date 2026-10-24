@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-graphite-native-support-current-20261024",
+  "session": "graphsupportidx-20261024-01",
+  "created_at": "2026-10-24T17:47:32.837Z",
+  "base_revision": "afaa6d406c6face2f7da7399b55267a989f7632d",
+  "owned_paths": [
+    "tasks/integration-graphite-native-support-current-20261024.json",
+    "sessions/graphsupportidx-20261024-01/",
+    "experiments/graphite-manuscript-v2/README.md",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
