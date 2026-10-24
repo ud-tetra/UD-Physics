@@ -1,0 +1,20 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-endogenous-gate",
+  "session_id": "graphendog-20261024-01",
+  "question": "Can a deterministic C3-equivariant local contact rule select a single edge from the symmetric packet and activate a harmonic readout?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT", "CONDITIONAL", "FAILED", "OPEN"
+  ],
+  "assumptions": ["formal honeycomb C0/C1/C2 carrier and unit native couplings", "symmetric A0 packet and deterministic unique C3-equivariant mask update", "threshold u_e=((B1^T x)_e)^2+y_e^2 with illustrative tau for counterexample"],
+  "physical_mapping": "graphite boundary/drive, mask actuator, dimensional time, energy/force and complex loss OPEN",
+  "target_exposure": "21.8/38.2 degree signals and weak load response known; no threshold or coefficient fitted to them",
+  "fitted_choices": ["none; tau=1/2,3/2,5/2 are illustrative rational threshold witnesses"],
+  "sources": ["supplied ledger v0.39(2) SHA-256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63 Q166/Q167/Q170", "graphite-native-gate-dynamics merged prior at base ba13108ff2b30d2e1d4c38286192e59bba73b1ea"],
+  "baseline": "C3 symmetric conventional local contacts and honeycomb/moiré carrier; no measured force data",
+  "result": "FAILED as standalone one-edge selector: every deterministic C3-equivariant gate from a symmetric seed preserves zero harmonic readout. The explicit strain/activity threshold closes a three-edge orbit and freezes the seed at tau=1/2, or stays symmetric at tau=3/2. Exact full-chain masked stock has face-flow term 2 y^T(I-H)B2 z and fixed-state switch jump sum Delta h_e y_e^2, while full norm remains conserved.",
+  "next_discriminant": "Independently source a symmetry-breaking graphite preparation/boundary input and its gate duration, then dimensional material loss and held-out signed force/load response.",
+  "mathematical_receipts": ["candidates/graphite-endogenous-gate/mathematical_receipt.json"]
+}
