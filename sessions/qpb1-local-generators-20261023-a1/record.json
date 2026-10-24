@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-local-generators-20261023-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-local-generators-20261023",
+  "goal": "Classify local equivariant skew generators and assess detuning selection and gain robustness",
+  "created_at": "2026-10-24T00:48:54.664243+00:00",
+  "base_revision": "79fd6d6cc8f2d40d516df0074e728e3f9428f60b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-local-generators-20261023": {
+      "ref": "refs/heads/claims/qpb1-local-generators-20261023",
+      "sha": "6fa5a985ab6c9b58629ed45aac6ae74e4ef29de6",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-local-generators/audit.py --out /workspace/scratch/ed44232d6ecb/local-generator-outputs",
+      "result": "PASS16hashes,13rows,24signedS4,105skewseeds,Reynolds/characterdimension3,30gaintriples,450cuts,30metrics,3localidentities,27recurrences,6gainchallenges"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS157records,manifest digests and local documentation links"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS16tests"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL complete3gain local family; detuning source-open; arbitrarily-small gain-error exact-return phase challenge; earlier fixed-law state certificate preserved; UNSCORED,promotion0",
+  "next_action": "Define finite-window endpoint-corrected phase and gain-error/visibility contract; priority96. Rate/metric selection remains OPEN.",
+  "checkpoint_at": "2026-10-24T00:55:48.824289+00:00",
+  "checkpoint_source": {
+    "revision": "79fd6d6cc8f2d40d516df0074e728e3f9428f60b",
+    "dirty": true
+  }
+}
