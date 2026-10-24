@@ -1,0 +1,209 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "graphite-manuscript-v2-synthesis-001",
+  "session_id": "graphpaper-20261024-01",
+  "candidate_id": "graphite-manuscript-v2",
+  "question": "What remains as a specifically UD test after ordinary angle geometry and a 2D first-star passive kinetic null?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "quotient-port",
+      "symbol": "S(w)=M^T W B1^T",
+      "object_type": "hypothesized map from 14 vertex sources to 2 translation coordinates",
+      "definition": "M in ker B1 cap ker B2^T, W diagonal over 21 oriented edges",
+      "domain": "R^14",
+      "codomain": "R^2",
+      "coefficient_domain": "real; exact incidence for structural identities",
+      "units": "native unit metric; graphite energy coupling not specified",
+      "basis_orientation": "two 60-degree lateral basis directions, oriented cellular incidence",
+      "metric_measure": "unit edge, Euclidean physical map only after calibration",
+      "origin": "UD-Physics graphite source construction",
+      "exact_expression": "S(w)=0 when w uniform",
+      "measured_value": null,
+      "uncertainty": "material w unknown",
+      "source_refs": [
+        "ud-graphite-v1",
+        "ud-selection-audits"
+      ],
+      "assumption_ids": [
+        "unit-quotient",
+        "material-map-open"
+      ],
+      "dependency_ids": [],
+      "normalization": "periodic 7-cell quotient"
+    },
+    {
+      "object_id": "three-wave-null",
+      "symbol": "Gamma_N^(0)",
+      "object_type": "per-upper-atom low-speed viscous tensor of assumed conventional Debye bath",
+      "definition": "3 first-star waves, three identical independent relaxers, Lambda=lambda U1",
+      "domain": "velocity R^2",
+      "codomain": "force R^2 per upper atom",
+      "coefficient_domain": "symbolic real plus rounded DFT decimals",
+      "units": "energy time/length squared per upper atom",
+      "basis_orientation": "first-star axis, Euclidean",
+      "metric_measure": "phase average",
+      "origin": "earlier graphite-2d-relaxation exact receipt, restated in paper",
+      "exact_expression": "3 lambda^2 eta U1_N^2 g_N^2/(4 kappa^2) I2",
+      "measured_value": null,
+      "uncertainty": "contact and bath unmeasured",
+      "source_refs": [
+        "lebedeva-v1",
+        "ud-2d-receipt"
+      ],
+      "assumption_ids": [
+        "equal-bath",
+        "shared-contact-for-ratio"
+      ],
+      "dependency_ids": [
+        "PES-first-star"
+      ],
+      "normalization": "per upper atom"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "lebedeva-v1",
+      "url_or_repo_path": "https://arxiv.org/html/2511.01338v1",
+      "version_or_commit": "v1",
+      "section_or_object_id": "Eq.2 and Table4",
+      "source_status": "published DFT, rigid PES"
+    },
+    {
+      "source_id": "ud-2d-receipt",
+      "url_or_repo_path": "candidates/graphite-2d-relaxation/mathematical_receipt.json",
+      "version_or_commit": "5fd737f",
+      "section_or_object_id": "exact 2D dyad, series, ratio",
+      "source_status": "constructor checked conditional null"
+    },
+    {
+      "source_id": "ud-selection-audits",
+      "url_or_repo_path": "experiments/graphite-locality-selection/README.md",
+      "version_or_commit": "5fd737f",
+      "section_or_object_id": "N-independence and C3 zero",
+      "source_status": "conditional no-go"
+    }
+  ],
+  "assumptions": [
+    "Equal independent Debye loss channels only in conventional control; no physical calibration",
+    "UD material source S,R,K,D_h not fixed; additive linear local model only",
+    "Source-rounded U1 ratio exact as rational representation of stated rounded values"
+  ],
+  "technique_plan": [
+    {
+      "technique": "Gram matrix and Hodge ranks",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "separate conventional angle geometry from harmonic translation topology"
+    },
+    {
+      "technique": "Fourier dyad and series",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "conditional 2D drag null with angle onset"
+    },
+    {
+      "technique": "PSD Schur and source rank",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "bound physical interpretation and expose nonidentifiability"
+    },
+    {
+      "technique": "modular clocks",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no native-to-physical time map in graphite bath"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "(793/10000 / (598/100000))^2 * 7/13",
+    "reduced_expression": "651175/6877",
+    "factor_origins": [
+      "7/13 reciprocal-vector squared ratio",
+      "3965/299 source-rounded PES coefficient magnitude ratio"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "rational reduction checked by prior replay"
+  },
+  "clock_receipt": {
+    "clock_type": "physical continuous time in assumed conventional bath; UD clock OPEN",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "eta qdot=-partial_q E",
+    "initial_phase": "phase average",
+    "coupling": "lambda U1 cosine",
+    "period_claim": null,
+    "physical_unit_map": "tau=eta/kappa, assumed physical time"
+  },
+  "dynamics_readout": {
+    "state_space": "r in R2 externally prescribed, q in R3; UD port native vertex R14 to translation R2",
+    "generator_or_update": "three passive first-order relaxers; UD material response conditional Schur complement",
+    "initial_boundary_conditions": "steady translation, phase average; periodic honeycomb quotient",
+    "conservation_and_sources": "nonnegative P_d; closed D_h=0 gives no Ohmic drag",
+    "projection_and_kernel": "uniform source S=0; rank-two nonuniform port with unrestricted passive bath no tensor selectivity",
+    "physical_mapping": "contact number and force transfer OPEN"
+  },
+  "target_exposure": {
+    "status": "exposed development target",
+    "known_targets": [
+      "paired 21.8/38.2 peaks",
+      "weak reported load dependence",
+      "N13 other patterns undetected in PRL abstract"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "seven-index candidate chosen after observation; no kinetic parameter fit"
+    ],
+    "search_domain_and_budget": "not a search; synthesis of published development controls",
+    "selection_criterion": "self-consistency and explicit held-out protocol",
+    "baseline": "three-wave conventional null plus other contact/loss unknown"
+  },
+  "calculation_steps": [
+    "Use 60-degree Gram: p=2a1+a2, q=a1+2a2, dot=13a2/2 and norm2=7a2",
+    "Reuse exact first-star dyad, series, ratio from prior frozen receipt and replay",
+    "Apply N7/13/19 topology and source locality counterexamples before material interpretation",
+    "Differentiate low-speed Gamma at fixed N,a to expose unknown load contributions"
+  ],
+  "result": {
+    "exact_expression": "cos(theta)=13/14; Gamma7/Gamma13=651175/6877 only under equal shared bath; first cos6phi term P/(C g2 v2)=(3/32)z4 cos6phi",
+    "approximation": "21.7867893 degrees; 38.2132107 degrees; conditional ratio 94.688818",
+    "units": "angle degrees; dimensionless ratio; Gamma per atom energy time/length2",
+    "precision_and_error": "ratio from rounded DFT coefficients; fit RMS not coefficient error bars",
+    "scope": "development synthesis, no new measurement or UD-specific magnitude",
+    "physical_interpretation": "UD residual OPEN"
+  },
+  "verification": [
+    {
+      "method": "exact replay",
+      "command_or_proof_path": "python3 experiments/graphite-2d-relaxation/replay_two_dimensional.py",
+      "source_revision": "5fd737f",
+      "actual_result": "PASS_EXACT_2D_FIRST_STAR_RELAXATION",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "LaTeX two passes and Poppler render",
+      "command_or_proof_path": "pdflatex twice, pdfinfo, pdftoppm, visual pages 1-3",
+      "source_revision": "working branch",
+      "actual_result": "PASS, three-page readable PDF",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "uniform incidence source zero for N7/13/19; topology not angle selective",
+    "pure-source relations violated by archived KC reconstruction; additive subtraction required",
+    "4.33 and 94.69 controls disagree due to inequivalent coupling map, not measured evidence"
+  ],
+  "limitations": [
+    "force and detector threshold unavailable through public abstract",
+    "DFT lateral line leaves transverse Hessian open",
+    "complex loss, contact, pressure derivatives and physical UD source unsourced",
+    "independent physics review NOT_RUN"
+  ],
+  "changed_dependencies": [
+    "v1 paper is superseded as working synthesis, retained unaltered"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/graphpaper-20261024-01/revision-001/manifest.json"
+  ],
+  "next_discriminant": "Independently calibrate 2D PES, complex loss, contact and source, then freeze signed paired/control force and pressure forecast."
+}

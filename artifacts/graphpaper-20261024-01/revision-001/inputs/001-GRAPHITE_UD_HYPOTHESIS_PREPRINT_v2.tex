@@ -1,0 +1,147 @@
+\documentclass[9pt,a4paper,twocolumn]{extarticle}
+\usepackage[margin=18mm,top=19mm,bottom=20mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{amsmath,amssymb,booktabs,microtype,graphicx,hyperref}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\hypersetup{colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=black}
+\setlength{\columnsep}{7mm}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\title{Commensurate graphite friction at complementary twist angles:\\a conditional harmonic-port hypothesis after two-dimensional controls}
+\author{Ben W. Mayes\\\small Unified Dynamics Research Program}
+\date{Revised Discovery working preprint, 24 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Graphite shows detectable friction peaks at $21.8^\circ$ and $38.2^\circ$ with negligible reported load dependence. Their positions follow exactly from the ordinary $(2,1)$ triangular coincidence lattice. A seven-cell honeycomb quotient has a two-dimensional harmonic translation space, but the same topology and uniform-source cancellation occur at other commensurate indices. We formulate a conditional Unified Dynamics (UD) source port and state its falsifiable restrictions. A conventional three-wave potential coupled to three independent relaxing modes gives an isotropic low-speed drag tensor and a sixfold directional term first at sixth order in dissipated power. Published rounded rigid Fourier coefficients imply a conditional 7-to-13 viscous ratio of 94.69 under a shared bath and contact, whereas an inequivalent scalar-cut transfer gives 4.33. Neither is a measured friction ratio. The available first-principles line scans do not fix transverse saddle stability, and no independently determined material source, complex loss matrix, contact transfer or held-out force traces close the remaining kinetic residual. We state a measurement and forecast protocol that could reject the UD bridge without attributing ordinary moir\'e effects to it.
+\end{abstract}
+\noindent\textbf{Keywords:} structural superlubricity; graphite; commensurate moir\'e; discrete Hodge theory; friction; model identifiability.
+
+\section{Observation and geometric null}
+Chen \emph{et al.} report sharp friction peaks at the complementary twist angles $21.8^\circ$ and $38.2^\circ$, with negligible reported load dependence relative to the coaligned state; other tested commensurate $(m,n)$ patterns have no detectable signal \cite{chen}. A peak is a small residual force, not identically zero friction. The accessible abstract supplies no force table, uncertainty, speed-resolved trace, or measured mode linewidth for a numerical kinetic residual.
+
+Let $a_1,a_2$ be equal primitive vectors separated by $60^\circ$. The two lattice directions $p=2a_1+a_2$ and $q=a_1+2a_2$ satisfy $|p|^2=|q|^2=7a^2$ and $p\cdot q=13a^2/2$. Hence
+\begin{equation}
+ \begin{aligned}
+ \theta &= \cos^{-1}(13/14)=21.7867893\ldots^\circ,\\
+ 60^\circ-\theta &=38.2132107\ldots^\circ.
+ \end{aligned} \label{eq:angle}
+\end{equation}
+The $60^\circ$ sum is the symmetry of the triangular Bravais lattice. Conventional moir\'e registry physics already accounts for the angular locations; it cannot be counted again as a UD-specific result. The coincidence index is seven and the ideal honeycomb quotient contains fourteen atoms per layer.
+
+\section{A geometric translation port}
+On a periodic seven-hexagon honeycomb quotient, the cellular counts are $(V,E,F)=(14,21,7)$. The oriented boundary operators obey $B_1B_2=0$ and have ranks $13$ and $6$, so
+\begin{equation}
+ \dim H^1=21-13-6=2,\quad H^1=\ker B_1\cap\ker B_2^T. \label{eq:h1}
+\end{equation}
+For the unit-edge metric, an explicit embedding $M$ of the two lateral coordinates obeys $B_1M=0$, $B_2^TM=0$, and $M^TM=\frac72G$, where $G=\bigl(\begin{smallmatrix}1&1/2\\1/2&1\end{smallmatrix}\bigr)$ is the planar lattice Gram matrix \cite{udrecord}. This is a geometric encoding of ordinary relative translation. A closed unit-metric Hodge--Dirac generator annihilates that harmonic sector; it supplies neither interlayer energy nor Ohmic drag.
+
+A possible UD source restriction is more specific. Assign edge weights $W=\operatorname{diag}(w_e)$ and define the projected incidence-source map
+\begin{equation}
+ S(w)=M^TWB_1^T. \label{eq:source}
+\end{equation}
+For a uniform weight $w_e=w$, $S(w)=w(B_1M)^T=0$. In a seven-orbit construction, its isotropic quadratic strength can be written $\alpha(w)=\frac14\sum_{i<j}c_{ij}(w_i-w_j)^2$ with $c_{ij}\geq0$ \cite{udrecord}. Thus source contrast is necessary for \emph{this} selected port. The physical edge weights and their coupling to phonons are additional, measurable constitutive inputs. Ordinary heterogeneous interfaces can obey the same symmetry, so the zero rule alone is not distinctive evidence for UD.
+
+\textbf{Selection obstruction.} The periodic honeycomb quotients at coincidence indices $N=7,13,19$ all have $b_1=2$, and uniform weights annihilate the same projected source. A fixed, finite-range translation-covariant incidence-gradient stencil has an $N$-independent normalized zero-sector port: threefold-symmetric coefficients cancel at all three quotients, while a fixed directional imbalance activates all three \cite{udphysics}. Even registry-varying weights with a uniform input cancel when the three bond-direction averages agree. A nonuniform input can couple through opposite quotient Fourier characters, but a seven-only character match chosen after inspecting the peaks is a fit, and the physical wavelengths change with $N$. Thus neither the $60^\circ$ pairing nor the simple port singles out the seven-cell signal.
+
+\section{Material response and conventional baseline}
+Let $x$ denote two lateral translations and $h$ internal coordinates. A stable local energy has lateral block $H_{xx}$, internal block $K\succ0$ and mixed block $C$. Relaxation and an independently established passive internal Rayleigh matrix $D_h\succeq0$ give
+\begin{align}
+ H_{xx}^{\rm rel}&=H_{xx}-CK^{-1}C^T,\label{eq:schur}\\
+ \Gamma_{\rm add}&=CK^{-1}D_hK^{-1}C^T\succeq0.\label{eq:gamma}
+\end{align}
+These are conditional linear-response relations. A finite closed model has $D_h=0$ and no DC Ohmic coefficient. At a threefold-fixed registry, a scalar height cannot bilinearly couple to the lateral two-dimensional representation; a height doublet can. Nothing in Eq.~\eqref{eq:h1} fixes $C$, $K$, $D_h$, the sliding contact, or a force at finite speed. In fact, when a nonuniform source has rank two, an unrestricted passive bath realizes \emph{every} positive-semidefinite two-dimensional $\Gamma_{\rm add}$. The source alone cannot establish the amplitude, load derivative, or UD attribution \cite{udphysics}.
+
+A published Kolmogorov--Crespi (KC) calculation and a vdW-DF3 first-principles study disagree strongly on the $(2,1)$ shear scale: a registered KC-plus-plate example gives $8.73\,{\rm cm}^{-1}$ for two mobile layers, while vdW-DF3 reports $0.404$--$0.590\,{\rm cm}^{-1}$ across distinct relaxation protocols \cite{minkin,lebedeva,udrecord}. Their separations and mechanical constraints also differ. The example is therefore a sensitivity demonstration, not a graphite calibration of Eq.~\eqref{eq:gamma}.
+
+Within the type-II \emph{first-harmonic} potential used in the vdW-DF3 analysis, the ideal rigid shear frequency $\widetilde\nu$ and static minimum-path shear strength $\tau$ obey the amplitude-free relation
+\begin{equation}
+ \frac{\tau}{\widetilde\nu^2}=
+ 8.48565\times10^4\ \frac{\mathrm{Pa}}{(\mathrm{cm}^{-1})^2}
+ \quad (N_c=7,\ a=2.4660\,\text{\AA}).\label{eq:static}
+\end{equation}
+For fixed $a$ and unchanged registry branch, $d\ln\tau/dP=2d\ln\widetilde\nu/dP$; if $a$ changes, subtract $d\ln a/dP$. This tests one conventional static model, not kinetic friction. The relation is undefined at a branch inversion where the harmonic amplitude crosses zero \cite{lebedeva,udrecord}.
+
+\section{A two-dimensional passive kinetic control}
+The published rigid first-star potential per upper atom is
+\begin{equation}
+ U_0(\mathbf r)=U_{1,N}\sum_{j=1}^{3}\cos(\mathbf g_j\cdot\mathbf r),\qquad
+ |\mathbf g_j|=g_N=\frac{4\pi\sqrt N}{\sqrt3a},
+ \label{eq:star}
+\end{equation}
+with three axes separated by $60^\circ$; an origin or phase choice gives the form $U_1[2\cos(k_yy)\cos(k_xx)+\cos(2k_yy)]$ of Ref.~\cite{lebedeva}. This is a \emph{rigid static} PES. To make a deliberately simple conventional kinetic null, assume three independent dimensionless coordinates $q_j$, identical stiffness $\kappa>0$, Rayleigh coefficient $\eta\geq0$, coupling $\lambda$, and prescribed translation $\mathbf r=\mathbf r_0+\mathbf vt$:
+\begin{equation}
+ E=U_0(\mathbf r)+\sum_j\left[\frac{\kappa q_j^2}{2}-\lambda U_{1,N}q_j\cos(\mathbf g_j\cdot\mathbf r)\right],\quad
+ \eta\dot q_j=-\partial_{q_j}E.\label{eq:bath}
+\end{equation}
+The $q_j$ coupling is an assumption, not a deduction from the static DFT potential. Write $t_b=\eta/\kappa$ (a physical relaxation time), $C_N=\lambda^2U_{1,N}^2\eta/(2\kappa^2)$ and $\omega_j=\mathbf g_j\cdot\mathbf v$. The velocity-odd, phase-averaged dissipative force and power are exactly
+\begin{equation}
+ \mathbf F_d=-C_N\sum_j\frac{\mathbf g_j\omega_j}{1+t_b^2\omega_j^2},\quad
+ P_d=-\mathbf F_d\cdot\mathbf v=C_N\sum_j\frac{\omega_j^2}{1+t_b^2\omega_j^2}\geq0.
+ \label{eq:drag}
+\end{equation}
+An unaveraged transverse stationary mode may retain a conservative force; Eq.~\eqref{eq:drag} is not a full force trajectory. The dyad $\sum_j\mathbf g_j\mathbf g_j^T=(3g_N^2/2)I_2$ gives
+\begin{equation}
+ \Gamma_N^{(0)}=\frac{3\lambda^2\eta U_{1,N}^2g_N^2}{4\kappa^2}I_2.\label{eq:visc}
+\end{equation}
+For speed $v$, direction $\phi$ relative to a first-star axis and $z=g_Nvt_b$, the directional onset is
+\begin{equation}
+ \frac{P_d}{C_Ng_N^2v^2}=\frac32-\frac98z^2+
+ \left(\frac{15}{16}+\frac{3}{32}\cos6\phi\right)z^4+O(z^6).
+ \label{eq:sixfold}
+\end{equation}
+The first directional term is $v^6$ in power ($v^5$ in force). Threefold symmetry generally forces an invariant \emph{linear} drag tensor to be isotropic, though the scalar in Eq.~\eqref{eq:visc} depends on this equal-channel bath.
+
+Ref.~\cite{lebedeva}, Table 4, reports rounded rigid $U_{1,7}=+0.0793$ and $U_{1,13}=-0.00598\,\mu{\rm eV}$/atom. Under \emph{shared} $\lambda,\eta,\kappa$, low speed and identical per-atom contact transfer, Eq.~\eqref{eq:visc} gives the source-rounded ratio
+\begin{equation}
+ \frac{\Gamma_7^{(0)}}{\Gamma_{13}^{(0)}}=
+ \left(\frac{0.0793}{0.00598}\right)^2\frac7{13}
+ =\frac{651175}{6877}\simeq94.69.\label{eq:ratio}
+\end{equation}
+The sign reversal of $U_1$ is lost on squaring. A preceding one-coordinate control that instead equates gradient coupling to the \emph{minimum-path static shear strength} gives about $4.33$ under its own common-bath assumptions \cite{udphysics}. The two choices map different static observables to a dissipative mode and cannot be compared as measured kinetic ratios. At finite $v$, $g_Nvt_b$ changes with $N$, so even Eq.~\eqref{eq:ratio} ceases to apply. At fixed $N$ and low speed, with pressure $P$ and fixed lattice scale,
+\begin{equation}
+ \partial_P\ln\Gamma_N^{(0)}=2\partial_P\ln|U_{1,N}|+
+ 2\partial_P\ln|\lambda|+\partial_P\ln\eta-2\partial_P\ln\kappa.
+ \label{eq:load}
+\end{equation}
+The near-zero experimental slope constrains this entire combination in a calibrated readout; none of the four derivatives has been determined for this contact. A passive conventional response can therefore mimic low drag, weak load response and sixfold directionality without a UD term.
+
+\section{What the first-principles archive determines}
+The public vdW-DF3 lateral scans at 3.4022 and 3.34\,\AA\ have 37 completed points each. Replaying their full profiles yields $U_1=0.0793397$ and $0.166933\,\mu{\rm eV}$ per upper atom. Their first-harmonic ideal static strengths are $1.3866\times10^4$ and $2.9175\times10^4\,{\rm Pa}$, a ratio $2.1040$ for an ideal rigid compression to roughly $0.72$--$0.74\,{\rm GPa}$ \cite{lebedeva,zenodo,udrecord}. It is a finite model ratio, not a local derivative or a measured load response of the friction peaks.
+
+The six SHA-checked archived sets contain 250 input geometries and 221 available XML output geometries, but all first-carbon lateral markers are collinear with one high-symmetry line to floating precision \cite{udrecord,zenodo}. No sampled energy directly measures its transverse curvature. In first-shell phases $u=k_xx'$, $v=k_yy'$, a sixfold-compatible perturbation
+\begin{equation}
+ F(u,v)=[1-\cos(u-3v)][1-\cos(u+3v)][1-\cos(2u)] \label{eq:null}
+\end{equation}
+vanishes on the entire sampled line $u=3t,\ v=2\pi/3+t$ and leaves the AB local Hessian unchanged. At the line's candidate saddle, the transverse Hessian of $U_1f+\varepsilon F$, with $f=2\cos v\cos u+\cos2v$, is $k_y^2(6U_1+48\varepsilon)$. Its sign changes at $\varepsilon/U_1=-1/8$. This is an algebraic non-uniqueness example, \emph{not} an inferred graphite harmonic. Even a finite set of off-line energy and force probes cannot uniquely fix the infinitesimal Hessian without a declared Fourier or smoothness bound \cite{udrecord}.
+
+\section{A discriminating measurement sequence}
+\textbf{Static PES control.} Recalculate the published 3.4022\,\AA\ index-30 configuration and four source-matched positions with the fourteen upper atoms shifted by $\pm0.04$ and $\pm0.08\,\text{\AA}$ along $n=(1/2,-\sqrt3/2)$. Use matched pseudopotential, cutoffs, k mesh, vacuum, and full-precision QE XML energy. With $D(h)=E(h)+E(-h)-2E(0)$ per upper atom, the fitted first-shell model predicts $D(0.08\,\text{\AA})=+0.0450423\,\mu{\rm eV}$. The illustrative $\varepsilon=-0.2U_1$ in Eq.~\eqref{eq:null} predicts $-0.0127457\,\mu{\rm eV}$. A negative resolved contrast establishes an off-line energy decrease at that finite step. The actual calculation has not been run. The two-step local-Hessian extrapolation requires a validated higher-derivative bound and correlated-error accounting; at a hypothetical independent per-energy uncertainty of $0.001\,\mu{\rm eV}$, the example's extrapolated negative curvature is only $2.17$ standard deviations from zero before truncation error \cite{udrecord}.
+
+\textbf{Dynamic loss control.} At each angle and pressure, measure a background-subtracted small-amplitude complex lateral force response about a single registry, plus the mode-resolved internal stiffness and linewidths. The model's quadrature force and loss per cycle at drive amplitude $A$ and angular frequency $\omega$ are $|F_Q|=14A\omega\Gamma_{\rm add}$ and $W_{\rm cycle}=14\pi A^2\omega\Gamma_{\rm add}$ for one ideal 14-upper-atom cell. These are local oscillatory observables, not a steady sliding-force prediction. Contact edges, substrate loss and direct lateral damping must be included in the ordinary baseline.
+
+\textbf{Held-out UD test.} Before viewing paired-angle kinetic-force curves, source the edge weights and the material bath independently. A restrictive candidate is $C=S(w)R$, with independently specified mode map $R$. Equations~\eqref{eq:source} and \eqref{eq:gamma} then imply
+\begin{equation}
+ \Gamma_{\rm port}=S(w)\mathcal L S(w)^T,\quad
+ \mathcal L=RK^{-1}D_hK^{-1}R^T\succeq0.\label{eq:test}
+\end{equation}
+It predicts a zero contribution for uniform source weights and a positive-semidefinite \emph{local linear} drag tensor for an additive passive channel. Its finite-speed force and load slope do not follow from this tensor alone. In the seven-orbit pure-source construction, two exact linear relations constrain six coupling coordinates inside an eight-dimensional symmetry-allowed 14-site coupling space \cite{udphysics}; an archived KC reconstruction violates both, so any additive UD test must subtract a separately fixed conventional coupling and propagate its error. Freeze $S,R,K,D_h$, mode mixing, contact controls and a finite-speed force protocol using independent data. Then forecast the \emph{signed} $F_{\rm obs}-F_{\rm conventional}$ at both complementary angles, off-peak controls and at least one other commensurate index, along with pressure and velocity dependence, before viewing held-out traces. Report the detector threshold for non-detections. A flexible conventional bath can realize the same positive tensor; Eq.~\eqref{eq:test} is specifically UD-testable only through independently fixed source restrictions and out-of-sample predictive success. Failure of the source span, loss spectrum or held-out signed forecast rejects or narrows this material bridge. The supplied UD coefficient ledger v0.39(2), Q22, does not derive the required nonuniform edge stiffness; Q77--Q84 have conditional phase kernels but no graphite source-to-bath or physical linewidth map \cite{udledger}.
+
+\section{Conclusion}
+The $60^\circ$ pairing selects a planar triangular/honeycomb description and is already explained by lattice geometry. The finite carrier supplies a precise translation port and a conditional source-selection rule, but the same simple topology occurs at other indices. A two-dimensional passive conventional model supplies explicit velocity, direction and pressure controls without fitting a UD channel. The first-principles line scans leave transverse stability open, and rigid Fourier coefficients do not determine kinetic friction. UD becomes a useful physical hypothesis if a separately sourced material port and complex loss matrix forecast a signed, pressure-dependent force residual across held-out angles and controls. No such parameter-free forecast follows from the current record.
+
+\section*{Data and reproducibility}
+The exact finite constructions, numerical replays, passive one- and two-dimensional controls, source failures and their manifests are retained in the UD-Physics Discovery repository \cite{udphysics}; the original QE data are archived separately \cite{zenodo}. The earlier two-page paper \cite{udrecord} is preserved as v1. The ratio and expansion here are independently algebraically checkable from the stated assumptions; they are not independent experimental replication. No experimental force table, new off-line DFT run or independent physics review is included. Physical promotion remains zero.
+
+\begin{thebibliography}{9}\setlength{\itemsep}{0pt}
+\bibitem{chen} W. Chen, J. Wang, Q. Zheng, and Z. Wu, ``Observation of Superlubricity at Commensurate Moir\'e Graphite Interfaces,'' \emph{Phys. Rev. Lett.} \textbf{137}, 166201 (2026). \href{https://doi.org/10.1103/ly48-b4l2}{doi:10.1103/ly48-b4l2}. Public abstract; article/supplement access restricted at this audit.
+\bibitem{minkin} A. S. Minkin \emph{et al.}, ``Interlayer interaction, shear vibrational mode, and tribological properties of two-dimensional bilayers with a commensurate moir\'e pattern,'' \emph{Phys. Rev. B} \textbf{108}, 085411 (2023). \href{https://arxiv.org/abs/2308.06302}{arXiv:2308.06302}.
+\bibitem{lebedeva} I. V. Lebedeva \emph{et al.}, ``Robust structural superlubricity of twisted graphene bilayer and domain walls between commensurate moir\'e pattern domains from first-principles calculations,'' \href{https://arxiv.org/abs/2511.01338}{arXiv:2511.01338} (2025), Tables 2, 4, 5, and 6.
+\bibitem{zenodo} I. V. Lebedeva \emph{et al.}, first-principles source data, \href{https://doi.org/10.5281/zenodo.16318186}{Zenodo DOI 10.5281/zenodo.16318186}.
+\bibitem{udrecord} UD research record, graphite captures and draft PRs \href{https://github.com/ud-tetra/UD/pull/445}{\#445}, \href{https://github.com/ud-tetra/UD/pull/446}{\#446}, and \href{https://github.com/ud-tetra/UD/pull/447}{\#447}. Exact constructions, source checksums, scripts, and working paper v9; development analyses, not independent validation.
+\bibitem{udphysics} UD-Physics Discovery repository, \href{https://github.com/ud-tetra/UD-Physics/tree/main/experiments/graphite-superlubricity}{graphite hypothesis index}, \href{https://github.com/ud-tetra/UD-Physics/tree/main/experiments/graphite-2d-relaxation}{two-dimensional passive replay}, and linked quotient, source, cross-loss and locality audits (accessed 24 October 2026). Constructor records, not independent physical validation.
+\bibitem{udledger} UD coefficient provenance ledger v0.39(2), supplied file, Q22 and Q77--Q84 (2026), with the stated open source and physical phase-map dependencies; not a measured graphite coefficient set.
+\end{thebibliography}
+\end{document}
