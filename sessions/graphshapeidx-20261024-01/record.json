@@ -1,0 +1,33 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphshapeidx-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute plus GitHub connector write",
+  "task": "integration-graphite-directional-shape-20261024",
+  "goal": "Index exact graphite direction and load null after research PR #129",
+  "created_at": "2026-10-24T16:36:28.004728+00:00",
+  "base_revision": "d25d7b033a2e429a50d00d0edc2936bf2ac7b291",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/integration-graphite-directional-shape-20261024",
+    "held_sha": "77e558b491d7bb75532896906466eb6f617e0eb9",
+    "status": "held"
+  },
+  "checks": [],
+  "finding": "Exact conditional amplitude-free direction control indexed as follow-up; UD residual open.",
+  "next_action": "Merge index PR and release claim; independent contact, direction-force and linewidth measurements needed for held-out test.",
+  "mathematical_profile": {
+    "coefficient_domain": "no new mathematics; index exact conditional result from research PR #129",
+    "exactness_or_precision_plan": "validate text and links only",
+    "applicable_methods": [
+      "N/A: repository integration of prior proof"
+    ],
+    "clock_metric_units_conventions": "inherit graphite-directional-shape README"
+  },
+  "checkpoint_at": "2026-10-24T16:36:51.580692+00:00",
+  "checkpoint_source": {
+    "revision": "d25d7b033a2e429a50d00d0edc2936bf2ac7b291",
+    "dirty": true
+  }
+}
