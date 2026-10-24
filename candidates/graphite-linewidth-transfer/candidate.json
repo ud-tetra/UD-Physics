@@ -1,0 +1,18 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-linewidth-transfer",
+  "session_id": "graphline-20261023-80beee09",
+  "question": "What dissipative material measurement converts a conventional graphite mode calculation to a low-frequency drag coefficient, and how does its load slope enter?",
+  "status": "ACTIVE",
+  "evidence": ["CONDITIONAL", "NUMERICAL", "OPEN"],
+  "assumptions": ["The archived fixed-roster KC-plus-1.44-eV-plate stationary 14-height model supplies a conventional C and positive K, with one 12C upper-site mass and rigid lower sheet.", "A weakly damped open material bath has a Rayleigh D diagonal in the conservative eigenbasis and a shared width inside each E pair.", "Resolved spectral FWHM represents dissipative pole broadening after finite-time and instrument deconvolution.", "The moving-contact force estimator is not inferred from low-frequency gamma alone."],
+  "physical_mapping": "CONDITIONAL conventional Cartesian lateral and height coordinates; physical linewidths, off-diagonal loss and UD additive coupling OPEN",
+  "target_exposure": "The paired angles and near-zero load response were known; the archived conventional mode and pressure sweeps predate this calculation; no experimental linewidth or friction fit.",
+  "fitted_choices": ["No new fitted parameters; inherited plate D=1.44 eV, 12C mass, fixed-roster cutoff and C3 registry are prior illustrative material choices"],
+  "sources": ["artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/files/captures/2026-10-23T023854Z-codex-graphite-finite-spectrum-4c8b18e3-68bdd1a3-441a-4a35-ac05-a26af9803d0c/", "artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/files/captures/2026-10-23T024735Z-codex-graphite-loss-load-60d8705c-babb19e4-d2fd-435f-abd7-86602cecf7fc/"],
+  "baseline": "Closed harmonic height model has zero Ohmic drag; conventional open phonon/contact bath with measured retarded linewidths",
+  "result": "CONDITIONAL/NUMERICAL at archived 16 A reference: gamma_scalar=(2.7634530847e-4 Delta_f_L+1.8676114422e-5 Delta_f_H) meV ps/A^2 per atom for widths in THz, assuming diagonal mode damping and high Q. Low pair contributes 93.6696% for equal widths. Equal constant widths give logarithmic drag slope +8.06052e-4 per MPa; linewidth pressure derivatives remain unknown.",
+  "next_discriminant": "Measure dissipative width and pressure dependence for both E pairs plus inter-pair loss mixing, then independently determine any additive source coupling and force readout",
+  "mathematical_receipts": ["candidates/graphite-linewidth-transfer/mathematical_receipt.json"]
+}

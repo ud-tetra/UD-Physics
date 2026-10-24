@@ -1,0 +1,21 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphline-20261023-80beee09",
+  "runtime": "Codex GPT-6; local Python/Git compute; GitHub connector write",
+  "task": "graphite-linewidth-transfer-20261023",
+  "goal": "Derive a dimensional transfer from independently measured material linewidths to conditional low-frequency drag",
+  "created_at": "2026-10-24T01:06:23Z",
+  "base_revision": "1e6e0f2abe3fa234919c5a6701547883a807b3e5",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {"graphite-linewidth-transfer-20261023": {"ref": "refs/heads/claims/graphite-linewidth-transfer-20261023", "sha": "bf0c9dc8c6b679ebd9a8a05ea27df8fb878e158e", "status": "held"}},
+  "checks": [
+    {"command": "python3 experiments/graphite-linewidth-transfer/replay_linewidth_transfer.py", "result": "PASS: 14-mode mass and weight checks; three cutoff modal and pressure decompositions"},
+    {"command": "python3 scripts/validate.py", "result": "PASS: 167 records; manifest digests and local documentation links valid"},
+    {"command": "python3 -m unittest discover -s tests -q", "result": "PASS: 16 tests"}
+  ],
+  "finding": "CONDITIONAL/NUMERICAL: archived conventional mode weights map independently measured dissipative pair linewidths to drag; the low E pair dominates for equal widths, but linewidths and UD additive coupling remain unmeasured.",
+  "next_action": "Measure retarded mode linewidths and their pressure variation; determine off-diagonal loss mixing, source-specific coupling, and sliding force estimator before any UD residual prediction.",
+  "mathematical_profile": {"coefficient_domain": "R floating archived conventional eigenvalues and force couplings; symbolic passive response identity", "exactness_or_precision_plan": "Algebraic Schur expansion and dimensional conversion, replay 14/16/18 Angstrom archival precision; no new measured uncertainty", "applicable_methods": ["spectral modal projection", "passive Schur response", "dimensional and linewidth conversion", "pressure product rule and null-model sensitivity"], "clock_metric_units_conventions": "e^-i omega t, omega in rad/ps and f in cycles/ps (THz); Euclidean Cartesian lateral metric; site heights Angstrom, energy meV per upper atom, mass m_C/14; compression-positive pressure offsets around the archived tensile reference; no UD-native clock map"}
+}
