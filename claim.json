@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "qpb-quantum-spectroscopy-20261024",
+  "session": "qpb-qspectra-20261024-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-24T17:29:42.967Z",
+  "base_revision": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3",
+  "owned_paths": [
+    "tasks/qpb-quantum-spectroscopy-20261024.json",
+    "sessions/qpb-qspectra-20261024-gpt6-a1/",
+    "experiments/qpb-quantum-spectroscopy/",
+    "candidates/qpb-quantum-spectroscopy/",
+    "artifacts/qpb-qspectra-20261024-gpt6-a1/"
+  ]
+}
