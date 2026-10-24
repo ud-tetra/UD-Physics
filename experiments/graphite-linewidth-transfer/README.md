@@ -18,6 +18,8 @@ For a resolved weakly damped spectral peak, define `Δf_j` as the **dissipative 
 
 with each `Δf` entered numerically in THz. Both coefficients are positive. The 14 and 18 Å archive cutoffs change the first coefficient by less than `5×10⁻¹⁰` and the second by less than `1×10⁻¹⁰` in these units; this is only a cutoff sensitivity check within the same material model. Under equal `d_j`, the low pair supplies 93.6696% of this conditional drag; the high pair supplies equal drag only if its linewidth is about 14.797 times the low-pair width. The low pair supplies 0.152474 of the total 0.229339 meV Å⁻² per-atom **static softening** at this model reference, so static and dissipative modal shares differ.
 
+The [passive cross-mode loss audit](../graphite-cross-loss/README.md) quantifies the scope of the diagonal assumption: with equal symbolic widths, an unknown positive semidefinite off-diagonal loss block permits a pointwise interval ±48.70% around this diagonal estimate. The 93.6696% share is a diagonal-only decomposition; pair widths by themselves do not determine the cross contribution or its pressure derivative.
+
 ## Load derivative and measurement gate
 
 The archived ±2.5 MPa stationary pressure sweep supplies `a_L(P),a_H(P)`, but assumed **constant, unmeasured** Rayleigh loss. Differentiating the calibrated mode law gives
