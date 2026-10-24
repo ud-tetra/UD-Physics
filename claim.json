@@ -13,5 +13,7 @@
     "artifacts/graphtraffic-20261024-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-24T17:32:14.319Z",
+  "released_from_sha": "5beb99c185c57c9a38340e9a6b47a851a49a064a"
 }
