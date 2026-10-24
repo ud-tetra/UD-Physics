@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "qpb-native-manybody-20261024",
+  "session": "qpb-manybody-20261024-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-24T17:58:12.454Z",
+  "base_revision": "e8a6a40d229090a1c6c783aef2832d38c3e7784f",
+  "owned_paths": [
+    "tasks/qpb-native-manybody-20261024.json",
+    "sessions/qpb-manybody-20261024-gpt6-a1/",
+    "experiments/qpb-native-manybody/",
+    "candidates/qpb-native-manybody/",
+    "artifacts/qpb-manybody-20261024-gpt6-a1/"
+  ]
+}
