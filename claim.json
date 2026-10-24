@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "qpb1-finite-window-phase-20261023",
+  "session": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "status": "held",
+  "created_at": "2026-10-24T01:00:17Z",
+  "base_revision": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+  "owned_paths": [
+    "tasks/qpb1-finite-window-phase-20261023.json",
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/",
+    "experiments/qpb1-finite-window-phase/",
+    "candidates/qpb1-finite-window-phase/",
+    "artifacts/qpb1-finwindow-20261023-gpt6-b6f2/"
+  ]
+}
