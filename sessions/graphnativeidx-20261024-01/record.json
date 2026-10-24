@@ -8,15 +8,20 @@
   "created_at": "2026-10-24T16:51:37.419618+00:00",
   "base_revision": "55d3972fe9a8be5436eff3b0fd759f8a148643f4",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "ref": "refs/heads/claims/integration-graphite-native-source-gate-20261024",
     "held_sha": "e0ef94424fa4ecb8d12e0413ebef9105f11f30e7",
-    "status": "held"
+    "status": "released",
+    "release_sha": "5c362bda9b08d62dd1a4ce28eb01845e98c4b529"
   },
-  "checks": [],
-  "finding": "Native source and dimensional damping gate indexed; physical bridge remains open.",
-  "next_action": "Merge index PR, release claim, then derive a target-blind typed nonuniform edge/route law and material loss map.",
+  "checks": [
+    "scripts/validate.py PASS (244 records)",
+    "16 unit tests PASS",
+    "GitHub Discovery integrity workflow 40113566005 success"
+  ],
+  "finding": "Native source and damping gate indexed in PR #137 at 82674a508284bd164ee2471d49ea2e12f15b72e9; physical UD coefficient remains open.",
+  "next_action": "Derive current native nonuniform source and physical bath or obtain independent material calibration and force traces.",
   "mathematical_profile": {
     "coefficient_domain": "no new mathematics; scoped result inherited from merged PR #135",
     "exactness_or_precision_plan": "validate links and statuses only",
