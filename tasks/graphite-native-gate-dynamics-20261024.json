@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-native-gate-dynamics-20261024",
+  "goal": "Test free and one-edge-gated native support dynamics for symmetry and quotient-dependent onset",
+  "owned_paths": [
+    "experiments/graphite-native-gate-dynamics",
+    "candidates/graphite-native-gate-dynamics",
+    "sessions/graphgate-20261024-01",
+    "artifacts/graphgate-20261024-01"
+  ],
+  "dependencies": [
+    "graphite-native-support-current-20261024"
+  ],
+  "status": "complete"
+}

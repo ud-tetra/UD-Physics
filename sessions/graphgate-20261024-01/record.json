@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphgate-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute plus GitHub connector write",
+  "task": "graphite-native-gate-dynamics-20261024",
+  "goal": "Calculate exact Taylor response of native masked vertex-edge source across N7/13/19",
+  "created_at": "2026-10-24T17:57:01.310573+00:00",
+  "base_revision": "e8a6a40d229090a1c6c783aef2832d38c3e7784f",
+  "source_dirty_at_boot": false,
+  "status": "complete",
+  "claims": {
+    "ref": "refs/heads/claims/graphite-native-gate-dynamics-20261024",
+    "held_sha": "d610eba056ba8f543ffbc2171bc2d3a62b3a4c11",
+    "status": "held"
+  },
+  "checks": [
+    "exact full-carrier C3 basis commutation and Fraction Taylor replay PASS",
+    "scripts/validate.py PASS (270 records)",
+    "16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Exact conditional native gate result; no physical friction or seven-cell preference derived.",
+  "next_action": "Derive or independently constrain interface gate preparation and dimensional material response with held-out controls.",
+  "mathematical_profile": {
+    "coefficient_domain": "integer chain incidence and exact rational Taylor coefficients",
+    "exactness_or_precision_plan": "full C0/C1/C2 permutation proof and integer derivative recurrence through s17",
+    "applicable_methods": [
+      "chain boundary and metric adjoint",
+      "C3 representation and invariant readout",
+      "rational Taylor coefficient comparison",
+      "N/A prime/modular clock: finite quotient labels do not define a modular time law"
+    ],
+    "clock_metric_units_conventions": "dimensionless continuous s; unit chain metric, A-to-B edges and oriented faces; physical time, stiffness, damping and force mapping OPEN"
+  },
+  "checkpoint_at": "2026-10-24T18:00:23.446257+00:00",
+  "checkpoint_source": {
+    "revision": "e8a6a40d229090a1c6c783aef2832d38c3e7784f",
+    "dirty": true
+  }
+}
