@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "run_id": "phase-009",
+  "created_at": "2026-10-24T16:45:00Z",
+  "evidence": "EXACT",
+  "summary": "Exact positive-semidefinite quartic constitutive coefficient degeneracy at the exposed reference",
+  "command": "python3 /mnt/data/qpb_phase009/phase009_compact.py --out /mnt/data/qpb_phase009/compact_summary.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "1f6717a8a6fdbe004aae6fda8ae278e3d4498d4a",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "phase009-audit",
+      "name": "phase009_compact.py",
+      "path": "inputs/phase009_compact.py",
+      "sha256": "1192c1ea2defc4f67bb84dfe1158446bab2ea967436ea6d19146ef9472c2136c",
+      "size_bytes": 2812,
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-window-phase/phase009_compact.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "125cd9baf769ee9238a6c0392899e9f2dcfb0cb48f8960ee4b1bd696df63f3a9",
+      "size_bytes": 2023
+    }
+  ]
+}
