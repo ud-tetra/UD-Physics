@@ -27,3 +27,5 @@ Native source audit: supplied packet modulation, triangular alphabet and seam tr
 Checkpoint (complete): Exact conditional no-go: a common translation-covariant incidence-gradient edge stencil gives N-independent harmonic zero-sector port; C3 covariance kills it for every quotient
 
 Next: Derive independent registry/load/temperature edge law, then compare held-out signed force and load response after conventional PES baseline
+
+- Integrated in PR #105 (`b5a96aab7b9cb0a705b631b91c307c6235954e93`) after GitHub Discovery integrity success, run 40053286067. Claim released to marker `83373133862b93c8ae81752c99eba11bf7b8d2a3`; verified live status `released`. Physical review NOT_RUN.
