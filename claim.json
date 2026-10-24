@@ -13,5 +13,7 @@
     "artifacts/graphroute-20261024-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-24T17:19:01.129Z",
+  "released_from_sha": "9c0ed2c0c936e756f5a382ac3f8991c72d9166a7"
 }
