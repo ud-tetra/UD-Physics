@@ -1,0 +1,20 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-route-parity",
+  "session_id": "graphroute-20261024-01",
+  "question": "When can a signed route variable and directed edge weights produce a stationary reciprocal Hessian and Ohmic drag?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT", "CONDITIONAL", "HYPOTHESIS", "OPEN"
+  ],
+  "assumptions": ["Q24 interpreted as a putative graphite cross-Hessian source only after dimensional physical map", "for cubic branch Xi_ji=-Xi_ij, reciprocal at v=0, drive-reversal covariance and smooth weight law", "frozen-coefficient passive reduction with finite K,D and force readout F=-Gamma(v)v"],
+  "physical_mapping": "native coefficient to material C scale, site registration, time, contact participation OPEN",
+  "target_exposure": "Observed paired 21.8/38.2 degree detectable peaks and weak load trend known; no force/slope fitted; angle not used in parity result",
+  "fitted_choices": ["none; illustrative rational values are arbitrary and not fit"],
+  "sources": ["supplied UD coefficient provenance ledger v0.39(2), SHA-256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63, Q23-Q26", "UD-Physics source/damping gate at 407fe6d"],
+  "baseline": "conventional two-dimensional PES/contact and passive force; source contribution requires frozen subtraction",
+  "result": "Exact edge-reversal decomposition c=eta(w+ Xi+ + w- Xi-). Signed route plus reciprocal equilibrium edge law gives zero c at v=0; smooth drive-induced asymmetry plus frozen passive reduction gives Gamma=O(v²), force O(v³). Exchange-even route or static bias evades.",
+  "next_discriminant": "Independently derive Xi parity and w antisymmetry, then measure signed low-speed force and complex loss across paired and control quotients.",
+  "mathematical_receipts": ["candidates/graphite-route-parity/mathematical_receipt.json"]
+}
