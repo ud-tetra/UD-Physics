@@ -1,0 +1,56 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb-vectorcircuit-20261024-gpt6-a1",
+  "runtime": "GPT-6 GitHub connector, isolated branch, local Python 3 standard-library Fraction; full authenticated Git checkout unavailable",
+  "task": "qpb-vector-circuit-20261024",
+  "goal": "Extend integrated tetrahedral vector charge-field to explicit controlled source and physical reciprocal circuit port; test charge/power/gauge and identifiability against conventional LC null",
+  "created_at": "2026-10-24T20:16:39.263Z",
+  "base_revision": "18a84984af40265d673b7b893c73de152a7cc8c5",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "qpb-vector-circuit-20261024": {
+      "ref": "refs/heads/claims/qpb-vector-circuit-20261024",
+      "sha": "1ca8f18a3e9ba88ed247abf1e7dd98458ee243d0",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 /mnt/data/qpb_vector_circuit_20261024/port_compact.py --out /mnt/data/qpb_vector_circuit_20261024/compact_summary.json",
+      "result": "PASS 24 exact Fraction mixed state/gauge/current fixture cases; orthogonal charged/neutral ports; 9 exact dipole fixtures; physically calibrated V*I work and 72 h-scaling fixtures",
+      "scope": "same-assistant constructor not independent review"
+    },
+    {
+      "command": "python3 /mnt/data/qpb_vector_circuit_20261024/port_audit.py --out /mnt/data/qpb_vector_circuit_20261024/summary.json",
+      "result": "PASS separately coded longer exact Fraction implementation and analytic pulse ratio, same constructor context; not external replication",
+      "scope": "same-constructor crosscheck"
+    },
+    {
+      "command": "sha256sum /mnt/data/qpb_vector_circuit_20261024/port_compact.py /mnt/data/qpb_vector_circuit_20261024/artifact_summary.json",
+      "result": "PASS input 44f2d0f6203320a12786a57364b6bd91cee0a2f911b34effdab61494fd00f137; selected output e06bd01e17a4702d45ad9564c9cc74a9e569f4053bf3002eb4cb7c5cdf73595e",
+      "scope": "immutable vector-001 exact matching source and excerpt"
+    },
+    {
+      "command": "python3 scripts/validate.py and python3 -m unittest discover -s tests -v",
+      "result": "NOT_RUN locally: complete authenticated repo checkout unavailable, pending GitHub Actions CI",
+      "scope": "repository integrity not physical mathematics"
+    }
+  ],
+  "finding": "Explicit new sourced vector current f gives rho'=B1 f, exact external-source gauge boundary and H'=Up.f; physical Q/Phi mapping gives ideal reciprocal six-edge LC matrices and V·I power. Longitudinal dipole charge and transverse neutral cycle respond differently to current pulse shape. Continuous (U,v,a,A0,psi)->(hU,v/h,ha,A0/h,hpsi) leaves all calibrated physical port responses unchanged; no native physical scale/unique attribution.",
+  "next_action": "Independently anchor action/charge and measure circuit port + covariance, compare frozen UD-specific law against standard LC baseline; otherwise park unique physical bridge attribution.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q for source B1/B2/projector/energy matrices and parameter fixtures; real driven ODE; SI flux/charge physical mapping assumed",
+    "exactness_or_precision_plan": "Fraction exact on 6-edge/4-vertex graph, analytic driven harmonic response and scaling, numerical 4/pi² only",
+    "applicable_methods": [
+      "oriented incidence B1B2=0 and longitudinal/transverse rank",
+      "gauge-covariant source action and vertex continuity",
+      "Hamiltonian reciprocal linear multiport/source work",
+      "dimensional charge/flux/current/voltage mapping",
+      "parameter symmetry/identifiability and conventional LC baseline"
+    ],
+    "clock_metric_units_conventions": "native dimensionless s, physical t=tau0s, A0 action J*s, charge q0 C, flux A0/q0 Wb, physical E=A0H/tau0 J; directed oriented edge list; rank6 radiative canonical field R12 distinct original R14"
+  }
+}

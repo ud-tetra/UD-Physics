@@ -1,0 +1,21 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb-vector-circuit-20261024",
+  "goal": "Extend integrated tetrahedral vector charge-field to explicit controlled source and physical reciprocal circuit port; test charge/power/gauge and identifiability against conventional LC null",
+  "owned_paths": [
+    "tasks/qpb-vector-circuit-20261024.json",
+    "sessions/qpb-vectorcircuit-20261024-gpt6-a1/",
+    "experiments/qpb-vector-circuit/",
+    "candidates/qpb-vector-circuit/",
+    "artifacts/qpb-vectorcircuit-20261024-gpt6-a1/"
+  ],
+  "dependencies": [
+    "qpb1-charge-field-20261022",
+    "qpb1-impedance-selection-20261022",
+    "qpb1-source-reservoir-20261022"
+  ],
+  "status": "complete",
+  "result": "Explicit new sourced vector current f gives rho'=B1 f, exact external-source gauge boundary and H'=Up.f; physical Q/Phi mapping gives ideal reciprocal six-edge LC matrices and V·I power. Longitudinal dipole charge and transverse neutral cycle respond differently to current pulse shape. Continuous (U,v,a,A0,psi)->(hU,v/h,ha,A0/h,hpsi) leaves all calibrated physical port responses unchanged; no native physical scale/unique attribution.",
+  "next_action": "Independently anchor action/charge and measure circuit port + covariance, compare frozen UD-specific law against standard LC baseline; otherwise park unique physical bridge attribution."
+}
