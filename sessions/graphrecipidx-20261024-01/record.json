@@ -1,0 +1,25 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphrecipidx-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, GitHub connector write",
+  "task": "integration-graphite-packet-reciprocity-20261024",
+  "goal": "Index packet reciprocity and stationary even-source obstruction",
+  "created_at": "2026-10-24T20:37:36.866995+00:00",
+  "base_revision": "7f5383bc2a855a2a6b7f8c5e176caeda514428d8",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/integration-graphite-packet-reciprocity-20261024",
+    "held_sha": "dce29a6301d1cacdb44031a1811dd935cd777785",
+    "status": "held"
+  },
+  "checks": [
+    "research PR #179 merged, claim released",
+    "independent physics review NOT_RUN",
+    "scripts/validate.py PASS 303 records",
+    "16 unit tests PASS"
+  ],
+  "finding": "Indexed research PR #179 time-reversal gate, reciprocal even-source model, isotropic equilibrium port null and no angle selection in graphite study, v2 index and CURRENT.",
+  "next_action": "Independently source anisotropic stationary weight and material energy/time/loss, then signed held-out force/load."
+}
