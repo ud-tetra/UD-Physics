@@ -19,3 +19,5 @@ Integration of PR #110 exact/conditional mean-weight and Fourier cross-spectrum 
 Checkpoint (complete): Graphite entry and CURRENT index new C3 mean-weight constraint and target-informed Fourier alias limitation
 
 Next: Derive independently sourced material and drive spectra, passive loss, conventional readout and held-out signed residual
+
+- Integrated PR #112 (`28875cda75d9674848b16b0b812721f0caedbeab`) after GitHub Discovery integrity run 40099629695 succeeded. Claim released to marker `908146be06f05c723ea5aca53f4d572d09aa2154`; live status verified. Independent physics review NOT_RUN.
