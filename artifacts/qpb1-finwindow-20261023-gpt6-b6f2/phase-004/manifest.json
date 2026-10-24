@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "run_id": "phase-004",
+  "created_at": "2026-10-24T01:32:00Z",
+  "evidence": "EXACT",
+  "summary": "Exact conditional Bernoulli shot-budget and measurement-frame drift counterexample",
+  "command": "python3 /mnt/data/qpb_phase004/shot_noise_audit.py --out /mnt/data/qpb_phase004/summary.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "7e100fa6504fde634fab08497afeb4467ecae710",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "shot-noise-source",
+      "name": "shot_noise_audit.py",
+      "path": "inputs/shot_noise_audit.py",
+      "sha256": "f73c9585f5707c5ac2a8e6b393a0510bd904c81dc734aa0ec3175253d8ce6dba",
+      "size_bytes": 4685,
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-window-phase/shot_noise_audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "a4e2e7d8d2b25a01fd963c23a73436a24adbf981a71e887d530f9bcae5f03f62",
+      "size_bytes": 2603
+    }
+  ]
+}
