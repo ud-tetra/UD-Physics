@@ -17,27 +17,32 @@
     "Ideal lumped lossless, zero-current-bias Josephson junction with Ic,C and physical turning amplitude a<pi",
     "BIPM SI h and e and conventional EJ(1-cos(phi)) law; independent of prior UD phase target",
     "Additional bridge r3=kappa*a² with kappa>0, and tau0=2/omega0 calibrated at zero amplitude",
-    "Previously considered UD Hstar=||x||²/2+lambda*r3²/4 with lambda>=0; PR87 phase009 unmerged read-only"
+    "Previously considered UD Hstar=||x||²/2+lambda*r3²/4 with lambda>=0; PR87 phase009 unmerged read-only",
+    "JJ003: conventional zero-bias classical junction may include second Josephson CPR harmonic q=I2/I1>-1/2; q=-1/4 is a designed counterexample, NOT measured; 2024 quantum transitions are not classical turning-amplitude readings."
   ],
   "physical_mapping": "HYPOTHESIS only: single Josephson physical phase/action oscillator to UD hidden two-plane; native J action, register/port scale and energy conversion not derived. Physical test NOT_EXECUTED.",
   "target_exposure": "Physical source fixes cosine sign without UD target; previously exposed UD g3=3/2/positive lambda known before comparison. Ic=100nA C=100fF are nonmeasured design inputs, not data fits.",
   "fitted_choices": [
     "tau0=2/omega0 chosen to match linear frequency; kappa>0 free; optional equal-magnitude hardening λκ=1/16 is comparison design only.",
-    "Allowing negative λκ=-1/16 would import/backsolve the known physical sign, not select a native UD coefficient."
+    "Allowing negative λκ=-1/16 would import/backsolve the known physical sign, not select a native UD coefficient.",
+    "Selected q=-1/4 and q test grid after exposure of sine-only softening and published harmonics; exact mathematical example, no empirical fitting."
   ],
   "sources": [
     "https://doi.org/10.1103/PRXQuantum.2.040204",
     "https://www.bipm.org/en/measurement-units/si-defining-constants",
     "https://doi.org/10.1103/PhysRevResearch.2.043091",
     "ud-tetra/UD-Physics@86d2a86570c807bc980819809312cd3255a2852a:experiments/qpb1-finite-window-phase/PHASE_COMPATIBLE_CONSTITUTIVE.md",
-    "https://doi.org/10.1063/5.0082197 (2022 experimentally fitted DC-bias plasma data; not zero-bias amplitude sweep)"
+    "https://doi.org/10.1063/5.0082197 (2022 experimentally fitted DC-bias plasma data; not zero-bias amplitude sweep)",
+    "https://doi.org/10.1038/s41567-024-02400-8 (2024 measured transmon transition spectroscopy; reported higher Josephson harmonics)",
+    "https://doi.org/10.26165/JUELICH-DATA/LGRHUH (public dataset locator, V2; raw files not downloaded)"
   ],
   "baseline": "Ordinary zero-biased ideal Josephson circuit with independent Ic and C; exact elliptic frequency curve; no UD extra prediction.",
-  "result": "EXACT/CONDITIONAL Josephson relative-frequency function AGM(1,cos(a/2))<1 for 0<a<pi; positive hidden-star UD relative frequency 1+lambda*kappa*a² >=1 when lambda>=0,kappa>0. Sign mismatch for this bridge; conventional JJ fully accounts for the physical law. No observed data. JJ002 source audit: 13.28GHz/8.36uA jointly fitted; inferred total C3.6485pF is not an independent prediction. No peak-amplitude measurement/heldout residual. Physical comparison NOT_EXECUTED.",
-  "next_discriminant": "Obtain raw zero-bias amplitude-frequency pairs, independent parameter/covariance calibration and frozen physical mapping before a held-out UD-versus-Josephson null.",
+  "result": "EXACT/CONDITIONAL Josephson relative-frequency function AGM(1,cos(a/2))<1 for 0<a<pi; positive hidden-star UD relative frequency 1+lambda*kappa*a² >=1 when lambda>=0,kappa>0. Sign mismatch for this bridge; conventional JJ fully accounts for the physical law. No observed data. JJ002 source audit: 13.28GHz/8.36uA jointly fitted; inferred total C3.6485pF is not an independent prediction. No peak-amplitude measurement/heldout residual. Physical comparison NOT_EXECUTED. JJ003: higher-harmonic conventional Josephson model can reverse leading amplitude-frequency sign while retaining stable positive potential; sine-only negative slope is not a universal physical sign. 2024 published spectra and dataset DOI located, raw data inaccessible in this session; UD heldout NOT_RUN.",
+  "next_discriminant": "Raw multi-level spectra with independently frozen and typed UD quantum mapping, or measured classical zero-bias peak-phase/frequency sweep with independent calibration. Standard physical Josephson harmonic Hamiltonian is primary null.",
   "mathematical_receipts": [
     "sessions/qpb-josephson-20261024-gpt6-a1/mathematical_receipt.json",
-    "sessions/qpb-josephson-20261024-gpt6-a1/empirical_receipt.json"
+    "sessions/qpb-josephson-20261024-gpt6-a1/empirical_receipt.json",
+    "sessions/qpb-josephson-20261024-gpt6-a1/harmonics_receipt.json"
   ],
   "reopening_conditions": "A separately sourced native constitutive law with independently fixed parameters and physical map or new physical benchmark data plus distinguishable held-out response."
 }

@@ -90,3 +90,8 @@ Prospective target-blind protocol: (i) independently characterize the junction's
 ## JJ-002 public empirical source audit
 
 [Joint plasma fit provenance, physical-unit re-expression, and absent amplitude heldout](EMPIRICAL_SOURCE_AUDIT.md). Bias-dependent small-signal resonance is distinct from zero-bias oscillation amplitude; no experimental UD bridge is claimed.
+
+
+## JJ-003: higher-harmonic source and sign-test qualification
+
+[Independent experimental transmon-spectroscopy provenance and exact conventional second-harmonic hardening counterexample](HARMONIC_SCOPE_AND_DATASET.md). The sine-only JJ sign mismatch remains conditional on that idealized physical constitutive law; classical JJ harmonics enlarge the null, and no raw classical turning-amplitude dataset has been acquired.
