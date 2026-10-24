@@ -13,5 +13,7 @@
     "artifacts/graphgate-20261024-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-24T18:03:28.210Z",
+  "released_from_sha": "d610eba056ba8f543ffbc2171bc2d3a62b3a4c11"
 }
