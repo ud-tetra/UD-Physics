@@ -27,3 +27,5 @@ EXACT/CONDITIONAL: three equal first-star vectors with independent identical Deb
 Checkpoint (complete): Derived exact 2D passive first-star isotropic low-speed tensor and sixth-order directional power; source-rounded 94.69 angle contrast remains conditional and conventional
 
 Next: Measure complex loss and contact transfer, freeze full 2D force and load prediction, then test signed UD residual
+
+- Integrated PR #119 (`3df32aef5daacb2495dea24c7b665a013a7c4bb3`) after GitHub Discovery integrity run 40108494843 succeeded. Claim released to marker `3806f222689e00721dab43245a8e6fdb822bcd3f`; live status verified. Independent physics review NOT_RUN.
