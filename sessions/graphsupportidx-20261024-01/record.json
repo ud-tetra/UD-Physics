@@ -8,14 +8,15 @@
   "created_at": "2026-10-24T17:48:02.047798+00:00",
   "base_revision": "afaa6d406c6face2f7da7399b55267a989f7632d",
   "source_dirty_at_boot": false,
-  "status": "handoff",
+  "status": "complete",
   "claims": {
     "ref": "refs/heads/claims/integration-graphite-native-support-current-20261024",
     "held_sha": "558077bc7e176a21630c87e616966fed2806853c",
-    "status": "held"
+    "status": "released",
+    "release_sha": "91b0c671912ae83d20285d5403de0d3cc1a617b0"
   },
-  "checks": ["scripts/validate.py PASS (266 records)", "16 unit tests PASS", "git diff --check PASS", "independent physics review NOT_RUN"],
-  "finding": "Native current result indexed without seven-cell or physical promotion.",
+  "checks": ["scripts/validate.py PASS (266 records)", "16 unit tests PASS", "git diff --check PASS", "GitHub Discovery integrity workflow 40117845350 success", "independent physics review NOT_RUN"],
+  "finding": "Native current result indexed in PR #152 at 7834e6407778e5b6c2c2bacd27eb64c13687a172, without seven-cell or physical promotion.",
   "next_action": "Native preparation/selection and dimensional complex bath before paper v3.",
   "mathematical_profile": {
     "coefficient_domain": "N/A editorial integration",
