@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "graphite-registry-convolution-20261024",
   "session": "graphreg-20261024-7c09",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-24T13:41:20Z",
   "base_revision": "61498a45f4ebc5bfd9185f5841319203b347aa32",
   "owned_paths": [
@@ -13,5 +13,7 @@
     "candidates/graphite-registry-convolution/",
     "experiments/graphite-registry-convolution/",
     "artifacts/graphreg-20261024-7c09/"
-  ]
+  ],
+  "released_at": "2026-10-24T13:44:49.892Z",
+  "released_from_sha": "a935ffeb6c36c14cf9f279809ba909a78aebe6f7"
 }
