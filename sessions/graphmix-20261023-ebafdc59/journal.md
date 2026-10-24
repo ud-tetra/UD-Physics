@@ -27,3 +27,7 @@ Computed conditional PSD bound, 14/16/18 Angstrom replay, exact compatible extre
 Checkpoint (handoff): Exact conditional passive cross-loss interval; 16 A equal-width diagonal coefficient ±48.7018830%, archived replay at three cutoffs, no load derivative from pair widths
 
 Next: Measure pressure-resolved complex cross-mode loss, freeze conventional baseline, then test held-out signed force/load contrast
+
+## Integration and release
+
+PR #94 merged at `c954ca3dffabe76fde674d4f7ef2b44d12d70784` after Discovery integrity job 120739300393 passed. Live held claim `3e3cb41df8e5634ff4e26edcb06028b4af6c2654` was verified against task/session/paths. Version-2 released marker `87e06b0d400f0836d854426d723b5301a14d0dda`, parent held SHA, was installed with expected-SHA lease and read back as released on the live ref. This closure changes only this session record and journal. No independent material or physics review has occurred.
