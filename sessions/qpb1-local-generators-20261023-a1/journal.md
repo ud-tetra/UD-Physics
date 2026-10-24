@@ -39,3 +39,7 @@ Next: Define finite-window endpoint-corrected phase and gain-error/visibility co
 ## 2026-10-24T00:56:21.229502+00:00
 
 Final pre-integration validation PASS157records;16toolingtests PASS. All scientific inputs finalized before immutable exact-001 capture; no independent review or physical execution claimed. Standard authored-file whitespace check plus full staged check retaining historical captured Markdown hard-break spaces are required before upload. No unrelated held scope or CURRENT edited.
+
+## 2026-10-24T00:58:08.940586+00:00
+
+Research PR81 merged at 580ef513bba7e12fb8b15bfa129d7ea71586e95b; exact head 9b1efd76c3af9ac47739f67e589ecf2df4921b8d passed Discovery integrity CI 40047474560. Claim release 66cf66a103f94a252cb56ca3769c4bd75c403d92 verified at live ref and payload using exact-SHA CAS; owner and held parent matched. Local staged research tree matched integrated tree before soft reset, checkout clean. Closure edits only this session record/journal. Next: finite-window endpoint-corrected phase/visibility contract under independent rate error, priority96; native rate/metric selection remains OPEN. Physical score UNSCORED,promotion0.
