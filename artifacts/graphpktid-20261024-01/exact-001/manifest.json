@@ -1,0 +1,87 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graphpktid-20261024-01",
+  "run_id": "exact-001",
+  "created_at": "2026-10-24T20:01:35.217280+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact packet pointwise rank and common-input quotient ratio with source audit",
+  "command": "python3 experiments/graphite-packet-identifiability/replay_identifiability.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "18a84984af40265d673b7b893c73de152a7cc8c5",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay_identifiability.py",
+      "path": "inputs/001-replay_identifiability.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-packet-identifiability/replay_identifiability.py",
+      "sha256": "5eb1a04f106d5f6a96f4d019d5bf7ff6713e59409b5b20b9b2ac3b33f3801f1c",
+      "size_bytes": 3142
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_packet.py",
+      "path": "inputs/002-replay_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-directional-packet/replay_packet.py",
+      "sha256": "6236a4c0ac2f1294ba09bc7359e42143c78eadd9c8c273f2f3f1faaafbeecdb8",
+      "size_bytes": 4732
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/graphite-packet-identifiability/mathematical_receipt.json",
+      "sha256": "4f12d2526b078b315cb8118029f6e535a1b6574b62f74da5e97ee572f3b0414f",
+      "size_bytes": 10175
+    },
+    {
+      "input_id": "input-004",
+      "name": "UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "path": "inputs/004-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "source_location": "repository",
+      "source_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    },
+    {
+      "input_id": "input-005",
+      "name": "02-packet_modulation_layer.md",
+      "path": "inputs/005-02-packet_modulation_layer.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "a3275849a09d9c29cb3f8a369fc7ca113ba3cd7529e7db443529097ccaf088ec",
+      "size_bytes": 89
+    },
+    {
+      "input_id": "input-006",
+      "name": "03-triangular_transport_symbol_alphabet.md",
+      "path": "inputs/006-03-triangular_transport_symbol_alphabet.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "0da16aba90969fa5b08fce771f62dd7ee2c99fd0b033fc961241b94754b60606",
+      "size_bytes": 102
+    },
+    {
+      "input_id": "input-007",
+      "name": "04-seam_phase_transport.md",
+      "path": "inputs/007-04-seam_phase_transport.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "f1bc7725268362c47938d5487e9463dd42b5bd210230419d1b866ceb390c1b7c",
+      "size_bytes": 86
+    }
+  ],
+  "files": [
+    {
+      "path": "files/graphpktid-output.json",
+      "sha256": "059b3dc48132d7fe093dddb9f30b76bce17a126ee95f4fd1151e66057a0d9ac8",
+      "size_bytes": 2782
+    }
+  ]
+}

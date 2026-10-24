@@ -1,0 +1,20 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-packet-identifiability",
+  "session_id": "graphpktid-20261024-01",
+  "question": "What, if anything, does the directional native packet constrain after its two preparation amplitudes are free?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT", "CONDITIONAL", "OPEN"
+  ],
+  "assumptions": ["same previously specified directional packet basis and linearized epsilon readout", "common-input quotient ratio additionally assumes identical two amplitudes, native clock, direction frame and report normalization across N7/13/19", "source audit distinguishes supplied historical placeholders from current pinned UD local source note"],
+  "physical_mapping": "registered graphite displacement/velocity to packet amplitudes, dimensional clock, energy/force/contact/loss OPEN",
+  "target_exposure": "paired 21.8/38.2 degree signals and weak load response known; no coefficient fitted to them",
+  "fitted_choices": ["none; exact matrix inverse and ratio of previously fixed packet replay"],
+  "sources": ["graphite-directional-packet exact replay at base 18a84984af40265d673b7b893c73de152a7cc8c5", "supplied UD ledger v0.39(2) SHA-256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63 Q166/Q167/Q170", "UD Local Source Selection v0.1 at a78193d420f3bac957be081aed0525fbc1457825 (600-cell supplied gate)", "attached packet/transport files were placeholder-only in this runtime"],
+  "baseline": "conventional full 2D PES/contact/complex loss and independently held-out signed force/load",
+  "result": "Leading linear packet matrix M1 has det 192 and inverse [[-1/16,-1/48],[1/16,-1/16]], so two unconstrained amplitudes leave one-quotient signed native vector locally unidentified. If one common packet and clock are supplied, exact series gives L7 L13^-1=I-s8 I/7560+O(s10) and L13 L19^-1=I+73s12 I/194594400+O(s14). No physical force ratio.",
+  "next_discriminant": "Independently determine graphite packet preparation and shared/quotient-dependent clock and normalization, fix material loss and force readout, then compare held-out signed responses.",
+  "mathematical_receipts": ["candidates/graphite-packet-identifiability/mathematical_receipt.json"]
+}
