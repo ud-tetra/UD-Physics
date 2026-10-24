@@ -1,0 +1,266 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb-qextension-S4-fock-001",
+  "session_id": "qpb-qextension-20261024-gpt6-a1",
+  "candidate_id": "qpb-quantum-extension",
+  "question": "Do source-defined S4/complex-linear Hermitian operators or minimal boson occupation quantization select a nondegenerate, anharmonic seven-level spectrum without new fitted physics?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "native",
+      "symbol": "C,E,J,Pi",
+      "object_type": "oriented tetrahedral incidence active complex Hilbert candidate",
+      "definition": "R15 chain and E rank14, J=A/2, complex i=-J, Pi=-Ki²/4",
+      "domain": "R15",
+      "codomain": "C7 assumed",
+      "coefficient_domain": "Q exact matrices, complex scalars assumed",
+      "units": "native dimensionless",
+      "basis_orientation": "ascending oriented simplices, 24 signed S4",
+      "metric_measure": "Euclidean H=I",
+      "origin": "integrated native math",
+      "exact_expression": "rank_R Pi=(6,6,2), rank_C=(3,3,1)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "native-source"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit inner product"
+    },
+    {
+      "object_id": "irrep",
+      "symbol": "rho_E",
+      "object_type": "complex signed tetrahedral representation",
+      "definition": "C7 decomposes std3⊕twisted3'⊕sign1'",
+      "domain": "S4",
+      "codomain": "U(C7)",
+      "coefficient_domain": "integer/rational character",
+      "units": "dimensionless",
+      "basis_orientation": "class order 1^4,2+1+1,2+2,3+1,4",
+      "metric_measure": "character inner product over 24 elements",
+      "origin": "derived",
+      "exact_expression": "character Gram matrix I3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "native-source"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "native"
+      ],
+      "normalization": "irreducible characters"
+    },
+    {
+      "object_id": "fock",
+      "symbol": "b,b†,N,U",
+      "object_type": "added bosonic occupation and Kerr operator hypothesis",
+      "definition": "infinite hidden-mode Fock |n>, H=epsilon*N+U/2*N(N-1)",
+      "domain": "bosonic Fock on 1 complex sign mode",
+      "codomain": "Hermitian Hamiltonian",
+      "coefficient_domain": "real parameters epsilon,U; Q example",
+      "units": "physical energy if chi/tau0 chosen; otherwise arbitrary",
+      "basis_orientation": "occupation n≥0; b† transforms by sign under S4",
+      "metric_measure": "standard bosonic orthonormal Fock",
+      "origin": "assumed new quantum law",
+      "exact_expression": "E_n=n epsilon+U n(n-1)/2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "native-source"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "irrep"
+      ],
+      "normalization": "occupation-number basis"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "native-source",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "211f2e72fc72867bac1b3c8712bf0d5c2464e509",
+      "section_or_object_id": "signed S4 local skew family K and rank P",
+      "source_status": "integrated exact constructor"
+    },
+    {
+      "source_id": "carrier",
+      "url_or_repo_path": "experiments/qpb1-carrier-anchor/README.md",
+      "version_or_commit": "211f2e72fc72867bac1b3c8712bf0d5c2464e509",
+      "section_or_object_id": "real14 to C7 and i=-J convention",
+      "source_status": "integrated conditional math"
+    },
+    {
+      "source_id": "prior-spectra",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/149",
+      "version_or_commit": "21f347d1b0bb094723c6ae979dc651041e5839b7",
+      "section_or_object_id": "direct C7 transmon spectrum NO-GO",
+      "source_status": "draft/unmerged read-only"
+    },
+    {
+      "source_id": "experiment",
+      "url_or_repo_path": "https://doi.org/10.1038/s41567-024-02400-8",
+      "version_or_commit": "2024-02-14",
+      "section_or_object_id": "transmon higher-level spectral experimental context",
+      "source_status": "published empirical source; raw data not acquired"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Require original full signed tetrahedral S4, original J and complex Hermitian structure of fixed C7; not established physical symmetry of superconducting device."
+    },
+    {
+      "id": "A2",
+      "description": "Optional bosonic hidden sign mode Fock quantization, independent new Hilbert space; optional Kerr U not selected by source. External chi/tau0 and physical port remain open."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational combinatorics/characters",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "24 S4 actions, 5 classes and irreducible orthogonality"
+    },
+    {
+      "technique": "spectral/Schur",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "full complex-linear Hermitian symmetry commutant and multiplicity obstruction"
+    },
+    {
+      "technique": "Fock/number algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "free occupation ladder and optional Kerr gap curvature"
+    },
+    {
+      "technique": "finite-boundary trace",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "seven-state truncated bosonic commutator rank1 obstruction"
+    },
+    {
+      "technique": "fit/null/source",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "all interaction coefficients unselected and conventional bosonic/Kerr exactly matched"
+    },
+    {
+      "technique": "modular tick/homology beyond incidence",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no new native physical clock, torsion or divisibility theorem"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "S4 class cardinalities 1,6,3,8,6; complex ranks (6/2,6/2,2/2)=(3,3,1); 7-state truncation [b,b†]=I-7|6><6|",
+    "reduced_expression": "irreducible character Gram=I3; eps5 and U=0,+1/4,-1/4 example ladder",
+    "factor_origins": [
+      "signed simplex orientation",
+      "trace_R(PkR)/2 for complex characters",
+      "occupancy j(j-1)/2 two-body count"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native continuous s; hypothesized physical t=tau0s",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "free hidden Fock exp(-i epsilon N t/chi); optional Kerr nonlinear number Hamiltonian",
+    "initial_phase": "occupation |n>, physical preparation not derived",
+    "coupling": "hidden sign mode quantization imposed; interaction U freely postulated",
+    "period_claim": "free oscillator equal spacing; no source-selected anharmonic recurrence",
+    "physical_unit_map": "epsilon=2chi g3/tau0 assumes external physical action chi, time tau0"
+  },
+  "dynamics_readout": {
+    "state_space": "native single-particle C7; new infinite bosonic one-mode Fock (separately assumed)",
+    "generator_or_update": "single-particle S4 Hermitian commutant H=sum cPi or Fock free/Kerr H",
+    "initial_boundary_conditions": "orthonormal occupation |n> and no source/resonator coupling",
+    "conservation_and_sources": "Fock number N conserved, S4 action sign^n; U not selected by UD",
+    "projection_and_kernel": "quantum energies and f0j differences require empirical spectral readout absent",
+    "physical_mapping": "NOT ESTABLISHED: no native quantum statistics, action or port calibration"
+  },
+  "target_exposure": {
+    "status": "MODEL_SELECTED_AFTER_MULTILEVEL_TRANSMON_TARGET_KNOWN",
+    "known_targets": [
+      "published Willsch transitions j1..j6; previous direct C7 degeneracy no-go"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "minimal bosonic Fock of 1 complex sign sector",
+      "Kerr U toy ±1/4 and epsilon=5 in arbitrary units, chosen as transparent fixtures"
+    ],
+    "search_domain_and_budget": "1 fixed symmetry family plus three illustrative U values and 24 exact actions, no measured spectral parameter search",
+    "selection_criterion": "get seven energy levels with nonzero anharmonicity without changing original irreps or hiding new coefficients",
+    "baseline": "ordinary bosonic oscillator/Kerr and full harmonic Josephson transmon"
+  },
+  "calculation_steps": [
+    "Construct exact oriented 15x15 Dk and Pk and full signed S4 action, confirm ranks6,6,2.",
+    "Compute complex character via half real trace RP_k and zero imaginary J trace; character table matches std3,sign-twisted3',sign1' pairwise inequivalent.",
+    "Schur lemma implies full Hermitian J-linear S4 commutant has real dimension3, H=c1Pi1+c2Pi2+c3Pi3; max three distinct single-particle levels.",
+    "Impose separate Fock quantization on hidden sign mode, with b† transforming sign and number N invariant; free H=epsilon N gives seven distinct low occupation levels but equal gaps.",
+    "Add optional Kerr U/2 N(N-1) and compute second energy differences exactly U; freedom of U demonstrates no native anharmonic selection.",
+    "Finite truncation to n0..6 yields [b,b†]=I-7|6><6|; U<0 infinite bare Kerr unbounded below, so low-n softened toy not global stable.",
+    "Compare conventional oscillator and Kerr with same Hamiltonian; identical, so no UD unique attribution."
+  ],
+  "result": {
+    "exact_expression": "C7=(3⊕3'⊕1') as S4, Hermitian commutant Σc_i Pi; E_n=n eps+U n(n-1)/2; Δ²E=U; [b,b†]_cut=I7-7|6><6|",
+    "approximation": null,
+    "units": "exact arbitrary toy energy units; physical action/clock OPEN",
+    "precision_and_error": "exact Fraction with 24 signed class actions, rational low-seven level checks, no measured frequencies",
+    "scope": "fixed full signed S4/J C7 source plus explicitly added bosonic Fock and Kerr families",
+    "physical_interpretation": "FAILED uniquely physical quantization or source-selected anharmonicity"
+  },
+  "verification": [
+    {
+      "method": "exact standard-library Fraction constructor",
+      "command_or_proof_path": "experiments/qpb-quantum-extension/audit.py",
+      "source_revision": "211f2e72fc72867bac1b3c8712bf0d5c2464e509",
+      "actual_result": "PASS 24 signed actions, character Gram identity, three rational occupation examples and finite commutator",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate longer same-context implementation",
+      "command_or_proof_path": "local /mnt/data/qpb_qextension/audit.py",
+      "source_revision": null,
+      "actual_result": "PASS independent coding but same-assistant, not external review",
+      "review_relationship": "same constructor"
+    },
+    {
+      "method": "laboratory/held-out quantum spectra",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED/NOT_ACQUIRED",
+      "review_relationship": "empirical"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Even nonlocal S4/J Hermitian original C7 Hamiltonian cannot split threefold sector degeneracies.",
+    "Bosonic occupation quantum state space is an added choice; free source gives zero anharmonicity.",
+    "Kerr coefficient U unconstrained; fitting it to measured anharmonicity is FIT and conventional oscillator reproduces it.",
+    "Bare attractive U<0 infinite Fock is unbounded below; seven-level softening illustration needs stabilization."
+  ],
+  "limitations": [
+    "Full signed tetrahedral S4 is not established physical transmon symmetry.",
+    "No source-selected bosonic statistics, physical action/time/charge operator, resonator or detection port.",
+    "No raw Willsch f0j data, independent review or hardware.",
+    "qext-001 timestamp metadata corrected append-only via authoritative qext-002; claim time also noted as estimated."
+  ],
+  "changed_dependencies": [
+    "Direct sector-preserving fixed C7 math remains exact under old source; Fock/Kerr are changed model assumptions, no mainline status inheritance."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb-qextension-20261024-gpt6-a1/qext-001/manifest.json",
+    "artifacts/qpb-qextension-20261024-gpt6-a1/qext-002/manifest.json"
+  ],
+  "next_discriminant": "Obtain an independently native U/epsilon or quantum charge/phase selection with physical chi/tau0 and held-out f0j; otherwise preserve these no-go results and park physical attribution."
+}

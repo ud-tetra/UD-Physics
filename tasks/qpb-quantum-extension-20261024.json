@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb-quantum-extension-20261024",
+  "goal": "Test source-selected signed-S4 quantum operators and minimal Fock extension against transmon anharmonic spectra without using measured target frequencies",
+  "owned_paths": [
+    "tasks/qpb-quantum-extension-20261024.json",
+    "sessions/qpb-qextension-20261024-gpt6-a1/",
+    "experiments/qpb-quantum-extension/",
+    "candidates/qpb-quantum-extension/",
+    "artifacts/qpb-qextension-20261024-gpt6-a1/"
+  ],
+  "dependencies": [
+    "qpb1-local-generators-20261023",
+    "qpb1-carrier-anchor-20261022"
+  ],
+  "status": "complete",
+  "result": "Exact full S4+J Hermitian commutant on native C7 is real dimension3 due to inequivalent complex irreps 3+3'+1'. Direct single particle cannot lift threefold degeneracies. An assumed Fock lift creates many equally spaced levels; Kerr U provides anharmonicity but remains new unselected free coefficient, matched conventional oscillator null.",
+  "next_action": "Demand native many-body U/epsilon or physical charge/phase/clock/port selection before any heldout transmon comparison; park unique quantum physical attribution."
+}
