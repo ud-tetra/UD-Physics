@@ -99,5 +99,23 @@
       "Base pulse nonaffinity and nonlinear remainder unbounded",
       "Full u100 cell orientation/strut/ringdown/breathing remains OPEN"
     ]
-  }
+  },
+  "checkpoint_addenda": [
+    {
+      "run_id": "projected-adjoint-015",
+      "evidence": [
+        "NUMERICAL",
+        "DEVELOPMENT",
+        "CONDITIONAL",
+        "OPEN"
+      ],
+      "result": "At 12 selected times to u100, adjoint propagated 24 independent nonaffine outputs through full560 moving reference and found exact numerical 24x180 first derivative over all initial housing phases for one source-frozen beta=.005 cf=0 nu=.05 case; highest sampled triangle0.0004356646893 at u4, optimized combined value0.000404929255. Finite selected phases remainder max1.683e-8; no entire nonlinear phase-ball or continuous-time theorem.",
+      "source": "experiments/icosahedral-phasewindow-20261022/PROJECTED_ADJOINT_015.md",
+      "receipt": "sessions/phasewindow-20261022-gpt6-7c41/mathematical_receipt_adjoint_015.json",
+      "target_exposure": "Reference pulse, case, phase threshold and u4 peak are preexposed; seven near-peak times postselected.",
+      "archive_sha256": "8a270616332dd8860fff1ba9e807dcdb94344651a40c1bf9ec0eb59a90911342",
+      "scope": "local reproducibility ZIP fully captured; GitHub repository stores report/receipt/checkpoint/result; not a complete GitHub artifact capture",
+      "next": "Continuous-time full180 projected gain plus uniform nonlinear remainder, no PR44 overlapping writes"
+    }
+  ]
 }
