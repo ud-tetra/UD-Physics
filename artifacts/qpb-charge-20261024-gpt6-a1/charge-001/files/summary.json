@@ -1,0 +1,87 @@
+{
+  "S4_invariant_U1_characters": "ONLY_TRIVIAL via invariant perfect pairing and fixed D={0}",
+  "S4_invariant_diagonal_H": "v0*P_order1+v2*P_order2+v4*P_order4, independent real coefficients; scalar offset v0 unphysical",
+  "S4_orbit_orders": [
+    1,
+    2,
+    4
+  ],
+  "S4_orbit_sizes": [
+    1,
+    3,
+    12
+  ],
+  "conventional_null": "ordinary K4 chip-firing/discrete electric-network discriminant and finite Heisenberg representation identical",
+  "det_reduced_laplacian": 16,
+  "finite_Weyl_full_translation_and_modulation_commutant": "C*I16; no nontrivial Hamiltonian if full Weyl symmetry imposed",
+  "finite_charge_label_count": 16,
+  "independent_prediction": "NONE; positive S4-invariant energy gap and physical coupling ratios not source-selected",
+  "labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "pairing_S4_invariant_checks": 6144,
+  "perfect_pairing_char_orthogonality_checks": 16,
+  "physical_action_clock": "OPEN chi/tau0 and physical conjugate phase or current law",
+  "physical_charge_scale": "OPEN q0; D charges are finite coset tags not additive integer physical electric charge",
+  "positive_diagonal_energy_examples": [
+    {
+      "E2": 0,
+      "E4": 0,
+      "level_multiplicities": {
+        "0": 16
+      }
+    },
+    {
+      "E2": 1,
+      "E4": 1,
+      "level_multiplicities": {
+        "0": 1,
+        "1": 15
+      }
+    },
+    {
+      "E2": 1,
+      "E4": 2,
+      "level_multiplicities": {
+        "0": 1,
+        "1": 3,
+        "2": 12
+      }
+    },
+    {
+      "E2": 2,
+      "E4": 1,
+      "level_multiplicities": {
+        "0": 1,
+        "1": 12,
+        "2": 3
+      }
+    },
+    {
+      "E2": 2,
+      "E4": 2,
+      "level_multiplicities": {
+        "0": 1,
+        "2": 15
+      }
+    },
+    {
+      "E2": 1,
+      "E4": 3,
+      "level_multiplicities": {
+        "0": 1,
+        "1": 3,
+        "3": 12
+      }
+    }
+  ],
+  "scalar_charge_additive_D_to_Z": "ONLY_ZERO since exponent4 and Z torsion-free",
+  "signed_S4_actions": 24,
+  "source_group": "D=Z^3/(4I3-ones)Z^3 = Z4 x Z4, K4 reduced Laplacian det16",
+  "source_limits": "integrated finite pairing, charge field, loop history and impedance audits are read-only; no physical quantum quantization rule supplied",
+  "status": "PASS"
+}

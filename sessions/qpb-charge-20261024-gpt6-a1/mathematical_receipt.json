@@ -1,0 +1,303 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "charge-001-K4-finite-quantum-selector",
+  "session_id": "qpb-charge-20261024-gpt6-a1",
+  "candidate_id": "qpb-native-charge",
+  "question": "Can the tetrahedral finite discriminant group and Weyl algebra supply a physically additive S4-invariant scalar electric charge and independently specified quantum energy gaps?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "Dcut",
+      "symbol": "Dcut",
+      "object_type": "cut-lattice graph-critical group",
+      "definition": "Z³/L Z³ with L=4I3-11ᵀ, det16, hence abstract Z4²",
+      "domain": "Z³",
+      "codomain": "finite abelian D",
+      "coefficient_domain": "Z and Q inverse",
+      "units": "dimensionless coset",
+      "basis_orientation": "oriented zero-sum tetrahedral vertex divisors",
+      "metric_measure": "reduced Laplacian form L, cut convention",
+      "origin": "derived concrete presentation compatible with integrated group",
+      "exact_expression": "L^-1=(I+11ᵀ)/4, |D|=16",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source-int",
+        "source-finite"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "choose vertex3 root; full S4 action acts covariantly on quotient"
+    },
+    {
+      "object_id": "pairing",
+      "symbol": "bcut",
+      "object_type": "finite perfect S4-invariant cut discriminant pairing",
+      "definition": "b([t],[u])=tᵀ L^-1 u mod Z",
+      "domain": "Dcut x Dcut",
+      "codomain": "Q/Z",
+      "coefficient_domain": "Q modulo integers",
+      "units": "phase in turns",
+      "basis_orientation": "cut-dual convention, not flow-source b literally",
+      "metric_measure": "perfect symmetric bilinear",
+      "origin": "derived",
+      "exact_expression": "characters exp(2πib) separate all16 basis states",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source-int"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "Dcut"
+      ],
+      "normalization": "residue multiples of 1/4"
+    },
+    {
+      "object_id": "weyl",
+      "symbol": "T_x,M_y",
+      "object_type": "finite shift and character modulation",
+      "definition": "T_x|z>=|z+x>, M_y|z>=exp(2πib(y,z))|z>",
+      "domain": "complex Hilbert C[Dcut]",
+      "codomain": "unitaries",
+      "coefficient_domain": "roots of unity and complex amplitudes",
+      "units": "dimensionless finite phases",
+      "basis_orientation": "charge-coset labeled ket basis",
+      "metric_measure": "orthonormal C16 basis",
+      "origin": "assumed representation of native finite algebra",
+      "exact_expression": "commutant of all T/M is C I16",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source-finite"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "pairing"
+      ],
+      "normalization": "no physical chi assigned"
+    },
+    {
+      "object_id": "Hd",
+      "symbol": "Hdiag",
+      "object_type": "S4-invariant diagonal hypothetical quantum Hamiltonian",
+      "definition": "v0 Porder1 + v2 Porder2 + v4 Porder4",
+      "domain": "C16",
+      "codomain": "Hermitian C16",
+      "coefficient_domain": "R energy coefficients, Q fixtures",
+      "units": "native arbitrary energy; physical joules OPEN",
+      "basis_orientation": "three S4 orbits of sizes1,3,12",
+      "metric_measure": "Euclidean positive if coefficients nonnegative",
+      "origin": "assumed",
+      "exact_expression": "two gap parameters v2-v0 and v4-v0 freely choose",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source-finite"
+      ],
+      "assumption_ids": [
+        "A3"
+      ],
+      "dependency_ids": [
+        "Dcut"
+      ],
+      "normalization": "overall v0 offset may be chosen zero"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "source-finite",
+      "url_or_repo_path": "experiments/qpb1-finite-pairing/README.md",
+      "version_or_commit": "59814ea16e94ac4048dc878ef99d23097ca63b9b",
+      "section_or_object_id": "§§1–5 flow-discriminant group, perfect b and finite Weyl irreducibility",
+      "source_status": "integrated native finite math, different flow pairing convention"
+    },
+    {
+      "source_id": "source-int",
+      "url_or_repo_path": "experiments/qpb1-integral-duality/README.md",
+      "version_or_commit": "59814ea16e94ac4048dc878ef99d23097ca63b9b",
+      "section_or_object_id": "§§1–3 cut/flow lattices and duality, graph K4 critical-group structure",
+      "source_status": "integrated cut-flow exact algebra"
+    },
+    {
+      "source_id": "source-field",
+      "url_or_repo_path": "experiments/qpb1-charge-field/README.md",
+      "version_or_commit": "59814ea16e94ac4048dc878ef99d23097ca63b9b",
+      "section_or_object_id": "§§2–7 external R6 charge-field model and unselected parameters",
+      "source_status": "conditional separate physical field carrier"
+    },
+    {
+      "source_id": "source-imp",
+      "url_or_repo_path": "experiments/qpb1-impedance-selection/README.md",
+      "version_or_commit": "59814ea16e94ac4048dc878ef99d23097ca63b9b",
+      "section_or_object_id": "§§2–5 action, Coulomb/impedance scale obstruction",
+      "source_status": "integrated source selection audit"
+    },
+    {
+      "source_id": "source-hist",
+      "url_or_repo_path": "experiments/qpb1-loop-history/README.md",
+      "version_or_commit": "59814ea16e94ac4048dc878ef99d23097ca63b9b",
+      "section_or_object_id": "§§2–6 charge-coset tags, no unrestricted physical action",
+      "source_status": "integrated finite/native history audit"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Concrete K4 cut critical group as a presentation of abstract native Z4²; do NOT silently equate pairing with cycle-flow bilinear convention."
+    },
+    {
+      "id": "A2",
+      "description": "Propose finite Hilbert C[Dcut] and regular finite shifts/modulations; optional extra FULL Weyl invariance of Hamiltonian."
+    },
+    {
+      "id": "A3",
+      "description": "Alternative only S4-invariant diagonal Hamiltonian in coset basis, freely selected orbit energies; charge physical mapping not present."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer Laplacian/cohomological group",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "reduced K4 Laplacian determinant16, inverse and torsion-free charge obstruction"
+    },
+    {
+      "technique": "exact rational/S4 permutations",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "64 quotient representatives, 24 S4 actions, 3 orbits, fixed points"
+    },
+    {
+      "technique": "finite Weyl and character orthogonality",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "perfect b and 16 character cancellations, commutant scalars"
+    },
+    {
+      "technique": "spectral/Hermitian dynamics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Weyl-symmetric H scalar vs S4-diagonal orbit Hamiltonians free"
+    },
+    {
+      "technique": "physical units/charge",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "dimensionless finite cosets vs additive integer charge/coulombs, physical action and clock OPEN"
+    },
+    {
+      "technique": "fit/null/source selection",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "six nonnegative orbit-energy examples and conventional chip-firing/Weyl null; no empirical fit"
+    },
+    {
+      "technique": "prime factorization and modular clock",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "4-primary finite group is native algebra, not a privileged physical tick clock"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "K4 reduced L=4I3-11ᵀ, det16; 4^3=64 test triples→16 quotient labels; S4 action24, pairing checks24*16*16=6144",
+    "reduced_expression": "Dcut≅Z4², orbit sizes1+3+12=16, orders1/2/4; full Weyl commutant CI16 and additive charge to Z zero",
+    "factor_origins": [
+      "complete tetrahedral vertex graph",
+      "integral cut lattice and rational inverse",
+      "finite Weyl character separation"
+    ],
+    "factorization": "det L=16=4*4; group invariant factors (4,4)",
+    "divisibility_gcd_lcm": "exponent4 gives 4q(x)=0 for any additive hom into torsion-free Z/R"
+  },
+  "clock_receipt": {
+    "clock_type": "none native selected; finite residues modulo4 for charge cosets",
+    "modulus": 4,
+    "residue_convention": "b values in quarters modulo integers; not a physical frequency or tick",
+    "update_rule": "finite Weyl shifts T and modulations M algebraic, no time law",
+    "initial_phase": "no Hamiltonian-selected phase evolution",
+    "coupling": "only freely assumed S4 orbit energies or optional Weyl action",
+    "period_claim": "no physical recurrence inferred",
+    "physical_unit_map": "physical charge q0, action chi and time tau0 remain OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "cut D finite group, H=C[D] complex16 only as hypothesis",
+    "generator_or_update": "not native; full Weyl-commuting H=cI or free S4-diagonal H=v0P1+v2P2+v4P4",
+    "initial_boundary_conditions": "basis coset labels, assumed quantum Hilbert",
+    "conservation_and_sources": "no charge source, current or physical Gauss dynamical equation derived",
+    "projection_and_kernel": "orbit projectors rank1,3,12, modulo4 labels; charge Q additive D->Z necessarily zero",
+    "physical_mapping": "none; measurable current, Coulombs and energy gaps require new physical map"
+  },
+  "target_exposure": {
+    "status": "AFTER_PRIOR_QUANTUM_INTERACTION_FAILURE",
+    "known_targets": [
+      "transmon quantum anharmonicity known; prior U/epsilon remained free in PR159"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "cut-lattice presentation selected to expose source charge labels",
+      "six positive orbit energy fixtures chosen to demonstrate free gaps",
+      "optional full Weyl Hamiltonian symmetry explicitly stronger than source time evolution"
+    ],
+    "search_domain_and_budget": "all 64 quotient reps, 24 S4 elements, 6144 pairing invariance equalities; six illustrative orbit Hamiltonians, no actual quantum data search",
+    "selection_criterion": "test if group/additivity/S4/Weyl selects nonzero physical scalar charge and unique physical energy",
+    "baseline": "ordinary graph critical group and finite Heisenberg operators exactly identical"
+  },
+  "calculation_steps": [
+    "Construct L=4I-11^T with inverse (I+11^T)/4, determinant16, quotient Dcut order16 and invariant factors 4,4.",
+    "Represent zero-total four-vertex divisors and full S4 permutations, verify quotient representatives define S4 actions and orbit sizes1,3,12.",
+    "Compute perfect bcut=t^T L^-1 u mod1 and check 6144 S4 pairing invariances; nonzero character sums vanish exactly.",
+    "Any additive scalar group hom Dcut->Z or R vanishes because 4d=0 and targets have no torsion. By invariant perfect pairing, S4-fixed scalar U1 characters correspond to S4-fixed Dcut={0}.",
+    "On separately ASSUMED H=C[Dcut] commuting with all M forces H diagonal, commuting with all T forces diagonal entries equal, so full Weyl commutant scalar.",
+    "Under weaker only S4 covariance, construct independent orbit-constant diagonal energies with ranks1,3,12; select six nonnegative choices and verify exact symmetries, showing no energy gap selection.",
+    "Distinguish cut pairing from flow pairing, physical scalar vs vector-valued source charge, and conventional graph/Weyl null."
+  ],
+  "result": {
+    "exact_expression": "Hom(Dcut,Z)=0; (Dhat)^S4=0; Comm(T,M)=CI16; H_S4diag=v0P1+v2P2+v4P4",
+    "approximation": null,
+    "units": "dimensionless finite labels; physical q0 Coulomb, chi action and tau0 seconds unselected",
+    "precision_and_error": "integer and Fraction exact, 64*24 representative checks, 6144 exact pairing checks, no numerical approximation",
+    "scope": "K4 cut group finite, scalar additive charge on quotient and finite Weyl Hamiltonian symmetry only",
+    "physical_interpretation": "FAILED native scalar physical charge/H selector, no physical spacetime or transmon identification"
+  },
+  "verification": [
+    {
+      "method": "exact Python standard-library group/permutation/Weyl character audit",
+      "command_or_proof_path": "experiments/qpb-native-charge/audit.py --out /tmp/qpb-native-charge-001.json",
+      "source_revision": "59814ea16e94ac4048dc878ef99d23097ca63b9b",
+      "actual_result": "PASS 16 classes/24 actions/6144 pair invariances/6 orbit energy examples, immutable SHA256 source/output",
+      "review_relationship": "same-constructor"
+    },
+    {
+      "method": "external non-constructor and quantum hardware review",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN/NOT_EXECUTED",
+      "review_relationship": "external"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Nonzero scalar integer additive physical charge cannot factor through finite exponent4 Dcut.",
+    "Full Weyl symmetry disallows nontrivial H; weakening to native S4 allows freely adjustable energy gaps, not a uniquely selected Hamiltonian.",
+    "Nontrivial invariant central mu4 characters do not imply invariant scalar additive charge character on Dcut.",
+    "Cut-lattice pairing and flow-lattice source pairing require an explicit duality/sign convention; cannot identify bilinear matrices silently.",
+    "Conventional graph chip-firing/finite Weyl null exactly reproduces structures; no unique physical attribution."
+  ],
+  "limitations": [
+    "Physical charge may be vector-valued on unquotiented lattice with source/reservoir, not tested under scalar obstruction.",
+    "Cut representation pairing source-convention sign not equated.",
+    "No physical port/action/clock/current and no held-out spectra, no independent review.",
+    "Only source scopes read, no global no-go for all UD representations."
+  ],
+  "changed_dependencies": [
+    "Separate disjoint project task, PR159 and earlier finite source read-only; no mainline effect."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb-charge-20261024-gpt6-a1/charge-001/manifest.json"
+  ],
+  "next_discriminant": "Require independent source-defined vector-valued physical current/charge with q0 and a Hamiltonian/clock/port selection prior to held-out measurement. Otherwise park this finite-charge physical bridge."
+}
