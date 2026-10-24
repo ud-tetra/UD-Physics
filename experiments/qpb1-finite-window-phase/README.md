@@ -77,3 +77,8 @@ See [session record](../../sessions/qpb1-finwindow-20261023-gpt6-b6f2/record.jso
 ## Phase-006 multiport signature and classical matched null
 
 [Exact tetrahedral four-face signs, all-time transfer zeros, one-bond defect and classical 15-port equivalence](MULTIPORT_DISCRIMINANT.md). The new `phase-006` exact constructor is an interpretable controlled-port candidate, but the unrestricted classical incidence-matched null eliminates unique physical attribution.
+
+
+## Phase-007 source-closed constitutive audit
+
+[Native analytic closure, minimal local quartic nonlinear alternative, J-fiber obstruction and matched conventional Hamiltonian null](CONSTITUTIVE_SOURCE_AUDIT.md). A preparation-scaling signature exists only after a new unselected quartic coefficient is postulated; the old phase theorems do not transfer and unique physical attribution fails.
