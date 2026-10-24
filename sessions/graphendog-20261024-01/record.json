@@ -12,15 +12,17 @@
   "claims": {
     "ref": "refs/heads/claims/graphite-endogenous-gate-20261024",
     "held_sha": "fc305a51f9af71949ee3919b78a2f032d1fd009f",
-    "status": "held"
+    "status": "released",
+    "release_sha": "007cce30b76e36f04a399d655d98a471c726e1ad"
   },
   "checks": [
     "exact threshold orbit, full generator C3 basis commutation, stock derivative and transition replay PASS",
     "scripts/validate.py PASS (276 records)",
     "16 unit tests PASS",
+    "GitHub Discovery integrity workflow 40119666974 success",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Standalone symmetric endogenous threshold FAILED; conditional C3 fixed-subspace obstruction and transition receipt EXACT.",
+  "finding": "Research merged in PR #160 at 8b5357be788dc72e2a57ddcc2326f1e8aec2f295: standalone symmetric endogenous threshold FAILED; conditional C3 fixed-subspace obstruction and transition receipt EXACT.",
   "next_action": "Independently constrain graphite symmetry-breaking preparation/boundary and gate duration, then physical force/loss map.",
   "mathematical_profile": {
     "coefficient_domain": "exact integer incidence and rational thresholds",
