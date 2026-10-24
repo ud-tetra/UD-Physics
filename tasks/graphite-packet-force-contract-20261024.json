@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-packet-force-contract-20261024",
+  "goal": "Derive closed packet averaging and reciprocal force and damping contract",
+  "owned_paths": [
+    "experiments/graphite-packet-force-contract",
+    "candidates/graphite-packet-force-contract",
+    "sessions/graphforce-20261024-01",
+    "artifacts/graphforce-20261024-01",
+    "tasks/graphite-packet-force-contract-20261024.json"
+  ],
+  "dependencies": [
+    "graphite-packet-identifiability-20261024"
+  ],
+  "status": "complete"
+}

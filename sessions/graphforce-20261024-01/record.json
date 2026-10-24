@@ -1,0 +1,36 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphforce-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell exact verification and GitHub connector write",
+  "task": "graphite-packet-force-contract-20261024",
+  "goal": "Test closed packet current averaging and derive reciprocal force and damping interface",
+  "created_at": "2026-10-24T20:09:40.121908+00:00",
+  "base_revision": "5863f5f28938d92f3b156cb9233b92a54e9f7d62",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/graphite-packet-force-contract-20261024",
+    "held_sha": "731ff281e1a9e23276bac65ebfc5008a609f75ee",
+    "status": "held"
+  },
+  "checks": [
+    "exact matrix verifier PASS N7/13/19, fixed open and one-edge masks",
+    "finite skew/trigonometric mean proof constructor review",
+    "independent physics review NOT_RUN",
+    "scripts/validate.py PASS (after task status correction)",
+    "16 unit tests PASS"
+  ],
+  "finding": "Fixed closed native packet signed harmonic current has exactly zero Cesaro mean under affine clock; reciprocal material completion requires dimensional cross-Hessian and dissipative loss.",
+  "next_action": "Independently constrain packet-to-material cross-Hessian and complex bath, then compare signed held-out forces and load slopes.",
+  "mathematical_profile": {
+    "coefficient_domain": "real finite skew generator, exact integer matrix checks and rational material algebra",
+    "applicable_methods": [
+      "spectral/graded parity",
+      "local continuity and signed projection",
+      "reciprocal energy and loss",
+      "N/A modular clocks or prime factors: no discrete clock/divisibility selection"
+    ],
+    "clock_metric_units_conventions": "dimensionless native s; unit chain metric; affine physical time map only conditional; material u,h \u00c5, E meV/atom, D meV ps \u00c5^-2"
+  }
+}
