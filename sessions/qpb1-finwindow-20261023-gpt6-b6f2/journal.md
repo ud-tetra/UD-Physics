@@ -24,3 +24,12 @@
 - Detailed assumptions: calibration complex amplitude<=2e-6, probe time error<=1e-7, repeated normalized state norm distance<=5e-6, gain drift<=5e-6, main native-T metrology <=1e-5, common gauge. With the prior exposed screens, new phase budget 0.00821419808694 rad. All calibration numbers are target-informed and physically unmeasured.
 - Executed: `python3 /mnt/data/ud_qpb_calibration/calibration_audit.py --out /mnt/data/ud_qpb_calibration/summary.json`, PASS exact Fraction assertions, 125 grid+10000 seeded weighted probes+16 signed noise cases. SHA256 source 784eedc38b32187a383dda3be5e6bb28614b3572b4d389f0515cd7ff1f4251c6; output fb92ac9b048f259d94b4d475bdf37bc164fffcce0659c6e3b2a8e91fcfb7bc67.
 - IMMUTABLE artifact phase-003 committed; phase-001/002 unmodified. External mathematics/empirical verification NOT_RUN/NOT_EXECUTED. Do not merge/export or release claim pending independent assessment.
+
+## 2026-10-24T01:32:00Z — phase-004 statistical receiver and frame-reference checkpoint
+
+- Live claim e38d9b6cfba644744eba92d668b670068751487f remains HELD. PR #87 draft, head before phase-004 7e100fa6504fde634fab08497afeb4467ecae710.
+- EXACT / CONDITIONAL: under eight ideal independent Bernoulli streams, two calibrated overlaps with |complex error| <= 2e-6 are jointly within budget at >=99% probability if m=7.4e12 events per setting (59.2e12 total). Exact 13th Taylor bound establishes tail <1/100; this is sufficient, not optimal/minimal.
+- EXACT / CONDITIONAL counterexample: untracked measurement-frame phase of .002 radians only at main endpoint is invisible to probe results and contrast, yet moves the corrected phase by .002; combined previous worst-case upper budget grows to .0102141981 and loses its .01 certification. Does not refute previous same-frame theorem.
+- Constructor execution: python3 /mnt/data/qpb_phase004/shot_noise_audit.py --out /mnt/data/qpb_phase004/summary.json, PASS; source SHA-256 f73c9585f5707c5ac2a8e6b393a0510bd904c81dc734aa0ec3175253d8ce6dba, output SHA-256 a4e2e7d8d2b25a01fd963c23a73436a24adbf981a71e887d530f9bcae5f03f62. Immutable artifact phase-004; phases001-003 unchanged.
+- Physical information: Nature Photonics 2017 standard shot-noise scaling and Applied Optics 2021 phase-stepping systematic errors, cited as external conventional context; no instrument or UD identification inferred.
+- Review and physical testing remain NOT_RUN / NOT_EXECUTED. Next: independent proof audit and concrete reference-drift/null-channel feasibility. No merge, no release, no mainline export.

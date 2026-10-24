@@ -62,3 +62,8 @@ See [session record](../../sessions/qpb1-finwindow-20261023-gpt6-b6f2/record.jso
 ## Phase-003 short-time calibration (follow-up)
 
 [Richardson-based dynamical correction and worst-case metrology budget](CALIBRATION_REVIEW.md) specifies a conditional way to test the previous 0.001-radian calibration assumption without selecting native gains. This phase-003 result assumes substantially more precise short-time fringe probes and shared reference metrology; it is neither a physical experiment nor outside review.
+
+
+## Phase-004 shot noise and reference-frame feasibility
+
+[Statistical probe-count and measurement-frame audit](SHOT_NOISE_AND_FRAME.md) challenges the unmeasured detector and same-frame assumptions of phase-003. Prior exact conditional algebra is preserved; no physical phase success is inferred.
