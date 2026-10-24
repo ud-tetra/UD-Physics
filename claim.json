@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-cross-loss-20261023",
+  "session": "graphmixidx-20261023-66b15b3c",
+  "status": "held",
+  "created_at": "2026-10-24T01:26:34Z",
+  "base_revision": "5ce8e4189a6e3f3dca62a873d510b50af52c6b03",
+  "owned_paths": [
+    "tasks/integration-graphite-cross-loss-20261023.json",
+    "sessions/graphmixidx-20261023-66b15b3c/",
+    "experiments/graphite-superlubricity/README.md",
+    "experiments/graphite-linewidth-transfer/README.md",
+    "state/CURRENT.md"
+  ]
+}
