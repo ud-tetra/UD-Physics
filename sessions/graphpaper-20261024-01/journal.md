@@ -27,3 +27,7 @@ Revision synthesis: exact angle/quotient/source results remain separate from the
 Checkpoint (handoff): Three-page revised preprint separates exact conventional angles, conditional UD source, conventional 2D drag and the still-open signed residual; PDF and TeX checked.
 
 Next: Publish focused PR, release claim, index v2 through integration claim; obtain contact-calibrated complex loss and held-out signed force/load data.
+
+## Release and integration
+
+PR #124 merged at 2d985e88475ad71f69afc7797c5a792372502123 after Discovery integrity workflow 40111089176 succeeded. Claim refs/heads/claims/graphite-manuscript-v2-20261024 released at 1aaff99375a3e34922736f39584cf05ba7feb804 through an exact expected-head lease. No independent physics review or physical promotion. Next: index v2 under an integration claim and independently determine contact/source/loss for a held-out force forecast.
