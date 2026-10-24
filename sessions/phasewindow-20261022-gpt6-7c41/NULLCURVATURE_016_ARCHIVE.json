@@ -1,0 +1,19 @@
+{
+  "record_type": "local_reproducibility_checkpoint",
+  "run_id": "nonaffine-nullcurvature-016",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "git_publication_scope": "Report, checkpoint and typed receipt on claimed isolated branch; full replay ZIP is local download artifact and is not an immutable GitHub run.",
+  "zip_name": "UD_3D_Nonaffine_NullCurvature_016_20261023.zip",
+  "zip_sha256": "e58aa2f25d9295c2fe16bc9cdb50b87a170673551321e0382a7646b9d2c4dcee",
+  "zip_bytes": 162972,
+  "zip_members": 39,
+  "local_archive_manifest": "capture-016/manifest.json",
+  "local_manifest_source_inputs": 13,
+  "local_manifest_outputs": 14,
+  "local_audit": "PASS schema2 SHA256 and scope checks; no universal theorem",
+  "environment": "Python 3.13, NumPy 2.3.5, SciPy 1.17.0; optional SymPy 1.14.0",
+  "limitations": [
+    "GitHub CI tests validate repository content only",
+    "The full binary and source capture is in the verified ZIP rather than in the GitHub branch"
+  ]
+}
