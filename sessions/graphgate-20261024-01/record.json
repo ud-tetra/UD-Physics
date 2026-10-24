@@ -12,15 +12,17 @@
   "claims": {
     "ref": "refs/heads/claims/graphite-native-gate-dynamics-20261024",
     "held_sha": "d610eba056ba8f543ffbc2171bc2d3a62b3a4c11",
-    "status": "held"
+    "status": "released",
+    "release_sha": "646d0768a41ff66b1b7e8fe6600070c536cd529e"
   },
   "checks": [
     "exact full-carrier C3 basis commutation and Fraction Taylor replay PASS",
     "scripts/validate.py PASS (270 records)",
     "16 unit tests PASS",
+    "GitHub Discovery integrity workflow 40118776350 success",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Exact conditional native gate result; no physical friction or seven-cell preference derived.",
+  "finding": "Exact conditional native gate result merged in PR #155 at eeb5a2e06e784c76e1b85efdb66f803078e57838; no physical friction or seven-cell preference derived.",
   "next_action": "Derive or independently constrain interface gate preparation and dimensional material response with held-out controls.",
   "mathematical_profile": {
     "coefficient_domain": "integer chain incidence and exact rational Taylor coefficients",
