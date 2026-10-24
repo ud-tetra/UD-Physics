@@ -1,0 +1,10 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-linewidth-transfer-20261023",
+  "goal": "Convert archived conventional graphite mode weights into a mode-linewidth calibration equation and identify missing dissipation inputs",
+  "owned_paths": ["tasks/graphite-linewidth-transfer-20261023.json", "sessions/graphline-20261023-80beee09/", "candidates/graphite-linewidth-transfer/", "experiments/graphite-linewidth-transfer/", "artifacts/graphline-20261023-80beee09/"],
+  "dependencies": ["graphite-source-constraints-20261023"],
+  "status": "complete",
+  "completion_scope": "Conditional mode-resolved linewidth-to-drag transfer and load derivative from archived KC-plus-plate coefficients; no measured linewidth or UD-specific damping"
+}

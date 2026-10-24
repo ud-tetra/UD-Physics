@@ -1,0 +1,101 @@
+{
+  "status": "PASS_CONDITIONAL_ARCHIVED_SPECTRAL_REPLAY",
+  "linewidth_definition": "resolved dissipative power-spectrum FWHM in cycles/ps (THz), weak damping, D diagonal in conservative normal-mode basis",
+  "drag_formula": "gamma_scalar = sum_j a_j d_j; d_j = 2*pi*m_eff*Delta_f_j; gamma is per mean upper atom",
+  "pressure_formula": "gamma_prime = sum_j (a_j_prime*d_j + a_j*d_j_prime)",
+  "cutoff_results": [
+    {
+      "cutoff_angstrom": 14,
+      "mass_eff_meV_ps2_per_A2_per_upper_atom": 0.08883659714709259,
+      "mode_pair_frequencies_THz": [
+        9.370900760099694,
+        25.593659691293894
+      ],
+      "per_unit_d_pair_weights": [
+        0.000495085711423288,
+        3.3458967228753894e-05
+      ],
+      "inactive_weight_absolute_upper_bound": 4.662069341687669e-18,
+      "low_pair_fraction_for_uniform_d": 0.9366960475052271,
+      "high_to_low_linewidth_ratio_for_equal_drag": 14.796801946648923,
+      "drag_coefficients_meV_ps_per_A2_per_upper_atom_per_THz_FWHM": [
+        0.00027634535908569,
+        1.8676019323775214e-05
+      ],
+      "drag_pressure_coefficients_per_MPa_per_THz_FWHM": [
+        2.2238632691169677e-07,
+        1.541853062740881e-08
+      ],
+      "pair_log_weight_slopes_per_MPa": [
+        0.0008047405885428261,
+        0.0008255790680073078
+      ],
+      "uniform_width_log_drag_slope_per_MPa": 0.000806059746656909,
+      "uniform_width_fractional_slope_needed_for_zero_drag_slope_per_MPa": -0.000806059746656909,
+      "static_softening_meV_per_A2_per_upper_atom": 0.2293386824419527,
+      "closed_finite_Ohmic_drag": 0.0
+    },
+    {
+      "cutoff_angstrom": 16,
+      "mass_eff_meV_ps2_per_A2_per_upper_atom": 0.0888365971470926,
+      "mode_pair_frequencies_THz": [
+        9.370902241313892,
+        25.59366027023916
+      ],
+      "per_unit_d_pair_weights": [
+        0.0004950856207363589,
+        3.3459137601707405e-05
+      ],
+      "inactive_weight_absolute_upper_bound": 1.395910297075087e-17,
+      "low_pair_fraction_for_uniform_d": 0.9366957347057705,
+      "high_to_low_linewidth_ratio_for_equal_drag": 14.796723891386105,
+      "drag_coefficients_meV_ps_per_A2_per_upper_atom_per_THz_FWHM": [
+        0.00027634530846634995,
+        1.867611442200554e-05
+      ],
+      "drag_pressure_coefficients_per_MPa_per_THz_FWHM": [
+        2.223843391029915e-07,
+        1.5418404240985124e-08
+      ],
+      "pair_log_weight_slopes_per_MPa": [
+        0.0008047335427446593,
+        0.0008255680969066056
+      ],
+      "uniform_width_log_drag_slope_per_MPa": 0.0008060524588886142,
+      "uniform_width_fractional_slope_needed_for_zero_drag_slope_per_MPa": -0.0008060524588886142,
+      "static_softening_meV_per_A2_per_upper_atom": 0.22933909758841797,
+      "closed_finite_Ohmic_drag": 0.0
+    },
+    {
+      "cutoff_angstrom": 18,
+      "mass_eff_meV_ps2_per_A2_per_upper_atom": 0.0888365971470926,
+      "mode_pair_frequencies_THz": [
+        9.370902956178835,
+        25.593660545520926
+      ],
+      "per_unit_d_pair_weights": [
+        0.0004950864364444015,
+        3.3459059382004596e-05
+      ],
+      "inactive_weight_absolute_upper_bound": 2.031523820694714e-17,
+      "low_pair_fraction_for_uniform_d": 0.9366959710257491,
+      "high_to_low_linewidth_ratio_for_equal_drag": 14.796782862063223,
+      "drag_coefficients_meV_ps_per_A2_per_upper_atom_per_THz_FWHM": [
+        0.00027634576377565643,
+        1.867607076158199e-05
+      ],
+      "drag_pressure_coefficients_per_MPa_per_THz_FWHM": [
+        2.2238356703000694e-07,
+        1.541837331629268e-08
+      ],
+      "pair_log_weight_slopes_per_MPa": [
+        0.0008047294229939518,
+        0.000825568371052083
+      ],
+      "uniform_width_log_drag_slope_per_MPa": 0.0008060486123656167,
+      "uniform_width_fractional_slope_needed_for_zero_drag_slope_per_MPa": -0.0008060486123656167,
+      "static_softening_meV_per_A2_per_upper_atom": 0.22933919402855873,
+      "closed_finite_Ohmic_drag": 0.0
+    }
+  ]
+}
