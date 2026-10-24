@@ -1,0 +1,34 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-native-source-gate",
+  "session_id": "graphnative-20261024-01",
+  "question": "Can the current UD ledger source and phase kernels supply nonzero graphite coupling and dimensional damping without new constitutive assumptions?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "candidate physical coupling C=S(w)R and passive low-frequency K,D_h law",
+    "Q22 chosen as sole finite multiplicative graphite coupling only in conditional zero branch",
+    "phase kernels not independently mapped to material Rayleigh D_h"
+  ],
+  "physical_mapping": "native edge/source and phase maps to graphite coordinates, energy, length and physical time OPEN",
+  "target_exposure": "21.8/38.2 peaks known; zero/scale proofs use no kinetic target values",
+  "fitted_choices": [
+    "none; finite rational witness uses arbitrary demonstrative values, not material fit"
+  ],
+  "sources": [
+    "supplied UD coefficient provenance ledger v0.39(2), SHA-256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63, Q22\u2013Q26 and Q76\u2013Q84",
+    "UD-Physics graphite manuscript v2 and source/port audits at base a73e2cb",
+    "Chen et al. PRL 137,166201 public abstract, DOI 10.1103/ly48-b4l2"
+  ],
+  "baseline": "conventional full 2D PES/contact/loss; no new force data",
+  "result": "A Q22-only multiplicative source gives zero added coupling; conditional dimensionless phase kernels alone leave the passive material drag scale and local load slope arbitrary under positive D_h scaling.",
+  "next_discriminant": "Derive typed, nonuniform native edge and route law from current primitives; independently identify C,K,D_h/contact and then forecast held-out signed force/load.",
+  "mathematical_receipts": [
+    "candidates/graphite-native-source-gate/mathematical_receipt.json"
+  ]
+}

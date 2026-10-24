@@ -1,0 +1,29 @@
+{
+  "status": "PASS_EXACT_NATIVE_SOURCE_GATE_WITNESS",
+  "ledger_scope": "Q22 zero current; Q23-Q26 source open; Q76-Q84 dimensionless phase maps conditional",
+  "kappa_current": "0",
+  "conditional_current_only_response": [
+    "0",
+    "0"
+  ],
+  "independent_coupling_gamma_at_P0": [
+    "5/4",
+    "7/9"
+  ],
+  "load_derivatives_for_s": {
+    "-2": [
+      "-5/2",
+      "-14/9"
+    ],
+    "0": [
+      "0",
+      "0"
+    ],
+    "3": [
+      "15/4",
+      "7/3"
+    ]
+  },
+  "proof_family": "D_s(P)=exp(s*(P-P0))*D0(P), Gamma_s(P0)=Gamma0(P0), Gamma_s_prime(P0)=Gamma0_prime(P0)+s*Gamma0(P0)",
+  "scope": "exact algebraic witness; not a graphite fit, material coefficient or UD prediction"
+}

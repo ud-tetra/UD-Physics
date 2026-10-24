@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphnative-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute plus GitHub connector write",
+  "task": "graphite-native-source-gate-20261024",
+  "goal": "Audit native UD source and phase-kernel provenance for a graphite material coupling and damping law",
+  "created_at": "2026-10-24T16:46:14.935773+00:00",
+  "base_revision": "a73e2cb42c555b65d8d2b4ec6c1b06bab5259cb3",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/graphite-native-source-gate-20261024",
+    "held_sha": "8f806471e2e41e4965a2ccca363e56528fbcf6d3",
+    "status": "held"
+  },
+  "checks": [
+    "PASS_EXACT_NATIVE_SOURCE_GATE_WITNESS",
+    "scripts/validate.py PASS (238 records)",
+    "16 unit tests PASS",
+    "git diff --check PASS"
+  ],
+  "finding": "Scoped Q22-only graphite coupling vanishes, while dimensionless phase kernels leave positive material damping scale and local load slope unidentified; no measured residual.",
+  "next_action": "Publish and index source/loss gate; derive target-blind nonuniform edge and route law or obtain independent material calibration.",
+  "mathematical_profile": {
+    "coefficient_domain": "exact real matrices with positive semidefinite loss and symbolic positive scale",
+    "exactness_or_precision_plan": "proof by substitution and one-parameter scale families; no fitted material numbers",
+    "applicable_methods": [
+      "source-zero substitution",
+      "PSD Schur complement and rank",
+      "dimensional rescaling and pressure derivative identifiability",
+      "N/A modular clock: native-to-physical time map open"
+    ],
+    "clock_metric_units_conventions": "unit-edge native S map in 2D lateral basis; physical time and energy absent from phase kernel; gamma has energy*time/length\u00b2 per atom"
+  },
+  "checkpoint_at": "2026-10-24T16:48:04.521978+00:00",
+  "checkpoint_source": {
+    "revision": "a73e2cb42c555b65d8d2b4ec6c1b06bab5259cb3",
+    "dirty": true
+  }
+}
