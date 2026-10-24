@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "qpb-native-charge-20261024",
+  "session": "qpb-charge-20261024-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-24T19:51:12.186Z",
+  "base_revision": "59814ea16e94ac4048dc878ef99d23097ca63b9b",
+  "owned_paths": [
+    "tasks/qpb-native-charge-20261024.json",
+    "sessions/qpb-charge-20261024-gpt6-a1/",
+    "experiments/qpb-native-charge/",
+    "candidates/qpb-native-charge/",
+    "artifacts/qpb-charge-20261024-gpt6-a1/"
+  ]
+}
