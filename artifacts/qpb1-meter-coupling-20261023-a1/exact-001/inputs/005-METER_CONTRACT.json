@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "parent_contract": "experiments/qpb1-overlap-acquisition/ACQUISITION_CONTRACT.json",
+  "assumptions": [
+    "Original real15-register filled-tetrahedron carrier, ascending orientations, Euclidean metric, rank14 active P,J=A/2; add a second15-register classical meter.",
+    "Proposed balanced law xprime=Gx-Km,mprime=(G+E)m+Kx-Dm with shared local G; nominalK=I/4,D=I. No native constitutive selection or physical transducer is imported.",
+    "Parent commuting gain box, seed preparation ballrho1/10, finitewindow|T-2pi|<=1/100 and128maximum-gap links retained. Seed preparation occurs before one-unitwarmup; sector fractions preserved by commonU.",
+    "Known nominal scalar calibrationm/b(tau),b>1/8ontau[1,5107/700]; calibrated signed readout, electronic gains/noise, reference storage and clock obey explicit bounds.",
+    "Nonuniform balanced ports/damping and skew meter mismatch obey operator delta; initial meter norm<=e0. Full positive storage ensures contraction; unmodeled load must fit this operator budget.",
+    "Finite reset64nativeunits assumes D>=I/2,combinedresetamplitude<=11/10,off-port leakage<=e0/(4smax), and subsequent residual-preserving seed preparation.",
+    "26bitSTRICT_A retains prior overlap requirement;21bitREALLOCATED_B is explicitly amended, not strict-parent compliance. No physical accuracy, units or empirical success claimed."
+  ],
+  "model": {
+    "state_space": "C15plant plusC15classicalmeter;30real coordinates,28active",
+    "local_pairs": 71,
+    "intercarrier_ports": 15,
+    "law": "xprime=Gx-Km,mprime=(G+E)m+Kx-Dm",
+    "storage": "(||x||^2+||m||^2)/2",
+    "balance": "Sprime=-m^TDm<=0 for skewG,E and balancedK",
+    "nominal_kappa": "1/4",
+    "nominal_gamma": "1",
+    "nominal_transfer": "x=aU seed,m=bU seed;aprime=-b/4,bprime=a/4-b;a0=1,b0=0",
+    "common_complex_invariance": "Scalarports/damping pluscommonJdetuning preserve projective ray fornonzerometer; not a bound onusable signal inthatgeneralcase"
+  },
+  "warmup": {
+    "native_duration": "1",
+    "window_end_upper": "5107/700",
+    "nominal_meter_gain_lower": ">1/8",
+    "calibration": "m/b(tau); inversegain<8",
+    "preparation_amendment": "Original seedball beforewarmup; windowstartball co-rotated, unchanged sectorweights andsameQ0baseline"
+  },
+  "tolerance_certificate": {
+    "evidence": "EXACT_CONDITIONAL",
+    "profiles": [
+      {
+        "bits": 26,
+        "combined_raw_budget": "9/320000000",
+        "H": "5107/700",
+        "delta_operator": "63/719065600000",
+        "meter_gain_error_per_sector": "21/1438131200000",
+        "relative_port_error": "21/179766400000",
+        "relative_damping_error": "21/719065600000",
+        "relative_readout_gain_error": "9/14080000009",
+        "native_channel_jitter": "9/70400000090",
+        "initial_meter_norm": "9/12800000000",
+        "reset_native_duration": 64,
+        "reset_port_leak_upper": "9/56320000000",
+        "actual_combined_norm_upper": "14080000009/12800000000",
+        "calibrated_additive_noise": "9/1600000000",
+        "inverse_nominal_meter_gain_upper": "8",
+        "phase_bound_rad": "4228853739347636473390170176185891694795101688460668876/2647696529861991371181599588145962661408430949443469668125",
+        "strict_parent_link_budget_passes": true,
+        "five_raw_error_contributions": [
+          "9/1600000000",
+          "9/1600000000",
+          "9/1600000000",
+          "9/1600000000",
+          "9/1600000000"
+        ]
+      },
+      {
+        "bits": 21,
+        "combined_raw_budget": "9/80000000",
+        "H": "5107/700",
+        "delta_operator": "63/179766400000",
+        "meter_gain_error_per_sector": "21/359532800000",
+        "relative_port_error": "21/44941600000",
+        "relative_damping_error": "21/179766400000",
+        "relative_readout_gain_error": "9/3520000009",
+        "native_channel_jitter": "9/17600000090",
+        "initial_meter_norm": "9/3200000000",
+        "reset_native_duration": 64,
+        "reset_port_leak_upper": "9/14080000000",
+        "actual_combined_norm_upper": "3520000009/3200000000",
+        "calibrated_additive_noise": "9/400000000",
+        "inverse_nominal_meter_gain_upper": "8",
+        "phase_bound_rad": "9923581399977106748655613513372820261791094709304724/2585550944925431191249247686440672638604169088744956875",
+        "strict_parent_link_budget_passes": false,
+        "five_raw_error_contributions": [
+          "9/400000000",
+          "9/400000000",
+          "9/400000000",
+          "9/400000000",
+          "9/400000000"
+        ]
+      }
+    ],
+    "operator_bound": "delta<=2eps_g+(1/4)eps_c+eps_d",
+    "raw_error_bound": "8e0+8H*smax*delta+8S*eps_a+8S*(1+eps_a)*5*j+nu;S=smax+e0",
+    "scope": "Conservative sufficient bound; no optimality or necessity; known nominal scalar calibration and bound on unmodeled meter load assumed",
+    "physical_accuracy": "NOT_MEASURED",
+    "physical_promotion": 0
+  },
+  "reset": {
+    "native_duration": 64,
+    "residual": "<=e0",
+    "bound": "smax*2^-32+2ell*smax<e0",
+    "leakage": "ell<=e0/(4smax)",
+    "initial_reset_amplitude": "<=smax",
+    "physical_seconds_energy": "OPEN"
+  },
+  "readout": "Inherited15signedsample to14localquadratures andexactintegerphase/gates; finiteclassicalreferences. Additional15analogmetercoordinates accounted separately.",
+  "target_exposure": "EXPLORATORY_AFTER_ACQUISITION_BUDGET; meter design/controlchoices selected, not native or blind",
+  "physical_hardware": "NOT_BUILT_OR_MEASURED",
+  "physical_score": "UNSCORED",
+  "physical_promotion": 0,
+  "next_discriminant": "Derive a direct projective-phase tolerance bound for differential meter mismatch, quotienting exactly harmless scalar/common-J directions; determine whether useful tolerances replace the conservative full-amplitude box; priority95."
+}

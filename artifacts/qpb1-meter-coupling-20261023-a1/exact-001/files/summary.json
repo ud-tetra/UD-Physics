@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "source_hashes": 24,
+  "literal_rows": 13,
+  "state_dimension": 30,
+  "active_dimension": 28,
+  "local_ports": 15,
+  "intertwining_fixtures": 3,
+  "common_complex_intertwining": "PASS",
+  "S4_actions": 24,
+  "exact_gauge_polygons": 50,
+  "integer_windows": 120,
+  "integer_witness_replay": "PASS",
+  "negative_controls": [
+    "reset_zero_meter_unobservable",
+    "differential_hidden_detuning_breaks_exact_cancellation",
+    "out_of_budget_hidden_detuning_exceeds_phase_screen"
+  ],
+  "full30_RK4_cross_checks": 2,
+  "nominal_meter_lower": ">1/8",
+  "strict_phase_bound": "<1/500rad",
+  "amended_phase_bound": "<1/250rad",
+  "physical_score": "UNSCORED",
+  "physical_promotion": 0
+}
