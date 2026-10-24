@@ -1,0 +1,224 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "graphite-quotient-contrast-001",
+  "session_id": "graphcontrast-20261023-f7047e21",
+  "candidate_id": "graphite-quotient-contrast",
+  "question": "Do the two-dimensional harmonic carrier and uniform-source cancellation uniquely select the observed (2,1) graphite angles?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "quotient",
+      "symbol": "C_*(N), B1, B2",
+      "object_type": "oriented cellular chain complex",
+      "definition": "connected periodic honeycomb on torus with N hexagonal faces",
+      "domain": "C2=Q^N, C1=Q^(3N), C0=Q^(2N)",
+      "codomain": "B2:C2->C1, B1:C1->C0",
+      "coefficient_domain": "Z incidence; Q ranks",
+      "units": "dimensionless",
+      "basis_orientation": "A-to-B bonds, oriented hexagonal faces",
+      "metric_measure": "unit Euclidean only for harmonic representative",
+      "origin": "conditional honeycomb quotient model",
+      "exact_expression": "ranks B1=2N-1, B2=N-1; Betti=(1,2,1)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "graphite-preprint"
+      ],
+      "assumption_ids": [
+        "periodic-torus"
+      ],
+      "dependency_ids": [],
+      "normalization": "N hexagonal faces"
+    },
+    {
+      "object_id": "port",
+      "symbol": "S_N(w)=M^T W B1^T",
+      "object_type": "candidate harmonic incidence source",
+      "definition": "M columns span harmonic edge subspace; W diagonal edge weights",
+      "domain": "C0 lateral/source readout",
+      "codomain": "R^2 harmonic response",
+      "coefficient_domain": "R",
+      "units": "unspecified source-map units",
+      "basis_orientation": "M harmonic, Euclidean inner product",
+      "metric_measure": "unit edge metric",
+      "origin": "imported UD conditional hypothesis",
+      "exact_expression": "W=wI implies S_N=w(B1 M)^T=0 for every toroidal N",
+      "measured_value": null,
+      "uncertainty": "material weights unknown",
+      "source_refs": [
+        "graphite-preprint"
+      ],
+      "assumption_ids": [
+        "periodic-torus",
+        "uniform-edge-weight"
+      ],
+      "dependency_ids": [
+        "quotient"
+      ],
+      "normalization": "not physically calibrated"
+    },
+    {
+      "object_id": "static-contrast",
+      "symbol": "tau21/tau31",
+      "object_type": "source-table ideal static shear ratio",
+      "definition": "DFT-derived rigid first-harmonic estimates in Lebedeva et al. Table 6",
+      "domain": "two moire patterns",
+      "codomain": "positive ratio",
+      "coefficient_domain": "reported rounded decimals",
+      "units": "dimensionless ratio of Pa",
+      "basis_orientation": "two respective minimum-energy sliding paths",
+      "metric_measure": "source-specific rigid models",
+      "origin": "external primary source, not measured force",
+      "exact_expression": "13900/6680 on source-rounded values",
+      "measured_value": "about 2.08 source-derived estimate",
+      "uncertainty": "source rounding, DFT method/model discrepancy, no experimental error",
+      "source_refs": [
+        "lebedeva-v1"
+      ],
+      "assumption_ids": [
+        "rigid-first-harmonic"
+      ],
+      "dependency_ids": [],
+      "normalization": "shear strength Pa"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "chen-abstract",
+      "url_or_repo_path": "https://doi.org/10.1103/ly48-b4l2",
+      "version_or_commit": "PRL 137, 166201 (2026), public abstract accessed 2026-10-23 America/Chicago",
+      "section_or_object_id": "Abstract: sharp peaks at 21.8 and 38.2 degrees, other patterns no detectable signal, negligible load dependence vs coaligned",
+      "source_status": "primary abstract; full text and supplement subscription required"
+    },
+    {
+      "source_id": "lebedeva-v1",
+      "url_or_repo_path": "https://arxiv.org/html/2511.01338v1",
+      "version_or_commit": "arXiv:2511.01338v1, 2025-11-03",
+      "section_or_object_id": "Table 2, Table 6, text after Table 2",
+      "source_status": "primary first-principles model; not measured kinetic friction"
+    },
+    {
+      "source_id": "graphite-preprint",
+      "url_or_repo_path": "experiments/graphite-superlubricity/GRAPHITE_UD_HYPOTHESIS_PREPRINT_v1.tex",
+      "version_or_commit": "0abea764505989dde38fe0906d0d32c53d76b93c",
+      "section_or_object_id": "Sec. I/II: paired geometry and seven-cell harmonic model",
+      "source_status": "target-informed conditional UD proposal"
+    }
+  ],
+  "assumptions": [
+    "periodic-torus: connected closed orientable honeycomb quotient with V=2N,E=3N,F=N, unit edge metric for harmonic M",
+    "uniform-edge-weight: W=wI and B1 M=0",
+    "rigid-first-harmonic: Table 6 source values apply to ideal rigid static sliding paths, not AFM kinetic force",
+    "conditional detection example: common positive alpha, common force threshold T across two contacts (not observed)"
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer cellular incidence and exact rational ranks",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify b1=2 for N=7,13,19 and B1B2=0"
+    },
+    {
+      "technique": "homology/Hodge projection and source kernel",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "show uniform port cancellation independent of N"
+    },
+    {
+      "technique": "source-rounded static ratio and censoring inequality",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "show detection contrast is not uniquely UD-attributable"
+    },
+    {
+      "technique": "prime factorization and modular clocks",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No factor selection or native clock claim; N=7,13,19 indexes are not a physical selection rule"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "V=2N,E=3N,F=N; B1 rank=2N-1, B2 rank=N-1",
+    "reduced_expression": "b1=3N-(2N-1)-(N-1)=2; cases N=7,13,19",
+    "factor_origins": [
+      "honeycomb incidence: three bonds per A site, two sites per hexagon",
+      "connectedness/orientability on a torus"
+    ],
+    "factorization": "N=m^2+mn+n^2 yields 7,13,19 for tested pairs; no physical identification",
+    "divisibility_gcd_lcm": "gcd of residue steps and N is 1 for the selected primitive pairs; no modular division"
+  },
+  "clock_receipt": {
+    "clock_type": "N/A static topology/source table",
+    "modulus": null,
+    "residue_convention": "cyclic labels mod N implement the finite quotient, not a time clock",
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": "material loss not specified",
+    "period_claim": null,
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "finite cellular edge space; external static PES comparisons",
+    "generator_or_update": "none derived for physical friction; candidate static source S_N(w)",
+    "initial_boundary_conditions": "periodic torus; rigid-layer external DFT models compared at their own optimal gaps",
+    "conservation_and_sources": "B1 B2=0; uniform source cancellation",
+    "projection_and_kernel": "b1=2 every N; harmonic M in ker B1\u2229ker B2^T",
+    "physical_mapping": "none from static shear to measured signed kinetic force"
+  },
+  "target_exposure": {
+    "status": "KNOWN_DEVELOPMENT_TARGET",
+    "known_targets": [
+      "paired 21.8/38.2 degree friction peaks",
+      "other tested commensurate patterns below detection",
+      "weak load response relative coaligned"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Seven-cell carrier previously chosen from observed (2,1) geometry; no new fit",
+      "Detection alpha and threshold example are free hypothetical quantities, not estimated"
+    ],
+    "search_domain_and_budget": "three predeclared N=7,13,19 quotient examples; two source-table patterns",
+    "selection_criterion": "test uniqueness of harmonic selection and size of conventional static contrast",
+    "baseline": "ordinary moire lattice and DFT-derived ideal static force"
+  },
+  "calculation_steps": [
+    "Construct A-to-B incidence and six-edge oriented faces on periodic quotient indexed mod N; exactly check B1 B2=0 and rational ranks.",
+    "Use connectedness and orientability to derive ranks 2N-1,N-1 for every toroidal honeycomb; b1=2 independent of N.",
+    "For harmonic M, B1 M=0. Therefore M^T(wI)B1^T=0 for any N; the topology and uniform source do not uniquely select N=7.",
+    "Read source-rounded rigid DFT values from Lebedeva v1 Tables 2/6 and source-reported KC amplitudes in its text; compute ratios without adding experimental precision.",
+    "Under additional common-alpha threshold assumption only, solve alpha*tau31<T<=alpha*tau21; show conventional existence example, not prediction."
+  ],
+  "result": {
+    "exact_expression": "For connected toroidal honeycomb N, b1=2 and S_N(wI)=0; conditional common-threshold interval 6680 Pa<T/alpha<=13900 Pa",
+    "approximation": "Source-rounded DFT corrugation (2,1)/(3,1) \u224812.85; ideal rigid shear \u22482.0808; KC-vs-DFT corrugation ratios \u2248253 and \u2248763",
+    "units": "corrugation micro-eV/atom, ideal shear Pa, topology dimensionless",
+    "precision_and_error": "exact chain ranks and algebra under topology assumptions; approximate source-rounded decimal ratios; no measured force uncertainty or detection threshold",
+    "scope": "seven-cell topology alone fails to select observed pair; conventional static contrast is not a kinetic friction prediction",
+    "physical_interpretation": "A restricted independently sourced N-dependent law and held-out signed force/readout are required for UD attribution"
+  },
+  "verification": [
+    {
+      "method": "constructor exact rational replay and source-table decimal arithmetic",
+      "command_or_proof_path": "python3 experiments/graphite-quotient-contrast/replay_quotient_contrast.py",
+      "source_revision": "0abea764505989dde38fe0906d0d32c53d76b93c",
+      "actual_result": "PASS: 7/13/19 boundary square, ranks, Betti numbers; source-rounded ratios",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "N=13 and N=19 each have the same b1=2 and uniform port cancellation as N=7, defeating uniqueness of the two-feature angle explanation.",
+    "A conditional conventional common-threshold map permits (2,1) detected and (3,1) undetected, so the binary angular contrast alone does not identify UD.",
+    "Lebedeva v1 Table 2 (~0.004 micro-eV/atom for (3,1) noisy profile) and Table 6 (0.0239 first-harmonic estimate) are method-specific, not interchangeable barrier measurements."
+  ],
+  "limitations": [
+    "APS full article and supplement restricted; no measured signed force table, threshold, uncertainties, linewidths, complex self-energy, or contact mapping.",
+    "DFT and KC values compare PES corrugation under related but not identical computational setups; their ratio does not transfer directly to vertical Hessian or damping.",
+    "Three explicit incidence examples accompany a general torus proof; no general UD constitutive selection law is derived.",
+    "No independent physics review; attached CRL-2 governance text is a proposal, not an earned review status."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/graphcontrast-20261023-f7047e21/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Independently specify an N-dependent material source/loss rule and calibrated conventional force transfer; acquire signed paired-angle and other-moire force data with detection limits, load traces, and complex loss response."
+}
