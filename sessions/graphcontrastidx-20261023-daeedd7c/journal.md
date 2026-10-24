@@ -19,3 +19,7 @@ Held claim 52c5c2ae33d1d1b7c0d382387164ccfef9c12353; base 6543f6477d79ace02552d8
 Checkpoint (handoff): Indexed exact quotient selectivity limitation and static-contrast evidence scope
 
 Next: Measure signed paired-angle and other-moire force with detection limits; independently specify N-dependent law
+
+## Integration and release
+
+PR #102 merged at `817664f0d1ca30d9783a81d775d47617c6d71475` after integrity job 120748623598 passed. Held claim `52c5c2ae33d1d1b7c0d382387164ccfef9c12353` was verified for this task/session/paths; release marker `d5baf0a044b5165cf2d34f683caf889e84083dc5` installed under exact-SHA lease and read back as released. Closure updates only this session. No independent physics review.
