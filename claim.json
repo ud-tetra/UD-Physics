@@ -13,5 +13,7 @@
     "artifacts/graphpktid-20261024-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-24T20:02:22.037Z",
+  "released_from_sha": "7b6bbab6343f57cb761932a7d0b41a5e823134aa"
 }
