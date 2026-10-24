@@ -1,0 +1,36 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphpaper-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute plus GitHub connector write",
+  "task": "graphite-manuscript-v2-20261024",
+  "goal": "Revise graphite UD working preprint after conventional kinetic controls and source-selection audits",
+  "created_at": "2026-10-24T16:16:15.734952+00:00",
+  "base_revision": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/graphite-manuscript-v2-20261024",
+    "held_sha": "4b46b408d5c305e3c2439da1b55d5d151754e592",
+    "status": "held"
+  },
+  "checks": [],
+  "finding": "Three-page revised preprint separates exact conventional angles, conditional UD source, conventional 2D drag and the still-open signed residual; PDF and TeX checked.",
+  "next_action": "Publish focused PR, release claim, index v2 through integration claim; obtain contact-calibrated complex loss and held-out signed force/load data.",
+  "mathematical_profile": {
+    "coefficient_domain": "exact integers/rationals and symbolic real PSD matrices; source-rounded DFT decimals",
+    "exactness_or_precision_plan": "replay existing exact first-star script; do not infer uncertainties from DFT-fit RMS",
+    "applicable_methods": [
+      "triangular Gram matrix and Hodge ranks for angles/translation",
+      "Fourier dyad/character sum for kinetic null",
+      "PSD Schur complement and rank for UD attribution",
+      "factorization of exact rounded ratio"
+    ],
+    "clock_metric_units_conventions": "Euclidean 2D Bravais basis at 60 degrees; physical continuous time in assumed bath; per-upper-atom energy, reciprocal length, pressure derivative at fixed N and a"
+  },
+  "checkpoint_at": "2026-10-24T16:19:26.220070+00:00",
+  "checkpoint_source": {
+    "revision": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
+    "dirty": true
+  }
+}
