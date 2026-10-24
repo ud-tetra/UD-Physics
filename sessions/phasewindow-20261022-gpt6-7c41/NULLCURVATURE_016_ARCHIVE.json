@@ -2,7 +2,7 @@
   "record_type": "local_reproducibility_checkpoint",
   "run_id": "nonaffine-nullcurvature-016",
   "session_id": "phasewindow-20261022-gpt6-7c41",
-  "git_publication_scope": "Report, checkpoint and typed receipt on claimed isolated branch; full replay ZIP is local download artifact and is not an immutable GitHub run.",
+  "git_publication_scope": "Full 39-member executable local ZIP preserved byte-for-byte as 14 Base64 text parts in immutable GitHub run nonaffine-nullcurvature-016, with schema2 manifest SHA256-validated; standalone report, checkpoint and full typed receipt also on isolated branch; no mainline export.",
   "zip_name": "UD_3D_Nonaffine_NullCurvature_016_20261023.zip",
   "zip_sha256": "e58aa2f25d9295c2fe16bc9cdb50b87a170673551321e0382a7646b9d2c4dcee",
   "zip_bytes": 162972,
@@ -15,5 +15,19 @@
   "limitations": [
     "GitHub CI tests validate repository content only",
     "The full binary and source capture is in the verified ZIP rather than in the GitHub branch"
-  ]
+  ],
+  "github_run_manifest": "artifacts/phasewindow-20261022-gpt6-7c41/nonaffine-nullcurvature-016/manifest.json",
+  "github_transport": "14 ordered base64 parts, restore using inputs/001-restore_bundle.py",
+  "github_sha256_readback": "PASS all14 GitHub parts concatenated, base64 decoded, same 162972-byte local ZIP with SHA256 e58aa2f25d9295c2fe16bc9cdb50b87a170673551321e0382a7646b9d2c4dcee",
+  "github_ci": {
+    "first_run": 40053618552,
+    "first_conclusion": "failure",
+    "failure": "invalid source_location/local metadata in input manifest",
+    "fixed_manifest_commit": "e707361f2afad2a57d68bf3f685ef56a6427033a",
+    "passing_run": 40053706700,
+    "passing_conclusion": "success",
+    "validated_records": 213,
+    "tooling_tests": "16/16"
+  },
+  "local_archive_inner_manifest_note": "The byte-identified historical ZIP's nested local capture has source_location=local entries; GitHub's outer schema2 run manifest was corrected to allowed external/null. Local byte/dynamics audit passes, but importing the inner run directory unchanged into the repository validator needs the corresponding source metadata correction."
 }
