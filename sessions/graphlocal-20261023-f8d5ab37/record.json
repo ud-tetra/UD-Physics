@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphlocal-20261023-f8d5ab37",
+  "runtime": "GPT-6 Codex, local compute and GitHub connector write",
+  "task": "graphite-locality-selection-20261023",
+  "goal": "Classify translation-covariant local incidence sources across honeycomb moire quotients",
+  "created_at": "2026-10-24T02:11:05.840464+00:00",
+  "base_revision": "96319cbce750e5c4a2fc9772783fdbbf2e34a614",
+  "source_dirty_at_boot": false,
+  "status": "complete",
+  "claims": {
+    "graphite-locality-selection-20261023": {
+      "ref": "refs/heads/claims/graphite-locality-selection-20261023",
+      "held_sha": "221478de0cca1b4b590d4b6ee30f5ffd3be06608",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "python3 experiments/graphite-locality-selection/replay_locality.py: PASS exact rational N=7/13/19",
+    "python3 scripts/validate.py: PASS 193 records",
+    "python3 -m unittest discover -s tests -q: PASS 16 tests"
+  ],
+  "finding": "Exact conditional no-go: a common translation-covariant incidence-gradient edge stencil gives N-independent harmonic zero-sector port; C3 covariance kills it for every quotient",
+  "next_action": "Derive independent registry/load/temperature edge law, then compare held-out signed force and load response after conventional PES baseline",
+  "mathematical_profile": {
+    "coefficient_domain": "integer/rational incidence and finite-range real edge stencils; no physical coefficient imported",
+    "exactness_or_precision_plan": "Exact symbolic zero-mode theorem and rational 7/13/19 replay; decimal 1.36 illustrative only",
+    "applicable_methods": [
+      "Translation Fourier decomposition and Hodge harmonic zero modes",
+      "C3 representation selection rule and incidence rank",
+      "Native coefficient source typing; no modular clock/divisibility claim"
+    ],
+    "clock_metric_units_conventions": "A-to-B bonds, unit Euclidean edge metric, normalized 1/sqrt(N) zero modes; no physical time, damping or force mapping"
+  },
+  "checkpoint_at": "2026-10-24T02:13:20.801118+00:00",
+  "checkpoint_source": {
+    "revision": "96319cbce750e5c4a2fc9772783fdbbf2e34a614",
+    "dirty": true
+  }
+}

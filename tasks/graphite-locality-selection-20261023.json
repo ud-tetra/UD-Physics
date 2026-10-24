@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-locality-selection-20261023",
+  "goal": "Prove locality and symmetry restrictions on quotient-selective harmonic incidence sources",
+  "owned_paths": [
+    "tasks/graphite-locality-selection-20261023.json",
+    "sessions/graphlocal-20261023-f8d5ab37/",
+    "candidates/graphite-locality-selection/",
+    "experiments/graphite-locality-selection/",
+    "artifacts/graphlocal-20261023-f8d5ab37/"
+  ],
+  "dependencies": [
+    "graphite-quotient-contrast-20261023"
+  ],
+  "status": "complete"
+}
