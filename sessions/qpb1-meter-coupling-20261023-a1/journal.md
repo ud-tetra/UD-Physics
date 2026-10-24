@@ -40,3 +40,7 @@ Research PR104 merged at 59f37b0f92556fc4d009898a424a24743b867d69 from exact hea
 Task claim released by exact-SHA CAS to 93465e6c89d7fa6be9cf5b72ebac88c435fd9907; live marker and same-owner released metadata verified. This closure updates only the owning session record and journal. Research/captured inputs and outputs remain unchanged.
 
 NEXT: derive a direct projective-phase tolerance bound, separating harmless scalar/common-J directions from differential mismatch; priority95. Practical tolerances, physical signed readout and native meter selection remain OPEN; UNSCORED and promotion0.
+
+Closure integration refresh: unrelated graphite locality PR105 advanced main to b5a96aab7b9cb0a705b631b91c307c6235954e93. Changes are disjoint from both owning session files and all scientific dependencies. Preserve them and merge the new main parent into the closure branch without force-pushing. Repository checks rerun on this union.
+
+Closure union validation PASS197records; tooling PASS16tests. Scientific run unchanged.

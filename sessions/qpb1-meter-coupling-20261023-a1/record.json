@@ -32,6 +32,14 @@
     {
       "command": "python3 -m unittest discover -s tests -v",
       "result": "PASS16tests"
+    },
+    {
+      "command": "python3 scripts/validate.py (closure union with disjoint main)",
+      "result": "PASS197records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v (closure union)",
+      "result": "PASS16tests"
     }
   ],
   "finding": "Matched balanced meter has same projective ray and finite-window phase while totalstorage dissipates. Nominalb>1/8; finite residual/reset and mismatch/calibration/jitter/noise budgets imply prior26bitstrict and21bitamended phase certificates. Actualhardware and practical tolerance remainOPEN.",
@@ -52,5 +60,6 @@
     },
     "release_verified": true
   },
-  "closure_scope": "Owning record/journal only; no substantive research after verified task release"
+  "closure_scope": "Owning record/journal only; no substantive research after verified task release",
+  "closure_integration_base_revision": "b5a96aab7b9cb0a705b631b91c307c6235954e93"
 }
