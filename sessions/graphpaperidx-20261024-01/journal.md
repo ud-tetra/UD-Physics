@@ -19,3 +19,7 @@ Indexed PR #124 merged paper v2 as current working preprint; original v1 remains
 Checkpoint (handoff): Paper v2 now linked from graphite entry and CURRENT, with v1 retained as historical draft.
 
 Next: Merge index PR, release claim and record closure; next scientific task is independently calibrated source/loss/contact and held-out traces.
+
+## Release and integration
+
+PR #126 merged at 0a30c2f56d2b19fb350e5b4c155706aff2fa2646 after Discovery integrity workflow 40111358569 succeeded. Integration claim released at ea952854ba0f969d8a21e9aefbc6f60e6f9cea8e by exact-head lease. No independent physics review; physical promotion 0.
