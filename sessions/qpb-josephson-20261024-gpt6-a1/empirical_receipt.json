@@ -1,0 +1,211 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "jj-002-empirical-fitted-source-gate",
+  "session_id": "qpb-josephson-20261024-gpt6-a1",
+  "candidate_id": "qpb-josephson-physical-anchor",
+  "question": "Does a published Josephson device dataset independently validate amplitude-dependent frequencies and a frozen UD bridge?",
+  "evidence_labels": [
+    "EMPIRICAL",
+    "EXACT",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "published_fit",
+      "symbol": "fp,Ic,c",
+      "object_type": "published fitted physical parameters",
+      "definition": "small-signal DC-bias plasma fit fp=13.28±0.05 GHz, Ic=8.36±0.08 µA, c=36.4±0.04 fF/µm²",
+      "domain": "2022 resonant switching fit",
+      "codomain": null,
+      "coefficient_domain": "reported uncertain decimals",
+      "units": "Hz,A,F/µm²",
+      "basis_orientation": "bias gamma=Ib/Ic",
+      "metric_measure": "joint ODR, covariance unavailable",
+      "origin": "measured/published fitted",
+      "exact_expression": null,
+      "measured_value": "published values",
+      "uncertainty": "published marginal intervals only, covariance OPEN",
+      "source_refs": [
+        "APL"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "small-signal bias equilibrium"
+    },
+    {
+      "object_id": "C",
+      "symbol": "Cfit",
+      "object_type": "derived total physical capacitance",
+      "definition": "Ic/(2*pi*Phi0*fp²), Phi0=h/(2e)",
+      "domain": "published joint-fit parameters",
+      "codomain": "capacitance",
+      "coefficient_domain": "Decimal with exact SI h,e; numerical pi",
+      "units": "F",
+      "basis_orientation": "N/A",
+      "metric_measure": "same fit; not independent",
+      "origin": "derived",
+      "exact_expression": "Ic/(2πΦ0fp²)",
+      "measured_value": "3.64850225477916 pF",
+      "uncertainty": "printed-input sensitivity interval 3.58653–3.71131 pF, NOT confidence",
+      "source_refs": [
+        "APL",
+        "BIPM"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "published_fit"
+      ],
+      "normalization": "ideal plasma identity"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "APL",
+      "url_or_repo_path": "https://doi.org/10.1063/5.0082197",
+      "version_or_commit": "2022-03-14",
+      "section_or_object_id": "third experiment plasma resonance & Data Availability",
+      "source_status": "primary published empirical joint fit; raw on request"
+    },
+    {
+      "source_id": "BIPM",
+      "url_or_repo_path": "https://www.bipm.org/en/measurement-units/si-defining-constants",
+      "version_or_commit": "SI exact 2019",
+      "section_or_object_id": "exact h and e",
+      "source_status": "metrological authority"
+    },
+    {
+      "source_id": "PRR",
+      "url_or_repo_path": "https://doi.org/10.1103/PhysRevResearch.2.043091",
+      "version_or_commit": "2020-10-16",
+      "section_or_object_id": "Eq 13 theoretic nonlinear amplitude-frequency",
+      "source_status": "theory not experimental amplitude sweep"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Use conventional lossless linear plasma relation only as parameter reexpression; no independent C and no UD mapping."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "units/metrology",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "SI h/e and Ic, fp, C scaling"
+    },
+    {
+      "technique": "exact/Decimal arithmetic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "published-input identity and sensitivity endpoints"
+    },
+    {
+      "technique": "fit/uncertainty/identifiability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "avoid jointly-fitted circular heldout and covariance assumptions"
+    },
+    {
+      "technique": "clock and physical-map",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "separate DC bias ratio gamma from zero-bias peak amplitude a"
+    },
+    {
+      "technique": "modular/prime factor/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "none relevant"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "fp=(13.28±.05)GHz, Ic=(8.36±.08)µA, c=(36.4±.04)fF/µm²",
+    "reduced_expression": "C=Ic/(2πPhi0fp²)",
+    "factor_origins": [
+      "BIPM h,e and published fit"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "physical SI seconds and DC bias gamma, UD native time OPEN",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "fp(gamma)=fp*(1-gamma²)^(1/4) only small-signal response",
+    "initial_phase": "turning phase amplitude not reported",
+    "coupling": "Josephson critical-current/capacitance",
+    "period_claim": "not a measured zero-bias amplitude-period curve",
+    "physical_unit_map": "UD tau0 not calibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "physical Josephson near biased equilibrium",
+    "generator_or_update": "conventional small-signal bias plasma law",
+    "initial_boundary_conditions": "microwave-driven switching-current resonance, bias swept",
+    "conservation_and_sources": "not audited from primary raw curves",
+    "projection_and_kernel": "published fitted fp,Ic,c only, no raw records",
+    "physical_mapping": "none to UD J phase or ports"
+  },
+  "target_exposure": {
+    "status": "PUBLISHED_JOINT_FIT_ONLY",
+    "known_targets": [
+      "fp,Ic,c jointly fitted in APL",
+      "previous jj001 ideal UD positive quartic comparison"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "no UD fit",
+      "five gamma points are calculated scenarios, not empirical"
+    ],
+    "search_domain_and_budget": "primary APL fitted summary and theory PRR paper; raw data unavailable",
+    "selection_criterion": "zero-bias peak phase and frequency with separate calibration required",
+    "baseline": "ordinary Josephson model, not independently validated from its own joint fit"
+  },
+  "calculation_steps": [
+    "Read primary source fit summary and data availability, record covariance as unavailable.",
+    "Use exact BIPM h/e and formula C=Ic/(2πPhi0fp²) to derive 3.64850225477916 pF.",
+    "Compute rectangular printed-input range 3.58653–3.71131pF; not a confidence interval.",
+    "Construct five conventional gamma model rows; mark not measured.",
+    "Confirm bias ratio gamma not zero-bias phase peak amplitude and no raw heldout experimental pair.",
+    "Correct PRR article title and scope: theoretical Eq13 not measured amplitude dataset."
+  ],
+  "result": {
+    "exact_expression": "C=Ic/(2πPhi0fp²)",
+    "approximation": "3.64850225477916 pF; extreme inputs 3.58653–3.71131 pF; inferred conditional area 100.2336 µm²",
+    "units": "physical A Hz F and µm²",
+    "precision_and_error": "Decimal SI inputs, numerical pi, joint fit covariance absent; no heldout statistical score",
+    "scope": "published fitted summary; physical UD experiment NOT_EXECUTED",
+    "physical_interpretation": "FAILED_HELDOUT, no empirical UD validation"
+  },
+  "verification": [
+    {
+      "method": "local standard library Decimal audit",
+      "command_or_proof_path": "experiments/qpb-josephson-physical-anchor/empirical_anchor_audit.py",
+      "source_revision": "c99793b5f113d599aa3ee052dd1de7c3c769416d",
+      "actual_result": "PASS; source/output SHA256 captured in jj002",
+      "review_relationship": "same-constructor"
+    },
+    {
+      "method": "independent calibrated amplitude experiment",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED",
+      "review_relationship": "empirical"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Fit-derived capacitance is algebraically circular, not independent data.",
+    "Bias-dependent plasma response is a different observable from zero-bias finite oscillation amplitude.",
+    "No raw amplitude/frequency pairs, no covariance or independent UD port/time mapping."
+  ],
+  "limitations": [
+    "Raw source data require author request; not acquired.",
+    "No physical independent prediction or held-out residual.",
+    "Prior jj001 conditional mathematical sign remains unchanged."
+  ],
+  "changed_dependencies": [
+    "jj001 maintained; jj002 audit adds empirical summary without promoting bridge"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb-josephson-20261024-gpt6-a1/jj-002/manifest.json"
+  ],
+  "next_discriminant": "Obtain independent zero-bias turning-phase/frequency measurements and separately calibrated Ic,C and loss/covariance; freeze UD prior to heldout."
+}
