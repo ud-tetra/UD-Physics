@@ -3,7 +3,7 @@
   "protocol_version": 2,
   "task": "integration-graphite-directional-shape-20261024",
   "session": "graphshapeidx-20261024-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-24T16:35:55Z",
   "base_revision": "d25d7b033a2e429a50d00d0edc2936bf2ac7b291",
   "owned_paths": [
@@ -12,5 +12,7 @@
     "experiments/graphite-superlubricity/README.md",
     "experiments/graphite-manuscript-v2/README.md",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-10-24T16:38:02Z",
+  "released_from_sha": "77e558b491d7bb75532896906466eb6f617e0eb9"
 }
