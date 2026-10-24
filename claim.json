@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "integration-graphite-relaxation-index-20261024",
   "session": "graphrelaxindex-20261024-3d2e",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-24T15:38:21Z",
   "base_revision": "e5b6c2889c2df833b48b6a51c295e51f6aa48cf9",
   "owned_paths": [
@@ -12,5 +12,7 @@
     "sessions/graphrelaxindex-20261024-3d2e/",
     "experiments/graphite-superlubricity/README.md",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-10-24T15:39:53.788Z",
+  "released_from_sha": "0e9a1975490a5bfdebb47914f69130c96fce93da"
 }
