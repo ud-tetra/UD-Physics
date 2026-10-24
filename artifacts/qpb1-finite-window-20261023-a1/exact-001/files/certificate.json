@@ -1,0 +1,53 @@
+{
+  "evidence": "EXACT_CONDITIONAL",
+  "fractions": {
+    "gain_error": "1/100",
+    "timing_error": "1/100",
+    "snapshot_links": "128",
+    "time_upper": "4407/700",
+    "halfspread_upper": "2291/17500",
+    "visibility_lower": "607251319/612500000",
+    "gain_phase_error": "12024728171/15940347123750",
+    "step_halfspread_upper": "57291/2240000",
+    "link_visibility_lower": "10031917741319/10035200000000",
+    "discrete_phase_error": "62681294031057/87779280236541250",
+    "endpoint_overlap_error": "1/1000",
+    "link_overlap_error": "1/1000000",
+    "acquisition_phase_error": "6923774430180773900/6085744643157029233461",
+    "total_phase_error": "422709478705607008303987857641744915419132363/162197520931558744724941609645933369386418591875"
+  },
+  "decimal_readability_only": {
+    "gain_error": 0.01,
+    "timing_error": 0.01,
+    "snapshot_links": 128.0,
+    "time_upper": 6.295714285714285,
+    "halfspread_upper": 0.1309142857142857,
+    "visibility_lower": 0.9914307248979591,
+    "gain_phase_error": 0.0007543579871660385,
+    "step_halfspread_upper": 0.025576339285714286,
+    "link_visibility_lower": 0.999672925434371,
+    "discrete_phase_error": 0.0007140784688840919,
+    "endpoint_overlap_error": 0.001,
+    "link_overlap_error": 1e-06,
+    "acquisition_phase_error": 0.001137703738188563,
+    "total_phase_error": 0.002606140194238693
+  },
+  "moment_fixtures": 5625,
+  "exact_polygon_gauge_fixtures": 625,
+  "S4_polygon_checks": 24,
+  "preparation_ball_radius": "1/10",
+  "hidden_support_interval": [
+    "10/27",
+    "17/27"
+  ],
+  "measured_phase_circular_error_bound": "1/250 rad relative to exp(-2pi*i*r_hidden)",
+  "nontrivial_phase_chord_bound": "|Qhat-1|>17/10",
+  "requirements": [
+    "full active-carrier normalized snapshots",
+    "consistent complex/J overlap frame",
+    "bounded absolute complex overlap errors",
+    "bounded commuting gain drift and sample gaps"
+  ],
+  "physical_score": "UNSCORED",
+  "physical_promotion": 0
+}

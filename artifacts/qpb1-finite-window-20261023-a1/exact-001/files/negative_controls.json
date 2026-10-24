@@ -1,0 +1,12 @@
+{
+  "visibility_zero": "Balanced visible/hidden reference at T=pi gives z=0 exactly; phase undefined",
+  "nominal_correction_failure": "Common gain error c at T=2pi shifts endpoint phase by4pi*c; actual correction cancels, nominal-only correction leaves first-order error",
+  "nominal_correction_c": "1/100",
+  "nominal_only_phase_error_rad": 0.12566370614359174,
+  "native_null": "g1=g2=g3=1 gives ideal and exact snapshot Q=1 for any window with defined overlaps",
+  "scope_limits": [
+    "no arbitrary noncommuting/mode-mixing error certificate",
+    "no physical apparatus or clock calibration",
+    "finite phase is modulo2pi, not lifted action or winding reconstruction"
+  ]
+}

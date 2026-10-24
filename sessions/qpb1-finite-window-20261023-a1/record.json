@@ -1,0 +1,49 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb1-finite-window-20261023-a1",
+  "runtime": "Codex; model identifier unknown; Git/compute and GitHub connector",
+  "task": "qpb1-finite-window-20261023",
+  "goal": "Finite-window endpoint-corrected phase, visibility and independent gain/timing/acquisition bounds",
+  "created_at": "2026-10-24T01:02:47.924384+00:00",
+  "base_revision": "e9dc0e074af561a8e9e309f72f2b6b365a7553c8",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "qpb1-finite-window-20261023": {
+      "ref": "refs/heads/claims/qpb1-finite-window-20261023",
+      "sha": "8fe7c21b738b5233d484cc5c5406d3105e5b5557",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/qpb1-finite-window/audit.py --out /workspace/scratch/ed44232d6ecb/finite-window-outputs",
+      "result": "PASS18hashes,13rows,5625exactmoments,625exactgauges,24S4,3645constant,116640acquisition,16drift;strictgateboundarychecks"
+    },
+    {
+      "command": "python3 scripts/validate.py (captured source base)",
+      "result": "PASS165records,manifestdigestsandlinks"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v (source base)",
+      "result": "PASS16tests"
+    },
+    {
+      "command": "python3 scripts/validate.py (after disjoint main fast-forward)",
+      "result": "PASS173records;all18scientificsourcehashesunchanged"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v (after fast-forward)",
+      "result": "PASS16tests"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL129snapshot phase,angularerror<1/250rad,endpoint>99/100,links>999/1000 andnontrivialchord>17/10 onstatedbudgets;physicaloverlapacquisitionOPEN,UNSCORED,promotion0",
+  "next_action": "Derive local full-carrier overlap acquisition/noise/memory map includinghiddenplane;priority95",
+  "checkpoint_at": "2026-10-24T01:13:54.566213+00:00",
+  "checkpoint_source": {
+    "revision": "e9dc0e074af561a8e9e309f72f2b6b365a7553c8",
+    "dirty": true
+  },
+  "integration_base_revision": "13a376a9f0786d6424ab25387bb307ba89275d5d"
+}
