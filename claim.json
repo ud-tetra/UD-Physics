@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-locality-index-20261024",
+  "session": "graphindex-20261024-22c4",
+  "status": "held",
+  "created_at": "2026-10-24T02:16:12Z",
+  "base_revision": "39e96a2863dadb189ee064f5b7ebc7de9f705350",
+  "owned_paths": [
+    "tasks/integration-graphite-locality-index-20261024.json",
+    "sessions/graphindex-20261024-22c4/",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md"
+  ]
+}
