@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-cross-loss-20261023",
+  "goal": "Index conditional graphite cross-loss bound and qualify diagonal-only transfer",
+  "owned_paths": [
+    "tasks/integration-graphite-cross-loss-20261023.json",
+    "sessions/graphmixidx-20261023-66b15b3c/",
+    "experiments/graphite-superlubricity/README.md",
+    "experiments/graphite-linewidth-transfer/README.md",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "graphite-cross-loss-20261023"
+  ],
+  "status": "complete",
+  "completion_scope": "Navigation and diagonal-assumption scope after research PR #94; no new material calculation"
+}

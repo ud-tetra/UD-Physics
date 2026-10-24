@@ -1,0 +1,35 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphmixidx-20261023-66b15b3c",
+  "runtime": "GPT-6 Codex, local compute and GitHub connector write",
+  "task": "integration-graphite-cross-loss-20261023",
+  "goal": "Index merged passive graphite cross-loss uncertainty in paper navigation and state",
+  "created_at": "2026-10-24T01:26:50.850569+00:00",
+  "base_revision": "5ce8e4189a6e3f3dca62a873d510b50af52c6b03",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-graphite-cross-loss-20261023": {
+      "ref": "refs/heads/claims/integration-graphite-cross-loss-20261023",
+      "held_sha": "ad9ef2073a38ca749d61ef44d5ce8e9ab72b5ab5",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "Indexed passive cross-loss uncertainty after merged research PR #94",
+  "next_action": "Pressure-resolved complex loss and signed held-out force data",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A integration of preceding real PSD matrix bound",
+    "exactness_or_precision_plan": "No new calculation; quoted rounded numbers checked against captured result",
+    "applicable_methods": [
+      "Source and dependency scope review; no additional clock, topology or spectral calculation"
+    ],
+    "clock_metric_units_conventions": "Reuse research receipt; no new units or physical map"
+  },
+  "checkpoint_at": "2026-10-24T01:27:10.333720+00:00",
+  "checkpoint_source": {
+    "revision": "5ce8e4189a6e3f3dca62a873d510b50af52c6b03",
+    "dirty": true
+  }
+}
