@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-traffic-source-20261024",
+  "goal": "Index merged traffic-source result in working paper and current state",
+  "owned_paths": [
+    "experiments/graphite-manuscript-v2/README.md",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md",
+    "sessions/graphtrafficidx-20261024-01",
+    "tasks/integration-graphite-traffic-source-20261024.json"
+  ],
+  "dependencies": [
+    "graphite-traffic-source-20261024"
+  ],
+  "status": "complete"
+}
