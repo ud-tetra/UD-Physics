@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "qpb1-projective-tolerance-20261024",
+  "session": "qpb1-projective-tolerance-20261024-a1",
+  "created_at": "2026-10-24T15:32:33.636Z",
+  "base_revision": "4aaf0a39d24328e27bc425e333e3612baea888a5",
+  "owned_paths": [
+    "tasks/qpb1-projective-tolerance-20261024.json",
+    "sessions/qpb1-projective-tolerance-20261024-a1/",
+    "experiments/qpb1-projective-tolerance/",
+    "candidates/qpb1-projective-tolerance/",
+    "artifacts/qpb1-projective-tolerance-20261024-a1/"
+  ]
+}
