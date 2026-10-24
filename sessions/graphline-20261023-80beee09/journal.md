@@ -5,6 +5,7 @@
 - Closed 14-height harmonic system itself yields zero Ohmic drag. Arbitrary widths are external material data, and two E-copy mixing would require off-diagonal self-energy, not just four peak widths. Conventional coupling is not a UD-specific source; this is a calibration/null control.
 - Next: independent mode-resolved retarded loss/pressure measurement and the source-specific cross-Hessian, then a frozen signed paired-angle force comparison.
 - Checks: exact-mode identity and numerical archive replay PASS; `python3 scripts/validate.py` PASS (167 records); `python3 -m unittest discover -s tests -q` PASS (16 tests). Constructor and integrity checks only; independent material review NOT_RUN.
+- Closure: PR #88 merged as `461bbe3ce9e7aeff03aa191cffa40e0914b244e2` after CI run 40048493279 succeeded; exact-SHA release marker `b2eed50f8f0cebd7692c861d7e65589218ff442b` verified. Independent material physics review NOT_RUN.
 
 ## 2026-10-24T01:08:46.103905+00:00
 
