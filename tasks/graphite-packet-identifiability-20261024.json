@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-packet-identifiability-20261024",
+  "goal": "Analyze invertibility and universal-input quotient ratios with source-provenance gate",
+  "owned_paths": [
+    "experiments/graphite-packet-identifiability",
+    "candidates/graphite-packet-identifiability",
+    "sessions/graphpktid-20261024-01",
+    "artifacts/graphpktid-20261024-01"
+  ],
+  "dependencies": [
+    "graphite-directional-packet-20261024"
+  ],
+  "status": "complete"
+}
