@@ -16,3 +16,11 @@
 - NUMERICAL constructor second implementation: 243 structured cases and 25,000 seeded probes, four analyzer quadratures and four noise directions, PASS; script digest ba77e87a80e2fb6eb48d7dd0faabaad9ec76a700654c9511cc38f8c5c0e004c3, summary digest 1a5501cc82220e5661df0543979cebb0c5be3d03ea49f40d3df2f92fb1a7f98f.
 - Captured new immutable phase-002 with source input, output and SHA-256 manifest; phase-001 unchanged. External mathematical review NOT_RUN, physical receiver NOT_EXECUTED, all-time/native selection remains OPEN.
 - Handoff: run updated PR CI; request outside expert review, then identify experimentally realizable same-gauge D calibration. Retain claim until integration or explicit abandonment; no mainline writeback.
+
+## 2026-10-24T01:20:30Z — Phase-003 short-time calibration checkpoint
+
+- Verified held claim e38d9b6cfba644744eba92d668b670068751487f, draft PR #87 head dabd8037cc635b51042b79562c18ea15614d4890; separate reviewer list empty and previous CI success.
+- New EXACT/CONDITIONAL: Richardson short-time slope recovers the dynamical D estimate with rational worst-case error 699576281715419/725760000000000000 rad <0.001, using only coherent positive-time Z(h),Z(h/2) under time-invariant conservative generator.
+- Detailed assumptions: calibration complex amplitude<=2e-6, probe time error<=1e-7, repeated normalized state norm distance<=5e-6, gain drift<=5e-6, main native-T metrology <=1e-5, common gauge. With the prior exposed screens, new phase budget 0.00821419808694 rad. All calibration numbers are target-informed and physically unmeasured.
+- Executed: `python3 /mnt/data/ud_qpb_calibration/calibration_audit.py --out /mnt/data/ud_qpb_calibration/summary.json`, PASS exact Fraction assertions, 125 grid+10000 seeded weighted probes+16 signed noise cases. SHA256 source 784eedc38b32187a383dda3be5e6bb28614b3572b4d389f0515cd7ff1f4251c6; output fb92ac9b048f259d94b4d475bdf37bc164fffcce0659c6e3b2a8e91fcfb7bc67.
+- IMMUTABLE artifact phase-003 committed; phase-001/002 unmodified. External mathematics/empirical verification NOT_RUN/NOT_EXECUTED. Do not merge/export or release claim pending independent assessment.
