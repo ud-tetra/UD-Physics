@@ -18,8 +18,8 @@
       "size_bytes": 976,
       "input_id": "input-001",
       "name": "001-restore_bundle.py",
-      "source_location": "local",
-      "source_path": "archive checkpoint nonaffine-nullcurvature-016"
+      "source_location": "external",
+      "source_path": null
     },
     {
       "path": "inputs/002-RUNME.md",
@@ -27,8 +27,8 @@
       "size_bytes": 1570,
       "input_id": "input-002",
       "name": "002-RUNME.md",
-      "source_location": "local",
-      "source_path": "archive checkpoint nonaffine-nullcurvature-016"
+      "source_location": "external",
+      "source_path": null
     }
   ],
   "files": [
