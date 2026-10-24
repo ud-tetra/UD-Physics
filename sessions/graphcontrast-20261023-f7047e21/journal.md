@@ -27,3 +27,7 @@ Exact toroidal homology and uniform-port cancellation hold for N=7,13,19; topolo
 Checkpoint (handoff): Exact quotient-family no-go: b1=2 and uniform-port cancellation do not distinguish N=7; source-rounded DFT static shear contrast N7/N13 ~2.08 and kinetic force remains unmeasured
 
 Next: Freeze independently sourced N-dependent constitutive law; acquire signed angle/load force data and detection thresholds with calibrated conventional baseline
+
+## Integration and release
+
+PR #100 merged at `a7fbd878590c42eb79c563066842b6643f0c16a7` after integrity job 120747976461 passed. Live held claim `857a5e5ff80c0c804714ab5dad76f599687bf9c3` matched this task/session/paths. Version-2 marker `8005cc6b9cbb04c6902b0b1401a8f154fbeb4eac` was installed with expected-held-SHA lease and read back as released. This closure updates only the owning session. No independent physics review.
