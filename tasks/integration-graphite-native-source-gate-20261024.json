@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-native-source-gate-20261024",
+  "goal": "Index merged source/phase material gate in graphite paper and current state",
+  "owned_paths": [
+    "experiments/graphite-superlubricity/README.md",
+    "experiments/graphite-manuscript-v2/README.md",
+    "state/CURRENT.md",
+    "sessions/graphnativeidx-20261024-01",
+    "tasks/integration-graphite-native-source-gate-20261024.json"
+  ],
+  "dependencies": [
+    "graphite-native-source-gate-20261024"
+  ],
+  "status": "complete"
+}
