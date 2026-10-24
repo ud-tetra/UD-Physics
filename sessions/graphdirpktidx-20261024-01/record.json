@@ -1,0 +1,29 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphdirpktidx-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute and GitHub connector write",
+  "task": "integration-graphite-directional-packet-20261024",
+  "goal": "Index directional boundary packet exact response as conditional graphite follow-up",
+  "created_at": "2026-10-24T19:55:48.200614+00:00",
+  "base_revision": "bba7d2b5e709985c4de20ff0d80401649b9f890b",
+  "source_dirty_at_boot": false,
+  "status": "complete",
+  "claims": {
+    "ref": "refs/heads/claims/integration-graphite-directional-packet-20261024",
+    "held_sha": "54ce5be17f537e36c1a40bbd47ceb40ef929887a",
+    "status": "held"
+  },
+  "checks": [
+    "scripts/validate.py PASS (284 records)",
+    "16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Directional packet follow-up indexed without physical promotion.",
+  "next_action": "Derive measured/material packet preparation and loss/force mapping, then held-out controls.",
+  "checkpoint_at": "2026-10-24T19:56:10.274915+00:00",
+  "checkpoint_source": {
+    "revision": "bba7d2b5e709985c4de20ff0d80401649b9f890b",
+    "dirty": true
+  }
+}
