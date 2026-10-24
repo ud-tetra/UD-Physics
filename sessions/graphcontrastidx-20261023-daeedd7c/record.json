@@ -1,0 +1,35 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphcontrastidx-20261023-daeedd7c",
+  "runtime": "GPT-6 Codex, local compute and GitHub connector write",
+  "task": "integration-graphite-quotient-contrast-20261023",
+  "goal": "Index exact quotient-family limit and primary-source static contrast in graphite Discovery navigation",
+  "created_at": "2026-10-24T02:04:39.286531+00:00",
+  "base_revision": "6543f6477d79ace02552d82602bc77e86db96869",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-graphite-quotient-contrast-20261023": {
+      "ref": "refs/heads/claims/integration-graphite-quotient-contrast-20261023",
+      "held_sha": "52c5c2ae33d1d1b7c0d382387164ccfef9c12353",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "Indexed exact quotient selectivity limitation and static-contrast evidence scope",
+  "next_action": "Measure signed paired-angle and other-moire force with detection limits; independently specify N-dependent law",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A index of exact rational quotient and source-rounded DFT result",
+    "exactness_or_precision_plan": "No new calculations; preserve labels and reported rounding",
+    "applicable_methods": [
+      "Provenance/dependency review; topology and ratios inherited from research receipt"
+    ],
+    "clock_metric_units_conventions": "Reused research receipt; no new metric, force or time mapping"
+  },
+  "checkpoint_at": "2026-10-24T02:04:55.517689+00:00",
+  "checkpoint_source": {
+    "revision": "6543f6477d79ace02552d82602bc77e86db96869",
+    "dirty": true
+  }
+}
