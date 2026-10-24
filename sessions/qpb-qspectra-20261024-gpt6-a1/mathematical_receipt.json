@@ -1,0 +1,271 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb-direct-quantum-spectrum-001",
+  "session_id": "qpb-qspectra-20261024-gpt6-a1",
+  "candidate_id": "qpb-quantum-spectroscopy",
+  "question": "Does the source-classified seven-complex-dimensional UD active generator, when directly mapped to a Schrödinger Hamiltonian, produce independently resolved transmon quantum transitions up to j=6?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "native-carrier",
+      "symbol": "C,E,J",
+      "object_type": "oriented tetrahedral chain and active complex 7D structure",
+      "definition": "C=⊕C_k(Delta3;R), dim15, E=imP rank14, J=A/2, i_phys=-J",
+      "domain": "R15",
+      "codomain": "R15 and C7 assumed",
+      "coefficient_domain": "Q exact incidence; complex scalar interpretation",
+      "units": "native dimensionless",
+      "basis_orientation": "ascending simplex orientations, signed S4",
+      "metric_measure": "positive H=I",
+      "origin": "imported exact source",
+      "exact_expression": "rank(P1,P2,P3)=(6,6,2) over R => (3,3,1) over C",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local-source",
+        "carrier-source"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit Euclidean active norm"
+    },
+    {
+      "object_id": "direct-H",
+      "symbol": "H_eff",
+      "object_type": "postulated single-particle quantum Hamiltonian",
+      "definition": "H_eff=(2chi/tau0) sum_k gk Pi_k, chi>0 action and tau0>0 physical clock",
+      "domain": "C7",
+      "codomain": "C7",
+      "coefficient_domain": "Q gains fixtures / real positive scales",
+      "units": "joule if chi Js and tau0 seconds",
+      "basis_orientation": "i_phys=-J to give positive spectrum",
+      "metric_measure": "Hermitian with native H=I",
+      "origin": "assumed map, algebraically derived from G",
+      "exact_expression": "spec(H_eff)=(2chi/tau0){g1^(3),g2^(3),g3^(1)}",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local-source",
+        "carrier-source"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "native-carrier"
+      ],
+      "normalization": "chi,tau0 unknown and uncalibrated"
+    },
+    {
+      "object_id": "charge-rotor",
+      "symbol": "N,S",
+      "object_type": "physical transmon number and charge-translation operators",
+      "definition": "N|n>=n|n>, S|n>=|n+1> on l2(Z), [N,S]=S on domain",
+      "domain": "ell²(Z)",
+      "codomain": "ell²(Z)",
+      "coefficient_domain": "integers, complex amplitudes",
+      "units": "N dimensionless Cooper-pair number; physical h and e imported in E_C/E_J",
+      "basis_orientation": "charge n increasing under S",
+      "metric_measure": "Hilbert unitary shift",
+      "origin": "external conventional quantum source",
+      "exact_expression": "H_rotor=4EC(N-ng)^2-Σ_m(E_Jm/2)(S^m+(S†)^m)+H_res",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "Willsch"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "energy levels mapped to frequency via physical Planck constant h"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "local-source",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3",
+      "section_or_object_id": "§§1-3, projector ranks and spectrum",
+      "source_status": "integrated exact conditional math"
+    },
+    {
+      "source_id": "carrier-source",
+      "url_or_repo_path": "experiments/qpb1-carrier-anchor/README.md",
+      "version_or_commit": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3",
+      "section_or_object_id": "C7 active and physical i=-J dictionary; action scale open",
+      "source_status": "integrated candidate math"
+    },
+    {
+      "source_id": "Willsch",
+      "url_or_repo_path": "https://doi.org/10.1038/s41567-024-02400-8",
+      "version_or_commit": "2024-02-14",
+      "section_or_object_id": "Results Fig3, Methods charge-basis Hstd/Hhar and measured f0j j1..6",
+      "source_status": "peer-reviewed EMPIRICAL published spectrum; raw data NOT_ACQUIRED"
+    },
+    {
+      "source_id": "JUELICH",
+      "url_or_repo_path": "https://doi.org/10.26165/JUELICH-DATA/LGRHUH",
+      "version_or_commit": "V2 landing page verified in prior task",
+      "section_or_object_id": "spectroscopy data and model code locator",
+      "source_status": "raw content inaccessible in runtime"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Identify native active R14 as a single-particle physical quantum C7; choose i=-J, chi>0 external action and t=tau0*s; map only source classified three-gain G to H."
+    },
+    {
+      "id": "A2",
+      "description": "For comparison, physical superconducting transmon described by standard rotor charge Hilbert ell²(Z), independently postulated EJm/EC and resonator."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/boundary and rational linear algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "15-simplex incidence, projector rank6/6/2, exact charge-shift wrap defect"
+    },
+    {
+      "technique": "complex/spectral operator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "quantum complex rank3/3/1 and at most three distinct energies for fixed G"
+    },
+    {
+      "technique": "finite-dimensional canonical-algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "trace commutator obstruction and seven-state cyclic shift boundary"
+    },
+    {
+      "technique": "dimensional action/time",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "separate native s, external chi and tau0, measured physical transition frequency E/h"
+    },
+    {
+      "technique": "numerical eigenvalue sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "NumPy 25x25 vs33x33 truncated conventional rotor matrices, exact input parameters labeled DESIGN"
+    },
+    {
+      "technique": "fit/baseline/identifiability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "avoid inventing physical data or fitting three gains to the six measured transitions; conventional harmonic full null"
+    },
+    {
+      "technique": "modular-clock/prime-factor/homology beyond incidence",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite physical tick or torsion claim; only rank and charge shift finite cutoff"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "15=4+6+4+1, active real dim14, rank(Pk)=(6,6,2), complex mult=(3,3,1), count distinct energies <=3; seven-state N=-3..3 cyclic wrap coefficient -(2*3+1)=-7",
+    "reduced_expression": "At g=(1,1,3/2), H/(chi/tau0) eigenvalues (2,2,2,2,2,2,3), one nonzero ground gap; generic three-gain max two nonzero gap values",
+    "factor_origins": [
+      "source-classified real orthogonal projectors",
+      "assumed complex i=-J divides active even ranks by2",
+      "cyclic charge basis with exactly seven states"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native continuous s and physical SI seconds t, no physical native tick",
+    "modulus": null,
+    "residue_convention": "seven-state cyclic charge-index truncation is diagnostic mathematical model, not native clock",
+    "update_rule": "native dx/ds=Gx, assumed Schr i chi dpsi/dt=H_eff psi",
+    "initial_phase": "physical complex sign i=-J chosen by prior conditional dictionary",
+    "coupling": "no physical UD-to-superconductor coupling supplied",
+    "period_claim": "no identified physical transition frequencies because chi and tau0 remain free",
+    "physical_unit_map": "t=tau0 s, energy=chi*(2g)/tau0, chi unknown"
+  },
+  "dynamics_readout": {
+    "state_space": "native single active C7 versus conventional transmon ell²(Z) with resonator Hilbert",
+    "generator_or_update": "native fixed 3 sector G versus conventional EJm cosine-charge rotor quantum Hamiltonian",
+    "initial_boundary_conditions": "no external drives or dissipative coupling in direct native model; transmon levels from unbiased chosen ng=0 toy",
+    "conservation_and_sources": "native Pk conserved; physical charge shift not constructed by native incidence",
+    "projection_and_kernel": "rank-3+3+1 eigenspace readout; physical f0j energy differences and resonator shifts require extra operators",
+    "physical_mapping": "HYPOTHESIS only, no empirical action/time/source identification"
+  },
+  "target_exposure": {
+    "status": "CONSTRUCTOR_KNEW_MEASURED_MULTILEVEL_STRUCTURE_BEFORE_TEST",
+    "known_targets": [
+      "published transmon resolves f0j j1..6",
+      "older UD g=(1,1,3/2) and candidate physical action ratio exposed"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "choose direct i=-J Schr correspondence with chi,tau0 external free",
+      "conventional EC/h=.242GHz from paper; EJ1/h=15GHz and EJ2/h=.15GHz illustrative post exposure, not measured fits",
+      "charge cutoff 12 and16 chosen to verify numerical convergence"
+    ],
+    "search_domain_and_budget": "one source native 3-sector family; two conventional illustrative JJ models and two charge cutoffs; no empirical regression",
+    "selection_criterion": "check enough distinct energies for resolved transmon multilevel data, then diagnose missing quantum charge/phase structure",
+    "baseline": "published standard harmonic Josephson transmon/charge rotor and chosen numerical sample"
+  },
+  "calculation_steps": [
+    "Exact rational oriented D_k and K_k construction verifies Pk ranks6,6,2 and cross-projector zero.",
+    "Choose i=-J, t=tau0 s and chi external so Schr Hamiltonian is H_eff=(2chi/tau0)sum gk Pi_k, with complex eigenspace multiplicities 3,3,1.",
+    "Since at most three different g values, H_eff has at most three distinct energies and at most two nonzero ground transitions; at reference g1=g2=1,g3=1.5 there are only two distinct energies (2 sixfold, 3 once).",
+    "Check seven-state cyclic charge basis has [N,S]-S=-7|-3><3|; finite CCR trace obstruction independently follows.",
+    "Add conventional rotor operator H=4EC(N-ng)^2-ΣEJm cos(mφ) as an EXTERNAL new model and truncate to charge ±12 and ±16; NumPy numerical 7 lowest transitions converge better than 1e-7GHz.",
+    "Do not import actual Jülich transmon data or claim empirical regression; park direct model and enumerate changed-hypothesis quantum extensions."
+  ],
+  "result": {
+    "exact_expression": "spec H_eff/(2chi/tau0)={g1^(3),g2^(3),g3^(1)}, <=3 distinct (reference 2); finite [N,S]-S=-7|-3><3|",
+    "approximation": "Conventional toy (EC/h=.242,EJ1/h=15,EJ2/h=.15GHz): f01≈5.21446GHz,f02≈10.12959GHz,f03≈14.71792GHz, NOT MEASURED",
+    "units": "eigenenergy chi/tau0, conventional illustrative transition GHz",
+    "precision_and_error": "exact Fraction matrix ranks and rotor defect, NumPy float64 real eigensolver cutoff12 vs16 max difference ~1.14e-13GHz; no empirical uncertainty",
+    "scope": "minimal fixed generator quantum mapping only; not all UD extensions or finite approximations of rotor",
+    "physical_interpretation": "FAILED direct C7 transmon identification, independent quantum mechanism OPEN"
+  },
+  "verification": [
+    {
+      "method": "exact rational matrix and finite charge-shift audit",
+      "command_or_proof_path": "experiments/qpb-quantum-spectroscopy/spectral_audit.py",
+      "source_revision": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3",
+      "actual_result": "PASS real ranks6/6/2, C7 mult3/3/1 and -7 cyclic boundary",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "conventional NumPy symmetric charge matrix cutoff consistency",
+      "command_or_proof_path": "experiments/qpb-quantum-spectroscopy/spectral_audit.py",
+      "source_revision": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3",
+      "actual_result": "PASS 25x25 vs33x33, first seven illustrative levels converge; no measured data",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "raw heldout Willsch 2024 f0j and independent physical UD mapping",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED / NOT_ACQUIRED",
+      "review_relationship": "empirical"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Fixed generator g=(1,1,3/2) gives sixfold ground-level degeneracy and one single excited energy; no six distinct f0j frequencies.",
+    "Any fixed three independent local gains still yield at most three distinct energy values, irrespective of clock/action scale.",
+    "Seven-state cyclic charge shift fails exact [N,S]=S by boundary rank1 defect; finite canonical CCR fails by trace.",
+    "Conventional rotor truncated numerically to 25/33 finite states gives approximate low-lying levels, so no-go not universal to finite approximations or arbitrary Hermitian 7x7."
+  ],
+  "limitations": [
+    "External physical action chi, native clock tau0 and quantum state preparation/readout have not been selected or calibrated.",
+    "No raw 2024 f0j table, uncertainty matrix, independently frozen UD quantum Hamiltonian or experimental UD data.",
+    "Illustrative conventional EJ ratios not independently measured, so no conventional spectrum FIT score is claimed.",
+    "Source read-only candidates and previous PR#87/#128 are unmodified; candidate is PARKED for direct identification."
+  ],
+  "changed_dependencies": [
+    "New explicit quantum Hilbert identification is a target-informed HYPOTHESIS not implied by earlier classical phase robustness; physical promotion not inherited."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb-qspectra-20261024-gpt6-a1/spectral-001/manifest.json"
+  ],
+  "next_discriminant": "Independent source-derived quantum charge/phase algebra and physical chi,tau0/port correspondence, plus raw heldout multilevel spectra against full harmonic transmon conventional null. Otherwise do not reopen the direct C7 quantum mapping."
+}

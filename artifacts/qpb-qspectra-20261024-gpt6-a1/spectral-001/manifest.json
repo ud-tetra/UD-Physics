@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb-qspectra-20261024-gpt6-a1",
+  "run_id": "spectral-001",
+  "created_at": "2026-10-24T17:32:35Z",
+  "evidence": "EXACT",
+  "summary": "Exact three-sector C7 spectral degeneracy and finite charge-translation obstruction, with conventional illustrative rotor charge-basis convergence",
+  "command": "python3 /mnt/data/ud_qspectra_20261024/spectral_audit.py --out /mnt/data/ud_qspectra_20261024/summary.json",
+  "command_execution": "EXECUTED_LOCAL_PYTHON_FRACTIONS_AND_NUMPY",
+  "source": {
+    "revision": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "source-audit",
+      "name": "spectral_audit.py",
+      "path": "inputs/spectral_audit.py",
+      "sha256": "be0542e00211dff828aa8eee35ed4e06c54658eb72ec58a2380c420d4ce9e39a",
+      "size_bytes": 7126,
+      "source_location": "repository",
+      "source_path": "experiments/qpb-quantum-spectroscopy/spectral_audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "f057f7af9cb5fbdf0aa15226381ae1b41dfd20f0cdfe5096718af773706639df",
+      "size_bytes": 3406
+    }
+  ]
+}

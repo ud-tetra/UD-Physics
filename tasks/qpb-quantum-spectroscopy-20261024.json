@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb-quantum-spectroscopy-20261024",
+  "goal": "Direct quantum UD C7 spectrum and charge-rotor viability versus published transmon multilevel spectroscopy, source-select physical scale before any held-out comparison",
+  "owned_paths": [
+    "tasks/qpb-quantum-spectroscopy-20261024.json",
+    "sessions/qpb-qspectra-20261024-gpt6-a1/",
+    "experiments/qpb-quantum-spectroscopy/",
+    "candidates/qpb-quantum-spectroscopy/",
+    "artifacts/qpb-qspectra-20261024-gpt6-a1/"
+  ],
+  "dependencies": [
+    "qpb1-local-generators-20261023",
+    "qpb1-carrier-anchor-20261022"
+  ],
+  "status": "complete",
+  "result": "Exact native C7 three-sector spectrum admits at most 3 distinct energies and at the exposed gain 2; finite seven-state charge shift has rank1 wrap defect. The direct mapped Hamiltonian cannot be the full resolved transmon 7-level ladder. Conventional quantum charge rotor has distinct illustrative levels; physical scale/mapping/data OPEN.",
+  "next_action": "Do not fit same 3-gain C7 model to transmon ladder. Seek an independently sourced quantum Hilbert/charge law and measured heldout f0j plus physical action/time/port maps; otherwise park direct C7 transmon attribution."
+}
