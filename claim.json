@@ -13,5 +13,7 @@
     "state/CURRENT.md"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-24T18:16:12.571Z",
+  "released_from_sha": "68492e449497489584f35184e7598848531a27fd"
 }
