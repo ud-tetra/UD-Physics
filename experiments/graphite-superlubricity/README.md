@@ -12,6 +12,7 @@
 - [Four-site source-constraint follow-up](../graphite-source-constraints/README.md): two exact linear cross-Hessian relations test the *pure* seven-orbit source without fitting its weights or damping. The archived KC reconstruction fails the pure-source test; a proposed additive UD coupling requires an independently subtracted conventional baseline. No new measured friction is claimed.
 - [Mode-linewidth calibration follow-up](../graphite-linewidth-transfer/README.md): the archived conventional height spectrum gives a conditional dimensional transfer from independently measured dissipative widths of two E-mode pairs to low-frequency drag. The closed finite model has zero Ohmic drag; widths, source-specific coupling and sliding-force readout remain unmeasured.
 - [Passive cross-mode loss bound](../graphite-cross-loss/README.md): pair-diagonal linewidths alone leave a conditional drag interval. At equal symbolic widths, allowed mixing changes the conventional 16 Å diagonal transfer by up to 48.70%; the cross-loss pressure derivative is needed to infer a load slope. No measured friction or UD damping is claimed.
+- [Quotient-family angle-selectivity audit](../graphite-quotient-contrast/README.md): the two-dimensional harmonic carrier and uniform-source cancellation also occur for 13- and 19-cell moiré quotients. They do not by themselves select the observed seven-cell peak. Published rigid DFT yields a `(2,1)/(3,1)` ideal static shear ratio near 2.08, while the force detection limit and kinetic transfer remain unknown.
 
 ## Claim at its actual scope
 
