@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-registry-index-20261024",
+  "session": "graphregindex-20261024-a61b",
+  "status": "held",
+  "created_at": "2026-10-24T13:46:00Z",
+  "base_revision": "5a087ea0128c69b8b3483d74e2c91ad3b423c8d7",
+  "owned_paths": [
+    "tasks/integration-graphite-registry-index-20261024.json",
+    "sessions/graphregindex-20261024-a61b/",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md"
+  ]
+}
