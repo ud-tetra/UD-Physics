@@ -6,6 +6,7 @@
 - Constructor correction: one initial assertion summed each source row across eight site coordinates rather than summing the seven source matrices at each coordinate to test the uniform-weight null. It failed as expected for that mistaken test; the code now checks the correctly typed column sum and was recaptured after correction.
 - Checks: exact verifier PASS; `python3 scripts/validate.py` PASS (157 records); `python3 -m unittest discover -s tests -v` PASS (16 tests). These are constructor and integrity checks, not independent physical review.
 - Next discriminant: infer site-resolved measured-minus-conventional coupling with baseline and registration uncertainty, then test both constraints; separately constrain bath stiffness/loss before a signed paired-angle force prediction.
+- Closure: PR #83 merged as `e9dc0e074af561a8e9e309f72f2b6b365a7553c8` after updated-head CI success (run 40047683252); exact-SHA claim release marker `e3bb4941e4ebf3ebb483d8bb08155326d632abfe` verified. Independent physics review NOT_RUN.
 
 ## 2026-10-24T00:57:48.447697+00:00
 

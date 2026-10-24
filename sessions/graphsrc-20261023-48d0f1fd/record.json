@@ -8,13 +8,14 @@
   "created_at": "2026-10-24T00:54:22Z",
   "base_revision": "79fd6d6cc8f2d40d516df0074e728e3f9428f60b",
   "source_dirty_at_boot": false,
-  "status": "handoff",
-  "claims": {"graphite-source-constraints-20261023": {"ref": "refs/heads/claims/graphite-source-constraints-20261023", "sha": "41a13dcc31129026f6743a4587cf5a69b8e1c943", "status": "held"}},
+  "status": "complete",
+  "claims": {"graphite-source-constraints-20261023": {"ref": "refs/heads/claims/graphite-source-constraints-20261023", "sha": "41a13dcc31129026f6743a4587cf5a69b8e1c943", "status": "released", "release_marker_sha": "e3bb4941e4ebf3ebb483d8bb08155326d632abfe", "released_from_sha": "41a13dcc31129026f6743a4587cf5a69b8e1c943"}},
   "checks": [
     {"command": "python3 experiments/graphite-source-constraints/verify_constraints.py", "result": "PASS: exact source rank and nullspace, full C3 covariance and eight allowed basis maps; five archived KC replays"},
     {"command": "python3 scripts/validate.py", "result": "PASS: 157 records; manifest digests and local documentation links valid"},
     {"command": "python3 -m unittest discover -s tests -v", "result": "PASS: 16 tests"}
   ],
+  "integration": {"research_pr": "https://github.com/ud-tetra/UD-Physics/pull/83", "research_head": "6d08d0cb7a456198632c4d5bacfdca7c39c45755", "research_merge": "e9dc0e074af561a8e9e309f72f2b6b365a7553c8", "ci_run_id": 40047683252, "ci_conclusion": "success", "independent_physics_review": "NOT_RUN", "released_claim": "e3bb4941e4ebf3ebb483d8bb08155326d632abfe"},
   "finding": "EXACT/CONDITIONAL: two weight-independent linear site-response constraints characterize the six-dimensional pure source inside eight-dimensional C3-equivariant maps; archived KC model violates them at the selected alignment.",
   "next_action": "Acquire independent site-resolved cross-Hessian and baseline covariance in a geometrically registered basis; then test the additive source component and separately constrain loss for friction prediction.",
   "mathematical_profile": {
