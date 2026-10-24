@@ -19,3 +19,7 @@ Indexed research PR #135 source/phase provenance gate in graphite paper v2 compa
 Checkpoint (handoff): Native source and dimensional damping gate indexed; physical bridge remains open.
 
 Next: Merge index PR, release claim, then derive a target-blind typed nonuniform edge/route law and material loss map.
+
+## Release and integration
+
+PR #137 merged at 82674a508284bd164ee2471d49ea2e12f15b72e9 after Discovery integrity workflow 40113566005 succeeded. Integration claim released at 5c362bda9b08d62dd1a4ce28eb01845e98c4b529 via exact-head lease. No independent physics review or physical promotion.
