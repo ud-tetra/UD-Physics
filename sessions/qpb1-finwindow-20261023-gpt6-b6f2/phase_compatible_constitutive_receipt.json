@@ -1,0 +1,247 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb-phase008-onsite-star",
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "candidate_id": "qpb1-finite-window-phase",
+  "question": "Does retained UD J phase symmetry fix nonlinear onsite potentials or a hidden-star constitutive coefficient?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FIT",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "carrier",
+      "symbol": "C",
+      "object_type": "oriented filled tetrahedral chain",
+      "definition": "direct sum C0 through C3, dimensions 4,6,4,1",
+      "domain": "R15",
+      "codomain": null,
+      "coefficient_domain": "Q incidence/R states",
+      "units": "dimensionless",
+      "basis_orientation": "ascending simplices, signed S4",
+      "metric_measure": "Euclidean H=I",
+      "origin": "imported",
+      "exact_expression": "dim 15; rank active14",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit basis"
+    },
+    {
+      "object_id": "J",
+      "symbol": "J=A/2",
+      "object_type": "skew complex structure",
+      "definition": "A=d-dT, Kk=Dk-DkT, Pk=-Kk²/4, original J action",
+      "domain": "R15",
+      "codomain": "R15",
+      "coefficient_domain": "Q",
+      "units": "native angle",
+      "basis_orientation": "oriented simplices",
+      "metric_measure": "orthogonal phase rotation",
+      "origin": "imported",
+      "exact_expression": "J²=-sum Pk",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "carrier"
+      ],
+      "normalization": "2pi fiber"
+    },
+    {
+      "object_id": "Hstar",
+      "symbol": "H_lambda",
+      "object_type": "assumed hidden-star quartic",
+      "definition": "||x||²/2+lambda*(xT P3 x)²/4, xdot=A grad H",
+      "domain": "R15",
+      "codomain": "R",
+      "coefficient_domain": "R lambda; Q exact fixtures",
+      "units": "unmapped native energy",
+      "basis_orientation": "signed S4 invariant",
+      "metric_measure": "constant skew Poisson A",
+      "origin": "assumed/FIT",
+      "exact_expression": "omega3=2(1+lambda*r3), r3=xT P3 x",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "phase007"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "J"
+      ],
+      "normalization": "lambda>=0 for positive added quartic"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "local",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "section_or_object_id": "§§1–4 S4 projectors and rate family",
+      "source_status": "integrated constructor"
+    },
+    {
+      "source_id": "phase007",
+      "url_or_repo_path": "experiments/qpb1-finite-window-phase/CONSTITUTIVE_SOURCE_AUDIT.md",
+      "version_or_commit": "5e5f64a5bb4f84f3ab5ec6ae627f6d5d300c2381",
+      "section_or_object_id": "onsite quartic and J defect",
+      "source_status": "branch constructor"
+    },
+    {
+      "source_id": "constitutive-source",
+      "url_or_repo_path": "experiments/qpb1-impedance-selection/README.md",
+      "version_or_commit": "4aaf0a39d24328e27bc425e333e3612baea888a5",
+      "section_or_object_id": "scoped source-selection gap",
+      "source_status": "read-only integrated source audit"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Each onsite h_i C1 with h_i'(0)=0, and energy H invariant under complete continuous exp(theta J) action."
+    },
+    {
+      "id": "A2",
+      "description": "New postulated star projector quartic with unselected lambda; matched classical baseline may implement same A and H."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer incidence/combinatorics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "connected Hasse graph of 15 registers and rank2 P3 with six face cross-pairs"
+    },
+    {
+      "technique": "exact fractions/operator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "J commutation, symmetry, stock and energy derivative identities"
+    },
+    {
+      "technique": "group signed S4",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "all 24 signed actions commute with A,P3"
+    },
+    {
+      "technique": "continuum dynamics/phase",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "J-invariant energy constraint and preparation-dependent hidden phase frequency"
+    },
+    {
+      "technique": "fit/null",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "old phase target selects lambda=1; classical matched Hamiltonian indistinguishable"
+    },
+    {
+      "technique": "factorization/modular clock/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no divisibility or discrete clock/new homology problem"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4+6+4+1=15, 24 permutations, 4 lambda x 3 q x 3 p x 2 w=72 prepared states, 4 rational quarter-turns x72=288",
+    "reduced_expression": "lambda=(3/2-1)/(1/2)=1 FIT",
+    "factor_origins": [
+      "original rank and projector",
+      "exposed reference gain/stock"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native continuous s",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x'=Ax+lambda*r3 K3x",
+    "initial_phase": "arbitrary norm and r3, both conserved",
+    "coupling": "quartic within single tetrahedral top/four-face star",
+    "period_claim": "each preparation has omega3=2(1+lambda*r3), not a fixed universal rate",
+    "physical_unit_map": "tphysical=tau0*s OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R15, rank14 active",
+    "generator_or_update": "constant Poisson A; quartic H_lambda",
+    "initial_boundary_conditions": "closed undriven model, finite initial support",
+    "conservation_and_sources": "norm, each sector support and H_lambda exactly conserved",
+    "projection_and_kernel": "P3 hidden signed top/four-face star",
+    "physical_mapping": "OPEN; physical channel and time uncalibrated"
+  },
+  "target_exposure": {
+    "status": "EXPOSED_PREVIOUS_TWO_RATE_TARGET",
+    "known_targets": [
+      "g3=3/2 at r3=1/2, geometric phase -1 development target"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "hidden quartic form and lambda=1 selected after exposure"
+    ],
+    "search_domain_and_budget": "four lambda fixtures (0,1/4,1,2),72 states,288 phase checks, no physical data",
+    "selection_criterion": "preserve J/S4 while allowing nontrivial detuning",
+    "baseline": "ordinary classical nonlinear Hamiltonian with exact same Poisson tensor and quartic energy"
+  },
+  "calculation_steps": [
+    "Differentiate J invariance at theta0: sum h_i'(x_i)(Jx)_i=0.",
+    "For adjacent i,j and two-site x=u e_i+v e_j, J_ij(h_i'(u)v-h_j'(v)u)=0; connectedness forces same linear derivative h'_i(u)=cu.",
+    "Integrate to H_on=c||x||²/2+constant, thereby excluding genuine onsite C1 nonlinear energy under premises.",
+    "Set H_lambda=||x||²/2+lambda*r3²/4, r3=xT P3x; gradH=x+lambda*r3P3x.",
+    "Use AP3=K3, cross-sector orthogonality and signed S4 to show r_k/norm/H conserved, J equivariance and omega3=2(1+lambda*r3).",
+    "At exposed r3=1/2 require g3=3/2 and solve lambda=1 (FIT).",
+    "Because a conventional classical Poisson system can choose the identical A and H, trajectory and port identification remains nonunique."
+  ],
+  "result": {
+    "exact_expression": "All C1 onsite phase-invariant energies reduce to common quadratic. Hidden quartic gives g3=1+lambda*r3; lambda=1 reproduces target by FIT; matched classical null identical.",
+    "approximation": null,
+    "units": "native dimensionless; physical unit map OPEN",
+    "precision_and_error": "exact functional proof and rational matrix checks, 24 S4, 72 states, 288 rotations",
+    "scope": "fixed tetrahedral carrier, energy-phase symmetry and postulated hidden-star quartic",
+    "physical_interpretation": "HYPOTHESIS / FAILED unique physical attribution"
+  },
+  "verification": [
+    {
+      "method": "functional two-site analytic proof and exact Fraction constructor",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/PHASE_COMPATIBLE_CONSTITUTIVE.md and sector_law_audit.py",
+      "source_revision": "5e5f64a5bb4f84f3ab5ec6ae627f6d5d300c2381",
+      "actual_result": "PASS same-constructor 24 signed S4,72 states,288 phase rotations",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent non-constructor/physical evaluation",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "external"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Onsite quartic of phase007 fails J invariance; entire onsite C1 zero-gradient class obstructed under J-energy invariance.",
+    "Hidden-star quartic requires cross-face couplings and unselected lambda.",
+    "lambda=1 is target backsolve, not independent source selection.",
+    "Identical classical nonlinear Hamiltonian makes UD physical attribution unidentifiable."
+  ],
+  "limitations": [
+    "No physical time, port or energy calibration, or held-out experiment.",
+    "No source selects lambda or unique invariant energy functional.",
+    "State-dependent rates require revised uncertainty analysis rather than inherited fixed-gain bound."
+  ],
+  "changed_dependencies": [
+    "State-dependent generator replaces prior fixed linear model; previous finite-window uncertainty certificates do not directly carry over."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-008/manifest.json"
+  ],
+  "next_discriminant": "Independent source-selected coupling and physical calibrated port map, or park uniquely physical attribution."
+}

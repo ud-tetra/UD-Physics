@@ -64,3 +64,13 @@
 - FAILED unique attribution: a conventional nonlinear Hamiltonian with same constant Poisson matrix A and identical H produces exactly the same ODE, trajectories, and local currents. No UD-specific held-out prediction.
 - Constructor executed in repository-shaped local staging: python3 experiments/qpb1-finite-window-phase/constitutive_audit.py --out /tmp/qpb-constitutive-phase007.json; PASS 24 S4, 16 invariant-plane fixtures, six cuts. SHA-256 source 06b5432a01f69ab6c685ccb91253531482c836057d6619284e312f959d34a6ce; output e490ced302dc5d500e8e58d95eceb04c99e60fba86c12b31748a5628a02afa57. Byte-identical to immutable phase-007 run. Independent external review NOT_RUN, empirical NOT_EXECUTED.
 - Next: identify independently constrained native/physical constitutive mechanism with a held-out nonlinear response not absorbed by matched classical network; otherwise park physical attribution. PR draft and claim HELD pending review/integration.
+
+## Phase-008 — source constraint and phase-compatible nonlinear candidate
+
+Verified HELD claim e38d9b6cfba644744eba92d668b670068751487f and isolated worktree-equivalent GitHub branch. No mainline or prior immutable runs changed.
+
+EXACT: For differentiable site-separable H=sum h_i(x_i), h_i'(0)=0, and global J energy invariance, a two-site incidence-edge argument plus connected Hasse graph forces H=c||x||²/2+constant. This does not prohibit other coupled/changed symmetry dynamics.
+
+HYPOTHESIS: hidden-star quartic H=||x||²/2+lambda*(xT P3 x)²/4, x'=Ax+lambda*r3*K3x, retains full J and signed S4, norm, r_i and energy, with omega3=2(1+lambda*r3). The energy has six offdiagonal face-pair couplings, not strictly onsite. FIT: exposed target g3=3/2 at r3=1/2 demands lambda=1; source did not select lambda. Matched classical Poisson Hamiltonian dynamics identical: unique UD physical attribution FAILED.
+
+Executed standard-library exact Fraction audit: 24 signed S4,72 rational fixtures,288 J rotation checks PASS. SHA-256 script 27919dff8c85dd54a45957fb4aa22c6297d6fcd0532984e6f0d49d61b27a6f33 and output de061ac754a0d1cfe77ec1b37510215cd29e13cb14f0c5ac1adcb22e0c25fe67, captured in immutable phase-008 schema2 artifact. Sources pinned, prior runs unchanged. Independent reviewer NOT_RUN; physical experiment NOT_EXECUTED. Next: independently selected constitutive source or park uniquely physical attribution; draft PR held claim retained.

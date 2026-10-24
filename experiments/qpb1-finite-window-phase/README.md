@@ -82,3 +82,8 @@ See [session record](../../sessions/qpb1-finwindow-20261023-gpt6-b6f2/record.jso
 ## Phase-007 source-closed constitutive audit
 
 [Native analytic closure, minimal local quartic nonlinear alternative, J-fiber obstruction and matched conventional Hamiltonian null](CONSTITUTIVE_SOURCE_AUDIT.md). A preparation-scaling signature exists only after a new unselected quartic coefficient is postulated; the old phase theorems do not transfer and unique physical attribution fails.
+
+
+## Phase-008: J-compatible constitutive restriction
+
+[Exact C1 onsite no-go, coupled hidden-star quartic alternative and classical null](PHASE_COMPATIBLE_CONSTITUTIVE.md). The revised law preserves the earlier phase action but needs cross-face coupling and a coefficient chosen after exposure; no physical promotion.
