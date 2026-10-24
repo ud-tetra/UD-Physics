@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-directional-shape-20261024",
+  "goal": "Derive exact finite-speed directional power ratio, its pressure derivative, and cross-index collapse under shared bath",
+  "owned_paths": [
+    "experiments/graphite-directional-shape",
+    "candidates/graphite-directional-shape",
+    "artifacts/graphshape-20261024-01",
+    "sessions/graphshape-20261024-01",
+    "tasks/graphite-directional-shape-20261024.json"
+  ],
+  "dependencies": [
+    "graphite-manuscript-v2-20261024"
+  ],
+  "status": "complete"
+}

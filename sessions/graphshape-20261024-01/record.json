@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphshape-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute plus GitHub connector write",
+  "task": "graphite-directional-shape-20261024",
+  "goal": "Derive amplitude-free directional and load-ratio test for conventional three-wave graphite drag",
+  "created_at": "2026-10-24T16:31:02.209896+00:00",
+  "base_revision": "a7c6b123c144d37fb7a3fcefed36a3ff764af027",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref": "refs/heads/claims/graphite-directional-shape-20261024",
+    "held_sha": "a5cbb2b7be0588c0a91c2af8e6a89dd67665a7cc",
+    "status": "held"
+  },
+  "checks": [
+    "PASS_EXACT_DIRECTIONAL_SHAPE from exact-002; exact-001 superseded by added inversion check",
+    "scripts/validate.py PASS (232 records)",
+    "16 unit tests PASS",
+    "git diff --check PASS"
+  ],
+  "finding": "Within the equal-mode conventional first-star bath, amplitude-free R(x) rises 1 to 3/2, inversion yields tau if contact assumptions hold; not a UD residual.",
+  "next_action": "Publish research PR and release claim; test registered direction/velocity/pressure measurements with independent tau.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q(x), exact rational functions, x=(g v eta/kappa)^2 >=0",
+    "exactness_or_precision_plan": "symbolic polynomial identities with integer coefficients and Fraction replay; numerical display only after exact checks",
+    "applicable_methods": [
+      "Fourier first-star directional moments",
+      "rational-function factorization and derivative sign",
+      "source normalization and identifiability; no modular clock"
+    ],
+    "clock_metric_units_conventions": "three reciprocal vectors in Euclidean plane; prescribed physical-time velocity; phase-averaged dissipated power per upper atom; stationary transverse mode conservative force excluded"
+  },
+  "checkpoint_at": "2026-10-24T16:32:36.933267+00:00",
+  "checkpoint_source": {
+    "revision": "a7c6b123c144d37fb7a3fcefed36a3ff764af027",
+    "dirty": true
+  }
+}

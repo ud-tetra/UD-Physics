@@ -1,0 +1,42 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graphshape-20261024-01",
+  "run_id": "exact-002",
+  "created_at": "2026-10-24T16:33:10.557340+00:00",
+  "evidence": "EXACT",
+  "summary": "Directional shape plus invertible ratio and tau precision; supersedes exact-001 after added check",
+  "command": "python3 experiments/graphite-directional-shape/replay_directional_shape.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "a7c6b123c144d37fb7a3fcefed36a3ff764af027",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay_directional_shape.py",
+      "path": "inputs/001-replay_directional_shape.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-directional-shape/replay_directional_shape.py",
+      "sha256": "5df0276e9de5054d09d07135a138261827fb842a248fa29b7bfe326a762d7bec",
+      "size_bytes": 3027
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/graphite-directional-shape/mathematical_receipt.json",
+      "sha256": "47090a6a52e7051f7ec94adfae4a80d67a84723b266e4f7b24292d990582d177",
+      "size_bytes": 9519
+    }
+  ],
+  "files": [
+    {
+      "path": "files/graphite-shape-result-v2.json",
+      "sha256": "80298b90f1b16c472318368ca5748cadb631f913b930743de22f7643d8ad68b6",
+      "size_bytes": 1115
+    }
+  ]
+}
