@@ -5,7 +5,7 @@
   "run_id": "source-frozen-remainder-014",
   "created_at": "2026-10-24T01:20:00Z",
   "evidence": "NUMERICAL",
-  "summary": "Source SHA256 frozen low-mass zero-friction 3D case: full560 moving pulse with eight directions, one selected finite +/- phase and half amplitude, small measured nonlinear remainder; full180 source-case attempt and complete tight refinement TIMEOUT. No u100 allphase theorem.",
+  "summary": "Source SHA256 frozen low-mass zero-friction 3D case: full560 moving pulse with eight directions, one selected finite +/- phase and half amplitude, small measured nonlinear remainder; full180 source-case attempt and complete tight refinement TIMEOUT. No u100 allphase theorem. [v2 metadata-only correction: input source_location=external, source_path=null; captured source/output bytes unchanged. Original unsuccessful manifest preserved in research Git history and session erratum.]",
   "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 source_case.py; python3 run014_small.py --out result014 --T 100 --samples 401 --tangent-only; python3 replay014.py --input result014 --out result014 --rtol 2e-9",
   "command_execution": "EXECUTED in isolated local Python runtime; full180 first-order attempt timed out before result; tighter five-case refinement incomplete; see report",
   "source": {
@@ -17,57 +17,64 @@
       "input_id": "input-001",
       "name": "source_case.py",
       "path": "inputs/001-source_case.py",
-      "source_location": "isolated local runtime",
+      "source_location": "external",
       "sha256": "d974da4098f9ea6eff40c4337faad87b672ee80cc4522397d3cbb5e932378623",
-      "size_bytes": 1939
+      "size_bytes": 1939,
+      "source_path": null
     },
     {
       "input_id": "input-002",
       "name": "frozen_case.json",
       "path": "inputs/002-frozen_case.json",
-      "source_location": "isolated local runtime",
+      "source_location": "external",
       "sha256": "2833df368f476df40d8782b521b142ff8a551b09a240f16744e21be16ad5fba4",
-      "size_bytes": 1706
+      "size_bytes": 1706,
+      "source_path": null
     },
     {
       "input_id": "input-003",
       "name": "nonaffine_audit.py",
       "path": "inputs/003-nonaffine_audit.py",
-      "source_location": "isolated local runtime",
+      "source_location": "external",
       "sha256": "c1d168e43ec36a49027f8eed50a251e3ab15a590dee4373c1f5d54b81a8b0e00",
-      "size_bytes": 11975
+      "size_bytes": 11975,
+      "source_path": null
     },
     {
       "input_id": "input-004",
       "name": "projected_tangent.py",
       "path": "inputs/004-projected_tangent.py",
-      "source_location": "isolated local runtime",
+      "source_location": "external",
       "sha256": "52c3fea7ce8b65a42006b21dbbf0f121a0830a7b5868f27978751051b2973358",
-      "size_bytes": 8810
+      "size_bytes": 8810,
+      "source_path": null
     },
     {
       "input_id": "input-005",
       "name": "finite_check.py",
       "path": "inputs/005-finite_check.py",
-      "source_location": "isolated local runtime",
+      "source_location": "external",
       "sha256": "12d80069ccdb5bc622ca83e418a9c52696d022425c2b019dcf2a3231d0e61a9c",
-      "size_bytes": 4731
+      "size_bytes": 4731,
+      "source_path": null
     },
     {
       "input_id": "input-006",
       "name": "run014_small.py",
       "path": "inputs/006-run014_small.py",
-      "source_location": "isolated local runtime",
+      "source_location": "external",
       "sha256": "9ce39beda9524b170918703c48632903faf0d4f735879a6317ad826d2abc7348",
-      "size_bytes": 7673
+      "size_bytes": 7673,
+      "source_path": null
     },
     {
       "input_id": "input-007",
       "name": "replay014.py",
       "path": "inputs/007-replay014.py",
-      "source_location": "isolated local runtime",
+      "source_location": "external",
       "sha256": "604bf71178220fdc2f5d06bc9720a57f9f83e5fb3669acbee4ad0be9ae0b2adf",
-      "size_bytes": 4436
+      "size_bytes": 4436,
+      "source_path": null
     }
   ],
   "files": [
