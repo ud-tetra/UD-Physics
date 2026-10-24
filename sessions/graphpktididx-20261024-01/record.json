@@ -1,0 +1,29 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphpktididx-20261024-01",
+  "runtime": "Codex GPT-6.1-sol, shell compute and GitHub connector write",
+  "task": "integration-graphite-packet-identifiability-20261024",
+  "goal": "Index packet rank and conditional quotient ratio",
+  "created_at": "2026-10-24T20:04:07.469452+00:00",
+  "base_revision": "bc0d264c4574ad5a94ef6d5257c3d44003f7fce2",
+  "source_dirty_at_boot": false,
+  "status": "complete",
+  "claims": {
+    "ref": "refs/heads/claims/integration-graphite-packet-identifiability-20261024",
+    "held_sha": "bfe0468199cab7950dd399b221dde342f1a32288",
+    "status": "held"
+  },
+  "checks": [
+    "scripts/validate.py PASS (290 records)",
+    "16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Packet identifiability limit and conditional native ratios indexed without physical promotion.",
+  "next_action": "Independently fix graphite packet preparation, clock and material loss/force map before held-out data test.",
+  "checkpoint_at": "2026-10-24T20:04:25.407253+00:00",
+  "checkpoint_source": {
+    "revision": "bc0d264c4574ad5a94ef6d5257c3d44003f7fce2",
+    "dirty": true
+  }
+}
