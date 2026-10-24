@@ -1,0 +1,45 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-finite-window",
+  "session_id": "qpb1-finite-window-20261023-a1",
+  "question": "Can a finite-window phase with explicit endpoint, visibility and acquisition rules remain nontrivial under independent gain errors?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Original active rank14 filled-tetrahedron carrier, ascending orientations, Euclidean metric and J=A/2; snapshots are normalized active states.",
+    "Retain ordinary U1 ray quotient, Hermitian h_J(u,v)=<u,v>+i<Ju,v>, and alpha=<Jy,dy>; physical interpretation is not established.",
+    "Commuting local gain family g_k(s)K_k; reference gains(1,1,3/2); independent absolute gain error<=1/100, including bounded piecewise-continuous drift.",
+    "Reference preparation(y_edge01+y_top)/sqrt2 with active Euclidean perturbation<=1/10; corresponding normalized ray used.",
+    "Window T0=2pi chosen from exposed reference candidate; actual |T-T0|<=1/100 in native units;128links with each gap<=T_plus/128.",
+    "Full-carrier coherent endpoint/adjacent overlap access, including hidden plane, normalized joint complex error<=1/1000 endpoint and1/1000000 eachlink; deterministic bounds not measured capabilities.",
+    "Measured overlap coordinates transform covariantly with their snapshot phase frames; required active-space and calibration preconditions are external to the phase gate."
+  ],
+  "physical_mapping": "OPEN; mathematical finite-snapshot certificate; full-state overlap acquisition/noise, clock/rate/metric/action calibration unvalidated; UNSCORED,promotion0",
+  "target_exposure": "EXPLORATORY_AFTER_TWO_RATE_REFERENCE_PHASE_AND_EXACT_RETURN_GAIN_CHALLENGE",
+  "fitted_choices": [
+    "Nominal window2pi and reference gains chosen after prior candidate exposure",
+    "rho1/10 retained; epsilon/h1/100,overlap budgets1e-3/1e-6 andM128 are illustrative protocol controls, not theory constants",
+    "No empirical fit; sample count not optimized; thresholds chosen inside derived visibility bounds"
+  ],
+  "sources": [
+    "experiments/qpb1-finite-window/SOURCES.json",
+    "experiments/qpb1-finite-window/SOURCE_ROWS.json"
+  ],
+  "baseline": "Ordinary noncyclic geometric-phase overlap comparison; undetuned native global rotation givesQ1",
+  "result": "Endpoint phase times conjugated adjacent phases is exactly discrete gauge invariant;129snapshots certify shortest angular error<1/250rad relative to exp(-2pi*i*r_hidden), observed endpoint>99/100 andlinks>999/1000, |Qhat-1|>17/10 on stated joint continuous domain; no exact recurrence or nominal-rate correction required",
+  "next_discriminant": "Derive full-carrier overlap acquisition from local register observations, including hidden-plane access, normalization, reference memory and error propagation; test whether the assumed link/endpoint budgets can be achieved without ideal full-state access.",
+  "unsupported_roles": [
+    "Physical demonstration or established one-part-per-million sensor accuracy",
+    "Protection against arbitrary noncommuting/mode-mixing perturbations",
+    "Source selection of detuning, clock or eta_A",
+    "Lifted winding/action or quantized spin inference"
+  ]
+}
