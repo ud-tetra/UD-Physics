@@ -87,3 +87,8 @@ See [session record](../../sessions/qpb1-finwindow-20261023-gpt6-b6f2/record.jso
 ## Phase-008: J-compatible constitutive restriction
 
 [Exact C1 onsite no-go, coupled hidden-star quartic alternative and classical null](PHASE_COMPATIBLE_CONSTITUTIVE.md). The revised law preserves the earlier phase action but needs cross-face coupling and a coefficient chosen after exposure; no physical promotion.
+
+
+## Phase-009 constitutive nonidentifiability and parking
+
+[Exact positive-semidefinite quartic coefficient degeneracy, controlled preparation alternatives and formal unique-attribution disposition](COEFFICIENT_DEGENERACY.md). This closes the current source-selection search under its stated assumptions and parks physical attribution; earlier exact conditional findings are preserved.
