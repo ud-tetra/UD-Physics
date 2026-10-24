@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-traffic-source-20261024",
+  "goal": "Construct and falsify a typed positive traffic completion of Q24; test local current harmonic projection",
+  "owned_paths": [
+    "experiments/graphite-traffic-source",
+    "candidates/graphite-traffic-source",
+    "sessions/graphtraffic-20261024-01",
+    "artifacts/graphtraffic-20261024-01",
+    "tasks/graphite-traffic-source-20261024.json"
+  ],
+  "dependencies": [
+    "graphite-route-parity-20261024"
+  ],
+  "status": "complete"
+}

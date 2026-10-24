@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graphtraffic-20261024-01",
+  "run_id": "exact-001",
+  "created_at": "2026-10-24T17:30:36.186729+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact traffic-versus-rate and contractible-face harmonic obstruction",
+  "command": "python3 experiments/graphite-traffic-source/replay_traffic.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay_traffic.py",
+      "path": "inputs/001-replay_traffic.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-traffic-source/replay_traffic.py",
+      "sha256": "bb1804dcdc7d179c3f9960d7f4519638ae36e968fb9355a441275a7731cb1c19",
+      "size_bytes": 2935
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/graphite-traffic-source/mathematical_receipt.json",
+      "sha256": "4681d58ec3f71fa6b8c6065d3737fb1e0e0ac2e91a10927e7228906b44ac25a3",
+      "size_bytes": 9167
+    },
+    {
+      "input_id": "input-003",
+      "name": "UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "path": "inputs/003-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "source_location": "repository",
+      "source_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    }
+  ],
+  "files": [
+    {
+      "path": "files/graphtraffic-witness.json",
+      "sha256": "ac1cdaf11d8727e1c1c32e9e343f80bacbbda6e198e9f4288cf7fbde636a54d5",
+      "size_bytes": 2134
+    }
+  ]
+}
