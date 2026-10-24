@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-graphite-traffic-source-20261024",
+  "session": "graphtrafficidx-20261024-01",
+  "created_at": "2026-10-24T17:33:38.643Z",
+  "base_revision": "907a64c93f189b440e759be94d62078a6b6deb9d",
+  "owned_paths": [
+    "tasks/integration-graphite-traffic-source-20261024.json",
+    "sessions/graphtrafficidx-20261024-01/",
+    "experiments/graphite-manuscript-v2/README.md",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
