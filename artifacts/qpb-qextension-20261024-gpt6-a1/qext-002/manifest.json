@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb-qextension-20261024-gpt6-a1",
+  "run_id": "qext-002",
+  "created_at": "2026-10-24T17:49:39.126Z",
+  "evidence": "EXACT",
+  "summary": "Corrected capture metadata timestamp; same exact symmetry/Fock script and source/result bytes as qext-001, no scientific recalculation",
+  "command": "python3 experiments/qpb-quantum-extension/audit.py --out /tmp/ud-qext-002.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON; original source execution repeated and verified prior to GitHub publication",
+  "source": {
+    "revision": "33ec4d92d1e2d8553d6dde68b03870a7bcf15644",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "qext-corrected",
+      "name": "audit.py",
+      "path": "inputs/audit.py",
+      "sha256": "be065eb7bd5573fe972c471915c224d5ca002e421ffae0d29fbb39dab8f18242",
+      "size_bytes": 3791,
+      "source_location": "repository",
+      "source_path": "experiments/qpb-quantum-extension/audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "0721d516583094f86977369ad31339c5b5fd1333f9c955bdb9517af12e1f2171",
+      "size_bytes": 2524
+    }
+  ]
+}
