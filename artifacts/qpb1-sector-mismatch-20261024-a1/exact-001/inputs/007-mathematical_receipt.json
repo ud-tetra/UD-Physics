@@ -1,0 +1,366 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb1-sector-mismatch-exact-001",
+  "session_id": "qpb1-sector-mismatch-20261024-a1",
+  "candidate_id": "qpb1-sector-mismatch",
+  "question": "Can the0.01 meter detuning development point be enclosed in a continuous independent three-sector box while preserving phase and visibility?",
+  "evidence_labels": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "sectors",
+      "symbol": "P_k,K_k",
+      "object_type": "orthogonalsectors/localgenerators",
+      "definition": "ranks6,6,2;Kk=2JPk",
+      "domain": "R15",
+      "codomain": "R15",
+      "coefficient_domain": "Qmatrices",
+      "units": "nativeamplitudes/rates/timeparameter;phase radians;notSI",
+      "basis_orientation": "ascendingchainorientations,threeorthogonalactiveprojectors",
+      "metric_measure": "positivefullEuclideanstorageandactiveHermitianmetric",
+      "origin": "imported",
+      "exact_expression": "PkPj=0fori!=j",
+      "measured_value": null,
+      "uncertainty": "Exactdeclaredintervalbounds;notmeasured",
+      "source_refs": [
+        "projective",
+        "meter",
+        "window",
+        "acq"
+      ],
+      "assumption_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dependency_ids": [],
+      "normalization": "unitactiveprojectiverays;positiveb0rawcalibration"
+    },
+    {
+      "object_id": "transfer",
+      "symbol": "beta(omega,tau)",
+      "object_type": "scalarmetertransfer",
+      "definition": "secondcomponentexp([[0,-1/4],[1/4,-1+iomega]]tau)(1,0)",
+      "domain": "Romega xRtime",
+      "codomain": "C",
+      "coefficient_domain": "R/CwithQenclosures",
+      "units": "nativeamplitudes/rates/timeparameter;phase radians;notSI",
+      "basis_orientation": "ascendingchainorientations,threeorthogonalactiveprojectors",
+      "metric_measure": "positivefullEuclideanstorageandactiveHermitianmetric",
+      "origin": "derived",
+      "exact_expression": "1-(3/2)omega^2<=|beta/b0|^2<=1",
+      "measured_value": null,
+      "uncertainty": "Exactdeclaredintervalbounds;notmeasured",
+      "source_refs": [
+        "projective",
+        "meter",
+        "window",
+        "acq"
+      ],
+      "assumption_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dependency_ids": [
+        "sectors"
+      ],
+      "normalization": "unitactiveprojectiverays;positiveb0rawcalibration"
+    },
+    {
+      "object_id": "enclosure",
+      "symbol": "I_cells",
+      "object_type": "intervalproof",
+      "definition": "512closedtimecells,analyticTaylor/tailbounds,outwardrationalrounding",
+      "domain": "[1,5107/700]x[-11/500,11/500]",
+      "codomain": "intervalinequalities",
+      "coefficient_domain": "Q",
+      "units": "nativeamplitudes/rates/timeparameter;phase radians;notSI",
+      "basis_orientation": "ascendingchainorientations,threeorthogonalactiveprojectors",
+      "metric_measure": "positivefullEuclideanstorageandactiveHermitianmetric",
+      "origin": "derived",
+      "exact_expression": "GRID10^12,Ntime100,Ndetuning5",
+      "measured_value": null,
+      "uncertainty": "Exactdeclaredintervalbounds;notmeasured",
+      "source_refs": [
+        "projective",
+        "meter",
+        "window",
+        "acq"
+      ],
+      "assumption_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dependency_ids": [
+        "transfer"
+      ],
+      "normalization": "unitactiveprojectiverays;positiveb0rawcalibration"
+    },
+    {
+      "object_id": "weights",
+      "symbol": "w_st,K_st",
+      "object_type": "normalizedoverlapweights/coherence",
+      "definition": "r_k sqrt(A_s A_t)renormalized;positiveprefactor",
+      "domain": "sectorfractions x2times",
+      "codomain": "simplex xRpositive",
+      "coefficient_domain": "R",
+      "units": "nativeamplitudes/rates/timeparameter;phase radians;notSI",
+      "basis_orientation": "ascendingchainorientations,threeorthogonalactiveprojectors",
+      "metric_measure": "positivefullEuclideanstorageandactiveHermitianmetric",
+      "origin": "derived",
+      "exact_expression": "L1(w-r)<=a/(2(1-a));K>=1-a^2/[2(1-a)^2]",
+      "measured_value": null,
+      "uncertainty": "Exactdeclaredintervalbounds;notmeasured",
+      "source_refs": [
+        "projective",
+        "meter",
+        "window",
+        "acq"
+      ],
+      "assumption_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dependency_ids": [
+        "transfer"
+      ],
+      "normalization": "unitactiveprojectiverays;positiveb0rawcalibration"
+    },
+    {
+      "object_id": "phase",
+      "symbol": "b_total",
+      "object_type": "phaseerrorcertificate",
+      "definition": "centeredendpoint/linkmeansplusweightdrift,arbitraryR,andmeasurement",
+      "domain": "declaredcontinuousparameterbox",
+      "codomain": "Rnonnegative",
+      "coefficient_domain": "Q",
+      "units": "nativeamplitudes/rates/timeparameter;phase radians;notSI",
+      "basis_orientation": "ascendingchainorientations,threeorthogonalactiveprojectors",
+      "metric_measure": "positivefullEuclideanstorageandactiveHermitianmetric",
+      "origin": "derived",
+      "exact_expression": "bsector+bo+bsensor<1/290rad",
+      "measured_value": null,
+      "uncertainty": "Exactdeclaredintervalbounds;notmeasured",
+      "source_refs": [
+        "projective",
+        "meter",
+        "window",
+        "acq"
+      ],
+      "assumption_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "dependency_ids": [
+        "weights",
+        "enclosure"
+      ],
+      "normalization": "unitactiveprojectiverays;positiveb0rawcalibration"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "projective",
+      "url_or_repo_path": "experiments/qpb1-projective-tolerance/README.md",
+      "version_or_commit": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
+      "section_or_object_id": "sections1-4;genericpolygonhomotopyanderrorbookkeeping",
+      "source_status": "READ_ONLY_DEPENDENCY"
+    },
+    {
+      "source_id": "meter",
+      "url_or_repo_path": "experiments/qpb1-meter-coupling/README.md",
+      "version_or_commit": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
+      "section_or_object_id": "sections1-5;balancedmeter,scalartransfer,reset",
+      "source_status": "READ_ONLY_DEPENDENCY"
+    },
+    {
+      "source_id": "window",
+      "url_or_repo_path": "experiments/qpb1-finite-window/README.md",
+      "version_or_commit": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
+      "section_or_object_id": "sections4-5;preparation,gain,time,centeredmoments",
+      "source_status": "READ_ONLY_DEPENDENCY"
+    },
+    {
+      "source_id": "acq",
+      "url_or_repo_path": "experiments/qpb1-overlap-acquisition/README.md",
+      "version_or_commit": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
+      "section_or_object_id": "decoder,normalization,integerphase,supportgates",
+      "source_status": "READ_ONLY_DEPENDENCY"
+    },
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "version_or_commit": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
+      "section_or_object_id": "13literalrowsincludingG06/O14andquarantinedQPB1",
+      "source_status": "READ_ONLY_DEPENDENCY"
+    }
+  ],
+  "assumptions": [
+    "Inheritedfilled-tetrahedron15realregisters,active14real/7complex,ascendingorientations,Euclideanmetric,J=A/2,threeorthogonalS4sectorsranks6,6,2;added15classicalmeterregisters.",
+    "Proposedbalancedmeterkappa=1/4,gamma=1;constantsector gain errors epsilon_k independent in[-11/1000,11/1000]. Frequency error omega_k=2epsilon_k; not a percentage or SI rate.",
+    "Plantgains shareG inplantandmeter;g*=(1,1,3/2),eachabsoluteerror<=1/100,includingboundedtimevaryingplantdrift;oneunitwarmup,|T-2pi|<=1/100,M128,maxgapT_plus/128.",
+    "Active seed inparentrho1/10ball,norm[9/10,11/10],rhidden[1/3,2/3]. Arbitrary within-sector directions; nominalsame-seedQ0=exp(-2pi*i*rhidden).",
+    "Additional actual-reference generator remainder norm<=1/10000000; both flows positive-storagecontractions. Initial meter norm<=9/12800000000; priorfinite64native reset/leakage andresidual-preservingpreparationpreconditionsretained.",
+    "Positive calibrationm/b0(tau)withknownnominaltransfer;26bitnearest-evenADC[-2,2),combinedcalibratedper-registersensor/referenceerror<=9/320000000;finiteclassicalreferencesbit-exactbydefault.",
+    "Constant-sector structured scope: not arbitrarychannelor timevaryingdifferentialerrors0.011. Physicalsignedsensors/calibration/clock/action/nativecouplingselectionunvalidated;UNSCORED,promotion0."
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/fractionarithmetic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Exactoutwardintervals,matrixtaylorcoefficients,weightfixtures,totalbudget;integerphaseafterdigitization"
+    },
+    {
+      "technique": "operator/semigroup/spectral",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Threecommutingsectors,2x2passivekernel,Duhameltailsandadditionalgeneratorbudget"
+    },
+    {
+      "technique": "projection/phasegeometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Weights/coherenceandfinitepolygoncancellation;activeprojection/harmonicerrorbounds"
+    },
+    {
+      "technique": "clock/modular",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Nativewarmup/window/reset;phase modulo2pi,notliftedaction/winding"
+    },
+    {
+      "technique": "factorization/gcd",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "InheritedpositivegcdGaussianintegerreduction;factorialsfromanalyticseries,notprimecoincidences"
+    },
+    {
+      "technique": "numerical/fit/null",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Exposedradiusselectionandcross-checkgrid;commonsectorphase-nulland0.05negativecontrol"
+    },
+    {
+      "technique": "statistics/empirical",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "Deterministiccontinuousbounds,noempiricalfit ormeasurement noise distribution"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "3independentconstantsectors,512timecells,101timeTaylorcoefficientsx6detuningcoefficients;128links",
+    "reduced_expression": "Omega=2*(11/1000)=11/500;a=(3/2)Omega^2=363/500000",
+    "factor_origins": [
+      "2fromKk=2JPk",
+      "3/2fromverifiedamplitudequadmajorant",
+      "10and2chosenphase/remaindermajorants",
+      "100/5Taylororderswithanalyticratherthantruncatedtails",
+      "factorialsfromexponentialseries",
+      "128parentlinkcount"
+    ],
+    "factorization": "No physicallymotivatedprimefactorpattern;denominatorsaredeclaredbudgetsandproofgrid",
+    "divisibility_gcd_lcm": "Inheritedgcdphasepairreduction;noadditionalrecurrenceassumption"
+  },
+  "clock_receipt": {
+    "clock_type": "nativecontinuouss,constantdifferentialsectorerrors,timevaryingplantgainallowed",
+    "modulus": "2piobservedphase",
+    "residue_convention": "exactGaussianintegerdirectionandcircularerror",
+    "update_rule": "warmup1,Tnear2pi,M128,maxgapT_plus/128,reset64nativeunits",
+    "initial_phase": "same-seedbaselineQ0=exp(-2pi*i*rhidden);commonsectorerrorsphase-null",
+    "coupling": "fixedkappa1/4,gamma1balancedmeter;separatearbitrarypassiveR",
+    "period_claim": "Noactualrecurrenceorempty-meterinstantaneousphaseclaimed",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "15plant+15meterwithactiveprojectiveobservation",
+    "generator_or_update": "sharedG(s),meterE=2Jsumconstant epsilon_k Pk;balancedports/damping;actualreferenceRnorm<=1e-7",
+    "initial_boundary_conditions": "parentseedball,norm.9..1.1,rhidden1/3..2/3,mresnorm<=9/12800000000;finitewarmup/window/reset",
+    "conservation_and_sources": "totalstorage-dissipation,positivecontractions;physicalenergy/controlcostunmapped",
+    "projection_and_kernel": "structuredinvariantsectors;arbitraryharmonicleakboundedbeforeactiveprojection",
+    "physical_mapping": "HYPOTHESIS; signedcalibratedmeter/clock/physicalselectionunvalidated"
+  },
+  "target_exposure": {
+    "status": "EXPLORATORY_AFTER0.01POINT_AND0.004PHASE_SCREEN",
+    "known_targets": [
+      "old0.01passingpoint",
+      "phase.004,endpoint.99,link.999",
+      "previousgenericoperatorlimitsand26/21bitreadout"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Nominalkappa1/4,gamma1andparentprotocolretained",
+      "Exact512cell/order100timeTaylor/degree5detuning enclosure; chosen amplitude3/2,cubicphase10,rate2,f-enddifference2/5majorants",
+      "Initialradius0.01passes;expandedto0.011afterseeingmarginforstrictinteriorneighborhood",
+      "26bitprotocolcertified;21bitextensionfailssufficientallocation;nohardwareoptimizationorblindprediction"
+    ],
+    "search_domain_and_budget": "ExactcontinuousOmega.02pilotthenOmega.022final,512cells;1350syntheticwindows,80closed-formserieschecks,20exactweightfixtures;21bitextensionfails",
+    "selection_criterion": "Retainparentdomainandproveoldpointstrictinteriorwithallphase/gateguarantees",
+    "baseline": "Previousgenericprojective1e-6/2e-7operatorboundsandisolated0.01hidden-sectorpassingpoint"
+  },
+  "calculation_steps": [
+    "Verify30sourcehashes,13literalrowsandtwobyte-matchedhistoricaluploads.",
+    "Reduceconstantsectorerrorevolutionto2x2complexscalartransfer.",
+    "Provecontinuousamplitude/phaseboundswith512exactoutwardtimecellsandanalytic100th-order/5th-degreeTaylorremainders.",
+    "BoundnormalizedoverlapweightL1andcoherence;centerendpoint/linkphasesandcollectweightederroridentity.",
+    "AddseparatearbitraryR/initialresidualbyprojectivehomotopyand26bitsensorerror.",
+    "Execute1350integerwindows,135commonnulls,80different-formseriescrosschecks,andout-of-boxgates-pass/phase-failcontrol;replayintegerwitness."
+  ],
+  "result": {
+    "exact_expression": "|epsilon_k|<=11/1000,||R||<=1/10000000,b_total<1/290rad,observedendpoint>99/100,links>999/1000",
+    "approximation": "totalboundabout.003360530rad;sampledmaximumabout.000827017rad",
+    "units": "nativegain/operator/time;phase radians",
+    "precision_and_error": "PrimarycertificateQintervalsroundoutwardgrid10^12withanalytictails;binary64paths/displaysseparate;integerphaseexactafterdigitization",
+    "scope": "Constantthree-sectorepsilonboxwithparentcontinuouspreparation/plantgain/timingdomain;separatearbitrarysmallR;26bitqualifiedreadout",
+    "physical_interpretation": "HYPOTHESIS;hardwareUNSCORED,promotion0"
+  },
+  "verification": [
+    {
+      "method": "Exactrationalintervaltransferandbudget,constructorclosed-formsyntheticcrosschecks,exactintegerwitness",
+      "command_or_proof_path": "python3 experiments/qpb1-sector-mismatch/audit.py --out /workspace/scratch/ed44232d6ecb/sector-mismatch-outputs;enclose.py;READMEsections2-5",
+      "source_revision": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb pluscapturedtaskinputs",
+      "actual_result": "PASS30hashes,13rows,512exactintervalcells,20weightfixtures,80serieschecks,1350integerwindows,135common-nullchecks,witnessreplay;0.05negativecontrolfailsphasewhilegatespass",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "21bitfullboxsameallocationisnotcertified;failureofsufficientbound,notimpossibility.",
+    "Outsideboxhiddenepsilon.05passesdatagatesbutphaseerror.009124747exceeds.004.",
+    "Constant-sectorcertificatecannotbeimportedtosame-amplitudearbitrarychannelortimevaryingdifferentialerrors.",
+    "Initialpilot|epsilon|<=.01passed;expandedto.011beforecaptureforexposedinterior-neighborhoodpurpose."
+  ],
+  "limitations": [
+    "Engineeredkappa/gamma/localmeterstillassumptions;nogainselectionorSIbridge.",
+    "Signal/noise/calibration/reference/clock/reset/seedpreconditionsnotmeasured.",
+    "Exactintervalcertificatevalidatesmathematicaltransfer,notnature;independentreviewNOT_RUN.",
+    "Numericaltrajectoriesnotintervalvalidated;closedformcomparisonsareconstructorchecks.",
+    "No21bitfullboxorunboundeddriftclaim;oldnogoresultsretainoriginalhypotheses."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-sector-mismatch-20261024-a1/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Derive an explicit drift-rate budget for slowly time-varying sector mismatch epsilon_k(s), retaining the constant-box phase/signal certificate and separate arbitrary-channel/calibration requirements; priority95."
+}

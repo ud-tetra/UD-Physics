@@ -1,0 +1,49 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb1-sector-mismatch",
+  "session_id": "qpb1-sector-mismatch-20261024-a1",
+  "question": "Can the0.01 meter detuning development point be enclosed in a continuous independent three-sector box while preserving phase and visibility?",
+  "status": "ACTIVE",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Inheritedfilled-tetrahedron15realregisters,active14real/7complex,ascendingorientations,Euclideanmetric,J=A/2,threeorthogonalS4sectorsranks6,6,2;added15classicalmeterregisters.",
+    "Proposedbalancedmeterkappa=1/4,gamma=1;constantsector gain errors epsilon_k independent in[-11/1000,11/1000]. Frequency error omega_k=2epsilon_k; not a percentage or SI rate.",
+    "Plantgains shareG inplantandmeter;g*=(1,1,3/2),eachabsoluteerror<=1/100,includingboundedtimevaryingplantdrift;oneunitwarmup,|T-2pi|<=1/100,M128,maxgapT_plus/128.",
+    "Active seed inparentrho1/10ball,norm[9/10,11/10],rhidden[1/3,2/3]. Arbitrary within-sector directions; nominalsame-seedQ0=exp(-2pi*i*rhidden).",
+    "Additional actual-reference generator remainder norm<=1/10000000; both flows positive-storagecontractions. Initial meter norm<=9/12800000000; priorfinite64native reset/leakage andresidual-preservingpreparationpreconditionsretained.",
+    "Positive calibrationm/b0(tau)withknownnominaltransfer;26bitnearest-evenADC[-2,2),combinedcalibratedper-registersensor/referenceerror<=9/320000000;finiteclassicalreferencesbit-exactbydefault.",
+    "Constant-sector structured scope: not arbitrarychannelor timevaryingdifferentialerrors0.011. Physicalsignedsensors/calibration/clock/action/nativecouplingselectionunvalidated;UNSCORED,promotion0."
+  ],
+  "physical_mapping": "OPEN; uniform mathematical certificate for engineered classicalmeter; sensors/calibration/clock/native selectionnotestablished;UNSCORED,promotion0",
+  "target_exposure": "EXPLORATORY_AFTER0.01POINT_AND0.004PHASE_SCREEN",
+  "fitted_choices": [
+    "Nominalkappa1/4,gamma1andparentprotocolretained",
+    "Exact512cell/order100timeTaylor/degree5detuning enclosure; chosen amplitude3/2,cubicphase10,rate2,f-enddifference2/5majorants",
+    "Initialradius0.01passes;expandedto0.011afterseeingmarginforstrictinteriorneighborhood",
+    "26bitprotocolcertified;21bitextensionfailssufficientallocation;nohardwareoptimizationorblindprediction"
+  ],
+  "sources": [
+    "experiments/qpb1-sector-mismatch/SOURCES.json",
+    "experiments/qpb1-sector-mismatch/SOURCE_ROWS.json"
+  ],
+  "baseline": "Previousgenericprojective1e-6/2e-7operatorboundsandisolated0.01hidden-sectorpassingpoint",
+  "result": "Exact rational interval transfer enclosure and weighted finitepolygon bound certify every constantindependentsectorerror|epsilon_k|<=11/1000,fullparentplant/preparation/timingdomain,26bitreadout,additionalarbitraryoperator1e-7,phase<1/290rad andvisibility>.99/.999. Old0.01pointstrictlyinterior.",
+  "next_discriminant": "Derive an explicit drift-rate budget for slowly time-varying sector mismatch epsilon_k(s), retaining the constant-box phase/signal certificate and separate arbitrary-channel/calibration requirements; priority95.",
+  "mathematical_receipts": [
+    "sessions/qpb1-sector-mismatch-20261024-a1/mathematical_receipt.json"
+  ],
+  "unsupported_roles": [
+    "0.011arbitrary-channel errornorm",
+    "0.011differentialdriftwithoutaratebound",
+    "Physicalhardwarefeasibilityorpromotion",
+    "Uniform21bitextension"
+  ]
+}

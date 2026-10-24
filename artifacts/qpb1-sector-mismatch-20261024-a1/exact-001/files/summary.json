@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "source_hashes": 30,
+  "literal_rows": 13,
+  "exact_rational_time_cells": 512,
+  "sector_gain_radius": "11/1000",
+  "arbitrary_other_operator_budget": "1/10000000",
+  "integer_windows": 1350,
+  "exact_integer_witness_replay": "PASS",
+  "exact_weight_fixtures": 20,
+  "closed_form_series_checks": 80,
+  "common_null_checks": 135,
+  "total_phase_bound": "<1/290rad<1/250rad",
+  "endpoint_visibility": ">99/100",
+  "link_visibility": ">999/1000",
+  "calibrated_ADC_bits": 26,
+  "hardware": "NOT_MEASURED",
+  "physical_promotion": 0
+}

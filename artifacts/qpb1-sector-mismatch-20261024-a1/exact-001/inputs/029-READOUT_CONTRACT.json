@@ -1,0 +1,80 @@
+{
+  "contract_version": "1.0",
+  "status": "HYPOTHETICAL_ACQUISITION_WITH_EXACT_CONDITIONAL_CERTIFICATE",
+  "state_space": "Normalized active E=imP rank14 under original Euclidean metric; h_J defined on E",
+  "required_inputs": {
+    "snapshots": 129,
+    "overlaps": "Endpoint h_J(y0,y128) and128 adjacent h_J(yj,yj+1); each complex value consists of real and J-quadrature channels",
+    "complex_error_meaning": "Euclidean norm of the two real channel errors, not a separate allowance per channel",
+    "clock": "Bounded native window and sample gaps; no physical seconds map"
+  },
+  "estimator": "unit(z_endpoint)*product(conjugate(unit(z_link)))",
+  "gating": {
+    "endpoint_observed_magnitude": "strictly >99/100",
+    "every_link_observed_magnitude": "strictly >999/1000",
+    "failure_status": "LOW_VISIBILITY;phase=null",
+    "state_space_verification": "Active normalization and coherent comparison-frame preconditions require separate acquisition checks; phase function alone cannot verify them"
+  },
+  "assumptions": [
+    {
+      "id": "W1",
+      "statement": "Original active rank14 filled-tetrahedron carrier, ascending orientations, Euclidean metric and J=A/2; snapshots are normalized active states."
+    },
+    {
+      "id": "W2",
+      "statement": "Retain ordinary U1 ray quotient, Hermitian h_J(u,v)=<u,v>+i<Ju,v>, and alpha=<Jy,dy>; physical interpretation is not established."
+    },
+    {
+      "id": "W3",
+      "statement": "Commuting local gain family g_k(s)K_k; reference gains(1,1,3/2); independent absolute gain error<=1/100, including bounded piecewise-continuous drift."
+    },
+    {
+      "id": "W4",
+      "statement": "Reference preparation(y_edge01+y_top)/sqrt2 with active Euclidean perturbation<=1/10; corresponding normalized ray used."
+    },
+    {
+      "id": "W5",
+      "statement": "Window T0=2pi chosen from exposed reference candidate; actual |T-T0|<=1/100 in native units;128links with each gap<=T_plus/128."
+    },
+    {
+      "id": "W6",
+      "statement": "Full-carrier coherent endpoint/adjacent overlap access, including hidden plane, normalized joint complex error<=1/1000 endpoint and1/1000000 eachlink; deterministic bounds not measured capabilities."
+    },
+    {
+      "id": "W7",
+      "statement": "Measured overlap coordinates transform covariantly with their snapshot phase frames; required active-space and calibration preconditions are external to the phase gate."
+    }
+  ],
+  "budget": {
+    "gain_error": "1/100",
+    "timing_error": "1/100",
+    "snapshot_links": "128",
+    "time_upper": "4407/700",
+    "halfspread_upper": "2291/17500",
+    "visibility_lower": "607251319/612500000",
+    "gain_phase_error": "12024728171/15940347123750",
+    "step_halfspread_upper": "57291/2240000",
+    "link_visibility_lower": "10031917741319/10035200000000",
+    "discrete_phase_error": "62681294031057/87779280236541250",
+    "endpoint_overlap_error": "1/1000",
+    "link_overlap_error": "1/1000000",
+    "acquisition_phase_error": "6923774430180773900/6085744643157029233461",
+    "total_phase_error": "422709478705607008303987857641744915419132363/162197520931558744724941609645933369386418591875"
+  },
+  "guarantee": {
+    "baseline": "Q0=exp(-2pi*i*r_hidden) for the same actual preparation at reference gains/window",
+    "circular_angular_error": "<1/250rad",
+    "nontrivial_chord": "|Qhat-1|>17/10",
+    "central_preparation": "Q0=-1; phase not constant across preparation ball"
+  },
+  "memory": "Initial reference, previous/current normalized state and running phasor suffice for streaming; reference coherence and sensor/noise costs OPEN",
+  "rate_correction": "No actual or nominal rates supplied to estimator; continuous correction replaced by observed links with discretization bound",
+  "out_of_scope": [
+    "physical overlap apparatus",
+    "unbounded noncommuting errors",
+    "unmeasured accuracy claim",
+    "action calibration or spin identification"
+  ],
+  "physical_score": "UNSCORED",
+  "physical_promotion": 0
+}

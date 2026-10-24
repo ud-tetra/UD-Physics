@@ -1,0 +1,116 @@
+{
+  "evidence": "NUMERICAL_CONSTRUCTOR",
+  "integer_windows": 1350,
+  "max_total_phase_error": 0.0008270167528959036,
+  "max_structured_phase_error": 0.0008269974545462835,
+  "max_other_phase_error": 8.315892363608654e-09,
+  "common_null_checks": 135,
+  "max_common_null_error": 1.9248295994157257e-15,
+  "closed_form_series_checks": 80,
+  "max_series_display_difference": 6.510625660968866e-12,
+  "out_of_box_control": {
+    "hidden_detuning": 0.05,
+    "data_gates": "PASS",
+    "phase_error": 0.009124746858651401,
+    "phase_screen": "FAIL"
+  },
+  "source": "Binary64closedcoupledsolutions,notintervaltrajectoryvalidation;exactintegerprocessingafterdigitization",
+  "representatives": [
+    {
+      "preparation": 0,
+      "gains": 0,
+      "detuning": [
+        -0.011,
+        -0.011,
+        -0.011
+      ],
+      "window_error": -0.01,
+      "structured_phase_error": 1.967244396649969e-16,
+      "other_phase_error": 4.281013307738666e-09,
+      "sensor_phase_error": 2.2935309599363168e-09,
+      "total_phase_error": 6.5745444643994225e-09,
+      "max_other_raw_error": 8.777388597701048e-08,
+      "meter_gain_lower_in_case": 0.15635901892910475
+    },
+    {
+      "preparation": 0,
+      "gains": 0,
+      "detuning": [
+        -0.011,
+        -0.011,
+        -0.011
+      ],
+      "window_error": 0.0,
+      "structured_phase_error": 5.159135592447294e-16,
+      "other_phase_error": 0.0,
+      "sensor_phase_error": 5.865662939037871e-09,
+      "total_phase_error": 5.865662423124312e-09,
+      "max_other_raw_error": 0.0,
+      "meter_gain_lower_in_case": 0.15635901892910475
+    },
+    {
+      "preparation": 0,
+      "gains": 0,
+      "detuning": [
+        -0.011,
+        -0.011,
+        -0.011
+      ],
+      "window_error": 0.01,
+      "structured_phase_error": 9.69009736191417e-16,
+      "other_phase_error": 4.275217707627734e-09,
+      "sensor_phase_error": 1.8819390792330905e-09,
+      "total_phase_error": 2.3932795974043793e-09,
+      "max_other_raw_error": 8.777372579470463e-08,
+      "meter_gain_lower_in_case": 0.15635901892910475
+    },
+    {
+      "preparation": 4,
+      "gains": 2,
+      "detuning": [
+        0.01,
+        0.0,
+        0.0
+      ],
+      "window_error": -0.01,
+      "structured_phase_error": 2.9103343839968202e-05,
+      "other_phase_error": 1.7646305359876236e-09,
+      "sensor_phase_error": 2.570655395897169e-09,
+      "total_phase_error": 2.9099008554088892e-05,
+      "max_other_raw_error": 9.42083654209329e-08,
+      "meter_gain_lower_in_case": 0.15635901892910475
+    },
+    {
+      "preparation": 4,
+      "gains": 2,
+      "detuning": [
+        0.01,
+        0.0,
+        0.0
+      ],
+      "window_error": 0.0,
+      "structured_phase_error": 5.712521742866792e-06,
+      "other_phase_error": 0.0,
+      "sensor_phase_error": 1.0110102613445833e-08,
+      "total_phase_error": 5.72263184553089e-06,
+      "max_other_raw_error": 0.0,
+      "meter_gain_lower_in_case": 0.15635901892910475
+    },
+    {
+      "preparation": 4,
+      "gains": 2,
+      "detuning": [
+        0.01,
+        0.0,
+        0.0
+      ],
+      "window_error": 0.01,
+      "structured_phase_error": 1.8230442900045554e-05,
+      "other_phase_error": 1.7317486780667429e-09,
+      "sensor_phase_error": 6.575594224116818e-09,
+      "total_phase_error": 1.8222135557127758e-05,
+      "max_other_raw_error": 9.420795469313473e-08,
+      "meter_gain_lower_in_case": 0.15635901892910475
+    }
+  ]
+}

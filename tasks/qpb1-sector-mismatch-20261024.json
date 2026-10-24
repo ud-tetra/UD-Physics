@@ -1,0 +1,19 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb1-sector-mismatch-20261024",
+  "goal": "Uniform structured three-sector detuning near0.01",
+  "owned_paths": [
+    "tasks/qpb1-sector-mismatch-20261024.json",
+    "sessions/qpb1-sector-mismatch-20261024-a1/",
+    "experiments/qpb1-sector-mismatch/",
+    "candidates/qpb1-sector-mismatch/",
+    "artifacts/qpb1-sector-mismatch-20261024-a1/"
+  ],
+  "dependencies": [
+    "qpb1-projective-tolerance-20261024"
+  ],
+  "status": "complete",
+  "result": "Exact rational interval transfer enclosure and weighted finitepolygon bound certify every constantindependentsectorerror|epsilon_k|<=11/1000,fullparentplant/preparation/timingdomain,26bitreadout,additionalarbitraryoperator1e-7,phase<1/290rad andvisibility>.99/.999. Old0.01pointstrictlyinterior.",
+  "next_action": "Derive an explicit drift-rate budget for slowly time-varying sector mismatch epsilon_k(s), retaining the constant-box phase/signal certificate and separate arbitrary-channel/calibration requirements; priority95."
+}
