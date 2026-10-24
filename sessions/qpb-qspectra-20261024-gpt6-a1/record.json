@@ -1,0 +1,51 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb-qspectra-20261024-gpt6-a1",
+  "runtime": "ChatGPT GPT-6; GitHub connector on isolated branch; local Python 3.11 with Fraction and NumPy 2.3.5; no authenticated git checkout",
+  "task": "qpb-quantum-spectroscopy-20261024",
+  "goal": "Direct quantum UD C7 spectrum and charge-rotor viability versus published transmon multilevel spectroscopy, source-select physical scale before any held-out comparison",
+  "created_at": "2026-10-24T17:29:42.967Z",
+  "base_revision": "b4d2a9f15cda3b7d493a14bdba1d3f63604256d3",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "qpb-quantum-spectroscopy-20261024": {
+      "ref": "refs/heads/claims/qpb-quantum-spectroscopy-20261024",
+      "sha": "2dc7876d86ba16bc048fe1582c5523e14c34880c",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "python /mnt/data/ud_qspectra_20261024/spectral_audit.py --out /mnt/data/ud_qspectra_20261024/summary.json",
+      "result": "PASS exact 15x15 Fraction incidence projector ranks 6,6,2; C7 multiplicities 3,3,1, seven-state charge shift boundary -7 and 7-level conventional NumPy cutoff convergence <=1.2e-13GHz",
+      "scope": "actual executed local constructor; source and exact result bytes captured as immutable spectral-001"
+    },
+    {
+      "command": "sha256sum /mnt/data/ud_qspectra_20261024/spectral_audit.py /mnt/data/ud_qspectra_20261024/summary.json",
+      "result": "PASS source be0542e00211dff828aa8eee35ed4e06c54658eb72ec58a2380c420d4ce9e39a, output f057f7af9cb5fbdf0aa15226381ae1b41dfd20f0cdfe5096718af773706639df",
+      "scope": "source/output exact Git blob identities also verified against local hashes"
+    },
+    {
+      "command": "python3 scripts/validate.py and python3 -m unittest discover -s tests -v",
+      "result": "NOT_RUN locally: complete Git checkout unavailable; on-branch Github CI must check repository integrity/tests",
+      "scope": "not physics peer review"
+    }
+  ],
+  "finding": "Exact native C7 three-sector spectrum admits at most 3 distinct energies and at the exposed gain 2; finite seven-state charge shift has rank1 wrap defect. The direct mapped Hamiltonian cannot be the full resolved transmon 7-level ladder. Conventional quantum charge rotor has distinct illustrative levels; physical scale/mapping/data OPEN.",
+  "next_action": "Do not fit same 3-gain C7 model to transmon ladder. Seek an independently sourced quantum Hilbert/charge law and measured heldout f0j plus physical action/time/port maps; otherwise park direct C7 transmon attribution.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q native oriented 15x15 matrices and complex C7 via -J; R positive external chi,tau; conventional floating-point symmetric eigenvalues only for illustration",
+    "exactness_or_precision_plan": "Fraction elimination for ranks/projectors and boundary algebra; Python NumPy symmetric eigenvalues at 25/33 charge cutoffs; <1e-7GHz convergence bound",
+    "applicable_methods": [
+      "exact integer boundary matrices, rank and complex-sector multiplicities",
+      "spectral degeneracy and projective quantum identification",
+      "charge rotor/Weyl finite-dimensional algebra and trace obstruction",
+      "dimensional action/time map and target exposure",
+      "conventional Hamiltonian numerical eigensolver, matched null"
+    ],
+    "clock_metric_units_conventions": "native s dimensionless and J as original complex structure; physical i=-J chosen, t=tau0 s, chi action J*s external; H_eff energies chi/tau0; conventional sample energy/h in GHz"
+  }
+}
