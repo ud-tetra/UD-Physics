@@ -67,3 +67,8 @@ See [session record](../../sessions/qpb1-finwindow-20261023-gpt6-b6f2/record.jso
 ## Phase-004 shot noise and reference-frame feasibility
 
 [Statistical probe-count and measurement-frame audit](SHOT_NOISE_AND_FRAME.md) challenges the unmeasured detector and same-frame assumptions of phase-003. Prior exact conditional algebra is preserved; no physical phase success is inferred.
+
+
+## Phase-005 independently monitored reference/null experiment
+
+[Three-channel protocol, synthetic injection tests and conventional-tone exact null comparison](REFERENCE_NULL_PROTOCOL.md) show what an independently monitored reference can cancel, and where unmatched signal-path drift remains indistinguishable. The newly captured phase-005 result is not a physical experiment or uniquely UD response.

@@ -64,10 +64,20 @@
       "command": "sha256sum /mnt/data/qpb_phase004/shot_noise_audit.py /mnt/data/qpb_phase004/summary.json",
       "result": "PASS source f73c9585f5707c5ac2a8e6b393a0510bd904c81dc734aa0ec3175253d8ce6dba and summary a4e2e7d8d2b25a01fd963c23a73436a24adbf981a71e887d530f9bcae5f03f62",
       "scope": "immutable phase-004 capture"
+    },
+    {
+      "command": "python3 /mnt/data/qpb_phase005/null_protocol.py --out /mnt/data/qpb_phase005/summary.json",
+      "result": "PASS: 5120 synthetic trajectories, 5 controlled drift scenarios, 5120 conventional three-tone equality checks, min V=0.9931327589489719",
+      "scope": "same-assistant constructor, synthetic; no physical execution"
+    },
+    {
+      "command": "sha256sum /mnt/data/qpb_phase005/null_protocol.py /mnt/data/qpb_phase005/summary.json",
+      "result": "PASS code 8945b9ccc1273673ecef9577e23a3ecea9679961c53bf9e57275bed6c89ec05f; output 347c9094dce14eadc1a2cbf87e4bdc56cabd18007441199ed833d90ce3b86330",
+      "scope": "immutable phase-005 capture"
     }
   ],
-  "finding": "EXACT/CONDITIONAL: under three-sector local skew law at T=2pi, independent +-1% gain errors retain V>=30383/30625 and phase drift <=42592/15569925 radians (relative to each state's nominal phase); rate selection and physical readout OPEN; follow-up EXACT/CONDITIONAL joint receiver budget visibility>=607251319/612500000, corrected error<0.008250276 rad under declared prep/time/receiver/calibration bounds; phase-003 EXACT/CONDITIONAL Richardson short-time D estimator under stronger metrology/repeatability budget gives calibration error<=0.000963923 rad and joint phase error<=0.008214199 rad; not a physical apparatus; phase004 EXACT/CONDITIONAL: ideal iid Bernoulli shot budget 59.2e12 for 99% two-probe accuracy, and unmeasured external frame shift .002 rad voids earlier .01 rad joint physical guarantee without lowering visibility.",
-  "next_action": "Independent mathematical review and measured reference-frame/counting fidelity with null comparisons; no source-selected physical time. PR remains draft and task claim HELD.",
+  "finding": "EXACT/CONDITIONAL: under three-sector local skew law at T=2pi, independent +-1% gain errors retain V>=30383/30625 and phase drift <=42592/15569925 radians (relative to each state's nominal phase); rate selection and physical readout OPEN; follow-up EXACT/CONDITIONAL joint receiver budget visibility>=607251319/612500000, corrected error<0.008250276 rad under declared prep/time/receiver/calibration bounds; phase-003 EXACT/CONDITIONAL Richardson short-time D estimator under stronger metrology/repeatability budget gives calibration error<=0.000963923 rad and joint phase error<=0.008214199 rad; not a physical apparatus; phase004 EXACT/CONDITIONAL: ideal iid Bernoulli shot budget 59.2e12 for 99% two-probe accuracy, and unmeasured external frame shift .002 rad voids earlier .01 rad joint physical guarantee without lowering visibility.; phase005 EXACT/CONDITIONAL 3-channel reference cancellation works when path-null matching is imposed, error<=0.0088142081 rad if all phase003 premises retained; FAILED physical attribution: same Z(t) as ordinary 3-tone model; unmatched .002 rad phase drift survives.",
+  "next_action": "Find a UD-specific source-selected dynamical residual or symmetry/scaling observable not realizable by conventional three-tone null; obtain non-constructor mathematical assessment and measured reference-path experiment before any physical claim. Claim HELD until explicit integration/abandonment.",
   "mathematical_profile": {
     "coefficient_domain": "Q exact rational weights, gains and rational enclosures; R state space; C via fixed J for phase; transcendental angles symbolic pi with pi<22/7",
     "exactness_or_precision_plan": "Exact rational bound with analytic sin/cos inequalities; Python float64 only for 125 development samples and three odd-N counterexample checks",
