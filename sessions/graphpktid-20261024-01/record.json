@@ -12,15 +12,17 @@
   "claims": {
     "ref": "refs/heads/claims/graphite-packet-identifiability-20261024",
     "held_sha": "7b6bbab6343f57cb761932a7d0b41a5e823134aa",
-    "status": "held"
+    "status": "released",
+    "release_sha": "447cac174cb85b63d96c0f8b1e8b67ffe593d174"
   },
   "checks": [
     "exact rational 2x2 formal inverse/ratio through captured s17 data PASS",
     "scripts/validate.py PASS (288 records)",
     "16 unit tests PASS",
+    "GitHub Discovery integrity workflow 40127969206 success",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Exact conditional common-input ratio, but graphite preparation remains source-open and pointwise vector is locally invertible.",
+  "finding": "Research merged in PR #169 at c8d9b232d19757cd8a4517b0060e5cce671d7ef0: exact conditional common-input ratio, but graphite preparation remains source-open and pointwise vector is locally invertible.",
   "next_action": "Independently constrain packet amplitude, physical clock, material Hessian/loss and signed held-out force/load.",
   "mathematical_profile": {
     "coefficient_domain": "exact rational matrix power series in t=s²",
