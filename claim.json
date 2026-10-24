@@ -13,5 +13,7 @@
     "artifacts/graphendog-20261024-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-24T18:13:23.685Z",
+  "released_from_sha": "fc305a51f9af71949ee3919b78a2f032d1fd009f"
 }
