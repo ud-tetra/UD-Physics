@@ -1,0 +1,93 @@
+{
+  "status": "PASS_EXACT_REGISTRY_SOURCE_CORRELATION",
+  "normalization": "listed vectors are sqrt(N) times the harmonic projection for unnormalized integer vertex inputs; h basis is fixed across N",
+  "cases": [
+    {
+      "mn": [
+        2,
+        1
+      ],
+      "N": 7,
+      "engineered_character_match_p2_k5": true,
+      "equal_means": [
+        "15/7",
+        "15/7",
+        "15/7"
+      ],
+      "uniform_B_force_times_sqrtN": [
+        "0",
+        "0"
+      ],
+      "A_point_force_times_sqrtN": [
+        "-1",
+        "-1"
+      ],
+      "aligned_zero_mean_force_times_sqrtN": [
+        "-2",
+        "-2"
+      ],
+      "displaced_zero_mean_force_times_sqrtN": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "mn": [
+        3,
+        1
+      ],
+      "N": 13,
+      "engineered_character_match_p2_k5": false,
+      "equal_means": [
+        "27/13",
+        "27/13",
+        "27/13"
+      ],
+      "uniform_B_force_times_sqrtN": [
+        "0",
+        "0"
+      ],
+      "A_point_force_times_sqrtN": [
+        "-1",
+        "-1"
+      ],
+      "aligned_zero_mean_force_times_sqrtN": [
+        "-2",
+        "-2"
+      ],
+      "displaced_zero_mean_force_times_sqrtN": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "mn": [
+        3,
+        2
+      ],
+      "N": 19,
+      "engineered_character_match_p2_k5": false,
+      "equal_means": [
+        "39/19",
+        "39/19",
+        "39/19"
+      ],
+      "uniform_B_force_times_sqrtN": [
+        "0",
+        "0"
+      ],
+      "A_point_force_times_sqrtN": [
+        "-1",
+        "-1"
+      ],
+      "aligned_zero_mean_force_times_sqrtN": [
+        "-2",
+        "-2"
+      ],
+      "displaced_zero_mean_force_times_sqrtN": [
+        "0",
+        "0"
+      ]
+    }
+  ]
+}

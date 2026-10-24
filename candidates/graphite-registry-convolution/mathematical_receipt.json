@@ -1,0 +1,230 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "graphite-registry-harmonic-convolution-001",
+  "session_id": "graphreg-20261024-7c09",
+  "candidate_id": "graphite-registry-convolution",
+  "question": "Can a spatially modulated edge law by itself select the seven-cell harmonic port under C3 symmetry?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "honeycomb-quotient",
+      "symbol": "B1_N,M_N",
+      "object_type": "oriented periodic honeycomb incidence and harmonic projection",
+      "definition": "N=m\u00b2+mn+n\u00b2 cyclic-cell quotient; A_r to B_(r-s_t), s=(0,m+n,n); M_(r,t,a)=h_(t,a)/sqrt(N)",
+      "domain": "V_N=R^(2N) for M^T W B1^T",
+      "codomain": "R\u00b2",
+      "coefficient_domain": "Z incidence, R edge amplitudes",
+      "units": "dimensionless internal model",
+      "basis_orientation": "A-to-B t=0,1,2; h1=(1,-1,0),h2=(1,1,-2)",
+      "metric_measure": "unit Euclidean",
+      "origin": "conditional prior honeycomb model",
+      "exact_expression": "F_a=N^-1/2 sum_(r,t) h_(t,a)w_t(r)[x_B(r-s_t)-x_A(r)]",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "prior-locality"
+      ],
+      "assumption_ids": [
+        "periodic-unit-metric"
+      ],
+      "dependency_ids": [],
+      "normalization": "M columns have norm sqrt(2),sqrt(6); quotient-independent"
+    },
+    {
+      "object_id": "registry-response",
+      "symbol": "W_N=diag(w_t(r))",
+      "object_type": "spatial local edge response",
+      "definition": "arbitrary real spatial weights, no graphite law assumed",
+      "domain": "E_N",
+      "codomain": "E_N",
+      "coefficient_domain": "R (rational in replay)",
+      "units": "unspecified response",
+      "basis_orientation": "same oriented bonds",
+      "metric_measure": "unit edge metric",
+      "origin": "assumed conditional class",
+      "exact_expression": "bar w_t=N^-1 sum_r w_t(r)",
+      "measured_value": null,
+      "uncertainty": "physical values not sourced",
+      "source_refs": [
+        "ledger-Q22"
+      ],
+      "assumption_ids": [
+        "diagonal-local-response"
+      ],
+      "dependency_ids": [
+        "honeycomb-quotient"
+      ],
+      "normalization": "no coefficient fit"
+    },
+    {
+      "object_id": "vertex-drive",
+      "symbol": "x_A(r),x_B(r)",
+      "object_type": "vertex gradient input",
+      "definition": "uniform, local impulse or signed zero-mean spatial pattern",
+      "domain": "V_N",
+      "codomain": "E_N via B1^T",
+      "coefficient_domain": "R (integer in replay)",
+      "units": "unspecified input",
+      "basis_orientation": "A/B sites",
+      "metric_measure": "unit vertex metric",
+      "origin": "assumed conditional source",
+      "exact_expression": "B1^T x_(r,t)=x_B(r-s_t)-x_A(r)",
+      "measured_value": null,
+      "uncertainty": "not sourced for lateral sliding",
+      "source_refs": [],
+      "assumption_ids": [
+        "vertex-gradient-input"
+      ],
+      "dependency_ids": [
+        "honeycomb-quotient"
+      ],
+      "normalization": "uniform a,b each divided by sqrt(N); integer toy source raw"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "prior-locality",
+      "url_or_repo_path": "experiments/graphite-locality-selection/README.md",
+      "version_or_commit": "61498a45f4ebc5bfd9185f5841319203b347aa32",
+      "section_or_object_id": "same-stencil theorem and typed setup",
+      "source_status": "EXACT_CONDITIONAL"
+    },
+    {
+      "source_id": "ledger-Q22",
+      "url_or_repo_path": "supplied UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39(2).md",
+      "version_or_commit": "v0.39(2) supplied attachment",
+      "section_or_object_id": "Q22; Q77-Q84",
+      "source_status": "native provenance ledger, no graphite-specific material law"
+    }
+  ],
+  "assumptions": [
+    "periodic-unit-metric: complete connected honeycomb quotient, real unit metric, harmonic constant direction basis",
+    "diagonal-local-response: W diagonal with potentially spatially variable weights; C3 only where explicitly stated",
+    "vertex-gradient-input: source enters through B1^T; no physical lateral-force identification",
+    "Fourier characters use Z/NZ for the three coprime quotient examples; no native physical clock"
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer/fraction and chain projection",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact incidence signs, means and rational N=7/13/19 replay"
+    },
+    {
+      "technique": "C3 group orbit",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "full direction-permuting action forces equal direction means"
+    },
+    {
+      "technique": "finite Fourier harmonic analysis",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "identify source/registry matching sectors by character orthogonality"
+    },
+    {
+      "technique": "modular clock or prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "cyclic cell labels are spatial quotient coordinates; no clock or prime restriction asserted"
+    },
+    {
+      "technique": "physical calibration and fit",
+      "applicability": "OPEN",
+      "purpose_or_na_reason": "neither material edge coefficients nor input, loss, force readout, threshold measured"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "N=m\u00b2+mn+n\u00b2; N=(7,13,19) for (2,1),(3,1),(3,2)",
+    "reduced_expression": "uniform port=(b-a) sum_t h_t bar w_t; bar w_t=(sum_r w_t(r))/N",
+    "factor_origins": [
+      "one A/B pair and three A-to-B directions per cell",
+      "one 1/sqrt(N) factor from harmonic output and one from normalized uniform input"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "coprime selected m,n give cyclic quotient labels; no arithmetic physical filter claimed"
+  },
+  "clock_receipt": {
+    "clock_type": "N/A; Z/NZ is a spatial quotient label, not event time",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "V_N and E_N real finite spaces",
+    "generator_or_update": "none; static linear projection only",
+    "initial_boundary_conditions": "periodic quotient; specified input x",
+    "conservation_and_sources": "incidence gradient, no dissipative dynamics specified",
+    "projection_and_kernel": "constant harmonic h direction readout annihilates direction-equal spatial means for uniform x",
+    "physical_mapping": "OPEN: no velocity, time, energy, load, force or damping map"
+  },
+  "target_exposure": {
+    "status": "KNOWN_DEVELOPMENT_TARGET",
+    "known_targets": [
+      "21.8\u00b0/38.2\u00b0 paired detectable peaks and other commensurate controls"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "toy positive weights and aligned/displaced sources chosen to exhibit or cancel projection; not measured or fitted",
+      "engineered character labels p=2,k=5 chosen because p+k=7; quotient-relative wavelengths change with N"
+    ],
+    "search_domain_and_budget": "one constructed family on each of N=7/13/19; not exhaustive material-rule search",
+    "selection_criterion": "illustrate exact cancellation versus source-registry correlation",
+    "baseline": "ordinary honeycomb/moir\u00e9 geometry and conventional two-dimensional PES remain independent baseline"
+  },
+  "calculation_steps": [
+    "Expand F_a=M^T W B1^T x with oriented A-to-B edge incidence and h_t/sqrt(N).",
+    "For normalized uniform x, factor (b-a)/sqrt(N) and average N edges per direction to obtain (b-a) sum_t h_t bar w_t.",
+    "C3 cyclically permutes direction edge sets, implying equal means; since sum_t h_t=0, F=0 for every N.",
+    "For an A-site delta, collapse to three local weights and obtain -sum_t h_t w_t(r0)/sqrt(N); B-site analogous.",
+    "Expand x and w in finite characters chi_k; sum over r yields delta_(p+k,0 mod N) and the exact Fourier cross-spectrum formula.",
+    "Replay positive rational spatial weights, uniform and impulse inputs, and aligned/displaced signed zero-mean source at N=7,13,19.",
+    "Construct target-informed character labels p=2,k=5: zero-sector overlap iff N divides 7; works at N=7 and fails at 13/19, without a common physical wavelength law."
+  ],
+  "result": {
+    "exact_expression": "F_a=(b-a) sum_t h_t bar w_t for uniform normalized x; F_a=sqrt(N) sum_(t,k) h_t hat w_t(-k)[exp(-2pi i k s_t/N)hat x_B(k)-hat x_A(k)] for arbitrary x",
+    "approximation": null,
+    "units": "internal response times internal vertex source, unspecified physical units",
+    "precision_and_error": "exact finite identities and integer/Fraction replay; no floating approximation",
+    "scope": "diagonal registry response on periodic honeycomb, incidence-gradient vertex input, unit metric; C3 conclusion assumes full direction-permuting symmetry",
+    "physical_interpretation": "No force or load prediction; material law, drive spectrum and loss remain OPEN"
+  },
+  "verification": [
+    {
+      "method": "symbolic finite-character orthogonality and C3 orbit argument",
+      "command_or_proof_path": "experiments/graphite-registry-convolution/README.md",
+      "source_revision": "61498a45f4ebc5bfd9185f5841319203b347aa32",
+      "actual_result": "EXACT_CONDITIONAL",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "exact rational finite replay",
+      "command_or_proof_path": "python3 experiments/graphite-registry-convolution/replay_registry.py",
+      "source_revision": "61498a45f4ebc5bfd9185f5841319203b347aa32",
+      "actual_result": "PASS_EXACT_REGISTRY_SOURCE_CORRELATION",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Spatially unequal weights with equal three direction means cancel uniform input on all tested quotients.",
+    "A local site impulse remains nonzero with amplitude 1/sqrt(N) but does not intrinsically prefer seven cells.",
+    "An aligned zero-mean source activates the same positive-weight perturbation that a disjoint source does not; source preparation matters.",
+    "Engineered p+k=7 matches seven cells, but labels defined as characters of each quotient rescale their physical wavelength; this is not an independent prediction."
+  ],
+  "limitations": [
+    "C3 covariance of the full quotient is an explicit symmetry assumption; a contact or strain can break it.",
+    "No graphite-specific edge stiffness, source generation, damping or kinetic friction map is imported.",
+    "Fourier mode matching is a necessary algebraic overlap, not a positive friction or load-slope theorem.",
+    "The observed paired angles were known before model construction; toy arrays are target-informed illustrations."
+  ],
+  "changed_dependencies": [
+    "Refines prior locality README loophole: registry modulation cannot evade uniform-source C3 cancellation by itself."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/graphreg-20261024-7c09/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Derive independent registry-to-edge w and sliding-source x from UD plus material data, fix loss/readout and conventional PES, then compare held-out signed force/load at N=7,13,19."
+}
