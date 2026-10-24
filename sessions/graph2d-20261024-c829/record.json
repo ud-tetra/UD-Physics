@@ -13,13 +13,16 @@
     "graphite-2d-relaxation-20261024": {
       "ref": "refs/heads/claims/graphite-2d-relaxation-20261024",
       "held_sha": "f44cbc84d3522ca19d98fd08d1dc042d00cbac8b",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "3806f222689e00721dab43245a8e6fdb822bcd3f",
+      "released_at": "2026-10-24T15:46:47.489Z"
     }
   },
   "checks": [
     "python3 experiments/graphite-2d-relaxation/replay_two_dimensional.py: PASS exact rational dyad/moments/source ratio",
     "python3 scripts/validate.py: PASS",
-    "python3 -m unittest discover -s tests -v: PASS 16 tests"
+    "python3 -m unittest discover -s tests -v: PASS 16 tests",
+    "GitHub Discovery integrity run 40108494843: success (integrity only)"
   ],
   "finding": "Derived exact 2D passive first-star isotropic low-speed tensor and sixth-order directional power; source-rounded 94.69 angle contrast remains conditional and conventional",
   "next_action": "Measure complex loss and contact transfer, freeze full 2D force and load prediction, then test signed UD residual",
