@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-native-support-current-20261024",
+  "goal": "Link native support current result in graphite working paper and CURRENT",
+  "owned_paths": [
+    "experiments/graphite-manuscript-v2/README.md",
+    "experiments/graphite-superlubricity/README.md",
+    "state/CURRENT.md",
+    "sessions/graphsupportidx-20261024-01",
+    "tasks/integration-graphite-native-support-current-20261024.json"
+  ],
+  "dependencies": [
+    "graphite-native-support-current-20261024"
+  ],
+  "status": "complete"
+}
