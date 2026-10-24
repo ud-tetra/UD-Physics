@@ -7,3 +7,12 @@
 - NUMERICAL constructor: executed `python3 experiments/qpb1-finite-window-phase/audit.py --out artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-001/files/summary.json` in isolated local staging. PASS 125 gain triples and 3 odd-N examples. Output SHA-256 4697f1e3bfd058d884f1c5c7daf50ab860281755a570d6365583accecc51a6c2; script SHA-256 f0aac2f6d702def770319ab3c47d9e6008370f2f84ee6029574df485a69b9f0b.
 - Captured source bytes and output in immutable schema2 artifact phase-001; repo test commands NOT_RUN because repository checkout unavailable. These constructor tests are not an independent physics validation.
 - Handoff: request full-repo validation and non-constructor review before merge; keep claim held until successful integration/explicit abandonment. Do not release while the PR is pending.
+
+## Follow-up checkpoint: operational receiver (2026-10-24T01:09:17Z)
+
+- Reverified task claim held at e38d9b6cfba644744eba92d668b670068751487f and isolated PR #87 head faabd63e9fafc44e824423e85a272d1fca71d750; PR open, no external review.
+- New independent-method *same-assistant* derivation: coherent four-fringe receiver can estimate complex endpoint overlap; geometric phase also requires calibrated D=2T sum(rk gk) in the same phase frame. Raw endpoint phase at the exposed baseline is 0, whereas corrected holonomy is pi.
+- EXACT/CONDITIONAL: for independent gain magnitude<=.01, |delta T|<=.01 native units, state norm-preparation radius<=.0005, complex receiver error<=.001 and D calibration error<=.001 rad, visibility>=607251319/612500000, total phase error<=11101676085864605533/1345612732743408915000<.01 rad.
+- NUMERICAL constructor second implementation: 243 structured cases and 25,000 seeded probes, four analyzer quadratures and four noise directions, PASS; script digest ba77e87a80e2fb6eb48d7dd0faabaad9ec76a700654c9511cc38f8c5c0e004c3, summary digest 1a5501cc82220e5661df0543979cebb0c5be3d03ea49f40d3df2f92fb1a7f98f.
+- Captured new immutable phase-002 with source input, output and SHA-256 manifest; phase-001 unchanged. External mathematical review NOT_RUN, physical receiver NOT_EXECUTED, all-time/native selection remains OPEN.
+- Handoff: run updated PR CI; request outside expert review, then identify experimentally realizable same-gauge D calibration. Retain claim until integration or explicit abandonment; no mainline writeback.

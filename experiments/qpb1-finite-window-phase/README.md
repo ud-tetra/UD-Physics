@@ -52,3 +52,8 @@ Baseline comparison: exact-return-only readout fails stability under independent
 See [session record](../../sessions/qpb1-finwindow-20261023-gpt6-b6f2/record.json), [mathematical receipt](../../sessions/qpb1-finwindow-20261023-gpt6-b6f2/mathematical_receipt.json), [candidate](../../candidates/qpb1-finite-window-phase/candidate.json), and [immutable run](../../artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-001/manifest.json). Complete-repository validation and unit tests: **NOT_RUN** (GitHub connector available, authenticated clone/network unavailable); standalone script: **PASS**.
 
 **Next discriminant:** a specified interference/noise model with preparation and time-window uncertainty and a non-constructor mathematical audit, then held-out physical comparison if calibrations become available. Physical status **UNSCORED**, promotion **0**.
+
+
+## Follow-up operational receiver (phase-002)
+
+[Separate analytic receiver and joint uncertainty contract](OPERATIONAL_RECEIVER.md) gives a conditional four-fringe readout, a distinct dynamical-phase calibration dependency, and a combined error certificate. Previous phase-001 results and review status remain unchanged.

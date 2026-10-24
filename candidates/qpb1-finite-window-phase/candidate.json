@@ -16,22 +16,25 @@
     "Imported single filled-tetrahedron 15-coordinate, rank14 active carrier, three mutually orthogonal J-complex sectors with Euclidean metric and signed S4 equivariance.",
     "Added local positive gains g=(1,1,3/2)+delta; each |delta_gk|<=1/100; natural time s dimensionless; T=2pi.",
     "Declared Pancharatnam overlap endpoint correction and connection alpha=<Jx,dx>/||x||^2; normalized nonzero active states.",
-    "An operational interferometric apparatus and clock calibration are not part of the model."
+    "An operational interferometric apparatus and clock calibration are not part of the model.",
+    "Follow-up: ideal coherent four-analyzer interference measurement and separately calibrated same-gauge dynamical phase, with finite deterministic noise bounds; physical implementation OPEN."
   ],
   "physical_mapping": "OPEN: no measured time, physical apparatus, native gain-selection mechanism or eta_A calibration; UNSCORED, promotion0",
   "target_exposure": "DEVELOPMENT_AFTER_TWO_RATE_REFERENCE: g0=(1,1,3/2), r0=(1/4,1/4,1/2) and target Hol=-1 already inspected; 99% visibility/0.01 rad screens newly declared engineering diagnostics, not held-out targets",
   "fitted_choices": [
     "Chosen T=2pi to hit old selected ray-return reference; selected independent box epsilon=1/100 and engineering floors V>=99/100, |phase shift|<=1/100 rad for first bounded test",
-    "No empirical data fitted, parameters remain freely selectable; 125 deterministic grid and three odd-N checks are constructor development samples"
+    "No empirical data fitted, parameters remain freely selectable; 125 deterministic grid and three odd-N checks are constructor development samples",
+    "Exploratory receiver screen |delta T|<=.01, state Euclidean distance<=.0005, complex overlap error<=.001, dynamical correction error<=.001 rad, phase screen .01 rad; selected, not measured."
   ],
   "sources": [
     "ud-tetra/UD-Physics@41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb:experiments/qpb1-local-generators/README.md",
     "ud-tetra/UD-Physics@41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb:experiments/qpb1-continuous-phase/README.md"
   ],
   "baseline": "Prior exact-ray recurrence Hol=-1 at g0, changes to +1 with arbitrarily small odd-N detuning when return time recalculated; naive dynamic-phase-only integral has linear fixed-T gain sensitivity.",
-  "result": "Exact all-box rational certificate: V>=30383/30625 and |delta phi|<=42592/15569925 rad at T=2pi, including g1!=g2, with baseline phase -1 at chosen reference support. 125-grid constructor passes; physical calibration remains OPEN.",
-  "next_discriminant": "Specify noisy physical overlap observable and receiver clock; quantify calibration/visibility noise and sensitivity to state-preparation uncertainty and timing jitter; seek non-constructor validation.",
+  "result": "Exact all-box rational certificate: V>=30383/30625 and |delta phi|<=42592/15569925 rad at T=2pi, including g1!=g2, with baseline phase -1 at chosen reference support. 125-grid constructor passes; physical calibration remains OPEN. Follow-up phase-002 adds exact conditional joint bound error<=0.00825027574110 rad and V>=607251319/612500000, verified in 243+25000 constructor probes; requires unproved independent dynamical calibration.",
+  "next_discriminant": "Obtain non-constructor mathematical review; design and calibrate same-gauge D reference and an interference receiver, then evaluate physically independent data.",
   "mathematical_receipts": [
-    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/mathematical_receipt.json"
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/mathematical_receipt.json",
+    "sessions/qpb1-finwindow-20261023-gpt6-b6f2/operational_receipt.json"
   ]
 }

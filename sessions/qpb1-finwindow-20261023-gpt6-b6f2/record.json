@@ -34,10 +34,20 @@
     {
       "command": "python3 -m unittest discover -s tests -v",
       "result": "NOT_RUN: complete repository checkout unavailable"
+    },
+    {
+      "command": "python3 experiments/qpb1-finite-window-phase/operational_audit.py --out /mnt/data/ud-finwindow-option1/summary2.json",
+      "result": "PASS: 243 structured cases; 25000 seeded probes; four-fringe complex overlap and four deterministic noise directions",
+      "scope": "same-assistant separate implementation; local standard-library Python; not external review"
+    },
+    {
+      "command": "sha256sum operational_audit.py summary2.json",
+      "result": "PASS: ba77e87a80e2fb6eb48d7dd0faabaad9ec76a700654c9511cc38f8c5c0e004c3 and 1a5501cc82220e5661df0543979cebb0c5be3d03ea49f40d3df2f92fb1a7f98f",
+      "scope": "captured under immutable phase-002 schema-v2 inputs and files"
     }
   ],
-  "finding": "EXACT/CONDITIONAL: under three-sector local skew law at T=2pi, independent +-1% gain errors retain V>=30383/30625 and phase drift <=42592/15569925 radians (relative to each state's nominal phase); rate selection and physical readout OPEN",
-  "next_action": "Run full repo validation and non-constructor review on the branch; then pursue an operational interference/noise readout. Do not claim empirical physics. Release held claim only after integration or explicit abandonment.",
+  "finding": "EXACT/CONDITIONAL: under three-sector local skew law at T=2pi, independent +-1% gain errors retain V>=30383/30625 and phase drift <=42592/15569925 radians (relative to each state's nominal phase); rate selection and physical readout OPEN; follow-up EXACT/CONDITIONAL joint receiver budget visibility>=607251319/612500000, corrected error<0.008250276 rad under declared prep/time/receiver/calibration bounds",
+  "next_action": "Request non-constructor mathematical review and verify same-gauge dynamical phase calibration operationally; full updated-PR CI pending. Claim stays HELD until integration or abandonment.",
   "mathematical_profile": {
     "coefficient_domain": "Q exact rational weights, gains and rational enclosures; R state space; C via fixed J for phase; transcendental angles symbolic pi with pi<22/7",
     "exactness_or_precision_plan": "Exact rational bound with analytic sin/cos inequalities; Python float64 only for 125 development samples and three odd-N counterexample checks",
