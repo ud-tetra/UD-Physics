@@ -1,0 +1,6 @@
+# New independent physical anchor — qpb-josephson-20261024-gpt6-a1
+
+- 2026-10-24T16:17:00Z: Verified origin main 5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb, inspected live phase-009 draft PR #87 and its HELD claim. New disjoint task qpb-josephson-physical-anchor-20261024; atomically acquired HELD ref 37dd463702057996ea194c2744360f8846006531 and reread metadata before creating discovery branch from integrated main.
+- Source framework: BIPM SI defining h/e, Rasmussen et al. PRX Quantum 2 (2021) 040204 Josephson cosine energy, and Phys Rev Research 2 (2020) 043091 finite-amplitude pendulum frequency. All are external public conventional physics; no physical UD import status inferred.
+- Mathematical domains and intended test: positive Ic,C, phase turning amplitude 0<=a<pi, physical time seconds, Wb and joules, and uncalibrated UD native complex-hidden plane with lambda>=0. Conventional Josephson circuit is the full null. Compare softening sign before any physical parameter fitting.
+- Constructor script recorded under experiments/qpb-josephson-physical-anchor/anchor.py; initial local source SHA256 1b41100ee834752da7b6874310ce1065abaf2539bc5c46069c57ae27b41a5cb3 and result SHA256 915ef715ec7745e6c3aec1b5f83ace4feeab33a6bd4d92ce69d7d762b687cc38. Mathematical model and records follow in this branch. No personal data or credentials captured.

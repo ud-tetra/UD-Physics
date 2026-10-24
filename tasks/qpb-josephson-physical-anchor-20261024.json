@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb-josephson-physical-anchor-20261024",
+  "goal": "Independently constrained Josephson constitutive benchmark versus UD hidden-star phase dynamics with physical unit and null-model gates",
+  "owned_paths": [
+    "tasks/qpb-josephson-physical-anchor-20261024.json",
+    "sessions/qpb-josephson-20261024-gpt6-a1/",
+    "experiments/qpb-josephson-physical-anchor/",
+    "candidates/qpb-josephson-physical-anchor/",
+    "artifacts/qpb-josephson-20261024-gpt6-a1/"
+  ],
+  "dependencies": [
+    "qpb1-impedance-selection-20261022",
+    "qpb1-charge-field-20261022"
+  ],
+  "status": "active"
+}

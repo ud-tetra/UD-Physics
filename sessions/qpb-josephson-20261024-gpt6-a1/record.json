@@ -1,0 +1,44 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb-josephson-20261024-gpt6-a1",
+  "runtime": "ChatGPT GPT-6, GitHub connector write and isolated local Python; no authenticated git worktree",
+  "task": "qpb-josephson-physical-anchor-20261024",
+  "goal": "Independently constrained Josephson constitutive benchmark versus UD hidden-star phase dynamics with physical unit and null-model gates",
+  "created_at": "2026-10-24T16:17:00Z",
+  "base_revision": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
+  "source_dirty_at_boot": null,
+  "status": "active",
+  "claims": {
+    "qpb-josephson-physical-anchor-20261024": {
+      "ref": "refs/heads/claims/qpb-josephson-physical-anchor-20261024",
+      "sha": "37dd463702057996ea194c2744360f8846006531",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 /mnt/data/qpb_josephson_20261024/anchor.py --out /mnt/data/qpb_josephson_20261024/anchor_summary.json",
+      "result": "PASS: exact Fraction series; 5 independent AGM versus quadrature numerical checks (max discrepancy <1e-11); four monotone-softening sign cases",
+      "scope": "constructor local staging, no measured laboratory data"
+    },
+    {
+      "command": "python3 scripts/validate.py && python3 -m unittest discover -s tests -v",
+      "result": "NOT_RUN locally: no complete authenticated checkout; remote CI after branch publication"
+    }
+  ],
+  "finding": "",
+  "next_action": "Publish independent physical benchmark and conditional incompatibility with prior positive hidden-star model; retain conventional Josephson circuit null; obtain actual independent Ic,C and amplitude metrology.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q exact SI defining constants and rational Taylor coefficients; R continuous ideal Josephson dynamics; complex UD phase not identified with physical Josephson phase",
+    "exactness_or_precision_plan": "Exact symbolic series and monotone AGM sign; float64 AGM plus independent Simpson quadrature tolerance 1e-11; design Ic,C illustrative",
+    "applicable_methods": [
+      "exact fractions for Taylor terms and SI ratios",
+      "nonlinear ODE/elliptic integral for amplitude response",
+      "dimensional analysis of EJ,C,phase and time map",
+      "fit and matched conventional null; parameters independent in physical law"
+    ],
+    "clock_metric_units_conventions": "Josephson phi dimensionless phase across superconductors, flux Phi physical Wb, physical seconds; original UD time s dimensionless and J internal fiber distinct; proposed tau0=2/omega0 is assumed calibration"
+  }
+}
