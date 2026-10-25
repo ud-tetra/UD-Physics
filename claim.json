@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "icosahedral-framechart-20261024",
+  "session": "ico-framechart-20261024-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-25T01:07:11.999Z",
+  "base_revision": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+  "owned_paths": [
+    "tasks/icosahedral-framechart-20261024.json",
+    "sessions/ico-framechart-20261024-gpt6-a1/",
+    "experiments/icosahedral-framechart/",
+    "candidates/icosahedral-framechart/",
+    "artifacts/ico-framechart-20261024-gpt6-a1/"
+  ]
+}
