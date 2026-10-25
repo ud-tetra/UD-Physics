@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-matched-hessian-reconstruction",
+  "goal": "Reconstruct matched stationary conventional K/C and test a declared bond-variance source proxy and model load response",
+  "owned_paths": [
+    "experiments/graphite-matched-hessian-reconstruction",
+    "candidates/graphite-matched-hessian-reconstruction",
+    "sessions/graphmatched-20261025-01",
+    "artifacts/graphmatched-20261025-01",
+    "tasks/graphite-matched-hessian-reconstruction.json"
+  ],
+  "dependencies": [
+    "graphite-manuscript-v3",
+    "graphite-equilibrium-variance-20261024"
+  ],
+  "status": "complete"
+}

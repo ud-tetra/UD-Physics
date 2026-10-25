@@ -1,0 +1,237 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "graphite-matched-kc-bond-proxy-001",
+  "session_id": "graphmatched-20261025-01",
+  "candidate_id": "graphite-matched-hessian-reconstruction",
+  "question": "Can matched stationary K/C identify a registered bond variance proxy and conditional load slope?",
+  "evidence_labels": [
+    "EXACT",
+    "NUMERICAL",
+    "CONDITIONAL",
+    "FIT",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "Kbar",
+      "symbol": "K",
+      "object_type": "14x14 symmetric positive stiffness",
+      "definition": "height block of Hessian of mean upper-atom conservative energy at one stationary load",
+      "domain": "R^14 heights",
+      "codomain": "R^14 force gradients",
+      "coefficient_domain": "double precision from source-rounded KC parameters",
+      "units": "meV/A^2 per mean upper atom",
+      "basis_orientation": "14 C3-aligned top atom sites",
+      "metric_measure": "Euclidean height coordinates; E_total=14 Ebar",
+      "origin": "reconstructed conventional model",
+      "source_refs": [
+        "arxiv-SI",
+        "archived-cart"
+      ],
+      "normalization": "Kbar, not total-energy Hessian"
+    },
+    {
+      "object_id": "Cbar",
+      "symbol": "C",
+      "object_type": "2x14 mixed Hessian",
+      "definition": "lateral x versus height block at same stationary state as K",
+      "domain": "R^14",
+      "codomain": "R^2 Cartesian lateral",
+      "coefficient_domain": "double precision",
+      "units": "meV/A^2 per mean upper atom",
+      "basis_orientation": "Cartesian x and C3-aligned site heights",
+      "metric_measure": "Euclidean",
+      "origin": "reconstructed conventional model",
+      "source_refs": [
+        "arxiv-SI",
+        "archived-cart"
+      ],
+      "normalization": "per mean upper atom"
+    },
+    {
+      "object_id": "Sigma",
+      "symbol": "Sigma_h",
+      "object_type": "classical harmonic site covariance",
+      "definition": "(kBT/14) K^-1",
+      "domain": "R^14",
+      "codomain": "R^14",
+      "coefficient_domain": "positive real",
+      "units": "A^2",
+      "basis_orientation": "same registered sites",
+      "metric_measure": "Euclidean",
+      "origin": "conditional derived",
+      "exact_expression": "Theta_bar K^-1, Theta_bar=kBT/14",
+      "normalization": "physical total 14 Ebar"
+    },
+    {
+      "object_id": "proxy",
+      "symbol": "S0=M^T diag(diag(B1^T K^-1 B1)) B1^T",
+      "object_type": "2x14 native-basis proposed source",
+      "definition": "bond-height-difference variance per Theta_bar fed into existing harmonic port",
+      "domain": "R^14",
+      "codomain": "R^2",
+      "coefficient_domain": "exact incidence + numerical covariance",
+      "units": "A^2/meV in native lateral basis",
+      "basis_orientation": "aligned 21 bonds; Fcart^-T converts output to Cartesian covectors",
+      "metric_measure": "unit edge metric; physical mapping assumed",
+      "origin": "new material proxy hypothesis",
+      "source_refs": [
+        "ud-port",
+        "archived-cart"
+      ],
+      "normalization": "per Theta_bar"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "arxiv-SI",
+      "url_or_repo_path": "https://arxiv.org/abs/2308.06302",
+      "version_or_commit": "source SHA256 adea7468f311c648a0d25abf4f5eecacd8eebe1b6fc7761ffcea7d073b2f460b",
+      "section_or_object_id": "SI Table S1 KC parameters",
+      "source_status": "public primary model parameter source"
+    },
+    {
+      "source_id": "archived-cart",
+      "url_or_repo_path": "artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/files/captures/2026-10-22T224639Z-codex-graphite-material-projection-fcd6e90e-4531aa0e-8487-4d43-b0dd-cfe246d1b6b4/MATERIAL_PROJECTION_RESULTS.json",
+      "version_or_commit": "e9f1ab56ef66abd0a8f242a04fe3b9a3ab7a7e91",
+      "section_or_object_id": "reference_cart_translation_a; atom_labels",
+      "source_status": "development archive; original Mendeley ZIP not replayed"
+    },
+    {
+      "source_id": "ud-port",
+      "url_or_repo_path": "artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/files/captures/2026-10-22T214428Z-codex-graphite-harmonic-source-49d5bb28-64263b7c-7b88-4f45-a8a9-e0cb34f52956/verify_harmonic_source.py",
+      "version_or_commit": "e9f1ab56ef66abd0a8f242a04fe3b9a3ab7a7e91",
+      "section_or_object_id": "B1,M,edge orbits",
+      "source_status": "exact conditional constructor"
+    },
+    {
+      "source_id": "archived-stationary",
+      "url_or_repo_path": "artifacts/graphpub-20261023-gpt6-4f9a/graphite-history-001/files/captures/2026-10-23T023854Z-codex-graphite-finite-spectrum-4c8b18e3-68bdd1a3-441a-4a35-ac05-a26af9803d0c/FINITE_HEIGHT_SPECTRUM_16A.json",
+      "version_or_commit": "e9f1ab56ef66abd0a8f242a04fe3b9a3ab7a7e91",
+      "section_or_object_id": "14 modes, static softening and scalar Rayleigh transfer",
+      "source_status": "same conventional model development comparison"
+    }
+  ],
+  "assumptions": [
+    "Classical small-fluctuation canonical distribution of total energy 14 Ebar",
+    "Positive stationary K; fixed roster and chosen normal/plate law",
+    "q_e=h_B-h_A is a physical proxy only, not a proven native identification",
+    "For pure-port pressure ratio beta,d,T fixed; no cross terms by assumed independent additive channel"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact incidence and C3 registration",
+      "applicability": "applied",
+      "purpose_or_na_reason": "verify 21 aligned bonds and uniform-source kernel"
+    },
+    {
+      "technique": "positive matrix inverse and Schur response",
+      "applicability": "applied",
+      "purpose_or_na_reason": "site covariance and passive transfer"
+    },
+    {
+      "technique": "pressure finite difference and alternative Hessian steps",
+      "applicability": "applied",
+      "purpose_or_na_reason": "conditional load-shape sensitivity"
+    },
+    {
+      "technique": "clock and prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no clock or divisibility question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "14 registered upper sites, 21 nearest-neighbor bonds, 7 C3 edge orbits of 3 bonds",
+    "reduced_expression": "21=7x3",
+    "factor_origins": [
+      "top-site quotient geometry",
+      "C3 action"
+    ],
+    "factorization": "21=3x7",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "14 classical upper heights plus 2 lateral coordinates",
+    "generator_or_update": "stationary conservative KC Hessian; dissipative dI posited separately",
+    "initial_boundary_conditions": "fixed lower plane, 16A fixed roster, model reference load",
+    "conservation_and_sources": "uniform port cancels; proxy covariance contrast activates port",
+    "projection_and_kernel": "S0 rank 2; unrestricted bath and unknown beta remain non-identifiable",
+    "physical_mapping": "OPEN native even edge to height difference; pressure MPa from area-atom conversion"
+  },
+  "target_exposure": {
+    "status": "archived stationary model data and friction target inspected",
+    "known_targets": [
+      "21.8/38.2 peak pair",
+      "archived 16A spectrum/softening/pressure rows"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "one scalar beta least-squares to conventional C, exploratory and target-exposed"
+    ],
+    "search_domain_and_budget": "one declared bond-height difference proxy; no scan over maps",
+    "selection_criterion": "nearest-neighbor registered bond geometry and local variance",
+    "baseline": "conventional KC-plus-plate"
+  },
+  "calculation_steps": [
+    "construct same-state stationary 16-coordinate mean-energy Hessian with fixed pair roster",
+    "reorder 14 sites via archived C3 alignment and validate exact bond combinatorics",
+    "compare full K/C spectral and tensor summaries with archived v20",
+    "Sigma_h=(kBT/14) K^-1; q_e variance coefficient diag(B1^T K^-1 B1)",
+    "S0=M^T diag(w/Theta_bar) B1^T; convert with Fcart^-T",
+    "under independently assumed beta,d constant, Gamma_port=beta^2 d Theta_bar^2 S0 K^-2 S0^T",
+    "central log ratio across \u00b12.5 MPa; alternate Hessian steps"
+  ],
+  "result": {
+    "exact_expression": "Sigma_h=Theta_bar K^-1; uniform weights give S0=0 exactly",
+    "approximation": "max mode relative discrepancy 1.783e-10; site coefficient range 0.00857605\u20130.00892120 A^2/meV; proxy port slope 6.74813e-4 MPa^-1",
+    "units": "per mean upper atom K/C; Theta_bar=kBT/14; slope MPa^-1",
+    "precision_and_error": "finite-difference alternate-step port slope 6.74816e-4 MPa^-1, model/reference discrepancy only; no experimental error bound",
+    "scope": "one conventional matched stationary point, one proxy and \u00b12.5 MPa model sweep",
+    "physical_interpretation": "HYPOTHESIS only, no signed measured residual or seven-only selection"
+  },
+  "verification": [
+    {
+      "method": "source SHA and table",
+      "command_or_proof_path": "sha256sum /tmp/graphite-arxiv-src and SI Table S1 extraction",
+      "source_revision": "e9f1ab56ef66abd0a8f242a04fe3b9a3ab7a7e91",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "same-model archival comparison and alternate steps",
+      "command_or_proof_path": "python3 experiments/graphite-matched-hessian-reconstruction/reconstruct.py",
+      "source_revision": "e9f1ab56ef66abd0a8f242a04fe3b9a3ab7a7e91",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "exact carrier and proxy replay",
+      "command_or_proof_path": "python3 experiments/graphite-matched-hessian-reconstruction/analyze_proxy.py",
+      "source_revision": "e9f1ab56ef66abd0a8f242a04fe3b9a3ab7a7e91",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Original Mendeley ZIP redirected to inaccessible S3; used archived cart reference, did not claim fresh grid replay",
+    "Thermal kBT rather than kBT/14 would overstate variance by factor 14; corrected before publication",
+    "One-scale proxy fit leaves 42.88% relative Frobenius conventional C residual"
+  ],
+  "limitations": [
+    "No measured D_h, contact transfer, speed-dependent force or native edge map",
+    "Finite classical Gaussian only; no finite-T nonlinear validity",
+    "One N=7 quotient; no N=13/19 selection",
+    "Model pressure slope conditional on fixed beta,d,T and independent bath"
+  ],
+  "changed_dependencies": [
+    "Revises v3 data-availability statement: full matched K/C now reconstructed, not originally archived as arrays"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/graphmatched-20261025-01/matched-001/manifest.json"
+  ],
+  "next_discriminant": "Independently derive/measure physical edge map and complex loss, then held-out signed residual"
+}
