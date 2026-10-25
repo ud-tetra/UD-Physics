@@ -1,0 +1,18 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "icosahedral-timeframe-20261025",
+  "session": "ico-timeframe-20261025-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-25T17:15:38.581Z",
+  "base_revision": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+  "owned_paths": [
+    "tasks/icosahedral-timeframe-20261025.json",
+    "sessions/ico-timeframe-20261025-gpt6-a1/",
+    "experiments/icosahedral-timeframe/",
+    "candidates/icosahedral-timeframe/",
+    "artifacts/ico-timeframe-20261025-gpt6-a1/",
+    "tests/test_icosahedral_timeframe_20261025.py"
+  ]
+}
