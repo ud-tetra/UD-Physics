@@ -1,0 +1,21 @@
+{
+  "K1": {
+    "eigenvalues": [
+      "1",
+      "4"
+    ],
+    "static_softening": "5/4",
+    "isotropic_loss_drag": "17/16",
+    "site_one_variance_over_Theta": "1"
+  },
+  "K2": {
+    "eigenvalues": [
+      "1",
+      "4"
+    ],
+    "static_softening": "5/4",
+    "isotropic_loss_drag": "17/16",
+    "site_one_variance_over_Theta": "1/4"
+  },
+  "conclusion": "mode scalars do not identify registered site covariance"
+}

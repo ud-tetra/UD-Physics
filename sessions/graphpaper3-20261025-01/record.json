@@ -1,0 +1,33 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphpaper3-20261025-01",
+  "runtime": "Codex GPT-6; Git compute plus GitHub connector write",
+  "task": "graphite-manuscript-v3",
+  "goal": "Test identifiability of material stationary anisotropy and publish v3 paper",
+  "created_at": "2026-10-25T16:45:03.714245+00:00",
+  "base_revision": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "graphite-manuscript-v3": "6318dabeb931772fe530e4fada89afea1800198a"
+  },
+  "checks": [
+    "rational replay PASS",
+    "PDF build and visual review PASS",
+    "repository validation PASS",
+    "16 unit tests PASS"
+  ],
+  "finding": "Exact passive counterexample: same spectrum, per-mode squared coupling, scalar softening and drag, fourfold registered site covariance difference; physical source remains open",
+  "next_action": "Acquire matched-state registered K,C, covariance, D and contact/force data, then freeze held-out signed forecast",
+  "mathematical_profile": {
+    "coefficient_domain": "Q for counterexample; positive real spectra and numerical archived KC extrema",
+    "exactness_or_precision_plan": "Fractions for exact matrix sums; archived extrema quoted at source precision",
+    "applicable_methods": [
+      "spectral/operator identifiability",
+      "Rayleigh bound",
+      "null and counterexample"
+    ],
+    "clock_metric_units_conventions": "No clock; Euclidean site basis; Theta energy, archived K meV/Angstrom^2 per upper atom; registered site readout"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-manuscript-v3",
+  "session_id": "graphpaper3-20261025-01",
+  "question": "Can archived mode summaries determine the stationary edge variance needed for the UD source?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Positive definite K; canonical Gaussian covariance Theta K^-1; D=I for exact counterexample",
+    "Physical edge map is unknown"
+  ],
+  "physical_mapping": "OPEN; native edges are not equated with graphite heights",
+  "target_exposure": "21.8/38.2 peaks and existing archive inspected; no held-out test",
+  "fitted_choices": [],
+  "sources": [
+    "PRL 137 166201 abstract",
+    "graphite-equilibrium-variance",
+    "graphite-packet-reciprocity",
+    "archived finite-height spectrum 16A"
+  ],
+  "baseline": "Conventional KC/DFT and v2 three-wave passive kinetic model",
+  "result": "Mode summaries do not identify registered covariance; 16A eigenvalue bound ratio 425.140442 is only an interval bound",
+  "next_discriminant": "Matched K,C,D,covariance, edge map, pressure and held-out force",
+  "mathematical_receipts": [
+    "candidates/graphite-manuscript-v3/mathematical_receipt.json"
+  ]
+}
