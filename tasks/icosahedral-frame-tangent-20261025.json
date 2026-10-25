@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "icosahedral-frame-tangent-20261025",
+  "goal": "Reproject archived final full180 initial housing tangent for integrated 3D passive mechanics with new frame chart, test combined raw radius, and derive conditional moving-reference chart bound",
+  "owned_paths": [
+    "tasks/icosahedral-frame-tangent-20261025.json",
+    "sessions/ico-frametangent-20261025-gpt6-a1/",
+    "experiments/icosahedral-frame-tangent/",
+    "candidates/icosahedral-frame-tangent/",
+    "artifacts/ico-frametangent-20261025-gpt6-a1/",
+    "tests/test_icosahedral_frame_tangent_20261025.py"
+  ],
+  "dependencies": [
+    "integration-icosahedral-pulsetube-20261022"
+  ],
+  "status": "complete",
+  "result": "NUMERICAL archived final 560x180 W: limiting raw primary radius .03500971997, moving-shape radius .00009867394310; nominal raw .03520937944 vs moving .00016894760813. Explicit feasible combined reference plus tangent phases yield linearized total raw endpoint radii .03661309787 worst and .03643008290 nominal, exceeding frame001 equilibrium .036 bound; not actual nonlinear counterexamples. EXACT/CONDITIONAL moving frame SO3 nonlinear chart remainder <=93325499434647/94141337114624000≈.00099133 given reference||Yref-Y0||F<=.011 and actual relative||Y-Yref||F<=.036. Source full u100 nonlinear trajectory/error bound remains OPEN.",
+  "next_action": "Re-run time-dependent source full 560x180 tangent, bound continuous moving reference and actual nonlinear relative primary radius, forced full U(t,s) Green and flow Hessian/reference error; only then combine volume/readout margins with unchanged 80% breathing target."
+}

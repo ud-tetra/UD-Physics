@@ -1,0 +1,61 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ico-frametangent-20261025-gpt6-a1",
+  "runtime": "GPT-6, GitHub connector write isolated branch, GitHub Actions stdlib Python for binary checkpoint parsing, local standard-library Fraction analytic proof",
+  "task": "icosahedral-frame-tangent-20261025",
+  "goal": "Reproject archived final full180 initial housing tangent for integrated 3D passive mechanics with new frame chart, test combined raw radius, and derive conditional moving-reference chart bound",
+  "created_at": "2026-10-25T17:01:41.693Z",
+  "base_revision": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "icosahedral-frame-tangent-20261025": {
+      "ref": "refs/heads/claims/icosahedral-frame-tangent-20261025",
+      "sha": "ed930cd69aa15179933b7787b415134e652f9317",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "GitHub Actions 40213880131: python3 -m unittest discover -s tests -v",
+      "result": "PASS 17 tests, including new binary archived final W(100) 560x180 parser, three final 39x180 primary tangent projections, feasible linearized combined phase radius witnesses; printed captured FRAME_TANGENT_RESULT_JSON",
+      "scope": "NUMERICAL final endpoint, not continuous solver integration error enclosure"
+    },
+    {
+      "command": "python /mnt/data/ico_tangent_20261025/moving_frame_bound.py --out /mnt/data/ico_tangent_20261025/moving_frame_bound_result.json",
+      "result": "PASS exact Fraction bound 93325499434647/94141337114624000<.001 given d=.011,r=.036; locally executed and captured",
+      "scope": "EXACT / CONDITIONAL geometry proof under unverified radius hypotheses"
+    },
+    {
+      "command": "sha256sum /mnt/data/ico_tangent_20261025/moving_frame_bound.py /mnt/data/ico_tangent_20261025/moving_frame_bound_result.json",
+      "result": "PASS 3a6ea505a8b36e2aa7fc2cd7a3432a62d24ea86ec25b531e372f5deac73dddbf, 9fc65751d193d6e575308af336184bd504cb194268f67b21b98978c193ea0fb8; repo blobs exactly match local Git hash object",
+      "scope": "immutable run exact proof source/result"
+    },
+    {
+      "command": "CI exact test source/output SHA256 captured",
+      "result": "PASS script202e07f8ea5fafceb72cdcc9ca0970307c3a87111ae63bb2ceb9f384a4ed7dfd and endpoint report c4a7bf9973c09781682dddcda2ebcdc2a3ae0c37c74641e7508abc83b31dc40c",
+      "scope": "GitHub Actions final tangent external binary source, constructor analysis only"
+    },
+    {
+      "command": "python3 scripts/validate.py and python3 -m unittest discover -s tests -v on final PR",
+      "result": "PENDING final-head GitHub CI; no claim until verified",
+      "scope": "repository integrity, not peer review"
+    }
+  ],
+  "finding": "NUMERICAL archived final 560x180 W: limiting raw primary radius .03500971997, moving-shape radius .00009867394310; nominal raw .03520937944 vs moving .00016894760813. Explicit feasible combined reference plus tangent phases yield linearized total raw endpoint radii .03661309787 worst and .03643008290 nominal, exceeding frame001 equilibrium .036 bound; not actual nonlinear counterexamples. EXACT/CONDITIONAL moving frame SO3 nonlinear chart remainder <=93325499434647/94141337114624000≈.00099133 given reference||Yref-Y0||F<=.011 and actual relative||Y-Yref||F<=.036. Source full u100 nonlinear trajectory/error bound remains OPEN.",
+  "next_action": "Re-run time-dependent source full 560x180 tangent, bound continuous moving reference and actual nonlinear relative primary radius, forced full U(t,s) Green and flow Hessian/reference error; only then combine volume/readout margins with unchanged 80% breathing target.",
+  "mathematical_profile": {
+    "coefficient_domain": "source real 560x180 floating tangent, exact rational moving-reference geometry and 3x3 skew Sylvester",
+    "exactness_or_precision_plan": "source binary Wfinal float64 and stdlib symmetric Jacobi/power solver NUMERICAL, exact Fraction SO3 chart majorants",
+    "applicable_methods": [
+      "exact icosahedral geometry and moving reference Lie SO3 chart",
+      "180-column linear final-response spectral/operator norm",
+      "explicit all-phase linearized endpoint witness and source-error distinctions",
+      "moving-reference skew Sylvester derivative including hub rotation",
+      "full Green/Hessian/ODE validated error gate remains OPEN"
+    ],
+    "clock_metric_units_conventions": "source internal u=t/t0 and ell0=1, E_h=E_p/40000; final endpoint u100 only. Reference translation/rotation are readout gauge, not removed from mechanical full state."
+  }
+}
