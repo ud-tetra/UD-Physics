@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "icosahedral-timeframe-20261025",
+  "goal": "Resume the frozen 3D icosahedral moving-pulse u100 sensitivity; attempt full 560x180 time integration and otherwise close exact Galilean Green/CM subblocks with archived tangent verification",
+  "owned_paths": [
+    "tasks/icosahedral-timeframe-20261025.json",
+    "sessions/ico-timeframe-20261025-gpt6-a1/",
+    "experiments/icosahedral-timeframe/",
+    "candidates/icosahedral-timeframe/",
+    "artifacts/ico-timeframe-20261025-gpt6-a1/",
+    "tests/test_icosahedral_timeframe_20261025.py"
+  ],
+  "dependencies": [
+    "integration-icosahedral-pulsetube-20261022"
+  ],
+  "status": "complete",
+  "result": "EXACT full-time 3D Galilean center-of-mass dynamics and all-180-phase housing-energy CM bound; full-state raw Euclidean Green norm >=50+sqrt2501≈100.01 through u100. CI full archived 560x180 tangent CM verification discrepancy <=1.72e-11; source limiting/nominal lifted CM radius .0348326/.0352092; CM-only residual ~.0315 and proper frame readout ~1e-4. Full SciPy augmented u100 trajectory NOT_EXECUTED because CI lacks NumPy/SciPy and local full source download unavailable. Script syntax checked; actual nonlinear robustness remains OPEN.",
+  "next_action": "Run original full-time SciPy 560x180 sampler in a fully provisioned checkout, then validate projected shape Green/Hessian/reference/domain and nonlinear oriented-volume tube in positive full-state norm."
+}
