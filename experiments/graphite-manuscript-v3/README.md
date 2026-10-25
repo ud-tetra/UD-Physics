@@ -1,5 +1,7 @@
 # Graphite complementary-angle working paper, version 3
 
+**Subsequent material follow-up:** [A matched conventional 14×14 stiffness and 2×14 mixed Hessian have now been reconstructed](../graphite-matched-hessian-reconstruction/README.md) from the retained lateral reference and published KC parameters. The PDF below remains the versioned paper: its statement that the earlier archived modal summary lacked those arrays describes the archive at drafting time. The reconstruction supplies a conditional classical bond-height variance proxy and model pressure slope; it does not establish the native edge map, measured dissipation or signed kinetic residual.
+
 **Status:** Discovery preprint; exact conventional geometry and mathematical counterexample, conditional UD source, open material and kinetic identification. Physical promotion 0; independent physics review NOT_RUN.
 
 [Read the three-page paper](GRAPHITE_UD_HYPOTHESIS_PREPRINT_v3.pdf), [editable TeX](GRAPHITE_UD_HYPOTHESIS_PREPRINT_v3.tex), and [rational replay](replay_identifiability.py). Version 2 remains [preserved](../graphite-manuscript-v2/README.md).

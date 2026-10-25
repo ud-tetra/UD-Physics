@@ -1,0 +1,29 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphmatchedidx-20261025-01",
+  "runtime": "Codex GPT-6 Git compute and GitHub connector",
+  "task": "integration-graphite-matched-hessian",
+  "goal": "Integrate matched graphite Hessian link and update prior paper landing-page status",
+  "created_at": "2026-10-25T17:08:30.820355+00:00",
+  "base_revision": "8f0b9147ce6e84a74a8b9b9b4c6c907725099771",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-graphite-matched-hessian": "72cbc039d3dce1ef09a2e5d13a9d6e64c07be850"
+  },
+  "checks": [
+    "validation PASS (321 records)",
+    "16 tests PASS"
+  ],
+  "finding": "Index distinguishes newly reconstructed same-state conventional K/C from still-open native mapping and loss",
+  "next_action": "Independently establish native bond observable and measured complex loss/contact",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A editorial integration",
+    "exactness_or_precision_plan": "Link and source status checks",
+    "applicable_methods": [
+      "N/A no new computation"
+    ],
+    "clock_metric_units_conventions": "N/A"
+  }
+}
