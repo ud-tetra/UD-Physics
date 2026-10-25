@@ -7,3 +7,6 @@ Isolated Git/compute and GitHub connector write. Exact rational Gaussian covaria
 
 ## Finding and handoff
 Any fixed mask under isotropic quadratic canonical energy has uniform covariance and zero mean harmonic even port. A separate C3-symmetric three-edge stiffness defect produces a rank-two source common to N7/13/19, with delta=-theta alpha/(1+alpha). The new defect is a supplied constitutive model, not a graphite calibration or angle selector. See receipt and immutable capture. Next: independently derive/measure alpha(p), physical registration and complex loss, then forecast signed force/load after conventional baseline. Independent physics review NOT_RUN.
+
+## Integrated closure
+Research PR #183 merged `a95fc4c9dcf479b40c8b17091f64cd7c7beb3311`, CI 40149140002 success. Claim released by exact expected SHA `bfe294cd9a072cbf901542c2f57f06ee429cff46` to marker `b488b74e345c4895d7b519dd6661d27fa31c8d50`. Independent physics review NOT_RUN.
