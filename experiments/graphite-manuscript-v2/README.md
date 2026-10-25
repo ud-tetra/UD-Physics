@@ -1,5 +1,7 @@
 # Graphite complementary-angle UD working paper, version 2
 
+[Current version 3](../graphite-manuscript-v3/README.md) adds the stationary even-source and matched-state material-identifiability analysis. This version is retained as a historical draft.
+
 **Status: revised Discovery preprint; EXACT geometry and algebra within stated models / CONDITIONAL material and UD port / source-rounded NUMERICAL contrast / OPEN physical residual. Physical promotion 0.**
 
 [Read the three-page paper](GRAPHITE_UD_HYPOTHESIS_PREPRINT_v2.pdf) or its [editable TeX](GRAPHITE_UD_HYPOTHESIS_PREPRINT_v2.tex). The [version 1 paper](../graphite-superlubricity/GRAPHITE_UD_HYPOTHESIS_PREPRINT_v1.pdf) and [development index](../graphite-superlubricity/README.md) remain historical sources.
