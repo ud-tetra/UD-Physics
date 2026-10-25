@@ -10,7 +10,11 @@
   "source_dirty_at_boot": false,
   "status": "handoff",
   "claims": {
-    "graphite-manuscript-v3": "6318dabeb931772fe530e4fada89afea1800198a"
+    "graphite-manuscript-v3": {
+      "held_sha": "6318dabeb931772fe530e4fada89afea1800198a",
+      "released_sha": "d4f6731423584c69814eaac020f5040928232a5f",
+      "status": "released"
+    }
   },
   "checks": [
     "rational replay PASS",
@@ -18,7 +22,7 @@
     "repository validation PASS",
     "16 unit tests PASS"
   ],
-  "finding": "Exact passive counterexample: same spectrum, per-mode squared coupling, scalar softening and drag, fourfold registered site covariance difference; physical source remains open",
+  "finding": "Exact passive counterexample: same spectrum, per-mode squared coupling, scalar softening and drag, fourfold registered site covariance difference; physical source remains open; research PR #188 merged at d2111b4611dea5defdabcdde8fc7b6d1a354b994",
   "next_action": "Acquire matched-state registered K,C, covariance, D and contact/force data, then freeze held-out signed forecast",
   "mathematical_profile": {
     "coefficient_domain": "Q for counterexample; positive real spectra and numerical archived KC extrema",

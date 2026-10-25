@@ -9,3 +9,5 @@ Executed: `python3 experiments/graphite-manuscript-v3/replay_identifiability.py`
 ## 2026-10-25T16:45:07.827739+00:00
 
 Captured artifacts/graphpaper3-20261025-01/identifiability-001 (EXACT): Exact rational mode-summary counterexample
+
+Closure: research PR #188 merged as `d2111b4611dea5defdabcdde8fc7b6d1a354b994`; claim released at `d4f6731423584c69814eaac020f5040928232a5f`. No further research edits under this release.
