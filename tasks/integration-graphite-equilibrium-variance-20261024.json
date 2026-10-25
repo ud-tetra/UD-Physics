@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-equilibrium-variance-20261024",
+  "goal": "Index completed graphite equilibrium variance result",
+  "owned_paths": [
+    "tasks/integration-graphite-equilibrium-variance-20261024.json",
+    "sessions/graphvaridx-20261024-01",
+    "experiments/graphite-superlubricity/README.md",
+    "experiments/graphite-manuscript-v2/README.md",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "graphite-equilibrium-variance-20261024"
+  ],
+  "status": "complete"
+}
