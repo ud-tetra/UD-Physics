@@ -55,7 +55,7 @@ def invert_apply(A, b):
                 M[i][h] -= f * M[j][h]
     return [M[i][3] for i in range(3)]
 
-def frame_column(Ehub, Eshell, X):
+def frame_column(Ehub, Eshell, X, href):
     # Infinitesimal least-squares proper rotation about the selected reference.
     mu = [sum(r[k] for r in Eshell) / 12 for k in range(3)]
     Ec = [[r[k] - mu[k] for k in range(3)] for r in Eshell]
@@ -70,15 +70,15 @@ def frame_column(Ehub, Eshell, X):
          [-omega[1], omega[0], 0.0]]
     shell = [[Ec[i][k] - sum(X[i][j] * Q[j][k] for j in range(3))
               for k in range(3)] for i in range(12)]
-    return [Ehub[k] - mu[k] for k in range(3)] + [v for row in shell for v in row]
+    return [Ehub[k] - mu[k] - sum(href[j] * Q[j][k] for j in range(3)) for k in range(3)] + [v for row in shell for v in row]
 
-def tangent_matrix(arr, dims, X):
+def tangent_matrix(arr, dims, X, href=None):
     assert dims == (560, 180)
     result = [[0.0] * 180 for _ in range(39)]
     for j in range(180):
         hub = [arr[(1+k)*180 + j] for k in range(3)]
         shell = [[arr[(4+3*i+k)*180+j] for k in range(3)] for i in range(12)]
-        aligned = frame_column(hub, shell, X) if X is not None else (
+        aligned = frame_column(hub, shell, X, href) if X is not None else (
             hub + [v for row in shell for v in row])
         for i, value in enumerate(aligned):
             result[i][j] = float(value)
@@ -177,12 +177,15 @@ def calculate():
             G0 = [[sum(r[i]*r[j] for r in X0) for j in range(3)] for i in range(3)]
             c0 = sum(G0[i][i] for i in range(3))/3
             anisotropy0 = max(abs(G0[i][j]-(c0 if i==j else 0)) for i in range(3) for j in range(3))
+            Gf = [[sum(r[i]*r[j] for r in Xf) for j in range(3)] for i in range(3)]
+            cf = sum(Gf[i][i] for i in range(3))/3
+            anisotropyf = max(abs(Gf[i][j]-(cf if i==j else 0)) for i in range(3) for j in range(3))
             eps = math.sqrt(2*rec["housing_energy"])
             raw_matrix = tangent_matrix(tangent, dims, None)
             lower = feasible_total_endpoint(raw_matrix, eps, initial, final)
             raw = eps*top_singular(raw_matrix)
-            fixed = eps*top_singular(tangent_matrix(tangent, dims, X0))
-            moving = eps*top_singular(tangent_matrix(tangent, dims, Xf))
+            fixed = eps*top_singular(tangent_matrix(tangent, dims, X0, [hub0[k]-center0[k] for k in range(3)]))
+            moving = eps*top_singular(tangent_matrix(tangent, dims, Xf, [hubf[k]-centerf[k] for k in range(3)]))
             out[label] = {
                 "source_id":rec["id"], "epsilon":eps,
                 "raw_final_primary_linear_radius":raw,
@@ -190,6 +193,8 @@ def calculate():
                 "moving_reference_frame_final_primary_linear_radius":moving,
                 "reference_final_displacement_from_equilibrium":ref_displacement,
                 "initial_shell_gram_anisotropy_max":anisotropy0,
+                "moving_shell_gram_anisotropy_max":anisotropyf,
+                "reference_hub_relative_to_shell_centroid_norm":math.sqrt(sum((hubf[k]-centerf[k])**2 for k in range(3))),
                 "frame001_radius":0.036,
                 "frame001_ball_contains_moving_reference_final":ref_displacement<=0.036,
                 **lower,
