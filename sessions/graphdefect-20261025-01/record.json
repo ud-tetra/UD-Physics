@@ -12,7 +12,8 @@
   "claims": {
     "graphite-registry-defect-source": {
       "held_sha": "69be8e3b6cd47d641df17fb725289b9d30f0b64d",
-      "status": "held"
+      "status": "released",
+      "released_sha": "9b448f26173a40c0c1fc701ae95ca0d872615e4b"
     }
   },
   "checks": [
@@ -21,7 +22,7 @@
     "repository validation PASS (326 records); 16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Conditional proxy source vanishes exactly under 21-edge group-averaged K; matched K symmetry defect 0.523%, exact resolvent recovers source",
+  "finding": "Conditional proxy source vanishes exactly under 21-edge group-averaged K; matched K symmetry defect 0.523%, exact resolvent recovers source; research PR #197 merged at 87fcf7cdfd8b3eb5ec53705b97ce603437baad5f",
   "next_action": "Derive/test native even edge-to-height covariance law and independently measured complex loss/contact; no physical promotion",
   "mathematical_profile": {
     "coefficient_domain": "Exact integer carrier incidence; positive real numerical conventional stiffness",
