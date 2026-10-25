@@ -10,7 +10,11 @@
   "source_dirty_at_boot": false,
   "status": "handoff",
   "claims": {
-    "graphite-matched-hessian-reconstruction": "93239a9df838a3f6f52336d4b652900a290a05b8"
+    "graphite-matched-hessian-reconstruction": {
+      "held_sha": "93239a9df838a3f6f52336d4b652900a290a05b8",
+      "released_sha": "21c05efb68a57a5ad24837fced0d25e49c9dee75",
+      "status": "released"
+    }
   },
   "checks": [
     "source SHA and SI parameters inspected",
@@ -20,7 +24,7 @@
     "repository validation PASS (319 records)",
     "unit tests PASS (16)"
   ],
-  "finding": "Full registered conventional K/C reconstructed at same stationary point; proxy edge variance C3 anisotropy rank two; conditional pure-port log slope 6.74813e-4 /MPa, not measured friction",
+  "finding": "Full registered conventional K/C reconstructed at same stationary point; proxy edge variance C3 anisotropy rank two; conditional pure-port log slope 6.74813e-4 /MPa, not measured friction; research PR #193 merged at 8f0b9147ce6e84a74a8b9b9b4c6c907725099771",
   "next_action": "Independent physical edge map and complex loss/contact calibration before signed held-out residual",
   "mathematical_profile": {
     "coefficient_domain": "Exact rational carrier incidence; double-precision positive real KC Hessian",
