@@ -1,0 +1,18 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "icosahedral-frame-tangent-20261025",
+  "session": "ico-frametangent-20261025-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-25T16:44:25.623Z",
+  "base_revision": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+  "owned_paths": [
+    "tasks/icosahedral-frame-tangent-20261025.json",
+    "sessions/ico-frametangent-20261025-gpt6-a1/",
+    "experiments/icosahedral-frame-tangent/",
+    "candidates/icosahedral-frame-tangent/",
+    "artifacts/ico-frametangent-20261025-gpt6-a1/",
+    "tests/test_icosahedral_frame_tangent_20261025.py"
+  ]
+}
