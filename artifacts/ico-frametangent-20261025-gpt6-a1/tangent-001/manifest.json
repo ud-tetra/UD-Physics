@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ico-frametangent-20261025-gpt6-a1",
+  "run_id": "tangent-001",
+  "created_at": "2026-10-25T16:57:40.827Z",
+  "evidence": "NUMERICAL",
+  "summary": "Archived full 180-column final housing tangent reprojection, explicit linearized equilibrium-radius counterphase, and exact conditional moving-reference SO3 chart bound",
+  "command": "python3 -m unittest discover -s tests -v ; python3 experiments/icosahedral-frame-tangent/moving_frame_bound.py --out /tmp/moving_bound.json",
+  "command_execution": "EXECUTED_GITHUB_ACTIONS_PYTHON3_STANDARD_LIBRARY_TEST_JOB_40213880131_AND_LOCAL_STANDARD_LIBRARY_FRACTION_PROOF",
+  "source": {
+    "revision": "72723dbd34ad6966ca570535928cba51e3d2718a",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "archived-tangent-test",
+      "name": "test_icosahedral_frame_tangent_20261025.py",
+      "path": "inputs/test_icosahedral_frame_tangent_20261025.py",
+      "sha256": "202e07f8ea5fafceb72cdcc9ca0970307c3a87111ae63bb2ceb9f384a4ed7dfd",
+      "size_bytes": 9919,
+      "source_location": "repository",
+      "source_path": "tests/test_icosahedral_frame_tangent_20261025.py"
+    },
+    {
+      "input_id": "moving-reference-theorem",
+      "name": "moving_frame_bound.py",
+      "path": "inputs/moving_frame_bound.py",
+      "sha256": "3a6ea505a8b36e2aa7fc2cd7a3432a62d24ea86ec25b531e372f5deac73dddbf",
+      "size_bytes": 2147,
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-frame-tangent/moving_frame_bound.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/endpoint.json",
+      "sha256": "c4a7bf9973c09781682dddcda2ebcdc2a3ae0c37c74641e7508abc83b31dc40c",
+      "size_bytes": 3474
+    },
+    {
+      "path": "files/moving_bound.json",
+      "sha256": "9fc65751d193d6e575308af336184bd504cb194268f67b21b98978c193ea0fb8",
+      "size_bytes": 1073
+    }
+  ]
+}
