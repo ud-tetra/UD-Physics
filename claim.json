@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-registry-defect-index",
+  "session": "graphindexdefect-20261025-01",
+  "status": "held",
+  "created_at": "2026-10-25T17:28:00Z",
+  "base_revision": "be264b31c3180a8159d1c243beadd3447b245233",
+  "owned_paths": [
+    "tasks/integration-graphite-registry-defect-index.json",
+    "sessions/graphindexdefect-20261025-01/",
+    "experiments/graphite-superlubricity/README.md",
+    "experiments/graphite-matched-hessian-reconstruction/README.md",
+    "state/CURRENT.md"
+  ]
+}
