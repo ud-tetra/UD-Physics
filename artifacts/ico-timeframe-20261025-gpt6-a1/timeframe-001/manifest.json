@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ico-timeframe-20261025-gpt6-a1",
+  "run_id": "timeframe-001",
+  "created_at": "2026-10-25T17:28:42.365Z",
+  "evidence": "EXACT",
+  "summary": "Exact 43-point global translation Green operator over u=0..100, all housing-phase COM bound, and archived 560x180 endpoint verification",
+  "command": "python3 experiments/icosahedral-timeframe/rigid_green.py --out /tmp/ico-timeframe-rigid-green.json; python3 -m unittest discover -s tests -v",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON_FOR_EXACT_ANALYTIC_RESULT_AND_GITHUB_CI_RUN_40216245891_FOR_FULL_180_COLUMN_ARCHIVE_CHECK",
+  "source": {
+    "revision": "311bf77346b99ec4c68fd00f9e33b0f15cd9565e",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "rigid-source",
+      "name": "rigid_green.py",
+      "path": "inputs/rigid_green.py",
+      "sha256": "904ab54b485e95661c23723e5405aece99874409095080100426444573a27f36",
+      "size_bytes": 5028,
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-timeframe/rigid_green.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/rigid_green.json",
+      "sha256": "d719e9868ca641d365fbfd031f589b422c626412d3f4235ad6ab5bf24d408efe",
+      "size_bytes": 3636
+    }
+  ]
+}

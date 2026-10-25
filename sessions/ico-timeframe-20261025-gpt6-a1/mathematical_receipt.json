@@ -1,0 +1,320 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosa-timeframe-rigid-001",
+  "session_id": "ico-timeframe-20261025-gpt6-a1",
+  "candidate_id": "icosahedral-timeframe",
+  "question": "Can the original free 43-point-mass 560-state mechanics give an exact all-time Green subblock and an all-180-housing-phase rigid displacement bound without changing any passive constitutive law?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "cm",
+      "symbol": "Rcm,M,Mh",
+      "object_type": "mass-weighted 43-point spatial center of mass",
+      "definition": "M=sum 13 primary masses+sum 30 housing masses, Mh=sum housing masses, Rcm=sum m_i x_i/M",
+      "domain": "full 560 source mechanical phase model",
+      "codomain": "R3",
+      "coefficient_domain": "R positive source masses",
+      "units": "native ell0 and native time u",
+      "basis_orientation": "Euclidean Cartesian 3D, shell/hub and housings retain original ordering",
+      "metric_measure": "spatial mass-weighted metric, not source Euclidean scalar action",
+      "origin": "derived invariant of imported source",
+      "exact_expression": "M Rcm''=0, Rcm(u)=Rcm(0)+u Vcm(0)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "MountLoss",
+        "Hardware"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "spatial total mass M includes 43 masses"
+    },
+    {
+      "object_id": "shear",
+      "symbol": "S(Delta)",
+      "object_type": "global translation position-velocity Green block",
+      "definition": "S(Delta)=[[1,Delta],[0,1]] for each spatial axis",
+      "domain": "R6 CM position and velocity",
+      "codomain": "R6",
+      "coefficient_domain": "Q time differences and real norm",
+      "units": "native dimensionless positions/velocities when u dimensionless",
+      "basis_orientation": "Galilean translations, equal raw coordinate weights",
+      "metric_measure": "Euclidean operator 2-norm restricted to invariant translational subspace",
+      "origin": "derived exact source conditional",
+      "exact_expression": "||S(100)||2=50+sqrt(2501)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "MountLoss"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "cm"
+      ],
+      "normalization": "ordinary Euclidean full state norm; other positive norms require constants"
+    },
+    {
+      "object_id": "ellipse",
+      "symbol": "Eh,Omega",
+      "object_type": "frozen source housing position/velocity energy ball",
+      "definition": "1/2 sum mhj(Omega² deltaHj²+deltaVhj²)<=Eh, Omega=10",
+      "domain": "R180 initial housing phase",
+      "codomain": "allowed first-step source variation",
+      "coefficient_domain": "real positive house mass and Eh",
+      "units": "native E*",
+      "basis_orientation": "source 30x3 housing position and velocity order",
+      "metric_measure": "mass-weighted energy ellipsoid",
+      "origin": "imported fixed source",
+      "exact_expression": "sup |delta Rcm(u)| = sqrt(2Eh Mh)/M*sqrt(u²+Omega^-2)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "Jacobian",
+        "Pulse"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "cm"
+      ],
+      "normalization": "Eh=Ep/40000"
+    },
+    {
+      "object_id": "archive",
+      "symbol": "W(100)",
+      "object_type": "source prior full 560x180 final numerical tangent",
+      "definition": "W=U(100,0)B, float64 archived compact checkpoints, all 180 housing columns",
+      "domain": "R180",
+      "codomain": "R560",
+      "coefficient_domain": "Float64 source frozen coefficients",
+      "units": "native response scaled by epsilon=sqrt(2Eh)",
+      "basis_orientation": "hub-first 13 primaries then 30 housings, 560 mechanical states",
+      "metric_measure": "raw and CM-removed primary operator norms",
+      "origin": "imported prior numerical source and new CI crosscheck",
+      "exact_expression": null,
+      "measured_value": "all 3x180 CM entries match analytic input within1.72e-11 in frozen source checkpoint",
+      "uncertainty": "integration error not interval-certified",
+      "source_refs": [
+        "Archive",
+        "CI"
+      ],
+      "assumption_ids": [
+        "A3"
+      ],
+      "dependency_ids": [
+        "ellipse"
+      ],
+      "normalization": "epsilon=sqrt(2Eh)"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "MountLoss",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/mountloss.py",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "reciprocal central strut and housing damping, ODE",
+      "source_status": "integrated conditional mechanics read-only"
+    },
+    {
+      "source_id": "Hardware",
+      "url_or_repo_path": "experiments/icosahedral-tolerances/hardware.py",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "finite housing mass, mount midpoint spring and pair-force balance",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "Jacobian",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/jacobian.py",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "full560 linearization and housing injection B",
+      "source_status": "integrated exact analytic and numerical constructor"
+    },
+    {
+      "source_id": "Pulse",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/variational.py",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "prior 560x180 frozen source and Eh budget",
+      "source_status": "integrated numerical read-only"
+    },
+    {
+      "source_id": "Archive",
+      "url_or_repo_path": "artifacts/icosahedral-pulsetube-20261022-a1/pulsetube-001/files/compact_checkpoints.npz",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "full final W(100), original masses and reference",
+      "source_status": "immutable source bytes read only via Github CI"
+    },
+    {
+      "source_id": "CI",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/actions/runs/40216245891",
+      "version_or_commit": "fb539e7707bbb55c800414cdff26cfa674f58ab9",
+      "section_or_object_id": "source archive all180 COM column comparison",
+      "source_status": "CI constructor numerical verification, not independent science"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Exactly original unanchored 3D source has only balanced pairwise internal forces and positive masses, no imposed external net force. A different material/anchor model changes the premise."
+    },
+    {
+      "id": "A2",
+      "description": "Euclidean full-state raw norm weights native absolute position and velocity equally; bound 50+sqrt2501 does not automatically transfer as the same number to arbitrary energy norms."
+    },
+    {
+      "id": "A3",
+      "description": "Use same source frozen u100 checkpoint and housing energy normalization; no fresh full-time 560x180 SciPy integration or validated ODE interval error."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Galilean symmetry and momentum conservation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derives exact global CM free motion for every true nonlinear trajectory"
+    },
+    {
+      "technique": "exact 2x2 spectral norm",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "translation shear singular value and full-state Green lower bound at u100"
+    },
+    {
+      "technique": "sharp Cauchy bound for 180 housing energy phases",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "all-phase CM drift envelope at every u"
+    },
+    {
+      "technique": "archived source all-column numerical validation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Github runner parses Wfinal and compares 3x180 CM columns with mass-weighted source input"
+    },
+    {
+      "technique": "full-time shape variational SciPy solver",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "original SciPy NumPy unavailable in CI, local full repository/binary download DNS restriction; source-compatible sampler syntax only"
+    },
+    {
+      "technique": "nonlinear forced Green, Hessian, reference error, volume",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "requires full 560-state certified integration/domain and a positive block norm"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "13 primary+30 housing=43 spatial masses; 3 translational coordinates and velocities = 3 copies of 2x2 S(Delta), 30*3*2=180 housing initial phase dimensions",
+    "reduced_expression": "||S(100)||2=(100+sqrt10004)/2=50+sqrt2501; supCM= sqrt(2Eh Mh)/M sqrt(10000+1/100) at T100",
+    "factor_origins": [
+      "Galilean free translation and internal reciprocal forces",
+      "exact source housing mass-weighted energy ellipse with Omega10"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native continuous u=t/t0",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "Rcm''=0, global translation Green S(t-s)",
+    "initial_phase": "frozen 180 housing phases, primary positions/velocities unperturbed",
+    "coupling": "internal reciprocal interactions only, damping relative",
+    "period_claim": "none; u100 horizon, no physical SI time calibration",
+    "physical_unit_map": "source ell0,E*,t0 arbitrary engineering scales"
+  },
+  "dynamics_readout": {
+    "state_space": "full 560 mechanical phase variables plus separate heat, exact Galilean rigid subsystem",
+    "generator_or_update": "unchanged MountLoss ODE, exact decoupled Rcm''=0",
+    "initial_boundary_conditions": "source Eh=Ep/40000, Omega10 and frozen property cases",
+    "conservation_and_sources": "total 43-point spatial momentum conserved, energy dissipates internally; no external net forces",
+    "projection_and_kernel": "rigid CM translation enters full state but vanishes under frame-invariant volume, other rigid rotations remain",
+    "physical_mapping": "ordinary 3D classical mechanical symmetry only, no UD-specific physical identification"
+  },
+  "target_exposure": {
+    "status": "SOURCE_RAW_AND_ALIGNED_TANGENT_PRIOR_EXPOSED",
+    "known_targets": [
+      "source raw u100 .0350/nominal .0352 and moving aligned ~1e-4",
+      "prior failed equilibrium radius .036 and still-open 80% nonlinear breathing target"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "none new: masses/energy imported unchanged, source rigid invariance exact",
+      "source-compatible time sampler tolerances inherited, but actual solver NOT_EXECUTED"
+    ],
+    "search_domain_and_budget": "three CM spatial axes, all180 housing energy-phase directions via analytic Cauchy; source frozen two parameter cases and archived Wfinal, no new model search",
+    "selection_criterion": "remove missing full-Green rigid-translation uncertainty without discarding mechanical energy",
+    "baseline": "generic classical unanchored reciprocal 3D point-mass spring/dashpot"
+  },
+  "calculation_steps": [
+    "Verify all 43 spatial forces are internal and balanced, so sum mass acceleration zero and CM''=0 for original nonlinear dynamics.",
+    "Solve CM Green exactly as 3 copies of S(Delta)=[[1,Delta],[0,1]], derive norm (Delta+sqrt(Delta²+4))/2 for Delta>=0.",
+    "For source initial housing position/velocity energy ellipsoid derive exact sharp all-phase supCM(u)=sqrt(2EhMh)/M sqrt(u²+Omega^-2) using Cauchy and aligned extremal phase.",
+    "Evaluate frozen worst/nominal masses Mh and total M plus E_h, comparing analytic CM-lift radius to raw archive readout without subtracting operator norms.",
+    "Read original archived full 560x180 Wfinal in CI, check each mass-weighted COM response column against analytic source injector; max residual1.72e-11.",
+    "Show source archived residual after only COM removal ~.0315, while moving SO3 frame response ~1e-4; retain rotations and all kinetic momentum.",
+    "Probe default CI dependency support (numpy/scipy both absent); syntax-check SciPy full 560x180 timeframe_sampler only; full-time solver NOT_EXECUTED.",
+    "Retain full forced U(t,s), shape/rotation, Hessian, reference defect, positivity domain and u100 volume/breathing as OPEN."
+  ],
+  "result": {
+    "exact_expression": "Rcm(u)=Rcm0+u Vcm0; ||U(u,s)||2 >= (|u-s|+sqrt((u-s)^2+4))/2; all housing phase supCM(u)=sqrt(2EhMh)/M sqrt(u²+Omega^-2)",
+    "approximation": "T100 lower norm100.009999; worst CM .009660818/13-primary translation .034832574; nominal CM .009765285/translation .035209237; source Wfinal COM column error <=1.72e-11",
+    "units": "native time u and ell0 mechanical coordinates, no SI scale",
+    "precision_and_error": "analytic source symmetry and Cauchy (exact); local standard-library numeric substitution and frozen float64 CI archive, no validated ODE integration error",
+    "scope": "full-time translational Green subblock ONLY, not full 560-state forced/shape Green or nonlinear tube",
+    "physical_interpretation": "EXACT/CONDITIONAL generic classical point-mass translation symmetry, no unique UD physics"
+  },
+  "verification": [
+    {
+      "method": "local executed Python analytic rigid Green and frozen masses",
+      "command_or_proof_path": "experiments/icosahedral-timeframe/rigid_green.py",
+      "source_revision": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "actual_result": "PASS, immutable source/output SHA256 timeframe-001",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "GitHub Actions archived full180 COM column comparison",
+      "command_or_proof_path": "tests/test_icosahedral_timeframe_20261025.py",
+      "source_revision": "fb539e7707bbb55c800414cdff26cfa674f58ab9",
+      "actual_result": "PASS, max numerical difference <1.8e-11 in archived Wfinal",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "full-time SciPy augmented sampler",
+      "command_or_proof_path": "experiments/icosahedral-timeframe/timeframe_sampler.py",
+      "source_revision": "5dffb6964f1b8387d2df1dc089f7877da72db084",
+      "actual_result": "NOT_EXECUTED, syntax checked only",
+      "review_relationship": "none"
+    },
+    {
+      "method": "independent physical experiment/mathematical reviewer",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED / NOT_RUN",
+      "review_relationship": "none"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "A blanket contractive 560-state raw Euclidean Green norm is impossible because the Galilean shear at u100 has norm>=100.",
+    "CM removal alone leaves substantial raw primary position sensitivity ~.0315; it cannot replace proper rotational alignment.",
+    "Original full 560x180 time-dependent numerical integration unavailable with current default CI dependencies, and local complete source not available; no sampled trajectory assertion.",
+    "Ordinary reciprocal 3D point-mass mechanical network has identical Galilean block, no distinctive UD mechanical source."
+  ],
+  "limitations": [
+    "No full u0..100 moving-shape tangent samples in this runtime.",
+    "No validated forced U(t,s), uniform source Hessian, nonlinear relative flow/remainder, reference numerical defect or strut positivity domain.",
+    "No physical hardware/material/time calibration and no non-constructor review.",
+    "Only original unanchored Galilean source; anchoring/external net force changes the invariant."
+  ],
+  "changed_dependencies": [
+    "Distinct task from prior draft PRs #187/#192, read-only imported source frozen; no mainline physical promotion."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/ico-timeframe-20261025-gpt6-a1/timeframe-001/manifest.json"
+  ],
+  "next_discriminant": "Execute original source 560x180 full-time SciPy moving-frame sampler in a full checkout, then enclose projected force-range Green, nonlinear flow, reference error, full-state positive norm and strut/volume domain before claiming nonlinear u100 robustness."
+}

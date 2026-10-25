@@ -1,0 +1,39 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-timeframe",
+  "session_id": "ico-timeframe-20261025-gpt6-a1",
+  "question": "Can the full 3D mechanical Green propagator and 180-phase initial housing input be controlled over u100 by isolating exact rigid modes while preserving all physical coordinates?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Unchanged integrated MountLoss model, free translational 43-point masses, internal reciprocal forces/dashpots and no external net force.",
+    "Housing phase energy ellipsoid with Omega10, nu=.05 and E_h=E_p/40000 frozen.",
+    "Ordinary Euclidean full-state norm uses same native weighting for position/velocity for the shear lower bound; other norms need conversion.",
+    "Full time SciPy runner was NOT_EXECUTED. Archived Wfinal is only an endpoint numerical check."
+  ],
+  "physical_mapping": "Uncalibrated native 3D mechanical surrogate, time u=t/t0 and length ell0; no uniquely UD physical spacetime or experimental material identification.",
+  "target_exposure": "Prior source raw/Procrustes frame sensitivity already exposed; chosen exact Galilean block and source masses are post-target theoretical audit, not blind prediction.",
+  "fitted_choices": [
+    "No constitutive coefficient tuned; source worst and nominal fixed cases imported verbatim.",
+    "Unexecuted sampler uses original DOP853 and source tolerances; no new u100 sampled output asserted."
+  ],
+  "sources": [
+    "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7:experiments/icosahedral-pulsetube/variational.py",
+    "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7:experiments/icosahedral-mountloss/mountloss.py",
+    "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7:experiments/icosahedral-tolerances/hardware.py",
+    "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7:artifacts/icosahedral-pulsetube-20261022-a1/pulsetube-001/files/compact_checkpoints.npz",
+    "https://github.com/ud-tetra/UD-Physics/pull/192 (read-only unmerged)"
+  ],
+  "baseline": "Ordinary unanchored 43-point reciprocal damped mechanical network with identical masses and fixed source energy ball.",
+  "result": "EXACT full-time 3D Galilean center-of-mass dynamics and all-180-phase housing-energy CM bound; full-state raw Euclidean Green norm >=50+sqrt2501≈100.01 through u100. CI full archived 560x180 tangent CM verification discrepancy <=1.72e-11; source limiting/nominal lifted CM radius .0348326/.0352092; CM-only residual ~.0315 and proper frame readout ~1e-4. Full SciPy augmented u100 trajectory NOT_EXECUTED because CI lacks NumPy/SciPy and local full source download unavailable. Script syntax checked; actual nonlinear robustness remains OPEN.",
+  "next_discriminant": "Reexecute full-time augmented source 560x180 tangent and mathematically enclose shape-projected forced Green and nonlinear u100 flow and volume/strut bounds.",
+  "mathematical_receipts": [
+    "sessions/ico-timeframe-20261025-gpt6-a1/mathematical_receipt.json"
+  ]
+}

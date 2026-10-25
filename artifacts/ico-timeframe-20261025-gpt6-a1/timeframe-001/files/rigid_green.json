@@ -1,0 +1,50 @@
+{
+  "CM_dynamics_exact": "Mtot Rcm_second_derivative=0, so deltaRcm(u)=deltaRcm(0)+u*deltaVcm(0) for two unforced source trajectories, all u",
+  "R2": 0.9045084971874737,
+  "all_time_CM_bound_exact_formula": "sup_||phase||<=1 |deltaRcm(u)| = sqrt(2Eh*Mh)/Mtot * sqrt(Omega^-2+u^2), u>=0",
+  "check_against_archived_W": "GitHub CI job 121237884056 confirmed all 3x180 Wfinal COM columns against exact expression to 1.72e-11 max for nominal and 1.15e-11 max for worst",
+  "full_time_shape_status": "NOT_EXECUTED: time-dependent 560x180 tangent requires SciPy and NumPy; default GitHub CI Python has neither; missing full forced Green U(t,s), nonlinear Hessian/reference error and continuous domain",
+  "initial_phase_ball": "housing displacements and velocities have energy norm 1/2 sum mh*(Omega^2 deltaH^2+deltaVh^2)<=Eh",
+  "labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "physical_units": "native u=t/t0 only; mass/damping from previously FIT mechanics, physical material/clock and experiment OPEN",
+  "physics_null": "ordinary unanchored reciprocal local spring/dashpot network has identical Galilean translation shear",
+  "projection_implication": "a frame-invariant volume readout annihilates uniform translational tangent, but full mechanical rigid energy remains included",
+  "rigid_translation_Green_2norm_approx_at_u100": 100.00999900019994,
+  "rigid_translation_Green_2norm_exact_at_u100": "(100+sqrt(10004))/2 = 50+sqrt(2501)",
+  "rigid_translation_Green_exact": "S(Delta)=[[1,Delta],[0,1]], 3 identical spatial blocks on CM position and velocity",
+  "shape_rigidity_caveat": "COM-subtracted primary tangent operator still has radius ~0.0315, mostly additional rigid rotation; cannot combine or subtract separate operator norms algebraically",
+  "source_frozen_cases_and_numeric_substitution": {
+    "nominal_normal": {
+      "CM_translation_operator_formula": "sqrt(2Eh*Mh)/Mtot * sqrt(u^2+Omega^-2)",
+      "CM_translation_subtracted_final_radius": 0.03156386903336708,
+      "all_spatial_point_mass": 15.035790202401143,
+      "all_time_13_primary_uniform_translation_radius": 0.03520923718980483,
+      "all_time_CM_position_sup_through_u100": 0.009765285389062687,
+      "all_time_validity": "for every housing initial phase in its exact mass-weighted energy ball, no external net force",
+      "frozen_raw_final_primary_radius": 0.03520937943792633,
+      "full_SO3_aligned_final_radius": 0.00016894760813335866,
+      "housing_mass": 0.6633436854000505,
+      "initial_housing_energy": 1.6250000000000001e-06
+    },
+    "worst_fine": {
+      "CM_translation_operator_formula": "sqrt(2Eh*Mh)/Mtot * sqrt(u^2+Omega^-2)",
+      "CM_translation_subtracted_final_radius": 0.03150001927449945,
+      "all_spatial_point_mass": 15.175953348383755,
+      "all_time_13_primary_uniform_translation_radius": 0.0348325743039967,
+      "all_time_CM_position_sup_through_u100": 0.009660817900728423,
+      "all_time_validity": "for every housing initial phase in its exact mass-weighted energy ball, no external net force",
+      "frozen_raw_final_primary_radius": 0.03500971996661153,
+      "full_SO3_aligned_final_radius": 9.867394310088079e-05,
+      "housing_mass": 0.6633436854000505,
+      "initial_housing_energy": 1.6202078370173778e-06
+    }
+  },
+  "source_scope": "all 43 spatial point masses (13 primaries,30 housings), positive constant masses and reciprocal/internal central and damper forces",
+  "status": "PASS",
+  "unavoidable_full_560_state_Green_Euclidean_norm_lower_bound": "at least 50+sqrt(2501) when both absolute position and velocity are included with unit Euclidean weights"
+}
