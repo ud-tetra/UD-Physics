@@ -1,0 +1,188 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "graphvar-fixed-mask-canonical-and-local-defect",
+  "session_id": "graphvar-20261024-01",
+  "candidate_id": "graphite-equilibrium-variance",
+  "question": "Can a fixed native gate generate stationary even edge variance, and what does a minimal local defect produce across quotients?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "masked_generator",
+      "symbol": "A_H",
+      "object_type": "finite skew chain generator",
+      "domain": "C0⊕C1⊕C2",
+      "codomain": "same",
+      "coefficient_domain": "integer/real",
+      "units": "inverse native s",
+      "basis_orientation": "A-to-B B1, oriented faces B2",
+      "metric_measure": "unit chain",
+      "origin": "imported fixed-mask model",
+      "exact_expression": "[[0,-B1H,0],[HB1^T,0,-B2],[0,B2^T,0]]",
+      "normalization": "unit simplex"
+    },
+    {
+      "object_id": "defect_stiffness",
+      "symbol": "Q",
+      "object_type": "edge energy quadratic form",
+      "domain": "C1",
+      "codomain": "C1",
+      "coefficient_domain": "rational example, real alpha>-1",
+      "units": "dimensionless",
+      "basis_orientation": "three incident edges at A0",
+      "metric_measure": "Euclidean edge register",
+      "origin": "new hypothesis",
+      "exact_expression": "I+alpha P_O",
+      "normalization": "base edge stiffness one"
+    },
+    {
+      "object_id": "mean_port",
+      "symbol": "<S(y²)>",
+      "object_type": "equilibrium harmonic source matrix",
+      "domain": "R^(2N)_site",
+      "codomain": "R²_direct",
+      "coefficient_domain": "real/rational example",
+      "units": "native dimensionless",
+      "basis_orientation": "prior h1,h2 direct coordinates",
+      "metric_measure": "M normalized by sqrt(N)",
+      "origin": "derived conditional",
+      "exact_expression": "M^T diag(theta Q^-1) B1^T",
+      "normalization": "sqrt(N) report when comparing local columns"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "prior_reciprocity",
+      "url_or_repo_path": "experiments/graphite-packet-reciprocity/README.md",
+      "version_or_commit": "060e9187d88da7062ff4edce5513efabd1b100ff",
+      "section_or_object_id": "even y² port and equilibrium null",
+      "source_status": "EXACT/CONDITIONAL"
+    },
+    {
+      "source_id": "UD_local_source",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/a78193d420f3bac957be081aed0525fbc1457825/docs/UD_Local_Source_Selection_v0.1.md",
+      "version_or_commit": "a78193d420f3bac957be081aed0525fbc1457825",
+      "section_or_object_id": "§§1–2 supplied 600-cell gate",
+      "source_status": "different carrier, not graphite source"
+    }
+  ],
+  "assumptions": [
+    "canonical density exp(-beta E0 ||q||²/2) under any fixed mask",
+    "new edge energy Q=I+alpha P_O for three-edge local orbit; alpha>-1",
+    "registered material maps and bath remain unprovided"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact finite skew/phase-volume and Gaussian covariance",
+      "applicability": "applied",
+      "purpose_or_na_reason": "show fixed gate does not source equilibrium variance"
+    },
+    {
+      "technique": "incidence rank and C3 local orbit",
+      "applicability": "applied",
+      "purpose_or_na_reason": "quantify minimal nonzero source and quotient comparison"
+    },
+    {
+      "technique": "physical dimensional/load analysis",
+      "applicability": "applied",
+      "purpose_or_na_reason": "expose free source and pressure slopes"
+    },
+    {
+      "technique": "modular arithmetic/prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no modulus or factor-selection question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "three incident edges of A0; squared direct h norms 2+2+4",
+    "reduced_expression": "rank2, ||sqrt(N)S(P_O)||_F²=8; alpha=1/2,theta=3/5 gives delta=-1/5 and norm²=8/25",
+    "factor_origins": [
+      "three bond harmonic columns from prior fixed basis"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native continuous s; physical tau assumed",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "qdot=A_H q/tau for isotropic energy; qdot=A_H diag(I,Q,I)q/tau for defect energy",
+    "initial_phase": "equilibrium ensemble not a particular packet seed",
+    "coupling": "fixed contact mask or additional defect energy",
+    "period_claim": null,
+    "physical_unit_map": "tau OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R^(6N), N=7,13,19",
+    "generator_or_update": "skew A_H; positive energy metric G=diag(I,Q,I)",
+    "initial_boundary_conditions": "canonical quadratic equilibrium, fixed mask; defect orbit externally chosen",
+    "conservation_and_sources": "norm for isotropic; E_Q for changed generator; volume preserved",
+    "projection_and_kernel": "uniform M^T B1^T=0; three-edge source rank2 common quotients",
+    "physical_mapping": "C_add=lambda T^T <S(y²)> R_h assumed"
+  },
+  "target_exposure": {
+    "status": "known/exposed",
+    "known_targets": [
+      "paired near 21.8/38.2 degrees",
+      "weak load trend"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "illustrative alpha=1/2,theta=3/5, not fitted"
+    ],
+    "search_domain_and_budget": "one C3 three-edge local variance defect after isotropic null",
+    "selection_criterion": "minimal symmetry-compatible nonuniform covariance",
+    "baseline": "conventional 2D PES/contact/loss"
+  },
+  "calculation_steps": [
+    "skewness gives norm and divergence conservation; isotropic canonical density stationary for fixed mask",
+    "Gaussian covariance theta I, uniform port cancels by B1 M=0",
+    "defect Q positive for alpha>-1 gives covariance theta Q^-1 and delta=-theta alpha/(1+alpha)",
+    "three-edge orbit contributes only B-neighbor columns h_t and rank2, squared direct norm 8 delta²/N",
+    "differentiate delta and retain missing pressure dependence of physical maps",
+    "recompute Hamiltonian generator A_H G to conserve changed E_Q"
+  ],
+  "result": {
+    "exact_expression": "<S>_isotropic=0; delta=-theta alpha/(1+alpha); ||sqrt(N) S(P_O)||_F²=8, rank2 for N7/13/19; delta_prime=-theta_prime alpha/(1+alpha)-theta alpha_prime/(1+alpha)^2",
+    "approximation": "none for finite conditional algebra; equilibrium/material identification assumed",
+    "units": "native port dimensionless; physical lambda meV Å^-2 per atom uncalibrated",
+    "precision_and_error": "exact fractions; no material uncertainty",
+    "scope": "specified Gaussian equilibrium, fixed mask, selected local stiffness defect",
+    "physical_interpretation": "no graphite angle or friction prediction"
+  },
+  "verification": [
+    {
+      "method": "exact integer/fraction finite replay",
+      "command_or_proof_path": "python3 experiments/graphite-equilibrium-variance/verify_variance.py",
+      "source_revision": "060e9187",
+      "actual_result": "PASS six N/mask cases, rank/norm, skewness and E_Q conservation",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "analytic Gaussian and incidence proof",
+      "command_or_proof_path": "experiments/graphite-equilibrium-variance/README.md",
+      "source_revision": "060e9187",
+      "actual_result": "constructor proof PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "fixed Q167-style mask alone leaves isotropic canonical mean port zero",
+    "separate local defect gives nonzero port but identical common normalized source across N7/13/19",
+    "changing energy Q without changing generator fails reciprocal energy accounting"
+  ],
+  "limitations": [
+    "Q and selected A0 registry are supplied, not native-derived",
+    "physical units, loss and force data absent",
+    "direct Frobenius norm depends on declared basis; no friction-ratio inference",
+    "independent physics review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/graphvar-20261024-01/exact-001/manifest.json"
+  ],
+  "next_discriminant": "independently source or measure alpha(p) and registered graphite cross-Hessian/bath; held-out signed force/load"
+}

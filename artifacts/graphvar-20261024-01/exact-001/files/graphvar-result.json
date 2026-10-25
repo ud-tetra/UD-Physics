@@ -1,0 +1,79 @@
+{
+  "evidence": "EXACT_CONDITIONAL_EQUILIBRIUM_VARIANCE",
+  "cases": [
+    {
+      "N": 7,
+      "fixed_one_edge_mask": false,
+      "isotropic_fixed_mask_covariance_uniform": true,
+      "defect_alpha": "1/2",
+      "theta": "3/5",
+      "delta": "-1/5",
+      "sqrtN_source_rank": 2,
+      "sqrtN_source_frobenius_squared": "8/25",
+      "sqrtN_source_rank_minor": "2/25",
+      "changed_energy_dynamics_conserves_energy": true
+    },
+    {
+      "N": 7,
+      "fixed_one_edge_mask": true,
+      "isotropic_fixed_mask_covariance_uniform": true,
+      "defect_alpha": "1/2",
+      "theta": "3/5",
+      "delta": "-1/5",
+      "sqrtN_source_rank": 2,
+      "sqrtN_source_frobenius_squared": "8/25",
+      "sqrtN_source_rank_minor": "2/25",
+      "changed_energy_dynamics_conserves_energy": true
+    },
+    {
+      "N": 13,
+      "fixed_one_edge_mask": false,
+      "isotropic_fixed_mask_covariance_uniform": true,
+      "defect_alpha": "1/2",
+      "theta": "3/5",
+      "delta": "-1/5",
+      "sqrtN_source_rank": 2,
+      "sqrtN_source_frobenius_squared": "8/25",
+      "sqrtN_source_rank_minor": "2/25",
+      "changed_energy_dynamics_conserves_energy": true
+    },
+    {
+      "N": 13,
+      "fixed_one_edge_mask": true,
+      "isotropic_fixed_mask_covariance_uniform": true,
+      "defect_alpha": "1/2",
+      "theta": "3/5",
+      "delta": "-1/5",
+      "sqrtN_source_rank": 2,
+      "sqrtN_source_frobenius_squared": "8/25",
+      "sqrtN_source_rank_minor": "2/25",
+      "changed_energy_dynamics_conserves_energy": true
+    },
+    {
+      "N": 19,
+      "fixed_one_edge_mask": false,
+      "isotropic_fixed_mask_covariance_uniform": true,
+      "defect_alpha": "1/2",
+      "theta": "3/5",
+      "delta": "-1/5",
+      "sqrtN_source_rank": 2,
+      "sqrtN_source_frobenius_squared": "8/25",
+      "sqrtN_source_rank_minor": "2/25",
+      "changed_energy_dynamics_conserves_energy": true
+    },
+    {
+      "N": 19,
+      "fixed_one_edge_mask": true,
+      "isotropic_fixed_mask_covariance_uniform": true,
+      "defect_alpha": "1/2",
+      "theta": "3/5",
+      "delta": "-1/5",
+      "sqrtN_source_rank": 2,
+      "sqrtN_source_frobenius_squared": "8/25",
+      "sqrtN_source_rank_minor": "2/25",
+      "changed_energy_dynamics_conserves_energy": true
+    }
+  ],
+  "physical_material_parameters_fixed": false,
+  "friction_or_seven_cell_selection_predicted": false
+}
