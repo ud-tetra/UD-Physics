@@ -23,6 +23,8 @@ S_0=M^T\operatorname{diag}(w/\bar\Theta)B_1^T.$$
 
 This is an illustrative map, not a derivation of a native packet edge variable from graphite heights. The exact carrier identity $B_1M=0$ makes uniform weights cancel. The reconstructed bond coefficients range from $0.00207043$ to $0.00212995$ Å²/meV, with coefficient of variation $0.939\%$; the $C_3$ orbit spread is below $3.2\times10^{-12}$ Å²/meV. The [proxy results](BOND_PROXY_RESULTS.json) give a rank-two $S_0$. A single scalar fit of its Cartesian image to the **conventional** $C$ leaves $42.88\%$ relative Frobenius residual. This fit is target-exposed and cannot identify an additive UD coupling.
 
+The [registry-defect audit](../graphite-registry-defect-source/README.md) now proves that the full 21-edge graph symmetry average of the matched conventional $K$ makes every proxy bond variance equal and the source exactly zero. The 0.523% relative stiffness departure from that group average recovers the original proxy source by an exact resolvent identity. This is an explanation *within the assumed covariance-to-port map*, with native material coupling and damping still open.
+
 For a still stronger **conditional** model, set $C_{\rm port}(P)=\beta\bar\Theta S_0(P)$ and independently assume a height Rayleigh matrix $D_h=dI$ with pressure-independent $\beta,d,T$. Then
 
 $$\Gamma_{\rm port}=\beta^2d\bar\Theta^2 S_0K^{-2}S_0^T,\quad
