@@ -13,5 +13,7 @@
     "artifacts/graphvar-20261024-01"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-25T01:04:09.391Z",
+  "released_from_sha": "bfe294cd9a072cbf901542c2f57f06ee429cff46"
 }
