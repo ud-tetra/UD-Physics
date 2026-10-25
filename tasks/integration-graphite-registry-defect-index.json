@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-registry-defect-index",
+  "goal": "Index merged registry-defect audit in graphite hub and current state",
+  "owned_paths": [
+    "tasks/integration-graphite-registry-defect-index.json",
+    "sessions/graphindexdefect-20261025-01",
+    "experiments/graphite-superlubricity/README.md",
+    "experiments/graphite-matched-hessian-reconstruction/README.md",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "graphite-registry-defect-source"
+  ],
+  "status": "complete"
+}

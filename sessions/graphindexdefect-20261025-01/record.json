@@ -1,0 +1,31 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphindexdefect-20261025-01",
+  "runtime": "Codex GPT-6; local review, GitHub connector publication",
+  "task": "integration-graphite-registry-defect-index",
+  "goal": "Index exact registry-defect audit with limits",
+  "created_at": "2026-10-25",
+  "base_revision": "be264b31c3180a8159d1c243beadd3447b245233",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-graphite-registry-defect-index": {
+      "held_sha": "5a68367c87536d248771c8c15c37c543100a1eea",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "repository validation PASS (328 records); 16 unit tests PASS"
+  ],
+  "finding": "Graphite landing, matched Hessian readme and current state link exact conditional proxy symmetry audit without physical promotion",
+  "next_action": "Derive native material map and complex damping then held-out signed friction",
+  "mathematical_profile": {
+    "coefficient_domain": "Citation/index only; no new calculation",
+    "exactness_or_precision_plan": "Links and scope checked against merged research note",
+    "applicable_methods": [
+      "provenance"
+    ],
+    "clock_metric_units_conventions": "Inherits underlying receipt, no new units"
+  }
+}
