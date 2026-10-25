@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "graphite-equilibrium-variance-20261024",
+  "session": "graphvar-20261024-01",
+  "created_at": "2026-10-25T01:01:28.364Z",
+  "base_revision": "060e9187d88da7062ff4edce5513efabd1b100ff",
+  "owned_paths": [
+    "tasks/graphite-equilibrium-variance-20261024.json",
+    "experiments/graphite-equilibrium-variance",
+    "candidates/graphite-equilibrium-variance",
+    "sessions/graphvar-20261024-01",
+    "artifacts/graphvar-20261024-01"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
