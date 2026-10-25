@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-matched-hessian",
+  "session": "graphmatchedidx-20261025-01",
+  "status": "held",
+  "created_at": "2026-10-25T17:08:00Z",
+  "base_revision": "8f0b9147ce6e84a74a8b9b9b4c6c907725099771",
+  "owned_paths": [
+    "tasks/integration-graphite-matched-hessian.json",
+    "sessions/graphmatchedidx-20261025-01/",
+    "experiments/graphite-superlubricity/README.md",
+    "experiments/graphite-manuscript-v3/README.md",
+    "state/CURRENT.md"
+  ]
+}
