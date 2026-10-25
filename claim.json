@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "integration-graphite-manuscript-v3",
   "session": "graphpaper3idx-20261025-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-25T16:48:00Z",
   "base_revision": "d2111b4611dea5defdabcdde8fc7b6d1a354b994",
   "owned_paths": [
@@ -13,5 +13,7 @@
     "experiments/graphite-superlubricity/README.md",
     "experiments/graphite-manuscript-v2/README.md",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-10-25T16:50:00Z",
+  "released_from_sha": "8b8d2099952257145d117a6dec4801cf0a37e27c"
 }
