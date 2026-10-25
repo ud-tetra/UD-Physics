@@ -9,3 +9,5 @@ Next: source physical edge map, complex loss, contact and held-out force; reposi
 ## 2026-10-25T17:05:59.786118+00:00
 
 Captured artifacts/graphmatched-20261025-01/matched-001 (NUMERICAL): Matched K/C stationary reconstruction and declared bond covariance proxy
+
+Closure: research PR #193 merged as `8f0b9147ce6e84a74a8b9b9b4c6c907725099771`; claim released at `21c05efb68a57a5ad24837fced0d25e49c9dee75`. No further research edits under this release.
