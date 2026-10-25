@@ -1,0 +1,169 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "graphite-registry-defect-001",
+  "session_id": "graphdefect-20261025-01",
+  "candidate_id": "graphite-registry-defect-source",
+  "question": "Does the conventional registered stiffness symmetry defect fully explain the declared proxy source?",
+  "evidence_labels": [
+    "EXACT",
+    "NUMERICAL",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "carrier",
+      "symbol": "B1,M,T,R",
+      "object_type": "integer oriented incidence, native embedding, graph automorphisms",
+      "definition": "A_i to B_k iff i-k mod 7 in {0,1,5}; T and R as README",
+      "domain": "21 oriented edges for B1; 2 native coordinates for M",
+      "codomain": "14 sites for B1; 21 edges for M",
+      "coefficient_domain": "integers for incidence and permutations, rational halves for M",
+      "units": "dimensionless",
+      "basis_orientation": "A_i then B_k; edges A to B",
+      "metric_measure": "unit Euclidean edge and site basis",
+      "origin": "exact declared carrier"
+    },
+    {
+      "object_id": "stiffness",
+      "symbol": "K,Kbar,DeltaK",
+      "object_type": "14x14 positive stiffness",
+      "definition": "matched conventional Hessian, group average, and difference",
+      "domain": "registered R14 heights",
+      "codomain": "registered R14 height gradients",
+      "coefficient_domain": "positive double precision from source-rounded KC parameters",
+      "units": "meV/Angstrom^2 per upper atom",
+      "basis_orientation": "registered C3 site ordering",
+      "metric_measure": "Euclidean site heights, Etotal=14 Ebar",
+      "origin": "conventional reconstruction and derived group mean"
+    },
+    {
+      "object_id": "source",
+      "symbol": "S=M^T diag(diag(B1^T K^-1 B1)) B1^T",
+      "object_type": "conditional 2x14 proxy source",
+      "definition": "native-basis port induced by assumed bond height variance per Theta_bar",
+      "domain": "registered R14 heights",
+      "codomain": "native R2 covectors",
+      "coefficient_domain": "rational carrier and positive numerical K",
+      "units": "Angstrom^2/meV per Theta_bar",
+      "basis_orientation": "native embedding",
+      "metric_measure": "unit edge metric",
+      "origin": "assumed physical map followed by exact algebra"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "matched",
+      "url_or_repo_path": "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+      "version_or_commit": "7aa07cfca49d4cdf02286d73ecedb4d4241fa8f5",
+      "section_or_object_id": "K",
+      "source_status": "archived conventional reconstruction"
+    },
+    {
+      "source_id": "proxy",
+      "url_or_repo_path": "experiments/graphite-matched-hessian-reconstruction/analyze_proxy.py",
+      "version_or_commit": "7aa07cfca49d4cdf02286d73ecedb4d4241fa8f5",
+      "section_or_object_id": "B1,M,S",
+      "source_status": "earlier declared conditional model"
+    }
+  ],
+  "assumptions": [
+    "Graph-averaged K is a mathematical counterfactual, not a physical specimen",
+    "q_e=h_B-h_A and variance-to-port conversion assumed, with no native derivation",
+    "No damping/force inferred"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact group/permutation and incidence",
+      "applicability": "applied",
+      "purpose_or_na_reason": "prove edge-transitive cancellation"
+    },
+    {
+      "technique": "positive inverse resolvent and spectrum",
+      "applicability": "applied",
+      "purpose_or_na_reason": "isolate stiffness defect and check inverse"
+    },
+    {
+      "technique": "clock and prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no clock or divisibility question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "7 translations times 3 rotations acting on 21 edges",
+    "reduced_expression": "21 distinct group elements, one free orbit of 21 edges",
+    "factor_origins": [
+      "translation C7",
+      "class-cycling C3"
+    ],
+    "factorization": "21=3x7",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "registered 14 upper heights and assumed 21 bond observables",
+    "generator_or_update": "positive stationary K, no native temporal generator",
+    "initial_boundary_conditions": "conventional fixed lower sheet and model stationary state",
+    "conservation_and_sources": "B1 M=0; uniform bond weights cancel",
+    "projection_and_kernel": "group average removes graph symmetry defect; proxy S linear in inverse-derived edge weights",
+    "physical_mapping": "OPEN material-to-native observable, force and damping"
+  },
+  "target_exposure": {
+    "status": "prior matched conventional K and experimental angle target known",
+    "known_targets": [
+      "21.8/38.2 angle pair and reported peaks"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "one previously declared q_e proxy, no current fit"
+    ],
+    "search_domain_and_budget": "one group mean on fixed seven-cell carrier",
+    "selection_criterion": "automorphism transitivity on all registered bonds",
+    "baseline": "conventional KC K and moire geometry"
+  },
+  "calculation_steps": [
+    "construct integer T,R and verify group relations, 21-edge orbit, incidence equivariance",
+    "average K over group, prove positive and edge-uniform inverse covariance",
+    "apply B1 M=0 to show S(Kbar)=0",
+    "use exact inverse resolvent to isolate S(K) in DeltaK",
+    "numerical matched K checks and first-order sensitivity"
+  ],
+  "result": {
+    "exact_expression": "S(Kbar)=0; K^-1-Kbar^-1=-Kbar^-1 DeltaK K^-1",
+    "approximation": "||DeltaK||F/||K||F=0.00522957825; first-order S error 7.48768%",
+    "units": "K meV/A^2 per upper atom; w and S per Theta_bar",
+    "precision_and_error": "numerical inverse recovery error 6.43e-18 in S units, no experimental uncertainty",
+    "scope": "one seven-cell carrier and one conventional stationary K",
+    "physical_interpretation": "conditional proxy source decomposition only, no measured friction residual"
+  },
+  "verification": [
+    {
+      "method": "integer permutation assertions and inverse replay",
+      "command_or_proof_path": "python3 experiments/graphite-registry-defect-source/audit_registry_defect.py",
+      "source_revision": "7aa07cfca49d4cdf02286d73ecedb4d4241fa8f5",
+      "actual_result": "PASS",
+      "review_relationship": "constructor self-check"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "A small Frobenius DeltaK ratio does not imply small inverse-weighted perturbation; operator norm 0.7149",
+    "Group-average stiffness is counterfactual, not prepared graphite",
+    "Previous target-exposed scalar fit to conventional C does not establish native coupling"
+  ],
+  "limitations": [
+    "No native y to physical bond-height map",
+    "No physical beta, D, or contact response",
+    "No seven versus 13/19 selection or measured signed friction residual"
+  ],
+  "changed_dependencies": [
+    "Refines matched-Hessian proxy: nonuniform source is exactly tied to graph symmetry defect of conventional K within this declared map",
+    "Ledger Q22 internal current remains zero; no promotion"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/graphdefect-20261025-01/registry-001/manifest.json"
+  ],
+  "next_discriminant": "Independently derive or measure even edge covariance law and complex loss, then freeze model for held-out signed residual"
+}
