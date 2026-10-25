@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "graphite-registry-defect-source",
   "session": "graphdefect-20261025-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-25T17:15:00Z",
   "base_revision": "7aa07cfca49d4cdf02286d73ecedb4d4241fa8f5",
   "owned_paths": [
@@ -13,5 +13,7 @@
     "candidates/graphite-registry-defect-source/",
     "experiments/graphite-registry-defect-source/",
     "artifacts/graphdefect-20261025-01/"
-  ]
+  ],
+  "released_at": "2026-10-25T17:25:00Z",
+  "released_from_sha": "69be8e3b6cd47d641df17fb725289b9d30f0b64d"
 }
