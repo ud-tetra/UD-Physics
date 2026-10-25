@@ -1,0 +1,280 @@
+{
+  "status": "FULL_HOUSING_WINDOW_PASS",
+  "exposure": "sharper analytic bound derived after observing coarse full-housing coverage gaps;no parameters,thresholds or trajectories changed",
+  "raw_scope_audit_status": "OPEN_OR_FAILED",
+  "strength_interval": [
+    0.04,
+    0.05
+  ],
+  "initial_housing_coordinates": 90,
+  "initial_phase_dimension": 180,
+  "parameter_sets": 50,
+  "strength_nodes": 17,
+  "full_housing_matrix_evaluations": 850,
+  "covered_intervals": [
+    [
+      0.04,
+      0.05
+    ]
+  ],
+  "maximum_full_housing_energy_upper": {
+    "id": "uniform-b0.05-cf0.0",
+    "continuous_strength_full_housing_energy_upper": 0.4566660701874066,
+    "upper_at_nu": 0.04024544238197695
+  },
+  "minimum_all_phase_linear_breathing_lower": 0.8135617928496317,
+  "sharper_operator_lipschitz": "min(T*lambda_D,sqrt(T*lambda_D/(2*nu0))); unit energy-norm initial phase has E0=1/2 and nu0 integral(v^T Dv)<=1/2",
+  "scope": "numeric continuous-strength enclosure over50 finite parameter sets,all180 initial housing phases,total energy includes conserved rigid kinetic part;not verified interval arithmetic or nonlinear/full-parameter-box certificate",
+  "per_case": [
+    {
+      "id": "edge-p0-b0.005-cf0.0",
+      "continuous_strength_full_housing_energy_upper": 0.38584958047757123,
+      "upper_at_nu": 0.04024333076395578
+    },
+    {
+      "id": "edge-p0-b0.005-cf0.001",
+      "continuous_strength_full_housing_energy_upper": 0.3849004413344569,
+      "upper_at_nu": 0.04024332759784293
+    },
+    {
+      "id": "edge-p1-b0.005-cf0.0",
+      "continuous_strength_full_housing_energy_upper": 0.388428087778613,
+      "upper_at_nu": 0.04024390615358567
+    },
+    {
+      "id": "edge-p1-b0.005-cf0.001",
+      "continuous_strength_full_housing_energy_upper": 0.3875407253354995,
+      "upper_at_nu": 0.0402439101713119
+    },
+    {
+      "id": "edge-p2-b0.005-cf0.0",
+      "continuous_strength_full_housing_energy_upper": 0.3878828477695216,
+      "upper_at_nu": 0.04024320216593252
+    },
+    {
+      "id": "edge-p2-b0.005-cf0.001",
+      "continuous_strength_full_housing_energy_upper": 0.3869283311963706,
+      "upper_at_nu": 0.04024320064645076
+    },
+    {
+      "id": "exposed-previous-7-boundary0",
+      "continuous_strength_full_housing_energy_upper": 0.4274953224113346,
+      "upper_at_nu": 0.040247428044167026
+    },
+    {
+      "id": "exposed-previous-7-boundary0-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.43541784796763683,
+      "upper_at_nu": 0.04024727882269767
+    },
+    {
+      "id": "exposed-previous-7-boundary1",
+      "continuous_strength_full_housing_energy_upper": 0.418540717726186,
+      "upper_at_nu": 0.04024731806980723
+    },
+    {
+      "id": "exposed-previous-7-boundary1-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.42636117596078793,
+      "upper_at_nu": 0.04024717209913137
+    },
+    {
+      "id": "exposed-previous-7-boundary2",
+      "continuous_strength_full_housing_energy_upper": 0.4164184089123498,
+      "upper_at_nu": 0.040247603774643016
+    },
+    {
+      "id": "exposed-previous-7-boundary2-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.4240657149058018,
+      "upper_at_nu": 0.040247458171305456
+    },
+    {
+      "id": "exposed-previous-7-boundary3",
+      "continuous_strength_full_housing_energy_upper": 0.42811799058015204,
+      "upper_at_nu": 0.040247218133875745
+    },
+    {
+      "id": "exposed-previous-7-boundary3-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.4359102039002242,
+      "upper_at_nu": 0.040247068410355344
+    },
+    {
+      "id": "interior0",
+      "continuous_strength_full_housing_energy_upper": 0.43453527282393817,
+      "upper_at_nu": 0.04024626068637251
+    },
+    {
+      "id": "interior0-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.43626330776474437,
+      "upper_at_nu": 0.040246237370156
+    },
+    {
+      "id": "interior1",
+      "continuous_strength_full_housing_energy_upper": 0.42269522754047095,
+      "upper_at_nu": 0.04024614137500148
+    },
+    {
+      "id": "interior1-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.42759970740842107,
+      "upper_at_nu": 0.040246081574422755
+    },
+    {
+      "id": "interior2",
+      "continuous_strength_full_housing_energy_upper": 0.40674407302350296,
+      "upper_at_nu": 0.040245255640703644
+    },
+    {
+      "id": "interior2-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.41051939218653766,
+      "upper_at_nu": 0.0402452407117904
+    },
+    {
+      "id": "interior3",
+      "continuous_strength_full_housing_energy_upper": 0.44006813902392033,
+      "upper_at_nu": 0.04024679394204661
+    },
+    {
+      "id": "interior3-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.4455659835556723,
+      "upper_at_nu": 0.04024669893284916
+    },
+    {
+      "id": "interior4",
+      "continuous_strength_full_housing_energy_upper": 0.4269870706714422,
+      "upper_at_nu": 0.04024692079033038
+    },
+    {
+      "id": "interior4-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.43144821695680746,
+      "upper_at_nu": 0.04024685276775664
+    },
+    {
+      "id": "interior5",
+      "continuous_strength_full_housing_energy_upper": 0.42899146354864187,
+      "upper_at_nu": 0.040246751118484025
+    },
+    {
+      "id": "interior5-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.43049010727348663,
+      "upper_at_nu": 0.04024673052824536
+    },
+    {
+      "id": "interior6",
+      "continuous_strength_full_housing_energy_upper": 0.42927071460290445,
+      "upper_at_nu": 0.04024641622078932
+    },
+    {
+      "id": "interior6-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.43313426105504066,
+      "upper_at_nu": 0.040246367246518214
+    },
+    {
+      "id": "interior7",
+      "continuous_strength_full_housing_energy_upper": 0.41066801503033223,
+      "upper_at_nu": 0.04024521195140625
+    },
+    {
+      "id": "interior7-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.41479207957655095,
+      "upper_at_nu": 0.04024519721859058
+    },
+    {
+      "id": "seed10422-0-boundary0",
+      "continuous_strength_full_housing_energy_upper": 0.4273381807770197,
+      "upper_at_nu": 0.040247455271793485
+    },
+    {
+      "id": "seed10422-0-boundary0-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.43526627136173385,
+      "upper_at_nu": 0.04024730478457187
+    },
+    {
+      "id": "seed10422-0-boundary1",
+      "continuous_strength_full_housing_energy_upper": 0.4172891946699644,
+      "upper_at_nu": 0.040247687995914015
+    },
+    {
+      "id": "seed10422-0-boundary1-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.4251375099967473,
+      "upper_at_nu": 0.04024753962404824
+    },
+    {
+      "id": "seed10422-0-boundary2",
+      "continuous_strength_full_housing_energy_upper": 0.41709230858827123,
+      "upper_at_nu": 0.04024787492477228
+    },
+    {
+      "id": "seed10422-0-boundary2-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.4247798508995676,
+      "upper_at_nu": 0.04024772678360712
+    },
+    {
+      "id": "seed10422-0-boundary3",
+      "continuous_strength_full_housing_energy_upper": 0.42574425367228647,
+      "upper_at_nu": 0.040247314127632945
+    },
+    {
+      "id": "seed10422-0-boundary3-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.4335350635399726,
+      "upper_at_nu": 0.04024716323941521
+    },
+    {
+      "id": "seed10422-1-boundary0",
+      "continuous_strength_full_housing_energy_upper": 0.4242280758111928,
+      "upper_at_nu": 0.04024753421950678
+    },
+    {
+      "id": "seed10422-1-boundary0-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.4323061831093011,
+      "upper_at_nu": 0.04024737956029606
+    },
+    {
+      "id": "seed10422-1-boundary1",
+      "continuous_strength_full_housing_energy_upper": 0.41838634642473227,
+      "upper_at_nu": 0.040247437120906455
+    },
+    {
+      "id": "seed10422-1-boundary1-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.4263888397212109,
+      "upper_at_nu": 0.04024728467631191
+    },
+    {
+      "id": "seed10422-1-boundary2",
+      "continuous_strength_full_housing_energy_upper": 0.40215305835630133,
+      "upper_at_nu": 0.04024773498660422
+    },
+    {
+      "id": "seed10422-1-boundary2-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.40983127807605846,
+      "upper_at_nu": 0.04024758699296216
+    },
+    {
+      "id": "seed10422-1-boundary3",
+      "continuous_strength_full_housing_energy_upper": 0.43193296439817785,
+      "upper_at_nu": 0.04024739624375575
+    },
+    {
+      "id": "seed10422-1-boundary3-cf0",
+      "continuous_strength_full_housing_energy_upper": 0.4399572238434271,
+      "upper_at_nu": 0.040247239152369864
+    },
+    {
+      "id": "uniform-b0.005-cf0.0",
+      "continuous_strength_full_housing_energy_upper": 0.3852296814970348,
+      "upper_at_nu": 0.04024070558853483
+    },
+    {
+      "id": "uniform-b0.005-cf0.001",
+      "continuous_strength_full_housing_energy_upper": 0.38418370466200463,
+      "upper_at_nu": 0.04024069025674972
+    },
+    {
+      "id": "uniform-b0.05-cf0.0",
+      "continuous_strength_full_housing_energy_upper": 0.4566660701874066,
+      "upper_at_nu": 0.04024544238197695
+    },
+    {
+      "id": "uniform-b0.05-cf0.001",
+      "continuous_strength_full_housing_energy_upper": 0.44819846378549666,
+      "upper_at_nu": 0.040245609837025145
+    }
+  ]
+}

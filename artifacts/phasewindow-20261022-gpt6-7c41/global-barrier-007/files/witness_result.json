@@ -1,0 +1,22 @@
+{
+  "status": "EXACT_COLLAPSED_CELL_WITNESS",
+  "face": [
+    0,
+    1,
+    2
+  ],
+  "determinant_exact": "0",
+  "energy_rational_interval_upper": "363562461332720368373678894262503806681811885585970640739661/2921912933317752640378856269567366348870000000000000000000000",
+  "energy_upper_float_for_display": 0.12442617888682435,
+  "energy_proven_less_than": "1/8",
+  "pulse_reference_total_energy": "1360051/20000000",
+  "pulse_energy_float_for_display": 0.06800255,
+  "local_only_flat_face_energy_upper": "39646467435041179/781250000000000000",
+  "local_only_flat_face_energy_upper_float": 0.05074747831685271,
+  "local_only_scope": "Six face members only; other 27 shell edges and 9 spokes omitted, so it cannot disprove a global energy barrier.",
+  "minimum_strut_squared_exact": "40499015617874705391/1250000000000000000000",
+  "min_strut_lower_rational": "449994531/2500000000",
+  "all_30_shell_edges_positive": true,
+  "all_12_spokes_positive": true,
+  "scope": "Constructive upper bound on lowest possible zero-cell-determinant energy; NOT a universal lower bound, a dynamical trajectory, or a u100 safety certificate."
+}

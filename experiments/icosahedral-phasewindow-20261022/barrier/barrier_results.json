@@ -1,0 +1,632 @@
+{
+  "status": "NUMERICAL_DEVELOPMENT_NOT_GLOBAL_PROOF",
+  "reference_source_commit": "467e2208fba9da086535bd5b8a6a07f6d6f8e08b",
+  "question": "How much assumed conservative primary energy is needed to flatten one centre-face cell, allowing all 12 shell vertices and scalar alpha to relax?",
+  "model": "Original icosahedral length energy, g_i=0.95, k_e=0.38 throughout; optimize alpha analytically; device and housing stored energy minimized at zero; centre fixed by translation invariance.",
+  "source_exposure": "Original amplitude 0.1, total energy threshold, icosahedral model and failure witness exposed; numeric search post-hoc, not held-out.",
+  "search": {
+    "starts": 72,
+    "random_starts": 60,
+    "rng_seed": 20261022,
+    "objective": "minimize exact physical length-strain potential given one flat oriented cell determinant=0",
+    "algorithm": "SLSQP with analytic objective/Jacobian and equality derivative",
+    "independent_method": "L-BFGS-B with face vector coplanarity enforced by reparametrization"
+  },
+  "reference_geometry": {
+    "vertices": 12,
+    "edges": 30,
+    "faces": 20,
+    "cell_face": [
+      0,
+      1,
+      2
+    ],
+    "circumradius": 0.9510565162951535
+  },
+  "best_numerical_slsqp": {
+    "energy": 0.12442609483988352,
+    "constraint_abs_residual": 2.5503013602443735e-16,
+    "stationarity_tangent_residual": 1.0206709783028221e-07,
+    "id": 22,
+    "optimized_alpha": -0.018116401021136024,
+    "minimum_strut_length": 0.17999719033529143,
+    "max_abs_spoke_strain": 0.04445173008479686,
+    "max_abs_edge_strain": 0.36349016910316423
+  },
+  "independent_parameterized_solution": {
+    "energy": 0.12442609483988154,
+    "det": 2.5503010782993628e-17,
+    "kkt": 1.1632232028044576e-07,
+    "success": true,
+    "iterations": 1
+  },
+  "energy_baseline": {
+    "original_alpha_pulse_upper_total_initial_energy": 0.06800255000000002,
+    "candidate_over_baseline": 1.829726897592568
+  },
+  "all_runs": [
+    {
+      "energy": 0.1244260948398943,
+      "det": 2.076746265198234e-14,
+      "kkt": 1.58709438061101e-07,
+      "success": true,
+      "iterations": 23,
+      "id": 0
+    },
+    {
+      "energy": 0.12442609483989428,
+      "det": 2.086311626706312e-14,
+      "kkt": 1.587094380773973e-07,
+      "success": true,
+      "iterations": 23,
+      "id": 1
+    },
+    {
+      "energy": 0.12442609483989424,
+      "det": 2.0739631553756663e-14,
+      "kkt": 1.5870943813863645e-07,
+      "success": true,
+      "iterations": 23,
+      "id": 2
+    },
+    {
+      "energy": 0.12442609483993644,
+      "det": 2.256563222666118e-14,
+      "kkt": 2.3060523894528587e-07,
+      "success": true,
+      "iterations": 30,
+      "id": 3
+    },
+    {
+      "energy": 0.12442609483991802,
+      "det": 7.793684284167978e-15,
+      "kkt": 2.846589752343494e-07,
+      "success": true,
+      "iterations": 29,
+      "id": 4
+    },
+    {
+      "energy": 0.12442609483988715,
+      "det": -3.6639052445767194e-15,
+      "kkt": 1.1456823298217109e-07,
+      "success": true,
+      "iterations": 30,
+      "id": 5
+    },
+    {
+      "energy": 0.12442609483995253,
+      "det": -1.9082760668034944e-14,
+      "kkt": 4.3683286040527713e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 6
+    },
+    {
+      "energy": 0.12442609483997975,
+      "det": 3.9108657960236515e-15,
+      "kkt": 4.58690607420163e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 7
+    },
+    {
+      "energy": 0.12442609483997723,
+      "det": 6.2972230648031165e-15,
+      "kkt": 4.5178300148975076e-07,
+      "success": true,
+      "iterations": 30,
+      "id": 8
+    },
+    {
+      "energy": 0.12442609483998143,
+      "det": 1.3561392387314555e-14,
+      "kkt": 3.0291362361527363e-07,
+      "success": true,
+      "iterations": 30,
+      "id": 9
+    },
+    {
+      "energy": 0.12442609483997669,
+      "det": -7.282159492257754e-16,
+      "kkt": 2.9826625868959294e-07,
+      "success": true,
+      "iterations": 33,
+      "id": 10
+    },
+    {
+      "energy": 0.12442609483991184,
+      "det": 1.841082957982513e-14,
+      "kkt": 1.8050942654480463e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 11
+    },
+    {
+      "energy": 0.12442609483995641,
+      "det": 4.78423260662513e-14,
+      "kkt": 4.6334279953665134e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 12
+    },
+    {
+      "energy": 0.12442609483991804,
+      "det": 9.48540042455125e-14,
+      "kkt": 1.9355608960761932e-07,
+      "success": true,
+      "iterations": 32,
+      "id": 13
+    },
+    {
+      "energy": 0.17400720278955362,
+      "det": -1.1649291112459837e-13,
+      "kkt": 3.247111454349659e-07,
+      "success": true,
+      "iterations": 38,
+      "id": 14
+    },
+    {
+      "energy": 0.12442609483991124,
+      "det": 1.1753985590786476e-14,
+      "kkt": 3.379360312579272e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 15
+    },
+    {
+      "energy": 0.12442609483989482,
+      "det": 1.9112355313062317e-14,
+      "kkt": 1.2830980390201985e-07,
+      "success": true,
+      "iterations": 34,
+      "id": 16
+    },
+    {
+      "energy": 0.12442609483992759,
+      "det": -1.8003594201591304e-16,
+      "kkt": 2.086613917001175e-07,
+      "success": true,
+      "iterations": 35,
+      "id": 17
+    },
+    {
+      "energy": 0.12442609483990742,
+      "det": 9.404975403593607e-15,
+      "kkt": 2.62291921859265e-07,
+      "success": true,
+      "iterations": 30,
+      "id": 18
+    },
+    {
+      "energy": 0.12442609483988742,
+      "det": 5.395639953772321e-15,
+      "kkt": 1.115378389219985e-07,
+      "success": true,
+      "iterations": 32,
+      "id": 19
+    },
+    {
+      "energy": 0.1244260948399694,
+      "det": 5.2800814576205883e-14,
+      "kkt": 3.336285012817746e-07,
+      "success": true,
+      "iterations": 38,
+      "id": 20
+    },
+    {
+      "energy": 0.12442609483989227,
+      "det": 7.038438622341623e-15,
+      "kkt": 1.505984136573953e-07,
+      "success": true,
+      "iterations": 32,
+      "id": 21
+    },
+    {
+      "energy": 0.12442609483988352,
+      "det": 2.5503013602443735e-16,
+      "kkt": 1.0206709783028221e-07,
+      "success": true,
+      "iterations": 33,
+      "id": 22
+    },
+    {
+      "energy": 0.14984162539544213,
+      "det": 2.4501123143342637e-14,
+      "kkt": 2.841902892467167e-07,
+      "success": true,
+      "iterations": 41,
+      "id": 23
+    },
+    {
+      "energy": 0.12442609483989049,
+      "det": 2.185264584831602e-15,
+      "kkt": 1.188737991272842e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 24
+    },
+    {
+      "energy": 0.12442609483997671,
+      "det": -9.16325271214768e-17,
+      "kkt": 2.8992636793570354e-07,
+      "success": true,
+      "iterations": 30,
+      "id": 25
+    },
+    {
+      "energy": 0.1244260948399041,
+      "det": 1.9753882689254146e-14,
+      "kkt": 1.844057529027995e-07,
+      "success": true,
+      "iterations": 36,
+      "id": 26
+    },
+    {
+      "energy": 0.1244260948398931,
+      "det": 4.5259946306479995e-14,
+      "kkt": 1.2762568172936164e-07,
+      "success": true,
+      "iterations": 32,
+      "id": 27
+    },
+    {
+      "energy": 0.12442609483993593,
+      "det": -6.388732359921598e-15,
+      "kkt": 2.1714634567962455e-07,
+      "success": true,
+      "iterations": 32,
+      "id": 28
+    },
+    {
+      "energy": 0.14984162539544862,
+      "det": 5.836111210199892e-14,
+      "kkt": 3.0558497858593194e-07,
+      "success": true,
+      "iterations": 52,
+      "id": 29
+    },
+    {
+      "energy": 0.12442609483988833,
+      "det": -3.5906937318767096e-16,
+      "kkt": 1.4290231380942433e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 30
+    },
+    {
+      "energy": 0.14984162539551035,
+      "det": 1.2417128784963508e-14,
+      "kkt": 3.5207739185839777e-07,
+      "success": true,
+      "iterations": 48,
+      "id": 31
+    },
+    {
+      "energy": 0.12442609483991982,
+      "det": 5.541022872780954e-15,
+      "kkt": 2.4574791017284377e-07,
+      "success": true,
+      "iterations": 35,
+      "id": 32
+    },
+    {
+      "energy": 0.12442609483992564,
+      "det": -1.5579734288398392e-15,
+      "kkt": 4.3516861656742505e-07,
+      "success": true,
+      "iterations": 30,
+      "id": 33
+    },
+    {
+      "energy": 0.12442609483991096,
+      "det": -2.6233821397198435e-14,
+      "kkt": 2.524467289222304e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 34
+    },
+    {
+      "energy": 0.20551071579820274,
+      "det": -6.6155845124160775e-15,
+      "kkt": 2.971996416300176e-07,
+      "success": true,
+      "iterations": 46,
+      "id": 35
+    },
+    {
+      "energy": 0.12442609483997247,
+      "det": -2.8204959333272294e-14,
+      "kkt": 4.1384738015412695e-07,
+      "success": true,
+      "iterations": 30,
+      "id": 36
+    },
+    {
+      "energy": 0.1244260948399535,
+      "det": 6.521538835525549e-14,
+      "kkt": 2.4588642696987e-07,
+      "success": true,
+      "iterations": 35,
+      "id": 37
+    },
+    {
+      "energy": 0.12442609483991077,
+      "det": 2.47524143698883e-16,
+      "kkt": 2.393372915479348e-07,
+      "success": true,
+      "iterations": 33,
+      "id": 38
+    },
+    {
+      "energy": 0.12442609484005386,
+      "det": 5.400156060489185e-14,
+      "kkt": 4.0508780340081166e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 39
+    },
+    {
+      "energy": 0.12442609483991056,
+      "det": 4.051889343856214e-14,
+      "kkt": 2.4711641567169466e-07,
+      "success": true,
+      "iterations": 30,
+      "id": 40
+    },
+    {
+      "energy": 0.17634983158435844,
+      "det": 1.63965362961264e-14,
+      "kkt": 2.384388661989981e-07,
+      "success": true,
+      "iterations": 37,
+      "id": 41
+    },
+    {
+      "energy": 0.12442609483990627,
+      "det": 2.359051517330956e-14,
+      "kkt": 2.1889118944585114e-07,
+      "success": true,
+      "iterations": 30,
+      "id": 42
+    },
+    {
+      "energy": 0.12442609483992476,
+      "det": 3.528397966281722e-14,
+      "kkt": 1.8652658410157427e-07,
+      "success": true,
+      "iterations": 33,
+      "id": 43
+    },
+    {
+      "energy": 0.17400720278948595,
+      "det": -7.391621500400495e-14,
+      "kkt": 1.736366651841178e-07,
+      "success": true,
+      "iterations": 43,
+      "id": 44
+    },
+    {
+      "energy": 0.1244260948400673,
+      "det": -1.9251730038958763e-15,
+      "kkt": 7.828752873359715e-07,
+      "success": true,
+      "iterations": 29,
+      "id": 45
+    },
+    {
+      "energy": 0.14984162539548593,
+      "det": 1.3027509450995518e-15,
+      "kkt": 3.604986970503499e-07,
+      "success": true,
+      "iterations": 35,
+      "id": 46
+    },
+    {
+      "energy": 0.12442609483988695,
+      "det": 4.0139424189456195e-14,
+      "kkt": 8.828783385784979e-08,
+      "success": true,
+      "iterations": 34,
+      "id": 47
+    },
+    {
+      "energy": 0.12442609483999958,
+      "det": 6.4564803056316885e-15,
+      "kkt": 6.924370007740101e-07,
+      "success": true,
+      "iterations": 29,
+      "id": 48
+    },
+    {
+      "energy": 0.12442609483989243,
+      "det": 2.147560574587865e-14,
+      "kkt": 1.6093203422381016e-07,
+      "success": true,
+      "iterations": 39,
+      "id": 49
+    },
+    {
+      "energy": 0.16406869604741403,
+      "det": 2.0253933840717952e-15,
+      "kkt": 1.6860573666536192e-07,
+      "success": true,
+      "iterations": 35,
+      "id": 50
+    },
+    {
+      "energy": 0.12442609483992538,
+      "det": 1.2119585754848453e-15,
+      "kkt": 3.0738922902036057e-07,
+      "success": true,
+      "iterations": 30,
+      "id": 51
+    },
+    {
+      "energy": 0.14984162539539778,
+      "det": -1.505492046245831e-14,
+      "kkt": 1.4235393113727928e-07,
+      "success": true,
+      "iterations": 34,
+      "id": 52
+    },
+    {
+      "energy": 0.14984162539540785,
+      "det": 2.9986330723901687e-15,
+      "kkt": 2.1547049595214916e-07,
+      "success": true,
+      "iterations": 48,
+      "id": 53
+    },
+    {
+      "energy": 0.12442609483988645,
+      "det": -3.3782179888125737e-15,
+      "kkt": 1.5280922764932188e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 54
+    },
+    {
+      "energy": 0.1244260948399861,
+      "det": 3.8458336720155296e-14,
+      "kkt": 3.0019719980603735e-07,
+      "success": true,
+      "iterations": 32,
+      "id": 55
+    },
+    {
+      "energy": 0.12825924475569667,
+      "det": -2.6242701439530047e-14,
+      "kkt": 2.0050351498119645e-07,
+      "success": true,
+      "iterations": 53,
+      "id": 56
+    },
+    {
+      "energy": 0.12442609483990079,
+      "det": 7.502709593540027e-14,
+      "kkt": 1.379605949944843e-07,
+      "success": true,
+      "iterations": 34,
+      "id": 57
+    },
+    {
+      "energy": 0.12442609483992663,
+      "det": 3.501214846686992e-14,
+      "kkt": 2.4595578675255185e-07,
+      "success": true,
+      "iterations": 33,
+      "id": 58
+    },
+    {
+      "energy": 0.12442609483993786,
+      "det": 3.2809119057678955e-14,
+      "kkt": 2.71472010028163e-07,
+      "success": true,
+      "iterations": 34,
+      "id": 59
+    },
+    {
+      "energy": 0.1244260948399043,
+      "det": -2.2012560358369736e-14,
+      "kkt": 1.8152999144509213e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 60
+    },
+    {
+      "energy": 0.1244260948399408,
+      "det": 2.7790677050809618e-14,
+      "kkt": 5.204399592778386e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 61
+    },
+    {
+      "energy": 0.12442609483992825,
+      "det": 9.347506785987068e-14,
+      "kkt": 1.9560686675321974e-07,
+      "success": true,
+      "iterations": 34,
+      "id": 62
+    },
+    {
+      "energy": 0.12442609483998754,
+      "det": -1.6199861071187615e-14,
+      "kkt": 5.38060660292154e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 63
+    },
+    {
+      "energy": 0.12442609484002537,
+      "det": 3.9168679881487346e-14,
+      "kkt": 3.346896430945105e-07,
+      "success": true,
+      "iterations": 36,
+      "id": 64
+    },
+    {
+      "energy": 0.12442609483989828,
+      "det": 7.991363859427396e-15,
+      "kkt": 1.3746550916393382e-07,
+      "success": true,
+      "iterations": 34,
+      "id": 65
+    },
+    {
+      "energy": 0.12442609483997792,
+      "det": 1.6221021325937275e-13,
+      "kkt": 2.9142228162208134e-07,
+      "success": true,
+      "iterations": 32,
+      "id": 66
+    },
+    {
+      "energy": 0.12442609483991098,
+      "det": -6.089670048608603e-15,
+      "kkt": 1.6634819443286056e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 67
+    },
+    {
+      "energy": 0.12442609483990007,
+      "det": -1.4452314532160257e-16,
+      "kkt": 1.773144514141317e-07,
+      "success": true,
+      "iterations": 33,
+      "id": 68
+    },
+    {
+      "energy": 0.12442609483988935,
+      "det": 3.1089246114223304e-14,
+      "kkt": 1.2696314392451943e-07,
+      "success": true,
+      "iterations": 31,
+      "id": 69
+    },
+    {
+      "energy": 0.12442609483990653,
+      "det": 2.2598387861155643e-14,
+      "kkt": 1.6805648087143014e-07,
+      "success": true,
+      "iterations": 32,
+      "id": 70
+    },
+    {
+      "energy": 0.20551071579817845,
+      "det": 2.0448267188625894e-14,
+      "kkt": 1.9696469555237668e-07,
+      "success": true,
+      "iterations": 64,
+      "id": 71
+    }
+  ],
+  "limitations": [
+    "Only local numerical minimizers; no global minimization, interval proof, or certificate excluding lower-energy collapse configurations.",
+    "Does not prove all-time cell orientation for the actual pulse.",
+    "A conservative energy sublevel already contains some housing-strut singularities, so full-system safety cannot follow solely from energy even if cell orientation were proved.",
+    "Uniform minimal g,k selected as lower bound; 120 strut dynamics, original physical time/calibration and empirical responses not derived."
+  ],
+  "next_discriminant": "Derive and validate a certified lower bound on global icosahedral length-strain energy at any zero oriented cell determinant; compare with 0.06800255. Or obtain PR44 forced-Green recovery for nonlinear u100 certificate."
+}

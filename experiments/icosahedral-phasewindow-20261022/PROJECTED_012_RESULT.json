@@ -1,0 +1,49 @@
+{
+  "record_type": "discovery_result",
+  "schema_version": 1,
+  "calculation_id": "projected-coercivity-012",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "source_revision": "79fd6d6cc8f2d40d516df0074e728e3f9428f60b",
+  "task_claim": "claims/icosahedral-phasewindow-20261022",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "objects": {
+    "relative_shell": "Y_i=delta X_i-delta C in R^3, i=1..12",
+    "normalized_heart": "h=R^2 alpha",
+    "nonaffine": "Z=(I-P0-PV)Y",
+    "matrix": "K_min - (1/4)W + P_rot, 37x37, Q(sqrt5)"
+  },
+  "exact_certificate": {
+    "all_37_LDL_pivots_positive": true,
+    "LDL_reconstruction_exact": true,
+    "rotational_kernel": "3 independent rigid rotations",
+    "coercivity": "U_primary,linear >= ||Z||_F^2/8",
+    "energy_all_phase_bound": "Eh <= 51/20000000",
+    "bound_squared": "||Z_housing,linear(u)||_F^2 <= 51/2500000 < 1/1600 for every u >= 0",
+    "required_threshold": "1/40"
+  },
+  "numerical_constructor_checks": {
+    "minimum_eigenvalue_after_rotation_gauge": 0.1299999999999986,
+    "finite_displacement_energy_trials": 9,
+    "max_relative_quadratic_energy_error": 0.0000014239164408680338
+  },
+  "source_codes_in_reproducible_local_archive": [
+    "exact_certificate.py",
+    "independent_check.py",
+    "nonaffine_audit.py"
+  ],
+  "local_archive_name": "UD_3D_Projected_Nonaffine_Coercivity_Checkpoint_20261023.zip",
+  "repository_capture_status": "PROOF_AND_CHECKPOINT_COMMITTED; BYTE_PRESERVED_CODE_AND_RUN_MANIFEST_LOCAL_ARCHIVE_ONLY",
+  "scope": "Full original 560-phase equilibrium-linearized passive 3D mechanics, all 180 housing initial phase directions and qualified continuous stiffness box; other initial perturbations zero, alpha_reference=0.",
+  "exclusions": [
+    "No baseline alpha=0.1 pulse nonaffine bound",
+    "No uniform nonlinear initial-phase response remainder",
+    "No nonlinear u=100 cell-orientation, strut safety, breathing or ringdown",
+    "Not an empirical or physical-identification claim"
+  ],
+  "next_discriminant": "Bound full alpha=0.1 pulse's projected baseline and validated nonlinear perturbation remainder in full-state frame-aware Green model under separate PR44 ownership."
+}

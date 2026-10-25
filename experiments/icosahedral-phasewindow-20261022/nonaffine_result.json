@@ -1,0 +1,28 @@
+{
+  "edge_fourth_moment_checks": 36,
+  "energy_bins": [
+    {
+      "bin": "0..1/2",
+      "gram_lambda_lower": "86871/320000",
+      "strict_margin": "13287901/504000000"
+    },
+    {
+      "bin": "1/2..11/20",
+      "gram_lambda_lower": "61391/320000",
+      "strict_margin": "5116003/72000000"
+    },
+    {
+      "bin": "11/20..3/5",
+      "gram_lambda_lower": "35111/320000",
+      "strict_margin": "414763/72000000"
+    }
+  ],
+  "face_covariance_checks": 20,
+  "limitations": "Does not exclude nonaffine collapse or certify u=100 dynamics.",
+  "necessary": "flat at U<=E implies ||(I-P0-PV)Y||_F>1/40",
+  "nonaffine_threshold": "1/40",
+  "pulse_energy": "1360051/20000000",
+  "question": "Flattened original cell at U<=pulse requires nonaffine Z?",
+  "status": "EXACT_CONDITIONAL",
+  "stress_corollary": "flat at U<=E implies tr(Y^T Omega Y)>(1+sqrt5)/1600"
+}

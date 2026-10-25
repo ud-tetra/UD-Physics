@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "run_id": "phasewindow-001",
+  "created_at": "2026-10-22T22:24:00Z",
+  "evidence": "NUMERICAL",
+  "summary": "Development reuse of450 frozen linear evaluations and all180 housing phase bound at 1.5x energy; exact housing-only passivity/domain certificate; full nonlinear pulse OPEN.",
+  "command": "GitHub connector retrieved and SHA256-checked integrated linear.csv and full_housing_refined.json; deterministic JS postprocessed 450 rows at factor 1.5 into result.json; independently executed local Python exact Fraction checks and fixed-primary scalar ODE. Python replay.py in repository checkout NOT_RUN in this connector runtime.",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay.py",
+      "path": "inputs/001-replay.py",
+      "sha256": "dd15ae96172b9f8322bb3bba4e34ac0082f8cd4ff879fb6d62016316992f1283",
+      "size_bytes": 3720,
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/replay.py"
+    },
+    {
+      "input_id": "input-002",
+      "name": "linear.csv",
+      "path": "inputs/002-linear.csv",
+      "sha256": "971a8dc46bc42fc9b246ef7c20b13b9f3651d29d4704e111fa402f9e2edaf3e5",
+      "size_bytes": 175745,
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/linear.csv"
+    },
+    {
+      "input_id": "input-003",
+      "name": "full_housing_refined.json",
+      "path": "inputs/003-full_housing_refined.json",
+      "sha256": "d3fc9c63f21811b65e3d0bed04063d8f4725eaab01970602e560876ccc569427",
+      "size_bytes": 9454,
+      "source_location": "repository",
+      "source_path": "artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/full_housing_refined.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/result.json",
+      "sha256": "04e866a4c4d207e76b71e652ad37466a5f0e23ccf6d421a402f7f0820d4ba6bb",
+      "size_bytes": 5104
+    }
+  ]
+}
