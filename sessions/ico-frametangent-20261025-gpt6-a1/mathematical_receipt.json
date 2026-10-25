@@ -1,0 +1,317 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosa-tangent-001-moving-reference",
+  "session_id": "ico-frametangent-20261025-gpt6-a1",
+  "candidate_id": "icosahedral-frame-tangent",
+  "question": "What are the archived full-180 housing-direction final raw/moving-frame tangent operator radii and feasible total-equilibrium-error lower bounds, and can an exact SO3 chart bound apply relative to the moving breathing reference?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "W",
+      "symbol": "W(100)",
+      "object_type": "integrated full final nonlinear-flow tangent on 180 housing phases",
+      "definition": "W=U(100,0)B, 560×180, initial housing injection B and source time horizon u=100",
+      "domain": "R180 initial phases",
+      "codomain": "R560 mechanical tangent",
+      "coefficient_domain": "Float64 archived tangent numerical",
+      "units": "native state per unit initial housing energy coordinate",
+      "basis_orientation": "13 positions include hub first then 12 shell vertices; W rows 1:40 positions",
+      "metric_measure": "Euclidean housing phase ball; ε=sqrt(2Eh)",
+      "origin": "imported source numerical checkpoint, read-only",
+      "exact_expression": null,
+      "measured_value": "archived binary compact_checkpoints.npz",
+      "uncertainty": "original integration floating tolerance/refinement, not verified interval bounds",
+      "source_refs": [
+        "pulse",
+        "checkpoint"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "source Eh=Ep/40000; three source case IDs"
+    },
+    {
+      "object_id": "F-moving",
+      "symbol": "D F_t(0)",
+      "object_type": "moving-shell-centroid SO3 proper frame linear readout",
+      "definition": "G=Xref^T Xref, Sylvester GΩ+ΩG=2skew(Xref^T Ecentered), output shell Ec-Xref Ω, hub eh-mu-href Ω",
+      "domain": "R13x3 primary point tangent",
+      "codomain": "R13x3 aligned point tangent",
+      "coefficient_domain": "real finite 3×3 SPD Sylvester",
+      "units": "native ell0",
+      "basis_orientation": "orientation preserving SO3, hub first in source data",
+      "metric_measure": "Frobenius and induced 2 operator norm",
+      "origin": "new derived moving-reference chart",
+      "exact_expression": "GΩ+ΩG=2skew(Xref^TEc)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "frame001",
+        "pulse"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "W"
+      ],
+      "normalization": "reference positions centered on shell at endpoint"
+    },
+    {
+      "object_id": "rad",
+      "symbol": "epsilon*smax",
+      "object_type": "numeric operator radius for all unit initial housing directions at endpoint",
+      "definition": "epsilon ||Pi_primary W(100)||2 versus epsilon||D F_t(0) Pi_primary W(100)||2",
+      "domain": "two frozen mechanical parameter cases",
+      "codomain": "positive native displacement magnitude",
+      "coefficient_domain": "NumPy source Float64, standard-library Jacobi eigensolver reproduction",
+      "units": "native ell0",
+      "basis_orientation": "endpoint t=100 in source continuous u",
+      "metric_measure": "spectral norm of 39×180 tangent, not 180 phase draws",
+      "origin": "numerically computed from archived source",
+      "exact_expression": null,
+      "measured_value": "worst raw .0350097199666, moving .0000986739431; nominal raw .0352093794379, moving .0001689476081",
+      "uncertainty": "numeric constructor consistency only; no rigorous integration error",
+      "source_refs": [
+        "checkpoint"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "W",
+        "F-moving"
+      ],
+      "normalization": "ε derived from source JSON housing_energy"
+    },
+    {
+      "object_id": "bound",
+      "symbol": "B(d,r)",
+      "object_type": "exact moving reference SO3 nonlinear readout remainder majorant",
+      "definition": "reference displacement norm d<=11/1000, actual relative primary displacement norm r<=9/250, exact rational norm bounds and exponential",
+      "domain": "R13x3 primary positions near time-varying source reference",
+      "codomain": "nonnegative scalar Frobenius readout error",
+      "coefficient_domain": "Q rational inequalities; reference Q(sqrt5)",
+      "units": "native ell0",
+      "basis_orientation": "proper rotation; never discards mechanical states",
+      "metric_measure": "Frobenius and 3×3 skew operator norm",
+      "origin": "analytically derived conditional theorem",
+      "exact_expression": "B<=93325499434647/94141337114624000<1/1000",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "frame001",
+        "pulse"
+      ],
+      "assumption_ids": [
+        "A3"
+      ],
+      "dependency_ids": [
+        "F-moving"
+      ],
+      "normalization": "d/r selected after source tangent data exposure"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "pulse",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/README.md",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "§§1–6 560-state moving pulse, 180 initial directions, numerical source scope",
+      "source_status": "integrated numerical/conditional source"
+    },
+    {
+      "source_id": "checkpoint",
+      "url_or_repo_path": "artifacts/icosahedral-pulsetube-20261022-a1/pulsetube-001/files/compact_checkpoints.npz",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "worst_fine/normal and nominal_normal final_tangent, reference_initial/final",
+      "source_status": "immutable integrated source archive, binary fully read by CI only"
+    },
+    {
+      "source_id": "theorem",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/TUBE_THEOREM.md",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "full560-state nonlinearity, forced U(t,s), defect and domain gate",
+      "source_status": "exact conditional, some premises unmet"
+    },
+    {
+      "source_id": "frame001",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/187",
+      "version_or_commit": "f1294cd0b7a6887ff9722fb5f8cb6dfc2b065b03",
+      "section_or_object_id": "equilibrium SO3 chart radius .036 and exact error .000907305",
+      "source_status": "unmerged read-only Discovery branch, not integrated"
+    },
+    {
+      "source_id": "CI",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/actions/runs/40213880131",
+      "version_or_commit": "72723dbd34ad6966ca570535928cba51e3d2718a",
+      "section_or_object_id": "17 tests PASS and FRAME_TANGENT_RESULT_JSON marker",
+      "source_status": "CI runtime numerical extraction, not independent experimental evidence"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Use published final-time floating 560×180 W(100) and normalized source housing energy; no material/drive/phase budget refit; checkpoint lacks continuous history."
+    },
+    {
+      "id": "A2",
+      "description": "Choose a moving-source-reference proper SO3 alignment based on shell centroid and least-squares infinitesimal rotational skew; original dynamics/rigid state untouched."
+    },
+    {
+      "id": "A3",
+      "description": "The exact nonlinear chart bound assumes actual moving reference within d=.011 of equilibrium AND actual nonlinear perturbation within r=.036 of that moving reference. Only reference endpoint numerically satisfies d; true relative bound unverified."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "source archive typed provenance and binary NPY",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "CI stdlib ZIP/NPY extraction of exact archived final tangent and reference arrays"
+    },
+    {
+      "technique": "linear algebra/spectral norm",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "39x180 raw and projected all-initial-phase operator norms, 39x39 symmetric Jacobi eigensolver"
+    },
+    {
+      "technique": "Lie SO3 rigid geometric linearization",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "moving-shell Sylvester skew, proper rotation with hub reference term and all-six rigid derivative kernel"
+    },
+    {
+      "technique": "explicit adversarial phase direction",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "deterministic matched b/W and leading raw singular power probes give feasible lower bound >.036 for combined linearized errors"
+    },
+    {
+      "technique": "exact rational matrix norm and exponential series",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "analytically certify moving frame chart error <.001 assuming d/r bounds"
+    },
+    {
+      "technique": "full forced Green/housing nonlinear ODE",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "missing archived time-dependent W and validated U(t,s), Hessian/domain/ref error; not substituted by endpoint response"
+    },
+    {
+      "technique": "physical dimensional material/empirical identification",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "uncalibrated engineering surrogate and generic SO3 mechanics null; no external hardware comparison"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "13 primary spatial points x3=39 readout components; 30 housings x3 position and velocity=180 phase directions; W final 560×180; reference tolerance d=11/1000, relative perturbation r=9/250",
+    "reduced_expression": "c0>7/2, sqrt(c0)<39/20, reference Gram lower bound3456979/1000000, skew angle bound52947/3456979, moving chart nonlinear error bound93325499434647/94141337114624000<1/1000",
+    "factor_origins": [
+      "regular Q(sqrt5) icosahedron shell isotropy",
+      "3D skew Sylvester operator eigenvalue identity",
+      "relative shell-centroid bound sqrt13/12",
+      "matrix exponential analytic remainder"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "source 3D mechanical continuous u=t/t0, terminal u=100",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "original 560-mechanical-phase ODE unchanged, differentiate along exposed nonlinear reference to obtain source W(100)",
+    "initial_phase": "all initial housing position/velocity phase vectors |a|<=1 in R180 with source Eh=Ep/40000",
+    "coupling": "original 120 viscous housing anchor members and local reciprocal devices frozen",
+    "period_claim": "none; u100 is target horizon, not physical clock",
+    "physical_unit_map": "native ell0,E*,t0 uncalibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "original full 560 mechanical phase variables; 13 primary positions only for geometric postprocessing",
+    "generator_or_update": "source unchanged forced dissipative mechanical ODE; archive W(100) pulled from previous integration",
+    "initial_boundary_conditions": "reference nonlinear breathing pulse alpha=.1, two source frozen parameter cases, 180 housing energy-ball directions",
+    "conservation_and_sources": "rigid kinetic energy/spatial P,L kept in source; no new dissipative/material law",
+    "projection_and_kernel": "moving shell centroid plus SO3 frame derivative discards six rigid displacement readout directions only, no dynamic state projection",
+    "physical_mapping": "none, classical SO3 null"
+  },
+  "target_exposure": {
+    "status": "POST_SOURCE_FRAME001_RADIUS_AND_FAILURE_EXPOSURE",
+    "known_targets": [
+      "source raw tangent max .03500972",
+      "frame001 equilibrium theorem conditional radius .036",
+      "source proper-Procrustes shape tangent .0002420865 in different chart",
+      "old volume/breathing 80% target"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "moving-reference shell-centroid chart selected after old radius failure",
+      "d=.011 chosen to cover exposed final baseline .01052594; r=.036 inherited previously fitted geometric radius",
+      "deterministic 3 phase probes and signs chosen after exposed physical positions, not held-out selection"
+    ],
+    "search_domain_and_budget": "3 existing archived final W matrices; all180 directions through singular operators; 3 deterministic feasible phase construction families; exact d/r analytic entire displacement balls; no new nonlinear time integration",
+    "selection_criterion": "recalculate proper frame response and test if old raw equilibrium radius antecedent encloses combined source breathing + tangent",
+    "baseline": "ordinary 3D SO3 proper-frame spring/dashpot readout with identical source mechanics"
+  },
+  "calculation_steps": [
+    "Use GitHub CI repo checkout to read exact archived compact_checkpoints.npz with standard-library ZIP and NPY, parse source references and W(100) 560x180; source code immutable SHA256 captured.",
+    "Extract primary tangent W[1:40,:] with hub first, shell next, epsilon=sqrt(2Eh), and compute spectral norm epsilon*smax of 39x180 matrix for frozen source cases.",
+    "Define equilibrium frame chart derivative and moving shell reference 3x3 skew Sylvester derivative including hub relative coordinate -href Omega. Project all180 columns and compute spectral norms.",
+    "Read reference initial and final positions and their full 13point displacement norm. Source worst/nominal final baseline shifts≈.010526/.009351 are inside d=.011 at endpoint.",
+    "Construct explicit unit housing phase probes using W^T b and deterministic power directions; evaluate total linearized norm ||b+eps W a||F and show feasible lower bounds .0366131 limiting/.0364301 nominal >.036.",
+    "Derive conditional moving SO3 chart for ||Yref-Y0||F<=.011 and ||Yactual-Yref||F<=.036, bound reference Gram λmin>3456979/1000000 and skew norm<=52947/3456979.",
+    "Apply rational exponential and centroid bounds to prove nonlinear frame-chart correction <=93325499434647/94141337114624000<.001; execute separate Fraction script.",
+    "Retain missing full time-dependent W(t), full U(t,s), validated ODE/Hessian/reference defect, domain, oriented volume and source material/scaling gates as OPEN."
+  ],
+  "result": {
+    "exact_expression": "moving relative SO3 chart error<=93325499434647/94141337114624000 if d<=11/1000 and actual r<=9/250",
+    "approximation": "worst fine final raw .0350097199666, projected moving .0000986739431; nominal raw .0352093794379/projected .0001689476081; explicit feasible combined linearized raw .0366130978673 and .0364300829027 (> .036)",
+    "units": "uncalibrated native ell0 primary Frobenius/energy-normalized source modes, u=100 native time",
+    "precision_and_error": "Exact Fraction moving-frame majorant; Float64 historical tangent and stdlib Jacobi/power finite endpoint, no certified integration error or continuous norm",
+    "scope": "end-point 180-phase linearized response and conditional geometric chart; no real all-phase nonlinear u100 certificate",
+    "physical_interpretation": "generic mechanical SO3 readout, no unique UD physical mechanism"
+  },
+  "verification": [
+    {
+      "method": "GitHub CI standard-library archived npz parser+Jacobi+phase witness",
+      "command_or_proof_path": "tests/test_icosahedral_frame_tangent_20261025.py",
+      "source_revision": "72723dbd34ad6966ca570535928cba51e3d2718a",
+      "actual_result": "PASS 17 unit tests in action40213880131; full JSON endpoint output and source hashes captured in tangent-001",
+      "review_relationship": "constructor on GitHub runner"
+    },
+    {
+      "method": "independent exact Fraction moving chart estimate",
+      "command_or_proof_path": "experiments/icosahedral-frame-tangent/moving_frame_bound.py",
+      "source_revision": "530b055691544a63b7adfe83af49fc954bdbad48",
+      "actual_result": "PASS exact rational t* and remainder <1/1000, local executed code/data SHA256 captured",
+      "review_relationship": "same assistant constructor"
+    },
+    {
+      "method": "validated nonlinear all-phase trajectory and independent mechanical laboratory",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED, missing flow/source bound and hardware",
+      "review_relationship": "independent"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Explicit allowed *linearized* endpoint phase directions give raw total relative-equilibrium displacement >.036, so prior frame001 radius antecedent cannot be assumed for entire linearized endpoint phase ball.",
+    "Previous full Procrustes aligned tangent .000242 belongs to a different chart/time optimization and cannot simply be combined with new endpoint chart norm.",
+    "Even satisfying moving chart bound leaves actual nonlinear reference/relative radii and 560-state forced Green, Hessian, defects, volume and strut domain unknown.",
+    "Archive stores W(100) only, not a full u∈[0,100] U(t,0)B trajectory or forced U(t,s) operator."
+  ],
+  "limitations": [
+    "Both radial reference and actual nonlinear relative error conditions are not rigorously certified continuously in u.",
+    "Archived Float64 tangent error and eigenvalues not rigorous interval bounds.",
+    "Proper SO3 readout generic classical mechanics, no measured UD-specific stress/dispersion.",
+    "No external non-constructor mathematical referee or physical mechanism calibration."
+  ],
+  "changed_dependencies": [
+    "New isolated owned tests path and candidate, integrated 3D source and prior PR187 read-only; all parked other branches untouched."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/ico-frametangent-20261025-gpt6-a1/tangent-001/manifest.json"
+  ],
+  "next_discriminant": "Rerun original frozen 560x180 variational ODE to obtain full time-dependent frame-projected response, then close validated moving reference/actual nonlinear relative displacement and forced Green/Hessian/reference/domain/volume estimates in one positive full-state norm before claiming u100 80% guarantee."
+}
