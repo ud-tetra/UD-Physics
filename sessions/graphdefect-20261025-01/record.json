@@ -1,0 +1,36 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphdefect-20261025-01",
+  "runtime": "Codex GPT-6; local computation and GitHub connector publication",
+  "task": "graphite-registry-defect-source",
+  "goal": "Determine the exact symmetry origin of a conditional bond-covariance port",
+  "created_at": "2026-10-25",
+  "base_revision": "7aa07cfca49d4cdf02286d73ecedb4d4241fa8f5",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "graphite-registry-defect-source": {
+      "held_sha": "69be8e3b6cd47d641df17fb725289b9d30f0b64d",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "integer graph automorphism/orbit and incidence checks PASS",
+    "matched conventional K replay and exact resolvent PASS",
+    "repository validation PASS (326 records); 16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Conditional proxy source vanishes exactly under 21-edge group-averaged K; matched K symmetry defect 0.523%, exact resolvent recovers source",
+  "next_action": "Derive/test native even edge-to-height covariance law and independently measured complex loss/contact; no physical promotion",
+  "mathematical_profile": {
+    "coefficient_domain": "Exact integer carrier incidence; positive real numerical conventional stiffness",
+    "exactness_or_precision_plan": "Exact finite group proof; numerical registered K audit and direct inverse cross-check",
+    "applicable_methods": [
+      "group/permutation",
+      "spectral/operator",
+      "projection and identifiability"
+    ],
+    "clock_metric_units_conventions": "No native clock; K per upper atom; variance coefficient per Theta_bar=kBT/14; unit edge metric and native lateral basis"
+  }
+}

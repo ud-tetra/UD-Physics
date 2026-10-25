@@ -1,0 +1,202 @@
+{
+  "proxy": "q_e=h_B-h_A, w_e=Var(q_e)/Theta_bar, with registered upper-layer bond incidence",
+  "evidence": "NUMERICAL/CONDITIONAL material proxy; target-exposed one-scale conventional C fit; no UD force or loss calibration",
+  "units": {
+    "weights": "Angstrom^2/meV of Theta_bar",
+    "S_native": "Angstrom^2/meV of Theta_bar in native lateral basis",
+    "S_cart": "Angstrom/meV of Theta_bar in Cartesian lateral basis",
+    "beta": "meV^2/Angstrom^3, conditional on Theta_bar normalization"
+  },
+  "thermal_normalization": "w_e=Var(h_B-h_A)/Theta_bar, Theta_bar=k_B T/14; physical w_e at temperature T is Theta_bar times the reported coefficient.",
+  "aligned_bond_match": true,
+  "uniform_source_norm": 0.0,
+  "c3_edge_orbits": [
+    [
+      0,
+      9,
+      4
+    ],
+    [
+      1,
+      6,
+      13
+    ],
+    [
+      2,
+      10,
+      18
+    ],
+    [
+      3,
+      7,
+      20
+    ],
+    [
+      5,
+      8,
+      16
+    ],
+    [
+      11,
+      14,
+      12
+    ],
+    [
+      15,
+      17,
+      19
+    ]
+  ],
+  "c3_orbit_weight_means": [
+    0.002121541839558915,
+    0.0021019294735371403,
+    0.002129947236475599,
+    0.0020704253447149895,
+    0.0021299472364807092,
+    0.0021019294735264067,
+    0.00212154183955774
+  ],
+  "c3_orbit_max_range": 3.1606115294402493e-12,
+  "edge_weights_per_Theta_bar": [
+    0.002121541839738143,
+    0.002101929475067873,
+    0.0021299472351009084,
+    0.0020704253447122005,
+    0.002121541840050728,
+    0.002129947236943792,
+    0.002101929473164895,
+    0.002070425344688402,
+    0.002129947237815415,
+    0.0021215418388878735,
+    0.00212994723826152,
+    0.002101929473878339,
+    0.002101929471988122,
+    0.0021019294723786525,
+    0.0021019294747127585,
+    0.002121541839339214,
+    0.0021299472346829208,
+    0.002121541840293924,
+    0.0021299472360643687,
+    0.0021215418390400816,
+    0.0020704253447443657
+  ],
+  "edge_weight_mean": 0.0021110374919787855,
+  "edge_weight_cv": 0.009390918367599258,
+  "edge_weight_minmax": [
+    0.002070425344688402,
+    0.00212994723826152
+  ],
+  "source_native": [
+    [
+      5.814272674431464e-13,
+      1.4008881774380758e-05,
+      -1.4008880016517806e-05,
+      -2.97609465635066e-05,
+      -1.9526524494550834e-13,
+      4.202697194498339e-06,
+      2.5558247163940534e-05,
+      -4.202699686823262e-06,
+      -1.775571877027371e-13,
+      2.9760945206253313e-05,
+      1.4008882913646523e-05,
+      -1.4008881152134146e-05,
+      6.269212579623762e-13,
+      -2.5558247669263748e-05
+    ],
+    [
+      4.2513475378980203e-13,
+      -7.739316999766377e-13,
+      -1.4008880611284663e-05,
+      -4.202699238100606e-06,
+      1.40088818428581e-05,
+      -2.555824777477917e-05,
+      2.976094611579572e-05,
+      2.555824707175386e-05,
+      -1.4008881115516736e-05,
+      4.202697681382744e-06,
+      1.4008882325259979e-05,
+      -7.498433297892237e-13,
+      4.773551345871319e-13,
+      -2.9760945676084085e-05
+    ]
+  ],
+  "source_cart": [
+    [
+      2.2478067312168057e-13,
+      2.441055609286192e-06,
+      -6.509481580040023e-06,
+      -6.406400323092346e-06,
+      4.068426375944628e-06,
+      -6.690243570847207e-06,
+      1.3096643249176178e-05,
+      6.690242932387181e-06,
+      -4.0684262296763914e-06,
+      6.406399634491839e-06,
+      6.509482582635061e-06,
+      -2.441055943390505e-06,
+      2.478737473239923e-13,
+      -1.3096643209529028e-05
+    ],
+    [
+      9.664896663558288e-14,
+      6.107158671368161e-06,
+      -9.395624913011459e-07,
+      -1.1423964242336656e-05,
+      -5.167595667668923e-06,
+      1.1260086822637468e-05,
+      1.6387678931837632e-07,
+      -1.1260087649832154e-05,
+      5.1675952368357026e-06,
+      1.1423964224885409e-05,
+      9.395631220504706e-07,
+      -6.1071578380103045e-06,
+      9.721897629283834e-14,
+      -1.638771718143458e-07
+    ]
+  ],
+  "source_cart_rank": 2,
+  "source_native_norm_over_mean_weight": 0.04182643972637849,
+  "fitted_scalar_beta_to_conventional_C": -532083.3295039586,
+  "conventional_C_residual_norm_fraction": 0.42877966660703914,
+  "conventional_C_explained_norm_squared_fraction": 0.8161479975043564,
+  "pressure_rows": [
+    {
+      "delta_pressure_MPa": -2.5,
+      "proxy_mean_weight_per_Theta_bar": 0.002111092577633746,
+      "proxy_weight_cv": 0.009382672064998562,
+      "proxy_cart_source_norm_per_Theta_bar": 3.586995157229899e-05,
+      "conditional_pure_port_transfer_per_beta2_d_Theta_bar2": 8.988084607586341e-16,
+      "conventional_scalar_drag_per_unit_isotropic_d": 0.0005274799915562366,
+      "base_scale_proxy_fit_residual_norm_fraction": 0.42875777806136744
+    },
+    {
+      "delta_pressure_MPa": 0.0,
+      "proxy_mean_weight_per_Theta_bar": 0.0021110374919655166,
+      "proxy_weight_cv": 0.00939091836778806,
+      "proxy_cart_source_norm_per_Theta_bar": 3.5900283125498766e-05,
+      "conditional_pure_port_transfer_per_beta2_d_Theta_bar2": 9.003272031515156e-16,
+      "conventional_scalar_drag_per_unit_isotropic_d": 0.0005285447562627952,
+      "base_scale_proxy_fit_residual_norm_fraction": 0.4287796656062814
+    },
+    {
+      "delta_pressure_MPa": 2.5,
+      "proxy_mean_weight_per_Theta_bar": 0.002110982422322339,
+      "proxy_weight_cv": 0.009399160264819562,
+      "proxy_cart_source_norm_per_Theta_bar": 3.593059629823774e-05,
+      "conditional_pure_port_transfer_per_beta2_d_Theta_bar2": 9.018462198378614e-16,
+      "conventional_scalar_drag_per_unit_isotropic_d": 0.0005296101610267861,
+      "base_scale_proxy_fit_residual_norm_fraction": 0.4288015928679572
+    }
+  ],
+  "conditional_log_slope_per_MPa": {
+    "proxy_cart_source_norm": 0.0003378511287650099,
+    "pure_port_transfer": 0.0006748127764552691,
+    "conventional_scalar_drag_per_unit_isotropic_d": 0.0008060513471628283
+  },
+  "alternate_Hessian_step_log_slope_per_MPa": {
+    "proxy_cart_source_norm": 0.000337854463403886,
+    "pure_port_transfer": 0.00067481595271488,
+    "conventional_scalar_drag_per_unit_isotropic_d": 0.0008060625156465662
+  },
+  "caveat": "The signed native packet variable is not derived as a physical bond-height difference. The conventional mixed Hessian is not an observed or isolated UD coupling; its fitted projection supplies no held-out prediction."
+}

@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-registry-defect-source",
+  "session_id": "graphdefect-20261025-01",
+  "question": "What stiffness symmetry defect creates nonuniform weights in the declared graphite bond-height covariance port?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "NUMERICAL",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Registered seven-cell honeycomb is used as carrier",
+    "Physical q_e=h_B-h_A and variance-to-port law are assumed, not native-derived",
+    "Matched positive conventional KC-plus-plate Hessian represents one stationary model point"
+  ],
+  "physical_mapping": "OPEN native even packet edge to graphite height covariance; damping and contact OPEN",
+  "target_exposure": "Angle/friction result known; no new fit to experimental friction or selection scan",
+  "fitted_choices": [],
+  "sources": [
+    "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+    "experiments/graphite-matched-hessian-reconstruction/BOND_PROXY_RESULTS.json",
+    "UD coefficient ledger Q22: internal seam-pair current zero, physical source open"
+  ],
+  "baseline": "Conventional matched KC-plus-plate K and triangular moire angle geometry",
+  "result": "Exact edge-transitive group-average null and resolvent defect expression; conventional K has 0.523% relative group defect and a conditional nonzero source",
+  "next_discriminant": "Independent native material edge map, complex damping/contact and held-out signed force response",
+  "mathematical_receipts": [
+    "candidates/graphite-registry-defect-source/mathematical_receipt.json"
+  ]
+}
