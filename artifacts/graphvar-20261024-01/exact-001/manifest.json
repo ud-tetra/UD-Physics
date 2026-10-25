@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graphvar-20261024-01",
+  "run_id": "exact-001",
+  "created_at": "2026-10-25T01:02:51.983871+00:00",
+  "evidence": "EXACT",
+  "summary": "Fixed-mask canonical null and three-edge variance defect across N7/13/19",
+  "command": "python3 experiments/graphite-equilibrium-variance/verify_variance.py > /tmp/graphvar-result.json",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "060e9187d88da7062ff4edce5513efabd1b100ff",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "verify_variance.py",
+      "path": "inputs/001-verify_variance.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-equilibrium-variance/verify_variance.py",
+      "sha256": "faa7a0ebeb3129a0e8c62d3bcf985ffd43038a0acdb8ee395f6d6db44e322770",
+      "size_bytes": 4003
+    }
+  ],
+  "files": [
+    {
+      "path": "files/graphvar-result.json",
+      "sha256": "1d111055ea26810d006e2ff6c36eee72775a8d6c2bce01e68a991611a7789d74",
+      "size_bytes": 2375
+    }
+  ]
+}
