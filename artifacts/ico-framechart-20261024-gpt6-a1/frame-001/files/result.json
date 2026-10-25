@@ -1,0 +1,43 @@
+{
+  "analytic_chart_quadratic_upper_float": 0.0009073051948051948,
+  "analytic_chart_quadratic_upper_fraction": "5589/6160000",
+  "chart": "Subtract shell centroid mu from all 13 points, rotate by exp(-skew(X^T(E_shell-mu))/c)",
+  "comparison_caveat": "Prior Procrustes aligned tangent radius belongs to another chart and cannot simply be combined with this new chart bound; must repropagate/transform full 180-column tangent.",
+  "conventional_null": "Centroid subtraction and an SO(3) proper-frame readout are generic ordinary 3D mechanics, not uniquely UD",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "linearization": "(E_shell-mu-X*Omega,E_hub-mu), Omega=skew(X^T(E_shell-mu))/c; removes translation and infinitesimal shell rotation",
+  "mechanical_scope": "READOUT ONLY on 13 primary positions; existing 280 configurations/560 phase variables and housing masses unchanged",
+  "numerical_constructor": {
+    "cases": 120,
+    "max_chart_linear_difference": 0.00018880629408522345,
+    "max_rotation_orthogonality_error": 3.433920372433492e-16,
+    "translation_tangent_error": 6.2546344413855015e-18
+  },
+  "physical_map": "Internal length ell0; no physical material/bath/clock calibration or empirical test",
+  "prior_exposed_aligned_procrustes_tangent_radius": 0.0002420865,
+  "prior_exposed_tangent_raw_radius": 0.03500972,
+  "proof_bounding_constants": {
+    "c_lower": "7/2",
+    "c_upper": "15/4",
+    "centroid_map_upper": "21/20",
+    "reference_Frob_upper": "27/8",
+    "rotation_norm_upper": "9/625"
+  },
+  "radius_assumption": "The *actual* full 13-primary displacement error E has Frobenius norm <=9/250=0.036 continuously; this is NOT verified for all trajectories",
+  "source_geometry": "Regular edge-one icosahedral shell, 12 points and central point; X^T X=cI3; c=(5+sqrt5)/2",
+  "status": "PASS",
+  "threshold_check": "Chart-only nonlinear remainder <1/1000 in primary Frobenius units if actual radius<=0.036",
+  "unclosed_tube": [
+    "actual continuous primary radius for all housing phases",
+    "forced U(t,s) Green bound",
+    "uniform Hessian and nonlinear trajectory remainder",
+    "numerical reference defect",
+    "aligned mean-volume readout remainder",
+    "positive strut length domain and full-state norm"
+  ]
+}
