@@ -114,6 +114,43 @@ def top_singular(A):
             break
     return math.sqrt(max(0.0, max(G[i][i] for i in range(n))))
 
+
+def feasible_total_endpoint(raw_matrix, epsilon, reference_start, reference_end):
+    """Explicit unit housing-phase directions yield valid *linearized* lower bounds."""
+    b = [reference_end[1+k] - reference_start[1+k] for k in range(39)]
+    ncols = 180
+    ATb = [sum(raw_matrix[i][j]*b[i] for i in range(39)) for j in range(ncols)]
+    seeds = [ATb,
+             [math.sin(0.371*(j+1))+math.cos(0.763*(j+1)) for j in range(ncols)],
+             [math.cos(0.183*(j+1)) for j in range(ncols)]]
+    best = math.sqrt(sum(x*x for x in b))
+    best_kind = "reference"
+    for index, seed in enumerate(seeds):
+        v = list(seed)
+        norm = math.sqrt(sum(x*x for x in v))
+        if norm < 1e-14:
+            continue
+        v = [x/norm for x in v]
+        # For nonzero baseline seed index 0 is matched; for others use
+        # power iteration to find high-response raw housing directions.
+        if index:
+            for _ in range(500):
+                y = [sum(x*z for x,z in zip(row,v)) for row in raw_matrix]
+                vnew = [sum(raw_matrix[i][j]*y[i] for i in range(39))
+                        for j in range(ncols)]
+                nv = math.sqrt(sum(x*x for x in vnew))
+                if nv < 1e-14:
+                    break
+                v = [x/nv for x in vnew]
+        y = [sum(x*z for x,z in zip(row,v)) for row in raw_matrix]
+        for sign in (-1,1):
+            value = math.sqrt(sum((b[i]+sign*epsilon*y[i])**2 for i in range(39)))
+            if value>best:
+                best,best_kind=value,f"probe{index},sign{sign}"
+    return {"feasible_linearized_total_primary_radius_lower_bound":best,
+            "lower_bound_phase_type":best_kind,
+            "exceeds_frame001_0_036_radius_in_linearization":best>0.036}
+
 def calculate():
     assert ARCHIVE.is_file(), str(ARCHIVE)
     records = json.loads((SOURCE / "variational-normal.json").read_text())["records"]
@@ -141,7 +178,9 @@ def calculate():
             c0 = sum(G0[i][i] for i in range(3))/3
             anisotropy0 = max(abs(G0[i][j]-(c0 if i==j else 0)) for i in range(3) for j in range(3))
             eps = math.sqrt(2*rec["housing_energy"])
-            raw = eps*top_singular(tangent_matrix(tangent, dims, None))
+            raw_matrix = tangent_matrix(tangent, dims, None)
+            lower = feasible_total_endpoint(raw_matrix, eps, initial, final)
+            raw = eps*top_singular(raw_matrix)
             fixed = eps*top_singular(tangent_matrix(tangent, dims, X0))
             moving = eps*top_singular(tangent_matrix(tangent, dims, Xf))
             out[label] = {
@@ -153,6 +192,7 @@ def calculate():
                 "initial_shell_gram_anisotropy_max":anisotropy0,
                 "frame001_radius":0.036,
                 "frame001_ball_contains_moving_reference_final":ref_displacement<=0.036,
+                **lower,
             }
             assert raw >= min(fixed, moving)*0.99999
             assert eps > 0 and all(math.isfinite(x) for x in (raw,fixed,moving,ref_displacement))
