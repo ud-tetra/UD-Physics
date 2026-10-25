@@ -10,13 +10,17 @@
   "source_dirty_at_boot": false,
   "status": "handoff",
   "claims": {
-    "integration-graphite-matched-hessian": "72cbc039d3dce1ef09a2e5d13a9d6e64c07be850"
+    "integration-graphite-matched-hessian": {
+      "held_sha": "72cbc039d3dce1ef09a2e5d13a9d6e64c07be850",
+      "released_sha": "dd9b81b5fcdf16b64ea4bc5f22471a7d5ab286f6",
+      "status": "released"
+    }
   },
   "checks": [
     "validation PASS (321 records)",
     "16 tests PASS"
   ],
-  "finding": "Index distinguishes newly reconstructed same-state conventional K/C from still-open native mapping and loss",
+  "finding": "Index distinguishes newly reconstructed same-state conventional K/C from still-open native mapping and loss; index PR #194 merged at 45c66c3e69f1c853ee8ba8352d74c5fca802e583",
   "next_action": "Independently establish native bond observable and measured complex loss/contact",
   "mathematical_profile": {
     "coefficient_domain": "N/A editorial integration",
