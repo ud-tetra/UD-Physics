@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "graphite-edge-metric-contact",
+  "session": "graphedge-20261026-01",
+  "created_at": "2026-10-26T18:07:19.485Z",
+  "base_revision": "87391efd86eceb490292dd0aefa08fbf675e4dc7",
+  "owned_paths": [
+    "tasks/graphite-edge-metric-contact.json",
+    "sessions/graphedge-20261026-01/",
+    "candidates/graphite-edge-metric-contact/",
+    "artifacts/graphedge-20261026-01/",
+    "experiments/graphite-edge-metric-contact/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
