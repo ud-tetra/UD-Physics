@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "graphite-metric-locality",
   "session": "graphmetric-20261026-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-26T19:00:00Z",
   "base_revision": "b608e327b9fce95e87172c861985d7e252a8e2aa",
   "owned_paths": [
@@ -13,5 +13,7 @@
     "candidates/graphite-metric-locality/",
     "experiments/graphite-metric-locality/",
     "artifacts/graphmetric-20261026-01/"
-  ]
+  ],
+  "released_at": "2026-10-26T19:40:00Z",
+  "released_from_sha": "44940d280291bd4c363b17881f557cf97db412d7"
 }
