@@ -1,0 +1,31 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphquadidx-20261026-01",
+  "runtime": "Codex GPT-6; local verification and GitHub connector write",
+  "task": "integration-graphite-quadrature-index",
+  "goal": "Index parity-safe quadrature and scoped native clock obstruction",
+  "created_at": "2026-10-26T16:25:00Z",
+  "base_revision": "6963a79cc11174fa59188b5752918257bd21c5da",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-graphite-quadrature-index": {
+      "held_sha": "f52461a3752b3310fcf992af8cfa9e44326cd2f6",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "repository validation PASS (335 records); 16 unit tests PASS"
+  ],
+  "finding": "Graphite hub, prior registry-defect note and current state link the merged parity-safe surrogate and scoped one-clock failure",
+  "next_action": "Independent source of native material map and physical complex loss/contact",
+  "mathematical_profile": {
+    "coefficient_domain": "Index/provenance only; no new calculation",
+    "exactness_or_precision_plan": "Cross links and numbers reviewed against merged receipt",
+    "applicable_methods": [
+      "provenance and scope"
+    ],
+    "clock_metric_units_conventions": "Inherits cited receipt; no new clock or units"
+  }
+}
