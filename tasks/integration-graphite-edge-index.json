@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-edge-index",
+  "goal": "Index integrated graphite edge metric and contact audit in CURRENT.md",
+  "owned_paths": [
+    "tasks/integration-graphite-edge-index.json",
+    "sessions/graphedgeidx-20261026-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "graphite-edge-metric-contact"
+  ],
+  "status": "complete"
+}
