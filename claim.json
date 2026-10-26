@@ -1,0 +1,18 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "icosahedral-fulltime-20261026",
+  "session": "ico-fulltime-20261026-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-26T17:54:08.273Z",
+  "base_revision": "b608e327b9fce95e87172c861985d7e252a8e2aa",
+  "owned_paths": [
+    "tasks/icosahedral-fulltime-20261026.json",
+    "sessions/ico-fulltime-20261026-gpt6-a1/",
+    "experiments/icosahedral-fulltime/",
+    "candidates/icosahedral-fulltime/",
+    "artifacts/ico-fulltime-20261026-gpt6-a1/",
+    ".github/workflows/icosahedral-fulltime-20261026.yml"
+  ]
+}
