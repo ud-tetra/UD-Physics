@@ -13,3 +13,5 @@ Captured artifacts/graphquad-20261026-01/quadrature-001 (NUMERICAL): Parity-comp
 Captured artifacts/graphquad-20261026-01/quadrature-002 (NUMERICAL): Final parity-compatible quadrature audit including local momentum null and FDT derivative
 
 The first immutable capture `quadrature-001` preceded the exact local momentum null check; `quadrature-002` supersedes its calculation scope with updated code and receipt. `python3 scripts/validate.py` PASS (333 records); 16 unit tests PASS. Publication pending.
+
+Closure: research PR #202 merged at `9efbefa4430a8df7f353d7cf9b23e4cec318a5e4`; claim released at `0a2306524004f0689ce090e01d51980c064cfe73`. No further research edits under this release.
