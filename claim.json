@@ -13,5 +13,7 @@
     "experiments/graphite-edge-metric-contact/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-10-26T18:12:10.480Z",
+  "released_from_sha": "53dc7ce86c460aeae087e0576bf9280222a1cd86"
 }
