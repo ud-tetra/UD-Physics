@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "graphite-quadrature-obstruction",
+  "session": "graphquad-20261026-01",
+  "status": "held",
+  "created_at": "2026-10-26T15:30:00Z",
+  "base_revision": "3a2169ef24683c6487c440e504d7734fd48cd057",
+  "owned_paths": [
+    "tasks/graphite-quadrature-obstruction.json",
+    "sessions/graphquad-20261026-01/",
+    "candidates/graphite-quadrature-obstruction/",
+    "experiments/graphite-quadrature-obstruction/",
+    "artifacts/graphquad-20261026-01/"
+  ]
+}
