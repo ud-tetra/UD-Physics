@@ -7,3 +7,5 @@ Base `b608e327b9fce95e87172c861985d7e252a8e2aa`; claim `44940d280291bd4c363b1788
 Captured artifacts/graphmetric-20261026-01/metric-001 (NUMERICAL): Positive two-hop vertex metric, local fits, registry obstruction and 14/13 spectral budget
 
 Captured `metric-001` with receipt, code and matched K. Repository validation PASS (339 records); 16 unit tests PASS. Publication pending.
+
+Closure: research PR #207 merged at `4ad1af5a3204ac9edb97827207a4b43997676ad0`; claim released at `e11df62c34016c0ab8b4eda58e5f397fbaa12a21`. No further research edits under this release.

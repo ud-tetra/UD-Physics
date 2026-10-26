@@ -12,7 +12,8 @@
   "claims": {
     "graphite-metric-locality": {
       "held_sha": "44940d280291bd4c363b17881f557cf97db412d7",
-      "status": "held"
+      "status": "released",
+      "released_sha": "e11df62c34016c0ab8b4eda58e5f397fbaa12a21"
     }
   },
   "checks": [
@@ -21,7 +22,7 @@
     "repository validation PASS (339 records); 16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Group-mean K admits positive two-hop vertex metric; actual K fails exact vertex-only symmetric intertwining with 0.170910% optimized residual; unit edge Gibbs source stays zero",
+  "finding": "Group-mean K admits positive two-hop vertex metric; actual K fails exact vertex-only symmetric intertwining with 0.170910% optimized residual; unit edge Gibbs source stays zero; research PR #207 merged at 4ad1af5a3204ac9edb97827207a4b43997676ad0",
   "next_action": "Independently source edge metric/open-system preparation and complex loss/contact before frozen signed force",
   "mathematical_profile": {
     "coefficient_domain": "Exact integer incidence/spectrum polynomial; numerical positive real K from conventional source-rounded KC model",
