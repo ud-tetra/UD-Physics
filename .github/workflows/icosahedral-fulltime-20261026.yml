@@ -1,0 +1,69 @@
+name: Isolated 3D full-time variational audit
+on:
+  push:
+    branches:
+      - 'discovery/icosahedral-fulltime-20261026/**'
+    paths:
+      - 'experiments/icosahedral-fulltime/timeframe_sampler.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fulltime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Install isolated numerical runtime
+        run: |
+          python3 -m venv /tmp/ico-numerical
+          /tmp/ico-numerical/bin/python -m pip install --disable-pip-version-check --no-input numpy==2.3.5 scipy==1.17.0
+          /tmp/ico-numerical/bin/python -c "import numpy,scipy; print('ICO_RUNTIME',numpy.__version__,scipy.__version__,flush=True)"
+      - name: Frozen limiting case full 560 x 180 tangent
+        run: |
+          mkdir -p /tmp/ico-output
+          /tmp/ico-numerical/bin/python experiments/icosahedral-fulltime/timeframe_sampler.py --case seed10422-0-boundary2 --horizon 100 --step 0.5 --rtol 5e-10 --atol 5e-12 --out /tmp/ico-output/limiting.json
+      - name: Frozen nominal case full 560 x 180 tangent
+        run: |
+          /tmp/ico-numerical/bin/python experiments/icosahedral-fulltime/timeframe_sampler.py --case uniform-b0.05-cf0.0 --horizon 100 --step 0.5 --rtol 2e-9 --atol 2e-11 --out /tmp/ico-output/nominal.json
+      - name: Check archived endpoint and report whole sampled interval
+        run: |
+          /tmp/ico-numerical/bin/python - <<'PY'
+          import json
+          from pathlib import Path
+          out={}
+          for name, expected_raw in [('limiting',0.03500971996661153),('nominal',0.03520937943792633)]:
+              d=json.loads(Path('/tmp/ico-output/'+name+'.json').read_text())
+              rows=d['records']
+              assert d['status']=='NUMERICAL_SAMPLED_ONLY' and len(rows)==201 and abs(rows[-1]['u']-100)<1e-9
+              end=rows[-1]
+              difference=abs(end['linearized_raw_radius']-expected_raw)
+              assert difference<2e-5, (name,difference)
+              at=lambda k:max(rows,key=lambda r:r[k])
+              out[name]={'case':d['case'],'nfev':d['nfev'],'n_samples':len(rows),
+                         'endpoint':end,'archive_endpoint_absolute_difference':difference,
+                         'maximum_raw':at('linearized_raw_radius'),
+                         'maximum_moving_shape':at('linearized_moving_shape_radius'),
+                         'maximum_reference_shift':at('reference_displacement'),
+                         'count_reference_above_0p011':sum(r['reference_displacement']>.011 for r in rows),
+                         'numerical_only':True}
+          s=json.dumps(out,sort_keys=True)
+          Path('/tmp/ico-output/summary.json').write_text(s+'\n')
+          print('ICO_FULLTIME_SUMMARY_JSON:'+s,flush=True)
+          PY
+          sha256sum experiments/icosahedral-fulltime/timeframe_sampler.py /tmp/ico-output/*.json
+      - name: Preserve full-time numerical samples
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: icosahedral-fulltime-20261026
+          path: /tmp/ico-output/*.json
+          if-no-files-found: warn
+          retention-days: 30

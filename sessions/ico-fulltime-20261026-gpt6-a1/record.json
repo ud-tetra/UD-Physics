@@ -1,0 +1,61 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ico-fulltime-20261026-gpt6-a1",
+  "runtime": "GPT-6 GitHub connector isolated branch and GitHub Actions ubuntu Python3.12 venv NumPy2.3.5 SciPy1.17.0; local Python3 Fraction proof and downloaded Actions artifact",
+  "task": "icosahedral-fulltime-20261026",
+  "goal": "Run unchanged full560x180 limiting and nominal tangent across u0..100 with pinned SciPy, moving proper SO3 frame, then repair and audit exact conditional chart domain without physical promotion",
+  "created_at": "2026-10-26T18:13:01.959Z",
+  "base_revision": "b608e327b9fce95e87172c861985d7e252a8e2aa",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "icosahedral-fulltime-20261026": {
+      "ref": "refs/heads/claims/icosahedral-fulltime-20261026",
+      "sha": "04cec2800a4b059c77dd7439b3f46c0a39bee985",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "GitHub Actions 40373318159 fulltime job121749553846 run limiting 560x180 SciPy DOP853 u0..100 step.5",
+      "result": "PASS nfev34352, limiting max moving-frame .0002269454523761 at u1, raw max .0350097199666 final, reference max .0394403755068 at u9; archived final residual 6.94e-18",
+      "scope": "NUMERICAL sampled, not certified continuous or nonlinear flow"
+    },
+    {
+      "command": "GitHub Actions 40373318159 nominal 560x180 SciPy DOP853 u0..100 step.5",
+      "result": "PASS nfev28892, nominal max moving-frame .000229308153354 at u12.5, raw max .0352093794379 final, ref max .0466765926203 at u64.5; archived final residual6.94e-18",
+      "scope": "NUMERICAL sampled"
+    },
+    {
+      "command": "sha256sum limiting.json nominal.json summary.json from published workflow artifact",
+      "result": "PASS d2dc8e35cb8b1f8f54b1acbc168ae93f0a53ce491fd5f193a6ab29f6462be2e2; be2edff72ba4fa645494b75e078e6d084b69732f330ab4f0ad30f735acccb13a; a9d81fcb925a5af9b039ecf1eb62f4f7d6d1c77e6d814cb400445226fd662ed2",
+      "scope": "full workflow output downloaded ZIP and verified local, 30-day workflow artifact retention"
+    },
+    {
+      "command": "python /mnt/data/ico_fulltime_bound_20261026.py --out /mnt/data/ico_fulltime_bound_20261026.json",
+      "result": "PASS Fraction inequality exact B=245802834179/264666314250000<1/1000 for d=.05,r=.036",
+      "scope": "EXACT/CONDITIONAL chart ONLY, reference/relative nonlinear radius unverified"
+    },
+    {
+      "command": "sha256sum exact chart proof source/output",
+      "result": "PASS 803e4d09401c350211b8552085001bbc764e11b837631946a80bb26f2e8bc3f5 and 68a9b2c9fb690c28224c608b8386b0b0ea86fde777303d7f0d316c9755487214",
+      "scope": "repo matched Git blobs"
+    }
+  ],
+  "finding": "NUMERICAL/SAMPLED original full 560x180 201-timepoint DOP853 runs success in isolated GHA. Max moving shape .000226945 worst/.000229308 nominal; max reference .0394404/.0466766, so older d=.011 fails. EXACT/CONDITIONAL rational improved proper-SO3 chart error<=245802834179/264666314250000≈.000928727 for reference d<=.05 and actual nonlinear relative r<=.036. Actual nonlinear relative radius, continuous reference maxima, forced U(t,s), flow Hessian and volume/strut tube OPEN.",
+  "next_action": "Validate full-time continuous bounds and nonlinear finite-amplitude housing-phase flow (especially .00079062 margin) against ordinary 3D mechanical null; freeze and test source constraints before physical promotion.",
+  "mathematical_profile": {
+    "coefficient_domain": "Float64 full 560x180 original DOP853 source Jacobian; exact Q rational proper SO3 chart bound and exact golden ratio inequalities",
+    "exactness_or_precision_plan": "201 sampled times and source endpoint reproducibility numerical; separate exact chart majorant conditional d/r, no interval ODE or nonlinear Hessian",
+    "applicable_methods": [
+      "full source augmented mechanical variational flow",
+      "proper moving SO3 tangent and singular readout",
+      "housing phase energy-ball full180 operator",
+      "time-sampling sensitivity/endpoint check",
+      "exact rational moving chart proof, null comparison"
+    ],
+    "clock_metric_units_conventions": "source native u0..100 time, ell0=1, 280 configuration,560 mechanical phase, Eh=Ep/40000, nu=.05 and source fine/original solver tolerances"
+  }
+}
