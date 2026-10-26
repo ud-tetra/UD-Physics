@@ -1,0 +1,108 @@
+{
+  "evidence": "EXACT finite-carrier identities and conditional positive metric formula; NUMERICAL conventional K inverse design; physical source/loss OPEN",
+  "input": "registered conventional K per upper atom; 14 sites, 21 edges; unit native edge metric, vertex H_v symmetric positive",
+  "exact_spectrum": "L: 0 (1), 3-sqrt(2) (6), 3+sqrt(2) (6), 6 (1); positive spectrum obeys lambda^3-12lambda^2+43lambda-42=0",
+  "clock_normalization": "For s=t/tau and physical mass m, H_v is g(L)/c with c=m/(14tau^2). c_ref below is a fitted model scale only.",
+  "conventional_K_fit": {
+    "group_mean_K_I_L_L2": [
+      10.049731775144469,
+      -2.5762163928061312,
+      118.23281239378584
+    ],
+    "group_polynomial_relative_error": 2.8810386767960083e-12,
+    "positive_two_hop_g_coeff_I_L_L2": [
+      7.712794710317969,
+      115.36146045803028,
+      0.23927932797963022
+    ],
+    "group_mean_intertwining_relative_error": 2.242473867174922e-12,
+    "group_mean_metric_min_eigenvalue": 7.712794710318191
+  },
+  "actual_K": {
+    "best_scalar_c": 564.5471609942023,
+    "scalar_metric_relative_defect": 0.1873539720788236,
+    "group_mean_metric_relative_defect": 0.0038581287233440315,
+    "optimized_symmetric_positive_relative_defect": 0.0017091043824816667,
+    "optimized_symmetric_min_eigenvalue": 7.712794710317876,
+    "one_hop_symmetric_fit_parameters": 35,
+    "one_hop_positive_relative_defect": 0.002194151257863835,
+    "one_hop_min_eigenvalue": 3.153838738144875,
+    "uniform_input_lower_bound": 0.0008970969496260813,
+    "irreducible_noncommuting_component": 0.001454735320664766,
+    "normalized_commutator": 0.000980538948584795,
+    "normalized_projected_commutator": 0.0008728273061567009,
+    "uniform_height_output_range": 17.02717858620406,
+    "soft_edge_projection_norm": 0.014563616425112523,
+    "soft_alt_step_projection_norm": 0.014562849174267006
+  },
+  "gradient_Gibbs_unit_edge": {
+    "rank": 13,
+    "edge_projector_diagonal": 0.6190476190476191,
+    "source_norm": 4.2998752849492583e-16
+  },
+  "actual_material_spectral_weights": [
+    {
+      "model_eigenvalue_mean": 9.998997912680242,
+      "multiplicity": 1,
+      "edge_weight_rank": 1,
+      "minimum_projection_singular": 0.014563616425112523
+    },
+    {
+      "model_eigenvalue_mean": 293.15183566211715,
+      "multiplicity": 2,
+      "edge_weight_rank": 2,
+      "minimum_projection_singular": 1.2592976160570755
+    },
+    {
+      "model_eigenvalue_mean": 302.83067303475906,
+      "multiplicity": 1,
+      "edge_weight_rank": 1,
+      "minimum_projection_singular": 1.2592630641537876
+    },
+    {
+      "model_eigenvalue_mean": 307.97429235645893,
+      "multiplicity": 2,
+      "edge_weight_rank": 2,
+      "minimum_projection_singular": 1.2592830688682575
+    },
+    {
+      "model_eigenvalue_mean": 314.4812095879051,
+      "multiplicity": 1,
+      "edge_weight_rank": 1,
+      "minimum_projection_singular": 1.2592911590869842
+    },
+    {
+      "model_eigenvalue_mean": 2297.2933376369356,
+      "multiplicity": 2,
+      "edge_weight_rank": 2,
+      "minimum_projection_singular": 2.101001226192345
+    },
+    {
+      "model_eigenvalue_mean": 2302.2836584584024,
+      "multiplicity": 2,
+      "edge_weight_rank": 2,
+      "minimum_projection_singular": 2.100992506934027
+    },
+    {
+      "model_eigenvalue_mean": 2305.080946060304,
+      "multiplicity": 1,
+      "edge_weight_rank": 1,
+      "minimum_projection_singular": 2.1009627403489666
+    },
+    {
+      "model_eigenvalue_mean": 2310.8311722600565,
+      "multiplicity": 1,
+      "edge_weight_rank": 1,
+      "minimum_projection_singular": 2.100997533980227
+    },
+    {
+      "model_eigenvalue_mean": 4250.97839142664,
+      "multiplicity": 1,
+      "edge_weight_rank": 1,
+      "minimum_projection_singular": 2.4494887505057794
+    }
+  ],
+  "observed_material_mode_rank_sum": 14,
+  "native_gradient_oscillator_dimension": 13,
+  "caveat": "The positive two-hop metric exactly matches only the group-averaged conventional K, which has zero proxy source. Actual K fits remain target-exposed and cannot match exactly with symmetric vertex H_v and H_e=I. Full native edge/cycle dynamics or new constitutive laws are not excluded."
+}

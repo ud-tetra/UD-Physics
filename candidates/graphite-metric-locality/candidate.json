@@ -1,0 +1,40 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-metric-locality",
+  "session_id": "graphmetric-20261026-01",
+  "question": "Does a local positive vertex metric reproduce the graphite height spectrum and source?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Native fixed-mask reciprocal generator with positive H_v and unit edge H_e=I",
+    "Native gradient edge state identified with earlier parity-compatible physical quadrature",
+    "Group average of matched conventional K considered as mathematical counterfactual",
+    "Physical mass and one clock unknown; normalized metric fitted from K"
+  ],
+  "physical_mapping": "FIT inverse-designed vertex G=cH_v from conventional K; native edge law, source, damping and contact open",
+  "target_exposure": "Known experimental angle pair and prior conventional K; 3 polynomial and 35 one-hop coefficients fitted to exposed K; no force fit or held-out trace",
+  "fitted_choices": [
+    "three group-mean polynomial coefficients from Kbar",
+    "35 unconstrained symmetric one-hop entries from K",
+    "91 gradient-block entries in full positive symmetric optimum",
+    "one scalar normalization c has no physical calibration"
+  ],
+  "sources": [
+    "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+    "experiments/graphite-registry-defect-source/audit_registry_defect.py",
+    "experiments/graphite-quadrature-obstruction/README.md"
+  ],
+  "baseline": "Native H=I one-clock failure 18.7354% and conventional KC K",
+  "result": "Positive two-hop vertex metric matches group-mean spectrum only; actual K exact symmetric vertex-only match obstructed by uniform mixing and noncommutation; best positive residual 0.170910%; unit-edge Gibbs source remains zero; material rank-sum14 versus native gradient13",
+  "next_discriminant": "Independently source positive edge metric or open preparation and extra-mode path, then material damping/contact and held-out signed force",
+  "mathematical_receipts": [
+    "candidates/graphite-metric-locality/mathematical_receipt.json"
+  ]
+}

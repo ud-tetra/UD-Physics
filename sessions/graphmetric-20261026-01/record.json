@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphmetric-20261026-01",
+  "runtime": "Codex GPT-6; local Git computation plus GitHub connector write",
+  "task": "graphite-metric-locality",
+  "goal": "Positive metric inverse design, locality, and observable-mode budget against registered conventional K",
+  "created_at": "2026-10-26T19:00:00Z",
+  "base_revision": "b608e327b9fce95e87172c861985d7e252a8e2aa",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "graphite-metric-locality": {
+      "held_sha": "44940d280291bd4c363b17881f557cf97db412d7",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "exact integer Laplacian polynomial and metric positivity PASS",
+    "conventional K inverse design and alternate-step soft-mode visibility PASS",
+    "repository validation PASS (339 records); 16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Group-mean K admits positive two-hop vertex metric; actual K fails exact vertex-only symmetric intertwining with 0.170910% optimized residual; unit edge Gibbs source stays zero",
+  "next_action": "Independently source edge metric/open-system preparation and complex loss/contact before frozen signed force",
+  "mathematical_profile": {
+    "coefficient_domain": "Exact integer incidence/spectrum polynomial; numerical positive real K from conventional source-rounded KC model",
+    "exactness_or_precision_plan": "Exact finite-carrier identities, positive Lyapunov solution proof, numerical eigen/least-squares checks and alternate Hessian-step probe",
+    "applicable_methods": [
+      "group/permutation",
+      "chain projection and kernel",
+      "spectral/operator and positive metrics",
+      "graph locality",
+      "fit/null and identifiability"
+    ],
+    "clock_metric_units_conventions": "Native s=t/tau with tau unknown; vertex H_v positive, edge H_e=I, gradient sector; K per upper atom; c=m/(14tau\u00b2) unknown; no physical time/force calibration"
+  }
+}
