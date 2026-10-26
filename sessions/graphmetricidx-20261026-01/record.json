@@ -12,13 +12,14 @@
   "claims": {
     "integration-graphite-metric-index": {
       "held_sha": "acba65e1dddf756feb46d690657d7566e2ab7368",
-      "status": "held"
+      "status": "released",
+      "released_sha": "c3047f6217ebd84069f699929a19d73fe5dd2b82"
     }
   },
   "checks": [
     "repository validation PASS (341 records); 16 unit tests PASS"
   ],
-  "finding": "Graphite index, quadrature note and CURRENT link merged metric audit with target-exposed scope",
+  "finding": "Graphite index, quadrature note and CURRENT link merged metric audit with target-exposed scope; integration PR #209 merged at 0478a75e5f80ec66ecd5fcc4a78d608233cabe1a",
   "next_action": "Independent native edge source and complex loss/contact with extra-mode power balance",
   "mathematical_profile": {
     "coefficient_domain": "Index/provenance only",
