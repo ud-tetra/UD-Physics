@@ -1,0 +1,105 @@
+{
+  "evidence": "EXACT conditional harmonic/Gibbs and parity identities; NUMERICAL conventional model replay; no physical loss calibration",
+  "definitions": "E_total=7 h^T K h+p^T p/(2m); q=B1^T h even; y*=B1^T K^-1/2 p/sqrt(14m) odd; Theta_bar=kBT/14",
+  "physical_map_status": "HYPOTHESIS y_native=y*/ell with free length ell; this is a Gaussian surrogate, not the native packet dynamics",
+  "uniform_local_momentum_null": "For y_local=a B1^T p with identical site mass, diagonal covariance is 2 a^2 m kBT on all 21 edges; S=0 by B1 M=0",
+  "carrier": {
+    "vertices": 14,
+    "edges": 21,
+    "rank_B1": 13,
+    "dimension_gradient_edge_subspace": 13,
+    "edge_cycle_kernel_dimension": 8
+  },
+  "actual_clock": {
+    "best_c": 564.5471609942023,
+    "relative_operator_defect": 0.18735397207882362,
+    "c_units": "meV/Angstrom^2 per upper atom; equals m/(14 tau^2) in consistently calibrated physical units"
+  },
+  "group_mean_clock": {
+    "best_c": 564.5471609942024,
+    "relative_operator_defect": 0.18731563729219625,
+    "c_units": "meV/Angstrom^2 per upper atom; equals m/(14 tau^2) in consistently calibrated physical units"
+  },
+  "group_mean_laplacian_eigenvalues": [
+    1.2479709106394399e-15,
+    1.585786437626903,
+    1.5857864376269037,
+    1.5857864376269049,
+    1.585786437626905,
+    1.5857864376269064,
+    1.5857864376269077,
+    4.414213562373092,
+    4.414213562373094,
+    4.414213562373096,
+    4.414213562373096,
+    4.414213562373097,
+    4.414213562373097,
+    6.000000000000003
+  ],
+  "group_mean_K_eigenvalues": [
+    10.049731767785406,
+    303.2866582644515,
+    303.2866582644517,
+    303.2866582644523,
+    303.2866582644524,
+    303.2866582644525,
+    303.2866582644526,
+    2302.477379592285,
+    2302.477379592285,
+    2302.477379592286,
+    2302.4773795922865,
+    2302.4773795922874,
+    2302.477379592288,
+    4250.973679601954
+  ],
+  "gaussian_replay": {
+    "bond_covariance_trace_per_Theta_bar": 0.04433178733155452,
+    "bond_variance_minmax_per_Theta_bar": [
+      0.0020704253446884036,
+      0.0021299472382615148
+    ],
+    "normalized_time_points": [
+      0.0,
+      0.001,
+      0.005,
+      0.01
+    ],
+    "harmonic_qq_yy_max_frobenius_difference": 4.824093572658288e-17,
+    "harmonic_qy_cross_norms": [
+      0.0,
+      0.001231145956514936,
+      0.005662301095859639,
+      0.00906600718749632
+    ],
+    "isotropic_damping_right_derivative": {
+      "C_qq_norm_per_d_over_m": 0.0,
+      "C_yy_plus_C0_norm_per_d_over_m": 4.7598366205371905e-17,
+      "negative_C_yy_trace_per_d_over_m": 0.04433178733155447,
+      "full_drift_finite_difference_relative_errors": {
+        "q_zero_slope": 6.618720980424059e-05,
+        "y_negative_C0_slope": 6.611240931605999e-05
+      }
+    }
+  },
+  "pressure_clock_rows": [
+    {
+      "delta_pressure_MPa": -2.5,
+      "best_c": 564.5445526122708,
+      "relative_operator_defect": 0.1873557086578142,
+      "c_units": "meV/Angstrom^2 per upper atom; equals m/(14 tau^2) in consistently calibrated physical units"
+    },
+    {
+      "delta_pressure_MPa": 0.0,
+      "best_c": 564.5471609945688,
+      "relative_operator_defect": 0.18735397207906807,
+      "c_units": "meV/Angstrom^2 per upper atom; equals m/(14 tau^2) in consistently calibrated physical units"
+    },
+    {
+      "delta_pressure_MPa": 2.5,
+      "best_c": 564.5497688296314,
+      "relative_operator_defect": 0.18735223582412844,
+      "c_units": "meV/Angstrom^2 per upper atom; equals m/(14 tau^2) in consistently calibrated physical units"
+    }
+  ],
+  "physical_loss_gate": "The d/m derivative is symbolic per unit assumed isotropic Rayleigh loss. Native H=I one-clock dynamics cannot reproduce matched material K on gradient edges. Measured D, FDT bath, ell, force/contact and packet action remain open."
+}

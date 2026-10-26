@@ -1,0 +1,37 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-quadrature-obstruction",
+  "session_id": "graphquad-20261026-01",
+  "question": "Can an odd native edge have graphite bond covariance and match unit-incidence dynamics with one clock?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Physical oscillator with total 14-site potential Hessian 14K and common mass m",
+    "Candidate native y is a length-rescaled nonlocal momentum-gradient quadrature",
+    "Gaussian canonical equilibrium; optional separate FDT-consistent Rayleigh bath",
+    "Unit edge metric and one scalar clock only for obstruction"
+  ],
+  "physical_mapping": "HYPOTHESIS y_native=B1^T K^-1/2 p/(ell sqrt(14m)); K imported conventional; ell, m, tau, coupling and D unknown",
+  "target_exposure": "Experimental paired angles and matched model K already known; scalar c optimized to K not to measured friction; no held-out experimental trace",
+  "fitted_choices": [
+    "one scalar c least-squares to conventional matrix for obstruction diagnostic"
+  ],
+  "sources": [
+    "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+    "experiments/graphite-registry-defect-source/audit_registry_defect.py",
+    "experiments/graphite-packet-reciprocity/README.md",
+    "supplied UD coefficient ledger v0.39(2), SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63"
+  ],
+  "baseline": "Conventional registered KC harmonic height model; native unit H=I incidence packet",
+  "result": "Conservative process covariance matches exactly but scalar clock condition B^T K=c B^T L fails by best relative 0.187354; isotropic assumed damping gives Cyy right derivative=-(d/m)C0 while Cqq derivative=0",
+  "next_discriminant": "Independent packet material coupling and complex loss/contact; freeze before signed force/load test",
+  "mathematical_receipts": [
+    "candidates/graphite-quadrature-obstruction/mathematical_receipt.json"
+  ]
+}
