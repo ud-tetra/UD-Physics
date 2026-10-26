@@ -1,0 +1,60 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graphedge-20261026-01",
+  "run_id": "edge-001",
+  "created_at": "2026-10-26T18:10:09.519260+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Positive edge covariance inverse design and minimal external-contact oscillator",
+  "command": "python3 experiments/graphite-edge-metric-contact/replay_edge.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "87391efd86eceb490292dd0aefa08fbf675e4dc7",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay_edge.py",
+      "path": "inputs/001-replay_edge.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-edge-metric-contact/replay_edge.py",
+      "sha256": "f050da14f99e95e8bf071071d08e13bc6925818e4f92c09a30a0172ef1ee1501",
+      "size_bytes": 6081
+    },
+    {
+      "input_id": "input-002",
+      "name": "MATCHED_HESSIAN_RESULTS.json",
+      "path": "inputs/002-MATCHED_HESSIAN_RESULTS.json",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+      "sha256": "9eedfd8a24e5f8a791ef58a57888042d5c37b8c8a1f7100bad51cc6d5bcbff00",
+      "size_bytes": 63102
+    },
+    {
+      "input_id": "input-003",
+      "name": "audit_registry_defect.py",
+      "path": "inputs/003-audit_registry_defect.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-registry-defect-source/audit_registry_defect.py",
+      "sha256": "d1f692e280f4aa7f096ed6546152d97a6f0c2a89bc0b89e9b266b8efdac9fcc6",
+      "size_bytes": 5703
+    },
+    {
+      "input_id": "input-004",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/004-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/graphite-edge-metric-contact/mathematical_receipt.json",
+      "sha256": "5f567c94bc59daa06ad40015e3e884f2ad3ccc811f3cd2eeeb4abbe380aa5544",
+      "size_bytes": 7815
+    }
+  ],
+  "files": [
+    {
+      "path": "files/EDGE_RESULTS.json",
+      "sha256": "a5102684c850098a2a01819226fd4a519d45e90b49edf830d6f8bef38f7caef1",
+      "size_bytes": 1773
+    }
+  ]
+}
