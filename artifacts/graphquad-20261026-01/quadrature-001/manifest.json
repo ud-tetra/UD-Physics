@@ -1,0 +1,69 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graphquad-20261026-01",
+  "run_id": "quadrature-001",
+  "created_at": "2026-10-26T16:19:21.615966+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Parity-compatible graphite Gaussian quadrature, one-clock obstruction and optional FDT loss derivative",
+  "command": "python3 experiments/graphite-quadrature-obstruction/replay_quadrature.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "3a2169ef24683c6487c440e504d7734fd48cd057",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/001-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/graphite-quadrature-obstruction/mathematical_receipt.json",
+      "sha256": "81eb16fc5d94f375dfb2caf66ea49a2625f06d0fbbee2a7e657ffb2f575d2574",
+      "size_bytes": 9357
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_quadrature.py",
+      "path": "inputs/002-replay_quadrature.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-quadrature-obstruction/replay_quadrature.py",
+      "sha256": "a105528add84beb18eb9c2758d1c35aa8fd5c5d7418247521dba2aeaa085f705",
+      "size_bytes": 6383
+    },
+    {
+      "input_id": "input-003",
+      "name": "MATCHED_HESSIAN_RESULTS.json",
+      "path": "inputs/003-MATCHED_HESSIAN_RESULTS.json",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+      "sha256": "9eedfd8a24e5f8a791ef58a57888042d5c37b8c8a1f7100bad51cc6d5bcbff00",
+      "size_bytes": 63102
+    },
+    {
+      "input_id": "input-004",
+      "name": "BOND_PROXY_RESULTS.json",
+      "path": "inputs/004-BOND_PROXY_RESULTS.json",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-matched-hessian-reconstruction/BOND_PROXY_RESULTS.json",
+      "sha256": "a7624fdb3c131a1a9058a509f0deedb28f9228a8f2f59eda4805ce6b6196ff14",
+      "size_bytes": 6196
+    },
+    {
+      "input_id": "input-005",
+      "name": "audit_registry_defect.py",
+      "path": "inputs/005-audit_registry_defect.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-registry-defect-source/audit_registry_defect.py",
+      "sha256": "d1f692e280f4aa7f096ed6546152d97a6f0c2a89bc0b89e9b266b8efdac9fcc6",
+      "size_bytes": 5703
+    }
+  ],
+  "files": [
+    {
+      "path": "files/QUADRATURE_RESULTS.json",
+      "sha256": "569c22701f1c082bdb6eee7d4e05b4d5e9a5e1d81afac279a5c1d6b23222ffda",
+      "size_bytes": 3633
+    }
+  ]
+}

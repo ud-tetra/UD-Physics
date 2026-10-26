@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphquad-20261026-01",
+  "runtime": "Codex GPT-6; local computation plus GitHub connector write",
+  "task": "graphite-quadrature-obstruction",
+  "goal": "Test parity-compatible edge covariance realization against native unit clock and passive loss",
+  "created_at": "2026-10-26T15:30:00Z",
+  "base_revision": "3a2169ef24683c6487c440e504d7734fd48cd057",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "graphite-quadrature-obstruction": {
+      "held_sha": "c81dcd38459a4c97939818f532f59a0a0dc9f35f",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "parity/covariance and scalar-clock algebra PASS",
+    "28-state OU finite-difference check PASS",
+    "repository validation PASS (333 records); 16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Parity-compatible momentum-gradient quadrature matches conservative Gibbs bond process, but unit-incidence scalar-clock necessary condition has 18.7354% best Frobenius defect on matched conventional K; assumed passive bath separates initial autocorrelation slopes",
+  "next_action": "Independent native-to-material observable law, complex loss/contact and signed held-out force",
+  "mathematical_profile": {
+    "coefficient_domain": "Exact finite carrier incidence; positive real conventional 14x14 K; symbolic m,tau,d,kBT",
+    "exactness_or_precision_plan": "Exact covariance, parity and drift identities; numerical eigensystem and finite-difference replay",
+    "applicable_methods": [
+      "chain/gradient subspace",
+      "spectral/operator",
+      "time reversal and equilibrium statistics",
+      "physical units and calibration",
+      "fit/null and identifiability"
+    ],
+    "clock_metric_units_conventions": "Native dimensionless s=t/tau, unit H=I only in scoped clock test; physical K per upper atom, total potential 7 h^T K h, Theta_bar=kBT/14; native edge length ell uncalibrated"
+  }
+}
