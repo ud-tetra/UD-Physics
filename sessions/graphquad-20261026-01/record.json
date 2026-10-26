@@ -12,7 +12,8 @@
   "claims": {
     "graphite-quadrature-obstruction": {
       "held_sha": "c81dcd38459a4c97939818f532f59a0a0dc9f35f",
-      "status": "held"
+      "status": "released",
+      "released_sha": "0a2306524004f0689ce090e01d51980c064cfe73"
     }
   },
   "checks": [
@@ -21,7 +22,7 @@
     "repository validation PASS (333 records); 16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Parity-compatible momentum-gradient quadrature matches conservative Gibbs bond process, but unit-incidence scalar-clock necessary condition has 18.7354% best Frobenius defect on matched conventional K; assumed passive bath separates initial autocorrelation slopes",
+  "finding": "Parity-compatible momentum-gradient quadrature matches conservative Gibbs bond process, but unit-incidence scalar-clock necessary condition has 18.7354% best Frobenius defect on matched conventional K; assumed passive bath separates initial autocorrelation slopes; research PR #202 merged at 9efbefa4430a8df7f353d7cf9b23e4cec318a5e4",
   "next_action": "Independent native-to-material observable law, complex loss/contact and signed held-out force",
   "mathematical_profile": {
     "coefficient_domain": "Exact finite carrier incidence; positive real conventional 14x14 K; symbolic m,tau,d,kBT",
