@@ -12,13 +12,14 @@
   "claims": {
     "integration-graphite-quadrature-index": {
       "held_sha": "f52461a3752b3310fcf992af8cfa9e44326cd2f6",
-      "status": "held"
+      "status": "released",
+      "released_sha": "ebb08b859f04664db0a22f504b0044f460f1b24b"
     }
   },
   "checks": [
     "repository validation PASS (335 records); 16 unit tests PASS"
   ],
-  "finding": "Graphite hub, prior registry-defect note and current state link the merged parity-safe surrogate and scoped one-clock failure",
+  "finding": "Graphite hub, prior registry-defect note and current state link the merged parity-safe surrogate and scoped one-clock failure; integration PR #204 merged at d8e67ff4e96104042eea8c035e6285eae0b461d4",
   "next_action": "Independent source of native material map and physical complex loss/contact",
   "mathematical_profile": {
     "coefficient_domain": "Index/provenance only; no new calculation",
