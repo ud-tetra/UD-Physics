@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - 'discovery/icosahedral-fulltime-20261026/**'
+    paths:
+      - 'experiments/icosahedral-fulltime/timeframe_sampler.py'
   workflow_dispatch:
 permissions:
   contents: read

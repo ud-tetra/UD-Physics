@@ -1,0 +1,39 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-fulltime",
+  "session_id": "ico-fulltime-20261026-gpt6-a1",
+  "question": "What does the full frozen 560x180 u0..100 3D icosahedral tangent show under moving-frame projection, and can the nonlinear alignment chart accommodate its reference motion?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Integrated full 560-state mechanical model, all180 housing inputs, frozen limiting/nominal parameters and source nu=.05 retained verbatim.",
+    "New branch-local venv NumPy2.3.5/SciPy1.17.0 executes original MountLoss ode/Jacobian and source-compatible sampler, not new mechanical law.",
+    "201 sampled time points Δu=.5 with source fine worst and normal nominal tolerances; no validated interval guarantee.",
+    "New exact SO3 chart requires actual reference displacement d<=.05 and actual nonlinear relative primary radius r<=.036 everywhere. Neither all-time physical premise proved."
+  ],
+  "physical_mapping": "Native 3D mechanical units ell0,t0,E*, all parameters target-informed; no measured material, physical time or spacetime map.",
+  "target_exposure": "d=.05 new chart chosen after observing reference maxima .03944/.04668; r=.036 from prior exposed tangent target, not independently certified.",
+  "fitted_choices": [
+    "Retain earlier force parameters/normalizations/host 180-ball, no retuning.",
+    "Use sampled Δu=.5 and now a posteriori rational chart bound .05, not preregistered prediction."
+  ],
+  "sources": [
+    "b608e327b9fce95e87172c861985d7e252a8e2aa:experiments/icosahedral-pulsetube/variational.py",
+    "b608e327b9fce95e87172c861985d7e252a8e2aa:experiments/icosahedral-pulsetube/jacobian.py",
+    "https://github.com/ud-tetra/UD-Physics/actions/runs/40373318159",
+    "https://github.com/ud-tetra/UD-Physics/pull/201 (read-only prior full-time unmet task)"
+  ],
+  "baseline": "Ordinary unanchored reciprocal 3D spring/dashpot model with exactly same frozen parameters and proper SO3 alignment.",
+  "result": "NUMERICAL/SAMPLED original full 560x180 201-timepoint DOP853 runs success in isolated GHA. Max moving shape .000226945 worst/.000229308 nominal; max reference .0394404/.0466766, so older d=.011 fails. EXACT/CONDITIONAL rational improved proper-SO3 chart error<=245802834179/264666314250000≈.000928727 for reference d<=.05 and actual nonlinear relative r<=.036. Actual nonlinear relative radius, continuous reference maxima, forced U(t,s), flow Hessian and volume/strut tube OPEN.",
+  "next_discriminant": "Validate full-time continuous bounds and nonlinear finite-amplitude housing-phase flow (especially .00079062 margin) against ordinary 3D mechanical null; freeze and test source constraints before physical promotion.",
+  "reopening_conditions": "Numerically validated and mathematically enclosed full nonlinear moving-reference phase ball, full forcing Green, Hessian/domain/volume and physical discriminant beyond ordinary local mechanics.",
+  "mathematical_receipts": [
+    "sessions/ico-fulltime-20261026-gpt6-a1/mathematical_receipt.json"
+  ]
+}
