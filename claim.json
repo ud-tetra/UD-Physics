@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-quadrature-index",
+  "session": "graphquadidx-20261026-01",
+  "status": "held",
+  "created_at": "2026-10-26T16:25:00Z",
+  "base_revision": "6963a79cc11174fa59188b5752918257bd21c5da",
+  "owned_paths": [
+    "tasks/integration-graphite-quadrature-index.json",
+    "sessions/graphquadidx-20261026-01/",
+    "experiments/graphite-superlubricity/README.md",
+    "experiments/graphite-registry-defect-source/README.md",
+    "state/CURRENT.md"
+  ]
+}
