@@ -1,0 +1,192 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "edge-001",
+  "session_id": "graphedge-20261026-01",
+  "candidate_id": "graphite-edge-metric-contact",
+  "question": "Positive metric covariance and minimal contact rank completion?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "incidence",
+      "symbol": "B",
+      "object_type": "oriented integer boundary matrix",
+      "definition": "14-site by 21-edge seven-cell incidence; each column has one +1 and one -1",
+      "domain": "R^21",
+      "codomain": "R^14",
+      "coefficient_domain": "Z",
+      "units": "dimensionless",
+      "basis_orientation": "A to B as imported from carrier()",
+      "metric_measure": "Euclidean",
+      "origin": "imported",
+      "exact_expression": "rank B=13; B^T u=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "registry-carrier"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "u=1/sqrt(14)"
+    },
+    {
+      "object_id": "conventional-K",
+      "symbol": "K",
+      "object_type": "positive symmetric material Hessian",
+      "definition": "registered KC plus plate Hessian per upper atom",
+      "domain": "R^14",
+      "codomain": "R^14",
+      "coefficient_domain": "R numerical",
+      "units": "meV/A^2",
+      "basis_orientation": "aligned site order",
+      "metric_measure": "Euclidean",
+      "origin": "conventional imported",
+      "exact_expression": null,
+      "measured_value": "MATCHED_HESSIAN_RESULTS.json K",
+      "uncertainty": "finite difference and source parameter limitations",
+      "source_refs": [
+        "matched-K"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "Etotal=7 h^T K h"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "matched-K",
+      "url_or_repo_path": "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+      "version_or_commit": "87391efd86eceb490292dd0aefa08fbf675e4dc7",
+      "section_or_object_id": "K",
+      "source_status": "conventional numerical reconstruction"
+    },
+    {
+      "source_id": "registry-carrier",
+      "url_or_repo_path": "experiments/graphite-registry-defect-source/audit_registry_defect.py",
+      "version_or_commit": "87391efd86eceb490292dd0aefa08fbf675e4dc7",
+      "section_or_object_id": "carrier()",
+      "source_status": "prior finite-carrier construction"
+    }
+  ],
+  "assumptions": [
+    "Gibbs edge covariance restricted to im B^T",
+    "Identification q=B^T h is physical proxy, not native identity",
+    "Grounded contact e_A0 and continuous positive metric are new assumed constitutive choices"
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer rank/kernel",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove closed rank13 and one-contact rank14"
+    },
+    {
+      "technique": "Schur complement and pseudoinverse",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive exact covariance metric"
+    },
+    {
+      "technique": "positive metric/energy adjoint",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "check reciprocal conservative dynamics"
+    },
+    {
+      "technique": "modular/prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no modular clock or divisibility selection question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "14 vertices, 21 internal edges, one uniform kernel; 21-13=8 edge cycles; one extra external column",
+    "reduced_expression": "rank(B)=13, rank([B,e_A0])=14",
+    "factor_origins": [
+      "connected incidence rank n-1"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "assumed continuous s=t/tau",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x'=A H_e y; y'=-A^T H_v x",
+    "initial_phase": null,
+    "coupling": "external grounded reference e_A0 assumed",
+    "period_claim": null,
+    "physical_unit_map": "tau unknown, H_v=(14 tau^2/m)K chosen"
+  },
+  "dynamics_readout": {
+    "state_space": "x in R14, y in R22 for contact; static covariance on G in R21",
+    "generator_or_update": "J diag(H_v,H_e), J=[[0,A],[-A^T,0]]",
+    "initial_boundary_conditions": "G-restricted canonical equilibrium for covariance; arbitrary initial condition for conservative dynamics",
+    "conservation_and_sources": "E=(x^T Hv x+y^T He y)/2 conserved, no dissipative source",
+    "projection_and_kernel": "G=im B^T rank13, cycle ker B rank8; A full row rank14",
+    "physical_mapping": "H_v and H_e inverse-designed from conventional K; force mapping open"
+  },
+  "target_exposure": {
+    "status": "EXPOSED",
+    "known_targets": [
+      "registered conventional K",
+      "prior rank2 proxy source and rank14 spectral budget"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Q+ metric and eta cycle scale",
+      "external e_A0, right-inverse metric and zeta kernel scale",
+      "Hv proportional to K"
+    ],
+    "search_domain_and_budget": "Two analytic constructions and contact choices e_A0 versus u; no broad optimization search",
+    "selection_criterion": "exact algebraic covariance or oscillator match",
+    "baseline": "H_e=I source zero, closed rank13"
+  },
+  "calculation_steps": [
+    "Q=B^T K^-1 B and Q+ positive on G",
+    "Q+ = B^T L+ K_eff L+ B by eliminating uniform site coordinate",
+    "H_e,cov=Q+ + eta P_C gives P_G H_e,cov^-1 P_G=Q",
+    "A=[B,e_A0], L_A=AA^T; A^T L_A^-2 A + zeta(I-A^T L_A^-1 A) is positive and A H_e A^T=I",
+    "E conserved in reciprocal skew update, x second derivative equals -H_v x",
+    "Replay double precision checks and locality diagnostic"
+  ],
+  "result": {
+    "exact_expression": "gradient covariance Theta_bar Q; rank A=14; A He A^T=I; dE/ds=0",
+    "approximation": "covariance residual 3.01e-15, oscillator residual 1.68e-14; source norm 8.82972e-05 in assumed port",
+    "units": "Q A^2/meV; H_e,cov inverse Q; oscillator clock/mass scale open",
+    "precision_and_error": "double precision algebra checks; input K has separate finite difference/model uncertainty",
+    "scope": "finite registered conventional graph and assumed two distinct metrics",
+    "physical_interpretation": "conditional existence only; no native material selection"
+  },
+  "verification": [
+    {
+      "method": "local replay",
+      "command_or_proof_path": "python3 experiments/graphite-edge-metric-contact/replay_edge.py",
+      "source_revision": "87391efd86eceb490292dd0aefa08fbf675e4dc7",
+      "actual_result": "PASS double precision identities",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent physics review",
+      "command_or_proof_path": null,
+      "source_revision": "87391efd86eceb490292dd0aefa08fbf675e4dc7",
+      "actual_result": "NOT_RUN",
+      "review_relationship": "independent"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Unconstrained 21-edge Gibbs adds cycle covariance and does not equal Q",
+    "Positive unit edge metric yields uniform diagonal and zero source",
+    "Grounded contact is external and cannot be counted as an internal incidence edge",
+    "Two constructed metrics are distinct; simultaneous source/dynamics not shown"
+  ],
+  "limitations": [
+    "Conventional K and port exposed; no material native sourcing",
+    "No measured linewidth/damping/contact force or held-out signed friction",
+    "No independent physical review"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/graphedge-20261026-01/edge-001/manifest.json"
+  ],
+  "next_discriminant": "One sourced positive joint metric and reciprocal readout with measured loss/contact and frozen force/load test"
+}

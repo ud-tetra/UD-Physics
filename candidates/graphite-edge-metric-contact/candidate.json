@@ -1,0 +1,39 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-edge-metric-contact",
+  "session_id": "graphedge-20261026-01",
+  "question": "Can positive edge metric and one contact repair source and mode budget?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Gradient-sector canonical Gibbs edge law",
+    "Proxy q=B^T h identifies physical height differences with native edge covariance",
+    "One grounded external reference at site A0 and continuous reciprocal candidate dynamics",
+    "H_v proportional to conventional K via unknown mass and clock"
+  ],
+  "physical_mapping": "Two separate inverse designs import conventional K; no joint native law",
+  "target_exposure": "Registered conventional K and prior source/mode deficits known; no held-out force or linewidth",
+  "fitted_choices": [
+    "21-edge covariance inverse Q+ with arbitrary positive cycle eta",
+    "site A0 grounded contact, 22-edge inverse right-mass metric with arbitrary positive kernel zeta",
+    "vertex Hv=14 tau^2 K/m"
+  ],
+  "sources": [
+    "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+    "experiments/graphite-registry-defect-source/audit_registry_defect.py",
+    "experiments/graphite-metric-locality/README.md"
+  ],
+  "baseline": "Unit edge Gibbs source zero; closed gradient rank13 versus registered conventional spectral-weight rank14",
+  "result": "Exact positive inverse-designed covariance metric matches conventional bond proxy; one external contact makes rank14 conservative oscillator possible; no unified source or physical friction prediction",
+  "next_discriminant": "Independently sourced joint metric/contact with covariance and spectrum plus measured complex loss and signed residual",
+  "mathematical_receipts": [
+    "candidates/graphite-edge-metric-contact/mathematical_receipt.json"
+  ]
+}
