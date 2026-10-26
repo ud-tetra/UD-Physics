@@ -53,6 +53,8 @@ $$\min_c\frac{\|B^TK-cB^TL\|_F}{\|B^TK\|_F}=0.187354.$$
 
 The group-averaged model gives $0.187316$ by the same diagnostic. The obstruction is essentially present before the smaller registry defect; the $\pm2.5$ MPa model sweep stays near $0.18735$. Fitting $c$ to the **conventional model** is openly target-exposed and supplies no physical clock. A nonunit native metric, mode-dependent rate, new memory variables or changed physical map could pass this test only with an explicit reciprocal generator and independently specified parameters. This is a scoped failure of the simplest bridge, not an all-UD no-go.
 
+The [subsequent positive-metric audit](../graphite-metric-locality/README.md) constructs such a vertex metric for the group-averaged conventional $K$, with positive two-hop support. It also tests the actual registry defect and the 14-versus-13 observable-mode budget. Its fitted metric does not derive the native edge source or physical damping.
+
 ## What damping would change
 
 For an **independently assumed** equilibrium Langevin height bath with $D_h\succeq0$ and fluctuation-dissipation noise,

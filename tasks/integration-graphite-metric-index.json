@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-metric-index",
+  "goal": "Index merged positive metric locality and mode budget audit",
+  "owned_paths": [
+    "tasks/integration-graphite-metric-index.json",
+    "sessions/graphmetricidx-20261026-01",
+    "experiments/graphite-superlubricity/README.md",
+    "experiments/graphite-quadrature-obstruction/README.md",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "graphite-metric-locality"
+  ],
+  "status": "complete"
+}
