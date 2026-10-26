@@ -1,0 +1,60 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graphmetric-20261026-01",
+  "run_id": "metric-001",
+  "created_at": "2026-10-26T17:58:27.527309+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Positive two-hop vertex metric, local fits, registry obstruction and 14/13 spectral budget",
+  "command": "python3 experiments/graphite-metric-locality/replay_metric.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "b608e327b9fce95e87172c861985d7e252a8e2aa",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/001-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/graphite-metric-locality/mathematical_receipt.json",
+      "sha256": "59cd4c5b53f11576372c6dcda9ed9bfcc7caac1208abdd02f09180da94a11824",
+      "size_bytes": 9027
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_metric.py",
+      "path": "inputs/002-replay_metric.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-metric-locality/replay_metric.py",
+      "sha256": "48bd2ee2681f549441573ce659bcb63453f6fb1915e3c3c51f973af67a7f7416",
+      "size_bytes": 7444
+    },
+    {
+      "input_id": "input-003",
+      "name": "MATCHED_HESSIAN_RESULTS.json",
+      "path": "inputs/003-MATCHED_HESSIAN_RESULTS.json",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+      "sha256": "9eedfd8a24e5f8a791ef58a57888042d5c37b8c8a1f7100bad51cc6d5bcbff00",
+      "size_bytes": 63102
+    },
+    {
+      "input_id": "input-004",
+      "name": "audit_registry_defect.py",
+      "path": "inputs/004-audit_registry_defect.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-registry-defect-source/audit_registry_defect.py",
+      "sha256": "d1f692e280f4aa7f096ed6546152d97a6f0c2a89bc0b89e9b266b8efdac9fcc6",
+      "size_bytes": 5703
+    }
+  ],
+  "files": [
+    {
+      "path": "files/METRIC_RESULTS.json",
+      "sha256": "b4ea985f7fa43a216c241e7c41b66b0ed2fd7c28fcf8ba4f2fdad7041278ad86",
+      "size_bytes": 4201
+    }
+  ]
+}
