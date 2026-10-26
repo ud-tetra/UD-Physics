@@ -1,0 +1,35 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ico-fulltime-20261026-gpt6-a1",
+  "runtime": "GPT-6 GitHub connector with provisioned GitHub Actions Python 3.12 venv NumPy 2.3.5 SciPy 1.17.0, pinned own isolated research branch",
+  "task": "icosahedral-fulltime-20261026",
+  "goal": "Run unchanged 560x180 3D pulse tangent with moving SO3 readout at all sampled times in SciPy-capable pinned workflow, assess reference and shape envelopes without claiming nonlinear validation",
+  "created_at": "2026-10-26T17:56:13.619Z",
+  "base_revision": "b608e327b9fce95e87172c861985d7e252a8e2aa",
+  "source_dirty_at_boot": null,
+  "status": "active",
+  "claims": {
+    "icosahedral-fulltime-20261026": {
+      "ref": "refs/heads/claims/icosahedral-fulltime-20261026",
+      "sha": "04cec2800a4b059c77dd7439b3f46c0a39bee985",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [],
+  "finding": "PENDING full-time sample; prior integrated time-dependent Green/Hessian/nonlinear tube remain OPEN",
+  "next_action": "Execute workflow and capture sample time series, verify endpoints against integrated archive and maintain mathematical certification gates.",
+  "mathematical_profile": {
+    "coefficient_domain": "frozen Float64 NumPy/SciPy DOP853 for 560x180 tangent; exact source model constant parameters; no physical scale",
+    "exactness_or_precision_plan": "sampled NUMERICAL time-series with integration tolerance and archive endpoint consistency, no interval bound",
+    "applicable_methods": [
+      "source full augmented variational flow",
+      "moving-reference proper SO3 tangent per time",
+      "operator norm of 39x180 readout",
+      "old archived final endpoint comparator",
+      "finite sample alias and nonlinear flow limitations"
+    ],
+    "clock_metric_units_conventions": "native u=t/t0, length ell0=1, frozen housing phase energy Eh=Ep/40000, original time horizon100"
+  }
+}

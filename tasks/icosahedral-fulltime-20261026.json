@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "icosahedral-fulltime-20261026",
+  "goal": "Run unchanged 560x180 3D pulse tangent with moving SO3 readout at all sampled times in SciPy-capable pinned workflow, assess reference and shape envelopes without claiming nonlinear validation",
+  "owned_paths": [
+    "tasks/icosahedral-fulltime-20261026.json",
+    "sessions/ico-fulltime-20261026-gpt6-a1/",
+    "experiments/icosahedral-fulltime/",
+    "candidates/icosahedral-fulltime/",
+    "artifacts/ico-fulltime-20261026-gpt6-a1/",
+    ".github/workflows/icosahedral-fulltime-20261026.yml"
+  ],
+  "dependencies": [
+    "integration-icosahedral-pulsetube-20261022"
+  ],
+  "status": "active",
+  "result": "PENDING first full SciPy-capable execution; frozen nu=0.05, limiting and nominal case, 201 time samples",
+  "next_action": "Execute workflow and capture sample time series, verify endpoints against integrated archive and maintain mathematical certification gates."
+}

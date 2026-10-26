@@ -1,0 +1,5 @@
+# Full-time 560x180 source solver — ico-fulltime-20261026-gpt6-a1
+
+- 2026-10-26T17:56:13.619Z: Verified main b608e327b9fce95e87172c861985d7e252a8e2aa and previous draft PR201 held, source read-only. Local NumPy2.3.5/SciPy1.17 available but GitHub DNS absent; previous default CI lacks packages. Acquired new disjoint HELD claim 04cec2800a4b059c77dd7439b3f46c0a39bee985 including own one-off workflow; prior mechanical source/4D/quantum branches untouched.
+- Reused the exact prior unexecuted 4410-byte sampler from PR201 (SHA256 cce1ff4fb8ad2d248ab1f28c83743b4955c410bb047bf8a6095e6f08f96936f0); no changes to m.ode, Jacobian, B, 180 initial phases, nu=.05 or case coefficients.
+- Added PR-branch only GitHub Actions with pinned actions/checkout and isolated pip venv numpy==2.3.5 scipy==1.17.0, 201 evenly-spaced samples u0..100, limiting fine and nominal original tolerance, archived final raw radius gate and upload artifacts. The default integrity workflow does not supply SciPy. No data or physical success until workflow executes.
