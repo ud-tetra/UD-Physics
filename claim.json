@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-edge-index",
+  "session": "graphedgeidx-20261026-01",
+  "status": "held",
+  "created_at": "2026-10-26T18:13:48.127Z",
+  "base_revision": "04de740ccbec5ce2432e198d97ae5c78c90580ff",
+  "owned_paths": [
+    "tasks/integration-graphite-edge-index.json",
+    "sessions/graphedgeidx-20261026-01/",
+    "state/CURRENT.md"
+  ]
+}
