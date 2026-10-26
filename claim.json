@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "integration-graphite-metric-index",
   "session": "graphmetricidx-20261026-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-26T20:05:00Z",
   "base_revision": "dd81f7ed7792202d318cc5be5390bacd85825f8a",
   "owned_paths": [
@@ -13,5 +13,7 @@
     "experiments/graphite-superlubricity/README.md",
     "experiments/graphite-quadrature-obstruction/README.md",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-10-26T20:25:00Z",
+  "released_from_sha": "acba65e1dddf756feb46d690657d7566e2ab7368"
 }
