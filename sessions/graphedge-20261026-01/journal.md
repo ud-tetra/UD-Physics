@@ -11,3 +11,4 @@
 
 Captured artifacts/graphedge-20261026-01/edge-001 (NUMERICAL): Positive edge covariance inverse design and minimal external-contact oscillator
 - `python3 scripts/validate.py`: PASS 345 records; `python3 -m unittest discover -s tests -v`: 16 tests PASS.
+- Research PR #211 merged at `15493d81033f94aba59779527627096a646701b3`; Discovery integrity workflow PASS; claim released with exact lease to `5fa902ccb35fcdc796c4d356f3e28f27c281ab12`.

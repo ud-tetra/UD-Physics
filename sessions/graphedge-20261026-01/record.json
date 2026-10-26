@@ -12,7 +12,8 @@
   "claims": {
     "graphite-edge-metric-contact": {
       "held_sha": "53dc7ce86c460aeae087e0576bf9280222a1cd86",
-      "status": "held"
+      "status": "released",
+      "released_sha": "5fa902ccb35fcdc796c4d356f3e28f27c281ab12"
     }
   },
   "checks": [
@@ -22,7 +23,7 @@
     "repository validation PASS (345 records)",
     "16 unit tests PASS"
   ],
-  "finding": "Exact covariance is reproducible by a positive target-imported edge metric; one external contact completes rank14 with a positive conservative inverse design; no unified/native material law or damping",
+  "finding": "Exact covariance is reproducible by a positive target-imported edge metric; one external contact completes rank14 with a positive conservative inverse design; no unified/native material law or damping; research PR #211 merged at 15493d81033f94aba59779527627096a646701b3",
   "next_action": "Specify and source one joint metric/preparation with reciprocal bond readout, then independently identify loss/contact and signed force",
   "mathematical_profile": {
     "coefficient_domain": "Integer oriented incidence; positive real matrices from conventional numerical K",
