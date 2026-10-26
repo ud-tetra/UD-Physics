@@ -1,0 +1,30 @@
+{
+  "Gram_lower": "6813/2000",
+  "Omega_upper": "6958/473125",
+  "bound_float": 0.0009287273103702127,
+  "bound_fraction": "245802834179/264666314250000",
+  "critical_scope": "The chart theorem holds only if both antecedents hold at all target times; sampled DOP853 reference values cannot certify continuous bounds or actual nonlinear perturbation tube.",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL_SOURCE",
+    "OPEN"
+  ],
+  "rational_constants": {
+    "c_lower": "18/5",
+    "centroid": "25/24",
+    "inv_sqrt2": "71/100",
+    "ref_Frobenius": "331/100",
+    "ref_operator": "191/100"
+  },
+  "reference_condition": "||Yref(t)-Yequil||_F <= 1/20=0.05, actual full-time continuum NOT verified",
+  "reference_radius": "1/20",
+  "relative_condition": "||Yactual(t)-Yref(t)||_F <= 9/250=0.036, NOT verified for nonlinear phase ball",
+  "relative_radius": "9/250",
+  "source_observed_sampled_reference_max": {
+    "limiting": 0.03944037550681534,
+    "nominal": 0.046676592620305025
+  },
+  "status": "PASS",
+  "threshold": "<1/1000"
+}
