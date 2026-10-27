@@ -10,3 +10,4 @@
 
 Captured artifacts/graphjoint-20261027-01/joint-001 (NUMERICAL): Joint positive conservative graphite oscillator, odd readout and native edge null
 - Repository validation PASS (351 records); 16 unit tests PASS.
+- Research PR #215 merged at `6fc7cda222cc1dcb9c652a84f0f6f5b3d039da8c`; Discovery integrity PASS; claim released by exact lease to `b16b6fa59697176fc39dbb4459a78670bc807c1a`.
