@@ -1,0 +1,264 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosa-reference-001",
+  "session_id": "ico-ref-envelope-20261027-gpt6-a1",
+  "candidate_id": "icosahedral-reference-envelope",
+  "question": "What certified between-sample primary reference displacement follows from source kinetic energy at Δu=.05 and what verified numerical sample-error budget is needed to establish d=.070?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "Y",
+      "symbol": "Yref(u)",
+      "object_type": "frozen source 13-primary reference position in full560-state mechanics",
+      "definition": "original unforced m.ode and source yref(0)=MountLoss.initial_augmented(.1)",
+      "domain": "u∈[0,100]",
+      "codomain": "R13x3 positions",
+      "coefficient_domain": "real ODE, Float64 SciPy sample",
+      "units": "native ell0",
+      "basis_orientation": "hub+12 shell, proper 3D ambient frame",
+      "metric_measure": "Frobenius radius relative to source equilibrium positions",
+      "origin": "integrated source",
+      "exact_expression": null,
+      "measured_value": "2001 sampled points per case",
+      "uncertainty": "numerical global sample error unknown",
+      "source_refs": [
+        "model",
+        "GHA"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "native ell0 and source initial alpha .1"
+    },
+    {
+      "object_id": "kinetic",
+      "symbol": "E0,mmin,Vmax",
+      "object_type": "positive source mechanical energy and primary velocity envelope",
+      "definition": "nonnegative potential+kinetic, Emech'<=0, mmin=min 13 positive primary spatial masses",
+      "domain": "full560 state in positive length domain",
+      "codomain": "positive speed bound",
+      "coefficient_domain": "real source masses and analytic inequality",
+      "units": "native speed ell0/t0",
+      "basis_orientation": "all13 3D point velocities",
+      "metric_measure": "mass-weighted energy, Euclidean Frobenius positions",
+      "origin": "derived",
+      "exact_expression": "||dot Yprimary||F<=sqrt(2E0/mmin)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "model"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "Y"
+      ],
+      "normalization": "E0=Ep source"
+    },
+    {
+      "object_id": "budget",
+      "symbol": "delta_num",
+      "object_type": "unverified global sample-position numerical error needed for continuous-time bound",
+      "definition": "max_j ||Ytrue_ref(u_j)-Ynum_ref(u_j)||F<=delta_num",
+      "domain": "2001 mesh points per frozen case",
+      "codomain": "nonnegative scalar error",
+      "coefficient_domain": "unknown positive, sample DOP853 tolerance comparisons",
+      "units": "native ell0",
+      "basis_orientation": "primary full13 points",
+      "metric_measure": "Frobenius position error",
+      "origin": "missing external numerical validation",
+      "exact_expression": "delta_num<.010310941 (nominal) and <.010877718 (limiting) suffices for source d=.07",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "GHA"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "kinetic"
+      ],
+      "normalization": "d=.07 target-informed"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "model",
+      "url_or_repo_path": "experiments/icosahedral-tolerances/hardware.py",
+      "version_or_commit": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+      "section_or_object_id": "positive mass Hamiltonian, energy sum and mounting potential",
+      "source_status": "integrated conditional mechanics"
+    },
+    {
+      "source_id": "loss",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/mountloss.py",
+      "version_or_commit": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+      "section_or_object_id": "nonnegative heat production and viscous loss",
+      "source_status": "integrated positive passive source"
+    },
+    {
+      "source_id": "GHA",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/actions/runs/40569925956",
+      "version_or_commit": "efb1fd11cf097382b682ad1bbd116ae6e9139b79",
+      "section_or_object_id": "reference-only DOP853 original m.ode two tolerance and 2001-point grids",
+      "source_status": "executed numerical, not interval certification"
+    },
+    {
+      "source_id": "prior",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/219",
+      "version_or_commit": "71e484edf00ab0ac197768bf9cac2cd566ac85f8",
+      "section_or_object_id": "d=.07 conditional chart and eight selected nonlinear housing cases",
+      "source_status": "unmerged read-only development"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Actual unforced source reference trajectory exists, positive potential and dissipative heat guarantee Emech<=E0 throughout the time horizon; primary mmin positive."
+    },
+    {
+      "id": "A2",
+      "description": "Unknown global numerical primary-position error delta_num at mesh values is separately certified; DOP853 tolerance repeat is not such certification."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "source Hamiltonian and energy inequality",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "nonnegative potentials and kinetic energy give uniform speed cap"
+    },
+    {
+      "technique": "continuous-time nearest-mesh interpolation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact Delta/2 speedcap bound from mean value/integration"
+    },
+    {
+      "technique": "source DOP853 two tolerance sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "2001 points and sample maxima/nfev, not rigorous global numeric error"
+    },
+    {
+      "technique": "a posteriori validated ODE residual/interval",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "required to bound delta_num<.01031 before reference d=.07 claim"
+    },
+    {
+      "technique": "projected all180 phase forcing Green/flow Hessian",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "other full nonlinear tube prerequisite, separate experiment"
+    },
+    {
+      "technique": "conventional mechanical null/physical units",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "generic energy-speed bound, no unique physical UD identification"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "13 spatial primary points×3, 2001 uniform reference samples u0..100 at Delta=1/20",
+    "reduced_expression": "between-grid time distance <=Delta/2=1/40, sup reference <=Dsample + sqrt(2E0/mmin)/40 +delta_num",
+    "factor_origins": [
+      "mechanical nonnegative energy",
+      "uniform mesh closest endpoint",
+      "triangle inequality and Cauchy"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native continuous source u=t/t0 with grid Δu=.05",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "original unforced MountLoss y'=f(y) and nonincreasing Emech",
+    "initial_phase": "frozen alpha=.1 reference and no housing-phase perturbations",
+    "coupling": "positive source internal damping/heat only",
+    "period_claim": "none, sampled high-frequency peak near u9.2",
+    "physical_unit_map": "native ell0,t0,E* not independently calibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "full 560 phase+heat mechanical reference, readout first39 spatial primary coordinates",
+    "generator_or_update": "unchanged source ODE two SciPy DOP853 tolerance runs",
+    "initial_boundary_conditions": "two frozen case coefficients, reference no 180 housing input",
+    "conservation_and_sources": "Emech<=E0 from passive heat, potential nonnegative",
+    "projection_and_kernel": "no rigid-mode removal: raw equilibrium-relative reference Frobenius radius",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "POST_REFERENCE_D0P07_TARGET_EXPOSED",
+    "known_targets": [
+      "d=.07 repaired moving chart bound, old d=.05 failed at u9.25"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Delta=.05 grid chosen to permit energy-based gap fit under d=.07",
+      "solver tolerance pair selected for reproducibility not statistical uncertainty"
+    ],
+    "search_domain_and_budget": "two fixed source cases, two solver tolerances, 2001 samples each; no mechanical coefficient fitting",
+    "selection_criterion": "obtain a positive explicit verified numerical-error allowance for continuous d=.07 source reference",
+    "baseline": "ordinary positive-energy unforced 3D mechanical ODE"
+  },
+  "calculation_steps": [
+    "Verify original frozen source positive kinetic and potential and dissipative heat imply Emech(u)<=E0.",
+    "Bound ||dot Yprimary||F by sqrt(2E0/mmin) for actual reference, independent of time sample.",
+    "Prove sup displacement <=max_grid numerical primary displacement +Delta/2 Vmax + unknown certified delta_num.",
+    "Execute two frozen reference-only 2001 sample DOP853 runs at two tolerances each in isolated pinned numerical environment.",
+    "Compute source E0,mmin, Vmax, sampled maxima, conservative gap allowance, and target d=.07 numerical-error headroom.",
+    "Check DOP853 strict vs nominal sampled array difference but do not mistake it for a global error certificate.",
+    "Separate full180 nonlinear r=.036/forced Green/Hessian, strut and volume as OPEN."
+  ],
+  "result": {
+    "exact_expression": "sup_{u≤100}||Yref(u)-Y0||F <=D_sample + (Delta/2)sqrt(2E0/mmin)+delta_num",
+    "approximation": "limiting provisional .059122282 +delta_num, nominal .059689059+delta_num; requires validated delta_num<.01031 both cases",
+    "units": "native ell0 primary Frobenius radius and time u; physical SI calibration open",
+    "precision_and_error": "EXACT/CONDITIONAL analytic inequality, NUMERICAL Float64 DOP853 samples with tolerance differences ~1e-12 NOT global-error bounds",
+    "scope": "frozen reference motion only; no nonlinear 180 phase ball or 80% breathing tube",
+    "physical_interpretation": "generic classical positive mechanical energy interpolation, no UD-specific prediction"
+  },
+  "verification": [
+    {
+      "method": "isolated GHA pinned NumPy/SciPy source two tolerance and 2001 grids",
+      "command_or_proof_path": "experiments/icosahedral-reference-envelope/reference_envelope.py",
+      "source_revision": "efb1fd11cf097382b682ad1bbd116ae6e9139b79",
+      "actual_result": "PASS full 2992-byte JSON output SHA256 13f126c8a2ea8aab5ba47c4923b70d74929b06f9522f32e897cf8eb871e57040",
+      "review_relationship": "same constructor numerical"
+    },
+    {
+      "method": "analytic energy-to-interpolation inequality",
+      "command_or_proof_path": "experiments/icosahedral-reference-envelope/README.md",
+      "source_revision": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+      "actual_result": "EXACT/CONDITIONAL proof, verified positive budget if sample errors independently certified",
+      "review_relationship": "same constructor"
+    },
+    {
+      "method": "validated global numerical source error",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED; delta_num unresolved",
+      "review_relationship": "missing independent validation"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Earlier Δ=.25 raw energy Lipschitz gap is ~.043, so sample max+.043 exceeds d=.07 and cannot certify it.",
+    "Even Δ=.05 with very small two-tolerance difference does not certify exact continuous source because sampled global integrator defect is unbounded.",
+    "Full 180-phase nonlinear relative radius r=.036 remains independent from the reference-only result.",
+    "All candidate response is identical to ordinary damped 3D mechanical network."
+  ],
+  "limitations": [
+    "No interval/a posteriori validated sampled true-state error delta_num.",
+    "No projected forcing Green U(t,s), nonlinear Hessian/finite housing-phase error or exact 120 strut/20 cell-domain.",
+    "No independent scientific review, measured physical system or UD physical spacetime identification."
+  ],
+  "changed_dependencies": [
+    "New separate claim, prior PR219 and integrated source read-only; nothing mainline written."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/ico-ref-envelope-20261027-gpt6-a1/reference-001/manifest.json"
+  ],
+  "next_discriminant": "Prove validated numerical sample global error <0.01031 with source-specific a posteriori bound to close reference radius d=.07 condition. Separately validate full180-phase nonlinear relative r=.036 and U(t,s) forced Green/Hessian and physical volume/strut domain."
+}
