@@ -1,0 +1,306 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosa-framechart-001",
+  "session_id": "ico-framechart-20261024-gpt6-a1",
+  "candidate_id": "icosahedral-framechart",
+  "question": "Can an explicit SO(3)-proper, translation-removing readout chart certify its nonlinear remainder for the 13-primary 3D icosahedral mechanics, without dropping any of the complete 560 dynamical state variables?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "geometry",
+      "symbol": "X,c",
+      "object_type": "centered twelve-point regular icosahedral reference shell",
+      "definition": "X in R^(12x3) from half-scaled golden-ratio vertex triples; hub at origin; X^TX=cI3",
+      "domain": "R^(12x3)",
+      "codomain": "positive c",
+      "coefficient_domain": "Q(sqrt5) exact geometry and rational bounds",
+      "units": "native ell0 reference edge1",
+      "basis_orientation": "proper spatial SO3, oriented source icosahedral shell",
+      "metric_measure": "Euclidean point Frobenius H=I; c=(5+sqrt5)/2",
+      "origin": "imported exact source geometry",
+      "exact_expression": "sum X_i=0, X^T X=((5+sqrt5)/2)I3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "free3d",
+        "pulse"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "shell edge length one"
+    },
+    {
+      "object_id": "E",
+      "symbol": "E,mu",
+      "object_type": "primary-point position displacement and shell translation gauge",
+      "definition": "E=(E_shell,e_hub) in R13x3; mu=sum_i E_shell_i/12; Etilde=(E_shell-mu,e_hub-mu)",
+      "domain": "R13x3",
+      "codomain": "R13x3",
+      "coefficient_domain": "real, rational radius",
+      "units": "native ell0",
+      "basis_orientation": "spatial row vectors",
+      "metric_measure": "Frobenius norm, r<=9/250",
+      "origin": "assumed bounded error; source tangent radius exposed",
+      "exact_expression": "||Etilde||F<=sqrt(13/12)||E||F",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "pulse"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "geometry"
+      ],
+      "normalization": "radius9/250 chosen post-exposure"
+    },
+    {
+      "object_id": "chart",
+      "symbol": "F(E),Omega,R",
+      "object_type": "explicit smooth proper-frame nonlinear 13-primary readout",
+      "definition": "Omega=skew(X^T(E_shell-mu))/c; R=exp(-Omega) in SO3; F=( (X+E_shell-mu)R-X, (e_hub-mu)R)",
+      "domain": "R13x3",
+      "codomain": "R13x3",
+      "coefficient_domain": "real analytic, exact Lie algebra",
+      "units": "native ell0",
+      "basis_orientation": "orientation-preserving SO3, no reflection",
+      "metric_measure": "Frobenius norm",
+      "origin": "constructed readout hypothesis",
+      "exact_expression": "DF(0)E=(E_shell-mu-XOmega,e_hub-mu)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "pulse"
+      ],
+      "assumption_ids": [
+        "A3"
+      ],
+      "dependency_ids": [
+        "geometry",
+        "E"
+      ],
+      "normalization": "not full-state dynamics reduction"
+    },
+    {
+      "object_id": "bound",
+      "symbol": "B",
+      "object_type": "uniform chart nonlinear Taylor remainder",
+      "definition": "sup ||F(E)-DF(0)E||F over primary error ball ||E||F<=9/250",
+      "domain": "E ball in R13x3",
+      "codomain": "positive real",
+      "coefficient_domain": "Q strict majorant",
+      "units": "native ell0",
+      "basis_orientation": "proper-frame output",
+      "metric_measure": "induced matrix operator and Frobenius norms",
+      "origin": "derived analytic theorem",
+      "exact_expression": "B<=5589/6160000<1/1000",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "pulse"
+      ],
+      "assumption_ids": [
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [
+        "chart"
+      ],
+      "normalization": "uniform radius9/250"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "pulse",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/README.md",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "§§1–6, 560-state moving pulse, raw/proper-frame tangent radius and open nonlinear tube",
+      "source_status": "integrated numerical and exact conditional, source read-only"
+    },
+    {
+      "source_id": "theorem",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/TUBE_THEOREM.md",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "§§1–5 full Green/Hessian/reference and frame chart error requirements",
+      "source_status": "exact conditional tube theorem, unmet verified premises"
+    },
+    {
+      "source_id": "free3d",
+      "url_or_repo_path": "experiments/icosahedral-free3d/README.md",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "regular 3D icosahedral primary coordinates, center/hub, mechanical geometry",
+      "source_status": "integrated conditional geometry"
+    },
+    {
+      "source_id": "mount",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/README.md",
+      "version_or_commit": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "section_or_object_id": "280 position coordinates, full damping/house mounts and positive length domain",
+      "source_status": "integrated mechanical assumption, not laboratory implementation"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Retain original regular icosahedral shell edge1, center hub at zero, source full 560-state nonlinear mechanics unchanged."
+    },
+    {
+      "id": "A2",
+      "description": "For the chart theorem only, assume actual shell+hub primary displacement Frobenius norm<=9/250 continuously. The prior 0.03500972 is LINEAR TANGENT data, not proof of that condition."
+    },
+    {
+      "id": "A3",
+      "description": "Use explicit shell-centroid translation gauge and SO3 exponential readout rather than prior Procrustes gauge; no reflection and no dynamics reduction."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact algebraic golden ratio geometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "X^TX=cI, c Q(sqrt5), exact rational bounds"
+    },
+    {
+      "technique": "SO3 Lie group / geometric invariance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "proper exponential rotation, rigid tangent removal, orientation-preserving volume"
+    },
+    {
+      "technique": "operator/Frobenius norm and analytic matrix exponential",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "uniform quadratic chart remainder for all displacement directions"
+    },
+    {
+      "technique": "finite deterministic NumPy constructor",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "120 random fixed-seed fixtures near r=.036 plus pure translations and rotations"
+    },
+    {
+      "technique": "sensitivity/identifiability and classical mechanical null",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "readout-only universal SO3 technique, no UD-specific physical prediction"
+    },
+    {
+      "technique": "full forced Green/Hessian and interval ODE",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "source 560-state nonlinear tube remains separate unsolved dependency"
+    },
+    {
+      "technique": "modular/prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "real continuous 3D mechanical geometry, no discrete modular clock"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "12 golden-ratio shell +1 hub =13 primary points; c=(5+sqrt5)/2; r=9/250; t=9/625",
+    "reduced_expression": "[(27/8)*t²/2+(21/20)*r*t]/(1-t)=5589/6160000<1/1000",
+    "factor_origins": [
+      "X^TX=cI and c in (7/2,15/4)",
+      "centroid map norm sqrt(13/12)",
+      "3x3 skew operator norm F/sqrt2",
+      "power-series majorants e^t-1-t and e^t-1"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "source native continuous u=t/t0, not needed for readout map",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "mechanical source 560-variable ODE untouched; readout F(E) applied at each time",
+    "initial_phase": "full 180-dimensional housing phase ball per source; no new phase sample assertion",
+    "coupling": "no new constitutive or damping",
+    "period_claim": "none",
+    "physical_unit_map": "ell0 length, E* energy and t0 time uncalibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "full 560 mechanical phases retained but chart acts only on 13-primary positions",
+    "generator_or_update": "source unchanged MountLoss ODE; postprocess Y_primary positions by subtracting shell centroid and rotating by SO3 exponential",
+    "initial_boundary_conditions": "actual raw 13-primary error inside radius0.036 at every time is additional unverified hypothesis",
+    "conservation_and_sources": "full mechanical momentum, rigid energy, housing damping/heat untouched",
+    "projection_and_kernel": "DF(0) kills six global rigid displacement tangents but chart not quotienting dynamical energy",
+    "physical_mapping": "no fabricated physical mechanism, only geometric readout"
+  },
+  "target_exposure": {
+    "status": "POST_SOURCE_TANGENT_AND_FAILED_BUDGET_EXPOSURE",
+    "known_targets": [
+      "source tangent raw primary radius .03500972",
+      "prior different Procrustes shape tangent radius .0002420865",
+      "goal aligned flow remainder<=.001 and u100 breathing threshold"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "chose rational radius .036 to enclose observed tangent radius if it also bound nonlinear trajectories (not proved)",
+      "chose shell-centroid SO3 exponential chart after seeing failed raw determinant budget"
+    ],
+    "search_domain_and_budget": "one readout chart, exact analytic entire 13x3 ball and 120 fixed-seed numerical fixtures in five amplitude classes, no material parameter fit",
+    "selection_criterion": "bound chart nonlinearity below .001 without modifying full 560-state model or using prior Procrustes tangent as if same chart",
+    "baseline": "ordinary centered rigid-frame SO3 mechanics on an isotropic point cloud"
+  },
+  "calculation_steps": [
+    "Create centered shell X from half-scaled golden-ratio triples and derive X^TX=((5+sqrt5)/2)I3 exactly.",
+    "For error E define shell centroid mu and Etilde translation-adjusted on all13; show ||Etilde||F<=sqrt(13/12)||E||F.",
+    "Define Omega=skew(X^TEshell_centered)/c and R=exp(-Omega); rotation proper, chart F(E) as shell/hub both rotated after translation.",
+    "Differentiate chart at E=0 and verify its linear projection annihilates pure translations and infinitesimal rigid rotations without altering dynamics.",
+    "Using c>7/2, ||X||F<27/8 and r<=9/250, derive ||Omega||2<=r/sqrt(2c)<=9/625.",
+    "Apply exponential power series bounds ||R-I+Omega||<=t²/[2(1-t)] and ||R-I||<=t/(1-t); combine to exact rational bound5589/6160000<.001.",
+    "Run 120 deterministic numerical perturbation trials with amplitudes0,.007,.02,.03500972,.036, separate translations and rotations, check orthogonality, chart error and tangent normality.",
+    "Preserve the missing nonlinear flow U(t,s), uniform Hessian/reference defect, continuous actual primary ball/domain and nonlinear volume readout as independent OPEN proof obligations."
+  ],
+  "result": {
+    "exact_expression": "||F(E)-DF(0)E||F<=5589/6160000 if actual ||E||F<=9/250, with R=exp(-skew(X^TEc)/c) in SO3; all rigid tangent directions in ker DF(0)",
+    "approximation": "120 fixed-seed NumPy fixtures max observed remainder .00018880629408522345, max orthogonality error3.44e-16",
+    "units": "native length ell0 with shell edge1; no SI mapping",
+    "precision_and_error": "analytic Fraction inequalities and exact Q(sqrt5) geometry; numerical float64 sanity checks not rigorous ODE enclosures",
+    "scope": "only readout chart on primary 13 points and explicit displacement ball; full nonlinear mechanical u100 not proved",
+    "physical_interpretation": "generic conventional SO3 frame alignment; not unique UD physics"
+  },
+  "verification": [
+    {
+      "method": "exact rational inequalities and deterministic NumPy constructor",
+      "command_or_proof_path": "experiments/icosahedral-framechart/audit.py --out /tmp/frame.json",
+      "source_revision": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+      "actual_result": "PASS bound, 120 trials, pure translations and rotations; immutable source/result hash verified",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent full mechanical nonlinear all-phase tube",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED / still OPEN",
+      "review_relationship": "not performed"
+    },
+    {
+      "method": "external non-constructor review and empirical mechanical experiment",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "independent"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Prior 0.03500972 is numerical tangent gain and not a certified actual continuous nonlinear flow radius.",
+    "Prior Procrustes-aligned 0.0002420865 uses another SO3 chart: cannot combine its tangent directly with this bound without reprojecting.",
+    "Uniform chart bound does not enclose full forced Green/Hessian/reference defect or 20 cell-volume nonlinear readout.",
+    "Generic SO3 symmetry readout available to ordinary mechanical networks, so does not establish UD-specific mechanism."
+  ],
+  "limitations": [
+    "No all-phase positive strut length/domain or u100 nonlinear breathing certificate.",
+    "No material constitutive, geometry routing or bath calibration and no experimental force/stress readout.",
+    "No source-selected UD physical length/clock/energy map.",
+    "No external independent reviewer."
+  ],
+  "changed_dependencies": [
+    "New independent chart on unchanged 3D integrated mechanics. Parked 4D/JJ/QPB branches untouched; no mainline physical promotion."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/ico-framechart-20261024-gpt6-a1/frame-001/manifest.json"
+  ],
+  "next_discriminant": "Apply exact new linear frame map to published full180 columns and validate all-phase continuous actual primary radius through u100 with forced Green/Hessian/reference bounds; then combine with determinant remainder. Do not claim closed tube before those steps."
+}
