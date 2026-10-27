@@ -1,0 +1,18 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "icosahedral-nonlinear-radial-20261027",
+  "session": "ico-radial-20261027-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-27T17:47:13.674Z",
+  "base_revision": "360b72d751934eed428df9b7f89358d9260bbcad",
+  "owned_paths": [
+    "tasks/icosahedral-nonlinear-radial-20261027.json",
+    "sessions/ico-radial-20261027-gpt6-a1/",
+    "experiments/icosahedral-nonlinear-radial/",
+    "candidates/icosahedral-nonlinear-radial/",
+    "artifacts/ico-radial-20261027-gpt6-a1/",
+    ".github/workflows/icosahedral-nonlinear-radial-20261027.yml"
+  ]
+}
