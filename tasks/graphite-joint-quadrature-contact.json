@@ -1,0 +1,19 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-joint-quadrature-contact",
+  "goal": "Test one positive reciprocal contact model with joint conservative covariance and spectrum and audit literal native edge source",
+  "owned_paths": [
+    "tasks/graphite-joint-quadrature-contact.json",
+    "sessions/graphjoint-20261027-01",
+    "candidates/graphite-joint-quadrature-contact",
+    "experiments/graphite-joint-quadrature-contact",
+    "artifacts/graphjoint-20261027-01"
+  ],
+  "dependencies": [
+    "graphite-edge-metric-contact",
+    "graphite-quadrature-obstruction",
+    "graphite-matched-hessian-reconstruction"
+  ],
+  "status": "complete"
+}

@@ -1,0 +1,232 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "joint-001",
+  "session_id": "graphjoint-20261027-01",
+  "candidate_id": "graphite-joint-quadrature-contact",
+  "question": "Joint positive reciprocal covariance/spectrum and literal native edge port?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "A",
+      "symbol": "A=[B,e_A0]",
+      "object_type": "augmented incidence plus external contact",
+      "definition": "14x22 matrix with 21 internal oriented edges and one grounded column",
+      "domain": "R^22",
+      "codomain": "R^14",
+      "coefficient_domain": "Z",
+      "units": "dimensionless",
+      "basis_orientation": "A to B internal, positive grounded A0",
+      "metric_measure": "Euclidean",
+      "origin": "assumed extension of imported carrier",
+      "exact_expression": "rank A=14",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "carrier"
+      ],
+      "assumption_ids": [
+        "contact"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit grounded column"
+    },
+    {
+      "object_id": "K",
+      "symbol": "K",
+      "object_type": "conventional positive stiffness",
+      "definition": "registered KC plus plate Hessian per mean upper atom",
+      "domain": "R^14",
+      "codomain": "R^14",
+      "coefficient_domain": "R numerical",
+      "units": "meV/Angstrom^2",
+      "basis_orientation": "aligned site order",
+      "metric_measure": "Euclidean",
+      "origin": "imported conventional",
+      "exact_expression": null,
+      "measured_value": "MATCHED_HESSIAN_RESULTS.json K",
+      "uncertainty": "finite difference and source parameter limitations",
+      "source_refs": [
+        "Ksource"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "Etotal=7 x^T K x"
+    },
+    {
+      "object_id": "r",
+      "symbol": "r",
+      "object_type": "odd observable",
+      "definition": "B^T K^-1/2 x_prime /sqrt(a)",
+      "domain": "R^22 via x_prime=A He y",
+      "codomain": "R^21",
+      "coefficient_domain": "R positive matrix functional calculus",
+      "units": "Angstrom",
+      "basis_orientation": "A to B bonds",
+      "metric_measure": "canonical Gaussian",
+      "origin": "FIT target-selected",
+      "exact_expression": "r=B^T K^-1/2 A He y/sqrt(a)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "Ksource"
+      ],
+      "assumption_ids": [
+        "odd-map"
+      ],
+      "dependency_ids": [
+        "A",
+        "K"
+      ],
+      "normalization": "a=14 tau^2/m"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Ksource",
+      "url_or_repo_path": "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+      "version_or_commit": "360b72d751934eed428df9b7f89358d9260bbcad",
+      "section_or_object_id": "K",
+      "source_status": "conventional numerical reconstructed source"
+    },
+    {
+      "source_id": "carrier",
+      "url_or_repo_path": "experiments/graphite-registry-defect-source/audit_registry_defect.py",
+      "version_or_commit": "360b72d751934eed428df9b7f89358d9260bbcad",
+      "section_or_object_id": "carrier()",
+      "source_status": "finite carrier import"
+    },
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "supplied UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39(2).md SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "version_or_commit": "v0.39 dated 2026-08-22",
+      "section_or_object_id": "Q22/Q24-Q26/Q166-Q170",
+      "source_status": "historical internal ledger, source limitation"
+    }
+  ],
+  "assumptions": [
+    "contact: external grounded A0, no native selection",
+    "odd-map: nonlocal target-informed K inverse square-root readout",
+    "canonical Gaussian ensemble and time-reversal parity",
+    "m,tau positive unknown physical map"
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer rank/kernel",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "rank A=14, row/kernel sectors"
+    },
+    {
+      "technique": "positive metric and spectral matrix calculus",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "energy, reciprocity, all-lag covariance"
+    },
+    {
+      "technique": "locality and null baseline",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "raw native edge variance and zero source"
+    },
+    {
+      "technique": "prime/fraction/modular clocks",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no divisibility or modular clock question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "14 sites, 21 internal edges plus one grounded external column",
+    "reduced_expression": "rank A=14, kernel A dimension 8",
+    "factor_origins": [
+      "incidence rank 14-1 and one nonzero uniform contact"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "assumed continuous s=t/tau",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x_prime=A He y, y_prime=-A^T Hv x",
+    "initial_phase": "canonical Gaussian equilibrium; row-sector y=A^T v",
+    "coupling": "external grounded contact",
+    "period_claim": "none; multi-frequency process",
+    "physical_unit_map": "tau positive unknown, a=14 tau^2/m"
+  },
+  "dynamics_readout": {
+    "state_space": "x in R14, y in R22 with invariant row subspace im A^T",
+    "generator_or_update": "[[0,A He],[-A^T Hv,0]], He=A^T(AA^T)^-2 A+zeta Pker, Hv=aK",
+    "initial_boundary_conditions": "canonical ensemble on row sector; arbitrary kernel sector decouples if separately prepared",
+    "conservation_and_sources": "En positive conserved, zero Ohmic dissipation",
+    "projection_and_kernel": "A full row rank14, kernel dimension8; raw y bond variance uniform",
+    "physical_mapping": "Ephys=m En/tau^2, p=m x_prime/tau, odd observable r target-selected"
+  },
+  "target_exposure": {
+    "status": "EXPOSED",
+    "known_targets": [
+      "conventional K",
+      "prior bond proxy Q and rank-two source",
+      "prior missing fourteenth mode"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "H_v=aK",
+      "K^-1/2 readout",
+      "grounded contact A0",
+      "positive kernel metric zeta arbitrary"
+    ],
+    "search_domain_and_budget": "analytic inverse design; one grounded site and local raw-edge null comparator, no large search",
+    "selection_criterion": "exact conventional conservative process covariance for all lags",
+    "baseline": "separate metric inverse designs; unit/local odd gradient gives uniform variance"
+  },
+  "calculation_steps": [
+    "A He A^T=I and row y=A^T x_prime",
+    "En on row yields x_prime-prime=-aKx and physical energy mapping",
+    "canonical cov x=Theta_bar K^-1, cov x_prime=a Theta_bar I",
+    "r=B^T K^-1/2 x_prime/sqrt(a) has covariance Theta_bar Q",
+    "matrix cosine commutes with K^-1/2, proving even/odd separate two-time covariance equality",
+    "raw y covariance a Theta_bar A^T A gives uniform internal variances2aTheta_bar and zero port"
+  ],
+  "result": {
+    "exact_expression": "Cq(Delta s)=Cr(Delta s)=Theta_bar B^T K^-1 cos(sqrt(aK) Delta s) B; native raw port=0",
+    "approximation": "replay all lag matrices agreement <=2.6e-15; odd port norm 8.82971824e-5 target-derived",
+    "units": "q,r Angstrom; K meV/Angstrom^2; Theta_bar meV; port units as earlier uncalibrated proxy",
+    "precision_and_error": "double precision replay; no bound on imported conventional K uncertainty",
+    "scope": "finite 14-site registered conventional harmonic model, stationary canonical Gaussian, conservative dynamics",
+    "physical_interpretation": "conditional fit, not native or empirical friction"
+  },
+  "verification": [
+    {
+      "method": "analytic proof and numerical replay",
+      "command_or_proof_path": "experiments/graphite-joint-quadrature-contact/replay_joint.py",
+      "source_revision": "360b72d751934eed428df9b7f89358d9260bbcad",
+      "actual_result": "PASS constructor checks",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent physics review",
+      "command_or_proof_path": null,
+      "source_revision": "360b72d751934eed428df9b7f89358d9260bbcad",
+      "actual_result": "NOT_RUN",
+      "review_relationship": "independent"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Literal raw internal edge y_e has uniform variance and zero source even with full rank contact",
+    "Local equal-mass odd gradient B^T x_prime has uniform variance and zero port",
+    "Cosine process is lossless; no drag follows",
+    "Same individual process law does not imply equal q-r cross covariance or trajectories"
+  ],
+  "limitations": [
+    "K^-1/2 nonlocal and fitted to conventional K",
+    "contact and clock not native-sourced",
+    "no measured complex loss, signed friction, pressure derivative or held-out residual",
+    "no independent physics review"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/graphjoint-20261027-01/joint-001/manifest.json"
+  ],
+  "next_discriminant": "Native sourced controlled-range odd readout/contact and independent loss/force benchmark"
+}
