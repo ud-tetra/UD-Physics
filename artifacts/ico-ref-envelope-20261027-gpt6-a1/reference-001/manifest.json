@@ -18,7 +18,7 @@
       "name": "reference_envelope.py",
       "path": "inputs/reference_envelope.py",
       "sha256": "408f6aeba43ca08df22a2d288b65def8d4206e5b84d01ffd085b227c8f1cd6f5",
-      "size_bytes": 4220,
+      "size_bytes": 4230,
       "source_location": "repository",
       "source_path": "experiments/icosahedral-reference-envelope/reference_envelope.py"
     }
