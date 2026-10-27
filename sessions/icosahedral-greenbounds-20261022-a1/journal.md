@@ -1,0 +1,11 @@
+# Session icosahedral-greenbounds-20261022-a1
+
+Base ce89a9cd15439463d9a64d983d91c22ea4368726; claim 37591be88775425d9b24f8fd5e3792c62e483684; own isolated branch discovery/integration-icosahedral-greenbounds-20261022/green-a1. Original worktree /workspace/scratch/ed44232d6ecb/UD-Physics-greenbounds. No delegated workload. Root boot/method/artifact/concurrency instructions read; coefficients real, exact fraction/Gram/Bernstein/polar inequalities, dyadic reference data, internal uncalibrated u/length/energy. Prime/modular methods N/A for this operator/error-bound question.
+
+Completed normal/fine backward Grams, normal forward180-column derivative flow/readout integrals, exact reference-geometry checks on2001/4001 nodes, four smooth forcing checks, defect quadratures and quintic alternative diagnostic. Proper3D singular-value structure sharpened the chart bound from<23/25000 to<13/20000; projected-flow allowance7/20000 gives combined goal1/1000, conditional on actual radius4/125.
+
+Amendment1: fine reference v=q_prime; normal full-state interpolation has a kinematic defect. Amendment2: SO(3) sharpens the chart estimate by1/sqrt2. Amendment3: fifth defect-flow diagnostic interrupted after350.67CPU seconds without result; use composite3/5-point norm quadrature alongside four unchanged smooth source checks. Amendment4: cubic defect-HS expression~.005032 fails the approximate~.001764 margin, so test a C2 quintic reference's defect norms only. Reduction1764–12843x observed; no cubic gain/geometry transfer.
+
+Local16tooling tests PASS before capture. The compute environment then disconnected. Planned complete capture/validator/staging did not occur. Three preuploaded original NPZ datasets survived in orchestration memory/Git blobs; recovered SHA256 matches both original primary-curve certificate hashes. Observations transcribed explicitly, not disguised as original output bytes. Original numerical code/raw output/receipt remain unavailable. New standalone geometry checker was reconstructed and NOT_RUN.
+
+Published work must stay DRAFT pending source recovery/reproduction and validation. Claim remains held; no shared CURRENT update or integration, no claim release, no mainline export. See CHECKPOINT.md for concrete recovery and scientific next steps.

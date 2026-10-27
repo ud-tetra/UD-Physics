@@ -1,0 +1,42 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-greenbounds",
+  "session_id": "icosahedral-greenbounds-20261022-a1",
+  "question": "Which forced-response, reference-error and alignment bounds can close the full-pulse nonlinear phase-ball certificate?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Unchanged limiting exposed mechanical realization and E_h<=E_p/40000",
+    "Actual centered primary error<=4/125 and projected flow remainder<=7/20000 remain unverified",
+    "Dyadic reference geometry is distinct from exact-ODE proximity"
+  ],
+  "physical_mapping": "OPEN; hardware UNSCORED; mainline promotion0",
+  "target_exposure": "DEVELOPMENT_AFTER_EXPOSURE; prior80% screen and adverse pulse exposed",
+  "fitted_choices": [
+    "Rational sufficient chart envelopes s37/20,a39/20,r4/125",
+    "Fine kinematic cubic reference",
+    "Post-failure quintic numerical reference diagnostic; no mechanical retuning"
+  ],
+  "sources": [
+    {
+      "path": "experiments/icosahedral-pulsetube/",
+      "revision": "ce89a9cd15439463d9a64d983d91c22ea4368726"
+    },
+    {
+      "path": "artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/cases.json",
+      "revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "object": "seed10422-0-boundary2"
+    }
+  ],
+  "baseline": "Frozen original matched undamped/no-housing baseline",
+  "result": "EXACT conditional chart remainder<13/20000; numerical forced scalar response and cubic-reference sufficient-budget failure; quintic diagnostic reduces defect norms1764–12843x. Actual nonlinear ball remains OPEN.",
+  "next_discriminant": "Restore original runtime/source capture or reproduce under explicit new version; recheck exact datasets and finish validation before integration; then establish quintic-reference geometry/Green bounds.",
+  "mathematical_receipt": "sessions/icosahedral-greenbounds-20261022-a1/mathematical_receipt.json",
+  "recovery_status": "Draft checkpoint; original executed code/full raw output capture blocked."
+}
