@@ -1,8 +1,0 @@
-{
-  "mu": 2.0,
-  "kappa": 50.0,
-  "gamma": 5.0,
-  "maximum_volume_leakage_linear": 0.005777013805880899,
-  "minimum_rms_retention_linear": 0.9985619492846216,
-  "eligible_retention80": true
-}

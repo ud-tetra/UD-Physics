@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-joint-index",
+  "session": "graphjointidx-20261027-01",
+  "status": "held",
+  "created_at": "2026-10-27T17:49:32.088Z",
+  "base_revision": "ec47c460683ae032651eff54a1181586cd83f7cc",
+  "owned_paths": [
+    "tasks/integration-graphite-joint-index.json",
+    "sessions/graphjointidx-20261027-01/",
+    "state/CURRENT.md"
+  ]
+}
