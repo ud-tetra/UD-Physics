@@ -1,0 +1,40 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-joint-quadrature-contact",
+  "session_id": "graphjoint-20261027-01",
+  "question": "Can one positive reciprocal contact oscillator reproduce conventional bond covariance and spectrum with nonuniform UD edge source?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Grounded external contact at A0 and positive contact metric",
+    "H_v=aK target imported from conventional registered model",
+    "Canonical Gaussian equilibrium and parity mapping",
+    "Odd readout r=B^T K^-1/2 x_prime/sqrt(a) identified as bond observable"
+  ],
+  "physical_mapping": "FIT: x=h, p=m x_prime/tau, Ephys=m En/tau^2; not a native force map",
+  "target_exposure": "Matched conventional KC K, bond covariance and earlier rank-two proxy source known; no new held-out force data",
+  "fitted_choices": [
+    "K as vertex stiffness",
+    "K^-1/2 nonlocal odd observable",
+    "contact at A0 and arbitrary positive kernel metric",
+    "mass and tau symbolic"
+  ],
+  "sources": [
+    "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+    "experiments/graphite-edge-metric-contact/README.md",
+    "supplied UD coefficient ledger v0.39(2) Q22/Q24-Q26/Q166-Q170 SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63"
+  ],
+  "baseline": "Previous two separate metrics, literal raw edge source zero, 13/14 mode budget",
+  "result": "Single target-imported conservative oscillator matches separate even and odd full Gaussian process laws; literal native edge variances uniform with zero port; nonlocal readout carries model-derived source",
+  "next_discriminant": "Native local/controlled-range readout and contact without K inverse square root, followed by measured complex loss and frozen signed residual",
+  "mathematical_receipts": [
+    "candidates/graphite-joint-quadrature-contact/mathematical_receipt.json"
+  ]
+}
