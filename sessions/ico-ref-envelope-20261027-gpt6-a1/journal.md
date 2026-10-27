@@ -1,0 +1,19 @@
+# Frozen reference energy-speed intersample bound — ico-ref-envelope-20261027-gpt6-a1
+
+- UTC 2026-10-27T19:40:41.172Z: verified integrated main cba74cc20ba323599339f88830bd0cc97fc9a6da, PR219 read-only/HELD; new disjoint claim175f08dfac8c2e96d37f98d2637fc296523f1bd7 for isolated reference-only task. No shared mainline source or prior branches edited.
+- EXACT/CONDITIONAL source positive mechanical kinetic + strain/port/mount potential and source nonnegative heat production imply E_mech(u)<=E0 and full 13-primary position speed <=sqrt(2E0/mmin). Uniform mesh Δ yields continuous primary-reference radius <=max_sample+Δ/2 speedcap+delta_num, where delta_num is **validated global sampled primary position numerical error** still missing.
+- GitHub Actions run40569925956 job122421103002 EXECUTED original m.ode frozen limiting and nominal reference for u0..100 step.05, 2001 points each, pinned NumPy2.3.5 SciPy1.17.0, DOP853 nominal rtol2e-11/atol2e-14 and strict rtol5e-12/atol5e-15. No full 560x180 tangent rerun or physical parameter change.
+- NUMERICAL limiting E0=.06480831348069511 mmin1.0629793373048022, Vcap.34919494364153736, max sampled D=.05039240841022644 at u9.25, analytic intersample .0087298735910, provisional Dcap=.059122282001264875+delta_num. To prove d=.07 require validated delta_num<.01087771799873513.
+- NUMERICAL nominal E0=.06500000000000003,mmin1.105572809000084,Vcap.34290830353663304,D=.05111635138364076 at u9.20, analytic intersample .0085727075884, provisional bound=.05968905897205659+delta_num. To prove d=.07 require validated delta_num<.010310941027943417.
+- Strict-vs-nominal DOP853 reference primary grid maximum differences 1.11447e-12 and1.21011e-12. Neither is a validated global ODE error; cannot substitute as delta_num. High-resolution output from GHA downloaded ZIP id12765172127, SHA256 source408f6aeba43ca08df22a2d288b65def8d4206e5b84d01ffd085b227c8f1cd6f5 (4220B), result13f126c8a2ea8aab5ba47c4923b70d74929b06f9522f32e897cf8eb871e57040 (2992B), both captured immutable reference-001.
+- Full 180-phase nonlinear relative primary r=.036, forced Green U(t,s), Hessian and numerical reference defect, 120 struts/20 volumes, u100 80% breathing all OPEN, no material/clock/calibrated physical UD mapping. Ordinary conventional 3D mass-energy interpolation null exactly same; no independent hardware/referee.
+
+## UTF-8 byte size correction
+
+# Reference-001 UTF-8 correction
+
+Original commit 6570d08da8365ddf99006bfac166abfb46317e6b recorded 4220 characters/code units, but the source is 4230 UTF-8 bytes because of nine non-ASCII mathematical symbols.
+Source SHA256: 408f6aeba43ca08df22a2d288b65def8d4206e5b84d01ffd085b227c8f1cd6f5.
+Result SHA256: 13f126c8a2ea8aab5ba47c4923b70d74929b06f9522f32e897cf8eb871e57040.
+Only input size metadata is corrected; source and result bytes unchanged. Earlier failed CI and original Git commit remain inspectable.
+

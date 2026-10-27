@@ -1,0 +1,40 @@
+name: Isolated 3D continuous-reference interpolation budget
+on:
+  push:
+    branches: ['discovery/icosahedral-reference-envelope-20261027/**']
+    paths:
+      - 'experiments/icosahedral-reference-envelope/reference_envelope.py'
+      - '.github/workflows/icosahedral-reference-envelope-20261027.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # pinned v4
+        with:
+          persist-credentials: false
+      - name: Install pinned numerical environment
+        run: |
+          python3 -m venv /tmp/ico-reference-venv
+          /tmp/ico-reference-venv/bin/python -m pip install --disable-pip-version-check --no-input numpy==2.3.5 scipy==1.17.0
+      - name: Evaluate frozen reference-only enclosure budget
+        run: |
+          mkdir -p /tmp/ico-reference
+          /tmp/ico-reference-venv/bin/python experiments/icosahedral-reference-envelope/reference_envelope.py --step .05 --out /tmp/ico-reference/envelope.json
+          sha256sum experiments/icosahedral-reference-envelope/reference_envelope.py /tmp/ico-reference/envelope.json
+      - name: Preserve actual output
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # pinned v4
+        with:
+          name: ico-reference-envelope-20261027
+          path: /tmp/ico-reference/envelope.json
+          retention-days: 30
+          if-no-files-found: warn

@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "icosahedral-reference-envelope-20261027",
+  "goal": "Provide continuous-time reference radius d=.070 estimate using exact source energy-to-speed interpolation and high-resolution frozen SciPy reference trajectories, exposing numerical-error certification budget",
+  "owned_paths": [
+    "tasks/icosahedral-reference-envelope-20261027.json",
+    "sessions/ico-ref-envelope-20261027-gpt6-a1/",
+    "experiments/icosahedral-reference-envelope/",
+    "candidates/icosahedral-reference-envelope/",
+    "artifacts/ico-ref-envelope-20261027-gpt6-a1/",
+    ".github/workflows/icosahedral-reference-envelope-20261027.yml"
+  ],
+  "dependencies": [
+    "integration-icosahedral-pulsetube-20261022"
+  ],
+  "status": "complete",
+  "result": "EXACT/CONDITIONAL on true reference mechanical energy/positive masses and verified sampled numerical error: continuous reference displacement <=D_sample+.025 sqrt(2E0/m_min)+delta_num. NUMERICAL original DOP853 2001 samples gives D=.050392408/.051116351, provisional continuous upper .059122282/.059689059 if samples exact, requiring validated sample error <.010877718/.010310941 to close assumed d=.07. Two-tolerance differences ~1.1e-12 not validated error. Full 180 housing-phase nonlinear relative radius and u100 breathing OPEN.",
+  "next_action": "Compute mathematically validated full reference ODE error <.01031 (dense residual+Jacobian/Green/interval), then pursue full180-phase nonlinear r=.036 and forced Green/Hessian/strut-volume gate."
+}
