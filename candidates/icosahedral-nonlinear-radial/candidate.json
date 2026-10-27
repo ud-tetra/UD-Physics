@@ -1,0 +1,41 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-nonlinear-radial",
+  "session_id": "ico-radial-20261027-gpt6-a1",
+  "question": "Do source-selected largest raw-displacement 180-housing-phase directions remain inside actual nonlinear primary radius r=.036, and does the moving reference satisfy the inherited d=.05 chart assumption?",
+  "status": "ACTIVE",
+  "evidence": [
+    "NUMERICAL",
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Original integrated 560 mechanical state, 120 housing struts, 20 cell volumes, damping and all frozen material coefficients unchanged.",
+    "Four selected amplitudes ±1,±.5 of leading Wfinal primary singular right direction per limiting/nominal case; NOT entire 180-dimensional energy ball.",
+    "DOP853 401 time samples Δu=.25 and rtol2e-11/atol2e-14, NOT certified continuous ODE interval.",
+    "Revised moving-chart theorem assumes reference d=.070 and actual nonlinear relative r=.036 continuously; sample tests cannot prove either globally."
+  ],
+  "physical_mapping": "Uncalibrated generic 3D elastic/damped mechanical model, no material/time/spacetime physics selected.",
+  "target_exposure": "Adversarial direction chosen after raw final W and r=.036 known; d=.070 revised after d=.050 sampled reference counterexample; no unused-data predictive validation.",
+  "fitted_choices": [
+    "Frozen ν=.05 and all case coefficients preserved, no material fit.",
+    "SVD top singular phase chosen intentionally to stress raw final position, source 180-phase energy norm; ±1 and ±.5 developmental amplitude set.",
+    "d=.070 chosen after sampled maxima .0504/.0511, exact bound threshold .001 inherited."
+  ],
+  "sources": [
+    "360b72d751934eed428df9b7f89358d9260bbcad:experiments/icosahedral-pulsetube/variational.py",
+    "360b72d751934eed428df9b7f89358d9260bbcad:artifacts/icosahedral-pulsetube-20261022-a1/pulsetube-001/files/compact_checkpoints.npz",
+    "https://github.com/ud-tetra/UD-Physics/pull/206 (prior sampled tangent read-only)",
+    "https://github.com/ud-tetra/UD-Physics/actions/runs/40554459813"
+  ],
+  "baseline": "Conventional ordinary reciprocal classical 3D spring/dashpot point-mass model with identical constitutive coefficients and source, same proper SO3 readout.",
+  "result": "NUMERICAL frozen original full 560-state ODE ±1,±.5 raw worst tangent phase for two source cases at 401 time samples: all selected relative primary radii<.036, strut lengths and cell volumes positive, energy+heat ~1e-12. More densely sampled reference peaks .0503924/.0510902 at u9.25, invalidating old d=.05 as a uniform sampled antecedent. EXACT/CONDITIONAL new d=.07,r=.036 moving SO3 chart Taylor bound<=26619144063633/27262940965600000≈.000976386<.001. Full 180-phase ball, continuous/time interval, Hessian/forced Green and 80% breathing remain OPEN.",
+  "next_discriminant": "Verified full-time ODE/phase-ball and forcing projected Green/Hessian error, reference radius and positive 120-strut + 20-volume constraint, with 80% breathing source threshold.",
+  "reopening_conditions": "Mathematically validated uniform nonlinear phase-ball envelope and independent mechanical signature beyond identical ordinary network.",
+  "mathematical_receipts": [
+    "sessions/ico-radial-20261027-gpt6-a1/mathematical_receipt.json"
+  ]
+}
