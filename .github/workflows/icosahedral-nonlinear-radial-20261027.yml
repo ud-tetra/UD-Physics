@@ -1,0 +1,59 @@
+name: Isolated 3D nonlinear radial selected phases
+on:
+  push:
+    branches: ['discovery/icosahedral-nonlinear-radial-20261027/**']
+    paths:
+      - 'experiments/icosahedral-nonlinear-radial/nonlinear_radial.py'
+      - '.github/workflows/icosahedral-nonlinear-radial-20261027.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  radial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # pinned v4
+        with:
+          persist-credentials: false
+      - name: Install pinned numerical environment
+        run: |
+          python3 -m venv /tmp/ico-radial-venv
+          /tmp/ico-radial-venv/bin/python -m pip install --disable-pip-version-check --no-input numpy==2.3.5 scipy==1.17.0
+      - name: Frozen limiting nonlinear phase runs
+        run: |
+          mkdir -p /tmp/ico-radial
+          /tmp/ico-radial-venv/bin/python experiments/icosahedral-nonlinear-radial/nonlinear_radial.py --case limiting --out /tmp/ico-radial/limiting.json
+      - name: Frozen nominal nonlinear phase runs
+        run: |
+          /tmp/ico-radial-venv/bin/python experiments/icosahedral-nonlinear-radial/nonlinear_radial.py --case nominal --out /tmp/ico-radial/nominal.json
+      - name: Check selected-phase outputs and print compact summary
+        run: |
+          /tmp/ico-radial-venv/bin/python - <<'PY'
+          import json
+          from pathlib import Path
+          summary={}
+          for case in ("limiting","nominal"):
+              data=json.loads(Path("/tmp/ico-radial/"+case+".json").read_text())
+              assert data["status"]=="NUMERICAL_SELECTED_PHASES_ONLY"
+              assert len(data["summary"])==4
+              assert all(len(x)==401 for x in data["records"].values())
+              summary[case]={k:v for k,v in data.items() if k!="records"}
+          text=json.dumps(summary,sort_keys=True)
+          Path("/tmp/ico-radial/summary.json").write_text(text+"\n")
+          print("ICO_RADIAL_ALL_SUMMARY:"+text,flush=True)
+          PY
+          sha256sum experiments/icosahedral-nonlinear-radial/nonlinear_radial.py /tmp/ico-radial/*.json
+      - name: Preserve full finite-phase samples
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # pinned v4
+        with:
+          name: ico-nonlinear-radial-20261027
+          path: /tmp/ico-radial/*.json
+          retention-days: 30
+          if-no-files-found: warn

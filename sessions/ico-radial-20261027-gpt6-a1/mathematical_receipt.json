@@ -1,0 +1,267 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosa-radial-001",
+  "session_id": "ico-radial-20261027-gpt6-a1",
+  "candidate_id": "icosahedral-nonlinear-radial",
+  "question": "Do source-frozen most adverse raw final housing phases remain within actual nonlinear r=.036 and does the reference satisfy d=.05, and can an exact conditional moving SO3 chart bound be repaired?",
+  "evidence_labels": [
+    "NUMERICAL",
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "source",
+      "symbol": "y,W,B",
+      "object_type": "560-phase frozen nonlinear 3D mechanical law and archived 560x180 tangent",
+      "definition": "y'=MountLoss.ode(y), W(100)=U(100,0)B from source; 180 housing-phase directions",
+      "domain": "R560 phase and housing R180",
+      "codomain": "R560 with 13-primary R39 readout",
+      "coefficient_domain": "real Float64 source",
+      "units": "uncalibrated native ell0,t0,E*",
+      "basis_orientation": "13 primary hub-first and 30 housing positions",
+      "metric_measure": "source energy/Euclidean norm, original frozen damping",
+      "origin": "integrated read-only",
+      "exact_expression": "y0(a)=yref(0)+a sqrt(2Eh) Bv; |v|=1",
+      "measured_value": null,
+      "uncertainty": "Float64 DOP853 integration not interval certified",
+      "source_refs": [
+        "source-pulse",
+        "source-checkpoint"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "Eh=Ep/40000"
+    },
+    {
+      "object_id": "reference",
+      "symbol": "Yref(u)",
+      "object_type": "source nonlinear 3D breathing reference trajectory",
+      "definition": "unperturbed y0 with alpha=.1, unchanged source m.ode, compare primary positions to initial equilibrium",
+      "domain": "native u0..100",
+      "codomain": "R13x3 primary displacement",
+      "coefficient_domain": "Float64 numeric",
+      "units": "ell0 native",
+      "basis_orientation": "shell centered proper SO3 geometry",
+      "metric_measure": "Frobenius 13x3 reference displacement",
+      "origin": "numerical executed",
+      "exact_expression": null,
+      "measured_value": "limiting max sampled .0503924, nominal .0510902 at u9.25",
+      "uncertainty": "numerical grid .25 and tolerance, not exact continuous maximum",
+      "source_refs": [
+        "workflow"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "source"
+      ],
+      "normalization": "d=.05 old, new d=.07 postexposure"
+    },
+    {
+      "object_id": "chart",
+      "symbol": "Fref(E)",
+      "object_type": "proper moving reference SO3 alignment chart geometric nonlinear tail",
+      "definition": "reference shell Gram skew Sylvester, exp(-Omega); all13 actual relative errors <=r=.036, reference <=d=.07",
+      "domain": "R13x3 actual primary relative error",
+      "codomain": "aligned R13x3",
+      "coefficient_domain": "Q rational bound and Q(sqrt5) geometry",
+      "units": "native length ell0",
+      "basis_orientation": "proper SO3 and hub offset included",
+      "metric_measure": "Frobenius norm",
+      "origin": "new exact conditional geometry",
+      "exact_expression": "||Fref(E)-DFref(0)E||F <=26619144063633/27262940965600000<1/1000",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "chart-source"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "reference"
+      ],
+      "normalization": "d=.07,r=.036 selected post numerical exposure"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "source-pulse",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/variational.py",
+      "version_or_commit": "360b72d751934eed428df9b7f89358d9260bbcad",
+      "section_or_object_id": "source full560 and all180 housing directions",
+      "source_status": "integrated numerical/analytic source, read-only"
+    },
+    {
+      "source_id": "source-checkpoint",
+      "url_or_repo_path": "artifacts/icosahedral-pulsetube-20261022-a1/pulsetube-001/files/compact_checkpoints.npz",
+      "version_or_commit": "360b72d751934eed428df9b7f89358d9260bbcad",
+      "section_or_object_id": "source Wfinal and injection B",
+      "source_status": "integrated immutable archive"
+    },
+    {
+      "source_id": "workflow",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/actions/runs/40554459813",
+      "version_or_commit": "7d7eee182c7e8adaccafdccca20324d202848093",
+      "section_or_object_id": "eight executed finite amplitude numeric cases, full JSON 30-day artifact",
+      "source_status": "same-constructor numerical source, no independent physical replication"
+    },
+    {
+      "source_id": "chart-source",
+      "url_or_repo_path": "experiments/icosahedral-nonlinear-radial/chart_bound_d007.py",
+      "version_or_commit": "4712247e89cadee8fe313a2ccc02686eb1ec5fcd",
+      "section_or_object_id": "d=.07,r=.036 Fraction chart bound",
+      "source_status": "new exact conditional mathematical check"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Original unchanged full mechanical source with housing phase v chosen from top exposed Wfinal raw primary singular direction and amplitudes ±1,±.5, finite sampled DOP853."
+    },
+    {
+      "id": "A2",
+      "description": "Exact geometry theorem assumes ACTUAL reference norm<=d=.07 and ACTUAL nonlinear relative primary displacement<=r=.036 continuously, neither all-phase verified."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "nonlinear finite amplitude 560-state ODE",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "8 frozen signed/half amplitude target-exposed phase trajectories and reference with tight DOP853 401 samples"
+    },
+    {
+      "technique": "SO3 frame and geometric Taylor tail",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "proper moving shell alignment and residual with reference hub term"
+    },
+    {
+      "technique": "sample alias and integration tolerance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "quarter-vs-half sample decimation and energy+heat residual for reference peaks"
+    },
+    {
+      "technique": "exact rational SO3 chart majorant",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "d=.07,r=.036 uniform geometric inequality"
+    },
+    {
+      "technique": "validated full 180-ball forcing Green/Hessian/interval ODE",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "requires a posteriori continuous-time enclosure and nonlinear phases not sampled"
+    },
+    {
+      "technique": "physical material and independently heldout UD prediction",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "no hardware and conventional source mechanically identical"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "560 mechanical phase coordinates, 180 housing phase directions, 8 selected nonlinear phase preparations, 401 sampled u0..100 points each, 120 housing strut lengths and 20 oriented cell volumes",
+    "reduced_expression": "d=7/100,r=9/250,Gmin=33277/10000,t=63261/4159625,B=26619144063633/27262940965600000<1/1000",
+    "factor_origins": [
+      "regular icosahedral source shell geometry",
+      "source energy phase injection",
+      "SO3 skew Sylvester and exponential series"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native continuous u=t/t0, 401 samples at 0.25 intervals",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "original source DOP853 m.ode for reference and finite phase",
+    "initial_phase": "source alpha0=.1, housing ±1/±.5 leading raw Wfinal singular direction",
+    "coupling": "source passive MountLoss and original housing balance",
+    "period_claim": "none; high-frequency reference sampled alias observed",
+    "physical_unit_map": "native ell0,t0,E* uncalibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "original full 560 mechanical phases and heat retained",
+    "generator_or_update": "MountLoss.ode unchanged",
+    "initial_boundary_conditions": "limiting/nominal case nu=.05, frozen full source parameters, housing Eh=Ep/40000 and selected phase",
+    "conservation_and_sources": "source mechanical energy+heat numeric residual ~1e-12, internal damping",
+    "projection_and_kernel": "raw primary displacement, SO3 aligned shape, geometric chart tail, housing 120 struts, 20 oriented volume readouts",
+    "physical_mapping": "none; conventional 3D point-mass model null"
+  },
+  "target_exposure": {
+    "status": "POST_TARGET_DEVELOPMENT",
+    "known_targets": [
+      "prior d=.05 chart target and old Δu=.5 reference maxima",
+      "r=.036 from prior raw tangent proximity and 80% volume threshold"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "direction leading source Wfinal primary operator selected after observing source raw max, four amplitudes",
+      "d=.07 chosen after .05 failed with newly observed u9.25 maxima"
+    ],
+    "search_domain_and_budget": "2 frozen cases x4 selected signs/amplitudes x401 sampled times; one exact d=.07 radius family, no blind physical prediction",
+    "selection_criterion": "stress actual nonlinear r=.036 and d=.05, sample strut/volume safety and directional nonlinear Taylor scaling",
+    "baseline": "matched ordinary unanchored spring/dashpot 3D mechanical network"
+  },
+  "calculation_steps": [
+    "Verify source integrated mechanical/jacobian and Wfinal archive hashes unchanged between old and current main.",
+    "Compute leading source final raw primary housing tangent right singular phase with full180 columns, inject ±1/±.5 normalized source energy in original full560 state.",
+    "Integrate limiting and nominal source reference plus 8 finite phase trajectories using DOP853 rtol2e-11 atol2e-14 and u0..100 step.25.",
+    "Compute raw primary relative displacement, proper SO3 chart geometric tail, aligned shape, 120 strut lengths, 20 oriented cell volumes and energy+heat residual.",
+    "Observe all selected relative primary norms<=.036 and positive sampled lengths/volumes; nominal margin .00079062, not full-ball proof.",
+    "Observe reference peaks .0503924/.0510902 at u9.25, violating old d=.05 numerical premise; compare .5 decimation of same source traces to old peaks.",
+    "Derive exact Fraction d=.07,r=.036 chart majorant B=.00097638564<.001, conditional on true full-phase all-time radius hypotheses.",
+    "Preserve full forced Green, nonlinear Hessian, time-integrator defect, all-phase relative radius and oriented volume 80% screen as OPEN."
+  ],
+  "result": {
+    "exact_expression": "For actual reference d<=7/100 and actual relative perturbation r<=9/250, proper SO3 geometric remainder<=26619144063633/27262940965600000<.001",
+    "approximation": "limiting selected ±1 raw max .03500979, ref peak .050392408 at u9.25; nominal ±1 raw .03520938, ref peak .051090226 at u9.25; min strut ~.492302, volumes~.954561",
+    "units": "native ell0/time u, physical SI mapping OPEN",
+    "precision_and_error": "NUMERICAL DOP853 401 samples/tolerance, only selected phase directions; EXACT chart inequality under hypotheses; no interval error certification",
+    "scope": "8 target-exposed finite cases and geometric SO3 chart only, not full all-phase u100 stability or physical UD",
+    "physical_interpretation": "ordinary 3D mechanical null fully matches"
+  },
+  "verification": [
+    {
+      "method": "executed SciPy source in isolated GitHub workflow",
+      "command_or_proof_path": "experiments/icosahedral-nonlinear-radial/nonlinear_radial.py",
+      "source_revision": "7d7eee182c7e8adaccafdccca20324d202848093",
+      "actual_result": "PASS 8 finite-phase trajectories plus references, 401 samples, source energy+heat and domain tests, hashes retained",
+      "review_relationship": "same constructor"
+    },
+    {
+      "method": "exact rational geometry local proof",
+      "command_or_proof_path": "experiments/icosahedral-nonlinear-radial/chart_bound_d007.py",
+      "source_revision": "4712247e89cadee8fe313a2ccc02686eb1ec5fcd",
+      "actual_result": "PASS Fraction proof r=.036,d=.07, B≈.000976386",
+      "review_relationship": "same constructor"
+    },
+    {
+      "method": "full-state all-phase interval certification/independent scientific physical test",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED / NOT_RUN",
+      "review_relationship": "none"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Old reference d=.05 fails at u9.25 in tighter sampled frozen limiting and nominal reference, despite earlier .5 grid missing the peaks.",
+    "Eight nonlinear selected trajectories satisfying r=.036 cannot prove every initial housing phase satisfies r=.036.",
+    "Finite positive sampled struts/volumes do not imply time-continuous or all-phase positive domains.",
+    "Ordinary spring/dashpot and SO3 point-cloud alignment model reproduces all observed, no distinctive UD physical prediction."
+  ],
+  "limitations": [
+    "No validated continuous-time reference maximum, source numerical defect/flow/Hessian or forced U(t,s) bound.",
+    "No all180 initial housing phase-ball nonlinear r=.036 enclosure.",
+    "No physical material/time calibration, independent experimental data or non-constructor mathematical review."
+  ],
+  "changed_dependencies": [
+    "Entirely new isolated claim, source integrated main unchanged, earlier PR206 read-only, old d=.05 conditional theorem preserved with revised assumption variant."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/ico-radial-20261027-gpt6-a1/radial-001/manifest.json"
+  ],
+  "next_discriminant": "Rigorous reference time-continuous enclosure and full 180-phase nonlinear relative-motion forcing/Hessian a-posteriori estimate, incorporating sample grid alias and original passive strut/volume domain; only then assess original u100 80% threshold."
+}
