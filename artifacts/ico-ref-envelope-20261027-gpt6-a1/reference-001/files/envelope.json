@@ -1,0 +1,59 @@
+{
+  "assumptions": "source positive mechanical energy components, nonnegative heat production, no external source, E0=Ep, m_min>0",
+  "cases": {
+    "seed10422-0-boundary2": {
+      "all_time_bound_IF_SAMPLED_STATES_EXACT": 0.059122282001264875,
+      "case": "seed10422-0-boundary2",
+      "continuous_time_status": "NOT_CERTIFIED unless independent validated sample-global error epsilon_global < positive budget",
+      "exact_analytic_speed_cap_from_energy": 0.34919494364153736,
+      "global_numeric_sample_error_budget_to_certify_d0p07": 0.01087771799873513,
+      "grid_step": 0.05,
+      "max_sampled_primary_reference_displacement": 0.05039240841022644,
+      "missing_after_this": "full180 housing phase nonlinear relative radius and forced Green/Hessian/strut-volume enclosure",
+      "n_samples": 2001,
+      "nominal_dop853_nfev": 43241,
+      "passes_conditional_budget": true,
+      "reference_energy_peak_strict": 0.06480831348069511,
+      "source_A0": 0.1,
+      "source_initial_energy": 0.06480831348069511,
+      "source_min_primary_mass": 1.0629793373048022,
+      "source_nu": 0.05,
+      "status": "NUMERICAL_SAMPLES_PLUS_EXACT_CONDITIONAL_INTERSAMPLE_LEMMA",
+      "strict_dop853_nfev": 49493,
+      "strict_max_sampled_primary_speed": 0.1304372655088311,
+      "strict_minus_nominal_sampled_numeric_difference": 1.1144678127869183e-12,
+      "time_at_sampled_max": 9.25
+    },
+    "uniform-b0.05-cf0.0": {
+      "all_time_bound_IF_SAMPLED_STATES_EXACT": 0.05968905897205659,
+      "case": "uniform-b0.05-cf0.0",
+      "continuous_time_status": "NOT_CERTIFIED unless independent validated sample-global error epsilon_global < positive budget",
+      "exact_analytic_speed_cap_from_energy": 0.34290830353663304,
+      "global_numeric_sample_error_budget_to_certify_d0p07": 0.010310941027943417,
+      "grid_step": 0.05,
+      "max_sampled_primary_reference_displacement": 0.05111635138364076,
+      "missing_after_this": "full180 housing phase nonlinear relative radius and forced Green/Hessian/strut-volume enclosure",
+      "n_samples": 2001,
+      "nominal_dop853_nfev": 46601,
+      "passes_conditional_budget": true,
+      "reference_energy_peak_strict": 0.06500000000000003,
+      "source_A0": 0.1,
+      "source_initial_energy": 0.06500000000000003,
+      "source_min_primary_mass": 1.105572809000084,
+      "source_nu": 0.05,
+      "status": "NUMERICAL_SAMPLES_PLUS_EXACT_CONDITIONAL_INTERSAMPLE_LEMMA",
+      "strict_dop853_nfev": 53345,
+      "strict_max_sampled_primary_speed": 0.13191044501236962,
+      "strict_minus_nominal_sampled_numeric_difference": 1.2101084363643354e-12,
+      "time_at_sampled_max": 9.200000000000001
+    }
+  },
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "lemma": "sup_time ||Yprimary(t)-Y0||F <= max_grid ||Ytrue_primary(tj)-Y0||F + (\u0394/2) sqrt(2E0/m_min); if numeric sample error\u2264\u03b4, add \u03b4",
+  "status": "CONDITIONAL_INTERSAMPLE_BUDGET_WITH_UNVALIDATED_NUMERICAL_ERROR"
+}
