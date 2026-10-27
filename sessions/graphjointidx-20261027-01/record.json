@@ -12,7 +12,8 @@
   "claims": {
     "integration-graphite-joint-index": {
       "held_sha": "11892ab99c6338070e0337d5e3782924df722d99",
-      "status": "held"
+      "status": "released",
+      "released_sha": "49770d721c02b8a37505c649fa829bc69ef6077e"
     }
   },
   "checks": [
@@ -20,7 +21,7 @@
     "16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Indexed joint fitted process match and zero literal native source without physical promotion",
+  "finding": "Indexed joint fitted process match and zero literal native source without physical promotion; index PR #217 merged at 0ace7d5ae0246072adc73ebaec8ce355def429f2",
   "next_action": "Source local readout/contact and material complex loss with signed residual",
   "mathematical_profile": {
     "coefficient_domain": "N/A index only",
