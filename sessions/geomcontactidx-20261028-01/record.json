@@ -8,15 +8,20 @@
   "created_at": "2026-10-28T22:49:10.607862+00:00",
   "base_revision": "b3637d2b0a6f5b781c3663509b7ae0c13ba1ad80",
   "source_dirty_at_boot": false,
-  "status": "active",
+  "status": "handoff",
   "claims": {
     "integration-geometry-contact-contract": {
       "held_sha": "8efc9dd7b1e639d6290490382d6c6c9c54447a69",
-      "status": "held"
+      "status": "released",
+      "released_sha": "8e004102dcb9717262e5b7f09c5cdac4fd964750"
     }
   },
-  "checks": [],
-  "finding": "Indexed conditional held K4 contact register and explicit source/loss/switch ledger",
+  "checks": [
+    "repository validation PASS (408 records)",
+    "16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Indexed conditional held K4 contact register and explicit source/loss/switch ledger Index PR #259 merged at c88692b6ae4739914b4a0a2f40cf040216f163ec.",
   "next_action": "Native register sourcing and physical loss/force readout",
   "mathematical_profile": {
     "coefficient_domain": "N/A index only",
