@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "geomselect-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "geometry-native-selector",
+  "goal": "Test whether native S4 support laws select a rooted tetrahedron-to-cube map",
+  "created_at": "2026-10-28T22:05:51.239549+00:00",
+  "base_revision": "5dbf2a83fad24ec09615a97ae9bcc31721196aad",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "geometry-native-selector": {
+      "held_sha": "000eb33ad18cc53e84eb5fc41ece9f86cd2c1324",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "exact S4 enumeration PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "S4 invariant deterministic packet cannot select a single root; invariant oriented edge current zero; conservation does not select Euclidean map",
+  "next_action": "Native boundary/contact source law and physical readout",
+  "mathematical_profile": {
+    "coefficient_domain": "integer S4 action, real signed K4 chains, exact 1/4 probability under assumed invariant stochastic law",
+    "exactness_or_precision_plan": "finite enumeration and direct equivariance proof",
+    "applicable_methods": [
+      "orbit-stabilizer",
+      "signed oriented chain representations",
+      "local current/stock continuity",
+      "identifiability between geometry maps"
+    ],
+    "clock_metric_units_conventions": "No clock or physical metric; ascending K4 edge orientations; symmetric invariant preparation and deterministic equivariant selector"
+  },
+  "checkpoint_at": "2026-10-28T22:07:26.301391+00:00",
+  "checkpoint_source": {
+    "revision": "5dbf2a83fad24ec09615a97ae9bcc31721196aad",
+    "dirty": true
+  }
+}

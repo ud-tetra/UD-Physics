@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "geometry-native-selector",
+  "session_id": "geomselect-20261028-01",
+  "question": "Can S4-equivariant deterministic packet preparation select one root or a unique cubical measure law?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "full S4 action on K4 vertex and oriented edge states",
+    "initial packet invariant under S4",
+    "unique deterministic equivariant selector/update when invoked",
+    "Q166 typed current used only in its own native scope"
+  ],
+  "physical_mapping": "OPEN: neither source-selected cube measure nor stock/area identification",
+  "target_exposure": "Rooted and symmetric map constructions exposed; no graphite data fit",
+  "fitted_choices": [],
+  "sources": [
+    "experiments/geometry-six-sector-map/README.md",
+    "experiments/geometry-s4-full-map/README.md",
+    "supplied ledger v0.39(2) P03,Q166/Q167/Q170,Q177-Q179"
+  ],
+  "baseline": "finite group equivariance and conservation identity",
+  "result": "Exact symmetry obstruction for single root under invariant state; native support continuity does not identify Euclidean map/area coefficient",
+  "next_discriminant": "native boundary/contact selector and measurable response",
+  "mathematical_receipts": [
+    "candidates/geometry-native-selector/mathematical_receipt.json"
+  ]
+}
