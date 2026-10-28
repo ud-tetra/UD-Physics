@@ -29,3 +29,5 @@ Next: Native map and current selection
 ## 2026-10-28T21:55:23.412854+00:00
 
 Remote claim held 3601a925d8311ebe12142232db49c683225fe36e. Scaffold was relocated from stale checkout before analysis. Exact rational replay PASS; validation 388 records PASS; 16 tests PASS; independent physics review NOT_RUN.
+
+Research PR #245 merged at `f8584d51d71f4203c6cec623bfc055b7658a582f`; exact-lease claim released at `697b46253a7393fefcce5e706b5e35d9b21efd6e`. Closure-only metadata.

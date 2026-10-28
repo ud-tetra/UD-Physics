@@ -12,14 +12,17 @@
   "claims": {
     "geometry-s4-full-map": {
       "held_sha": "3601a925d8311ebe12142232db49c683225fe36e",
-      "status": "held"
+      "status": "released",
+      "released_sha": "697b46253a7393fefcce5e706b5e35d9b21efd6e"
     }
   },
   "checks": [
     "exact rational replay PASS",
+    "validation PASS 388 records",
+    "16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Full S4 equivariant 12-cell PL map has unit physical volume Jacobian and uniform induced boundary density",
+  "finding": "Full S4 equivariant 12-cell PL map has unit physical volume Jacobian and uniform induced boundary density Research PR #245 merged at f8584d51d71f4203c6cec623bfc055b7658a582f.",
   "next_action": "Native map and current selection",
   "mathematical_profile": {
     "coefficient_domain": "exact Q coordinates and integer simplicial/group action, algebraic Euclidean scale",
