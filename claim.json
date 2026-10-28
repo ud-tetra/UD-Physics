@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "geometry-native-selector",
+  "session": "geomselect-20261028-01",
+  "status": "held",
+  "created_at": "2026-10-28T22:25:00Z",
+  "base_revision": "5dbf2a83fad24ec09615a97ae9bcc31721196aad",
+  "owned_paths": [
+    "tasks/geometry-native-selector.json",
+    "sessions/geomselect-20261028-01",
+    "candidates/geometry-native-selector",
+    "experiments/geometry-native-selector",
+    "artifacts/geomselect-20261028-01"
+  ]
+}
