@@ -4,8 +4,10 @@
   "protocol_version": 2,
   "task": "integration-geometry-root-persistence",
   "session": "geomrootidx-20261028-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-28T22:56:00Z",
+  "released_at": "2026-10-28T23:01:00Z",
+  "released_from_sha": "94859ecc780756964c92b44d23e6e63720497b92",
   "base_revision": "cef01efbf30526208dad6ff596585fef09918b57",
   "owned_paths": [
     "tasks/integration-geometry-root-persistence.json",
