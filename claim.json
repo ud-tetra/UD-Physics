@@ -4,8 +4,10 @@
   "protocol_version": 2,
   "task": "geometry-equal-measure",
   "session": "geomap-20261028-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-28T21:07:26Z",
+  "released_at": "2026-10-28T21:14:00Z",
+  "released_from_sha": "e612b1ca3256bb943d5976cb3c7ab5a058072514",
   "base_revision": "16ed14c7f95aa8d860255346671b33e4f73dc765",
   "owned_paths": [
     "tasks/geometry-equal-measure.json",
