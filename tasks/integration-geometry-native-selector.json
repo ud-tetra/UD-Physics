@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-geometry-native-selector",
+  "goal": "Index native symmetry and support-current gate",
+  "owned_paths": [
+    "tasks/integration-geometry-native-selector.json",
+    "sessions/geomselectidx-20261028-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "geometry-native-selector"
+  ],
+  "status": "complete"
+}
