@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-geometry-contact-contract",
+  "session": "geomcontactidx-20261028-01",
+  "status": "held",
+  "created_at": "2026-10-28T23:18:00Z",
+  "base_revision": "b3637d2b0a6f5b781c3663509b7ae0c13ba1ad80",
+  "owned_paths": [
+    "tasks/integration-geometry-contact-contract.json",
+    "sessions/geomcontactidx-20261028-01",
+    "state/CURRENT.md"
+  ]
+}
