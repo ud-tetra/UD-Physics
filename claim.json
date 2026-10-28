@@ -4,12 +4,14 @@
   "protocol_version": 2,
   "task": "integration-geometry-contact-source-gate",
   "session": "geomsourceidx-20261028-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-28T23:31:10Z",
   "base_revision": "80fb5af2f92b3d596114c6cfa5c8348a1e28ce1a",
   "owned_paths": [
     "tasks/integration-geometry-contact-source-gate.json",
     "sessions/geomsourceidx-20261028-01",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-10-28T23:33:10Z",
+  "released_from_sha": "cd8f4f8fdd59f1ffc6a75a2c41339b9c2f0c4afa"
 }
