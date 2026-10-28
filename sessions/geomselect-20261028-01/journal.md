@@ -27,3 +27,5 @@ Next: Native boundary/contact source law and physical readout
 ## 2026-10-28T22:07:34.626724+00:00
 
 Held claim 000eb33ad18cc53e84eb5fc41ece9f86cd2c1324. Exact finite replay PASS, validation 394 records PASS, 16 tests PASS; independent physics review NOT_RUN.
+
+PR #249 merged at `da4c0fabeee8eaa40fa93316d2e4cce87e6bf85b`; exact-lease claim released at `09e093d3c8d4a4393364165eb83d7ddf77b220a8`. Closure-only metadata.
