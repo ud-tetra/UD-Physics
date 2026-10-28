@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-kinetic-index",
+  "session": "graphkinidx-20261028-01",
+  "status": "held",
+  "created_at": "2026-10-28T15:38:23.988Z",
+  "base_revision": "8f1cfb056ffdc65e91afb59fcaec16c4e23c4c21",
+  "owned_paths": [
+    "tasks/integration-graphite-kinetic-index.json",
+    "sessions/graphkinidx-20261028-01/",
+    "state/CURRENT.md"
+  ]
+}
