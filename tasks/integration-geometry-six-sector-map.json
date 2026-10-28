@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-geometry-six-sector-map",
+  "goal": "Index integrated six-sector geometry map",
+  "owned_paths": [
+    "tasks/integration-geometry-six-sector-map.json",
+    "sessions/geomsectoridx-20261028-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "geometry-six-sector-map"
+  ],
+  "status": "complete"
+}

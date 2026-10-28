@@ -1,0 +1,29 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "geomsectoridx-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "integration-geometry-six-sector-map",
+  "goal": "Index six-sector measure and flux map",
+  "created_at": "2026-10-28T21:27:40.247758+00:00",
+  "base_revision": "1353524a583c2977cde4c2b0fca6f1eaa9c90fe4",
+  "source_dirty_at_boot": false,
+  "status": "active",
+  "claims": {
+    "integration-geometry-six-sector-map": {
+      "held_sha": "48c85a927c779e64bb7a9437589ab0825fede25f",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "Indexed explicit six-sector map and nonuniform pushforward boundary density, no physical promotion",
+  "next_action": "Native face/current law selection and observable",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A index only",
+    "exactness_or_precision_plan": "N/A no new calculation",
+    "applicable_methods": [
+      "N/A index only"
+    ],
+    "clock_metric_units_conventions": "N/A links source conventions"
+  }
+}
