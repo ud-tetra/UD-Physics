@@ -1,0 +1,151 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "one-hot-K4-free-persistence",
+  "session_id": "geomroot-20261028-01",
+  "candidate_id": "geometry-root-persistence",
+  "question": "Does an externally prepared one-hot K4 root persist under free Q166 vertex-edge incidence flow?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "K4_FREE",
+      "symbol": "(x,y)",
+      "object_type": "vertex and oriented-edge state",
+      "definition": "x in R4,y in R6, free unit-metric skew incidence evolution",
+      "domain": "R4+R6",
+      "codomain": null,
+      "coefficient_domain": "real, integer incidence",
+      "units": "dimensionless internal amplitudes",
+      "basis_orientation": "ascending K4 edge orientations",
+      "metric_measure": "Euclidean unit chain norm",
+      "origin": "assumed free truncation",
+      "exact_expression": "x'=-B1 y, y'=B1^T x; x(0)=e0,y(0)=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "NATIVE_SUPPORT"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "S=||x||\u00b2+||y||\u00b2=1"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "NATIVE_SUPPORT",
+      "url_or_repo_path": "experiments/graphite-native-support-current/README.md",
+      "version_or_commit": "b7e911b418a58f807267ebe74514b3186fdee9f0",
+      "section_or_object_id": "Q166 native 0/1 current and generator",
+      "source_status": "imported scoped native mathematics"
+    },
+    {
+      "source_id": "SELECTOR",
+      "url_or_repo_path": "experiments/geometry-native-selector/README.md",
+      "version_or_commit": "b7e911b418a58f807267ebe74514b3186fdee9f0",
+      "section_or_object_id": "Typed question",
+      "source_status": "imported symmetry gate"
+    }
+  ],
+  "assumptions": [
+    "A1 exogenous e0 one-hot preparation, y0=0",
+    "A2 free closed K4 vertex/edge truncation with H=I",
+    "A3 root readout by unique maximum signed amplitude or squared stock"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact incidence and spectral solution",
+      "applicability": "applied",
+      "purpose_or_na_reason": "L=4I-J and omega=2"
+    },
+    {
+      "technique": "native local continuity",
+      "applicability": "applied",
+      "purpose_or_na_reason": "Q166 current and positive quadratic stock balance"
+    },
+    {
+      "technique": "clock arithmetic",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous dimensionless period pi, not finite modular clock"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "K4 has 4 vertices, 6 edges, degree 3",
+    "reduced_expression": "BB^T=4I-J",
+    "factor_origins": [
+      "complete graph degree 3, one offdiagonal incidence overlap -1"
+    ],
+    "factorization": "4=2\u00b2, 6=2*3",
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless oscillator",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x'=-By,y'=B^Tx",
+    "initial_phase": "x=e0,y=0",
+    "coupling": "K4 incidence B",
+    "period_claim": "pi in s for this prepared state",
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "R4 vertices + R6 oriented edges",
+    "generator_or_update": "block skew [[0,-B],[B^T,0]]",
+    "initial_boundary_conditions": "e0 vertex, zero edge; closed boundary",
+    "conservation_and_sources": "S=1, Q166 F_ie=2 B_ie x_i y_e, no reservoir",
+    "projection_and_kernel": "uniform vertex mode 1/4 and contrast mode frequency 2",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "no empirical target or fit",
+    "known_targets": [
+      "rooted geometry map requires one root",
+      "symmetric map does not"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "one minimal one-hot preparation and free generator",
+    "selection_criterion": "first time unique amplitude/stock root fails",
+    "baseline": "conservative incidence dynamics"
+  },
+  "calculation_steps": [
+    "BB^T=4I-J, with uniform kernel and 3-dimensional eigenvalue 4 subspace.",
+    "x(s)=1/4 1+cos(2s)(e0-1/4 1), y(s)=sin(2s)B^Te0/2.",
+    "Root minus each other vertex is cos(2s); first amplitude tie s=pi/4.",
+    "Squared-stock difference is cos(2s)(1+cos(2s))/2; negative for -1<cos(2s)<0.",
+    "At s=pi/2, x=(-1/2,1/2,1/2,1/2), y=0, all vertex stocks 1/4.",
+    "S=1 and local Q166 continuity; full period pi gives zero net signed stock transfer."
+  ],
+  "result": {
+    "exact_expression": "first amplitude tie pi/4, free period pi, S=1; root stock difference c(1+c)/2",
+    "approximation": null,
+    "units": "dimensionless s and quadratic stock",
+    "precision_and_error": "analytic exact trigonometric solution; rational sample checks exact",
+    "scope": "free 0/1 K4 unit-metric truncation and one-hot seed",
+    "physical_interpretation": "no persistent amplitude-based root, not a physical friction result"
+  },
+  "verification": [
+    {
+      "method": "exact rational phase replay and analytic proof",
+      "command_or_proof_path": "python3 experiments/geometry-root-persistence/replay.py; experiments/geometry-root-persistence/README.md",
+      "source_revision": "b7e911b418a58f807267ebe74514b3186fdee9f0",
+      "actual_result": "PASS equations, stock/current balance, phase samples",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Fixed external one-hot contact label could persist despite free amplitudes; not supplied by this model.",
+    "Driven, masked, nonlinear or open-system dynamics may avoid the tie."
+  ],
+  "limitations": [
+    "Free 0/1 truncation excludes faces and gate transitions.",
+    "No physical clock, material damping or measured force/angle."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Sourced persistent contact register with exact stock/power accounting and physical readout."
+}
