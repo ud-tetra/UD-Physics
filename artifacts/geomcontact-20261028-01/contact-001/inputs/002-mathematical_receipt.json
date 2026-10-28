@@ -1,0 +1,151 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "K4-contact-energy-ledger",
+  "session_id": "geomcontact-20261028-01",
+  "candidate_id": "geometry-contact-contract",
+  "question": "What contact bias and loss ledger retain a K4 root?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "CONTACT_R",
+      "symbol": "r",
+      "object_type": "external one-hot contact register",
+      "definition": "held vertex label e0",
+      "domain": "R4",
+      "codomain": null,
+      "coefficient_domain": "real",
+      "units": "dimensionless internal",
+      "basis_orientation": "K4 vertices",
+      "metric_measure": "unit Euclidean",
+      "origin": "assumed",
+      "exact_expression": "r=e0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "FREE_ROOT"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit norm"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "FREE_ROOT",
+      "url_or_repo_path": "experiments/geometry-root-persistence/README.md",
+      "version_or_commit": "c3150ff736ef700cd4129272cd5ea28a52b9673a",
+      "section_or_object_id": "Question and generator",
+      "source_status": "imported conditional free result"
+    },
+    {
+      "source_id": "NATIVE",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "v0.39(2) historical",
+      "section_or_object_id": "Q166,Q167,Q170",
+      "source_status": "imported native typed identities"
+    }
+  ],
+  "assumptions": [
+    "externally held r=e0",
+    "assumed gamma nonnegative",
+    "unit K4 incidence and symmetric x start"
+  ],
+  "technique_plan": [
+    {
+      "technique": "quadratic energy",
+      "applicability": "applied",
+      "purpose_or_na_reason": "contact work and heat"
+    },
+    {
+      "technique": "damped contrast",
+      "applicability": "applied",
+      "purpose_or_na_reason": "root persistence"
+    },
+    {
+      "technique": "physical calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no dimensional inputs"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "four vertices, six K4 edges",
+    "reduced_expression": "initial S=1/4, E=3/8; final S=1, E=0",
+    "factor_origins": [
+      "three-dimensional contrast"
+    ],
+    "factorization": "3/8=3/2^3",
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "no empirical fit",
+    "known_targets": [
+      "prior free root tie"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "affine held contact selected"
+    ],
+    "search_domain_and_budget": "one conditional model",
+    "selection_criterion": "explicit passive ledger",
+    "baseline": "free incidence flow"
+  },
+  "calculation_steps": [
+    "Define xdot=-B y and ydot=B transpose (x-r)-gamma y.",
+    "For held r, shifted E dot=-gamma norm(y)^2.",
+    "Native S dot=2r dot xdot-2gamma norm(y)^2.",
+    "For symmetric x start and gamma positive, contrast converges to r.",
+    "Heat=3/8, contact work in native stock units=3/2, native stock gain=3/4.",
+    "One-hot switch at symmetric x costs zero; zero-to-one-hot setup costs 1/4."
+  ],
+  "result": {
+    "exact_expression": "E dot=-gamma norm(y)^2; S dot=2r dot xdot-2gamma norm(y)^2",
+    "approximation": null,
+    "units": "dimensionless internal",
+    "precision_and_error": "exact rational checks and analytic proof",
+    "scope": "assumed register and loss in K4 0/1 truncation",
+    "physical_interpretation": "conditional contract only"
+  },
+  "verification": [
+    {
+      "method": "rational ledger replay and analytic proof",
+      "command_or_proof_path": "python3 experiments/geometry-contact-contract/replay.py; experiments/geometry-contact-contract/README.md",
+      "source_revision": "c3150ff736ef700cd4129272cd5ea28a52b9673a",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Contact root externally selected, not native derived.",
+    "Equal one-hot root switches at symmetric state have equal energy."
+  ],
+  "limitations": [
+    "No native r or gamma source.",
+    "No physical material loss or graphite force."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Source contact register and physical readout."
+}

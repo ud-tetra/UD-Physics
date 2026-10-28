@@ -1,0 +1,39 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "geomcontact-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "geometry-contact-contract",
+  "goal": "Derive explicit contact register and damping stock/power balance for K4 root",
+  "created_at": "2026-10-28T22:42:56.673117+00:00",
+  "base_revision": "c3150ff736ef700cd4129272cd5ea28a52b9673a",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "geometry-contact-contract": {
+      "held_sha": "9078a922c0275f79befc9a0757f668f9709d2ba0",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "exact rational replay PASS",
+    "independent review NOT_RUN"
+  ],
+  "finding": "Assumed fixed contact and gamma positive retain root; contact work, heat and switch energy explicit; native sourcing open",
+  "next_action": "Derive packet boundary contact preparation and physical response",
+  "checkpoint_at": "2026-10-28T22:45:17.548915+00:00",
+  "checkpoint_source": {
+    "revision": "c3150ff736ef700cd4129272cd5ea28a52b9673a",
+    "dirty": true
+  },
+  "mathematical_profile": {
+    "coefficient_domain": "rational incidence and real nonnegative gamma",
+    "exactness_or_precision_plan": "analytic energy and exact rational power checks",
+    "applicable_methods": [
+      "skew incidence",
+      "passive energy",
+      "S4 switching symmetry"
+    ],
+    "clock_metric_units_conventions": "dimensionless s, unit K4 metric, held r=e0, assumed gamma"
+  }
+}

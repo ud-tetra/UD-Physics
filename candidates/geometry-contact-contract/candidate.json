@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "geometry-contact-contract",
+  "session_id": "geomcontact-20261028-01",
+  "question": "What external contact bias and power ledger make a K4 root persist without confusing native stock conservation with material damping?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "external held one-hot register",
+    "assumed nonnegative damping",
+    "unit K4 incidence metric"
+  ],
+  "physical_mapping": "OPEN physical clock, energy and material contact",
+  "target_exposure": "prior free root failure known; no graphite data fit",
+  "fitted_choices": [
+    "affine bias chosen to stabilize root; gamma remains symbolic"
+  ],
+  "sources": [
+    "experiments/geometry-root-persistence/README.md",
+    "supplied ledger v0.39(2) Q166/Q170"
+  ],
+  "baseline": "free K4 incidence oscillator",
+  "result": "conditional root stabilization with explicit contact work, heat and switch jumps",
+  "next_discriminant": "native register preparation and physical force readout",
+  "mathematical_receipts": [
+    "candidates/geometry-contact-contract/mathematical_receipt.json"
+  ]
+}

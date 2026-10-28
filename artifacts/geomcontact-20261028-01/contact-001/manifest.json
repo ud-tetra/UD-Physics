@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "geomcontact-20261028-01",
+  "run_id": "contact-001",
+  "created_at": "2026-10-28T22:46:01.952256+00:00",
+  "evidence": "EXACT",
+  "summary": "Conditional K4 contact register and stock power balance",
+  "command": "python3 experiments/geometry-contact-contract/replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "c3150ff736ef700cd4129272cd5ea28a52b9673a",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay.py",
+      "path": "inputs/001-replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/geometry-contact-contract/replay.py",
+      "sha256": "a2f20b2b2476249e88224003be7147b0799ac3d845cf4deb3d4ec413962f65ca",
+      "size_bytes": 2975
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/geometry-contact-contract/mathematical_receipt.json",
+      "sha256": "000233645825c78d98086484bf13014c15c73521c29f6d167106f843bfe37399",
+      "size_bytes": 4887
+    }
+  ],
+  "files": [
+    {
+      "path": "files/README.md",
+      "sha256": "2c82cd4b47046b716fb4bc5584e4b04921bbac0bdc766b98e68aaeeb190bf27b",
+      "size_bytes": 4538
+    },
+    {
+      "path": "files/RESULTS.json",
+      "sha256": "3b56b8fd0d7307a2da9f17a3a6cb69076a477d775241e10d865e793af56a2717",
+      "size_bytes": 554
+    }
+  ]
+}

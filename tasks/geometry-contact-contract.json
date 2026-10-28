@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "geometry-contact-contract",
+  "goal": "Contact register balance and root persistence in conditional K4 oscillator",
+  "owned_paths": [
+    "tasks/geometry-contact-contract.json",
+    "sessions/geomcontact-20261028-01",
+    "candidates/geometry-contact-contract",
+    "experiments/geometry-contact-contract",
+    "artifacts/geomcontact-20261028-01"
+  ],
+  "dependencies": [
+    "geometry-root-persistence"
+  ],
+  "status": "complete"
+}
