@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "geometry-root-persistence",
+  "session": "geomroot-20261028-01",
+  "status": "held",
+  "created_at": "2026-10-28T22:47:00Z",
+  "base_revision": "b7e911b418a58f807267ebe74514b3186fdee9f0",
+  "owned_paths": [
+    "tasks/geometry-root-persistence.json",
+    "sessions/geomroot-20261028-01",
+    "candidates/geometry-root-persistence",
+    "experiments/geometry-root-persistence",
+    "artifacts/geomroot-20261028-01"
+  ]
+}
