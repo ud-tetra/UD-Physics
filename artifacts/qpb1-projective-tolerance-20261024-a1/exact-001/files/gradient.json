@@ -1,9 +1,0 @@
-{
-  "evidence": "EXACT_CONDITIONAL",
-  "exact_derivative_fixtures": 100,
-  "radial_and_vertical_annihilation": "PASS",
-  "squared_gradient_bounds": "PASS",
-  "finite_difference_cross_checks": 20,
-  "max_binary64_derivative_error": 3.0932021388707653e-09,
-  "failed_larger_21bit_sufficient_certificate": true
-}

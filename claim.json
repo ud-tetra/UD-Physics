@@ -1,0 +1,18 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "icosahedral-reference-defect-20261028",
+  "session": "ico-refdefect-20261028-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-28T15:11:21.636Z",
+  "base_revision": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+  "owned_paths": [
+    "tasks/icosahedral-reference-defect-20261028.json",
+    "sessions/ico-refdefect-20261028-gpt6-a1/",
+    "experiments/icosahedral-reference-defect/",
+    "candidates/icosahedral-reference-defect/",
+    "artifacts/ico-refdefect-20261028-gpt6-a1/",
+    ".github/workflows/icosahedral-reference-defect-20261028.yml"
+  ]
+}
