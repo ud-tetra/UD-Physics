@@ -41,7 +41,7 @@ The prior assumed port $S=M^T\operatorname{diag}(w)B^T$ gets the same **model-de
 
 For the invariant row sector, $y=A^Tx'$ and the quadratic energy in $x'$ is isotropic. Thus
 
-$$\operatorname{Cov}(y)=a\Theta_{\rm bar}A^TA,qquad
+$$\operatorname{Cov}(y)=a\Theta_{\rm bar}A^TA,\qquad
 \operatorname{Var}(y_e)=2a\Theta_{\rm bar}\quad(e\leq21).\tag{6}$$
 
 All 21 internal bonds have equal variance, so $M^T\operatorname{diag}(\operatorname{Var}(y_{1:21}))B^T=0$. This holds for **any** $H_e$ giving $AH_eA^T=I$ when the canonical ensemble is restricted to $y\in\operatorname{im}A^T$: write $y=A^Tv$ and integrate the unit quadratic form $|v|^2/2$. Allowing kernel preparation, a different kinetic metric, or a different readout changes the premises. In particular, equation (3) solves the covariance/spectrum matching problem by changing the observable; it does not turn the literal native edge $y_e^2$ into the nonuniform source.
