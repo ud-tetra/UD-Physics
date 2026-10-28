@@ -4,8 +4,10 @@
   "protocol_version": 2,
   "task": "geometry-s4-full-map",
   "session": "geomfull-20261028-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-28T22:05:00Z",
+  "released_at": "2026-10-28T22:10:00Z",
+  "released_from_sha": "3601a925d8311ebe12142232db49c683225fe36e",
   "base_revision": "f617703a774712fa45adceef239c44543a4ec991",
   "owned_paths": [
     "tasks/geometry-s4-full-map.json",
