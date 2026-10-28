@@ -1,0 +1,19 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-kinetic-tradeoff",
+  "goal": "Check reciprocal correlated kinetic metric compatibility with local odd bond covariance and registered bond dynamics",
+  "owned_paths": [
+    "tasks/graphite-kinetic-tradeoff.json",
+    "sessions/graphkin-20261028-01",
+    "candidates/graphite-kinetic-tradeoff",
+    "experiments/graphite-kinetic-tradeoff",
+    "artifacts/graphkin-20261028-01"
+  ],
+  "dependencies": [
+    "graphite-local-readout-bound",
+    "graphite-joint-quadrature-contact",
+    "graphite-matched-hessian-reconstruction"
+  ],
+  "status": "complete"
+}

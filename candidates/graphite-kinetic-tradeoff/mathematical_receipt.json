@@ -1,0 +1,217 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "kinetic-001",
+  "session_id": "graphkin-20261028-01",
+  "candidate_id": "graphite-kinetic-tradeoff",
+  "question": "Can a positive correlated site-velocity metric preserve even covariance and registered bond acceleration while sourcing the local odd covariance?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "B",
+      "symbol": "B",
+      "object_type": "oriented incidence",
+      "definition": "14x21 honeycomb quotient connected incidence, rank13, kernel of B^T uniform u",
+      "domain": "R^21",
+      "codomain": "R^14",
+      "coefficient_domain": "Z",
+      "units": "dimensionless",
+      "basis_orientation": "A to B",
+      "metric_measure": "Euclidean",
+      "origin": "imported",
+      "exact_expression": "B^T u=0, rank B=13",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "carrier"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "u=ones/sqrt(14)"
+    },
+    {
+      "object_id": "K",
+      "symbol": "K",
+      "object_type": "registered conventional positive stiffness",
+      "definition": "KC plus plate Hessian per mean upper atom",
+      "domain": "R^14",
+      "codomain": "R^14",
+      "coefficient_domain": "R numerical",
+      "units": "meV/Angstrom^2",
+      "basis_orientation": "aligned sites",
+      "metric_measure": "Euclidean",
+      "origin": "imported conventional",
+      "exact_expression": null,
+      "measured_value": "MATCHED_HESSIAN_RESULTS.json K",
+      "uncertainty": "finite difference and conventional-model limitation",
+      "source_refs": [
+        "Ksource"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "Ephys=7 x^T K x+p^T p/(2m)"
+    },
+    {
+      "object_id": "G",
+      "symbol": "G",
+      "object_type": "positive kinetic metric on site momenta",
+      "definition": "En=(x^T V x+pi^T G pi)/2 with V=aK",
+      "domain": "R^14",
+      "codomain": "R^14",
+      "coefficient_domain": "R positive symmetric",
+      "units": "dimensionless in normalized En",
+      "basis_orientation": "site basis",
+      "metric_measure": "positive quadratic energy",
+      "origin": "assumed/FIT",
+      "exact_expression": "G=I+gamma uu^T if registered bond acceleration for all x",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "canonical",
+        "height-id"
+      ],
+      "dependency_ids": [
+        "B",
+        "K"
+      ],
+      "normalization": "a=14tau^2/m, Theta_n=a Theta_bar"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Ksource",
+      "url_or_repo_path": "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+      "version_or_commit": "6d5462c51e5a966066197bb56f33022ecd3a56aa",
+      "section_or_object_id": "K, pressure_rows/K_alt_step",
+      "source_status": "prior conventional numerical reconstruction"
+    },
+    {
+      "source_id": "carrier",
+      "url_or_repo_path": "experiments/graphite-registry-defect-source/audit_registry_defect.py",
+      "version_or_commit": "6d5462c51e5a966066197bb56f33022ecd3a56aa",
+      "section_or_object_id": "carrier()",
+      "source_status": "prior finite graph"
+    }
+  ],
+  "assumptions": [
+    "canonical: Gaussian equilibrium of positive reciprocal Hamiltonian",
+    "height-id: physical x and V=aK with full site height covariance",
+    "exact bond acceleration for every x, not only selected preparation",
+    "local odd gradient with one positive scale kappa; no material loss"
+  ],
+  "technique_plan": [
+    {
+      "technique": "incidence rank/kernel",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive G uniform-mode freedom"
+    },
+    {
+      "technique": "positive-metric reciprocity and canonical covariance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "link kinetic metric to local odd source"
+    },
+    {
+      "technique": "spectral/curvature and fit control",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "quantify cost of covariance-fitting constructor"
+    },
+    {
+      "technique": "prime/modular analysis",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no divisibility or modular clock question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "14 sites, 21 bonds, rank B=13, one uniform kernel",
+    "reduced_expression": "ker B^T=span(u)",
+    "factor_origins": [
+      "connected honeycomb incidence"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "assumed continuous s=t/tau",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x_prime=G pi, pi_prime=-V x",
+    "initial_phase": "canonical Gaussian equilibrium; all-x acceleration requirement",
+    "coupling": "no external loss or force coupling",
+    "period_claim": "none",
+    "physical_unit_map": "a=14tau^2/m unknown, kappa stiffness"
+  },
+  "dynamics_readout": {
+    "state_space": "site x,pi in R14, odd r_kappa in R21",
+    "generator_or_update": "[[0,G],[-V,0]], V=aK, G positive symmetric",
+    "initial_boundary_conditions": "canonical equilibrium and arbitrary initial site displacement for acceleration identity",
+    "conservation_and_sources": "En conserved; local odd source zero under exact bond dynamics",
+    "projection_and_kernel": "B^T kills uniform u; P(G-I)=0 implies G=I+gamma uu^T",
+    "physical_mapping": "x physical height assumed; r_kappa local velocity gradient, kappa fitted normalization"
+  },
+  "target_exposure": {
+    "status": "EXPOSED",
+    "known_targets": [
+      "registered K and Q",
+      "prior full bond conservative process",
+      "21.8/38.2 conventional angle pair"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "one kappa optimum in short-time curvature diagnostic",
+      "G=kappa K^-1 inverse design"
+    ],
+    "search_domain_and_budget": "analytic identity and one positive scalar least squares, no broad model search",
+    "selection_criterion": "minimum Frobenius second-derivative defect",
+    "baseline": "G=I preserves registered oscillator but local source zero"
+  },
+  "calculation_steps": [
+    "Canonical Cov(x)=Theta_n V^-1 and Cov(x_prime)=Theta_n G",
+    "V=aK fixes even covariance; B^TGV=B^TaK for all x implies B^T(G-I)=0",
+    "symmetry gives G=I+gamma uu^T, so B^TGB=B^TB and equal edge variance",
+    "G=kappa K^-1 reproduces Q with local r but GV=a kappa I",
+    "minimize ||B^TB-kappa Q||_F over kappa>0 and replay pressure/step sensitivity"
+  ],
+  "result": {
+    "exact_expression": "G=I+gamma uu^T (gamma>-1) under exact bond dynamics; local source zero; G=kappa K^-1 gives flat spectrum",
+    "approximation": "kappa_star=578.2184746 meV/Angstrom^2, best curvature defect0.7902983719493009 for exposed K",
+    "units": "kappa stiffness, dimensionless relative defect, Q Angstrom^2/meV",
+    "precision_and_error": "double precision; archive step and pressure sensitivity not experimental uncertainty",
+    "scope": "14-site positive reciprocal oscillator, fixed even site covariance and all-preparation bond acceleration",
+    "physical_interpretation": "conditional incompatibility; no native damping or friction"
+  },
+  "verification": [
+    {
+      "method": "analytic proof plus replay",
+      "command_or_proof_path": "experiments/graphite-kinetic-tradeoff/replay_kinetic.py",
+      "source_revision": "6d5462c51e5a966066197bb56f33022ecd3a56aa",
+      "actual_result": "PASS constructor",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent physics review",
+      "command_or_proof_path": null,
+      "source_revision": "6d5462c51e5a966066197bb56f33022ecd3a56aa",
+      "actual_result": "NOT_RUN",
+      "review_relationship": "independent"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "G=kappa K^-1 matches static odd covariance but flattens all oscillator frequencies",
+    "G=I+gamma uu^T preserves bond acceleration but yields uniform local odd variance",
+    "Weak observable-only or modified even readout is outside theorem"
+  ],
+  "limitations": [
+    "K and kappa target-exposed",
+    "does not constrain edge bath, memory, nonlocal odd map or altered height readout",
+    "no measured loss/contact/signed force or load slope"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/graphkin-20261028-01/kinetic-001/manifest.json"
+  ],
+  "next_discriminant": "Specify a sourced reciprocal shared edge/bath or controlled-range readout with full covariance and spectrum, then independent measured loss and signed residual"
+}
