@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "geometry-s4-selection",
+  "goal": "Audit symmetry selection of six-sector tetrahedron cube map",
+  "owned_paths": [
+    "tasks/geometry-s4-selection.json",
+    "sessions/geomsym-20261028-01",
+    "candidates/geometry-s4-selection",
+    "experiments/geometry-s4-selection",
+    "artifacts/geomsym-20261028-01"
+  ],
+  "dependencies": [
+    "geometry-six-sector-map"
+  ],
+  "status": "complete"
+}

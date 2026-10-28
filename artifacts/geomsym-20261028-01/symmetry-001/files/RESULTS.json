@@ -1,0 +1,22 @@
+{
+  "alternate_even_pairwise_squared_distances": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "alternate_even_tetra_stabilizer": 24,
+  "cube_isometry_order": 48,
+  "inversion_average_density": "3^(1/6) on all six faces",
+  "six_sector_star_pairwise_squared_distances": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2
+  ],
+  "six_sector_star_stabilizer": 6
+}

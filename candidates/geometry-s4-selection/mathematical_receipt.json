@@ -1,0 +1,151 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "star-isometry-stabilizer",
+  "session_id": "geomsym-20261028-01",
+  "candidate_id": "geometry-s4-selection",
+  "question": "Does the six-sector map intertwine tetrahedral S4 with Euclidean cube isometries?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "H_STAR",
+      "symbol": "H",
+      "object_type": "cube vertex set",
+      "definition": "000,100,010,001 image of original tetrahedron vertices",
+      "domain": "{0,1}^3",
+      "codomain": null,
+      "coefficient_domain": "integers",
+      "units": "cube edge units",
+      "basis_orientation": "fixed coordinate axes",
+      "metric_measure": "Euclidean squared distance",
+      "origin": "imported",
+      "exact_expression": "{000,100,010,001}",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "SIX_MAP"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "cube edge 1"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "SIX_MAP",
+      "url_or_repo_path": "experiments/geometry-six-sector-map/README.md",
+      "version_or_commit": "57588699e8b42399d3d846c44bbdf16a4ba4c253",
+      "section_or_object_id": "Carrier and map",
+      "source_status": "imported conditional map"
+    },
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "v0.39(2) historical",
+      "section_or_object_id": "P03,Q166/Q167/Q170",
+      "source_status": "imported typed native entries"
+    }
+  ],
+  "assumptions": [
+    "A1 Euclidean cube isometries, not arbitrary PL conjugated actions",
+    "A2 selected star map; alternative vertex orbit only a counterexample to universal no-go"
+  ],
+  "technique_plan": [
+    {
+      "technique": "finite group orbit/stabilizer",
+      "applicability": "applied",
+      "purpose_or_na_reason": "all 48 cube isometries and two four-vertex stabilizers"
+    },
+    {
+      "technique": "Euclidean distance invariant",
+      "applicability": "applied",
+      "purpose_or_na_reason": "exclude full S4 on star set"
+    },
+    {
+      "technique": "clock/spectrum",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no dynamical generator"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "3!*2^3=48 target isometries; 4!=24 source vertex permutations",
+    "reduced_expression": "stabilizer(H)=6; stabilizer(E)=24",
+    "factor_origins": [
+      "axis permutations 3!",
+      "three independent flips 2^3",
+      "source tetrahedron S4"
+    ],
+    "factorization": "48=2^4*3;24=2^3*3;6=2*3",
+    "divisibility_gcd_lcm": "6 divides 24; proper stabilizer, so full intertwining fails for selected star image"
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "prior map exposed, no measured targets",
+    "known_targets": [
+      "3:1 induced boundary density from preceding map"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "star geometry fixed by preceding construction"
+    ],
+    "search_domain_and_budget": "enumerate all 48 isometries; one alternating-corner counterexample",
+    "selection_criterion": "stabilizer of mapped original four vertices",
+    "baseline": "cube symmetry group"
+  },
+  "calculation_steps": [
+    "Cube isometries act by three coordinate permutations and three binary flips: 48 total.",
+    "H has pairwise squared distances 1x3 and 2x3; only six axis permutations preserve H.",
+    "E={000,011,101,110} has all six squared distances 2; 24 cube isometries preserve E and induce all S4 permutations.",
+    "Cube inversion swaps zero/unit faces; half mixture of induced densities 3 and 1 in units 3^(1/6)/2 yields uniform 2 in same units."
+  ],
+  "result": {
+    "exact_expression": "|Stab_cube(H)|=6; |Stab_cube(E)|=24; averaged density=3^(1/6)",
+    "approximation": null,
+    "units": "integer group orders and dimensionless density ratio",
+    "precision_and_error": "exact finite integer enumeration",
+    "scope": "selected six-sector map under cube Euclidean isometries; alternative is vertex-level only",
+    "physical_interpretation": "conditional symmetry selection gap, no active coefficient"
+  },
+  "verification": [
+    {
+      "method": "all 48 cube isometry enumeration",
+      "command_or_proof_path": "python3 experiments/geometry-s4-selection/replay.py",
+      "source_revision": "57588699e8b42399d3d846c44bbdf16a4ba4c253",
+      "actual_result": "PASS exact integer assertions",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "The alternate even-parity four corners support full S4 at vertex level, so no universal S4 no-go is claimed.",
+    "A symmetric inversion mixture removes the 3:1 surface-density signature."
+  ],
+  "limitations": [
+    "No full S4-equivariant interior map constructed or ruled out.",
+    "Native current identities do not select boundary state or geometry.",
+    "No physical graphite data or force law."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Find native packet/boundary selector or full S4-compatible cubical realization with a distinct physical observable."
+}
