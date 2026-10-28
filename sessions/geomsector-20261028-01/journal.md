@@ -27,3 +27,5 @@ Next: Derive native packet selection and constitutive coupling
 ## 2026-10-28T21:24:41.610372+00:00
 
 Remote claim held b164567cc532493ae99ecbe893b88b1981568a28. Exact rational replay PASS; validation PASS 376 records, 16 tests PASS; independent physics review NOT_RUN. Original bootstrap UNCLAIMED line predates remote acquisition.
+
+Research PR #237 merged at `64806bc7ab075cc2af1d1534c3e28f86c0098ef8`; claim released at `71d5daa42f830e4c7b5199ff85a1d5c3c2986410`. Closure-only metadata.
