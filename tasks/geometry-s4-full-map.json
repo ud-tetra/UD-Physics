@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "geometry-s4-full-map",
+  "goal": "Exact S4 equivariant simplicial and measure map",
+  "owned_paths": [
+    "tasks/geometry-s4-full-map.json",
+    "sessions/geomfull-20261028-01",
+    "candidates/geometry-s4-full-map",
+    "experiments/geometry-s4-full-map",
+    "artifacts/geomfull-20261028-01"
+  ],
+  "dependencies": [
+    "geometry-s4-selection"
+  ],
+  "status": "complete"
+}

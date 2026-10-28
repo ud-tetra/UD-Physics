@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "geomfull-20261028-01",
+  "run_id": "fullmap-001",
+  "created_at": "2026-10-28T21:55:15.913681+00:00",
+  "evidence": "EXACT",
+  "summary": "Twelve-cell full S4 tetrahedron cube homeomorphism and uniform boundary density",
+  "command": "python3 experiments/geometry-s4-full-map/replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "f617703a774712fa45adceef239c44543a4ec991",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay.py",
+      "path": "inputs/001-replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/geometry-s4-full-map/replay.py",
+      "sha256": "79286aa3d4bd7836e06f4ea625b656d1ba3731968adf5cd44290838cf1f4cbef",
+      "size_bytes": 3860
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/geometry-s4-full-map/mathematical_receipt.json",
+      "sha256": "3c2347437ec972cf8c1e49e8d9a8a98449ce5b2339fb262a9331999be7fbc30a",
+      "size_bytes": 6491
+    }
+  ],
+  "files": [
+    {
+      "path": "files/README.md",
+      "sha256": "5d0220cb06151f2acbf2abfb606cc95180ca274485fd0db4843cbb6ae6f2e421",
+      "size_bytes": 4761
+    },
+    {
+      "path": "files/RESULTS.json",
+      "sha256": "3b3cd33b5bfbd11905c720c2df8a85a8cf1d1e44df07375960a5aaca43590a12",
+      "size_bytes": 392
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "boundary_triangles": 12,
+  "boundary_triangles_per_cube_face": 2,
+  "coordinate_jacobian": 6,
+  "equal_volume_physical_jacobian": 1,
+  "f_vector": [
+    9,
+    26,
+    30,
+    12
+  ],
+  "full_S4_matching_isometries": 24,
+  "induced_boundary_density_ratio": "3^(1/6) uniformly on all six cube faces",
+  "source_coordinate_cell_volume": "1/72",
+  "target_coordinate_cell_volume": "1/12"
+}
