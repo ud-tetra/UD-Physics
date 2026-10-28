@@ -63,7 +63,9 @@ def run(case_id):
         # J(q,v)=[v,-M^-1(Kq+Cv)]; test mass-orthogonal projection.
         qnorm=max(KQ,QK,CQ,QC)
         assert qnorm<1e-8, (case_id,time,qnorm)
-        assert antisymK<1e-8 and antisymC<1e-8
+        # K includes d/dq(D(q)*v), generally NON-SYMMETRIC even though
+        # the conservative potential Hessian is symmetric.
+        assert antisymC<1e-8
         # Eigenvalues of K on the mass-relative internal sector; translational
         # exact zero modes are omitted by a tiny positive rank-3 shift.
         eiginternal=eigh(symK + Q@Q.T,eigvals_only=True,subset_by_index=[0,7])
@@ -76,6 +78,7 @@ def run(case_id):
            "K_mass_skew_error":antisymK,
            "C_mass_skew_error":antisymC,
            "K_mass_negative":bool(eiginternal[0]<-1e-8),
+           "K_is_nonconservative_tangent":bool(antisymK>1e-8),
            "C_mass_negative":bool(clam[0]<-1e-8),
         })
     return {
@@ -97,7 +100,7 @@ if __name__=="__main__":
           "source_base":"unmodified integrated icosahedral MountLoss with full 560 mechanical phase variables",
           "CM_projector":"Q=M^(1/2)T/sqrt(Mtot), P=I-QQ^T; exact KQ=Q^T K=CQ=Q^T C=0 for reciprocal internal forces; physical 6D Galilean CM block",
           "rigid_Green":"S(t,s)=[[I,(t-s)I],[0,I]] on CM and CM velocity, all times",
-          "internal_projection_warning":"K Hessian along moving trajectory may fail PSD despite nonnegative energy; check spectral values, do not assume a positive quadratic energy without a certified gap",
+          "internal_projection_warning":"Source K includes non-symmetric d/dq(D(q)*velocity). Symmetric K spectrum is a diagnostic, NOT a conservative Hessian eigen-certification; positivity may fail despite nonnegative nonlinear energy.",
           "cases":{case:run(case) for case in CASES}}
     args.out.parent.mkdir(parents=True,exist_ok=True)
     args.out.write_text(json.dumps(data,sort_keys=True,indent=2)+"\n")
