@@ -4,12 +4,14 @@
   "protocol_version": 2,
   "task": "integration-graphite-local-index",
   "session": "graphlocalidx-20261028-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-28T15:17:24.920Z",
   "base_revision": "95517f40815bf311494882b0e3201cf9bed83e5e",
   "owned_paths": [
     "tasks/integration-graphite-local-index.json",
     "sessions/graphlocalidx-20261028-01/",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-10-28T15:19:12.888Z",
+  "released_from_sha": "b7e5902291e2cf62a5cc3ba66a2111f622f35fd1"
 }
