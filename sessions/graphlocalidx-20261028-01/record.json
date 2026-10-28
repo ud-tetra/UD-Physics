@@ -1,0 +1,33 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphlocalidx-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "integration-graphite-local-index",
+  "goal": "Index scoped endpoint-local covariance obstruction",
+  "created_at": "2026-10-28T15:18:05.389660+00:00",
+  "base_revision": "95517f40815bf311494882b0e3201cf9bed83e5e",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-graphite-local-index": {
+      "held_sha": "b7e5902291e2cf62a5cc3ba66a2111f622f35fd1",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "repository validation PASS (359 records)",
+    "16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Indexed 168-pair support theorem and conditional 69.09% bound with radius-one inconclusive",
+  "next_action": "Source correlated kinetic metric or controlled-range readout, then force/loss test",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A index only",
+    "exactness_or_precision_plan": "N/A no new calculation",
+    "applicable_methods": [
+      "N/A index only"
+    ],
+    "clock_metric_units_conventions": "N/A links source conventions"
+  }
+}
