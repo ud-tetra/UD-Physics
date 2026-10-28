@@ -8,15 +8,20 @@
   "created_at": "2026-10-28T21:27:40.247758+00:00",
   "base_revision": "1353524a583c2977cde4c2b0fca6f1eaa9c90fe4",
   "source_dirty_at_boot": false,
-  "status": "active",
+  "status": "handoff",
   "claims": {
     "integration-geometry-six-sector-map": {
       "held_sha": "48c85a927c779e64bb7a9437589ab0825fede25f",
-      "status": "held"
+      "status": "released",
+      "released_sha": "f685d8bd8e812bb83f2c585e2d92a54a08f259a2"
     }
   },
-  "checks": [],
-  "finding": "Indexed explicit six-sector map and nonuniform pushforward boundary density, no physical promotion",
+  "checks": [
+    "repository validation PASS (378 records)",
+    "16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Indexed explicit six-sector map and nonuniform pushforward boundary density, no physical promotion Index PR #239 merged at 1a8af8d9493c6a8a569178247dc72a9acb24d9f4.",
   "next_action": "Native face/current law selection and observable",
   "mathematical_profile": {
     "coefficient_domain": "N/A index only",
