@@ -1,0 +1,88 @@
+{
+  "evidence": "EXACT/CONDITIONAL reciprocal identity; NUMERICAL target-exposed KC model",
+  "normalization": "a=14 tau^2/m=1 in compatible material units for numerical replay; kappa has K units, theta_n=a Theta_bar",
+  "site_dimension": 14,
+  "bond_dimension": 21,
+  "exact_theorem": "V=aK and B^T G V=B^T aK for all x imply G=I+gamma uu^T; hence B^T G B=B^T B and all internal local-gradient variances equal 2",
+  "exact_site_dynamic_example": {
+    "uniform_gamma": 0.6,
+    "source_norm": 0.0,
+    "bond_acceleration_relative_error": 6.245004513516506e-17
+  },
+  "static_local_covariance_fit": {
+    "G_definition": "G=kappa K^-1; local r=B^T x_prime/sqrt(a kappa)",
+    "positive_min_eigenvalue": 0.13602009263600998,
+    "target_Q_match_relative_error": 2.3194195825923723e-15,
+    "model_imported_source_norm": 8.829718241837594e-05,
+    "source_rank": 2,
+    "flat_site_operator_relative_error": 1.149208743353979e-14,
+    "fit": {
+      "kappa_best_frobenius_curvature": 578.2184745955249,
+      "best_second_derivative_relative_defect": 0.7902983719493009,
+      "k_eigen_min": 9.998997912679755,
+      "k_eigen_max": 4250.978391426641,
+      "conservative_lag_comparison": [
+        {
+          "dimensionless_lag": 0.0,
+          "relative_full_covariance_error": 1.9237672707452963e-15
+        },
+        {
+          "dimensionless_lag": 0.01,
+          "relative_full_covariance_error": 0.03736654842707134
+        },
+        {
+          "dimensionless_lag": 0.1,
+          "relative_full_covariance_error": 3.329206357401735
+        },
+        {
+          "dimensionless_lag": 0.5,
+          "relative_full_covariance_error": 2.1075309231402715
+        },
+        {
+          "dimensionless_lag": 1.0,
+          "relative_full_covariance_error": 1.6702850494013932
+        }
+      ]
+    }
+  },
+  "projected_Q_best_scalar_graph_relative_defect": 0.7902983719493009,
+  "archive_pressure_step_sensitivity": [
+    {
+      "pressure_delta_MPa": -2.5,
+      "hessian_step": "nominal",
+      "curvature_defect": 0.7903041599668664,
+      "fitted_kappa": 578.1937891858547
+    },
+    {
+      "pressure_delta_MPa": -2.5,
+      "hessian_step": "alternate",
+      "curvature_defect": 0.7903040609966901,
+      "fitted_kappa": 578.1941866882577
+    },
+    {
+      "pressure_delta_MPa": 0.0,
+      "hessian_step": "nominal",
+      "curvature_defect": 0.7902983719476211,
+      "fitted_kappa": 578.2184746020552
+    },
+    {
+      "pressure_delta_MPa": 0.0,
+      "hessian_step": "alternate",
+      "curvature_defect": 0.790298272886644,
+      "fitted_kappa": 578.2188724693117
+    },
+    {
+      "pressure_delta_MPa": 2.5,
+      "hessian_step": "nominal",
+      "curvature_defect": 0.7902925854691122,
+      "fitted_kappa": 578.2431540321314
+    },
+    {
+      "pressure_delta_MPa": 2.5,
+      "hessian_step": "alternate",
+      "curvature_defect": 0.7902924863059556,
+      "fitted_kappa": 578.2435523097273
+    }
+  ],
+  "caveat": "G=kappa K^-1 is target-selected and changes physical mass and the full spectrum; theorem assumes fixed V=aK, reciprocal finite oscillator, exact bond acceleration for every initial site x and local B^T velocity readout. No loss or measured friction follows."
+}
