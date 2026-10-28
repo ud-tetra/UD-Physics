@@ -8,15 +8,20 @@
   "created_at": "2026-10-28T21:14:11.398667+00:00",
   "base_revision": "3ee06e3897b07bda6e45bcaefdb578f70d299153",
   "source_dirty_at_boot": false,
-  "status": "active",
+  "status": "handoff",
   "claims": {
     "integration-geometry-equal-measure": {
       "held_sha": "00930bfefa524480b2e954ed3d7409bb71811ee8",
-      "status": "held"
+      "status": "released",
+      "released_sha": "1cc63df3986f2108ca2b5ca2450340e8987d4393"
     }
   },
-  "checks": [],
-  "finding": "Indexed regular-shape equal-measure incompatibility with scoped status and no physical promotion",
+  "checks": [
+    "repository validation PASS (372 records)",
+    "16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Indexed regular-shape equal-measure incompatibility with scoped status and no physical promotion Index PR #235 merged at 4c6b9c40c63ca40907cc6c912bee1de450419819.",
   "next_action": "Derive explicit chain/measure map and boundary stock/current before assigning active coefficient",
   "mathematical_profile": {
     "coefficient_domain": "N/A index only",
