@@ -1,0 +1,203 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "K4-mask-fixed-point-and-minimal-port",
+  "session_id": "geomsource-20261028-01",
+  "candidate_id": "geometry-contact-source-gate",
+  "question": "Does Q167 masking source the contact register and damping?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "K4_B",
+      "symbol": "B",
+      "object_type": "oriented incidence",
+      "definition": "ascending K4 edge incidence",
+      "domain": "R^6",
+      "codomain": "R^4",
+      "coefficient_domain": "Z",
+      "units": "dimensionless",
+      "basis_orientation": "ascending endpoint order",
+      "metric_measure": "unit Euclidean",
+      "origin": "imported conditional K4 truncation",
+      "exact_expression": "BB^T=4I-J",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "CONTACT"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit incidence"
+    },
+    {
+      "object_id": "MASK",
+      "symbol": "H",
+      "object_type": "binary diagonal gate",
+      "definition": "arbitrary time/state dependent mask with continuous state",
+      "domain": "R^6",
+      "codomain": "R^6",
+      "coefficient_domain": "0,1",
+      "units": "dimensionless",
+      "basis_orientation": "edge basis",
+      "metric_measure": "unit Euclidean",
+      "origin": "Q167",
+      "exact_expression": "diag(h_e)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "idempotent"
+    },
+    {
+      "object_id": "PORT",
+      "symbol": "b",
+      "object_type": "external edge forcing",
+      "definition": "minimum norm port for chosen acceleration",
+      "domain": "R^6",
+      "codomain": null,
+      "coefficient_domain": "Q",
+      "units": "dimensionless model forcing per s",
+      "basis_orientation": "edge basis",
+      "metric_measure": "unit Euclidean",
+      "origin": "assumed conditional",
+      "exact_expression": "-B^T e0; ||b||^2=3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "CONTACT"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "K4_B"
+      ],
+      "normalization": "desired x double prime=4(r-u)"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "supplied UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39(2).md",
+      "version_or_commit": "SHA-256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "section_or_object_id": "Q166,Q167,Q170,Q177-Q179",
+      "source_status": "imported mathematical identities with open source terms"
+    },
+    {
+      "source_id": "CONTACT",
+      "url_or_repo_path": "experiments/geometry-contact-contract/README.md",
+      "version_or_commit": "f9f3f1ed84c0d17414485b1472cd1640c3d7af57",
+      "section_or_object_id": "Minimal contract",
+      "source_status": "prior assumed contact"
+    }
+  ],
+  "assumptions": [
+    "A1: K4 0/1 masked skew flow, continuous state; unit metric",
+    "A2: chosen contact acceleration for r=e0, not sourced by Q167"
+  ],
+  "technique_plan": [
+    {
+      "technique": "Cauchy equality and incidence kernel",
+      "applicability": "applied",
+      "purpose_or_na_reason": "proof for arbitrary mask switching"
+    },
+    {
+      "technique": "gradient/cycle orthogonality",
+      "applicability": "applied",
+      "purpose_or_na_reason": "minimum port norm"
+    },
+    {
+      "technique": "modular clock and factor search",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite clock or empirical coefficient claim"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "four vertices and six edges; 2^6=64 binary masks",
+    "reduced_expression": "||u||^2=1/4, ||r||^2=1, ||B^T r||^2=3",
+    "factor_origins": [
+      "K4 complete-graph Laplacian 4I-J"
+    ],
+    "factorization": "64=2^6",
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless continuous model s",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "skew masked flow with optional externally supplied b and gamma",
+    "initial_phase": null,
+    "coupling": "Q167 gate; port separate",
+    "period_claim": null,
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R4⊕R6",
+    "generator_or_update": "x'=-BHy, y'=HB^Tx; optional +b-gamma y",
+    "initial_boundary_conditions": "x=u=1/4 1, y=0",
+    "conservation_and_sources": "S=1/4 and sum x=1 under gate; optional S dot=2y dot b-2gamma||y||^2",
+    "projection_and_kernel": "B^Tu=0; edge cycle ker B cannot create initial vertex acceleration",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "exposed but not fitted",
+    "known_targets": [
+      "paired angles 21.8 and 38.2 degrees",
+      "weak load response"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "chosen target contact acceleration"
+    ],
+    "search_domain_and_budget": "one specified port; all 64 masks verified",
+    "selection_criterion": "least Euclidean norm for stated acceleration",
+    "baseline": "binary gate alone"
+  },
+  "calculation_steps": [
+    "B^T u=0 for uniform u, giving a fixed point under every mask.",
+    "Quadratic norm and vertex sum are conserved at fixed mask and through continuous switching.",
+    "Cauchy equality forces x=u,y=0 for all such trajectories.",
+    "With b, x double prime=-B b at symmetric start.",
+    "For chosen acceleration 4(r-u), b=-B^T r has norm squared 3 and is orthogonal to all ker B alternatives."
+  ],
+  "result": {
+    "exact_expression": "x(s)=u,y(s)=0 for gate-only flow; min ||b||^2=3 for x double prime=4(r-u)",
+    "approximation": null,
+    "units": "dimensionless model",
+    "precision_and_error": "exact rational",
+    "scope": "K4 0/1 symmetric initial state and Q167-style gate",
+    "physical_interpretation": "conditional source requirement, not graphite coefficient"
+  },
+  "verification": [
+    {
+      "method": "analytic proof and all mask rational replay",
+      "command_or_proof_path": "python3 experiments/geometry-contact-source-gate/replay.py; experiments/geometry-contact-source-gate/README.md",
+      "source_revision": "f9f3f1ed84c0d17414485b1472cd1640c3d7af57",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Q167 masked stock jumps are classification changes, not heat.",
+    "Gate with no port cannot reach one-hot norm from symmetric preparation."
+  ],
+  "limitations": [
+    "Full packet or asymmetric preparation may evade the scoped result.",
+    "No native port, damping, physical calibration or measured force.",
+    "Four supplied packet/seam attachments are placeholder-only."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/geomsource-20261028-01/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Source external contact/bath update or measure registered material response."
+}

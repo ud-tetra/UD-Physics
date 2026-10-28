@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "geometry-contact-source-gate",
+  "goal": "Audit Q167 mask ability to source persistent K4 root and damping",
+  "owned_paths": [
+    "tasks/geometry-contact-source-gate.json",
+    "sessions/geomsource-20261028-01",
+    "candidates/geometry-contact-source-gate",
+    "experiments/geometry-contact-source-gate",
+    "artifacts/geomsource-20261028-01"
+  ],
+  "dependencies": [
+    "geometry-contact-contract",
+    "geometry-s4-full-map"
+  ],
+  "status": "complete"
+}

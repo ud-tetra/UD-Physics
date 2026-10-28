@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "geometry-contact-source-gate",
+  "session_id": "geomsource-20261028-01",
+  "question": "Can Q167 binary masks supply the held one-hot register from symmetric K4 state?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "K4 0/1 truncation and unit metric",
+    "continuous state across mask switches",
+    "symmetric x=u,y=0 preparation"
+  ],
+  "physical_mapping": "OPEN: material coupling, dimensional loss, contact registration and graphite force",
+  "target_exposure": "21.8\u00b0 and 38.2\u00b0 and weak load response known; no data used or fitted",
+  "fitted_choices": [
+    "port b=-B^T r chosen to replicate previous held-contact acceleration; not native-derived"
+  ],
+  "sources": [
+    "supplied UD ledger v0.39(2) SHA-256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63 Q166/Q167/Q170/Q177-Q179",
+    "experiments/geometry-contact-contract/README.md at f9f3f1ed84c0d17414485b1472cd1640c3d7af57"
+  ],
+  "baseline": "all binary Q167 masks, no external port",
+  "result": "For symmetric u, invariant stock and vertex sum force x=u,y=0 under any binary mask; selected acceleration requires gradient edge port with squared minimum norm 3",
+  "next_discriminant": "Native non-placeholder boundary/environment update and material force/loss calibration",
+  "mathematical_receipts": [
+    "candidates/geometry-contact-source-gate/mathematical_receipt.json"
+  ]
+}
