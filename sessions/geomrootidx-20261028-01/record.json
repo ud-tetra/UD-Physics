@@ -1,0 +1,29 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "geomrootidx-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "integration-geometry-root-persistence",
+  "goal": "Index K4 root persistence limit",
+  "created_at": "2026-10-28T22:39:07.631057+00:00",
+  "base_revision": "cef01efbf30526208dad6ff596585fef09918b57",
+  "source_dirty_at_boot": false,
+  "status": "active",
+  "claims": {
+    "integration-geometry-root-persistence": {
+      "held_sha": "94859ecc780756964c92b44d23e6e63720497b92",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "Indexed exact prepared root persistence failure under free K4 incidence evolution",
+  "next_action": "Sourced persistent contact register and physical readout",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A index only",
+    "exactness_or_precision_plan": "N/A no new calculation",
+    "applicable_methods": [
+      "N/A index only"
+    ],
+    "clock_metric_units_conventions": "N/A links source conventions"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-geometry-root-persistence",
+  "goal": "Index one-hot K4 root persistence audit",
+  "owned_paths": [
+    "tasks/integration-geometry-root-persistence.json",
+    "sessions/geomrootidx-20261028-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "geometry-root-persistence"
+  ],
+  "status": "complete"
+}
