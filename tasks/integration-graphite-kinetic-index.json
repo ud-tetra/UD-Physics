@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-kinetic-index",
+  "goal": "Index integrated graphite reciprocal kinetic tradeoff",
+  "owned_paths": [
+    "tasks/integration-graphite-kinetic-index.json",
+    "sessions/graphkinidx-20261028-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "graphite-kinetic-tradeoff"
+  ],
+  "status": "complete"
+}
