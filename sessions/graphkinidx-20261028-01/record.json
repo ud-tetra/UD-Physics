@@ -12,7 +12,8 @@
   "claims": {
     "integration-graphite-kinetic-index": {
       "held_sha": "9fecd36912f2857536e60f8cffcbe6f01c7bab69",
-      "status": "held"
+      "status": "released",
+      "released_sha": "12d9e057768f7e7b5d280656ee9aff54dffcbd12"
     }
   },
   "checks": [
@@ -20,7 +21,7 @@
     "16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Indexed exact uniform-mode kinetic restriction and numerical 79.03% curvature defect without physical promotion",
+  "finding": "Indexed exact uniform-mode kinetic restriction and numerical 79.03% curvature defect without physical promotion; index PR #230 merged at 4c2082fa3d137a2adb0693dbed657f8a74abffd6",
   "next_action": "Sourced shared edge/bath or controlled-range odd map with reciprocal power balance",
   "mathematical_profile": {
     "coefficient_domain": "N/A index only",
