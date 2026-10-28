@@ -1,0 +1,158 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "s4-full-pl-map",
+  "session_id": "geomfull-20261028-01",
+  "candidate_id": "geometry-s4-full-map",
+  "question": "Can a full S4-equivariant equal-volume tetrahedron/cube PL map have unit Jacobian and uniform boundary transfer?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "F_SYM",
+      "symbol": "F",
+      "object_type": "oriented piecewise-affine simplicial homeomorphism",
+      "definition": "original vertices to even cube corners, opposite face barycenters to complementary odd corners, centroids paired; 12 cones",
+      "domain": "regular tetrahedron",
+      "codomain": "equal-volume cube",
+      "coefficient_domain": "rational coordinates with algebraic Euclidean scale",
+      "units": "length to length",
+      "basis_orientation": "positively oriented tetrahedral cells",
+      "metric_measure": "Euclidean, J=1",
+      "origin": "constructed",
+      "exact_expression": "F(vi)=ei, F(fi)=1-ei, F(g)=cube center",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S4_AUDIT"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "b/a=(sqrt(2)/12)^(1/3)"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S4_AUDIT",
+      "url_or_repo_path": "experiments/geometry-s4-selection/README.md",
+      "version_or_commit": "f617703a774712fa45adceef239c44543a4ec991",
+      "section_or_object_id": "Exact scoped obstruction",
+      "source_status": "imported scoped construction result"
+    },
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "v0.39(2) historical",
+      "section_or_object_id": "P03,Q166/Q167/Q170",
+      "source_status": "imported typed native references"
+    }
+  ],
+  "assumptions": [
+    "A1 regular Euclidean tetrahedron and equal-volume cube",
+    "A2 selected even/odd corner vertex identification and face-center subdivision",
+    "A3 conditional Piola pushforward for currents"
+  ],
+  "technique_plan": [
+    {
+      "technique": "simplicial incidence",
+      "applicability": "applied",
+      "purpose_or_na_reason": "verify 12-cell tiling, boundary cancellation, f-vector"
+    },
+    {
+      "technique": "finite S4 group action",
+      "applicability": "applied",
+      "purpose_or_na_reason": "all 24 source permutations match target isometries on 9 vertices and cells"
+    },
+    {
+      "technique": "exact Euclidean geometry",
+      "applicability": "applied",
+      "purpose_or_na_reason": "unit physical Jacobian and uniform boundary area density"
+    },
+    {
+      "technique": "clock/spectral",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no evolution generator"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4 original +4 face centers +1 centroid =9 vertices; 4 faces*3 subtriangles=12 cells",
+    "reduced_expression": "f=(9,26,30,12); boundary 12 triangles",
+    "factor_origins": [
+      "face cone subdivision",
+      "cube face diagonal tiling"
+    ],
+    "factorization": "12=2^2*3; 24=2^3*3",
+    "divisibility_gcd_lcm": "N/A for physical scale"
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "prior shape and symmetry target known; no empirical fit",
+    "known_targets": [
+      "prior rooted map S3-only",
+      "prior surface ratio 3^(-1/6)"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "alternating cube corner map selected to realize symmetry"
+    ],
+    "search_domain_and_budget": "one constructive triangulation from vertex-level S4 alternative",
+    "selection_criterion": "equivariance and unit equal-volume Jacobian",
+    "baseline": "elementary Euclidean PL topology"
+  },
+  "calculation_steps": [
+    "Each of four tetrahedral faces splits into three equal-area triangles, coned to centroid: 12 equal-volume source cells, standard-coordinate volume 1/72.",
+    "Target cube face diagonal triangles coned to center: 12 equal-volume cells, coordinate volume 1/12.",
+    "Coordinate determinant ratio 6, physical determinant 6 b^3/(a^3/sqrt2)=1.",
+    "Abstract labeled simplex map commutes with boundary; exact oriented cell sum has 12 external triangles and zero boundary of boundary.",
+    "All 24 S4 source vertex permutations have a unique cube isometry preserving E; complements and center transform consistently, hence affine equivariance over cells.",
+    "Area source subtriangle sqrt3*a^2/12 vs target b^2/2 gives uniform induced sigma_c/sigma_t=sqrt3*a^2/(6b^2)=3^(1/6)."
+  ],
+  "result": {
+    "exact_expression": "Jphysical=1 per cell; |matching S4 actions|=24; sigma_c/sigma_t=3^(1/6) uniform",
+    "approximation": null,
+    "units": "dimensionless ratios",
+    "precision_and_error": "rational enumeration and exact algebra, no numerical tolerance",
+    "scope": "selected 12-cell equal-volume regular Euclidean PL map",
+    "physical_interpretation": "HYPOTHESIS as UD bridge, no active dynamic coefficient"
+  },
+  "verification": [
+    {
+      "method": "exact rational enumeration",
+      "command_or_proof_path": "python3 experiments/geometry-s4-full-map/replay.py",
+      "source_revision": "f617703a774712fa45adceef239c44543a4ec991",
+      "actual_result": "PASS 12 determinants, f-vector, boundary and all 24 isometries",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Earlier rooted star map has only S3 and a 3:1 boundary density; both maps preserve volume and boundary flux conditionally, so geometry alone underidentifies selection."
+  ],
+  "limitations": [
+    "Chosen cube embedding/metric and map not native derived.",
+    "No material constitutive or graphite force/loss response."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Derive native selection between root and full S4 maps from packet face/current stock and test a physical observable."
+}

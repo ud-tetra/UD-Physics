@@ -1,0 +1,35 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "geometry-s4-full-map",
+  "session_id": "geomfull-20261028-01",
+  "question": "Does an S4 equivariant tetrahedron cube PL homeomorphism exist with unit physical Jacobian and uniform boundary stock transfer?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "regular tetrahedron and cube with equal bulk volume",
+    "original vertices mapped to alternating cube corners",
+    "opposite face centers mapped to complementary corners and centroids paired",
+    "conditional Piola transport for current"
+  ],
+  "physical_mapping": "Chosen Euclidean PL correspondence; no native selection or material law",
+  "target_exposure": "User triangle/square analogy and prior symmetry audit known; no graphite data fit",
+  "fitted_choices": [
+    "symmetric vertex mapping and triangulation chosen for existence proof"
+  ],
+  "sources": [
+    "experiments/geometry-s4-selection/README.md",
+    "experiments/geometry-equal-measure/README.md",
+    "supplied ledger v0.39(2) P03,Q166/Q167/Q170"
+  ],
+  "baseline": "standard regular tetrahedron and cube geometry",
+  "result": "Exact full S4-equivariant 12-cell map with J=1 and uniform boundary density ratio 3^(1/6); prior 3:1 contrast is map-dependent",
+  "next_discriminant": "native map selection and measured consequence",
+  "mathematical_receipts": [
+    "candidates/geometry-s4-full-map/mathematical_receipt.json"
+  ]
+}
