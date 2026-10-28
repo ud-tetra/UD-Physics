@@ -1,0 +1,216 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "local-001",
+  "session_id": "graphlocal-20261028-01",
+  "candidate_id": "graphite-local-readout-bound",
+  "question": "Does radius-zero endpoint support permit exact full bond covariance?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "B",
+      "symbol": "B",
+      "object_type": "oriented site-edge incidence",
+      "definition": "14x21 connected cubic honeycomb quotient, one positive and one negative vertex per edge",
+      "domain": "R^21",
+      "codomain": "R^14",
+      "coefficient_domain": "Z",
+      "units": "dimensionless",
+      "basis_orientation": "A to B",
+      "metric_measure": "Euclidean",
+      "origin": "imported",
+      "exact_expression": "rank B=13",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "carrier"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "edge columns with two unit entries"
+    },
+    {
+      "object_id": "D",
+      "symbol": "D",
+      "object_type": "odd bond readout",
+      "definition": "21x14 real matrix with row e supported on radius-R endpoint neighborhood",
+      "domain": "R^14",
+      "codomain": "R^21",
+      "coefficient_domain": "R",
+      "units": "appropriate material scale so r has Angstrom",
+      "basis_orientation": "row e aligned with B edge",
+      "metric_measure": "isotropic site velocity covariance",
+      "origin": "hypothesis family",
+      "exact_expression": "r=D x_prime/sqrt(a)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "isotropic"
+      ],
+      "dependency_ids": [
+        "B"
+      ],
+      "normalization": "Cov(x_prime)=a Theta_bar I"
+    },
+    {
+      "object_id": "Q",
+      "symbol": "Q",
+      "object_type": "conventional bond covariance per Theta_bar",
+      "definition": "B^T K^-1 B for registered conventional stiffness",
+      "domain": "R^21",
+      "codomain": "R^21",
+      "coefficient_domain": "R numerical",
+      "units": "Angstrom^2/meV",
+      "basis_orientation": "bond edge order",
+      "metric_measure": "Frobenius for bound",
+      "origin": "imported model consequence",
+      "exact_expression": "B^T K^-1 B",
+      "measured_value": "MATCHED_HESSIAN_RESULTS.json K",
+      "uncertainty": "source model and finite difference; alternate-step check only",
+      "source_refs": [
+        "Ksource"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [
+        "B"
+      ],
+      "normalization": "Theta_bar=kBT/14"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Ksource",
+      "url_or_repo_path": "experiments/graphite-matched-hessian-reconstruction/MATCHED_HESSIAN_RESULTS.json",
+      "version_or_commit": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+      "section_or_object_id": "K, pressure_rows/K_alt_step",
+      "source_status": "prior conventional numerical reconstruction"
+    },
+    {
+      "source_id": "carrier",
+      "url_or_repo_path": "experiments/graphite-registry-defect-source/audit_registry_defect.py",
+      "version_or_commit": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+      "section_or_object_id": "carrier(), permutations()",
+      "source_status": "prior graph construction"
+    }
+  ],
+  "assumptions": [
+    "isotropic: Cov(x_prime)=a Theta_bar I from prior fitted reciprocal oscillator",
+    "Instantaneous linear readout with row support limited to declared neighborhoods",
+    "Conventional Q chosen as full covariance target; no force/loss target"
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer graph incidence and pair count",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "168 disjoint pairs exactly"
+    },
+    {
+      "technique": "support-overlap Frobenius bound",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "forbidden covariance entries give parameter-independent lower bound"
+    },
+    {
+      "technique": "symmetry and finite-step sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "show bound not tied to small registry defect"
+    },
+    {
+      "technique": "modular/factorization clock",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no modular or divisibility mechanism; tau remains unknown"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "Each edge has 2 endpoints, each endpoint has 2 other incident edges: 20-4=16 disjoint edges; 21*16/2=168 unordered pairs",
+    "reduced_expression": "168 of binomial(21,2)=210 unordered edge pairs",
+    "factor_origins": [
+      "connected cubic quotient from imported incidence",
+      "each unordered pair counted twice by edge iteration"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous assumed s=t/tau",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "prior reciprocal oscillator, no new evolution",
+    "initial_phase": "canonical Gaussian equilibrium",
+    "coupling": "readout D only",
+    "period_claim": null,
+    "physical_unit_map": "tau and m unknown; a cancels in normalized covariance"
+  },
+  "dynamics_readout": {
+    "state_space": "x_prime in R14 with isotropic covariance, odd readout in R21",
+    "generator_or_update": "prior joint oscillator referenced; no change",
+    "initial_boundary_conditions": "stationary isotropic Gaussian site velocities",
+    "conservation_and_sources": "No new dissipation; local equal-weight variance port zero",
+    "projection_and_kernel": "D rows have vertex support N_R(e); disjoint support enforces DD^T_ef=0",
+    "physical_mapping": "material bond observable assumed, no force/contact calibration"
+  },
+  "target_exposure": {
+    "status": "EXPOSED",
+    "known_targets": [
+      "registered conventional K and Q",
+      "prior nonlocal quadrature",
+      "rank-two diagonal proxy source"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "21 diagonal-match edge scales in diagnostic only"
+    ],
+    "search_domain_and_budget": "radius R=0,1,2 support masks; arbitrary 42 real endpoint coefficients covered analytically",
+    "selection_criterion": "full covariance relative Frobenius error lower bound",
+    "baseline": "nonlocal target-informed K^-1/2 exact process law and uniform endpoint gradient"
+  },
+  "calculation_steps": [
+    "Compute graph-distance neighborhoods from integer incidence",
+    "For disjoint supports D_e dot D_f=0",
+    "Frobenius projection onto forbidden entries yields lower bound ||Z_R hadamard Q||/||Q||",
+    "Evaluate Q for matched K, group average and six pressure/step variants",
+    "Fit 21 diagonal weights as overfit comparator, evaluate full covariance"
+  ],
+  "result": {
+    "exact_expression": "||DD^T-Q||_F/||Q||_F >= ||Z_R hadamard Q||_F/||Q||_F",
+    "approximation": "R0 lower bound 0.6908994662364485, 168 nonzero disjoint Q entries; R1 mask empty; 21-scale diagonal fit full error0.8783442897104061",
+    "units": "Q Angstrom^2/meV; relative errors dimensionless",
+    "precision_and_error": "double precision numerical K; alternate Hessian-step and pressure sensitivity, no experimental uncertainty interval",
+    "scope": "linear instantaneous endpoint-supported odd readout with isotropic site velocity in 14-site carrier",
+    "physical_interpretation": "conditional locality no-go, not a UD friction prediction"
+  },
+  "verification": [
+    {
+      "method": "exact support proof and numerical replay",
+      "command_or_proof_path": "experiments/graphite-local-readout-bound/replay_local.py",
+      "source_revision": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+      "actual_result": "PASS constructor replay",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent physics review",
+      "command_or_proof_path": null,
+      "source_revision": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+      "actual_result": "NOT_RUN",
+      "review_relationship": "independent"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Even q=B^T x is endpoint local but site-height covariance is correlated, outside isotropic odd premise",
+    "Radius-one support neighborhoods all intersect; support bound zero is inconclusive",
+    "21 target-fitted edge scales match diagonal source but miss full covariance by 87.8344%"
+  ],
+  "limitations": [
+    "Not a bound for correlated velocity metric, shared bath, temporal memory or nonlinear readout",
+    "Conventional K and all evaluated pressure rows exposed",
+    "No material damping/contact or signed measured friction"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/graphlocal-20261028-01/local-001/manifest.json"
+  ],
+  "next_discriminant": "Source a correlated kinetic metric or controlled-range readout, then compare held-out full covariance/spectrum and measured force/loss"
+}

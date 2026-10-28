@@ -1,0 +1,77 @@
+{
+  "evidence": "EXACT/CONDITIONAL support-overlap zero; NUMERICAL conventional model Q",
+  "normalization": "Q=Cov(B^T h)/Theta_bar=B^T K^-1 B, Theta_bar=kBT/14; odd site velocity Cov(x_prime)=a Theta_bar I",
+  "n_vertices": 14,
+  "n_edges": 21,
+  "site_graph_diameter": 3,
+  "neighborhood_bounds": {
+    "0": {
+      "unordered_disjoint_pairs": 168,
+      "nonzero_disjoint_pairs": 168,
+      "disjoint_entry_abs_max": 0.0006557216795956608,
+      "disjoint_entry_abs_min": 0.00037752727519767076,
+      "covariance_relative_frobenius_lower_bound": 0.6908994662364485
+    },
+    "1": {
+      "unordered_disjoint_pairs": 0,
+      "nonzero_disjoint_pairs": 0,
+      "disjoint_entry_abs_max": 0.0,
+      "disjoint_entry_abs_min": null,
+      "covariance_relative_frobenius_lower_bound": 0.0
+    },
+    "2": {
+      "unordered_disjoint_pairs": 0,
+      "nonzero_disjoint_pairs": 0,
+      "disjoint_entry_abs_max": 0.0,
+      "disjoint_entry_abs_min": null,
+      "covariance_relative_frobenius_lower_bound": 0.0
+    }
+  },
+  "target_Q_frobenius": 0.013734924822479863,
+  "uniform_odd_endpoint_variance": 2.0,
+  "uniform_endpoint_source_norm": 0.0,
+  "fitted_edge_scale_count": 21,
+  "fitted_diagonal_match_max_abs": 4.336808689942018e-19,
+  "fitted_endpoint_full_covariance_relative_error": 0.8783442897104061,
+  "fitted_endpoint_port_norm": 8.829718241837782e-05,
+  "group_averaged_Q_radius_zero_bound": {
+    "unordered_disjoint_pairs": 168,
+    "nonzero_disjoint_pairs": 168,
+    "disjoint_entry_abs_max": 0.0006104616482681954,
+    "disjoint_entry_abs_min": 0.0004017248872460221,
+    "covariance_relative_frobenius_lower_bound": 0.6906749613728526
+  },
+  "alternative_pressure_step_bounds": [
+    {
+      "pressure_delta_MPa": -2.5,
+      "hessian_step": "nominal",
+      "radius_zero_relative_bound": 0.6909047517613054
+    },
+    {
+      "pressure_delta_MPa": -2.5,
+      "hessian_step": "alternate_step",
+      "radius_zero_relative_bound": 0.690904665496668
+    },
+    {
+      "pressure_delta_MPa": 0.0,
+      "hessian_step": "nominal",
+      "radius_zero_relative_bound": 0.6908994662349971
+    },
+    {
+      "pressure_delta_MPa": 0.0,
+      "hessian_step": "alternate_step",
+      "radius_zero_relative_bound": 0.6908993798922478
+    },
+    {
+      "pressure_delta_MPa": 2.5,
+      "hessian_step": "nominal",
+      "radius_zero_relative_bound": 0.6908941819872467
+    },
+    {
+      "pressure_delta_MPa": 2.5,
+      "hessian_step": "alternate_step",
+      "radius_zero_relative_bound": 0.6908940955563228
+    }
+  ],
+  "caveat": "The bound applies to a linear odd readout D x_prime with isotropic site-velocity covariance and declared support. It does not constrain even q=B^T x, correlated velocities, extra hidden sites, or a nonlocal native metric. Matching diagonal weights with 21 exposed scales is a fit, not a physical residual."
+}
