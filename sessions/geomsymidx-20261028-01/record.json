@@ -1,0 +1,29 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "geomsymidx-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "integration-geometry-s4-selection",
+  "goal": "Index symmetry-selection result",
+  "created_at": "2026-10-28T21:41:38.967585+00:00",
+  "base_revision": "e52c78480d81134a424c0a744c7e87b0c6aecc63",
+  "source_dirty_at_boot": false,
+  "status": "active",
+  "claims": {
+    "integration-geometry-s4-selection": {
+      "held_sha": "0b3f9bd5b7904a1631126e2664045fc61c6000f3",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "Indexed scoped S3 star-map symmetry obstruction and alternate S4 vertex set",
+  "next_action": "Native boundary selector or alternate S4-compatible full map",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A index only",
+    "exactness_or_precision_plan": "N/A no new calculation",
+    "applicable_methods": [
+      "N/A index only"
+    ],
+    "clock_metric_units_conventions": "N/A links source conventions"
+  }
+}
