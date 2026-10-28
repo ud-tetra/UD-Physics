@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-local-index",
+  "goal": "Index graphite endpoint-local odd readout bound in CURRENT.md",
+  "owned_paths": [
+    "tasks/integration-graphite-local-index.json",
+    "sessions/graphlocalidx-20261028-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "graphite-local-readout-bound"
+  ],
+  "status": "complete"
+}
