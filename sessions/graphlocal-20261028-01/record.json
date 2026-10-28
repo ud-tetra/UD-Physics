@@ -12,7 +12,8 @@
   "claims": {
     "graphite-local-readout-bound": {
       "held_sha": "3d3cd96d9e9a75c7842cd45149777860a39ebf18",
-      "status": "held"
+      "status": "released",
+      "released_sha": "e4d62d1cb1fb1dec72237af768ca6e402e941bc6"
     }
   },
   "checks": [
@@ -21,7 +22,7 @@
     "16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Endpoint-local odd readouts with isotropic site-velocity covariance cannot match conventional Q: lower bound 69.0899466% full-covariance relative Frobenius error; radius-one support bound inconclusive",
+  "finding": "Endpoint-local odd readouts with isotropic site-velocity covariance cannot match conventional Q: lower bound 69.0899466% full-covariance relative Frobenius error; radius-one support bound inconclusive; research PR #221 merged at 521707de9cf2ea1654a9fc8f6a8290c942c04f4f",
   "next_action": "Specify a sourced correlated kinetic metric or controlled-range readout with reciprocal preparation; then loss and signed force residual",
   "mathematical_profile": {
     "coefficient_domain": "Exact integer graph support/rank; positive real conventional numerical K",
