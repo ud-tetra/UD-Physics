@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "geomap-20261028-01",
+  "run_id": "shape-001",
+  "created_at": "2026-10-28T21:10:08.072561+00:00",
+  "evidence": "EXACT",
+  "summary": "Equal-measure geometric ratios and boundary/bulk incompatibility",
+  "command": "python3 experiments/geometry-equal-measure/replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "16ed14c7f95aa8d860255346671b33e4f73dc765",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay.py",
+      "path": "inputs/001-replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/geometry-equal-measure/replay.py",
+      "sha256": "a2dddffb2d2d05b6c86a6a4e9cee01167dd3268d6a885ec5682cd906bc0231e0",
+      "size_bytes": 1250
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/geometry-equal-measure/mathematical_receipt.json",
+      "sha256": "f29a200bdc7b816295f4501e4d54f2e2f346eacc2e45358af70a92b6871599ec",
+      "size_bytes": 7049
+    }
+  ],
+  "files": [
+    {
+      "path": "files/RESULTS.json",
+      "sha256": "428a6bb75a93e2038d04b028166e64b0363cb5d9a313a8c45deaed4eb3cbe87a",
+      "size_bytes": 449
+    },
+    {
+      "path": "files/README.md",
+      "sha256": "4ff0c9755f8632e65a533ff80f526308ac3ade26f17d114bfc21f573230f8fb7",
+      "size_bytes": 4878
+    }
+  ]
+}

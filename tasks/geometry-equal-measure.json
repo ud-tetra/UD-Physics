@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "geometry-equal-measure",
+  "goal": "Exact equal-measure triangle/square and tetrahedron/cube shape transfer with compatibility gate",
+  "owned_paths": [
+    "tasks/geometry-equal-measure.json",
+    "sessions/geomap-20261028-01",
+    "candidates/geometry-equal-measure",
+    "experiments/geometry-equal-measure",
+    "artifacts/geomap-20261028-01"
+  ],
+  "dependencies": [],
+  "status": "complete"
+}
