@@ -12,14 +12,17 @@
   "claims": {
     "geometry-s4-selection": {
       "held_sha": "0b98a571578daf8880dcc68c6f4e3122b3be6411",
-      "status": "held"
+      "status": "released",
+      "released_sha": "43c224c11a37780ff20b3dd5696806e35c516e91"
     }
   },
   "checks": [
-    "exact group replay PASS",
+    "exact enumeration PASS",
+    "validation PASS 382 records",
+    "16 unit tests PASS",
     "independent review NOT_RUN"
   ],
-  "finding": "Selected star map only S3-equivariant under cube isometries; alternate vertex orbit supports S4",
+  "finding": "Selected star map only S3-equivariant under cube isometries; alternate vertex orbit supports S4 Research PR #241 merged at 9ab0feb42b3e580b0293be40675ef168036499ba.",
   "next_action": "Native selector or full S4-compatible map",
   "mathematical_profile": {
     "coefficient_domain": "finite integer group action, Euclidean squared distances",

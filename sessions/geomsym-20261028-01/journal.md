@@ -27,3 +27,5 @@ Next: Native selector or full S4-compatible map
 ## 2026-10-28T21:38:55.334485+00:00
 
 Held remote claim 0b98a571578daf8880dcc68c6f4e3122b3be6411. Exact enumeration PASS, validation 382 records PASS, 16 tests PASS, independent physics review NOT_RUN.
+
+PR #241 merged at `9ab0feb42b3e580b0293be40675ef168036499ba`; claim released at `43c224c11a37780ff20b3dd5696806e35c516e91`. Closure-only metadata.
