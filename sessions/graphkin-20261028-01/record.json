@@ -12,7 +12,8 @@
   "claims": {
     "graphite-kinetic-tradeoff": {
       "held_sha": "dbef8a151528696498f31d638dc1564f57fcd51c",
-      "status": "held"
+      "status": "released",
+      "released_sha": "3fd45f6dc66546dfadd85b2af6f72bf62fcbe920"
     }
   },
   "checks": [
@@ -21,7 +22,7 @@
     "16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "With V=aK and exact bond acceleration for all site preparations, G=I+gamma uu^T and local odd source zero; G=kappa K^-1 matches static covariance but flattens spectrum, best curvature defect 79.0298372%",
+  "finding": "With V=aK and exact bond acceleration for all site preparations, G=I+gamma uu^T and local odd source zero; G=kappa K^-1 matches static covariance but flattens spectrum, best curvature defect 79.0298372%; research PR #228 merged at a657c034666982289d0d330139298f0b9a59dfb1",
   "next_action": "Investigate sourced shared edge/bath or controlled-range odd readout with reciprocal power balance, then independently measured loss and signed force",
   "mathematical_profile": {
     "coefficient_domain": "Exact real positive-matrix identities, integer incidence rank; numerical conventional K",

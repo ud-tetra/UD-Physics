@@ -9,3 +9,4 @@
 
 Captured artifacts/graphkin-20261028-01/kinetic-001 (NUMERICAL): Reciprocal kinetic metric compatibility theorem and flat-spectrum covariance fit
 - Repository validation PASS (364 records); 16 unit tests PASS.
+- Research PR #228 merged at `a657c034666982289d0d330139298f0b9a59dfb1`; CI PASS; claim released by exact lease to `3fd45f6dc66546dfadd85b2af6f72bf62fcbe920`.
