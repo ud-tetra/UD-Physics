@@ -1,0 +1,40 @@
+name: Isolated 3D CM/internal projected stiffness audit
+on:
+  push:
+    branches: ['discovery/icosahedral-projected-stability-20261028/**']
+    paths:
+      - 'experiments/icosahedral-projected-stability/projected_stability.py'
+      - '.github/workflows/icosahedral-projected-stability-20261028.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  projected:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Install pinned NumPy and SciPy
+        run: |
+          python3 -m venv /tmp/ico-stability
+          /tmp/ico-stability/bin/python -m pip install --disable-pip-version-check --no-input numpy==2.3.5 scipy==1.17.0
+      - name: Evaluate exact CM projection and sampled source internal stiffness
+        run: |
+          mkdir -p /tmp/ico-projected
+          /tmp/ico-stability/bin/python experiments/icosahedral-projected-stability/projected_stability.py --out /tmp/ico-projected/stability.json
+          sha256sum experiments/icosahedral-projected-stability/projected_stability.py /tmp/ico-projected/stability.json
+      - name: Preserve complete numerical diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ico-projected-stability-20261028
+          path: /tmp/ico-projected/stability.json
+          retention-days: 30
+          if-no-files-found: warn
