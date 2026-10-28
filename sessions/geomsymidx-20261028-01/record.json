@@ -8,15 +8,20 @@
   "created_at": "2026-10-28T21:41:38.967585+00:00",
   "base_revision": "e52c78480d81134a424c0a744c7e87b0c6aecc63",
   "source_dirty_at_boot": false,
-  "status": "active",
+  "status": "handoff",
   "claims": {
     "integration-geometry-s4-selection": {
       "held_sha": "0b3f9bd5b7904a1631126e2664045fc61c6000f3",
-      "status": "held"
+      "status": "released",
+      "released_sha": "c3ae46261b2d7e842f23a37e94616427a4c96f83"
     }
   },
-  "checks": [],
-  "finding": "Indexed scoped S3 star-map symmetry obstruction and alternate S4 vertex set",
+  "checks": [
+    "repository validation PASS (384 records)",
+    "16 unit tests PASS",
+    "independent review NOT_RUN"
+  ],
+  "finding": "Indexed scoped S3 star-map symmetry obstruction and alternate S4 vertex set Index PR #243 merged at 9ab3ee3a74e9df06970d347e00a3b5a321ad80ee.",
   "next_action": "Native boundary selector or alternate S4-compatible full map",
   "mathematical_profile": {
     "coefficient_domain": "N/A index only",
