@@ -12,14 +12,17 @@
   "claims": {
     "geometry-native-selector": {
       "held_sha": "000eb33ad18cc53e84eb5fc41ece9f86cd2c1324",
-      "status": "held"
+      "status": "released",
+      "released_sha": "09e093d3c8d4a4393364165eb83d7ddf77b220a8"
     }
   },
   "checks": [
-    "exact S4 enumeration PASS",
+    "exact finite replay PASS",
+    "validation PASS 394 records",
+    "16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "S4 invariant deterministic packet cannot select a single root; invariant oriented edge current zero; conservation does not select Euclidean map",
+  "finding": "S4 invariant deterministic packet cannot select a single root; invariant oriented edge current zero; conservation does not select Euclidean map Research PR #249 merged at da4c0fabeee8eaa40fa93316d2e4cce87e6bf85b.",
   "next_action": "Native boundary/contact source law and physical readout",
   "mathematical_profile": {
     "coefficient_domain": "integer S4 action, real signed K4 chains, exact 1/4 probability under assumed invariant stochastic law",
