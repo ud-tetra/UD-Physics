@@ -1,0 +1,13 @@
+{
+  "conditional_integrated_heat_gamma_positive": "3/8",
+  "contact_work_in_native_stock_units": "3/2",
+  "fixed_root_equilibrium": "x=r, y=0",
+  "initial_contact_energy": "3/8",
+  "native_stock_gain": "3/4",
+  "root_contrast_from_symmetric_seed": "1-f_gamma(s), with f_gamma(0)=1; f_gamma<1 for s>0 if gamma>0",
+  "root_final_native_stock": "1",
+  "switch_cost_at_symmetric_state": "0",
+  "switch_cost_from_exact_root_to_another_root": "1",
+  "symmetric_initial_native_stock": "1/4",
+  "zero_to_one_hot_register_energy_jump_at_symmetric_state": "1/4"
+}
