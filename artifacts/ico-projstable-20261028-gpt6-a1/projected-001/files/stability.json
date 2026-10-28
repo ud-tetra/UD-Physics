@@ -1,0 +1,397 @@
+{
+  "CM_projector": "Q=M^(1/2)T/sqrt(Mtot), P=I-QQ^T; exact KQ=Q^T K=CQ=Q^T C=0 for reciprocal internal forces; physical 6D Galilean CM block",
+  "cases": {
+    "seed10422-0-boundary2": {
+      "CM_mass": 15.17595334838376,
+      "case": "seed10422-0-boundary2",
+      "certification": "NO interval eigenspectra, residual enclosure, full forced Green, nonlinear tube, or validated reference numerical error",
+      "full_mechanical_dimension": 560,
+      "observations": [
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 1.1047842376190998e-17,
+          "K_is_nonconservative_tangent": false,
+          "K_mass_negative": true,
+          "K_mass_skew_error": 4.7423830536711166e-14,
+          "internal_mass_normalized_stiffness_eigmin": -0.09623693931987543,
+          "smallest_eight_C_mass_eigenvalues": [
+            0.0,
+            1.3022977545394386e-16,
+            1.3022977545394386e-16,
+            1.3022977545394386e-16,
+            1.3022977545394386e-16,
+            5.510241870694256e-16,
+            5.510241870694256e-16,
+            0.0009547469234217425
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            -0.09623693931989052,
+            -0.0954486434539503,
+            -0.0945956263467706,
+            -3.417592610233779e-14,
+            1.7317430361754772e-15,
+            1.7317430361754772e-15,
+            0.09026647273573918,
+            0.09142171861172949
+          ],
+          "source_internal_K_C_CM_leakage_norm": 3.3915380790979073e-14,
+          "u": 0.0
+        },
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 9.923460812577009e-18,
+          "K_is_nonconservative_tangent": true,
+          "K_mass_negative": false,
+          "K_mass_skew_error": 0.0010712316226267524,
+          "internal_mass_normalized_stiffness_eigmin": 0.09255467806449183,
+          "smallest_eight_C_mass_eigenvalues": [
+            -9.024328109870585e-16,
+            -4.850908078222104e-16,
+            -6.774880465736256e-17,
+            0.0,
+            3.4959319850748537e-16,
+            1.1842772048371812e-15,
+            1.1842772048371812e-15,
+            0.0009561205243925558
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            1.0180991100915898e-14,
+            1.0180991100915898e-14,
+            1.0180991100915898e-14,
+            0.09255467806448525,
+            0.09280660223668338,
+            0.0929610379806888,
+            0.16163706112702936,
+            0.16170099287682216
+          ],
+          "source_internal_K_C_CM_leakage_norm": 3.6365435367255137e-14,
+          "u": 1.0
+        },
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 1.0283151119308436e-17,
+          "K_is_nonconservative_tangent": true,
+          "K_mass_negative": false,
+          "K_mass_skew_error": 0.0013536776241024032,
+          "internal_mass_normalized_stiffness_eigmin": 0.11981684841255694,
+          "smallest_eight_C_mass_eigenvalues": [
+            -7.823067535811679e-16,
+            -3.7789287233077868e-16,
+            0.0,
+            2.6521008919610593e-17,
+            2.6521008919610593e-17,
+            2.6521008919610593e-17,
+            2.6521008919610593e-17,
+            0.0009658791552855421
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            -8.816415020993162e-16,
+            -8.816415020993162e-16,
+            3.54134166576748e-14,
+            0.11981684841259421,
+            0.12001438322158514,
+            0.12010265209284432,
+            0.17348756596188014,
+            0.17355076208207126
+          ],
+          "source_internal_K_C_CM_leakage_norm": 3.054583832500985e-14,
+          "u": 9.2
+        },
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 1.0411211867723396e-17,
+          "K_is_nonconservative_tangent": true,
+          "K_mass_negative": false,
+          "K_mass_skew_error": 0.001757348349298229,
+          "internal_mass_normalized_stiffness_eigmin": 0.09643036731389587,
+          "smallest_eight_C_mass_eigenvalues": [
+            -6.339054380984369e-16,
+            -2.6699330178660905e-16,
+            -2.6699330178660905e-16,
+            0.0,
+            9.991883452521883e-17,
+            9.991883452521883e-17,
+            9.991883452521883e-17,
+            0.0009599827374994665
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            -2.803451967136646e-14,
+            -2.803451967136646e-14,
+            8.930431251546564e-15,
+            0.09643036731389668,
+            0.0967363562558386,
+            0.09688018843798932,
+            0.16218452056063642,
+            0.16256454447589247
+          ],
+          "source_internal_K_C_CM_leakage_norm": 3.098310457515076e-14,
+          "u": 12.5
+        },
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 1.0156023542552964e-17,
+          "K_is_nonconservative_tangent": true,
+          "K_mass_negative": false,
+          "K_mass_skew_error": 0.0008885657764974984,
+          "internal_mass_normalized_stiffness_eigmin": 0.08899443802997412,
+          "smallest_eight_C_mass_eigenvalues": [
+            -3.915499067102745e-16,
+            0.0,
+            5.421976362352996e-17,
+            5.421976362352996e-17,
+            5.421976362352996e-17,
+            5.421976362352996e-17,
+            4.999894339573344e-16,
+            0.0009559458010375162
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            -3.34125669683567e-14,
+            3.4217086307919718e-15,
+            3.4217086307919718e-15,
+            0.08899443802996986,
+            0.08936954423980605,
+            0.08949645209467484,
+            0.1611697120738404,
+            0.1618041162561949
+          ],
+          "source_internal_K_C_CM_leakage_norm": 3.5608496192302856e-14,
+          "u": 64.5
+        },
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 9.32259781626282e-18,
+          "K_is_nonconservative_tangent": true,
+          "K_mass_negative": false,
+          "K_mass_skew_error": 0.0005039549669991483,
+          "internal_mass_normalized_stiffness_eigmin": 0.09645115495081599,
+          "smallest_eight_C_mass_eigenvalues": [
+            -4.557881614594716e-16,
+            -4.557881614594716e-16,
+            -4.557881614594716e-16,
+            -6.084928541762678e-18,
+            -6.084928541762678e-18,
+            0.0,
+            4.4361830437594615e-16,
+            0.0009632726547307807
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            -5.246074363656187e-15,
+            -5.246074363656187e-15,
+            3.1721078020304066e-14,
+            0.0964511549507776,
+            0.09657500715441508,
+            0.09667516424798178,
+            0.16172767427989992,
+            0.16187258402562044
+          ],
+          "source_internal_K_C_CM_leakage_norm": 3.0482334918457104e-14,
+          "u": 100.0
+        }
+      ],
+      "status": "NUMERICAL_FINITE_TIME_STIFFNESS_SPECTRUM_PLUS_EXACT_CM_THEOREM",
+      "strict_dop853_nfev": 53927,
+      "translation_dimension": 6
+    },
+    "uniform-b0.05-cf0.0": {
+      "CM_mass": 15.03579020240115,
+      "case": "uniform-b0.05-cf0.0",
+      "certification": "NO interval eigenspectra, residual enclosure, full forced Green, nonlinear tube, or validated reference numerical error",
+      "full_mechanical_dimension": 560,
+      "observations": [
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 7.320780946656536e-18,
+          "K_is_nonconservative_tangent": false,
+          "K_mass_negative": true,
+          "K_mass_skew_error": 1.7677681062500832e-14,
+          "internal_mass_normalized_stiffness_eigmin": -0.09651154621557109,
+          "smallest_eight_C_mass_eigenvalues": [
+            -7.559785513401067e-16,
+            -3.0033009653251917e-16,
+            -3.0033009653251917e-16,
+            0.0,
+            0.0,
+            1.5531835827506836e-16,
+            1.5531835827506836e-16,
+            1.5531835827506836e-16
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            -0.09651154621556812,
+            -0.09651154621554264,
+            -0.09651154621551716,
+            -1.1459245760432811e-14,
+            1.402721687681309e-14,
+            1.402721687681309e-14,
+            0.09232275430596756,
+            0.09232275430596756
+          ],
+          "source_internal_K_C_CM_leakage_norm": 2.494565627635397e-14,
+          "u": 0.0
+        },
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 8.309715738245977e-18,
+          "K_is_nonconservative_tangent": true,
+          "K_mass_negative": false,
+          "K_mass_skew_error": 0.0010002310908605815,
+          "internal_mass_normalized_stiffness_eigmin": 0.09355666691057649,
+          "smallest_eight_C_mass_eigenvalues": [
+            -1.5213563487818712e-16,
+            -1.5213563487818712e-16,
+            -1.5213563487818712e-16,
+            -1.5213563487818712e-16,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            -9.54566250515576e-15,
+            -9.54566250515576e-15,
+            2.9855762570119916e-14,
+            0.09355666691053377,
+            0.09355666691061257,
+            0.09355666691061257,
+            0.16372906191337855,
+            0.16372906191341796
+          ],
+          "source_internal_K_C_CM_leakage_norm": 4.2634338643623395e-14,
+          "u": 1.0
+        },
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 9.467773199999938e-18,
+          "K_is_nonconservative_tangent": true,
+          "K_mass_negative": false,
+          "K_mass_skew_error": 0.0012416380175585917,
+          "internal_mass_normalized_stiffness_eigmin": 0.12269029116972152,
+          "smallest_eight_C_mass_eigenvalues": [
+            -3.460941425282073e-16,
+            0.0,
+            0.0,
+            0.0,
+            1.0996402631705776e-16,
+            1.0996402631705776e-16,
+            1.0996402631705776e-16,
+            1.0996402631705776e-16
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            -1.2756890863411574e-14,
+            1.3511578519444887e-14,
+            1.3511578519444887e-14,
+            0.12269029116970218,
+            0.12269029116975472,
+            0.12269029116978097,
+            0.176404787899725,
+            0.176404787899725
+          ],
+          "source_internal_K_C_CM_leakage_norm": 3.819018103240962e-14,
+          "u": 9.2
+        },
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 9.080440877019067e-18,
+          "K_is_nonconservative_tangent": true,
+          "K_mass_negative": false,
+          "K_mass_skew_error": 0.001836337216767043,
+          "internal_mass_normalized_stiffness_eigmin": 0.1017913084172466,
+          "smallest_eight_C_mass_eigenvalues": [
+            -6.121958509421307e-16,
+            -2.627701570781988e-16,
+            0.0,
+            0.0,
+            0.0,
+            8.66555367857331e-17,
+            8.66555367857331e-17,
+            8.66555367857331e-17
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            -1.609803070548474e-14,
+            -1.609803070548474e-14,
+            2.975417024201144e-14,
+            0.10179130841723136,
+            0.10179130841723136,
+            0.10179130841727721,
+            0.1660745864927905,
+            0.1660745864927905
+          ],
+          "source_internal_K_C_CM_leakage_norm": 4.225840042085772e-14,
+          "u": 12.5
+        },
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 9.675030721661897e-18,
+          "K_is_nonconservative_tangent": true,
+          "K_mass_negative": false,
+          "K_mass_skew_error": 0.0007992889719651965,
+          "internal_mass_normalized_stiffness_eigmin": 0.11582681858046642,
+          "smallest_eight_C_mass_eigenvalues": [
+            -4.9747412043431765e-16,
+            -5.2644871506959695e-17,
+            -5.2644871506959695e-17,
+            -5.2644871506959695e-17,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            1.6502369556084787e-14,
+            1.6502369556084787e-14,
+            1.6502369556084787e-14,
+            0.11582681858046796,
+            0.11582681858046796,
+            0.1158268185805105,
+            0.17355028705313508,
+            0.17355028705313508
+          ],
+          "source_internal_K_C_CM_leakage_norm": 3.729041341166045e-14,
+          "u": 64.5
+        },
+        {
+          "C_mass_negative": false,
+          "C_mass_skew_error": 9.392505923047891e-18,
+          "K_is_nonconservative_tangent": true,
+          "K_mass_negative": false,
+          "K_mass_skew_error": 0.0013811011744215833,
+          "internal_mass_normalized_stiffness_eigmin": 0.07388464825625995,
+          "smallest_eight_C_mass_eigenvalues": [
+            -7.8944617667598325e-16,
+            -3.317482160052608e-16,
+            -3.317482160052608e-16,
+            0.0,
+            0.0,
+            0.0,
+            1.2594974466546167e-16,
+            1.2594974466546167e-16
+          ],
+          "smallest_eight_K_mass_eigenvalues": [
+            -6.1366294654087465e-15,
+            -6.1366294654087465e-15,
+            3.366196551717824e-14,
+            0.07388464825620616,
+            0.07388464825628574,
+            0.07388464825632554,
+            0.15511618572407834,
+            0.15511618572407834
+          ],
+          "source_internal_K_C_CM_leakage_norm": 3.11573650279443e-14,
+          "u": 100.0
+        }
+      ],
+      "status": "NUMERICAL_FINITE_TIME_STIFFNESS_SPECTRUM_PLUS_EXACT_CM_THEOREM",
+      "strict_dop853_nfev": 57785,
+      "translation_dimension": 6
+    }
+  },
+  "internal_projection_warning": "Source K includes non-symmetric d/dq(D(q)*velocity). Symmetric K spectrum is a diagnostic, NOT a conservative Hessian eigen-certification; positivity may fail despite nonnegative nonlinear energy.",
+  "labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "rigid_Green": "S(t,s)=[[I,(t-s)I],[0,I]] on CM and CM velocity, all times",
+  "source_base": "unmodified integrated icosahedral MountLoss with full 560 mechanical phase variables",
+  "status": "PASS"
+}
