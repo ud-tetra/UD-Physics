@@ -12,7 +12,8 @@
   "claims": {
     "geometry-equal-measure": {
       "held_sha": "e612b1ca3256bb943d5976cb3c7ab5a058072514",
-      "status": "held"
+      "status": "released",
+      "released_sha": "1a4b8d57389b87809344bbcbaef933589dcc3e31"
     }
   },
   "checks": [
@@ -20,7 +21,7 @@
     "numerical assertions PASS at relative tolerance 1e-14",
     "independent review NOT_RUN"
   ],
-  "finding": "Exact regular-shape mismatch rho_S=3^(-1/6); no dynamic coefficient without measure/transport map",
+  "finding": "Exact regular-shape mismatch rho_S=3^(-1/6); no dynamic coefficient without measure/transport map Research PR #233 merged at 90b18edcb80cfaa4f6a69bc0bbdaa0d5917e3807.",
   "next_action": "Specify explicit simplicial-to-cubical map and boundary stock/current law",
   "mathematical_profile": {
     "coefficient_domain": "positive real algebraic radicals and integer face counts",
