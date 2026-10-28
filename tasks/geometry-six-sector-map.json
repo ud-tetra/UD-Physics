@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "geometry-six-sector-map",
+  "goal": "Exact six-sector simplicial map and boundary flux compatibility",
+  "owned_paths": [
+    "tasks/geometry-six-sector-map.json",
+    "sessions/geomsector-20261028-01",
+    "candidates/geometry-six-sector-map",
+    "experiments/geometry-six-sector-map",
+    "artifacts/geomsector-20261028-01"
+  ],
+  "dependencies": [
+    "geometry-equal-measure"
+  ],
+  "status": "complete"
+}

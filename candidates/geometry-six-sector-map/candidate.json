@@ -1,0 +1,34 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "geometry-six-sector-map",
+  "session_id": "geomsector-20261028-01",
+  "question": "Does a volume-preserving tetrahedron-cube map commute with boundary and conserve flux despite area mismatch?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "regular Euclidean tetrahedron and cube chosen",
+    "equal-volume scale chosen",
+    "Boolean-lattice six-sector vertex correspondence imposed",
+    "standard Piola current and measure pushforward when invoking continuity"
+  ],
+  "physical_mapping": "Proposed finite geometry map; no native selection or physical clock/force",
+  "target_exposure": "User geometry prompt and prior exposed equal-volume mismatch; no measured graphite target used",
+  "fitted_choices": [
+    "shape choice and triangulation selected for constructive existence, not tuned to measurements"
+  ],
+  "sources": [
+    "experiments/geometry-equal-measure/README.md",
+    "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md F03/F04,Q166/Q167/Q170"
+  ],
+  "baseline": "Elementary Euclidean PL geometry and standard change-of-variables/Piola identities",
+  "result": "Explicit six-sector homeomorphism preserving volume with commuting boundary; boundary area differs but pushforward area stock can remain conserved with nonuniform density",
+  "next_discriminant": "Native map/density/current selection and independent observable",
+  "mathematical_receipts": [
+    "candidates/geometry-six-sector-map/mathematical_receipt.json"
+  ]
+}
