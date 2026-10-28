@@ -1,0 +1,29 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "geomfullidx-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "integration-geometry-s4-full-map",
+  "goal": "Index full S4 geometry map",
+  "created_at": "2026-10-28T21:58:06.604889+00:00",
+  "base_revision": "8933720221fbdec2d115037e65e65203385c9d8e",
+  "source_dirty_at_boot": false,
+  "status": "active",
+  "claims": {
+    "integration-geometry-s4-full-map": {
+      "held_sha": "beee8190f8f426fb6842f842e5f04cfff47d4aa8",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "Indexed exact full S4 map and uniform induced boundary density with no physical promotion",
+  "next_action": "Native map selection and physical observable",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A index only",
+    "exactness_or_precision_plan": "N/A no new calculation",
+    "applicable_methods": [
+      "N/A index only"
+    ],
+    "clock_metric_units_conventions": "N/A links source conventions"
+  }
+}
