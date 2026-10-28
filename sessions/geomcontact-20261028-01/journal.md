@@ -27,3 +27,5 @@ Captured artifacts/geomcontact-20261028-01/contact-001 (EXACT): Conditional K4 c
 ## 2026-10-28T22:46:09.045474+00:00
 
 Held claim 9078a922c0275f79befc9a0757f668f9709d2ba0. Initial receipt-generation quoting error was repaired before immutable capture. Exact replay PASS, validation 406 records PASS, 16 tests PASS, independent physics review NOT_RUN.
+
+Research PR #257 merged at `bc4418f4f5e6d168ad44aa5945bbcc2044183ce3`; claim released at `cfa7f2afbcdc29397dc3d5d323ca8e562f5284a6`. Closure-only metadata.
