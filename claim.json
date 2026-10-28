@@ -4,8 +4,10 @@
   "protocol_version": 2,
   "task": "integration-geometry-s4-selection",
   "session": "geomsymidx-20261028-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-28T21:54:00Z",
+  "released_at": "2026-10-28T21:59:00Z",
+  "released_from_sha": "0b3f9bd5b7904a1631126e2664045fc61c6000f3",
   "base_revision": "e52c78480d81134a424c0a744c7e87b0c6aecc63",
   "owned_paths": [
     "tasks/integration-geometry-s4-selection.json",
