@@ -8,15 +8,20 @@
   "created_at": "2026-10-28T22:39:07.631057+00:00",
   "base_revision": "cef01efbf30526208dad6ff596585fef09918b57",
   "source_dirty_at_boot": false,
-  "status": "active",
+  "status": "handoff",
   "claims": {
     "integration-geometry-root-persistence": {
       "held_sha": "94859ecc780756964c92b44d23e6e63720497b92",
-      "status": "held"
+      "status": "released",
+      "released_sha": "c025a577d0b2aeb5b68cfa5d510819f42e058d3a"
     }
   },
-  "checks": [],
-  "finding": "Indexed exact prepared root persistence failure under free K4 incidence evolution",
+  "checks": [
+    "repository validation PASS (402 records)",
+    "16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Indexed exact prepared root persistence failure under free K4 incidence evolution Index PR #255 merged at 324da79466733722f8d7786e4cf145f3c8790181.",
   "next_action": "Sourced persistent contact register and physical readout",
   "mathematical_profile": {
     "coefficient_domain": "N/A index only",
