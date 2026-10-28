@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-geometry-s4-selection",
+  "goal": "Index geometry symmetry-selection audit",
+  "owned_paths": [
+    "tasks/integration-geometry-s4-selection.json",
+    "sessions/geomsymidx-20261028-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "geometry-s4-selection"
+  ],
+  "status": "complete"
+}
