@@ -12,7 +12,10 @@
   "claims": {
     "integration-geometry-contact-source-gate": {
       "held_sha": "cd8f4f8fdd59f1ffc6a75a2c41339b9c2f0c4afa",
-      "status": "held"
+      "status": "released",
+      "released_sha": "565af010fa2592d451f0b54c74f5bda5ffab4e0a",
+      "merged_pr": 263,
+      "merged_sha": "cc0ccb0a37056800ef08262a6306f29fe15681d9"
     }
   },
   "checks": [
