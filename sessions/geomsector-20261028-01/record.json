@@ -12,14 +12,17 @@
   "claims": {
     "geometry-six-sector-map": {
       "held_sha": "b164567cc532493ae99ecbe893b88b1981568a28",
-      "status": "held"
+      "status": "released",
+      "released_sha": "71d5daa42f830e4c7b5199ff85a1d5c3c2986410"
     }
   },
   "checks": [
     "exact rational replay PASS",
+    "validation PASS 376 records",
+    "16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Explicit six-sector PL map preserves volume and oriented flux; induced boundary density nonuniform",
+  "finding": "Explicit six-sector PL map preserves volume and oriented flux; induced boundary density nonuniform Research PR #237 merged at 64806bc7ab075cc2af1d1534c3e28f86c0098ef8.",
   "next_action": "Derive native packet selection and constitutive coupling",
   "mathematical_profile": {
     "coefficient_domain": "Q for simplicial coordinates and incidence; exact real algebraic Euclidean scale",
