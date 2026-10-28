@@ -12,14 +12,17 @@
   "claims": {
     "geometry-root-persistence": {
       "held_sha": "6283721e7dae4cabae724a7ef8905585b6b5a512",
-      "status": "held"
+      "status": "released",
+      "released_sha": "ed9c39c56864bb131186e117b06c8ce9f8fc788d"
     }
   },
   "checks": [
-    "analytic solution and exact replay PASS",
+    "analytic solution/replay PASS",
+    "validation PASS 400 records",
+    "16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "One-hot free K4 root loses unique amplitude maximum at pi/4; signed periodic currents conserve stock",
+  "finding": "One-hot free K4 root loses unique amplitude maximum at pi/4; signed periodic currents conserve stock Research PR #253 merged at 541d72294edef1baa7e10db4ae4b90eabc1fe1fc.",
   "next_action": "Sourced persistent contact and physical response",
   "mathematical_profile": {
     "coefficient_domain": "exact integer incidence and rational phase samples; analytic real trigonometric solution",
