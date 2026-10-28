@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "geomselect-20261028-01",
+  "run_id": "selector-001",
+  "created_at": "2026-10-28T22:07:26.256139+00:00",
+  "evidence": "EXACT",
+  "summary": "Native S4 root-selection obstruction and oriented support-current gate",
+  "command": "python3 experiments/geometry-native-selector/replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "5dbf2a83fad24ec09615a97ae9bcc31721196aad",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay.py",
+      "path": "inputs/001-replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/geometry-native-selector/replay.py",
+      "sha256": "1626a01ee0837ce3dfb299ccde3b372797d7241f6171e368a48cc43a5aaf3ffe",
+      "size_bytes": 1576
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/geometry-native-selector/mathematical_receipt.json",
+      "sha256": "13626c8be00a7848460294bac73724cc214b5ec129efeb3ed1ef8a90ac410c73",
+      "size_bytes": 6481
+    }
+  ],
+  "files": [
+    {
+      "path": "files/README.md",
+      "sha256": "469f1103f81c7f24446f03173ba581176d649de17eccce2f34d67ce676c96744",
+      "size_bytes": 4120
+    },
+    {
+      "path": "files/RESULTS.json",
+      "sha256": "6d1e6b6654ec086ea18684c1c7ccc8016356416a1113d58790d1e0b1fce0d556",
+      "size_bytes": 713
+    }
+  ]
+}

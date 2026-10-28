@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "geometry-native-selector",
+  "goal": "Symmetry and support-current selection gate for tetrahedron cube maps",
+  "owned_paths": [
+    "tasks/geometry-native-selector.json",
+    "sessions/geomselect-20261028-01",
+    "candidates/geometry-native-selector",
+    "experiments/geometry-native-selector",
+    "artifacts/geomselect-20261028-01"
+  ],
+  "dependencies": [
+    "geometry-s4-full-map"
+  ],
+  "status": "complete"
+}

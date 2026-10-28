@@ -1,0 +1,165 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "native-root-equivariance",
+  "session_id": "geomselect-20261028-01",
+  "candidate_id": "geometry-native-selector",
+  "question": "Can fully S4 invariant K4 packet current/stock select the rooted tetrahedron cube map?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "ROOT",
+      "symbol": "r",
+      "object_type": "equivariant deterministic selector",
+      "definition": "map from S4 packet state to one of four vertices",
+      "domain": "S4 state space X",
+      "codomain": "V={0,1,2,3}",
+      "coefficient_domain": "finite sets",
+      "units": "none",
+      "basis_orientation": "K4 labels",
+      "metric_measure": "none",
+      "origin": "assumed",
+      "exact_expression": "r(gx)=g r(x)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "P03"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "N/A"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "P03_Q166_Q170",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "v0.39(2) historical",
+      "section_or_object_id": "P03,Q166/Q167/Q170,Q177-Q179",
+      "source_status": "imported typed native objects"
+    },
+    {
+      "source_id": "ROOT_MAP",
+      "url_or_repo_path": "experiments/geometry-six-sector-map/README.md",
+      "version_or_commit": "5dbf2a83fad24ec09615a97ae9bcc31721196aad",
+      "section_or_object_id": "Carrier and map",
+      "source_status": "conditional geometric candidate"
+    },
+    {
+      "source_id": "SYM_MAP",
+      "url_or_repo_path": "experiments/geometry-s4-full-map/README.md",
+      "version_or_commit": "5dbf2a83fad24ec09615a97ae9bcc31721196aad",
+      "section_or_object_id": "Equivariance and boundary measure",
+      "source_status": "conditional geometric candidate"
+    }
+  ],
+  "assumptions": [
+    "A1 full S4 equivariance and invariant seed x0",
+    "A2 deterministic unique root selector for obstruction; stochastic variant separately considered",
+    "A3 Q166 current used on native K4 oriented edge chain, not on a cubical carrier"
+  ],
+  "technique_plan": [
+    {
+      "technique": "group fixed point and orbit-stabilizer",
+      "applicability": "applied",
+      "purpose_or_na_reason": "prove no deterministic root and uniform stochastic root weights"
+    },
+    {
+      "technique": "signed chain representation",
+      "applicability": "applied",
+      "purpose_or_na_reason": "edge endpoint swap forces invariant oriented field zero"
+    },
+    {
+      "technique": "stock/current continuity",
+      "applicability": "applied",
+      "purpose_or_na_reason": "bound what Q166/Q170 prove, without Euclidean area map"
+    },
+    {
+      "technique": "clock/spectral",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no update generator specified"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "|S4|=4!=24; |Stab(root)|=3!=6",
+    "reduced_expression": "orbit size 24/6=4; invariant random root 1/4",
+    "factor_origins": [
+      "four K4 vertices",
+      "permutations of other three"
+    ],
+    "factorization": "24=2^3*3, 6=2*3, 4=2^2",
+    "divisibility_gcd_lcm": "orbit-stabilizer 24/6=4"
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "prior geometry constructions known; no physical fit",
+    "known_targets": [
+      "six-sector root map 3:1 density",
+      "full S4 map uniform density"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "all 24 group actions and six edge transpositions",
+    "selection_criterion": "equivariance fixed-point test",
+    "baseline": "group action and Q166/Q170 typed identity"
+  },
+  "calculation_steps": [
+    "For invariant x0, r(x0)=r(gx0)=g r(x0) for all S4; no globally fixed vertex exists.",
+    "Root stabilizer order 6 and orbit size 4; invariant probability weights all 1/4.",
+    "For each oriented edge e, endpoint transposition fixes e as unoriented cell but acts by -1 on its coefficient, forcing invariant y_e=0.",
+    "Uniform invariant vertex x and y=0 give Q166 J_ie=2B_ie x_i y_e=0.",
+    "Q170 continuity and Q177 equal shares presuppose carrier/ownership and contain no Euclidean cube map; both prior measure pushforwards can conserve stock."
+  ],
+  "result": {
+    "exact_expression": "no equivariant r(x0) in V; dim C1(K4;R)^S4=0; P(root=i)=1/4 if invariant stochastic selection",
+    "approximation": null,
+    "units": "dimensionless and integer",
+    "precision_and_error": "exact finite enumeration and direct proof",
+    "scope": "S4 invariant seed, unique deterministic equivariant update/selector, native K4 oriented edges",
+    "physical_interpretation": "selection gate, not a dynamical geometry coefficient"
+  },
+  "verification": [
+    {
+      "method": "finite enumeration plus proof",
+      "command_or_proof_path": "python3 experiments/geometry-native-selector/replay.py; experiments/geometry-native-selector/README.md",
+      "source_revision": "5dbf2a83fad24ec09615a97ae9bcc31721196aad",
+      "actual_result": "PASS 24 permutations and 6 sign-flip witnesses",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "An externally one-hot rooted contact breaks S4 to S3 and evades the obstruction.",
+    "The full S4 12-cell map is compatible with symmetry; obstruction is to choosing a single root from invariant state.",
+    "Conservation equations alone admit both geometric pushforwards."
+  ],
+  "limitations": [
+    "No native contact preparation or evolution law derived.",
+    "Quadratic support is not automatically Euclidean boundary area.",
+    "No force/loss or measured graphite residual."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Construct source-selected boundary/contact state with native current and map to physical density/observable."
+}
