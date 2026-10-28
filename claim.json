@@ -4,8 +4,10 @@
   "protocol_version": 2,
   "task": "geometry-contact-contract",
   "session": "geomcontact-20261028-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-28T23:08:00Z",
+  "released_at": "2026-10-28T23:14:00Z",
+  "released_from_sha": "9078a922c0275f79befc9a0757f668f9709d2ba0",
   "base_revision": "c3150ff736ef700cd4129272cd5ea28a52b9673a",
   "owned_paths": [
     "tasks/geometry-contact-contract.json",
