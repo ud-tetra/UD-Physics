@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "geometry-contact-source-gate",
   "session": "geomsource-20261028-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-28T23:25:27Z",
   "base_revision": "f9f3f1ed84c0d17414485b1472cd1640c3d7af57",
   "owned_paths": [
@@ -13,5 +13,7 @@
     "candidates/geometry-contact-source-gate",
     "experiments/geometry-contact-source-gate",
     "artifacts/geomsource-20261028-01"
-  ]
+  ],
+  "released_at": "2026-10-28T23:30:12Z",
+  "released_from_sha": "96cdea6cf30bb52bba10082def02821cb60749cb"
 }
