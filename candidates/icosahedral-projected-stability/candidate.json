@@ -1,0 +1,40 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-projected-stability",
+  "session_id": "ico-projstable-20261028-gpt6-a1",
+  "question": "Can an exact CM/internal decomposition and positive source tangent-energy metric yield a usable projected a posteriori reference integration error bound?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Frozen original full560 source and all43 unanchored spatial masses/reciprocal relative forces/dampers, no external spatial net force.",
+    "Block projection uses original positive diagonal M, CM translation T only; rigid rotations remain fully in internal dynamics.",
+    "K source tangent includes derivative in position of velocity-dependent damping, hence generally nonsymmetric; treat symmetric part separately.",
+    "Six sampled times of each original strict DOP853 source reference, not rigorous time continuum or eigenvalue interval enclosures."
+  ],
+  "physical_mapping": "None; unchanged uncalibrated conventional 3D spring/dashpot mechanics, physical UD spacetime remains open.",
+  "target_exposure": "PR226 raw scalar Gronwall failure and PR220 δ_num<.01031 already known; κ=.11 sampled shift selected after seeing initial negative eigenvalue, not source physical constant.",
+  "fitted_choices": [
+    "Sample times 0,1,9.2,12.5,64.5,100 development probes.",
+    "Proposed κ=.11 mathematical energy regularizer, not physical spring. No source damping or mechanical parameter fit."
+  ],
+  "sources": [
+    "6d5462c51e5a966066197bb56f33022ecd3a56aa:experiments/icosahedral-pulsetube/jacobian.py",
+    "6d5462c51e5a966066197bb56f33022ecd3a56aa:experiments/icosahedral-mountloss/mountloss.py",
+    "https://github.com/ud-tetra/UD-Physics/pull/226",
+    "https://github.com/ud-tetra/UD-Physics/actions/runs/40717553809"
+  ],
+  "baseline": "Ordinary reciprocal 3D mechanical CM block and Lyapunov/energy-metric analysis; no UD-only experimental signature.",
+  "result": "EXACT/CONDITIONAL CM mass-orthogonal projector commutes with original 560-state Jacobian because of reciprocal internal translation-invariant source mechanics. NUMERICAL strict DOP853 frozen source at 6 times each case: symmetric CM-free K min initial −.09623694/−.09651155; later positive at selected points, K develops damping-position derivative antisymmetry up to .00184; damping C symmetric PSD numerically, CM leakage<4.3e-14. FAILED direct unshifted positive Hessian energy. Candidate κ=.11 adjusted after target exposure gives positive sampled form but not verified continuous/stability; true δ_num<.01031 and full nonlinear tube OPEN.",
+  "next_discriminant": "Interval-validated uniform K_sym+κMP positive and time derivatives plus projected residual/Green growth for δ_num<.01031.",
+  "reopening_conditions": "Uniform positive internal metric and certified relative Green/residual bootstrap, separate all180 nonlinear response.",
+  "mathematical_receipts": [
+    "sessions/ico-projstable-20261028-gpt6-a1/mathematical_receipt.json"
+  ]
+}
