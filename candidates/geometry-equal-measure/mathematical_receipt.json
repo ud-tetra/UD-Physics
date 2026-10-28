@@ -1,0 +1,192 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "equal-measure-shape-compatibility",
+  "session_id": "geomap-20261028-01",
+  "candidate_id": "geometry-equal-measure",
+  "question": "Can regular tetrahedron/cube equal-volume calibration also preserve total surface area?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "GEO_A",
+      "symbol": "a",
+      "object_type": "edge length",
+      "definition": "source equilateral triangle or regular tetrahedron side",
+      "domain": "R>0",
+      "codomain": null,
+      "coefficient_domain": "positive real",
+      "units": "length",
+      "basis_orientation": "N/A",
+      "metric_measure": "Euclidean",
+      "origin": "assumed",
+      "exact_expression": "a>0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "source edge length"
+    },
+    {
+      "object_id": "GEO_RHO",
+      "symbol": "rho_S",
+      "object_type": "dimensionless boundary ratio",
+      "definition": "cube total surface / tetrahedron total surface at equal volume",
+      "domain": "regular tetrahedron/cube pairs",
+      "codomain": "R>0",
+      "coefficient_domain": "algebraic real",
+      "units": "1",
+      "basis_orientation": "N/A",
+      "metric_measure": "Euclidean surface and bulk volume",
+      "origin": "derived",
+      "exact_expression": "3^(-1/6)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "README"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "GEO_A"
+      ],
+      "normalization": "cube surface over tetra surface"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "LEDGER_F03_F04",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "supplied v0.39(2), historical snapshot",
+      "section_or_object_id": "F03,F04",
+      "source_status": "imported typed reference"
+    },
+    {
+      "source_id": "FOUR_CELL",
+      "url_or_repo_path": "experiments/four-cell-tetrahedron/README.md",
+      "version_or_commit": "16ed14c7f95aa8d860255346671b33e4f73dc765",
+      "section_or_object_id": "Exact sharing, geometry and recursive counts",
+      "source_status": "imported finite construction"
+    },
+    {
+      "source_id": "USER_FRAMES",
+      "url_or_repo_path": "current conversation attached screenshots",
+      "version_or_commit": "2026-10-28",
+      "section_or_object_id": "three frames of four-piece hinged triangle/square",
+      "source_status": "user-provided visual motivation; no lengths measured"
+    }
+  ],
+  "assumptions": [
+    "A1: regular solids under standard Euclidean geometry",
+    "A2: equal bulk volume chosen only for rho_S"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact radical algebra",
+      "applicability": "applied",
+      "purpose_or_na_reason": "derive shape invariant and incompatible scales"
+    },
+    {
+      "technique": "combinatorial face count",
+      "applicability": "applied",
+      "purpose_or_na_reason": "tetrahedron four faces; cube six faces"
+    },
+    {
+      "technique": "clock, spectral, parity",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no generator or discrete state was defined"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4*(sqrt(3)/4)a^2 and 6b^2",
+    "reduced_expression": "sqrt(3)a^2 and 6b^2",
+    "factor_origins": [
+      "4 tetra triangular faces",
+      "6 cube square faces"
+    ],
+    "factorization": "4=2^2; 6=2*3; shape factors include radicals",
+    "divisibility_gcd_lcm": "N/A: no orbit or clock compatibility claim"
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "shape choices exposed; no fit",
+    "known_targets": [
+      "user triangle/square video frames",
+      "tetrahedron/cube analogy"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "equal-area and equal-volume equality are declared normalization choices"
+    ],
+    "search_domain_and_budget": "three stated constraints; no coefficient search",
+    "selection_criterion": "evaluate distinct conservation choices",
+    "baseline": "Euclidean geometry"
+  },
+  "calculation_steps": [
+    "A_triangle=sqrt(3)a^2/4 and A_square=b^2 give g_A=3^(1/4)/2.",
+    "S_tetra=4 A_triangle=sqrt(3)a^2, S_cube=6b^2 give g_S=sqrt(sqrt(3)/6).",
+    "V_tetra=sqrt(2)a^3/12 and V_cube=b^3 give g_V=(sqrt(2)/12)^(1/3).",
+    "At g_V, rho_S=6 g_V^2/sqrt(3)=3^(-1/6), and g_S/g_V=3^(1/12).",
+    "For positive a, simultaneous equal surface and volume requires g_S/g_V=1, contradicted by 3^(1/12)>1.",
+    "S_t^3/V_t^2=216 sqrt(3), S_c^3/V_c^2=216; shape index ratio sqrt(3)."
+  ],
+  "result": {
+    "exact_expression": "rho_S=3^(-1/6); g_S/g_V=3^(1/12)",
+    "approximation": "0.8326831776556046; 1.0958726911352443",
+    "units": "dimensionless",
+    "precision_and_error": "double-precision replay checked to relative tolerance 1e-14; symbolic proof exact",
+    "scope": "regular Euclidean tetrahedron/cube with declared equality; no physical map",
+    "physical_interpretation": "HYPOTHESIS only, no active UD coefficient"
+  },
+  "verification": [
+    {
+      "method": "analytic radical simplification",
+      "command_or_proof_path": "experiments/geometry-equal-measure/README.md",
+      "source_revision": "16ed14c7f95aa8d860255346671b33e4f73dc765",
+      "actual_result": "PASS constructor proof",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent numerical substitution",
+      "command_or_proof_path": "python3 experiments/geometry-equal-measure/replay.py",
+      "source_revision": "16ed14c7f95aa8d860255346671b33e4f73dc765",
+      "actual_result": "PASS 1e-14 relative assertions",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Equal-volume and equal-total-surface edge calibration are incompatible for regular Euclidean shapes.",
+    "Equal face area gives total cube/tetra surface ratio 3/2, not 1."
+  ],
+  "limitations": [
+    "No actual 3D hinged dissection derived from screenshots.",
+    "A nonlinear or nonsimilar piecewise map may conserve volume but change boundary area.",
+    "No UD material/transport, geometry-to-physics calibration, or graphite response derived."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Explicit chain/measure map, current and boundary source law; test conservation and one independent consequence."
+}

@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "geomap-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "geometry-equal-measure",
+  "goal": "Compare equal-area triangle/square and equal-volume tetrahedron/cube maps, and test boundary/bulk compatibility",
+  "created_at": "2026-10-28T21:08:05.413433+00:00",
+  "base_revision": "16ed14c7f95aa8d860255346671b33e4f73dc765",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "geometry-equal-measure": {
+      "held_sha": "e612b1ca3256bb943d5976cb3c7ab5a058072514",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "exact proof in README",
+    "numerical assertions PASS at relative tolerance 1e-14",
+    "independent review NOT_RUN"
+  ],
+  "finding": "Exact regular-shape mismatch rho_S=3^(-1/6); no dynamic coefficient without measure/transport map",
+  "next_action": "Specify explicit simplicial-to-cubical map and boundary stock/current law",
+  "mathematical_profile": {
+    "coefficient_domain": "positive real algebraic radicals and integer face counts",
+    "exactness_or_precision_plan": "exact symbolic proof in README and dependency-free double-precision numerical replay",
+    "applicable_methods": [
+      "Euclidean area/volume geometry",
+      "dimension-typed normalization",
+      "scale-free shape index",
+      "conservation/stock compatibility"
+    ],
+    "clock_metric_units_conventions": "No clock; standard Euclidean metric; a,b same physical length unit; face, total boundary and bulk measures distinct"
+  },
+  "checkpoint_at": "2026-10-28T21:10:08.132565+00:00",
+  "checkpoint_source": {
+    "revision": "16ed14c7f95aa8d860255346671b33e4f73dc765",
+    "dirty": true
+  }
+}

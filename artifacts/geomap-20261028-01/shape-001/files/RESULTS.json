@@ -1,0 +1,16 @@
+{
+  "boundary_shortfall": 0.16731682234439538,
+  "equal_face_area_total_surface_ratio": 1.5,
+  "equal_volume_surface_ratio": 0.8326831776556046,
+  "exact_forms": [
+    "3^(1/4)/2",
+    "sqrt(sqrt(3)/6)",
+    "(sqrt(2)/12)^(1/3)",
+    "3^(-1/6)",
+    "3^(1/12)"
+  ],
+  "face_edge_ratio": 0.6580370064762462,
+  "surface_edge_ratio": 0.537284965911771,
+  "surface_to_volume_edge_ratio": 1.0958726911352443,
+  "volume_edge_ratio": 0.49028045890548005
+}

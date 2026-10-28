@@ -1,0 +1,32 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "geometry-equal-measure",
+  "session_id": "geomap-20261028-01",
+  "question": "Can one length scale preserve tetrahedron/cube bulk volume and total boundary area?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "regular Euclidean source and target solids",
+    "positive same-unit edge lengths",
+    "equal face area, total surface, and bulk volume imposed in separate comparisons"
+  ],
+  "physical_mapping": "OPEN: no native chain/measure map, packet transport, clock, or dimensional constitutive law",
+  "target_exposure": "User-supplied triangle/square hinged images and stated tetrahedron/cube analogy informed shape selection; no quantitative graphite target or parameter fit",
+  "fitted_choices": [],
+  "sources": [
+    "user supplied three screenshot frames; geometry prompt only",
+    "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md F03/F04",
+    "experiments/four-cell-tetrahedron/README.md"
+  ],
+  "baseline": "Elementary Euclidean formulas; no special UD mechanism",
+  "result": "Exact equal-volume total-surface ratio 3^(-1/6), edge-scale incompatibility 3^(1/12); conversion ratios are not dynamic coefficients",
+  "next_discriminant": "Construct explicit simplicial-to-cubical chain/measure map and derive boundary stock/current conservation",
+  "mathematical_receipts": [
+    "candidates/geometry-equal-measure/mathematical_receipt.json"
+  ]
+}
