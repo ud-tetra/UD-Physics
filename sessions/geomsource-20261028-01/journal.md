@@ -9,3 +9,5 @@ Handoff: obtain non-placeholder boundary/environment dynamics or registered mate
 ## 2026-10-28T23:27:56.042376+00:00
 
 Captured artifacts/geomsource-20261028-01/exact-001 (EXACT): K4 masked gate fixed point and least norm contact port
+
+Publication: PR #261 merged as 005e642d69bee62a17c2ad48e3e89fdaec014a35; exact-lease claim release 6eccaa55f33c9e6482c795387340efe0fc9f54dc.

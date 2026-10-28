@@ -12,7 +12,10 @@
   "claims": {
     "geometry-contact-source-gate": {
       "held_sha": "96cdea6cf30bb52bba10082def02821cb60749cb",
-      "status": "held"
+      "status": "released",
+      "released_sha": "6eccaa55f33c9e6482c795387340efe0fc9f54dc",
+      "merged_pr": 261,
+      "merged_sha": "005e642d69bee62a17c2ad48e3e89fdaec014a35"
     }
   },
   "checks": [
