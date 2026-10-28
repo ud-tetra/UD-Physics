@@ -1,0 +1,37 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphlocal-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "graphite-local-readout-bound",
+  "goal": "Exact support-overlap bound for local odd readout and numerical conventional-Q sensitivity",
+  "created_at": "2026-10-28T15:14:04.708860+00:00",
+  "base_revision": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "graphite-local-readout-bound": {
+      "held_sha": "3d3cd96d9e9a75c7842cd45149777860a39ebf18",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "exact support and numerical replay PASS",
+    "repository validation PASS (357 records)",
+    "16 unit tests PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Endpoint-local odd readouts with isotropic site-velocity covariance cannot match conventional Q: lower bound 69.0899466% full-covariance relative Frobenius error; radius-one support bound inconclusive",
+  "next_action": "Specify a sourced correlated kinetic metric or controlled-range readout with reciprocal preparation; then loss and signed force residual",
+  "mathematical_profile": {
+    "coefficient_domain": "Exact integer graph support/rank; positive real conventional numerical K",
+    "exactness_or_precision_plan": "Exact support theorem and integer pair count, double precision covariance/pressure-step checks",
+    "applicable_methods": [
+      "chain incidence and graph support",
+      "Gaussian covariance and Frobenius projection bound",
+      "symmetry mean control",
+      "fit versus full-covariance null"
+    ],
+    "clock_metric_units_conventions": "Odd r=D x_prime/sqrt(a), a=14 tau^2/m unknown; Cov(x_prime)=a Theta_bar I; Q=B^T K^-1 B, Theta_bar=kBT/14; no loss or physical clock fit"
+  }
+}
