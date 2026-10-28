@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "geometry-root-persistence",
+  "goal": "Exact K4 incidence root persistence and native support-current audit",
+  "owned_paths": [
+    "tasks/geometry-root-persistence.json",
+    "sessions/geomroot-20261028-01",
+    "candidates/geometry-root-persistence",
+    "experiments/geometry-root-persistence",
+    "artifacts/geomroot-20261028-01"
+  ],
+  "dependencies": [
+    "geometry-native-selector"
+  ],
+  "status": "complete"
+}

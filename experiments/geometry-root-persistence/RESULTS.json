@@ -1,0 +1,109 @@
+{
+  "active_angular_frequency": 2,
+  "first_equal_amplitude_time": "pi/4 dimensionless",
+  "full_period": "pi dimensionless",
+  "incidence_laplacian": "4I-J",
+  "rational_phase_samples": [
+    {
+      "c": "1",
+      "edge": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "h": "0",
+      "root_minus_other": "1",
+      "root_stock_minus_other": "1",
+      "vertex": [
+        "1",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "c": "3/5",
+      "edge": [
+        "-2/5",
+        "-2/5",
+        "-2/5",
+        "0",
+        "0",
+        "0"
+      ],
+      "h": "4/5",
+      "root_minus_other": "3/5",
+      "root_stock_minus_other": "12/25",
+      "vertex": [
+        "7/10",
+        "1/10",
+        "1/10",
+        "1/10"
+      ]
+    },
+    {
+      "c": "0",
+      "edge": [
+        "-1/2",
+        "-1/2",
+        "-1/2",
+        "0",
+        "0",
+        "0"
+      ],
+      "h": "1",
+      "root_minus_other": "0",
+      "root_stock_minus_other": "0",
+      "vertex": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ]
+    },
+    {
+      "c": "-3/5",
+      "edge": [
+        "-2/5",
+        "-2/5",
+        "-2/5",
+        "0",
+        "0",
+        "0"
+      ],
+      "h": "4/5",
+      "root_minus_other": "-3/5",
+      "root_stock_minus_other": "-3/25",
+      "vertex": [
+        "-1/5",
+        "2/5",
+        "2/5",
+        "2/5"
+      ]
+    },
+    {
+      "c": "-1",
+      "edge": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "h": "0",
+      "root_minus_other": "-1",
+      "root_stock_minus_other": "0",
+      "vertex": [
+        "-1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ]
+    }
+  ],
+  "vertex_stock_plus_edge_stock": "1"
+}

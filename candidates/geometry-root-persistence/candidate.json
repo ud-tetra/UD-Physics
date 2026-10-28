@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "geometry-root-persistence",
+  "session_id": "geomroot-20261028-01",
+  "question": "Does a one-hot native vertex preparation persist as a unique root without an external contact or damping?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "one-hot exogenous vertex seed e0",
+    "zero initial edge field",
+    "closed free 0/1 incidence generator with unit chain metric",
+    "amplitude or squared-stock root readout"
+  ],
+  "physical_mapping": "OPEN: no physical time/energy, contact or cube-map state law",
+  "target_exposure": "Prior native selector obstruction and root/symmetric cube maps known; no physical data used",
+  "fitted_choices": [],
+  "sources": [
+    "experiments/geometry-native-selector/README.md",
+    "experiments/graphite-native-support-current/README.md",
+    "supplied ledger v0.39(2) Q166/Q167/Q170"
+  ],
+  "baseline": "free conservative K4 incidence oscillator",
+  "result": "Exact periodic branch loses unique amplitude root at pi/4 and stock root thereafter; no persistent geometry root without contact register",
+  "next_discriminant": "source persistent contact and compare physical readout",
+  "mathematical_receipts": [
+    "candidates/geometry-root-persistence/mathematical_receipt.json"
+  ]
+}

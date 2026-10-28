@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "geomroot-20261028-01",
+  "run_id": "persistence-001",
+  "created_at": "2026-10-28T22:36:19.922863+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact one-hot K4 root persistence and Q166 stock current audit",
+  "command": "python3 experiments/geometry-root-persistence/replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "b7e911b418a58f807267ebe74514b3186fdee9f0",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay.py",
+      "path": "inputs/001-replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/geometry-root-persistence/replay.py",
+      "sha256": "9d904f9cbb975f082faebb91316813f74bf42b133669cd4888f58b7c9d637ea9",
+      "size_bytes": 1934
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/geometry-root-persistence/mathematical_receipt.json",
+      "sha256": "53d3c569ddfe0cf1964dd1db8efc77a35684ae31b5eb40035b068f80b1597d3c",
+      "size_bytes": 6040
+    }
+  ],
+  "files": [
+    {
+      "path": "files/README.md",
+      "sha256": "a515496a0f4baec741636d2dbc57339ea12f06dbde7fdfbf62bdf375640d589a",
+      "size_bytes": 4057
+    },
+    {
+      "path": "files/RESULTS.json",
+      "sha256": "87dfdfe33cb5982641afeee3e7301aad6b68375f15516d3ee8d53b7220010b72",
+      "size_bytes": 1782
+    }
+  ]
+}

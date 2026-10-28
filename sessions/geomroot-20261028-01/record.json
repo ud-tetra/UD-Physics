@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "geomroot-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "geometry-root-persistence",
+  "goal": "Test one-hot K4 root persistence under conservative Q166 incidence flow",
+  "created_at": "2026-10-28T22:34:50.226472+00:00",
+  "base_revision": "b7e911b418a58f807267ebe74514b3186fdee9f0",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "geometry-root-persistence": {
+      "held_sha": "6283721e7dae4cabae724a7ef8905585b6b5a512",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "analytic solution and exact replay PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "One-hot free K4 root loses unique amplitude maximum at pi/4; signed periodic currents conserve stock",
+  "next_action": "Sourced persistent contact and physical response",
+  "mathematical_profile": {
+    "coefficient_domain": "exact integer incidence and rational phase samples; analytic real trigonometric solution",
+    "exactness_or_precision_plan": "symbolic closed K4 Laplacian solution and rational circle sample checks",
+    "applicable_methods": [
+      "signed chain incidence",
+      "spectral frequency 2 and period pi",
+      "native stock/current continuity",
+      "root-selection sensitivity"
+    ],
+    "clock_metric_units_conventions": "dimensionless s, ascending K4 edges, H=I, x(0)=e0,y(0)=0; no physical clock/energy map"
+  },
+  "checkpoint_at": "2026-10-28T22:36:19.969110+00:00",
+  "checkpoint_source": {
+    "revision": "b7e911b418a58f807267ebe74514b3186fdee9f0",
+    "dirty": true
+  }
+}
