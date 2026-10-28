@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "geomsector-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "geometry-six-sector-map",
+  "goal": "Construct explicit tetrahedron-to-cube simplicial map and boundary continuity",
+  "created_at": "2026-10-28T21:21:48.360348+00:00",
+  "base_revision": "64038f10624a2d4536167f0f96d44c57f6b36d8d",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "geometry-six-sector-map": {
+      "held_sha": "b164567cc532493ae99ecbe893b88b1981568a28",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "exact rational replay PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Explicit six-sector PL map preserves volume and oriented flux; induced boundary density nonuniform",
+  "next_action": "Derive native packet selection and constitutive coupling",
+  "mathematical_profile": {
+    "coefficient_domain": "Q for simplicial coordinates and incidence; exact real algebraic Euclidean scale",
+    "exactness_or_precision_plan": "rational determinant/incidence replay, symbolic measure proof",
+    "applicable_methods": [
+      "chain/boundary composition",
+      "piecewise affine metric and measure transport",
+      "positive stock and flux continuity",
+      "shape ratio null"
+    ],
+    "clock_metric_units_conventions": "No clock; oriented ascending Boolean-chain sectors with positive physical orientation; regular Euclidean tetra edge a, equal-volume cube edge b; J=1 in physical units"
+  },
+  "checkpoint_at": "2026-10-28T21:24:34.409629+00:00",
+  "checkpoint_source": {
+    "revision": "64038f10624a2d4536167f0f96d44c57f6b36d8d",
+    "dirty": true
+  }
+}

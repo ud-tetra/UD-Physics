@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "geomsector-20261028-01",
+  "run_id": "plmap-001",
+  "created_at": "2026-10-28T21:24:34.364005+00:00",
+  "evidence": "EXACT",
+  "summary": "Six-sector chain map, physical volume Jacobian and boundary-density transport",
+  "command": "python3 experiments/geometry-six-sector-map/replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "64038f10624a2d4536167f0f96d44c57f6b36d8d",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay.py",
+      "path": "inputs/001-replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/geometry-six-sector-map/replay.py",
+      "sha256": "ab8db51a9e81e8eb85ee0a19b98588034b9535f7ba6b74d1469a9564ae570549",
+      "size_bytes": 3490
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/geometry-six-sector-map/mathematical_receipt.json",
+      "sha256": "5270503319e04d8e1278903bb2fd32351dd540207e0c2ab05d8084e5853c512b",
+      "size_bytes": 7294
+    }
+  ],
+  "files": [
+    {
+      "path": "files/RESULTS.json",
+      "sha256": "06900181b525eb0154de404aa4d8d7e212e52bdbd1b87b25586ad239f45c60e4",
+      "size_bytes": 565
+    },
+    {
+      "path": "files/README.md",
+      "sha256": "55668bb4d1b96f25ac5a1c73895c7754d71f5f6060f5946cd5c34493ccf3ba73",
+      "size_bytes": 5355
+    }
+  ]
+}

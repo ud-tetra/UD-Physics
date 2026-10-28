@@ -1,0 +1,23 @@
+{
+  "boundary_group_counts": {
+    "opposite_origin": 6,
+    "zero_0": 2,
+    "zero_1": 2,
+    "zero_2": 2
+  },
+  "boundary_triangle_count": 12,
+  "coordinate_jacobian": 6,
+  "equal_volume_surface_ratio": "3^(-1/6)",
+  "f_vector": [
+    8,
+    19,
+    18,
+    6
+  ],
+  "induced_average_surface_density_ratio": "3^(1/6)",
+  "induced_opposite_face_density_ratio": "(1/2)*3^(1/6)",
+  "induced_zero_face_density_ratio": "(3/2)*3^(1/6)",
+  "physical_jacobian_at_equal_volume": 1,
+  "source_sector_coordinate_volume": "1/36",
+  "target_sector_coordinate_volume": "1/6"
+}
