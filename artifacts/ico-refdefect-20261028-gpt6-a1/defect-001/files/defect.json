@@ -1,0 +1,63 @@
+{
+  "cases": {
+    "seed10422-0-boundary2": {
+      "case": "seed10422-0-boundary2",
+      "conclusion": "Even idealized raw full-state mu=1/2 constant-exponential Gronwall is severely overconservative; actual mu>=1/2 and no certified supremum defect/Lipschitz tube provided; need CM-block removal + projected shape/full stability and validated local residual bounds.",
+      "defect_probe_nodes_per_step": 3,
+      "dense_polynomial_vs_scipy_evaluation_max": 1.1115779132760813e-14,
+      "max_sampled_analytic_CM_position_error": 1.0419642948225255e-15,
+      "max_sampled_full_mechanical_defect_L2": 1.3877613189922116e-09,
+      "max_sampled_primary_position_derivative_defect_L2": 8.132205974283227e-12,
+      "max_sampled_primary_reference_shift": 0.05039240841022644,
+      "no_certification": "Probed residual is not uniform over each step; derivative computed analytically for DOP853 dense polynomial but f evaluations and position are Float64, not interval; CM position checks only numerical against an EXACT Galilean law.",
+      "raw_equal_weights_euclidean_log_norm_lower_bound_exact": 0.5,
+      "raw_gronwall_at_u100_amplification_floor_exact_expression": "2*(exp(50)-1)",
+      "raw_gronwall_at_u100_amplification_floor_numeric": 1.0369411057174144e+22,
+      "required_log10_uniform_defect_upper_bound_if_mu_equals_half": -24.002455787852142,
+      "sampled_interval_quadrature_upper_SURROGATE_not_certified": 4.3620109403743245e-08,
+      "status": "NUMERICAL_RESIDUAL_PROBES_NOT_RIGOROUS",
+      "strict_reference_solver": {
+        "atol": 5e-15,
+        "interpolants": 3479,
+        "method": "DOP853",
+        "nfev": 53927,
+        "rtol": 5e-12
+      },
+      "sufficient_uniform_full_defect_target_for_delta_primary0p01031_if_mu_equals_half": 9.943612970005357e-25
+    },
+    "uniform-b0.05-cf0.0": {
+      "case": "uniform-b0.05-cf0.0",
+      "conclusion": "Even idealized raw full-state mu=1/2 constant-exponential Gronwall is severely overconservative; actual mu>=1/2 and no certified supremum defect/Lipschitz tube provided; need CM-block removal + projected shape/full stability and validated local residual bounds.",
+      "defect_probe_nodes_per_step": 3,
+      "dense_polynomial_vs_scipy_evaluation_max": 1.1398972750422128e-14,
+      "max_sampled_analytic_CM_position_error": 2.231129791171973e-15,
+      "max_sampled_full_mechanical_defect_L2": 2.753422025127849e-09,
+      "max_sampled_primary_position_derivative_defect_L2": 2.0001291901294836e-11,
+      "max_sampled_primary_reference_shift": 0.05111635138364076,
+      "no_certification": "Probed residual is not uniform over each step; derivative computed analytically for DOP853 dense polynomial but f evaluations and position are Float64, not interval; CM position checks only numerical against an EXACT Galilean law.",
+      "raw_equal_weights_euclidean_log_norm_lower_bound_exact": 0.5,
+      "raw_gronwall_at_u100_amplification_floor_exact_expression": "2*(exp(50)-1)",
+      "raw_gronwall_at_u100_amplification_floor_numeric": 1.0369411057174144e+22,
+      "required_log10_uniform_defect_upper_bound_if_mu_equals_half": -24.002455787852142,
+      "sampled_interval_quadrature_upper_SURROGATE_not_certified": 4.641235859816453e-08,
+      "status": "NUMERICAL_RESIDUAL_PROBES_NOT_RIGOROUS",
+      "strict_reference_solver": {
+        "atol": 5e-15,
+        "interpolants": 3481,
+        "method": "DOP853",
+        "nfev": 57785,
+        "rtol": 5e-12
+      },
+      "sufficient_uniform_full_defect_target_for_delta_primary0p01031_if_mu_equals_half": 9.943612970005357e-25
+    }
+  },
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "method": "analytical derivative of original SciPy DOP853 dense polynomial, 3 interior probe nodes per accepted step, exact CM trajectory check",
+  "source_scope": "original two frozen 560+heat mechanical reference cases, no material law/parameter change"
+}
