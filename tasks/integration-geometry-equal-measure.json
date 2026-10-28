@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-geometry-equal-measure",
+  "goal": "Index equal-measure shape result under integration claim",
+  "owned_paths": [
+    "tasks/integration-geometry-equal-measure.json",
+    "sessions/geomidx-20261028-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "geometry-equal-measure"
+  ],
+  "status": "complete"
+}

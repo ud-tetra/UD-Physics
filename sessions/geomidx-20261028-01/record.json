@@ -1,0 +1,29 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "geomidx-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "integration-geometry-equal-measure",
+  "goal": "Index integrated equal-measure shape compatibility result",
+  "created_at": "2026-10-28T21:14:11.398667+00:00",
+  "base_revision": "3ee06e3897b07bda6e45bcaefdb578f70d299153",
+  "source_dirty_at_boot": false,
+  "status": "active",
+  "claims": {
+    "integration-geometry-equal-measure": {
+      "held_sha": "00930bfefa524480b2e954ed3d7409bb71811ee8",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "Indexed regular-shape equal-measure incompatibility with scoped status and no physical promotion",
+  "next_action": "Derive explicit chain/measure map and boundary stock/current before assigning active coefficient",
+  "mathematical_profile": {
+    "coefficient_domain": "N/A index only",
+    "exactness_or_precision_plan": "N/A no new calculation",
+    "applicable_methods": [
+      "N/A index only"
+    ],
+    "clock_metric_units_conventions": "N/A links source conventions"
+  }
+}
