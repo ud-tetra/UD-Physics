@@ -4,12 +4,14 @@
   "protocol_version": 2,
   "task": "graphite-joint-quadrature-contact",
   "session": "graphjointfix-20261028-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-28T15:20:52.913Z",
   "base_revision": "1fe78186ba1344f640efb366ae4547cc52ab55f7",
   "previous_claim_sha": "b16b6fa59697176fc39dbb4459a78670bc807c1a",
   "owned_paths": [
     "experiments/graphite-joint-quadrature-contact/README.md",
     "sessions/graphjointfix-20261028-01/"
-  ]
+  ],
+  "released_at": "2026-10-28T15:22:44.585Z",
+  "released_from_sha": "8685b4054f3ff0839d0fad3bdaa802a726f4ce8c"
 }
