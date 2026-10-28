@@ -1,0 +1,19 @@
+# Can a native masked contact source the K4 root?
+
+**EXACT/CONDITIONAL source gate; physical graphite response OPEN.** The [held-contact model](../geometry-contact-contract/README.md) introduces `r=e0` and damping `gamma` as separate assumptions. The supplied UD coefficient ledger v0.39(2), SHA-256 `1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63`, lists Q166/Q167/Q170 and Q177–Q179. Q167 verifies binary contact masks and explicitly leaves gate-transition receipts open; Q178 leaves environment/dissipation/renewal source terms open. The attached `packet_modulation_layer.md`, `seam_phase_transport.md`, `packet_field_equation.md` and `carrier_definition.md` contain only reconstructed-snapshot placeholder lines. None supplies a register update, a material loss coefficient, or a clock-to-seconds map.
+
+## Exact fixed-point obstruction
+
+Restrict Q167's 0/1 lane to ascending K4 incidence `B: R^6 -> R^4`, with one `-1` and one `+1` per edge, unit Euclidean metric, dimensionless parameter `s`, and a diagonal binary gate `H(s,c)`. Use the skew masked system
+
+`x' = -B H y,     y' = H B^T x`, with `x(0)=u=(1/4)1`, `y(0)=0`.
+
+For every mask, including state-dependent piecewise switches with continuous state, `B^T u=0`, so `(u,0)` is a fixed trajectory wherever the update is unique. More strongly, `S=||x||²+||y||²=1/4` and `1^T x=1` are conserved through any such mask update. Cauchy gives `||x||² >= (1^T x)²/4=1/4`, with equality only at `x=u`; hence **every continuous norm-preserving masked trajectory from this preparation has `x=u` and `y=0`**. This conclusion survives arbitrary contact switching and does not require equivariance or uniqueness. The Q167 masked classification `||x||²+||Hy||²` can jump on a general switching state while the full norm remains continuous; that reclassification is not heat. The previously imposed one-hot target `x=r=e0` has `||x||²=1`, so it cannot be reached from this stock without an open-system input. This is a no-go for the stated truncation and initial state, not for a prepared asymmetric state, a full packet with different state/stock, or a separately supplied environment.
+
+## What the missing port must do
+
+Write a general edge port `b(s)` and passive term `-gamma y` in `y' = H B^T x + b - gamma y`. At the symmetric start with `H=I`, `x''(0)=-B b(0)`. Thus a port in `ker B` cannot initially create root contrast; it needs a nonzero gradient component. For the *chosen* held-contact acceleration `x''(0)=4(r-u)`, since `L=BB^T=4I-J`, a least-norm edge port is `b(0)=-B^T r`, with `||b(0)||²=r^T Lr=3`. Any cycle-space component leaves this acceleration unchanged but increases the Euclidean port norm. The acceleration magnitude `4` and the one-hot `r` are features of the assumed contact model, not Q167 coefficients. For a constant such port and fixed positive `gamma`, `x=u+2(r-u)s²+O(s³)`, independent of damping to leading order. Its stock derivative is `S'=2y·b-2gamma||y||²`; contact work and heat need separate sources and material units. A binary gate alone has neither term.
+
+The [full S4 tetrahedron/cube map](../geometry-s4-full-map/README.md) is a symmetric geometric alternative without a chosen root. This audit does not select between physical mappings. It supplies no `21.8°/38.2°` angle mechanism or signed friction/load residual. The angles and observed weak load response were known before this calculation; no data or coefficients were fitted. Independent physics review NOT_RUN; physical promotion 0.
+
+**Next discriminant:** obtain a non-placeholder native boundary/environment update that produces a typed gradient port and its power/heat ledger, or obtain measured contact-resolved material loss and registered force traces to test a separately assumed port. Until then the contact route is source-blocked; do not promote `sqrt(3)` or the port acceleration to a graphite coefficient.

@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "geomsource-20261028-01",
+  "run_id": "exact-001",
+  "created_at": "2026-10-28T23:27:56.042003+00:00",
+  "evidence": "EXACT",
+  "summary": "K4 masked gate fixed point and least norm contact port",
+  "command": "python3 experiments/geometry-contact-source-gate/replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "f9f3f1ed84c0d17414485b1472cd1640c3d7af57",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay.py",
+      "path": "inputs/001-replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/geometry-contact-source-gate/replay.py",
+      "sha256": "8401f2a450b57e7bb9a367a8d1a6e20e6ed6274a70b6925fa339fd2bc7a1e476",
+      "size_bytes": 1012
+    }
+  ],
+  "files": [
+    {
+      "path": "files/geomsource-exact-001.txt",
+      "sha256": "43a52145b4e99e6154eaf6162a5e85de1ebc199cddc9a3ddc20ab28eabd4e731",
+      "size_bytes": 81
+    }
+  ]
+}
