@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "graphite-kinetic-tradeoff",
+  "session": "graphkin-20261028-01",
+  "status": "held",
+  "created_at": "2026-10-28T15:31:09.310Z",
+  "base_revision": "6d5462c51e5a966066197bb56f33022ecd3a56aa",
+  "owned_paths": [
+    "tasks/graphite-kinetic-tradeoff.json",
+    "sessions/graphkin-20261028-01/",
+    "candidates/graphite-kinetic-tradeoff/",
+    "experiments/graphite-kinetic-tradeoff/",
+    "artifacts/graphkin-20261028-01/"
+  ]
+}
