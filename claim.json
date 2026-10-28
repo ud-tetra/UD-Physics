@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "geometry-six-sector-map",
+  "session": "geomsector-20261028-01",
+  "status": "held",
+  "created_at": "2026-10-28T21:27:00Z",
+  "base_revision": "64038f10624a2d4536167f0f96d44c57f6b36d8d",
+  "owned_paths": [
+    "tasks/geometry-six-sector-map.json",
+    "sessions/geomsector-20261028-01",
+    "candidates/geometry-six-sector-map",
+    "experiments/geometry-six-sector-map",
+    "artifacts/geomsector-20261028-01"
+  ]
+}
