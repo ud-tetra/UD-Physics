@@ -4,8 +4,10 @@
   "protocol_version": 2,
   "task": "geometry-s4-selection",
   "session": "geomsym-20261028-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-28T21:45:00Z",
+  "released_at": "2026-10-28T21:50:00Z",
+  "released_from_sha": "0b98a571578daf8880dcc68c6f4e3122b3be6411",
   "base_revision": "57588699e8b42399d3d846c44bbdf16a4ba4c253",
   "owned_paths": [
     "tasks/geometry-s4-selection.json",
