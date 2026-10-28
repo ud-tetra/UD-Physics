@@ -31,3 +31,5 @@ Exact symbolic proof and dependency-free numerical replay PASS. Validation PASS 
 ## 2026-10-28T21:10:29.540133+00:00
 
 Remote task claim held: e612b1ca3256bb943d5976cb3c7ab5a058072514. Bootstrap UNCLAIMED line is a pre-acquisition boot note; owned work began after lease creation.
+
+Research PR #233 merged at `90b18edcb80cfaa4f6a69bc0bbdaa0d5917e3807`; task claim exact-lease released at `1a4b8d57389b87809344bbcbaef933589dcc3e31`. Closure-only metadata.
