@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "icosahedral-reference-defect-20261028",
+  "goal": "Test a posteriori frozen reference error via direct dense DOP853 residual and source Jacobian; establish whether unprojected Gronwall can certify delta_num<0.01031",
+  "owned_paths": [
+    "tasks/icosahedral-reference-defect-20261028.json",
+    "sessions/ico-refdefect-20261028-gpt6-a1/",
+    "experiments/icosahedral-reference-defect/",
+    "candidates/icosahedral-reference-defect/",
+    "artifacts/ico-refdefect-20261028-gpt6-a1/",
+    ".github/workflows/icosahedral-reference-defect-20261028.yml"
+  ],
+  "dependencies": [
+    "integration-icosahedral-pulsetube-20261022"
+  ],
+  "status": "complete",
+  "result": "Exact full unanchored raw Euclidean Jacobian logarithmic norm mu2>=1/2; constant scalar Gronwall over u100 requires R<9.9436e-25 for delta<.01031 even if L=.5. Executed dense DOP853 residual sampled maxima limiting1.38776e-9 nominal2.75342e-9, CM samples match exact Galilean law 1e-15. Raw scalar estimator FAILED as useful method; true sampled numerical global error and all180 nonlinear tube OPEN.",
+  "next_action": "Obtain verified dense residual upper and a positive CM-exact plus projected internal-shape Green bound, bootstrap to certify source reference numerical delta_num<.01031."
+}

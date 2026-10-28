@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ico-refdefect-20261028-gpt6-a1",
+  "run_id": "defect-001",
+  "created_at": "2026-10-28T15:18:06.550Z",
+  "evidence": "CONDITIONAL",
+  "summary": "Actual frozen reference DOP853 dense polynomial derivative defect probes, exact Euclidean Galilean logarithmic-norm floor and rigorous raw Gronwall error-method obstruction",
+  "command": "GitHub Actions #40713694075: python3 experiments/icosahedral-reference-defect/dense_defect.py --out /tmp/ico-defect/defect.json",
+  "command_execution": "EXECUTED_GITHUB_ACTIONS_40713694075; THREE_DEFECT_NODES_PER_ACCEPTED_STEP_NOT_CERTIFIED_UNIFORM",
+  "source": {
+    "revision": "084408f4a44e0bd3294e8f15d39283550ab2bd31",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "dense-defect-constructor",
+      "name": "dense_defect.py",
+      "path": "inputs/dense_defect.py",
+      "sha256": "f775e3f1b0815e1503a69acb33737c6bdda704cfe3235d1c683f9a72ffe0f0ff",
+      "size_bytes": 5431,
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-reference-defect/dense_defect.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/defect.json",
+      "sha256": "e60baeaf53b815cd875c5713304126c0634df821410cc0275071f22b0ae95d8f",
+      "size_bytes": 3934
+    }
+  ]
+}
