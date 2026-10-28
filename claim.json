@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-geometry-s4-full-map",
+  "session": "geomfullidx-20261028-01",
+  "status": "held",
+  "created_at": "2026-10-28T22:15:00Z",
+  "base_revision": "8933720221fbdec2d115037e65e65203385c9d8e",
+  "owned_paths": [
+    "tasks/integration-geometry-s4-full-map.json",
+    "sessions/geomfullidx-20261028-01",
+    "state/CURRENT.md"
+  ]
+}
