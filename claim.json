@@ -4,8 +4,10 @@
   "protocol_version": 2,
   "task": "geometry-six-sector-map",
   "session": "geomsector-20261028-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-10-28T21:27:00Z",
+  "released_at": "2026-10-28T21:30:00Z",
+  "released_from_sha": "b164567cc532493ae99ecbe893b88b1981568a28",
   "base_revision": "64038f10624a2d4536167f0f96d44c57f6b36d8d",
   "owned_paths": [
     "tasks/geometry-six-sector-map.json",
