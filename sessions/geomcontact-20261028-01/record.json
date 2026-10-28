@@ -12,14 +12,17 @@
   "claims": {
     "geometry-contact-contract": {
       "held_sha": "9078a922c0275f79befc9a0757f668f9709d2ba0",
-      "status": "held"
+      "status": "released",
+      "released_sha": "cfa7f2afbcdc29397dc3d5d323ca8e562f5284a6"
     }
   },
   "checks": [
     "exact rational replay PASS",
-    "independent review NOT_RUN"
+    "validation PASS 406 records",
+    "16 unit tests PASS",
+    "independent physics review NOT_RUN"
   ],
-  "finding": "Assumed fixed contact and gamma positive retain root; contact work, heat and switch energy explicit; native sourcing open",
+  "finding": "Assumed fixed contact and gamma positive retain root; contact work, heat and switch energy explicit; native sourcing open Research PR #257 merged at bc4418f4f5e6d168ad44aa5945bbcc2044183ce3.",
   "next_action": "Derive packet boundary contact preparation and physical response",
   "checkpoint_at": "2026-10-28T22:45:17.548915+00:00",
   "checkpoint_source": {
