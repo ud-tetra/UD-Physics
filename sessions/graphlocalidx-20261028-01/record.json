@@ -12,7 +12,8 @@
   "claims": {
     "integration-graphite-local-index": {
       "held_sha": "b7e5902291e2cf62a5cc3ba66a2111f622f35fd1",
-      "status": "held"
+      "status": "released",
+      "released_sha": "b749df326ea807cf2c5180b722e43093bf411f0e"
     }
   },
   "checks": [
@@ -20,7 +21,7 @@
     "16 unit tests PASS",
     "independent physics review NOT_RUN"
   ],
-  "finding": "Indexed 168-pair support theorem and conditional 69.09% bound with radius-one inconclusive",
+  "finding": "Indexed 168-pair support theorem and conditional 69.09% bound with radius-one inconclusive; index PR #223 merged at 43ba8b660a118beda8cb02fd28beaf8332404ead",
   "next_action": "Source correlated kinetic metric or controlled-range readout, then force/loss test",
   "mathematical_profile": {
     "coefficient_domain": "N/A index only",
