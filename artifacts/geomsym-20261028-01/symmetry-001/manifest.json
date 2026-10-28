@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "geomsym-20261028-01",
+  "run_id": "symmetry-001",
+  "created_at": "2026-10-28T21:38:46.815596+00:00",
+  "evidence": "EXACT",
+  "summary": "Cube isometry stabilizer and symmetry-selection gate for six-sector map",
+  "command": "python3 experiments/geometry-s4-selection/replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "57588699e8b42399d3d846c44bbdf16a4ba4c253",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay.py",
+      "path": "inputs/001-replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/geometry-s4-selection/replay.py",
+      "sha256": "a80040c291fe84113a2cd24352f7b1086bc2b8a94d9fbd08639a8068ae37e3a9",
+      "size_bytes": 1967
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/geometry-s4-selection/mathematical_receipt.json",
+      "sha256": "2accf479e7958955b3e9dc57978f3bd457ae0d4f46efd9c35e70827606de68b2",
+      "size_bytes": 5733
+    }
+  ],
+  "files": [
+    {
+      "path": "files/README.md",
+      "sha256": "e01f46c97b03ae21889bbb243ff016315f91781e2d3ec3c2c70a7ab0ef35dae3",
+      "size_bytes": 3509
+    },
+    {
+      "path": "files/RESULTS.json",
+      "sha256": "b4ec1ae83dc7d82a120c64fb9b0584d7af696909f190b234a1ca5fb9bb972da0",
+      "size_bytes": 358
+    }
+  ]
+}

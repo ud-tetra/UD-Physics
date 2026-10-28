@@ -1,0 +1,31 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "geometry-s4-selection",
+  "session_id": "geomsym-20261028-01",
+  "question": "Can the existing six-sector map be S4-equivariant under cube Euclidean isometries?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "cube action restricted to Euclidean isometries",
+    "six-sector star map from preceding task",
+    "inversion mixture is statistical rather than a single map"
+  ],
+  "physical_mapping": "OPEN native selector/physical metric",
+  "target_exposure": "Previously selected six-sector map and user geometry idea; no physical measurements",
+  "fitted_choices": [],
+  "sources": [
+    "experiments/geometry-six-sector-map/README.md",
+    "supplied ledger v0.39(2) P03,Q166/Q167/Q170"
+  ],
+  "baseline": "finite cube signed-permutation isometry group",
+  "result": "star map only S3-equivariant under cube isometries; alternate vertex orbit admits S4; boundary contrast preparation-dependent",
+  "next_discriminant": "native selector or full equivariant map with physical readout",
+  "mathematical_receipts": [
+    "candidates/geometry-s4-selection/mathematical_receipt.json"
+  ]
+}

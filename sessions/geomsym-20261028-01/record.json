@@ -1,0 +1,39 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "geomsym-20261028-01",
+  "runtime": "Codex GPT-6; local Git computation and GitHub connector write",
+  "task": "geometry-s4-selection",
+  "goal": "Test full tetrahedral S4 equivariance of the selected six-sector cube map",
+  "created_at": "2026-10-28T21:37:14.728728+00:00",
+  "base_revision": "57588699e8b42399d3d846c44bbdf16a4ba4c253",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "geometry-s4-selection": {
+      "held_sha": "0b98a571578daf8880dcc68c6f4e3122b3be6411",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "exact group replay PASS",
+    "independent review NOT_RUN"
+  ],
+  "finding": "Selected star map only S3-equivariant under cube isometries; alternate vertex orbit supports S4",
+  "next_action": "Native selector or full S4-compatible map",
+  "mathematical_profile": {
+    "coefficient_domain": "finite integer group action, Euclidean squared distances",
+    "exactness_or_precision_plan": "enumerate all 48 signed cube coordinate permutations exactly",
+    "applicable_methods": [
+      "group action and stabilizers",
+      "pairwise metric invariants",
+      "null preparation/averaging"
+    ],
+    "clock_metric_units_conventions": "No clock; cube unit edge; source regular tetrahedron full S4; target Euclidean cube isometries"
+  },
+  "checkpoint_at": "2026-10-28T21:38:46.855507+00:00",
+  "checkpoint_source": {
+    "revision": "57588699e8b42399d3d846c44bbdf16a4ba4c253",
+    "dirty": true
+  }
+}
