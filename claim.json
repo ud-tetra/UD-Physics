@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-geometry-native-selector",
+  "session": "geomselectidx-20261028-01",
+  "status": "held",
+  "created_at": "2026-10-28T22:35:00Z",
+  "base_revision": "b74e84e8defe529293a260e43b6a1494811e2908",
+  "owned_paths": [
+    "tasks/integration-geometry-native-selector.json",
+    "sessions/geomselectidx-20261028-01",
+    "state/CURRENT.md"
+  ]
+}
