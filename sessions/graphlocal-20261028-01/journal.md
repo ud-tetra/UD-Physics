@@ -9,3 +9,4 @@
 
 Captured artifacts/graphlocal-20261028-01/local-001 (NUMERICAL): Endpoint-local odd readout support lower bound against conventional graphite Q
 - Repository validation PASS (357 records); 16 unit tests PASS.
+- Research PR #221 merged at `521707de9cf2ea1654a9fc8f6a8290c942c04f4f`; CI PASS; exact-lease claim released to `e4d62d1cb1fb1dec72237af768ca6e402e941bc6`.
