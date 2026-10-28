@@ -1,0 +1,18 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "icosahedral-projected-stability-20261028",
+  "session": "ico-projstable-20261028-gpt6-a1",
+  "status": "held",
+  "created_at": "2026-10-28T15:31:48.947Z",
+  "base_revision": "6d5462c51e5a966066197bb56f33022ecd3a56aa",
+  "owned_paths": [
+    "tasks/icosahedral-projected-stability-20261028.json",
+    "sessions/ico-projstable-20261028-gpt6-a1/",
+    "experiments/icosahedral-projected-stability/",
+    "candidates/icosahedral-projected-stability/",
+    "artifacts/ico-projstable-20261028-gpt6-a1/",
+    ".github/workflows/icosahedral-projected-stability-20261028.yml"
+  ]
+}
