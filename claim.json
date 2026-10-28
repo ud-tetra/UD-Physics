@@ -3,17 +3,13 @@
   "schema_version": 1,
   "protocol_version": 2,
   "task": "graphite-joint-quadrature-contact",
-  "session": "graphjoint-20261027-01",
-  "status": "released",
-  "created_at": "2026-10-27T17:45:07.839Z",
-  "base_revision": "360b72d751934eed428df9b7f89358d9260bbcad",
+  "session": "graphjointfix-20261028-01",
+  "status": "held",
+  "created_at": "2026-10-28T15:20:52.913Z",
+  "base_revision": "1fe78186ba1344f640efb366ae4547cc52ab55f7",
+  "previous_claim_sha": "b16b6fa59697176fc39dbb4459a78670bc807c1a",
   "owned_paths": [
-    "tasks/graphite-joint-quadrature-contact.json",
-    "sessions/graphjoint-20261027-01/",
-    "candidates/graphite-joint-quadrature-contact/",
-    "experiments/graphite-joint-quadrature-contact/",
-    "artifacts/graphjoint-20261027-01/"
-  ],
-  "released_at": "2026-10-27T17:48:18.956Z",
-  "released_from_sha": "3fdd3d5a96e88b3c45af326dda918224b1d39cf7"
+    "experiments/graphite-joint-quadrature-contact/README.md",
+    "sessions/graphjointfix-20261028-01/"
+  ]
 }
