@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-geometry-contact-source-gate",
+  "goal": "Index the integrated K4 masked contact source gate finding",
+  "owned_paths": [
+    "tasks/integration-geometry-contact-source-gate.json",
+    "sessions/geomsourceidx-20261028-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "geometry-contact-source-gate"
+  ],
+  "status": "complete"
+}
