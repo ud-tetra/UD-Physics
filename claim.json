@@ -1,0 +1,21 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-predictive-governance-v1-20261031",
+  "session": "gpt6-udgov-20261031-a91f3d",
+  "status": "held",
+  "created_at": "2026-10-31T18:30:15.347Z",
+  "base_revision": "752ea74708ccac0653790eaa32ae16b160c4e6af",
+  "owned_paths": [
+    "README.md",
+    "AGENTS.md",
+    "BOOTLOADER.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "instructions/UD_PREDICTIVE_DISCOVERY_PROGRAM_ADDENDUM_v1.0.md",
+    "docs/UD_PREDICTIVE_DISCOVERY_PROTOCOL_v1.0.md",
+    "sessions/gpt6-udgov-20261031-a91f3d/",
+    "tasks/integration-predictive-governance-v1-20261031.json"
+  ]
+}
