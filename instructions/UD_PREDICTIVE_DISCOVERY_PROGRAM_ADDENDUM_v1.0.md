@@ -1,0 +1,3 @@
+# UD Discovery program-wide addendum v1.0
+
+**2026-10-31, PROPOSED / PHYSICAL PROMOTION 0.** Read Discovery v1.2 first. The current task-claim/branch rules remain active. This addendum clarifies that development of observable hypotheses, target-informed inverse models and FIT is permitted without a preregistration gate. Before *confirmation*, freeze source generators, typed readouts, units, calibrations, nulls, falsifier and holdout; require non-constructor review. Exact algebra does not cure target exposure. Independent physics claims are correspondence-specific. Superseded assumptions remain in immutable history. Canonical program source: https://github.com/ud-tetra/UD/blob/ff89221626d3258dc458f01408f1fac80a072530/docs/UD_PREDICTIVE_DISCOVERY_PROTOCOL_v1.0.md

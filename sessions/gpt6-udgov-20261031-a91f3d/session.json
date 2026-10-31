@@ -1,0 +1,31 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "gpt6-udgov-20261031-a91f3d",
+  "runtime": "GPT-6 via GitHub connector",
+  "task": "integration-predictive-governance-v1-20261031",
+  "goal": "Stage program-wide predictive-discovery amendments",
+  "created_at": "2026-10-31T18:34:12.956Z",
+  "base_revision": "752ea74708ccac0653790eaa32ae16b160c4e6af",
+  "source_dirty_at_boot": false,
+  "status": "checkpoint_review_pending",
+  "claims": {
+    "ref": "refs/heads/claims/integration-predictive-governance-v1-20261031",
+    "held_sha": "47c90466c28d1fdf596d14a58ff7e943c79ae580"
+  },
+  "checks": [
+    {
+      "type": "repository CI",
+      "status": "NOT_RUN",
+      "reason": "connector-only write; await PR CI"
+    }
+  ],
+  "finding": "Governance metadata staged, no physics prediction executed",
+  "next_action": "Request non-constructor review and integrate this policy PR; then release live task claim",
+  "mathematical_profile": {
+    "coefficient_domain": "not applicable - governance edit",
+    "exactness_or_precision_plan": "reference to canonical version/hash only",
+    "applicable_methods": [],
+    "clock_metric_units_conventions": "N/A"
+  }
+}

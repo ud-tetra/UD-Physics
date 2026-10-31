@@ -1,0 +1,19 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-predictive-governance-v1-20261031",
+  "goal": "Coordinate UD-wide user-authorized governance-readme-boot adoption without scientific claim promotion",
+  "owned_paths": [
+    "README.md",
+    "AGENTS.md",
+    "BOOTLOADER.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "governance/UD_PREDICTIVE_DISCOVERY_ADOPTION_v1.0.md",
+    "docs/UD_PREDICTIVE_DISCOVERY_PROTOCOL_v1.0.md",
+    "instructions/UD_PREDICTIVE_DISCOVERY_PROGRAM_ADDENDUM_v1.0.md",
+    "sessions/gpt6-udgov-20261031-a91f3d/"
+  ],
+  "dependencies": [],
+  "status": "active_pending_pr_review"
+}
