@@ -1,28 +1,67 @@
-# UD Program Predictive Discovery - UD-Physics Adoption Note v1.0
+# UD Predictive Discovery Protocol v1.0
 
-**Date:** 2026-10-31
-**Status:** PROPOSED_FOR_REVIEW - not effective in main until integration.
-**Physical promotion:** 0.
+**Date:** 2026-10-31. **Scope:** program-wide (UD, UD-Physics, MQM, UD-Site, Data1).
+**Governance state:** user-authorized proposal; reviewed integration to main pending. The effective revision is the actual merged commit, not this draft branch.
+**Physical promotion:** 0. A research-process amendment makes no physical claim true.
 
-Canonical proposed authority: https://github.com/ud-tetra/UD/blob/ff89221626d3258dc458f01408f1fac80a072530/docs/UD_PREDICTIVE_DISCOVERY_PROTOCOL_v1.0.md
-Source commit: ff89221626d3258dc458f01408f1fac80a072530
-Canonical source SHA-256: d5e5f079996863ae156a3d35e1cf8ba5135c2f7b8699bd9f9a4b492828351310
-Candidate shortlist: https://github.com/ud-tetra/UD/blob/ff89221626d3258dc458f01408f1fac80a072530/docs/UD_FIRST_THREE_PREDICTION_CANDIDATES_v1.0.md
-Shortlist SHA-256: 5d2fe31521e61d79182027f790db9cc3e463e8fa9ca74852443135eb5ab08956
+## Mission
 
-## Local applicability
+UD must generate quantitative, falsifiable predictions, not merely mathematical correspondences. **Explore freely; calculate rigorously; predict explicitly; test independently.** Permission to investigate an observable does not grant permission to claim physical recovery.
 
-Retain Discovery v1.2 target-informed freedom, claim refs, unique session ownership and isolation. Record FIT origins, use the program's observable contract before proposing mainline export. Mainline promotion and frozen no-gos remain separate.
+## Work lanes
 
-## Agent instructions
+**D0 DEVELOPMENT:** Free exploration of candidate mechanisms, inverse design, target-selected formulas, fitting, analogies, simulations, alternative assumptions and failed attempts. The researcher must label these FIT / CANDIDATE / HYPOTHESIS and record exposure, knobs, rejected families and dependency changes. "DEVELOPMENT - NO REGISTRY PROMOTION" requires no approval to investigate. A frozen no-go remains valid under its hypotheses; a modified premise is a separate branch.
 
-1. Verify exact repo/base commit and applicable task/contribution/mirror restrictions.
-2. Read this local note and the canonical protocol at the pinned revision above; check whether a newer merged version supersedes it.
-3. Declare D0 development, P0 prediction construction, or R registry/confirmation; distinguish EXACT/DERIVED/FIT/CANDIDATE/NUMERICAL/EMPIRICAL/NO-GO/OPEN.
-4. Identify typed state, generator, boundary conditions, observable, measurement, units, calibration, source exposure, baseline and falsifier. OPEN_GATED if missing.
-5. Preserve original files, failed cases and frozen results. Do not silently rebase a claim or rewrite historical sources.
-6. Report what was committed versus PR-proposed, CI/test NOT_RUN versus PASS, and GitHub versus live-site deployment.
+**P0 PREDICTION CONSTRUCTION:** Identify source-bound state, generator/evolution rule, boundary/initial conditions, conserved quantities, calibrated measurement candidate and a discriminating observable. A candidate without a carrier, readout, unit map or comparison threshold remains OPEN_GATED; it can still be studied.
 
-This local adoption note is a lightweight boot mirror of the program policy, not an independent scientific claim.
+**R CONFIRMATION / REGISTRY:** Advancement to evidentiary prediction status requires non-constructor review, frozen hypotheses and code, held-out testing, and independent replication. A target-exposed fitting result is exploratory until tested on genuinely independent evidence.
 
-Canonical full text is at the pinned source URL above; this scoped local document does not replace it.
+## Claims and provenance
+
+Use EXACT only for proofs or reproducible exact calculations under explicit assumptions; DERIVED for source-bound deductions; CANDIDATE/HYPOTHESIS for proposals; FIT for target-selected parameters, equations and normalizations; NUMERICAL for finite calculations; EMPIRICAL for measured data with uncertainty; NO-GO for scoped obstructions; OPEN for unresolved gates. An EXACT conditional model is not a demonstrated physical theory.
+
+For every consequential claim, type its **carrier, space, operator, observable, metric, normalization, units, clock and orientation**. Include source version/section/object, assumptions, target-exposure log, parameter-selection history, source and data SHA-256 where useful, baseline model, uncertainty, independent reviewer and falsifier. Equal values do not identify objects of different type.
+
+## Required prediction contract
+
+Every candidate intending confirmatory evaluation needs a versioned record with:
+1. source revision, constructor, scope, claim level and full dependency graph;
+2. native state space, dynamics, generator, admissible carrier, initial and boundary conditions;
+3. mathematical observable and proposed physical measurement map (including units, signs, normalization and calibration);
+4. exact or numerical value, interval, distribution, inequality or directional/scaling prediction;
+5. target exposure, fit history, all choices searched, nuisance parameters and exclusions;
+6. competing models, null controls, uncertainty, predetermined falsifier and acceptance rule;
+7. frozen code/data hashes, preregistration date and blinded/held-out partition;
+8. execution, failure, replication, retraction and correspondence-specific promotion receipts.
+
+No physical prediction is "parameter-free" if a chosen carrier, map, selection filter, normalization or prior target supplied unreported degrees of freedom. The best match among many tried formulas is FIT, not independent derivation. Report negative and nondiscriminating tests.
+
+## Evidence ladder (future prediction promotion after integration)
+
+Preserve the substantive proposal in docs/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md. This amendment adopts the following CRL-2 division for *new* prediction decisions, without retroactively changing any accepted frozen claim:
+- **CRL-2a PROPOSED:** bridge documented and author-checked.
+- **CRL-2b PRE-REGISTERED:** model and falsifier frozen before relevant evidence; a non-constructor adversarial review passed.
+- **CRL-2c EXECUTED:** one genuinely blinded/held-out run survived the frozen criterion.
+- **CRL-2d REPLICATED:** an independent replication survived.
+Only CRL-2d may be considered for CRL-3 physical identification, which still needs an independent bridge test and custodian ruling. No skipping. Constructor checks, another LLM's review, CI, independent empirical measurement and replication are distinct evidence types.
+
+**Anti-erosion:** citations to dependent assumptions cannot strengthen them. Revise/demote an upstream premise -> automatically hold dependent claims for re-derivation. False claims demote immediately, append-only; promotion requires independent review. Preserve historical versions and retractions.
+
+## Tests and physical readouts
+
+Predictions should distinguish UD from simpler null or established models under matched complexity, not only agree with familiar constants. Declare physical units and calibration uncertainty before comparison. Event count is not elapsed physical time; topology or a trace identity is not an apparatus readout. Define observables, SI conversion, validation window, data exclusions, and decision rules before target exposure when feasible. After exposure, disclose amendments and seek fresh held-out data.
+
+## Program-wide boot and publication routing
+
+- **UD:** canonical source for this amendment; existing captured history is immutable, with fresh capture manifests and events.
+- **UD-Physics:** discovery sandbox remains permissive and claim-coordinated; no automatic mainline export; source-target exposure always recorded.
+- **MQM:** research simulations, code/resource benchmarks, and empirical quantum-hardware results remain separate.
+- **UD-Site:** one-way versioned public Sites mirror. Do not edit managed site/ or source/ trees to publish scientific changes. Update source upstream and sync only with a matching source version and hash receipt.
+- **Data1:** policy controls proposed experimental interpretation but does not change P4 runner configuration, data, or acceptance criteria.
+- Every repo boot/README must load the canonical version or a local adoption pointer; record the base SHA, branch, PR, tests actually performed, and outstanding review/deployment. A GitHub commit is not a Sites deployment.
+
+## Explicit dependency guards
+
+Read docs/UD_PREREGISTRATION_PACKET_v1.0.md **with** docs/UD_PACKET_v1.1_ERRATA.md and docs/UD_EXTERNAL_REVIEW_BRIEF.md. The existing CRL-2 amendment is a proposal at its archived source; its adoption is not a retrospective scientific promotion. Check the current typed coefficient ledger and any subsequent versioned amendments. No change to historical mathematics or physical promotion is implied.
+
+**Decision rule:** exploration is permissive; physical identification is difficult by design. Physical promotion remains **0** absent an independently supported, specifically identified correspondence.
