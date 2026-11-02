@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-harmonic-preparation-20261102",
+  "session": "graphharmidx-20261102-01",
+  "created_at": "2026-11-02T21:23:23.649Z",
+  "base_revision": "3b7ed771d1c00197d06d4eebbd7872663cf3145b",
+  "owned_paths": [
+    "state/CURRENT.md",
+    "tasks/integration-graphite-harmonic-preparation-20261102.json",
+    "sessions/graphharmidx-20261102-01/"
+  ],
+  "status": "held"
+}
