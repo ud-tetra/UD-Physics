@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "graphite-harmonic-preparation",
+  "session": "graphharm-20261102-01",
+  "created_at": "2026-11-02T21:17:57.293Z",
+  "base_revision": "3b9f6dee5e8c69cf9b4d11787966bda05f99137d",
+  "owned_paths": [
+    "tasks/graphite-harmonic-preparation.json",
+    "sessions/graphharm-20261102-01/",
+    "candidates/graphite-harmonic-preparation/",
+    "experiments/graphite-harmonic-preparation/",
+    "artifacts/graphharm-20261102-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
