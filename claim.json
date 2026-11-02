@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-graphite-signed-forecast-gate",
+  "session": "graphgateidx-20261102-01",
+  "status": "held",
+  "created_at": "2026-11-02T19:27:20Z",
+  "base_revision": "a947c6e213eb3ac7a7697116a144ebe0fe239591",
+  "owned_paths": [
+    "tasks/integration-graphite-signed-forecast-gate.json",
+    "sessions/graphgateidx-20261102-01",
+    "state/CURRENT.md"
+  ]
+}
