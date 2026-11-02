@@ -12,7 +12,10 @@
   "claims": {
     "integration-graphite-harmonic-preparation-20261102": {
       "held_sha": "b9212a143c2ccfd568b8bc59c6bb1f4ca8f958df",
-      "status": "held"
+      "status": "released",
+      "released_sha": "3ce1b27e456af811adf1e6fb4c773e030a47eb84",
+      "merged_pr": 272,
+      "merged_sha": "d3b92d20391ccae7859505726176b9062940fbef"
     }
   },
   "checks": [
