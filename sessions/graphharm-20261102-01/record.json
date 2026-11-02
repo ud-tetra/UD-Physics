@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphharm-20261102-01",
+  "runtime": "Codex GPT-6; local exact compute and GitHub connector write",
+  "task": "graphite-harmonic-preparation",
+  "goal": "Test a prepared native harmonic edge-square source without force fitting",
+  "created_at": "2026-11-02T21:19:08Z",
+  "base_revision": "3b9f6dee5e8c69cf9b4d11787966bda05f99137d",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "graphite-harmonic-preparation": {
+      "held_sha": "87d340027b91661327231de3490bc0dd0d281d1e",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "integer/Fraction replay PASS: nine finite preparations on N=7,13,19",
+    "independent symbolic derivation of source columns and rank PASS",
+    "independent physics review NOT_RUN",
+    "python3 scripts/validate.py PASS (424 records)",
+    "python3 -m unittest discover -s tests -q PASS (16 tests)"
+  ],
+  "finding": "Prepared harmonic square is stationary and rank-one; zero harmonic initial state cannot generate it under ungated flow; no N7 selection",
+  "next_action": "Source a preparation or open-system gate and separately register material cross-Hessian and bath",
+  "mathematical_profile": {
+    "coefficient_domain": "Z and Q for finite replay; R for general symbolic amplitude",
+    "exactness_or_precision_plan": "exact integer/Fraction; no floating approximation or physical fit",
+    "applicable_methods": [
+      "chain boundary",
+      "harmonic kernel",
+      "rank and symmetry",
+      "stock conservation"
+    ],
+    "clock_metric_units_conventions": "native continuous s, unit chain metric, oriented A-to-B edges, unnormalized H=sqrt(N) M; physical time and units OPEN"
+  }
+}
