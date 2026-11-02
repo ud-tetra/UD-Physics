@@ -11,5 +11,7 @@
     "tasks/integration-graphite-contact-pulse-20261102.json",
     "sessions/graphpulseidx-20261102-01/"
   ],
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-02T21:38:04.943Z",
+  "released_from_sha": "8bc1465e8a08167fd18fd68759356ad9e3035769"
 }
