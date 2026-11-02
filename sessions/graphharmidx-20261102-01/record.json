@@ -1,0 +1,33 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphharmidx-20261102-01",
+  "runtime": "Codex GPT-6; local validation and GitHub connector write",
+  "task": "integration-graphite-harmonic-preparation-20261102",
+  "goal": "Index PR #270 scoped result without physical promotion",
+  "created_at": "2026-11-02T21:24:15Z",
+  "base_revision": "3b7ed771d1c00197d06d4eebbd7872663cf3145b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-graphite-harmonic-preparation-20261102": {
+      "held_sha": "b9212a143c2ccfd568b8bc59c6bb1f4ca8f958df",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "python3 scripts/validate.py PASS (426 records)",
+    "python3 -m unittest discover -s tests -q PASS (16 tests)",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Exact prepared stationary rank-one native port; no spontaneous preparation or N7 selection",
+  "next_action": "Find source of harmonic preparation and independently materialize physical C,K,D",
+  "mathematical_profile": {
+    "coefficient_domain": "Imported exact integer/Fraction result only",
+    "exactness_or_precision_plan": "Read-only integration, no new calculation",
+    "applicable_methods": [
+      "provenance/status indexing"
+    ],
+    "clock_metric_units_conventions": "As in graphite-harmonic-preparation; physical time OPEN"
+  }
+}
