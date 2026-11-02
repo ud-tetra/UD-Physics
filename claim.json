@@ -11,5 +11,7 @@
     "tasks/integration-graphite-harmonic-preparation-20261102.json",
     "sessions/graphharmidx-20261102-01/"
   ],
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-02T21:25:36.927Z",
+  "released_from_sha": "b9212a143c2ccfd568b8bc59c6bb1f4ca8f958df"
 }
