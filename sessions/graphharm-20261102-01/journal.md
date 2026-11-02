@@ -11,3 +11,4 @@
 Captured artifacts/graphharm-20261102-01/exact-001 (EXACT): Prepared harmonic-square port, nine integer/Fraction quotient checks
 - Captured immutable schema-2 run at artifacts/graphharm-20261102-01/exact-001; source replay SHA-256 88dce69f3905c97966965fd7b2f670ae799027d7d0955789c2bbee8d7d253994.
 - Repository validation PASS (424 records); 16 unit tests PASS. Claim held until PR integration.
+- PR #270 merged at bb9c8c911fedb93759da176cbb4c1b697dfeba0d; task claim released at 2e7ba125180709586a36339490666319b8bd1795 by exact-SHA lease.

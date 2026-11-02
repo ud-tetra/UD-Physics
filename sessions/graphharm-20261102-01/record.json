@@ -12,7 +12,10 @@
   "claims": {
     "graphite-harmonic-preparation": {
       "held_sha": "87d340027b91661327231de3490bc0dd0d281d1e",
-      "status": "held"
+      "status": "released",
+      "released_sha": "2e7ba125180709586a36339490666319b8bd1795",
+      "merged_pr": 270,
+      "merged_sha": "bb9c8c911fedb93759da176cbb4c1b697dfeba0d"
     }
   },
   "checks": [
