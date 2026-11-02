@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-contact-pulse-20261102",
+  "goal": "Index the scoped graphite pulse and harmonic-charge material gate",
+  "owned_paths": [
+    "tasks/integration-graphite-contact-pulse-20261102.json",
+    "sessions/graphpulseidx-20261102-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "graphite-contact-pulse-casimir"
+  ],
+  "status": "complete"
+}
