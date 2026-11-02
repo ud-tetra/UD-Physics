@@ -11,3 +11,4 @@
 Captured artifacts/graphpulse-20261102-01/exact-001 (EXACT): Supplied one-edge pulse transfer and harmonic Casimir checks
 - Captured immutable schema-2 run at artifacts/graphpulse-20261102-01/exact-001; replay SHA-256 6d4f98a4506d468dc5e830e4ab543f7be7f7546ed503fd04efa16105752316c1.
 - Repository integrity validation PASS (430 records); 16 tests PASS. Claim held pending PR merge.
+- PR #274 merged at f4c1c4393ab0f18d78dddf64063119f36763b2ad; claim released at 9006ec4ced135095ffbdcf505d2b560ea49e639e by exact-SHA lease.
