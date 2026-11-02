@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "graphite-contact-pulse-casimir",
+  "session": "graphpulse-20261102-01",
+  "created_at": "2026-11-02T21:32:29.069Z",
+  "base_revision": "1993cadecaae3a5fe98773abca5cc399d2e22df4",
+  "owned_paths": [
+    "tasks/graphite-contact-pulse-casimir.json",
+    "sessions/graphpulse-20261102-01/",
+    "candidates/graphite-contact-pulse-casimir/",
+    "experiments/graphite-contact-pulse-casimir/",
+    "artifacts/graphpulse-20261102-01/"
+  ],
+  "status": "held"
+}
