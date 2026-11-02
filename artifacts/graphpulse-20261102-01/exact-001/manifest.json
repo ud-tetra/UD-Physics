@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graphpulse-20261102-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-02T21:33:48.381724+00:00",
+  "evidence": "EXACT",
+  "summary": "Supplied one-edge pulse transfer and harmonic Casimir checks",
+  "command": "python3 experiments/graphite-contact-pulse-casimir/replay_contact_pulse.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "1993cadecaae3a5fe98773abca5cc399d2e22df4",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay_contact_pulse.py",
+      "path": "inputs/001-replay_contact_pulse.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-contact-pulse-casimir/replay_contact_pulse.py",
+      "sha256": "6d4f98a4506d468dc5e830e4ab543f7be7f7546ed503fd04efa16105752316c1",
+      "size_bytes": 2903
+    }
+  ],
+  "files": [
+    {
+      "path": "files/exact-results.txt",
+      "sha256": "fcc65c9797b09e3e4382ef4c85ef20e652a66f80c49ce5381bc8aada52002368",
+      "size_bytes": 1122
+    }
+  ]
+}
