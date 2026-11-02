@@ -13,5 +13,7 @@
     "experiments/graphite-contact-pulse-casimir/",
     "artifacts/graphpulse-20261102-01/"
   ],
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-02T21:34:50.979Z",
+  "released_from_sha": "0ec7ee8547b5584d15f3324e13a9cee52581ed74"
 }
