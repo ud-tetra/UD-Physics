@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphgate-20261102-01",
+  "runtime": "Codex GPT-6; local exact computation and GitHub connector write",
+  "task": "graphite-signed-forecast-gate",
+  "goal": "Freeze a signed-force statistical test contract for conventional versus UD forecasts",
+  "created_at": "2026-11-02T19:23:11.061524+00:00",
+  "base_revision": "752ea74708ccac0653790eaa32ae16b160c4e6af",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "graphite-signed-forecast-gate": {
+      "held_sha": "03b4a9d9d82be6020c582d308f6d52626873a937",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "exact Fraction LDL and fixture replay PASS",
+    "analytic Gaussian likelihood proof PASS",
+    "independent physics review NOT_RUN",
+    "python3 scripts/validate.py PASS (418 records)",
+    "python3 -m unittest discover -s tests -q PASS (16 tests)"
+  ],
+  "finding": "Exact simple-vs-simple Gaussian test and conditional power gate; physical mu1, covariance, force data absent",
+  "next_action": "Obtain independent source/material forecast and same-contact signed forces with detector thresholds",
+  "mathematical_profile": {
+    "coefficient_domain": "Q for synthetic vectors/covariance; R Gaussian tails",
+    "exactness_or_precision_plan": "exact rational solve then double-precision NormalDist tails; no empirical fit",
+    "applicable_methods": [
+      "positive-definite LDL factorization",
+      "quadratic likelihood ratio",
+      "normal linear-projection law",
+      "correlated uncertainty and power"
+    ],
+    "clock_metric_units_conventions": "Physical time/speed/load rows are declared by experiment; signed force unit specified per input; covariance in force squared; native clock map OPEN"
+  }
+}

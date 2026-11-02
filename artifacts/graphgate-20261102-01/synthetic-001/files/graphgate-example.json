@@ -1,0 +1,17 @@
+{
+  "status": "CONDITIONAL_GAUSSIAN_GATE",
+  "force_unit": "arbitrary synthetic force unit",
+  "dimension": 2,
+  "d_squared_exact": "4/3",
+  "d": 1.1547005383792515,
+  "alpha": "1/20",
+  "target_power": "4/5",
+  "required_d_for_target_power": 2.486474860524386,
+  "nominal_power": 0.31201278681845457,
+  "identifiable": true,
+  "freeze_reference": "synthetic-fixture: analytic construction; no preregistration claim",
+  "delta_chi_squared_exact": "0",
+  "threshold_delta_chi_squared": 2.4652934038585244,
+  "one_sided_null_p": 0.28185143082538655,
+  "favors_frozen_H1_at_alpha": false
+}

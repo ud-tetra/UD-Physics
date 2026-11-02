@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-signed-forecast-gate",
+  "goal": "Executable signed-force forecast and correlated-uncertainty study-design gate for graphite",
+  "owned_paths": [
+    "tasks/graphite-signed-forecast-gate.json",
+    "sessions/graphgate-20261102-01",
+    "candidates/graphite-signed-forecast-gate",
+    "experiments/graphite-signed-forecast-gate",
+    "artifacts/graphgate-20261102-01"
+  ],
+  "dependencies": [
+    "geometry-contact-source-gate",
+    "graphite-manuscript-v3"
+  ],
+  "status": "complete"
+}

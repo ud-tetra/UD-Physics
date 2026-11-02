@@ -1,0 +1,16 @@
+{
+  "provenance": "SYNTHETIC_EXAMPLE_ONLY; no graphite measurement",
+  "mode": "evaluation",
+  "freeze_reference": "synthetic-fixture: analytic construction; no preregistration claim",
+  "force_unit": "arbitrary synthetic force unit",
+  "alpha": "1/20",
+  "target_power": "4/5",
+  "rows": [
+    "synthetic paired-angle position A",
+    "synthetic paired-angle position B"
+  ],
+  "mu0": ["0", "0"],
+  "mu1": ["1", "1"],
+  "covariance": [["1", "1/2"], ["1/2", "1"]],
+  "observed": ["1", "0"]
+}
