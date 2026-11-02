@@ -12,7 +12,10 @@
   "claims": {
     "integration-graphite-signed-forecast-gate": {
       "held_sha": "4eba8ce9b2703142e3b7c458b5cc3b28effd4bef",
-      "status": "held"
+      "status": "released",
+      "released_sha": "3367c0ed863b5223e0805e62fd5690f5a1cafb71",
+      "merged_pr": 268,
+      "merged_sha": "91e16575036303bec1c688b24a6c9441cc529d09"
     }
   },
   "checks": [
