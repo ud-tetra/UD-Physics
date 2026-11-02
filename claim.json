@@ -13,5 +13,7 @@
     "artifacts/graphharm-20261102-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-02T21:20:49.863Z",
+  "released_from_sha": "87d340027b91661327231de3490bc0dd0d281d1e"
 }
