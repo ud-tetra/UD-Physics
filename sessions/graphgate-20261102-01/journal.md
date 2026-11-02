@@ -11,3 +11,5 @@ Next: independent model and covariance freeze plus new signed force measurements
 Captured artifacts/graphgate-20261102-01/synthetic-001 (CONDITIONAL): Exact synthetic signed force likelihood and conditional Gaussian power gate
 
 Immutable synthetic-001 capture stores script, fixture and outputs with SHA-256. Exact rational d²=4/3; conditional nominal power≈0.3120. Validation PASS 418 records; 16 repository tests PASS.
+
+Published PR #266 as a2b8cebf0912d34ee02c6a05054f50bb9899b79b; exact-lease claim release 0d17c7e4da5186a7662a9003384b6549de664cd3.
