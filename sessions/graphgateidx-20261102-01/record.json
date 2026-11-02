@@ -1,0 +1,25 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "graphgateidx-20261102-01",
+  "runtime": "Codex GPT-6; local validation and GitHub connector write",
+  "task": "integration-graphite-signed-forecast-gate",
+  "goal": "Index signed graphite forecast test gate in CURRENT.md",
+  "created_at": "2026-11-02T19:27:15.042121+00:00",
+  "base_revision": "a947c6e213eb3ac7a7697116a144ebe0fe239591",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-graphite-signed-forecast-gate": {
+      "held_sha": "4eba8ce9b2703142e3b7c458b5cc3b28effd4bef",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "python3 scripts/validate.py PASS",
+    "python3 -m unittest discover -s tests -q PASS",
+    "independent physics review NOT_RUN"
+  ],
+  "finding": "Indexed conditional signed graphite force likelihood and power gate; physical mu1 and data open",
+  "next_action": "Freeze material forecast and acquire new force/loss data"
+}

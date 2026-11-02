@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-graphite-signed-forecast-gate",
+  "goal": "Index executable signed graphite forecast gate",
+  "owned_paths": [
+    "tasks/integration-graphite-signed-forecast-gate.json",
+    "sessions/graphgateidx-20261102-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "graphite-signed-forecast-gate"
+  ],
+  "status": "complete"
+}
