@@ -12,7 +12,10 @@
   "claims": {
     "graphite-contact-pulse-casimir": {
       "held_sha": "0ec7ee8547b5584d15f3324e13a9cee52581ed74",
-      "status": "held"
+      "status": "released",
+      "released_sha": "9006ec4ced135095ffbdcf505d2b560ea49e639e",
+      "merged_pr": 274,
+      "merged_sha": "f4c1c4393ab0f18d78dddf64063119f36763b2ad"
     }
   },
   "checks": [
