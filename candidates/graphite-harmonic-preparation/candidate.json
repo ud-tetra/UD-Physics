@@ -1,0 +1,31 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "graphite-harmonic-preparation",
+  "session_id": "graphharm-20261102-01",
+  "question": "Can a native prepared harmonic edge mode yield a stationary even port and select seven cells?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Ungated fixed finite unit-metric chain generator",
+    "Prepared nonzero y=Ha; edge weight chosen as y^2",
+    "No physical coupling or bath identified"
+  ],
+  "physical_mapping": "OPEN; C_a=lambda T^T S R_h only assumed",
+  "target_exposure": "21.8 and 38.2 degree peaks known; no target value used",
+  "fitted_choices": [],
+  "sources": [
+    "experiments/graphite-packet-reciprocity/README.md@3b9f6dee5e8c69cf9b4d11787966bda05f99137d",
+    "project_sources ledger v0.39(2) Q22-Q26 as cited in graphite-native-source-gate"
+  ],
+  "baseline": "Isotropic canonical ensemble has mean port zero; no seven-cell selection",
+  "result": "EXACT stationary native weight, rank-one optical port, conserved harmonic amplitude; common to N7,N13,N19",
+  "next_discriminant": "Derive preparation and physical map independently",
+  "mathematical_receipts": [
+    "candidates/graphite-harmonic-preparation/mathematical_receipt.json"
+  ]
+}
