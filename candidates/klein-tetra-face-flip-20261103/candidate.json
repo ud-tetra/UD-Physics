@@ -1,0 +1,37 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "session_id": "ktff-20261103-01",
+  "question": "Can tetrahedral face flips generate Klein topology or an observable orientation twist without imported physical metric?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Tetrahedral boundary is the standard oriented simplicial S2, no hidden face identifications",
+    "Whole-face pairing test identifies two triangles pairwise via arbitrary vertex bijections; edge incidence checked on 2 representative faces",
+    "Klein quotient is a two-triangle DELTA-complex from square edge identifications; not a four-face tetrahedral simplicial complex",
+    "Flat O2 seam holonomy is introduced as an explicit new transport representation, not native K4 generator",
+    "Example phase angle pi/2 is a chosen matrix fixture, not physical"
+  ],
+  "baseline": "ordinary orientable K4 shell and untwisted torus edge-gluing control",
+  "physical_mapping": "none; no mass, physical time, or inside/outside map",
+  "target_exposure": "Klein bottle requested by user before topology search; 2-torsion and nonorientability are known topology, not blind prediction",
+  "fitted_choices": [
+    "new edge-glued quotient topology",
+    "O2 rotation angle pi/2 exact fixture"
+  ],
+  "sources": [
+    "UD-Physics main 0eef9a3f77198810b35bee8d3ef578ebc3af403a; qpb1-local-generators/README.md v1.0 §§1–3",
+    "UD-Physics qpb1-loop-history/HISTORY_CONTRACT.md v1.0, edgewise sign connection caveat",
+    "Roland? none; standard Klein square gluing reference MathWorld and UKY topology notes"
+  ],
+  "result": "K4 shell S2 cannot be Klein by face flipping or Pachner moves; 108 whole-face pairings fail necessary 2-manifold incidence. New Klein 2-triangle Delta-complex has ∂2 rank2 over Q, Smith(1,2), H1=Z+Z2, H2=0; orientability cocycle w1 and O2 reflection holonomy permit a concrete candidate seam transport but new topology is assumed.",
+  "next_discriminant": "Construct minimal tetrahedral patch graph/quotient with flat orientation 1-cocycle and an explicit incidence-preserving transport intertwiner; distinguish contractible face curvature from global topology.",
+  "mathematical_receipts": [
+    "candidates/klein-tetra-face-flip-20261103/mathematical_receipt.json"
+  ]
+}
