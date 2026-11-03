@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-icosahedral-greenbounds-20261022",
+  "goal": "Bound full-pulse forced response and proper-alignment remainder toward the u100 nonlinear all-phase certificate.",
+  "owned_paths": [
+    "tasks/integration-icosahedral-greenbounds-20261022.json",
+    "sessions/icosahedral-greenbounds-20261022-a1/",
+    "experiments/icosahedral-greenbounds/",
+    "candidates/icosahedral-greenbounds/",
+    "artifacts/icosahedral-greenbounds-20261022-a1/",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "integration-icosahedral-pulsetube-20261022"
+  ],
+  "status": "active"
+}
