@@ -1,0 +1,43 @@
+{
+  "diagonal_metric_selector": "For fixed nonzero Q169 incidence coefficients and diagonal positive D, D-skew forces d_i=d_j along every Hasse edge; connected new graph => D_new=d I. Boundary normalization d=1 selects I_new. Isolated memory weights remain unconstrained.",
+  "identities": {
+    "Anew_T_minus_T_K=R": true,
+    "K_H_skew": true,
+    "TtJT=H": true,
+    "Tt_J_R=0": true,
+    "event_image_invariant": false,
+    "projection_idempotent": true
+  },
+  "new_hasse_components": [
+    27
+  ],
+  "source_base": "5295ab317a1013e27296c20d44e8ee6a06784fba",
+  "spaces": {
+    "ambient": 29,
+    "memory": 2,
+    "new": 27,
+    "old": 23
+  },
+  "transverse_nonzero_rows": 7,
+  "transverse_residual_rank": 6,
+  "witness": {
+    "born_edge_derivative": "1",
+    "born_edge_stock_leading_coefficient": "1*tau^2",
+    "born_new_edge": [
+      3,
+      4
+    ],
+    "memory_residual_nonzero": [],
+    "new_residual_nonzero": [
+      [
+        14,
+        "1"
+      ]
+    ],
+    "old_basis_index": 3,
+    "old_basis_simplex": [
+      3
+    ],
+    "residual_squared_J": "1"
+  }
+}
