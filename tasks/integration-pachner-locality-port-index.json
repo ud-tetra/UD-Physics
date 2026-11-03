@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-pachner-locality-port-index",
+  "goal": "Integrate scoped Pachner locality and native port finding into current-state index",
+  "owned_paths": [
+    "tasks/integration-pachner-locality-port-index.json",
+    "sessions/pachlocalidx-20261103-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "pachner-locality-port-20261103"
+  ],
+  "status": "complete"
+}
