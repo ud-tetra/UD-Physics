@@ -1,0 +1,51 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "codex-20261103-affine-01",
+  "runtime": "Codex, model unknown; connector write and local Git/Python",
+  "task": "ref01-affine-clock",
+  "goal": "Separate constant clock offset and rate drift in bipyramid raw returns",
+  "created_at": "2026-11-03T23:01:41.886258+00:00",
+  "base_revision": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ref01-affine-clock": {
+      "ref": "refs/heads/claims/ref01-affine-clock",
+      "sha": "bb7e6c4a6ec675efbd63a1be93dbaad992f1ba01",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "command": "python scripts/validate.py",
+      "result": "PASS (473 records)"
+    },
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "result": "PASS (16 tests)"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python -B affine.py bip.json",
+      "result": "PASS (exact constructor certificate)"
+    }
+  ],
+  "finding": "Exact conditional joint inverse <=420, radius 1/10^10",
+  "next_action": "Review certificate and source a native timing and preparation contract",
+  "mathematical_profile": {
+    "coefficient_domain": "Q for matrices and bounds; R for continuous evolution",
+    "exactness_or_precision_plan": "Numerical design scan; rational Taylor enclosure and uniform Hessian certificate",
+    "applicable_methods": [
+      "weighted operator adjoints",
+      "projection",
+      "exact Taylor bounds",
+      "inverse sensitivity"
+    ],
+    "clock_metric_units_conventions": "Dimensionless continuous affine time; published oriented simplices; unit coarse preparations in metric H(theta)."
+  },
+  "checkpoint_at": "2026-11-03T23:03:03.964020+00:00",
+  "checkpoint_source": {
+    "revision": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+    "dirty": true
+  }
+}

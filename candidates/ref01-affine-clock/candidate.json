@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "ref01-affine-clock",
+  "session_id": "codex-20261103-affine-01",
+  "question": "Separate constant clock offset and rate drift in bipyramid raw returns",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT"
+  ],
+  "assumptions": [
+    "Fixed Q167/Q173-style masks with candidate weighted adjoints",
+    "One common affine time warp across all samples",
+    "Same four-dimensional ungated-generator-preserving family"
+  ],
+  "physical_mapping": "OPEN; physical promotion 0",
+  "target_exposure": "No empirical targets; numerical schedule design scan inspected",
+  "fitted_choices": [
+    "Sixth sample: channel 2 at 5/4, minimizing estimated inverse norm over 20 scanned choices"
+  ],
+  "sources": [
+    "https://github.com/ud-tetra/UD/pull/120"
+  ],
+  "baseline": "Five-return shared-offset certificate; four raw returns at 3/2 plus channel 3 at 1/2",
+  "result": "Six raw returns on max-norm radius 1/10^10 jointly identify four metric parameters, additive offset and fractional rate with inverse Lipschitz <=420.",
+  "next_discriminant": "Test a time reference or expanded parameter domain and error budget with native preparation and gate realization explicitly sourced.",
+  "mathematical_receipts": [
+    "mathematical_receipt.json"
+  ]
+}
