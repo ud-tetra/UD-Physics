@@ -65,3 +65,15 @@ python3 -m unittest discover -s tests -v
 Expected exact output: `results.json`. Target exposure is explicit: Klein surface was the user's requested comparator, and the optional angle π/2 was chosen as an exact integer-matrix fixture; no physically measured values were fitted.
 
 **Decision:** The direct tetrahedron-to-Klein geometry hypothesis fails under topology-preserving operations and under the exhaustive whole-face gluing scheme. The **orientation-double-cover / twisted seam transport** branch survives as a concrete, independently testable mathematical candidate after an explicit NEW gluing topology is supplied. Next discriminant: construct the smallest tetrahedral patch network admitting an actual flat Klein orientation cocycle, with exact signed incidence, then compare local face transport and global twist holonomy and test which channels couple to physical readouts.
+
+## Explicit two-face map back to the tetrahedral face alphabet (EXACT, modified topology)
+
+Take two adjacent *original* K4 boundary triangles `[012]` and `[023]`, sharing oriented diagonal `[02]`. Their union is a topological square with ordered corners `A=0,B=1,C=2,D=3`; the other two K4 faces `[013]`,`[123]` are **removed** from the patch, and edge `[13]` is not part of it. Replace the ordinary inherited K4 boundary identifications with the **new** directed edge-gluing rules
+```
+[0,1] ~ [3,2] = h,
+[0,3] ~ [2,1] = v,
+[0,2] = x.
+```
+Thus `[1,2]=-v`, `[2,3]=-h`, while the diagonal keeps label x. The oriented face boundaries become exactly `∂[012]=h-v-x` and `∂[023]=-h-v+x`. This is a literal two-face K4-patch-to-Klein-Δ-complex construction **only after** changing the gluing relation. It is not an inclusion or homeomorphism of the original tetrahedral shell, not a permitted topology-preserving Pachner move, and not a tetrahedral 3-ball interior/exterior flip.
+
+For a useful UD transport experiment, assign signed frame transitions to the newly identified seam pairings, and compare `w1(h)=1,w1(v)=0` with the untwisted control `w1=0`. The diagnostic is a nontrivial closed-loop orientation sign that cannot be removed by vertex-local frame redefinitions. A local parity flip at a single face that is gauge-equivalent to relabeling is a distinct branch and should not be counted as Klein holonomy.
