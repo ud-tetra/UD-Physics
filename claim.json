@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "klein-tetra-face-flip-20261103",
+  "session": "ktff-20261103-01",
+  "status": "held",
+  "created_at": "2026-11-03T23:20:00Z",
+  "base_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+  "owned_paths": [
+    "tasks/klein-tetra-face-flip-20261103.json",
+    "sessions/ktff-20261103-01",
+    "candidates/klein-tetra-face-flip-20261103",
+    "experiments/klein-tetra-face-flip-20261103",
+    "artifacts/ktff-20261103-01"
+  ]
+}
