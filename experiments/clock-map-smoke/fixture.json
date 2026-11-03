@@ -1,7 +1,0 @@
-{
-  "description": "Fully exposed synthetic affine labels; FIT/development evaluation only.",
-  "index_unit": "tick",
-  "label_unit": "ns",
-  "training": [[0, "1"], [1, "3"], [2, "5"]],
-  "evaluation_exposed": [[3, "7"], [4, "9"]]
-}

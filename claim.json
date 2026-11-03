@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-graphite-contact-selector-index",
+  "session": "graphselectidx-20261103-01",
+  "created_at": "2026-11-03T15:46:15Z",
+  "base_revision": "7bd429866597b8055d1587a1fe9fad1cc73602cd",
+  "owned_paths": [
+    "tasks/integration-graphite-contact-selector-index.json",
+    "sessions/graphselectidx-20261103-01/",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
