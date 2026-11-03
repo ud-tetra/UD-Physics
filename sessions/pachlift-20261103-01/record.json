@@ -13,13 +13,17 @@
     "pachner-trigger-lift-20261103": {
       "ref": "refs/heads/claims/pachner-trigger-lift-20261103",
       "held_sha": "ad52deb5a534ddc93573c55bf0b5a9884069d8ff",
-      "status": "held"
+      "status": "released",
+      "released_sha": "640df09e66953ca2a4ced69082c2bcc202a721c6",
+      "merged_pr": 294,
+      "merged_sha": "8a5e8e1a25a1dfe0d705a97d7f1c02ec0e10eb88"
     }
   },
   "checks": [
     "Exact Fraction gate, eigenspaces, H-skew, symmetry, readout and residual replay PASS",
     "Independent analytic projection and local crossing proof PASS",
-    "Nonconstructor review NOT_RUN"
+    "Nonconstructor review NOT_RUN",
+    "GitHub Discovery integrity workflow #41732744835 PASS"
   ],
   "finding": "Conditional first-entry witness g=R=9/10, gdot=-3. H=I+G and K0=H^-1 M^T Anew M is H-skew, keeps event image and evolves memory. Shell stock jumps 3/2; slopes old0/K0−2/K1−4. Kλ family is equally conserving and symmetric, so no unique sourced dynamics.",
   "next_action": "Find independent constitutive selector for trigger and generator; only then map a boundary port to measured units and preregister against conventional baseline"
