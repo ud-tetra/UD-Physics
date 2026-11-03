@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-pachner-locality-port-index",
+  "session": "pachlocalidx-20261103-01",
+  "created_at": "2026-11-03T23:17:37.110Z",
+  "base_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+  "owned_paths": [
+    "tasks/integration-pachner-locality-port-index.json",
+    "sessions/pachlocalidx-20261103-01/",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
