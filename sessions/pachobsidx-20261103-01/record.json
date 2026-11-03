@@ -12,15 +12,19 @@
   "claims": {
     "integration-pachner-observability-index": {
       "held_sha": "7aa3505a5cb5a1a708a781de93670c3cc2844588",
-      "status": "held",
-      "claim_ref": "refs/heads/claims/integration-pachner-observability-index"
+      "status": "released",
+      "claim_ref": "refs/heads/claims/integration-pachner-observability-index",
+      "released_sha": "fc4f1ef55fcb665e1650643eb69cce42385ec605",
+      "merged_pr": 282,
+      "merged_sha": "7cf2ae208472c3d3319bf0af0286bc18760833ac"
     }
   },
   "checks": [
     "Research PR #281 merged at 1f5d3db5fb8a76bf19838b0751d42ec0d4ecc8cd",
     "Research claim release c4300a25980f6a566f5f746bf13bcd577b80db2d verified",
     "python3 scripts/validate.py PASS (445 records)",
-    "python3 -m unittest discover -s tests -q PASS (16 tests)"
+    "python3 -m unittest discover -s tests -q PASS (16 tests)",
+    "GitHub Discovery integrity workflow #41719339502 PASS"
   ],
   "finding": "Indexed exact scoped boundary observability, hidden sector and physical mapping gaps; no registry promotion",
   "next_action": "Source local metric/move law and particle or force operator, then target-blind physical bridge"
