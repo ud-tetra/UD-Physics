@@ -1,0 +1,56 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ico-projstable-20261028-gpt6-a1",
+  "runtime": "GPT-6 GitHub isolated claim and Actions NumPy2.3.5/SciPy1.17.0, downloaded and sha256 checked raw output",
+  "task": "icosahedral-projected-stability-20261028",
+  "goal": "Test exact mass-weighted center-of-mass/internal block decoupling and source frozen internal stiffness/damping spectra for a positive projected a posteriori reference error norm",
+  "created_at": "2026-10-28T15:42:43.799Z",
+  "base_revision": "6d5462c51e5a966066197bb56f33022ecd3a56aa",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "icosahedral-projected-stability-20261028": {
+      "ref": "refs/heads/claims/icosahedral-projected-stability-20261028",
+      "sha": "6494a256773d79fa5da6e8b334e66a4374135c7e",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "GHA 40717152362 original constructor K symmetry assertion",
+      "result": "FAILED: source K includes non-symmetric damping-position tangent, previous assumption invalid, retained in branch history",
+      "scope": "preliminary test failure scientifically corrected, no source modification"
+    },
+    {
+      "command": "GHA 40717553809 corrected source 560-state DOP853 & mass-normalized eigen diagnostics",
+      "result": "PASS six times each frozen case; initial internal min negative −.09623694/−.09651155; later positive samples; Kmass antisym up to~.00184; Cmass symmetric and PSD numerically; CM leakage<4.3e-14",
+      "scope": "NUMERICAL sample only not continuous bounds or independent proof"
+    },
+    {
+      "command": "sha256sum downloaded complete source/results",
+      "result": "PASS source fb51d73c10efe1d129d6b35153a7b26841fa6a22055c0481717a4a53f825bc19 (4800B); full JSON 1cfd06eb21f89e895ef31cc5a0c98d95a0f842c55b81e56b119df62ee0d152c9 (14343B)",
+      "scope": "immutable projected-001 captured byte-identical"
+    },
+    {
+      "command": "source invariant CM block algebra",
+      "result": "EXACT/CONDITIONAL P=I−T(T^TMT)−1 T^TM and J commute as K,C kill and have zero spatial force sums; 6D free shear",
+      "scope": "analytic source symmetry, numerical CM checks supplemental"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL CM mass-orthogonal projector commutes with original 560-state Jacobian because of reciprocal internal translation-invariant source mechanics. NUMERICAL strict DOP853 frozen source at 6 times each case: symmetric CM-free K min initial −.09623694/−.09651155; later positive at selected points, K develops damping-position derivative antisymmetry up to .00184; damping C symmetric PSD numerically, CM leakage<4.3e-14. FAILED direct unshifted positive Hessian energy. Candidate κ=.11 adjusted after target exposure gives positive sampled form but not verified continuous/stability; true δ_num<.01031 and full nonlinear tube OPEN.",
+  "next_action": "Rigorous time-continuous positivity and growth bound for shifted CM-free internal norm including K_skew and dK_sym/dt, plus interval residual and bootstrap; test δ_num<.01031.",
+  "mathematical_profile": {
+    "coefficient_domain": "real mass/projector algebra and source Float64 DOP853 K,C matrices, six-time symmetric mass-normalized eigenspectra",
+    "exactness_or_precision_plan": "exact mass CM projection, numeric source CM leakage/eigenspectra, derive shifted energy identity exactly but no verified continuous positivity/time derivative",
+    "applicable_methods": [
+      "Galilean CM mass-orthogonal block commuting projection",
+      "positive source inertia M and source Jacobian K,C",
+      "symmetric and antisymmetric effective stiffness separation",
+      "source nonnegative damping matrix",
+      "conditional shifted positive Lyapunov metric and Green/error bootstrap prerequisites"
+    ],
+    "clock_metric_units_conventions": "native u∈[0,100], original 280 q/280 v mechanical variables, 13 primaries+30 housings, native mass/energy/length/time uncalibrated"
+  }
+}
