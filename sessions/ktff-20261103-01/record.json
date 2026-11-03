@@ -1,0 +1,35 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ktff-20261103-01",
+  "runtime": "GPT-6; GitHub connector write and local exact Python compute",
+  "task": "klein-tetra-face-flip-20261103",
+  "goal": "Test Klein-bottle face flip vs tetrahedral shell and construct minimal orientation seam transport",
+  "created_at": "2026-11-03T23:20:00Z",
+  "base_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+  "source_dirty_at_boot": false,
+  "status": "active",
+  "claims": {
+    "klein-tetra-face-flip-20261103": {
+      "ref": "claims/klein-tetra-face-flip-20261103",
+      "commit": "667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "",
+  "next_action": "Complete finite face-pair and Klein Delta-complex homology/holonomy audit",
+  "mathematical_profile": {
+    "coefficient_domain": "Z chain homology, F2 orientation, O(2) exact integer matrix representation",
+    "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
+    "applicable_methods": [
+      "Euler",
+      "orientability",
+      "integral homology and 2-torsion",
+      "F2 orientation cocycle",
+      "closed-loop O(2) holonomy",
+      "Pachner vs seam gluing distinction"
+    ],
+    "clock_metric_units_conventions": "oriented triangles, no physical metric/clock; loop word composition discrete, holonomy sign is topological"
+  }
+}
