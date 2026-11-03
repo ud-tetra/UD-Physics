@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "pachner-locality-port-20261103",
+  "goal": "Test unchanged-incidence and Hasse locality as selectors for conditional Pachner generator; specify measurement bridge gate",
+  "owned_paths": [
+    "tasks/pachner-locality-port-20261103.json",
+    "sessions/pachlocal-20261103-01",
+    "candidates/pachner-locality-port",
+    "experiments/pachner-locality-port",
+    "artifacts/pachlocal-20261103-01"
+  ],
+  "dependencies": [
+    "pachner-trigger-lift-20261103"
+  ],
+  "status": "complete"
+}

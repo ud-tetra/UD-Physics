@@ -1,0 +1,97 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "pachlocal-20261103-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-03T23:14:58.028350+00:00",
+  "evidence": "EXACT",
+  "summary": "Conditional Hasse-locality obstruction, face/top correction-family no-go, and native cap-port witness",
+  "command": "python3 experiments/pachner-locality-port/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-locality-port/audit.py",
+      "sha256": "c0a5ae1b005418e5b1dc214737b17a1c6d37e18095d33d3bc4a5eedb15ff31bd",
+      "size_bytes": 8707
+    },
+    {
+      "input_id": "input-002",
+      "name": "audit.py",
+      "path": "inputs/002-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-trigger-lift/audit.py",
+      "sha256": "13513c0c6bdbd75982dfcac33ae8d4b15082215d4b106b282c333553932e680e",
+      "size_bytes": 7675
+    },
+    {
+      "input_id": "input-003",
+      "name": "audit.py",
+      "path": "inputs/003-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-interface-defect/audit.py",
+      "sha256": "a3f1762db95e3845b09561906b229bc816c7e65b58ef3705e485cfe79099802a",
+      "size_bytes": 6091
+    },
+    {
+      "input_id": "input-004",
+      "name": "audit.py",
+      "path": "inputs/004-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-switch-ledger/audit.py",
+      "sha256": "8d1817d486add01a3e00da5d5ba16f4b06fea22551af50515bb68c3fc552b034",
+      "size_bytes": 5650
+    },
+    {
+      "input_id": "input-005",
+      "name": "audit.py",
+      "path": "inputs/005-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/audit.py",
+      "sha256": "472965714d8009d03e6916c4491e95514ccb7bff7ad9511d7a5fb8e8e3cd8aee",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-006",
+      "name": "audit.py",
+      "path": "inputs/006-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-boundary-observability/audit.py",
+      "sha256": "e8e36515d2f56fee6a8d849d0a9e368ced8cdff76ef199a796b15939630eb6de",
+      "size_bytes": 9321
+    },
+    {
+      "input_id": "input-007",
+      "name": "20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "path": "inputs/007-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "f7fc458100564110ebe097924747c9b70bf6326f9836f62a43408888489b60be",
+      "size_bytes": 3253
+    },
+    {
+      "path": "files/README.md",
+      "sha256": "9aa23ae33c89736e9e3b4333d72ca90b54f8e6d16a1efea8b6b63c7302e442d5",
+      "size_bytes": 8020
+    },
+    {
+      "path": "files/mathematical_receipt.json",
+      "sha256": "f5c7c3be63aa6eeca1166ad32290e5cadaa560aa22e7f9cb784d272dc7be2163",
+      "size_bytes": 9857
+    }
+  ]
+}
