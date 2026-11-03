@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "pachner-trigger-lift-20261103",
+  "session": "pachlift-20261103-01",
+  "created_at": "2026-11-03T22:32:53.970Z",
+  "base_revision": "7c26ef783b0dccac998eb61c3dcb15c52d2cf746",
+  "owned_paths": [
+    "tasks/pachner-trigger-lift-20261103.json",
+    "sessions/pachlift-20261103-01/",
+    "candidates/pachner-trigger-lift/",
+    "experiments/pachner-trigger-lift/",
+    "artifacts/pachlift-20261103-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
