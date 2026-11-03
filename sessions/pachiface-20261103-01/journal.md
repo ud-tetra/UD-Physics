@@ -21,3 +21,5 @@ Source audit: Q165/Q169/Q170/Q173/Q177-Q179 fix within-complex stock, flow, gate
 ## 2026-11-03T22:24:36.356818+00:00
 
 Captured artifacts/pachiface-20261103-01/exact-001 (EXACT): Exact local Pachner memory projector, two-port support obligation, shell receipt, and dynamical tangency obstruction
+
+Research PR #291 merged at 2b53f968b16bdf17f949eb6553b29911f7665c2c after Discovery integrity #41730714086 PASS. Exact-head research claim release 30623d7cfe9e8da203aa3d32e809819209f7a610. Scoped result indexed; physical promotion 0.
