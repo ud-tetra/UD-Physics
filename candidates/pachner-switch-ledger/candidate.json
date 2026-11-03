@@ -1,0 +1,30 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "pachner-switch-ledger",
+  "session_id": "pachswitch-20261103-01",
+  "question": "Can the sourced fixed-complex support stock balance across prior Pachner maps without new carriers, and what conditional reserve is needed?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Unit Q165 coefficient metric on fixed complexes; prior exact chain maps at prescribed switch",
+    "R≥0 is a separately assumed scalar native-stock carrier with R constant between moves"
+  ],
+  "physical_mapping": "OPEN: no event trigger, seconds, joules, electron carrier, charge operator or calibrated readout",
+  "target_exposure": "No measured targets used",
+  "fitted_choices": [],
+  "sources": [
+    "artifacts/action-normalization-20261022-a1/exact-001/inputs/011-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63 Q165/Q169/Q170/Q177/Q178",
+    "experiments/pachner-state-transport/README.md and audit.py 3026f7a673dbec6103aae2a68a20bb94b61b61ae Objects and exact questions; 1→4; 2→3"
+  ],
+  "baseline": "Prior top-stock counterexamples; compare full Q165 move jump and ownership accounting",
+  "result": "Exact Q_M spectra: 1→4 {3:1,0:14}; 2→3 {3/2:1,1/2:1,−1:2,0:19}. R+ = R− − ΔS conditionally balances stock but scalar R cannot restore 2→3 injectivity.",
+  "next_discriminant": "Source-select local trigger, support flux, carrier and kernel memory before physical bridge",
+  "mathematical_receipts": [
+    "candidates/pachner-switch-ledger/mathematical_receipt.json"
+  ]
+}

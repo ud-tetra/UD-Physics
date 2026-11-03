@@ -1,0 +1,65 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "pachswitch-20261103-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-03T22:06:59.150665+00:00",
+  "evidence": "EXACT",
+  "summary": "Q165 Pachner jump spectra, conditional reserve and kernel obstruction",
+  "command": "python3 experiments/pachner-switch-ledger/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "3026f7a673dbec6103aae2a68a20bb94b61b61ae",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-switch-ledger/audit.py",
+      "sha256": "8d1817d486add01a3e00da5d5ba16f4b06fea22551af50515bb68c3fc552b034",
+      "size_bytes": 5650
+    },
+    {
+      "input_id": "input-002",
+      "name": "audit.py",
+      "path": "inputs/002-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/audit.py",
+      "sha256": "472965714d8009d03e6916c4491e95514ccb7bff7ad9511d7a5fb8e8e3cd8aee",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-003",
+      "name": "audit.py",
+      "path": "inputs/003-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-boundary-observability/audit.py",
+      "sha256": "e8e36515d2f56fee6a8d849d0a9e368ced8cdff76ef199a796b15939630eb6de",
+      "size_bytes": 9321
+    },
+    {
+      "input_id": "input-004",
+      "name": "011-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "path": "inputs/004-011-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "source_location": "repository",
+      "source_path": "artifacts/action-normalization-20261022-a1/exact-001/inputs/011-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "714c2da805cf5c459769370e0383dfff4e93cd3b377e940d88e82b9f52ace7ce",
+      "size_bytes": 1721
+    },
+    {
+      "path": "files/README.md",
+      "sha256": "ce76cb692ab996bc99fd752f3930c7d459ba4dc3072d1aa55ec2113a35ed4c78",
+      "size_bytes": 6472
+    }
+  ]
+}
