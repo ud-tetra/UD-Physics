@@ -13,13 +13,15 @@
     "integration-pachner-locality-port-index": {
       "ref": "refs/heads/claims/integration-pachner-locality-port-index",
       "held_sha": "c49289af61ff5d7325d5ed2056268418f885354d",
-      "status": "held"
+      "status": "released",
+      "release_sha": "412018cb380db69fdf4b3a50b1f2c64d563bca7c"
     }
   },
   "checks": [
     "Index link and source scope reviewed",
     "scripts/validate.py PASS: 475 records",
-    "16 unit tests PASS"
+    "16 unit tests PASS",
+    "Claim release verified after merged https://github.com/ud-tetra/UD-Physics/pull/299"
   ],
   "finding": "Integrated the scoped rank-1 locality obstruction, Q173 correction-family no-go, and native port discriminator; physical promotion 0.",
   "next_action": "Release integration claim after merge; derive new-carrier support/current and independently calibrated port before physical correspondence"

@@ -13,14 +13,16 @@
     "pachner-locality-port-20261103": {
       "ref": "refs/heads/claims/pachner-locality-port-20261103",
       "held_sha": "7e0b307679d7a89b61231af43dbac57164de2f31",
-      "status": "held"
+      "status": "released",
+      "release_sha": "723ff237f217d9432e6a3fc733955ddd37ff6300"
     }
   },
   "checks": [
     "Exact Fraction locality, metric rank, symmetry and derivative audit PASS",
     "Independent block skew proof PASS",
-    "Nonconstructor physics review NOT_RUN"
+    "Nonconstructor physics review NOT_RUN",
+    "Claim release verified after merged https://github.com/ud-tetra/UD-Physics/pull/298"
   ],
-  "finding": "Under H-skew, exact preservation of both old edge↔face blocks obstructed by rank B2(H2−I)=1. Projected K0 adds six nonincident old face↔top entries ±1/2; H−1C23old cannot cancel. Intact 0↔1 preservation fixes λ=0 only in prior family, while μ family remains; prepared native cap second derivatives −38/3 versus −44/3.",
+  "finding": "Under H-skew, exact preservation of both old edge\u2194face blocks obstructed by rank B2(H2\u2212I)=1. Projected K0 adds six nonincident old face\u2194top entries \u00b11/2; H\u22121C23old cannot cancel. Intact 0\u21941 preservation fixes \u03bb=0 only in prior family, while \u03bc family remains; prepared native cap second derivatives \u221238/3 versus \u221244/3.",
   "next_action": "Derive local support/current law on new or common-refinement carrier with metric and actuator, then preregister an independently calibrated physical port and matched null"
 }
