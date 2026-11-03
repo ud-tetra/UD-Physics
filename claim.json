@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-pachner-state-transport-index",
+  "session": "pachtransidx-20261103-01",
+  "created_at": "2026-11-03T21:44:22Z",
+  "base_revision": "59fa8146056a6f25da3a7632359dc89a32d9f44d",
+  "owned_paths": [
+    "tasks/integration-pachner-state-transport-index.json",
+    "sessions/pachtransidx-20261103-01/",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
