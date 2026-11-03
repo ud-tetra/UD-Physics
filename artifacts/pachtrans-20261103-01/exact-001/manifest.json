@@ -1,0 +1,60 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "pachtrans-20261103-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-03T21:41:24.577651+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact boundary-fixed Pachner chain transport, integral symmetry obstruction, stock and positive-edge response audit; physical event and charge open",
+  "command": "python3 experiments/pachner-state-transport/audit.py > experiments/pachner-state-transport/results.json",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "2207611450df9106adccaf8189a50734fef5a46b",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-boundary-observability/audit.py",
+      "sha256": "e8e36515d2f56fee6a8d849d0a9e368ced8cdff76ef199a796b15939630eb6de",
+      "size_bytes": 9321
+    },
+    {
+      "input_id": "input-002",
+      "name": "audit.py",
+      "path": "inputs/002-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/audit.py",
+      "sha256": "472965714d8009d03e6916c4491e95514ccb7bff7ad9511d7a5fb8e8e3cd8aee",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-003",
+      "name": "README.md",
+      "path": "inputs/003-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/README.md",
+      "sha256": "b776dd16546e8b26d837663a308b54de6a4a6710931aefbabb3c99e1861f890d",
+      "size_bytes": 7989
+    },
+    {
+      "input_id": "input-004",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/004-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/pachner-state-transport/mathematical_receipt.json",
+      "sha256": "255a97519440df256d6db3f85595313bb04d3b4dd4a5ba504b3c9c360f69bf99",
+      "size_bytes": 11605
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "350d68bdc571ba1f25f5c0b81ca9174d28ac5abfa6f49690636527392dc3d3fc",
+      "size_bytes": 11337
+    }
+  ]
+}

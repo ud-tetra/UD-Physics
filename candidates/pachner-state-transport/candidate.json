@@ -1,0 +1,27 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "pachner-state-transport",
+  "session_id": "pachtrans-20261103-01",
+  "question": "Can boundary identity, chain compatibility and automorphism symmetry select an integral, stock-preserving move transport and positive boundary-invisible weight?",
+  "status": "ACTIVE",
+  "evidence": ["EXACT", "CONDITIONAL", "OPEN"],
+  "assumptions": [
+    "Exact snapped 1->4 and 2->3 complexes from prior integrated audit",
+    "Boundary simplices fixed, chain-map equation, full geometric automorphism equivariance and relative degree +1",
+    "Unit chain metric and static boundary port are declared tests, not physical material laws",
+    "Positive equal added-edge weight g while all old edge weights remain one is a conditional constitutive family"
+  ],
+  "physical_mapping": "OPEN: no event selection, cross-move energy reservoir, charge operator, physical time/energy or measurement readout",
+  "target_exposure": "No measured constants or force targets used; transport and weight hypotheses fixed algebraically from the source complexes",
+  "fitted_choices": [],
+  "sources": [
+    "UD-Physics main 2207611450df9106adccaf8189a50734fef5a46b, experiments/pachner-boundary-observability/README.md and audit.py",
+    "UD coefficient provenance ledger v0.39(2) SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63, Q165/Q166/Q169/Q174-Q179",
+    "Designated project site Papers I-III 1.1.1 / IV 0.1; physical promotion 0"
+  ],
+  "baseline": "Exact boundary identity and relative topological class; distinguish from fixed-complex support stock and boundary response",
+  "result": "1->4 has integral S4-equivariant degree-one chain map but unit top stock 1->4; 2->3 requires rational half-cell map for full S3xC2 equivariance, with integral anchor breaking apex symmetry; neither intertwines unit generator. Positive new-edge weight changes full boundary response.",
+  "next_discriminant": "Supply source-selected move event, material weight and cross-move support ledger; then define a charge/force operator and preregister an independent physical readout",
+  "mathematical_receipts": ["candidates/pachner-state-transport/mathematical_receipt.json"]
+}
