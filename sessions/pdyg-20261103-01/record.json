@@ -107,10 +107,24 @@
     {
       "name": "external non-constructor scientific review v0.7",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.8 exact rational port and rotated determinant fixtures",
+      "status": "PASS",
+      "detail": "local stdlib Fraction constructor run; four rational phase cases"
+    },
+    {
+      "name": "v0.8 alternative four unit tests",
+      "status": "PASS",
+      "detail": "local constructor tests; not external review"
+    },
+    {
+      "name": "v0.8 separate-context non-constructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v0.7: for every scalar matched-port feedback N and D are conserved; D!=0 yields strict source residual. Proposed bounded g=||y||²/N yields asymptotic capture only from special aligned preparation; robust phase-independent selection FAILS.",
-  "next_action": "Search for source-native non-scalar additional port or environment coupling that can lawfully change D, with typed exact conservation/current receipts, test generic initial phases and independent review.",
+  "finding": "v0.8: fixed complex-compatible K4 second port aI+bj merely rotates source basis, leaving D_R conserved; genuine anisotropic ports require changed compatibility/controller assumptions and do not produce attraction.",
+  "next_action": "Search source-native independent local port or open environment that changes all phase invariants after admissible basis equivalence; exact stock/current controller receipt and generic-phase controls.",
   "mathematical_profile": {
     "coefficient_domain": "Separate F2 toy carrier and R15 QPB1 chain carrier; no implicit adapter",
     "exactness_or_precision_plan": "exhaustive integer enumeration",
