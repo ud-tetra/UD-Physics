@@ -65,10 +65,24 @@
     {
       "name": "v0.4 non-constructor mathematical review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "retention-current 1-to-4 exact Fraction audit",
+      "status": "PASS",
+      "method": "local equivalent stdlib script: 29 simplex weights, direct/current derivatives and two event choices"
+    },
+    {
+      "name": "all-29 simplex ownership and capture control",
+      "status": "PASS",
+      "method": "local independent-form calculation by same constructor"
+    },
+    {
+      "name": "non-constructor physical review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "Source-native quarter-turn sampled gate yields EXACT 64-state paired-parity observable closure, 4096 sign words, 98304 S4 checks; θq alone nonclosed; irreversible material retention and energy-source receipt OPEN.",
-  "next_action": "Source constitutive retention law with explicit reservoir/stock current; independently review the 64-history theorem and operator/source identities; then rebase & integrate.",
+  "finding": "Q170–Q179 exact cell ownership and signed current plus a conditional nonnegative retention-transfer receipt; δ=0 and δ=1 both conserve, so no native choice or persistence law is selected.",
+  "next_action": "Find source-selected constitutive gate, reverse release and environmental support source; test persistence vs null/reversible baselines, then review and integrate.",
   "mathematical_profile": {
     "coefficient_domain": "Separate F2 toy carrier and R15 QPB1 chain carrier; no implicit adapter",
     "exactness_or_precision_plan": "exhaustive integer enumeration",
