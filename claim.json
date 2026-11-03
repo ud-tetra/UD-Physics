@@ -13,5 +13,7 @@
     "artifacts/pachtrans-20261103-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-03T21:43:20Z",
+  "released_from_sha": "04d346a46faf5c87c135bb424f1ca5e1a13f324e"
 }
