@@ -13,5 +13,7 @@
     "artifacts/pachiface-20261103-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-03T22:26:20.140Z",
+  "released_from_sha": "beb40960a6aa8391b791e5573b96d6298fe6d58f"
 }
