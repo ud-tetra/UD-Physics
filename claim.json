@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-pachner-trigger-lift-index",
+  "session": "pachliftidx-20261103-01",
+  "created_at": "2026-11-03T22:40:36.018Z",
+  "base_revision": "8a5e8e1a25a1dfe0d705a97d7f1c02ec0e10eb88",
+  "owned_paths": [
+    "tasks/integration-pachner-trigger-lift-index.json",
+    "sessions/pachliftidx-20261103-01/",
+    "state/CURRENT.md",
+    "sessions/pachlift-20261103-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
