@@ -13,3 +13,6 @@ Ownership: UNCLAIMED until remote claim acquisition succeeds.
 ## Integrated milestone
 - Indexed PR #298 (merge `0eef9a3f77198810b35bee8d3ef578ebc3af403a`) with conditional scope and OPEN bridge.
 - Integration claim `c49289af61ff5d7325d5ed2056268418f885354d` held pending index merge.
+
+## Closure
+- Merged https://github.com/ud-tetra/UD-Physics/pull/299; live claim released at `412018cb380db69fdf4b3a50b1f2c64d563bca7c`. No substantive research changed in this closure.
