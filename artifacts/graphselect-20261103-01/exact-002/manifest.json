@@ -1,0 +1,42 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "graphselect-20261103-01",
+  "run_id": "exact-002",
+  "created_at": "2026-11-03T15:43:29.434756+00:00",
+  "evidence": "EXACT",
+  "summary": "Corrected provenance path in receipt; calculation code and exact output unchanged from exact-001",
+  "command": "python3 experiments/graphite-contact-selector-topology/audit.py > experiments/graphite-contact-selector-topology/results.json",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "b7d3205d59256335bbd78a91dbd596ed485573fc",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/graphite-contact-selector-topology/audit.py",
+      "sha256": "f765961cf01a5c4e9b1bb5b689dcd0b9fb65964e2a8b3ef6a85e41eb403618f7",
+      "size_bytes": 5934
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/graphite-contact-selector-topology/mathematical_receipt.json",
+      "sha256": "cc74405055bf172df2e57c8af71b5241c30f5a1c21be66c00bc82f92ed86c752",
+      "size_bytes": 12153
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "6b60b35e4f2bb110d5186566e1ad07d42fd2d084ed2fdc7fa7639990df8d4530",
+      "size_bytes": 1836
+    }
+  ]
+}

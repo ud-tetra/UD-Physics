@@ -1,0 +1,19 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "graphite-contact-selector-topology",
+  "goal": "Derive and test an equivariant directional edge choice and quotient-topology discriminant for the supplied contact pulse",
+  "owned_paths": [
+    "tasks/graphite-contact-selector-topology.json",
+    "sessions/graphselect-20261103-01",
+    "candidates/graphite-contact-selector-topology",
+    "experiments/graphite-contact-selector-topology",
+    "artifacts/graphselect-20261103-01"
+  ],
+  "dependencies": [
+    "graphite-contact-pulse-casimir",
+    "graphite-endogenous-gate-20261024",
+    "graphite-packet-reciprocity-20261024"
+  ],
+  "status": "complete"
+}
