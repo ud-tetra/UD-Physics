@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pachobs-20261103-01",
+  "runtime": "Codex GPT-6 Git/compute plus GitHub connector",
+  "task": "pachner-boundary-observability-20261103",
+  "goal": "Exact fixed-shell Pachner move audit of boundary response, automorphisms and hidden-state observability",
+  "created_at": "2026-11-03T20:56:34.296813+00:00",
+  "base_revision": "046bfb6cc3d69122cd30028d1fbb4ff8b42a40d9",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "pachner-boundary-observability-20261103": {
+      "held_sha": "b9f5277afc3c8404657117d0077fb6a2e75129f2",
+      "status": "held",
+      "claim_ref": "refs/heads/claims/pachner-boundary-observability-20261103"
+    }
+  },
+  "checks": [
+    "exact chain/shell/volume/automorphism/Schur replay PASS",
+    "independent symbolic star and rank-one edge derivation PASS",
+    "nonconstructor physics review NOT_RUN",
+    "python3 scripts/validate.py PASS (443 records)",
+    "python3 -m unittest discover -s tests -q PASS (16 tests)"
+  ],
+  "finding": "Fixed-shell 1->4 and 2->3 moves alter unit-metric boundary response in specified symmetry channels while edge face-boundary states are vertex-invisible",
+  "next_action": "Source local weight/move law and physical observer, preregister dimensionful measurement bridge and held-out comparison",
+  "mathematical_profile": {
+    "coefficient_domain": "Z signed chains and snapped coordinates; Q response and group checks",
+    "exactness_or_precision_plan": "integer and Fraction replay, analytic minimum-energy equality theorem; no numeric fit",
+    "applicable_methods": [
+      "simplicial homology",
+      "Schur complement",
+      "S4 and S3xC2 automorphisms",
+      "Hodge observer kernel",
+      "exact coordinate volume"
+    ],
+    "clock_metric_units_conventions": "dimensionless s, unmasked B1 generator, unit edge chain metric, unit vertex inertia for Z, snapped integer coordinates; no physical clock or force units"
+  }
+}
