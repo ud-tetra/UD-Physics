@@ -23,3 +23,5 @@ NO-GO scoped: same shell and automorphism do not fix declared boundary response;
 Exact replay: `python3 experiments/pachner-boundary-observability/audit.py > experiments/pachner-boundary-observability/results.json`; immutable `artifacts/pachobs-20261103-01/exact-001/manifest.json`. Nonconstructor review NOT_RUN.
 
 Repository integrity PASS (443 records) and test suite PASS (16 tests). Replay/code/output SHA-256 recorded in immutable artifact; no measured physical result or nonconstructor review.
+
+PR #281 merged at 1f5d3db5fb8a76bf19838b0751d42ec0d4ecc8cd after CI workflow #41718753709 PASS. Claim released exact-head at c4300a25980f6a566f5f746bf13bcd577b80db2d. Closure-only record.

@@ -12,8 +12,11 @@
   "claims": {
     "pachner-boundary-observability-20261103": {
       "held_sha": "b9f5277afc3c8404657117d0077fb6a2e75129f2",
-      "status": "held",
-      "claim_ref": "refs/heads/claims/pachner-boundary-observability-20261103"
+      "status": "released",
+      "claim_ref": "refs/heads/claims/pachner-boundary-observability-20261103",
+      "released_sha": "c4300a25980f6a566f5f746bf13bcd577b80db2d",
+      "merged_pr": 281,
+      "merged_sha": "1f5d3db5fb8a76bf19838b0751d42ec0d4ecc8cd"
     }
   },
   "checks": [
@@ -21,7 +24,8 @@
     "independent symbolic star and rank-one edge derivation PASS",
     "nonconstructor physics review NOT_RUN",
     "python3 scripts/validate.py PASS (443 records)",
-    "python3 -m unittest discover -s tests -q PASS (16 tests)"
+    "python3 -m unittest discover -s tests -q PASS (16 tests)",
+    "GitHub Discovery integrity workflow #41718753709 PASS"
   ],
   "finding": "Fixed-shell 1->4 and 2->3 moves alter unit-metric boundary response in specified symmetry channels while edge face-boundary states are vertex-invisible",
   "next_action": "Source local weight/move law and physical observer, preregister dimensionful measurement bridge and held-out comparison",

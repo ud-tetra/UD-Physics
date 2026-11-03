@@ -1,0 +1,27 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pachobsidx-20261103-01",
+  "runtime": "Codex GPT-6 Git/compute plus GitHub connector",
+  "task": "integration-pachner-observability-index",
+  "goal": "Index scoped Pachner observability result and close research claim",
+  "created_at": "2026-11-03T21:08:58.909835+00:00",
+  "base_revision": "1f5d3db5fb8a76bf19838b0751d42ec0d4ecc8cd",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-pachner-observability-index": {
+      "held_sha": "7aa3505a5cb5a1a708a781de93670c3cc2844588",
+      "status": "held",
+      "claim_ref": "refs/heads/claims/integration-pachner-observability-index"
+    }
+  },
+  "checks": [
+    "Research PR #281 merged at 1f5d3db5fb8a76bf19838b0751d42ec0d4ecc8cd",
+    "Research claim release c4300a25980f6a566f5f746bf13bcd577b80db2d verified",
+    "python3 scripts/validate.py PASS (445 records)",
+    "python3 -m unittest discover -s tests -q PASS (16 tests)"
+  ],
+  "finding": "Indexed exact scoped boundary observability, hidden sector and physical mapping gaps; no registry promotion",
+  "next_action": "Source local metric/move law and particle or force operator, then target-blind physical bridge"
+}
