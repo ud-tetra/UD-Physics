@@ -1,0 +1,18 @@
+# K4 non-scalar source-port audit v0.8
+Discovery / EXACT CONDITIONAL / CANDIDATE / NO-GO / OPEN. Physical promotion 0.
+
+**Sources:** `experiments/qpb1-source-reservoir/README.md` v1.1 §§1–2; imported coefficient ledger v0.39 Q170–Q179; and this task's v0.6–v0.7 receipts. Source K4 packet carrier is real 15D with an added real 2D matched reservoir, unit Euclidean metric and dimensionless native parameter u. The top-cell modal embedding E_top is not the six-edge extractor.
+
+The source permits any 2x2 real modal port M under an assumed common S4 sign representation. Requiring compatibility with the common internal complex rotation j restricts M to a I+b j, j=[0,-1;1,0]. This constraint is additional to S4 equivariance. The source uses b=0 via an explicit phase convention.
+
+**Theorem A (EXACT):** In co-rotating modal coordinates, r'=M y, y'=-M^T r conserves N=||r||²+||y||². For fixed M=a I+b j with g=sqrt(a²+b²)>0, R=M/g is a planar rotation and ybar=R y gives r'=g ybar, ybar'=-g r. The old determinant D=det(r,y) changes according to D'=b(||r||²-||y||²), but D_R=det(r,R y) remains conserved. Consequently ||y||²>=D_R²/N. A complex-compatible b j port only rotates the scalar-port phase reference; it does not overcome the generic-phase retention obstruction. Test a=3/5,b=4/5,r=(1,0),y=(0,1): D_R=3/5, N=2, lower bound 9/50, exact orbit source minimum 1/5. With r=(2,0),y=(0,1), D'=12/5 even though D_R stays constant.
+
+**Theorem B (CONDITIONAL):** If the common complex-rotation compatibility requirement is removed, any real M remains S4-equivariant under the declared matched sign representations, but its gains are not source selected. For an M held fixed in the CO-ROTATING frame, singular-value decomposition reduces the modal equations to two oscillators with frequencies sigma1,sigma2. Complete transfer from empty target for every source phase at common u requires both cos(sigma1*u)=cos(sigma2*u)=0. M=diag(1,2) cannot satisfy this at any u; M=diag(1,3) transfers both channels at chosen u=pi/2 but remains fully reversible. These are candidate changed-hypothesis models. A non-complex-compatible M fixed in the co-rotating frame corresponds to a time-dependent lab/source-frame coupling R(2u) M R(-2u), and therefore requires an additional modulation/controller premise.
+
+**Theorem C (EXACT):** The full source-frame generator with any FIXED real M, G_M=[A,E_top M; -M^T E_top^T,2j], is skew in the declared unit metric. Its flow preserves all full-state distances. Thus it cannot attract an open set of joint states to a unique retained state. This is not a no-go for open or nonlinear constitutive dynamics.
+
+**Typed provenance:** QPB1 17D modal port and Q170–Q179 29D cell-owned support are different carriers; their energy/stock readouts and clocks have no derived intertwiner. Source symmetry permits but does not force a genuinely anisotropic port. No physical energy, mass, clock or particle prediction follows.
+
+**Verification:** `multiport_v08.py` (exact stdlib fractions), `multiport_v08.results.json`, `test_multiport_v08.py` (four exact local constructor tests). External non-constructor review NOT_RUN. A phase-rotated b*j input is an algebraic gauge/basis equivalence only for the declared port, not a physical gauge theorem.
+
+**Disposition:** Complex-compatible beta gives no new phase-independent retention mechanism. Anisotropic tests change assumptions, do not select gain ratios, and retain reversibility. Physical promotion 0. Next source gate: identify a genuinely native additional operator that changes the relevant conserved phase-area after all admitted basis equivalences, and supply signed controller/stock receipts and generic-phase falsification controls.
