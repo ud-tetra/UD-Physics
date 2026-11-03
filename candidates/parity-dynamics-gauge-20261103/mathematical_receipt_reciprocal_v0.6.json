@@ -1,0 +1,227 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD-NATIVE-RECIPROCAL-PORT-006",
+  "session_id": "pdyg-20261103-01",
+  "candidate_id": "parity-dynamics-gauge-20261103",
+  "question": "Do QPB1 source-native reversible support/transport and Q170-Q179 conserved currents uniquely derive persistent admission and release without an imposed one-way gate?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "QP_PORT",
+      "symbol": "(x,y)",
+      "object_type": "joint real carrier with one matched 2D source reservoir",
+      "definition": "x in C0⊕C1⊕C2⊕C3 filled Δ3 (15 real); y in R2",
+      "domain": "R17",
+      "codomain": null,
+      "coefficient_domain": "R",
+      "units": "native amplitudes",
+      "basis_orientation": "ascending tetrahedron simplex orientation; top-cell E plane; matched source sign representation",
+      "metric_measure": "Euclidean joint metric H=I",
+      "origin": "imported source v1.1",
+      "exact_expression": "N=||x||²+||y||²",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1-RES"
+      ],
+      "assumption_ids": [
+        "A_MATCH"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit plane, unit source"
+    },
+    {
+      "object_id": "G_PORT",
+      "symbol": "G_g",
+      "object_type": "matched source skew generator",
+      "definition": "block matrix A,gE;-gE^T,2j",
+      "domain": "R17",
+      "codomain": "R17",
+      "coefficient_domain": "R",
+      "units": "per unit dimensionless u",
+      "basis_orientation": "top-cell embedding and source modal orientation",
+      "metric_measure": "unit Euclidean",
+      "origin": "imported source v1.1",
+      "exact_expression": "G_g^T=-G_g, 0<=g<2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1-RES"
+      ],
+      "assumption_ids": [
+        "A_MATCH"
+      ],
+      "dependency_ids": [
+        "QP_PORT"
+      ],
+      "normalization": "g=1 for witness, not universal"
+    },
+    {
+      "object_id": "CELL_SUPPORT",
+      "symbol": "S_tau",
+      "object_type": "29D subdivision cell-owned support",
+      "definition": "S_tau=sum_sigma w_sigma,tau*c_sigma², w=1/n3(sigma)",
+      "domain": "R29",
+      "codomain": "R>=0^4",
+      "coefficient_domain": "R",
+      "units": "native norm squared",
+      "basis_orientation": "1-to-4 subdivided K4 carrier",
+      "metric_measure": "unit Euclidean",
+      "origin": "read-only ledger Q177-Q179",
+      "exact_expression": "sum_tau S_tau=sum_sigma c_sigma²",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "equal top-star allocation"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1-RES",
+      "url_or_repo_path": "experiments/qpb1-source-reservoir/README.md",
+      "version_or_commit": "7c26ef783b0dccac998eb61c3dcb15c52d2cf746",
+      "section_or_object_id": "v1.1 §§1–5 local port, exact swap, gate work, release/no-source-controller",
+      "source_status": "source-bound conditional port; coupling is a declared model choice"
+    },
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "7c26ef783b0dccac998eb61c3dcb15c52d2cf746",
+      "section_or_object_id": "Q170–Q179; G05",
+      "source_status": "locked internal support-current accounting; constitutive open-system gate remains OPEN"
+    }
+  ],
+  "assumptions": [
+    "Unit Euclidean matched 15D+2D source port; no physical clock, action quantum or mass map",
+    "Test g=1 within permitted g<2, r0=0, y0=(1,0), all target/source supports dimensionless squared amplitudes",
+    "Null g=0, reciprocal constant g=1, switched-off g=1 until pi/2 and then g=0; turn-off control imposed for counterexample",
+    "Do not equate 17D modal reservoir with distinct 29D equal-share cell-owned support carrier"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact trigonometric modal rotation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive support sin²u and reversible release"
+    },
+    {
+      "technique": "exact rational SO(2) orthogonality",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify norm conservation"
+    },
+    {
+      "technique": "counterexample and preparation sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "current-zero selector fails; phase matters"
+    },
+    {
+      "technique": "linear flow/isometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exclude full-state asymptotic attractor under fixed skew generator"
+    },
+    {
+      "technique": "topological 29D current ownership",
+      "applicability": "SOURCE-BOUND ONLY",
+      "purpose_or_na_reason": "identify independent accounting bridge, not interface"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "r^2+y^2=1; pi/6: target 1/4; pi/4: target 1/2; pi/2: target 1; pi: target 0",
+    "reduced_expression": "0,1/4,1/2,1,0,1,0",
+    "factor_origins": [
+      "source unit norm",
+      "trigonometric exact unit-port exchange"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless modal parameter",
+    "modulus": null,
+    "residue_convention": "not modular",
+    "update_rule": "joint skew dynamics G_g, with optional externally prescribed envelope g(u)",
+    "initial_phase": "target empty, unit source",
+    "coupling": "g=1 trial coupling, null g=0 and off-after-pi/2 control",
+    "period_claim": "constant g1 support period pi; source oscillatory recurrence",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R15 source packet + R2 matched source mode; distinct R29 glued support ledger",
+    "generator_or_update": "G_g block skew source; chosen control envelope for latch",
+    "initial_boundary_conditions": "r0=0, y0=(1,0), no spatial boundary flux",
+    "conservation_and_sources": "||x||²+||y||² constant; port flow 2g r·y; no controller resource receipt",
+    "projection_and_kernel": "target |r|² and source |y|²; separate 29D S_tau not identified",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "source-exposed reciprocal model and conservation identity; no physical data used",
+    "known_targets": [
+      "source v1.1 matched-port unit preparation and reciprocal release",
+      "Q170–Q179 top-star current receipts"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "g=1 test value",
+      "switched-off at pi/2 ideal controlled latch"
+    ],
+    "search_domain_and_budget": "seven exact native-phase fixtures and 4 rational SO2 matrices ×4 initial preparations",
+    "selection_criterion": "whether locality, symmetry and conservation select one retention trajectory",
+    "baseline": "null g=0 and constant reciprocal g=1"
+  },
+  "calculation_steps": [
+    "Source QPB1 v1.1 specifies skew G_g and exact rotating-frame r=cos(gu)r0+sin(gu)y0",
+    "For r0=0, ||y0||²=1, target support sin²(gu), reservoir cos²(gu)",
+    "At g=1 compare null, constant exchange and switched-off latch at pi/2; at u=pi target stocks 0,0,1",
+    "j=sin(2u) is zero at both empty u0 and full u=pi/2; cannot select just from current zero",
+    "at u=pi/4 old r0=y0 gives target support2 while r0=-y0 gives0",
+    "isometric autonomous skew-adjoint flow cannot have open full-state attracting basin",
+    "Q170-Q179 29D current and ownership law does not source a 17D port gate or cross-carrier map"
+  ],
+  "result": {
+    "exact_expression": "source-conditioned ||r(u)||²=sin²u and conserved sum1; at u=pi, null/constant/controlled-latch target support (0,0,1); zero-current selector nonunique",
+    "approximation": null,
+    "units": "native squared modal amplitudes; time dimensionless",
+    "precision_and_error": "exact rational SO(2) fixtures and exact algebra",
+    "scope": "QPB1 v1.1 matched 17D unit-metric port, g1 and declared controller; no universal open-system theorem",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "constructor exact rational script",
+      "command_or_proof_path": "python3 experiments/parity-dynamics-gauge-20261103/reciprocal_gate_v06.py",
+      "source_revision": "7c26ef783b0dccac998eb61c3dcb15c52d2cf746",
+      "actual_result": "PASS local equivalent execution, 7 exact phase fixtures and 16 rational exchange conservation checks",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "four alternative exact unit tests",
+      "command_or_proof_path": "python3 -m unittest discover -s experiments/parity-dynamics-gauge-20261103 -p test_reciprocal_gate_v06.py -v",
+      "source_revision": "same",
+      "actual_result": "PASS local, 4 tests, same constructor",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "source-current zero at both no-transfer and full-transfer endpoints",
+    "fixed constant g recurs and releases, despite conserving all source-native norms",
+    "switched-off latch retains only by extra controller choice",
+    "old-phase ±y0 radically changes sampled target occupancy at pi/4",
+    "17D modal source and 29D top-star cell-support objects lack established intertwiner"
+  ],
+  "limitations": [
+    "No source-selected coupling g or autonomous shutoff/release threshold",
+    "No physical clock, mass, charge or externally measured retention bridge",
+    "No transport/stock identification between 17D and 29D carriers",
+    "Finite-dimensional constant skew full-state no-attraction no-go does not extend to arbitrary nonlinear/open dynamics",
+    "Independent non-constructor mathematical review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Identify source-derived feedback/constitutive gate and controller or environment with exact energy/stock receipt; prove and test attracting retained state against null and reciprocal controls."
+}
