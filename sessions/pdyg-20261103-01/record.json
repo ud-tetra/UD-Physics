@@ -30,19 +30,27 @@
       "name": "unittest",
       "status": "NOT_RUN",
       "reason": "connector-only Git checkout"
+    },
+    {
+      "name": "QPB1 source-native incidence matrix exact test",
+      "status": "PASS",
+      "method": "SymPy 1.14.0 local exact computation; source proof in v0.2"
     }
   ],
-  "finding": "Conditional 128/64/16 classification and 4-bit closure; canonical UD update source OPEN",
-  "next_action": "Obtain actual Adm and T, repeat full exact test, non-constructor review",
+  "finding": "Exact QPB1 source-native chain flow: edge-only nonclosure; 12-dimensional edge quadrature closure, 3-dimensional edge-history hidden sector. Binary F2 parity is not additively defined from real chain carrier. Complete canonical binary Adm,T remains OPEN.",
+  "next_action": "Source or define a typed real-to-binary quantizer/admissibility and total binary evolution; independent review and full action/gauge invariance test.",
   "mathematical_profile": {
-    "coefficient_domain": "F2 states; Z exact counts",
+    "coefficient_domain": "Separate F2 toy carrier and R15 QPB1 chain carrier; no implicit adapter",
     "exactness_or_precision_plan": "exhaustive integer enumeration",
     "applicable_methods": [
       "S4 orbits",
       "rank-nullity",
       "dynamical quotient",
-      "symmetry stabilizer"
+      "symmetry stabilizer",
+      "integer oriented simplex boundary",
+      "exact observability rank",
+      "real-to-F2 additive no-go"
     ],
-    "clock_metric_units_conventions": "formal steps only; no metric, time unit or physical map"
+    "clock_metric_units_conventions": "QPB1 dimensionless continuous u, H=I, ascending simplex orientation; F2 toy formal steps separate; no SI clock"
   }
 }
