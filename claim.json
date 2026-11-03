@@ -12,5 +12,7 @@
     "sessions/pachlift-20261103-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-03T22:42:06.840Z",
+  "released_from_sha": "bfc140a65db4f4d1d6881a8ca7a5c0edd8553cf5"
 }
