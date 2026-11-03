@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-pachner-interface-defect-index",
+  "session": "pachifaceidx-20261103-01",
+  "created_at": "2026-11-03T22:26:31.765Z",
+  "base_revision": "2b53f968b16bdf17f949eb6553b29911f7665c2c",
+  "owned_paths": [
+    "tasks/integration-pachner-interface-defect-index.json",
+    "sessions/pachifaceidx-20261103-01/",
+    "state/CURRENT.md",
+    "sessions/pachiface-20261103-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
