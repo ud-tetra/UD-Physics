@@ -1,0 +1,252 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "pachner-trigger-lift-v0.1",
+  "session_id": "pachlift-20261103-01",
+  "candidate_id": "pachner-trigger-lift",
+  "question": "Can an explicit budget first-entry gate and projected memory coupling yield exact persistence, and what boundary readout distinguishes it?",
+  "evidence_labels": [
+    "EXACT",
+    "DERIVED",
+    "CANDIDATE",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "T",
+      "symbol": "T",
+      "object_type": "event transport with memory",
+      "definition": "T=(M,P)",
+      "domain": "V_old=Q^23",
+      "codomain": "V_new⊕kerM",
+      "coefficient_domain": "Q",
+      "units": "native amplitude",
+      "basis_orientation": "ascending simplex bases; geometric top signs",
+      "metric_measure": "Q165 unit simplex; H=TᵀT where specified",
+      "origin": "prior conditional",
+      "exact_expression": "rank T=23",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "interface",
+        "ledger"
+      ],
+      "assumption_ids": [
+        "memory"
+      ],
+      "dependency_ids": [],
+      "normalization": "no physical map"
+    },
+    {
+      "object_id": "G",
+      "symbol": "G",
+      "object_type": "positive support quadratic form",
+      "definition": "G=TᵀT−I",
+      "domain": "V_old",
+      "codomain": "symmetric forms on V_old",
+      "coefficient_domain": "Q",
+      "units": "native squared-amplitude / formal parameter",
+      "basis_orientation": "ascending simplex bases; geometric top signs",
+      "metric_measure": "Q165 unit simplex; H=TᵀT where specified",
+      "origin": "prior conditional",
+      "exact_expression": "eigenvalues 3/2,1/2,0^21",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "interface",
+        "ledger"
+      ],
+      "assumption_ids": [
+        "memory"
+      ],
+      "dependency_ids": [],
+      "normalization": "no physical map"
+    },
+    {
+      "object_id": "K",
+      "symbol": "K_λ",
+      "object_type": "post-event generator family",
+      "definition": "H⁻¹(MᵀAnewM+λAold)",
+      "domain": "V_old",
+      "codomain": "V_old",
+      "coefficient_domain": "Q",
+      "units": "native amplitude",
+      "basis_orientation": "ascending simplex bases; geometric top signs",
+      "metric_measure": "Q165 unit simplex; H=TᵀT where specified",
+      "origin": "derived conditional",
+      "exact_expression": "H K_λ skew for every rational λ",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "interface",
+        "ledger"
+      ],
+      "assumption_ids": [
+        "projection"
+      ],
+      "dependency_ids": [],
+      "normalization": "no physical map"
+    },
+    {
+      "object_id": "gate",
+      "symbol": "τ*",
+      "object_type": "first-entry switch predicate",
+      "definition": "first inward crossing of R−g=0 with derivative>0",
+      "domain": "formal Q169 orbit plus R",
+      "codomain": "event decision",
+      "coefficient_domain": "Q",
+      "units": "native squared-amplitude / formal parameter",
+      "basis_orientation": "ascending simplex bases; geometric top signs",
+      "metric_measure": "Q165 unit simplex; H=TᵀT where specified",
+      "origin": "assumed",
+      "exact_expression": "R=g=9/10, gdot=−3 at prepared witness",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "interface",
+        "ledger"
+      ],
+      "assumption_ids": [
+        "trigger"
+      ],
+      "dependency_ids": [],
+      "normalization": "no physical map"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "interface",
+      "url_or_repo_path": "experiments/pachner-interface-defect/README.md and audit.py",
+      "version_or_commit": "7c26ef783b0dccac998eb61c3dcb15c52d2cf746",
+      "section_or_object_id": "State, map and exact event receipts; Minimal kernel record; Dynamical obstruction",
+      "source_status": "integrated exact conditional"
+    },
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "artifacts/action-normalization-20261022-a1/exact-001/inputs/011-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "version_or_commit": "SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "section_or_object_id": "Q165/Q169/Q170/Q173/Q177-Q179",
+      "source_status": "read-only source; no Pachner trigger"
+    },
+    {
+      "source_id": "site",
+      "url_or_repo_path": "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/",
+      "version_or_commit": "retrieved 2026-11-03, Papers I–III 1.1.1/IV 0.1",
+      "section_or_object_id": "Home, physical promotion 0",
+      "source_status": "read-only publication state"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "memory",
+      "statement": "P memory carrier and reserve R≥0 from prior conditional interface"
+    },
+    {
+      "id": "trigger",
+      "statement": "first inward crossing of R−g=0 with derivative>0; preparation interval specified"
+    },
+    {
+      "id": "projection",
+      "statement": "unit-metric least-squares projection of (Anew Mc,0) onto im T"
+    },
+    {
+      "id": "baseline",
+      "statement": "no-move old Q169 face-stock readout is internal baseline only"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational Gram, inverse, eigenspace and rank algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "positive H, skew coupling, residual and degeneracy"
+    },
+    {
+      "technique": "first-crossing derivative and symmetry group action",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "local trigger witness, equivariance"
+    },
+    {
+      "technique": "prime/modular clock",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "formal continuous parameter, no declared modular register"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "rank V_old=23, rank kerM=2, rank projected residual=6; six cap faces",
+    "reduced_expression": "R=g=9/10; gdot=−3; native cap jump 3/2",
+    "factor_origins": [
+      "prior exact M,P,G",
+      "chosen rational prepared amplitudes"
+    ],
+    "factorization": "9/10=3²/(2·5), algebraic threshold example only",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "formal Q169 continuous flow parameter τ plus event index",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "first local inward budget crossing, then projected K0 flow",
+    "initial_phase": "prepared witness at τ=0; sufficiently short earlier interval",
+    "coupling": "none to physical time",
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "before V_old⊕R≥0; after im T⊕R≥0",
+    "generator_or_update": "before ċ=Aold c,Ṙ=0; event (Mc,Pc,R−g); after q̇=K0 q,Ṙ=0",
+    "initial_boundary_conditions": "one snapped bipyramid; x=1, edge(0,1)=1, R=9/10; locally unique inward crossing",
+    "conservation_and_sources": "old S+R=29/10; post Snew+Smem+R=29/10; actual reserve carrier unsourced",
+    "projection_and_kernel": "rank T23, H positive; residual rank6; Kλ family remains H-skew",
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "NONE",
+    "known_targets": [],
+    "fitted_parameters_or_formula_choices": [
+      "R=9/10 chosen for exact illustrative crossing, not a measured fit"
+    ],
+    "search_domain_and_budget": null,
+    "selection_criterion": "analytic crossing example and exact matrix checks",
+    "baseline": "old Q169 no-move native cap-stock"
+  },
+  "calculation_steps": [
+    "Construct H=TᵀT and verify eigenspace multiplicities",
+    "Define K0=H⁻¹MᵀAnewM, verify HK0 skew, group commutation and projection residual",
+    "Compute local first-entry crossing c=(internal face1, edge(0,1)1), R=9/10, gdot=-3",
+    "Evaluate native shell readout before/after and first derivatives for old,K0,K1; exhibit Kλ nonuniqueness"
+  ],
+  "result": {
+    "exact_expression": "Kλ=H⁻¹(MᵀAnewM+λAold); g=R=9/10, gdot=−3; cap jump3/2; slopes 0,−2,−4",
+    "approximation": null,
+    "units": "native squared-amplitude and formal τ",
+    "precision_and_error": "Fraction exact; no numerical tolerance",
+    "scope": "one snapped bipyramid and locally specified preparation interval; postulated gate/projection",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact Fraction matrix replay and independent analytic H-skew/projection proof",
+      "command_or_proof_path": "python3 experiments/pachner-trigger-lift/audit.py; experiments/pachner-trigger-lift/README.md",
+      "source_revision": "7c26ef783b0dccac998eb61c3dcb15c52d2cf746",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "K1 is equally H-skew/equivariant but gives cap slope −4 versus K0 slope −2",
+    "zero state has degenerate equality and no inward crossing",
+    "R=4 with S_old=2 exceeds max g=3 so no crossing",
+    "projection residual rank6; chosen witness alone has zero residual"
+  ],
+  "limitations": [
+    "trigger, reserve carrier and projection rule are assumed, not sourced",
+    "local first entry does not establish global earliest event or simultaneous-patch selection",
+    "no instrumented physical readout or conventional material baseline",
+    "nonconstructor review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/pachlift-20261103-01/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Find independent constitutive selector for trigger and generator; only then map a boundary port to measured units and preregister against conventional baseline"
+}

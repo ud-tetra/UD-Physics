@@ -1,0 +1,88 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "pachlift-20261103-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-03T22:38:42.996421+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact conditional first-entry witness, projected memory dynamics, one-parameter nonuniqueness and cap-stock readout",
+  "command": "python3 experiments/pachner-trigger-lift/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "7c26ef783b0dccac998eb61c3dcb15c52d2cf746",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-trigger-lift/audit.py",
+      "sha256": "13513c0c6bdbd75982dfcac33ae8d4b15082215d4b106b282c333553932e680e",
+      "size_bytes": 7675
+    },
+    {
+      "input_id": "input-002",
+      "name": "audit.py",
+      "path": "inputs/002-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-interface-defect/audit.py",
+      "sha256": "a3f1762db95e3845b09561906b229bc816c7e65b58ef3705e485cfe79099802a",
+      "size_bytes": 6091
+    },
+    {
+      "input_id": "input-003",
+      "name": "audit.py",
+      "path": "inputs/003-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-switch-ledger/audit.py",
+      "sha256": "8d1817d486add01a3e00da5d5ba16f4b06fea22551af50515bb68c3fc552b034",
+      "size_bytes": 5650
+    },
+    {
+      "input_id": "input-004",
+      "name": "audit.py",
+      "path": "inputs/004-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/audit.py",
+      "sha256": "472965714d8009d03e6916c4491e95514ccb7bff7ad9511d7a5fb8e8e3cd8aee",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-005",
+      "name": "audit.py",
+      "path": "inputs/005-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-boundary-observability/audit.py",
+      "sha256": "e8e36515d2f56fee6a8d849d0a9e368ced8cdff76ef199a796b15939630eb6de",
+      "size_bytes": 9321
+    },
+    {
+      "input_id": "input-006",
+      "name": "20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "path": "inputs/006-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "538e8edc0ce0cffbd9a0612fdea2a7dece99d03e221c663af8f0ca43711b5e07",
+      "size_bytes": 1127
+    },
+    {
+      "path": "files/README.md",
+      "sha256": "60f7c07fb1ae7b4bbebcc6e7fda637e264dc121dfb41ef6ef53ce6e7a7c426fb",
+      "size_bytes": 6880
+    },
+    {
+      "path": "files/mathematical_receipt.json",
+      "sha256": "381859bdcf20c95564000ff262930ee131b69bf5cb7e965bd224d066a0fefa61",
+      "size_bytes": 9778
+    }
+  ]
+}
