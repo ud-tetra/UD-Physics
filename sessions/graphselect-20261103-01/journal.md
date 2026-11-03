@@ -29,3 +29,5 @@ Reproduce with `python3 experiments/graphite-contact-selector-topology/audit.py`
 Captured artifacts/graphselect-20261103-01/exact-002 (EXACT): Corrected provenance path in receipt; calculation code and exact output unchanged from exact-001
 
 Correction: exact-001 receipt snapshot used a nonexistent local ledger path; exact-002 preserves the corrected receipt. The ledger SHA and calculations did not change. Validation PASS 437 records; unit suite PASS 16 tests.
+
+PR #278 merged at 7bd429866597b8055d1587a1fe9fad1cc73602cd after Discovery integrity workflow #41667019152 PASS. Claim released at c96b51a7e783b73a9d256a2827abbc34f6e73cf1 using exact-head lease. Closure-only record; no substantive amendment.

@@ -12,8 +12,11 @@
   "claims": {
     "graphite-contact-selector-topology": {
       "held_sha": "881ab12a0a146234cc2b36126c5667a9ec120882",
-      "status": "held",
-      "claim_ref": "refs/heads/claims/graphite-contact-selector-topology"
+      "status": "released",
+      "claim_ref": "refs/heads/claims/graphite-contact-selector-topology",
+      "released_sha": "c96b51a7e783b73a9d256a2827abbc34f6e73cf1",
+      "merged_pr": 278,
+      "merged_sha": "7bd429866597b8055d1587a1fe9fad1cc73602cd"
     }
   },
   "checks": [
@@ -21,7 +24,8 @@
     "C3 rational action and pulse derivative replay PASS",
     "independent physics review NOT_RUN",
     "python3 scripts/validate.py PASS (437 records)",
-    "python3 -m unittest discover -s tests -q PASS (16 tests)"
+    "python3 -m unittest discover -s tests -q PASS (16 tests)",
+    "GitHub Discovery integrity workflow #41667019152 PASS"
   ],
   "finding": "N7 has 12 rooted six-cycles against 3 on N13/N19; a registered direction picks one edge equivariantly, but toroidal cycle activation is target-informed and lacks a material source",
   "next_action": "Find independently sourced spatial coherence/contact activation and physical direction/clock/material loss, then held-out signed friction/load comparison",
