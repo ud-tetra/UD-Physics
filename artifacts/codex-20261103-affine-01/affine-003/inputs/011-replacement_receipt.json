@@ -1,0 +1,132 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "affine-clock-003",
+  "session_id": "codex-20261103-affine-01",
+  "candidate_id": "ref01-affine-clock",
+  "question": "Reduce independent jitter sensitivity by replacing the early return.",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "raw-returns-6",
+      "symbol": "F",
+      "object_type": "return map",
+      "definition": "Six scalar R exp(((1+gamma)*t+Delta)*A_g(theta)) S diagonal port returns",
+      "domain": "R^6, max-norm radius 1/4000000",
+      "codomain": "R^6",
+      "coefficient_domain": "Q matrices, R flow",
+      "units": "dimensionless",
+      "basis_orientation": "PR #120 signed simplex order and prior rational K basis",
+      "metric_measure": "H+sum theta_j K_j",
+      "origin": "derived",
+      "exact_expression": null,
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "UD-PR120"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit coarse port, initial return 1"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "UD-PR120",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/120",
+      "version_or_commit": "53c96276623fee508f521c6c6a983f0798c1aacd",
+      "section_or_object_id": "BIPYRAMID_DATA.json: S,R,H,A_weighted",
+      "source_status": "Imported finite model"
+    }
+  ],
+  "assumptions": [
+    "Fixed Q167/Q173-style masks with candidate weighted adjoints",
+    "One common affine time warp across all samples",
+    "Same four-dimensional ungated-generator-preserving family"
+  ],
+  "technique_plan": [
+    {
+      "technique": "Exact rational Taylor and operator norm bounds",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Certify inverse sensitivity uniformly"
+    },
+    {
+      "technique": "Modular clocks and factorization",
+      "applicability": "NA",
+      "purpose_or_na_reason": "Continuous affine time and no divisibility question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous model parameter",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "actual=(1+gamma)*nominal+Delta",
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R^41",
+    "generator_or_update": "A_g=H(theta)^-1 B_g^T H(theta)-B_g",
+    "initial_boundary_conditions": "Embedded unit coarse port; fixed mask for each return",
+    "conservation_and_sources": "H(theta) isometry per fixed mask",
+    "projection_and_kernel": "R: R^41 -> R^23",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "Design scan only; no empirical data",
+    "known_targets": [],
+    "fitted_parameters_or_formula_choices": [
+      "Replace channel 3 at 1/2 with channel 1 at 7/32"
+    ],
+    "search_domain_and_budget": "188 options: four channels at k/32, k=1..47",
+    "selection_criterion": "Minimize baseline inverse infinity norm times worst absolute slope among options with inverse norm <215.",
+    "baseline": "Five returns for common offset"
+  },
+  "calculation_steps": [
+    "Reuse the rational baseline Jacobian and tail from affine-001.",
+    "Bound H-induced norms by weighted Frobenius trace; baseline sum caps are 58 for H^-1 K and 27 for DG.",
+    "Transport by metric equivalence to get caps 59 and 28 throughout the box, then bound Hessian below 9200.",
+    "Enclose each time slope using the baseline Taylor series, a mixed derivative bound and the second time derivative bound 64.",
+    "Recompute the replacement row with rational degree-80 Taylor series; same uniform Hessian and tail apply."
+  ],
+  "result": {
+    "exact_expression": "Radius 1/4000000 and inverse <=420 preserved; maximum timing slope cap 4/5.",
+    "approximation": null,
+    "units": null,
+    "precision_and_error": "Same combined return budget 1/6720000000; jitter-only cap 1/5376000000, improvement 1733/800.",
+    "scope": "Candidate model and declared box only",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact rational assertions and numeric design scan",
+      "command_or_proof_path": "OPENBLAS_NUM_THREADS=1 python -B replacement.py bip.json",
+      "source_revision": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "At five samples and a locally invertible metric-plus-offset sub-Jacobian, rate changes can be compensated locally by those five coordinates."
+  ],
+  "limitations": [
+    "No native actuator, independent timing jitter model or physical time conversion; no independent review."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/codex-20261103-affine-01/affine-003/manifest.json"
+  ],
+  "next_discriminant": "Evaluate a specified timing/readout/preparation contract or add redundancy for model-mismatch detection."
+}

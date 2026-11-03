@@ -27,3 +27,13 @@ Captured artifacts/codex-20261103-affine-01/affine-002 (EXACT): Wider affine box
 Checkpoint (handoff): Radius 1/4000000; inverse <=420; joint residual 1/6720000000
 
 Next: Optimize schedule against timing sensitivity and source a native readout contract
+
+## 2026-11-03T23:08:29.523161+00:00
+
+Captured artifacts/codex-20261103-affine-01/affine-003 (EXACT): Early-return replacement improves worst jitter cap by 1733/800
+
+## 2026-11-03T23:08:29.611349+00:00
+
+Checkpoint (handoff): Replacement channel 1 at 7/32; radius and inverse preserved; max slope 4/5
+
+Next: Test a specified readout contract or redundant returns for model mismatch

@@ -30,8 +30,8 @@
       "result": "PASS (exact constructor certificate)"
     }
   ],
-  "finding": "Radius 1/4000000; inverse <=420; joint residual 1/6720000000",
-  "next_action": "Optimize schedule against timing sensitivity and source a native readout contract",
+  "finding": "Replacement channel 1 at 7/32; radius and inverse preserved; max slope 4/5",
+  "next_action": "Test a specified readout contract or redundant returns for model mismatch",
   "mathematical_profile": {
     "coefficient_domain": "Q for matrices and bounds; R for continuous evolution",
     "exactness_or_precision_plan": "Numerical design scan; rational Taylor enclosure and uniform Hessian certificate",
@@ -43,9 +43,9 @@
     ],
     "clock_metric_units_conventions": "Dimensionless continuous affine time; published oriented simplices; unit coarse preparations in metric H(theta)."
   },
-  "checkpoint_at": "2026-11-03T23:06:30.660509+00:00",
+  "checkpoint_at": "2026-11-03T23:08:29.593516+00:00",
   "checkpoint_source": {
-    "revision": "2ff5eb43060b4342877dac461a776f62f3b57119",
+    "revision": "e9a1a0331055ec156b001163a58aab120c94fdca",
     "dirty": true
   }
 }

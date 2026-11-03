@@ -19,16 +19,18 @@
   "physical_mapping": "OPEN; physical promotion 0",
   "target_exposure": "No empirical targets; numerical schedule design scan inspected",
   "fitted_choices": [
-    "Sixth sample: channel 2 at 5/4, minimizing estimated inverse norm over 20 scanned choices"
+    "Sixth sample: channel 2 at 5/4, minimizing estimated inverse norm over 20 scanned choices",
+    "Replace channel 3 at 1/2 with channel 1 at 7/32"
   ],
   "sources": [
     "https://github.com/ud-tetra/UD/pull/120"
   ],
   "baseline": "Five-return shared-offset certificate; four raw returns at 3/2 plus channel 3 at 1/2",
-  "result": "Inverse Lipschitz <=420 on radius 1/4000000; each return budget epsilon_i+L_i |jitter_i|+p_i <=1/6720000000.",
-  "next_discriminant": "Search a better-conditioned schedule subject to timing sensitivity and test the noise contract against a specified readout.",
+  "result": "Radius 1/4000000 and inverse <=420 preserved; maximum timing slope cap 4/5.",
+  "next_discriminant": "Evaluate a specified timing/readout/preparation contract or add redundancy for model-mismatch detection.",
   "mathematical_receipts": [
     "mathematical_receipt.json",
-    "wider_receipt.json"
+    "wider_receipt.json",
+    "replacement_receipt.json"
   ]
 }
