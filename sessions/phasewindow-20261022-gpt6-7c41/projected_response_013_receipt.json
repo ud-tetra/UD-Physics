@@ -1,0 +1,118 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "projected-response-013",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "How large is the moving-pulse linear initial-housing-phase to non-affine output gain over original u=100; does the post-selected phase match finite nonlinear difference?",
+  "evidence_labels": [
+    "NUMERICAL",
+    "FIT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "sources": [
+    {
+      "path": "experiments/icosahedral-free3d/model.py",
+      "blob_sha": "c480411dea76a32b0703651744fd66549fc7df4e",
+      "main_rev": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb"
+    },
+    {
+      "path": "experiments/icosahedral-mountloss/mountloss.py",
+      "blob_sha": "aa4ad28348e22733340aad0cde6ae33a633f0b75",
+      "main_rev": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb"
+    },
+    {
+      "path": "experiments/icosahedral-phasewindow-20261022/PROJECTED_COERCIVITY.md",
+      "source": "previous exact stationary-linear analysis"
+    }
+  ],
+  "objects": [
+    {
+      "id": "state",
+      "domain": "R^560",
+      "units": "dimensionless 3D spring surrogate",
+      "definition": "q280,v280, full rigid kinetic modes retained"
+    },
+    {
+      "id": "W",
+      "domain": "R^(560x180)",
+      "definition": "W'=DF(y_ref)W; W(0)=B 180 energy-orthonormal housing columns",
+      "origin": "analytic derivative, numerical integration"
+    },
+    {
+      "id": "nonaffine",
+      "domain": "R^(12x3)",
+      "rank": 24,
+      "definition": "Z=(I-11^T/12-XX^T/(4R²))Y_shell",
+      "origin": "exact reference projector"
+    },
+    {
+      "id": "initial_phase",
+      "domain": "R^180",
+      "definition": "||a||<=1; δy0=sqrt(2 Eh)Ba, Eh=(3/2)Ep/40000",
+      "origin": "target-exposed fitted energy budget"
+    }
+  ],
+  "assumptions": [
+    "Unchanged positive reciprocal 560-state 3D surrogate, continuous dimensionless u, uncalibrated physical units",
+    "One deterministic scattered ±5% primary ±1% gains ±10% housings case, beta=.005 cf=0 nu=.05",
+    "Initial heart alpha=0.1 primary/device reference/rest, varying housing phase 180D",
+    "Tangent is first-order around the moving pulse, and finite selected ±phase checks do not certify other phases"
+  ],
+  "target_exposure": {
+    "status": "previous threshold and original u100 pulse exposed; case/phase/time selected for development",
+    "parameter_search": "1 deterministic case, 401 coarse + 601 locally refined sample points, 180-phase singular vectors; 1 chosen ±phase finite pair",
+    "model_selection": "No fitting to experimental data; nu and tolerances inherited"
+  },
+  "calculation_steps": [
+    "Construct analytic JVP for all radial/edge strains, port forces, mount/strut geometry and viscous coordinate derivatives",
+    "Directional finite-difference JVP checks at moving and displaced states",
+    "DOP853 evolve full560 nonlinear reference plus 560x180 tangent",
+    "Project to rank24 shell subspace and compute worst singular value at each sampled time",
+    "Select maximum sampled time/phase and simulate actual nonlinear ±phase; compare central derivative and conservation"
+  ],
+  "result": {
+    "numerical": {
+      "coarse_sampled_peak": 0.000538024543824654,
+      "fine_local_sampled_peak": 0.000538309299170763,
+      "fine_peak_u": 1.49,
+      "original_threshold": 0.025,
+      "finite_pm_max": 0.0005035299307406669,
+      "tangent_finite_centered_relative_error": 5.410471584746225e-9,
+      "sampled_energy_heat_error_upper": 6e-11
+    },
+    "scope": "One coefficient set, all 180 *linear initial-phase directions* at sampled times; no nonlinear allphase u100, parameter box or continuous time bound"
+  },
+  "verification": [
+    {
+      "method": "same-runtime JVP vs central finite differences",
+      "status": "PASS, max absolute ~1.3e-8"
+    },
+    {
+      "method": "coarse/fine at identical t=1.5",
+      "status": "PASS, difference 4.94e-13"
+    },
+    {
+      "method": "finite +/- postselected phase",
+      "status": "PASS, centered gain relative 5.41e-9"
+    },
+    {
+      "method": "E+heat/P/L",
+      "status": "PASS numerical balance"
+    },
+    {
+      "method": "repository tooling CI",
+      "status": "NOT_RUN at commit time"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Static exact one-shell-vertex displacement defeats energy-only ||Z||<=1/40 as full nonlinear universal claim",
+    "No validated second nonlinear derivative/forced Green, reference defect or allphase nonlinear flow bound; PR44 separate held claim"
+  ],
+  "artifacts": {
+    "local_chat_archive": "UD_3D_projected_response_013_20261023.zip",
+    "local_capture": "projected-response-013/manifest.json",
+    "repository_capture_status": "NOT_UPLOADED; only checkpoint/report/receipt committed"
+  },
+  "next_discriminant": "Validated projected moving-pulse nonlinear flow remainder for all housing phases and continuous qualified property box with time-continuous margins."
+}

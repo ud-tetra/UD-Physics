@@ -1,0 +1,344 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "phasewindow-001",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Can ν∈[1/25,1/20] satisfy original linear 50%-ringdown and 80%-breathing screens for every one of the 180 housing-phase directions with E_h=3Ep/80000; does positive nonlinear energy protect housing-only geometry?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "primary-and-devices",
+      "symbol": "q",
+      "object_type": "280-coordinate configuration",
+      "definition": "alpha scalar, 13 primary 3D positions, 150 devices,30 housing 3D positions",
+      "domain": "R^280",
+      "codomain": null,
+      "coefficient_domain": "R with Q(sqrt5) reference",
+      "units": "internal length/strain",
+      "basis_orientation": "standard Cartesian xyz and declared radial/edge/device bases",
+      "metric_measure": "positive M and strain K; six rigid translations/rotations retained",
+      "origin": "imported",
+      "exact_expression": "280 = 1+39+150+90",
+      "source_refs": [
+        "source-model"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "original ell0"
+    },
+    {
+      "object_id": "phase",
+      "symbol": "a",
+      "object_type": "initial housing displacement/velocity phase",
+      "definition": "90 positions and 90 velocities normalized by positive housing energy metric",
+      "domain": "R^180",
+      "codomain": "R^560",
+      "coefficient_domain": "R",
+      "units": "unit-energy phase",
+      "basis_orientation": "original housing XYZ, displacement and velocity",
+      "metric_measure": "B^T G B=I including rigid kinetic energy",
+      "origin": "imported",
+      "exact_expression": "||a||_2<=1",
+      "source_refs": [
+        "source-window"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "E_h=3Ep/80000"
+    },
+    {
+      "object_id": "damping",
+      "symbol": "nu",
+      "object_type": "dimensionless passive housing loss strength",
+      "definition": "coefficient enters C_nu=C0+nu D",
+      "domain": "[1/25,1/20]",
+      "codomain": null,
+      "coefficient_domain": "Q subset of R",
+      "units": "dimensionless",
+      "basis_orientation": "N/A",
+      "metric_measure": "positive semidefinite D",
+      "origin": "fitted prior",
+      "exact_expression": "1/25<=nu<=1/20",
+      "source_refs": [
+        "source-window"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "original u time"
+    },
+    {
+      "object_id": "linear-volume-readout",
+      "symbol": "R_total",
+      "object_type": "mean normalized oriented cell-volume linear RMS",
+      "definition": "RMS response for alpha=1/10 pulse and housing phase",
+      "domain": "initial phase x [0,100]",
+      "codomain": "R_nonnegative",
+      "coefficient_domain": "R",
+      "units": "normalized volume fraction",
+      "basis_orientation": "20 consistently oriented cells",
+      "metric_measure": "RMS over internal u∈[0,100]",
+      "origin": "imported/derived",
+      "exact_expression": "R_total>=Rp-L_R*abs(nu-nu0)-sqrt(3/2)*delta",
+      "source_refs": [
+        "source-window"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "phase"
+      ],
+      "normalization": "matching original undamped linear RMS R0"
+    },
+    {
+      "object_id": "housing-only-energy",
+      "symbol": "E_h",
+      "object_type": "nonnegative mechanical energy",
+      "definition": "initial housing-only energy with alpha=0 and primary/device reference",
+      "domain": "R_nonnegative",
+      "codomain": null,
+      "coefficient_domain": "Q bounds",
+      "units": "internal E_*",
+      "basis_orientation": "3D reference",
+      "metric_measure": "E'= -P_loss <=0",
+      "origin": "derived",
+      "exact_expression": "E_h <=51/20000000",
+      "source_refs": [
+        "source-domain"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A3"
+      ],
+      "dependency_ids": [],
+      "normalization": "Ep=(1+Σ g)/200"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "source-model",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/README.md",
+      "version_or_commit": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "§1 exact central viscous path law",
+      "source_status": "integrated"
+    },
+    {
+      "source_id": "source-window",
+      "url_or_repo_path": "artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/linear.csv;full_housing_refined.json",
+      "version_or_commit": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "450 linear rows, nine saved nodes, 50 parameter sets, all 180 housing phases",
+      "source_status": "integrated numerical, source bytes SHA-256 checked"
+    },
+    {
+      "source_id": "source-domain",
+      "url_or_repo_path": "experiments/icosahedral-nonlineartube/README.md",
+      "version_or_commit": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "§§1–4 passivity/domain and cell Gram bounds",
+      "source_status": "integrated exact conditional"
+    },
+    {
+      "source_id": "source-tube",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/TUBE_THEOREM.md",
+      "version_or_commit": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "§§1–5 missing forced Green and nonlinear remainder",
+      "source_status": "integrated conditional open"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "The integrated passive 280-coordinate surrogate, qualified parameter box and source numerical inequalities are unchanged.",
+      "origin": "imported"
+    },
+    {
+      "id": "A2",
+      "statement": "E_h is enlarged by user-authorized development choice 3/2, with same 50 exposed parameter sets, nine exposed strength nodes and exact continuous-nu interpolation inequalities.",
+      "origin": "FIT"
+    },
+    {
+      "id": "A3",
+      "statement": "Housing-only global-domain proof starts at alpha=0 and reference primary/device state; no driven alpha=1/10 pulse.",
+      "origin": "defined preparation"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational arithmetic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "upper energy and strict strain/strut/Gram inequalities"
+    },
+    {
+      "technique": "spectral energy-metric dynamics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "amplitude-independent full-180-phase linear ringdown fraction imported at SHA-pinned revision"
+    },
+    {
+      "technique": "Duhamel and Cauchy–Schwarz",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "linear pulse RMS sensitivity and phase readout inflation by sqrt(3/2)"
+    },
+    {
+      "technique": "3D geometry, oriented cell Gram",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "face median, noncollapse, nonzero determinant and volume bounds"
+    },
+    {
+      "technique": "ODE continuation/passivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "all-time housing-only positive-length domain and finite-time boundedness"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no structural divisibility question"
+    },
+    {
+      "technique": "modular clocks",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous dimensionless physical surrogate time, no finite register"
+    },
+    {
+      "technique": "homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "mechanical response, not chain boundary/topological invariant"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "1 scalar+13*3 primary+150 device+30*3 housing =280 positions;2*280=560 phase;30*4=120 viscous struts;2*30*3=180 housing initial phase coordinates",
+    "reduced_expression": "280,560,120,180",
+    "factor_origins": [
+      "icosahedron 12 exterior vertices,30 edges,20 cells; 30 housing points, 4 anchors each"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous u=t/t0",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "M qdd + C_nu(q) qdot+grad U(q)=0",
+    "initial_phase": "housing phase energy ball, alpha=0 for exact safety / alpha=1/10 for linear breathing",
+    "coupling": "massive housings, ideal strut reaction forces, reciprocal device network",
+    "period_claim": null,
+    "physical_unit_map": "uncalibrated t0"
+  },
+  "dynamics_readout": {
+    "state_space": "R^560 mechanical phase and separate heat accumulator",
+    "generator_or_update": "unchanged passive second-order ODE with positive energy",
+    "initial_boundary_conditions": "housing-only alpha=0 or linear pulse alpha=1/10; 3D Euclidean shell and positive housing strut length",
+    "conservation_and_sources": "E'=-P_loss<=0; total linear/angular momentum incl housings conserved",
+    "projection_and_kernel": "linear 20-cell mean oriented-volume gradient insensitive to global rigid motion; full housing initial Gram includes rigid kinetic energy",
+    "physical_mapping": "mechanical model only; no physical spacetime/UD-native identification"
+  },
+  "target_exposure": {
+    "status": "All target screens, parameter sets, nine strength nodes, and original failed cases exposed before this follow-up; factor 3/2 is a new post-exposure design choice.",
+    "known_targets": [
+      "E(u=100)/E(0)<=1/2 full housing linear",
+      "RMS mean-volume retention>=4/5 of original undamped linear baseline",
+      "housing-only all future struts positive"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "housing initial energy multiplier 3/2, chosen as development stress; no alternate powers/large formula search"
+    ],
+    "search_domain_and_budget": "One proposed multiplier 3/2 evaluated against all 450 frozen linear records; separate fixed-primary scan at nine nu values (illustrative)",
+    "selection_criterion": "strict overlap of nine node breathing neighborhoods and independent full-180-phase housing ringdown certificate",
+    "baseline": "old Ep/40000 numerical linear continuous strength full180 energy<=0.4566661 and breathing>=0.8135618; original nu=.02 low-beta failure preserved"
+  },
+  "calculation_steps": [
+    "Fetch/verify SHA256 bytes of immutable 450-row linear.csv and full_housing_refined.json; parse 50 unique coefficient IDs and nine nodes.",
+    "Use R_total >= Rp-L_R*|nu-nu0|-sqrt(3/2)*delta; form minimum over 50 breathing radii at each node; adjacent interval overlap min0.000310004698.",
+    "Combine separately with published amplitude-independent all-180-phase full housing energy fraction upper0.45666607.",
+    "Set E_h<=51/20000000; bound spokes1/400, edges1/250, housings1/180 by positive storage.",
+    "Apply triangle/face median inequalities to lower bound all housing strut lengths by554/1125.",
+    "Bound cell DeltaG_F<496767/20000000<1/40; relative Gram<1/20; determinant ratios and initial positive orientation propagate by continuity.",
+    "Local independent oscillator check provides a narrower fixed-primary comparative model, not full coupled evidence."
+  ],
+  "result": {
+    "exact_expression": "E_h<=51/20000000; each of 120 struts>554/1125; ||DeltaG||_F<496767/20000000<1/40; cell volume ratio in ((19/20)^(3/2),(21/20)^(3/2)) for housing-only all u>=0",
+    "approximation": {
+      "phase_energy_multiplier": 1.5,
+      "nu_window": [
+        0.04,
+        0.05
+      ],
+      "case_count": 50,
+      "strength_nodes": 9,
+      "source_rows": 450,
+      "minimum_overlap": 0.0003100046982429448,
+      "full_housing_linear_energy_upper": 0.4566660701874066,
+      "fixed_primary_u100_energy_nu04": 0.396447128
+    },
+    "units": "internal E_*, ell0, u; volume ratio dimensionless",
+    "precision_and_error": "Source float64 bounds and numerical allowance inherited; neighborhood overlap>>1e-6 reported cushion but not independently interval-verified; exact rational geometric bounds checked locally by Python Fraction",
+    "scope": "EXACT housing-only geometry over continuous qualified property box; NUMERICAL full linear 50-case strength window/all 180 phases; no full nonlinear pulse claim",
+    "physical_interpretation": "Conditional passive 3D surrogate; physical implementation UNSCORED"
+  },
+  "verification": [
+    {
+      "method": "Python Fraction strict rational identities",
+      "command_or_proof_path": "local phase_window_postprocess.py exact_housing_domain()",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "PASS",
+      "review_relationship": "constructor same runtime"
+    },
+    {
+      "method": "Connector-source deterministic full scan and SHA256 pinned copies",
+      "command_or_proof_path": "artifacts/phasewindow-20261022-gpt6-7c41/phasewindow-001/manifest.json",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "PASS for 450 rows and all 9 neighborhoods",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "Numerical fixed-primary scalar ODE second implementation",
+      "command_or_proof_path": "local fixed_primary.py",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "PASS DOP853 scalar energy discrepancy 3.5124e-12",
+      "review_relationship": "constructor second check, not independent replication"
+    },
+    {
+      "method": "Repository source replay",
+      "command_or_proof_path": "python3 experiments/icosahedral-phasewindow-20261022/replay.py --repo-root . --out /tmp/phasewindow-result.json",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "NOT_RUN: no complete repository checkout/network",
+      "review_relationship": "not executed"
+    },
+    {
+      "method": "Repository validation",
+      "command_or_proof_path": "python3 scripts/validate.py; python3 -m unittest discover -s tests -v",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "NOT_RUN in local runtime",
+      "review_relationship": "not executed"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Original nu=.02,beta=.005,c_f=0 full assembly half-energy failure preserved; fixed-primary nu=.02 worst fraction about0.6296.",
+    "Full alpha=.1 pulse energy-only sublevel contains housing-strut-collapse configurations even at original energy budget; stronger phase budget cannot repair that method.",
+    "No continuous property-box linear enclosure or full nonlinear pulse energy/volume guarantee follows from frozen 50 case data.",
+    "High-friction c_f=.02 and excessive housing mass challenge cases from parent remain failed."
+  ],
+  "limitations": [
+    "No full560 nonlinear simulation rerun under enlarged budget",
+    "No a posteriori full Green/volumetric nonlinear remainder bound",
+    "No verified interval arithmetic on frozen float64 enclosures",
+    "All results develop an exposed target; no held-out predictive success",
+    "Physical implementation and native UD generator unverified"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/phasewindow-20261022-gpt6-7c41/phasewindow-001/manifest.json"
+  ],
+  "next_discriminant": "Bound full forced Green and proper-frame nonlinear remainder, including continuous length tube, for worst exposed beta=.005 c_f=0 pulse; verify original E_h first and amplified budget separately."
+}

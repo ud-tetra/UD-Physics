@@ -1,0 +1,18 @@
+{
+  "b_sample_max": 1.0162581548625205,
+  "b_sample_min": 0.9837524029879106,
+  "beta_numeric": 0.005,
+  "cf_numeric": 0,
+  "checked_rhs_cases": 12,
+  "evidence": "NUMERICAL / constructor; exact all-time theorem independently proven by exact_symmetry.py",
+  "full560_vs_6D_max_error_u4": 9.907963338662285e-12,
+  "max_force_tangency_error": 1.6991853674949368e-14,
+  "nu_numeric": 0.05,
+  "radial_housing_initial_scale": 1.0010838224529703,
+  "radial_run_horizon": 100,
+  "radial_run_nfev": 51542,
+  "sample_energy_max": 0.06500255000000002,
+  "sample_energy_start": 0.06500255000000002,
+  "status": "PASS",
+  "strut_sample_min": 0.49187999199285887
+}

@@ -1,0 +1,104 @@
+{
+  "convergence": {
+    "h0p05_vs_h0p025_max_shared_time_absolute_differences_for_g_v_w": [
+      2.0228231660231535e-13,
+      1.1815424940525565e-12,
+      1.0781191477765573e-11
+    ],
+    "interpolation_defect_test_at_h0p025_entrywise_not_upper_bound": {
+      "C": 2.124085765609074e-08,
+      "K": 1.969847588156881e-06
+    },
+    "u100_adjoint_at_h0p025": 4.28083887121974e-06,
+    "u100_full_forward_at_h0p025": 4.280838880992824e-06,
+    "u100_gains_by_h": {
+      "interp100_fixedh0p05.json": 4.280838775383596e-06,
+      "interp100_fixedh0p1.json": 4.280839075615284e-06,
+      "interp100_h0p025.json": 4.28083887121974e-06,
+      "interp100_h0p2.json": 4.280841139678706e-06
+    }
+  },
+  "failed_attempts": [
+    "Direct full Jacobian reassembly for reduced backward adjoint at u100 timed out at rtol1e-9/2e-7",
+    "Common constant-equilibrium Lyapunov/logarithmic-norm probe had large growth bound and did not prove the gates",
+    "Short-horizon replay initially extrapolated past integration horizon; corrected prior to final capture"
+  ],
+  "group_reduction": {
+    "full_firstorder_housing_phase_ball": true,
+    "fundamental_dimensions": [
+      34,
+      28,
+      36,
+      44
+    ],
+    "group": "A5 proper icosahedral rotations, 60 elements",
+    "invariant_jacobian_leakage_test_max": 7.07e-14,
+    "projector_idempotence_test_max": 3.34e-16,
+    "q_multiplicity_slice_ranks": {
+      "3": 17,
+      "3prime": 14,
+      "4": 18,
+      "5": 22
+    }
+  },
+  "limitations": [
+    "No interval enclosure for continuous-time model-dependent six-state moving baseline",
+    "No validated coefficient interpolation error over whole continuous interval",
+    "No validated propagator/solver error over full u100",
+    "No mathematically proven full interval g v w maxima",
+    "No uniform nonlinear remainder or perturbed strut safety through u100",
+    "Uniform symmetric reference only, no scattered property box"
+  ],
+  "model": {
+    "Eh": "51/20000000",
+    "alpha0": 0.1,
+    "beta": 0.005,
+    "cf": 0,
+    "configuration": 280,
+    "initial_housing_phase": 180,
+    "nu": 0.05,
+    "projected_output": 24,
+    "tangent_phases": 560,
+    "time": "uncalibrated model u",
+    "uniform_icosahedral_symmetry": true
+  },
+  "next": "Validated a posteriori defect/interval enclosures for four small A5 multiplicity spaces and symmetric baseline; subsequently nonlinear phase-ball/strut bootstrap.",
+  "peaks": {
+    "g": [
+      6.674200417854993e-05,
+      4.65
+    ],
+    "v": [
+      0.000608074566464554,
+      4.7
+    ],
+    "w": [
+      0.0061443485181751,
+      4.55
+    ]
+  },
+  "previous_coarse_peak": {
+    "g_022_023": 6.638579048e-05,
+    "new_observed_peak_exceeds_prior": true,
+    "u": 4.04
+  },
+  "run_id": "a5-reduced-gain-024",
+  "sample_node_gates": {
+    "g_le_1e-4": true,
+    "v_le_0p00065": true,
+    "w_sample_le_0p01": true
+  },
+  "sampling": {
+    "DOP853_rtol": 1e-11,
+    "ODE_atol": 1e-13,
+    "coefficient_grid_h": 0.025,
+    "observation_grid_h": 0.025,
+    "sample_count": 4001,
+    "source_coefficient_spline": "CubicSpline on source-assembled reduced Jacobian; NO validated interpolation bound",
+    "time_interval": [
+      0,
+      100
+    ]
+  },
+  "status": "NUMERICAL_DEVELOPMENT_NOT_CERTIFIED"
+}

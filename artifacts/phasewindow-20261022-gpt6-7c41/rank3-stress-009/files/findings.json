@@ -1,0 +1,22 @@
+{
+  "status": "EXACT_CONDITIONAL_PARTIAL_NO_GO_AND_GLOBAL_STRESS",
+  "source_main": "bbf7b9ec09a86378f6503c16460771a033e48593",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED_PARTIAL_PATCH",
+    "OPEN_FULL12"
+  ],
+  "proof": "Nine actual R3 coordinates give exactly flat face and U_9<1/20<1360051/20000000 for only nine radial/18 included edge spring terms. Exact adjacency charpoly yields Omega PSD and gap 1+sqrt5. No full12 global barrier is proved.",
+  "consequential_exact": "charpoly(A)=(λ-5)(λ+1)^5(λ²-5)^3; Ω=sqrt5I-A+(5-sqrt5)P0; Ω≥(1+sqrt5)(I-P0-PV)",
+  "numerical_partial_energy_display": 0.0495778040193576,
+  "known_global_full12_numerical_candidate": 0.12442609483988352,
+  "source_validation": "Local full exact checker PASS; compact branch script NOT_RUN independently in this runtime.",
+  "target_exposure": "Chosen patch, rational grid and numerical starting configurations are post-exposure development, not holdout.",
+  "limitations": [
+    "Partial network omission of three vertices and twelve exterior edges makes this no full physical below-pulse witness.",
+    "Exact spectral necessary inequality does not provide target full spring-energy bound.",
+    "Numerical SLSQP minima do not establish global minimum.",
+    "PR44 forced-Green scope owned by separate claim."
+  ]
+}

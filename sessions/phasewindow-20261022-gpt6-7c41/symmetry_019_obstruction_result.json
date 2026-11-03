@@ -1,0 +1,10 @@
+{
+  "evidence": "EXACT / CONDITIONAL / NEGATIVE CONTROL",
+  "logic": "Even perfect shell-affine readout Z=0 plus energy <=pulse does not ensure any time-uniform strut lower bound. These are static inadmissible-to-reach counterexamples, not reachable pulse trajectories.",
+  "mount_energy": "(1-epsilon)^2/(40*R2), R2=(5+sqrt5)/8",
+  "shell_nonaffine_norm": "0",
+  "static_family": "X_i=v_i, alpha=z=v=0; one housing H_e=m_e+(1-epsilon)(v_i-m_e); others at midpoints",
+  "status": "PASS",
+  "strict_energy_upper": "1/36 <13/200",
+  "strut_length": "epsilon/2"
+}

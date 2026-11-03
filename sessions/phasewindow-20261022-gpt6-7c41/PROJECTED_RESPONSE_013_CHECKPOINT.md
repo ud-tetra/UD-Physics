@@ -1,0 +1,13 @@
+# Checkpoint 013 — time-dependent projected housing-phase gain
+
+Date: 2026-10-23 (local), UTC source time per local run record. Session `phasewindow-20261022-gpt6-7c41`. Held task claim `claims/icosahedral-phasewindow-20261022` at original held SHA `a6c0a36d74fdcc959441d81e2716fbd34d9a1ac4`. Work branch `discovery/icosahedral-phasewindow-20261022/phasewindow-20261022-gpt6-7c41`. Imported main `41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb`; six original mechanical blobs verified unchanged.
+
+**DONE / NUMERICAL:** Evolved the full original nonlinear 560-state pulse and 560x180 tangent dynamics to `u=100` for one qualified scattered low-beta/cf0 case. Every sampled-time singular-value calculation includes **all 180 initial phase directions** to first order. Largest sampled combined baseline+housing proxy 0.00053802454 at u1.5 (401 points). Local 601-point refinement gives 0.00053830930 at u1.49. Selected post-exposure phase and negative run through original full nonlinear equations to u100; max sampled ||Z|| 0.00050353; finite centered gain agrees with tangent at 5.41e-9 relative; source JVP checks, heat balance and total P,L numerical checks pass.
+
+**FAILURE / OPEN:** Exact low-energy one-vertex static deformation exceeds Z=1/40; energy-only nonlinear all-time bound fails. No validated nonlinear all-phase remainder, no continuous-time extrema or property-box certificate, and no full u100 mechanical breathing/ringdown certification. This experiment is **not a linearized-equilibrium theorem** nor independent physical validation.
+
+**CAPTURE:** Chat-provided `UD_3D_projected_response_013_20261023.zip` contains byte-preserved executed source code and data, captured `projected-response-013/manifest.json` (3 input files/11 output files, SHA256), plus chosen energy-normalized phase and 401+601 sample tables. No full run bytes are committed to GitHub; no claim of GitHub immutable capture. Repo report: `experiments/icosahedral-phasewindow-20261022/PROJECTED_RESPONSE_013.md`; receipt `sessions/phasewindow-20261022-gpt6-7c41/projected_response_013_receipt.json`.
+
+**CHECKS:** local Python NumPy/SciPy source executed PASS, JVP finite differences <1.3e-8, finite +/− phase central agreement 5.41e-9, energy+heat error <6e-11, P/L <2e-15. Repo validator/unittests / CI at this exact new head NOT_RUN before CI. Review relationship: same-runtime constructor. No changes to original mechanics, mainline state, held claim, PR44 or another owner's files.
+
+**NEXT:** Independent audit of moving tangent / selected case; then validated forced-Green and nonlinear remainder in a positive full-state frame-aware norm for all housing phases and original u100. PR44 owns related Green recovery, do not overwrite its paths.

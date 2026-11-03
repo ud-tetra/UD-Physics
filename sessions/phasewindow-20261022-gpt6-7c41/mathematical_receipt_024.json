@@ -1,0 +1,264 @@
+{
+  "artifact_manifest_refs": [
+    "local a5-reduced-gain-024/manifest.json"
+  ],
+  "assumptions": [
+    {
+      "id": "symmetric",
+      "statement": "Uniform 3D materials, exact A5 symmetry, original alpha0=.1, beta=.005, nu=.05, cf=0, unperturbed symmetric baseline",
+      "status": "MODEL PREMIS\u0415"
+    },
+    {
+      "id": "phase",
+      "statement": "Initial housing phase normalized to Eh<=51/20000000, 180D Euclidean unit ball",
+      "status": "MODEL PREMISE"
+    },
+    {
+      "id": "conditional_g",
+      "statement": "True g(tj)<=1/10000 at all 4001 mesh nodes",
+      "status": "NOT CERTIFIED"
+    },
+    {
+      "id": "conditional_v",
+      "statement": "True v(tj)<=13/20000 at all 4001 mesh nodes",
+      "status": "NOT CERTIFIED"
+    },
+    {
+      "id": "conditional_w",
+      "statement": "True w(u)<=1/100 at all times u in [0,100]",
+      "status": "NOT CERTIFIED"
+    }
+  ],
+  "calculation_id": "a5-reduced-gain-024",
+  "calculation_steps": [
+    {
+      "id": "1",
+      "statement": "Read-only source/claim check, invariant P_11 construction and numerical Jacobian leakage tests"
+    },
+    {
+      "id": "2",
+      "statement": "Cubic coefficient interpolation and forward fundamental solves in four symmetry slices"
+    },
+    {
+      "id": "3",
+      "statement": "Evaluate operator induced gains at 4001 times; correct coarse peak"
+    },
+    {
+      "id": "4",
+      "statement": "Check grid/ODE tolerance sensitivity, backward adjoint agreement, and spline off-grid defects"
+    },
+    {
+      "id": "5",
+      "statement": "Prove rational conditional double FTC lemma; mark missing interval estimates and nonlinear geometry"
+    }
+  ],
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "changed_dependencies": [
+    "Representation reduction depends on exact uniform symmetry and signed auxiliary rotation action; original model source unchanged"
+  ],
+  "clock_receipt": {
+    "clock_type": "continuous uncalibrated mechanical time u",
+    "coupling": "full 560-state mass-spring/damper",
+    "initial_phase": "alpha0=.1; zero baseline housing phases",
+    "modulus": null,
+    "period_claim": null,
+    "physical_unit_map": null,
+    "residue_convention": null,
+    "update_rule": "passive ODE, moving-reference tangent IVP"
+  },
+  "counterexamples_and_failures": [
+    "Unreduced tight u100 adjoint timed out; reduced cubic Jacobian approach superseded it",
+    "Naive constant energy metric logarithmic norm bound too loose; sector3 K0 can be indefinite on unregulated rotation modes",
+    "Earlier coarse peak u4.04 was not global sampled maximum; corrected u4.65",
+    "Short-horizon script erroneously extrapolated; corrected before final saved sources"
+  ],
+  "dynamics_readout": {
+    "conservation_and_sources": "original nonlinear ODE passive; moving tangent need not possess conserved quadratic energy",
+    "generator_or_update": "J(u) tangent along symmetric nonlinear moving reference",
+    "initial_boundary_conditions": "initial housing ball Eh<=51/20000000; all other initial perturbations zero",
+    "physical_mapping": "none established; 3D mechanical analogue",
+    "projection_and_kernel": "24D non-affine shell output, A5 six seeds and 4 reduced multiplicity spaces",
+    "state_space": "R^560 tangent mechanical, plus 180D initial housing ball"
+  },
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN",
+    "FAILED"
+  ],
+  "integer_fraction_receipt": {
+    "divisibility_gcd_lcm": null,
+    "factor_origins": [
+      "grid choice after seeing numerical profile",
+      "g node gate .0001 pre-exposed",
+      "v node gate .00065 post-selection",
+      "w bound .01 post-selection",
+      "norm FTC exactly"
+    ],
+    "factorization": null,
+    "raw_count_expression": "4001 nodes, step1/40, nearest1/80; node g<=1/10000, node v<=13/20000, continuous w<=1/100",
+    "reduced_expression": "v<=31/40000; g<=351/3200000; remaining=79649/3200000"
+  },
+  "limitations": [
+    "Original two proposed inequalities NOT formally certified",
+    "Continuous acceleration gain not certified from samples",
+    "Spline interpolation coefficient/source defects not globally bounded",
+    "No universal nonlinear remainder or perturbed strut geometry through u100",
+    "No tolerance-box extension beyond uniform coefficients",
+    "No empirical or native UD physical mapping"
+  ],
+  "next_discriminant": "Rigorous a posteriori interval/defect enclosures of the 6-state baseline and four <=44-dimensional forward fundamental matrices, then certify mesh g/v/w gates and nonlinear housing relative tube.",
+  "objects": [
+    {
+      "basis_orientation": "Euclidean reference icosahedron",
+      "codomain": null,
+      "coefficient_domain": "real (model coefficients fixed)",
+      "definition": "280 positions plus 280 velocities, linearized about symmetric moving 3D heart-pulse baseline",
+      "domain": "R^560",
+      "metric_measure": "positive mass energy metric",
+      "normalization": "a0=0.1, R2=(5+sqrt5)/8",
+      "object_id": "state",
+      "object_type": "full linearized mechanical state",
+      "origin": "imported",
+      "symbol": "y",
+      "units": "edge length and uncalibrated model time"
+    },
+    {
+      "basis_orientation": "six aligned A5 output seeds, input energy coordinates",
+      "codomain": "R^24",
+      "coefficient_domain": "real",
+      "definition": "sqrt(2Eh) C Phi(u,0) B",
+      "domain": "R^180",
+      "metric_measure": "spectral 2-norm",
+      "normalization": "Eh=51/20000000",
+      "object_id": "gain",
+      "object_type": "linear map",
+      "origin": "derived",
+      "symbol": "L_E(u)",
+      "units": "edge length"
+    },
+    {
+      "basis_orientation": "same as gain",
+      "codomain": "R^24",
+      "coefficient_domain": "real",
+      "definition": "time derivative of L_E; projected primary velocity",
+      "domain": "R^180",
+      "metric_measure": "spectral 2-norm",
+      "object_id": "velocity",
+      "object_type": "linear map",
+      "origin": "derived",
+      "symbol": "D_E(u)",
+      "units": "edge length per model time"
+    },
+    {
+      "basis_orientation": "same as gain",
+      "codomain": "R^24",
+      "coefficient_domain": "real",
+      "definition": "time derivative of D_E; projected primary acceleration",
+      "domain": "R^180",
+      "metric_measure": "spectral 2-norm",
+      "object_id": "acceleration",
+      "object_type": "linear map",
+      "origin": "derived",
+      "symbol": "A_E(u)",
+      "units": "edge length per model time squared"
+    }
+  ],
+  "question": "Can full-phase moving symmetric gain node and velocity gates be numerically validated and formally bounded over all u <=100 by A5 reduced forward fundamental?",
+  "receipt_schema_version": 1,
+  "result": {
+    "approximation": "sampled peak g=6.67420041785e-5 (u4.65), v=6.08074566465e-4 (u4.7), w=6.14434851818e-3 (u4.55); numerical u100 g=4.28083888099e-6",
+    "exact_expression": "If node g<=1/10000, node v<=13/20000 and continuous w<=1/100 on step1/40 grid, then continuous v<=31/40000 and g<=351/3200000, leaving 79649/3200000 nonlinear budget below 1/40",
+    "physical_interpretation": "assumed mechanical surrogate only",
+    "precision_and_error": "DOP853 tolerance requests; mesh convergence spread g2.023e-13, v1.182e-12, w1.078e-11 on shared samples; these are NOT certified bounds",
+    "scope": "exact algebraic reduction and rational conditional theorem; numerical fixed symmetric moving baseline 4001 sampled times; no true-time certified result or nonlinear phase-ball theorem",
+    "units": "reference edge lengths, u time"
+  },
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "sources": [
+    {
+      "section_or_object_id": "nonlinear passive equations",
+      "source_id": "mechanics",
+      "source_status": "read-only Git blob checked",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/mountloss.py and five imported dependencies",
+      "version_or_commit": "f0f6b707b77467f28c8e3892384fa0e8b28a4869"
+    },
+    {
+      "section_or_object_id": "original 12-node mesh and conditional v<.001 gate",
+      "source_id": "checkpoint023",
+      "source_status": "already exposed",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/CONTINUOUS_GAIN_GATE_023.md",
+      "version_or_commit": "e9eff380c1e3c129d042e5d40c7790c6930fd4a3"
+    }
+  ],
+  "target_exposure": {
+    "baseline": "checkpoint023 sparse 12 nodes g(4.04) nearpeak, unvalidated v<=.001",
+    "fitted_parameters_or_formula_choices": [
+      "new fine mesh1/40 and v gate13/20000, w gate1/100 selected after looking at sampled gains",
+      "four multiplicity forward calculation numerical interpolation h0.1/0.05/0.025"
+    ],
+    "known_targets": [
+      "u100",
+      "orientation threshold 1/40",
+      "original damping-strength window",
+      "checkpoint023 gain targets",
+      "previous sampled u4.04 peak"
+    ],
+    "search_domain_and_budget": "4 sectors x 2-3 interpolation grids, DOP853 rtol1e-9..1e-11, full 4001 times; failed direct reduced backward integration",
+    "selection_criterion": "maximize margin and resolve old integration failures",
+    "status": "FIT/DEVELOPMENT"
+  },
+  "technique_plan": [
+    {
+      "applicability": "EXACT CONDITIONAL",
+      "purpose_or_na_reason": "Reduce 280-coordinate equivariant dynamics to four multiplicity slices 17,14,18,22",
+      "technique": "Schur orthogonality and A5 matrix coefficients"
+    },
+    {
+      "applicability": "NUMERICAL",
+      "purpose_or_na_reason": "Evaluate g,v,w full phase-ball spectral norms over 4001 times",
+      "technique": "cubic interpolation + DOP853 forward fundamental"
+    },
+    {
+      "applicability": "EXACT CONDITIONAL",
+      "purpose_or_na_reason": "Turn certified mesh and acceleration gates into continuous-time bounds",
+      "technique": "ordinary rational FTC interpolation"
+    },
+    {
+      "applicability": "NOT_APPLIED",
+      "purpose_or_na_reason": "Required before true continuous-time status can be promoted",
+      "technique": "interval IVP and defect certificate"
+    }
+  ],
+  "verification": [
+    {
+      "actual_result": "NUMERICAL_PASS P\u00b2\u2212P<=3.34e-16, tangent leakage <=7.07e-14",
+      "command_or_proof_path": "python3 reduced_adjoint.py --time 4 --check",
+      "method": "group projector idempotence/invariance",
+      "review_relationship": "same-runtime independent from direct 24-output adjoint algebra",
+      "source_revision": "local package"
+    },
+    {
+      "actual_result": "NUMERICAL_PASS 4001 samples, max g/v/w values",
+      "command_or_proof_path": "python3 forward_fundamental.py --T 100 --h .025 --rtol 1e-11 --sample .025",
+      "method": "coefficient grid / ODE tolerance refinement",
+      "review_relationship": "same numerical source; not interval certificate",
+      "source_revision": "local package"
+    },
+    {
+      "actual_result": "PASS conditional algebra; sample checks only",
+      "command_or_proof_path": "python3 exact_gain_gate.py --csv files/sampled_operator_gains_4001.csv --out ...",
+      "method": "exact rational mesh theorem",
+      "review_relationship": "self-check",
+      "source_revision": "local package"
+    },
+    {
+      "actual_result": "NOT_RUN",
+      "command_or_proof_path": null,
+      "method": "interval/defect enclosure",
+      "review_relationship": "required future formal validation",
+      "source_revision": null
+    }
+  ]
+}

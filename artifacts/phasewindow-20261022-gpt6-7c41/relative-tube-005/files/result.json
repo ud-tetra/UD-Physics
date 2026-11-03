@@ -1,0 +1,50 @@
+{
+  "all_120_housing_struts_strictly_gt": "11/1250",
+  "all_20_oriented_cell_volume_ratios_strict_bounds": [
+    "27/1000000",
+    "7645373/1000000"
+  ],
+  "all_edge_strains_absolute_lt": "3/5",
+  "all_phase_uniform_time_horizon": "9/10",
+  "all_spoke_strains_absolute_lt": "2/5",
+  "cell_relative_matrix_perturbation_strictly_lt": "97/100",
+  "clock": "continuous dimensionless u, t0 not physically calibrated",
+  "earlier": "Original 1/20 then 2/5 exact safety horizons; this extends to 9/10, an 18-fold improvement against original 1/20.",
+  "evidence": "EXACT / CONDITIONAL; no physical model identification; no ODE simulation needed for proof",
+  "global_solution_existence_through_horizon": true,
+  "housing_initial_offset_upper": "1/180",
+  "housing_initial_velocity_upper": "3/50",
+  "housing_velocity_upper": "9",
+  "initial_conditions": "alpha0=1/10; primary and device states at reference/rest; any 180-coordinate housing displacement and velocity phase with Eh<=51/20000000",
+  "initial_housing_energy_upper": "51/20000000",
+  "initial_oscillator_amplitude_upper": "41/5000",
+  "limitations": [
+    "All-time u100 nonlinear pulse, 80% breathing RMS, 5% volume mismatch, 50% housing energy ringdown remain OPEN",
+    "Time horizon is a conservative proof limit, not an observed collapse threshold",
+    "No hardware realization or physical clock/energy calibration",
+    "No interval ODE or independent physical replication"
+  ],
+  "model": "Unchanged 280-coordinate 560-phase 3D passive MountLoss; 120 moving central viscosity paths and 30 housings, reciprocal force and torque",
+  "moving_axis_viscous_acceleration_upper": "94/45",
+  "orientation_preserved": true,
+  "phase_branch_parent": "43412f65f5e64ec49223b1c713fb1649af3b29ba",
+  "primary_velocity_Euclidean_upper": "19/50",
+  "provenance_and_target_exposure": "Same previously exposed original amplitude and energy allowance; rational horizon 9/10 selected after deriving sufficient majorant (FIT/development), not an independent physical prediction.",
+  "qualified_parameter_box": "g,m in[19/20,21/20], k in[19/50,21/50], beta in[1/200,1/20], weights in[9/10,11/10] mean1, Omega=10, nu in[0,1/20], cf>=0, positive existing device settings and gains",
+  "question": "Original amplitude alpha=1/10, every allowed 180 housing phase, 3D nonlinear MountLoss: positive struts and cell orientations through u=9/10?",
+  "sin_absolute_average_global_upper": "3/4",
+  "source_main_revision": "2b133c7889cde7aae9127d0c0fa2036c278884a9",
+  "source_of_method": "Direct anchor-relative oscillator/Duhamel identity and kinetic-energy matrix-operator bound, rather than independent absolute primary and housing motions.",
+  "status": "EXACT_CONDITIONAL_FINITE_TUBE",
+  "strictness": "At t=0 actual normalized cell ratio is 1, strictly between fixed endpoints; all derived bounds are strict across the closed time interval.",
+  "techniques": [
+    "exact integer/fraction inequalities",
+    "total primary kinetic energy norm",
+    "exact moving-midpoint Duhamel identity",
+    "global sine absolute-average inequality",
+    "operator-norm star-incidence bound",
+    "positive energy/passivity",
+    "ODE continuation"
+  ],
+  "total_initial_energy_upper": "1360051/20000000"
+}

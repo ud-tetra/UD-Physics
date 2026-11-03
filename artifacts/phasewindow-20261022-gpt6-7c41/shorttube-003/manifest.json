@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "run_id": "shorttube-003",
+  "created_at": "2026-10-22T23:31:00Z",
+  "evidence": "EXACT",
+  "summary": "All-phase original alpha=1/10 full nonlinear 560-state strut and cell orientation safety for u<=2/5 under enlarged housing energy. No u=100 coherence certification.",
+  "command": "python3 experiments/icosahedral-phasewindow-20261022/shorttube.py --out /tmp/shorttube-result.json ; python3 experiments/icosahedral-phasewindow-20261022/shorttube_check.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "shorttube.py",
+      "path": "inputs/001-shorttube.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/shorttube.py",
+      "sha256": "3aad1040660ead3da85318612ece8a98977f36970174a3c3c7a6f1d4d4ba47c2",
+      "size_bytes": 7263
+    },
+    {
+      "input_id": "input-002",
+      "name": "shorttube_check.py",
+      "path": "inputs/002-shorttube_check.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/shorttube_check.py",
+      "sha256": "d347cc8f2c6b95d76cccdae8b6020c09debd8fa2d4be51450fb1ba24386512c7",
+      "size_bytes": 1488
+    },
+    {
+      "input_id": "input-003",
+      "name": "SHORTTUBE.md",
+      "path": "inputs/003-SHORTTUBE.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/SHORTTUBE.md",
+      "sha256": "8d4e4d6c2f2bc14ab577c5993bb7fbacedffbb6d8f0b13cf29a0b25f79987638",
+      "size_bytes": 8709
+    }
+  ],
+  "files": [
+    {
+      "path": "files/result.json",
+      "sha256": "82fab4100c8094e127c7d551bcd5323212eddbb2b208b9c01282b25bfa6d7484",
+      "size_bytes": 3311
+    }
+  ]
+}

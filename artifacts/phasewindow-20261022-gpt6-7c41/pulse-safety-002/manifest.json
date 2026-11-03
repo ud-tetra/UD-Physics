@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "run_id": "pulse-safety-002",
+  "created_at": "2026-10-22T22:54:23Z",
+  "evidence": "EXACT",
+  "summary": "Exact/conditional positive member+housing strut global solution domain for all 180 housing phases at alpha<=1/25 with Eh<=51/20000000; for alpha<=3/100 additionally every oriented cell remains nondegenerate; original alpha=1/10 remains OPEN.",
+  "command": "Executed in isolated local container: python /mnt/data/UD_3D_pulse_safety_20261022/replay.py --out /mnt/data/UD_3D_pulse_safety_20261022/replay_results.json ; independently checked SymPy reference Gram eigenvalues and ran fuller local pulse_safety.py with Fraction. Captured script source is byte-identical to repository pulse_safety.py (Git blob SHA b3f3138cd5cf3d9009c27e1ccd075ad3c4ec6f9f).",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "pulse_safety.py",
+      "path": "inputs/001-pulse_safety.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/pulse_safety.py",
+      "sha256": "9e3611879407fe34ab2a2794ec9c9fdad37a85433db0391a8aa466eb31e8c7fb",
+      "size_bytes": 3321
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "464b68298932ed601a60c9aa88446c4c0c399007bb05c020ffcabec44ecf3b48",
+      "size_bytes": 1490
+    }
+  ]
+}

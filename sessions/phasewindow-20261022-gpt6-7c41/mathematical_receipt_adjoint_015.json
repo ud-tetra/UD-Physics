@@ -1,0 +1,247 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "projected-adjoint-015",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "For original alpha0=0.1 and source-matched beta=.005,c_f=0,nu=.05, compute all180 initial housing phase moving-reference nonaffine first-order gain at selected u through100; test selected nonlinear remainder.",
+  "evidence_labels": [
+    "NUMERICAL",
+    "CONDITIONAL",
+    "FIT",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "mechanical_state",
+      "symbol": "y",
+      "object_type": "full phase carrier",
+      "domain": "R^560",
+      "definition": "280 q and 280 qdot; heat is separate",
+      "coefficient_domain": "R; reference geometry Q(sqrt5)",
+      "units": "internal ell0, E*, u=t/t0",
+      "origin": "imported",
+      "basis_orientation": "Cartesian xyz, original icosahedral labeling"
+    },
+    {
+      "object_id": "reference_trajectory",
+      "symbol": "yhat(u)",
+      "object_type": "nonlinear 560-state moving pulse",
+      "domain": "[0,100]→R^560",
+      "definition": "alpha(0)=1/10, other primary/device initial states at rest/reference",
+      "origin": "numerical"
+    },
+    {
+      "object_id": "housing_phase_injection",
+      "symbol": "B",
+      "object_type": "560x180 linear map",
+      "domain": "R^180→R^560",
+      "definition": "energy-normalized initial housing q/velocity perturbation",
+      "metric_measure": "B^T G B=I in initial housing energy coordinates",
+      "origin": "imported"
+    },
+    {
+      "object_id": "nonaffine_output",
+      "symbol": "C",
+      "object_type": "rank24 orthonormal output map",
+      "domain": "R^560→R^24",
+      "definition": "8 vertex nonaffine projector modes times 3 Cartesian axes",
+      "metric_measure": "CC^T=I24, annihilates reference-affine shell projection",
+      "origin": "derived"
+    },
+    {
+      "object_id": "moving_jacobian",
+      "symbol": "J(u)",
+      "object_type": "560x560 Jacobian",
+      "definition": "Df(yhat(u)), includes all current-axis force position derivatives and reciprocal reactions",
+      "origin": "derived"
+    },
+    {
+      "object_id": "backward_adjoint",
+      "symbol": "Lambda(u;t*)",
+      "object_type": "560x24 adjoint",
+      "definition": "Lambda'(u)=-J(u)^T Lambda(u); Lambda(t*;t*)=C^T",
+      "origin": "derived"
+    },
+    {
+      "object_id": "full_phase_gain",
+      "symbol": "A(t*)=Lambda(0;t*)^T B",
+      "object_type": "24x180 initial-to-output derivative",
+      "definition": "epsilon=sqrt(2Eh), max first-order housing norm=epsilon sigma_max(A)",
+      "origin": "derived/numerical"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "repo-source",
+      "url_or_repo_path": "ud-tetra/UD-Physics original model/network/hardware/mountloss/jacobian",
+      "version_or_commit": "53460195f74411ce764b24e0ab9d4fd772c4bd6f",
+      "section_or_object_id": "full mechanical 3D ODE, static reference, force and Jacobian; source blobs unchanged",
+      "source_status": "integrated read-only verified"
+    },
+    {
+      "source_id": "cases",
+      "url_or_repo_path": "artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/cases.json",
+      "version_or_commit": "1e6e0f2abe3fa234919c5a6701547883a807b3e5",
+      "section_or_object_id": "edge-p1-b0.005-cf0.0, coeff SHA256 8c4d98b69171792190178b12b10a0648ca69aa545a750d3836963747015e98fd",
+      "source_status": "integrated/frozen"
+    },
+    {
+      "source_id": "prior",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/PROJECTED_ADJOINT_015.md",
+      "version_or_commit": "183680e29f03125088af939de443c3f173da0cb4",
+      "section_or_object_id": "full study finding",
+      "source_status": "branch-only"
+    }
+  ],
+  "assumptions": [
+    "Original Euclidean 3D shell, dimensionless continuous clock u; physical time/length/energy calibration OPEN.",
+    "Frozen case with 13 primary masses,12 radial and30 exterior strengths,150 reciprocal gain errors,30 housing weights exactly source-matched; nu=.05,beta=.005,c_f=0.",
+    "Moving reference alpha0=.1; housing perturbation epsilon B a with ||a||2<=1, E_h=2.430311755526067e-6.",
+    "Only 12 prespecified and seven post-exposure times evaluated; numerical ODE and SVD not interval certified.",
+    "No nonlinear phase-ball or continuous property tolerance-box theorem assumed."
+  ],
+  "technique_plan": [
+    {
+      "technique": "sparse exact-derivative assembly",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "moving 560-state J including geometrically varying viscous forces"
+    },
+    {
+      "technique": "backward adjoint",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "propagate only 24 readout directions rather than 180 tangent columns"
+    },
+    {
+      "technique": "full SVD / finite-dimensional trust region",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "maximize firstorder readout over all R180 initial phases at each numerical instant"
+    },
+    {
+      "technique": "nonlinear DOP853 replay and reversal/half amplitude",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "measure actual selected-phase nonlinear remainders, not universal"
+    },
+    {
+      "technique": "prime factorization, modular clock, chain homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "ordinary continuous mechanical ODE; no discrete clock or homology question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "1 scalar +39 primary+150 devices+90 housing =280 coordinates,560 mechanical phase;30 housings×6 initial phase components=180; (12-1-3) nonaffine vertex modes ×3 axes=24",
+    "reduced_expression": "280,560,180,24",
+    "factor_origins": [
+      "original icosahedron 12 exterior vertices,30 edges",
+      "30 housing masses,150 reciprocal device branches"
+    ]
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless u=t/t0",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "y'=f(y); Lambda'=-Df(yhat)^T Lambda backward",
+    "initial_phase": "alpha=.1 +epsilon B a, ||a||2<=1",
+    "physical_unit_map": "unavailable physical calibration"
+  },
+  "dynamics_readout": {
+    "state_space": "R^560 plus heat bookkeeping",
+    "generator_or_update": "positive passive nonlinear system; numerical moving-reference tangent and exact derivative",
+    "initial_boundary_conditions": "source-frozen case and energy-normalized housing phase ball",
+    "conservation_and_sources": "Full system total P/L conserved, E+heat preserved (sampled numerical checks)",
+    "projection_and_kernel": "C maps to rank24 nonaffine shell output but retains full560 dynamics/rigid kinetic state",
+    "physical_mapping": "conditional engineered surrogate, not physical spacetime identification"
+  },
+  "target_exposure": {
+    "status": "DEVELOPMENT: original u100 threshold, case, damping, and earlier near-u4 peak inspected; seven additional near-u4 sample instants chosen post-exposure.",
+    "known_targets": [
+      "nonaffine<1/40 as sufficient original pulse orientation condition",
+      "80% breathing,5% mismatch,50% housing ringdown remain open for nonlinear entire phase ball"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "source frozen parameter set, nu=.05, twelve selected snapshot times and seven postselected probes"
+    ],
+    "search_domain_and_budget": "12 discrete target times u=1,2,3,4,5,6,8,10,20,40,70,100 plus seven near 4; all180 initial housing phase directions per time; two selected nonlinear phases",
+    "selection_criterion": "maximum numerical firstorder triangle bound and pointwise trust region; finite sign and amplitude replay",
+    "baseline": "equilibrium-linearized energy/coercivity exact result (run012) and eight-direction source-matched finite remainder (run014)"
+  },
+  "calculation_steps": [
+    "Compute source coefficient canonical SHA256 and verify reference mechanical code blob identity.",
+    "Construct sparse analytic J(u), compare to independent Jacobian-vector products at moving states.",
+    "Integrate nonlinear reference with dense output to T=100.",
+    "At each target t*, integrate Lambda'=-J^T Lambda from t* to0 with 24 independent output terminal columns.",
+    "Map to 24×180 initial housing operator; SVD yields all180 unit-energy maximum firstorder gain; triangle bound; solve rescaled trust-region for combined baseline plus variation.",
+    "Check against four independent direct forward tangent directions at u4 and u100.",
+    "Full nonlinear replay for selected SVD phase ± and half amplitude, then selected combined-optimal phase.",
+    "Preserve initial defective secular root computation and corrected normalized root, no hidden retuning."
+  ],
+  "result": {
+    "exact_expression": "Conditional adjoint identity G(t*)=Lambda(0;t*)^T B for exact solution and linearized flow; numerical values are approximations.",
+    "approximation": {
+      "source_coeff_sha256": "8c4d98b69171792190178b12b10a0648ca69aa545a750d3836963747015e98fd",
+      "time_snapshots": 12,
+      "near_peak_probe_records": 7,
+      "sampled_max_triangle": 0.00043566468926851335,
+      "sampled_max_triangle_u": 4,
+      "pointwise_combined_firstorder_u4": 0.0004049292549756757,
+      "triangle_u100": 0.0001728614707534111,
+      "refined_triangle_u100": 0.0001728615569899642,
+      "full_selected_nonlinear_remainder": 1.6826487408475257e-8,
+      "half_selected_nonlinear_remainder": 4.206228292049427e-9,
+      "optimized_phase_nonlinear_z_u4": 0.0004049295658472044
+    },
+    "units": "nonaffine Euclidean edge-normalized length; dimensionless u",
+    "precision_and_error": "Sparse Jacobian JVP comparison ~2e-13; adjoint-vs-forward at u4 relative1.88e-8 and at u100 relative6.18e-5, abs1.59e-8; high-tolerance repeat changes u100 triangle by8.6e-11. No interval ODE error enclosure.",
+    "scope": "NUMERICAL at 18 distinct sampled times for one archived coefficient set, all180 initial phase directions for first derivative; nonlinear finite replays only selected phases",
+    "physical_interpretation": "no independent physical evidence"
+  },
+  "verification": [
+    {
+      "method": "sparse Jacobian vs separate full-force JVP",
+      "command_or_proof_path": "local sparse_jac.py and projected_tangent.py",
+      "actual_result": "PASS (<3e-13 max absolute at inspected moving state)",
+      "review_relationship": "same-runtime constructor"
+    },
+    {
+      "method": "adjoint vs four direct forward tangent directions",
+      "command_or_proof_path": "local verify_015.py",
+      "actual_result": "PASS, u4 abs5.51e-11; u100 abs1.59e-8",
+      "review_relationship": "same-runtime second implementation"
+    },
+    {
+      "method": "nonlinear full finite phase replay",
+      "command_or_proof_path": "local finite_validation.py and combined_phase_validation.py",
+      "actual_result": "PASS for tested phases, solver errors not enclosed",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "local ZIP SHA256 and source/output digests",
+      "command_or_proof_path": "projected-adjoint-015/manifest.json and SHA256 8a270616332dd8860fff1ba9e807dcdb94344651a40c1bf9ec0eb59a90911342",
+      "actual_result": "PASS",
+      "review_relationship": "byte integrity"
+    },
+    {
+      "method": "repository integrity CI",
+      "command_or_proof_path": "python3 scripts/validate.py; python3 -m unittest discover -s tests -v",
+      "actual_result": "NOT_RUN for latest commit until GitHub workflow completes",
+      "review_relationship": "tooling"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Earlier source-matched 180-forward-column tangent attempt timed out; method now uses 24-output adjoint.",
+    "Original pointwise trust solver produced phase ||a|| slightly>1 owing to absolute tolerance at tiny spectral scale; normalized secular root fixed, old result not used.",
+    "No continuous-time/operator numerical enclosure and no full phase-ball nonlinear remainder despite very small selected finite residual.",
+    "Prior exact static low-energy nonaffine displacement refutes energy-only invariant, remains valid."
+  ],
+  "limitations": [
+    "Fixed coefficient case and nu only",
+    "18 selected u snapshots, not continuous interval bound",
+    "Full nonlinear R180 phase ball and tolerance box OPEN",
+    "No independent physical validation or actual material realization",
+    "Forced Green recovery PR44 separate claimed task"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "local ZIP UD_3D_Full180_Projected_Adjoint_015_20261023.zip; SHA256 8a270616332dd8860fff1ba9e807dcdb94344651a40c1bf9ec0eb59a90911342"
+  ],
+  "next_discriminant": "validated continuous-time 24-output response envelope and uniform moving-pulse nonlinear initial-phase remainder via positive full-state/frame-aware norm; extend to parameter box separately"
+}

@@ -1,0 +1,60 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "run_id": "shorttube-004",
+  "created_at": "2026-10-22T23:46:00Z",
+  "evidence": "EXACT",
+  "summary": "Versioned correction to shorttube-003: weak time-dependent volume/readout bounds permit equality at u=0; strict fixed-volume and strut bounds unchanged. Reproducible original 0.1 full pulse all-phase u<=2/5 safety.",
+  "command": "python3 experiments/icosahedral-phasewindow-20261022/shorttube.py --out /tmp/shorttube-result.json ; python3 experiments/icosahedral-phasewindow-20261022/shorttube_check.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "shorttube.py",
+      "path": "inputs/001-shorttube.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/shorttube.py",
+      "sha256": "3aad1040660ead3da85318612ece8a98977f36970174a3c3c7a6f1d4d4ba47c2",
+      "size_bytes": 7263
+    },
+    {
+      "input_id": "input-002",
+      "name": "shorttube_check.py",
+      "path": "inputs/002-shorttube_check.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/shorttube_check.py",
+      "sha256": "d347cc8f2c6b95d76cccdae8b6020c09debd8fa2d4be51450fb1ba24386512c7",
+      "size_bytes": 1488
+    },
+    {
+      "input_id": "input-003",
+      "name": "SHORTTUBE.md",
+      "path": "inputs/003-SHORTTUBE.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/SHORTTUBE.md",
+      "sha256": "0dd3487b016e70f1e1910be7a3dbb84518e222fb4690c3749df201372132751a",
+      "size_bytes": 9125
+    },
+    {
+      "input_id": "input-004",
+      "name": "SHORTTUBE_ERRATUM.md",
+      "path": "inputs/004-SHORTTUBE_ERRATUM.md",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/SHORTTUBE_ERRATUM.md",
+      "sha256": "1b58dc91a5621058520c7b26e4f608fadca51a9d50aa1d90b4f63ebadff1d934",
+      "size_bytes": 2007
+    }
+  ],
+  "files": [
+    {
+      "path": "files/result.json",
+      "sha256": "82fab4100c8094e127c7d551bcd5323212eddbb2b208b9c01282b25bfa6d7484",
+      "size_bytes": 3311
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "run_id": "nonaffine-nullcurvature-016",
+  "created_at": "2026-10-24T02:13:14.487019+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Source-frozen nonlinear kernel-curvature audit; exact local current-axis bilinear mechanism, finite nullspace phase tests, 10D Hessian slice; complete 156D nonlinear remainder and u100 theorem OPEN.",
+  "command": "Restore checkpoint using archived inputs/001-restore_bundle.py and files/part-*.b64; then follow RUNME inside verified ZIP.",
+  "source": {
+    "revision": "0abea764505989dde38fe0906d0d32c53d76b93c",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-restore_bundle.py",
+      "sha256": "2cfabeb902d550c2c81fbe8b96ee4dea3e954f582ef7ff781f344f63b0d24704",
+      "size_bytes": 976,
+      "input_id": "input-001",
+      "name": "001-restore_bundle.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-RUNME.md",
+      "sha256": "c05fcb7586883b98c742ec0b3c49b0c36ecdfc3231ae9b3c056df30e00467043",
+      "size_bytes": 1570,
+      "input_id": "input-002",
+      "name": "002-RUNME.md",
+      "source_location": "external",
+      "source_path": null
+    }
+  ],
+  "files": [
+    {
+      "path": "files/CHECKPOINT.md",
+      "sha256": "5850db7d33cdfd2fe7bc00df5e2a4462991f563f2fdc6351019c4f42266b286b",
+      "size_bytes": 2676
+    },
+    {
+      "path": "files/RESULTS.md",
+      "sha256": "f295fd6343dc04b925a04b77f712e546aabe41f3ef6174183cace8ff6a4287ac",
+      "size_bytes": 8439
+    },
+    {
+      "path": "files/mathematical_receipt_016.json",
+      "sha256": "70fbb34366af0a5304bccc9b339f58f894e63eef47a6b0a99604729b6f6a1d18",
+      "size_bytes": 7508
+    },
+    {
+      "path": "files/part-001.b64",
+      "sha256": "6692422639a2875f97206ac38a62a9e299fcd7e329c049fe399cbf5b2de9ecf4",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-002.b64",
+      "sha256": "c691d8516f24834db4953be9a203aec500df5bbd8163320d476a12b2a9774d6a",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-003.b64",
+      "sha256": "f1e8c56bd1d9ba91bb9b8277c07ffd06e73656b4290aea2c2d11708e19d987e2",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-004.b64",
+      "sha256": "a7447325af08485f7615726f9b84086da85679bb8cdc92562e3a2d3e3b688da5",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-005.b64",
+      "sha256": "50c9a1bb022022723e47d56a47d5651fa20d2539f1153453de6835a11b505d06",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-006.b64",
+      "sha256": "662bf0f888233b4591fdef9a129599f7949a2bdd273850e95fd2a0a67af73970",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-007.b64",
+      "sha256": "15f49233c4170cef5ec2a86886231d5e47bbed1d45d221f5eb026f4623d28399",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-008.b64",
+      "sha256": "1546b182863853b50a416b70ca252997aaa6088bfb52426c4c5f970843a5f38e",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-009.b64",
+      "sha256": "1b6c10e4bf62f00371361f990f97ee9a05bfb3d05e810dbc6a3f4041a5ae1894",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-010.b64",
+      "sha256": "45389eab8f697bce5e9c38cc55524c1506843b63ac738a933d0fd90c63f0192a",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-011.b64",
+      "sha256": "d4ec3b0c8d4d1b5fb9e41d8f57c8184b394d317666a4c823ad5a0a7a3a4df132",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-012.b64",
+      "sha256": "cad5dbc89a43e8b6fc317fb5229384a0e7b4377be3a3860e981185b6bc9da69c",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-013.b64",
+      "sha256": "72fcef30cb6def516f7ebae4c1d17f55667d4020ec2c54e06b758977790820f6",
+      "size_bytes": 16001
+    },
+    {
+      "path": "files/part-014.b64",
+      "sha256": "f05771285b8dff61e4cfaeb1b13700154aba0b948e25757e580227bfc6423795",
+      "size_bytes": 9297
+    }
+  ],
+  "capture_scope": "GitHub UTF-8 SHA256-verifiable base64 transport of byte-identical local ZIP. Full computed data/source inside ZIP; local inner run schema2 checked. Review distinct from physical validation."
+}
