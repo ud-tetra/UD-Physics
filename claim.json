@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "pachner-switch-ledger-20261103",
+  "session": "pachswitch-20261103-01",
+  "created_at": "2026-11-03T22:00:10Z",
+  "base_revision": "3026f7a673dbec6103aae2a68a20bb94b61b61ae",
+  "owned_paths": [
+    "tasks/pachner-switch-ledger-20261103.json",
+    "sessions/pachswitch-20261103-01/",
+    "candidates/pachner-switch-ledger/",
+    "experiments/pachner-switch-ledger/",
+    "artifacts/pachswitch-20261103-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
