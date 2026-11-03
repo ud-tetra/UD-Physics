@@ -13,5 +13,7 @@
     "artifacts/graphselect-20261103-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-03T15:45:05Z",
+  "released_from_sha": "881ab12a0a146234cc2b36126c5667a9ec120882"
 }
