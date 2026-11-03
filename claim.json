@@ -12,5 +12,7 @@
     "sessions/pachswitch-20261103-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-03T22:12:24.018Z",
+  "released_from_sha": "45d1ca88e372ab01c15a0ecf4ddcaadb6c94bf78"
 }
