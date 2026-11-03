@@ -1,0 +1,26 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pachifaceidx-20261103-01",
+  "runtime": "Codex GPT-6 GitHub connector",
+  "task": "integration-pachner-interface-defect-index",
+  "goal": "Index exact Pachner event interface and close research claim",
+  "created_at": "2026-11-03T22:27:04.975Z",
+  "base_revision": "2b53f968b16bdf17f949eb6553b29911f7665c2c",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-pachner-interface-defect-index": {
+      "held_sha": "7e617a236ee8aae6f81717ede19b7011e3d27711",
+      "status": "held",
+      "claim_ref": "refs/heads/claims/integration-pachner-interface-defect-index"
+    }
+  },
+  "checks": [
+    "Research PR #291 merged at 2b53f968b16bdf17f949eb6553b29911f7665c2c",
+    "Research claim release 30623d7cfe9e8da203aa3d32e809819209f7a610 verified",
+    "Discovery integrity workflow #41730714086 PASS"
+  ],
+  "finding": "Indexed exact prescribed-event memory and support ports; event trigger and post-event coupling remain open",
+  "next_action": "Source/select event trigger and couple memory/reserve to generator, then test independent boundary readout"
+}

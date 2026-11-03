@@ -13,13 +13,17 @@
     "pachner-interface-defect-20261103": {
       "ref": "refs/heads/claims/pachner-interface-defect-20261103",
       "held_sha": "beb40960a6aa8391b791e5573b96d6298fe6d58f",
-      "status": "held"
+      "status": "released",
+      "released_sha": "30623d7cfe9e8da203aa3d32e809819209f7a610",
+      "merged_pr": 291,
+      "merged_sha": "2b53f968b16bdf17f949eb6553b29911f7665c2c"
     }
   },
   "checks": [
     "Exact Fraction projector, port, shell, symmetry and tangency replay PASS",
     "Independent analytic square completion PASS",
-    "Nonconstructor physics review NOT_RUN"
+    "Nonconstructor physics review NOT_RUN",
+    "GitHub Discovery integrity workflow #41730714086 PASS"
   ],
   "finding": "2→3 exact memory rank2 and G=(3x+2z)^2/10+(u+d)^2/4≥0; shell face jump=2xz+3x²/2. 1→4 G=3a². Event image not invariant under uncoupled Anew: tangent rank29>23. Trigger/actuator unsourced.",
   "next_action": "Source or separately axiomatize trigger, reserve coupling and memory evolution; test dynamical persistence and held-out boundary port"
