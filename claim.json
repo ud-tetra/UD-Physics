@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "graphite-contact-selector-topology",
+  "session": "graphselect-20261103-01",
+  "created_at": "2026-11-03T15:35:17Z",
+  "base_revision": "b7d3205d59256335bbd78a91dbd596ed485573fc",
+  "owned_paths": [
+    "tasks/graphite-contact-selector-topology.json",
+    "sessions/graphselect-20261103-01/",
+    "candidates/graphite-contact-selector-topology/",
+    "experiments/graphite-contact-selector-topology/",
+    "artifacts/graphselect-20261103-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
