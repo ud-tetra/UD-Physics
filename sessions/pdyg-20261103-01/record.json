@@ -93,10 +93,24 @@
     {
       "name": "external adversarial non-constructor review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.7 exact rational scalar feedback invariant and phase fixtures",
+      "status": "PASS",
+      "detail": "local stdlib rational computation 5 preparations and 6 native times"
+    },
+    {
+      "name": "v0.7 separate constructor unit tests",
+      "status": "PASS",
+      "detail": "4 local tests; not non-constructor review"
+    },
+    {
+      "name": "external non-constructor scientific review v0.7",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v0.6 exact source-bound QPB1 reciprocal source port does not select autonomous retention: null and continued exchange and externally switched latch all conserve joint stock; zero-current selector is nonunique, no linear skew attractor.",
-  "next_action": "Recover a genuinely source-selected autonomous gate/feedback law with controller/source receipt and test against null, release and phase perturbations; separate 17D vs 29D provenance.",
+  "finding": "v0.7: for every scalar matched-port feedback N and D are conserved; D!=0 yields strict source residual. Proposed bounded g=||y||²/N yields asymptotic capture only from special aligned preparation; robust phase-independent selection FAILS.",
+  "next_action": "Search for source-native non-scalar additional port or environment coupling that can lawfully change D, with typed exact conservation/current receipts, test generic initial phases and independent review.",
   "mathematical_profile": {
     "coefficient_domain": "Separate F2 toy carrier and R15 QPB1 chain carrier; no implicit adapter",
     "exactness_or_precision_plan": "exhaustive integer enumeration",
