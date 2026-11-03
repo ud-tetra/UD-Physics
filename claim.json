@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "pachner-interface-defect-20261103",
+  "session": "pachiface-20261103-01",
+  "created_at": "2026-11-03T22:18:38.574Z",
+  "base_revision": "6c9f3b855169448d224d7c9f9badee02d4d5a1e3",
+  "owned_paths": [
+    "tasks/pachner-interface-defect-20261103.json",
+    "sessions/pachiface-20261103-01/",
+    "candidates/pachner-interface-defect/",
+    "experiments/pachner-interface-defect/",
+    "artifacts/pachiface-20261103-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
