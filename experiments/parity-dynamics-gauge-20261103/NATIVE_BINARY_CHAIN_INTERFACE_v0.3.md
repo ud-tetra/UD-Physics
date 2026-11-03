@@ -42,3 +42,21 @@ An invisible edge-history subspace `H=ker O_E` of dimension 3 is established in 
 - **Workload 2:** exact closure reread and four constructor unit checks PASS; an independent non-constructor mathematical review is still NOT_RUN. GitHub CI had a failed earlier run due to invalid task status and missing candidate baseline; both metadata defects were repaired in this branch and require new CI confirmation.
 
 **Next discriminant:** select and source (not fit to a target) a finite-register admission and transition rule or an explicit nonlinear/quantized encoding `ι`; specify observation timing, units and invariant set, prove `Φ_τ∘ι=ι∘ T_B` and transport/action invariance on the admitted domain. If impossible under declared assumptions, preserve the scoped no-go and change the branch assumptions explicitly.
+
+## Theorem 3: lossless finite-state intertwining forbids irreversible selection (EXACT / CONDITIONAL)
+
+Let `B_adm` be finite, `ι:B_adm→R15` injective, and `T_B:B_adm→B_adm` satisfy `ι∘T_B=Φ_τ∘ι` for a fixed `τ>0`, where `Φ_τ=exp(τA)` is the invertible QPB1 source-native flow. If `T_B(s)=T_B(t)`, invertibility and injectivity yield `s=t`. Therefore `T_B` is injective, hence (on a finite set) bijective: **a permutation with purely periodic cycles**. It cannot produce many-to-one merging, irreversible loss, attracting basins, or a strict sink on the admitted finite alphabet. These require a noninjective readout, an enlarged state/environment with subsequent projection, an open-system law, or changing the source generator.
+
+Moreover `A³+4A=0` gives one static mode and active angular frequency `2`. For an encoded state with a nonzero active component on an orbit of cycle length `m`, the recurrence condition `Φ_(mτ)ι(s)=ι(s)` requires `2mτ∈2πZ`, or `mτ∈πZ`. If `τ/π` is irrational, all finite invariant-image states must lie in `ker A`, hence the only such discrete action is identity on the image. If `τ=π/2`, nontrivial cycle lengths must be even; the explicit six nonstationary sampled binary survivors form three 2-cycles. This is a **native clock-ratio condition in dimensionless u**, not a physical time prediction.
+
+### Interface acceptance contract (CANDIDATE; not yet satisfied)
+
+A future UD interface must declare `B_adm`, its finite update `T_B`, a chosen sampling convention `τ` or event-to-time correspondence, an encoding `ι:B_adm→R15`, and quantizing readout `Q:R6→F2³`. It must prove, on the entire admitted domain,
+
+```
+ι T_B = Φ_τ ι,
+P_B = Q E ι,
+ι ρ_B(g) = ρ_C(g) ι            for all g∈S4,
+```
+
+and record which equations are assumed, derived, or fitted. To call a transformation **gauge**, additionally prove preservation of the declared action, admissibility, transport and complete operational readouts. Without these, similarities of cardinality (eight or sixteen) are not equivalence theorems.
