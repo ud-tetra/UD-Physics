@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "pachner-locality-port-20261103",
+  "session": "pachlocal-20261103-01",
+  "created_at": "2026-11-03T23:05:20.662Z",
+  "base_revision": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+  "owned_paths": [
+    "tasks/pachner-locality-port-20261103.json",
+    "sessions/pachlocal-20261103-01/",
+    "candidates/pachner-locality-port/",
+    "experiments/pachner-locality-port/",
+    "artifacts/pachlocal-20261103-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
