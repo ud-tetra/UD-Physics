@@ -4,7 +4,7 @@
   "candidate_id": "parity-dynamics-gauge-20261103",
   "session_id": "pdyg-20261103-01",
   "question": "Does source-native K4 parity projection close under dynamics, and what is a valid gauge quotient?",
-  "status": "ACTIVE_SOURCE_GATED",
+  "status": "ACTIVE",
   "evidence": [
     "EXACT",
     "CONDITIONAL",
