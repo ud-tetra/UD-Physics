@@ -206,10 +206,13 @@
     "finite invariant orbit under continuous Φ_u must be a fixed point",
     "A³=-4A and exp(πA/2)=I+A²/2",
     "evaluate all 1024 encoded raw bits exactly",
-    "survivors {0,3,5,6,9,10,12,15}, fixed {0,15}; all edge bits zero and all P=000"
+    "survivors {0,3,5,6,9,10,12,15}, fixed {0,15}; all edge bits zero and all P=000",
+    "Finite admitted alphabet with injective iota and invertible sampled Phi_tau implies T_B injective and hence a permutation; no irreversible state merger",
+    "For active QPB1 modes with frequency 2 and an m-cycle, require m*tau in pi Z; irrational tau/pi permits only equilibria",
+    "At tau=pi/2 the 8 surviving test states split into fixed {0},{15} and 2-cycles {3,12},{5,10},{6,9}"
   ],
   "result": {
-    "exact_expression": "No nontrivial additive interface; all-time finite-image invariant dynamics trivial; 8/1024 sample survivors with parity 000",
+    "exact_expression": "No nontrivial additive interface; all-time finite-image invariant dynamics trivial; 8/1024 sample survivors with parity 000; injective sampled intertwining forces permutation with m*tau∈pi Z for active modes",
     "approximation": null,
     "units": "dimensionless model parameter only",
     "precision_and_error": "exact rational symbolic arithmetic, 1024 enumerated",
@@ -237,12 +240,20 @@
       "source_revision": "branch, updated",
       "actual_result": "RECHECK_PENDING_NEW_RUN",
       "review_relationship": "automated integrity, not mathematical peer review"
+    },
+    {
+      "method": "exact integer cycle enumeration at sampled half-period",
+      "command_or_proof_path": "python3 experiments/parity-dynamics-gauge-20261103/interface_audit_v03.py; v0.3 theorem section",
+      "source_revision": "2207611450df9106adccaf8189a50734fef5a46b",
+      "actual_result": "fixed 0,15; 2-cycles (3,12),(5,10),(6,9)",
+      "review_relationship": "same constructor"
     }
   ],
   "counterexamples_and_failures": [
     "vertex0 bit maps under half-period to (-1/2,1/2,1/2,1/2,0^11) not in alphabet",
     "all eight halfstep survivors have zero opposite-edge parity; no 8-state theta realization",
-    "nontrivial state evolution incompatible with continuous full-time finite embedded alphabet"
+    "nontrivial state evolution incompatible with continuous full-time finite embedded alphabet",
+    "injective finite conservative-flow intertwining cannot produce absorbing sink or irreversible selection"
   ],
   "limitations": [
     "A fully specified binary admissibility and transition law is not sourced",
