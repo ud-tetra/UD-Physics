@@ -30,8 +30,8 @@
       "result": "PASS (exact constructor certificate)"
     }
   ],
-  "finding": "Exact conditional joint inverse <=420, radius 1/10^10",
-  "next_action": "Review certificate and source a native timing and preparation contract",
+  "finding": "Radius 1/4000000; inverse <=420; joint residual 1/6720000000",
+  "next_action": "Optimize schedule against timing sensitivity and source a native readout contract",
   "mathematical_profile": {
     "coefficient_domain": "Q for matrices and bounds; R for continuous evolution",
     "exactness_or_precision_plan": "Numerical design scan; rational Taylor enclosure and uniform Hessian certificate",
@@ -43,9 +43,9 @@
     ],
     "clock_metric_units_conventions": "Dimensionless continuous affine time; published oriented simplices; unit coarse preparations in metric H(theta)."
   },
-  "checkpoint_at": "2026-11-03T23:03:03.964020+00:00",
+  "checkpoint_at": "2026-11-03T23:06:30.660509+00:00",
   "checkpoint_source": {
-    "revision": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+    "revision": "2ff5eb43060b4342877dac461a776f62f3b57119",
     "dirty": true
   }
 }

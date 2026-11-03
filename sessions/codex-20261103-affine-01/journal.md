@@ -17,3 +17,13 @@ Captured artifacts/codex-20261103-affine-01/affine-001 (EXACT): Conditional six-
 Checkpoint (handoff): Exact conditional joint inverse <=420, radius 1/10^10
 
 Next: Review certificate and source a native timing and preparation contract
+
+## 2026-11-03T23:06:30.598611+00:00
+
+Captured artifacts/codex-20261103-affine-01/affine-002 (EXACT): Wider affine box and independent-error budget
+
+## 2026-11-03T23:06:30.676701+00:00
+
+Checkpoint (handoff): Radius 1/4000000; inverse <=420; joint residual 1/6720000000
+
+Next: Optimize schedule against timing sensitivity and source a native readout contract

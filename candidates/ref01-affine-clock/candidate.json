@@ -25,9 +25,10 @@
     "https://github.com/ud-tetra/UD/pull/120"
   ],
   "baseline": "Five-return shared-offset certificate; four raw returns at 3/2 plus channel 3 at 1/2",
-  "result": "Six raw returns on max-norm radius 1/10^10 jointly identify four metric parameters, additive offset and fractional rate with inverse Lipschitz <=420.",
-  "next_discriminant": "Test a time reference or expanded parameter domain and error budget with native preparation and gate realization explicitly sourced.",
+  "result": "Inverse Lipschitz <=420 on radius 1/4000000; each return budget epsilon_i+L_i |jitter_i|+p_i <=1/6720000000.",
+  "next_discriminant": "Search a better-conditioned schedule subject to timing sensitivity and test the noise contract against a specified readout.",
   "mathematical_receipts": [
-    "mathematical_receipt.json"
+    "mathematical_receipt.json",
+    "wider_receipt.json"
   ]
 }
