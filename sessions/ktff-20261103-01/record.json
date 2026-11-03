@@ -31,12 +31,19 @@
     },
     {
       "name": "repository integrity/CI",
-      "status": "NOT_RUN",
-      "reason": "GitHub CI pending current head"
+      "status": "PASS",
+      "workflow_run_id": 41739261769,
+      "source_head": "16c5225c60807d4778dc8c0a66024129730c0cfd",
+      "scope": "GitHub Discovery integrity validates records and capture, not mathematical truth"
     },
     {
       "name": "external non-constructor mathematical review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "local four independent-form topology unit tests",
+      "status": "PASS",
+      "scope": "same-constructor suite run in local Python, 4/4"
     }
   ],
   "finding": "Exact: 108 whole-face K4 matchings fail 2-manifold incidence; independently constructed Klein 2-triangle Delta complex has Smith factors (1,2), nontrivial orientation cocycle and O2 reflection holonomy. Requires new gluing, not a K4 face flip.",
