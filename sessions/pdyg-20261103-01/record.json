@@ -35,10 +35,26 @@
       "name": "QPB1 source-native incidence matrix exact test",
       "status": "PASS",
       "method": "SymPy 1.14.0 local exact computation; source proof in v0.2"
+    },
+    {
+      "name": "independent-construction local unit tests",
+      "status": "PASS",
+      "details": "4 local SymPy exact tests; same constructor, not external peer review"
+    },
+    {
+      "name": "sampled binary-chain exact enumeration",
+      "status": "PASS",
+      "details": "1024 inputs; 8 survivor patterns; 2 equilibria; all parity 000"
+    },
+    {
+      "name": "GitHub Actions Discovery integrity",
+      "status": "PENDING_AFTER_METADATA_FIX",
+      "prior_run_id": 41723839958,
+      "prior_failure": "invalid task status and missing baseline corrected"
     }
   ],
-  "finding": "Exact QPB1 source-native chain flow: edge-only nonclosure; 12-dimensional edge quadrature closure, 3-dimensional edge-history hidden sector. Binary F2 parity is not additively defined from real chain carrier. Complete canonical binary Adm,T remains OPEN.",
-  "next_action": "Source or define a typed real-to-binary quantizer/admissibility and total binary evolution; independent review and full action/gauge invariance test.",
+  "finding": "Exact coefficient-domain and continuous finite-image no-go; sample u=pi/2 has eight embedded survivors all with parity 000; source-native 12D QPB1 quadrature closure retained, no canonical F2-to-chain interface established.",
+  "next_action": "Resolve full canonical binary Adm,T or nonlinear quantizer; run held-out interface commutation and non-constructor review; check GitHub CI after metadata repairs.",
   "mathematical_profile": {
     "coefficient_domain": "Separate F2 toy carrier and R15 QPB1 chain carrier; no implicit adapter",
     "exactness_or_precision_plan": "exhaustive integer enumeration",
