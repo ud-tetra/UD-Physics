@@ -1,0 +1,275 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "pachner-boundary-observability-v0.1",
+  "session_id": "pachobs-20261103-01",
+  "candidate_id": "pachner-boundary-observability",
+  "question": "Does fixed outer shell and automorphism symmetry imply identical internal payload or boundary response under 1->4 and 2->3 Pachner moves?",
+  "evidence_labels": [
+    "EXACT",
+    "DERIVED",
+    "CANDIDATE",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "K",
+      "symbol": "K",
+      "object_type": "oriented finite simplicial 3-ball",
+      "definition": "old/new exact tetrahedra and snapped Z^3 vertices in README",
+      "domain": "elementary 1->4 and 2->3 move pairs",
+      "codomain": "C0,C1,C2,C3",
+      "coefficient_domain": "Z for boundary; Q for response",
+      "units": "abstract cells and exact coordinate units",
+      "basis_orientation": "ascending simplex orientation; signed geometric volume",
+      "metric_measure": "unit edge chain metric for response; Euclidean metric only for snapped-coordinate isometries and volumes",
+      "origin": "defined",
+      "exact_expression": "B1B2=B2B3=0; shell boundary chain unchanged",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "fourcell-v1"
+      ],
+      "assumption_ids": [
+        "unit-metric"
+      ],
+      "dependency_ids": [],
+      "normalization": "one oriented simplex per cell"
+    },
+    {
+      "object_id": "Lambda",
+      "symbol": "Lambda_K",
+      "object_type": "static boundary response operator",
+      "definition": "Schur complement Lbb-Lbi Lii^-1 Lib for L=B1 B1^T",
+      "domain": "Q^boundary vertices",
+      "codomain": "Q^boundary vertices",
+      "coefficient_domain": "Q",
+      "units": "native dimensionless response",
+      "basis_orientation": "boundary vertices in listed order",
+      "metric_measure": "unit graph edge metric",
+      "origin": "derived conditional",
+      "exact_expression": "1->4: (5/4)(4I-J) vs 4I-J; 2->3: Delta=(e3-e4)(e3-e4)^T",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "audit-v0.1"
+      ],
+      "assumption_ids": [
+        "unit-metric",
+        "boundary-port"
+      ],
+      "dependency_ids": [
+        "K"
+      ],
+      "normalization": "no physical energy/time scale"
+    },
+    {
+      "object_id": "A",
+      "symbol": "A_K",
+      "object_type": "unmasked 0/1 incidence generator",
+      "definition": "xprime=-B1 y; yprime=B1^T x; xdoubleprime=-Lx",
+      "domain": "C0(K;Q)+C1(K;Q)",
+      "codomain": "same",
+      "coefficient_domain": "Q",
+      "units": "dimensionless model parameter",
+      "basis_orientation": "oriented edges",
+      "metric_measure": "unit chain metric",
+      "origin": "imported and applied",
+      "exact_expression": "skew generator; ker B1=im B2 for both 3-balls",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "fourcell-v1",
+        "ledger-Q166"
+      ],
+      "assumption_ids": [
+        "unit-metric"
+      ],
+      "dependency_ids": [
+        "K"
+      ],
+      "normalization": "unit inertia"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "fourcell-v1",
+      "url_or_repo_path": "experiments/four-cell-tetrahedron/README.md",
+      "version_or_commit": "046bfb6cc3d69122cd30028d1fbb4ff8b42a40d9",
+      "section_or_object_id": "Definition and scope; Why full dynamics is different",
+      "source_status": "integrated finite conditional"
+    },
+    {
+      "source_id": "ledger-Q166",
+      "url_or_repo_path": "artifacts/action-normalization-20261022-a1/exact-001/inputs/011-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "version_or_commit": "SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "section_or_object_id": "Q166/Q167",
+      "source_status": "imported read-only"
+    },
+    {
+      "source_id": "governance-proposal",
+      "url_or_repo_path": "project attachment UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "version_or_commit": "SHA256 8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4",
+      "section_or_object_id": "\u00a7\u00a71-6",
+      "source_status": "proposal, not accepted amendment"
+    },
+    {
+      "source_id": "site",
+      "url_or_repo_path": "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/",
+      "version_or_commit": "retrieved 2026-11-03, Papers I-III 1.1.1, IV 0.1",
+      "section_or_object_id": "Home: physical promotion 0",
+      "source_status": "read-only site"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "unit-metric",
+      "text": "Each existing and added edge has unit positive weight; vertex inertia unit in dimensionless native generator; no geometric length-to-weight law"
+    },
+    {
+      "id": "boundary-port",
+      "text": "Boundary vertex displacement prescribed and internal vertices statically minimized; readout is generalized boundary flux Lx"
+    },
+    {
+      "id": "coordinate-snap",
+      "text": "Exact integer coordinates and tetrahedra listed in README; no fit to any measurement"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer simplicial chain and homology",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify shell composition, B^2=0, ranks, kernels and fixed Betti vectors"
+    },
+    {
+      "technique": "exact rational Schur complement",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compute boundary response and energy changes"
+    },
+    {
+      "technique": "group/permutation representation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "enumerate automorphisms and identify moved symmetry channels"
+    },
+    {
+      "technique": "geometry and exact coordinates",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "check shell coordinates, Euclidean volume and isometries"
+    },
+    {
+      "technique": "dynamics and projection",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "identify vertex-invisible edge/face sector and finite-frequency response"
+    },
+    {
+      "technique": "clock/modular arithmetic",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite register update or period claim"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no divisibility compatibility question"
+    },
+    {
+      "technique": "physical calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no measured port or unit map supplied"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "1->4 delta f=(1,4,6,3); 2->3 delta f=(0,1,2,1); ker B1 dimension E-(V-1)",
+    "reduced_expression": "1->4 f (4,6,4,1)->(5,10,10,4); 2->3 (5,9,7,2)->(5,10,9,3); edge cycles 3->6 and 5->6",
+    "factor_origins": [
+      "one added center and four radial edges",
+      "one added apex edge",
+      "rank B1=V-1 for connected graph"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native dimensionless parameter s",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "xprime=-B1 y; yprime=B1^T x",
+    "initial_phase": "specified boundary probe only",
+    "coupling": "unit edge metric assumed; boundary hold external",
+    "period_claim": null,
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "C0(K;Q) plus C1(K;Q), optionally C2 for full incidence; finite move-dependent dimension",
+    "generator_or_update": "unmasked skew incidence A; second-order vertex xdoubleprime=-B1B1^T x",
+    "initial_boundary_conditions": "snapped shell fixed; static prescribed phi or harmonic drive; internal static minimizer",
+    "conservation_and_sources": "closed A preserves native norm; boundary hold/drive is an assumed external port; ker B1=im B2 invisible to vertex x",
+    "projection_and_kernel": "Lambda Schur complement; constant boundary kernel; 1->4 standard mode shift and 2->3 apex-odd shift",
+    "physical_mapping": "OPEN: no charge, force, time or material calibration"
+  },
+  "target_exposure": {
+    "status": "NO_NUMERICAL_PHYSICAL_TARGET_USED",
+    "known_targets": [
+      "user hypothesis that internal moves may affect carrier payload; no measurement specified"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "Two elementary move pairs 1->4 and 2->3; unit edge metric chosen before computation; no coefficient search",
+    "selection_criterion": "test whether identical snapped shell forces identical declared boundary response",
+    "baseline": "shell-only counts and fixed boundary homology"
+  },
+  "calculation_steps": [
+    "Construct exact integer-coordinate tetrahedra and signed simplicial complexes before and after each move.",
+    "Check oriented boundary chain, fixed boundary simplices and total Euclidean volume exactly.",
+    "Enumerate distance-preserving simplicial automorphisms, S4 order24 and S3xC2 order12.",
+    "Form L=B1B1^T and Schur complement Lambda; verify 1->4 factor5/4 and 2->3 rank-one apex edge shift.",
+    "Check finite-frequency Z at omega^2=1, Betti ranks, ker B1=im B2 and vertex-only invisible sector.",
+    "Derive general nonnegative-energy monotonicity and exact equality conditions for positive added edges."
+  ],
+  "result": {
+    "exact_expression": "1->4 Lambda_new=(5/4)Lambda_old on K4 boundary; 2->3 DeltaLambda=(e3-e4)(e3-e4)^T; edge-cycle dimensions 3->6 and 5->6",
+    "approximation": null,
+    "units": "native dimensionless response; exact snapped coordinates arbitrary length unit",
+    "precision_and_error": "exact integers and reduced Fractions, no decimal approximation",
+    "scope": "two finite move pairs, positive unit edge metric and declared boundary port; general monotonicity for added positive edges",
+    "physical_interpretation": "CANDIDATE only; no claim about electron charge or Standard Model constants"
+  },
+  "verification": [
+    {
+      "method": "constructor exact replay",
+      "command_or_proof_path": "python3 experiments/pachner-boundary-observability/audit.py",
+      "source_revision": "046bfb6",
+      "actual_result": "PASS: chain, shell, geometry, automorphisms, response, null channels",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent symbolic hand derivation",
+      "command_or_proof_path": "experiments/pachner-boundary-observability/README.md, Exact snapped moves and response; General visibility theorem",
+      "source_revision": "046bfb6",
+      "actual_result": "PASS: star Schur term and rank-one edge term",
+      "review_relationship": "same constructor independent method"
+    },
+    {
+      "method": "independent nonconstructor review",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "independent"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Same shell and automorphism group do not force identical boundary response under fixed unit metric",
+    "Uniform boundary mode is invisible to both moves in static port",
+    "Other nonconstant bipyramid channels remain unchanged under 2->3",
+    "Edge face-boundary states in ker B1 are invisible to vertex-only incidence readout",
+    "No physical charge operator or time/force unit map is supplied"
+  ],
+  "limitations": [
+    "Unit metric and boundary port are chosen model assumptions, not source-selected physical laws",
+    "Static response does not uniquely identify every possible interior or arbitrary weighted network",
+    "No conventional physical baseline, uncertainty, calibration or held-out measurement",
+    "The supplied governance CRL2 file is a proposal, not an enacted promotion rule"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/pachobs-20261103-01/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Source a local positive weight and Pachner move law, specify boundary/edge/face observer and equivalence, then preregister a dimensional bridge before seeing held-out measurements."
+}
