@@ -51,10 +51,24 @@
       "status": "PENDING_AFTER_METADATA_FIX",
       "prior_run_id": 41723839958,
       "prior_failure": "invalid task status and missing baseline corrected"
+    },
+    {
+      "name": "v0.4 signed S4 24x4096 exact constructor test",
+      "status": "PASS",
+      "method": "local exact SymPy and bit enumeration"
+    },
+    {
+      "name": "v0.4 alternative unit tests",
+      "status": "PASS",
+      "method": "four local constructor unit tests"
+    },
+    {
+      "name": "v0.4 non-constructor mathematical review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "Exact coefficient-domain and continuous finite-image no-go; sample u=pi/2 has eight embedded survivors all with parity 000; source-native 12D QPB1 quadrature closure retained, no canonical F2-to-chain interface established.",
-  "next_action": "Resolve full canonical binary Adm,T or nonlinear quantizer; run held-out interface commutation and non-constructor review; check GitHub CI after metadata repairs.",
+  "finding": "Source-native quarter-turn sampled gate yields EXACT 64-state paired-parity observable closure, 4096 sign words, 98304 S4 checks; θq alone nonclosed; irreversible material retention and energy-source receipt OPEN.",
+  "next_action": "Source constitutive retention law with explicit reservoir/stock current; independently review the 64-history theorem and operator/source identities; then rebase & integrate.",
   "mathematical_profile": {
     "coefficient_domain": "Separate F2 toy carrier and R15 QPB1 chain carrier; no implicit adapter",
     "exactness_or_precision_plan": "exhaustive integer enumeration",
