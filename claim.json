@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "pachner-boundary-observability-20261103",
+  "session": "pachobs-20261103-01",
+  "created_at": "2026-11-03T20:55:46Z",
+  "base_revision": "046bfb6cc3d69122cd30028d1fbb4ff8b42a40d9",
+  "owned_paths": [
+    "tasks/pachner-boundary-observability-20261103.json",
+    "sessions/pachobs-20261103-01/",
+    "candidates/pachner-boundary-observability/",
+    "experiments/pachner-boundary-observability/",
+    "artifacts/pachobs-20261103-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
