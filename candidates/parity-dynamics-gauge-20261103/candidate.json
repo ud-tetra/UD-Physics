@@ -23,12 +23,13 @@
     "UD-Physics main 2207611450df9106adccaf8189a50734fef5a46b, BOOTLOADER v1.1, Discovery v1.2, Method v1.0",
     "experiments/pachner-boundary-observability/README.md, 2026-11-03"
   ],
-  "result": "Source-native QPB1 12-dimensional edge quadrature closure; 3-dimensional hidden edge-history sector; exact no-go for nonzero additive F2<->R interface and full-time finite moving alphabet; sampled u=pi/2 candidate yields 8 of 1024 states all theta=000; canonical binary Adm,T OPEN.",
-  "next_discriminant": "Source and derive admissible nonlinear encoding/sampling plus finite-register transition; test action- and readout-preserving intertwining, then independent review.",
+  "result": "Source-native QPB1 12-dimensional edge quadrature closure; 3-dimensional hidden edge-history sector; exact no-go for nonzero additive F2<->R interface and full-time finite moving alphabet; sampled u=pi/2 candidate yields 8 of 1024 states all theta=000; canonical binary Adm,T OPEN. Added v0.4 QPB1 source-native sampled nonzero sign-admissibility: 64 paired parity states with swap evolution; θq alone fails; sign-only material energy retention source blocked.",
+  "next_discriminant": "Derive independent admissible environment or reservoir coupling and typed burden/energy-current receipt; non-constructor review; do not identify 64-state observer with original 8-state θ fiber.",
   "baseline": "Instantaneous three-bit parity P versus full projected P-history; native QPB1 edge-only versus full edge-history readout; no physical calibration",
   "mathematical_receipts": [
     "candidates/parity-dynamics-gauge-20261103/mathematical_receipt.json",
     "candidates/parity-dynamics-gauge-20261103/mathematical_receipt_native_chain_v0.2.json",
-    "candidates/parity-dynamics-gauge-20261103/mathematical_receipt_interface_v0.3.json"
+    "candidates/parity-dynamics-gauge-20261103/mathematical_receipt_interface_v0.3.json",
+    "candidates/parity-dynamics-gauge-20261103/mathematical_receipt_retention_v0.4.json"
   ]
 }
