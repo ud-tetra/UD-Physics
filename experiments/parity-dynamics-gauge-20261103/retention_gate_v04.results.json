@@ -1,0 +1,12 @@
+{
+  "source": "QPB1 K4 unit metric",
+  "rank": 12,
+  "sign_states": 4096,
+  "theta_pairs": 64,
+  "each_fiber": 64,
+  "strobe": "pi/4",
+  "update": "swap paired parity",
+  "S4_checks": 98304,
+  "exact_checks": "PASS",
+  "physical_promotion": 0
+}
