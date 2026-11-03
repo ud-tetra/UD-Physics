@@ -37,3 +37,7 @@ Local constructor test PASS for exact source matrices and exhaustive sign-state 
 **EXACT/CONDITIONAL:** 64-state sampled sign-parity quotient and S4 covariance within QPB1. **NO-GO/CONDITIONAL:** sign-only material reset cannot conserve full native norm for arbitrary amplitudes without added storage. **OPEN:** physical retention, actual finite-register Adm/T, source/sink and environment exchange, event-to-physical-time map, external non-constructor review. The next high-value task is a source-bound search for constitutive retention/current laws followed by an exact receipt, not a fitted contraction factor.
 
 No merge, no mainline export, and no claim release authorized by the present evidence.
+
+## Last source refresh
+
+Coefficient provenance ledger v0.39, objects Q169–Q179, was reread. Q170–Q173 supply conservative support/control-volume and face/top-cell signed-current receipts; Q177–Q179 supply equal-share cell support and exact current change. The same ledger explicitly leaves environment, dissipation, renewal and gate-transition sources OPEN (also G05 action-weight gate). Therefore the 64-state sign readout is neither a proof nor a replacement for material retention. The next source-bound question is an admissible source/sink operator compatible with those established current identities and with physical readouts kept separate.
