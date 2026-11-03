@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-pachner-current-metric-index",
+  "goal": "Integrate exact scoped new-carrier current and born-edge gate into state index",
+  "owned_paths": [
+    "tasks/integration-pachner-current-metric-index.json",
+    "sessions/pachcurrentidx-20261103-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "pachner-current-metric-20261103"
+  ],
+  "status": "complete"
+}

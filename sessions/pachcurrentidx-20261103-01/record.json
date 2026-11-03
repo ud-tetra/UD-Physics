@@ -1,0 +1,26 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pachcurrentidx-20261103-01",
+  "runtime": "Codex GPT-6 Git/compute plus GitHub connector",
+  "task": "integration-pachner-current-metric-index",
+  "goal": "Integrate exact scoped new-carrier current and born-edge gate into state index",
+  "created_at": "2026-11-03T23:33:48.939354+00:00",
+  "base_revision": "bb0122d48c1a9e464bbbc0620b0531a4678f850e",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-pachner-current-metric-index": {
+      "ref": "refs/heads/claims/integration-pachner-current-metric-index",
+      "held_sha": "ecd1897545d273c195df9ff57970414fa6cb1414",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "Index source scope reviewed",
+    "scripts/validate.py PASS: 481 records",
+    "16 unit tests PASS"
+  ],
+  "finding": "Indexed exact conditional rank6 transverse mode and born edge34; no physical promotion",
+  "next_action": "Release integration claim after PR merge; derive cross-complex event actuator"
+}
