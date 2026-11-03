@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-pachner-observability-index",
+  "session": "pachobsidx-20261103-01",
+  "created_at": "2026-11-03T21:07:41Z",
+  "base_revision": "1f5d3db5fb8a76bf19838b0751d42ec0d4ecc8cd",
+  "owned_paths": [
+    "tasks/integration-pachner-observability-index.json",
+    "sessions/pachobsidx-20261103-01/",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
