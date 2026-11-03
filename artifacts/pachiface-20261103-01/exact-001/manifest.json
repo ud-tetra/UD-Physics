@@ -1,0 +1,79 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "pachiface-20261103-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-03T22:24:36.351940+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact local Pachner memory projector, two-port support obligation, shell receipt, and dynamical tangency obstruction",
+  "command": "python3 experiments/pachner-interface-defect/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "6c9f3b855169448d224d7c9f9badee02d4d5a1e3",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-interface-defect/audit.py",
+      "sha256": "a3f1762db95e3845b09561906b229bc816c7e65b58ef3705e485cfe79099802a",
+      "size_bytes": 6091
+    },
+    {
+      "input_id": "input-002",
+      "name": "audit.py",
+      "path": "inputs/002-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-switch-ledger/audit.py",
+      "sha256": "8d1817d486add01a3e00da5d5ba16f4b06fea22551af50515bb68c3fc552b034",
+      "size_bytes": 5650
+    },
+    {
+      "input_id": "input-003",
+      "name": "audit.py",
+      "path": "inputs/003-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/audit.py",
+      "sha256": "472965714d8009d03e6916c4491e95514ccb7bff7ad9511d7a5fb8e8e3cd8aee",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-004",
+      "name": "audit.py",
+      "path": "inputs/004-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-boundary-observability/audit.py",
+      "sha256": "e8e36515d2f56fee6a8d849d0a9e368ced8cdff76ef199a796b15939630eb6de",
+      "size_bytes": 9321
+    },
+    {
+      "input_id": "input-005",
+      "name": "20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "path": "inputs/005-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "182d400706b33c697c912c1ec3c03c61ccac74e0a93cffec559b41f985d554d4",
+      "size_bytes": 1684
+    },
+    {
+      "path": "files/README.md",
+      "sha256": "93c2e2bda6e260a05e7f754b9fe5a6416b9aa0868caac019cbec4a11f6afe4dc",
+      "size_bytes": 7023
+    },
+    {
+      "path": "files/mathematical_receipt.json",
+      "sha256": "bd203046926fe985c9e4cf18c4884648e46b46d744c894bf90a2ce04779bb798",
+      "size_bytes": 7815
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "evidence": "exact finite algebra, conditional support interface, no event law",
+  "one_to_four": {
+    "kernel_dim": 0,
+    "new_dim": 29,
+    "old_dim": 15,
+    "port_forms": [
+      "a"
+    ],
+    "port_metric": [
+      "3"
+    ],
+    "positive_port_rank": 1,
+    "rank_M": 15,
+    "shell_jump": "0",
+    "support_obligation": "3*a^2"
+  },
+  "source_base": "6c9f3b855169448d224d7c9f9badee02d4d5a1e3",
+  "two_to_three": {
+    "kernel_dim": 2,
+    "memory_basis_norms": [
+      "5/2",
+      "2"
+    ],
+    "new_dim": 27,
+    "old_dim": 23,
+    "port_forms": [
+      "3*x+2*z",
+      "u+d"
+    ],
+    "port_metric": [
+      "1/10",
+      "1/4"
+    ],
+    "positive_port_rank": 2,
+    "rank_M": 21,
+    "samples": [
+      {
+        "label": "fundamental",
+        "memory_stock": "0",
+        "new_stock": "3",
+        "old_stock": "2",
+        "shell_stock_jump": "0",
+        "support_obligation": "1"
+      },
+      {
+        "label": "opposite_top",
+        "memory_stock": "2",
+        "new_stock": "0",
+        "old_stock": "2",
+        "shell_stock_jump": "0",
+        "support_obligation": "0"
+      },
+      {
+        "label": "face_only",
+        "memory_stock": "2/5",
+        "new_stock": "3/2",
+        "old_stock": "1",
+        "shell_stock_jump": "3/2",
+        "support_obligation": "9/10"
+      },
+      {
+        "label": "face_kernel",
+        "memory_stock": "5/2",
+        "new_stock": "0",
+        "old_stock": "5/2",
+        "shell_stock_jump": "-3/2",
+        "support_obligation": "0"
+      }
+    ],
+    "shell_jump": "2*x*z+3*x^2/2",
+    "symmetry_count": 12,
+    "target_flow_tangency_rank": 29,
+    "z_definition": "z=sum six b_i*y_i, b_i=+/-1/2"
+  }
+}

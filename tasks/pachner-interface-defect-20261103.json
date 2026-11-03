@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "pachner-interface-defect-20261103",
+  "goal": "Derive minimal local support ports, memory and source-selection obstruction for Pachner switches",
+  "owned_paths": [
+    "tasks/pachner-interface-defect-20261103.json",
+    "sessions/pachiface-20261103-01",
+    "candidates/pachner-interface-defect",
+    "experiments/pachner-interface-defect",
+    "artifacts/pachiface-20261103-01"
+  ],
+  "dependencies": [
+    "pachner-switch-ledger-20261103"
+  ],
+  "status": "complete"
+}
