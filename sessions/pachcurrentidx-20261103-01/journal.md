@@ -1,0 +1,15 @@
+# Session pachcurrentidx-20261103-01
+
+Boot attempt: 2026-11-03T23:33:48.939354+00:00
+
+Runtime: Codex GPT-6 Git/compute plus GitHub connector
+
+Task: integration-pachner-current-metric-index
+
+Goal: Integrate exact scoped new-carrier current and born-edge gate into state index
+
+Ownership: UNCLAIMED until remote claim acquisition succeeds.
+
+## Milestone
+- Indexed merged research PR #302 on base `bb0122d`; claim `ecd1897545d273c195df9ff57970414fa6cb1414` held.
+- Exact/conditional scope and physical promotion0 preserved.
