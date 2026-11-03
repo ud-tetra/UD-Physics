@@ -13,5 +13,7 @@
     "artifacts/pachobs-20261103-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-03T21:07:13Z",
+  "released_from_sha": "b9f5277afc3c8404657117d0077fb6a2e75129f2"
 }
