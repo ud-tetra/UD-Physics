@@ -13,13 +13,17 @@
     "pachner-switch-ledger-20261103": {
       "ref": "refs/heads/claims/pachner-switch-ledger-20261103",
       "held_sha": "2d9e78b40eae7d05d54ebb90d42394c7b4e74266",
-      "status": "held"
+      "status": "released",
+      "released_sha": "c1484fea7bbec313e29ab3c999f6550e6898b779",
+      "merged_pr": 288,
+      "merged_sha": "2cefeae4a7755b0eebbbff0cb56a63441eaaebc4"
     }
   },
   "checks": [
     "Exact Fraction spectra, ranks, stock and kernel PASS",
     "Independent block eigenvalue derivation PASS",
-    "Nonconstructor physics review NOT_RUN"
+    "Nonconstructor physics review NOT_RUN",
+    "GitHub Discovery integrity workflow #41728194803 PASS"
   ],
   "finding": "Exact Q_M spectra: 1→4 {3:1,0:14}; 2→3 {3/2:1,1/2:1,−1:2,0:19}. R+ = R− − ΔS conditionally balances stock but scalar R cannot restore 2→3 injectivity.",
   "next_action": "Source-select local trigger, support flux, carrier and kernel memory before physical bridge"

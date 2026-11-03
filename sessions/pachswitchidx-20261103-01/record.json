@@ -1,0 +1,26 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pachswitchidx-20261103-01",
+  "runtime": "Codex GPT-6 GitHub connector",
+  "task": "integration-pachner-switch-ledger-index",
+  "goal": "Index exact Pachner switch support ledger and close research coordination claim",
+  "created_at": "2026-11-03T22:11:23.317Z",
+  "base_revision": "2cefeae4a7755b0eebbbff0cb56a63441eaaebc4",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-pachner-switch-ledger-index": {
+      "held_sha": "45d1ca88e372ab01c15a0ecf4ddcaadb6c94bf78",
+      "status": "held",
+      "claim_ref": "refs/heads/claims/integration-pachner-switch-ledger-index"
+    }
+  },
+  "checks": [
+    "Research PR #288 merged at 2cefeae4a7755b0eebbbff0cb56a63441eaaebc4",
+    "Research claim release c1484fea7bbec313e29ab3c999f6550e6898b779 verified",
+    "Discovery integrity workflow #41728194803 PASS"
+  ],
+  "finding": "Indexed exact Q165 jump spectra and conditional reserve no-go; event and physical bridge remain open",
+  "next_action": "Define source-selected local actuator, boundary flux and kernel memory before any physical observable"
+}
