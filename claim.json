@@ -13,5 +13,7 @@
     "artifacts/pachlocal-20261103-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-03T23:16:58.193Z",
+  "released_from_sha": "7e0b307679d7a89b61231af43dbac57164de2f31"
 }
