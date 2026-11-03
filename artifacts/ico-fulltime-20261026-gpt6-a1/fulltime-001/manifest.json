@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ico-fulltime-20261026-gpt6-a1",
+  "run_id": "fulltime-001",
+  "created_at": "2026-10-26T18:13:01.959Z",
+  "evidence": "NUMERICAL",
+  "summary": "Full frozen 560x180 DOP853 u0..100, 201 sampled moving proper-SO3 primary shape and reference norms for two frozen cases, plus exact conditional rational chart d=.05/r=.036",
+  "command": "GitHub Actions 40373318159: pinned scipy/numpy venv; Python original timeframe_sampler.py on limiting fine and nominal normal, step0.5; locally python chart_bound.py --out chart_bound.json",
+  "command_execution": "EXECUTED_GITHUB_ACTIONS_JOB_121749553846_AND_LOCAL_PYTHON_EXACT_FRACTION_PROOF",
+  "source": {
+    "revision": "cea75f2c378c0072826395d3d84613698f6f0f69",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "source-unchanged-fulltime-sampler",
+      "name": "timeframe_sampler.py",
+      "path": "inputs/timeframe_sampler.py",
+      "sha256": "cce1ff4fb8ad2d248ab1f28c83743b4955c410bb047bf8a6095e6f08f96936f0",
+      "size_bytes": 4410,
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-fulltime/timeframe_sampler.py"
+    },
+    {
+      "input_id": "conditional-analytic-chart",
+      "name": "chart_bound.py",
+      "path": "inputs/chart_bound.py",
+      "sha256": "803e4d09401c350211b8552085001bbc764e11b837631946a80bb26f2e8bc3f5",
+      "size_bytes": 1986,
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-fulltime/chart_bound.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "a9d81fcb925a5af9b039ecf1eb62f4f7d6d1c77e6d814cb400445226fd662ed2",
+      "size_bytes": 2226
+    },
+    {
+      "path": "files/chart_bound.json",
+      "sha256": "68a9b2c9fb690c28224c608b8386b0b0ea86fde777303d7f0d316c9755487214",
+      "size_bytes": 1052
+    }
+  ]
+}
