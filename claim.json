@@ -12,5 +12,7 @@
     "sessions/pachiface-20261103-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-03T22:28:07.046Z",
+  "released_from_sha": "7e617a236ee8aae6f81717ede19b7011e3d27711"
 }
