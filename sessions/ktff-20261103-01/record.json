@@ -8,7 +8,7 @@
   "created_at": "2026-11-03T23:20:00Z",
   "base_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
   "source_dirty_at_boot": false,
-  "status": "active",
+  "status": "handoff",
   "claims": {
     "klein-tetra-face-flip-20261103": {
       "ref": "claims/klein-tetra-face-flip-20261103",
@@ -16,9 +16,31 @@
       "status": "held"
     }
   },
-  "checks": [],
-  "finding": "",
-  "next_action": "Complete finite face-pair and Klein Delta-complex homology/holonomy audit",
+  "checks": [
+    {
+      "name": "108 exhaustive face pairing constructor enumeration",
+      "status": "PASS"
+    },
+    {
+      "name": "Klein integral boundary and O2 exact matrix check",
+      "status": "PASS"
+    },
+    {
+      "name": "four separately formulated local unit checks",
+      "status": "PASS"
+    },
+    {
+      "name": "repository integrity/CI",
+      "status": "NOT_RUN",
+      "reason": "GitHub CI pending current head"
+    },
+    {
+      "name": "external non-constructor mathematical review",
+      "status": "NOT_RUN"
+    }
+  ],
+  "finding": "Exact: 108 whole-face K4 matchings fail 2-manifold incidence; independently constructed Klein 2-triangle Delta complex has Smith factors (1,2), nontrivial orientation cocycle and O2 reflection holonomy. Requires new gluing, not a K4 face flip.",
+  "next_action": "Construct minimal tetrahedral patch network with genuine nontrivial flat orientation local system, compare orientable double cover and no-twist model, then test source-compatible transport.",
   "mathematical_profile": {
     "coefficient_domain": "Z chain homology, F2 orientation, O(2) exact integer matrix representation",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
