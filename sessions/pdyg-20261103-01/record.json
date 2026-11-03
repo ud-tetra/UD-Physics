@@ -79,10 +79,24 @@
     {
       "name": "non-constructor physical review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.6 reciprocal port rational exchange fixtures",
+      "status": "PASS",
+      "detail": "7 exact angle-support fixtures, 4 matrices x4 preparations, local equivalent stdlib Fraction computation"
+    },
+    {
+      "name": "v0.6 alternative constructor unit tests",
+      "status": "PASS",
+      "detail": "4 local unittests"
+    },
+    {
+      "name": "external adversarial non-constructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "Q170–Q179 exact cell ownership and signed current plus a conditional nonnegative retention-transfer receipt; δ=0 and δ=1 both conserve, so no native choice or persistence law is selected.",
-  "next_action": "Find source-selected constitutive gate, reverse release and environmental support source; test persistence vs null/reversible baselines, then review and integrate.",
+  "finding": "v0.6 exact source-bound QPB1 reciprocal source port does not select autonomous retention: null and continued exchange and externally switched latch all conserve joint stock; zero-current selector is nonunique, no linear skew attractor.",
+  "next_action": "Recover a genuinely source-selected autonomous gate/feedback law with controller/source receipt and test against null, release and phase perturbations; separate 17D vs 29D provenance.",
   "mathematical_profile": {
     "coefficient_domain": "Separate F2 toy carrier and R15 QPB1 chain carrier; no implicit adapter",
     "exactness_or_precision_plan": "exhaustive integer enumeration",
