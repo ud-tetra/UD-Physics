@@ -1,0 +1,27 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pachtransidx-20261103-01",
+  "runtime": "Codex GPT-6 Git/compute plus GitHub connector",
+  "task": "integration-pachner-state-transport-index",
+  "goal": "Index scoped Pachner chain transport and no-go, close research claim",
+  "created_at": "2026-11-03T21:45:05.421162+00:00",
+  "base_revision": "59fa8146056a6f25da3a7632359dc89a32d9f44d",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-pachner-state-transport-index": {
+      "held_sha": "499fe2c51bb5610694b8e04ded0508ce49a19ad8",
+      "status": "held",
+      "claim_ref": "refs/heads/claims/integration-pachner-state-transport-index"
+    }
+  },
+  "checks": [
+    "Research PR #285 merged at 59fa8146056a6f25da3a7632359dc89a32d9f44d",
+    "Research claim release 1ea5274f1f1da5679af5b4047f7f7e574349dd31 verified",
+    "python3 scripts/validate.py PASS (451 records)",
+    "python3 -m unittest discover -s tests -q PASS (16 tests)"
+  ],
+  "finding": "Indexed exact chain transport and positive-weight no-go, with physical event and charge left open",
+  "next_action": "Source move actuator/reservoir and metric update, define physical port only after exact support balance"
+}

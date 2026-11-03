@@ -12,8 +12,11 @@
   "claims": {
     "pachner-state-transport-20261103": {
       "held_sha": "04d346a46faf5c87c135bb424f1ca5e1a13f324e",
-      "status": "held",
-      "claim_ref": "refs/heads/claims/pachner-state-transport-20261103"
+      "status": "released",
+      "claim_ref": "refs/heads/claims/pachner-state-transport-20261103",
+      "released_sha": "1ea5274f1f1da5679af5b4047f7f7e574349dd31",
+      "merged_pr": 285,
+      "merged_sha": "59fa8146056a6f25da3a7632359dc89a32d9f44d"
     }
   },
   "checks": [
@@ -21,7 +24,8 @@
     "Independent symbolic half-cell and Schur derivations PASS",
     "Nonconstructor physics review NOT_RUN",
     "python3 scripts/validate.py PASS (449 records)",
-    "python3 -m unittest discover -s tests -q PASS (16 tests)"
+    "python3 -m unittest discover -s tests -q PASS (16 tests)",
+    "GitHub Discovery integrity workflow #41724260678 PASS"
   ],
   "finding": "1->4 has integral degree-one chain map but unit top stock changes 1->4; 2->3 full symmetry forces rational halves and stock 2->3; no positive new-edge weight keeps full boundary response with old weights fixed",
   "next_action": "Source a local event and reservoir/metric update law, then independently define measurable charge/force operator",
