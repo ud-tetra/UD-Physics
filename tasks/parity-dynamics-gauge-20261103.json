@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "parity-dynamics-gauge-20261103",
+  "goal": "Source-bound K4 parity dynamical closure and gauge-identifiability audit",
+  "owned_paths": [
+    "tasks/parity-dynamics-gauge-20261103.json",
+    "sessions/pdyg-20261103-01",
+    "candidates/parity-dynamics-gauge-20261103",
+    "experiments/parity-dynamics-gauge-20261103",
+    "artifacts/pdyg-20261103-01"
+  ],
+  "dependencies": [
+    "pachner-boundary-observability-20261103"
+  ],
+  "status": "in_progress"
+}
