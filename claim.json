@@ -13,5 +13,7 @@
     "artifacts/pachlift-20261103-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-03T22:40:24.829Z",
+  "released_from_sha": "ad52deb5a534ddc93573c55bf0b5a9884069d8ff"
 }
