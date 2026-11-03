@@ -13,5 +13,7 @@
     "artifacts/pachswitch-20261103-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-03T22:09:41.493Z",
+  "released_from_sha": "2d9e78b40eae7d05d54ebb90d42394c7b4e74266"
 }
