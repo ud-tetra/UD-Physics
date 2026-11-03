@@ -1,0 +1,51 @@
+{
+  "chain_dim": 15,
+  "f_vector": [
+    4,
+    6,
+    4,
+    1
+  ],
+  "rank_D1": 3,
+  "rank_D2": 3,
+  "edge_readout_rank": 6,
+  "edge_observability_ranks_by_derivative": [
+    6,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "edge_unobservable_dim": 3,
+  "edge_evolution_closure": false,
+  "witness_edge_readout": "same zero",
+  "witness_edge_derivative_0": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "witness_edge_derivative_vertex0": [
+    "1",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0"
+  ],
+  "source_status": "source-native unit-metric linear flow, not raw binary model",
+  "physical_promotion": 0
+}
