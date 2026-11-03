@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "pachner-current-metric-20261103",
+  "goal": "Derive local new-carrier support-current and metric selector or exact obstruction",
+  "owned_paths": [
+    "tasks/pachner-current-metric-20261103.json",
+    "sessions/pachcurrent-20261103-01",
+    "candidates/pachner-current-metric",
+    "experiments/pachner-current-metric",
+    "artifacts/pachcurrent-20261103-01"
+  ],
+  "dependencies": [
+    "pachner-locality-port-20261103"
+  ],
+  "status": "complete"
+}

@@ -1,0 +1,217 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "pachner-current-metric-v0.1",
+  "session_id": "pachcurrent-20261103-01",
+  "candidate_id": "pachner-current-metric",
+  "question": "Does local new-complex support conservation select the event metric and generator, or demand a transverse port?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "new-chain",
+      "symbol": "C_*(K_new;Q)",
+      "object_type": "graded rational chain space",
+      "definition": "new bipyramid unique oriented simplices, degrees 0..3",
+      "domain": "Q^27",
+      "codomain": null,
+      "coefficient_domain": "Q",
+      "units": "native amplitudes",
+      "basis_orientation": "ascending oriented simplices",
+      "metric_measure": "unit Q165 on new complex",
+      "origin": "imported fixed-complex source plus snapped case",
+      "exact_expression": "dimensions (5,10,9,3)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "ledger-Q165-Q170"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "Q165 unit amplitude"
+    },
+    {
+      "object_id": "event-embedding",
+      "symbol": "T=(M;L)",
+      "object_type": "linear map",
+      "definition": "snapped new transport and two old kernel records",
+      "domain": "Q^23",
+      "codomain": "Q^29",
+      "coefficient_domain": "Q",
+      "units": "native amplitudes",
+      "basis_orientation": "old/new ascending oriented simplices; memory rows vf,vt",
+      "metric_measure": "J=diag(I27,2/5,1/2); H=T^TJT",
+      "origin": "prior assumed transport plus candidate memory metric",
+      "exact_expression": "rank T=23, rank M=21",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "prior-locality"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "new-chain"
+      ],
+      "normalization": "memory weights assumed"
+    },
+    {
+      "object_id": "transverse-residual",
+      "symbol": "R=(I-Pi)AT",
+      "object_type": "linear map",
+      "definition": "J-normal component of fixed-new incidence flow",
+      "domain": "Q^23",
+      "codomain": "Q^29",
+      "coefficient_domain": "Q",
+      "units": "native amplitude/formal parameter",
+      "basis_orientation": "ambient new plus memory",
+      "metric_measure": "J",
+      "origin": "derived",
+      "exact_expression": "rank_Q R=6",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "ledger-Q169"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "event-embedding"
+      ],
+      "normalization": "Q169 numerical coefficient 1"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "ledger-Q165-Q170",
+      "url_or_repo_path": "artifacts/action-normalization-20261022-a1/exact-001/inputs/011-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "version_or_commit": "v0.39(2); SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "section_or_object_id": "Q165-Q173 and Q177-Q179",
+      "source_status": "read-only fixed-complex source"
+    },
+    {
+      "source_id": "prior-locality",
+      "url_or_repo_path": "experiments/pachner-locality-port/README.md",
+      "version_or_commit": "5295ab317a1013e27296c20d44e8ee6a06784fba",
+      "section_or_object_id": "Objects and selector questions; Exact selector and obstructions",
+      "source_status": "integrated conditional discovery"
+    },
+    {
+      "source_id": "governance",
+      "url_or_repo_path": "supplied UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "version_or_commit": "v1.0 SHA256 8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4",
+      "section_or_object_id": "\u00a7\u00a71-4",
+      "source_status": "governance proposal, read-only"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "Prior rational snapped M and two-mode L; W=diag(2/5,1/2) reproduces prior H but is not source-selected."
+    },
+    {
+      "id": "A2",
+      "text": "Diagonal positive metric and unchanged numerical Q169 coefficients for metric selector."
+    },
+    {
+      "id": "A3",
+      "text": "Two memory modes static under post-event fixed-new flow; no event actuator."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "chain/homology and local support",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Construct Hasse graph and exact incidence currents"
+    },
+    {
+      "technique": "metric adjoints and rank",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Prove metric equality on connected graph and transverse rank"
+    },
+    {
+      "technique": "integer factorization/modular clocks",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No divisibility or finite clock question; formal continuous parameter only"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "5+10+9+3=27; 27+2=29; old 5+9+7+2=23",
+    "reduced_expression": "ambient codimension 29\u221223=6",
+    "factor_origins": [
+      "new simplex enumeration",
+      "two kernel memory records"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "formal continuous evolution parameter",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "dc/dtau=A c after postulated switch",
+    "initial_phase": "tau=0 event image",
+    "coupling": "Q169 incidence only",
+    "period_claim": null,
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "Q^27 new chains plus Q^2 static memory; real extension for continuous flow",
+    "generator_or_update": "A=diag(Anew,0_2), Anew=B\u2212B^T",
+    "initial_boundary_conditions": "T(old e3), postulated 2\u21923 event; outer shell retained",
+    "conservation_and_sources": "A is J-skew, Q166 local currents conserve ambient quadratic stock; no cross-complex actuator supplied",
+    "projection_and_kernel": "Pi=T H^-1 T^T J; residual R=(I\u2212Pi)AT rank6",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "ALREADY_EXPOSED_GEOMETRY_ONLY",
+    "known_targets": [
+      "Prior snapped 2\u21923 map and native algebra"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "none",
+    "selection_criterion": "exact conditional obstruction and first canonical basis witness",
+    "baseline": "full new Q169 versus confinement to prior event image"
+  },
+  "calculation_steps": [
+    "Exact new Hasse graph connected, so positive diagonal D-skew forces d_i=d_j on each incidence edge.",
+    "Build rational T and J; verify T^T J T=H and A^T J+JA=0.",
+    "Compute Pi, R; exact rank6 and seven nonzero ambient rows; codimension upper bound6.",
+    "Witness old e3 maps with zero new edge34 amplitude but Anew edge34,e3=+1, so R e3=e34 and stock tau\u00b2+O(tau\u00b3)."
+  ],
+  "result": {
+    "exact_expression": "D_new=d I27 under A2; rank_Q R=6; R e3=e_(3,4); new edge stock=tau\u00b2+O(tau\u00b3)",
+    "approximation": null,
+    "units": "native squared amplitude and formal parameter",
+    "precision_and_error": "exact rational arithmetic",
+    "scope": "fixed snapped 2\u21923 map and assumed memory embedding; positive diagonal metric with unchanged Q169 coefficients",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "constructor exact Fraction matrix audit and combinatorial edge witness",
+      "command_or_proof_path": "python3 experiments/pachner-current-metric/audit.py; experiments/pachner-current-metric/README.md",
+      "source_revision": "5295ab317a1013e27296c20d44e8ee6a06784fba",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "The freely evolving new edge leaves the imposed old image; no external correction is needed if new degrees are admitted.",
+    "Non-diagonal metric and modified incidence coefficients are outside the metric lemma.",
+    "Changing T changes R; rank6 is not a universal topology invariant."
+  ],
+  "limitations": [
+    "No independent nonconstructor review",
+    "No cross-complex trigger, memory normalization, material port, physical time or energy"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/pachcurrent-20261103-01/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Derive a native cross-complex actuator and preparation rule for the newly admitted degrees; then independently calibrated physical test."
+}

@@ -1,0 +1,26 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pachcurrent-20261103-01",
+  "runtime": "Codex GPT-6 Git/compute plus GitHub connector",
+  "task": "pachner-current-metric-20261103",
+  "goal": "Derive local new-carrier support-current and metric selector or exact obstruction",
+  "created_at": "2026-11-03T23:25:52.340889+00:00",
+  "base_revision": "5295ab317a1013e27296c20d44e8ee6a06784fba",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "pachner-current-metric-20261103": {
+      "ref": "refs/heads/claims/pachner-current-metric-20261103",
+      "held_sha": "511732c6712096310c322ca554a8440ccc126b01",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "Exact rational audit PASS",
+    "Independent local edge witness PASS",
+    "Nonconstructor review NOT_RUN"
+  ],
+  "finding": "Diagonal metric fixed on connected new carrier; exact rank6 transverse defect; born edge34 from old e3 grows with stock tau\u00b2.",
+  "next_action": "Derive source-selected event actuator and new-mode preparation; then a calibrated physical port and null"
+}
