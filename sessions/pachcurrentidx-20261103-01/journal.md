@@ -13,3 +13,6 @@ Ownership: UNCLAIMED until remote claim acquisition succeeds.
 ## Milestone
 - Indexed merged research PR #302 on base `bb0122d`; claim `ecd1897545d273c195df9ff57970414fa6cb1414` held.
 - Exact/conditional scope and physical promotion0 preserved.
+
+## Closure
+- PR #303 merged; live claim released at `79f95c6605344f7a95e4f7a885fbf9557391e3de`. No substantive research changed in this closure.

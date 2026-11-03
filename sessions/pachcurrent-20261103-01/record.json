@@ -13,13 +13,15 @@
     "pachner-current-metric-20261103": {
       "ref": "refs/heads/claims/pachner-current-metric-20261103",
       "held_sha": "511732c6712096310c322ca554a8440ccc126b01",
-      "status": "held"
+      "status": "released",
+      "release_sha": "2b24a3b7b3d7a6b279a190a6f324a7cbb767c624"
     }
   },
   "checks": [
     "Exact rational audit PASS",
     "Independent local edge witness PASS",
-    "Nonconstructor review NOT_RUN"
+    "Nonconstructor review NOT_RUN",
+    "Live claim release verified after merged PR #302"
   ],
   "finding": "Diagonal metric fixed on connected new carrier; exact rank6 transverse defect; born edge34 from old e3 grows with stock tau\u00b2.",
   "next_action": "Derive source-selected event actuator and new-mode preparation; then a calibrated physical port and null"

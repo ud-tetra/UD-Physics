@@ -23,3 +23,6 @@ Created candidate pachner-current-metric: Does local new-complex support conserv
 ## 2026-11-03T23:31:12.295831+00:00
 
 Captured artifacts/pachcurrent-20261103-01/exact-001 (EXACT): Conditional connected metric selector and rank-six new-carrier transverse residual with born-edge witness
+
+## Closure
+- PR #302 merged; live claim released at `2b24a3b7b3d7a6b279a190a6f324a7cbb767c624`. No substantive research changed in this closure.

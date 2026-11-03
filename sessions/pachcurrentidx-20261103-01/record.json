@@ -13,13 +13,15 @@
     "integration-pachner-current-metric-index": {
       "ref": "refs/heads/claims/integration-pachner-current-metric-index",
       "held_sha": "ecd1897545d273c195df9ff57970414fa6cb1414",
-      "status": "held"
+      "status": "released",
+      "release_sha": "79f95c6605344f7a95e4f7a885fbf9557391e3de"
     }
   },
   "checks": [
     "Index source scope reviewed",
     "scripts/validate.py PASS: 481 records",
-    "16 unit tests PASS"
+    "16 unit tests PASS",
+    "Live claim release verified after merged PR #303"
   ],
   "finding": "Indexed exact conditional rank6 transverse mode and born edge34; no physical promotion",
   "next_action": "Release integration claim after PR merge; derive cross-complex event actuator"
