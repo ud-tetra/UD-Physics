@@ -23,3 +23,5 @@ NO-GO scoped: with old edge weights fixed one and positive new g, full static bo
 Reproduce `python3 experiments/pachner-state-transport/audit.py`. Immutable run artifacts/pachtrans-20261103-01/exact-001/manifest.json. Nonconstructor review NOT_RUN.
 
 Repository integrity PASS 449 records; unit tests PASS 16. Exact SHA-256 inputs/outputs captured in run manifest.
+
+PR #285 merged at 59fa8146056a6f25da3a7632359dc89a32d9f44d after CI #41724260678 PASS. Exact-head claim release 1ea5274f1f1da5679af5b4047f7f7e574349dd31. Closure-only record.

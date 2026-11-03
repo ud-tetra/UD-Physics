@@ -1,0 +1,13 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-pachner-state-transport-index",
+  "goal": "Index scoped Pachner chain transport and positive-weight obstruction, and close its research claim",
+  "owned_paths": [
+    "tasks/integration-pachner-state-transport-index.json",
+    "sessions/pachtransidx-20261103-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": ["pachner-state-transport-20261103"],
+  "status": "complete"
+}
