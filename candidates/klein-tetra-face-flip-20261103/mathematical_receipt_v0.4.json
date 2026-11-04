@@ -113,6 +113,33 @@
         "BRIDGE_M"
       ],
       "normalization": "none"
+    },
+    {
+      "object_id": "EVEN_BRIDGE_F",
+      "symbol": "f_even",
+      "object_type": "even-S4-equivariant revised interval-to-K4 integral chain inclusion",
+      "definition": "f0(v0)=e0+e3, f0(v1)=e1+e2, f1(edge)=e02−e13",
+      "domain": "C0(I)⊕C1(I) over Z",
+      "codomain": "C0(K4)⊕C1(K4) over Z",
+      "coefficient_domain": "Z",
+      "units": "native chain coefficient only",
+      "basis_orientation": "ascending vertices and edges K4",
+      "metric_measure": "unit Gram 2 I2 and [2], not isometric",
+      "origin": "derived candidate conditional on even extension",
+      "exact_expression": "dK4 f=f dI; rank f0=2,rank f1=1; R(p_even)f=f",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "even_S4_extension_selected"
+      ],
+      "dependency_ids": [
+        "BRIDGE_M",
+        "S4_TRANSPORT"
+      ],
+      "normalization": "no ad hoc rescaling; Gram factor2 explicit"
     }
   ],
   "sources": [
@@ -151,7 +178,8 @@
     "all 72 tetrahedra are labeled Delta simplices, not necessarily unique abstract 4-vertex subsets",
     "twisted coefficient rho on 3D cellular product is pulled back from Klein base; no full twisted 72-tet boundary matrix calculated",
     "interval inclusion into selected K4 edge [01] is chosen, not source selected; chain map need not be isometric or generator-intertwining",
-    "full K4 S4 vertex extension of partial [01]→[32] is not unique; two choices tested, no physical clock/metric/readout"
+    "full K4 S4 vertex extension of partial [01]→[32] is not unique; two choices tested, no physical clock/metric/readout",
+    "Revised integer bridge is S4-equivariant only after choosing even completion p=(3,2,1,0); original single-edge inclusion not equivariant for full S4 seam"
   ],
   "technique_plan": [
     {
@@ -233,10 +261,12 @@
     "Build cellular C(K;rho)⊗C(I) and earlier 60D C(K;rho)⊗C(K4); define f on interval endpoints/edge",
     "Check d_target M=M d_source exact with graded ranks (2,5,4,1)",
     "Enumerate all S4 completions of [01]→[32]; both signed operators commute with dK,A_K and preserve norm, yet yield opposite top-cell signs",
-    "Conclude 3D mathematical realization and cellular bridge pass, but full 72-simplicial-to-twisted-cellular matrix and native physical source-selected readout OPEN"
+    "Conclude 3D mathematical realization and cellular bridge pass, but full 72-simplicial-to-twisted-cellular matrix and native physical source-selected readout OPEN",
+    "Check f0(v0)=e0+e3, f0(v1)=e1+e2, f1(e)=e02−e13 obeys d f1=f0 d under even S4 permutation and has Gram matrices 2I2, [2]",
+    "Show odd 4-cycle has 1D fixed vertex space, forbidding an injective rank2 interval vertex map into invariant subspace under the same scalar source sheet character"
   ],
   "result": {
-    "exact_expression": "3D Klein×I Δ complex f=(18,102,156,72), ∂²=0, ranks (17,84,72); cellular twisted M ranks (2,5,4,1) commutes; two source-compatible top-signs ±",
+    "exact_expression": "3D Klein×I Δ complex f=(18,102,156,72), ∂²=0, ranks (17,84,72); cellular twisted M ranks (2,5,4,1) commutes; two source-compatible top-signs ±; even S4 equivariant revised integer map f0,f1 exists with Gram factor2, odd 4cycle rank2 injection NO-GO",
     "approximation": null,
     "units": "none, integer chain counts and dimensionless signs",
     "precision_and_error": "exact integer matrices, rational ranks",
@@ -271,21 +301,30 @@
       "source_revision": "same",
       "actual_result": "PASS four local constructor tests, not non-constructor review",
       "review_relationship": "constructor"
+    },
+    {
+      "method": "exact signed S4 equivariant integral interval-to-K4 bridge",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/packet_intertwiner_v04.py",
+      "source_revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+      "actual_result": "PASS local equivalent exact 4x2,6x1,4x6 matrices; even map and odd invariant dimension",
+      "review_relationship": "same constructor"
     }
   ],
   "counterexamples_and_failures": [
     "two equally legal S4 extensions of the h seam produce opposite K4 top-cell signs; no unique native framed observable",
     "ordinary squared norms remain identical under every orthogonal S4 transport",
     "a Klein boundary cannot be the sole boundary of orientable compact 3-manifold; realized bulk K×I is nonorientable",
-    "chain compatibility does not imply isometry, source-type evolution intertwining or a physical time bridge"
+    "chain compatibility does not imply isometry, source-type evolution intertwining or a physical time bridge",
+    "Scalar cellular id⊗f selected single K4 edge is not full-S4 equivariant under either nontrivial seam completion; revised even bridge changes the map and native metric"
   ],
   "limitations": [
     "Source does not choose this nonorientable 3D quotient geometry, actual spacetime, transport law or physical readout",
     "Explicit simplicial 72-tet to twisted 3D cellular map matrix NOT_RUN, only cellular bridge executed",
     "No fixed physical metric, retained energy, stock-current evolution, SI units or empirical bridge",
-    "Independent non-constructor review NOT_RUN"
+    "Independent non-constructor review NOT_RUN",
+    "No source selects the even S4 completion or the revised orbit-sum normalization. Non-constructor review pending."
   ],
   "changed_dependencies": [],
   "artifact_manifest_refs": [],
-  "next_discriminant": "Implement exact 72-tet twisted local-coefficient subdivision/cellular chain map and compare a source-selected sign-sensitive UD readout against no-twist null; if unavailable preserve OPEN."
+  "next_discriminant": "Build explicit orientation-twisted 72-tet to cellular subdivision chain map; verify signed S4 even seam compatibility with native source selection and metric/current readout, or freeze the physical claim."
 }
