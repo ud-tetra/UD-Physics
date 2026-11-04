@@ -23,3 +23,6 @@ Created candidate pachner-event-actuator: Does a conservative overlay gate choos
 ## 2026-11-04T20:38:06.126333+00:00
 
 Captured artifacts/pachact-20261104-01/exact-001 (EXACT): Abstract union-gate nonselection, exact born-edge onset family and frozen old-only stock witness
+
+## Closure
+- PR #305 merged; live claim released at `be48b25befda96dcceb0d863bb49502b993d0d81`. No substantive research changed in this closure.

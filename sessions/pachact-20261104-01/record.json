@@ -13,7 +13,8 @@
     "pachner-event-actuator-20261104": {
       "ref": "refs/heads/claims/pachner-event-actuator-20261104",
       "held_sha": "45b7d323b7628449e51f0e4c87072970090866a3",
-      "status": "held"
+      "status": "released",
+      "release_sha": "be48b25befda96dcceb0d863bb49502b993d0d81"
     }
   },
   "checks": [
@@ -21,7 +22,8 @@
     "Direct combinatorial and frozen-face checks PASS",
     "scripts/validate.py PASS: 485 records",
     "16 unit tests PASS",
-    "Nonconstructor review NOT_RUN"
+    "Nonconstructor review NOT_RUN",
+    "Live claim release verified after merged PR #305"
   ],
   "finding": "Bare conservative overlay gate is nonselective: ramp changes born-edge stock onset, and three old-only modes can freeze invisible to new readout.",
   "next_action": "Derive endogenous gate and reset/transfer with source-accounted support; retain instant switch as only conditional branch"
