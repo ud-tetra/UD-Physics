@@ -1,0 +1,43 @@
+{
+  "version": "v0.1",
+  "evidence": "EXACT_CONDITIONAL",
+  "physical_promotion": 0,
+  "source_revision": "41da46f2f3f3dd25f794fbbb5dedc16ea00854d8",
+  "row_norm_bounds": {
+    "old": 5,
+    "new_all": 5,
+    "new_single": 5
+  },
+  "nominal_crossing": {
+    "reserve": "9/10",
+    "gdot": "-3",
+    "interval": [
+      "-1/600",
+      "1/600"
+    ]
+  },
+  "crossing_domain": "epsilon<=1/1000 and d=r+5epsilon<=1/1000",
+  "crossing_bound": "unique inward zero on [-1/600,1/600]; |t_star|<=(r+5epsilon)/2",
+  "vertex_contrast_difference_derivatives": [
+    "0",
+    "0",
+    "2",
+    "2"
+  ],
+  "sample_window": [
+    "1/420",
+    "1/210"
+  ],
+  "nominal_separation_lower_bound": "1/352800",
+  "joint_budget": "78epsilon+15r+13nu+eta<=1/800000",
+  "example": {
+    "preparation_epsilon": "1/200000000",
+    "reserve_error_r": "1/100000000",
+    "sampling_jitter_nu": "1/100000000",
+    "readout_error_eta": "1/4000000"
+  },
+  "example_budget_used": "23/25000000",
+  "example_crossing_shift_bound": "7/400000000",
+  "scope": "one local event; signed readout; fixed selected mask; projection assumed; preparation norm before event; jitter relative to nominal sample time",
+  "tests": "rational identities and conservative analytic bound constants PASS"
+}

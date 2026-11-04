@@ -1,0 +1,96 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-20261104-timing-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-04T20:45:25.216791+00:00",
+  "evidence": "EXACT",
+  "summary": "Conditional local crossing-time and joint signed-readout error certificate",
+  "command": "python3 -B experiments/pachner-timing-budget/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "41da46f2f3f3dd25f794fbbb5dedc16ea00854d8",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/audit.py",
+      "sha256": "7c58e3eaa099298b3671945cd84309298594e8acc59fae005077fab8ddf040c0",
+      "size_bytes": 8298
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/README.md",
+      "sha256": "cce0ecb02f4e910a37720d0ebbaa5fe95eef4049245bb4fd81830396e635953b",
+      "size_bytes": 7257
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/pachner-timing-budget/mathematical_receipt.json",
+      "sha256": "690199ffdee3d29ecb71e81653f6eb67d4aefc0c13361f92fda0a533fe603507",
+      "size_bytes": 6366
+    },
+    {
+      "input_id": "input-004",
+      "name": "audit.py",
+      "path": "inputs/004-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-trigger-lift/audit.py",
+      "sha256": "13513c0c6bdbd75982dfcac33ae8d4b15082215d4b106b282c333553932e680e",
+      "size_bytes": 7675
+    },
+    {
+      "input_id": "input-005",
+      "name": "audit.py",
+      "path": "inputs/005-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-interface-defect/audit.py",
+      "sha256": "a3f1762db95e3845b09561906b229bc816c7e65b58ef3705e485cfe79099802a",
+      "size_bytes": 6091
+    },
+    {
+      "input_id": "input-006",
+      "name": "audit.py",
+      "path": "inputs/006-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-switch-ledger/audit.py",
+      "sha256": "8d1817d486add01a3e00da5d5ba16f4b06fea22551af50515bb68c3fc552b034",
+      "size_bytes": 5650
+    },
+    {
+      "input_id": "input-007",
+      "name": "audit.py",
+      "path": "inputs/007-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/audit.py",
+      "sha256": "472965714d8009d03e6916c4491e95514ccb7bff7ad9511d7a5fb8e8e3cd8aee",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-008",
+      "name": "audit.py",
+      "path": "inputs/008-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-boundary-observability/audit.py",
+      "sha256": "e8e36515d2f56fee6a8d849d0a9e368ced8cdff76ef199a796b15939630eb6de",
+      "size_bytes": 9321
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "234644213a0fa3f61cb4f74a7d0544045675aa24b9b414b48df66f4ae346749f",
+      "size_bytes": 1251
+    }
+  ]
+}
