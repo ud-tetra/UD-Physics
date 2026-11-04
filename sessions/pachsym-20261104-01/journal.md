@@ -24,3 +24,6 @@ Created candidate pachner-symmetry-transfer: Can a shell-fixed bipyramid-symmetr
 Captured artifacts/pachsym-20261104-01/exact-001 (EXACT): Base S3 and full bipyramid symmetry obstruction for shell-fixed interior transfer; conditional real two-memory Gram witness
 
 - Public project site checked 2026-11-04: Papers I–III 1.1.1 / IV 0.1, physical promotion0, independent review pending. It supplies no cross-complex event rule.
+
+## Closure
+- PR #309 merged; live claim released at `f189e177d2e939d7a2ebc6aa4ccd630be8ebc7a9`. No substantive research changed in this closure.
