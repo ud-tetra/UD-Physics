@@ -13,5 +13,7 @@
     "artifacts/pachact-20261104-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-04T20:39:48.653Z",
+  "released_from_sha": "45b7d323b7628449e51f0e4c87072970090866a3"
 }
