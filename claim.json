@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "pachner-event-actuator-20261104",
+  "session": "pachact-20261104-01",
+  "created_at": "2026-11-04T20:33:16.979Z",
+  "base_revision": "ecd0949a6f03eb30680e432409b7dc8c1742a76f",
+  "owned_paths": [
+    "tasks/pachner-event-actuator-20261104.json",
+    "sessions/pachact-20261104-01/",
+    "candidates/pachner-event-actuator/",
+    "experiments/pachner-event-actuator/",
+    "artifacts/pachact-20261104-01/"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
