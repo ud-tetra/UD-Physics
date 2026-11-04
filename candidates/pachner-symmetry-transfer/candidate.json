@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "pachner-symmetry-transfer",
+  "session_id": "pachsym-20261104-01",
+  "question": "Can a shell-fixed bipyramid-symmetric isometry transfer all old-only stock to new-only coordinates and select a gate?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "20 shared shell amplitudes pointwise fixed at event, a stronger condition than fixed shell geometry",
+    "Linear jump from three old-only to seven new-only oriented simplex coordinates",
+    "S3 base permutations, optionally apex C2, act by signed orientation",
+    "Unit Q165 metric; real algebraic extension used only for conditional two-memory construction"
+  ],
+  "physical_mapping": "OPEN: no source-selected event register, memory, local jump current, physical clock, charge, friction or material port",
+  "target_exposure": "No measured target or fit; snapped 2\u21923 geometry and prior gate counterexample already known",
+  "fitted_choices": [],
+  "sources": [
+    "UD coefficient provenance ledger v0.39(2) SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63 Q165/Q166/Q169/Q170/Q173/Q177-Q179",
+    "UD governance CRL-2 subdivision proposal v1.0 SHA256 8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4 \u00a7\u00a71-4",
+    "experiments/pachner-event-actuator/README.md at base 15cc72b0203288a3c5b67563a0a18285bdc17d0a"
+  ],
+  "baseline": "Bare overlay full-new gate leaves three old-only coordinates frozen; shell-amplitude-fixed jump tested",
+  "result": "Every base S3-equivariant linear map from old-only Q^3 to new-only Q^7 has rank\u22641. Apex exchange leaves a one-dimensional intertwiner; two old apex-even channels have no new-only image. A conditional real algebraic two-memory jump attains isometry, but neither memory nor gate is source-selected.",
+  "next_discriminant": "Derive local current realization of the two-memory jump and a sourced interior-sensitive event guard; test shell-amplitude exchange as an alternate branch",
+  "mathematical_receipts": [
+    "candidates/pachner-symmetry-transfer/mathematical_receipt.json"
+  ]
+}

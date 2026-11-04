@@ -1,0 +1,221 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "pachner-symmetry-transfer-v0.1",
+  "session_id": "pachsym-20261104-01",
+  "candidate_id": "pachner-symmetry-transfer",
+  "question": "Can a shell-fixed bipyramid-symmetric isometry transfer all old-only stock to new-only coordinates and select a gate?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "old-interior",
+      "symbol": "V_o",
+      "object_type": "oriented old-only simplex space",
+      "definition": "face012, top0123, top0124",
+      "domain": "Q^3",
+      "codomain": null,
+      "coefficient_domain": "Q",
+      "units": "native amplitude",
+      "basis_orientation": "ascending vertex orientation",
+      "metric_measure": "Q165 unit",
+      "origin": "exact old/new simplex difference",
+      "exact_expression": "dim3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "prior-overlay"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit stock"
+    },
+    {
+      "object_id": "new-interior",
+      "symbol": "V_n",
+      "object_type": "oriented new-only simplex space",
+      "definition": "edge34, three 34 faces, three 34 tops",
+      "domain": "Q^7",
+      "codomain": null,
+      "coefficient_domain": "Q",
+      "units": "native amplitude",
+      "basis_orientation": "ascending vertex orientation",
+      "metric_measure": "Q165 unit",
+      "origin": "exact old/new simplex difference",
+      "exact_expression": "dim7",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "prior-overlay"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit stock"
+    },
+    {
+      "object_id": "jump",
+      "symbol": "Y",
+      "object_type": "linear equivariant map",
+      "definition": "shell-amplitude-fixed old interior to new interior",
+      "domain": "Q^3",
+      "codomain": "Q^7",
+      "coefficient_domain": "Q; real algebraic extension for two-memory witness",
+      "units": "native amplitude",
+      "basis_orientation": "signed permutation action",
+      "metric_measure": "unit stock",
+      "origin": "candidate cross-complex jump",
+      "exact_expression": "rank Y\u22641 under base S3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "ledger-Q165-Q169"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "old-interior",
+        "new-interior"
+      ],
+      "normalization": "shell amplitudes fixed pointwise"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "ledger-Q165-Q169",
+      "url_or_repo_path": "artifacts/action-normalization-20261022-a1/exact-001/inputs/011-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "version_or_commit": "v0.39(2) SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "section_or_object_id": "Q165/Q166/Q169/Q170/Q173/Q177-Q179",
+      "source_status": "read-only fixed-complex source"
+    },
+    {
+      "source_id": "prior-overlay",
+      "url_or_repo_path": "experiments/pachner-event-actuator/README.md",
+      "version_or_commit": "15cc72b0203288a3c5b67563a0a18285bdc17d0a",
+      "section_or_object_id": "Frozen records and selector obstruction",
+      "source_status": "integrated conditional discovery"
+    },
+    {
+      "source_id": "governance",
+      "url_or_repo_path": "supplied UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "version_or_commit": "v1.0 SHA256 8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4",
+      "section_or_object_id": "\u00a7\u00a71\u20134",
+      "source_status": "governance proposal"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "Jump fixes all 20 shell amplitudes and maps old-only linearly into new-only coordinates."
+    },
+    {
+      "id": "A2",
+      "text": "Signed orientation representation of base S3, optional apex C2; stock unit Q165."
+    },
+    {
+      "id": "A3",
+      "text": "Two real unit memory modes base-sign/apex-even are added solely as a conditional witness."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "group/permutation and representation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Exact signed actions and intertwiner rank"
+    },
+    {
+      "technique": "rational exact linear algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Solve 42/63 constraints and Gram identity"
+    },
+    {
+      "technique": "prime valuations",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Rational-square obstruction for odd-line unit isometry"
+    },
+    {
+      "technique": "clock/modular arithmetic",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No event register update or modulus supplied"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "old-only 1+2=3; new-only 1+3+3=7; common shell5+9+6=20",
+    "reduced_expression": "base constraints rank18 of 21, full constraints rank20 of21; norm ratio 2/3",
+    "factor_origins": [
+      "simplex enumeration",
+      "unit Q165 norm of signed top combinations"
+    ],
+    "factorization": "2/3 has v_2=+1, v_3=\u22121; not a rational square",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "event register OPEN",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "old interior Q^3, new interior Q^7; optional R^2 memory",
+    "generator_or_update": "event jump Y only; continuous generator and guard OPEN",
+    "initial_boundary_conditions": "20 shell amplitudes fixed pointwise; arbitrary old interior",
+    "conservation_and_sources": "full new-only injection impossible; candidate R-algebraic map to new+two memory has Gram I3",
+    "projection_and_kernel": "base-equivariant Y rank\u22641, apex-even old two-dimensional kernel under full symmetry",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "NO_PHYSICAL_TARGET",
+    "known_targets": [
+      "prior frozen hidden old-only stock counterexample"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "all linear equivariant maps (solved exactly), no parameter search",
+    "selection_criterion": "injectivity and unit-stock isometry",
+    "baseline": "bare overlay freezes old-only modes"
+  },
+  "calculation_steps": [
+    "Enumerate 20 common, three old-only and seven new-only oriented simplices.",
+    "Build signed S3 and C2 representation matrices; solve YRo=RnY exactly.",
+    "Base-only rank18/21 gives Hom dimension3 but all image in one sign line, so rank Y\u22641.",
+    "Full group rank20/21 gives unique odd top channel; old apex-even dimension2 has no new-only counterpart.",
+    "Check primitive squared norms2 and3, rational square obstruction2/3; construct R-algebraic two-memory isometry and verify Gram I3."
+  ],
+  "result": {
+    "exact_expression": "rank Y\u22641; Hom_S3 dimension3, Hom_S3xC2 dimension1; conditional two-memory Gram I3",
+    "approximation": null,
+    "units": "native amplitudes/stock only",
+    "precision_and_error": "exact rational matrices; symbolic radicals for optional real map",
+    "scope": "shell amplitudes fixed pointwise, linear equivariance, unit native metric",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "constructor exact Fraction audit plus independent representation argument",
+      "command_or_proof_path": "python3 experiments/pachner-symmetry-transfer/audit.py; experiments/pachner-symmetry-transfer/README.md",
+      "source_revision": "15cc72b0203288a3c5b67563a0a18285bdc17d0a",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Shell-only instantaneous guard sees zero state and unit old face012 with same shell input.",
+    "Relaxed shell-amplitude mixing, non-equivariance, open-system sink or changed carrier are separate branches."
+  ],
+  "limitations": [
+    "Two memory representations and algebraic coefficients are added, not source-selected",
+    "No autonomous gate or local current generator for the jump",
+    "Nonconstructor review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/pachsym-20261104-01/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Construct local support-current realization of two-memory jump and source an interior-sensitive guard"
+}
