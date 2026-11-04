@@ -1,0 +1,275 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-TWISTED-PACKET-003",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Can the Klein orientation local system be lifted to a full 15-coordinate K4 packet chain with exact twisted nilpotency, skew flow and a discriminating observable?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "KLEIN_CW",
+      "symbol": "B_rho",
+      "object_type": "Klein CW chain with orientation local coefficients",
+      "definition": "one 0-cell, two 1-cells (h,v), one 2-cell with relator h v h^-1 v",
+      "domain": "C_p(Klein;Z_rho)",
+      "codomain": "C_(p-1)(Klein;Z_rho)",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "h,v and oriented 2-cell",
+      "metric_measure": "CW unit metric only after extension to R",
+      "origin": "assumed seam and derived Fox boundary",
+      "exact_expression": "twisted d1=[-2,0],d2=[0,0]; untwisted d1=[0,0],d2=[0,2]",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "KTFF-v02"
+      ],
+      "assumption_ids": [
+        "CW_SEAM"
+      ],
+      "dependency_ids": [],
+      "normalization": "rho_tw(h)=-1,rho_tw(v)=1"
+    },
+    {
+      "object_id": "PACKET_K4",
+      "symbol": "C_K4",
+      "object_type": "filled tetrahedral simplicial chain",
+      "definition": "C0+C1+C2+C3 with oriented ascending bases",
+      "domain": "C_q(Delta3;Z)",
+      "codomain": "C_(q-1)(Delta3;Z)",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "ordered K4 simplices",
+      "metric_measure": "unit H=I after R extension",
+      "origin": "imported QPB1 v1.0",
+      "exact_expression": "f=(4,6,4,1), dK²=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit incidence"
+    },
+    {
+      "object_id": "TENSOR_TOTAL",
+      "symbol": "D_rho",
+      "object_type": "graded tensor cellular boundary",
+      "definition": "D(b_p tensor k_q)=d_rho b tensor k+(-1)^p b tensor dK k",
+      "domain": "total Z^60 graded chain",
+      "codomain": "degree-decreased Z^60",
+      "coefficient_domain": "Z/R",
+      "units": "none",
+      "basis_orientation": "product degree p+q, CW then simplex",
+      "metric_measure": "unit Euclidean on 60D after R extension",
+      "origin": "CONDITIONAL new construction",
+      "exact_expression": "D²=0; graded dims (4,14,20,15,6,1)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "KTFF-v02",
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "CW_SEAM",
+        "UNIT_PRODUCT_METRIC"
+      ],
+      "dependency_ids": [
+        "KLEIN_CW",
+        "PACKET_K4"
+      ],
+      "normalization": "unit product cells"
+    },
+    {
+      "object_id": "GEN",
+      "symbol": "A_rho",
+      "object_type": "skew incidence evolution generator",
+      "definition": "A=D-D^T",
+      "domain": "R^60",
+      "codomain": "R^60",
+      "coefficient_domain": "R exact Z entries",
+      "units": "inverse formal native u",
+      "basis_orientation": "total chain degree basis",
+      "metric_measure": "unit Euclidean",
+      "origin": "CANDIDATE source-type extension",
+      "exact_expression": "spec(-A²)=0^2+4^30+8^28 for both models",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "UNIT_PRODUCT_METRIC"
+      ],
+      "dependency_ids": [
+        "TENSOR_TOTAL"
+      ],
+      "normalization": "unit product cells"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "section_or_object_id": "v1.0 §§1–3 full signed K4 chain and unit metric",
+      "source_status": "integrated native source, not seam law"
+    },
+    {
+      "source_id": "KTFF-v02",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/DOUBLE_COVER_AND_TRANSPORT_v0.2.md",
+      "version_or_commit": "a0e1fa3f691793a00886875cc49af14cdf772a32",
+      "section_or_object_id": "orientation character and double-cover proof",
+      "source_status": "previous Discovery candidate topology"
+    },
+    {
+      "source_id": "LOOP",
+      "url_or_repo_path": "experiments/qpb1-loop-history/HISTORY_CONTRACT.md",
+      "version_or_commit": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "section_or_object_id": "nonflat edge sign connection warning",
+      "source_status": "must not identify flat rho with source nonflat sign"
+    }
+  ],
+  "assumptions": [
+    "Klein 2D seam edge quotient is newly assumed rather than derived from native K4 3D gluing",
+    "CW local-system orientation character rho(h)=-1, rho(v)=1, or trivial null",
+    "Unit Euclidean metric on 60D CW tensor chain is chosen; factor 2 CW boundary is a quotient topological incidence, not primitive K4 coefficient",
+    "Formal product is graded 5-dimensional CW chain carrier, not a physical 5D spacetime or 3D packet assembly",
+    "Source-type skew evolution A is a conditional extension; no selected seam coupling, physical units or time"
+  ],
+  "technique_plan": [
+    {
+      "technique": "Fox boundary and integral Smith invariant",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive twisted versus ordinary Klein CW homology incl. torsion"
+    },
+    {
+      "technique": "signed graded tensor differential",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove D²=0 with Koszul sign, 60D integer matrices"
+    },
+    {
+      "technique": "exact rank/kernel",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare graded Betti numbers over R"
+    },
+    {
+      "technique": "spectral/operator algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "test skew norm, polynomial of L and exact eigen multiplicities"
+    },
+    {
+      "technique": "independent product-spectrum convolution",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "separate 4D CW and 15D K4 Laplacians, sum eigenvalues"
+    },
+    {
+      "technique": "unit calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no physical bridge"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "(1+2t+t²)(4+6t+4t²+t³)=4+14t+20t²+15t³+6t⁴+t⁵",
+    "reduced_expression": "60 total coordinates; ranks twisted 4,9,10,5,1 versus ordinary 3,10,10,5,1",
+    "factor_origins": [
+      "minimal Klein CW [1,2,1]",
+      "K4 [4,6,4,1]"
+    ],
+    "factorization": "60=2²·3·5; torsion order 2 in degree0 twisted versus degree1 untwisted",
+    "divisibility_gcd_lcm": "Smith twisted d1 2, ordinary d2 2"
+  },
+  "clock_receipt": {
+    "clock_type": "formal continuous parameter u for source-type skew flow; edge loop words for rho",
+    "modulus": 2,
+    "residue_convention": "rho(h)=-1, rho(v)=+1",
+    "update_rule": "x'=A_rho x, A_rho=D-DT; U_h=-I15, U_v=I15",
+    "initial_phase": "arbitrary x in R60, local packet frame chosen",
+    "coupling": "no physical coupling, unit matrix metric",
+    "period_claim": "h² restores sign, NOT time periodicity",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "60D CW tensor packet chain after Z->R, formal degrees 0..5",
+    "generator_or_update": "conditional A_rho=D_rho-D_rho^T",
+    "initial_boundary_conditions": "closed Klein base CW, filled K4 packet, no SI boundary conditions",
+    "conservation_and_sources": "d/d u ||x||²=0; antisymmetric incidence-cut current; no source/sink or retained matter",
+    "projection_and_kernel": "graded H0/H2 swap and loop rho distinguish; full ungraded Laplacian eigenvalues identical",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "Klein topology and desired face flip known before test; no physical measurement data",
+    "known_targets": [
+      "nontrivial orientation character",
+      "native K4 signed incidence"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "choose Klein CW seam quotient",
+      "choose tensor product and unit 60D metric",
+      "choose conditional source-type skew evolution"
+    ],
+    "search_domain_and_budget": "2 exact CW characters, 60D integer matrices and separate 4D x15D factor spectrum",
+    "selection_criterion": "nilpotency, symmetry, conservation, distinguishable holonomy and null control",
+    "baseline": "untwisted trivial local system over SAME Klein CW and K4 packet factor"
+  },
+  "calculation_steps": [
+    "Fox derivative of Klein relation h v h^-1 v yields twisted d1=[-2,0],d2=0 and ordinary d1=0,d2=[0,2]",
+    "Compute tensor differential with (-1)^p and derive 60D graded dimensions",
+    "Check all D_n D_(n+1)=0 and ranks exactly",
+    "Derive degree-specific real Betti vectors (0,1,1,0,0,0) and (1,1,0,0,0,0)",
+    "Verify A^T=-A, L=-A² satisfies L(L-4I)(L-8I)=0, Tr L=344, Tr L²=2272",
+    "Independent base Hodge spectrum both 0^2,4^2 and K4 0^1,4^14; convolve to same product spectrum 0^2,4^30,8^28",
+    "Show rho_tw(h)=-I15, rho_null(h)=+I15, contractible Klein relator maps identity, and squared norm cannot distinguish opposite signs"
+  ],
+  "result": {
+    "exact_expression": "twisted D²=0, b=(0,1,1,0,0,0) versus untwisted b=(1,1,0,0,0,0); both spec L 0^2 4^30 8^28",
+    "approximation": null,
+    "units": "formal native dimensionless",
+    "precision_and_error": "exact integer / rational sympy matrices",
+    "scope": "formal 60D graded tensor CW K4 local system, NOT sourced 3D bulk or physical mechanism",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "direct full 60D exact matrix algebra",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/twisted_packet_chain_v03.py",
+      "source_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "actual_result": "PASS local equivalent full 60D script; branch script requires exact replay in PR",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent factor spectrum derivation",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/spectral_crosscheck_v03.py",
+      "source_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "actual_result": "PASS local independent mathematical formulation, same constructor",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "four local constructor checks",
+      "command_or_proof_path": "python3 -m unittest discover -s experiments/klein-tetra-face-flip-20261103 -p test_twisted_packet_v03.py -v",
+      "source_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "actual_result": "PASS local equivalent test suite; separate non-constructor review NOT_RUN",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "twisted and untwisted 60D models are exactly ISOSPECTRAL as ungraded Hodge operators: no spectral uniqueness from twist",
+    "squared-norm stock readout is blind to global sign flip -I15",
+    "Klein quotient not derived from K4 topology preserving operations; CW factor 2 is not primitive K4 edge coefficient",
+    "formal 60D product is not a 3D manifold gluing and does not specify retained matter"
+  ],
+  "limitations": [
+    "native full-packet seam transport source absent; tensor product is explicit new mathematical construction",
+    "no external independent review",
+    "no physical clock, calibrated metric, mass/charge, or source selection law",
+    "no geometric 3D topology or oriented face-adjacency of actual K4 cluster proved"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Find source-bound 3D packet adjacency and an incidence-compatible seam gluing or explicit 60D-to-physical readout; choose a framed, grade-sensitive observable distinguishing orientation holonomy over null and test independent held-out data."
+}
