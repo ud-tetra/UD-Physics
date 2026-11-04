@@ -30,5 +30,11 @@
   "odd_rank_two_equivariant_inclusion_no_go": true,
   "original_one_edge_inclusion_full_S4_equivariant": false,
   "physical_promotion": 0,
-  "status": "PASS_EXACT"
+  "status": "PASS_EXACT",
+  "dynamics": {
+    "invariant_subspace": false,
+    "rank_leak": 2,
+    "squared_Frobenius": 8,
+    "Gram": "2I3"
+  }
 }
