@@ -38,3 +38,11 @@ Local **equivalent** exact programs PASS the 72-tet quotient, all signed boundar
 ## Next discriminant
 
 Build the **pulled-back twisted local-coefficient** 72-tet signed boundary and its explicit subdivision-to-cellular chain-map matrix; then derive an admitted framed measurement/readout from UD source rather than attaching one by choice. If no source-selected orientation reference or seam-selection rule exists, keep the 3D result as a conditional mathematical model. All physical bridges OPEN, physical promotion 0.
+
+## Exact full K4 transport amendment in the same v0.4 session
+
+Additional source-native signed-S4 tests establish that the original cellular map choosing K4 edge [01] is equivariant only under scalar orientation monodromy rho(h)=-1; after selecting a nontrivial K4 vertex extension of the h seam, the original map does **not** commute with full packet transport.
+
+For **even** extension p=(3,2,1,0), a different integer chain inclusion *is* equivariant: f0(v0)=K4 vertex0+vertex3, f0(v1)=vertex1+vertex2, f1(e)=edge02−edge13. It satisfies d_K4 f1=f0 d_I and R_K(p) f=f, with injective ranks (2,1). Its unit-cell Gram matrices are (2I2,[2]), so it is not an isometry. For odd extension p=(3,2,0,1), the K4 vertex fixed subspace has rank 1; no rank2 injective degree-zero map into that invariant subspace exists under the same scalar rho action. See `experiments/klein-tetra-face-flip-20261103/packet_intertwiner_v04.py` and `packet_intertwiner_results_v04.json`. This is a stronger **scoped source-selection obstruction**: an integral compatible full-packet bridge exists in one deliberately chosen branch, but the seam does not force that branch or its native normalization.
+
+Ordinary (trivial-coefficient) 72-tetrahedron chains cannot be naturally identified with twisted-coefficient 3D CW chains by a nonzero monodromy-equivariant constant-fiber map: h forces f=-f over Z. The explicit 72-simplicial **twisted** subdivision map remains OPEN. GitHub CI and non-constructor review statuses are tracked separately. Local standalone calculation/outputs and SHA-256 manifest are packaged in `KLEIN_3D_TETRA_SEAM_v0.4.zip` (equivalent implementations, not byte-identical to committed files).
