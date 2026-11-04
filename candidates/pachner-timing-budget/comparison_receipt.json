@@ -1,0 +1,161 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "pachner-continuation-comparison-v0.2",
+  "session_id": "codex-20261104-timing-01",
+  "candidate_id": "pachner-timing-budget",
+  "question": "Which prepared boundary readout distinguishes masks and full/projected continuation under bounded errors?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "event",
+      "symbol": "c0; c0+(1/4)e3; W",
+      "object_type": "hybrid finite-dimensional model",
+      "definition": "full versus projected continuation of one event",
+      "domain": "R^23 plus scalar reserve",
+      "codomain": "R^27 plus rank-2 memory",
+      "coefficient_domain": "Q matrices, real continuous evolution",
+      "units": "native amplitude, squared-amplitude reserve, dimensionless parameter",
+      "basis_orientation": "ascending oriented simplices",
+      "metric_measure": "unit before event; H=M^T M+P afterward",
+      "origin": "prior conditional plus derived bounds",
+      "exact_expression": "78epsilon+15r+13nu+eta<=1/1000000 for modified probe",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "trigger",
+        "ledger"
+      ],
+      "assumption_ids": [
+        "projection",
+        "single_ball",
+        "prepared_signed_state"
+      ],
+      "dependency_ids": [],
+      "normalization": "no physical normalization"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "trigger",
+      "url_or_repo_path": "experiments/pachner-trigger-lift/README.md",
+      "version_or_commit": "41da46f2f3f3dd25f794fbbb5dedc16ea00854d8",
+      "section_or_object_id": "Objects; post-event projection; readout",
+      "source_status": "prior conditional"
+    },
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "v0.39",
+      "section_or_object_id": "Q165-Q173,Q177-Q179",
+      "source_status": "historical read-only"
+    }
+  ],
+  "assumptions": [
+    "one snapped 2-to-3 ball; signed prepared face and edge",
+    "fixed old skew preflow and constant reserve",
+    "event-image projection and metric H",
+    "two fixed mask hypotheses; max-absolute-edge selector and holding are posited",
+    "known nominal sample time; bounded jitter and signed scalar reading",
+    "v0.2 probe deliberately adds 1/4 at old vertex 3; all-active flow in both continuation hypotheses"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact Fraction linear algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "metric and derivative checks"
+    },
+    {
+      "technique": "norm bounds, Taylor theorem, monotone zero",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "continuous interval and perturbation proof"
+    },
+    {
+      "technique": "modular clocks and factorization",
+      "applicability": "NA",
+      "purpose_or_na_reason": "no modular register or divisibility question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "(1/4)*(1/240)^2/2",
+    "reduced_expression": "1/460800",
+    "factor_origins": [
+      "1/4 probe amplitude; second-order Taylor coefficient; sample window 1/240..1/120"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "real dimensionless evolution parameter",
+    "update_rule": "exponential of fixed generator between event and sample",
+    "physical_unit_map": "OPEN",
+    "period_claim": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "old R23; target R27 plus kernel memory",
+    "generator_or_update": "compare ambient diag(An,0) with projected K0; all-active for new probe",
+    "initial_boundary_conditions": "original c0 for no-go; c0+(1/4)e3 for probe",
+    "conservation_and_sources": "old norm; conditional event reserve balance; H-norm after event",
+    "projection_and_kernel": "rank-2 memory, event projection assumed",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "Prior chat mask comparisons exposed; no empirical data used",
+    "known_targets": [
+      "v0.1 witness and mask derivatives",
+      "new apex probe tested after finding exact blindness"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "deliberate probe alpha=1/4",
+      "conservative sample window and sufficient error threshold"
+    ],
+    "search_domain_and_budget": "two original masks; one controlled all-active apex preparation",
+    "selection_criterion": "expose known transverse born-edge mode and read boundary apex contrast",
+    "baseline": "projected all-active flow"
+  },
+  "calculation_steps": [
+    "verify E K^k c0=0 and P K^(k+1)c0=0 for k=0..22 for each mask",
+    "extend by Cayley-Hamilton to all times",
+    "change preparation explicitly by 1/4 vertex3",
+    "verify born internal edge derivative and boundary contrast derivatives",
+    "certify Taylor separation using exact cancellation of blind component",
+    "recheck crossing and error constants with new norm"
+  ],
+  "result": {
+    "exact_expression": "v0.1 mask certificate preserved; v0.2 original witness exactly blind to full/projected flow for both masks; deliberate +1/4 old vertex-3 probe distinguishes all-active continuations with budget <=1/1000000",
+    "approximation": null,
+    "units": "native model units",
+    "precision_and_error": "rational matrix identities plus analytic inequalities",
+    "scope": "original-witness no-go plus explicitly changed all-active apex probe",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "Fraction matrices, cyclic subspaces and analytic proof",
+      "command_or_proof_path": "experiments/pachner-timing-budget/comparison.py; COMPARISON_v0.2.md",
+      "source_revision": "39d7c2d48a7670ae5b9d94402dcfd33b922d6e73",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Original preparation yields identical full/projected target and memory trajectories at all times",
+    "No uniform discrimination on an error set containing this original witness"
+  ],
+  "limitations": [
+    "No independent review or empirical test",
+    "No native derivation of reserve, trigger, mask holding or event metric",
+    "Midpoint evaluated as exact model function; floating estimator unimplemented",
+    "No generator or metric perturbation coverage"
+  ],
+  "changed_dependencies": [
+    "New deliberate preparation for probe only; original certificate retained"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/codex-20261104-timing-01/exact-002/manifest.json"
+  ],
+  "next_discriminant": "Implement rational readout prediction enclosures and finite-computation midpoint classification"
+}

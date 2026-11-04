@@ -143,3 +143,9 @@ trigger-lift source receipt; prior transport/interface scripts at the base
 revision. The projected law, reserve, selected mask, hold duration,
 preparation and readout remain explicitly conditional. No Klein bottle
 topology or basin attraction has been established.
+
+## Continuation comparison
+
+[Comparison amendment v0.2](COMPARISON_v0.2.md) proves the original preparation
+is exactly blind to full-versus-projected continuation and gives a separate
+controlled apex probe. The v0.1 mask distinction above is unchanged.

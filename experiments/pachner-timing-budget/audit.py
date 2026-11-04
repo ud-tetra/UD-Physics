@@ -46,7 +46,7 @@ def cap_derivative(v,dv,indices):
     return 2*sum(v[i]*dv[i] for i in indices)
 
 
-def main():
+def main(return_setup=False):
     coords=[(1,-1,0),(0,1,-1),(-1,0,1),(1,1,1),(-1,-1,-1)]
     old=[(0,1,2,3),(0,1,2,4)]
     new=[(0,1,3,4),(1,2,3,4),(0,2,3,4)]
@@ -109,6 +109,8 @@ def main():
     assert R==Q(9,10) and gdot==Q(-3)
     oldstock=iface.snorm(c);newc=lin.mvec(M,c);mem=lin.mvec(P,c)
     assert iface.snorm(newc)+iface.snorm(mem)==oldstock+R
+    if return_setup:
+        return locals()
     rownorm=lambda A:max(sum(map(abs,row)) for row in A)
     assert rownorm(Ao)==rownorm(An)==5
     D=[row[:] for row in An]
