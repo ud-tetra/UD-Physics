@@ -134,10 +134,15 @@
       "name": "v0.4 physically source-selected frame readout",
       "status": "NOT_RUN",
       "reason": "two source-compatible signed S4 packet completions disagree"
+    },
+    {
+      "name": "v0.4 even equivariant bridge dynamical leakage",
+      "status": "PASS",
+      "method": "exact native 15x15 A_K test rank2, Frobenius squared8"
     }
   ],
-  "finding": "v0.4: genuine nonorientable 72-tetrahedron Klein×I Delta complex with exact ∂² and ranks; exact cellular twisted bulk-to-60D map; revised integral even-S4 equivariant K4 packet inclusion but no odd rank2 invariant inclusion. Full 72-tet twisted map and unique source-selected physical readout remain OPEN.",
-  "next_action": "Build 72-tet pulled-back-rho local-coefficient signed complex and subdivision-to-cellular map, test native norm/holonomy framed reference, and seek independent review before integration.",
+  "finding": "v0.4: genuine nonorientable 72-tetrahedron Klein×I Delta complex with exact ∂² and ranks; exact cellular twisted bulk-to-60D map; revised integral even-S4 equivariant K4 packet inclusion but no odd rank2 invariant inclusion. Full 72-tet twisted map and unique source-selected physical readout remain OPEN. The even-equivariant packet inclusion is NOT invariant under native A_K, with exact leakage rank 2 and squared Frobenius norm 8.",
+  "next_action": "Construct 72-tetra pulled-back orientation-coefficient chain and exact simplicial-to-cellular subdivision map; derive a dynamically invariant native seam carrier and operational framed observer.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
