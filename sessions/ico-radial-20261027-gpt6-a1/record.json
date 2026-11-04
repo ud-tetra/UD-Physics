@@ -1,0 +1,62 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ico-radial-20261027-gpt6-a1",
+  "runtime": "GPT-6, GitHub connector isolated claim, GitHub Actions pinned NumPy2.3.5 SciPy1.17.0, local standard-library Fraction and downloaded artifact analysis",
+  "task": "icosahedral-nonlinear-radial-20261027",
+  "goal": "Stress test actual nonlinear 3D icosahedral relative primary radius using worst raw final 560x180 housing tangent directions, and verify moving-reference chart domain with tighter time sampling",
+  "created_at": "2026-10-27T18:01:27.418Z",
+  "base_revision": "360b72d751934eed428df9b7f89358d9260bbcad",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "icosahedral-nonlinear-radial-20261027": {
+      "ref": "refs/heads/claims/icosahedral-nonlinear-radial-20261027",
+      "sha": "c194cd0a85ffc2fa0b39323940dd8f2fa50f891a",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "GitHub Actions #40554459813 frozen limiting 4 nonlinear + source reference",
+      "result": "PASS 401 sampled u0..100, 4 signed/half amplitudes; max full raw .035009792; sampled dref max .050392408 at u9.25; all struts/volumes positive; energy+heat error <3.1e-12",
+      "scope": "NUMERICAL selected housing phases, not all180 or continuous interval"
+    },
+    {
+      "command": "GitHub Actions #40554459813 frozen nominal 4 nonlinear + source reference",
+      "result": "PASS max full raw .035209379; sampled reference max .051090226 at u9.25; min strut .492302; min oriented volume .954561; energy+heat error <3.1e-12",
+      "scope": "NUMERICAL selected phases"
+    },
+    {
+      "command": "sha256sum full workflow output downloaded ZIP",
+      "result": "PASS source 6627a81b15fc715c43fb8f9bea13b34e9165848cecea2a892ca027c40c5a1728; limiting 55a34f1535e0ac43ddf2dc09cf00a8df68a659394e6af20ca18a5316fa7cce23; nominal c4a19adb12a7b9e16333a7dd3b3619348a1233e7aa0fd2f19e9f03a2b593198b; summary343b1325d9bb318dd50a30f1917480940d498726315ae897636785e95a58b07a",
+      "scope": "workflow artifact 30-day expiration, Git summary immutable"
+    },
+    {
+      "command": "python3 /mnt/data/ico_nonlinear_radial_20261027/chart_bound_d007.py --out /mnt/data/ico_nonlinear_radial_20261027/chart_bound_d007.json",
+      "result": "PASS exact Fraction d=.070 r=.036 bound 26619144063633/27262940965600000<.001, local stdout checked",
+      "scope": "EXACT/CONDITIONAL geometry only"
+    },
+    {
+      "command": "sha256sum exact local proof/result",
+      "result": "PASS 17980dc96d0e7a996c237d914b51d9a3594656bab40ea5c4791483d516f2ac4a and 369feb80ea6fbb27638d2893b46fad57938a5342dfcbef962d099fa68aeb177a",
+      "scope": "immutable source+full result"
+    }
+  ],
+  "finding": "NUMERICAL frozen original full 560-state ODE ±1,±.5 raw worst tangent phase for two source cases at 401 time samples: all selected relative primary radii<.036, strut lengths and cell volumes positive, energy+heat ~1e-12. More densely sampled reference peaks .0503924/.0510902 at u9.25, invalidating old d=.05 as a uniform sampled antecedent. EXACT/CONDITIONAL new d=.07,r=.036 moving SO3 chart Taylor bound<=26619144063633/27262940965600000≈.000976386<.001. Full 180-phase ball, continuous/time interval, Hessian/forced Green and 80% breathing remain OPEN.",
+  "next_action": "Validate continuous reference/relative displacement and full 180-phase nonlinear forcing Green/Hessian/strut/volume with interval/a-posteriori estimates; selected finite-phase checks are development data only.",
+  "mathematical_profile": {
+    "coefficient_domain": "exact Q rational SO3 chart majorant; Float64 SciPy DOP853 full 560-state nonlinear trajectories",
+    "exactness_or_precision_plan": "eight source-selected finite trajectories plus reference at .25 grid, exact conditional d=.070 SO3 geometric bound, no interval time-error bound",
+    "applicable_methods": [
+      "source frozen nonlinear 560-state DOP853",
+      "180D endpoint raw singular leading phase",
+      "finite amplitude ±1/±.5 and directional second-order residual scaling",
+      "reference sampling alias and timestep decimation",
+      "moving shell-centered SO3 chart remainder exact rational",
+      "strut/volume positivity sampled, conventional 3D mechanics null"
+    ],
+    "clock_metric_units_conventions": "native u=t/t0, ell0=1, original housing E_h=E_p/40000, ν=.05, 120 housing struts and 20 oriented cells, physical SI calibration OPEN"
+  }
+}
