@@ -13,5 +13,7 @@
     "artifacts/pachsym-20261104-01/"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-04T21:32:59.366Z",
+  "released_from_sha": "02f64f9a70c32f300068e374c877d88444c2d313"
 }
