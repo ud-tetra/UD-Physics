@@ -104,3 +104,11 @@ Exact signed K4 incidence gives `d_K4 f1=f0 d_I`; `R_K(p_even) f0=f0` and `R_K(p
 For the odd extension `p_odd=(3,2,0,1)`, a 4-cycle, the invariant K4 zero-chain subspace has dimension one. A rank-two degree-zero interval injection into that fixed space is therefore impossible. This is a **NO-GO** under injectivity, the fixed ordinary interval coefficient action, and full S4 intertwining; a different source group action, additional memory or noninjective map changes the question.
 
 **Disposition:** A source-compatible 3D cellular-to-packet transport exists within the even-extension branch, but the partial seam geometry admits two inequivalent completions and therefore does not uniquely select that branch or a physical top-cell orientation readout. These exact checks are in `packet_intertwiner_v04.py` with `packet_intertwiner_results_v04.json`.
+
+## 8. Exact native-generator reduction test (NO-GO under selected interval image)
+
+Let `F:C_0(I)⊕C_1(I)→C_0(K4)⊕C_1(K4)` be the revised even-equivariant interval embedding of §7. The three columns are orthogonal and have Gram matrix `F^TF=2I_3`. The source-native full K4 skew evolution is `A_K=d_K-d_K^T`, whereas the interval skew generator is `A_I=d_I-d_I^T`. Exact matrix calculation gives `A_K F≠F A_I`. More strongly the orthogonal complement leakage operator
+```
+L=(I_15-F(F^TF)^-1 F^T) A_K F
+```
+has `rank L=2` and `Tr(L^T L)=8`. Thus the chosen even-equivariant interval image is **not invariant** under the unmodified native K4 generator despite commuting with the signed chain boundaries and packet symmetry. No autonomous reduced dynamics or retained-state selection follows from this bridge. This is a scoped source-bound failure certificate, not a no-go for all other subspaces, metrics, or coupled dynamics.
