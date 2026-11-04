@@ -263,7 +263,8 @@
     "Enumerate all S4 completions of [01]→[32]; both signed operators commute with dK,A_K and preserve norm, yet yield opposite top-cell signs",
     "Conclude 3D mathematical realization and cellular bridge pass, but full 72-simplicial-to-twisted-cellular matrix and native physical source-selected readout OPEN",
     "Check f0(v0)=e0+e3, f0(v1)=e1+e2, f1(e)=e02−e13 obeys d f1=f0 d under even S4 permutation and has Gram matrices 2I2, [2]",
-    "Show odd 4-cycle has 1D fixed vertex space, forbidding an injective rank2 interval vertex map into invariant subspace under the same scalar source sheet character"
+    "Show odd 4-cycle has 1D fixed vertex space, forbidding an injective rank2 interval vertex map into invariant subspace under the same scalar source sheet character",
+    "Even-S4 packet bridge image not invariant under source A_K. Exact orthogonal leakage rank2 with squared norm8."
   ],
   "result": {
     "exact_expression": "3D Klein×I Δ complex f=(18,102,156,72), ∂²=0, ranks (17,84,72); cellular twisted M ranks (2,5,4,1) commutes; two source-compatible top-signs ±; even S4 equivariant revised integer map f0,f1 exists with Gram factor2, odd 4cycle rank2 injection NO-GO",
@@ -315,7 +316,8 @@
     "ordinary squared norms remain identical under every orthogonal S4 transport",
     "a Klein boundary cannot be the sole boundary of orientable compact 3-manifold; realized bulk K×I is nonorientable",
     "chain compatibility does not imply isometry, source-type evolution intertwining or a physical time bridge",
-    "Scalar cellular id⊗f selected single K4 edge is not full-S4 equivariant under either nontrivial seam completion; revised even bridge changes the map and native metric"
+    "Scalar cellular id⊗f selected single K4 edge is not full-S4 equivariant under either nontrivial seam completion; revised even bridge changes the map and native metric",
+    "Exact reduced-mode leakage: A_K F is outside image(F), despite signed chain compatibility."
   ],
   "limitations": [
     "Source does not choose this nonorientable 3D quotient geometry, actual spacetime, transport law or physical readout",
@@ -326,5 +328,5 @@
   ],
   "changed_dependencies": [],
   "artifact_manifest_refs": [],
-  "next_discriminant": "Build explicit orientation-twisted 72-tet to cellular subdivision chain map; verify signed S4 even seam compatibility with native source selection and metric/current readout, or freeze the physical claim."
+  "next_discriminant": "Source invariant seam carrier and full 72-tet twisted subdivision map; retain physical promotion zero."
 }
