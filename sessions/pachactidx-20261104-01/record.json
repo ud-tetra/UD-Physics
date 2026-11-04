@@ -1,0 +1,26 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pachactidx-20261104-01",
+  "runtime": "Codex GPT-6 Git/compute plus GitHub connector",
+  "task": "integration-pachner-event-actuator-index",
+  "goal": "Index scoped overlay-gate no-go and onset qualification",
+  "created_at": "2026-11-04T20:40:41.848163+00:00",
+  "base_revision": "41da46f2f3f3dd25f794fbbb5dedc16ea00854d8",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-pachner-event-actuator-index": {
+      "ref": "refs/heads/claims/integration-pachner-event-actuator-index",
+      "held_sha": "6880f5bee2711b3a052f86a8aeb44d743960ce29",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "Source scope and link reviewed",
+    "scripts/validate.py PASS: 487 records",
+    "16 unit tests PASS"
+  ],
+  "finding": "Indexed gated onset family and hidden old-only stock, preserving instantaneous \u03c4\u00b2 branch as conditional",
+  "next_action": "Release claim after integration; derive event register and accounted old-only transfer"
+}
