@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "integration-pachner-symmetry-transfer-index",
+  "session": "pachsymidx-20261104-01",
+  "created_at": "2026-11-04T21:33:32.269Z",
+  "base_revision": "a02b36de7a2282b9dbb0693bceb84c916fb930fb",
+  "owned_paths": [
+    "tasks/integration-pachner-symmetry-transfer-index.json",
+    "sessions/pachsymidx-20261104-01/",
+    "state/CURRENT.md"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
