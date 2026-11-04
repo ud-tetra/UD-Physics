@@ -89,3 +89,18 @@ Local exact code on these objects passed full quotient f-vector, side-face multi
 ## Coefficient-domain limitation
 
 The 72-tetrahedron ordinary simplicial boundary uses a constant integral coefficient system. The cellular Klein bridge instead uses the nontrivial orientation character rho(h)=-1. A fiberwise constant map from the former to the latter that respects h transport must obey f(n)=-f(n), hence f=0 over the integers. This is a scoped NO-GO for a nonzero monodromy-equivariant map between these particular coefficient systems. An appropriate 72-cell bridge must first equip its source chains with the same pulled-back orientation local system and explicitly build the twisted simplicial boundary. The present ordinary 72-tet nilpotency and twisted cellular chain map are separate exact certificates; they are not yet their composition.
+
+## 7. Full S4 equivariance of a revised interval inclusion (EXACT / CONDITIONAL)
+
+The simple bridge of §2 maps interval edge to K4 edge [01]. A nontrivial seam completion carries [01] to [32], so that simple bridge **is not equivariant** under `U_h=-R_K(p)` acting on the full K4 carrier. It is only equivariant under the **scalar** orientation local system `rho(h)=-1`. This distinguishes the prior chain-map certificate from a full S4-transport intertwiner.
+
+A modified integral interval inclusion exists **after selecting the even extension** `p_even=(3,2,1,0)`:
+```
+f0(v0)=[0]+[3],         f0(v1)=[1]+[2],
+f1([v0v1])=[02]-[13].
+```
+Exact signed K4 incidence gives `d_K4 f1=f0 d_I`; `R_K(p_even) f0=f0` and `R_K(p_even) f1=f1`. Therefore `id⊗f` extends to a graded cellular bridge that intertwines `rho(h)` and `U_h=rho(h)R_K(p_even)`. Its K4 part has ranks (2,1), but Gram matrices are `f0^T f0=2I2` and `f1^T f1=(2)`. **It is not unit-metric isometric** and is not the original single-edge inclusion. The norm discrepancy cannot be silently rescaled without changing the source normalization.
+
+For the odd extension `p_odd=(3,2,0,1)`, a 4-cycle, the invariant K4 zero-chain subspace has dimension one. A rank-two degree-zero interval injection into that fixed space is therefore impossible. This is a **NO-GO** under injectivity, the fixed ordinary interval coefficient action, and full S4 intertwining; a different source group action, additional memory or noninjective map changes the question.
+
+**Disposition:** A source-compatible 3D cellular-to-packet transport exists within the even-extension branch, but the partial seam geometry admits two inequivalent completions and therefore does not uniquely select that branch or a physical top-cell orientation readout. These exact checks are in `packet_intertwiner_v04.py` with `packet_intertwiner_results_v04.json`.
