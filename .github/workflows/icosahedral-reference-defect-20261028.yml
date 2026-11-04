@@ -1,0 +1,40 @@
+name: Isolated 3D reference dense defect / raw norm audit
+on:
+  push:
+    branches: ['discovery/icosahedral-reference-defect-20261028/**']
+    paths:
+      - 'experiments/icosahedral-reference-defect/dense_defect.py'
+      - '.github/workflows/icosahedral-reference-defect-20261028.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4 pinned
+        with:
+          persist-credentials: false
+      - name: Install pinned numerical dependencies
+        run: |
+          python3 -m venv /tmp/ico-defect-env
+          /tmp/ico-defect-env/bin/python -m pip install --disable-pip-version-check --no-input numpy==2.3.5 scipy==1.17.0
+      - name: Compute frozen reference dense polynomial defects
+        run: |
+          mkdir -p /tmp/ico-defect
+          /tmp/ico-defect-env/bin/python experiments/icosahedral-reference-defect/dense_defect.py --out /tmp/ico-defect/defect.json
+          sha256sum experiments/icosahedral-reference-defect/dense_defect.py /tmp/ico-defect/defect.json
+      - name: Preserve executed numerical result
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4 pinned
+        with:
+          name: ico-reference-defect-20261028
+          path: /tmp/ico-defect/defect.json
+          retention-days: 30
+          if-no-files-found: warn
