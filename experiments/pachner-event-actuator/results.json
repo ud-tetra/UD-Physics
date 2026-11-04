@@ -1,0 +1,142 @@
+{
+  "born_edge": [
+    3,
+    4
+  ],
+  "frozen_old_face_witness": {
+    "initial_stock": "1",
+    "new_restricted_readout": "0",
+    "post_switch_derivative": "0",
+    "simplex": [
+      0,
+      1,
+      2
+    ]
+  },
+  "gates": {
+    "0": {
+      "edge_first_coefficient": "1",
+      "edge_first_order": 1,
+      "edge_stock_first_coefficient": "1",
+      "edge_stock_first_order": 2,
+      "gate": "tau^0"
+    },
+    "1": {
+      "edge_first_coefficient": "1/2",
+      "edge_first_order": 2,
+      "edge_stock_first_coefficient": "1/4",
+      "edge_stock_first_order": 4,
+      "gate": "tau^1"
+    },
+    "2": {
+      "edge_first_coefficient": "1/3",
+      "edge_first_order": 3,
+      "edge_stock_first_coefficient": "1/9",
+      "edge_stock_first_order": 6,
+      "gate": "tau^2"
+    }
+  },
+  "identity": "For any prescribed real g(tau), A_g=(1-g)Ao+g An is skew on the unit overlay and has Hasse support in the union; its native quadratic stock is conserved. The source ledger specifies no g update or old-only reset.",
+  "new_only": [
+    {
+      "degree": 1,
+      "simplex": [
+        3,
+        4
+      ]
+    },
+    {
+      "degree": 2,
+      "simplex": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "degree": 2,
+      "simplex": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "degree": 2,
+      "simplex": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "degree": 3,
+      "simplex": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "degree": 3,
+      "simplex": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "degree": 3,
+      "simplex": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "no_switch_gate": "g(tau)=0: born-edge amplitude and stock identically zero",
+  "old_only": [
+    {
+      "degree": 2,
+      "simplex": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "degree": 3,
+      "simplex": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "degree": 3,
+      "simplex": [
+        0,
+        1,
+        2,
+        4
+      ]
+    }
+  ],
+  "overlay_type": "abstract union = boundary complex of 4-simplex, not a geometric common refinement",
+  "prepared_old_vertex": [
+    3
+  ],
+  "source_base_local_checkout": "20efe0f7784aedc24130f2f0883324fea6eb9d04",
+  "source_base_remote": "ecd0949a6f03eb30680e432409b7dc8c1742a76f",
+  "union_euler": 0,
+  "union_f_vector": [
+    5,
+    10,
+    10,
+    5
+  ]
+}

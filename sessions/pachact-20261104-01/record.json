@@ -1,0 +1,28 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pachact-20261104-01",
+  "runtime": "Codex GPT-6 Git/compute plus GitHub connector",
+  "task": "pachner-event-actuator-20261104",
+  "goal": "Test common-carrier incidence gating and source selection of Pachner event",
+  "created_at": "2026-11-04T20:34:11.415601+00:00",
+  "base_revision": "ecd0949a6f03eb30680e432409b7dc8c1742a76f",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "pachner-event-actuator-20261104": {
+      "ref": "refs/heads/claims/pachner-event-actuator-20261104",
+      "held_sha": "45b7d323b7628449e51f0e4c87072970090866a3",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "Exact rational overlay/Taylor audit PASS",
+    "Direct combinatorial and frozen-face checks PASS",
+    "scripts/validate.py PASS: 485 records",
+    "16 unit tests PASS",
+    "Nonconstructor review NOT_RUN"
+  ],
+  "finding": "Bare conservative overlay gate is nonselective: ramp changes born-edge stock onset, and three old-only modes can freeze invisible to new readout.",
+  "next_action": "Derive endogenous gate and reset/transfer with source-accounted support; retain instant switch as only conditional branch"
+}

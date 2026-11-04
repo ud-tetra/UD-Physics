@@ -1,0 +1,224 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "pachner-event-actuator-v0.1",
+  "session_id": "pachact-20261104-01",
+  "candidate_id": "pachner-event-actuator",
+  "question": "Does a conservative overlay gate choose a 2-to-3 event and born-edge onset without an external clock or reset?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO"
+  ],
+  "objects": [
+    {
+      "object_id": "overlay",
+      "symbol": "C_*(U;Q)",
+      "object_type": "abstract union chain carrier",
+      "definition": "U=K_old union K_new, boundary complex of 4-simplex",
+      "domain": "Q^30",
+      "codomain": null,
+      "coefficient_domain": "Q",
+      "units": "native amplitudes",
+      "basis_orientation": "ascending oriented simplices",
+      "metric_measure": "I_30 Q165 unit",
+      "origin": "derived abstract union",
+      "exact_expression": "f=(5,10,10,5), Euler=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "ledger-Q165-170"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit Q165 stock"
+    },
+    {
+      "object_id": "gated-generator",
+      "symbol": "A_g=(1\u2212g)A_o+g A_n",
+      "object_type": "time-dependent linear generator",
+      "definition": "zero extended fixed-complex incidence generators with externally prescribed gate",
+      "domain": "Q^30",
+      "codomain": "Q^30",
+      "coefficient_domain": "Q for Taylor coefficients, real extension for flow",
+      "units": "inverse formal parameter",
+      "basis_orientation": "overlay ascending oriented simplices",
+      "metric_measure": "unit I_30",
+      "origin": "CANDIDATE imposed interpolation",
+      "exact_expression": "A_g^T=\u2212A_g for all g",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "ledger-Q169"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "overlay"
+      ],
+      "normalization": "old/new incidence coefficients \u00b11"
+    },
+    {
+      "object_id": "born-stock",
+      "symbol": "S_34=y_34^2",
+      "object_type": "native simplex stock readout",
+      "definition": "squared amplitude of newly admitted edge 34",
+      "domain": "Q^30",
+      "codomain": "Q[[tau]]",
+      "coefficient_domain": "Q",
+      "units": "native amplitude squared",
+      "basis_orientation": "edge (3,4)",
+      "metric_measure": "unit I_30",
+      "origin": "derived conditional",
+      "exact_expression": "a\u00b2 tau^(2p+2)/(p+1)\u00b2 leading",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "prior-current"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "gated-generator"
+      ],
+      "normalization": "initial vertex3 amplitude 1"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "ledger-Q165-170",
+      "url_or_repo_path": "artifacts/action-normalization-20261022-a1/exact-001/inputs/011-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "version_or_commit": "v0.39(2) SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "section_or_object_id": "Q165/Q166/Q169/Q170/Q173/Q177-Q179",
+      "source_status": "read-only source"
+    },
+    {
+      "source_id": "prior-current",
+      "url_or_repo_path": "experiments/pachner-current-metric/README.md",
+      "version_or_commit": "ecd0949a6f03eb30680e432409b7dc8c1742a76f",
+      "section_or_object_id": "Exact transverse obstruction and born edge",
+      "source_status": "integrated conditional discovery"
+    },
+    {
+      "source_id": "governance",
+      "url_or_repo_path": "supplied UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "version_or_commit": "v1.0 SHA256 8e9e8159fe2e5c4bdc234712e02db0151fc77f4a92c140372279a1e9717689a4",
+      "section_or_object_id": "\u00a7\u00a71\u20134",
+      "source_status": "governance proposal"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "Abstract union overlay and imposed gate g(tau), not a source-derived actuator."
+    },
+    {
+      "id": "A2",
+      "text": "Initial old vertex3 unit amplitude, others zero; compare g=tau^p, p=0,1,2."
+    },
+    {
+      "id": "A3",
+      "text": "Second witness unit old face012 at instantaneous new gate."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "chain topology/counts",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Verify abstract union f-vector and old/new-only simplex count"
+    },
+    {
+      "technique": "rational formal series and exact linear algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Verify skew conservation and gate-sensitive edge onset through order8"
+    },
+    {
+      "technique": "local support",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Track edge34 incidence and frozen old-only coordinates"
+    },
+    {
+      "technique": "prime factorization/modular clocks",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No divisibility or finite register period question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "old 23, new27; union 5+10+10+5=30; old-only 3, new-only7",
+    "reduced_expression": "Euler=5\u221210+10\u22125=0; leading coefficients 1/(p+1) and 1/(p+1)^2",
+    "factor_origins": [
+      "simplex union",
+      "integral of tau^p"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "formal continuous event parameter",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "dc/dtau=A_g(tau)c; gate prescribed, not native",
+    "initial_phase": "tau=0 with old vertex3 unit",
+    "coupling": "linear weighted incidence",
+    "period_claim": null,
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "Q^30 formal Taylor series, real continuous extension",
+    "generator_or_update": "A_g(tau)=(1\u2212g)Ao+g An",
+    "initial_boundary_conditions": "old vertex3 unit; independent old face012 witness; bipyramid shell retained in combinatorial pair",
+    "conservation_and_sources": "unit quadratic stock exactly conserved for any g; old-only frozen at g=1",
+    "projection_and_kernel": "new-restricted readout annihilates old-only face012",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "NO_PHYSICAL_TARGET",
+    "known_targets": [
+      "Prior conditional tau\u00b2 instantaneous switch onset"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "declared p in {0,1,2} plus g=0; no tuning",
+    "selection_criterion": "compare exact leading Taylor order",
+    "baseline": "old fixed generator, g=0"
+  },
+  "calculation_steps": [
+    "Enumerate old/new simplices and verify union equals boundary of 4-simplex.",
+    "Zero extend Ao and An; prove skewness of any real interpolation and conservation.",
+    "For g=tau^p, recurrence (n+1)c[n+1]=Ao c[n]+(An\u2212Ao)c[n\u2212p]; compute to order8.",
+    "Check old-only face012 is exact kernel of fully new generator."
+  ],
+  "result": {
+    "exact_expression": "born edge stock tau\u00b2, tau\u2074/4, tau\u2076/9 for p=0,1,2; old face012 stock1 frozen at g=1",
+    "approximation": null,
+    "units": "native squared amplitude per formal parameter",
+    "precision_and_error": "exact rational formal series",
+    "scope": "abstract overlay, imposed gate, selected preparations",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "constructor Fraction audit and direct incidence proof",
+      "command_or_proof_path": "python3 experiments/pachner-event-actuator/audit.py; experiments/pachner-event-actuator/README.md",
+      "source_revision": "local 20efe0f / remote ecd0949 (closure-only difference)",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "g=0 conserves stock but never creates edge34.",
+    "g=tau and g=tau\u00b2 conserve stock but shift onset order.",
+    "At immediate g=1 old-only face012 remains frozen with unit stock and zero new readout."
+  ],
+  "limitations": [
+    "Abstract union is not a geometric common refinement",
+    "No endogenous gate source/reset/physical clock/material mapping",
+    "Nonconstructor review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/pachact-20261104-01/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Source an event register and an isometric or source-accounted old-only transfer, then physical port"
+}
