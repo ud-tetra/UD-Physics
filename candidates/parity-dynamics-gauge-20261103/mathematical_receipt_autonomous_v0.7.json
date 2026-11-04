@@ -1,0 +1,240 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD-AUTONOMOUS-SCALAR-GATE-007",
+  "session_id": "pdyg-20261103-01",
+  "candidate_id": "parity-dynamics-gauge-20261103",
+  "question": "Can an autonomous S4-equivariant scalar support feedback on the QPB1 reciprocal source port robustly select retained target stock across phase conditions?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "QP_PORT",
+      "symbol": "(x,y)",
+      "object_type": "joint real carrier with one matched 2D source reservoir",
+      "definition": "x in C0⊕C1⊕C2⊕C3 filled Δ3 (15 real); y in R2",
+      "domain": "R17",
+      "codomain": null,
+      "coefficient_domain": "R",
+      "units": "native amplitudes",
+      "basis_orientation": "ascending tetrahedron simplex orientation; top-cell E plane; matched source sign representation",
+      "metric_measure": "Euclidean joint metric H=I",
+      "origin": "imported source v1.1",
+      "exact_expression": "N=||x||²+||y||²",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1-RES"
+      ],
+      "assumption_ids": [
+        "A_MATCH"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit plane, unit source"
+    },
+    {
+      "object_id": "G_PORT",
+      "symbol": "G_g",
+      "object_type": "matched source skew generator",
+      "definition": "block matrix A,gE;-gE^T,2j",
+      "domain": "R17",
+      "codomain": "R17",
+      "coefficient_domain": "R",
+      "units": "per unit dimensionless u",
+      "basis_orientation": "top-cell embedding and source modal orientation",
+      "metric_measure": "unit Euclidean",
+      "origin": "imported source v1.1",
+      "exact_expression": "G_g^T=-G_g, 0<=g<2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1-RES"
+      ],
+      "assumption_ids": [
+        "A_MATCH"
+      ],
+      "dependency_ids": [
+        "QP_PORT"
+      ],
+      "normalization": "g=1 for witness, not universal"
+    },
+    {
+      "object_id": "FEEDBACK_G",
+      "symbol": "g",
+      "object_type": "candidate scalar constitutive feedback",
+      "definition": "g=||y||²/N if N>0 else 0",
+      "domain": "R2 target ⊕ R2 reservoir",
+      "codomain": "[0,1]",
+      "coefficient_domain": "Q symbolic and R dynamics",
+      "units": "dimensionless native per unit u",
+      "basis_orientation": "rotating modal coordinates",
+      "metric_measure": "unit norm N",
+      "origin": "ASSUMED candidate, not sourced",
+      "exact_expression": "g=||y||²/(||r||²+||y||²)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1-RES"
+      ],
+      "assumption_ids": [
+        "CANDIDATE"
+      ],
+      "dependency_ids": [
+        "QP_PORT"
+      ],
+      "normalization": "normalization by conserved N; unit ratio choice not forced"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1-RES",
+      "url_or_repo_path": "experiments/qpb1-source-reservoir/README.md",
+      "version_or_commit": "7c26ef783b0dccac998eb61c3dcb15c52d2cf746",
+      "section_or_object_id": "v1.1 §§1–5 local port, exact swap, gate work, release/no-source-controller",
+      "source_status": "source-bound conditional port; coupling is a declared model choice"
+    },
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "7c26ef783b0dccac998eb61c3dcb15c52d2cf746",
+      "section_or_object_id": "Q170–Q179; G05",
+      "source_status": "locked internal support-current accounting; constitutive open-system gate remains OPEN"
+    }
+  ],
+  "assumptions": [
+    "QPB1 matched skew port from v1.1 is source-bound but not uniquely selected in UD",
+    "Co-rotating target r and source y each R2, scalar state-dependent g replaces externally prescribed g(u) (ADDED constitutive assumption)",
+    "Feedback g=||y||²/N on N>0 and zero at N=0, no physical energy or clock calibration",
+    "The source sign-representation assumption for S4 acts simultaneously on target and reservoir",
+    "Generic phase preparation D≠0 is admitted and cannot be silently excluded"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact exterior two-form determinant",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove D invariant for any scalar feedback"
+    },
+    {
+      "technique": "Cauchy-Schwarz / Gram eigenvalues",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "strict reservoir stock lower bound for D !=0"
+    },
+    {
+      "technique": "rational symbolic flow integration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive tan(theta)=u and source stock N/(1+u²) on aligned branch"
+    },
+    {
+      "technique": "exact rational fixture enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "test aligned and misaligned phases"
+    },
+    {
+      "technique": "S4 equivariance",
+      "applicability": "CONDITIONAL",
+      "purpose_or_na_reason": "N and D invariant when modal pair is sign representation"
+    },
+    {
+      "technique": "physical units",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no laboratory mapping"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "N=||r||²+||y||², D=det(r,y); ||y||²>=D²/N; target=N u²/(1+u²)",
+    "reduced_expression": "u=0,1,2,3,10,100: target 0,1/2,4/5,9/10,100/101,10000/10001 for N=1",
+    "factor_origins": [
+      "exact integral of theta'=cos²(theta)",
+      "normalized source-stock fraction",
+      "Cauchy-Schwarz"
+    ],
+    "factorization": "not germane: exact rational dynamical stock values",
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native dimensionless u",
+    "modulus": null,
+    "residue_convention": "N/A",
+    "update_rule": "co-rotating r'=g y, y'=-g r, g=||y||²/N",
+    "initial_phase": "aligned r0=0 unit source and four misaligned rational fixtures",
+    "coupling": "scalar, feedback normalized by conserved N; freely chosen law",
+    "period_claim": "aligned converges asymptotically; generic D!=0 reciprocal rotation continues",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R2 addressed source mode plus R2 matched reservoir (4 rotating-frame coordinates), embedded in QPB1 17D",
+    "generator_or_update": "state-dependent scalar skew pair coupling g(y)=||y||²/N",
+    "initial_boundary_conditions": "N>0, five rational preparations; generic relative phases admitted",
+    "conservation_and_sources": "N and D conserved for all scalar g; no environment exchange or irreversible stock creation",
+    "projection_and_kernel": "target support ||r||², reservoir ||y||², determinant D; do not equate 29D support carrier",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "UD source and target notion of retention exposed, no empirical data",
+    "known_targets": [
+      "source port reciprocal solution and g<2 constraint",
+      "desired persistent matter state"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "hypothesized g=||y||²/N, selected for monotone aligned transfer and bounded native gain",
+      "preparation aligned for tractable solution"
+    ],
+    "search_domain_and_budget": "five rational (r,y) fixtures and six rational times, plus exact proof for all scalar g",
+    "selection_criterion": "robust nonzero retention across arbitrary phases, conservation, native symmetry",
+    "baseline": "g=0 null, g constant reciprocal, external latch from v0.6"
+  },
+  "calculation_steps": [
+    "In co-rotating frame derive r'=g y and y'=-g r for scalar g(r,y)",
+    "Prove N'=0 and D'=0 for every scalar g using dot and determinant identities",
+    "From |D|<=||r|| ||y||<=sqrt N ||y|| derive source stock lower bound D²/N",
+    "Propose bounded autonomous g=||y||²/N in [0,1] (not source-selected)",
+    "On aligned empty preparation integrate theta'=cos²theta to tan(theta)=u",
+    "Derive exact source N/(1+u²) and target N u²/(1+u²), no finite capture",
+    "For generic D!=0 show g≥D²/N²>0 and no full source depletion",
+    "Compare null, constant reciprocal and controlled latch; no generic self-selected retained state"
+  ],
+  "result": {
+    "exact_expression": "N,D invariant under any scalar feedback; ||y||²≥D²/N. Candidate g=||y||²/N has aligned stock N u²/(1+u²), generic-phase source floor >0",
+    "approximation": null,
+    "units": "native squared modal amplitude; native dimensionless u",
+    "precision_and_error": "exact fractions and symbolic proof",
+    "scope": "QPB1 17D matched port, state-dependent scalar feedback in rotating 4D modal sector; generic phases allowed",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact fractions and analytic invariant",
+      "command_or_proof_path": "python3 experiments/parity-dynamics-gauge-20261103/autonomous_gate_v07.py",
+      "source_revision": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+      "actual_result": "PASS local equivalent exact computation, 5 rational initial preparations, 6 rational native times",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "alternative four unit checks",
+      "command_or_proof_path": "python3 -m unittest discover -s experiments/parity-dynamics-gauge-20261103 -p test_autonomous_gate_v07.py -v",
+      "source_revision": "same",
+      "actual_result": "PASS locally 4 tests; same constructor, not independent peer review",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "r=(1,0),y=(0,1): N=2,D=1, reservoir stock≥1/2 for every scalar g",
+    "r=(1,1),y=(2,-1): N=7,D=-3, reservoir stock≥9/7",
+    "aligned r0=0 branch asymptotic but no finite-time complete capture",
+    "g=0, g=1 and g=||y||²/N all satisfy source-type S4 covariance and total norm, with different retention responses",
+    "17D modal port has no sourced 29D glued support-current or physical energy intertwiner"
+  ],
+  "limitations": [
+    "Feedback is designed proposal with unit normalization, not uniquely sourced from UD",
+    "Scalar-port determinant obstruction does not apply to higher-rank/non-scalar source, environment or nonreciprocal coupling",
+    "Asymptotic aligned preparation is not robust to generic relative phase D!=0",
+    "Controller/energy/entropy/renewal cost and physical clock remain unclosed",
+    "Non-constructor review NOT_RUN; no physics promotion"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Derive source-selected coupling capable of changing D via an explicit new port or reservoir channel, with signed stock/current budget; test generic phase perturbations and independent observables."
+}

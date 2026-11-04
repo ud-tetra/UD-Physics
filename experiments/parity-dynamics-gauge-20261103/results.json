@@ -1,0 +1,20 @@
+{
+  "raw": 1024,
+  "fiber_each": 128,
+  "orbit_count": 90,
+  "orbit_histogram": {
+    "1": 4,
+    "3": 4,
+    "4": 12,
+    "6": 12,
+    "12": 42,
+    "24": 16
+  },
+  "P_kernel": 128,
+  "P_history_invisible": 64,
+  "P_commuting_translations": 16,
+  "closed_four_bit_states": 16,
+  "checks": "PASS",
+  "scope": "conditional illustrative update; canonical UD OPEN",
+  "physical_promotion": 0
+}

@@ -1,0 +1,142 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pdyg-20261103-01",
+  "runtime": "GPT-6; GitHub connector write and isolated Python computation",
+  "task": "parity-dynamics-gauge-20261103",
+  "goal": "Auditable parity/gauge quotient with native-source gate",
+  "created_at": "2026-11-03T21:20:00Z",
+  "base_revision": "2207611450df9106adccaf8189a50734fef5a46b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "parity-dynamics-gauge-20261103": {
+      "ref": "claims/parity-dynamics-gauge-20261103",
+      "commit": "d0950c1c5376a31b483908c819123914ae59c404",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "name": "exhaustive standalone F2 audit",
+      "status": "PASS"
+    },
+    {
+      "name": "scripts/validate.py",
+      "status": "NOT_RUN",
+      "reason": "connector-only Git checkout"
+    },
+    {
+      "name": "unittest",
+      "status": "NOT_RUN",
+      "reason": "connector-only Git checkout"
+    },
+    {
+      "name": "QPB1 source-native incidence matrix exact test",
+      "status": "PASS",
+      "method": "SymPy 1.14.0 local exact computation; source proof in v0.2"
+    },
+    {
+      "name": "independent-construction local unit tests",
+      "status": "PASS",
+      "details": "4 local SymPy exact tests; same constructor, not external peer review"
+    },
+    {
+      "name": "sampled binary-chain exact enumeration",
+      "status": "PASS",
+      "details": "1024 inputs; 8 survivor patterns; 2 equilibria; all parity 000"
+    },
+    {
+      "name": "GitHub Actions Discovery integrity",
+      "status": "PENDING_AFTER_METADATA_FIX",
+      "prior_run_id": 41723839958,
+      "prior_failure": "invalid task status and missing baseline corrected"
+    },
+    {
+      "name": "v0.4 signed S4 24x4096 exact constructor test",
+      "status": "PASS",
+      "method": "local exact SymPy and bit enumeration"
+    },
+    {
+      "name": "v0.4 alternative unit tests",
+      "status": "PASS",
+      "method": "four local constructor unit tests"
+    },
+    {
+      "name": "v0.4 non-constructor mathematical review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "retention-current 1-to-4 exact Fraction audit",
+      "status": "PASS",
+      "method": "local equivalent stdlib script: 29 simplex weights, direct/current derivatives and two event choices"
+    },
+    {
+      "name": "all-29 simplex ownership and capture control",
+      "status": "PASS",
+      "method": "local independent-form calculation by same constructor"
+    },
+    {
+      "name": "non-constructor physical review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.6 reciprocal port rational exchange fixtures",
+      "status": "PASS",
+      "detail": "7 exact angle-support fixtures, 4 matrices x4 preparations, local equivalent stdlib Fraction computation"
+    },
+    {
+      "name": "v0.6 alternative constructor unit tests",
+      "status": "PASS",
+      "detail": "4 local unittests"
+    },
+    {
+      "name": "external adversarial non-constructor review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.7 exact rational scalar feedback invariant and phase fixtures",
+      "status": "PASS",
+      "detail": "local stdlib rational computation 5 preparations and 6 native times"
+    },
+    {
+      "name": "v0.7 separate constructor unit tests",
+      "status": "PASS",
+      "detail": "4 local tests; not non-constructor review"
+    },
+    {
+      "name": "external non-constructor scientific review v0.7",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.8 exact rational port and rotated determinant fixtures",
+      "status": "PASS",
+      "detail": "local stdlib Fraction constructor run; four rational phase cases"
+    },
+    {
+      "name": "v0.8 alternative four unit tests",
+      "status": "PASS",
+      "detail": "local constructor tests; not external review"
+    },
+    {
+      "name": "v0.8 separate-context non-constructor review",
+      "status": "NOT_RUN"
+    }
+  ],
+  "finding": "v0.8: fixed complex-compatible K4 second port aI+bj merely rotates source basis, leaving D_R conserved; genuine anisotropic ports require changed compatibility/controller assumptions and do not produce attraction.",
+  "next_action": "Search source-native independent local port or open environment that changes all phase invariants after admissible basis equivalence; exact stock/current controller receipt and generic-phase controls.",
+  "mathematical_profile": {
+    "coefficient_domain": "Separate F2 toy carrier and R15 QPB1 chain carrier; no implicit adapter",
+    "exactness_or_precision_plan": "exhaustive integer enumeration",
+    "applicable_methods": [
+      "S4 orbits",
+      "rank-nullity",
+      "dynamical quotient",
+      "symmetry stabilizer",
+      "integer oriented simplex boundary",
+      "exact observability rank",
+      "real-to-F2 additive no-go"
+    ],
+    "clock_metric_units_conventions": "QPB1 dimensionless continuous u, H=I, ascending simplex orientation; F2 toy formal steps separate; no SI clock"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "complex": "1-to-4 centroid K4 ball",
+  "f_vector": [
+    5,
+    10,
+    10,
+    4
+  ],
+  "shared_face": "(0, 1, 4)",
+  "face_multiplicity": 2,
+  "face_cell_weights": [
+    "1/2",
+    "1/2"
+  ],
+  "initial_nonzero_amplitudes": [
+    "(0, 1, 4)",
+    "(0, 1, 2, 4)"
+  ],
+  "cell_current_derivative": {
+    "(0, 1, 2, 4)": "-1",
+    "(0, 1, 3, 4)": "1",
+    "(0, 2, 3, 4)": "0",
+    "(1, 2, 3, 4)": "0"
+  },
+  "current_identity": "PASS",
+  "sum_cell_current_derivative": "0",
+  "null_branch": {
+    "engage": false,
+    "before_total": "2",
+    "after_transport_stock": "2",
+    "retained_by_cell": {
+      "(0, 1, 2, 4)": "0",
+      "(0, 1, 3, 4)": "0",
+      "(0, 2, 3, 4)": "0",
+      "(1, 2, 3, 4)": "0"
+    },
+    "retained_total": "0",
+    "combined_total": "2"
+  },
+  "capture_branch": {
+    "engage": true,
+    "before_total": "2",
+    "after_transport_stock": "1",
+    "retained_by_cell": {
+      "(0, 1, 2, 4)": "1/2",
+      "(0, 1, 3, 4)": "1/2",
+      "(0, 2, 3, 4)": "0",
+      "(1, 2, 3, 4)": "0"
+    },
+    "retained_total": "1",
+    "combined_total": "2"
+  },
+  "selection_status": "OPEN: both branches conserve stock; capture is an assumed one-way update",
+  "fixed_point_claim": "NO: retained stock persists only if reverse transfer is excluded as a separate assumption",
+  "physical_promotion": 0
+}

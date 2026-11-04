@@ -1,0 +1,268 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD-PDY-INTERFACE-003",
+  "session_id": "pdyg-20261103-01",
+  "candidate_id": "parity-dynamics-gauge-20261103",
+  "question": "Can a binary K4 packet register and QPB1 real chain flow share a source-native nontrivial evolution-compatible interface?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "B_F2",
+      "symbol": "B",
+      "object_type": "finite binary register carrier",
+      "definition": "F2^4 direct-sum F2^6",
+      "domain": "F2^10",
+      "codomain": null,
+      "coefficient_domain": "F2",
+      "units": "none",
+      "basis_orientation": "first four vertex bits, next six edge bits; sorted edge pairs",
+      "metric_measure": "none",
+      "origin": "assumed exploratory comparative carrier",
+      "exact_expression": "|B|=1024",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PDY002"
+      ],
+      "assumption_ids": [
+        "A_BINARY"
+      ],
+      "dependency_ids": [],
+      "normalization": "none"
+    },
+    {
+      "object_id": "C_R",
+      "symbol": "C",
+      "object_type": "real oriented simplex chain carrier",
+      "definition": "direct sum C0..C3 filled K4",
+      "domain": "R^15",
+      "codomain": null,
+      "coefficient_domain": "R; exact integer incidence",
+      "units": "dimensionless native",
+      "basis_orientation": "ascending simplex orientation f=(4,6,4,1)",
+      "metric_measure": "Euclidean H=I",
+      "origin": "imported source-native QPB1",
+      "exact_expression": "dim C=15",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "A_UNIT"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit incidence"
+    },
+    {
+      "object_id": "A",
+      "symbol": "A",
+      "object_type": "linear skew generator",
+      "definition": "D-D^T with D oriented boundary",
+      "domain": "R^15",
+      "codomain": "R^15",
+      "coefficient_domain": "R",
+      "units": "inverse native u",
+      "basis_orientation": "source QPB1 ascending",
+      "metric_measure": "Euclidean H=I",
+      "origin": "reconstructed",
+      "exact_expression": "A^3+4A=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "A_UNIT"
+      ],
+      "dependency_ids": [
+        "C_R"
+      ],
+      "normalization": "unit metric"
+    },
+    {
+      "object_id": "iota0",
+      "symbol": "ι0",
+      "object_type": "nonadditive trial encoding",
+      "definition": "map ten 0/1 coordinates to first ten R15 coordinates and set face/cell coordinates zero",
+      "domain": "B",
+      "codomain": "C",
+      "coefficient_domain": "F2-to-R set map",
+      "units": "none",
+      "basis_orientation": "vertex/edge direct embedding",
+      "metric_measure": "none",
+      "origin": "assumed candidate",
+      "exact_expression": "ι0(b,e)=(b,e,0,0)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "A_ENCODING"
+      ],
+      "dependency_ids": [
+        "B_F2",
+        "C_R"
+      ],
+      "normalization": "0/1 amplitudes chosen"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "2207611450df9106adccaf8189a50734fef5a46b",
+      "section_or_object_id": "v1.0 §§1–3",
+      "source_status": "source-bound QPB1 only"
+    },
+    {
+      "source_id": "PDY002",
+      "url_or_repo_path": "experiments/parity-dynamics-gauge-20261103/SOURCE_NATIVE_CHAIN_CLOSURE_v0.2.md",
+      "version_or_commit": "6b8c62e0577d4266255fe8eb9f886465b4a6de70",
+      "section_or_object_id": "QPB1 chain closure / invisible sector",
+      "source_status": "existing claimed Discovery work"
+    }
+  ],
+  "assumptions": [
+    "A_BINARY: all 1024 raw bit assignments included for candidate encoding, not a proven UD admissible set",
+    "A_UNIT: unit-metric chain generator and native dimensionless flow parameter u",
+    "A_ENCODING: raw 0/1 embedding and selected half-period sample u=π/2 are exploratory, not source-selected"
+  ],
+  "technique_plan": [
+    {
+      "technique": "additive group homomorphisms",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove torsion/divisibility obstruction"
+    },
+    {
+      "technique": "topological/dynamical finite-image argument",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove full-time invariant finite image consists of equilibria"
+    },
+    {
+      "technique": "exact signed simplicial incidence",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "reconstruct A and its minimal polynomial"
+    },
+    {
+      "technique": "exact 1024-state exhaustive count",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "calculate half-step survivors"
+    },
+    {
+      "technique": "clock/modular",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "physical clock absent; u=π/2 continuous sampled parameter, not modular evolution"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2^(4+6)=1024 raw inputs; sampled invariant members 8; fixed 2",
+    "reduced_expression": "1024,8,2",
+    "factor_origins": [
+      "4 vertex bits",
+      "6 edge bits",
+      "exact finite sampling at u=π/2"
+    ],
+    "factorization": "1024=2^10;8=2^3;2=2",
+    "divisibility_gcd_lcm": "all 2-torsion maps B→C vanish; C divisible by two maps additively to F2 vanish"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless u; exploratory sampling",
+    "modulus": null,
+    "residue_convention": "N/A",
+    "update_rule": "Φ_u=exp(uA); M=Φ_(π/2)=I+A²/2",
+    "initial_phase": "arbitrary chain x; test encoded bits",
+    "coupling": "unit signed incidence",
+    "period_claim": "Φ_π=I for this generator; halfstep involution",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R^15 continuous; F2^10 finite comparison alphabet",
+    "generator_or_update": "A=D-Dᵀ versus candidate sample map M",
+    "initial_boundary_conditions": "all 1024 inputs encoded through ι0; no physical boundary",
+    "conservation_and_sources": "||x||² under QPB1; no calibrated source",
+    "projection_and_kernel": "P binary opposite-edge parity: all eight sampled survivors have P=000",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "source- and prior-results exposed (12D QPB1 closure, 8 parity values)",
+    "known_targets": [
+      "8-state theta fiber from coefficient ledger; source QPB1 frequencies ±2i"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "chosen 0/1 coordinate embedding",
+      "chosen sample u=π/2"
+    ],
+    "search_domain_and_budget": "all 1024 raw bit states; exact matrix entries",
+    "selection_criterion": "exact membership in embedded {0,1}^10 after halfstep",
+    "baseline": "all-time invariant finite image; instantaneous edge readout"
+  },
+  "calculation_steps": [
+    "prove no nonzero additive maps between characteristic two B and divisible torsionfree real C",
+    "finite invariant orbit under continuous Φ_u must be a fixed point",
+    "A³=-4A and exp(πA/2)=I+A²/2",
+    "evaluate all 1024 encoded raw bits exactly",
+    "survivors {0,3,5,6,9,10,12,15}, fixed {0,15}; all edge bits zero and all P=000",
+    "Finite admitted alphabet with injective iota and invertible sampled Phi_tau implies T_B injective and hence a permutation; no irreversible state merger",
+    "For active QPB1 modes with frequency 2 and an m-cycle, require m*tau in pi Z; irrational tau/pi permits only equilibria",
+    "At tau=pi/2 the 8 surviving test states split into fixed {0},{15} and 2-cycles {3,12},{5,10},{6,9}"
+  ],
+  "result": {
+    "exact_expression": "No nontrivial additive interface; all-time finite-image invariant dynamics trivial; 8/1024 sample survivors with parity 000; injective sampled intertwining forces permutation with m*tau∈pi Z for active modes",
+    "approximation": null,
+    "units": "dimensionless model parameter only",
+    "precision_and_error": "exact rational symbolic arithmetic, 1024 enumerated",
+    "scope": "QPB1 real linear law plus assumed encoding/sample; no universal nonlinear no-go",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "exact SymPy halfstep enumeration",
+      "command_or_proof_path": "python3 experiments/parity-dynamics-gauge-20261103/interface_audit_v03.py",
+      "source_revision": "2207611450df9106adccaf8189a50734fef5a46b",
+      "actual_result": "PASS local equivalent script; 8 survivors, 2 fixed, rational witness",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate exact incidence reconstruction/unittests",
+      "command_or_proof_path": "python3 -m unittest discover -s experiments/parity-dynamics-gauge-20261103 -p test_interface_v03.py -v",
+      "source_revision": "2207611450df9106adccaf8189a50734fef5a46b",
+      "actual_result": "PASS 4 local tests",
+      "review_relationship": "same constructor alternative implementation"
+    },
+    {
+      "method": "GitHub PR integrity CI",
+      "command_or_proof_path": "https://github.com/ud-tetra/UD-Physics/pull/284",
+      "source_revision": "branch, updated",
+      "actual_result": "RECHECK_PENDING_NEW_RUN",
+      "review_relationship": "automated integrity, not mathematical peer review"
+    },
+    {
+      "method": "exact integer cycle enumeration at sampled half-period",
+      "command_or_proof_path": "python3 experiments/parity-dynamics-gauge-20261103/interface_audit_v03.py; v0.3 theorem section",
+      "source_revision": "2207611450df9106adccaf8189a50734fef5a46b",
+      "actual_result": "fixed 0,15; 2-cycles (3,12),(5,10),(6,9)",
+      "review_relationship": "same constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "vertex0 bit maps under half-period to (-1/2,1/2,1/2,1/2,0^11) not in alphabet",
+    "all eight halfstep survivors have zero opposite-edge parity; no 8-state theta realization",
+    "nontrivial state evolution incompatible with continuous full-time finite embedded alphabet",
+    "injective finite conservative-flow intertwining cannot produce absorbing sink or irreversible selection"
+  ],
+  "limitations": [
+    "A fully specified binary admissibility and transition law is not sourced",
+    "Chosen 0/1 encoding and sampling are candidate conventions, not forced by UD",
+    "Source law and F2 toy distinct; no physical identification",
+    "Independent non-constructor mathematical review NOT_RUN",
+    "No mainline promotion"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Source or derive a typed nonlinear/quantized B-to-C interface, independently select sample period and admission, and test exact commutation with QPB1 and action/transport observables"
+}

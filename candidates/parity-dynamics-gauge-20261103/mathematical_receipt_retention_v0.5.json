@@ -1,0 +1,221 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD-RETENTION-CURRENT-005",
+  "session_id": "pdyg-20261103-01",
+  "candidate_id": "parity-dynamics-gauge-20261103",
+  "question": "Do Q170-Q179 plus local finite K4 geometry force irreversible capture, or only constrain its receipts?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "K4SPLIT",
+      "symbol": "K",
+      "object_type": "finite simplicial 3-ball",
+      "definition": "1-to-4 centroid subdivision of [0123] with new vertex 4 and four tetrahedra",
+      "domain": "simplicial complexes",
+      "codomain": null,
+      "coefficient_domain": "Z for incidence; Q for stocks",
+      "units": "none",
+      "basis_orientation": "ascending simplex index orientation",
+      "metric_measure": "unit Euclidean chain metric H=I",
+      "origin": "imported geometric construction",
+      "exact_expression": "f=(5,10,10,4); 29 unique simplices",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "FOURCELL"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit simplex amplitude"
+    },
+    {
+      "object_id": "SOWN",
+      "symbol": "S_tau",
+      "object_type": "cell-owned support stock",
+      "definition": "sum over sigma of w_(sigma,tau)*c_sigma^2",
+      "domain": "R^29",
+      "codomain": "R_>=0^4",
+      "coefficient_domain": "R exact rational for test",
+      "units": "native norm-squared",
+      "basis_orientation": "sorted simplex coordinates",
+      "metric_measure": "unit chain metric",
+      "origin": "ledger Q177-Q179",
+      "exact_expression": "w_(sigma,tau)=1/n3(sigma) if incident",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [
+        "K4SPLIT"
+      ],
+      "normalization": "sum over tau w=1"
+    },
+    {
+      "object_id": "RETAIN",
+      "symbol": "r_tau",
+      "object_type": "candidate retained stock reservoir",
+      "definition": "nonnegative cell-allocated transfer ledger",
+      "domain": "R_>=0^4",
+      "codomain": "R_>=0^4",
+      "coefficient_domain": "R",
+      "units": "native norm-squared",
+      "basis_orientation": "maximal cell order",
+      "metric_measure": "none",
+      "origin": "assumed candidate extension",
+      "exact_expression": "r'_tau=r_tau+w_(sigma,tau)*delta_sigma",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "TRANSFER_CANDIDATE"
+      ],
+      "dependency_ids": [
+        "SOWN"
+      ],
+      "normalization": "same units as S"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "6c9f3b855169448d224d7c9f9badee02d4d5a1e3",
+      "section_or_object_id": "Q169-Q179, especially Q170, Q173, Q177-Q179; G05",
+      "source_status": "read-only imported ledger, physical promotion 0"
+    },
+    {
+      "source_id": "FOURCELL",
+      "url_or_repo_path": "experiments/four-cell-tetrahedron/README.md",
+      "version_or_commit": "6c9f3b855169448d224d7c9f9badee02d4d5a1e3",
+      "section_or_object_id": "Definition and scope / 1-to-4 triangulation",
+      "source_status": "exact conditional geometry"
+    }
+  ],
+  "assumptions": [
+    "No physical time or SI energy mapping; real unit H=I",
+    "The candidate retained stock r_tau is an additional variable not derived from Q170-Q179",
+    "Candidate transfer fraction delta_sigma may range from 0 to c_sigma^2; event trigger and irreversibility not supplied",
+    "Single-simplex capture event changes c amplitude and is separate from continuous skew flow",
+    "Closed finite 3-ball: no net boundary flux in the toy preparation"
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer incidence and exact combinatorics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "29 simplices and 4 tetrahedral ownership sets"
+    },
+    {
+      "technique": "rational support accounting",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact 1/2 ownership, cell receipt"
+    },
+    {
+      "technique": "chain and local continuity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare direct dS/dt with Q179 signed current"
+    },
+    {
+      "technique": "null control and counterexample",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "δ=0 versus δ=1 both lawful"
+    },
+    {
+      "technique": "physical units/calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no bridge target"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "f=(5,10,10,4), sum=29; shared face incident to 2 tetra so 1/2+1/2=1",
+    "reduced_expression": "retained shares 1/2 and 1/2, combined total 2 in both branches",
+    "factor_origins": [
+      "simplex incidence and top-star size",
+      "unit squared face and coface amplitudes"
+    ],
+    "factorization": "29 prime; 4=2^2; 2=2; relevant ownership factor 1/2",
+    "divisibility_gcd_lcm": "each counted simplex has n3>=1; ownership sums to one"
+  },
+  "clock_receipt": {
+    "clock_type": "formal dimensionless continuous u and separate event boundary",
+    "modulus": null,
+    "residue_convention": "N/A",
+    "update_rule": "between events c'=(d-d^T)c; candidate event c_sigma'^2=c_sigma^2−δ, r_tau'=r_tau+wδ",
+    "initial_phase": "face(0,1,4) and top cell(0,1,2,4) amplitudes=1",
+    "coupling": "unit incidence; no sourced transfer law",
+    "period_claim": "none for event process",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "real chain amplitudes on 29 simplices plus 4 nonnegative retained stocks",
+    "generator_or_update": "source-native A on real chain; assumed nonlinear candidate event",
+    "initial_boundary_conditions": "finite subdivided tetrahedron; no external flux",
+    "conservation_and_sources": "sum_tau(S_tau+r_tau) conserved exactly at event; Q179 continuous current",
+    "projection_and_kernel": "weighted top-star allocation; not binary parity quotient",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "conservation problem specified before candidate event; no empirical targets",
+    "known_targets": [
+      "source Q177-179 exact ownership and signed current"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "δ=0 null and δ=1 full-capture counterexample selected for distinguishability; not physically derived"
+    ],
+    "search_domain_and_budget": "29 simplices, exact one-unit capture witnesses and 3 transfer choices",
+    "selection_criterion": "check nonnegative exact continuity, disprove uniqueness by two distinct admissible transfers",
+    "baseline": "no-capture δ=0"
+  },
+  "calculation_steps": [
+    "Build four K4 3-cells and 29 unique oriented simplices",
+    "derive partition Σ_tau w_(sigma,tau)=1",
+    "define signed lower→upper J=-2 B c_sigma c_eta",
+    "derive dS_tau/du =Σ (w_eta−w_sigma)J and independently compute direct derivative",
+    "show shared face and coface preparation yields signed cell derivative (-1,1,0,0)",
+    "introduce candidate transfer δ∈[0,c_sigma²]; prove S'_tau+r'_tau=S_tau+r_tau",
+    "test δ=0 and δ=1: totals remain 2, retained totals 0 or 1 respectively",
+    "conclude nonunique retention selection and lack of persistence theorem"
+  ],
+  "result": {
+    "exact_expression": "sum_tau(S_tau+r_tau) invariant at every candidate transfer; δ=0 and δ=1 both valid under same source accounting",
+    "approximation": null,
+    "units": "native squared chain amplitude, no physical SI",
+    "precision_and_error": "exact Fraction arithmetic",
+    "scope": "one-event conditional transfer on 1-to-4 K4 under fixed unit metric; not source-native material selection",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "stdlib rational exact script",
+      "command_or_proof_path": "python3 experiments/parity-dynamics-gauge-20261103/retention_receipt_v05.py",
+      "source_revision": "6c9f3b855169448d224d7c9f9badee02d4d5a1e3",
+      "actual_result": "PASS local executed; direct/current derivatives identical; null/capture receipts identical total",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independently formulated all-simplex ownership check",
+      "command_or_proof_path": "python3 experiments/parity-dynamics-gauge-20261103/test_retention_receipt_v05.py",
+      "source_revision": "same",
+      "actual_result": "29 simplex event cases separately checked local; committed test-script replay not yet independently reviewed",
+      "review_relationship": "same constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "null δ=0 and full δ=1 satisfy same conservation equations yet produce different retained stock",
+    "one-event capture does not suppress continuing incidence transport or prove retained-state attraction",
+    "signed current Q179 alone can circulate in both directions and lacks an irreversible arrow"
+  ],
+  "limitations": [
+    "No source-selected transfer fraction, event threshold, reverse law, clock or physical energy metric",
+    "Q170-Q179 exact allocation and current are not a constitutive retention generator",
+    "No physical particle, charge or mass identification; non-constructor review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Recover source-selected gate/threshold and reverse-release dynamics, or explicitly define candidate open-system model with typed reservoir and preregister persistent versus null response."
+}

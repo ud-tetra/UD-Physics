@@ -1,0 +1,223 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD-QPB1-EDGE-OBS-002",
+  "session_id": "pdyg-20261103-01",
+  "candidate_id": "parity-dynamics-gauge-20261103",
+  "question": "Does source-native unit-incidence 15D K4 chain evolution close on six edge observables, and how does this relate to binary parity?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "C_REAL",
+      "symbol": "C",
+      "object_type": "oriented simplicial chain-space",
+      "definition": "direct sum C0 to C3 of filled 3-simplex",
+      "domain": "R^15",
+      "codomain": null,
+      "coefficient_domain": "R with exact Z incidence coefficients",
+      "units": "dimensionless native",
+      "basis_orientation": "ascending oriented simplices, f=(4,6,4,1)",
+      "metric_measure": "unit Euclidean H=I",
+      "origin": "imported",
+      "exact_expression": "dim C=15",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "UNIT_METRIC"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit incidence"
+    },
+    {
+      "object_id": "A_NATIVE",
+      "symbol": "A",
+      "object_type": "skew generator",
+      "definition": "D-D^T, D signed boundary incidence",
+      "domain": "R^15",
+      "codomain": "R^15",
+      "coefficient_domain": "R",
+      "units": "inverse dimensionless parameter",
+      "basis_orientation": "ascending simplex orientation",
+      "metric_measure": "unit Euclidean H=I",
+      "origin": "imported and reconstructed",
+      "exact_expression": "A^3+4A=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "UNIT_METRIC"
+      ],
+      "dependency_ids": [
+        "C_REAL"
+      ],
+      "normalization": "unit incidence"
+    },
+    {
+      "object_id": "E_EDGE",
+      "symbol": "E",
+      "object_type": "edge-coordinate extractor",
+      "definition": "six rows selecting C1 block",
+      "domain": "R^15",
+      "codomain": "R^6",
+      "coefficient_domain": "R",
+      "units": "native amplitude",
+      "basis_orientation": "edge order lexicographic",
+      "metric_measure": "unit Euclidean",
+      "origin": "defined from QPB1 readout",
+      "exact_expression": "rank E=6",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "EVENT"
+      ],
+      "assumption_ids": [
+        "UNIT_METRIC"
+      ],
+      "dependency_ids": [
+        "C_REAL"
+      ],
+      "normalization": "none"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "2207611450df9106adccaf8189a50734fef5a46b",
+      "section_or_object_id": "v1.0 §§1-3",
+      "source_status": "SOURCE-BOUND unit-metric model"
+    },
+    {
+      "source_id": "EVENT",
+      "url_or_repo_path": "experiments/qpb1-native-events/EVENT_CONTRACT.md",
+      "version_or_commit": "2207611450df9106adccaf8189a50734fef5a46b",
+      "section_or_object_id": "v1.0 Native flow/Observed quadratures/Visibility",
+      "source_status": "SOURCE-BOUND observable contract"
+    }
+  ],
+  "assumptions": [
+    "UNIT_METRIC: no physical distance, unit edge metric H=I",
+    "Linear x'=Ax and arbitrary real initial state; dimensionless u",
+    "No asserted binary quantization or physical unit map"
+  ],
+  "technique_plan": [
+    {
+      "technique": "Signed chain/boundary",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "D²=0"
+    },
+    {
+      "technique": "Exact matrix/spectral observability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "rank of [E;EA;EA²;...], 12D quotient"
+    },
+    {
+      "technique": "Group homomorphism",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "R-to-F2 obstruction"
+    },
+    {
+      "technique": "Prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "rank/closure not divisibility"
+    },
+    {
+      "technique": "Physical map",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no empirical units or physical readout"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4+6+4+1=15; ranks 6,12; kernel dim 15−12=3",
+    "reduced_expression": "12 observable dimensions, 3 invisible",
+    "factor_origins": [
+      "signed incidence rank",
+      "two-quadrature edge readout"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless continuous evolution parameter u",
+    "modulus": null,
+    "residue_convention": "not modular",
+    "update_rule": "dx/du=Ax",
+    "initial_phase": "arbitrary x0 in R15",
+    "coupling": "unit incidence",
+    "period_claim": "active eigenfrequencies ±2i; not a physical clock",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "C0⊕C1⊕C2⊕C3",
+    "generator_or_update": "A=D-D^T",
+    "initial_boundary_conditions": "arbitrary real x0; no boundary",
+    "conservation_and_sources": "||x||² conserved; no sources",
+    "projection_and_kernel": "q=Ex, p=EAx/2; hidden span(h0,z3,D3 z3)",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "earlier source described two quadratures and hidden two-plane",
+    "known_targets": [
+      "QPB1 event contract q'=2p,p'=-2q"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "exact full 15x15 matrices and finite derivatives",
+    "selection_criterion": "incidence identity",
+    "baseline": "instantaneous edge extractor"
+  },
+  "calculation_steps": [
+    "D²=0 and A^T=-A",
+    "EA not proportional to E: vertex0 counterexample",
+    "A³+4A=0; EA²+4E=0",
+    "q'=2p,p'=-2q",
+    "rank [E;EA]=12, higher derivatives do not raise rank",
+    "ker O_edge=span(constant vertices, top cell, its face boundary)",
+    "any additive f:R6→F2³ is zero by divisibility"
+  ],
+  "result": {
+    "exact_expression": "rank O=12, dim ker O=3; closed (q,p) equations",
+    "approximation": null,
+    "units": "native dimensionless",
+    "precision_and_error": "exact integer/rational SymPy 1.14.0",
+    "scope": "QPB1 unit-metric real chain model only",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact symbolic matrix computation",
+      "command_or_proof_path": "python3 experiments/parity-dynamics-gauge-20261103/native_chain_probe.py",
+      "source_revision": "2207611450df9106adccaf8189a50734fef5a46b",
+      "actual_result": "PASS with local equivalent script; repo checks NOT_RUN",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent direct algebraic proof",
+      "command_or_proof_path": "experiments/parity-dynamics-gauge-20261103/SOURCE_NATIVE_CHAIN_CLOSURE_v0.2.md",
+      "source_revision": "2207611450df9106adccaf8189a50734fef5a46b",
+      "actual_result": "DERIVED (same constructor)",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "edge-only nonclosure with x0=0 vs vertex0",
+    "norm distinguishes edge-history-invisible states, so invisible does not imply gauge",
+    "no nonzero additive map from real edge coordinates to F2³"
+  ],
+  "limitations": [
+    "No sourced complete binary raw-state admissibility predicate or native evolution update",
+    "No typed quantizer or F2-to-real evolution intertwiner",
+    "No independent review or physical bridge",
+    "repo tests NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Define and source Adm and T for binary register or an explicit real-to-binary interface; verify dynamical invariance and genuine gauge symmetry"
+}

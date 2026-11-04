@@ -1,0 +1,23 @@
+{
+  "source": "QPB1 source-reservoir v1.1 Sections 1-2",
+  "model": "rprime=M y, yprime=-transpose(M) r, co-rotating modal coordinates",
+  "S4": "matched sign representations assumed; any real 2x2 M equivariant",
+  "complex_compatible": {
+    "M": "(3/5)I+(4/5)j",
+    "old_D_derivative": "(4/5)(|r|^2-|y|^2)",
+    "new_invariant": "D_R=det(r,R y)",
+    "D_R_example": "3/5",
+    "N_example": "2",
+    "reservoir_bound": "9/50",
+    "exact_orbit_minimum": "1/5",
+    "interpretation": "equivalent to scalar port by fixed reservoir rotation"
+  },
+  "anisotropic_co_rotating_branch": {
+    "diag_1_2": "no shared complete source transfer time for all input components",
+    "diag_1_3": "all source amplitudes transfer at chosen u=pi/2 from empty target, but reverse later",
+    "caveat": "holding anisotropic M fixed in rotating frame needs time-modulated source-frame interaction"
+  },
+  "fixed_source_frame_G_M": "skew, isometric, no open full-state attractor",
+  "physical_promotion": 0,
+  "checks": "PASS"
+}
