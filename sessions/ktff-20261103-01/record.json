@@ -82,12 +82,44 @@
     {
       "name": "v0.3 independent non-constructor review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.4 72-tetra exact incidence and rational ranks",
+      "status": "PASS",
+      "method": "local exact SymPy"
+    },
+    {
+      "name": "v0.4 tetrahedral orientability",
+      "status": "PASS",
+      "method": "all 72 tetrahedra, incompatible orientation constraints"
+    },
+    {
+      "name": "v0.4 twisted cellular chain-map compatibility",
+      "status": "PASS",
+      "method": "exact integer rank (2,5,4,1)"
+    },
+    {
+      "name": "v0.4 signed S4 seam completions",
+      "status": "PASS",
+      "method": "two exact 15x15 native K4 chain actions"
+    },
+    {
+      "name": "v0.4 explicit 72-simplicial to twisted cellular map",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.4 source-selected physical framed readout",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "external non-constructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v0.3 EXACT conditional: 60D Klein orientation CW tensor full K4 signed chains, nilpotent boundary, conserving skew flow. Twisted/untwisted graded real Betti differ, but full Hodge spectra identical {0^2,4^30,8^28}; norm-only loop readout blind. Physical 3D packet gluing OPEN.",
-  "next_action": "Source a full 3D packet adjacency/seam and a framed grade-sensitive observer; test compatibility and physical unit map or park candidate.",
+  "finding": "v0.4: nonorientable KxI realized by 72 labeled tetrahedra, f=(18,102,156,72), ordinary d²=0 and ranks (17,84,72); twisted 3D cellular-to-60D packet chain map injective ranks (2,5,4,1). Two source-compatible S4 seam completions yield opposite K4 top-cell signs. Physical framed readout OPEN.",
+  "next_action": "Compute the 72-tetrahedron twisted-coefficient boundary and explicit subdivision-to-cellular chain map; source an operational framed observable and independently calibrated bridge.",
   "mathematical_profile": {
-    "coefficient_domain": "Z signed CW product; R extension for skew operator; F2 seam orientation",
+    "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
     "applicable_methods": [
       "Euler",
@@ -97,6 +129,6 @@
       "closed-loop O(2) holonomy",
       "Pachner vs seam gluing distinction"
     ],
-    "clock_metric_units_conventions": "CW orientation rho(h)=-1,v=+1, unit 60D chain metric H=I, formal dimensionless continuous u, no physical clock/units"
+    "clock_metric_units_conventions": "assumed nonorientable KxI gluing, no physical time/metric, K4 unit metric only for S4 compatibility"
   }
 }
