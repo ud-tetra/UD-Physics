@@ -13,7 +13,8 @@
     "pachner-symmetry-transfer-20261104": {
       "ref": "refs/heads/claims/pachner-symmetry-transfer-20261104",
       "held_sha": "02f64f9a70c32f300068e374c877d88444c2d313",
-      "status": "held"
+      "status": "released",
+      "release_sha": "f189e177d2e939d7a2ebc6aa4ccd630be8ebc7a9"
     }
   },
   "checks": [
@@ -23,7 +24,8 @@
     "scripts/validate.py PASS: 491 records",
     "16 unit tests PASS",
     "Project site edition Papers I\u2013III 1.1.1 / IV 0.1; physical promotion0 checked 2026-11-04",
-    "Nonconstructor review NOT_RUN"
+    "Nonconstructor review NOT_RUN",
+    "Live claim release verified after merged PR #309"
   ],
   "finding": "Every shell-amplitude-fixed S3-equivariant old-only to new-only linear jump has rank\u22641; two real symmetry-matched memory channels are necessary and a conditional isometry is constructed.",
   "next_action": "Test local support-current realization of two-memory jump and source an interior-sensitive event guard"
