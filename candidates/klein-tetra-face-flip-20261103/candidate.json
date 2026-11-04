@@ -29,11 +29,12 @@
     "UD-Physics qpb1-loop-history/HISTORY_CONTRACT.md v1.0, edgewise sign connection caveat",
     "Roland? none; standard Klein square gluing reference MathWorld and UKY topology notes"
   ],
-  "result": "K4 shell S2 cannot be Klein by face flipping or Pachner moves; 108 whole-face pairings fail necessary 2-manifold incidence. New Klein 2-triangle Delta-complex has ∂2 rank2 over Q, Smith(1,2), H1=Z+Z2, H2=0; orientability cocycle w1 and O2 reflection holonomy permit a concrete candidate seam transport but new topology is assumed. v0.2: 2-sheet orientable lift has (V,E,F)=(2,6,4), integral H1=Z²,H2=Z; independent Schreier CW method agrees. Flat O2 triangle holonomies and global twist det=-1; source seam and native K4 bulk evolution OPEN. v0.3: exact 60D CW Klein orientation local-system tensor full K4 chain, D²=0, twisted/untwisted graded Betti differ but chosen unit-metric ungraded Hodge spectra coincide {0:2,4:30,8:28}; loop sign ±I15 invisible to norm-only readouts. Not a 3D physical tetrahedral gluing.",
-  "next_discriminant": "Derive a native geometric K4 3D seam gluing and a framed, orientation-sensitive packet readout; test global holonomy against null with sourced metric/clock and current law.",
+  "result": "K4 shell S2 cannot be Klein by face flipping or Pachner moves; 108 whole-face pairings fail necessary 2-manifold incidence. New Klein 2-triangle Delta-complex has ∂2 rank2 over Q, Smith(1,2), H1=Z+Z2, H2=0; orientability cocycle w1 and O2 reflection holonomy permit a concrete candidate seam transport but new topology is assumed. v0.2: 2-sheet orientable lift has (V,E,F)=(2,6,4), integral H1=Z²,H2=Z; independent Schreier CW method agrees. Flat O2 triangle holonomies and global twist det=-1; source seam and native K4 bulk evolution OPEN. v0.3: exact 60D CW Klein orientation local-system tensor full K4 chain, D²=0, twisted/untwisted graded Betti differ but chosen unit-metric ungraded Hodge spectra coincide {0:2,4:30,8:28}; loop sign ±I15 invisible to norm-only readouts. Not a 3D physical tetrahedral gluing. v0.4: actual nonorientable K×I 3D Δ-complex constructed with 72 labeled tetrahedra f=(18,102,156,72), ordinary ∂²=0 and ranks (17,84,72). Explicit twisted cellular product M into 60D model ranks (2,5,4,1). Two native S4 completions of the same seam edge map have opposite K4 top-cell signs; no source-selected physical readout established.",
+  "next_discriminant": "Build exact 72-simplicial twisted local-system boundary and direct subdivision-to-cellular chain map; recover native source-selected frame readout and physical bridge or park.",
   "mathematical_receipts": [
     "candidates/klein-tetra-face-flip-20261103/mathematical_receipt.json",
     "candidates/klein-tetra-face-flip-20261103/mathematical_receipt_v0.2.json",
-    "candidates/klein-tetra-face-flip-20261103/mathematical_receipt_v0.3.json"
+    "candidates/klein-tetra-face-flip-20261103/mathematical_receipt_v0.3.json",
+    "candidates/klein-tetra-face-flip-20261103/mathematical_receipt_v0.4.json"
   ]
 }
