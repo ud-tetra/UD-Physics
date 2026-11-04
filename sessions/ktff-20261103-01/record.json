@@ -63,12 +63,31 @@
     {
       "name": "external non-constructor mathematical review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.3 exact 60D differential ranks, nilpotency and Hodge spectrum",
+      "status": "PASS",
+      "method": "local SymPy exact 60x60 matrices, same constructor"
+    },
+    {
+      "name": "v0.3 independent factor-Laplacian spectral convolution",
+      "status": "PASS",
+      "method": "separate 4D CW + 15D K4 exact factor calculation"
+    },
+    {
+      "name": "v0.3 four unit checks",
+      "status": "PASS",
+      "method": "local tests, not external review"
+    },
+    {
+      "name": "v0.3 independent non-constructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "EXACT/CONDITIONAL: finite tetrahedral 2-face Klein quotient has 2-sheet orientable cover (2,6,4) with integral H1=Z^2,H2=Z, flat O2 face transport and global det=-1 orientation loop. Independent Schreier CW computation agrees. No full 3D bulk, native evolution or physical law.",
-  "next_action": "Derive sourced full K4-to-twisted-local-system chain map and physical observer or park topology candidate; non-constructor review remains required.",
+  "finding": "v0.3 EXACT conditional: 60D Klein orientation CW tensor full K4 signed chains, nilpotent boundary, conserving skew flow. Twisted/untwisted graded real Betti differ, but full Hodge spectra identical {0^2,4^30,8^28}; norm-only loop readout blind. Physical 3D packet gluing OPEN.",
+  "next_action": "Source a full 3D packet adjacency/seam and a framed grade-sensitive observer; test compatibility and physical unit map or park candidate.",
   "mathematical_profile": {
-    "coefficient_domain": "Z chain homology, F2 orientation, O(2) exact integer matrix representation",
+    "coefficient_domain": "Z signed CW product; R extension for skew operator; F2 seam orientation",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
     "applicable_methods": [
       "Euler",
@@ -78,6 +97,6 @@
       "closed-loop O(2) holonomy",
       "Pachner vs seam gluing distinction"
     ],
-    "clock_metric_units_conventions": "oriented triangles, no physical metric/clock; loop word composition discrete, holonomy sign is topological"
+    "clock_metric_units_conventions": "CW orientation rho(h)=-1,v=+1, unit 60D chain metric H=I, formal dimensionless continuous u, no physical clock/units"
   }
 }
