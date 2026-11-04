@@ -32,7 +32,7 @@ assert abs(int(smith_normal_form(S.Matrix([[1],[1]]),domain=ZZ)[0,0]))==1
 assert abs(int(smith_normal_form(S.Matrix([[0],[2]]),domain=ZZ)[0,0]))==2
 result={"method":"independent Schreier cellular presentation",
  "base":{"cell_counts":[1,2,1],"relator":"h v h^-1 v","H1_Z":"Z+Z/2Z","H2_Z":"0"},
- "orientable_cover":{"cell_counts":[2,4,2],"B1":B1.tolist(),"B2":B2.tolist(),
+ "orientable_cover":{"cell_counts":[2,4,2],"B1":[[int(z) for z in row] for row in B1.tolist()],"B2":[[int(z) for z in row] for row in B2.tolist()],
   "rank_B1":1,"rank_B2":1,"Euler":0,"H1_Z":"Z^2","H2_Z":"Z",
   "connected":True,"no_H1_torsion":True},
  "orientation":{"h":"sheet switch","v":"sheet preserve"},
