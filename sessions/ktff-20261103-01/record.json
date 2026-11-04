@@ -114,10 +114,30 @@
     {
       "name": "external non-constructor review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.4 revised integral even-S4-equivariant interval-to-K4 bridge",
+      "status": "PASS",
+      "method": "exact local integer matrices, Gram non-isometry"
+    },
+    {
+      "name": "v0.4 odd S4 fixed-vertex dimension no-go",
+      "status": "PASS",
+      "method": "exact 4x4 permutation fixed-space rank one"
+    },
+    {
+      "name": "v0.4 full 72-tet twisted local-coefficient subdivision",
+      "status": "NOT_RUN",
+      "reason": "ordinary 72-tet boundary only, twisted CW bridge separately verified"
+    },
+    {
+      "name": "v0.4 physically source-selected frame readout",
+      "status": "NOT_RUN",
+      "reason": "two source-compatible signed S4 packet completions disagree"
     }
   ],
-  "finding": "v0.4: nonorientable KxI realized by 72 labeled tetrahedra, f=(18,102,156,72), ordinary d²=0 and ranks (17,84,72); twisted 3D cellular-to-60D packet chain map injective ranks (2,5,4,1). Two source-compatible S4 seam completions yield opposite K4 top-cell signs. Physical framed readout OPEN.",
-  "next_action": "Compute the 72-tetrahedron twisted-coefficient boundary and explicit subdivision-to-cellular chain map; source an operational framed observable and independently calibrated bridge.",
+  "finding": "v0.4: genuine nonorientable 72-tetrahedron Klein×I Delta complex with exact ∂² and ranks; exact cellular twisted bulk-to-60D map; revised integral even-S4 equivariant K4 packet inclusion but no odd rank2 invariant inclusion. Full 72-tet twisted map and unique source-selected physical readout remain OPEN.",
+  "next_action": "Build 72-tet pulled-back-rho local-coefficient signed complex and subdivision-to-cellular map, test native norm/holonomy framed reference, and seek independent review before integration.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
