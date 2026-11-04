@@ -1,0 +1,129 @@
+{
+  "source": "QPB1 signed filled-K4 incidence; assumed Klein CW orientation local system",
+  "carrier": "Z cellular tensor complex; 60 real coordinates after coefficient extension",
+  "K4_f_vector": [
+    4,
+    6,
+    4,
+    1
+  ],
+  "twisted_CW_boundary": {
+    "d1": [
+      [
+        -2,
+        0
+      ]
+    ],
+    "d2": [
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    "holonomy_h": -1,
+    "holonomy_v": 1,
+    "H0_Z": "Z/2Z",
+    "H1_Z": "Z",
+    "H2_Z": "Z"
+  },
+  "untwisted_CW_boundary": {
+    "d1": [
+      [
+        0,
+        0
+      ]
+    ],
+    "d2": [
+      [
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    "holonomy_h": 1,
+    "holonomy_v": 1,
+    "H0_Z": "Z",
+    "H1_Z": "Z + Z/2Z",
+    "H2_Z": "0"
+  },
+  "twisted": {
+    "dims": [
+      4,
+      14,
+      20,
+      15,
+      6,
+      1
+    ],
+    "ranks": [
+      4,
+      9,
+      10,
+      5,
+      1
+    ],
+    "betti_R": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "L_eigen_multiplicities": {
+      "0": 2,
+      "4": 30,
+      "8": 28
+    },
+    "trace_L": 344,
+    "trace_L_squared": 2272
+  },
+  "untwisted": {
+    "dims": [
+      4,
+      14,
+      20,
+      15,
+      6,
+      1
+    ],
+    "ranks": [
+      3,
+      10,
+      10,
+      5,
+      1
+    ],
+    "betti_R": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "L_eigen_multiplicities": {
+      "0": 2,
+      "4": 30,
+      "8": 28
+    },
+    "trace_L": 344,
+    "trace_L_squared": 2272
+  },
+  "tensor_rule": "d_total=d_CW tensor I + (-1)^p I tensor d_K4",
+  "boundary_squared_zero": true,
+  "generator": "A=d_total-d_total.T, unit Euclidean chain metric",
+  "norm_conserved": true,
+  "ungraded_spectra_equal": true,
+  "orientation_loop_twisted": "-I15",
+  "orientation_loop_null": "+I15",
+  "orientation_twice": "I15",
+  "contractible_relator": "I15",
+  "norm_squared_blind_to_twist": true,
+  "warning": "CW tensor product is NOT sourced 3D tetrahedral gluing, nor physical time",
+  "physical_promotion": 0,
+  "status": "PASS_EXACT_CONDITIONAL"
+}
