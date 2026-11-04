@@ -44,10 +44,29 @@
       "name": "local four independent-form topology unit tests",
       "status": "PASS",
       "scope": "same-constructor suite run in local Python, 4/4"
+    },
+    {
+      "name": "v0.2 triangle lift Smith and orientation holonomy",
+      "status": "PASS",
+      "method": "local exact SymPy 1.14"
+    },
+    {
+      "name": "v0.2 independent Schreier CW",
+      "status": "PASS",
+      "method": "separate cellular presentation, same constructor"
+    },
+    {
+      "name": "v0.2 local four checks",
+      "status": "PASS",
+      "method": "4 unit tests"
+    },
+    {
+      "name": "external non-constructor mathematical review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "Exact: 108 whole-face K4 matchings fail 2-manifold incidence; independently constructed Klein 2-triangle Delta complex has Smith factors (1,2), nontrivial orientation cocycle and O2 reflection holonomy. Requires new gluing, not a K4 face flip.",
-  "next_action": "Construct minimal tetrahedral patch network with genuine nontrivial flat orientation local system, compare orientable double cover and no-twist model, then test source-compatible transport.",
+  "finding": "EXACT/CONDITIONAL: finite tetrahedral 2-face Klein quotient has 2-sheet orientable cover (2,6,4) with integral H1=Z^2,H2=Z, flat O2 face transport and global det=-1 orientation loop. Independent Schreier CW computation agrees. No full 3D bulk, native evolution or physical law.",
+  "next_action": "Derive sourced full K4-to-twisted-local-system chain map and physical observer or park topology candidate; non-constructor review remains required.",
   "mathematical_profile": {
     "coefficient_domain": "Z chain homology, F2 orientation, O(2) exact integer matrix representation",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
