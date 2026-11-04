@@ -1,0 +1,291 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-THREED-BULK-004",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Can a genuine tetrahedral 3-manifold realize Klein seam topology, map its twisted cellular chains into the old 60D K4 model, and uniquely select a native packet orientation readout?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "BULK3",
+      "symbol": "M=K×I",
+      "object_type": "nonorientable 3-dimensional triangulated Delta-complex",
+      "definition": "two triangular prisms (K two-face quotient thickened through I) barycentric subdivided and side-paired",
+      "domain": "finite labeled Delta complexes",
+      "codomain": null,
+      "coefficient_domain": "Z exact oriented incidence, Q ranks",
+      "units": "none",
+      "basis_orientation": "barycentric flags vertex<edge<face<prism; distinct labeled simplices retained after quotient",
+      "metric_measure": "none selected",
+      "origin": "candidate new 3D gluing, exact constructed",
+      "exact_expression": "f=(18,102,156,72), ranks (17,84,72), χ=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "KTFF-v02"
+      ],
+      "assumption_ids": [
+        "new_gluing",
+        "prism_interval"
+      ],
+      "dependency_ids": [],
+      "normalization": "none"
+    },
+    {
+      "object_id": "CELL3_RHO",
+      "symbol": "C(K;Zrho)⊗C(I;Z)",
+      "object_type": "twisted cellular 3D product chain",
+      "definition": "Klein orientation local system on base, trivial interval coefficients",
+      "domain": "Z^2⊕Z^5⊕Z^4⊕Z",
+      "codomain": "same lower degree",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "graded CW base then interval",
+      "metric_measure": "none",
+      "origin": "candidate mathematical source of bridge",
+      "exact_expression": "dimensions (2,5,4,1)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "KTFF-v03"
+      ],
+      "assumption_ids": [
+        "new_gluing"
+      ],
+      "dependency_ids": [
+        "BULK3"
+      ],
+      "normalization": "rho(h)=-1,rho(v)=1"
+    },
+    {
+      "object_id": "BRIDGE_M",
+      "symbol": "M=id⊗f",
+      "object_type": "integral chain morphism from cellular 3D bulk to formal 60D packet tensor carrier",
+      "definition": "f(interval endpoints)=(K4 vertices 0,1), f(interval edge)=[01]",
+      "domain": "C(K;rho)⊗C(I)",
+      "codomain": "C(K;rho)⊗C(K4)",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "CW then K4 simplex",
+      "metric_measure": "not metric-preserving claimed",
+      "origin": "constructed and exactly verified",
+      "exact_expression": "ranks by degree (2,5,4,1), d_target M=M d_source",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1",
+        "KTFF-v03"
+      ],
+      "assumption_ids": [
+        "interval_vertex_selection"
+      ],
+      "dependency_ids": [
+        "CELL3_RHO"
+      ],
+      "normalization": "unit integral edge"
+    },
+    {
+      "object_id": "S4_TRANSPORT",
+      "symbol": "U_h=-R_K(p)",
+      "object_type": "candidate full 15D signed simplicial seam operator",
+      "definition": "rho(h)=-1 times signed K4 permutation extending directed [01]→[32]",
+      "domain": "C_*(K4;R)",
+      "codomain": "C_*(K4;R)",
+      "coefficient_domain": "Z signed permutation matrices",
+      "units": "none",
+      "basis_orientation": "ascending 0,1,2,3 K4 simplex orientations",
+      "metric_measure": "unit H=I for orthogonality checks",
+      "origin": "two nonunique source-compatible extensions",
+      "exact_expression": "p=(3,2,0,1) gives top sign +; p=(3,2,1,0) gives top sign −",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "S4_extension_selection"
+      ],
+      "dependency_ids": [
+        "BRIDGE_M"
+      ],
+      "normalization": "none"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+      "section_or_object_id": "v1.0 §§1–3 signed K4 boundary and S4-equivariance",
+      "source_status": "read-only source not a new seam selector"
+    },
+    {
+      "source_id": "PACHNER",
+      "url_or_repo_path": "experiments/pachner-state-transport/README.md",
+      "version_or_commit": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+      "section_or_object_id": "v0.1 chain-map transport versus unit-metric intertwiner caution",
+      "source_status": "read-only negative control"
+    },
+    {
+      "source_id": "KTFF-v03",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/TWISTED_K4_PACKET_CHAIN_v0.3.md",
+      "version_or_commit": "dcfd256b5f9b006cdcc86c696387c24932cec283",
+      "section_or_object_id": "60D target construction and orientation character",
+      "source_status": "prior Discovery construction"
+    },
+    {
+      "source_id": "KTFF-v02",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/DOUBLE_COVER_AND_TRANSPORT_v0.2.md",
+      "version_or_commit": "a0e1fa3f691793a00886875cc49af14cdf772a32",
+      "section_or_object_id": "two-triangle Klein cut patch and orientation double cover",
+      "source_status": "prior Discovery topology"
+    }
+  ],
+  "assumptions": [
+    "Klein base is constructed by cutting away two K4 shell faces and imposing new edge gluings [01]~[32], [03]~[21]; NOT a native K4 Pachner move",
+    "bulk M=K×I is a separate nonorientable 3-manifold whose 2 triangular prism cells undergo barycentric 72-tet subdivision",
+    "all 72 tetrahedra are labeled Delta simplices, not necessarily unique abstract 4-vertex subsets",
+    "twisted coefficient rho on 3D cellular product is pulled back from Klein base; no full twisted 72-tet boundary matrix calculated",
+    "interval inclusion into selected K4 edge [01] is chosen, not source selected; chain map need not be isometric or generator-intertwining",
+    "full K4 S4 vertex extension of partial [01]→[32] is not unique; two choices tested, no physical clock/metric/readout"
+  ],
+  "technique_plan": [
+    {
+      "technique": "incidence flags and union-find cell gluing",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "72 tetrahedra, shared and boundary triangular faces, exact quotient face vector"
+    },
+    {
+      "technique": "exact simplicial signed boundary and rational rank",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "B1B2=B2B3=0 and ranks (17,84,72)"
+    },
+    {
+      "technique": "integral graded chain maps",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "C(K;rho)×C(I) to C(K;rho)×C(K4) and injectivity"
+    },
+    {
+      "technique": "S4 signed simplicial representation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "two extensions of partial seam edge gluing, native generator commutation and top-cell sign difference"
+    },
+    {
+      "technique": "physical time and framed readout",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no source-selected physical measurement or unit calibration"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2 triangular prisms ×36 barycentric flags=72 tetrahedra; 2×144 original tet face occurrences=288; (288−24)/2=132 internal face pairs; f=(18,102,156,72)",
+    "reduced_expression": "χ=18−102+156−72=0; B ranks (17,84,72); cellular graded map ranks (2,5,4,1)",
+    "factor_origins": [
+      "triangular prism has 6 vertices, 9 edges, 5 faces,1 3cell; 36 vertex-edge-face-cell flags",
+      "3 paired rectangular sides, 2 remaining Klein boundaries",
+      "interval edge to K4 edge inclusion"
+    ],
+    "factorization": "72=2³·3²; 132=2²·3·11; 24=2³·3",
+    "divisibility_gcd_lcm": "boundary facets 132 interior pairs and 24 unpaired faces"
+  },
+  "clock_receipt": {
+    "clock_type": "none physically; discrete seam loop composition",
+    "modulus": 2,
+    "residue_convention": "rho(h)=-1 and 2 traversals restore geometric orientation",
+    "update_rule": "signed K4 holonomy U_h=-R_K(p), U_v=I; source A_K commutes with either R_K(p)",
+    "initial_phase": "arbitrary oriented local K4 packet frame",
+    "coupling": "no native seam energy/clock",
+    "period_claim": "one topological twist flips rho sign; full packet S4 completion can have order2 or4",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "72-tetrahedron ordinary Δ-chain complex plus separately modeled twisted 3D CW cellular chains and 60D target",
+    "generator_or_update": "exact source native K4 A_K as compatibility check; no full 72-tet physical evolution selected",
+    "initial_boundary_conditions": "two Klein boundary surfaces of K×I, no physical BC",
+    "conservation_and_sources": "exact integer ∂²=0, signed K4 S4 orthogonality under unit metric; 3D current/stock physical receipt OPEN",
+    "projection_and_kernel": "cellular graded map injective 2,5,4,1; rho sign survives; top-cell K4 readout nonunique between S4 completions",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "user-exposed Klein connection and requested 3D realization, no empirical target",
+    "known_targets": [
+      "Klein quotient two-face patch and torus orientation cover",
+      "K4 source signed incidence"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "thicken K×I",
+      "barycentric prism flag triangulation",
+      "select K4 edge [01] for interval inclusion",
+      "two alternative S4 completions explicitly disclosed"
+    ],
+    "search_domain_and_budget": "72 tetrahedra, all their 288 triangular incidences, exact 18×102,102×156,156×72 chain blocks; all 2 S4 completions of directed seam",
+    "selection_criterion": "valid 3D Δ complex, chain nilpotency, exact map commutation and unique source-selected framed response",
+    "baseline": "ordinary K4 and scalar rho=-1 transport with no selected internal permutation"
+  },
+  "calculation_steps": [
+    "Construct two triangular prisms above [012] and [023] and quotient three side rectangular pairs using declared Klein edge maps",
+    "Barycentrically triangulate each prism with 36 labeled flags and glue boundary flags; 72 labeled top tetrahedra",
+    "Check f=(18,102,156,72), internal triangle classes132 and unpaired boundary24; two boundary components f=(6,18,12)",
+    "Build integer simplicial boundaries, check compositions zero and rational ranks (17,84,72), Betti_R=(1,1,0,0)",
+    "Build cellular C(K;rho)⊗C(I) and earlier 60D C(K;rho)⊗C(K4); define f on interval endpoints/edge",
+    "Check d_target M=M d_source exact with graded ranks (2,5,4,1)",
+    "Enumerate all S4 completions of [01]→[32]; both signed operators commute with dK,A_K and preserve norm, yet yield opposite top-cell signs",
+    "Conclude 3D mathematical realization and cellular bridge pass, but full 72-simplicial-to-twisted-cellular matrix and native physical source-selected readout OPEN"
+  ],
+  "result": {
+    "exact_expression": "3D Klein×I Δ complex f=(18,102,156,72), ∂²=0, ranks (17,84,72); cellular twisted M ranks (2,5,4,1) commutes; two source-compatible top-signs ±",
+    "approximation": null,
+    "units": "none, integer chain counts and dimensionless signs",
+    "precision_and_error": "exact integer matrices, rational ranks",
+    "scope": "new explicitly glued nonorientable 3D manifold and chosen cellular bridge; not original native K4 geometry or physical correspondence",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "full 72-tetrahedron labeled Δ-complex quotient",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/bulk_prism_v04.py",
+      "source_revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+      "actual_result": "PASS local equivalent exact computation including all quotient face classes and rational ranks",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "exact integral cellular graded chain map",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/bulk_bridge_v04.py",
+      "source_revision": "same",
+      "actual_result": "PASS local exact computation in degrees0..3",
+      "review_relationship": "same constructor"
+    },
+    {
+      "method": "independent native S4 extension check",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/full_chain_seam_v04.py",
+      "source_revision": "same",
+      "actual_result": "PASS local exact source-native signed 15x15 operator checks",
+      "review_relationship": "same constructor"
+    },
+    {
+      "method": "local distinct formulation tests",
+      "command_or_proof_path": "python3 -m unittest discover -s experiments/klein-tetra-face-flip-20261103 -p test_bulk_v04.py -v",
+      "source_revision": "same",
+      "actual_result": "PASS four local constructor tests, not non-constructor review",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "two equally legal S4 extensions of the h seam produce opposite K4 top-cell signs; no unique native framed observable",
+    "ordinary squared norms remain identical under every orthogonal S4 transport",
+    "a Klein boundary cannot be the sole boundary of orientable compact 3-manifold; realized bulk K×I is nonorientable",
+    "chain compatibility does not imply isometry, source-type evolution intertwining or a physical time bridge"
+  ],
+  "limitations": [
+    "Source does not choose this nonorientable 3D quotient geometry, actual spacetime, transport law or physical readout",
+    "Explicit simplicial 72-tet to twisted 3D cellular map matrix NOT_RUN, only cellular bridge executed",
+    "No fixed physical metric, retained energy, stock-current evolution, SI units or empirical bridge",
+    "Independent non-constructor review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Implement exact 72-tet twisted local-coefficient subdivision/cellular chain map and compare a source-selected sign-sensitive UD readout against no-twist null; if unavailable preserve OPEN."
+}
