@@ -75,9 +75,9 @@ assert F*F==I
 for G in (F,R,X):assert int((G*F*G.inv()).det())==-1
 result={
  "source":"two adjacent K4 face patches [012],[023]; new boundary edge gluing",
- "base":{"cells":[1,3,2],"Euler":0,"B2":baseB2.tolist(),
+ "base":{"cells":[1,3,2],"Euler":0,"B2":[[int(z) for z in row] for row in base[[int(z) for z in row] for row in B2.tolist()]],
          "Smith":[1,2],"H1_Z":"Z + Z/2Z","H2_Z":"0","orientation_w1":[1,0,1]},
- "cover":{"cells":[2,6,4],"Euler":0,"B1":B1.tolist(),"B2":B2.tolist(),
+ "cover":{"cells":[2,6,4],"Euler":0,"B1":[[int(z) for z in row] for row in B1.tolist()],"B2":[[int(z) for z in row] for row in B2.tolist()],
           "rank_B1":1,"rank_B2":3,"Smith_B2":[1,1,1],
           "gcd_cycle_minors":1,"H1_Z":"Z^2","H2_Z":"Z",
           "pulled_back_w1":"exact modulo 2, 0-cochain=(0,1)"},
