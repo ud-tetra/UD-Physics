@@ -13,11 +13,11 @@
     "pachner-timing-budget": "1701d7c8cc91f641fcbdea799a1c7978f0c7dc42"
   },
   "checks": [],
-  "finding": "EXACT conditional original-witness continuation blindness; modified apex preparation has certified boundary separation and joint budget",
-  "next_action": "Implement rational prediction enclosures and finite-computation classifier for the modified probe",
-  "checkpoint_at": "2026-11-04T21:26:53.275516+00:00",
+  "finding": "EXACT conditional finite rational classifier and continuous error margin; 1028 adversarial endpoint checks pass",
+  "next_action": "Audit fixed-generator/metric perturbations and gate ramp uncertainty before physical instrumentation",
+  "checkpoint_at": "2026-11-05T16:51:06.843732+00:00",
   "checkpoint_source": {
-    "revision": "39d7c2d48a7670ae5b9d94402dcfd33b922d6e73",
+    "revision": "b2a8abbc3ea24d6aeb6b75d3c644c054d4a6cedf",
     "dirty": true
   }
 }

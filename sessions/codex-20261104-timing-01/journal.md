@@ -37,3 +37,17 @@ Captured artifacts/codex-20261104-timing-01/exact-002 (EXACT): Exact original-wi
 Checkpoint (handoff): EXACT conditional original-witness continuation blindness; modified apex preparation has certified boundary separation and joint budget
 
 Next: Implement rational prediction enclosures and finite-computation classifier for the modified probe
+
+## 2026-11-05T16:50:56.726727+00:00
+
+Resumed existing held claim at b2a8abbc; latest integrated main e400dfb has no changes to imported Pachner source experiment paths. Implemented rational degree-4 predictor and checked budget wrapper. Exact continuous margin plus 1028 adversarial endpoint checks PASS.
+
+## 2026-11-05T16:51:06.804690+00:00
+
+Captured artifacts/codex-20261104-timing-01/exact-003 (EXACT): Finite rational predictor/classifier with uniform truncation margin and adversarial tests
+
+## 2026-11-05T16:51:06.855677+00:00
+
+Checkpoint (handoff): EXACT conditional finite rational classifier and continuous error margin; 1028 adversarial endpoint checks pass
+
+Next: Audit fixed-generator/metric perturbations and gate ramp uncertainty before physical instrumentation

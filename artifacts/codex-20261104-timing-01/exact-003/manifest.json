@@ -1,0 +1,105 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-20261104-timing-01",
+  "run_id": "exact-003",
+  "created_at": "2026-11-05T16:51:06.804247+00:00",
+  "evidence": "EXACT",
+  "summary": "Finite rational predictor/classifier with uniform truncation margin and adversarial tests",
+  "command": "python3 -B experiments/pachner-timing-budget/classifier.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "b2a8abbc3ea24d6aeb6b75d3c644c054d4a6cedf",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "classifier.py",
+      "path": "inputs/001-classifier.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/classifier.py",
+      "sha256": "e317aca6b455b27c9c9d58d26de55fdf250daf8a7a448ba21456dc9f474f8689",
+      "size_bytes": 6181
+    },
+    {
+      "input_id": "input-002",
+      "name": "CLASSIFIER_v0.3.md",
+      "path": "inputs/002-CLASSIFIER_v0.3.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/CLASSIFIER_v0.3.md",
+      "sha256": "9a6319f29b0e70052b32fc85edbe7fdf6cf3a68041eb91ab6dab52d106f6508b",
+      "size_bytes": 4976
+    },
+    {
+      "input_id": "input-003",
+      "name": "classifier_receipt.json",
+      "path": "inputs/003-classifier_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/pachner-timing-budget/classifier_receipt.json",
+      "sha256": "5601699d353e4bd9546d5fee6ba87b893770051f3ce2a551a2cebb37256f658b",
+      "size_bytes": 6803
+    },
+    {
+      "input_id": "input-004",
+      "name": "audit.py",
+      "path": "inputs/004-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/audit.py",
+      "sha256": "89326be389d9cca47d8b4a7324b8b013f58368df4808978e1f89031ee1428310",
+      "size_bytes": 8361
+    },
+    {
+      "input_id": "input-005",
+      "name": "COMPARISON_v0.2.md",
+      "path": "inputs/005-COMPARISON_v0.2.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/COMPARISON_v0.2.md",
+      "sha256": "60837ca2489200a71cec33eb75246b503bf020b55c6af258ecf588dd76a9276f",
+      "size_bytes": 5772
+    },
+    {
+      "input_id": "input-006",
+      "name": "audit.py",
+      "path": "inputs/006-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-interface-defect/audit.py",
+      "sha256": "a3f1762db95e3845b09561906b229bc816c7e65b58ef3705e485cfe79099802a",
+      "size_bytes": 6091
+    },
+    {
+      "input_id": "input-007",
+      "name": "audit.py",
+      "path": "inputs/007-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-switch-ledger/audit.py",
+      "sha256": "8d1817d486add01a3e00da5d5ba16f4b06fea22551af50515bb68c3fc552b034",
+      "size_bytes": 5650
+    },
+    {
+      "input_id": "input-008",
+      "name": "audit.py",
+      "path": "inputs/008-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/audit.py",
+      "sha256": "472965714d8009d03e6916c4491e95514ccb7bff7ad9511d7a5fb8e8e3cd8aee",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-009",
+      "name": "audit.py",
+      "path": "inputs/009-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-boundary-observability/audit.py",
+      "sha256": "e8e36515d2f56fee6a8d849d0a9e368ced8cdff76ef199a796b15939630eb6de",
+      "size_bytes": 9321
+    }
+  ],
+  "files": [
+    {
+      "path": "files/classifier_results.json",
+      "sha256": "dedd32350d6686cad0f75b9d6b931d1421acfb27e1e447ffa2b9bed701a7ac63",
+      "size_bytes": 1272
+    }
+  ]
+}

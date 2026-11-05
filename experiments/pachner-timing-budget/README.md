@@ -149,3 +149,6 @@ topology or basin attraction has been established.
 [Comparison amendment v0.2](COMPARISON_v0.2.md) proves the original preparation
 is exactly blind to full-versus-projected continuation and gives a separate
 controlled apex probe. The v0.1 mask distinction above is unchanged.
+
+[Finite classifier v0.3](CLASSIFIER_v0.3.md) implements the controlled-probe
+midpoint with rational arithmetic and certified prediction enclosures.
