@@ -84,3 +84,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Fourier/Cayley interval certificate](FOURIER_INTERVAL.md) extends the exact conditional interval through mu=1/64 with linear normal gain at most 8.
 
 [First transverse loss certificate](STABILITY_BOUNDARY.md) gives a unique first linear stability threshold in (77511/12500,62009/10000) for fixed eta=1.
+
+[Near-threshold gain and growth](NEAR_THRESHOLD.md) gives rational bounds on transient gain below onset and exponential growth above it.

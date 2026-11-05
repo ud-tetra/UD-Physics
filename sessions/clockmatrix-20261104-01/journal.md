@@ -114,3 +114,13 @@ Resumed held claim 7286350 from published discovery c48a78b. Reconciled main 738
 Captured artifacts/clockmatrix-20261104-01/exact-011 (EXACT): First transverse loss in a rational bracket of width 1/50000
 
 Final integrity and all 16 repository tests passed. Claim retained for PR 312 review.
+
+### 2026-11-05 — Near-threshold gain and growth
+
+Resumed held claim 7286350. Reconciled main d65c8a2. Fixed eta=1 and reused exact-011. Verified rational coefficient boxes and gain margins. On [31/5,621/100], fixed eta=1 sampled peak gain below onset is between (47/10)/sqrt(delta) and (51/10)/sqrt(delta). Continuous gain upper is 41/sqrt(delta). Native growth exponent above onset is between sqrt(delta)/4 and (27/100)sqrt(delta). Constructor verification. Physical promotion 0. Next Derive a finite nonlinear operating margin near the threshold using the linear gain bounds and a controlled nonlinear remainder.
+
+## 2026-11-05T23:23:46.084936+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-012 (EXACT): Near-threshold gain and native growth bounds
+
+Final integrity and all 16 repository tests passed. Claim retained for PR 312 review.

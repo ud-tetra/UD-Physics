@@ -29,8 +29,8 @@
     "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/"
   ],
   "baseline": "Ordinary oscillator retuning and time-unit rescaling",
-  "result": "First loss of bounded linear transverse evolution for fixed eta=1 is unique in (77511/12500,62009/10000). Three identical -1 Jordan blocks at onset.",
-  "next_discriminant": "Quantify precritical transient gain and postcritical growth near the verified first loss.",
+  "result": "On [31/5,621/100], fixed eta=1 sampled peak gain below onset is between (47/10)/sqrt(delta) and (51/10)/sqrt(delta). Continuous gain upper is 41/sqrt(delta). Native growth exponent above onset is between sqrt(delta)/4 and (27/100)sqrt(delta).",
+  "next_discriminant": "Derive a finite nonlinear operating margin near the threshold using the linear gain bounds and a controlled nonlinear remainder.",
   "mathematical_receipts": [
     "sessions/clockmatrix-20261104-01/mathematical_receipt.json",
     "sessions/clockmatrix-20261104-01/two_clock_receipt.json",
@@ -42,7 +42,8 @@
     "sessions/clockmatrix-20261104-01/stabilization_receipt.json",
     "sessions/clockmatrix-20261104-01/certified_interval_receipt.json",
     "sessions/clockmatrix-20261104-01/fourier_interval_receipt.json",
-    "sessions/clockmatrix-20261104-01/stability_boundary_receipt.json"
+    "sessions/clockmatrix-20261104-01/stability_boundary_receipt.json",
+    "sessions/clockmatrix-20261104-01/near_threshold_receipt.json"
   ],
   "parked_scope": "fixed13-termQ as long-time robust clock; preserves invariant plane and finite observation theorem; prior all-V local obstruction unchanged",
   "reopening_conditions": [
