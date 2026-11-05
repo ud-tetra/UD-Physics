@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "g05-g06-joint-proof-20261105",
   "session": "g0506proof-20261105-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-05T16:48:58.965Z",
   "base_revision": "e400dfb715262a44b3bbb2e929c7b438028af67e",
   "owned_paths": [
@@ -13,5 +13,7 @@
     "candidates/g05-g06-joint-proof",
     "experiments/g05-g06-joint-proof",
     "artifacts/g0506proof-20261105-01"
-  ]
+  ],
+  "released_at": "2026-11-05T16:55:42.625Z",
+  "released_from_sha": "55edf4c1c562425288e6cc67dc394ad94f35f082"
 }
