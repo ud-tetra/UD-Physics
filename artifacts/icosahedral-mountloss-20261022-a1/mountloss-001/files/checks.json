@@ -1,8 +1,0 @@
-{
-  "force_error": 1.0842021724855044e-19,
-  "torque_error": 0.0,
-  "power_error": 2.710505431213761e-20,
-  "rayleigh_gradient_error": 1.071923582882106e-15,
-  "linear_ode_matrix_error": 5.973993934954569e-09,
-  "reduced_reference_matrix_error": 3.552713678800501e-14
-}
