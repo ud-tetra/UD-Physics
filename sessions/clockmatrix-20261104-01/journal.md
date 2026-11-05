@@ -47,3 +47,11 @@ Captured artifacts/clockmatrix-20261104-01/exact-003 (EXACT): Source-family equa
 Checkpoint (handoff): Common source-family rate iff equal gains; fixed exact autonomous clocks preclude nonzero direct linear mixing; posited reciprocal nonlinear action product supplies rate shifts with g and locality open
 
 Next: Derive or obstruct local reciprocal mediator for action-product law; source coefficient separately
+
+### 2026-11-05 — local reciprocal mediator
+Resumed same held claim7286350, main e400dfb, research0d82f00; preserved and merged previously published local history. EXACT/CONDITIONAL positive harmonic elimination yields self/cross Gram bound; pure cross needs counterterms. Two-site mediator has collective clock ports. Rank1 contact cannot shift all14 active coordinates; diagonal class needs all15 register potentials equal.54 exact fixtures PASS after correcting count assertion108 to54. Compute transport briefly failed before metadata write, then recovered. Current source master action/packet field placeholders; ledger Q166/Q169/Q170 no selected mediator. No imported programs executed, physical promotion0; independent review NOT_RUN. Receipt local_mediator_receipt.json, immutable run exact-004. Next: incidence-local quartic classification.
+
+## 2026-11-05T16:50:34.937507+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-004 (EXACT): Conditional passive mediator Gram bound and contact isotropy gate
+Final verification after compute recovery: validate.py PASS506 records and manifest digests; unittest discover all16 PASS. Captured exact-004 unchanged. Claim remains held pending PR312 integration; no merge.

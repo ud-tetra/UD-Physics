@@ -1,0 +1,171 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "local-reciprocal-mediator-004",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "Can a local reciprocal mediator implement the radial clock coupling and select its coefficient?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "passive-mediator",
+      "symbol": "H",
+      "object_type": "declared Hamiltonian",
+      "definition": "2(IL+IR)+(pTp+qTKq)/2+qT C i",
+      "domain": "V x V x R^m x R^m",
+      "codomain": "R",
+      "coefficient_domain": "real states, rational fixtures",
+      "units": "dimensionless",
+      "basis_orientation": "ascending simplex chain; canonical q,p",
+      "metric_measure": "clock H=I; K positive",
+      "origin": "assumed",
+      "exact_expression": "S=C^T K^-1 C",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "G1",
+        "Q169"
+      ],
+      "assumption_ids": [
+        "passive-H"
+      ],
+      "dependency_ids": [
+        "common-rate-classification-003"
+      ],
+      "normalization": "isolated rate2; physical maps OPEN"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "passive-H",
+      "text": "positive harmonic mediator, linear collective action ports, no self counterterms in obstruction"
+    },
+    {
+      "id": "prepared-reduction",
+      "text": "q=-K^-1 C i,p=0 for exact constant eliminated rates; generic starts retain memory"
+    },
+    {
+      "id": "contact-gate",
+      "text": "all active preparations, fixed positive metric/readout; diagonal or rank-limited contact Hessian"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational Gram/operator algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "self/cross bound and active contact isotropy"
+    },
+    {
+      "technique": "Hamiltonian dynamics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "conserved stocks, prepared reduction and generic memory"
+    },
+    {
+      "technique": "modular arithmetic/factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no discrete clock or divisibility claim"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "3x3x2x3 parameter fixtures",
+    "reduced_expression": "54 fixtures; active rank14; diagonal map rank15",
+    "factor_origins": [
+      "declared constructor grid"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "xprime=(2+cL^Tq)Jx; yprime=(2+cR^Tq)Jy; qprime=p; pprime=-Kq-Ci",
+    "initial_phase": "arbitrary independently prepared nonzero phase-plane states",
+    "coupling": "declared harmonic mediator and collective stock ports",
+    "period_claim": "constant rates on prepared manifold; positive rates required",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "V x V x R^m x R^m",
+    "generator_or_update": "Hamiltonian with diag(J,J,Jm) Poisson",
+    "initial_boundary_conditions": "independent stocks; prepared equilibrium or free mediator start",
+    "conservation_and_sources": "IL,IR,H conserved; undamped mediator memory",
+    "projection_and_kernel": "V=im P rank14; single projected contact rank1",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "question-informed inverse design",
+    "known_targets": [
+      "pure action product and common clock rates"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "quadratic mediator and collective ports assumed",
+      "self cancellation counterterms inverse-designed"
+    ],
+    "search_domain_and_budget": "positive harmonic linear stock ports;54 rational two-site fixtures; diagonal contact class",
+    "selection_criterion": "reciprocal implementation and preparation slopes",
+    "baseline": "uncoupled native clocks"
+  },
+  "calculation_steps": [
+    "derive Hamilton equations and conserved actions",
+    "complete square on invariant prepared manifold",
+    "Gram bound excludes pure cross without counterterms",
+    "two-site inverse and port scaling show coefficient freedom",
+    "rank and vertex differences prove contact isotropy gate"
+  ],
+  "result": {
+    "exact_expression": "Heff=2 sum I-i^T S i/2; S=C^T K^-1 C; S_LR^2<=S_LL S_RR; P diag(v)P=rP iff all v_i=r",
+    "approximation": null,
+    "units": "dimensionless",
+    "precision_and_error": "exact Fraction fixtures",
+    "scope": "declared positive harmonic and fixed-readout hypotheses",
+    "physical_interpretation": "OPEN"
+  },
+  "verification": [
+    {
+      "method": "written proofs and exact constructor replay",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/local_mediator.py; LOCAL_MEDIATOR.md",
+      "source_revision": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "actual_result": "PASS:54 fixtures, projected diagonal map rank15",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "passive-only pure cross fails Gram bound",
+    "zero mediator start has baseline initial rate rather than eliminated shift",
+    "one contact fails full isotropy",
+    "initial fixture-count assertion108 corrected to actual grid54 before capture"
+  ],
+  "limitations": [
+    "collective ports not native register-local",
+    "coefficient K and ports assumed",
+    "without counterterms unrestricted-action Hamiltonian unbounded; fixed-action or bounded domain only",
+    "no physical maps or apparatus data",
+    "independent review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/exact-004/manifest.json"
+  ],
+  "next_discriminant": "Classify incidence-local quartic Hamiltonians compatible with a common rate on all active states; source or obstruct counterterms"
+}

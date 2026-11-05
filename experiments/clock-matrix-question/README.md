@@ -56,3 +56,7 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 ## Common-rate classification
 
 [Common-rate couplings](COMMON_RATE.md) proves the tetrahedral equal-gain criterion, a scoped linear autonomy obstruction, and a reciprocal nonlinear action-product alternative. Replay: `python3 experiments/clock-matrix-question/common_rate.py`. The nonlinear coefficient and its local realization remain OPEN.
+
+## Local reciprocal mediator gate
+
+[Report v0.1](LOCAL_MEDIATOR.md), [replay](local_mediator.py), [results](local_mediator_results.json): passive Gram bound, prepared versus memory dynamics, contact isotropy. Native coefficient and physical maps OPEN.

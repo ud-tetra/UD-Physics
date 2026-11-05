@@ -22,15 +22,18 @@
     "Candidate status corrected from evidence label to ACTIVE workflow status",
     "Nonconstructor review NOT_RUN",
     "Two-clock exact replay PASS at w=0,1/2,1,2",
-    "Common-rate exact replay PASS:64 gain triples, positive-metric curvature control and4 reciprocal Hamiltonian fixtures"
+    "Common-rate exact replay PASS:64 gain triples, positive-metric curvature control and4 reciprocal Hamiltonian fixtures",
+    "Local mediator exact replay PASS:54 fixtures and contact ranks",
+    "Mediator milestone integrity PASS:506 records; all16 repository tests PASS"
   ],
-  "finding": "Common source-family rate iff equal gains; fixed exact autonomous clocks preclude nonzero direct linear mixing; posited reciprocal nonlinear action product supplies rate shifts with g and locality open",
-  "next_action": "Derive or obstruct local reciprocal mediator for action-product law; source coefficient separately",
+  "finding": "Passive mediator adds self shifts with g^2<=S_LL*S_RR; pure cross requires counterterms; rank1 contact cannot shift rank14 uniformly",
+  "next_action": "Classify incidence-local quartic Hamiltonians compatible with a common rate on all active states; source or obstruct counterterms",
   "access_mode": "Git compute; connector publication; Git push unavailable",
-  "checkpoint_at": "2026-11-05T02:59:19.516856+00:00",
+  "checkpoint_at": "2026-11-05T16:50:34.885061+00:00",
   "checkpoint_source": {
     "revision": "88cb676d36ea934afe973ba3e7b2ea4855185119",
     "dirty": true
   },
-  "resume_integrated_revision": "e400dfb715262a44b3bbb2e929c7b438028af67e"
+  "resume_integrated_revision": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+  "last_published_parent": "0d82f009d4a492b1b4ab884465c5dc759538670d"
 }
