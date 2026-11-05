@@ -93,7 +93,9 @@
     "status": "PASS",
     "tests": 6,
     "archive": "K4_PARITY_LEAKAGE_13_OVER_8_AUDIT_v1.0.zip",
-    "sha256": "db29f22a8d475fba7073afbbce69edce25bee25812ca1ba731edf51db5bbb33b",
-    "source_bytes_not_claimed_GitHub_identical": true
+    "sha256": "fa693e0812e44c95101858015461ea80801e5e4e0bfd69393f92d9caafefe4c8",
+    "source_bytes_not_claimed_GitHub_identical": true,
+    "archive_bytes": 16976,
+    "included_self_contained_replay": true
   }
 }
