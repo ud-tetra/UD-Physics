@@ -13,11 +13,11 @@
     "pachner-timing-budget": "1701d7c8cc91f641fcbdea799a1c7978f0c7dc42"
   },
   "checks": [],
-  "finding": "EXACT conditional paired boundary residual distinguishes continuations under arbitrary shared scalar phase; registered startup and per-channel error <=1/1000000 required",
-  "next_action": "Certify relative channel gain/offset tolerance and startup-branch registration",
-  "checkpoint_at": "2026-11-05T18:07:21.500469+00:00",
+  "finding": "EXACT conditional affine readout calibration and finite startup latch; phase-zero anchor and phase-step certificates remain external source requirements",
+  "next_action": "Audit native event/update sources for those certificates; stop unsupported branch rather than infer them from snapshots",
+  "checkpoint_at": "2026-11-05T18:19:01.422925+00:00",
   "checkpoint_source": {
-    "revision": "3434916ad00ffc63bf84180cabc93fa8e15dc635",
+    "revision": "9c3a12e0ce7d7d1662040b89a990349aa9ce2f97",
     "dirty": true
   }
 }

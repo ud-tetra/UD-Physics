@@ -18,7 +18,8 @@
     "known nominal sample time; bounded jitter and signed scalar reading",
     "v0.2 probe deliberately adds 1/4 at old vertex 3; all-active flow in both continuation hypotheses",
     "v0.4 fixed ambient metric and event map; post-event ramp/perturbation with norm and integrated-deficit bounds",
-    "v0.5 simultaneous signed W,Y readouts; registered first rising reference quarter; common scalar phase; bounded residual nonscalar error"
+    "v0.5 simultaneous signed W,Y readouts; registered first rising reference quarter; common scalar phase; bounded residual nonscalar error",
+    "v0.6 declared affine channel calibration envelopes; trusted phase-zero event receipt; valid per-sample phase advance upper bound 1/1000"
   ],
   "physical_mapping": "OPEN; native amplitude and squared-amplitude reserve, dimensionless parameter",
   "target_exposure": "Prior chat mask comparisons exposed; no empirical data used",
@@ -31,13 +32,14 @@
     "experiments/pachner-current-metric/README.md at 41da46f2f3f3dd25f794fbbb5dedc16ea00854d8"
   ],
   "baseline": "all-active projected continuation",
-  "result": "v0.1 mask certificate preserved; v0.2 original witness exactly blind to full/projected flow for both masks; deliberate +1/4 old vertex-3 probe distinguishes all-active continuations with budget <=1/1000000; v0.3 finite rational threshold -1/4+s^2/2-17s^4/96 certified with midpoint remainder <=1/382205952; v0.4 post-event generator/ramp budget adds 3kappa/100+30ell; exact single-readout rate alias identified; v0.5 paired boundary residual removes arbitrary common scalar phase/rate on registered startup branch, with per-channel error <=1/1000000",
-  "next_discriminant": "Certify relative channel gain/offset tolerance and a reproducible startup-branch registration rule",
+  "result": "v0.1 mask certificate preserved; v0.2 original witness exactly blind to full/projected flow for both masks; deliberate +1/4 old vertex-3 probe distinguishes all-active continuations with budget <=1/1000000; v0.3 finite rational threshold -1/4+s^2/2-17s^4/96 certified with midpoint remainder <=1/382205952; v0.4 post-event generator/ramp budget adds 3kappa/100+30ell; exact single-readout rate alias identified; v0.5 paired boundary residual removes arbitrary common scalar phase/rate on registered startup branch, with per-channel error <=1/1000000; v0.6 gain/offset cross-term bounds and event-anchored first-crossing latch certify startup given per-sample phase advance <=1/1000",
+  "next_discriminant": "Audit source-native event/update rules for an event anchor and a justified phase-increment certificate; preserve source blocks",
   "mathematical_receipts": [
     "candidates/pachner-timing-budget/mathematical_receipt.json",
     "candidates/pachner-timing-budget/comparison_receipt.json",
     "candidates/pachner-timing-budget/classifier_receipt.json",
     "candidates/pachner-timing-budget/robustness_receipt.json",
-    "candidates/pachner-timing-budget/two_readout_receipt.json"
+    "candidates/pachner-timing-budget/two_readout_receipt.json",
+    "candidates/pachner-timing-budget/calibration_startup_receipt.json"
   ]
 }

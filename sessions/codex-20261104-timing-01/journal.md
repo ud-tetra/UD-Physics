@@ -79,3 +79,17 @@ Captured artifacts/codex-20261104-timing-01/exact-005 (EXACT): Two boundary read
 Checkpoint (handoff): EXACT conditional paired boundary residual distinguishes continuations under arbitrary shared scalar phase; registered startup and per-channel error <=1/1000000 required
 
 Next: Certify relative channel gain/offset tolerance and startup-branch registration
+
+## 2026-11-05T18:19:01.287415+00:00
+
+Resumed verified held claim at 9c3a12e; latest integrated milestone concerns historical transport/G06. v0.6 bounds gain-offset errors including gain*d cross terms and proves a first-trigger startup latch under phase increments<=1/1000. Native event/phase certificates remain OPEN.
+
+## 2026-11-05T18:19:01.360629+00:00
+
+Captured artifacts/codex-20261104-timing-01/exact-006 (EXACT): Affine calibration bounds and event-anchored startup latch with bounded phase sampling
+
+## 2026-11-05T18:19:01.436444+00:00
+
+Checkpoint (handoff): EXACT conditional affine readout calibration and finite startup latch; phase-zero anchor and phase-step certificates remain external source requirements
+
+Next: Audit native event/update sources for those certificates; stop unsupported branch rather than infer them from snapshots

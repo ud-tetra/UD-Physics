@@ -158,3 +158,6 @@ post-event uncertainty budget and states the exact single-readout rate ambiguity
 
 [Two-readout v0.5](TWO_READOUT_v0.5.md) removes the single-channel scalar-rate
 ambiguity on a registered startup branch, with independent channel-error bounds.
+
+[Calibration/startup v0.6](CALIBRATION_STARTUP_v0.6.md) supplies conditional
+affine channel bounds and a first-crossing latch with declared phase-step limits.
