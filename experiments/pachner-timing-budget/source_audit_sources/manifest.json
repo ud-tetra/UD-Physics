@@ -1,0 +1,70 @@
+{
+  "version": "v0.7",
+  "repository": "ud-tetra/UD-Physics",
+  "revision": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+  "sources": [
+    {
+      "id": "ledger",
+      "path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "snapshot": "01-ledger-v0.39.txt",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "git_blob": "70d5e1c9c6bd29b397e7f646b74c39aa7fdaf228"
+    },
+    {
+      "id": "pachner-trigger-lift",
+      "path": "experiments/pachner-trigger-lift/README.md",
+      "snapshot": "02-pachner-trigger-lift.txt",
+      "sha256": "60f7c07fb1ae7b4bbebcc6e7fda637e264dc121dfb41ef6ef53ce6e7a7c426fb",
+      "git_blob": "cc3eac76373e35cbe784ea67799f0b441955c762"
+    },
+    {
+      "id": "pachner-event-actuator",
+      "path": "experiments/pachner-event-actuator/README.md",
+      "snapshot": "03-pachner-event-actuator.txt",
+      "sha256": "9ea78a2a3699532f47358e161b067bb8d5d4e9c8febecb02cf4b2178f8e1ddbd",
+      "git_blob": "4bc62b948f28d94edc95c90efdf4ef6197190114"
+    },
+    {
+      "id": "qpb1-native-events",
+      "path": "experiments/qpb1-native-events/README.md",
+      "snapshot": "04-qpb1-native-events.txt",
+      "sha256": "48591fdba99d641d5ad8dd541ca13331dc531545d3c02d3f800c18737ce9be8c",
+      "git_blob": "23282e8d587443b45b78d405f3cb5434e12e850d"
+    },
+    {
+      "id": "qpb1-unit-preparation",
+      "path": "experiments/qpb1-unit-preparation/README.md",
+      "snapshot": "05-qpb1-unit-preparation.txt",
+      "sha256": "68050601f4208acb96a8651ff8a39ad6befc310cd0d64ed7a59cc938cdc9873f",
+      "git_blob": "4e73276211776d319a73781ba525411367c95baf"
+    },
+    {
+      "id": "qpb1-finite-window",
+      "path": "experiments/qpb1-finite-window/README.md",
+      "snapshot": "06-qpb1-finite-window.txt",
+      "sha256": "24267337ddf5aa341046e1a6e096d8aaa2825e71fdfe55d4f080f3966e8fbc6b",
+      "git_blob": "db061605af69e1d8a40be2b50e57882921ab46a9"
+    },
+    {
+      "id": "graphite-endogenous-gate",
+      "path": "experiments/graphite-endogenous-gate/README.md",
+      "snapshot": "07-graphite-endogenous-gate.txt",
+      "sha256": "b5f1569d5b5da5c4d50e16353bac749e62d1092d1e7a70f21c526c7ba82f0165",
+      "git_blob": "e61f333f44d7c81d5159081da4204fd8f5538a4f"
+    },
+    {
+      "id": "pachner-current-metric",
+      "path": "experiments/pachner-current-metric/README.md",
+      "snapshot": "08-pachner-current-metric.txt",
+      "sha256": "4a05cd35c45318c344e67de4ab0cbddb037f8ad68367bf762d8ce09b7c478f30",
+      "git_blob": "5fdd5cd7e04d9945d0311f6bd5961d0a7a04690a"
+    },
+    {
+      "id": "g05-g06-joint-proof",
+      "path": "experiments/g05-g06-joint-proof/README.md",
+      "snapshot": "09-g05-g06-joint-proof.txt",
+      "sha256": "9cda91b4c97473e0b7c36d1ce8119b2ae25051372f527b01e3f3a43efbb758ff",
+      "git_blob": "202b152337666db4e8babad89311b9b7853a2f0c"
+    }
+  ]
+}

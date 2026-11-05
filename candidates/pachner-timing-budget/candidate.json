@@ -4,7 +4,7 @@
   "candidate_id": "pachner-timing-budget",
   "session_id": "codex-20261104-timing-01",
   "question": "Which prepared boundary readout distinguishes masks and full/projected continuation under bounded errors?",
-  "status": "HYPOTHESIS",
+  "status": "PARKED",
   "evidence": [
     "EXACT",
     "CONDITIONAL",
@@ -32,14 +32,15 @@
     "experiments/pachner-current-metric/README.md at 41da46f2f3f3dd25f794fbbb5dedc16ea00854d8"
   ],
   "baseline": "all-active projected continuation",
-  "result": "v0.1 mask certificate preserved; v0.2 original witness exactly blind to full/projected flow for both masks; deliberate +1/4 old vertex-3 probe distinguishes all-active continuations with budget <=1/1000000; v0.3 finite rational threshold -1/4+s^2/2-17s^4/96 certified with midpoint remainder <=1/382205952; v0.4 post-event generator/ramp budget adds 3kappa/100+30ell; exact single-readout rate alias identified; v0.5 paired boundary residual removes arbitrary common scalar phase/rate on registered startup branch, with per-channel error <=1/1000000; v0.6 gain/offset cross-term bounds and event-anchored first-crossing latch certify startup given per-sample phase advance <=1/1000",
-  "next_discriminant": "Audit source-native event/update rules for an event anchor and a justified phase-increment certificate; preserve source blocks",
+  "result": "v0.1 mask certificate preserved; v0.2 original witness exactly blind to full/projected flow for both masks; deliberate +1/4 old vertex-3 probe distinguishes all-active continuations with budget <=1/1000000; v0.3 finite rational threshold -1/4+s^2/2-17s^4/96 certified with midpoint remainder <=1/382205952; v0.4 post-event generator/ramp budget adds 3kappa/100+30ell; exact single-readout rate alias identified; v0.5 paired boundary residual removes arbitrary common scalar phase/rate on registered startup branch, with per-channel error <=1/1000000; v0.6 gain/offset cross-term bounds and event-anchored first-crossing latch certify startup given per-sample phase advance <=1/1000; v0.7 autonomous startup SOURCE_BLOCKED in audited native sources; conditional protocol preserved",
+  "next_discriminant": "Supply a source-defined event/preparation and observation/update law, or explicitly instantiate an external emulator protocol",
   "mathematical_receipts": [
     "candidates/pachner-timing-budget/mathematical_receipt.json",
     "candidates/pachner-timing-budget/comparison_receipt.json",
     "candidates/pachner-timing-budget/classifier_receipt.json",
     "candidates/pachner-timing-budget/robustness_receipt.json",
     "candidates/pachner-timing-budget/two_readout_receipt.json",
-    "candidates/pachner-timing-budget/calibration_startup_receipt.json"
+    "candidates/pachner-timing-budget/calibration_startup_receipt.json",
+    "candidates/pachner-timing-budget/source_audit_receipt.json"
   ]
 }

@@ -13,11 +13,11 @@
     "pachner-timing-budget": "1701d7c8cc91f641fcbdea799a1c7978f0c7dc42"
   },
   "checks": [],
-  "finding": "EXACT conditional affine readout calibration and finite startup latch; phase-zero anchor and phase-step certificates remain external source requirements",
-  "next_action": "Audit native event/update sources for those certificates; stop unsupported branch rather than infer them from snapshots",
-  "checkpoint_at": "2026-11-05T18:19:01.422925+00:00",
+  "finding": "SOURCE_BLOCKED autonomous anchor and native phase-step certificate in nine pinned sources; exact conditional package preserved and autonomous promotion parked",
+  "next_action": "Provide source-defined event/preparation and acquisition/update law, or explicitly specify an external emulator protocol",
+  "checkpoint_at": "2026-11-05T18:28:10.136682+00:00",
   "checkpoint_source": {
-    "revision": "9c3a12e0ce7d7d1662040b89a990349aa9ce2f97",
+    "revision": "b2c733dd9bf9185a38457cdca1aba44cd0a633d3",
     "dirty": true
   }
 }

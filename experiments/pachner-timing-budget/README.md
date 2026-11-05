@@ -161,3 +161,7 @@ ambiguity on a registered startup branch, with independent channel-error bounds.
 
 [Calibration/startup v0.6](CALIBRATION_STARTUP_v0.6.md) supplies conditional
 affine channel bounds and a first-crossing latch with declared phase-step limits.
+
+[Native source gate v0.7](SOURCE_GATE_v0.7.md) parks autonomous startup
+promotion pending an event/preparation and observer/update law; the conditional
+protocol and all its previous scoped certificates remain available.

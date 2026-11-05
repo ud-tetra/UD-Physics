@@ -93,3 +93,17 @@ Captured artifacts/codex-20261104-timing-01/exact-006 (EXACT): Affine calibratio
 Checkpoint (handoff): EXACT conditional affine readout calibration and finite startup latch; phase-zero anchor and phase-step certificates remain external source requirements
 
 Next: Audit native event/update sources for those certificates; stop unsupported branch rather than infer them from snapshots
+
+## 2026-11-05T18:27:48.442247+00:00
+
+v0.7 audits nine integrated sources at e21132a with byte-bound snapshots. Native autonomous anchor and sampling-step law remain source-blocked; conditional package preserved. Excerpt matcher adjusted for literal Markdown emphasis during verification; no mathematical result changed.
+
+## 2026-11-05T18:28:10.087628+00:00
+
+Captured artifacts/codex-20261104-timing-01/exact-007 (OPEN): Bounded native source audit: autonomous anchor and sampling law unresolved; conditional protocol retained
+
+## 2026-11-05T18:28:10.151191+00:00
+
+Checkpoint (handoff): SOURCE_BLOCKED autonomous anchor and native phase-step certificate in nine pinned sources; exact conditional package preserved and autonomous promotion parked
+
+Next: Provide source-defined event/preparation and acquisition/update law, or explicitly specify an external emulator protocol
