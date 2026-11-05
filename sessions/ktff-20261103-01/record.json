@@ -283,10 +283,49 @@
     {
       "name": "v1.0 non-constructor math review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.1 native C15 exact eight orthogonal projectors",
+      "status": "PASS",
+      "method": "SymPy rational full 15D matrices, ranks 1+7x2; no added fiber"
+    },
+    {
+      "name": "v1.1 signed S4 covariance",
+      "status": "PASS",
+      "method": "all 24 K4 vertex relabelings"
+    },
+    {
+      "name": "v1.1 rank13 first leakage Gram identity",
+      "status": "PASS",
+      "method": "full exact R01^T R01=I-Q111 matrix, 13 unit singular values"
+    },
+    {
+      "name": "v1.1 source-native dynamics exchange",
+      "status": "PASS",
+      "method": "J sends each weight1 projector to complementary weight2; invariant 4D sums"
+    },
+    {
+      "name": "v1.1 second-step inherited and complement leakage",
+      "status": "PASS",
+      "method": "27 plus25 equals52; composite151/4 and gram-A commutator rank14"
+    },
+    {
+      "name": "v1.1 eight local regressions including independent-form v0.9",
+      "status": "PASS",
+      "method": "8/8 same researcher, separate construction replay"
+    },
+    {
+      "name": "v1.1 true constitutive Theta readout and Planck bridge",
+      "status": "OPEN",
+      "reason": "source does not prescribe parity-label assignment or physical unit map"
+    },
+    {
+      "name": "v1.1 non-constructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v1.0 parity 13/8: exact native unit K4 leakage13 versus finite Theta8; added orthogonal eight-sector fiber yields uniform 13/8 only by chosen weights. S4 four orbits permits strictly positive unequal weights; second level uniform13/2 and composite151/32; normalization not invariant. Physical Planck bridge OPEN.",
-  "next_action": "Source native eight-sector projectors/measure and operator dynamics; otherwise stop Planck 13/8 correspondence. Preserve accepted multilevel negative results.",
+  "finding": "v1.1 native 8 projectors on source K4 C15 verified (ranks1,2x7), full signed S4 covariance. First leakage exact R01^TR01=I15-Q111, 13 unit singular values, 2 zeros; sector scores1,2x6,0 and unweighted mean13/8 without extra Hilbert fiber. Theta assignment still candidate; second refinement inherited27 of total52, complement25 and composite mean151/32. Physical Planck bridge OPEN.",
+  "next_action": "Find source-defined interpretation/admissibility of native eight Q as Theta, and derive a complete 29D sector resolution compatible with refinement dynamics. No physical promotion.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
