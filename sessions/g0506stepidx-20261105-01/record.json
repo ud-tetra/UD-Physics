@@ -1,0 +1,37 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "g0506stepidx-20261105-01",
+  "runtime": "Codex Work Mode",
+  "task": "integration-g0506-step-kernel-index-20261105",
+  "goal": "Index scoped result without source promotion",
+  "created_at": "2026-11-05T22:26:21.404510+00:00",
+  "base_revision": "8a7aff8f1baaa2c58e2005ebb3134c89d4c4dbf5",
+  "source_dirty_at_boot": true,
+  "status": "handoff",
+  "claims": {
+    "integration-g0506-step-kernel-index-20261105": {
+      "ref": "refs/heads/claims/integration-g0506-step-kernel-index-20261105",
+      "sha": "1172c31d59e3e26e54884a982286716c01f47d11",
+      "status": "held",
+      "acquisition": "GitHub connector before state edit"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS 535 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS 16 tests"
+    }
+  ],
+  "finding": "Indexed PR #327 scoped local step and seven-seed rank results; packet mapping and physical calibration remain OPEN, promotion0.",
+  "next_action": "Acquire source-defined packet channels/unit preparation before resuming full physical test.",
+  "checkpoint_at": "2026-11-05T22:26:56.595356+00:00",
+  "checkpoint_source": {
+    "revision": "8a7aff8f1baaa2c58e2005ebb3134c89d4c4dbf5",
+    "dirty": true
+  }
+}
