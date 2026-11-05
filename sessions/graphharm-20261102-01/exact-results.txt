@@ -1,9 +1,0 @@
-N=7, a=(1,0), v=(Fraction(0, 1), Fraction(2, 1)), ||S||_F^2=56
-N=7, a=(1,1), v=(Fraction(4, 1), Fraction(-4, 1)), ||S||_F^2=448
-N=7, a=(2,-1), v=(Fraction(-8, 1), Fraction(2, 1)), ||S||_F^2=952
-N=13, a=(1,0), v=(Fraction(0, 1), Fraction(2, 1)), ||S||_F^2=104
-N=13, a=(1,1), v=(Fraction(4, 1), Fraction(-4, 1)), ||S||_F^2=832
-N=13, a=(2,-1), v=(Fraction(-8, 1), Fraction(2, 1)), ||S||_F^2=1768
-N=19, a=(1,0), v=(Fraction(0, 1), Fraction(2, 1)), ||S||_F^2=152
-N=19, a=(1,1), v=(Fraction(4, 1), Fraction(-4, 1)), ||S||_F^2=1216
-N=19, a=(2,-1), v=(Fraction(-8, 1), Fraction(2, 1)), ||S||_F^2=2584
