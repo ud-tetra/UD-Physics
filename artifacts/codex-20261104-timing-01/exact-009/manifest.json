@@ -1,0 +1,105 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-20261104-timing-01",
+  "run_id": "exact-009",
+  "created_at": "2026-11-05T23:18:50.516674+00:00",
+  "evidence": "EXACT",
+  "summary": "Cell-root coincidence fails under signed odd-top perturbation",
+  "command": "python3 -B experiments/pachner-timing-budget/cell_root_probe.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "a0b154ebce645f7da4c488fbf379c2cb7deb715f",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "cell_root_probe.py",
+      "path": "inputs/001-cell_root_probe.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/cell_root_probe.py",
+      "sha256": "70d4b59bcde62a2ea3ca6e4ef9f381d0b93438a313d9cdc904acc917b1069334",
+      "size_bytes": 1808
+    },
+    {
+      "input_id": "input-002",
+      "name": "CELL_ROOT_v0.9.md",
+      "path": "inputs/002-CELL_ROOT_v0.9.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/CELL_ROOT_v0.9.md",
+      "sha256": "24bf905eb9eafe244adc863fb3a6d812969b2a8ad7ae98da261415ac8646c037",
+      "size_bytes": 3097
+    },
+    {
+      "input_id": "input-003",
+      "name": "audit.py",
+      "path": "inputs/003-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/audit.py",
+      "sha256": "89326be389d9cca47d8b4a7324b8b013f58368df4808978e1f89031ee1428310",
+      "size_bytes": 8361
+    },
+    {
+      "input_id": "input-004",
+      "name": "COMPARISON_v0.2.md",
+      "path": "inputs/004-COMPARISON_v0.2.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/COMPARISON_v0.2.md",
+      "sha256": "60837ca2489200a71cec33eb75246b503bf020b55c6af258ecf588dd76a9276f",
+      "size_bytes": 5772
+    },
+    {
+      "input_id": "input-005",
+      "name": "1.txt",
+      "path": "inputs/005-1.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/recovered/1.txt",
+      "sha256": "02e3f3a4a93b647c23fa32ef1b2dddfa87f75f3dcd8abf068f1d7d357e20ee96",
+      "size_bytes": 12958
+    },
+    {
+      "input_id": "input-006",
+      "name": "audit.py",
+      "path": "inputs/006-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-interface-defect/audit.py",
+      "sha256": "a3f1762db95e3845b09561906b229bc816c7e65b58ef3705e485cfe79099802a",
+      "size_bytes": 6091
+    },
+    {
+      "input_id": "input-007",
+      "name": "audit.py",
+      "path": "inputs/007-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-switch-ledger/audit.py",
+      "sha256": "8d1817d486add01a3e00da5d5ba16f4b06fea22551af50515bb68c3fc552b034",
+      "size_bytes": 5650
+    },
+    {
+      "input_id": "input-008",
+      "name": "audit.py",
+      "path": "inputs/008-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/audit.py",
+      "sha256": "472965714d8009d03e6916c4491e95514ccb7bff7ad9511d7a5fb8e8e3cd8aee",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-009",
+      "name": "audit.py",
+      "path": "inputs/009-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-boundary-observability/audit.py",
+      "sha256": "e8e36515d2f56fee6a8d849d0a9e368ced8cdff76ef199a796b15939630eb6de",
+      "size_bytes": 9321
+    }
+  ],
+  "files": [
+    {
+      "path": "files/cell_root_probe_results.json",
+      "sha256": "051133f4ec886842d0c0ff15126a0b09630c31e2c66d5995322da6e5e31cb816",
+      "size_bytes": 463
+    }
+  ]
+}

@@ -121,3 +121,13 @@ Next: Independent review of conditional observer and mask closure; reopen native
 ## 2026-11-05T23:14:36.369529+00:00
 
 Restored display math delimiters in v0.8 after immutable capture. No mathematical claim or result changed.
+
+## 2026-11-05T23:18:50.517042+00:00
+
+Captured artifacts/codex-20261104-timing-01/exact-009 (EXACT): Cell-root coincidence fails under signed odd-top perturbation
+
+## 2026-11-05T23:18:50.567055+00:00
+
+Checkpoint (handoff): Exact nominal double root, target silence and fixed-reserve perturbation counterexample; observer substitution parked
+
+Next: Independent replay of v0.9; require separate source-selected event law
