@@ -139,10 +139,34 @@
       "name": "v0.4 even equivariant bridge dynamical leakage",
       "status": "PASS",
       "method": "exact native 15x15 A_K test rank2, Frobenius squared8"
+    },
+    {
+      "name": "twisted 72-cell exact boundary and Smith",
+      "status": "PASS"
+    },
+    {
+      "name": "rational harmonic cellular map",
+      "status": "PASS"
+    },
+    {
+      "name": "five-dimensional native invariant hull",
+      "status": "PASS"
+    },
+    {
+      "name": "v0.5 local regression suite",
+      "status": "PASS"
+    },
+    {
+      "name": "integral local geometric subdivision",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "external non-constructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v0.4: genuine nonorientable 72-tetrahedron Klein×I Delta complex with exact ∂² and ranks; exact cellular twisted bulk-to-60D map; revised integral even-S4 equivariant K4 packet inclusion but no odd rank2 invariant inclusion. Full 72-tet twisted map and unique source-selected physical readout remain OPEN. The even-equivariant packet inclusion is NOT invariant under native A_K, with exact leakage rank 2 and squared Frobenius norm 8.",
-  "next_action": "Construct 72-tetra pulled-back orientation-coefficient chain and exact simplicial-to-cellular subdivision map; derive a dynamically invariant native seam carrier and operational framed observer.",
+  "finding": "v0.5 twisted 72-tetrahedron boundary: integer nilpotency, ranks 18/83/72 and H0 Z/2. Noncanonical rational homology map to cellular and 60D. Minimal even-S4 native invariant K4 hull dimension 5 with ± framed correlation; physical reference remains OPEN.",
+  "next_action": "Obtain integral local subdivision chain map preserving H0 Z/2 and source-select a framed operational observable; seek external review.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
