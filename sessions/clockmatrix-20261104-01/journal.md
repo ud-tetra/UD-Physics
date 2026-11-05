@@ -37,3 +37,13 @@ Captured artifacts/clockmatrix-20261104-01/exact-002 (EXACT): Two protected tetr
 Checkpoint (handoff): Exact two-tetra bridge has two protected independent clocks at rate ratio 1 while bridge-sensitive modes shift; no universal dilation from this coupling
 
 Next: Classify couplings that preserve common active-sector rate scaling; source coefficient before physical clock comparison
+
+## 2026-11-05T02:59:19.452903+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-003 (EXACT): Source-family equal-gain criterion, linear autonomy obstruction and posited reciprocal nonlinear rate law
+
+## 2026-11-05T02:59:19.542476+00:00
+
+Checkpoint (handoff): Common source-family rate iff equal gains; fixed exact autonomous clocks preclude nonzero direct linear mixing; posited reciprocal nonlinear action product supplies rate shifts with g and locality open
+
+Next: Derive or obstruct local reciprocal mediator for action-product law; source coefficient separately

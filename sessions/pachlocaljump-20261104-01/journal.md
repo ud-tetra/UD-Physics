@@ -27,3 +27,7 @@ Captured artifacts/pachlocaljump-20261104-01/exact-001 (EXACT): Q169 Hasse-cut n
 Checkpoint (handoff): Q169 Hasse-only shell-fixed generator splits old/new interior stocks; Q170 interior stock detects hidden unit-face state, but no source threshold or memory coupling
 
 Next: Relax shell-amplitude fixation to a specified retained boundary observable and measure necessary boundary disturbance
+
+## Closure
+
+PR #313 merged at 08e1aa8e71843c4fa8e5d88842d8dddad41bfa0a; live claim released at 0fc30375516c28f69f7969133de6d708d49959a3. No substantive research changed in this closure.

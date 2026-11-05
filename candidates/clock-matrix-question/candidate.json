@@ -13,7 +13,8 @@
   "assumptions": [
     "Finite real linear autonomous toy model",
     "Two visible active phase modes",
-    "No assumed UD lapse or spacetime metric"
+    "No assumed UD lapse or spacetime metric",
+    "posited radial reciprocal nonlinear action-product branch"
   ],
   "physical_mapping": "OPEN",
   "target_exposure": "Question and conventional clock concepts exposed before toy choice; no fitted empirical target",
@@ -25,10 +26,11 @@
     "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/"
   ],
   "baseline": "Ordinary oscillator retuning and time-unit rescaling",
-  "result": "Exact minimal bridge leaves two prepared clocks at ratio 1 but changes other modes; no common dilation mechanism",
-  "next_discriminant": "classify couplings preserving a common clock factor over a declared active sector",
+  "result": "common oriented rate iff g1=g2=g3=r>0; exact local linear autonomy forces C=0; nonlinear Omega_L=2+g I_R, Omega_R=2+g I_L",
+  "next_discriminant": "derive or obstruct a local reciprocal mediator for the action product without fitting g",
   "mathematical_receipts": [
     "sessions/clockmatrix-20261104-01/mathematical_receipt.json",
-    "sessions/clockmatrix-20261104-01/two_clock_receipt.json"
+    "sessions/clockmatrix-20261104-01/two_clock_receipt.json",
+    "sessions/clockmatrix-20261104-01/common_rate_receipt.json"
   ]
 }

@@ -52,3 +52,7 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 ## Two-clock continuation
 
 [Two tetrahedral clocks and a declared bridge](TWO_CLOCKS.md) gives exact independently prepared phase planes, unchanged rate ratio 1 and preparation-dependent hybridized modes. Reproduce with `python3 experiments/clock-matrix-question/two_clock.py`. This narrows the candidate coupling, with physical clock interpretation OPEN.
+
+## Common-rate classification
+
+[Common-rate couplings](COMMON_RATE.md) proves the tetrahedral equal-gain criterion, a scoped linear autonomy obstruction, and a reciprocal nonlinear action-product alternative. Replay: `python3 experiments/clock-matrix-question/common_rate.py`. The nonlinear coefficient and its local realization remain OPEN.

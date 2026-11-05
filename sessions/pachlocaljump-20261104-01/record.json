@@ -13,7 +13,8 @@
     "pachner-local-jump-current-20261104": {
       "ref": "refs/heads/claims/pachner-local-jump-current-20261104",
       "held_sha": "a4c654e0d79c523b5708b69b6abb8552d858f9ef",
-      "status": "held"
+      "status": "released",
+      "release_sha": "0fc30375516c28f69f7969133de6d708d49959a3"
     }
   },
   "checks": [
@@ -21,10 +22,11 @@
     "Project site Papers I–III 1.1.1 / IV 0.1 checked 2026-11-04",
     "Nonconstructor review NOT_RUN",
     "scripts/validate.py PASS after workflow status repair",
-    "16 unit tests PASS"
+    "16 unit tests PASS",
+    "PR #313 merged at 08e1aa8e71843c4fa8e5d88842d8dddad41bfa0a; live claim release verified 0fc30375516c28f69f7969133de6d708d49959a3"
   ],
   "finding": "Q169 Hasse-only shell-fixed generator splits old/new interior stocks; Q170 interior stock detects hidden unit-face state, but no source threshold or memory coupling",
-  "next_action": "Relax shell-amplitude fixation to a specified retained boundary observable and measure necessary boundary disturbance",
+  "next_action": "Define retained boundary observable and quantify minimal shell-mediated transfer/disturbance",
   "checkpoint_at": "2026-11-05T02:18:45.903251+00:00",
   "checkpoint_source": {
     "revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
