@@ -3,7 +3,7 @@
   "protocol_version": 2,
   "task": "g0506-packet-hodge-sourcegate-20261105",
   "session": "g0506sourcegate-20261105-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-05T23:11:12.922Z",
   "base_revision": "738b9d205fd9f9735a05d4976de70f1519474bff",
   "owned_paths": [
@@ -12,5 +12,7 @@
     "experiments/g0506-packet-hodge-sourcegate",
     "candidates/g0506-packet-hodge-sourcegate",
     "artifacts/g0506sourcegate-20261105-01"
-  ]
+  ],
+  "released_at": "2026-11-05T23:19:31.422Z",
+  "released_from_sha": "9201ba382f72e381f48f0b68d335c63a0ccbac06"
 }
