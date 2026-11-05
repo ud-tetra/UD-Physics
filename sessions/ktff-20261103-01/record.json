@@ -187,10 +187,29 @@
     {
       "name": "v0.6 non-constructor mathematical review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.7 full-support graph-distance audit",
+      "status": "PASS",
+      "method": "local exact BFS for all 250 nonzero integral P entries"
+    },
+    {
+      "name": "v0.7 endpoint-anchored refinement no-go",
+      "status": "PASS",
+      "method": "symbolic midpoint argument and m=2..64 integer controls"
+    },
+    {
+      "name": "v0.7 exact coarse/fine skew mismatch",
+      "status": "PASS",
+      "method": "348x348 vs 12x12 exact integer matrices, rank and norm"
+    },
+    {
+      "name": "v0.7 non-constructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v0.6 EXACT/CONDITIONAL integral strong deformation retract from twisted 72-tetrahedron Klein×I chains to minimal Klein CW×I: 165+3 unimodular cancellation pairs, integer P,S,H satisfy PS=I and dH+Hd=I-SP; all integral homology including H0 Z/2 preserved. Full composite chain map to formal 60D K4 model has ranks (2,5,4,1). Reverse-map strict geometric locality, native dynamical intertwining and physical promotion OPEN.",
-  "next_action": "Audit bounded geometric support of integer reverse Morse P; obtain non-constructor review, then source a native K4 seam-selection law and operational framed physical readout.",
+  "finding": "v0.7 exact: reverse integral map full-support max pair distance2 on fixed 72-tet quotient graph, not prior nearest-distance1. Endpoint anchored refined-hop retractions obey r>=floor(m/2). Chosen unit 348D/12D skew generators fail P/S intertwinement: ranks10/11, Frobenius squared2842/298.",
+  "next_action": "Define scale-aware native locality and source selected metric-compatible coarse dynamics or stop the physical seam claim; obtain non-constructor review.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
