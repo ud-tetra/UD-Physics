@@ -1,0 +1,35 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "g0506-packet-hodge-sourcegate",
+  "session_id": "g0506sourcegate-20261105-01",
+  "question": "Does the four-site amplitude map select full active Hodge carrier and support-one unit?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "z_i=sqrt(rho_i) exp(i theta_i), unsourced",
+    "Fz=P0 Re z+J P0 Im z, selected using O09 target",
+    "z'=2iz only for conditional dynamics"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "O09 action and Q288 eta_A=2 known before construction; no physical data fit",
+  "fitted_choices": [
+    "F and phase-area form are target-informed structural choices, no optimized numeric parameter"
+  ],
+  "sources": [
+    "UD@a78193d docs/UD_Master_Full.tex §§Foundational Axioms, Packet Action, Transport Seed and Obstruction",
+    "ledger v0.85 O07/O09/Q136/Q137/Q139/Q141-Q145/Q181/Q282-Q286",
+    "supplied ledger v0.39 2026-08-22, historical",
+    "portal landing status 2026-11-05"
+  ],
+  "baseline": "previous Hasse step and seven-mode coverage audit v0.1",
+  "result": "F has rank6 in first sector, zero in two; total burden fixed one permits a=0,3/4,1; common phase packet beta differs from F*theta",
+  "next_discriminant": "Sourced temporal transport, additional sector channels and absolute native preparation; independent review",
+  "mathematical_receipts": [
+    "candidates/g0506-packet-hodge-sourcegate/mathematical_receipt.json"
+  ]
+}

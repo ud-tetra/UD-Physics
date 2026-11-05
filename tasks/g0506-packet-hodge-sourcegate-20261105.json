@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "g0506-packet-hodge-sourcegate-20261105",
+  "goal": "Search source packet-to-Hodge and unit rules; test a restricted source-variable map against parity, sampling, sector and unit-selection controls",
+  "owned_paths": [
+    "tasks/g0506-packet-hodge-sourcegate-20261105.json",
+    "sessions/g0506sourcegate-20261105-01",
+    "experiments/g0506-packet-hodge-sourcegate",
+    "candidates/g0506-packet-hodge-sourcegate",
+    "artifacts/g0506sourcegate-20261105-01"
+  ],
+  "dependencies": [
+    "g0506-step-kernel-unitgate-20261105"
+  ],
+  "status": "complete"
+}
