@@ -1,0 +1,17 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "clock-matrix-question-20261104",
+  "session": "clockmatrix-20261104-01",
+  "status": "held",
+  "created_at": "2026-11-05T02:14:38.530Z",
+  "base_revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+  "owned_paths": [
+    "tasks/clock-matrix-question-20261104.json",
+    "sessions/clockmatrix-20261104-01",
+    "experiments/clock-matrix-question",
+    "candidates/clock-matrix-question",
+    "artifacts/clockmatrix-20261104-01"
+  ]
+}
