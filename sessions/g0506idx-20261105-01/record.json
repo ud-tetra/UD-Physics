@@ -13,15 +13,17 @@
     "integration-g05-g06-joint-proof-20261105": {
       "ref": "refs/heads/claims/integration-g05-g06-joint-proof-20261105",
       "held_sha": "37412501cab7fb9b2441aa666ba854571a0e454c",
-      "status": "held"
+      "status": "released",
+      "release_sha": "bd58c1b850ec4fd84a9000c44ee2e0c337a8dc03"
     }
   },
   "checks": [
     "Research PR #316 merged at c6da619",
-    "Nonconstructor review NOT_RUN"
+    "Nonconstructor review NOT_RUN",
+    "PR #317 merged at 29f0eb2bc27bec35396c833ec112c5170d244c64; live claim release verified bd58c1b850ec4fd84a9000c44ee2e0c337a8dc03"
   ],
   "finding": "Indexed restricted G05 scalar criterion and G06 action-anchor identifiability proof gate",
-  "next_action": "Release integration claim, record closure and recover Q136-to-O09 map",
+  "next_action": "Recover Q136 sigma-to-O09 map; seek independent same-carrier action anchor",
   "checkpoint_at": "2026-11-05T16:57:02.312630+00:00",
   "checkpoint_source": {
     "revision": "c6da6197d06d095546c4c4eb25a5077c19ce836e",

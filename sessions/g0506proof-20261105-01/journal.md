@@ -27,3 +27,7 @@ Captured artifacts/g0506proof-20261105-01/exact-001 (EXACT): G05 restricted scal
 Checkpoint (handoff): Restricted G05 scalar iff action functional factors through coarse history; G06 native-to-physical numerical ratio remains scale-nonidentifiable without same-carrier anchor
 
 Next: Recover the Q136 sigma-to-O09 increment map and test its kernel on a named carrier; seek independent dimensional action anchor
+
+## Closure
+
+PR #316 merged at c6da6197d06d095546c4c4eb25a5077c19ce836e; live claim released at 68f00d5c34574f0e6c4c205c4647af14765a4cb8. No substantive research changed in this closure.
