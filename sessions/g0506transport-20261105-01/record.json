@@ -1,0 +1,48 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "g0506transport-20261105-01",
+  "runtime": "Codex Work Mode",
+  "task": "g0506-transport-energy-20261105",
+  "goal": "Test transport-log Q136 map and physical G06 anchor requirements",
+  "created_at": "2026-11-05T18:03:40.228572+00:00",
+  "base_revision": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
+  "source_dirty_at_boot": true,
+  "status": "handoff",
+  "claims": {
+    "g0506-transport-energy-20261105": "31a665d5457d6a4e321b96bcb4d5b717cbb3216e"
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/g0506-transport-energy/audit.py",
+      "result": "PASS"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS: 515 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS: 16 tests"
+    }
+  ],
+  "finding": "Historical transport log narrows Q136; orientation-even branch obstructs signed O09; energy and period identify A0a only.",
+  "next_action": "Derive carrier T(x,phi) and reversal law; obtain independent support/absolute amplitude and relative-phase calibration.",
+  "mathematical_profile": {
+    "coefficient_domain": "exact Q witnesses and symbolic real log/phase",
+    "exactness_or_precision_plan": "Fractions, formal exponential-log identity, universal algebraic proofs",
+    "applicable_methods": [
+      "seed factorization",
+      "additive path log",
+      "orientation parity",
+      "log-linear rank",
+      "readout period"
+    ],
+    "clock_metric_units_conventions": "unit native coefficient metric; s formal; T_state physical only through postulated tau0; E energy and A0 action separate"
+  },
+  "checkpoint_at": "2026-11-05T18:07:31.682492+00:00",
+  "checkpoint_source": {
+    "revision": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
+    "dirty": true
+  }
+}
