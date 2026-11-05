@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Exact v0.7 support audit of v0.6 integer P/S. Run beside extracted v0.6 ZIP scripts."""
 import runpy,contextlib,io,json,collections
+import sympy as sp
 from pathlib import Path
 P=Path(__file__).resolve().parent
 with contextlib.redirect_stdout(io.StringIO()):
@@ -41,7 +42,7 @@ for v in range(18):
 rows=[]
 for k in range(4):
  vals=[]
- for i,j,q in Q[k].row_list():
+ for i,j,q in sp.SparseMatrix(Q[k]).row_list():
   if not q:continue
   source=cells[k][j]
   target=set().union(*(cells[k][a] for a in range(F[k].rows) if F[k][a,i]))
