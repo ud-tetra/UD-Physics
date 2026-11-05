@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "clock-matrix-question",
+  "session_id": "clockmatrix-20261104-01",
+  "question": "Does a matrix clock-rate change constitute physical time dilation?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Finite real linear autonomous toy model",
+    "Two visible active phase modes",
+    "No assumed UD lapse or spacetime metric"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Question and conventional clock concepts exposed before toy choice; no fitted empirical target",
+  "fitted_choices": [],
+  "sources": [
+    "experiments/qpb1-local-generators/README.md",
+    "experiments/action-normalization-audit/README.md",
+    "experiments/clock-map-smoke/README.md",
+    "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/"
+  ],
+  "baseline": "Ordinary oscillator retuning and time-unit rescaling",
+  "result": "Matrix representation and physical dilation are different typed levels; one phase trace cannot identify lapse",
+  "next_discriminant": "Define two clock subsystems and a sourced coupling/rate law",
+  "mathematical_receipts": [
+    "sessions/clockmatrix-20261104-01/mathematical_receipt.json"
+  ]
+}
