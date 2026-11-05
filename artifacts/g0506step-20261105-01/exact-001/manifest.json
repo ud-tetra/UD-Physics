@@ -1,0 +1,85 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "g0506step-20261105-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-05T22:24:28.942598+00:00",
+  "evidence": "EXACT",
+  "summary": "Directional Hasse chord/clock no-go, four-site packet dimensional gate, seven-seed acquisition rank; no physical traces",
+  "command": "python3 experiments/g0506-step-kernel-unitgate/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "9d934337c0a9f7a6341b20cf116c8b6cd31c79eb",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "004-UD_Master_Full.tex",
+      "path": "inputs/001-004-UD_Master_Full.tex",
+      "source_location": "repository",
+      "source_path": "artifacts/g0506transport-20261105-01/exact-001/inputs/004-UD_Master_Full.tex",
+      "sha256": "4c93f63cb57f9de7959919e20a7d2811f6a29832701b20aa98c4de4c99e4feb3",
+      "size_bytes": 42577
+    },
+    {
+      "input_id": "input-002",
+      "name": "006-012-ledger_v0.85.json",
+      "path": "inputs/002-006-012-ledger_v0.85.json",
+      "source_location": "repository",
+      "source_path": "artifacts/g0506transport-20261105-01/exact-001/inputs/006-012-ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    },
+    {
+      "input_id": "input-003",
+      "name": "README.md",
+      "path": "inputs/003-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-unit-preparation/README.md",
+      "sha256": "68050601f4208acb96a8651ff8a39ad6befc310cd0d64ed7a59cc938cdc9873f",
+      "size_bytes": 12510
+    },
+    {
+      "input_id": "input-004",
+      "name": "README.md",
+      "path": "inputs/004-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/g0506-source-bridge-screen/README.md",
+      "sha256": "acdb9b4e73f69d190be5b4ed6258e7ed83538fcad0c49ea57d5016f30b364926",
+      "size_bytes": 9240
+    }
+  ],
+  "files": [
+    {
+      "path": "files/README.md",
+      "sha256": "cb0d41acdd7edd88468bece54537d66524abad845f7bd7fc5d1c381a4cb0cf3c",
+      "size_bytes": 10978
+    },
+    {
+      "path": "files/audit.py",
+      "sha256": "742fa248b3c3d2e860fa8aa7d3a39b0263c33ab62e6d2115d993bca86f02fa9e",
+      "size_bytes": 6302
+    },
+    {
+      "path": "files/results.json",
+      "sha256": "d56b7b44586f174e197c34dacc8f032cb54d92dada919800123e10122eeda2b4",
+      "size_bytes": 1224
+    },
+    {
+      "path": "files/SEVEN_SEED_PLAN.json",
+      "sha256": "9ad4d4fab0305cc36b48458555964659bfc1be846a59bbb91b2ca22e7ccbba21",
+      "size_bytes": 1744
+    },
+    {
+      "path": "files/EXTERNAL_METADATA.json",
+      "sha256": "5503bef998bf96e43a908ab3b71a94d278f7297b322f9a6752e9109b3dfc0a13",
+      "size_bytes": 1998
+    },
+    {
+      "path": "files/mathematical_receipt.json",
+      "sha256": "ffaa9e9faca0ed8313d835c431ef7eeca85e6198a3b0e023e9d9e3ac7b07ff7a",
+      "size_bytes": 12182
+    }
+  ]
+}

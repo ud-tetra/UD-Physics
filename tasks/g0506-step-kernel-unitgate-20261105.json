@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "g0506-step-kernel-unitgate-20261105",
+  "goal": "Test finite-step local directional transport and source-independent seven-mode preparation interventions",
+  "owned_paths": [
+    "tasks/g0506-step-kernel-unitgate-20261105.json",
+    "sessions/g0506step-20261105-01",
+    "experiments/g0506-step-kernel-unitgate",
+    "candidates/g0506-step-kernel-unitgate",
+    "artifacts/g0506step-20261105-01"
+  ],
+  "dependencies": [
+    "g0506-source-bridge-screen-20261105"
+  ],
+  "status": "complete"
+}
