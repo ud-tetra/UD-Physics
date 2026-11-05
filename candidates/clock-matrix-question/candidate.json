@@ -29,8 +29,8 @@
     "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/"
   ],
   "baseline": "Ordinary oscillator retuning and time-unit rescaling",
-  "result": "Positive14-term local penalty preservesOmega and removesweaktransversegrowth ateta1 byexactdefinite-signatureproof;finitecouplingfailure remains",
-  "next_discriminant": "Certify an explicit finite coupling interval and transverse gain/error bound for eta1; bracket the first stability loss without treating numericalgrid as proof",
+  "result": "Fixedmodifiedeta1 clock certified0<mu<=2^-30,all-time linear normal gain64;modified-model nonlinear finite phase window<1/1000 under declaredgates",
+  "next_discriminant": "Tighten bounds or use rigorously enclosed return-map integration to certify a larger finite coupling range starting at the previously sampled mu1/64",
   "mathematical_receipts": [
     "sessions/clockmatrix-20261104-01/mathematical_receipt.json",
     "sessions/clockmatrix-20261104-01/two_clock_receipt.json",
@@ -39,7 +39,8 @@
     "sessions/clockmatrix-20261104-01/local_quartic_receipt.json",
     "sessions/clockmatrix-20261104-01/prepared_plane_receipt.json",
     "sessions/clockmatrix-20261104-01/transverse_receipt.json",
-    "sessions/clockmatrix-20261104-01/stabilization_receipt.json"
+    "sessions/clockmatrix-20261104-01/stabilization_receipt.json",
+    "sessions/clockmatrix-20261104-01/certified_interval_receipt.json"
   ],
   "parked_scope": "fixed13-termQ as long-time robust clock; preserves invariant plane and finite observation theorem; prior all-V local obstruction unchanged",
   "reopening_conditions": [
@@ -47,5 +48,5 @@
     "restricted prepared clock sector with leakage bound",
     "changed permitted interaction support"
   ],
-  "active_scope": "modifiedQ+R eta1 weaklinearstability only;originalQrobustclock andall-VlocalbranchesPARKED"
+  "active_scope": "explicit conservative linear interval and finite nonlinear readout only;native selection and nonlinear all-time stability OPEN"
 }

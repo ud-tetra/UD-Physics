@@ -1,0 +1,211 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "explicit-coupling-interval-009",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "What explicit coupling interval, all-time normal linear gain and nonlinear finite readout window follow for eta1?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "CANDIDATE",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "certified-normal-metric",
+      "symbol": "G_rho",
+      "object_type": "positive invariant metric for actual return-map logarithm",
+      "definition": "K_rho(P-2Pi_minus(rho))+(Id-P), using isolated signed frequency contours",
+      "domain": "normalN12 with ambient15 extension",
+      "codomain": "normalN12",
+      "coefficient_domain": "exact rational static matrices and norm margins; analytic functions for proofs",
+      "units": "dimensionless metric on native perturbations",
+      "basis_orientation": "ascending tetrahedral chain, fixed phase origin",
+      "metric_measure": "Euclidean input/output; certified invariant metric bounds1/128 to5",
+      "origin": "derived for inverse-designed eta1 clock",
+      "exact_expression": "0<mu<=2^-30;normal gain<=64 for all native times",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "modified-clock"
+      ],
+      "assumption_ids": [
+        "fixed-modified-law",
+        "phase-origin"
+      ],
+      "dependency_ids": [
+        "positive-local-stabilization-008"
+      ],
+      "normalization": "mu=lambdaI,rho=mu/(2+mu);normal coefficient half-periodpi"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    },
+    {
+      "source_id": "prepared-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/PREPARED_PLANE.md",
+      "version_or_commit": "8e94fd49ded70a00eb4986177d3463860d295960",
+      "section_or_object_id": "sections1-5:13-term Q, plane, rates and previous coarse bound",
+      "source_status": "conditional construction, not native interaction"
+    },
+    {
+      "source_id": "original-transverse",
+      "url_or_repo_path": "experiments/clock-matrix-question/TRANSVERSE_STABILITY.md",
+      "version_or_commit": "b65135ce434564c221d5991d5283b6a63aa328a7",
+      "section_or_object_id": "sections2-6,original weak instability and fixedQ finite window",
+      "source_status": "preserved exact/numerical conditional controls"
+    },
+    {
+      "source_id": "modified-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/LOCAL_STABILIZATION.md",
+      "version_or_commit": "b04d720d96b1c51842d51066a206e2afa92b1f33",
+      "section_or_object_id": "sections2,4,5,7:positivepenalty,weak spectrum and signature proof",
+      "source_status": "exact conditional inverse-designed clock"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "fixed-modified-law",
+      "text": "same Q+R eta1, fixed W,J and unit positive metric; all dimensionless"
+    },
+    {
+      "id": "phase-origin",
+      "text": "reference theta0=0 for gain64;linear normal theorem distinct from nonlinear error gates"
+    },
+    {
+      "id": "finite-readout",
+      "text": "I1,lambda=mu,initial active norm error<=1/4096,both energies<=33/16,horizon1/(128mu)"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational projectors/LDL metric bounds",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "quantify averaged condition and actual metric positivity"
+    },
+    {
+      "technique": "Dyson/log series norm bounds",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "bound full generator error by400rho beyond leading averaging"
+    },
+    {
+      "technique": "resolvent contours and Hamiltonian metric",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "quantify spectral projector perturbation and prove actual stability"
+    },
+    {
+      "technique": "global Hessian and nonlinear Gronwall",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive modified-model finite readout contract"
+    },
+    {
+      "technique": "dyadic interval arithmetic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "choose exact conservative mu<=2^-30 and verify all scalar margins"
+    },
+    {
+      "technique": "discrete clock/modular arithmetic",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous-phase problem, not a finite clock register"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "15 ambient minus2 tangent minus1 harmonic",
+    "reduced_expression": "normal12;mu upper1/1073741824,rho upper1/2147483648",
+    "factor_origins": [
+      "fixed carrier/phase plane",
+      "conservative dyadic margin selection"
+    ],
+    "factorization": "2^30,2^31 specify chosen bounds, not native constants",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "actual half-return metric isometry plus bounded intra-period evolution;nonlinearerror<=exp(18lambdaEcap|s|)initialerror",
+    "initial_phase": "theta0=0,q=sqrtI,p0",
+    "coupling": "fixed inverse-designed eta1 Q+R",
+    "period_claim": "reference2pi/(2+mu);finite horizon1/(128mu) may contain many native cycles",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "normal linearN12;separate nonlinearV14",
+    "generator_or_update": "same Hamiltonian;actual Floquet logarithm and nonlinear mean-value bound",
+    "initial_boundary_conditions": "phaseanchored reference;normal linearerror arbitrary;finite nonlinear energy/norm gates explicit",
+    "conservation_and_sources": "positive Hamiltonian energy conserved; no attraction or physical calibration",
+    "projection_and_kernel": "exact negative-frequency projector and invariant-metric extension;old all-state/S4 obstructions unchanged",
+    "physical_mapping": "OPEN;native parameter time is not calibrated wall-clock time"
+  },
+  "target_exposure": {
+    "status": "question-informed analytic certificate, no empirical fit or new numerical scan",
+    "known_targets": [
+      "previous weak stability and intended phase readout"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "conservative dyadic mu bound selected to satisfy sufficient inequalities",
+      "illustrative nonlinear tolerance/horizon gates"
+    ],
+    "search_domain_and_budget": "one exact metric construction and sufficient scalar inequalities; no new Floquet parameter scan",
+    "selection_criterion": "positive actual invariant metric and explicit phase-error contract",
+    "baseline": "previous existential weak interval and sampled finite couplings"
+  },
+  "calculation_steps": [
+    "construct G0 and prove1/64Id<G0<4Id by exact shifted LDL pivots",
+    "bound interaction-picture full return logarithm difference by400rho",
+    "bound two Riesz contour projector differences by8192e",
+    "prove actual metric differs by<1/128 on mu<=2^-30",
+    "derive all-time normal gain64",
+    "derive modified Hamiltonian Hessian18norm2 and finite nonlinear phase error<1/1000"
+  ],
+  "result": {
+    "exact_expression": "0<lambdaI<=2^-30 =>normal linear gain<=64;I1,lambda=mu,energy<=33/16,error<=1/4096 =>phaseerror<1/1000 for0<=s<=1/(128mu)",
+    "approximation": null,
+    "units": "native parameter and radians only",
+    "precision_and_error": "Fraction exact matrices and rational norm margins;written analytic bounds, no floating ODE used",
+    "scope": "fixed inverse-designed eta1 model;not maximal range or nonlinear all-time stability",
+    "physical_interpretation": "OPEN"
+  },
+  "verification": [
+    {
+      "method": "exact rational metric/projector identities,shiftedLDL bounds and scalar margins",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/certified_interval.py;CERTIFIED_INTERVAL.md",
+      "source_revision": "fdab9d0c5f3f5a629ad00cd6fbaa4a52bbaccddc",
+      "actual_result": "PASS averaged metric bounds,projector/log margins,actual metric and finite nonlinear gates",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "old larger sampled points remain numerical, not silently promoted",
+    "large coefficients in resolvent/log bounds yield conservative tiny interval, not a physical threshold",
+    "linear all-time gain does not establish nonlinear orbital stability",
+    "old Q finite-window theorem not reused for changedHamiltonian;new Hessian bound derived"
+  ],
+  "limitations": [
+    "certified range much smaller than numerical passing grid",
+    "phase-origin-specific gain stated explicitly",
+    "finite nonlinear horizon grows as inverse mu;no physicalclock feasibility established",
+    "coefficient/detector noise outside finite-window gates",
+    "native model selection and independent review remain OPEN"
+  ],
+  "changed_dependencies": [
+    "existential weak linear interval narrowed to explicit conservative interval;physical promotion unchanged"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/exact-009/manifest.json"
+  ],
+  "next_discriminant": "Tighten bounds or use rigorously enclosed return-map integration to certify a larger finite coupling range starting at the previously sampled mu1/64"
+}

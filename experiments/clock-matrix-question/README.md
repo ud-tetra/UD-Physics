@@ -76,3 +76,7 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 ## Positive local transverse penalties
 
 [Report v0.1](LOCAL_STABILIZATION.md), [exact certificate](stabilization_exact.py), [numerical replay](local_stabilization.py):14positiveincidencepenalties retainOmega andeta1givesexactweaktransverselinearstability. Larger testedcouplings fail;nonlinearstability/nativecoefficientsOPEN.
+
+## Explicit coupling and readout certificate
+
+[Report v0.1](CERTIFIED_INTERVAL.md), [exact replay](certified_interval.py), [results](certified_interval_results.json):mu<=2^-30 gives all-time normal linear gain64; modified-model finite nonlinear phaseerror<1/1000 under stated gates. Conservative interval; physical calibration and nonlinear all-time stability OPEN.

@@ -1,0 +1,120 @@
+{
+  "carrier": "filled K4, unit coefficient metric, 15 registers, 14 active",
+  "directed_transport": "R_lambda(gamma)=exp(-lambda integral_gamma theta); inverse under path reversal",
+  "empirical_admission": false,
+  "lambda_test_value": "3/2 (arbitrary witness; no source selection)",
+  "multi_preparation_ranks": {
+    "1": {
+      "with_absolute_support": 3,
+      "without_absolute_support": 2
+    },
+    "2": {
+      "with_absolute_support": 4,
+      "without_absolute_support": 3
+    },
+    "5": {
+      "with_absolute_support": 7,
+      "without_absolute_support": 6
+    }
+  },
+  "period_ratio_examples": {
+    "constant_energy": "undefined",
+    "nonconstant_quadratic": "1/2",
+    "signed_linear": "1"
+  },
+  "physical_promotion": 0,
+  "status": "EXACT_CONDITIONAL_WITNESSES_PASS",
+  "theta": "1/2<Jx,dx>=1/4<Ax,dx>; simplex incidence local",
+  "winding_cases": [
+    [
+      "1/4",
+      -2,
+      "-1/2",
+      "-3/4"
+    ],
+    [
+      "1/4",
+      -1,
+      "-1/4",
+      "-3/8"
+    ],
+    [
+      "1/4",
+      0,
+      "0",
+      "0"
+    ],
+    [
+      "1/4",
+      1,
+      "1/4",
+      "3/8"
+    ],
+    [
+      "1/4",
+      2,
+      "1/2",
+      "3/4"
+    ],
+    [
+      "1",
+      -2,
+      "-2",
+      "-3"
+    ],
+    [
+      "1",
+      -1,
+      "-1",
+      "-3/2"
+    ],
+    [
+      "1",
+      0,
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      1,
+      "1",
+      "3/2"
+    ],
+    [
+      "1",
+      2,
+      "2",
+      "3"
+    ],
+    [
+      "9/4",
+      -2,
+      "-9/2",
+      "-27/4"
+    ],
+    [
+      "9/4",
+      -1,
+      "-9/4",
+      "-27/8"
+    ],
+    [
+      "9/4",
+      0,
+      "0",
+      "0"
+    ],
+    [
+      "9/4",
+      1,
+      "9/4",
+      "27/8"
+    ],
+    [
+      "9/4",
+      2,
+      "9/2",
+      "27/4"
+    ]
+  ]
+}
