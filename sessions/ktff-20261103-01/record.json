@@ -342,10 +342,44 @@
       "name": "v1.2 physical Planck promotion",
       "status": "BLOCKED",
       "reason": "target-exposed and no independent dimensional bridge"
+    },
+    {
+      "name": "v1.3 exact factorization and modular clock orders",
+      "status": "PASS",
+      "method": "SymPy primes, gcd, n_order, Z8/Z24/Z192 residue enumerations"
+    },
+    {
+      "name": "v1.3 native K4 phase and paired-sector strobe",
+      "status": "PASS",
+      "method": "exact 15x15 matrices U(pi/4)^4=I and middle label pair swaps"
+    },
+    {
+      "name": "v1.3 192 address covariance group and max order",
+      "status": "PASS",
+      "method": "exhaustive 192 product-group elements and conditional S4/J orbits"
+    },
+    {
+      "name": "v1.3 64 S4-equivariant Theta-only maps no-eight-cycle",
+      "status": "PASS",
+      "method": "independent exact exhaustive enumeration;4 bijections max cycle2"
+    },
+    {
+      "name": "v1.3 ten exact local regression tests",
+      "status": "PASS",
+      "method": "10/10 constructor unit tests"
+    },
+    {
+      "name": "v1.3 physical-time or Planck-floor bridge",
+      "status": "OPEN",
+      "reason": "no source-selected successor or SI time/length map"
+    },
+    {
+      "name": "v1.3 independent non-constructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v1.2: native13/8 first-level label mean plus historical generic dressing rule cannot yield unique physical Planck length without source-selected z_length and independent SI length anchor; user target-exposed inverse D=323251/325000, z=-1749/325000. Wrong-type quarantined27/32 counterfactual fails. Finite192 per packet does not imply spatial metric floor amid 4^n subdivision.",
-  "next_action": "Require source-selected length-specific transfer and SI unit anchor, or freeze physical 13/8 Planck identification; preserve v1.1 native projector theorem.",
+  "finding": "v1.3 prime-clock exact: native 13=15−2=1+3*4,8=2³,192=24*8 and S4 capacity mean312/192=13/8. Cyclic +13 mod8 candidate period8, but Theta=(Z2)^3 exponent2; native pi/4 strobe 2-step projector and 4-step amplitude return. Exhaustive64 deterministic S4-equivariant Theta maps, only4 bijections all max cycle2. Physical clock/floor OPEN.",
+  "next_action": "Derive source-selected extra-state parity event successor or prove broader obstruction, and require SI-calibrated clock/readout before Planck floor correspondence.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
