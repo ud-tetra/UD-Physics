@@ -1,0 +1,32 @@
+{
+  "screen_date": "2026-11-05",
+  "scope": "Primary Zenodo catalog descriptions/previews only; no raw files downloaded or analyzed; not exhaustive",
+  "gate": "Seven independently selected native preparations, 14 synchronized signed physical quadratures, absolute action/energy/time map and coherent phase reference",
+  "records": [
+    {
+      "url": "https://zenodo.org/records/22670424",
+      "version": "v1, published 2026-09-09, DOI 10.5281/zenodo.22670424",
+      "inspected": "record description and dataset.zip preview",
+      "observed_description": "Electrical oscillator network graph-Laplacian data; preview lists code, eigenanalysis JSON and effective-resistor CSV, rather than a declared seven-preparation flux/charge certificate",
+      "decision": "NOT_ADMITTED_FROM_METADATA",
+      "reopening": "Inspect raw file and apparatus provenance if a K4 source map and calibration are independently supplied"
+    },
+    {
+      "url": "https://zenodo.org/records/3521009",
+      "version": "v1, published 2019-10-28, DOI 10.5281/zenodo.3521009",
+      "inspected": "record description",
+      "observed_description": "28 nonlinear Rössler electronic oscillators; time series are one variable per node across network configurations",
+      "decision": "NOT_ADMITTED_FROM_METADATA",
+      "reopening": "A separate calibrated full-state energy/phase map and native preparation certificate would be required"
+    },
+    {
+      "url": "https://zenodo.org/records/21787199",
+      "version": "v1, published 2026-08-04, DOI 10.5281/zenodo.21787199",
+      "inspected": "record description and file listing",
+      "observed_description": "Multimode resonator state-transfer figure source data in an XLSX file; catalog does not specify seven native preparation amplitudes or full signed quadratures",
+      "decision": "NOT_ADMITTED_FROM_METADATA",
+      "reopening": "A complete source-to-native and calibration contract could permit reanalysis"
+    }
+  ],
+  "empirical_score": "UNSCORED"
+}

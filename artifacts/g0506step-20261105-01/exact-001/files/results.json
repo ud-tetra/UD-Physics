@@ -1,0 +1,44 @@
+{
+  "Hasse_q": "q(x,y)=<Ax,y>/4; exactly integrates theta on the straight segment",
+  "K4_active_rank": 14,
+  "four_step_polygon_action": "2 for a=1; 2a at general support",
+  "minimal_orbit_preparations": 7,
+  "packet_four_site_candidate": {
+    "beta_over_pi_witness": "-1",
+    "continuous_dimension_with_b": 12,
+    "full_active_surjectivity": "NO under C1 four-site branch hypothesis",
+    "origin": "target-informed mapping of burden to support; source does not give this map",
+    "phase_density_only_dimension": 8
+  },
+  "physical_promotion": 0,
+  "physical_trace_status": "NONE_ADMITTED",
+  "sampling": "common native phase delta=2 Delta_s; unwrapped reconstruction requires |delta|<pi per step and a known same-orbit hypothesis",
+  "sector_ranks": [
+    6,
+    6,
+    2
+  ],
+  "sector_seed_counts": [
+    3,
+    3,
+    1
+  ],
+  "selected_simplex_indices_by_sector": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    7,
+    14
+  ],
+  "signed_S4_actions_checked": 24,
+  "smooth_native_orbit_action": "pi a for winding 1",
+  "status": "EXACT_FINITE_CARRIER_PASS",
+  "top_cell_single_orbit_rank": 2,
+  "top_cell_visible_sector_ranks": [
+    0,
+    0
+  ],
+  "two_antipodal_endpoint_steps": "0 despite native lifted winding 1"
+}

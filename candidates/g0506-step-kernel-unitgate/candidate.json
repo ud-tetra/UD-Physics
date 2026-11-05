@@ -1,0 +1,40 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "g0506-step-kernel-unitgate",
+  "session_id": "g0506step-20261105-01",
+  "question": "Can a directional packet-variable candidate retain O09 under finite sampling and cover full K4; what seed rank is required for seven-mode calibration?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Active filled K4 with unit coefficient metric and O09 one-form",
+    "Hasse finite-step ratio assigned to Q136 only as O09-targeted reconstruction, not source law",
+    "Four historical packet site states mapped to a hypothetical K4 subnetwork; burden identified with amplitude stock as candidate",
+    "Seven-mode linear trajectory tomography assumes known absolute native seeds and full signed physical readout"
+  ],
+  "physical_mapping": "OPEN; no source-selected unit or admitted apparatus, physical promotion 0",
+  "target_exposure": "Q288 eta_A=2 and O09 known; packet beta chosen by analogy to O09, no numerical fit; not an independent derivation",
+  "fitted_choices": [
+    "Proposed beta_pkt=(1/2)sum rho_i dtheta_i chosen to test O09 shape, not selected by historical packet law"
+  ],
+  "sources": [
+    "UD@a78193d docs/UD_Master_Full.tex \u00a7\u00a7Foundational Axioms, Transport Seed and Obstruction",
+    "ledger v0.85 O09/Q136/Q137/Q141-Q143/Q288",
+    "experiments/qpb1-unit-preparation/README.md \u00a7\u00a72-7",
+    "experiments/g0506-source-bridge-screen/README.md \u00a7\u00a71-3",
+    "https://zenodo.org/records/22670424",
+    "https://zenodo.org/records/3521009",
+    "https://zenodo.org/records/21787199"
+  ],
+  "baseline": "PR #325 parity and ideal seven-mode map",
+  "result": "Exact Hasse q is local/odd/S4-covariant and integrates polygon chords, while sparse endpoints fail smooth native winding. Four-site burden-phase beta candidate is signed but target-informed and at most 12 continuous dimensions per binary branch, so no C1 full E14 surjection. Seven complex-independent native preparations with sector counts 3/3/1 minimally span E14 under trajectory-only linear tomography; no physical unit/traces acquired.",
+  "next_discriminant": "Source a packet-to-Hodge channel map and absolute unit injection; then freeze full-rank seven-seed apparatus and acquire calibrated signed traces.",
+  "mathematical_receipts": [
+    "candidates/g0506-step-kernel-unitgate/mathematical_receipt.json"
+  ]
+}
