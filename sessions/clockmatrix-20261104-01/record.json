@@ -38,16 +38,17 @@
     "Merged currentmainfdab9d0 after transport/anchor audit; clock dependencies unchanged; integrity PASS528 and all16 tests PASS",
     "Exact interval replay PASS:metric LDL bounds,mu2^-30 scalar margins,normal gain64 and modified nonlinear phase window",
     "Explicit-interval milestone PASS529 integrity records/digests, all16 tests and whitespace check",
-    "Merged currentmaina4406f1 after Hodge-port calibration audit; clock dependencies unchanged; integrity PASS535 and all16 tests PASS"
+    "Merged currentmaina4406f1 after Hodge-port calibration audit; clock dependencies unchanged; integrity PASS535 and all16 tests PASS",
+    "Fourier/Cayley exact rational replay PASS. Prior exact-009 results unchanged."
   ],
-  "finding": "Fixedmodifiedeta1 clock certified0<mu<=2^-30,all-time linear normal gain64;modified-model nonlinear finite phase window<1/1000 under declaredgates",
-  "next_action": "Tighten bounds or use rigorously enclosed return-map integration to certify a larger finite coupling range starting at the previously sampled mu1/64",
+  "finding": "Fixed eta=1 clock certified for 0<mu<=1/64 with all-time linear normal gain <=8 at phase zero. Finite nonlinear phase error <1/1000 under declared gates.",
+  "next_action": "Bound the larger-coupling loss of transverse stability using verified signed spectral enclosures.",
   "access_mode": "Git compute; connector publication; Git push unavailable",
-  "checkpoint_at": "2026-11-05T18:24:28.721549+00:00",
+  "checkpoint_at": "2026-11-05T22:20:26.609867+00:00",
   "checkpoint_source": {
     "revision": "88cb676d36ea934afe973ba3e7b2ea4855185119",
     "dirty": true
   },
-  "resume_integrated_revision": "a4406f134f6478e29a0a60a7debdd5e679bab035",
-  "last_published_parent": "b04d720d96b1c51842d51066a206e2afa92b1f33"
+  "resume_integrated_revision": "9d934337c0a9f7a6341b20cf116c8b6cd31c79eb",
+  "last_published_parent": "1de2e0299a813a4362ce38cb2c13d469822a7d1c"
 }

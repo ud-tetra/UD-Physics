@@ -5,7 +5,7 @@ from pathlib import Path
 import json
 from stabilization_exact import mm,tr,sc,add,eye,definite_pivots
 
-def matrices():
+def model_matrices():
     cells=[s for k in range(1,5) for s in combinations(range(4),k)];ix={s:i for i,s in enumerate(cells)};n=15
     d=[[F(0)]*n for _ in range(n)]
     for s in cells:
@@ -22,6 +22,10 @@ def matrices():
         return B
     Bc=Hess(F(1),F(0));Bs=Hess(F(0),F(1));Bx=add(Hess(F(1),F(1)),sc(Bc,-1),sc(Bs,-1))
     for i in (0,3,10,11,12,13):Bs[i][i]+=1
+    return J,P,Bc,Bs,Bx
+
+def matrices():
+    J,P,Bc,Bs,Bx=model_matrices()
     T=mm(mm(P,add(sc(add(mm(J,add(sc(Bc,3),Bs)),mm(add(Bc,sc(Bs,3)),J),mm(mm(J,Bx),J),Bx),F(1,8)),sc(J,-1))),P)
     return J,P,T
 

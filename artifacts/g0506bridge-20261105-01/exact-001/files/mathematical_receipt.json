@@ -1,0 +1,41 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "G0506-PARITY-SEVEN-LC-001",
+  "session_id": "g0506bridge-20261105-01",
+  "candidate_id": "g0506-source-bridge-screen",
+  "question": "What source parity is necessary for O09, and can a full active K4 analogue meet the proposed M,K,G equations?",
+  "evidence_labels": ["EXACT", "CONDITIONAL", "OPEN"],
+  "objects": [
+    {"id":"C,E","type":"filled K4 chain/active subspace","domain":"R15","codomain":"E=im(-A^2/4)=R14","basis":"ascending oriented simplices","metric":"unit coefficient","units":"native dimensionless","origin":"ledger O09 and action normalization audit"},
+    {"id":"L","type":"Q136 coarse history scalar","domain":"oriented packet paths","codomain":"R","definition":"sum_k(sigma_O,k+sigma_B,k+sigma_C,k)","measure":"unit step or explicitly integrated path measure","units":"native dimensionless","origin":"ledger v0.85 Q136"},
+    {"id":"I","type":"lifted loop Hodge one-form integral","domain":"oriented nonzero active closed paths","codomain":"R","definition":"integral theta=pi a n on native orbit","units":"native dimensionless","origin":"ledger v0.85 O09"},
+    {"id":"M","type":"candidate physical seven-LC-mode map","domain":"E=R14","codomain":"seven pairs (Phi,Q)","definition":"Phi=Phi_star u, Q=-Phi_star v/Z","units":"Phi weber,Q coulomb","normalization":"Phi_star externally fixed, native unit selection not sourced","origin":"new conditional analogue"},
+    {"id":"A_map","type":"analogue action scale distinct from O10 A0 until correspondence","domain":"positive Phi_star,Z","codomain":"positive action","definition":"Phi_star^2/Z","units":"joule second","origin":"derived under candidate map"}
+  ],
+  "sources": [
+    {"id":"historical-master","path":"artifacts/g0506transport-20261105-01/exact-001/inputs/004-UD_Master_Full.tex","version":"ud-tetra/UD@a78193d; SHA256 4c93f63cb57f9de7959919e20a7d2811f6a29832701b20aa98c4de4c99e4feb3","section":"Foundational Axioms, Transport postulate; Transport Seed and Obstruction"},
+    {"id":"ledger-v085","path":"artifacts/g0506transport-20261105-01/exact-001/inputs/006-012-ledger_v0.85.json","version":"v0.85; SHA256 8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec","section":"O09/O10/O14/G05/G06/Q136/Q137/Q141-Q143/Q288"},
+    {"id":"same-carrier-theorem","path":"artifacts/g0506transport-20261105-01/exact-001/inputs/005-THEOREM.md","version":"ud-tetra/UD@a78193d; SHA256 eacd599297b4a3bde965d123650d03b671dcba6fd8600f7ce15996bbe1f4872f","section":"Theorems 1-2 and corollary"},
+    {"id":"earlier-passive-port","path":"experiments/qpb1-passive-port/README.md","version":"base a4406f1","section":"4-5"},
+    {"id":"public-portal","url":"https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/","version":"checked 2026-11-05 Papers I-III 1.1.1, IV 0.1","section":"landing status"}
+  ],
+  "assumptions": ["S1: Q136/historical sigma identification is conditional, not proved", "S2: both orientations admitted, positive unsigned path measure, one nonzero kappa", "S3: identical ideal LC L,C>0, no loss, full seven-mode access, externally chosen Phi_star", "S4: physical map and unit preparation not admitted"],
+  "technique_plan": [
+    {"technique":"exact rational and symbolic matrix","applicability":"APPLIED","purpose":"K4 rank and seven-mode intertwiner/pullback"},
+    {"technique":"projection and parity","applicability":"APPLIED","purpose":"reversal even/odd kernel and sign obstruction"},
+    {"technique":"clock and modular phase","applicability":"APPLIED","purpose":"signed full-state period versus quadratic half-period; unwrapped winding"},
+    {"technique":"physical units and calibration","applicability":"APPLIED","purpose":"flux, charge, L,C,Z and action dimension, absolute M gate"},
+    {"technique":"prime factorization","applicability":"NOT_APPLIED","purpose":"no new integer divisibility question; seed T0 verified in prior receipt"}
+  ],
+  "clock_receipt":{"native_parameter":"s with phi=2s real lifted","physical_time":"t=tau0 s, tau0=2 sqrt(LC)","endpoint":"phase mod 2pi loses n","readout":"signed flux/charge quadratures full period 2pi/omega; nonconstant quadratic half; stationary external reference required","coupling":"proposed seven-LC-mode M"},
+  "dynamics_readout":{"state_space":"active E=R14 and candidate seven physical LC pairs","generator":"A=2J native; K(Phi,Q)=(Q/C,-Phi/L) physical","initial":"any nonzero active x, seven identical ideal modes","boundary":"closed for winding; isolated lossless circuit for model","conserved":"native a and ideal quadratic energy","readout":"all 14 signed physical quadratures, independent energy/work and coherent phase reference","kernel":"orientation-even sigma has no signed O09 content; free Phi_star remains source-unit ambiguity"},
+  "target_exposure":{"known_target":"Q288 eta_A=2 exposed","fitted_choices":[],"search_domain":"one historical source and ledger, one seven-mode ideal LC construction, no dataset fit","baseline":"same-carrier theorem and prior two-node circuit"},
+  "calculation_steps":["I(reverse)=-I(forward); if I=kappa L both ways, L_even=0 and L_odd=I/kappa.","State-only reversal-even scalar densities integrated over unsigned measure have L_odd=0, failing nonzero O09.","J orthogonal with J²=-I on E gives seven orthonormal pairs and u'=-2v,v'=2u.","Phi=Phi_star u,Q=-Phi_star v/Z,Z=sqrt(L/C),tau0=2sqrt(LC) imply KM=MA/tau0 and M^TGM=2(Phi_star²/Z)/tau0 I.","Physical canonical one-form pulls back to (Phi_star²/Z)theta; absolute reference Phi_star remains unselected."],
+  "result":{"exact_expression":"L_even=0 necessary/sufficient with L_odd=I/kappa on paired paths; A_map=Phi_star^2/Z for seven-mode ideal analogue","units":"native L,I dimensionless; physical A_map joule second","precision":"exact symbolic proof and Fraction matrix witnesses, no measurements","physical_interpretation":"OPEN, no same-carrier admission, promotion 0"},
+  "verification":[{"method":"constructor rational replay","command":"python3 experiments/g0506-source-bridge-screen/audit.py","result":"PASS"},{"method":"blank certificate presence gate","command":"python3 experiments/g0506-source-bridge-screen/intake.py experiments/g0506-source-bridge-screen/CERTIFICATE_TEMPLATE.json","result":"BLOCKED, 15 missing groups; scientific verification false"}],
+  "counterexamples_and_failures":["Positive unsigned state-only costs are reversal-even and cannot encode signed nonzero O09 on paired orientations.","Q141 quadratic and Q142 even diagnostic cannot be silently identified as sigma_B/C; Q143 source no-go blocks direct face compression.","Phi_star rescaling changes A_map while retaining the dimensionless LC dynamics; no source-selected native unit or physical certificate was acquired."],
+  "limitations":["Historical sigma-to-current map and sector weights unsourced","Ideal lossless LC analogue has no empirical certificate","Quantum relative phase not established by classical quadrature","Constructor only, nonconstructor review not run"],
+  "changed_dependencies":["Adds necessary aggregate parity gate for a future source sigma law","Constructs full-active ideal analogue without removing the G06 universal-unit selection gap"],
+  "artifact_manifest_refs":["artifacts/g0506bridge-20261105-01/exact-001/manifest.json"],
+  "next_discriminant":"Obtain directional packet coarse-graining with reversal and independent physical unit-preparation certificate."
+}

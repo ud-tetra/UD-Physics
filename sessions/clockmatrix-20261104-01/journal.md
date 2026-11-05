@@ -94,3 +94,13 @@ Resumed held claim7286350; mainfdab9d0 unchanged; merged published researchb04d7
 Captured artifacts/clockmatrix-20261104-01/exact-009 (EXACT): Explicit conservative coupling interval, all-time linear normal gain and nonlinear finite phase contract
 Final integrity PASS529 records/digests; all16 repository tests PASS; whitespace check PASS. Same claim held for PR312 review/integration; no merge or mainline export.
 Main advanced before publication to a4406f1 with Hodge-port/calibration audit. Inspected the source result and merged it; absolute support, coherent readout and physical scale remain open; no J/metric/quartic assumption changed. Repeated integrity PASS535 and all16 tests PASS. exact-009 retains original calculation basefdab9d0.
+
+### 2026-11-05 — Fourier/Cayley interval
+
+Resumed held claim 7286350 after restoring the published checkout. Integrated 9d93433 after inspecting the independent G05/G06 changes. Fixed model and known endpoint 1/64. Exact Fourier/Cayley rational replay passed, and the earlier replay produced identical results. Fixed eta=1 clock certified for 0<mu<=1/64 with all-time linear normal gain <=8 at phase zero. Finite nonlinear phase error <1/1000 under declared gates. Constructor verification only. Physical promotion 0. Next Bound the larger-coupling loss of transverse stability using verified signed spectral enclosures.
+
+## 2026-11-05T22:20:26.666980+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-010 (EXACT): Uniform Fourier and Cayley interval through mu=1/64
+
+Final checks passed on the reconciled base. Integrity 542 records, all 16 repository tests and whitespace check. Claim retained for PR 312 review.

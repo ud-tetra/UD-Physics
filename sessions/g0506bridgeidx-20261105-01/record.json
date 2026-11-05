@@ -1,0 +1,37 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "g0506bridgeidx-20261105-01",
+  "runtime": "Codex Work Mode",
+  "task": "integration-g0506-source-bridge-index-20261105",
+  "goal": "Index conditional mathematical milestone without source-ledger amendment",
+  "created_at": "2026-11-05T18:36:06.087204+00:00",
+  "base_revision": "477cbfa4f66c87ad58c983344a77269876493586",
+  "source_dirty_at_boot": true,
+  "status": "handoff",
+  "claims": {
+    "integration-g0506-source-bridge-index-20261105": {
+      "ref": "refs/heads/claims/integration-g0506-source-bridge-index-20261105",
+      "sha": "46702811d42eafb45f0d93beae8e478664f53a2a",
+      "status": "held",
+      "acquisition": "GitHub connector before state edit"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS 529 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS 16 tests"
+    }
+  ],
+  "finding": "Indexed merged PR #325 as conditional parity theorem and ideal analogue only; physical promotion and frozen source ledger unchanged.",
+  "next_action": "Source signed packet obstruction law and acquire independent full-carrier absolute unit calibration.",
+  "checkpoint_at": "2026-11-05T18:36:52.405908+00:00",
+  "checkpoint_source": {
+    "revision": "477cbfa4f66c87ad58c983344a77269876493586",
+    "dirty": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "evidence": "EXACT_CONDITIONAL",
+  "mu_upper_closed": "1/64",
+  "rho_upper_closed": "1/129",
+  "fourier_norm_caps": [
+    "3/4",
+    "7/8",
+    "49/64",
+    "9/32",
+    "9/64"
+  ],
+  "second_order_norm_cap": "1/2",
+  "scaled_cayley_error_cap": "1/100",
+  "projector_error_cap": "2/19",
+  "relative_metric_error_cap": "103/380",
+  "linear_normal_gain_cap": "8",
+  "physical_promotion": 0
+}

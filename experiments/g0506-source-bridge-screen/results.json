@@ -1,0 +1,25 @@
+{
+  "empirical_certificate": "BLOCKED_NO_MEASUREMENTS_OR_SOURCE_CORRESPONDENCE",
+  "fixture": {
+    "A0": "9/4 fixture joule-second",
+    "C_F": "1 fixture unit",
+    "KM_equals_MA_over_tau": true,
+    "L_H": "1 fixture unit",
+    "MTGM_equals_2A0_over_tau_I": true,
+    "Phi_star": "3/2 fixture weber",
+    "Z": "1 fixture ohm",
+    "canonical_pullback": true,
+    "modes": 7,
+    "tau0": "2 fixture seconds"
+  },
+  "native_active_rank": 14,
+  "parity_witness": {
+    "even": "2/3",
+    "forward": "23/12",
+    "odd": "5/4",
+    "reverse": "-7/12",
+    "target_odd_requires_even_zero": true
+  },
+  "physical_promotion": 0,
+  "status": "EXACT_CONDITIONAL_MODEL_PASS"
+}
