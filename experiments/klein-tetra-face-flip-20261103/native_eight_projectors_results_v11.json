@@ -1,0 +1,104 @@
+{
+  "status": "PASS_EXACT_CONDITIONAL",
+  "date": "2026-11-05",
+  "source": "QPB1 local generators v1.0 §§1-3; ledger v0.39 P04; K4 refinement v0.9",
+  "native_state_space": "C15=R4+R6+R4+R1, unit Euclidean H=I",
+  "added_fiber": false,
+  "theta_assignment": "CANDIDATE mapping of native subspaces onto 8 parity labels",
+  "projector_ranks": {
+    "100": 2,
+    "101": 2,
+    "110": 2,
+    "111": 2,
+    "000": 1,
+    "001": 2,
+    "010": 2,
+    "011": 2
+  },
+  "projector_identities": {
+    "sum": "I15",
+    "self_adjoint": true,
+    "idempotent": true,
+    "pairwise_orthogonal": true,
+    "S4_permutations_passed": 24
+  },
+  "native_dynamics": {
+    "operator": "A=d-d^T, J=A/2",
+    "paired_weight1_weight2_invariant": true,
+    "individual_middle_labels_invariant": false,
+    "harmonic_000_static": true,
+    "top_111_active_invariant": true
+  },
+  "first_refinement": {
+    "operator": "R01=A1F01-F01G01^-1F01^T A1 F01",
+    "gram": "R01^T R01=I15-Q111",
+    "singular_values": {
+      "0": 2,
+      "1": 13
+    },
+    "rank": 13,
+    "total_Frobenius_squared": "13",
+    "sector_scores": {
+      "100": "2",
+      "101": "2",
+      "110": "2",
+      "111": "0",
+      "000": "1",
+      "001": "2",
+      "010": "2",
+      "011": "2"
+    },
+    "unweighted_mean_over_8": "13/8",
+    "rank_weighted_mean_over_15": "13/15",
+    "leakage_gram_commutes_parent_A": true,
+    "leakage_gram_commutes_Qtheta": true
+  },
+  "second_refinement": {
+    "native_total_Frobenius_squared": "52",
+    "inherited_sector_scores": {
+      "100": "4",
+      "101": "15/4",
+      "110": "15/4",
+      "111": "3/4",
+      "000": "3",
+      "001": "4",
+      "010": "4",
+      "011": "15/4"
+    },
+    "inherited_total": "27",
+    "new_unassigned_14D_complement": "25",
+    "full_29D_resolution_from_parent": false
+  },
+  "direct_second_composite": {
+    "native_total_Frobenius_squared": "151/4",
+    "sector_scores": {
+      "100": "6",
+      "101": "5",
+      "110": "5",
+      "111": "3/4",
+      "000": "4",
+      "001": "6",
+      "010": "6",
+      "011": "5"
+    },
+    "mean_over_8": "151/32",
+    "commutator_rank_with_A0": 14,
+    "weight2_projector_commutator_rank_each": 4
+  },
+  "normalization": {
+    "gain_factor2_sector_mean": "13/2",
+    "metric_measure_factor2_sector_mean": "13/4",
+    "invariant_under_normalization": false
+  },
+  "physical_promotion": 0,
+  "local_reproducibility": {
+    "tests_passed": 8,
+    "tests_total": 8,
+    "independent_form_v09_matrix_crosscheck": true,
+    "local_archive": "K4_NATIVE_EIGHT_PROJECTOR_13_OVER_8_v1.1.zip",
+    "archive_sha256": "aa07b52dd79196a43732d0c2359a2ac1bbf253c4dbe8cb5981e8852d9673d00a",
+    "matrix_certificate_sha256": "65d3d152c1f4b11b284d0d3c2057628c9f06458b1272ee0657ff5c82e7bbb630",
+    "local_files_may_differ_in_bytes_from_repository": true
+  },
+  "scoped_decision": "EXACT native projectors and rank13 partial isometry; NO_GO equal sector 13/8, automatic extended 8 resolution at 29D, Planck physical identification"
+}
