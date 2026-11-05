@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-g05-g06-joint-proof-20261105",
+  "goal": "Index integrated restricted G05 and G06 action-unit mathematical proof gate",
+  "owned_paths": [
+    "tasks/integration-g05-g06-joint-proof-20261105.json",
+    "sessions/g0506idx-20261105-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "g05-g06-joint-proof-20261105"
+  ],
+  "status": "complete"
+}
