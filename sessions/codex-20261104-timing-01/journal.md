@@ -107,3 +107,17 @@ Captured artifacts/codex-20261104-timing-01/exact-007 (OPEN): Bounded native sou
 Checkpoint (handoff): SOURCE_BLOCKED autonomous anchor and native phase-step certificate in nine pinned sources; exact conditional package preserved and autonomous promotion parked
 
 Next: Provide source-defined event/preparation and acquisition/update law, or explicitly specify an external emulator protocol
+
+## 2026-11-05T23:14:12.034609+00:00
+
+Captured artifacts/codex-20261104-timing-01/exact-008 (EXACT): Recovered gate observer source trace and exact 128-mask closure audit
+
+## 2026-11-05T23:14:12.095593+00:00
+
+Checkpoint (handoff): Recovered conditional cell observer; native Pachner reset/sampling source-blocked; 126 of 128 masks can leak
+
+Next: Independent review of conditional observer and mask closure; reopen native promotion only on missing source laws
+
+## 2026-11-05T23:14:36.369529+00:00
+
+Restored display math delimiters in v0.8 after immutable capture. No mathematical claim or result changed.

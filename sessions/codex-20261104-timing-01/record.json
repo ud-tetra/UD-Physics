@@ -13,11 +13,11 @@
     "pachner-timing-budget": "1701d7c8cc91f641fcbdea799a1c7978f0c7dc42"
   },
   "checks": [],
-  "finding": "SOURCE_BLOCKED autonomous anchor and native phase-step certificate in nine pinned sources; exact conditional package preserved and autonomous promotion parked",
-  "next_action": "Provide source-defined event/preparation and acquisition/update law, or explicitly specify an external emulator protocol",
-  "checkpoint_at": "2026-11-05T18:28:10.136682+00:00",
+  "finding": "Recovered conditional cell observer; native Pachner reset/sampling source-blocked; 126 of 128 masks can leak",
+  "next_action": "Independent review of conditional observer and mask closure; reopen native promotion only on missing source laws",
+  "checkpoint_at": "2026-11-05T23:14:12.078012+00:00",
   "checkpoint_source": {
-    "revision": "b2c733dd9bf9185a38457cdca1aba44cd0a633d3",
+    "revision": "b130752c0130a8ed7ce6a88c815bdabdc8f25648",
     "dirty": true
   }
 }
