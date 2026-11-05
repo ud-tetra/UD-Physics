@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "g0506-transport-energy-20261105",
+  "session": "g0506transport-20261105-01",
+  "status": "held",
+  "created_at": "2026-11-05T18:03:49.588Z",
+  "base_revision": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
+  "owned_paths": [
+    "tasks/g0506-transport-energy-20261105.json",
+    "sessions/g0506transport-20261105-01",
+    "experiments/g0506-transport-energy",
+    "candidates/g0506-transport-energy",
+    "artifacts/g0506transport-20261105-01"
+  ]
+}
