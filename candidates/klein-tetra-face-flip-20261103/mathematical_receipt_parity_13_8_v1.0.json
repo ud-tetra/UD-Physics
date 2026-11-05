@@ -1,0 +1,283 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-PARITY-LEAKAGE-010",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Can native 8 K4 opposite-edge parity labels define orthogonal projectors of the real K4 refinement leakage and uniquely give invariant 13/8 under S4, metric/gain normalization and K1/K2 refinement?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "THETA",
+      "symbol": "Theta",
+      "object_type": "finite opposite-edge parity alphabet",
+      "definition": "F2^3; XOR opposite edge pairs 01+23,02+13,03+12 in illustrative 10-bit raw model",
+      "domain": "F2^6 edges",
+      "codomain": "F2^3",
+      "coefficient_domain": "F2",
+      "units": "none",
+      "basis_orientation": "opposite-edge pair A,B,C",
+      "metric_measure": "no source inner product on labels",
+      "origin": "ledger P04 plus explicitly assumed toy readout",
+      "exact_expression": "|Theta|=8, S4 Hamming orbits (1,3,3,1)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER",
+        "PARITY"
+      ],
+      "assumption_ids": [
+        "toy_raw_bits"
+      ],
+      "dependency_ids": [],
+      "normalization": "none"
+    },
+    {
+      "object_id": "R01",
+      "symbol": "R01",
+      "object_type": "real refinement generator leakage",
+      "definition": "A1 F01-F01 G01^-1 F01^T A1 F01",
+      "domain": "C*(K0;R), dimension15",
+      "codomain": "C*(K1;R), dimension29",
+      "coefficient_domain": "Z/Q real-extension",
+      "units": "formal inverse native u",
+      "basis_orientation": "oriented simplices",
+      "metric_measure": "unit Euclidean coefficient metrics at both levels",
+      "origin": "source v0.9 exact",
+      "exact_expression": "||R01||_F²=13",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "K4REF"
+      ],
+      "assumption_ids": [
+        "unit_native_metric"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit native generator and fine metric"
+    },
+    {
+      "object_id": "PROJ",
+      "symbol": "Q_theta",
+      "object_type": "orthogonal coordinate projectors on NEW eight-fiber extended real space",
+      "definition": "(|theta><theta|)tensor I29, not on native C29",
+      "domain": "R8 tensor C*(K1;R)",
+      "codomain": "same",
+      "coefficient_domain": "R",
+      "units": "none",
+      "basis_orientation": "orthonormal labelled theta basis chosen",
+      "metric_measure": "chosen product Euclidean",
+      "origin": "CANDIDATE additional real fiber",
+      "exact_expression": "QthetaQphi=delta Qtheta, sum Q=I",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "added_R8_fiber"
+      ],
+      "dependency_ids": [
+        "THETA",
+        "R01"
+      ],
+      "normalization": "basis orthonormality imposed"
+    },
+    {
+      "object_id": "JWEIGHT",
+      "symbol": "J_p",
+      "object_type": "chosen sector-weight isometric embedding",
+      "definition": "J_p v = sum_theta sqrt(p_theta)|theta>tensor v",
+      "domain": "C*(K1;R)",
+      "codomain": "R8 tensor C*(K1;R)",
+      "coefficient_domain": "R",
+      "units": "none",
+      "basis_orientation": "theta orbit order (000),(weight1),(weight2),(111)",
+      "metric_measure": "Jp^T Jp=I when sum p=1",
+      "origin": "candidate distribution not source selected",
+      "exact_expression": "||Qtheta Jp R01||²=p_theta13",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "added_R8_fiber",
+        "orbit_weights"
+      ],
+      "dependency_ids": [
+        "PROJ"
+      ],
+      "normalization": "positive p_sum1"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "P01–P06, especially P04 Theta=8",
+      "source_status": "source confirms finite count, not Hilbert projectors"
+    },
+    {
+      "source_id": "PARITY",
+      "url_or_repo_path": "experiments/parity-dynamics-gauge-20261103/README.md",
+      "version_or_commit": "discovery/parity-dynamics-gauge-20261103/pdyg-20261103-01",
+      "section_or_object_id": "v0.1 illustrative raw binary bits, opposite-edge XOR, lack canonical dynamics",
+      "source_status": "separate read-only development model"
+    },
+    {
+      "source_id": "K4REF",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/K4_MULTILEVEL_METRIC_CLOCK_v0.9.md",
+      "version_or_commit": "5a697d922779d3f96e0811663938a0c7dc47a60b",
+      "section_or_object_id": "exact native unit metric 1→4→16 residual norm²=13,52,151/4",
+      "source_status": "source-bound conditional K4 computation"
+    }
+  ],
+  "assumptions": [
+    "native Theta is finite labels not inherently an 8-dimensional real carrier",
+    "only added Hilbert fiber R8 and chosen isometric Jp create orthogonal residual sectors",
+    "for S4 covariance p may vary across four orbit classes, constant within each class",
+    "unit K4 metric/generator frozen for base norm13 and subsequent 52,151/4",
+    "metric or gain rescaling are explicit changed branches; Planck physical units not imported"
+  ],
+  "technique_plan": [
+    {
+      "technique": "full S4 permutation/orbit enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "classify p distributions respecting tetrahedral symmetry"
+    },
+    {
+      "technique": "binary parity raw-fiber enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "check 128 equal-size toy fibers and optional function-space coordinate projectors"
+    },
+    {
+      "technique": "exact orthogonal projection in tensor Hilbert space",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "test Parseval 13 pθ and distinguish added state-space premise"
+    },
+    {
+      "technique": "two-refinement exact K4 leakage replays",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "test 13,52,151/4 against same 8-sector normalization"
+    },
+    {
+      "technique": "metric and generator gain control",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "test how scaling affects norm² and 13/8"
+    },
+    {
+      "technique": "Planck unit calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no source-selected length or action bridge"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "8=2^3; 1024=2^10; fibers 1024/8=128; |S4|=24, |orbit|=1,3,3,1",
+    "reduced_expression": "uniform=13/8; positive orbit weights 1/4 and 1/12 yield 13/4 and 13/12; level1=52/8=13/2; composite=(151/4)/8=151/32",
+    "factor_origins": [
+      "native K4 first-refinement norm²=13",
+      "finite parity count8 from P04",
+      "assumed equal distribution or orbit weights"
+    ],
+    "factorization": "13 prime,8=2^3,52=4*13; no physical mechanism inferred",
+    "divisibility_gcd_lcm": "same quotient only after new per-coarse-top-cell factor4"
+  },
+  "clock_receipt": {
+    "clock_type": "formal K4 native u, no SI clock",
+    "modulus": 2,
+    "residue_convention": "F2 opposite-edge parity labels",
+    "update_rule": "native R01, R12, R02 are different maps; optional g rescales A",
+    "initial_phase": "no experimental initial condition; Frobenius operator statistic",
+    "coupling": "unit native K4 incidence unless stated otherwise",
+    "period_claim": "none",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "native C15/C29/C85 versus chosen real sector tensor extensions",
+    "generator_or_update": "native K4 A and Galerkin leakage R",
+    "initial_boundary_conditions": "filled K4 and actual centroid refinement levels0–2",
+    "conservation_and_sources": "Frobenius squared norm, not energy; sector Parseval conditional on added isometry",
+    "projection_and_kernel": "no native sector projection; conditional orthogonal Qθ on added tensor fiber",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "13/8 requested explicitly after known Planck numerical coefficient comparison",
+    "known_targets": [
+      "native norm²13",
+      "eight parity labels",
+      "numerical 13/8"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "uniform p=1/8 chosen to achieve 13/8; positive nonuniform and singleton S4 controls",
+      "per-four-top-cell extra normalization chosen post hoc"
+    ],
+    "search_domain_and_budget": "all 24 S4 permutations, 8 theta labels, 3 weight models, 3 refinement residuals, 2 normalization controls, 6 unit tests",
+    "selection_criterion": "projector source provenance, S4 uniqueness, normalization and refinement invariance",
+    "baseline": "native total leakage without divided sectors and strictly-positive nonuniform S4 weights"
+  },
+  "calculation_steps": [
+    "Read ledger Theta cardinality and separately defined raw-state toy opposite-edge XOR map",
+    "Enumerate all 24 S4 pair actions and four Hamming-weight orbits (1,3,3,1)",
+    "On auxiliary l2(F2^10), demonstrate eight rank128 orthogonal fiber projectors but no native residual interface",
+    "Define added R8 tensor C29 projectors Qθ and chosen isometric Jp; prove sector norm²=13pθ",
+    "Compare uniform, positive-nonuniform and singleton S4-invariant distributions; uniform not forced",
+    "Replay native exact residual totals 13,52,151/4 and share equally with unchanged /8",
+    "Test additional per-four-top-cell normalization, generator gain2 and metric scale2; observe different outcomes"
+  ],
+  "result": {
+    "exact_expression": "uniform candidate Qθ yields 13/8 at K0→K1; S4 nonuniform counterexample and norm/level variations falsify source-forced invariant 13/8",
+    "approximation": null,
+    "units": "formal squared chain amplitude per chosen parity label",
+    "precision_and_error": "exact integers, fractions, sympy matrices",
+    "scope": "K4 native unit incidence and explicit artificial sector lifts; no Planck physical bridge",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact K4 recurrence and sector projector controls",
+      "command_or_proof_path": "K4_PARITY_LEAKAGE_13_OVER_8_AUDIT_v1.0.zip/sector_audit_v10.py",
+      "source_revision": "5a697d922779d3f96e0811663938a0c7dc47a60b",
+      "actual_result": "PASS exact residue13,52,151/4, all orbit weights",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "raw binary projector and S4 control",
+      "command_or_proof_path": "K4_PARITY_LEAKAGE_13_OVER_8_AUDIT_v1.0.zip/raw_projection_control_v10.py",
+      "source_revision": "same",
+      "actual_result": "PASS exact 1024 raw fibers128, 24 S4 covariance cases",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "full self-contained exact replay",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/parity_13_over_8_verify_v10.py",
+      "source_revision": "same",
+      "actual_result": "PASS equivalent local source computation; GitHub byte execution not separately verified",
+      "review_relationship": "same constructor"
+    },
+    {
+      "method": "six local tests",
+      "command_or_proof_path": "K4_PARITY_LEAKAGE_13_OVER_8_AUDIT_v1.0.zip/test_parity_13_8_v10.py",
+      "source_revision": "same",
+      "actual_result": "PASS 6/6 local, same constructor",
+      "review_relationship": "same constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "strictly positive nonuniform p preserves all S4 orbit symmetries while sector norms differ from13/8",
+    "native second-level sector52/8=13/2, direct composite151/32; not same observable across levels",
+    "changing fine norm metric by factor2 gives 13/4, gain2 gives13/2",
+    "13 as dimension End_S4(C15) is a different typed object from leakage norm13",
+    "no native 8 orthogonal projectors on residual carrier sourced"
+  ],
+  "limitations": [
+    "no source-selected R8 fiber or Jp sector weights",
+    "raw binary example is not native 15D real K4 state or source-defined micro evolution",
+    "Planck-scale physical units/calibration/independent prediction absent",
+    "non-constructor mathematical review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Find a native typed Theta-to-real-chain projector or coupled dynamics, demonstrate symmetry/evolution invariance and fixed normalization at two refinements; otherwise freeze Planck 13/8 identification as unsupported."
+}
