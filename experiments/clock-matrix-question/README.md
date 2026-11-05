@@ -72,3 +72,7 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 ## Transverse stability and finite readout
 
 [Report v0.1](TRANSVERSE_STABILITY.md), [exact certificate](transverse_exact.py), [numerical replay](transverse_stability.py): fixed13-termQ is weakpositive transversely unstable; explicit nonlinear one-cycle phase error<1/1000rad passes given gates. Robust-clock witness PARKED; native selection/maps OPEN.
+
+## Positive local transverse penalties
+
+[Report v0.1](LOCAL_STABILIZATION.md), [exact certificate](stabilization_exact.py), [numerical replay](local_stabilization.py):14positiveincidencepenalties retainOmega andeta1givesexactweaktransverselinearstability. Larger testedcouplings fail;nonlinearstability/nativecoefficientsOPEN.

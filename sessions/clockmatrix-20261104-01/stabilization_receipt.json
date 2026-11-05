@@ -1,0 +1,206 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "positive-local-stabilization-008",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "Can positive nearest-incidence quartic null directions remove weak transverse growth while preserving the prepared clock law?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "CANDIDATE",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "positive-local-penalty",
+      "symbol": "R,Q_eta",
+      "object_type": "inverse-designed quartic Hamiltonian family",
+      "definition": "14 inactive-register/active-edge incidence penalties with positive weights1 or1/3; Q_eta=Q+etaR",
+      "domain": "R15,selectedW and normalN12",
+      "codomain": "R for Hamiltonian",
+      "coefficient_domain": "Q exact matrices/weights;R states;float64 finite grid",
+      "units": "formal dimensionless stock/energy",
+      "basis_orientation": "ascending simplicial chains",
+      "metric_measure": "unit metric,J=A/2",
+      "origin": "inverse-designed null-direction candidate, exact conditional verification",
+      "exact_expression": "gradR|W=0,HessR|W=p^2D6;eta1 leadingnu^2=19/256,35/64,3/64",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "prepared-clock"
+      ],
+      "assumption_ids": [
+        "fixed-plane",
+        "positive-penalty"
+      ],
+      "dependency_ids": [
+        "transverse-stability-007"
+      ],
+      "normalization": "mu=lambdaI,rho=mu/(2+mu);half-returnphasepi"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    },
+    {
+      "source_id": "prepared-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/PREPARED_PLANE.md",
+      "version_or_commit": "8e94fd49ded70a00eb4986177d3463860d295960",
+      "section_or_object_id": "sections1-5:13-term Q, plane, rates and previous coarse bound",
+      "source_status": "conditional construction, not native interaction"
+    },
+    {
+      "source_id": "original-transverse",
+      "url_or_repo_path": "experiments/clock-matrix-question/TRANSVERSE_STABILITY.md",
+      "version_or_commit": "b65135ce434564c221d5991d5283b6a63aa328a7",
+      "section_or_object_id": "sections2-6,original weak instability and fixedQ finite window",
+      "source_status": "preserved exact/numerical conditional controls"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "fixed-plane",
+      "text": "same selectedW,metric,J,phase readout; anisotropic interaction still unsourced"
+    },
+    {
+      "id": "positive-penalty",
+      "text": "new14-termR positive,freeeta>=0;lambda>=0,eta1 selected after exposed grid"
+    },
+    {
+      "id": "weak-limit",
+      "text": "exact stability theorem sufficientlysmallpositivemu; endpointnotcertified; no nonlinear orbital stability claim"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "null-direction/gradient/Hessian identities",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "preserve rate and construct local transverse stiffness"
+    },
+    {
+      "technique": "exact normal spectral factorization and signed quadratic forms",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove weak linear stability beyond imaginary-eigenvalue diagnostic"
+    },
+    {
+      "technique": "analytic symplectic logarithm and definite invariant subspaces",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "promote leading signature certificate to actual weak-Floquet stability"
+    },
+    {
+      "technique": "finite numerical scan and stepdoubling",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "selectcandidate and expose finitecoupling failure"
+    },
+    {
+      "technique": "modularclock/prime arithmetic",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous clock; rational polynomial factors answer spectral question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "43even=13active+8inactivefourth+8inactivepair+14active-inactivepair",
+    "reduced_expression": "30zero-on-plane directions;14 affect transverse Hessian;6diagonal normalized stocks",
+    "factor_origins": [
+      "tetrahedral register incidence",
+      "explicitinactivecoordinate set"
+    ],
+    "factorization": "t(t^2+19/256)(t^2+35/64)(t^2+3/64)",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "H=norm2+lambda(Q+etaR);onW Omega=2+lambdaI unchanged",
+    "initial_phase": "arbitrary q,p on selected W",
+    "coupling": "positive14-term local transverse penalty",
+    "period_claim": "clock period2pi/(2+mu);transversehalf-returnpi/(2+mu);weaklinearstable interval exists",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "V14,W2,N12",
+    "generator_or_update": "constantJ Hamiltonian withmodifiedquartic",
+    "initial_boundary_conditions": "sameorbitpreparation;normalperturbations;eta1weakpositivemu",
+    "conservation_and_sources": "H_eta>=norm2 conserved forlambda,eta>=0;no dampingor attraction",
+    "projection_and_kernel": "gradRzeroonW;normalpositive/negativeKrein subspaces dimensions2/4/6",
+    "physical_mapping": "OPEN;native plane,eta,lambda and dimensional maps unsourced"
+  },
+  "target_exposure": {
+    "status": "exposed mathematical inverse design",
+    "known_targets": [
+      "removeoriginalweaktransversegrowth withoutchangingOmega"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "normalizedinactive stiffness familyR",
+      "eta1 first passingcandidate inorderedcoarsegrid"
+    ],
+    "search_domain_and_budget": "eta0,1/4,1/2,1,2,4,8,16,32,64 timesmu1/16,1,4;30exploratorycases;selectedeta1 refinedat10mu values2048/4096 steps",
+    "selection_criterion": "no numericalexpandingtransversemultiplier on3coarsecouplings,then exactweakstabilityproof",
+    "baseline": "originaleta0Q"
+  },
+  "calculation_steps": [
+    "enumerate14positiveincidencepenalties withweights1or1/3",
+    "proveR,gradRzeroonW andHessR=p2D6",
+    "computeexacteta1averageannihilator and eigenspaces",
+    "verifyK=-JT restricted definite signs byexactLDLpivots",
+    "use symplecticlog andcontinuousdefinitegroups toprove actualweaklinearstability",
+    "refinefinitegrid and retaininstabilityatmu8,16,64"
+  ],
+  "result": {
+    "exact_expression": "eta1transversefrequenciessqrt19/16,sqrt35/8,sqrt3/8;Kreinpositive2/negative4/positive6;boundednormallinearmotionforsufficientlysmallpositivemu",
+    "approximation": "selectedeta1 gridmu<=4 tested unitmodulus,mu8 max1.1329632575;notcontinuousintervalproof",
+    "units": "dimensionlessnativeparameter/phase",
+    "precision_and_error": "FractionmatricesandLDLexact;float64RK4stepdiff<=1.21e-12,symplecticresid<=9.45e-15",
+    "scope": "newcandidate,weaklinearstability only;originalQinstabilityintact",
+    "physical_interpretation": "OPEN"
+  },
+  "verification": [
+    {
+      "method": "exactweights,normalannihilator,eigenspacebases anddefiniteness",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/stabilization_exact.py;LOCAL_STABILIZATION.md sections4-5",
+      "source_revision": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
+      "actual_result": "PASS14weights;normaldimension2+4+6;exactLDLsigns+,-,+",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "own previousFloquetimplementation,numericalsearch/refinement",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/local_stabilization.py;owntransverse_stability.py dependency",
+      "source_revision": "same",
+      "actual_result": "PASS30coarsecases and10refined;strongcouplingfailure preserved",
+      "review_relationship": "constructor numericalcross-check,notindependentreview"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "eta4weakgrowthcanreturn;morepenaltynotmonotonicallybetter",
+    "eta1mu8,16,64grow;notallcouplingstability",
+    "linearstabilitydoesnotestablish nonlinearorbitalstabilityor nativecoefficientselection"
+  ],
+  "limitations": [
+    "certifiedweakintervalendpointnotcomputed",
+    "finitegridnotproofthatall0<mu<=4stable",
+    "modifiedmodelrequiresitsownfiniteerrorbudget;oldQwindowisnotautomaticallyimported",
+    "fullS4planeobstructionunchanged",
+    "nativeparameterselection,physicalmapsandindependentreviewOPEN"
+  ],
+  "changed_dependencies": [
+    "modifiedpositivepenaltycandidateACTIVE;original13-termrobustclockstillPARKED"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/stability-008/manifest.json"
+  ],
+  "next_discriminant": "Certify an explicit finite coupling interval and transverse gain/error bound for eta1; bracket the first stability loss without treating numericalgrid as proof"
+}

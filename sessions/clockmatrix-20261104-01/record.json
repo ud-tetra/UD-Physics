@@ -32,16 +32,19 @@
     "Prepared-plane milestone PASS514 integrity records, all16 repository tests and whitespace check",
     "Transverse exact proof PASS;10 numerical Floquet points with2048/4096 convergence; exact nonlinear finite-phase window PASS",
     "Stability milestone PASS519 integrity records/digests, all16 repository tests and whitespace check",
-    "Merged currentmain51bd725 index-only changes; integrity PASS521 records and all16 tests PASS"
+    "Merged currentmain51bd725 index-only changes; integrity PASS521 records and all16 tests PASS",
+    "PositivepenaltyexactPASS14weights,normaldimensions2/4/6,LDLsigns+/-/+;30coarse+10refinedFloquetcases",
+    "Local-penalty milestone PASS522 integrity records/digests, all16 repository tests and whitespace check",
+    "Merged currentmainfdab9d0 after transport/anchor audit; clock dependencies unchanged; integrity PASS528 and all16 tests PASS"
   ],
-  "finding": "Fixed13-termQ transversely unstable for sufficientlyweakpositive coupling; explicit nonlinear one-cycle phase-error window survives",
-  "next_action": "Test whether positive nearest-incidence quartic modifications in the30 even zero-on-plane directions can remove transverse hyperbolicity without changing the clock law; coefficient choices remain inverse design",
+  "finding": "Positive14-term local penalty preservesOmega and removesweaktransversegrowth ateta1 byexactdefinite-signatureproof;finitecouplingfailure remains",
+  "next_action": "Certify an explicit finite coupling interval and transverse gain/error bound for eta1; bracket the first stability loss without treating numericalgrid as proof",
   "access_mode": "Git compute; connector publication; Git push unavailable",
-  "checkpoint_at": "2026-11-05T17:34:37.135516+00:00",
+  "checkpoint_at": "2026-11-05T18:10:28.782420+00:00",
   "checkpoint_source": {
     "revision": "88cb676d36ea934afe973ba3e7b2ea4855185119",
     "dirty": true
   },
-  "resume_integrated_revision": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
-  "last_published_parent": "8e94fd49ded70a00eb4986177d3463860d295960"
+  "resume_integrated_revision": "fdab9d0c5f3f5a629ad00cd6fbaa4a52bbaccddc",
+  "last_published_parent": "b65135ce434564c221d5991d5283b6a63aa328a7"
 }

@@ -4,7 +4,7 @@
   "candidate_id": "clock-matrix-question",
   "session_id": "clockmatrix-20261104-01",
   "question": "Does a matrix clock-rate change constitute physical time dilation?",
-  "status": "PARKED",
+  "status": "ACTIVE",
   "evidence": [
     "EXACT",
     "CONDITIONAL",
@@ -16,7 +16,8 @@
     "No assumed UD lapse or spacetime metric",
     "posited radial reciprocal nonlinear action-product branch",
     "positive harmonic mediator with collective stock ports; prepared reduction distinct from generic dynamics",
-    "selectedW and inverse-designed13-term anisotropic nearest-incidence Q; lambda unselected"
+    "selectedW and inverse-designed13-term anisotropic nearest-incidence Q; lambda unselected",
+    "inverse-designed14-termpositivepenaltyandeta1;no nativeparameterselection"
   ],
   "physical_mapping": "OPEN",
   "target_exposure": "Question and conventional clock concepts exposed before toy choice; no fitted empirical target",
@@ -28,8 +29,8 @@
     "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/"
   ],
   "baseline": "Ordinary oscillator retuning and time-unit rescaling",
-  "result": "Fixed13-termQ transversely unstable for sufficientlyweakpositive coupling; explicit nonlinear one-cycle phase-error window survives",
-  "next_discriminant": "Test whether positive nearest-incidence quartic modifications in the30 even zero-on-plane directions can remove transverse hyperbolicity without changing the clock law; coefficient choices remain inverse design",
+  "result": "Positive14-term local penalty preservesOmega and removesweaktransversegrowth ateta1 byexactdefinite-signatureproof;finitecouplingfailure remains",
+  "next_discriminant": "Certify an explicit finite coupling interval and transverse gain/error bound for eta1; bracket the first stability loss without treating numericalgrid as proof",
   "mathematical_receipts": [
     "sessions/clockmatrix-20261104-01/mathematical_receipt.json",
     "sessions/clockmatrix-20261104-01/two_clock_receipt.json",
@@ -37,7 +38,8 @@
     "sessions/clockmatrix-20261104-01/local_mediator_receipt.json",
     "sessions/clockmatrix-20261104-01/local_quartic_receipt.json",
     "sessions/clockmatrix-20261104-01/prepared_plane_receipt.json",
-    "sessions/clockmatrix-20261104-01/transverse_receipt.json"
+    "sessions/clockmatrix-20261104-01/transverse_receipt.json",
+    "sessions/clockmatrix-20261104-01/stabilization_receipt.json"
   ],
   "parked_scope": "fixed13-termQ as long-time robust clock; preserves invariant plane and finite observation theorem; prior all-V local obstruction unchanged",
   "reopening_conditions": [
@@ -45,5 +47,5 @@
     "restricted prepared clock sector with leakage bound",
     "changed permitted interaction support"
   ],
-  "active_scope": "no robustness claim; nullspace modification is a proposed separate conditional branch"
+  "active_scope": "modifiedQ+R eta1 weaklinearstability only;originalQrobustclock andall-VlocalbranchesPARKED"
 }
