@@ -1,0 +1,56 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "pachlocaljump-20261104-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-05T02:18:08.400053+00:00",
+  "evidence": "EXACT",
+  "summary": "Q169 Hasse-cut no-go and Q170 interior guard witness",
+  "command": "python3 experiments/pachner-local-jump-current/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-local-jump-current/audit.py",
+      "sha256": "3d658e01cbe76182680e514ba753ab4a9d3998b58abe96a8485312023b4593df",
+      "size_bytes": 5134
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-symmetry-transfer/README.md",
+      "sha256": "dfa2785dddb5ab1c2f0079dacb3558c798bc36ed01a92d0f27e581fd6889d94c",
+      "size_bytes": 6448
+    },
+    {
+      "input_id": "input-003",
+      "name": "20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "path": "inputs/003-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "e9089b1a6b4b57ff6e1fce74ced405e2c1481f586e9d4f62de809c8629c93641",
+      "size_bytes": 764
+    },
+    {
+      "path": "files/mathematical_receipt.json",
+      "sha256": "34b309d2aba17f0ed6845598d30b74b996b88db4fc230fa10228c45e20dec42b",
+      "size_bytes": 7313
+    }
+  ]
+}

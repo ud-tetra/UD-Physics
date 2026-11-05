@@ -1,0 +1,29 @@
+{
+  "base_carrier": "abstract union; ascending oriented simplices; Q, unit Q165 stock",
+  "counts": {
+    "new": 27,
+    "new_only": 7,
+    "old": 23,
+    "old_only": 3,
+    "shell": 20
+  },
+  "guard_witness": {
+    "initial_state": "unit old face 012; all others zero",
+    "old_interior_stock_at_zero": "1",
+    "shell_cut_incidence_count": 3,
+    "shell_stock_leading_coefficient": "3",
+    "stock_first_derivative": "0",
+    "stock_second_derivative": "-6"
+  },
+  "interior_hasse_components": [
+    3,
+    7
+  ],
+  "interior_hasse_edges": {
+    "cross": 0,
+    "new_only": 9,
+    "old_only": 2
+  },
+  "physical_promotion": 0,
+  "scope": "pointwise shell-amplitude fixation for every state; Q169/Hasse-only skew support; no added contact or memory incidence"
+}
