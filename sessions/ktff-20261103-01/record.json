@@ -376,10 +376,55 @@
     {
       "name": "v1.3 independent non-constructor review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.4 minimum six effective frame states theorem",
+      "status": "PASS",
+      "method": "S3 stabilizer proof; all 48 effective coupled states"
+    },
+    {
+      "name": "v1.4 192 S4-labelled eight-cycle candidate",
+      "status": "PASS",
+      "method": "all 4608 full-frame covariance cases with chosen f, 24 eight-cycles"
+    },
+    {
+      "name": "v1.4 exhaustive affine three-bit no-eight-cycle",
+      "status": "PASS",
+      "method": "168 GL3 matrices×8 translations; all 1344 permutations"
+    },
+    {
+      "name": "v1.4 one-opposite-pair Gray locality",
+      "status": "PASS",
+      "method": "12 directed Hamiltonian cycles, 8 single-bit transitions"
+    },
+    {
+      "name": "v1.4 exploratory 6-edge-bit S4 covariance",
+      "status": "PASS",
+      "method": "1536 frame/raw states, 36,864 group checks, eight-step return"
+    },
+    {
+      "name": "v1.4 candidate categorical conserved-current check",
+      "status": "PASS",
+      "method": "nonnegative stock ∆14, influx59−outflux45; not physical Q170"
+    },
+    {
+      "name": "v1.4 source-native projector rank no-go",
+      "status": "PASS",
+      "method": "unique rank-one Q000 prevents invertible real eight-sector permutation"
+    },
+    {
+      "name": "v1.4 ten exact constructor regression tests",
+      "status": "PASS",
+      "method": "10/10 local; no independent non-constructor replication"
+    },
+    {
+      "name": "v1.4 native selected parity clock and physical bridge",
+      "status": "OPEN",
+      "reason": "QPB1 zero-crossing observation does not select Gray successor or SI event time"
     }
   ],
-  "finding": "v1.3 prime-clock exact: native 13=15−2=1+3*4,8=2³,192=24*8 and S4 capacity mean312/192=13/8. Cyclic +13 mod8 candidate period8, but Theta=(Z2)^3 exponent2; native pi/4 strobe 2-step projector and 4-step amplitude return. Exhaustive64 deterministic S4-equivariant Theta maps, only4 bijections all max cycle2. Physical clock/floor OPEN.",
-  "next_action": "Derive source-selected extra-state parity event successor or prove broader obstruction, and require SI-calibrated clock/readout before Planck floor correspondence.",
+  "finding": "v1.4 EXACT conditional: S4-equivariant 8-cycle on Θ×ordered-pair-frame is possible iff effective frame M has free S3 orbit, min cardinality6. Existing 192 frame×Θ can implement selected 24 eight-cycles; Gray one-bit update 12 alternative directed cycles, non-affine Boolean carry needed (1344 affine maps no8), raw exploratory bit-state covariance36864 PASS. Categorical current conserved, native C15 eight-projector ranks1+7×2 block whole-sector invertible eight-cycle. Source-selected QPB1 clock and physical metric OPEN.",
+  "next_action": "Test whether QPB1 real q/p zero-crossing events with sourced preparation can select unique local Gray event schedule and Q170-179 burden current; if absent freeze physical eight-tick claim.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
