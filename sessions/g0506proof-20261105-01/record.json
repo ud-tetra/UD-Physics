@@ -13,7 +13,8 @@
     "g05-g06-joint-proof-20261105": {
       "ref": "refs/heads/claims/g05-g06-joint-proof-20261105",
       "held_sha": "55edf4c1c562425288e6cc67dc394ad94f35f082",
-      "status": "held"
+      "status": "released",
+      "release_sha": "68f00d5c34574f0e6c4c205c4647af14765a4cb8"
     }
   },
   "checks": [
@@ -22,10 +23,11 @@
     "Nonconstructor review NOT_RUN",
     "scripts/validate.py PASS: 503 records",
     "16 unit tests PASS",
-    "Public project site edition Papers I–III 1.1.1 / IV 0.1; physical promotion0 checked 2026-11-05"
+    "Public project site edition Papers I–III 1.1.1 / IV 0.1; physical promotion0 checked 2026-11-05",
+    "PR #316 merged at c6da6197d06d095546c4c4eb25a5077c19ce836e; live claim release verified 68f00d5c34574f0e6c4c205c4647af14765a4cb8"
   ],
   "finding": "Restricted G05 scalar iff action functional factors through coarse history; G06 native-to-physical numerical ratio remains scale-nonidentifiable without same-carrier anchor",
-  "next_action": "Recover the Q136 sigma-to-O09 increment map and test its kernel on a named carrier; seek independent dimensional action anchor",
+  "next_action": "Recover Q136 sigma-to-O09 map; seek independent same-carrier action anchor",
   "checkpoint_at": "2026-11-05T16:54:06.551986+00:00",
   "checkpoint_source": {
     "revision": "e400dfb715262a44b3bbb2e929c7b438028af67e",
