@@ -15,3 +15,7 @@ Ownership: UNCLAIMED until remote claim acquisition succeeds.
 Checkpoint (handoff): Indexed restricted G05 scalar criterion and G06 action-anchor identifiability proof gate
 
 Next: Release integration claim, record closure and recover Q136-to-O09 map
+
+## Closure
+
+PR #317 merged at 29f0eb2bc27bec35396c833ec112c5170d244c64; live claim released at bd58c1b850ec4fd84a9000c44ee2e0c337a8dc03. No substantive research changed in this closure.

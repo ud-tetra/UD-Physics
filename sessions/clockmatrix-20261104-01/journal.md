@@ -64,3 +64,11 @@ Resumed same held claim7286350; main e400dfb, research64e16f6 unchanged; merged 
 Captured artifacts/clockmatrix-20261104-01/exact-005 (EXACT): Complete nearest-incidence quartic common-rate classification and pair-range gate
 Final checks PASS507 records and immutable digests, all16 repository tests, whitespace check. PR312 updated through connector with exact-head lease; same claim held for review/integration, no merge or mainline export.
 Before publication main advanced through PR316/317. Inspected G05/G06 v0.1 and CURRENT, merged origin/main29f0eb2; no fixed clock/operator dependencies changed and physical maps remain open. Repeated integrity checks PASS513 and all16 tests PASS after merge. exact-005 retains honest calculation base e400dfb, immutable.
+
+### 2026-11-05 — prepared-plane interaction
+Resumed same held claim7286350, researchd58e99b; verified main698d6d6 only adds G05/G06 claim closures and merged it. Complete cubic constraint solve onW yields positive13-term nearest-incidence witness;43/99 coefficient spaces have ranks13/30. Written differentiation proves gradQ=Ix onW, and25 direct rational gradients agree. FullsignedS4 energy image dim13 cannot match target; analytic unequal edge-magnitude obstruction corroborates it. One local coefficient error gives transverse derivative norm2=15epsilon2/16 at q=p=1. Derived coarse bounded-energy finite-time initialization control; transverse orbital/Floquet stability OPEN. Corrected draft wording: homogeneous zero-field kernel polynomials also have zero value onW, while off-plane dynamics remains free. Receipt prepared_plane_receipt.json; immutable exact-006. No physical promotion, fit or independent review. Next transverse variational stability vs lambda I.
+
+## 2026-11-05T17:24:55.461195+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-006 (EXACT): Restricted prepared-plane local quartic witness, symmetry obstruction and leakage check
+Final milestone checks: integrity PASS514 records/digests; all16 tests PASS; whitespace PASS. Same claim held for PR312 review/integration; no merge or mainline export.

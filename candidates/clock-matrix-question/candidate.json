@@ -4,7 +4,7 @@
   "candidate_id": "clock-matrix-question",
   "session_id": "clockmatrix-20261104-01",
   "question": "Does a matrix clock-rate change constitute physical time dilation?",
-  "status": "PARKED",
+  "status": "ACTIVE",
   "evidence": [
     "EXACT",
     "CONDITIONAL",
@@ -15,7 +15,8 @@
     "Two visible active phase modes",
     "No assumed UD lapse or spacetime metric",
     "posited radial reciprocal nonlinear action-product branch",
-    "positive harmonic mediator with collective stock ports; prepared reduction distinct from generic dynamics"
+    "positive harmonic mediator with collective stock ports; prepared reduction distinct from generic dynamics",
+    "selectedW and inverse-designed13-term anisotropic nearest-incidence Q; lambda unselected"
   ],
   "physical_mapping": "OPEN",
   "target_exposure": "Question and conventional clock concepts exposed before toy choice; no fitted empirical target",
@@ -27,19 +28,21 @@
     "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/"
   ],
   "baseline": "Ordinary oscillator retuning and time-unit rescaling",
-  "result": "Nearest-incidence all-active uniform quartic is zero; pair-radius4 permits collective norm4 but no native coefficient selection",
-  "next_discriminant": "Test whether a specified prepared phase plane admits an incidence-local quartic with an amplitude-dependent rate and zero transverse leakage; record preparation selection as an assumption",
+  "result": "A positive13-term local anisotropic quartic gives Omega=2+lambda I with zero leakage on specifiedW; fullsignedS4 blocks it; coefficient-error leakage15/16",
+  "next_discriminant": "Derive transverse periodic variational dynamics about W and classify stability versus lambda I; keep preparation and interaction selection explicit",
   "mathematical_receipts": [
     "sessions/clockmatrix-20261104-01/mathematical_receipt.json",
     "sessions/clockmatrix-20261104-01/two_clock_receipt.json",
     "sessions/clockmatrix-20261104-01/common_rate_receipt.json",
     "sessions/clockmatrix-20261104-01/local_mediator_receipt.json",
-    "sessions/clockmatrix-20261104-01/local_quartic_receipt.json"
+    "sessions/clockmatrix-20261104-01/local_quartic_receipt.json",
+    "sessions/clockmatrix-20261104-01/prepared_plane_receipt.json"
   ],
   "parked_scope": "native nearest-incidence all-preparation quartic implementation only; collective and restricted-preparation branches remain candidates",
   "reopening_conditions": [
     "explicit local mediator and controlled limit",
     "restricted prepared clock sector with leakage bound",
     "changed permitted interaction support"
-  ]
+  ],
+  "active_scope": "restricted selectedW anisotropic construction only; all-V nearest-incidence branch remains PARKED"
 }

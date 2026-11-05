@@ -27,16 +27,18 @@
     "Mediator milestone integrity PASS:506 records; all16 repository tests PASS",
     "Quartic exact classification PASS:99/225/309/330 coefficients and F1009 evaluation rank100",
     "Quartic milestone integrity PASS507 records; all16 repository tests PASS; diff whitespace check PASS",
-    "Merged current main29f0eb2 after G05/G06 proof update; integrity PASS513 records and all16 tests PASS; no clock-source dependencies changed"
+    "Merged current main29f0eb2 after G05/G06 proof update; integrity PASS513 records and all16 tests PASS; no clock-source dependencies changed",
+    "Prepared-plane exact replay PASS:43/99 complete coefficient families, signedS4 gate,25 direct gradients and coefficient-error leakage15/16",
+    "Prepared-plane milestone PASS514 integrity records, all16 repository tests and whitespace check"
   ],
-  "finding": "Nearest-incidence all-active uniform quartic is zero; pair-radius4 permits collective norm4 but no native coefficient selection",
-  "next_action": "Test whether a specified prepared phase plane admits an incidence-local quartic with an amplitude-dependent rate and zero transverse leakage; record preparation selection as an assumption",
+  "finding": "A positive13-term local anisotropic quartic gives Omega=2+lambda I with zero leakage on specifiedW; fullsignedS4 blocks it; coefficient-error leakage15/16",
+  "next_action": "Derive transverse periodic variational dynamics about W and classify stability versus lambda I; keep preparation and interaction selection explicit",
   "access_mode": "Git compute; connector publication; Git push unavailable",
-  "checkpoint_at": "2026-11-05T16:57:47.446052+00:00",
+  "checkpoint_at": "2026-11-05T17:24:55.403467+00:00",
   "checkpoint_source": {
     "revision": "88cb676d36ea934afe973ba3e7b2ea4855185119",
     "dirty": true
   },
-  "resume_integrated_revision": "29f0eb2bc27bec35396c833ec112c5170d244c64",
-  "last_published_parent": "64e16f695b5d9aa16a613921eb980b44ab749e09"
+  "resume_integrated_revision": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+  "last_published_parent": "d58e99b268fdc5a54e366abb9d874a0f637e8cad"
 }

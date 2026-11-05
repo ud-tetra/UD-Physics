@@ -1,0 +1,197 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "prepared-plane-quartic-006",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "Does a nearest-incidence quartic preserve a specified prepared clock plane with an action-dependent rate and zero leakage?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "CANDIDATE",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "prepared-plane-clock",
+      "symbol": "W,Q",
+      "object_type": "selected invariant plane and quartic Hamiltonian",
+      "definition": "W=span(v,Jv), v=e_vertex1-e_vertex2; positive13-term anisotropic Q",
+      "domain": "R15 with initial states W subset V",
+      "codomain": "R for Q; V for JgradH",
+      "coefficient_domain": "Q cubic constraints; R amplitudes",
+      "units": "dimensionless formal stock and Hamiltonian",
+      "basis_orientation": "ascending simplex orientations",
+      "metric_measure": "unit positive metric; J=A/2",
+      "origin": "inverse-designed candidate with exact conditional proof",
+      "exact_expression": "gradQ|W=I*x; Omega=2+lambda I, I=q^2+p^2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "G1",
+        "Q169"
+      ],
+      "assumption_ids": [
+        "restricted-preparation",
+        "anisotropic-energy"
+      ],
+      "dependency_ids": [
+        "incidence-local-quartic-005"
+      ],
+      "normalization": "v,h normsquared2; q=vTx/2,p=hTx/2; free lambda"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "restricted-preparation",
+      "text": "fixed W=span(e1-e2,J(e1-e2)); all q,p on this plane, rather than all V"
+    },
+    {
+      "id": "anisotropic-energy",
+      "text": "specified13 positive local monomials, free lambda; coefficients chosen by linear inverse construction, not native source"
+    },
+    {
+      "id": "positive-branch",
+      "text": "lambda>=0 for global coercivity; positive Omega for forward clock"
+    },
+    {
+      "id": "symmetry-test",
+      "text": "full signedS4 invariance added only to the separate no-go test"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational cubic coefficient systems",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "all-plane invariance and rate constraint on43/99 quartic coefficients"
+    },
+    {
+      "technique": "signed group projection",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "test fullS4 native symmetry as an additional source gate"
+    },
+    {
+      "technique": "gradient and orthogonal projection",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "independent direct fixtures and exact coefficient-error leakage"
+    },
+    {
+      "technique": "energy/Hessian and Gronwall bound",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "finite-time initialization tolerance without claiming asymptotic stability"
+    },
+    {
+      "technique": "prime factors/modular arithmetic",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no divisibility or discrete clock claim in this step"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "15+28 even quartics;15+3*28 all quartics;15*4 cubic equations",
+    "reduced_expression": "43/99 coefficients;60 equations; ranks13/30; affine solution dimensions30/69 at unit shift",
+    "factor_origins": [
+      "tetrahedron registers and incidence pairs",
+      "four homogeneous cubic monomials in q,p"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "xprime=J grad(||x||^2+lambda Q); onW xprime=(2+lambda I)Jx",
+    "initial_phase": "arbitrary q,p on selected W",
+    "coupling": "inverse-designed anisotropic13-term nearest-incidence Q",
+    "period_claim": "2pi/(2+lambda I), I>0 and positive rate",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "V rank14, selected W rank2",
+    "generator_or_update": "constant PoissonJ, H=||x||^2+lambda Q",
+    "initial_boundary_conditions": "exact W for invariance; off-plane error bounded separately, no drive",
+    "conservation_and_sources": "H conserved globally; I conserved onW; lambda>=0 gives H>=norm2",
+    "projection_and_kernel": "P_W=(vvT+hhT)/2; coefficient-error transverse derivative norm2=15epsilon2/16 at q=p=1",
+    "physical_mapping": "OPEN; W, anisotropic coefficients and lambda unselected"
+  },
+  "target_exposure": {
+    "status": "question-informed inverse design",
+    "known_targets": [
+      "amplitude-dependent rate on previously specified plane"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "plane retained from prior protected-clock test",
+      "unit-shift constraint fixes a normalization, free lambda retained",
+      "linear elimination free variables set0 to obtain positive13-term witness"
+    ],
+    "search_domain_and_budget": "complete43 even and99 general nearest-incidence quartics; full24-element signedS4 projection;25 direct rational fixtures",
+    "selection_criterion": "exact nonlinear rate and zero transverse leakage onW",
+    "baseline": "unit-incidence plane rate2; previous all-V obstruction unchanged"
+  },
+  "calculation_steps": [
+    "reconstructJ and v,h",
+    "solve60 cubic equations for43/99 coefficients",
+    "extract13-term positive witness and prove gradQ=Ix onW",
+    "show equal S4 edge quartic coefficients cannot match unequal h-edge magnitudes",
+    "compute exact local-error leakage and derive bounded-energy Gronwall estimate"
+  ],
+  "result": {
+    "exact_expression": "Q|W=I^2/2; Omega=2+lambda I; fullS4 forceslambda0 on thisW; local coefficient error gives transverse derivative norm2=15epsilon2/16",
+    "approximation": null,
+    "units": "dimensionless",
+    "precision_and_error": "exact Fraction constraints and gradient checks; asymptotic onset stated with remainder",
+    "scope": "fixed prepared plane and inverse-designed anisotropic interaction, not all active states",
+    "physical_interpretation": "OPEN"
+  },
+  "verification": [
+    {
+      "method": "complete exact cubic coefficient solve and signedS4 projection",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/prepared_plane.py; PREPARED_PLANE.md",
+      "source_revision": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "actual_result": "PASS ranks13/30; positive witness; fullS4 infeasible (energy image dim13, plane rank6)",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate direct ambient gradient fixtures and projection",
+      "command_or_proof_path": "prepared_plane.py direct25 q,p fixtures and coefficient-error calculation",
+      "source_revision": "same",
+      "actual_result": "PASS exact gradQ=Ix and leakage15/16",
+      "review_relationship": "constructor cross-check, not independent review"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "fullsignedS4 invariant local energies cannot produce nonzero target rate on thisW",
+    "one coefficient error introduces immediate transverse leakage",
+    "exact invariance and bounded energy do not prove transverse orbital stability"
+  ],
+  "limitations": [
+    "plane and anisotropic coefficients inverse-designed, not native-selected",
+    "lambda free; no measurement or physical unit map",
+    "negative lambda needs bounded domain or stabilization",
+    "finite-time Gronwall bound coarse; transverse Floquet problem OPEN",
+    "independent review NOT_RUN"
+  ],
+  "changed_dependencies": [
+    "restricted-plane branch ACTIVE; prior all-active-state nearest-incidence branch remains PARKED"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/exact-006/manifest.json"
+  ],
+  "next_discriminant": "Derive transverse periodic variational dynamics about W and classify stability versus lambda I; keep preparation and interaction selection explicit"
+}

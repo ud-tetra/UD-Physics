@@ -64,3 +64,7 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 ## Incidence-local quartic classification
 
 [Report v0.1](LOCAL_QUARTIC.md), [exact replay](local_quartic.py), [rank results](local_quartic_results.json): nearest-incidence all-state uniform quartic is zero; collective radial quartic first appears at pair distance4. Native nearest-incidence implementation PARKED under those hypotheses.
+
+## Prepared-plane local interaction
+
+[Report v0.1](PREPARED_PLANE.md), [exact replay](prepared_plane.py), [results](prepared_plane_results.json): positive13-term anisotropic local witness gives Omega=2+lambda I and exact invariance on selectedW. FullsignedS4 blocks this target onW; coefficient error creates transverse leakage. Native selection, stability and physical maps OPEN.
