@@ -1,0 +1,25 @@
+{
+  "record_type": "prospective_acquisition_plan",
+  "version": "0.1",
+  "source_revision": "9d934337c0a9f7a6341b20cf116c8b6cd31c79eb",
+  "status": "DESIGN_ONLY_UNSCORED",
+  "basis": "filled K4, ascending simplices, zero-based indices; x_j=P_sector e_index, paired with Jx_j",
+  "sector_ranks": [6, 6, 2],
+  "seeds": [
+    {"sector": 1, "simplex_index": 0, "native_absolute_preparation_source": null, "physical_flux_charge_trace": null},
+    {"sector": 1, "simplex_index": 1, "native_absolute_preparation_source": null, "physical_flux_charge_trace": null},
+    {"sector": 1, "simplex_index": 2, "native_absolute_preparation_source": null, "physical_flux_charge_trace": null},
+    {"sector": 2, "simplex_index": 4, "native_absolute_preparation_source": null, "physical_flux_charge_trace": null},
+    {"sector": 2, "simplex_index": 5, "native_absolute_preparation_source": null, "physical_flux_charge_trace": null},
+    {"sector": 2, "simplex_index": 7, "native_absolute_preparation_source": null, "physical_flux_charge_trace": null},
+    {"sector": 3, "simplex_index": 14, "native_absolute_preparation_source": null, "physical_flux_charge_trace": null}
+  ],
+  "minimum_measurements_per_seed": "14 synchronized signed physical quadrature readouts at two noncollinear native phases; more samples for dynamics and uncertainty",
+  "strict_phase_step_condition": "|Delta phi|<pi (native |Delta s|<pi/2), with source-justified same-orbit and unwrapping assumptions",
+  "independent_absolute_support_and_energy_calibration": null,
+  "certified_K_G_tau0_and_residual_bounds": null,
+  "coherent_phase_reference_and_null_comparison": null,
+  "joint_uncertainty_and_target_ancestry": null,
+  "source_packet_to_Hodge_map": null,
+  "physical_promotion": 0
+}

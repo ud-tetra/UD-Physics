@@ -104,3 +104,13 @@ Resumed held claim 7286350 after restoring the published checkout. Integrated 9d
 Captured artifacts/clockmatrix-20261104-01/exact-010 (EXACT): Uniform Fourier and Cayley interval through mu=1/64
 
 Final checks passed on the reconciled base. Integrity 542 records, all 16 repository tests and whitespace check. Claim retained for PR 312 review.
+
+### 2026-11-05 — First transverse loss
+
+Resumed held claim 7286350 from published discovery c48a78b. Reconciled main 738b9d2 after inspecting the independent G05/G06 finite-step and seven-preparation gate. Exact rational block decomposition and outward integration/parameter enclosure replay passed. First loss of bounded linear transverse evolution for fixed eta=1 is unique in (77511/12500,62009/10000). Three identical -1 Jordan blocks at onset. The endpoint bracket followed a floating scan. No model coefficients changed. Constructor verification only. Physical promotion 0. Next Quantify precritical transient gain and postcritical growth near the verified first loss.
+
+## 2026-11-05T23:17:33.825438+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-011 (EXACT): First transverse loss in a rational bracket of width 1/50000
+
+Final integrity and all 16 repository tests passed. Claim retained for PR 312 review.

@@ -39,16 +39,17 @@
     "Exact interval replay PASS:metric LDL bounds,mu2^-30 scalar margins,normal gain64 and modified nonlinear phase window",
     "Explicit-interval milestone PASS529 integrity records/digests, all16 tests and whitespace check",
     "Merged currentmaina4406f1 after Hodge-port calibration audit; clock dependencies unchanged; integrity PASS535 and all16 tests PASS",
-    "Fourier/Cayley exact rational replay PASS. Prior exact-009 results unchanged."
+    "Fourier/Cayley exact rational replay PASS. Prior exact-009 results unchanged.",
+    "Exact block and outward-rounded boundary replay PASS."
   ],
-  "finding": "Fixed eta=1 clock certified for 0<mu<=1/64 with all-time linear normal gain <=8 at phase zero. Finite nonlinear phase error <1/1000 under declared gates.",
-  "next_action": "Bound the larger-coupling loss of transverse stability using verified signed spectral enclosures.",
+  "finding": "First loss of bounded linear transverse evolution for fixed eta=1 is unique in (77511/12500,62009/10000). Three identical -1 Jordan blocks at onset.",
+  "next_action": "Quantify precritical transient gain and postcritical growth near the verified first loss.",
   "access_mode": "Git compute; connector publication; Git push unavailable",
-  "checkpoint_at": "2026-11-05T22:20:26.609867+00:00",
+  "checkpoint_at": "2026-11-05T23:17:14.090060+00:00",
   "checkpoint_source": {
     "revision": "88cb676d36ea934afe973ba3e7b2ea4855185119",
     "dirty": true
   },
-  "resume_integrated_revision": "9d934337c0a9f7a6341b20cf116c8b6cd31c79eb",
-  "last_published_parent": "1de2e0299a813a4362ce38cb2c13d469822a7d1c"
+  "resume_integrated_revision": "738b9d205fd9f9735a05d4976de70f1519474bff",
+  "last_published_parent": "c48a78b8f803fadce8d1b0779a05eb2b6b2fc1e3"
 }

@@ -1,0 +1,65 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-011",
+  "created_at": "2026-11-05T23:17:33.825064+00:00",
+  "evidence": "EXACT",
+  "summary": "First transverse loss in a rational bracket of width 1/50000",
+  "command": "python3 experiments/clock-matrix-question/stability_boundary.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "757ffbe72472877b0ea8d0310725a955c75ece78",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "stability_boundary.py",
+      "path": "inputs/001-stability_boundary.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/stability_boundary.py",
+      "sha256": "4a1edd547caceb4c97f9fa9c6913b9d6f7f7c26bd42e679e9aa55c34681aea8e",
+      "size_bytes": 8912
+    },
+    {
+      "input_id": "input-002",
+      "name": "certified_interval.py",
+      "path": "inputs/002-certified_interval.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/certified_interval.py",
+      "sha256": "4afee3366ab72065dfb73a76c069c259af0de5e1afd1a07120d1d2f82bb027b9",
+      "size_bytes": 4451
+    },
+    {
+      "input_id": "input-003",
+      "name": "stabilization_exact.py",
+      "path": "inputs/003-stabilization_exact.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/stabilization_exact.py",
+      "sha256": "d3602ae4d49cfb45225481417959be9e460d629b0350a555a700c326fab1d2de",
+      "size_bytes": 4703
+    },
+    {
+      "input_id": "input-004",
+      "name": "stability_boundary_receipt.json",
+      "path": "inputs/004-stability_boundary_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/stability_boundary_receipt.json",
+      "sha256": "38ce3da83ee1615c35e29e437dd56620475f3a44c40665c3f56d0ab85769d8e4",
+      "size_bytes": 8254
+    }
+  ],
+  "files": [
+    {
+      "path": "files/STABILITY_BOUNDARY.md",
+      "sha256": "a9207409aead6a4866f1fe00b6fb4321f58cfbe33fc1b7b78420f091fa6192aa",
+      "size_bytes": 6875
+    },
+    {
+      "path": "files/stability_boundary_results.json",
+      "sha256": "25e09e1d409b3fb6a0f57d7d5bd29d944b3cbb40a56af82870fc63ead7ee0b29",
+      "size_bytes": 615
+    }
+  ]
+}

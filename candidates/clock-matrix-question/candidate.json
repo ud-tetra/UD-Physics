@@ -29,8 +29,8 @@
     "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/"
   ],
   "baseline": "Ordinary oscillator retuning and time-unit rescaling",
-  "result": "Fixed eta=1 clock certified for 0<mu<=1/64 with all-time linear normal gain <=8 at phase zero. Finite nonlinear phase error <1/1000 under declared gates.",
-  "next_discriminant": "Bound the larger-coupling loss of transverse stability using verified signed spectral enclosures.",
+  "result": "First loss of bounded linear transverse evolution for fixed eta=1 is unique in (77511/12500,62009/10000). Three identical -1 Jordan blocks at onset.",
+  "next_discriminant": "Quantify precritical transient gain and postcritical growth near the verified first loss.",
   "mathematical_receipts": [
     "sessions/clockmatrix-20261104-01/mathematical_receipt.json",
     "sessions/clockmatrix-20261104-01/two_clock_receipt.json",
@@ -41,7 +41,8 @@
     "sessions/clockmatrix-20261104-01/transverse_receipt.json",
     "sessions/clockmatrix-20261104-01/stabilization_receipt.json",
     "sessions/clockmatrix-20261104-01/certified_interval_receipt.json",
-    "sessions/clockmatrix-20261104-01/fourier_interval_receipt.json"
+    "sessions/clockmatrix-20261104-01/fourier_interval_receipt.json",
+    "sessions/clockmatrix-20261104-01/stability_boundary_receipt.json"
   ],
   "parked_scope": "fixed13-termQ as long-time robust clock; preserves invariant plane and finite observation theorem; prior all-V local obstruction unchanged",
   "reopening_conditions": [
@@ -49,5 +50,5 @@
     "restricted prepared clock sector with leakage bound",
     "changed permitted interaction support"
   ],
-  "active_scope": "explicit conservative linear interval and finite nonlinear readout only;native selection and nonlinear all-time stability OPEN"
+  "active_scope": "Linear first-loss certificate and prior finite nonlinear readout. Physical maps OPEN."
 }
