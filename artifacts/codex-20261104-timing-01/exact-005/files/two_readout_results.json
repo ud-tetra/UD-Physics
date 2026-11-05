@@ -1,0 +1,40 @@
+{
+  "version": "v0.5",
+  "evidence": "EXACT_CONDITIONAL",
+  "physical_promotion": 0,
+  "source_commit": "3434916ad00ffc63bf84180cabc93fa8e15dc635",
+  "readouts": {
+    "W": "x4-x3",
+    "Y": "x1-x0"
+  },
+  "exact_signals": {
+    "FULL_W": "-cos(sqrt(5)u)/4",
+    "PROJECTED_W": "-cos(sqrt(3)u)/4",
+    "BOTH_Y": "2sin(sqrt(5)u)/sqrt(5)"
+  },
+  "clock_invariant_residual": "R=16W^2+(5/4)Y^2-1",
+  "full_residual": "0 for every phase",
+  "projected_residual": "sin^2(sqrt(5)u)-sin^2(sqrt(3)u)",
+  "nominal_projected_gap_lower_bound": "1/57600",
+  "observed_reference_window": [
+    "1/100",
+    "1/80"
+  ],
+  "per_channel_error_bound": "1/1000000",
+  "residual_error_bound": "96500207/12000000000000",
+  "decision_threshold": "1/115200",
+  "residual_classification_margin": "22999379/36000000000000",
+  "sufficient_joint_budget": "(91/2)epsilon+(17/2)r+3D+eta<=1/1000000",
+  "example_budget_used": "249/400000000",
+  "phase_registration": "first rising reference quarter, 0<=u<=pi/(2sqrt(5))",
+  "allowed_clock": "arbitrary common nonnegative scalar rate v(t); u=integral v; no absolute calibration",
+  "operator_error": "D=int norm(E) after extracting scalar rate; metric and event map fixed",
+  "adversarial_enclosure_corner_checks": 2056,
+  "phase_grid_points": 257,
+  "limitations": [
+    "two readouts simultaneous or channel phase mismatch included in eta",
+    "first-quarter registration must be supplied; later cycles not certified",
+    "zero progress produces no reference-window admission",
+    "independent channel gains, metric/event-map changes and native probe selection open"
+  ]
+}

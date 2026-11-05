@@ -65,3 +65,17 @@ Captured artifacts/codex-20261104-timing-01/exact-004 (EXACT): Post-event genera
 Checkpoint (handoff): EXACT conditional fixed-metric post-event generator/ramp tolerance; single-readout rate freedom produces exact ambiguity
 
 Next: Find a second boundary readout that distinguishes the two continuations without absolute rate calibration
+
+## 2026-11-05T18:07:21.397097+00:00
+
+Resumed verified held claim at 3434916; current integrated state now indexes Q136/G06 separately. v0.5 checks a shared equatorial mode and derives a clock-invariant paired boundary residual. Relative calibration and startup branch remain explicit assumptions.
+
+## 2026-11-05T18:07:21.455018+00:00
+
+Captured artifacts/codex-20261104-timing-01/exact-005 (EXACT): Two boundary readouts remove common scalar clock ambiguity on registered startup branch
+
+## 2026-11-05T18:07:21.515906+00:00
+
+Checkpoint (handoff): EXACT conditional paired boundary residual distinguishes continuations under arbitrary shared scalar phase; registered startup and per-channel error <=1/1000000 required
+
+Next: Certify relative channel gain/offset tolerance and startup-branch registration

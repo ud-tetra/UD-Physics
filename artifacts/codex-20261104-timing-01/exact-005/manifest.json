@@ -1,0 +1,105 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-20261104-timing-01",
+  "run_id": "exact-005",
+  "created_at": "2026-11-05T18:07:21.454618+00:00",
+  "evidence": "EXACT",
+  "summary": "Two boundary readouts remove common scalar clock ambiguity on registered startup branch",
+  "command": "python3 -B experiments/pachner-timing-budget/two_readout.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "3434916ad00ffc63bf84180cabc93fa8e15dc635",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "two_readout.py",
+      "path": "inputs/001-two_readout.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/two_readout.py",
+      "sha256": "0d203bd62a630e535b3d24cc74fbcf79decdeb1a85beca1c93432c17d3544d1f",
+      "size_bytes": 7073
+    },
+    {
+      "input_id": "input-002",
+      "name": "TWO_READOUT_v0.5.md",
+      "path": "inputs/002-TWO_READOUT_v0.5.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/TWO_READOUT_v0.5.md",
+      "sha256": "764261db7c54997c1e4cae2a71413f30c2782ea7df5a68545cdf3dc0feba3067",
+      "size_bytes": 6946
+    },
+    {
+      "input_id": "input-003",
+      "name": "two_readout_receipt.json",
+      "path": "inputs/003-two_readout_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/pachner-timing-budget/two_readout_receipt.json",
+      "sha256": "f8af68cd4ad9a4682e49a7d9faedf95d66ff22a987533f9571fa137e8880d0aa",
+      "size_bytes": 7484
+    },
+    {
+      "input_id": "input-004",
+      "name": "audit.py",
+      "path": "inputs/004-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/audit.py",
+      "sha256": "89326be389d9cca47d8b4a7324b8b013f58368df4808978e1f89031ee1428310",
+      "size_bytes": 8361
+    },
+    {
+      "input_id": "input-005",
+      "name": "COMPARISON_v0.2.md",
+      "path": "inputs/005-COMPARISON_v0.2.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/COMPARISON_v0.2.md",
+      "sha256": "60837ca2489200a71cec33eb75246b503bf020b55c6af258ecf588dd76a9276f",
+      "size_bytes": 5772
+    },
+    {
+      "input_id": "input-006",
+      "name": "audit.py",
+      "path": "inputs/006-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-interface-defect/audit.py",
+      "sha256": "a3f1762db95e3845b09561906b229bc816c7e65b58ef3705e485cfe79099802a",
+      "size_bytes": 6091
+    },
+    {
+      "input_id": "input-007",
+      "name": "audit.py",
+      "path": "inputs/007-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-switch-ledger/audit.py",
+      "sha256": "8d1817d486add01a3e00da5d5ba16f4b06fea22551af50515bb68c3fc552b034",
+      "size_bytes": 5650
+    },
+    {
+      "input_id": "input-008",
+      "name": "audit.py",
+      "path": "inputs/008-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/audit.py",
+      "sha256": "472965714d8009d03e6916c4491e95514ccb7bff7ad9511d7a5fb8e8e3cd8aee",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-009",
+      "name": "audit.py",
+      "path": "inputs/009-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-boundary-observability/audit.py",
+      "sha256": "e8e36515d2f56fee6a8d849d0a9e368ced8cdff76ef199a796b15939630eb6de",
+      "size_bytes": 9321
+    }
+  ],
+  "files": [
+    {
+      "path": "files/two_readout_results.json",
+      "sha256": "a2a5309d58c21506c721970e3d1601053be17238fae8a2d78cc0e1643b4da242",
+      "size_bytes": 1597
+    }
+  ]
+}

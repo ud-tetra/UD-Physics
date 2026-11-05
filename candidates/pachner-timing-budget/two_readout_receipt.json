@@ -1,0 +1,168 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "pachner-clock-free-boundary-pair-v0.5",
+  "session_id": "codex-20261104-timing-01",
+  "candidate_id": "pachner-timing-budget",
+  "question": "Can two simultaneous boundary readouts distinguish continuations without an absolute clock scale?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "event",
+      "symbol": "W,Y,R",
+      "object_type": "paired boundary observable and classifier",
+      "definition": "two target vertex contrasts and algebraic residual 16W^2+5Y^2/4-1",
+      "domain": "rational signed measured amplitudes; common real phase",
+      "codomain": "FULL,PROJECTED, or abstention",
+      "coefficient_domain": "Q observable algebra; exact real flow",
+      "units": "native amplitude, squared-amplitude reserve, dimensionless parameter",
+      "basis_orientation": "ascending oriented simplices",
+      "metric_measure": "unit before event; H=M^T M+P afterward",
+      "origin": "prior conditional plus derived bounds",
+      "exact_expression": "RF=0; RP>=1/57600 on admitted startup window",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "trigger",
+        "ledger"
+      ],
+      "assumption_ids": [
+        "projection",
+        "single_ball",
+        "prepared_signed_state"
+      ],
+      "dependency_ids": [],
+      "normalization": "no physical normalization"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "trigger",
+      "url_or_repo_path": "experiments/pachner-trigger-lift/README.md",
+      "version_or_commit": "41da46f2f3f3dd25f794fbbb5dedc16ea00854d8",
+      "section_or_object_id": "Objects; post-event projection; readout",
+      "source_status": "prior conditional"
+    },
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "v0.39",
+      "section_or_object_id": "Q165-Q173,Q177-Q179",
+      "source_status": "historical read-only"
+    }
+  ],
+  "assumptions": [
+    "one snapped 2-to-3 ball; signed prepared face and edge",
+    "fixed old skew preflow and constant reserve",
+    "event-image projection and metric H",
+    "two fixed mask hypotheses; max-absolute-edge selector and holding are posited",
+    "known nominal sample time; bounded jitter and signed scalar reading",
+    "v0.2 probe deliberately adds 1/4 at old vertex 3; all-active flow in both continuation hypotheses",
+    "v0.4 fixed ambient metric and event map; post-event ramp/perturbation with norm and integrated-deficit bounds",
+    "v0.5 simultaneous signed W,Y readouts; registered first rising reference quarter; common scalar phase; bounded residual nonscalar error"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact Fraction linear algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "metric and derivative checks"
+    },
+    {
+      "technique": "norm bounds, Taylor theorem, monotone zero",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "continuous interval and perturbation proof"
+    },
+    {
+      "technique": "modular clocks and factorization",
+      "applicability": "NA",
+      "purpose_or_na_reason": "no modular register or divisibility question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "16*(1/4)^2*cos^2(sqrt(5)u)+(5/4)*(2/sqrt(5))^2*sin^2(sqrt(5)u)-1",
+    "reduced_expression": "0 for full; projected gap >=1/57600",
+    "factor_origins": [
+      "1/4 apex preparation amplitude",
+      "2 equatorial derivative",
+      "squared frequencies 5 and 3",
+      "separate normalization of the two observables"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "arbitrary common monotone scalar phase u=int v",
+    "update_rule": "v(t)Bh plus bounded nonscalar cumulative error",
+    "physical_unit_map": "none; absolute calibration eliminated for this observable comparison",
+    "period_claim": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "old R23; target R27 plus kernel memory",
+    "generator_or_update": "v(t)BF or v(t)BP plus cumulative bounded ambient error",
+    "initial_boundary_conditions": "original c0 for no-go; c0+(1/4)e3 for probe",
+    "conservation_and_sources": "old norm; conditional event reserve balance; H-norm after event",
+    "projection_and_kernel": "rank-2 memory, event projection assumed",
+    "physical_mapping": "none; shared unknown scalar clock removed conditionally, relative readout normalization still assumed"
+  },
+  "target_exposure": {
+    "status": "Prior chat mask comparisons exposed; no empirical data used",
+    "known_targets": [
+      "prior single-readout rate alias"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "second readout selected after matrix inspection",
+      "normalized quadratic residual",
+      "conservative observed reference window"
+    ],
+    "search_domain_and_budget": "equatorial contrast x1-x0 checked as one additional observable",
+    "selection_criterion": "exact shared mode and clock-invariant curve distinction",
+    "baseline": "full-flow residual zero"
+  },
+  "calculation_steps": [
+    "verify exact row ODEs and initial data for both contrasts",
+    "remove common scalar clock by paired algebraic residual",
+    "use registered reference quarter and observed window to bound ideal phase",
+    "Taylor-bound projected residual separation",
+    "bound independent readout errors and common preparation/reserve/nonscalar error",
+    "test 2056 enclosure/noise corners and abstention guards"
+  ],
+  "result": {
+    "exact_expression": "threshold 1/115200; residual margin>=22999379/36000000000000; per-channel error<=1/1000000",
+    "approximation": null,
+    "units": "native model units",
+    "precision_and_error": "rational matrix identities plus analytic inequalities",
+    "scope": "declared apex probe; registered first rising reference quarter; common arbitrary nonnegative scalar phase; fixed metric/event map",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "Fraction row identities, Taylor proof and paired-noise corners",
+      "command_or_proof_path": "experiments/pachner-timing-budget/two_readout.py; TWO_READOUT_v0.5.md",
+      "source_revision": "3434916ad00ffc63bf84180cabc93fa8e15dc635",
+      "actual_result": "PASS: exact rows and 2056 adversarial corners",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Phase zero is indistinguishable; reference-window admission required",
+    "Later cycles can revisit ambiguous residuals; startup registration required",
+    "Independent channel rate/gain freedom not removed",
+    "Zero scalar advance never reaches admission window"
+  ],
+  "limitations": [
+    "Startup phase branch supplied, not inferred by one reading pair",
+    "Relative gains/offsets and channel simultaneity must fit eta",
+    "No metric/event-map perturbation or native probe selection",
+    "No independent/empirical review"
+  ],
+  "changed_dependencies": [
+    "Adds equatorial boundary reference contrast; scalar-rate uncertainty absorbed into shared phase instead of bounded absolutely"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/codex-20261104-timing-01/exact-005/manifest.json"
+  ],
+  "next_discriminant": "Certify relative channel gain/offset tolerance and a reproducible startup-branch registration rule"
+}

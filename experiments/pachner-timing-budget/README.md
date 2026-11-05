@@ -155,3 +155,6 @@ midpoint with rational arithmetic and certified prediction enclosures.
 
 [Generator/ramp extension v0.4](ROBUSTNESS_v0.4.md) adds a fixed-metric
 post-event uncertainty budget and states the exact single-readout rate ambiguity.
+
+[Two-readout v0.5](TWO_READOUT_v0.5.md) removes the single-channel scalar-rate
+ambiguity on a registered startup branch, with independent channel-error bounds.
