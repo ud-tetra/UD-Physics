@@ -41,16 +41,17 @@
     "Merged currentmaina4406f1 after Hodge-port calibration audit; clock dependencies unchanged; integrity PASS535 and all16 tests PASS",
     "Fourier/Cayley exact rational replay PASS. Prior exact-009 results unchanged.",
     "Exact block and outward-rounded boundary replay PASS.",
-    "Exact near-threshold entry, derivative and scalar margin replay PASS."
+    "Exact near-threshold entry, derivative and scalar margin replay PASS.",
+    "Exact finite nonlinear margin replay PASS."
   ],
-  "finding": "On [31/5,621/100], fixed eta=1 sampled peak gain below onset is between (47/10)/sqrt(delta) and (51/10)/sqrt(delta). Continuous gain upper is 41/sqrt(delta). Native growth exponent above onset is between sqrt(delta)/4 and (27/100)sqrt(delta).",
-  "next_action": "Derive a finite nonlinear operating margin near the threshold using the linear gain bounds and a controlled nonlinear remainder.",
+  "finding": "For I=1 and 31/5<=mu<77511/12500, initial state error <=1/16000000 gives state error <=1/240000 and lifted phase error <1/300000 rad through one native time unit.",
+  "next_action": "Tighten the finite margin by bounding the two-time propagator over the observation horizon and separating tangential and normal error transfer.",
   "access_mode": "Git compute; connector publication; Git push unavailable",
-  "checkpoint_at": "2026-11-05T23:23:44.682318+00:00",
+  "checkpoint_at": "2026-11-05T23:48:14.632154+00:00",
   "checkpoint_source": {
     "revision": "88cb676d36ea934afe973ba3e7b2ea4855185119",
     "dirty": true
   },
-  "resume_integrated_revision": "d65c8a27637d3bd73cc855e8fb1173b7e98ce6af",
-  "last_published_parent": "e762e5f559bceb65f63929cfc72e9c8bce10ab62"
+  "resume_integrated_revision": "234f54471c32cc9ad4873cd8042103fa19795909",
+  "last_published_parent": "fca1a8afb36f7037b3917f88d58873823c2ab7f8"
 }

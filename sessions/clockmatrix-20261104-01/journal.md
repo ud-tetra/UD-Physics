@@ -124,3 +124,13 @@ Resumed held claim 7286350. Reconciled main d65c8a2. Fixed eta=1 and reused exac
 Captured artifacts/clockmatrix-20261104-01/exact-012 (EXACT): Near-threshold gain and native growth bounds
 
 Final integrity and all 16 repository tests passed. Claim retained for PR 312 review.
+
+### 2026-11-05 — Finite nonlinear margin
+
+Resumed held claim 7286350 from the tree of stored commit fca1a8a. Reconciled main 234f544. Used prior certified gain envelope and a two-time bound plus tangent shear. For I=1 and 31/5<=mu<77511/12500, initial state error <=1/16000000 gives state error <=1/240000 and lifted phase error <1/300000 rad through one native time unit. Rational replay passed. Constructor verification. Physical promotion 0. Next Tighten the finite margin by bounding the two-time propagator over the observation horizon and separating tangential and normal error transfer.
+
+## 2026-11-05T23:48:14.689350+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-013 (EXACT): Finite nonlinear state and phase preparation margin
+
+Rational replay, integrity for 557 records, whitespace and all 16 repository tests passed. Claim retained for PR 312 review.
