@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-g0506-transport-energy-20261105",
+  "goal": "Index transport Q136 and G06 support audit after research PR #321",
+  "owned_paths": [
+    "tasks/integration-g0506-transport-energy-20261105.json",
+    "sessions/g0506transportidx-20261105-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "g0506-transport-energy-20261105"
+  ],
+  "status": "complete"
+}
