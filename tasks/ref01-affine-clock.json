@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "ref01-affine-clock",
+  "goal": "Separate constant clock offset and rate drift in bipyramid raw returns",
+  "owned_paths": [
+    "tasks/ref01-affine-clock.json",
+    "sessions/codex-20261103-affine-01/",
+    "artifacts/codex-20261103-affine-01/",
+    "candidates/ref01-affine-clock/"
+  ],
+  "dependencies": [],
+  "status": "complete"
+}
