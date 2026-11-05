@@ -421,12 +421,46 @@
       "name": "v1.4 native selected parity clock and physical bridge",
       "status": "OPEN",
       "reason": "QPB1 zero-crossing observation does not select Gray successor or SI event time"
+    },
+    {
+      "name": "v1.5 exact all-depth native unit-edge boundary response recursion",
+      "status": "PASS",
+      "method": "induction w_(n+1)=(11w_n+1)/4 and closed alpha_n"
+    },
+    {
+      "name": "v1.5 independent direct rational Schur n0–3",
+      "status": "PASS",
+      "method": "exact 4x4 boundary matrix, response 1,5/4,31/16,245/64, 24 S4 checks each"
+    },
+    {
+      "name": "v1.5 independent five-vertex Kron reduction",
+      "status": "PASS",
+      "method": "symbolic old-old2w and radial1+3w, eliminate centroid"
+    },
+    {
+      "name": "v1.5 Q171 equal-norm same-shell state counterexample",
+      "status": "PASS",
+      "method": "pure top cell vs uniform four child top cells, core stocks distinct at every n"
+    },
+    {
+      "name": "v1.5 eight local exact tests",
+      "status": "PASS",
+      "method": "8/8 SymPy, same constructor"
+    },
+    {
+      "name": "v1.5 all physical observables and finite operational length floor",
+      "status": "OPEN",
+      "reason": "observer/algebra, physical threshold/metric and stopping rule not source selected"
+    },
+    {
+      "name": "v1.5 non-constructor mathematical review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v1.4 EXACT conditional: S4-equivariant 8-cycle on Θ×ordered-pair-frame is possible iff effective frame M has free S3 orbit, min cardinality6. Existing 192 frame×Θ can implement selected 24 eight-cycles; Gray one-bit update 12 alternative directed cycles, non-affine Boolean carry needed (1344 affine maps no8), raw exploratory bit-state covariance36864 PASS. Categorical current conserved, native C15 eight-projector ranks1+7×2 block whole-sector invertible eight-cycle. Source-selected QPB1 clock and physical metric OPEN.",
-  "next_action": "Test whether QPB1 real q/p zero-crossing events with sourced preparation can select unique local Gray event schedule and Q170-179 burden current; if absent freeze physical eight-tick claim.",
+  "finding": "v1.5 exact scoped all-depth K4 no-floor: declared unit-edge boundary response Lambda_n=[6+(11/4)^n]/7*(4I−J) increases strictly at every recursive 1→4 depth, independent Kron proof and rational graph n0–3. Original shell unchanged (4,6,4), but Q171 top-cell core supports distinguish equal-norm interior states every n. 192 per-packet capacity not a global cell or physical length bound. Physical observer/algebra/metric/terminal gate OPEN.",
+  "next_action": "Derive/freeze a physically admitted scale-aware observation algebra and a source-selected recursive admissibility/metric rule before any Planck length or minimum resolution claim.",
   "mathematical_profile": {
-    "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
+    "coefficient_domain": "Z native 1→4 simplex graph and chain counts, Q exact Schur response, R native top-cell amplitudes",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
     "applicable_methods": [
       "Euler",
@@ -436,6 +470,6 @@
       "closed-loop O(2) holonomy",
       "Pachner vs seam gluing distinction"
     ],
-    "clock_metric_units_conventions": "assumed nonorientable KxI gluing, no physical time/metric, K4 unit metric only for S4 compatibility"
+    "clock_metric_units_conventions": "recursive depth n is not physical time; unit edge weights candidate boundary port, Q171 core support, no SI units or Planck target"
   }
 }
