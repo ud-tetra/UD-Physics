@@ -28,3 +28,7 @@ Integral homology is preserved by the strong deformation retraction: `H0=Z/2,H1=
 The forward subdivision S is geometrically cell-local, but the **reverse integral P was obtained through algebraic Morse cancellation**. Strict geometric bounded-support locality of P is not established. No physical time, metric-compatible generator intertwining, measured orientation-reference coupling, particle retention or new force emerges from this theorem. Klein seam gluing, the even K4 S4 completion, and physical relevance remain candidate assumptions. **Physical promotion=0.**
 
 Next: characterize support radius of P and check a geometrically local integral inverse if UD locality requires it; then source a native K4 seam rule and an independent framed transport measurement. Do not equate integral chain equivalence with physical equivalence.
+
+## Weak finite-locality diagnostic (not a uniform theorem)
+
+For this one 18-vertex barycentric quotient graph, the nonzero algebraic reverse-map coefficients have minimum source-simplex-to-output-subdivision-support vertex distance at most 1. Exact finite histograms: degrees 0/1/2/3 yield distances {0:2,1:16}, {0:76,1:105}, {0:45,1:5}, {0:1} respectively. The diagnostic takes the minimum among simplex/support vertices, so it does **not** prove that the entire output support is within one graph hop, nor a refinement-uniform physical locality bound. See `experiments/klein-tetra-face-flip-20261103/finite_locality_diagnostic_v06.json`. Strict locality remains OPEN.
