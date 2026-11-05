@@ -1,0 +1,88 @@
+{
+  "source": "interval with m unit-weight fine edges; original two endpoints retained; coarse edge signed sum",
+  "induced_metric": "diag(1,1,m)",
+  "generator": "[[0,0,-1],[0,0,1],[1/m,-1/m,0]]",
+  "squared_angular_frequency": "2/m",
+  "fine_image_leakage_squared": "2(1-1/m)",
+  "controls": [
+    {
+      "m": 1,
+      "coarse_G": [
+        1,
+        1,
+        1
+      ],
+      "coarse_omega_squared": "2",
+      "leakage_squared": "0",
+      "leakage_rank": 0
+    },
+    {
+      "m": 2,
+      "coarse_G": [
+        1,
+        1,
+        2
+      ],
+      "coarse_omega_squared": "1",
+      "leakage_squared": "1",
+      "leakage_rank": 1
+    },
+    {
+      "m": 4,
+      "coarse_G": [
+        1,
+        1,
+        4
+      ],
+      "coarse_omega_squared": "1/2",
+      "leakage_squared": "3/2",
+      "leakage_rank": 2
+    },
+    {
+      "m": 8,
+      "coarse_G": [
+        1,
+        1,
+        8
+      ],
+      "coarse_omega_squared": "1/4",
+      "leakage_squared": "7/4",
+      "leakage_rank": 2
+    },
+    {
+      "m": 16,
+      "coarse_G": [
+        1,
+        1,
+        16
+      ],
+      "coarse_omega_squared": "1/8",
+      "leakage_squared": "15/8",
+      "leakage_rank": 2
+    },
+    {
+      "m": 32,
+      "coarse_G": [
+        1,
+        1,
+        32
+      ],
+      "coarse_omega_squared": "1/16",
+      "leakage_squared": "31/16",
+      "leakage_rank": 2
+    },
+    {
+      "m": 64,
+      "coarse_G": [
+        1,
+        1,
+        64
+      ],
+      "coarse_omega_squared": "1/32",
+      "leakage_squared": "63/32",
+      "leakage_rank": 2
+    }
+  ],
+  "physical_promotion": 0,
+  "status": "PASS_EXACT"
+}
