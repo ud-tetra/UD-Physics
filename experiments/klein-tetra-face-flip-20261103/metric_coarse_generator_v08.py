@@ -37,7 +37,7 @@ out={
 "generator":"A_G=D_c-G^-1 D_c^T G",
 "conserved_quadratic_stock":"y^T G y",
 "metric_skew":True,"incidence_local":True,
-"incidence_pairs":len(pairs),"flux_coefficients_2GiAij_signless":[*pairs],
+"incidence_pairs":len(pairs),"oriented_edge_current_coefficients_GiAij":[*pairs],
 "naive_unit_metric_generator":"A_0=D_c-D_c^T",
 "difference_rank":5,"difference_Frobenius_squared":"151/18",
 "formal_parameter":"native u, no physical clock or SI unit",
