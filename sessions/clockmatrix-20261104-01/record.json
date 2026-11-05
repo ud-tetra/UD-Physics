@@ -20,14 +20,16 @@
     "Exact Fraction toy controls PASS",
     "16 repository unit tests PASS",
     "Candidate status corrected from evidence label to ACTIVE workflow status",
-    "Nonconstructor review NOT_RUN"
+    "Nonconstructor review NOT_RUN",
+    "Two-clock exact replay PASS at w=0,1/2,1,2"
   ],
-  "finding": "Matrix representation and physical dilation are distinct; exact scalar/ratio/similarity and phase-alias controls pass",
-  "next_action": "Review focused PR; then source two-clock coupling and clock/readout map; retain claim until integration or abandonment",
+  "finding": "Exact two-tetra bridge has two protected independent clocks at rate ratio 1 while bridge-sensitive modes shift; no universal dilation from this coupling",
+  "next_action": "Classify couplings that preserve common active-sector rate scaling; source coefficient before physical clock comparison",
   "access_mode": "Git compute; connector publication; Git push unavailable",
-  "checkpoint_at": "2026-11-05T02:18:46.506286+00:00",
+  "checkpoint_at": "2026-11-05T02:25:15.232279+00:00",
   "checkpoint_source": {
-    "revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+    "revision": "5dc88115103809b397285f1229384f0ec24ec86c",
     "dirty": true
-  }
+  },
+  "resume_integrated_revision": "08e1aa8e71843c4fa8e5d88842d8dddad41bfa0a"
 }

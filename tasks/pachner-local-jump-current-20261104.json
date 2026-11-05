@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "pachner-local-jump-current-20261104",
+  "goal": "Test source Q169 local-current realization of shell-fixed two-memory jump and interior-sensitive event guard",
+  "owned_paths": [
+    "tasks/pachner-local-jump-current-20261104.json",
+    "sessions/pachlocaljump-20261104-01",
+    "candidates/pachner-local-jump-current",
+    "experiments/pachner-local-jump-current",
+    "artifacts/pachlocaljump-20261104-01"
+  ],
+  "dependencies": [
+    "pachner-symmetry-transfer-20261104"
+  ],
+  "status": "complete"
+}

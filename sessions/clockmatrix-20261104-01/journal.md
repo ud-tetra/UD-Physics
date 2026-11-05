@@ -27,3 +27,13 @@ BOOT: pinned fbb21d58; protocol v1.2/method v1.0; connector claim 72863501 verif
 Checkpoint (handoff): Matrix representation and physical dilation are distinct; exact scalar/ratio/similarity and phase-alias controls pass
 
 Next: Review focused PR; then source two-clock coupling and clock/readout map; retain claim until integration or abandonment
+
+## 2026-11-05T02:25:15.037161+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-002 (EXACT): Two protected tetrahedral clocks remain equal-rate; bridge changes other modes rather than a common lapse
+
+## 2026-11-05T02:25:15.258850+00:00
+
+Checkpoint (handoff): Exact two-tetra bridge has two protected independent clocks at rate ratio 1 while bridge-sensitive modes shift; no universal dilation from this coupling
+
+Next: Classify couplings that preserve common active-sector rate scaling; source coefficient before physical clock comparison

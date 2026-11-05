@@ -48,3 +48,7 @@ UD's current finite mathematical task is to specify which relationships, generat
 **Recommended Discovery target:** define two independently prepared local clock/readout subsystems and an interaction that predicts their relative rates without fitting that rate to the answer. Test common scaling, species-specific detuning and basis/readout changes separately. Motion or gravitational comparison and universality across clock types are later, separately specified gates. Physical promotion remains 0; non-constructor review NOT_RUN.
 
 Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact rational controls establish only the stated finite examples; the power-series and eigenvalue-ratio arguments establish the corresponding conditional statements. Journal, receipt and immutable capture are linked in the owning session. No new value of a UD structural or physical coefficient is selected.
+
+## Two-clock continuation
+
+[Two tetrahedral clocks and a declared bridge](TWO_CLOCKS.md) gives exact independently prepared phase planes, unchanged rate ratio 1 and preparation-dependent hybridized modes. Reproduce with `python3 experiments/clock-matrix-question/two_clock.py`. This narrows the candidate coupling, with physical clock interpretation OPEN.

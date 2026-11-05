@@ -1,0 +1,33 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pachlocaljump-20261104-01",
+  "runtime": "Codex GPT-6 Git/compute plus GitHub connector",
+  "task": "pachner-local-jump-current-20261104",
+  "goal": "Test Q169 local-current jump and Q170 interior guard",
+  "created_at": "2026-11-05T02:16:11.896371+00:00",
+  "base_revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "pachner-local-jump-current-20261104": {
+      "ref": "refs/heads/claims/pachner-local-jump-current-20261104",
+      "held_sha": "a4c654e0d79c523b5708b69b6abb8552d858f9ef",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "Exact Hasse and Q169 stock audit PASS",
+    "Project site Papers I–III 1.1.1 / IV 0.1 checked 2026-11-04",
+    "Nonconstructor review NOT_RUN",
+    "scripts/validate.py PASS after workflow status repair",
+    "16 unit tests PASS"
+  ],
+  "finding": "Q169 Hasse-only shell-fixed generator splits old/new interior stocks; Q170 interior stock detects hidden unit-face state, but no source threshold or memory coupling",
+  "next_action": "Relax shell-amplitude fixation to a specified retained boundary observable and measure necessary boundary disturbance",
+  "checkpoint_at": "2026-11-05T02:18:45.903251+00:00",
+  "checkpoint_source": {
+    "revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+    "dirty": true
+  }
+}

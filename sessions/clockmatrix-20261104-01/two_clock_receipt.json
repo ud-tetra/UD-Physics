@@ -1,0 +1,160 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "two-tetra-clock-bridge-002",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "Does a unit-incidence bridge between independently prepared tetrahedral clocks predict differential slowing?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "two-tetra-bridge",
+      "symbol": "A_w",
+      "object_type": "finite skew incidence generator",
+      "definition": "Two filled disjoint tetrahedra joined by edge 04; bridge boundary weight w",
+      "domain": "R^31",
+      "codomain": "R^31",
+      "coefficient_domain": "Q matrices for rational w; R states",
+      "units": "inverse dimensionless parameter",
+      "basis_orientation": "ascending simplex orientation; degree ordered",
+      "metric_measure": "H=I",
+      "origin": "assumed topology, imported evolution convention",
+      "exact_expression": "A_w=d_w-d_w^T",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "Q169"
+      ],
+      "assumption_ids": [
+        "carrier",
+        "clockprep"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit existing simplex boundaries; bridge column w; Laplacian weight w^2"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "08e1aa8e71843c4fa8e5d88842d8dddad41bfa0a",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "08e1aa8e71843c4fa8e5d88842d8dddad41bfa0a",
+      "section_or_object_id": "section 1",
+      "source_status": "finite generator convention"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "carrier",
+      "text": "two filled tetrahedra plus one edge; no fitted topology or physical coefficient"
+    },
+    {
+      "id": "clockprep",
+      "text": "independently selected leaf-difference phase planes, nonzero amplitude, signed readout"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational/operator algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "separate common scaling, basis change and detuning"
+    },
+    {
+      "technique": "clock/readout identifiability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "single-channel lapse/oscillator alias"
+    },
+    {
+      "technique": "prime factors/modular arithmetic",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no defined discrete clock or divisibility claim"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "(4+4,6+6+1,4+4,1+1)",
+    "reduced_expression": "f=(8,13,8,2); sum=31",
+    "factor_origins": [
+      "two copies and one new bridge edge"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "q_i prime=-2p_i; p_i prime=2q_i",
+    "initial_phase": "arbitrary independently prepared nonzero phase-plane states",
+    "coupling": "bridge does not act on protected clock sectors",
+    "period_claim": "pi per native parameter for each protected clock",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R^31",
+    "generator_or_update": "A_w=d_w-d_w^T",
+    "initial_boundary_conditions": "z0 in direct sum of two declared phase planes; no boundary loss",
+    "conservation_and_sources": "global Euclidean norm; individual protected-plane norm",
+    "projection_and_kernel": "q_i=<v_i,z>/2, p_i=<A_w v_i/2,z>/2",
+    "physical_mapping": "OPEN; no SI clock or relativistic lapse"
+  },
+  "target_exposure": {
+    "status": "question-informed design",
+    "known_targets": [
+      "common versus mode-dependent clock scaling"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "declared minimal bridge and protected local preparations; no empirical optimization"
+    ],
+    "search_domain_and_budget": "one topology; w=0,1/2,1,2 exact controls plus symbolic proof",
+    "selection_criterion": "minimal incidence-local native-dynamics extension",
+    "baseline": "disjoint tetrahedra"
+  },
+  "calculation_steps": [
+    "construct oriented chains and weighted bridge column",
+    "verify d^2=0 and A skew",
+    "prove A^2 v_i=-4v_i for each leaf difference",
+    "decompose vertex Laplacian into leaf differences and exchange-even/odd quotient",
+    "compare protected clocks with bridge-sensitive spectrum"
+  ],
+  "result": {
+    "exact_expression": "relative protected rate=1; det(lambda I-L)=lambda(lambda-4)^5[lambda^2-(4+2w^2)lambda+2w^2]",
+    "approximation": null,
+    "units": "native dimensionless parameter only",
+    "precision_and_error": "Fraction exact; polynomial verified by Faddeev-LeVerrier separately from quotient proof",
+    "scope": "declared carrier, metric, static bridge and clock preparations",
+    "physical_interpretation": "OPEN"
+  },
+  "verification": [
+    {
+      "method": "exact full-matrix replay and analytic quotient proof",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/two_clock.py; TWO_CLOCKS.md",
+      "source_revision": "08e1aa8e71843c4fa8e5d88842d8dddad41bfa0a",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "protected clocks unchanged although other frequencies shift",
+    "bridge-sensitive mode selection cannot establish a universal clock factor"
+  ],
+  "limitations": [
+    "bridge topology/weight not source-selected",
+    "no physical preparation",
+    "no motion/gravity/clock species law",
+    "independent review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/exact-002/manifest.json"
+  ],
+  "next_discriminant": "classify couplings preserving a common clock factor over a declared active sector"
+}
