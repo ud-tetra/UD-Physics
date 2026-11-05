@@ -230,10 +230,34 @@
     {
       "name": "v0.8 independent non-constructor review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.9 K4 actual 1→4→16 exact chain maps and S4",
+      "status": "PASS",
+      "method": "24 signed relabelings; two integral chain maps and composite"
+    },
+    {
+      "name": "v0.9 exact Gram and generator residuals",
+      "status": "PASS",
+      "method": "local SymPy 15/29/85D exact matrices, squared residuals13,52,151/4"
+    },
+    {
+      "name": "v0.9 native spectrum clock no-go",
+      "status": "PASS",
+      "method": "exact characteristic polynomials K0,K1,induced"
+    },
+    {
+      "name": "v0.9 six local tests",
+      "status": "PASS",
+      "method": "six constructor regressions; not external peer review"
+    },
+    {
+      "name": "v0.9 external non-constructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v0.8 EXACT/CONDITIONAL: induced coarse metric G=diag(1,1,2,2,2,2,2,8,8,12,12,72), metric-skew Galerkin A_G=Dc-G^-1Dc^T G, 11 incidence-local conserving currents; residual rank11, Frobenius squared157 and weighted squared242/3. Unit-weight interval omega²=2/m, so no native refinement-independent clock. Physical promotion0.",
-  "next_action": "Specify source-backed metric/clock/current on two actual tetrahedral refinement levels, test projection error under fixed readout and framed loop transport; seek external mathematical review.",
+  "finding": "v0.9 exact source-unit K4 1→4→16: chain f-vectors (4,6,4,1),(5,10,10,4),(9,26,34,16), S4 equivariant integer subdivisions; induced top Gram4,4,composite16; nonzero leakage norms²13,52,151/4; native K0 only magnitude2 vs K1 1,sqrt5. No single scalar physical clock repair.",
+  "next_action": "Seek source-admitted multilevel material metric and clock rule, test registered framed observable with null, and independent review; stop unit-incidence scalar clock branch.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
