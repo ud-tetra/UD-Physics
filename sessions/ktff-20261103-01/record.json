@@ -254,10 +254,39 @@
     {
       "name": "v0.9 external non-constructor review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.0 S4 opposite-pair parity orbit classification",
+      "status": "PASS",
+      "method": "24 exact actions, four orbit sizes 1,3,3,1"
+    },
+    {
+      "name": "v1.0 exact raw-state auxiliary projectors",
+      "status": "PASS",
+      "method": "1024 toy states, rank3 projection, 128 per fiber; NOT native real K4"
+    },
+    {
+      "name": "v1.0 uniform vs nonuniform positive S4 weights",
+      "status": "PASS",
+      "method": "exact Fraction alternative sector allocations"
+    },
+    {
+      "name": "v1.0 second refinement and normalization controls",
+      "status": "PASS",
+      "method": "native leakage13,52,151/4 and gain/metric factor2 controls"
+    },
+    {
+      "name": "v1.0 local exact regression tests",
+      "status": "PASS",
+      "method": "6/6 same-constructor"
+    },
+    {
+      "name": "v1.0 non-constructor math review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v0.9 exact source-unit K4 1→4→16: chain f-vectors (4,6,4,1),(5,10,10,4),(9,26,34,16), S4 equivariant integer subdivisions; induced top Gram4,4,composite16; nonzero leakage norms²13,52,151/4; native K0 only magnitude2 vs K1 1,sqrt5. No single scalar physical clock repair.",
-  "next_action": "Seek source-admitted multilevel material metric and clock rule, test registered framed observable with null, and independent review; stop unit-incidence scalar clock branch.",
+  "finding": "v1.0 parity 13/8: exact native unit K4 leakage13 versus finite Theta8; added orthogonal eight-sector fiber yields uniform 13/8 only by chosen weights. S4 four orbits permits strictly positive unequal weights; second level uniform13/2 and composite151/32; normalization not invariant. Physical Planck bridge OPEN.",
+  "next_action": "Source native eight-sector projectors/measure and operator dynamics; otherwise stop Planck 13/8 correspondence. Preserve accepted multilevel negative results.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
