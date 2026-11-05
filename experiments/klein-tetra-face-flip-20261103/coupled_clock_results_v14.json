@@ -1,0 +1,57 @@
+{
+  "version": "v1.4",
+  "status": "EXACT_CONDITIONAL_AND_SCOPED_NO_GO",
+  "source": "K4 parity dynamics v0.1 illustrative binary; QPB1 local skew and native event contract; native eight projector theorem v1.1; clock no-go v1.3",
+  "G": "S3, effective pair-permutation quotient of S4",
+  "Theta": "F2^3, eight labels",
+  "group": {
+    "S4_order": 24,
+    "effective_pair_group": "S3",
+    "S4_to_S3_kernel_size": 4,
+    "theta_address_count": 8,
+    "minimal_effective_frame_memory_states": 6,
+    "minimal_total_state_count": 48,
+    "existing_frame_theta_state_count": 192
+  },
+  "lower_bound": {
+    "periodic_eight_theta_projection_forces_trivial_S3_stabilizer": true,
+    "requires_free_frame_orbit_at_least": 6,
+    "frame_memory_cardinality_less_than_6_no_go": true
+  },
+  "candidate": {
+    "state": "(m,theta) in S3 x F2^3",
+    "update": "m fixed, eta=m^-1(theta), eta_next=(eta+5) mod8 in a CHOSEN binary encoding, theta_next=m(eta_next)",
+    "S4_equivariant_checks": 4608,
+    "period": 8,
+    "projected_theta_labels_per_orbit": 8,
+    "eight_cycles_on_48": 6,
+    "eight_cycles_on_192": 24,
+    "source_selected_rule": false,
+    "Boolean_nonlinearity": "eta0'=eta0 xor 1; eta1'=eta1 xor eta0; eta2'=eta2 xor 1 xor eta0*eta1"
+  },
+  "affine_obstruction": {
+    "GL3_F2": 168,
+    "affine_maps": 1344,
+    "eight_cycles": 0,
+    "max_cycle_histogram": {
+      "1": 1,
+      "2": 91,
+      "3": 224,
+      "4": 420,
+      "6": 224,
+      "7": 384
+    }
+  },
+  "current": {
+    "l1_stock_conserved": true,
+    "l2_norm_squared_conserved": true,
+    "flux_balance": true,
+    "fixture": {
+      "delta": 14,
+      "influx": 59,
+      "outflux": 45
+    },
+    "type": "candidate address-transition graph, NOT source Q170-179 burden"
+  },
+  "physical_promotion": 0
+}
