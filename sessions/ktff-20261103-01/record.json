@@ -206,10 +206,34 @@
     {
       "name": "v0.7 non-constructor review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.8 exact 348D/12D induced metric and CW currents",
+      "status": "PASS",
+      "method": "local full SymPy v0.6 integral subdivision replay, 11 local incidence pairs"
+    },
+    {
+      "name": "v0.8 348D Galerkin residual and flux",
+      "status": "PASS",
+      "method": "exact rank11 Frobenius²157 weighted²242/3"
+    },
+    {
+      "name": "v0.8 unit-weight interval refinement clock control",
+      "status": "PASS",
+      "method": "symbolic m formula and seven exact m=1..64 calculations"
+    },
+    {
+      "name": "v0.8 physical clock and full generator intertwinement",
+      "status": "OPEN",
+      "reason": "nonzero fine-image residual; no physical unit map"
+    },
+    {
+      "name": "v0.8 independent non-constructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v0.7 exact: reverse integral map full-support max pair distance2 on fixed 72-tet quotient graph, not prior nearest-distance1. Endpoint anchored refined-hop retractions obey r>=floor(m/2). Chosen unit 348D/12D skew generators fail P/S intertwinement: ranks10/11, Frobenius squared2842/298.",
-  "next_action": "Define scale-aware native locality and source selected metric-compatible coarse dynamics or stop the physical seam claim; obtain non-constructor review.",
+  "finding": "v0.8 EXACT/CONDITIONAL: induced coarse metric G=diag(1,1,2,2,2,2,2,8,8,12,12,72), metric-skew Galerkin A_G=Dc-G^-1Dc^T G, 11 incidence-local conserving currents; residual rank11, Frobenius squared157 and weighted squared242/3. Unit-weight interval omega²=2/m, so no native refinement-independent clock. Physical promotion0.",
+  "next_action": "Specify source-backed metric/clock/current on two actual tetrahedral refinement levels, test projection error under fixed readout and framed loop transport; seek external mathematical review.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
