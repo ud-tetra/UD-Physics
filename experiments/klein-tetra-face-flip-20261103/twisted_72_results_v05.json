@@ -1,0 +1,55 @@
+{
+  "cover_f_vector": [
+    36,
+    204,
+    312,
+    144
+  ],
+  "twisted_f_vector": [
+    18,
+    102,
+    156,
+    72
+  ],
+  "rank_twisted_d": [
+    18,
+    83,
+    72
+  ],
+  "twisted_Betti_R": [
+    0,
+    1,
+    1,
+    0
+  ],
+  "twisted_d1_smith_factors": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2
+  ],
+  "H0_Zrho": "Z/2Z",
+  "boundary_squared_zero": true,
+  "w1_hvx": [
+    1,
+    0,
+    1
+  ],
+  "H1_H2_integral": "not directly computed in 72x complexes; supported by cellular topology",
+  "status": "PASS_EXACT_CONDITIONAL",
+  "physical_promotion": 0
+}
