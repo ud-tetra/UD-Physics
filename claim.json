@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-g0506-transport-energy-20261105",
+  "session": "g0506transportidx-20261105-01",
+  "status": "held",
+  "created_at": "2026-11-05T18:09:16.597Z",
+  "base_revision": "4315b55e886cf9e38396e4bf054ad9f4f62d2554",
+  "owned_paths": [
+    "tasks/integration-g0506-transport-energy-20261105.json",
+    "sessions/g0506transportidx-20261105-01",
+    "state/CURRENT.md"
+  ]
+}
