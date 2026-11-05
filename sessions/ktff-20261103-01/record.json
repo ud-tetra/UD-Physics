@@ -455,10 +455,54 @@
     {
       "name": "v1.5 non-constructor mathematical review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.6 all-depth generation-weighted boundary Schur recursion",
+      "status": "PASS",
+      "method": "exact five-node Kron induction and closed weighted sum"
+    },
+    {
+      "name": "v1.6 independent arbitrary g,w five-node elimination",
+      "status": "PASS",
+      "method": "SymPy symbolic Schur check"
+    },
+    {
+      "name": "v1.6 direct K4 weighted graph depth0–3, S4",
+      "status": "PASS",
+      "method": "rational full graph elimination for unit and quarter-proxy, 24 S4 checks each level"
+    },
+    {
+      "name": "v1.6 positive-edge no finite exact plateau and r<4/11 threshold",
+      "status": "PASS",
+      "method": "exact increment and geometric-series cases"
+    },
+    {
+      "name": "v1.6 weighted fixed-graph skew current and original Q169 metric uniqueness",
+      "status": "PASS",
+      "method": "H_W-skew identity and connected-Hasse scalar diagonal lemma"
+    },
+    {
+      "name": "v1.6 source native cross-complex admission and Q165 norm conservation",
+      "status": "OPEN",
+      "reason": "top-cell stock1→4 under integral chain transport; source trigger/reservoir not specified"
+    },
+    {
+      "name": "v1.6 local exact regression tests",
+      "status": "PASS",
+      "method": "8/8 local SymPy tests; repository code source equivalent only"
+    },
+    {
+      "name": "v1.6 full GitHub repo integration validation",
+      "status": "NOT_RUN",
+      "reason": "connector-only isolated Discovery branch, no integration; CI integrity checked separately"
+    },
+    {
+      "name": "v1.6 non-constructor mathematical review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v1.5 exact scoped all-depth K4 no-floor: declared unit-edge boundary response Lambda_n=[6+(11/4)^n]/7*(4I−J) increases strictly at every recursive 1→4 depth, independent Kron proof and rational graph n0–3. Original shell unchanged (4,6,4), but Q171 top-cell core supports distinguish equal-norm interior states every n. 192 per-packet capacity not a global cell or physical length bound. Physical observer/algebra/metric/terminal gate OPEN.",
-  "next_action": "Derive/freeze a physically admitted scale-aware observation algebra and a source-selected recursive admissibility/metric rule before any Planck length or minimum resolution claim.",
+  "finding": "v1.6 exact conditional: radial generation weights g_k yield alpha_n=1+Σ(11/4)^{k−1}g_k/4, all-positive weights preclude exact finite boundary readout floor. Geometric r-decay converges only if r<4/11; candidate quarter proxy tends9/5 and chosen eps1/100 gives adjacent n9/tail n12. Fixed Q169 diagonal positive metric must remain scalar H=cI; modified vertex-edge A_W preserves different H_W current. Q165 integral top stock changes1→4 and Q173/177 lack source selection; physical floor OPEN.",
+  "next_action": "Require source-accepted refinement-admission predicate and cross-complex conserved stock/current with a selected observation threshold, else freeze physical finite-floor narrative. Run independent non-constructor review before mainline consideration.",
   "mathematical_profile": {
     "coefficient_domain": "Z native 1→4 simplex graph and chain counts, Q exact Schur response, R native top-cell amplitudes",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
