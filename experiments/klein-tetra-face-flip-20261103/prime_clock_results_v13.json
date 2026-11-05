@@ -1,0 +1,149 @@
+{
+  "version": "v1.3",
+  "date": "2026-11-05",
+  "status": "EXACT_CONDITIONAL_SCOPED_NO_GO",
+  "source_objects": {
+    "C_K4": "15D real signed simplicial chain, unit metric, A=d-d^T, J=A/2",
+    "Theta": "F2^3 labels, cardinality 8, group exponent2",
+    "S4": "permutation group, order24",
+    "N1": "24*8=192 finite capacity not physical clock",
+    "first_refinement_leakage": "R01^TR01=I15-Q111, rank13, trace13"
+  },
+  "prime_factorization": {
+    "8": "2^3",
+    "13": "13",
+    "24": "2^3*3",
+    "192": "2^6*3",
+    "312": "2^3*3*13"
+  },
+  "native_sector_structure": "13=15-2=1+3*4",
+  "capacity_mean": "(24*13)/(24*8)=312/192=13/8",
+  "gcd312_192": 24,
+  "binary_fraction": "1.101_2",
+  "modular_cyclic_clock_candidates": {
+    "Z8_add13": {
+      "sequence": [
+        0,
+        5,
+        2,
+        7,
+        4,
+        1,
+        6,
+        3,
+        0
+      ],
+      "period": 8
+    },
+    "Z24_add13": {
+      "period": 24
+    },
+    "Z192_add13": {
+      "period": 192
+    },
+    "Z192_add312": {
+      "step_mod192": 120,
+      "period": 8
+    },
+    "Z8_multiply13": {
+      "order": 2
+    },
+    "Z24_multiply13": {
+      "order": 2
+    },
+    "Z192_multiply13": {
+      "order": 16,
+      "pow8_mod192": 97,
+      "pow16_mod192": 1
+    },
+    "rational_13_over_8_mod192": "undefined denominator8 nonunit"
+  },
+  "Theta_equivariant_no_go": {
+    "S4_induced_action": "S3 permutes three opposite pairs",
+    "orbit_sizes": [
+      1,
+      3,
+      3,
+      1
+    ],
+    "stabilizer_allowed_targets": [
+      2,
+      4,
+      4,
+      2
+    ],
+    "equivariant_functions": 64,
+    "equivariant_bijections": 4,
+    "max_bijection_cycle_length": 2,
+    "single_8_cycle": false,
+    "fixed_subset": [
+      "000",
+      "111"
+    ]
+  },
+  "native_clock": {
+    "J_cube": "J^3=-J",
+    "A_cube": "A^3=-4A",
+    "formal_angular_frequency": 2,
+    "chosen_u_step": "pi/4",
+    "U_quarter": "Q000+J",
+    "U2": "2Q000-I15",
+    "U4": "I15",
+    "middle_projector_transpositions": [
+      [
+        "100",
+        "011"
+      ],
+      [
+        "010",
+        "101"
+      ],
+      [
+        "001",
+        "110"
+      ]
+    ],
+    "projector_period": 2,
+    "real_state_period": 4,
+    "first_refinement_leakage_gram_commutes_A": true
+  },
+  "conditional_192_label_action": {
+    "address_set": "S4 x Theta",
+    "group_iff_new_law": "S4 x F2^3 has max element order6",
+    "diagonal_S4_only_orbit_sizes": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "diagonal_S4_and_strobe_orbits": [
+      24,
+      24,
+      48,
+      48,
+      48
+    ],
+    "source_selected_time_rule": false
+  },
+  "physical_gate": {
+    "single_13_over_8_not_probability": true,
+    "no_native_eight_step_clock": true,
+    "no_SI_clock": true,
+    "no_minimum_length": true,
+    "physical_promotion": 0
+  },
+  "tests": {
+    "exact_local": 10,
+    "all_pass": true,
+    "full_exhaustive_192_group_count": true,
+    "full_exhaustive_64_maps": true
+  },
+  "local_archive": {
+    "name": "UD_13_8_PRIME_CLOCK_AUDIT_v1.3.zip",
+    "sha256": "fc0b1c5cc754b39757ea8fe51044829f95a0f14ca88b4e8b981e531cac105eb2"
+  }
+}
