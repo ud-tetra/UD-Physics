@@ -13,15 +13,17 @@
     "integration-pachner-local-jump-current-20261104": {
       "ref": "refs/heads/claims/integration-pachner-local-jump-current-20261104",
       "held_sha": "736754a42cd1753bb8d56c1bd55394c6763fea9b",
-      "status": "held"
+      "status": "released",
+      "release_sha": "47c3187af531551c1edf3088ee5c23e3dbe97535"
     }
   },
   "checks": [
     "Research PR #313 merged at 08e1aa8",
-    "Nonconstructor review NOT_RUN"
+    "Nonconstructor review NOT_RUN",
+    "PR #314 merged at 4c66a83ab54ae1a412ba8a7beb7447befea82d11; live claim release verified 47c3187af531551c1edf3088ee5c23e3dbe97535"
   ],
   "finding": "Indexed scoped local-current cut and Q170 interior-stock milestone",
-  "next_action": "Release integration claim and record closure after merge",
+  "next_action": "Define retained boundary observable and quantify minimal shell-mediated transfer/disturbance",
   "checkpoint_at": "2026-11-05T02:22:06.626627+00:00",
   "checkpoint_source": {
     "revision": "08e1aa8e71843c4fa8e5d88842d8dddad41bfa0a",
