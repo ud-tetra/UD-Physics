@@ -1,0 +1,55 @@
+{
+  "status": "EXACT_DIAGNOSTIC_NO_GO_OPEN",
+  "date": "2026-11-05",
+  "native_ratio": "13/8",
+  "ratio_type": "native first-level mean squared leakage per eight candidate-labeled K4 real projectors",
+  "dressing_master_rule": "Qobs=Q0(1+z_Q), UD v2.2 manuscript Part X p.5",
+  "source_length_dressing": "NOT_DEFINED",
+  "source_SI_anchor": "NOT_DEFINED",
+  "codata_2022": {
+    "planck_length_coefficient": "1.616255",
+    "standard_uncertainty_coefficient": "0.000018",
+    "unit": "x10^-35 m",
+    "derived_from": "sqrt(hbar G/c^3)"
+  },
+  "diagnostic_anchor": "10^-35 m — chosen for display, NOT independently sourced",
+  "bare": {
+    "coefficient": "13/8",
+    "relative_difference_percent": "0.54106561155263247445",
+    "sigma_distance": "2915/6"
+  },
+  "required_dressing_for_reported_CODATA_central": {
+    "factor": "323251/325000",
+    "slack": "-1749/325000",
+    "one_sigma_factor_uncertainty": "9/812500",
+    "status": "TARGET_EXPOSED_INVERSE_CALIBRATION_NOT_PREDICTION"
+  },
+  "counterfactuals": [
+    {
+      "name": "bVF 27/32",
+      "typed_source": "7D matrix weight, prior source QUARANTINED",
+      "coefficient": "351/256",
+      "relative_error_percent": "-15.168475890252466"
+    },
+    {
+      "name": "r_retain 185/192",
+      "typed_source": "finite retention ratio not physical length weight",
+      "coefficient": "2405/1536",
+      "relative_error_percent": "-3.124494072201891"
+    }
+  ],
+  "finite_floor": {
+    "native_packet_capacity": "24*8=192",
+    "recursive_top_cell_count": "4^n",
+    "boundary_descendant_height": "h_0/4^n for named centroid face lineage",
+    "physical_stop_rule": "OPEN"
+  },
+  "action_unit_gate": "A0=B0*a0^2/tau0 and eta_A=A0/hbar, numerical native-to-SI map OPEN",
+  "verdict": "NO independent Planck lock; without source-specific dressing and absolute length unit map the prediction is nonidentifiable. Scalar 27/32 misuse fails even as counterfactual.",
+  "local_verified": {
+    "tests": "5/5 PASS",
+    "file": "UD_13_OVER_8_PLANCK_DRESSING_GATE_v1.2.zip",
+    "sha256": "f848f2bea9162fbfaeb92480d1760c0cc7f29694cd9541e22df33d00586f420b"
+  },
+  "physical_promotion": 0
+}
