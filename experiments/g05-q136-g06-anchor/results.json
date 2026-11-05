@@ -1,0 +1,55 @@
+{
+  "aware_action_and_Q136_sum": [
+    [
+      "1",
+      "1"
+    ],
+    [
+      "2",
+      "2"
+    ],
+    [
+      "-3",
+      "-3"
+    ]
+  ],
+  "conditional_aware_kappa": "1",
+  "conditional_fixed_support_phase_only_kappa": "a/2",
+  "histories_a_phase": [
+    [
+      "1",
+      "2"
+    ],
+    [
+      "2",
+      "2"
+    ],
+    [
+      "3",
+      "-2"
+    ]
+  ],
+  "independent_same_carrier_physical_anchor": false,
+  "phase_only_action_and_Q136_sum": [
+    [
+      "1",
+      "2"
+    ],
+    [
+      "2",
+      "2"
+    ],
+    [
+      "-3",
+      "-2"
+    ]
+  ],
+  "phase_only_same_sum_different_action": true,
+  "physical_promotion": 0,
+  "source_selected_sigma_map": false,
+  "unit_rescaling": {
+    "A0": "12/5",
+    "A0_scaled": "84/5",
+    "factor": "7"
+  }
+}

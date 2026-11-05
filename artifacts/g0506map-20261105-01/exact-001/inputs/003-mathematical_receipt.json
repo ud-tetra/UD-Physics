@@ -1,0 +1,226 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "K4-Q136-O09-G06-001",
+  "session_id": "g0506map-20261105-01",
+  "candidate_id": "g05-q136-g06-anchor",
+  "question": "Does Q136 select an O09-sufficient compression on a single K4 active Hodge carrier, and do native recurrence/phase scales independently anchor G06?",
+  "evidence_labels": [
+    "EXACT_CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "K4-active",
+      "symbol": "E, A, J",
+      "object_type": "real chain active Hodge sector",
+      "definition": "E=im(-A^2/4), A=d-d^T, J=A/2, Omega=2 on E",
+      "domain": "R^15",
+      "codomain": "R^14",
+      "coefficient_domain": "R with exact rational witnesses",
+      "units": "dimensionless native",
+      "basis_orientation": "ascending simplex basis",
+      "metric_measure": "unit coefficient metric",
+      "origin": "imported",
+      "exact_expression": "dim E=14",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "K4-carrier-audit"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit metric"
+    },
+    {
+      "object_id": "O09",
+      "symbol": "I",
+      "object_type": "dimensionless native action",
+      "definition": "a phi/2, a=||x||^2 and phi is lifted phase",
+      "domain": "positive support x real phase",
+      "codomain": "R",
+      "coefficient_domain": "R",
+      "units": "dimensionless",
+      "basis_orientation": "Hodge phase lift",
+      "metric_measure": "a=||x||^2",
+      "origin": "imported",
+      "exact_expression": "a phi/2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "ledger-v085"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [
+        "K4-active"
+      ],
+      "normalization": "1/2"
+    },
+    {
+      "object_id": "Q136",
+      "symbol": "L",
+      "object_type": "coarse history sum",
+      "definition": "sum over k of sigma_O,k+sigma_B,k+sigma_C,k; map F on E unspecified",
+      "domain": "coarse sigma histories, Hodge carrier map OPEN",
+      "codomain": "R",
+      "coefficient_domain": "R",
+      "units": "native dimensionless when compared to I",
+      "basis_orientation": "N/A",
+      "metric_measure": "N/A",
+      "origin": "imported",
+      "exact_expression": "sum sigma",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "ledger-v085"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "source sum only"
+    },
+    {
+      "object_id": "O14",
+      "symbol": "eta_A",
+      "object_type": "native-to-physical action ratio",
+      "definition": "A0/hbar with A0=B0 a0^2/tau0",
+      "domain": "positive native units and externally fixed hbar",
+      "codomain": "positive dimensionless real",
+      "coefficient_domain": "R",
+      "units": "dimensionless ratio",
+      "basis_orientation": "N/A",
+      "metric_measure": "N/A",
+      "origin": "imported",
+      "exact_expression": "B0 a0^2/(tau0 hbar)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "ledger-v085"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "O14 direction"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "ledger-v085",
+      "url_or_repo_path": "artifacts/qpb1-integral-duality-20261022-a1/exact-002/inputs/012-ledger_v0.85.json",
+      "version_or_commit": "v0.85 SHA256 8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "section_or_object_id": "G05/G06/O09-O15/Q136/Q139/Q282/Q287-Q288",
+      "source_status": "recovered upstream archive"
+    },
+    {
+      "source_id": "K4-carrier-audit",
+      "url_or_repo_path": "experiments/qpb1-carrier-anchor/README.md",
+      "version_or_commit": "current base 698d6d6",
+      "section_or_object_id": "sections 1-4",
+      "source_status": "Discovery development"
+    }
+  ],
+  "assumptions": [
+    "Candidate F_A and F_B are abstract additive completions of published Q136 row only, not sourced sigma laws",
+    "B0,a0,tau0 positive; external hbar fixed for scaling test",
+    "Projective readout restricted to isolated intrinsic complex C7 carrier"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational/symbolic algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "check compression witnesses and unit homogeneity"
+    },
+    {
+      "technique": "projection and kernel",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "test information lost by amplitude-blind sum and projective phase"
+    },
+    {
+      "technique": "physical units and calibration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "separate A0 unit, external hbar, anchor row span"
+    },
+    {
+      "technique": "clock/modular arithmetic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "show phase endpoint modulo 2pi loses integer winding"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no structural divisibility claim"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4+6+4+1=15; active real rank 14",
+    "reduced_expression": "I=a phi/2",
+    "factor_origins": [
+      "O09 native factor 1/2"
+    ],
+    "factorization": "N/A",
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "native formal parameter s and real lifted phase",
+    "modulus": "endpoint only modulo 2pi; lifted phase unbounded",
+    "residue_convention": "winding n in Z",
+    "update_rule": "phi=2s on single active sector",
+    "initial_phase": "0",
+    "coupling": "N/A",
+    "period_claim": "native recurrence s=pi",
+    "physical_unit_map": "tau0 is an uncalibrated native time unit"
+  },
+  "dynamics_readout": {
+    "state_space": "E=R14 intrinsic C7",
+    "generator_or_update": "A=d-d^T restricted to E",
+    "initial_boundary_conditions": "single nonzero active state; no physical boundary condition",
+    "conservation_and_sources": "a conserved under skew A; sigma source/sink map OPEN",
+    "projection_and_kernel": "phase-only L loses support; isolated Born readout loses common phase",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "EXPOSED HISTORICAL Q288 VALUE NOT USED",
+    "known_targets": [
+      "Q288 candidate eta_A=2"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "none; candidate sigma completions constructed to demonstrate underdetermination"
+    ],
+    "search_domain_and_budget": "two illustrative completions; no exhaustive search",
+    "selection_criterion": "show opposite sufficiency outcomes",
+    "baseline": "amplitude-blind phase sum and isolated projective readout"
+  },
+  "calculation_steps": [
+    "At fixed support, L=c(a)phi implies kappa=a/[2c(a)]; constant kappa over variable support iff c(a)/a constant.",
+    "F_A=(a phi/2,0,0) gives L=I by construction; F_B=(phi,0,0) gives same L for a=1,2 and phi=2 but I=1,2.",
+    "B0->lambda B0 preserves dimensionless native carrier while scaling A0,O11,Q282,eta_A by lambda.",
+    "For scalar U, U rho U\u2020=rho, hence every fixed projective Born effect has unchanged probability."
+  ],
+  "result": {
+    "exact_expression": "No unique source-selected Q136->O09 map from cited Q136 row; candidate A sufficient by construction and B fails on variable support. Native anchors homogeneous in free A0; projective phase invisible.",
+    "approximation": null,
+    "units": "I,L native dimensionless; A0 action; eta_A dimensionless",
+    "precision_and_error": "exact rational witnesses and symbolic algebra; no measurements",
+    "scope": "single K4 active carrier and specified candidate completions",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "exact replay",
+      "command_or_proof_path": "python3 experiments/g05-q136-g06-anchor/audit.py; README.md sections 2-3",
+      "source_revision": "698d6d6",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Candidate B: (a,phi)=(1,2),(2,2) have L=2 but I=1,2",
+    "Endpoint phases n=0,1 coincide modulo 2pi but lifted actions differ by pi a",
+    "Q282 and O11 cannot serve as external anchors because both scale with A0"
+  ],
+  "limitations": [
+    "Full packet sigma definitions and micro-to-Hodge map not available from cited source row",
+    "No independently measured same-carrier E0,tau0 or coherent reference phase",
+    "No nonconstructor review"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Recover full packet sigma laws and compute their carrier map; acquire independently calibrated same-carrier action and relative-phase anchors."
+}
