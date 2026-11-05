@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "pachner-local-jump-current-20261104",
   "session": "pachlocaljump-20261104-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-05T02:13:50.726Z",
   "base_revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
   "owned_paths": [
@@ -13,5 +13,7 @@
     "candidates/pachner-local-jump-current",
     "experiments/pachner-local-jump-current",
     "artifacts/pachlocaljump-20261104-01"
-  ]
+  ],
+  "released_at": "2026-11-05T02:20:22.470Z",
+  "released_from_sha": "a4c654e0d79c523b5708b69b6abb8552d858f9ef"
 }
