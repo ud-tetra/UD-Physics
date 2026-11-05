@@ -1,0 +1,30 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "g0506idx-20261105-01",
+  "runtime": "Codex GPT-6 Git/compute plus GitHub connector",
+  "task": "integration-g05-g06-joint-proof-20261105",
+  "goal": "Index G05/G06 proof milestone and preserve statuses",
+  "created_at": "2026-11-05T16:56:39.569040+00:00",
+  "base_revision": "c6da6197d06d095546c4c4eb25a5077c19ce836e",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-g05-g06-joint-proof-20261105": {
+      "ref": "refs/heads/claims/integration-g05-g06-joint-proof-20261105",
+      "held_sha": "37412501cab7fb9b2441aa666ba854571a0e454c",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "Research PR #316 merged at c6da619",
+    "Nonconstructor review NOT_RUN"
+  ],
+  "finding": "Indexed restricted G05 scalar criterion and G06 action-anchor identifiability proof gate",
+  "next_action": "Release integration claim, record closure and recover Q136-to-O09 map",
+  "checkpoint_at": "2026-11-05T16:57:02.312630+00:00",
+  "checkpoint_source": {
+    "revision": "c6da6197d06d095546c4c4eb25a5077c19ce836e",
+    "dirty": true
+  }
+}

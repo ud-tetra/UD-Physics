@@ -55,3 +55,12 @@ Resumed same held claim7286350, main e400dfb, research0d82f00; preserved and mer
 
 Captured artifacts/clockmatrix-20261104-01/exact-004 (EXACT): Conditional passive mediator Gram bound and contact isotropy gate
 Final verification after compute recovery: validate.py PASS506 records and manifest digests; unittest discover all16 PASS. Captured exact-004 unchanged. Claim remains held pending PR312 integration; no merge.
+
+### 2026-11-05 — incidence-local quartic classification
+Resumed same held claim7286350; main e400dfb, research64e16f6 unchanged; merged prior published local history without content conflict. All99 nearest-incidence quartics classified including odd powers: uniform all-active rate forces radial restriction, opposite-edge plane forces coefficient0, exact restriction kernel0. Distance2/3/4 spaces225/309/330 have ranks218/295/312; radial first possible at diameter4. Independent constructor implementation uses120 direct evaluations mod1009 (prime checked), augmented rank100. General smooth unary/pair obstruction shown; current sparsity distinguished from global constitutive dependence. Native all-preparation nearest-incidence quartic branch PARKED, no physical promotion. Receipt local_quartic_receipt.json; immutable exact-005. Next specified phase-plane local quartic and transverse leakage gate. Independent review NOT_RUN.
+
+## 2026-11-05T16:57:47.498735+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-005 (EXACT): Complete nearest-incidence quartic common-rate classification and pair-range gate
+Final checks PASS507 records and immutable digests, all16 repository tests, whitespace check. PR312 updated through connector with exact-head lease; same claim held for review/integration, no merge or mainline export.
+Before publication main advanced through PR316/317. Inspected G05/G06 v0.1 and CURRENT, merged origin/main29f0eb2; no fixed clock/operator dependencies changed and physical maps remain open. Repeated integrity checks PASS513 and all16 tests PASS after merge. exact-005 retains honest calculation base e400dfb, immutable.

@@ -1,0 +1,220 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "g05-g06-joint-proof-exact-001",
+  "session_id": "g0506proof-20261105-01",
+  "candidate_id": "g05-g06-joint-proof",
+  "question": "Characterize restricted G05 scalar aliases and independently identify G06 native-to-physical action ratio",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "O09-I",
+      "symbol": "I",
+      "object_type": "dimensionless lifted native action-history functional",
+      "definition": "one half sum active mode amplitude squared times lifted phase increments",
+      "domain": "U subset R^m",
+      "codomain": "R",
+      "coefficient_domain": "Q for exact witnesses, R for theorem",
+      "units": "dimensionless",
+      "basis_orientation": "ordered positive-frequency modes with signed lifted phase",
+      "metric_measure": "O09 Hodge amplitudes",
+      "origin": "imported",
+      "exact_expression": "I(z)=1/2 1^T z, z_i=a_i phi_i",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "v0.85 O09"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "O09 one half"
+    },
+    {
+      "object_id": "coarse-L",
+      "symbol": "L",
+      "object_type": "candidate linear coarse history statistic",
+      "definition": "L(z)=w^T z on declared accessible U; not equated to Q136 without source map",
+      "domain": "U subset R^m",
+      "codomain": "R",
+      "coefficient_domain": "R",
+      "units": "dimensionless candidate",
+      "basis_orientation": "same ordered mode increments",
+      "metric_measure": "none",
+      "origin": "assumed",
+      "exact_expression": "w^T z",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "v0.85 Q136"
+      ],
+      "assumption_ids": [
+        "linear-compression"
+      ],
+      "dependency_ids": [
+        "O09-I"
+      ],
+      "normalization": "weights free, not fitted"
+    },
+    {
+      "object_id": "O14-eta",
+      "symbol": "eta_A",
+      "object_type": "native-to-physical action ratio",
+      "definition": "A0/hbar under O10, O14",
+      "domain": "positive native action units and positive hbar",
+      "codomain": "positive real",
+      "coefficient_domain": "R",
+      "units": "dimensionless ratio",
+      "basis_orientation": "not applicable",
+      "metric_measure": "not applicable",
+      "origin": "imported convention",
+      "exact_expression": "B0 a0\u00b2/(tau0 hbar)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "v0.85 O10/O14"
+      ],
+      "assumption_ids": [
+        "unit-types"
+      ],
+      "dependency_ids": [],
+      "normalization": "numerical value open"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "v085",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "version_or_commit": "recovered v0.85 SHA256 8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec; upstream blob 93e2ca31eba625989087275a71c4857848e321c6",
+      "section_or_object_id": "G05/G06/O09/O10/O14/Q35/Q136-Q139/Q282/Q287-Q288",
+      "source_status": "read-only imported source"
+    },
+    {
+      "source_id": "v039",
+      "url_or_repo_path": "supplied UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39(2).md",
+      "version_or_commit": "v0.39(2) SHA256 1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "section_or_object_id": "G05/G06/Q35/Q139",
+      "source_status": "superseded historical row status, preserved"
+    },
+    {
+      "source_id": "prior",
+      "url_or_repo_path": "experiments/action-normalization-audit/README.md",
+      "version_or_commit": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "section_or_object_id": "\u00a7\u00a71\u20136",
+      "source_status": "integrated Discovery audit"
+    }
+  ],
+  "assumptions": [
+    "linear-compression: candidate L=w dot z on declared accessible subspace U",
+    "unit-types: positive B0,a0,tau0,hbar; mass-length-time monomial anchor family",
+    "physical phase \u03c7=eta_A I only when explicitly postulated for joint product"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational linear algebra",
+      "applicability": "applied",
+      "purpose_or_na_reason": "rank/kernel proportionality and counterexamples"
+    },
+    {
+      "technique": "dimension and scaling",
+      "applicability": "applied",
+      "purpose_or_na_reason": "anchor row-span theorem and G06 rescaling witness"
+    },
+    {
+      "technique": "clock/modular arithmetic",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "lifted phase is real history, not a finite register or physical clock"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no divisibility claim"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "two independent increment directions and two amplitude-stratum phase probes",
+    "reduced_expression": "rank([1,1;1,2])=2, determinant 1; rank([2,3;1,1])=2, determinant \u22121",
+    "factor_origins": [
+      "explicit O09 half factor and declared coarse weights"
+    ],
+    "factorization": "N/A",
+    "divisibility_gcd_lcm": "N/A"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous lifted phase increments; no physical clock",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "finite lifted histories U with increments z_i=a_i phi_i",
+    "generator_or_update": "O09 action map, no claimed history evolution",
+    "initial_boundary_conditions": "independent increments on full domain or declared restricted U",
+    "conservation_and_sources": "no source/sink law claimed",
+    "projection_and_kernel": "coarse L fibers; ker L subset ker I iff exact scalar alias",
+    "physical_mapping": "chi=eta_A I conditional only, not established"
+  },
+  "target_exposure": {
+    "status": "Q287/Q288 eta_A=2 known and quarantined; no fit",
+    "known_targets": [
+      "eta_A=2 candidate"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "two-mode counterexample and exact general theorem",
+    "selection_criterion": "source O09 plus explicit coarse-map assumptions",
+    "baseline": "v0.85 G05 universal scalar retired and G06 numerical value open"
+  },
+  "calculation_steps": [
+    "prove kernel factorization theorem on accessible subspace",
+    "derive equal-weight full-domain criterion and construct two-mode rational counterexamples",
+    "prove native B0 scaling leaves I and k unchanged while eta_A changes",
+    "derive log-unit anchor row-span criterion and check two anchor sets",
+    "prove beta-only product degeneracy under conditional physical phase map"
+  ],
+  "result": {
+    "exact_expression": "I=kL iff ker(L|U) subset ker(I|U) for L nonzero; v=(1,2,-1) in row(W) iff A0 anchor identifiable; beta=eta_A*k",
+    "approximation": null,
+    "units": null,
+    "precision_and_error": null,
+    "scope": "declared finite linear histories and positive monomial unit anchors, conditional physical phase bridge",
+    "physical_interpretation": "none; no measured A0/eta or G05 master scalar"
+  },
+  "verification": [
+    {
+      "method": "symbolic linear proof in README with independent rational determinant/rank and scaling witnesses",
+      "command_or_proof_path": "python3 experiments/g05-g06-joint-proof/audit.py",
+      "source_revision": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "nonconstructor adversarial review",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "independent"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Fixed a=(2,3), phase-only L=phi1+phi2: two histories L=1 but I=1 and 3/2",
+    "Full increment domain w=(1,2) yields no scalar; restricted diagonal line yields one, demonstrating domain dependence",
+    "Length/time anchors leave mass-action scaling free",
+    "beta-only product admits (eta,k)=(2,1) and (1,2)"
+  ],
+  "limitations": [
+    "Q136 sigma-to-lifted-increment map absent",
+    "No independently validated physical phase map or native action anchor",
+    "Earlier G05 universal scalar remains retired and numerical G06 remains open"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/g0506proof-20261105-01/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Recover Q136-to-O09 map and test rank on source-selected carrier; independently anchor physical A0"
+}

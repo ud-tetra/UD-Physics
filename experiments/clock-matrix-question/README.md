@@ -60,3 +60,7 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 ## Local reciprocal mediator gate
 
 [Report v0.1](LOCAL_MEDIATOR.md), [replay](local_mediator.py), [results](local_mediator_results.json): passive Gram bound, prepared versus memory dynamics, contact isotropy. Native coefficient and physical maps OPEN.
+
+## Incidence-local quartic classification
+
+[Report v0.1](LOCAL_QUARTIC.md), [exact replay](local_quartic.py), [rank results](local_quartic_results.json): nearest-incidence all-state uniform quartic is zero; collective radial quartic first appears at pair distance4. Native nearest-incidence implementation PARKED under those hypotheses.

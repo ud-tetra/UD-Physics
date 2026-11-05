@@ -24,16 +24,19 @@
     "Two-clock exact replay PASS at w=0,1/2,1,2",
     "Common-rate exact replay PASS:64 gain triples, positive-metric curvature control and4 reciprocal Hamiltonian fixtures",
     "Local mediator exact replay PASS:54 fixtures and contact ranks",
-    "Mediator milestone integrity PASS:506 records; all16 repository tests PASS"
+    "Mediator milestone integrity PASS:506 records; all16 repository tests PASS",
+    "Quartic exact classification PASS:99/225/309/330 coefficients and F1009 evaluation rank100",
+    "Quartic milestone integrity PASS507 records; all16 repository tests PASS; diff whitespace check PASS",
+    "Merged current main29f0eb2 after G05/G06 proof update; integrity PASS513 records and all16 tests PASS; no clock-source dependencies changed"
   ],
-  "finding": "Passive mediator adds self shifts with g^2<=S_LL*S_RR; pure cross requires counterterms; rank1 contact cannot shift rank14 uniformly",
-  "next_action": "Classify incidence-local quartic Hamiltonians compatible with a common rate on all active states; source or obstruct counterterms",
+  "finding": "Nearest-incidence all-active uniform quartic is zero; pair-radius4 permits collective norm4 but no native coefficient selection",
+  "next_action": "Test whether a specified prepared phase plane admits an incidence-local quartic with an amplitude-dependent rate and zero transverse leakage; record preparation selection as an assumption",
   "access_mode": "Git compute; connector publication; Git push unavailable",
-  "checkpoint_at": "2026-11-05T16:50:34.885061+00:00",
+  "checkpoint_at": "2026-11-05T16:57:47.446052+00:00",
   "checkpoint_source": {
     "revision": "88cb676d36ea934afe973ba3e7b2ea4855185119",
     "dirty": true
   },
-  "resume_integrated_revision": "e400dfb715262a44b3bbb2e929c7b438028af67e",
-  "last_published_parent": "0d82f009d4a492b1b4ab884465c5dc759538670d"
+  "resume_integrated_revision": "29f0eb2bc27bec35396c833ec112c5170d244c64",
+  "last_published_parent": "64e16f695b5d9aa16a613921eb980b44ab749e09"
 }

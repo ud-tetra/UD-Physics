@@ -4,7 +4,7 @@
   "candidate_id": "clock-matrix-question",
   "session_id": "clockmatrix-20261104-01",
   "question": "Does a matrix clock-rate change constitute physical time dilation?",
-  "status": "ACTIVE",
+  "status": "PARKED",
   "evidence": [
     "EXACT",
     "CONDITIONAL",
@@ -27,12 +27,19 @@
     "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/"
   ],
   "baseline": "Ordinary oscillator retuning and time-unit rescaling",
-  "result": "Passive mediator adds self shifts with g^2<=S_LL*S_RR; pure cross requires counterterms; rank1 contact cannot shift rank14 uniformly",
-  "next_discriminant": "Classify incidence-local quartic Hamiltonians compatible with a common rate on all active states; source or obstruct counterterms",
+  "result": "Nearest-incidence all-active uniform quartic is zero; pair-radius4 permits collective norm4 but no native coefficient selection",
+  "next_discriminant": "Test whether a specified prepared phase plane admits an incidence-local quartic with an amplitude-dependent rate and zero transverse leakage; record preparation selection as an assumption",
   "mathematical_receipts": [
     "sessions/clockmatrix-20261104-01/mathematical_receipt.json",
     "sessions/clockmatrix-20261104-01/two_clock_receipt.json",
     "sessions/clockmatrix-20261104-01/common_rate_receipt.json",
-    "sessions/clockmatrix-20261104-01/local_mediator_receipt.json"
+    "sessions/clockmatrix-20261104-01/local_mediator_receipt.json",
+    "sessions/clockmatrix-20261104-01/local_quartic_receipt.json"
+  ],
+  "parked_scope": "native nearest-incidence all-preparation quartic implementation only; collective and restricted-preparation branches remain candidates",
+  "reopening_conditions": [
+    "explicit local mediator and controlled limit",
+    "restricted prepared clock sector with leakage bound",
+    "changed permitted interaction support"
   ]
 }

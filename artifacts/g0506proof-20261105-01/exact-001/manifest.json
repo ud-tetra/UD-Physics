@@ -1,0 +1,65 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "g0506proof-20261105-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-05T16:53:30.254797+00:00",
+  "evidence": "EXACT",
+  "summary": "G05 restricted scalar kernel theorem and G06 independent action-unit anchor gate",
+  "command": "python3 experiments/g05-g06-joint-proof/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/g05-g06-joint-proof/audit.py",
+      "sha256": "070eac908187a40e274ec282075abb6dcaeb17bdaedc2dce6f15704e6203f158",
+      "size_bytes": 5288
+    },
+    {
+      "input_id": "input-002",
+      "name": "ledger_v0.85.json",
+      "path": "inputs/002-ledger_v0.85.json",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    },
+    {
+      "input_id": "input-003",
+      "name": "IDENTIFIABILITY_THEOREM.md",
+      "path": "inputs/003-IDENTIFIABILITY_THEOREM.md",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/IDENTIFIABILITY_THEOREM.md",
+      "sha256": "a4a0d326ccba7ceade98f69c9184fde3aa880c646ee7b87d66eb1a63161080ef",
+      "size_bytes": 4266
+    },
+    {
+      "input_id": "input-004",
+      "name": "20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "path": "inputs/004-20-UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39-2-.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "f957cad9fedadef3a61ecaa26197819b15614f6ccad2b6f34eec98369cf0a409",
+      "size_bytes": 1890
+    },
+    {
+      "path": "files/mathematical_receipt.json",
+      "sha256": "2b760ac62b411d7e37a3ec20d11516a37600cd9f77809437a4af1769c1880f61",
+      "size_bytes": 8770
+    }
+  ]
+}
