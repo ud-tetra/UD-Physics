@@ -163,10 +163,34 @@
     {
       "name": "external non-constructor review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.6 exact integer 72-Delta to minimal CW strong deformation retract",
+      "status": "PASS",
+      "method": "165 unit-pivot complement cancellations, 3 minimal-CW cancellations, full integer chain-homotopy matrices verified locally"
+    },
+    {
+      "name": "v0.6 independent-form sparse matrix receipt readback",
+      "status": "PASS",
+      "method": "16 saved integer matrix blocks checked by a separate local script; same constructor"
+    },
+    {
+      "name": "v0.6 deterministic matrix JSON reproduction",
+      "status": "PASS",
+      "method": "local full replay produced byte-identical 120KB matrix receipt"
+    },
+    {
+      "name": "v0.6 strict geometric reverse-map locality",
+      "status": "NOT_RUN",
+      "reason": "integral algebraic Morse retraction only; finite bounded spatial support not audited"
+    },
+    {
+      "name": "v0.6 non-constructor mathematical review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v0.5 twisted 72-tetrahedron boundary: integer nilpotency, ranks 18/83/72 and H0 Z/2. Noncanonical rational homology map to cellular and 60D. Minimal even-S4 native invariant K4 hull dimension 5 with ± framed correlation; physical reference remains OPEN.",
-  "next_action": "Obtain integral local subdivision chain map preserving H0 Z/2 and source-select a framed operational observable; seek external review.",
+  "finding": "v0.6 EXACT/CONDITIONAL integral strong deformation retract from twisted 72-tetrahedron Klein×I chains to minimal Klein CW×I: 165+3 unimodular cancellation pairs, integer P,S,H satisfy PS=I and dH+Hd=I-SP; all integral homology including H0 Z/2 preserved. Full composite chain map to formal 60D K4 model has ranks (2,5,4,1). Reverse-map strict geometric locality, native dynamical intertwining and physical promotion OPEN.",
+  "next_action": "Audit bounded geometric support of integer reverse Morse P; obtain non-constructor review, then source a native K4 seam-selection law and operational framed physical readout.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
