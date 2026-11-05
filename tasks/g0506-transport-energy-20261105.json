@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "g0506-transport-energy-20261105",
+  "goal": "Trace historical transport obstruction to Q136 and test G06 same-carrier energy clock and support identifiability",
+  "owned_paths": [
+    "experiments/g0506-transport-energy",
+    "candidates/g0506-transport-energy",
+    "artifacts/g0506transport-20261105-01",
+    "sessions/g0506transport-20261105-01"
+  ],
+  "dependencies": [
+    "g05-q136-g06-anchor-20261105"
+  ],
+  "status": "active"
+}
