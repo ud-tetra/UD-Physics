@@ -1,0 +1,45 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "g0506bridge-20261105-01",
+  "runtime": "Codex Work Mode",
+  "task": "g0506-source-bridge-screen-20261105",
+  "goal": "Source law search and physical seven-mode LC calibration feasibility",
+  "created_at": "2026-11-05T18:28:23.745538+00:00",
+  "base_revision": "a4406f134f6478e29a0a60a7debdd5e679bab035",
+  "source_dirty_at_boot": true,
+  "status": "handoff",
+  "claims": {
+    "g0506-source-bridge-screen-20261105": {
+      "ref": "refs/heads/claims/g0506-source-bridge-screen-20261105",
+      "sha": "4244812ed335e2b5811810c1312b2618a0a4de81",
+      "status": "held",
+      "acquisition": "GitHub connector before substantive edits"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/g0506-source-bridge-screen/audit.py",
+      "result": "PASS exact K4 rank, seven-mode intertwiner/one-form, parity witness"
+    },
+    {
+      "command": "python3 experiments/g0506-source-bridge-screen/intake.py experiments/g0506-source-bridge-screen/CERTIFICATE_TEMPLATE.json",
+      "result": "BLOCKED, 15 missing certificate groups"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS 16 tests"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS 527 records with capture"
+    }
+  ],
+  "finding": "Paired-orientation scalar proportionality requires zero aggregate even obstruction; inspected source supplies no signed precursor-to-sigma law. Seven-mode ideal LC map passes exact pullbacks, but native unit and 15 physical certificate groups missing; promotion 0.",
+  "next_action": "Source direction-sensitive precursor-to-sigma rule or obtain independently selected full-carrier unit preparation and calibrated seven-mode traces.",
+  "checkpoint_at": "2026-11-05T18:33:48.408954+00:00",
+  "checkpoint_source": {
+    "revision": "a4406f134f6478e29a0a60a7debdd5e679bab035",
+    "dirty": true
+  }
+}

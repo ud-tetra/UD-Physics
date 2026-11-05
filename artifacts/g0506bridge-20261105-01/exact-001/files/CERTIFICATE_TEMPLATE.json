@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "UNSCORED_TEMPLATE",
+  "native_carrier": "filled K4 active E=R14, A=d-d^T, J=A/2, unit coefficient metric",
+  "physical_model": "seven calibrated LC modes; hypothesis rather than sourced correspondence",
+  "source_rule_selecting_physical_carrier_and_unit_preparation": null,
+  "absolute_M_calibration": null,
+  "native_support_interval_positive": null,
+  "LC_parameter_intervals_and_calibration_trace": null,
+  "raw_synchronized_flux_and_charge_traces_seven_modes": null,
+  "independent_work_energy_interval_and_baseline": null,
+  "K_M_minus_M_A_over_tau_residual_bound": null,
+  "MT_G_M_minus_2A0_over_tau_I_residual_bound": null,
+  "signed_primitive_period_interval_and_rho_certificate": null,
+  "coherent_relative_phase_reference_and_unwrapped_winding": null,
+  "loss_nonlinearity_leakage_bounds": null,
+  "joint_uncertainty_coverage_and_units": null,
+  "calibration_dependency_graph_and_target_exposure": null,
+  "frozen_null_prediction_acceptance_rule": null,
+  "nonconstructor_review": null,
+  "physical_promotion": 0
+}
