@@ -1,0 +1,42 @@
+{
+  "version": "v0.4",
+  "evidence": "EXACT_CONDITIONAL",
+  "physical_promotion": 0,
+  "source_commit": "5549d2b077313eebe776850aa6aae8f70fd0729f",
+  "exact_scalar_laws": {
+    "FULL": "-cos(sqrt(5)*s)/4",
+    "PROJECTED": "-cos(sqrt(3)*s)/4"
+  },
+  "no_go": "unknown full-rate multiplier sqrt(3/5) aliases this single boundary readout with projected unit-rate flow at all times",
+  "perturbation_domain": "post-event only; common fixed ambient metric; fixed event map and pre-event generator",
+  "ramp_family": "B_actual(t)=B_h+(1-rho(t))*(B_off-B_h)+E(t)",
+  "assumptions": [
+    "B_h and B_off skew in the fixed metric, norms <=5",
+    "0<=rho<=1; integral(1-rho)<=ell through the horizon",
+    "E may be non-skew; operator norm <=kappa",
+    "both hypotheses individually satisfy declared bounds",
+    "pre-event/crossing assumptions remain those of v0.2"
+  ],
+  "time_horizon_upper_bound": "1/100 after actual event",
+  "operator_mismatch_integral_bound": "D<=kappa/100+10ell",
+  "extra_scalar_error_bound": "3D",
+  "sufficient_budget": "78epsilon+15r+13nu+eta+3kappa/100+30ell<=1/1000000",
+  "example": {
+    "epsilon": "1/200000000",
+    "r": "1/100000000",
+    "nu": "1/100000000",
+    "eta": "1/4000000",
+    "kappa": "1/1000000",
+    "ell": "1/1000000000"
+  },
+  "example_budget_used": "49/50000000",
+  "example_D_bound": "1/50000000",
+  "linear_ramp_duration_example": "2/1000000000; integrated deficit=1/1000000000",
+  "adversarial_endpoint_checks": 1028,
+  "limitations": [
+    "gate acts after the instantaneous event transport; no cross-topology ramp modeled",
+    "metric changes, unknown clock calibration, and pre-event generator errors excluded",
+    "certificate is conservative and conditional, not measured tolerance",
+    "externally supplied error/ramp bounds are not inferred by classifier"
+  ]
+}

@@ -51,3 +51,17 @@ Captured artifacts/codex-20261104-timing-01/exact-003 (EXACT): Finite rational p
 Checkpoint (handoff): EXACT conditional finite rational classifier and continuous error margin; 1028 adversarial endpoint checks pass
 
 Next: Audit fixed-generator/metric perturbations and gate ramp uncertainty before physical instrumentation
+
+## 2026-11-05T17:31:31.897762+00:00
+
+Resumed held claim at 5549d2b. v0.4 derives fixed-metric post-event generator/ramp budget and exact single-readout clock-rate alias; no metric or cross-topology actuator robustness claimed.
+
+## 2026-11-05T17:31:31.957421+00:00
+
+Captured artifacts/codex-20261104-timing-01/exact-004 (EXACT): Post-event generator/ramp robustness and exact rate-alias obstruction
+
+## 2026-11-05T17:31:32.008441+00:00
+
+Checkpoint (handoff): EXACT conditional fixed-metric post-event generator/ramp tolerance; single-readout rate freedom produces exact ambiguity
+
+Next: Find a second boundary readout that distinguishes the two continuations without absolute rate calibration

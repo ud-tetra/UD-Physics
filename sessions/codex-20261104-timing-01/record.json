@@ -13,11 +13,11 @@
     "pachner-timing-budget": "1701d7c8cc91f641fcbdea799a1c7978f0c7dc42"
   },
   "checks": [],
-  "finding": "EXACT conditional finite rational classifier and continuous error margin; 1028 adversarial endpoint checks pass",
-  "next_action": "Audit fixed-generator/metric perturbations and gate ramp uncertainty before physical instrumentation",
-  "checkpoint_at": "2026-11-05T16:51:06.843732+00:00",
+  "finding": "EXACT conditional fixed-metric post-event generator/ramp tolerance; single-readout rate freedom produces exact ambiguity",
+  "next_action": "Find a second boundary readout that distinguishes the two continuations without absolute rate calibration",
+  "checkpoint_at": "2026-11-05T17:31:31.995496+00:00",
   "checkpoint_source": {
-    "revision": "b2a8abbc3ea24d6aeb6b75d3c644c054d4a6cedf",
+    "revision": "5549d2b077313eebe776850aa6aae8f70fd0729f",
     "dirty": true
   }
 }

@@ -152,3 +152,6 @@ controlled apex probe. The v0.1 mask distinction above is unchanged.
 
 [Finite classifier v0.3](CLASSIFIER_v0.3.md) implements the controlled-probe
 midpoint with rational arithmetic and certified prediction enclosures.
+
+[Generator/ramp extension v0.4](ROBUSTNESS_v0.4.md) adds a fixed-metric
+post-event uncertainty budget and states the exact single-readout rate ambiguity.
