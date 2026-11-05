@@ -1,0 +1,75 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "g0506port-20261105-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-05T18:19:34.785940+00:00",
+  "evidence": "EXACT",
+  "summary": "Conditional directed Hodge transport and multi-preparation rank witnesses; no physical admission",
+  "command": "python3 experiments/g0506-hodge-port-calibration/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "fdab9d0c5f3f5a629ad00cd6fbaa4a52bbaccddc",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "README.md",
+      "path": "inputs/001-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/README.md",
+      "sha256": "a048fb2cb49bffe5b66313bd8ee6be6059553c2c4aeefc663e7f31213dd812b3",
+      "size_bytes": 9525
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-continuous-phase/README.md",
+      "sha256": "cb9cdae14fb30b4364f48285ba96a97527fcaa04fe607b5af4c775e8f7ccd3d9",
+      "size_bytes": 13849
+    },
+    {
+      "input_id": "input-003",
+      "name": "README.md",
+      "path": "inputs/003-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-local-generators/README.md",
+      "sha256": "f4f6b166b998c4f7a9fb3da6ee62ee6728e10deec7a77963f3ddb0e97bef7bc6",
+      "size_bytes": 13839
+    },
+    {
+      "input_id": "input-004",
+      "name": "README.md",
+      "path": "inputs/004-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/g0506-transport-energy/README.md",
+      "sha256": "dce20d3ebe05c79ea2ce6dd135851b101e22ad2ed02f82552271cf1ff259243f",
+      "size_bytes": 7598
+    }
+  ],
+  "files": [
+    {
+      "path": "files/README.md",
+      "sha256": "0ca93c0a049711da18f4c52861c39d931c78655206cd893b83ea9dcc9471c73a",
+      "size_bytes": 9999
+    },
+    {
+      "path": "files/audit.py",
+      "sha256": "24065e5266bbaaa8cb632ab8372bd30a288ca561606218872ba425faaa6953b2",
+      "size_bytes": 4969
+    },
+    {
+      "path": "files/results.json",
+      "sha256": "598f8ef1802d934c40b602cb73540fd5be3e736d6929185f13f2434a965cf422",
+      "size_bytes": 1767
+    },
+    {
+      "path": "files/mathematical_receipt.json",
+      "sha256": "c243cac07176d4e4571a3d1fcd956827b57fedeffe58e6c51fc81cc35fe74547",
+      "size_bytes": 7579
+    }
+  ]
+}
