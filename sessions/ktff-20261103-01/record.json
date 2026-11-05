@@ -322,10 +322,30 @@
     {
       "name": "v1.1 non-constructor review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.2 source-specific dressing and dimensional bridge audit",
+      "status": "PASS",
+      "method": "v2.2 manuscript Part X, quarantined 27/32 symmetrizer, action normalization O10–O14"
+    },
+    {
+      "name": "v1.2 exact CODATA inverse dressing and counterfactual tests",
+      "status": "PASS",
+      "method": "5 of 5 local Fraction/Decimal tests; CODATA derived comparator"
+    },
+    {
+      "name": "v1.2 independent source length dressing",
+      "status": "OPEN",
+      "reason": "no source-selected z_length or SI unit anchor"
+    },
+    {
+      "name": "v1.2 physical Planck promotion",
+      "status": "BLOCKED",
+      "reason": "target-exposed and no independent dimensional bridge"
     }
   ],
-  "finding": "v1.1 native 8 projectors on source K4 C15 verified (ranks1,2x7), full signed S4 covariance. First leakage exact R01^TR01=I15-Q111, 13 unit singular values, 2 zeros; sector scores1,2x6,0 and unweighted mean13/8 without extra Hilbert fiber. Theta assignment still candidate; second refinement inherited27 of total52, complement25 and composite mean151/32. Physical Planck bridge OPEN.",
-  "next_action": "Find source-defined interpretation/admissibility of native eight Q as Theta, and derive a complete 29D sector resolution compatible with refinement dynamics. No physical promotion.",
+  "finding": "v1.2: native13/8 first-level label mean plus historical generic dressing rule cannot yield unique physical Planck length without source-selected z_length and independent SI length anchor; user target-exposed inverse D=323251/325000, z=-1749/325000. Wrong-type quarantined27/32 counterfactual fails. Finite192 per packet does not imply spatial metric floor amid 4^n subdivision.",
+  "next_action": "Require source-selected length-specific transfer and SI unit anchor, or freeze physical 13/8 Planck identification; preserve v1.1 native projector theorem.",
   "mathematical_profile": {
     "coefficient_domain": "ordinary integral 72-Delta incidence, twisted Zrho cellular, source signed K4 S4",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
