@@ -29,16 +29,19 @@
     "Quartic milestone integrity PASS507 records; all16 repository tests PASS; diff whitespace check PASS",
     "Merged current main29f0eb2 after G05/G06 proof update; integrity PASS513 records and all16 tests PASS; no clock-source dependencies changed",
     "Prepared-plane exact replay PASS:43/99 complete coefficient families, signedS4 gate,25 direct gradients and coefficient-error leakage15/16",
-    "Prepared-plane milestone PASS514 integrity records, all16 repository tests and whitespace check"
+    "Prepared-plane milestone PASS514 integrity records, all16 repository tests and whitespace check",
+    "Transverse exact proof PASS;10 numerical Floquet points with2048/4096 convergence; exact nonlinear finite-phase window PASS",
+    "Stability milestone PASS519 integrity records/digests, all16 repository tests and whitespace check",
+    "Merged currentmain51bd725 index-only changes; integrity PASS521 records and all16 tests PASS"
   ],
-  "finding": "A positive13-term local anisotropic quartic gives Omega=2+lambda I with zero leakage on specifiedW; fullsignedS4 blocks it; coefficient-error leakage15/16",
-  "next_action": "Derive transverse periodic variational dynamics about W and classify stability versus lambda I; keep preparation and interaction selection explicit",
+  "finding": "Fixed13-termQ transversely unstable for sufficientlyweakpositive coupling; explicit nonlinear one-cycle phase-error window survives",
+  "next_action": "Test whether positive nearest-incidence quartic modifications in the30 even zero-on-plane directions can remove transverse hyperbolicity without changing the clock law; coefficient choices remain inverse design",
   "access_mode": "Git compute; connector publication; Git push unavailable",
-  "checkpoint_at": "2026-11-05T17:24:55.403467+00:00",
+  "checkpoint_at": "2026-11-05T17:34:37.135516+00:00",
   "checkpoint_source": {
     "revision": "88cb676d36ea934afe973ba3e7b2ea4855185119",
     "dirty": true
   },
-  "resume_integrated_revision": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
-  "last_published_parent": "d58e99b268fdc5a54e366abb9d874a0f637e8cad"
+  "resume_integrated_revision": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
+  "last_published_parent": "8e94fd49ded70a00eb4986177d3463860d295960"
 }

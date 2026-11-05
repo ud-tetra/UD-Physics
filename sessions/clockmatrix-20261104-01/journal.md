@@ -72,3 +72,12 @@ Resumed same held claim7286350, researchd58e99b; verified main698d6d6 only adds 
 
 Captured artifacts/clockmatrix-20261104-01/exact-006 (EXACT): Restricted prepared-plane local quartic witness, symmetry obstruction and leakage check
 Final milestone checks: integrity PASS514 records/digests; all16 tests PASS; whitespace PASS. Same claim held for PR312 review/integration; no merge or mainline export.
+
+### 2026-11-05 — transverse stability and observation window
+Resumed held claim7286350; merged research8e94fd4 and currentmaindca1009 after inspecting G05/Q136/G06 map audit; no clock-source changes. Derived exact12D normal equation and leading averaged generator, spectrum+-3/8,(+-1/4)^3,(+-i)^2. Simple+3/8 proves expanding weakpositive multiplier and orbital instability of this fixedQ. Exact Fraction annihilator/ranks PASS; numerical independent differentiated Hessian/RK4 at10mu points (9positive allgrow),2048/4096 stepdiff<2.85e-12, symplecticresidual<1.93e-14. Exploratory symbolic import unavailable; replaced by own Fraction calculation, no symbolicpackage result claimed. Derived global Hessian13norm2 bound and nonlinear one-cycle phaseerror<1/1000 atI1,lambda1/64,error<=1/4096,energy<=33/16,T128pi/129. Fixed13-term robustclock PARKED, invariant and finite-time receipts preserved. Receipt transverse_receipt.json; immutable stability-007. Next local positive zero-on-plane modifications for stability, still inverse design. Physical promotion0; independent review NOT_RUN.
+
+## 2026-11-05T17:34:37.190936+00:00
+
+Captured artifacts/clockmatrix-20261104-01/stability-007 (NUMERICAL): Exact weak-coupling transverse instability and nonlinear finite phase window, with numerical Floquet grid
+Final checks PASS519 records/digests, all16 repository tests, whitespace. Same claim held for PR312 integration/review; no merge or mainline export.
+Before publication main advanced to51bd725 with G05/Q136/G06 indexing only; inspected diff and merged. No clock dependency changed. Repeated integrity PASS521 and all16 tests PASS. stability-007 retains original calculation base dca1009.

@@ -4,7 +4,7 @@
   "candidate_id": "clock-matrix-question",
   "session_id": "clockmatrix-20261104-01",
   "question": "Does a matrix clock-rate change constitute physical time dilation?",
-  "status": "ACTIVE",
+  "status": "PARKED",
   "evidence": [
     "EXACT",
     "CONDITIONAL",
@@ -28,21 +28,22 @@
     "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/"
   ],
   "baseline": "Ordinary oscillator retuning and time-unit rescaling",
-  "result": "A positive13-term local anisotropic quartic gives Omega=2+lambda I with zero leakage on specifiedW; fullsignedS4 blocks it; coefficient-error leakage15/16",
-  "next_discriminant": "Derive transverse periodic variational dynamics about W and classify stability versus lambda I; keep preparation and interaction selection explicit",
+  "result": "Fixed13-termQ transversely unstable for sufficientlyweakpositive coupling; explicit nonlinear one-cycle phase-error window survives",
+  "next_discriminant": "Test whether positive nearest-incidence quartic modifications in the30 even zero-on-plane directions can remove transverse hyperbolicity without changing the clock law; coefficient choices remain inverse design",
   "mathematical_receipts": [
     "sessions/clockmatrix-20261104-01/mathematical_receipt.json",
     "sessions/clockmatrix-20261104-01/two_clock_receipt.json",
     "sessions/clockmatrix-20261104-01/common_rate_receipt.json",
     "sessions/clockmatrix-20261104-01/local_mediator_receipt.json",
     "sessions/clockmatrix-20261104-01/local_quartic_receipt.json",
-    "sessions/clockmatrix-20261104-01/prepared_plane_receipt.json"
+    "sessions/clockmatrix-20261104-01/prepared_plane_receipt.json",
+    "sessions/clockmatrix-20261104-01/transverse_receipt.json"
   ],
-  "parked_scope": "native nearest-incidence all-preparation quartic implementation only; collective and restricted-preparation branches remain candidates",
+  "parked_scope": "fixed13-termQ as long-time robust clock; preserves invariant plane and finite observation theorem; prior all-V local obstruction unchanged",
   "reopening_conditions": [
     "explicit local mediator and controlled limit",
     "restricted prepared clock sector with leakage bound",
     "changed permitted interaction support"
   ],
-  "active_scope": "restricted selectedW anisotropic construction only; all-V nearest-incidence branch remains PARKED"
+  "active_scope": "no robustness claim; nullspace modification is a proposed separate conditional branch"
 }

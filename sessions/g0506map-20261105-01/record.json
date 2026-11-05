@@ -1,0 +1,47 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "g0506map-20261105-01",
+  "runtime": "Codex Work Mode",
+  "task": "g05-q136-g06-anchor-20261105",
+  "goal": "Test named-carrier Q136 to O09 sufficiency and audit independent G06 anchor",
+  "created_at": "2026-11-05T17:20:54.887408+00:00",
+  "base_revision": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "g05-q136-g06-anchor-20261105": "b9a64f3696f9789603241513cdcd309fddcd2763"
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/g05-q136-g06-anchor/audit.py",
+      "result": "PASS"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS: 509 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS: 16 tests"
+    }
+  ],
+  "finding": "Conditional compression criterion and G06 native-scale/projective obstructions recorded; source sigma map and physical anchor remain open.",
+  "next_action": "Recover packet sigma definitions; independently calibrate a same-carrier energy/time and relative-phase map.",
+  "mathematical_profile": {
+    "coefficient_domain": "exact Q witnesses, symbolic R theorem",
+    "exactness_or_precision_plan": "Fraction rational witnesses; universal algebra in README",
+    "applicable_methods": [
+      "kernel/projection",
+      "unit scaling",
+      "lifted winding",
+      "projective Born observability"
+    ],
+    "clock_metric_units_conventions": "native s and lifted phi; unit metric; A0 native action; physical t, hbar unanchored"
+  },
+  "checkpoint_at": "2026-11-05T17:24:25.541699+00:00",
+  "checkpoint_source": {
+    "revision": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+    "dirty": true
+  }
+}

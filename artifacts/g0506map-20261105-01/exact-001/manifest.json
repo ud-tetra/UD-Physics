@@ -1,0 +1,60 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "g0506map-20261105-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-05T17:24:25.493350+00:00",
+  "evidence": "EXACT",
+  "summary": "K4 Q136 completion counterexample and G06 native-unit homogeneity",
+  "command": "python3 experiments/g05-q136-g06-anchor/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/g05-q136-g06-anchor/audit.py",
+      "sha256": "1638d61986edad43d893891561423560195388c9efb94854c0d33bfe6931da2b",
+      "size_bytes": 2140
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/g05-q136-g06-anchor/README.md",
+      "sha256": "1f5e7353ef23cfc3ea2a44538ecd1c925bf83b163f102dd52a3c7108ff2809ad",
+      "size_bytes": 6686
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/g05-q136-g06-anchor/mathematical_receipt.json",
+      "sha256": "377b127b84b20627a353fa75f4957b709b25e446130d88ad5a37356eb7745241",
+      "size_bytes": 8779
+    },
+    {
+      "input_id": "input-004",
+      "name": "012-ledger_v0.85.json",
+      "path": "inputs/004-012-ledger_v0.85.json",
+      "source_location": "repository",
+      "source_path": "artifacts/qpb1-integral-duality-20261022-a1/exact-002/inputs/012-ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "fa1bad3794ad7c22cc3e8221cd366f58511f5d93c5d6e96320f4431ceaeb4da7",
+      "size_bytes": 765
+    }
+  ]
+}

@@ -68,3 +68,7 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 ## Prepared-plane local interaction
 
 [Report v0.1](PREPARED_PLANE.md), [exact replay](prepared_plane.py), [results](prepared_plane_results.json): positive13-term anisotropic local witness gives Omega=2+lambda I and exact invariance on selectedW. FullsignedS4 blocks this target onW; coefficient error creates transverse leakage. Native selection, stability and physical maps OPEN.
+
+## Transverse stability and finite readout
+
+[Report v0.1](TRANSVERSE_STABILITY.md), [exact certificate](transverse_exact.py), [numerical replay](transverse_stability.py): fixed13-termQ is weakpositive transversely unstable; explicit nonlinear one-cycle phase error<1/1000rad passes given gates. Robust-clock witness PARKED; native selection/maps OPEN.
