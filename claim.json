@@ -1,0 +1,10 @@
+{
+  "task": "cosmology-g0-weakfield-candidate-20261106",
+  "base_revision": "3579845792e07344ca9cbfd29c7e369570e4207f",
+  "scope": [
+    "Formalize conditional finite-graph burden Poisson candidate",
+    "Test source/metric and force nonuniqueness without galaxy fit"
+  ],
+  "status": "claimed",
+  "created_at": "2026-11-06"
+}
