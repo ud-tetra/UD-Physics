@@ -15,7 +15,7 @@ def center_speeds_squared():
     return [str(axis), str(diagonal)]
 
 
-def replay(order):
+def replay(order, probe=None):
     points, weights = np.polynomial.legendre.leggauss(order)
     weights *= (1 - points**2)**4
     weights /= weights.sum()
@@ -36,17 +36,22 @@ def replay(order):
             mid = (lo + hi) / 2
             below = dispersion(coordinates(mid))[0]**2 < target
             lo, hi = np.where(below, mid, lo), np.where(below, hi, mid)
-        omega, velocity = dispersion(coordinates((lo + hi) / 2))
+        wavevector = coordinates((lo + hi) / 2)
+        omega, velocity = dispersion(wavevector)
         mean = np.array([np.sum(probability * v) for v in velocity])
         speed = np.sqrt(np.dot(mean, mean) / 2 - mean.sum()**2 / 8)
         contrast = np.sum(probability * np.exp(2j * (omega**2 / 128) * 12))
-        return {
+        result = {
             "centroid_velocity": mean.tolist(),
             "centroid_speed": float(speed),
             "phase_residual_at_12_rad": float(np.angle(contrast) / 2),
             "contrast_at_12": float(abs(contrast)),
             "max_squared_frequency_error": float(np.max(abs(omega**2 - target))),
         }
+
+        if probe is not None:
+            result["probe"] = probe(wavevector, probability)
+        return result
 
     axis, diagonal = chart(False), chart(True)
     assert diagonal["centroid_speed"] - axis["centroid_speed"] > 0.14

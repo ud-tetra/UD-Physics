@@ -102,3 +102,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Fixed Laplacian coupling](LAPLACIAN_CLOCK.md) tests spectral detuning against the matched reference and tracks both reference lobes.
 
 [Equal-frequency packet comparison](ISOSPECTRAL_CLOCK.md) compares distinct centroid speeds at fixed spectral loading.
+
+[Edge-class clock](EDGE_CLASS_CLOCK.md) separates local incidence detuning from a speed-only law.

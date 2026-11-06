@@ -166,3 +166,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-018 (EXACT): Even spectral detu
 ## 2026-11-06T03:00:34.355056+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-019 (EXACT): Different centroid speeds with matched spectral detuning
+
+## 2026-11-06T03:22:48.299351+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-020 (EXACT): Resolved edge-class phase split and equal-speed countercontrol

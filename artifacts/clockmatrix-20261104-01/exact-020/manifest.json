@@ -1,0 +1,56 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-020",
+  "created_at": "2026-11-06T03:22:48.299011+00:00",
+  "evidence": "EXACT",
+  "summary": "Resolved edge-class phase split and equal-speed countercontrol",
+  "command": "python3 experiments/clock-matrix-question/edge_class_clock.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "bdb51b7621db5ad87e8d7556a925d938d68049ba",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "edge_class_clock.py",
+      "path": "inputs/001-edge_class_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/edge_class_clock.py",
+      "sha256": "ecd0dc9c30863c1781216d61a605000992e24480812213b72bcbfb2428c5eb54",
+      "size_bytes": 1900
+    },
+    {
+      "input_id": "input-002",
+      "name": "isospectral_clock.py",
+      "path": "inputs/002-isospectral_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/isospectral_clock.py",
+      "sha256": "09c400d7018fde73a47d2456e28aa49b16e605a2978f8ef33f7e03b7e0557b6c",
+      "size_bytes": 2731
+    },
+    {
+      "input_id": "input-003",
+      "name": "directional_packet.py",
+      "path": "inputs/003-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/EDGE_CLASS_CLOCK.md",
+      "sha256": "8a68f982ac47192b9bee54a0ba83d9fab7108bef0dbb9007e176e9a515b9c5d1",
+      "size_bytes": 3633
+    },
+    {
+      "path": "files/edge_class_clock_results.json",
+      "sha256": "c456f73a4370c427f8c8fbf54532b2609408fcb079de7be70ead479f1326ce87",
+      "size_bytes": 2653
+    }
+  ]
+}
