@@ -98,3 +98,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Directional packet](DIRECTIONAL_PACKET.md) tests scalar transport and a co-moving carrier phase on two periodic grids.
 
 [Separate internal phase null](INTERNAL_PHASE_NULL.md) defines a matched moving/reference comparison and a readout sensitivity control.
+
+[Fixed Laplacian coupling](LAPLACIAN_CLOCK.md) tests spectral detuning against the matched reference and tracks both reference lobes.

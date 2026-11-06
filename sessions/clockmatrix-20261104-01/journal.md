@@ -158,3 +158,7 @@ Captured artifacts/clockmatrix-20261104-01/numerical-001 (NUMERICAL): Directiona
 ## 2026-11-06T02:47:36.131337+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-017 (EXACT): Product-clock phase cancellation and injected detuning replay
+
+## 2026-11-06T02:57:19.800939+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-018 (EXACT): Even spectral detuning and two-window reference replay
