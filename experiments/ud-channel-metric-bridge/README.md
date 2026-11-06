@@ -78,3 +78,7 @@ coefficient-energy control. No apparatus data have been acquired.
 The [two-port capacitor emulator](CAPACITOR_PORT_v0.1.md) specifies
 two concrete fixtures, a signed charge audit, and a sufficient
 deterministic decision margin. Bench performance remains unmeasured.
+
+The [signed acquisition replay](ACQUISITION_SIM_v0.1.md) exercises
+independent synthetic charge and work channels, certificate gates,
+and the strict sign rule on fault and boundary controls.

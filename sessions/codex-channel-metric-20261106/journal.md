@@ -47,3 +47,21 @@ two-terminal fixtures for t=1 and the uniform control. Both tie on pure
 work ratio; opposite signs of W_c−W_y survive the declared endpoint
 and work budgets. The fixtures implement the hypotheses by design.
 Signed charge and loss certificates remain unmeasured.
+
+## Acquisition replay follow-up
+
+Resumed published head 5438685 under the held claim. Exact rational
+two-port ramps model shunt loss, gain error and voltage/current skew.
+The classifier receives observations and synthetic certificates only.
+64 valid cases classified, 14 fault/boundary cases abstained. No
+hardware noise or calibration measurements were collected.
+
+## 2026-11-06T19:15:19.832530+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-004 (EXACT): Synthetic signed acquisition, error intervals and abstention controls
+
+## 2026-11-06T19:15:19.880796+00:00
+
+Checkpoint (handoff): Exact synthetic acquisition: 64 correct signs and 14 required abstentions.
+
+Next: Freeze bench acceptance protocol and independently certify the real charge, timebase and energy closure channels.
