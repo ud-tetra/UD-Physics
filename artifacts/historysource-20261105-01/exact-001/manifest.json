@@ -1,0 +1,61 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "historysource-20261105-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-06T02:42:00.716600+00:00",
+  "evidence": "EXACT",
+  "summary": "Receipt index cancellation and net/gross history readout gate",
+  "command": "python3 experiments/history-source-update/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "74fe8f61856792fda717f2fffe8d3ed9a6564da2",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "002-006-012-ledger_v0.85.json",
+      "path": "inputs/001-002-006-012-ledger_v0.85.json",
+      "source_location": "repository",
+      "source_path": "artifacts/g0506step-20261105-01/exact-001/inputs/002-006-012-ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/history-present-collision/README.md",
+      "sha256": "e1ec73fa51cb172388f66b67521ff1fc81df25b3ce48758f085ecdff38bbb7cf",
+      "size_bytes": 5001
+    },
+    {
+      "input_id": "input-003",
+      "name": "audit.py",
+      "path": "inputs/003-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/history-source-update/audit.py",
+      "sha256": "a2768f367d6331151525a0ebc61de863fd29059bbbcdab958f5eaadf73fc0b7a",
+      "size_bytes": 1358
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "c3fcd5f7166c238755ca9d31e67af79163474151a13d5e6e22043f9175fc78ee",
+      "size_bytes": 851
+    },
+    {
+      "path": "files/README.md",
+      "sha256": "cff46a3eba38e69af41c245e85897d07fccef7d4c27fe9326158dc104a830796",
+      "size_bytes": 4078
+    },
+    {
+      "path": "files/mathematical_receipt.json",
+      "sha256": "c97bd658bbfd21a32138920f88be805e44095e7191b867d7c5fdc5dc1fcb1b4c",
+      "size_bytes": 5383
+    }
+  ]
+}

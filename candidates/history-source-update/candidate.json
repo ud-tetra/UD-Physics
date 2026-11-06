@@ -1,0 +1,31 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "history-source-update",
+  "session_id": "historysource-20261105-01",
+  "question": "Does receipt-index net and endpoint preserve predecessor lineage?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "one-dimensional rational obligation spaces for witness",
+    "only dimensions, index, polarity and endpoint retained",
+    "gross source/sink tags optional"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "conceptual universal archive target known; no physical data",
+  "fitted_choices": [],
+  "sources": [
+    "ledger v0.85 Q194-Q210 Q151 Q154 Q158",
+    "prior history-present-collision v0.1"
+  ],
+  "baseline": "full T and lineage receipt retained",
+  "result": "zero and identity T share index 0 but differ in lineage; net zero source/sink has multiple gross decompositions; source complete trajectory collision not proved",
+  "next_discriminant": "source sequential event and environment record",
+  "mathematical_receipts": [
+    "candidates/history-source-update/mathematical_receipt.json"
+  ]
+}
