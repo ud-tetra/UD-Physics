@@ -29,8 +29,8 @@
     "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/"
   ],
   "baseline": "Ordinary oscillator retuning and time-unit rescaling",
-  "result": "For I=1 and 31/5<=mu<77511/12500, initial state error <=1/16000000 gives state error <=1/240000 and lifted phase error <1/300000 rad through one native time unit.",
-  "next_discriminant": "Tighten the finite margin by bounding the two-time propagator over the observation horizon and separating tangential and normal error transfer.",
+  "result": "Direct normal gains 5 and 8 over one native unit. Euclidean initial cap 1/3200000 or split tangent 1/8000000 and normal 1/120000 both give phase error <1/300000 rad.",
+  "next_discriminant": "Derive a finite coefficient-drift allowance for the one-unit phase contract, separating orbit detuning from normal forcing.",
   "mathematical_receipts": [
     "sessions/clockmatrix-20261104-01/mathematical_receipt.json",
     "sessions/clockmatrix-20261104-01/two_clock_receipt.json",
@@ -44,7 +44,8 @@
     "sessions/clockmatrix-20261104-01/fourier_interval_receipt.json",
     "sessions/clockmatrix-20261104-01/stability_boundary_receipt.json",
     "sessions/clockmatrix-20261104-01/near_threshold_receipt.json",
-    "sessions/clockmatrix-20261104-01/nonlinear_margin_receipt.json"
+    "sessions/clockmatrix-20261104-01/nonlinear_margin_receipt.json",
+    "sessions/clockmatrix-20261104-01/anisotropic_margin_receipt.json"
   ],
   "parked_scope": "fixed13-termQ as long-time robust clock; preserves invariant plane and finite observation theorem; prior all-V local obstruction unchanged",
   "reopening_conditions": [

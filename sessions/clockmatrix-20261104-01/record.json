@@ -42,16 +42,17 @@
     "Fourier/Cayley exact rational replay PASS. Prior exact-009 results unchanged.",
     "Exact block and outward-rounded boundary replay PASS.",
     "Exact near-threshold entry, derivative and scalar margin replay PASS.",
-    "Exact finite nonlinear margin replay PASS."
+    "Exact finite nonlinear margin replay PASS.",
+    "Direct outward propagation and split nonlinear gate replay PASS."
   ],
-  "finding": "For I=1 and 31/5<=mu<77511/12500, initial state error <=1/16000000 gives state error <=1/240000 and lifted phase error <1/300000 rad through one native time unit.",
-  "next_action": "Tighten the finite margin by bounding the two-time propagator over the observation horizon and separating tangential and normal error transfer.",
+  "finding": "Direct normal gains 5 and 8 over one native unit. Euclidean initial cap 1/3200000 or split tangent 1/8000000 and normal 1/120000 both give phase error <1/300000 rad.",
+  "next_action": "Derive a finite coefficient-drift allowance for the one-unit phase contract, separating orbit detuning from normal forcing.",
   "access_mode": "Git compute; connector publication; Git push unavailable",
-  "checkpoint_at": "2026-11-05T23:48:14.632154+00:00",
+  "checkpoint_at": "2026-11-06T02:20:41.234968+00:00",
   "checkpoint_source": {
     "revision": "88cb676d36ea934afe973ba3e7b2ea4855185119",
     "dirty": true
   },
   "resume_integrated_revision": "234f54471c32cc9ad4873cd8042103fa19795909",
-  "last_published_parent": "fca1a8afb36f7037b3917f88d58873823c2ab7f8"
+  "last_published_parent": "84c59f35f58405c06820d5697c74674305aeedbc"
 }

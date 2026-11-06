@@ -88,3 +88,7 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Near-threshold gain and growth](NEAR_THRESHOLD.md) gives rational bounds on transient gain below onset and exponential growth above it.
 
 [Finite nonlinear preparation margin](NONLINEAR_MARGIN.md) gives an explicit one-unit state and phase error budget below the threshold.
+
+[Direct propagation and split preparation gates](ANISOTROPIC_MARGIN.md) tightens the one-unit phase contract.
+
+[Routing-budget clock test](ROUTING_CLOCK_TEST.md) separates native stock exchange from the proposed motion overhead and rejects the square-root law for the stock-fraction and affine-action readouts tested.

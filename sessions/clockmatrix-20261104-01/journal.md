@@ -134,3 +134,15 @@ Resumed held claim 7286350 from the tree of stored commit fca1a8a. Reconciled ma
 Captured artifacts/clockmatrix-20261104-01/exact-013 (EXACT): Finite nonlinear state and phase preparation margin
 
 Rational replay, integrity for 557 records, whitespace and all 16 repository tests passed. Claim retained for PR 312 review.
+
+### 2026-11-05 — Direct propagation and split preparation gates
+
+Recovered discovery head 84c59f3 from GitHub after workspace pruning. Integrated base 234f544 and held claim 7286350 verified. Direct normal gains 5 and 8 over one native unit. Euclidean initial cap 1/3200000 or split tangent 1/8000000 and normal 1/120000 both give phase error <1/300000 rad. Constructor verification. Physical promotion 0. Next Derive a finite coefficient-drift allowance for the one-unit phase contract, separating orbit detuning from normal forcing.
+
+## 2026-11-06T02:20:41.288880+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-014 (EXACT): Direct two-time and split preparation tolerance
+
+## 2026-11-06T02:28:02.874605+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-015 (EXACT): Prepared-plane routing-budget countertest
