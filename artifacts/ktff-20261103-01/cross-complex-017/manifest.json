@@ -3,11 +3,11 @@
   "schema_version": 2,
   "session_id": "ktff-20261103-01",
   "run_id": "cross-complex-017",
-  "created_at": "2026-11-05T23:55:00Z",
+  "created_at": "2026-11-06T00:09:28Z",
   "evidence": "EXACT",
   "summary": "Conditional exact K4 1-to-4 full Q165 norm defect, native two-mode post-event transfer, binary masked boundary nilpotency and Q171 signed-current direction gate. No event or physical promotion.",
   "command": "python3 cross_complex_audit_v17.py; python3 mask_current_v17.py; python3 -m unittest discover -s . -p 'test_*v17.py' -v",
-  "command_execution": "RECORDED_EXECUTED_IN_LOCAL_CONSTRUCTOR_RUNTIME",
+  "command_execution": "EXECUTED_IN_LOCAL_CONSTRUCTOR_RUNTIME",
   "source": {
     "revision": "234f54471c32cc9ad4873cd8042103fa19795909",
     "dirty": true
