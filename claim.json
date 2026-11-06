@@ -1,0 +1,10 @@
+{
+  "task": "cosmology-g0-operator-recovery-20261106",
+  "base_revision": "4145ce012c3d8a91ea9e8dd53f5b923455b0e1c2",
+  "scope": [
+    "Recover current matter-to-field and metric selection evidence",
+    "Derive operator only if source selected; otherwise amend G0 gate"
+  ],
+  "status": "claimed",
+  "created_at": "2026-11-06"
+}
