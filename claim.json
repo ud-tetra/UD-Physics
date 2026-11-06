@@ -3,12 +3,14 @@
   "protocol_version": 2,
   "task": "integration-history-collision-index-20261105",
   "session": "historyidx-20261105-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-06T02:36:40.682Z",
   "base_revision": "312c278bd7c73352b15be33b5a09f4215b550516",
   "owned_paths": [
     "tasks/integration-history-collision-index-20261105.json",
     "sessions/historyidx-20261105-01",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-11-06T02:38:20.050Z",
+  "released_from_sha": "05edae6e05f4ba35cb8c5946e3f8b72c0d18d793"
 }
