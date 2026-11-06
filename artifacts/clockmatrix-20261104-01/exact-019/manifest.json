@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-019",
+  "created_at": "2026-11-06T03:00:34.354582+00:00",
+  "evidence": "EXACT",
+  "summary": "Different centroid speeds with matched spectral detuning",
+  "command": "python3 experiments/clock-matrix-question/isospectral_clock.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "f18643626689388efb81c36618beb6b24be7ff32",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "isospectral_clock.py",
+      "path": "inputs/001-isospectral_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/isospectral_clock.py",
+      "sha256": "125c343755fdd78cc9d5f199ece4aa3365e2e6b9d066c66f13971cf0aabe8760",
+      "size_bytes": 2571
+    },
+    {
+      "input_id": "input-002",
+      "name": "directional_packet.py",
+      "path": "inputs/002-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/ISOSPECTRAL_CLOCK.md",
+      "sha256": "c6178e37d4436403203cae704072c1846acdd1729caca6e21fa7fae321bc0c77",
+      "size_bytes": 4190
+    },
+    {
+      "path": "files/isospectral_clock_results.json",
+      "sha256": "be67d0f461e186d40e78ae8d150d2fea993762a250fbcfd9a958c1e68ad5f63c",
+      "size_bytes": 1621
+    }
+  ]
+}

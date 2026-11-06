@@ -100,3 +100,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Separate internal phase null](INTERNAL_PHASE_NULL.md) defines a matched moving/reference comparison and a readout sensitivity control.
 
 [Fixed Laplacian coupling](LAPLACIAN_CLOCK.md) tests spectral detuning against the matched reference and tracks both reference lobes.
+
+[Equal-frequency packet comparison](ISOSPECTRAL_CLOCK.md) compares distinct centroid speeds at fixed spectral loading.

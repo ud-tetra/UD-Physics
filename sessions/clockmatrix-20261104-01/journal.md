@@ -162,3 +162,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-017 (EXACT): Product-clock phas
 ## 2026-11-06T02:57:19.800939+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-018 (EXACT): Even spectral detuning and two-window reference replay
+
+## 2026-11-06T03:00:34.355056+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-019 (EXACT): Different centroid speeds with matched spectral detuning
