@@ -1,0 +1,223 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-INTERCOMPLEX-CONTACT-METRIC-020",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "session_id": "ktff-20261103-01",
+  "date": "2026-11-05/06",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "CANDIDATE",
+    "NO-GO",
+    "OPEN"
+  ],
+  "physical_promotion": 0,
+  "question": "Can the old C15 and new C29 K4 first-refinement Q170 histories agree under source-admitted local cone contact, positive metric, or clock scaling? If not, what exact changed-assumption constructions would suffice?",
+  "sources": [
+    {
+      "ref": "LEDGER",
+      "path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "revision": "7ef45805563b47cbe1e2f34bb9e6e97ce5f5c962",
+      "section": "Q165/Q166/Q169/Q170/Q171/Q173/Q177–Q179",
+      "status": "frozen read-only; Q171 review issue #338 OPEN and unaccepted"
+    },
+    {
+      "ref": "QPB1",
+      "path": "experiments/qpb1-local-generators/README.md",
+      "revision": "7ef45805563b47cbe1e2f34bb9e6e97ce5f5c962",
+      "section": "v1.0 §§1–3 native A=D−D^T unit H",
+      "status": "read-only"
+    },
+    {
+      "ref": "PACHNER",
+      "path": "experiments/pachner-state-transport/README.md",
+      "revision": "7ef45805563b47cbe1e2f34bb9e6e97ce5f5c962",
+      "section": "v0.1 §1→4 integral F",
+      "status": "read-only"
+    },
+    {
+      "ref": "CURRENT",
+      "path": "experiments/pachner-current-metric/README.md",
+      "revision": "7ef45805563b47cbe1e2f34bb9e6e97ce5f5c962",
+      "section": "v0.1 connected-Hasse scalar diagonal metric lemma",
+      "status": "read-only"
+    },
+    {
+      "ref": "EVENT",
+      "path": "experiments/pachner-event-actuator/README.md",
+      "revision": "7ef45805563b47cbe1e2f34bb9e6e97ce5f5c962",
+      "section": "v0.1 different 2→3 candidate overlay, no sourced gate",
+      "status": "comparative, not transferred as admitted 1→4 law"
+    },
+    {
+      "ref": "V19",
+      "path": "experiments/klein-tetra-face-flip-20261103/CURRENT_INTERFACE_Q170_v1.9.md",
+      "revision": "e3ee0771b18291c4ace72af02eb2eefc671a0766",
+      "section": "all Q170 first jets and M=4bbT−I14",
+      "status": "prior exact conditional Discovery"
+    }
+  ],
+  "objects": [
+    {
+      "id": "C0",
+      "type": "graded real K4 simplicial chain",
+      "domain": "R15",
+      "codomain": "R15 via D0,A0",
+      "coefficients": "integer oriented incidence, real amplitudes",
+      "metric": "H0=I15",
+      "units": "native formal",
+      "definition": "old tetra grades (4,6,4,1), A0=D0−D0ᵀ"
+    },
+    {
+      "id": "C1",
+      "type": "graded real 1→4 K4 chain",
+      "domain": "R29",
+      "codomain": "R29 via D1,A1",
+      "coefficients": "integer oriented incidence, real amplitudes",
+      "metric": "H1=I29",
+      "units": "native formal",
+      "definition": "centroid refined grades(5,10,10,4), D1²=0, A1=D1−D1ᵀ"
+    },
+    {
+      "id": "F",
+      "type": "source integral chain subdivision",
+      "domain": "R15",
+      "codomain": "R29",
+      "coefficients": "integer",
+      "metric": "not isometric in old/new unit metrics",
+      "units": "none",
+      "definition": "D1F=FD0, old lower14 embedded, top -> signed four children"
+    },
+    {
+      "id": "T,C,Lold",
+      "type": "shell embedding, new and old transverse derivatives",
+      "domain": "R14",
+      "codomain": "R29 new complement and R1 old top",
+      "coefficients": "integer/rational",
+      "metric": "unit",
+      "units": "inverse formal u",
+      "definition": "T=F[:,:14], C=(I−TTᵀ)A1T, Lold=e_topᵀA0T=−2bᵀ"
+    },
+    {
+      "id": "C_g",
+      "type": "candidate independent one-to-one cone weights",
+      "domain": "R14",
+      "codomain": "R29",
+      "coefficients": "arbitrary real",
+      "metric": "unit newborn / separately positive definite test",
+      "units": "formal",
+      "definition": "Cdiag(g_i), no off-diagonal face correlations"
+    },
+    {
+      "id": "Dstar",
+      "type": "candidate rational non-Hasse differential",
+      "domain": "R29",
+      "codomain": "R29",
+      "coefficients": "rationals including ±1/2",
+      "metric": "unit Euclidean",
+      "units": "native formal",
+      "definition": "coherent Cstar=−2hbᵀ, altered Dstar²=0, does not preserve original D1 or integral F"
+    },
+    {
+      "id": "P,H,AH",
+      "type": "candidate barycentric retraction, non-diagonal metric, changed adjoint",
+      "domain": "P:R29→R15; H,AH:R29→R29",
+      "codomain": "as specified",
+      "coefficients": "rational",
+      "metric": "H=PᵀP+(I−FP)ᵀ(I−FP) positive",
+      "units": "native formal",
+      "definition": "P F=I; P D1=D0 P; A_H=D1−H^-1 D1ᵀH exact F intertwiner"
+    }
+  ],
+  "assumptions": [
+    "Unchanged source test: unit Euclidean metrics both levels, identical original shell14 amplitudes, native A0,A1 and original integral F.",
+    "Local contact reweighting test: one distinct newborn cone coface per original shell simplex; no added cross-contact, positive definite born metric and original shell metric fixed.",
+    "Clock test: single common scalar λ(u) multiplying whole new native generator; all-state original-shell first-jet matching required.",
+    "Alternative contact/metric branches are inverse-constructed to satisfy desired full matching; not independently source-selected.",
+    "All formal u, no SI metric, Planck target or physical event selector. Issue #338 status pending."
+  ],
+  "calculation": [
+    "Exact native CᵀC=I14, LoldᵀLold=4bbᵀ; 14 vs 1 rank; M=4bbᵀ−I14 with eigen3 and −1×13, Frobenius²22.",
+    "One-to-one Cdiag(g) has diagonal Gram; twelve off-diagonal entries of old face Gram force Frobenius²≥12 under unit newborn metric.",
+    "Any positive definite newborn metric preserves rank of Cdiag(g) Gram; rank1 with nonzero four-face support impossible.",
+    "Q173-like four original-face binary contact masks (16 candidates) have mismatch² in [22,26], all-on optimum.",
+    "Universal matching under λ(0)=1 would require symmetric nonzero M plus skew λ'(0)A_sh to vanish, impossible.",
+    "Coherent Cstar=−2h bᵀ exact rank1; changed rational Dstar²=0 and isometric Sstar intertwines Astar and Dstar, but 12 non-Hasse pairs, original F/D1 abandoned.",
+    "Barycentric centroid retraction P via exterior powers satisfies PF=I and PD1=D0P. Metric H=PᵀP+QᵀQ positive, FᵀHF=I, A_H H-skew and A_HF=FA0, 24 S4 actions; original D1/F retained but source Q165/Q169 changed."
+  ],
+  "fraction_receipt": {
+    "exact_factors": "14=4+6+4 original shell, 15 newborn, old removed-top rank1, new cone rank14",
+    "spectrum": "3×1, -1×13; residual squared Frobenius22; best diagonal cone residual12",
+    "origins": "signed cone incidence and old top 4-face boundary",
+    "nonphysical": "no Planck length/13-over-8 fit"
+  },
+  "clock_receipt": {
+    "state_parameter": "formal native u",
+    "rule": "A0,D0 vs A1,D1 with chosen candidate interface",
+    "physical_unit_map": "NONE",
+    "scalar_rate_no_go": "λ(0)=1 all-state first-jet, λ' term skew cannot cancel symmetric M"
+  },
+  "dynamics_readout": {
+    "observable": "Q165 full stock, Q170 shared-shell cuts and continuous history",
+    "initial": "top-zero parent amplitude, new born state0",
+    "null": "stay on original K4 native generator",
+    "conservation": "changed metric H permits exact H-stock; not original Q165 refined unit stock",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "math interface target defined (exact continuity) before constructing alternative metrics; inverse design disclosed",
+    "empirical_target": "NONE",
+    "fitted_parameters": "NONE",
+    "chosen_model_parameters": [
+      "new H from P",
+      "new rank-one Cstar"
+    ],
+    "interpretation": "candidate mathematics only"
+  },
+  "result": {
+    "exact": "NO-GO for unchanged Q169 and any independent local reweight + chosen scalar clock; EXACT two changed-assumption completions",
+    "units": "dimensionless native",
+    "scope": "one K4 1→4 split, 15D/29D carriers",
+    "physical_promotion": 0
+  },
+  "verification": [
+    {
+      "method": "local complete old/new SymPy replay and Hodge/coherent completion",
+      "actual": "PASS"
+    },
+    {
+      "method": "independent 14D rank/mask proof",
+      "actual": "PASS"
+    },
+    {
+      "method": "same-constructor regression suite",
+      "actual": "14/14 PASS"
+    },
+    {
+      "method": "24 signed S4 actions in each completion",
+      "actual": "PASS"
+    },
+    {
+      "method": "independent nonconstructor review",
+      "actual": "NOT_RUN"
+    },
+    {
+      "method": "source-authoritative Q171 review",
+      "actual": "OPEN issue #338"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "F under unit metric has rank-one Q165 defect 3a² even though it is integral and topologically correct.",
+    "One-to-one cone contacts cannot create off-diagonal coherent old top Gram.",
+    "Metric completion restores exact interface by changing Q165 new metric and numerical Q169 adjoint; no source selection.",
+    "Rational contact completion restores exact interface but is non-Hasse and not original integral top transport.",
+    "Q171 issue remains open; no source-accepted current direction amendment."
+  ],
+  "limitations": [
+    "No source-admitted intercomplex controller/contact/metric, physical time or energy map.",
+    "Constructed completions are not proof of native dynamics; no physical promotion.",
+    "No external nonconstructor review; CI integrity only."
+  ],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Require an independent source-selected metric/contact/admission rule (with typed Q165/Q170 currents) and reviewer decision on Q171 issue #338; otherwise freeze physical finite-floor claim under current sources."
+}
