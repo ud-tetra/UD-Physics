@@ -1,0 +1,23 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "history-write-trigger-20261106-01",
+  "run_id": "source-gate-v01",
+  "created_at": "2026-11-06T03:21:49.480496+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact scoped carrier-write trigger and marginal-history gate",
+  "command": "Symbolic projector-block argument in experiments/history-write-trigger/README.md",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "b04652406b5579ca172564d0e3a6fe3aca75693a",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/history-write-result.json",
+      "sha256": "e6e6735bc18716e32d5fb56a6e5f2886f81b4326a911026e27c897d988fb62aa",
+      "size_bytes": 588
+    }
+  ]
+}
