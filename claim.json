@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "cosmology-galactic-entry-20261106",
+  "session": "cosmology-galactic-entry-20261106-01",
+  "status": "held",
+  "created_at": "2026-11-06T17:37:14.607Z",
+  "base_revision": "45020742a9332445888b39847cb1e2e2903a3f23",
+  "owned_paths": [
+    "docs/COSMOLOGY_BRANCH_v0.1.md",
+    "experiments/cosmology-galactic-entry/",
+    "sessions/cosmology-galactic-entry-20261106-01/",
+    "artifacts/cosmology-galactic-entry-20261106-01/"
+  ]
+}
