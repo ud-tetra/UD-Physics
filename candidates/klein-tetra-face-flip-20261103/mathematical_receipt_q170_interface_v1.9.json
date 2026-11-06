@@ -1,0 +1,393 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-Q170-INTERFACE-019",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Does a candidate Q165-conserving K4 top-zero subdivision preserve every Q170 shell cut through the transition, and which exact native source sign convention is required for Q171?",
+  "evidence_labels": [
+    "EXACT",
+    "DERIVED",
+    "CANDIDATE",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "C_OLD",
+      "symbol": "C_old",
+      "object_type": "native old filled K4 chain",
+      "definition": "15-dimensional real graded chain (4,6,4,1); A0=D0-D0^T",
+      "domain": "R15",
+      "codomain": "R15 via A0",
+      "coefficient_domain": "Z boundaries,Q exact tests",
+      "units": "native amplitude and formal u",
+      "basis_orientation": "ascending signed K4 simplices",
+      "metric_measure": "unit Euclidean",
+      "origin": "Q169 and QPB1 v1.0",
+      "exact_expression": "A0^T=-A0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "Q169",
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "H_UNIT"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit incidence"
+    },
+    {
+      "object_id": "C_NEW",
+      "symbol": "C_new",
+      "object_type": "native refined 1-to-4 K4 chain",
+      "definition": "29-dimensional real graded chain (5,10,10,4); A1=D1-D1^T",
+      "domain": "R29",
+      "codomain": "R29 via A1",
+      "coefficient_domain": "Z boundaries,Q exact tests",
+      "units": "native amplitude and formal u",
+      "basis_orientation": "ascending signed simplices new centroid4",
+      "metric_measure": "unit Euclidean",
+      "origin": "Pachner 1-to-4",
+      "exact_expression": "A1^T=-A1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PACHNER"
+      ],
+      "assumption_ids": [
+        "H_UNIT"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit incidence"
+    },
+    {
+      "object_id": "T",
+      "symbol": "T",
+      "object_type": "original shell embedding",
+      "definition": "29x14 restriction of integral boundary-identity subdivision F to original 4 vertices,6 edges,4 outer faces",
+      "domain": "R14",
+      "codomain": "R29",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "identical original 14 simplex coordinates",
+      "metric_measure": "T^TT=I14",
+      "origin": "source integral F restricted to shell",
+      "exact_expression": "T^T A1 T = (A0)_sh,sh",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "V17"
+      ],
+      "assumption_ids": [
+        "TOP_ZERO_EVENT"
+      ],
+      "dependency_ids": [
+        "C_OLD",
+        "C_NEW"
+      ],
+      "normalization": "no top rescaling"
+    },
+    {
+      "object_id": "LNEW",
+      "symbol": "L_new",
+      "object_type": "signed cone-shell derivative operator",
+      "definition": "(I29−TT^T)A1 T; every shell simplex has one unique newborn cone coface with signed coefficient ±1",
+      "domain": "R14",
+      "codomain": "R29 newborn15 subspace",
+      "coefficient_domain": "Z",
+      "units": "inverse formal u",
+      "basis_orientation": "ascending apex4 cone",
+      "metric_measure": "Lnew^T Lnew=I14",
+      "origin": "exact new v1.9, independent cone check",
+      "exact_expression": "rank14, 14 distinct new cone simplices, one extra centroid vertex silent at first derivative",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PACHNER"
+      ],
+      "assumption_ids": [
+        "H_UNIT"
+      ],
+      "dependency_ids": [
+        "T"
+      ],
+      "normalization": "unit incidence"
+    },
+    {
+      "object_id": "LOLD",
+      "symbol": "L_old",
+      "object_type": "old removed top excitation row",
+      "definition": "e_top^T A0 T where b=(partial_3 e_top)/2",
+      "domain": "R14",
+      "codomain": "R1",
+      "coefficient_domain": "Q",
+      "units": "inverse formal u",
+      "basis_orientation": "old outer 2-chain",
+      "metric_measure": "Lold^T Lold=4bb^T",
+      "origin": "source single K4 native top pair",
+      "exact_expression": "Lold=−2b^T, rank1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "H_UNIT"
+      ],
+      "dependency_ids": [
+        "C_OLD"
+      ],
+      "normalization": "b normalized"
+    },
+    {
+      "object_id": "M",
+      "symbol": "M",
+      "object_type": "shared-shell acceleration discrepancy",
+      "definition": "T^TA1²T−(A0²)_sh,sh",
+      "domain": "R14",
+      "codomain": "R14",
+      "coefficient_domain": "Z/Q",
+      "units": "formal u^-2",
+      "basis_orientation": "original shell",
+      "metric_measure": "unit native H",
+      "origin": "derived exact from skew blocks",
+      "exact_expression": "M=4bb^T−I14, eigenvalues3×1 and (−1)×13, rank14",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "V17"
+      ],
+      "assumption_ids": [
+        "H_UNIT"
+      ],
+      "dependency_ids": [
+        "LNEW",
+        "LOLD"
+      ],
+      "normalization": "none"
+    },
+    {
+      "object_id": "Q171DIR",
+      "symbol": "J_out,J_in",
+      "object_type": "oriented current aliases proposed for archival Q171",
+      "definition": "J_out(f,tau)=+2B3(f,tau)cface ctop; J_in(tau,f)=−J_out",
+      "domain": "signed face/top amplitudes",
+      "codomain": "signed stock flux derivative",
+      "coefficient_domain": "Z/Q",
+      "units": "native support per formal u",
+      "basis_orientation": "single B3 used by Q169",
+      "metric_measure": "Q165 unit",
+      "origin": "exact algebra plus submitted proposal, not accepted source",
+      "exact_expression": "dot S_top=−sum J_out, source issue #338 pending",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "Q169",
+        "Q171"
+      ],
+      "assumption_ids": [
+        "SAME_B3"
+      ],
+      "dependency_ids": [
+        "C_OLD",
+        "C_NEW"
+      ],
+      "normalization": "physical units NONE"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "b04652406b5579ca172564d0e3a6fe3aca75693a",
+      "section_or_object_id": "Q165/Q166/Q169/Q170",
+      "source_status": "frozen read-only exact support generator/current"
+    },
+    {
+      "source_id": "Q171",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "b04652406b5579ca172564d0e3a6fe3aca75693a",
+      "section_or_object_id": "Q171 literal +B3 top derivative",
+      "source_status": "frozen row; PROPOSED v0.39a alias issue #338 NOT ACCEPTED"
+    },
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "b04652406b5579ca172564d0e3a6fe3aca75693a",
+      "section_or_object_id": "v1.0 §§1–3 real 15D A=d−dT",
+      "source_status": "read-only source-native generator"
+    },
+    {
+      "source_id": "PACHNER",
+      "url_or_repo_path": "experiments/pachner-state-transport/README.md",
+      "version_or_commit": "b04652406b5579ca172564d0e3a6fe3aca75693a",
+      "section_or_object_id": "v0.1 §1→4 boundary identity map and unit stock mismatch",
+      "source_status": "read-only source"
+    },
+    {
+      "source_id": "V17",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/CROSS_COMPLEX_NATIVE_TRANSFER_v1.7.md",
+      "version_or_commit": "6f65f2374cac1e59c8331b0aabbadb698f915fab",
+      "section_or_object_id": "rank-one Q165 defect, conservative postevent transfer",
+      "source_status": "prior same-claim conditional exact"
+    },
+    {
+      "source_id": "V18",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/Q171_SIGNED_ADMISSION_v1.8.md",
+      "version_or_commit": "648bd400a4d8fcee49152f02f1d481f3275b6811",
+      "section_or_object_id": "top-zero eligible event and sign convention witness",
+      "source_status": "prior same-claim exact/candidate"
+    }
+  ],
+  "assumptions": [
+    "Both old and refined carriers have independent unit Euclidean chain coefficient metrics and fixed signed incidence generators A=D-D^T",
+    "State at event has old top amplitude exactly a=0; event triggered by an additional candidate first-crossing controller, NOT native Q169",
+    "Original 14 shell simplex coordinates identified by unscaled F; their old/new incidence edges are unchanged",
+    "Q170 means native support on arbitrary subsets of chosen fixed-complex registers and signed adjacent-degree currents, not a previously accepted cross-complex event current",
+    "Frozen Q171 plus B3 interpreted only as review proposal; physical clock/metric absent"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact full old/new block incidence",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive shell A block equality and all Q170 subset first-jet equality"
+    },
+    {
+      "technique": "14-simplex cone incidence combinatorics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove new born derivative map signed isometry"
+    },
+    {
+      "technique": "Schur/skew generator square blocks",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive full rank acceleration discrepancy spectrum"
+    },
+    {
+      "technique": "rational exhaustive subset fixture",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "check 16,384 original-shell Q170 stock/current subset sums at event"
+    },
+    {
+      "technique": "native two-mode analytic counterexample",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "old and new cut current sin functions and initial slopes 8 vs2"
+    },
+    {
+      "technique": "source-authoritative GitHub review issue",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "submit Q171 typed direction proposal as issue #338, NOT accepted"
+    },
+    {
+      "technique": "physical length and SI time",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "native-only mathematical interface and source gate"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "old 4+6+4=14 shared simplices; new 1+4+6+4=15 born simplices, cone map 14 distinct signed pairings",
+    "reduced_expression": "Lnew^TLnew=I14; Lold^TLold=4bbT; shared shell acceleration difference 4bbT-I14",
+    "factor_origins": [
+      "one cone coface per old shell simplex under 1→4",
+      "four original oriented top faces normalized by 1/2"
+    ],
+    "factorization": "14=1+13 for acceleration eigenspaces; not a Planck numerator law",
+    "divisibility_gcd_lcm": "2^14=16384 exhaustive Q170 mask fixture count"
+  },
+  "clock_receipt": {
+    "clock_type": "formal native parameter u on each fixed carrier",
+    "modulus": null,
+    "residue_convention": "none",
+    "update_rule": "old exp(uA0), refined exp(uA1) after postulated state transfer",
+    "initial_phase": "arbitrary z∈R14 with a=0; b as unit face mode for exact two-mode case",
+    "coupling": "none across complexes, event unsourced",
+    "period_claim": "old b→top period π, refined b→top period 2π formal u; not SI clocks",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "old C15, new C29; shared14 and born15",
+    "generator_or_update": "separate Q169 fixed-complex A0,A1, candidate instantaneous F switch",
+    "initial_boundary_conditions": "arbitrary original shell z and zero parent top amplitude, newborn complement initially all0",
+    "conservation_and_sources": "same old/new Q165 at event and matching all Q170 cuts/currents at first jet; second derivatives differ",
+    "projection_and_kernel": "cone Lnew rank14 signed isometry; old Lold rank1; difference eigen3,-1×13",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "purely structural source-bound test, no Planck numeric target used",
+    "known_targets": [
+      "top-zero first-crossing candidate",
+      "Q171 plus-B3 sign collision",
+      "rank13 transverse leakage"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "none in A0/A1; event itself chosen and not selected by source"
+    ],
+    "search_domain_and_budget": "full exact old15/new29, 14-shared/15-new, all 2^14=16384 shell subset fixture, independent cone proof,12 local tests",
+    "selection_criterion": "Q165 and Q170 current continuity beyond instant, source-selected event, typed sign correction",
+    "baseline": "native old Q169 continuation without refinement"
+  },
+  "calculation_steps": [
+    "Verify source actual Q169 and archival Q171 convention and submit a precise versioned v0.39a proposal in GitHub issue #338",
+    "Write F=[T,q] and compare A1 shell/shell block to A0 shell/shell block",
+    "Prove every shell cut stock/first derivative agrees at any a=0 switch since all complement amplitudes start zero",
+    "Build signed 14 cone coface map Lnew=(I−TTT)A1T and prove Lnew^TLnew=I14",
+    "Build old removed top row Lold=eT A0T=−2 bT, gram4bbT",
+    "Derive shared amplitude acceleration M=TTA1²T−(A0²)_shell=4bbT−I14, eigen3,-1×13, no nonzero C2 match",
+    "Compare born stock u² coefficients old 4beta² vs new ||z||², and explicit b old/new sin²2u versus sin²u",
+    "Verify exact blocks locally, independent combinatorial cone proof and 12 tests, including all 16,384 shell subset currents for rational fixture"
+  ],
+  "result": {
+    "exact_expression": "All 2^14 original-shell Q170 cut stocks and currents match instantaneously for any top-zero transfer; shared acceleration mismatch M=4bbT-I14 full rank with eigen3 once,−1 thirteen times; old/new cut current slopes 8beta² versus 2||z||²",
+    "approximation": null,
+    "units": "native formal amplitude and u only",
+    "precision_and_error": "exact integer/rational and symbolic two-mode formula",
+    "scope": "specific original and centroid 1→4 K4 carriers with unchanged Q169 and candidate top-zero switch",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "full exact 15D/29D Q170 interface replay",
+      "command_or_proof_path": "UD_K4_Q170_INTERFACE_v1.9.zip/current_interface_v19.py",
+      "source_revision": "b04652406b5579ca172564d0e3a6fe3aca75693a",
+      "actual_result": "PASS shell first derivatives, full-rank second discrepancy and 16,384 cuts",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent signed cone matching",
+      "command_or_proof_path": "UD_K4_Q170_INTERFACE_v1.9.zip/independent_cone_current_v19.py",
+      "source_revision": "same",
+      "actual_result": "PASS independent combinatorial signed cone isometry and old top rank1",
+      "review_relationship": "same constructor, independent form"
+    },
+    {
+      "method": "twelve local regression checks",
+      "command_or_proof_path": "UD_K4_Q170_INTERFACE_v1.9.zip/test_current_interface_v19.py",
+      "source_revision": "same",
+      "actual_result": "PASS 12/12 local exact",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "source-authoritative submission",
+      "command_or_proof_path": "https://github.com/ud-tetra/UD-Physics/issues/338",
+      "source_revision": "same",
+      "actual_result": "CREATED review issue, NOT ACCEPTED, no custodian verdict",
+      "review_relationship": "awaiting reviewer"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Instantaneous all-shell Q170 equality does not imply second-derivative matching or an evolution intertwiner",
+    "Normalized old face b has old removed top cut current 2sin(4u) slope8 while refined born top cut current sin(2u) slope2",
+    "Nonzero state in 13D complement of b has no old removed top excitation but new born modes grow as ||z||²u²",
+    "Frozen Q171 literal positive-B3 top derivative inconsistent with same B3 Q169; source direction alias not yet authorized",
+    "Q165 top-zero jump criterion does not select an autonomous event trigger, source metric or physical time"
+  ],
+  "limitations": [
+    "Signed Q171 v0.39a issue is a proposal, not an accepted mainline amendment",
+    "No exact physical current across a time-dependent complex is source-defined; instantaneous cut comparison uses explicitly identified shell channels",
+    "All tests source/constructor, non-constructor review not run",
+    "No Planck/meter/time/energy map or physical promotion"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Obtain source-authoritative decision on Q171 issue #338. If approved, build an explicitly new cross-complex event current or metric/contact law and test finite-time Q170 continuity with a source-selected admission controller; without new source, freeze autonomous physical refinement-floor claims."
+}
