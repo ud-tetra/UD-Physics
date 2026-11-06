@@ -4,12 +4,15 @@
   "protocol_version": 2,
   "task": "history-write-trigger-20261106",
   "session": "history-write-trigger-20261106-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-06T00:00:00Z",
+  "released_at": "2026-11-06T03:22:47.384Z",
   "base_revision": "b04652406b5579ca172564d0e3a6fe3aca75693a",
   "owned_paths": [
     "experiments/history-write-trigger/",
     "sessions/history-write-trigger-20261106-01.json",
     "artifacts/history-write-trigger-20261106-01/"
-  ]
+  ],
+  "released_from_sha": "d1231cf04ff8a031f88713ee9e74f8ac69a0660f",
+  "integrated_sha": "116155bb07da16338fb36560549b68fb102d6058"
 }
