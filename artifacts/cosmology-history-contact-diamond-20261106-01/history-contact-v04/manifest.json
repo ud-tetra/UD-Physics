@@ -1,0 +1,28 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "cosmology-history-contact-diamond-20261106-01",
+  "run_id": "history-contact-v04",
+  "created_at": "2026-11-06T22:12:29.029279+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "Conditional ancestry local diamond and nested rule nonuniqueness",
+  "command": "python3 experiments/cosmology-native-spatial/history_contact.py; python3 scripts/validate.py; python3 -m unittest discover -s tests -q",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "29d831b571a0a3177a1fb1b1a5bc7cf3c7a8f747",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/HISTORY_CONTACT_v0.4.md",
+      "sha256": "1234db888886fc818e5f97415b83507c1868a71693271881acf7474992052489",
+      "size_bytes": 4519
+    },
+    {
+      "path": "files/history_contact.py",
+      "sha256": "a84ae55c631015793385b7c639dc242c759daf5331fb408271b2b13cab41234e",
+      "size_bytes": 2051
+    }
+  ]
+}
