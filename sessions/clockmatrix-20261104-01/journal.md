@@ -150,3 +150,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-015 (EXACT): Prepared-plane rou
 ## 2026-11-06T02:38:24.211758+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-016 (EXACT): Direct periodic clock embedding and independent spatial stock test
+
+## 2026-11-06T02:41:14.499663+00:00
+
+Captured artifacts/clockmatrix-20261104-01/numerical-001 (NUMERICAL): Directional scalar packet and moving phase port
