@@ -122,3 +122,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Timestamp-weighted pilot](TIMESTAMP_REFERENCE.md) separates independent sampling jitter from recorded timestamp error.
 
 [Wrapped pilot phase admission](WRAPPED_REFERENCE.md) rejects inconsistent and ambiguous relative phase lifts.
+
+[Pilot dropout and excess drift](PILOT_FAULTS.md) tests surviving-bracket admission and a hidden full-turn alias.
