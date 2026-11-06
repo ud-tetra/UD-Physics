@@ -1,0 +1,32 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "historysourceidx-20261105-01",
+  "runtime": "Codex Work Mode Git/compute and GitHub connector",
+  "task": "integration-history-source-index-20261105",
+  "goal": "Integrated source history readout milestone",
+  "created_at": "2026-11-06T02:44:10.758816+00:00",
+  "base_revision": "af7aab9395e4d5a598aa642e3567c028f06a83ae",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-history-source-index-20261105": {
+      "ref": "refs/heads/claims/integration-history-source-index-20261105",
+      "sha": "48eda94f9ed5ea479ccfed7f9815b2b8f8c7bd78",
+      "status": "held",
+      "acquisition": "GitHub connector before edit"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS 553 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS 16 tests"
+    }
+  ],
+  "finding": "CURRENT indexes Q200 lineage no-go and the scoped continuation counterexample",
+  "next_action": "Source sequential receipt construction and environment retention to test complete allowed histories"
+}
