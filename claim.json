@@ -5,6 +5,8 @@
     "Classify universally conserved linear combinations of Q178 cell support under Q169",
     "Exact two-tetra replay and disconnected limiting case"
   ],
-  "status": "claimed",
-  "created_at": "2026-11-06"
+  "status": "released",
+  "created_at": "2026-11-06",
+  "release_commit": "bdaf1e051a94910f98e445d5ead51ba0591afcb5",
+  "pr": 355
 }
