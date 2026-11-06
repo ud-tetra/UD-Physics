@@ -70,3 +70,7 @@ No 13-layer sweep is justified by the observed rank or by the eight-label mean.
 
 Replay: python3 experiments/ud-channel-metric-bridge/replay.py
 Exact stdlib Fraction checks; constructor verification only.
+
+Follow-up: [centroid work port v0.1](WORK_PORT_v0.1.md) conditionally
+identifies the dimensionless newborn metric weight and tests a uniform
+coefficient-energy control. No apparatus data have been acquired.

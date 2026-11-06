@@ -13,8 +13,8 @@
     "ud-channel-metric-bridge": "577b2d5b4396066238b735b3e75b275d2349e427"
   },
   "checks": [],
-  "finding": "Signed static rank 13 becomes 14 with one harmonic derivative. Intercomplex metric scale remains unidentified.",
-  "next_action": "Define an independent newborn support or energy port.",
+  "finding": "Symmetric work ratio identifies t conditionally; mixed centroid receipt distinguishes the uniform control at t=1.",
+  "next_action": "Audit a realizable work and state port for common gain, reversibility and mode preparation.",
   "mathematical_profile": {
     "coefficient_domain": "Q; identities extend to R",
     "exactness_or_precision_plan": "Fraction replay",
@@ -25,9 +25,9 @@
     ],
     "clock_metric_units_conventions": "Formal u, unit coefficient metrics, ascending simplex orientations; no SI calibration"
   },
-  "checkpoint_at": "2026-11-06T19:00:26.688274+00:00",
+  "checkpoint_at": "2026-11-06T19:05:09.850503+00:00",
   "checkpoint_source": {
-    "revision": "9db0edba13db7af9999fcfd1b9d45d3c8d65cdb5",
+    "revision": "668c5970888baadae13b7bd174518380426bacf0",
     "dirty": true
   }
 }
