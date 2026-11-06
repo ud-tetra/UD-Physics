@@ -1,0 +1,11 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "fixed-carrier-cell-support-invariants-20261106",
+  "goal": "Classify universal Q178 linear cell-stock invariants under Q169",
+  "owned_paths": [
+    "experiments/cosmology-native-spatial/CELL_SUPPORT_INVARIANTS_v0.1.md"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}

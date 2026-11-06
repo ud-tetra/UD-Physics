@@ -1,0 +1,28 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "fixed-carrier-cell-support-invariants-20261106-01",
+  "run_id": "exact-cell-support-classification",
+  "created_at": "2026-11-06T23:03:22.777467+00:00",
+  "evidence": "EXACT",
+  "summary": "Universal Q178 linear invariants are componentwise total support under fixed Q169",
+  "command": "python3 experiments/cosmology-native-spatial/cell_support_invariants.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "311dbbc462e2a285c14fbfad2059d88bedce68ce",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/CELL_SUPPORT_INVARIANTS_v0.1.md",
+      "sha256": "5f231ad35c212a19a7d4274185bac955e222e906e826af784a89304fd535d24f",
+      "size_bytes": 4540
+    },
+    {
+      "path": "files/cell_support_invariants.py",
+      "sha256": "44a2c2b97f8341f96eae7455dcf5d9b2ef64c5bd409a6d6c7b83ed5d82d50ba4",
+      "size_bytes": 2232
+    }
+  ]
+}
