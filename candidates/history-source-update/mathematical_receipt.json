@@ -1,0 +1,169 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "HISTORY-SOURCE-001",
+  "session_id": "historysource-20261105-01",
+  "candidate_id": "history-source-update",
+  "question": "Can Q194-Q200 net receipts and endpoint reconstruct T and predecessor lineage?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "L",
+      "symbol": "L^-;L^+",
+      "object_type": "obligation spaces",
+      "definition": "one-dimensional rational witness",
+      "domain": "Q",
+      "codomain": "Q",
+      "coefficient_domain": "Q",
+      "units": "none",
+      "basis_orientation": "one basis vector each",
+      "metric_measure": "none",
+      "origin": "conditional witness of Q194-Q200",
+      "exact_expression": "dim L-=dim L+=1",
+      "source_refs": [
+        "LEDGER85"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "none"
+    },
+    {
+      "object_id": "T",
+      "symbol": "T0,T1",
+      "object_type": "continuation linear maps",
+      "definition": "zero and identity",
+      "domain": "Q",
+      "codomain": "Q",
+      "coefficient_domain": "Q",
+      "units": "none",
+      "basis_orientation": "same declared bases",
+      "metric_measure": "none",
+      "origin": "counterexample",
+      "exact_expression": "[0] and [1]",
+      "source_refs": [
+        "LEDGER85"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "L"
+      ],
+      "normalization": "none"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "LEDGER85",
+      "url_or_repo_path": "artifacts/g0506step-20261105-01/exact-001/inputs/002-006-012-ledger_v0.85.json",
+      "version_or_commit": "v0.85 SHA-256 8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "section_or_object_id": "Q194-Q210 Q151 Q154 Q158",
+      "source_status": "recovered ledger"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "rational one-dimensional obligation witness; no source admissibility asserted"
+    },
+    {
+      "id": "A2",
+      "text": "readout excludes T and predecessor receipt"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rank/index",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare zero and identity continuation"
+    },
+    {
+      "technique": "source/sink accounting",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "gross versus net ambiguity"
+    },
+    {
+      "technique": "modular clock/factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite register update sourced in this test"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "1-1=0",
+    "reduced_expression": "ind T0=1-1=0; ind T1=0-0=0",
+    "factor_origins": [
+      "domain and codomain one each"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "source event index only",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "Q198 conditional event operator, not global update",
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "conditional L-,L+,T,W and endpoint",
+    "generator_or_update": "Q198 per-event operator; no global environment law",
+    "initial_boundary_conditions": "unspecified",
+    "conservation_and_sources": "Q151 Q154 Q158 net/gross receipts",
+    "projection_and_kernel": "readout dims,index,mu,endpoint omits T lineage",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "CONCEPTUAL_TARGET_EXPOSED",
+    "known_targets": [
+      "universal record question"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "zero and identity one-dimensional witnesses",
+    "selection_criterion": "separate index from lineage",
+    "baseline": "retain full T and gross tags"
+  },
+  "calculation_steps": [
+    "rank 0 gives ker/coker (1,1), index 0",
+    "rank 1 gives ker/coker (0,0), index 0",
+    "net source/sink 0 has gross (0,0) or (1,1)"
+  ],
+  "result": {
+    "exact_expression": "index(T0)=index(T1)=0 but kernels differ; net balance does not determine gross flows",
+    "approximation": null,
+    "units": "none",
+    "precision_and_error": "exact integer/rational",
+    "scope": "Q194-Q200 typed readout, not source-admissible complete trajectories",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "constructor exact replay",
+      "command_or_proof_path": "python3 experiments/history-source-update/audit.py",
+      "source_revision": "74fe8f61856792fda717f2fffe8d3ed9a6564da2",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "index cancellation hides zero versus identity continuation",
+    "net zero hides simultaneous source and sink"
+  ],
+  "limitations": [
+    "admissibility of witness T maps under full Q198 not established",
+    "global environment update and persisted lineage receipt absent",
+    "independent review not run"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/historysource-20261105-01/exact-001/manifest.json"
+  ],
+  "next_discriminant": "source sequential L± T W and environment persistence"
+}

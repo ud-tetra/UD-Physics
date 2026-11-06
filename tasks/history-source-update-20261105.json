@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "history-source-update-20261105",
+  "goal": "Recover source event update and environment receipts; test lineage injectivity under available readouts",
+  "owned_paths": [
+    "tasks/history-source-update-20261105.json",
+    "sessions/historysource-20261105-01",
+    "experiments/history-source-update",
+    "candidates/history-source-update",
+    "artifacts/historysource-20261105-01"
+  ],
+  "dependencies": [
+    "history-present-collision-20261105"
+  ],
+  "status": "complete"
+}
