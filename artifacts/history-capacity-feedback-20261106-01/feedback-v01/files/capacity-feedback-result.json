@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "gate_states": [
+    0,
+    1
+  ],
+  "norm_checks": 98,
+  "characteristic_polynomials": {
+    "open": "lambda^2+4",
+    "full": "lambda^2"
+  },
+  "ack_frees_storage": false,
+  "source_selection": "OPEN"
+}
