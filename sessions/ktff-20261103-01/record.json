@@ -499,10 +499,49 @@
     {
       "name": "v1.6 non-constructor mathematical review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.7 exact all-state F subdivision Q165 stock defect",
+      "status": "PASS",
+      "method": "rank B3_new=4 and full 15x15 F^TF−I15=3 eeT"
+    },
+    {
+      "name": "v1.7 conservative Q169 new top occupation from shell",
+      "status": "PASS",
+      "method": "exact A1 b=w,A1 w=−b and trigonometric solution"
+    },
+    {
+      "name": "v1.7 parent/new response contrast",
+      "status": "PASS",
+      "method": "same b, A0²b=−4b vs A1²b=−b"
+    },
+    {
+      "name": "v1.7 1024 Q173-like face mask nilpotency",
+      "status": "PASS",
+      "method": "all binary masks, four S4 invariants, two B2 diag(h) B3 nilpotent"
+    },
+    {
+      "name": "v1.7 literal Q171 versus Q169 signed current",
+      "status": "OPEN_CONVENTION",
+      "method": "direct B3(012,0124)=−1 and derivative+2, Q171 literal printed +2B3 gives−2"
+    },
+    {
+      "name": "v1.7 11 full exact local tests",
+      "status": "PASS",
+      "method": "11/11 local SymPy + separate mask construction"
+    },
+    {
+      "name": "v1.7 physical cross-complex move selection",
+      "status": "OPEN",
+      "reason": "admitted sources supply no time-changing K(t), switch or generic-state stock source"
+    },
+    {
+      "name": "v1.7 external non-constructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v1.6 exact conditional: radial generation weights g_k yield alpha_n=1+Σ(11/4)^{k−1}g_k/4, all-positive weights preclude exact finite boundary readout floor. Geometric r-decay converges only if r<4/11; candidate quarter proxy tends9/5 and chosen eps1/100 gives adjacent n9/tail n12. Fixed Q169 diagonal positive metric must remain scalar H=cI; modified vertex-edge A_W preserves different H_W current. Q165 integral top stock changes1→4 and Q173/177 lack source selection; physical floor OPEN.",
-  "next_action": "Require source-accepted refinement-admission predicate and cross-complex conserved stock/current with a selected observation threshold, else freeze physical finite-floor narrative. Run independent non-constructor review before mainline consideration.",
+  "finding": "v1.7 exact: signed degree-one K4 1→4 chain map F^TF−I15=3 eeT, so Q165 stock jump=3c_top² for all parent states and old shell14 isometric. Shell b=∂ oldtop/2 with zero top occupation supports exact native *post-event* conservative K1 oscillator x(u)=cos u b+sin u w, child top stock sin²u, shell cos²u and no added reservoir after event. Original old native b has frequency2 vs new1, so move trigger OPEN. If Q173 readout masks are promoted into B3 alone, only all-off/all-on of 1024 retain d²; mask doesn't source event. Q171 printed current has potential opposite sign to Q169 under identical B3, OPEN_CONVENTION.",
+  "next_action": "Establish Q171/Q169 exact orientation and direction alias before adopting current bridge, and seek an autonomous source-selected 1→4 event for generic occupied-top state with support and shell control.",
   "mathematical_profile": {
     "coefficient_domain": "Z native 1→4 simplex graph and chain counts, Q exact Schur response, R native top-cell amplitudes",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
