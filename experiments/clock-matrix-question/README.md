@@ -118,3 +118,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Shared clock reference](SHARED_REFERENCE.md) derives same-path gain cancellation and the joint science/pilot additive budget.
 
 [Interleaved pilot timing](INTERLEAVED_REFERENCE.md) compares one-sided and bracketed calibration under bounded drift and timestamp skew.
+
+[Timestamp-weighted pilot](TIMESTAMP_REFERENCE.md) separates independent sampling jitter from recorded timestamp error.

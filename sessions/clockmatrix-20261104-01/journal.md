@@ -198,3 +198,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-023 (EXACT): Shared pilot gain 
 ## 2026-11-06T17:14:38.785186+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-024 (EXACT): Interleaved pilot drift and timing bounds with extremal replay
+
+## 2026-11-06T17:25:55.742171+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-025 (EXACT): Timestamp-weighted reference interpolation under independent jitter
