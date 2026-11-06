@@ -1,0 +1,28 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "cosmology-n0-readout-gate-20261106-01",
+  "run_id": "readout-v01",
+  "created_at": "2026-11-06T19:24:22.347318+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "Exact native-to-image layout and coarse-graining topology counterexamples",
+  "command": "python3 experiments/cosmology-nebular-entry/n0_readout_exact.py; python3 scripts/validate.py; python3 -m unittest discover -s tests -q",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "9db0edba13db7af9999fcfd1b9d45d3c8d65cdb5",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/README.md",
+      "sha256": "e9c29690586a721be339d327ffc55ebb86b36da8b9648be56b85bc4adb8b6890",
+      "size_bytes": 3771
+    },
+    {
+      "path": "files/n0_readout_exact.py",
+      "sha256": "dce0d0d7c36f805f3576ae2478d232cd6b7b657a268283f39621c96a5c7bdd21",
+      "size_bytes": 2178
+    }
+  ]
+}
