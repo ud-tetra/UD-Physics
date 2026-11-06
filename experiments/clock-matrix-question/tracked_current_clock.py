@@ -27,21 +27,23 @@ def site_rule(u, potential, sites, head, tail):
     return stock, normalized / 128
 
 
-def integrate(field, sites, head, tail, windows, step, total_stock):
+def integrate(field, sites, head, tail, windows, step, total_stock, polynomial_stock=None, phase_factors=(1,)):
     phase = np.zeros(len(sites))
     samples = []
     previous = None
     for index in range(round(HORIZON / step) + 1):
         time = index * step
         stock, rate = site_rule(*field(time), sites, head, tail)
+        if polynomial_stock is not None:
+            rate *= (stock * (polynomial_stock / total_stock))**2
         if previous is not None:
             phase += step * (previous + rate) / 2
         previous = rate
         if time % 4 == 0:
             sample = []
-            for window in windows(time):
+            for window, factor in product(windows(time), phase_factors):
                 weights = stock * window
-                contrast = np.dot(weights, np.exp(1j * phase)) / weights.sum()
+                contrast = np.dot(weights, np.exp(1j * (factor * phase))) / weights.sum()
                 sample.append({"phase_rad": float(np.angle(contrast)),
                                "contrast": float(abs(contrast)),
                                "stock_fraction": float(weights.sum() / total_stock)})
@@ -49,7 +51,8 @@ def integrate(field, sites, head, tail, windows, step, total_stock):
     return samples
 
 
-def matched_probe(order, step, radii=(3,), terminal_offsets=None):
+def matched_probe(order, step, radii=(3,), terminal_offsets=None, *,
+                  polynomial_stock=None, phase_factors=(1,)):
     _, weights = np.polynomial.legendre.leggauss(order)
     outer_radius = max(radii)
     padding = (0 if terminal_offsets is None else
@@ -94,7 +97,7 @@ def matched_probe(order, step, radii=(3,), terminal_offsets=None):
 
         total_stock = 2 * (2 * np.pi)**3 * 20 * 100**2
         return integrate(field, sites, head.reshape(n, 7), tail.reshape(n, 7),
-                         windows, step, total_stock)
+                         windows, step, total_stock, polynomial_stock, phase_factors)
 
     result = replay(order, probe)
     return {key: result[key]["probe"] for key in ("axis", "diagonal")}

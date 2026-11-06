@@ -218,3 +218,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-028 (EXACT): Science-time pilot
 ## 2026-11-06T18:13:53.846175+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-029 (EXACT): Bench reference acceptance protocol and rational arithmetic fixture
+
+## 2026-11-06T22:17:15.584696+00:00
+
+Captured artifacts/clockmatrix-20261104-01/numerical-005 (NUMERICAL): Polynomial clock amplitude scaling and phase ordering reversal
