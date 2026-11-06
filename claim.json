@@ -4,12 +4,15 @@
   "protocol_version": 2,
   "task": "history-capacity-feedback-20261106",
   "session": "history-capacity-feedback-20261106-01",
-  "status": "held",
-  "created_at": "2026-11-06T03:48:44.520Z",
+  "status": "released",
+  "created_at": "2026-11-06T03:47:00Z",
+  "released_at": "2026-11-06T03:51:11.887Z",
   "base_revision": "7ef45805563b47cbe1e2f34bb9e6e97ce5f5c962",
   "owned_paths": [
     "experiments/history-capacity-feedback/",
     "sessions/history-capacity-feedback-20261106-01/",
     "artifacts/history-capacity-feedback-20261106-01/"
-  ]
+  ],
+  "released_from_sha": "33189ef40b017bbd298d78a1779a868c2039eae1",
+  "integrated_sha": "a635d13f2552a313f245c6d837f549c913b16286"
 }
