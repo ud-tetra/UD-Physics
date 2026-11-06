@@ -5,6 +5,8 @@
     "Audit versioned UD sources for dimensional disk-galaxy radial acceleration",
     "Record missing dependencies; no galaxy fit"
   ],
-  "status": "claimed",
-  "created_at": "2026-11-06"
+  "status": "released",
+  "created_at": "2026-11-06",
+  "result_commit": "4145ce012c3d8a91ea9e8dd53f5b923455b0e1c2",
+  "pull_request": 345
 }
