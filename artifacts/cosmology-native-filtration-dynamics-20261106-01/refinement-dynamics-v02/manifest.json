@@ -1,0 +1,28 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "cosmology-native-filtration-dynamics-20261106-01",
+  "run_id": "refinement-dynamics-v02",
+  "created_at": "2026-11-06T19:50:28.046315+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "Exact 1-to-4 filtration counterexample and Q169 cell-support Taylor response",
+  "command": "python3 experiments/cosmology-native-spatial/filtration_dynamics.py; python3 scripts/validate.py; python3 -m unittest discover -s tests -q",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "5c5c85245fb0306574513c471b2e8e75f597a0b5",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/REFINEMENT_DYNAMICS_v0.2.md",
+      "sha256": "0a5aee8b05f0140d901868c6827d7e2a17034e41075088990d61fc320cd73d50",
+      "size_bytes": 4429
+    },
+    {
+      "path": "files/filtration_dynamics.py",
+      "sha256": "2e3a61d810500cbec5a2d61409d5d8297c4785aa32d80b801e8f61629ca4d8da",
+      "size_bytes": 2382
+    }
+  ]
+}
