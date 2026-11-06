@@ -190,3 +190,7 @@ Captured artifacts/clockmatrix-20261104-01/numerical-003 (NUMERICAL): Clock aper
 ## 2026-11-06T16:06:58.767593+00:00
 
 Captured artifacts/clockmatrix-20261104-01/numerical-004 (NUMERICAL): Radius-12 detector alignment and differential gain replay
+
+## 2026-11-06T16:10:45.189021+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-023 (EXACT): Shared pilot gain cancellation and joint phasor noise budget

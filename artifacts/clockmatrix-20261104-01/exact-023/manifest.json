@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-023",
+  "created_at": "2026-11-06T16:10:45.188640+00:00",
+  "evidence": "EXACT",
+  "summary": "Shared pilot gain cancellation and joint phasor noise budget",
+  "command": "python3 experiments/clock-matrix-question/shared_reference.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "6964c47c89b9dd661e98b50115b63b361c170b3c",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "shared_reference.py",
+      "path": "inputs/001-shared_reference.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/shared_reference.py",
+      "sha256": "56c7b8f6963098ec5b2ea356d0bde942644854164f3ae7ad17394ce2fdc8cd54",
+      "size_bytes": 2754
+    },
+    {
+      "input_id": "input-002",
+      "name": "clock_alignment_results.json",
+      "path": "inputs/002-clock_alignment_results.json",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/clock_alignment_results.json",
+      "sha256": "a6623b883f5fc2da2b549918c7a9a9d39f4b83a8165851cebd5ef139f4707d26",
+      "size_bytes": 1849
+    }
+  ],
+  "files": [
+    {
+      "path": "files/SHARED_REFERENCE.md",
+      "sha256": "8a1f31fb354d104a11aff7e446873e8dcb5c3c404802a3fe12781c0f1d8674e3",
+      "size_bytes": 3171
+    },
+    {
+      "path": "files/shared_reference_results.json",
+      "sha256": "3dec769215ed5554491a9b495173d0ddfeaf6cd6acd9dad985a0304d2cacdd9d",
+      "size_bytes": 4238
+    }
+  ]
+}
