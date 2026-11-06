@@ -611,10 +611,49 @@
     {
       "name": "v1.9 independent non-constructor mathematical review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v2.0 issue #338 source-authoritative decision",
+      "status": "PENDING",
+      "method": "GitHub issue open and no comments; proposal not accepted"
+    },
+    {
+      "name": "v2.0 local cone rank and squared second-jet mismatch",
+      "status": "PASS",
+      "method": "C^TC=I14, old Gram4bbT, squared Frobenius22"
+    },
+    {
+      "name": "v2.0 exhaustive local weighting/Q173-like mask obstruction",
+      "status": "PASS",
+      "method": "independent minimum squared residual12; all 16 binary four-outer-face masks min22"
+    },
+    {
+      "name": "v2.0 scalar clock change cannot cancel universal second jet",
+      "status": "PASS",
+      "method": "nonzero symmetric M and skew Ashell decomposition"
+    },
+    {
+      "name": "v2.0 nonnative coherent rational differential completion",
+      "status": "PASS_CONDITIONAL",
+      "method": "Dstar²=0, Sstar isometry and intertwining, 12 added non-Hasse couplings; original F lost"
+    },
+    {
+      "name": "v2.0 barycentric positive metric completion",
+      "status": "PASS_CONDITIONAL",
+      "method": "PF=I, PD1=D0P, H positive, F^THF=I, AH F=F A0, all24 S4; Q169 numerical generator changed"
+    },
+    {
+      "name": "v2.0 local exact regression",
+      "status": "PASS",
+      "method": "14/14 SymPy tests, separate pure14D combinatorial proof; complete verified ZIP"
+    },
+    {
+      "name": "v2.0 non-constructor mathematical review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v1.9 EXACT/conditional: first-jet all original 14-shell Q165/Q170 subset current receipts match at a=0 switch. New coning derivative Lnew^TLnew=I14 vs old removed top rank1 gram4bbT, so shared-shell acceleration mismatch=4bbT−I14, full rank14 eigen3 and −1×13. Unit b old/new cut slopes8 vs2; no native smooth cross-complex continuation on nonzero eligible state. Q171 direction alias proposal v0.39a submitted as issue #338, source approval pending, physical promotion0.",
-  "next_action": "Source steward must approve/reject #338; then derive a true event admission and finite-time Q170 bridge with explicit changed coupling/metric/current and reviewer evidence or freeze physical recursion claim.",
+  "finding": "v2.0 exact K4 source-gate no-go: Q171 review #338 remains OPEN. Original cone C^TC=I14 vs removed old top4bb^T rank1, mismatch²22; arbitrary local cone weights min residual²12, 16 face masks min22 and scalar timewarp cannot cancel symmetric second jet. Two explicit changed-assumption exact completions: coherent rational non-Hasse Dstar and integral F-preserving barycentric positive metric H with AH F=F A0. Source Q165/Q169 unchanged do not select either. Physical promotion0.",
+  "next_action": "Await source-authoritative #338 response and non-constructor review; preregister any new intercomplex metric/contact from accepted action, then verify K4 Q165/Q170 and physical port. Otherwise close physical resolution-floor branch as source blocked.",
   "mathematical_profile": {
     "coefficient_domain": "Z native 1→4 simplex graph and chain counts, Q exact Schur response, R native top-cell amplitudes",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
