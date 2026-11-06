@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-06",
+  "version": "v2.1",
+  "status": "EXACT_CONDITIONAL_SOURCE_BLOCKED",
+  "physical_promotion": 0,
+  "source_main": "322ea849bfb949e4136a898e05d9d7fa0ec7604f",
+  "task": "klein-tetra-face-flip-20261103",
+  "held_claim": "667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4",
+  "source_review_338": "OPEN, zero comments, no approved Q171 amendment",
+  "native_sources": [
+    "coefficient ledger v0.39 Q165–Q171/Q173/Q177–Q179 — fixed-unit support and currents only",
+    "QPB1 local generators v1.0 §§1–3 — unit K4 fixed-carrier skew",
+    "action-normalization audit v1.0 §§1–3 O09–O15 — action scale and phase, no intercomplex metric",
+    "action-normalization identifiability theorem v0.1 — SI units not selected",
+    "Pachner state transport/current metric/trigger lift/event actuator v0.1 — exact F and separate candidates, not source-selected 1→4 H",
+    "UD main barycentric renewal candidate v0.1 — different 1→24 subdivision and external tick",
+    "UD main canonical event sector selector v0.1 — different ∂Δ4/2→3 carrier and clock open",
+    "UD main cubic macrocell metric audit v0.1 — geometry/volume fail uniqueness, isotropy added",
+    "UD v2.2 historical manuscript Part II X4/X10, Part X — qualitative admission/dressing, no 1→4 positive metric",
+    "master_action.md and packet_field_equation.md — placeholder only"
+  ],
+  "original_native": {
+    "graded_old": [
+      4,
+      6,
+      4,
+      1
+    ],
+    "graded_new": [
+      5,
+      10,
+      10,
+      4
+    ],
+    "original_F_T_F": "diag(I14,4)",
+    "Q165_unit_isometry": false,
+    "uniform_scalar_metric_possible": false
+  },
+  "barycentric_candidate": {
+    "P_F": "I15",
+    "P_D1": "D0 P",
+    "Q": "I29-FP",
+    "rank_Q": 14,
+    "family": "H_t=P.T P+t Q.T Q for all t>0",
+    "positive": "||P*x||^2+t||Q*x||^2>0",
+    "all_t_isometric": true,
+    "all_t_A_t_F_equals_F_A0": true,
+    "all_t_H_skew": true,
+    "all_t_full_A_t_independent_of_t": true,
+    "S4_cases": 24,
+    "typed_metric_not_Q165_unit": true,
+    "samples": [
+      {
+        "t": "1/4",
+        "offdiag_pairs": 46
+      },
+      {
+        "t": "1",
+        "offdiag_pairs": 52
+      },
+      {
+        "t": "2",
+        "offdiag_pairs": 52
+      }
+    ],
+    "new_only_mode": {
+      "y": "(I-FP)e_centroid",
+      "native_norm2": "5/4",
+      "Ht_norm2": "5t/4",
+      "samples": {
+        "1": "5/4",
+        "2": "5/2",
+        "1/4": "5/16"
+      }
+    },
+    "new_unit_basis_conflict": {
+      "centroid_requires_t": "3/5",
+      "new_edge04_requires_t": "13/19",
+      "compatible": false
+    },
+    "not_source_selected": true
+  },
+  "verification": {
+    "full_sympy_real_K4": "PASS",
+    "independent_abstract_direct_sum": "PASS",
+    "local_tests": "10/10 PASS",
+    "original_archive_dependency": "UD_K4_CROSS_COMPLEX_CONTACT_METRIC_v2.0.zip",
+    "new_archive": "UD_K4_ACTION_METRIC_SELECTION_AUDIT_v2.1.zip",
+    "archive_sha256": "37077981370f88ee62f0e24234c782ebb63d24ea57b03560b10fe36f0f79ef46",
+    "archive_files": 13,
+    "non_constructor_review": "NOT_RUN",
+    "GitHub_CI": "PENDING_HEAD"
+  },
+  "disposition": {
+    "source_selected_metric": "NOT_ESTABLISHED",
+    "source_selected_event": "NOT_ESTABLISHED",
+    "physical_floor": "PARK_SOURCE_BLOCKED",
+    "preserve_exact_scope": "v2.0 constructed solutions and v2.1 Ht nonuniqueness and native metric no-go"
+  }
+}
