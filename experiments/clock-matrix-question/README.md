@@ -104,3 +104,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Equal-frequency packet comparison](ISOSPECTRAL_CLOCK.md) compares distinct centroid speeds at fixed spectral loading.
 
 [Edge-class clock](EDGE_CLASS_CLOCK.md) separates local incidence detuning from a speed-only law.
+
+[Incidence transport current](INCIDENCE_CURRENT.md) derives signed stock flux and tests the stationary and matched moving controls.

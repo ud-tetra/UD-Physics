@@ -170,3 +170,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-019 (EXACT): Different centroid
 ## 2026-11-06T03:22:48.299351+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-020 (EXACT): Resolved edge-class phase split and equal-speed countercontrol
+
+## 2026-11-06T03:24:57.658944+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-021 (EXACT): Signed incidence transport current and stationary controls
