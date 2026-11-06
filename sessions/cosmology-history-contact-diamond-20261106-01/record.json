@@ -1,0 +1,28 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "cosmology-history-contact-diamond-20261106-01",
+  "runtime": "Codex exact rational contact audit and GitHub connector",
+  "task": "cosmology-history-contact-diamond-20261106",
+  "goal": "Test conditional recursive ancestry contact for commuting and nested local refinements",
+  "created_at": "2026-11-06T22:11:21.016406+00:00",
+  "base_revision": "29d831b571a0a3177a1fb1b1a5bc7cf3c7a8f747",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "cosmology-history-contact-diamond-20261106": "51b5b331ac430d53dde65b7f77fe83e3f0ba10ab"
+  },
+  "checks": [],
+  "finding": "Conditional recursive ancestry preserves old shares and commutes for disjoint child events, but nested local versus global parent equalization and Q177 differ; no selected event contact.",
+  "next_action": "Seek independent source for a local no-redistribution axiom and event current/metric; stop this branch without new constitutive input.",
+  "mathematical_profile": {
+    "coefficient_domain": "labelled tetrahedral ancestry accounts over exact rational support weights",
+    "exactness_or_precision_plan": "exact rational finite diamond and nested counterexample",
+    "applicable_methods": [
+      "local split conservation",
+      "commuting event-order check",
+      "alternative-rule nonuniqueness"
+    ],
+    "clock_metric_units_conventions": "bookkeeping weights on native support only; no Q170 event current or physical clock/metric"
+  }
+}
