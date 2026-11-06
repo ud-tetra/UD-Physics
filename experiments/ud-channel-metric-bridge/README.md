@@ -74,3 +74,7 @@ Exact stdlib Fraction checks; constructor verification only.
 Follow-up: [centroid work port v0.1](WORK_PORT_v0.1.md) conditionally
 identifies the dimensionless newborn metric weight and tests a uniform
 coefficient-energy control. No apparatus data have been acquired.
+
+The [two-port capacitor emulator](CAPACITOR_PORT_v0.1.md) specifies
+two concrete fixtures, a signed charge audit, and a sufficient
+deterministic decision margin. Bench performance remains unmeasured.

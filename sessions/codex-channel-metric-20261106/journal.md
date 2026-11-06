@@ -29,3 +29,21 @@ isolate t if work is a common calibrated quadratic energy. The mixed
 centroid receipt rejects the uniform-energy null even when t=1 ties the
 pure-port ratio. Relative preparation gain is a confound. No apparatus
 or physical target admitted. See WORK_PORT_v0.1.md and exact-002.
+
+## 2026-11-06T19:08:56.298555+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-003 (EXACT): Two-port capacitor inverse and deterministic classification margin
+
+## 2026-11-06T19:08:56.351001+00:00
+
+Checkpoint (handoff): Two passive capacitor fixtures implement the mixed work control; sufficient certified error bound 1857/20000 per work receipt.
+
+Next: Construct or simulate a measurement chain and independently certify the signed charge and loss bounds.
+
+## Capacitor emulator follow-up
+
+Resumed exact head 025c9f0 with the held claim. Derived passive
+two-terminal fixtures for t=1 and the uniform control. Both tie on pure
+work ratio; opposite signs of W_c−W_y survive the declared endpoint
+and work budgets. The fixtures implement the hypotheses by design.
+Signed charge and loss certificates remain unmeasured.
