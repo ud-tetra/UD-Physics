@@ -4,13 +4,16 @@
   "protocol_version": 2,
   "task": "cosmology-galactic-entry-20261106",
   "session": "cosmology-galactic-entry-20261106-01",
-  "status": "held",
-  "created_at": "2026-11-06T17:37:14.607Z",
+  "status": "released",
+  "created_at": "2026-11-06T17:33:00Z",
+  "released_at": "2026-11-06T17:39:52.174Z",
   "base_revision": "45020742a9332445888b39847cb1e2e2903a3f23",
   "owned_paths": [
     "docs/COSMOLOGY_BRANCH_v0.1.md",
     "experiments/cosmology-galactic-entry/",
     "sessions/cosmology-galactic-entry-20261106-01/",
     "artifacts/cosmology-galactic-entry-20261106-01/"
-  ]
+  ],
+  "released_from_sha": "9cc5d562de5d5b4421155090654f473743edf441",
+  "integrated_sha": "f59b7c470ba74256a0eef50d6dffb136db822535"
 }
