@@ -1,9 +1,0 @@
-{
-  "mu": 0.2,
-  "kappa": 2.0,
-  "gamma": 0.5,
-  "minimum_decay_rate": 0.16952319887686124,
-  "maximum_pole_modulus": 3.9270636802920436,
-  "transverse_configuration_dimension": 182,
-  "transverse_phase_dimension": 364
-}
