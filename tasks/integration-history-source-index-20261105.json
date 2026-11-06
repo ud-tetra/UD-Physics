@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-history-source-index-20261105",
+  "goal": "Index sourced receipt-lineage history gate from PR #333",
+  "owned_paths": [
+    "tasks/integration-history-source-index-20261105.json",
+    "sessions/historysourceidx-20261105-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "history-source-update-20261105"
+  ],
+  "status": "complete"
+}
