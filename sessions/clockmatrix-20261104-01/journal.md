@@ -226,3 +226,7 @@ Captured artifacts/clockmatrix-20261104-01/numerical-005 (NUMERICAL): Polynomial
 ## 2026-11-06T23:20:52.630392+00:00
 
 Captured artifacts/clockmatrix-20261104-01/numerical-006 (NUMERICAL): Density-matched polynomial clock and common-stock counterfactual
+
+## 2026-11-06T23:25:09.257183+00:00
+
+Captured artifacts/clockmatrix-20261104-01/numerical-007 (NUMERICAL): Same-spectrum chirp control under local density matching

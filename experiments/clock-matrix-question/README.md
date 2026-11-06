@@ -132,3 +132,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Polynomial clock amplitude replay](POLYNOMIAL_CLOCK.md) tests the continuous current rule on equal-frequency localized packets.
 
 [Local density matching](DENSITY_MATCHED_CLOCK.md) compares the polynomial clock under matched local stock histories.
+
+[Same-spectrum shape control](SHAPE_MATCHED_CLOCK.md) tests chirped envelopes at matched speed and sampled density.

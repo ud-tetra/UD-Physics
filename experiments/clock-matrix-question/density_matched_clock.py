@@ -7,8 +7,8 @@ from isospectral_clock import replay
 from tracked_current_clock import D, HORIZON, dispersion, site_rule
 
 
-def histories(order, step):
-    _, weights = np.polynomial.legendre.leggauss(order)
+def histories(order, step, chirp=0):
+    nodes, weights = np.polynomial.legendre.leggauss(order)
     gauss = weights[:, None, None] * weights[None, :, None] * weights[None, None, :]
     offsets = np.array([r for r in product(range(-12, 13), repeat=3)
                         if sum(x*x for x in r) <= 144])
@@ -27,6 +27,9 @@ def histories(order, step):
         head, tail = head.reshape(n, 7), tail.reshape(n, 7)
         jacobian = 2 * omega * (sum(velocity) if np.mean(k[1]) > 0.5 else velocity[0])
         amplitude = np.sqrt(probability * gauss / jacobian).ravel()
+        if chirp:
+            amplitude = amplitude * np.exp(1j * chirp * np.broadcast_to(
+                nodes[:, None, None]**2, probability.shape).ravel())
         basis = np.exp(1j * (positions @ np.array([axis.ravel() for axis in k])))
         omega = omega.ravel()
         stocks, normalized_rates, phases = [], [], np.zeros(n)
