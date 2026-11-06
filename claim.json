@@ -5,6 +5,8 @@
     "Test source 1-to-4 refinement on intrinsic support filtration",
     "Compute exact Q169 small-time cell support response"
   ],
-  "status": "claimed",
-  "created_at": "2026-11-06"
+  "status": "released",
+  "created_at": "2026-11-06",
+  "result_commit": "2ed0e784af4d1836fc03cba41443fee69b3e5b11",
+  "pull_request": 352
 }
