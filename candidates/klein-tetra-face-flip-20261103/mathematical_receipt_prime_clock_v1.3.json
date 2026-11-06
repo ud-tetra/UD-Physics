@@ -1,0 +1,331 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-PRIME-CLOCK-013",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Do prime factors13 and2³ and capacity192 derive a native eight-tick parity clock, or only optional cyclic arithmetic distinct from signed K4 evolution?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "LEAK_RANK13",
+      "symbol": "r13",
+      "object_type": "native first-refinement leakage rank and squared Frobenius norm",
+      "definition": "rank(I15-Q111)=trace(I15-Q111)=13",
+      "domain": "R01:C15->C29",
+      "codomain": "Z count",
+      "coefficient_domain": "Z/Q",
+      "units": "native squared amplitude count",
+      "basis_orientation": "oriented K4 simplex basis",
+      "metric_measure": "source unit Euclidean",
+      "origin": "v1.1 exact Gram theorem",
+      "exact_expression": "13=15-2=1+3*4, 13 prime",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "V11"
+      ],
+      "assumption_ids": [
+        "H=I"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit incidence generator"
+    },
+    {
+      "object_id": "THETA_F2",
+      "symbol": "Theta",
+      "object_type": "three-bit opposite-edge parity label group",
+      "definition": "F2³, cardinality8, additive exponent2",
+      "domain": "three bits",
+      "codomain": "three bits",
+      "coefficient_domain": "F2",
+      "units": "none",
+      "basis_orientation": "three opposite edge pair indices",
+      "metric_measure": "no time clock",
+      "origin": "frozen ledger P04",
+      "exact_expression": "|Theta|=2³=8",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "none"
+    },
+    {
+      "object_id": "CAP192",
+      "symbol": "N1",
+      "object_type": "local finite packet address capacity",
+      "definition": "24 S4 orientation labels ×8 Theta labels",
+      "domain": "finite set S4×Theta",
+      "codomain": "Z cardinality",
+      "coefficient_domain": "finite set",
+      "units": "addresses not meters/seconds",
+      "basis_orientation": "orientation index and parity label",
+      "metric_measure": "none",
+      "origin": "frozen ledger P05",
+      "exact_expression": "N1=192=2^6*3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [
+        "THETA_F2"
+      ],
+      "normalization": "count"
+    },
+    {
+      "object_id": "NATIVE_A",
+      "symbol": "A,J",
+      "object_type": "signed 15D K4 generator/complex structure",
+      "definition": "A=d-dT,J=A/2,J³=-J",
+      "domain": "R15",
+      "codomain": "R15",
+      "coefficient_domain": "Q matrix entries",
+      "units": "inverse formal dimensionless u",
+      "basis_orientation": "ascending simplex grades",
+      "metric_measure": "H=I",
+      "origin": "source QPB1 local generators v1.0",
+      "exact_expression": "U(pi/4)=Q000+J,U^4=I15",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "chosen_strobe"
+      ],
+      "dependency_ids": [
+        "LEAK_RANK13"
+      ],
+      "normalization": "unit native angular frequency2"
+    },
+    {
+      "object_id": "MOD_SUCC",
+      "symbol": "n->n+13 mod8",
+      "object_type": "candidate cyclic integer update",
+      "definition": "generator +13 on Z8, NOT the native Theta additive group",
+      "domain": "Z8",
+      "codomain": "Z8",
+      "coefficient_domain": "Z8",
+      "units": "formal ticks",
+      "basis_orientation": "arbitrary binary numeric encoding",
+      "metric_measure": "none",
+      "origin": "analytical what-if",
+      "exact_expression": "order8, residues0,5,2,7,4,1,6,3,0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "new_Z8_successor"
+      ],
+      "dependency_ids": [
+        "THETA_F2"
+      ],
+      "normalization": "chosen count step"
+    },
+    {
+      "object_id": "EQUIV_MAPS",
+      "symbol": "T",
+      "object_type": "deterministic S4-equivariant maps of Theta",
+      "definition": "T(gθ)=gT(θ) for all induced S3 permutations",
+      "domain": "Theta",
+      "codomain": "Theta",
+      "coefficient_domain": "set maps",
+      "units": "none",
+      "basis_orientation": "S3 permutes three opposite pairs",
+      "metric_measure": "not a native time rule",
+      "origin": "exhaustive derivation",
+      "exact_expression": "64 functions,4 bijections, max bijection cycle length2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [
+        "Theta_only",
+        "full_S4_equivariance"
+      ],
+      "dependency_ids": [
+        "THETA_F2"
+      ],
+      "normalization": "none"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
+      "section_or_object_id": "P01-P06 including Theta8,N1=192",
+      "source_status": "read-only frozen native finite counts"
+    },
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
+      "section_or_object_id": "v1.0 §§1–3 K4 A,J and formal unit metric",
+      "source_status": "source-native formal evolution"
+    },
+    {
+      "source_id": "V11",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/NATIVE_EIGHT_PROJECTOR_LEAKAGE_v1.1.md",
+      "version_or_commit": "43657ded3b1515b3cb11a635679efc2512e364a9",
+      "section_or_object_id": "native Q projectors, R01 Gram identity and score mean13/8",
+      "source_status": "prior exact conditional Discovery"
+    },
+    {
+      "source_id": "EVENT",
+      "url_or_repo_path": "experiments/qpb1-native-events/EVENT_CONTRACT.md",
+      "version_or_commit": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
+      "section_or_object_id": "event observer is added rule; physical clock mapping separate",
+      "source_status": "read-only source constraint"
+    }
+  ],
+  "assumptions": [
+    "13 is leakage rank/traced unit metric on first K4 refinement, not a dynamical step size",
+    "Theta=F2³ has exponent2, not cyclic Z8; N1=192 count does not define a Z192 group law",
+    "S4 diagonal address action and J quarter-turn observer strobe are conditional symmetry/observation actions, not physical time evolution on 192 addresses",
+    "Full S4-equivariance and deterministic Theta-only update for strong 8-cycle no-go",
+    "Formal time u has no SI calibration; π/4 chosen observer interval"
+  ],
+  "technique_plan": [
+    {
+      "technique": "prime factorization gcd and binary fraction",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "13 prime,8=2³,192=2⁶·3,312/192 reduction"
+    },
+    {
+      "technique": "additive and multiplicative modular orders",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "distinguish different 8/24/192/16 periods under chosen successors"
+    },
+    {
+      "technique": "finite S4 direct-product group element-order enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "192-product address group max element order6 and no native generator order8"
+    },
+    {
+      "technique": "exhaustive S4-equivariant Theta-only map classification",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "enumerate 64 maps,4 bijections, prove fixed-point obstruction"
+    },
+    {
+      "technique": "exact native 15D matrix phase strobe",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "U(pi/4)^4=I, paired projector order2 and stationary rank13 leakage Gram"
+    },
+    {
+      "technique": "SI Planck clock calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no source physical clock/unit bridge"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "13 prime;8=2^3;24=2^3*3;192=2^6*3;312=24*13;gcd(312,192)=24",
+    "reduced_expression": "312/192=13/8=1+5/8=(1.101)_2",
+    "factor_origins": [
+      "13 from native 15D minus 2D top transport kernel",
+      "8 from Theta finite address count",
+      "24 from S4 orientation count"
+    ],
+    "factorization": "13, 2³, 2⁶·3, 2³·3·13",
+    "divisibility_gcd_lcm": "13 unit mod8,24,192; denominator8 nonunit mod192; ord192 multiplicative13=16"
+  },
+  "clock_receipt": {
+    "clock_type": "separate candidate integer modular clocks and native formal phase clock",
+    "modulus": 8,
+    "residue_convention": "Z8 additive chosen vs F2³ parity vector native; never conflate",
+    "update_rule": "candidate +13 on Z8 vs source exp(uA); native observed strobe u=π/4",
+    "initial_phase": "Z8 residue0 or native K4 state x0",
+    "coupling": "none selected between modular counter and native A",
+    "period_claim": "candidate period8; S4-equivariant Theta-only permutation max cycle2; native projector strobe2 and amplitude strobe4",
+    "physical_unit_map": "NONE"
+  },
+  "dynamics_readout": {
+    "state_space": "C15 real K4, finite Theta8, 192 labelled frame×parity set",
+    "generator_or_update": "A=d-dT, J=A/2; strobe U=Q000+J, Q swaps middle three pairs",
+    "initial_boundary_conditions": "arbitrary native x, no physical event preparation",
+    "conservation_and_sources": "first leakage Gram I-Q111 commutes A; no time energy sourced",
+    "projection_and_kernel": "native top-plane leakage null, trace rank13; no eight-state transitive Theta-only S4-equivariant map",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "user wants prime/clock exploration after known Planck-scale 13/8 target exposure; no SI comparison in this run",
+    "known_targets": [
+      "13/8",
+      "Theta8",
+      "N1=192",
+      "Planck hypothesis"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Z8 additive+13 successor and π/4/13π/8 strobe are explicit hypothetical choices, not source derived"
+    ],
+    "search_domain_and_budget": "all 24 S4 permutations,8 Theta labels,192 direct-product group elements,64 equivariant maps,10 regression tests",
+    "selection_criterion": "source-defined single native eight-state tick permutation versus mere arithmetic compatibility",
+    "baseline": "native Theta F2³ additive group and source A formal phase recurrence"
+  },
+  "calculation_steps": [
+    "Factor 13,8,24,192,312 and reduce count ratio312/192",
+    "Compute +13 Z8/Z24/Z192 and +312 Z192 additive periods and 13 multiplicative orders mod8/24/192",
+    "Prove F2³ has exponent2 and product S4×F2³ has max element order6",
+    "Construct U(pi/4)=Q000+J from K4 signed matrices, verify U²=2Q000-I,U⁴=I and projector swaps",
+    "Exhaustively classify S4-equivariant Theta functions from stabilizer orbits, 2*4*4*2=64, four bijections order≤2",
+    "Keep physical clock and SI length mapping OPEN"
+  ],
+  "result": {
+    "exact_expression": "13/8=312/192 arithmetic mean; chosen cyclic +13 Z8 period8; native Theta-only equivariant update max period2; native K4 quarter strobe projector2, amplitude4; no physical clock",
+    "approximation": null,
+    "units": "pure counts and dimensionless formal u",
+    "precision_and_error": "exact integer modular arithmetic, rational and SymPy signed matrices;10 tests",
+    "scope": "K4 C15, Theta F2³, conditional 192 group/address action, no physical dynamics inferred from modular counter",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact primary clock and native K4 matrix replay",
+      "command_or_proof_path": "UD_13_8_PRIME_CLOCK_AUDIT_v1.3.zip/clock_audit_v13.py",
+      "source_revision": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
+      "actual_result": "PASS exact mod and native phase plus conditional 192 orbit calculations",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent exhaustively generated equivariant maps",
+      "command_or_proof_path": "UD_13_8_PRIME_CLOCK_AUDIT_v1.3.zip/equivariant_theta_maps_v13.py",
+      "source_revision": "same",
+      "actual_result": "PASS 64 maps,4 bijections, max cycle2",
+      "review_relationship": "same constructor alternate algorithm"
+    },
+    {
+      "method": "local regressions",
+      "command_or_proof_path": "UD_13_8_PRIME_CLOCK_AUDIT_v1.3.zip/test_clock_audit_v13.py",
+      "source_revision": "same",
+      "actual_result": "10/10 PASS locally, no external peer review",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Native Θ=(Z2)^3 cannot have a translation with additive order8; Z8 is a changed group law",
+    "Any S4-equivariant deterministic Θ-only map keeps singleton fixed-point subset {000,111}, so no eight-state cycle",
+    "Native J-strobe exchanges six middle labels in 2-cycles and does not traverse all eight",
+    "Chosen +13 on Z192 has period192 but chosen +312 has period8 and chosen multiplication13 period16; operation not selected",
+    "8 denominator cannot be inverted modulo192, no modular fraction residue",
+    "No smallest Planck time/length follows from finite address count"
+  ],
+  "limitations": [
+    "192 capacity is a finite set, not necessarily a state-transition group",
+    "S4/quarter-turn are exact group/observer kinematics, not source-selected physical event successor",
+    "Parity-label-to-native projector map remains candidate; no SI time or length unit map",
+    "Non-constructor independent review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Derive a constitutive symmetry-compatible update on a suitably enlarged packet state with explicit memory/source and observable that generates a nontrivial finite cycle, then independently calibrate event time/length only after target-blind source closure."
+}

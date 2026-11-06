@@ -1,0 +1,361 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-FRAME-COUPLED-CLOCK-014",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "What is the minimum orientation-frame information permitting an 8-label periodic S4-equivariant update, and do K4 primitives select its successor, conserved current and readout?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "THETA",
+      "symbol": "Theta",
+      "object_type": "finite three-bit opposite-edge parity labels",
+      "definition": "F2^3 with induced S4 action through S3",
+      "domain": "F2^3",
+      "codomain": "F2^3",
+      "coefficient_domain": "F2",
+      "units": "labels",
+      "basis_orientation": "opposite-edge pair A,B,C",
+      "metric_measure": "none",
+      "origin": "frozen coefficient ledger P04",
+      "exact_expression": "8 addresses, weight-orbit sizes1,3,3,1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "none"
+    },
+    {
+      "object_id": "FRAMES",
+      "symbol": "M=S3",
+      "object_type": "ordered opposite-edge-pair reference torsor",
+      "definition": "effective S4 frame quotient S4/V4; full original orientation tag set S4 has 24 labels",
+      "domain": "S3 left regular",
+      "codomain": "S3",
+      "coefficient_domain": "finite group",
+      "units": "frame tags",
+      "basis_orientation": "ordered reference pair axes",
+      "metric_measure": "counting only",
+      "origin": "derived from geometric opposite-edge pair action",
+      "exact_expression": "|M|min=6, |M×Theta|=48; full S4×Theta=192",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [
+        "coupled_frame_as_state"
+      ],
+      "dependency_ids": [
+        "THETA"
+      ],
+      "normalization": "4-to-1 from S4 to S3"
+    },
+    {
+      "object_id": "TF",
+      "symbol": "T_f",
+      "object_type": "candidate finite equivariant reversible successor",
+      "definition": "(m,theta)->(m,m f(m^-1 theta)) for selected local permutation f of F2^3",
+      "domain": "S3×Theta",
+      "codomain": "S3×Theta",
+      "coefficient_domain": "finite maps",
+      "units": "one declared event per update, not seconds",
+      "basis_orientation": "relative frame parity eta=m^-1 theta",
+      "metric_measure": "counting basis if distribution introduced",
+      "origin": "CANDIDATE chosen nonlinear update, no native QPB1 source",
+      "exact_expression": "T_f^8=I when f is an 8-cycle",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PARITY"
+      ],
+      "assumption_ids": [
+        "chosen_successor",
+        "frame_register"
+      ],
+      "dependency_ids": [
+        "FRAMES"
+      ],
+      "normalization": "none"
+    },
+    {
+      "object_id": "GRAY",
+      "symbol": "f_gray",
+      "object_type": "one-opposite-pair-flip Gray Hamiltonian cycle",
+      "definition": "000,100,110,010,011,111,101,001 then return",
+      "domain": "Theta",
+      "codomain": "Theta",
+      "coefficient_domain": "nonlinear F2 polynomials",
+      "units": "formal event",
+      "basis_orientation": "reference pair axes",
+      "metric_measure": "Hamming graph one-bit adjacency",
+      "origin": "chosen mathematical candidate",
+      "exact_expression": "8 period, one bit flip, ANF degree2, 12 directed alternative Gray cycles",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "chosen_gray_orientation"
+      ],
+      "dependency_ids": [
+        "TF"
+      ],
+      "normalization": "none"
+    },
+    {
+      "object_id": "CAT_CURRENT",
+      "symbol": "J_{s→Ts}",
+      "object_type": "address-graph conserved categorical distribution current",
+      "definition": "p'_(Ts)=p_s, J_{s→Ts}=p_s",
+      "domain": "R>=0^48",
+      "codomain": "R>=0^48",
+      "coefficient_domain": "Z example/R nonnegative",
+      "units": "abstract address stock/event",
+      "basis_orientation": "directed T cycle graph",
+      "metric_measure": "counting ℓ1,ℓ2",
+      "origin": "DERIVED under candidate permutation",
+      "exact_expression": "Σp'=Σp; Σ(p')²=Σp²; subset flux inward−outward",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "chosen_successor"
+      ],
+      "dependency_ids": [
+        "TF"
+      ],
+      "normalization": "no physical action unit"
+    },
+    {
+      "object_id": "NATIVE_Q",
+      "symbol": "Qtheta",
+      "object_type": "real source-native K4 orthogonal projectors",
+      "definition": "rank1 harmonic and seven rank2 subspaces on C15",
+      "domain": "C15",
+      "codomain": "C15",
+      "coefficient_domain": "Q real extension",
+      "units": "formal amplitude",
+      "basis_orientation": "source oriented simplex and J=A/2",
+      "metric_measure": "unit Euclidean",
+      "origin": "prior native projector v1.1",
+      "exact_expression": "ranks (1,2,2,2,2,2,2,2) prohibit full-sector 8-cycle under invertible linear conjugation",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "V11",
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "native_HI"
+      ],
+      "dependency_ids": [],
+      "normalization": "source unit metric"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "9d934337c0a9f7a6341b20cf116c8b6cd31c79eb",
+      "section_or_object_id": "P01–P06 theta8, S4 order24, local capacity192",
+      "source_status": "frozen source count"
+    },
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "9d934337c0a9f7a6341b20cf116c8b6cd31c79eb",
+      "section_or_object_id": "v1.0 §§1–3 unit 15D signed generator and S4 action",
+      "source_status": "native continuous dynamics, not finite bit toggle"
+    },
+    {
+      "source_id": "EVENT",
+      "url_or_repo_path": "experiments/qpb1-native-events/EVENT_CONTRACT.md",
+      "version_or_commit": "9d934337c0a9f7a6341b20cf116c8b6cd31c79eb",
+      "section_or_object_id": "v1.0 threshold observer is added; no physical clock",
+      "source_status": "observer source constraint"
+    },
+    {
+      "source_id": "PARITY",
+      "url_or_repo_path": "experiments/parity-dynamics-gauge-20261103/README.md",
+      "version_or_commit": "discovery/parity-dynamics-gauge-20261103/pdyg-20261103-01",
+      "section_or_object_id": "v0.1 explicitly illustrative raw 10-bit parity model",
+      "source_status": "exploratory countermodel, not primitive"
+    },
+    {
+      "source_id": "V13",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/PRIME_CLOCK_13_OVER_8_v1.3.md",
+      "version_or_commit": "b6720f1ca48402dd0ccf1383d0ab6cc3492a1b76",
+      "section_or_object_id": "Theta-only S4 no-eight-cycle and native strobe periods",
+      "source_status": "prior exact scoped obstruction"
+    },
+    {
+      "source_id": "V11",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/NATIVE_EIGHT_PROJECTOR_LEAKAGE_v1.1.md",
+      "version_or_commit": "43657ded3b1515b3cb11a635679efc2512e364a9",
+      "section_or_object_id": "rank1+seven rank2 native K4 projector resolution",
+      "source_status": "prior conditional native math"
+    }
+  ],
+  "assumptions": [
+    "G=S3 effective opposite-pair permutations, original S4 action factors through G on Theta",
+    "coupled state Theta×M with diagonal G action, deterministic equivariant T and one periodic orbit projecting onto all 8 labels",
+    "frame M is a genuine retained state in the constructed automaton; its physical nature/gauge status not established",
+    "f is chosen nonlinear eight-cycle, either +5 in chosen Z8 encoding or Gray Hamiltonian successor; not selected by source signed K4 evolution",
+    "exploratory raw edge toggle uses six F2 edge bits and full 24 S4 frames, total1536 states, different typed carrier than N1=192",
+    "categorical permutation current is not Q170-179 burden current or measured physical time"
+  ],
+  "technique_plan": [
+    {
+      "technique": "stabilizer-orbit finite group theorem",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove minimal six frame memories under exact projection/period requirements"
+    },
+    {
+      "technique": "exhaustive S4 covariance on 48 and 192 coupled states",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify chosen eight-cycles commute with full frame relabeling"
+    },
+    {
+      "technique": "affine Boolean group enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "1344 maps exclude affine eight-cycle, prove quadratic carry necessity"
+    },
+    {
+      "technique": "Gray cube Hamiltonian cycle enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "one-bit local path construction and 12 directed alternatives"
+    },
+    {
+      "technique": "raw-edge bit S4 covariance and eight-return",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "36,864 checks for selected illustrative edge event carrier"
+    },
+    {
+      "technique": "conserved discrete categorical current",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify stock sum/norm and subset cut flux"
+    },
+    {
+      "technique": "native full-sector rank obstruction",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "rank1 unique harmonic blocks invertible linear 8-cycle on projector ranges"
+    },
+    {
+      "technique": "physical clock bridge",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no SI event time or source-selected gate"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "S4=24,V4 kernel4,effective S3=6,Theta=8, 48=6×8,192=24×8, raw1536=24×64",
+    "reduced_expression": "minimal frame6, 6 eight-cycles on48, 24 eight-cycles on192; 12 directed Gray paths,6 undirected; affine168×8=1344",
+    "factor_origins": [
+      "opposite-edge pair permutation quotient",
+      "Boolean edge coordinate count6",
+      "choice of Gray successor, NOT derived from leak13"
+    ],
+    "factorization": "48=2^4×3,192=2^6×3,1536=2^9×3",
+    "divisibility_gcd_lcm": "8-period chosen successor has order8 but full S4×Theta group element order≤6 under group translation"
+  },
+  "clock_receipt": {
+    "clock_type": "new conditional discrete parity event index, NOT source native time",
+    "modulus": 8,
+    "residue_convention": "local frame-relative Gray order on F2^3, not canonical Z8 source",
+    "update_rule": "T(m,theta)=(m,m f(m^-1theta)); Gray one bit flip per event",
+    "initial_phase": "frame m and initial theta, frozen for cycle",
+    "coupling": "chosen carry logic; no current K4 event observer derivation",
+    "period_claim": "formal period8; native parent strobe projector2 and amplitude4 remain distinct",
+    "physical_unit_map": "NONE"
+  },
+  "dynamics_readout": {
+    "state_space": "candidate effective48, existing frame-labelled192, exploratory raw1536, distinct native real C15",
+    "generator_or_update": "nonlinear Boolean one-bit Gray or add5 counter via ordered-pair frame",
+    "initial_boundary_conditions": "frame fixed, parity initial arbitrary; no physical preparation",
+    "conservation_and_sources": "permutation categorical stock conserved, example ∆14, inflow59,outflow45; physical Q170-179 current OPEN",
+    "projection_and_kernel": "relative eta=m^-1 theta invariant under simultaneous S4 relabeling; native Q ranks block full sector cycle",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "8-step clock and 13/8 numerical interests exposed before candidate successor construction; exploratory not confirmatory",
+    "known_targets": [
+      "8 labels and hypothetical 8-period",
+      "192 capacity",
+      "prior Θ-only equivariant no-go"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "+5 mod8 successor selected for illustration",
+      "Gray Hamiltonian successor selected for one-bit locality; 12 directed options",
+      "ordered frame as memory; not physical selection"
+    ],
+    "search_domain_and_budget": "48 effective states,192 full frame states,1536 exploratory raw edge states, 4608+36864 S4 checks; 1344 affine maps,12 directed Gray cycles,10 tests",
+    "selection_criterion": "feasible equivariant 8-cycle with minimal frame and one-parity-bit local event, plus native constitutive compatibility",
+    "baseline": "Theta-only S4-equivariant maps max bijective cycle2 and native real skew projector rank obstruction"
+  },
+  "calculation_steps": [
+    "Use stabilizer preservation along a periodic equivariant orbit; intersect three weight1 label stabilizers to derive trivial full stabilizer, hence free S3 frame orbit ≥6",
+    "Construct 6-state regular S3 frame, relative eta=m^-1theta and chosen local 8-cycle f, verify 48 states and all 24 S4 lifts on existing192",
+    "Exhaust GL3(F2)=168 matrices ×8 biases, find no affine 8-cycle; exhibit quadratic +5 carry",
+    "Enumerate 12 directed /6 undirected Gray Hamiltonian cycles and choose one-bit-flip candidate",
+    "With illustrative 6-edge raw bits and full S4 frame, toggle one transformed reference edge per Gray step, verify 1536 eight-step returns and 36,864 symmetry checks",
+    "Define candidate directed address-stock currents, show conservation and subset flux equality",
+    "Use unique rank1 Q000 among native K4 eight Q to prove no invertible real whole-sector 8-cycle",
+    "Record missing source-selected successor, event time, Q170-179 flux and physical unit bridge"
+  ],
+  "result": {
+    "exact_expression": "minimal effective frame memory6; chosen S4-equivariant Gray successor period8 on 48/192, one parity bit each step; no 8-cycle within affine F2^3 maps or native invertible C15 whole-projector permutation",
+    "approximation": null,
+    "units": "formal discrete event count, not seconds",
+    "precision_and_error": "exact finite enumeration and integer counts; ten local regression checks PASS",
+    "scope": "G=S3 diagonal equivariant product-state automata and selected binary edge microcountermodel, not native K4 continuous source",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact coupled-group and affine-map exhaustive replay",
+      "command_or_proof_path": "UD_PACKET_COUPLED_PARITY_CLOCK_v1.4.zip/coupled_clock_v14.py",
+      "source_revision": "9d934337c0a9f7a6341b20cf116c8b6cd31c79eb",
+      "actual_result": "PASS 48/192 state returns,4608 covariance checks,1344 affine no-eight-cycle, categorical current",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent one-bit Gray and raw-edge frame replay",
+      "command_or_proof_path": "UD_PACKET_COUPLED_PARITY_CLOCK_v1.4.zip/gray_locality_v14.py",
+      "source_revision": "same",
+      "actual_result": "PASS 12 Hamiltonian directed cycles,1536 raw state returns,36,864 S4 covariance cases, native rank control",
+      "review_relationship": "same constructor alternate implementation"
+    },
+    {
+      "method": "ten exact regression checks",
+      "command_or_proof_path": "UD_PACKET_COUPLED_PARITY_CLOCK_v1.4.zip/test_clock_v14.py",
+      "source_revision": "same",
+      "actual_result": "PASS 10/10 locally, no external peer review",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "No Theta-only deterministic S4-equivariant 8-cycle, prior v1.3 hypotheses preserved",
+    "Effective frame memory size<6 cannot support a projected cycle visiting all eight labels",
+    "All 1344 affine invertible updates of F2^3 fail eight-cycle, nonlinear carry needed",
+    "Gray one-pair locality allows twelve directed 8-cycles, so does not select a unique successor",
+    "Native C15 whole-projector ranks 1 and2 forbid an invertible linear full eight-sector cycle",
+    "QPB1 zero-crossing event rule neither selects the Gray successor nor supplies physical time; raw6 state is illustrative"
+  ],
+  "limitations": [
+    "Frame labels may represent gauge relabeling rather than independent physical memory",
+    "No source-specific causal bit flip/clock generator, robust initial preparation or physical readout",
+    "Categorical current is not geometrical Q170-179 burden conservation",
+    "Physical time/length, Planck correspondence and empirical tests absent",
+    "Non-constructor scientific review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Derive an S4-covariant one-edge event selector from QPB1 signed quadrature/source action and prove it reproduces a unique cycle under generic phase preparation with Q170-179 conservation; if source selects none, freeze physical eight-tick claim."
+}

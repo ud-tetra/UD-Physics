@@ -1,0 +1,56 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ktff-20261103-01",
+  "run_id": "q170-interface-019",
+  "created_at": "2026-11-06T03:24:57Z",
+  "evidence": "EXACT",
+  "summary": "v1.9 conditional Q165/Q170 all shared-shell cuts match at candidate top-zero event, but cone-isometry makes second derivative of all nonzero shell amplitudes diverge under old/new native generators; source Q171 direction amendment proposed, not accepted.",
+  "command": "python3 current_interface_v19.py; python3 independent_cone_current_v19.py; python3 -m unittest discover -s . -p test_current_interface_v19.py -v",
+  "command_execution": "EXECUTED_IN_LOCAL_CONSTRUCTOR_RUNTIME",
+  "source": {
+    "revision": "b04652406b5579ca172564d0e3a6fe3aca75693a",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/CERTIFICATE_v19.txt",
+      "sha256": "bd2199a0073a7a66ffce207c474c56d35895071024910a9433c7e5db85124f56",
+      "size_bytes": 750
+    }
+  ],
+  "claim": {
+    "status": "held",
+    "sha": "667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4"
+  },
+  "source_review": {
+    "issue": "https://github.com/ud-tetra/UD-Physics/issues/338",
+    "status": "PROPOSED_NOT_ACCEPTED"
+  },
+  "outputs": [
+    "experiments/klein-tetra-face-flip-20261103/CURRENT_INTERFACE_Q170_v1.9.md",
+    "experiments/klein-tetra-face-flip-20261103/q170_interface_v19.py",
+    "experiments/klein-tetra-face-flip-20261103/independent_q170_cone_v19.py",
+    "experiments/klein-tetra-face-flip-20261103/q170_interface_results_v19.json",
+    "candidates/klein-tetra-face-flip-20261103/mathematical_receipt_q170_interface_v1.9.json"
+  ],
+  "archive": {
+    "name": "UD_K4_Q170_INTERFACE_v1.9.zip",
+    "sha256": "4650a66caf1016a7494348bb0aadbf1e7743f51e49400ccfa3813788f62f3704",
+    "size_bytes": 18377,
+    "files": 12
+  },
+  "verification": {
+    "local_unittests": "12/12 PASS",
+    "all_shell_subset_cuts": "16384 PASS",
+    "independent_cone": "PASS",
+    "nonconstructor": "NOT_RUN",
+    "physical_promotion": 0
+  },
+  "limitations": [
+    "User ZIP includes complete earlier v1.7/v1.8 calculation scripts, sources and tests; GitHub replay is shorter and not byte-identical.",
+    "No source-selected event, no adopted Q171 direction correction, and no SI time/length map."
+  ],
+  "recorded_at_note": "Timestamp captured from execution environment at manifest correction; do not infer exact creation time of earlier files."
+}

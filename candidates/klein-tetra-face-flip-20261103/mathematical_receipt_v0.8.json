@@ -1,0 +1,307 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-COARSE-METRIC-008",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Does a scale-aware coarse metric induced by the integral subdivision yield an incidence-local norm-conserving generator, and does it exactly intertwine the 348D microscopic skew evolution or stabilize the clock under refinement?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "FINE_348",
+      "symbol": "C_s",
+      "object_type": "348-real-dimensional twisted signed barycentric chain",
+      "definition": "C*(72-tetrahedron Klein×I;Z_rho) extended to real coefficients",
+      "domain": "R^348",
+      "codomain": "R^348",
+      "coefficient_domain": "Z boundary, R evolution",
+      "units": "native dimensionless amplitudes",
+      "basis_orientation": "signed barycentric flag simplices with Klein rho",
+      "metric_measure": "unit Euclidean H_s=I",
+      "origin": "prior v0.5/0.6 constructed under assumed topology",
+      "exact_expression": "A_s=D_s-D_s^T",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "V06",
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "assumed_Klein_gluing",
+        "unit_fine_metric"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit fine incidence weights"
+    },
+    {
+      "object_id": "COARSE_12",
+      "symbol": "C_c",
+      "object_type": "12-real-dimensional minimal twisted CW chain",
+      "definition": "C*(Klein;Z_rho) tensor C*(I;Z)",
+      "domain": "R^12",
+      "codomain": "R^12",
+      "coefficient_domain": "Z boundary, R evolution",
+      "units": "native formal amplitude",
+      "basis_orientation": "minimal CW order (2,5,4,1)",
+      "metric_measure": "induced G from integral subdivision",
+      "origin": "derived from v0.6 chain retraction",
+      "exact_expression": "G=diag(1,1,2,2,2,2,2,8,8,12,12,72)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "V06"
+      ],
+      "assumption_ids": [
+        "unit_fine_metric"
+      ],
+      "dependency_ids": [
+        "FINE_348"
+      ],
+      "normalization": "no fitted scaling"
+    },
+    {
+      "object_id": "SUBDIVISION_S",
+      "symbol": "S",
+      "object_type": "integral cell-local subdivision injection",
+      "definition": "S:C_c→C_s with D_s S=S D_c, P S=I",
+      "domain": "R^12",
+      "codomain": "R^348",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "oriented CW and barycentric flags",
+      "metric_measure": "pullback defines G=S^T S",
+      "origin": "source-bound prior v0.6 conditional construction",
+      "exact_expression": "G=S^T S",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "V06"
+      ],
+      "assumption_ids": [
+        "assumed_Klein_gluing"
+      ],
+      "dependency_ids": [
+        "COARSE_12",
+        "FINE_348"
+      ],
+      "normalization": "unimodular integral subdivision"
+    },
+    {
+      "object_id": "GALERKIN_A",
+      "symbol": "A_G",
+      "object_type": "G-skew incidence-local projected generator",
+      "definition": "A_G=G^-1 S^T A_s S=D_c-G^-1 D_c^T G",
+      "domain": "R^12",
+      "codomain": "R^12",
+      "coefficient_domain": "Q exact entries, R flow",
+      "units": "inverse native formal evolution parameter u",
+      "basis_orientation": "minimal CW",
+      "metric_measure": "G",
+      "origin": "DERIVED uniquely as orthogonal projection for selected H_s and S",
+      "exact_expression": "A_G^T G+G A_G=0; 11 incidence pairs",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1",
+        "V06"
+      ],
+      "assumption_ids": [
+        "unit_fine_metric"
+      ],
+      "dependency_ids": [
+        "SUBDIVISION_S"
+      ],
+      "normalization": "metric induced, not physical calibration"
+    },
+    {
+      "object_id": "LEAKAGE",
+      "symbol": "R",
+      "object_type": "exact fine-image invariance residual",
+      "definition": "R=(I-SG^-1 S^T)A_s S",
+      "domain": "R^12",
+      "codomain": "R^348",
+      "coefficient_domain": "Q",
+      "units": "inverse formal u",
+      "basis_orientation": "signed barycentric basis",
+      "metric_measure": "unit fine and induced coarse G",
+      "origin": "exact computed negative test",
+      "exact_expression": "rank R=11, ||R||_F²=157, Tr(RG^-1R^T)=242/3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "V06"
+      ],
+      "assumption_ids": [
+        "unit_fine_metric"
+      ],
+      "dependency_ids": [
+        "GALERKIN_A"
+      ],
+      "normalization": "orthogonal Galerkin projection"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "section_or_object_id": "v1.0 §§1–3 signed unit-metric K4 generator/current template",
+      "source_status": "source-native K4 math, not a sourced 348D physical law"
+    },
+    {
+      "source_id": "V06",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/INTEGRAL_SUBDIVISION_STRONG_RETRACT_v0.6.md",
+      "version_or_commit": "f756f5668893616f90740d4cae3b2f6e296c75f9",
+      "section_or_object_id": "integral P/S/H of assumed nonorientable Klein×I quotient",
+      "source_status": "conditional Discovery chain homotopy"
+    },
+    {
+      "source_id": "V07",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/REFINEMENT_LOCALITY_AND_DYNAMICS_v0.7.md",
+      "version_or_commit": "1f9142bc83ebc1d8a7ae4e46676f0ac097014d8e",
+      "section_or_object_id": "finite graph locality and unit coarse skew no-go",
+      "source_status": "conditional Discovery obstruction"
+    }
+  ],
+  "assumptions": [
+    "Klein×I seam gluing is an assumed new nonorientable 3-manifold, not primitive K4 topology",
+    "Fine 348D twisted chain has unit Euclidean H_s=I; no calibrated length or time",
+    "Coarse S is prior exact integer integral subdivision; coarsened G is defined by G=S^T H_s S",
+    "Projected generator A_G unique within Galerkin orthogonal projection of fine A_s, not uniquely selected physical evolution",
+    "Graph locality means CW boundary/coface incidence, distinct from fine graph hops and physical distances"
+  ],
+  "technique_plan": [
+    {
+      "technique": "integral subdivision pullback metric",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "obtain exact 12x12 diagonal Gram weights"
+    },
+    {
+      "technique": "metric adjoint and Galerkin projection",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive A_G=D_c-G^-1D_c^T G, exact G-skew"
+    },
+    {
+      "technique": "signed incidence-current accounting",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "11 CW incidence edges yield 22 oriented entries, antisymmetric G-weighted currents"
+    },
+    {
+      "technique": "invariant subspace and Duhamel analysis",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "show residual rank11 Frobenius²157 and finite formal-time error bound"
+    },
+    {
+      "technique": "refinement counterexample",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "m unit-weight interval edges yield frequency²2/m, residual²2(1-1/m)"
+    },
+    {
+      "technique": "physical unit bridge",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no source clock/length calibration provided"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "Gram diagonal 1,1,2,2,2,2,2,8,8,12,12,72; rank residual 11 and squared Frobenius 157; weighted residual 242/3",
+    "reduced_expression": "A_G-A_unit difference squared Frobenius 151/18; interval omega²=2/m and residual²=2(1-1/m)",
+    "factor_origins": [
+      "signed unit barycentric flag multiplicities under S",
+      "exact induced metric inverses",
+      "unit-weight m-edge interval incidence"
+    ],
+    "factorization": "72=2^3·3², 242/3 exact Hilbert–Schmidt squared, no physical identification",
+    "divisibility_gcd_lcm": "metric denominators arise from Gram inverse, not empirical calibration"
+  },
+  "clock_receipt": {
+    "clock_type": "formal dimensionless evolution u",
+    "modulus": null,
+    "residue_convention": "N/A",
+    "update_rule": "fine x'=A_s x; coarse y'=A_G y; no exact intertwining due nonzero residual",
+    "initial_phase": "arbitrary fine x0 in image S for comparison",
+    "coupling": "unit fine incidence and G-weighted coarse CW skew",
+    "period_claim": "interval coarse squared angular frequency 2/m under unit refined edge weights; no SI time",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "348D twisted simplex vs 12D minimal CW real chains",
+    "generator_or_update": "A_s=D_s-D_s^T, A_G=G^-1 S^T A_s S",
+    "initial_boundary_conditions": "assumed Klein×I; arbitrary native initial x0=S y0",
+    "conservation_and_sources": "fine ||x||² and coarse y^T G y conserved separately; 11 local signed CW currents",
+    "projection_and_kernel": "R=(I-Π)A_s S nonzero rank11, Frobenius²157",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "v0.7 skew failure and desire for metric-compatible scale-aware law exposed; no physical measurement target",
+    "known_targets": [
+      "nonintertwining of naive unit coarse metric and fine K4-type generator",
+      "absence of physical clock"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "choose exact pullback metric G=S^T S and orthogonal Galerkin A_G because mathematically canonical under these input choices"
+    ],
+    "search_domain_and_budget": "all 348x12 subdivision entries and 12 coarse CW coordinates; seven interval refinement controls",
+    "selection_criterion": "G-skew norm conservation, CW incidence locality and exact intertwinement/failure",
+    "baseline": "naive A0=D_c-D_c^T under independent unit CW metric"
+  },
+  "calculation_steps": [
+    "Read integral S from v0.6 and compute exact Gram G=S^T S",
+    "Define L=G^-1 S^T and orthogonal projector Π=SL; verify L S=I",
+    "By D_s S=S D_c prove A_G=L(D_s-D_s^T)S=D_c-G^-1D_c^T G",
+    "Check G-skew and eleven CW incidence pairs, signed G-weighted current cancellation",
+    "Compute residual R=A_s S-S A_G orthogonal to image, rank11, Frobenius²157, weighted²242/3",
+    "Compare naive unit A0: exact difference rank5, Frobenius²151/18",
+    "For m unit-weight interval refinements derive Gm=diag(1,1,m), omega²=2/m and leakage²=2(1-1/m)"
+  ],
+  "result": {
+    "exact_expression": "G diag(1,1,2,2,2,2,2,8,8,12,12,72), A_G=D_c-G^-1D_c^T G, metric conservation; R nonzero rank11 norm²157, interval omega²2/m",
+    "approximation": null,
+    "units": "native formal u and dimensionless chain coefficients",
+    "precision_and_error": "exact integer and rational SymPy, no approximations",
+    "scope": "assumed Klein×I, selected fine unit metric and integral subdivision S; Galerkin—not exact native 348D evolution",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact full 348D v0.6 source replay plus metric pullback",
+      "command_or_proof_path": "KLEIN_SCALE_AWARE_EVOLUTION_v0.8.zip/induced_generator_v08.py",
+      "source_revision": "f756f5668893616f90740d4cae3b2f6e296c75f9",
+      "actual_result": "PASS locally exact SymPy; G 12 diag, G-skew, 11 incidence pairs, rank11 residual squared157 and weighted²242/3",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent 1D refinement family calculation",
+      "command_or_proof_path": "KLEIN_SCALE_AWARE_EVOLUTION_v0.8.zip/interval_scale_control_v08.py",
+      "source_revision": "same",
+      "actual_result": "PASS local seven control levels m=1..64 exact omega² and residual²",
+      "review_relationship": "same constructor, separate model"
+    },
+    {
+      "method": "repository stand-alone 12D metric check",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/metric_coarse_generator_v08.py",
+      "source_revision": "same",
+      "actual_result": "Equivalent local 12D exact algebra PASS; repository CI verifies file structure not theorem",
+      "review_relationship": "same constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Integral chain-map identity does not force exact skew dynamics intertwining; projected residual rank11",
+    "Induced metric differs from naive unit coarse metric; A_G-A0 rank5 norm²151/18",
+    "No refinement-independent native interval frequency under m unit-weight fine edges; omega²=2/m",
+    "The Klein seam gluing, chosen fine unit metric and physical orientation reference remain source-unselected"
+  ],
+  "limitations": [
+    "A_G is a uniquely defined mathematical Galerkin projection, not native physical law",
+    "Refinement controls use a 1D endpoint interval, not a universal theorem for all K4 bulk refinements",
+    "Error bound in formal u does not establish time/energy in SI units",
+    "Local standalone input package and source files may not be byte-identical to GitHub texts",
+    "Independent non-constructor scientific review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Source or preregister a multiscale UD material metric/clock/current contract on at least two genuine tetrahedral refinement levels, derive an invariant or controlled-error coarse generator, and test orientation-framed observable against an independently specified null without fitting timing."
+}

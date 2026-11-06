@@ -1,0 +1,36 @@
+{
+  "edge_seam": "[01] -> [32]",
+  "completions": [
+    {
+      "vertex_map": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "S4_top_sign": -1,
+      "orientation_seam_sign": -1,
+      "combined_top_sign": 1,
+      "order": 4
+    },
+    {
+      "vertex_map": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "S4_top_sign": 1,
+      "orientation_seam_sign": -1,
+      "combined_top_sign": -1,
+      "order": 2
+    }
+  ],
+  "both_commute_K4_boundary": true,
+  "both_commute_K4_skew_generator": true,
+  "both_preserve_unit_K4_norm": true,
+  "topological_orientation_character": -1,
+  "top_cell_readout_unique": false,
+  "physical_promotion": 0,
+  "status": "PASS_EXACT"
+}

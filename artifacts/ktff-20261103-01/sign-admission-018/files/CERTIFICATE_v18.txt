@@ -1,0 +1,12 @@
+UD Physics Discovery K4 signed-current and zero-top admission v1.8
+Source main SHA: 74fe8f61856792fda717f2fffe8d3ed9a6564da2
+Source Q169 A=D-D^T: top stock gain = -2 B3 c_face c_top.
+Q171 literal +2 B3 prints face-gain direction if the same B3 is used.
+Q165 cross-complex defect: ||F x||^2-||x||^2=3 a^2; event isometric iff a=0.
+Old top a(u)=a cos(2u)-beta sin(2u); simple zeroes spaced pi/2.
+Simple stock-zero guard: S=0, Sdot=0, Sddot=8(a^2+beta^2)>0.
+P13=I-ee^T-bb^T rank13; A0-invariant, F isometric on P13.
+First refined transverse R^T R=P13; generator mismatch bound ||E x||>=||x|| for x in P13.
+Unit old top first root pi/4: Q165 continuous but derivative jump squared norm9.
+13 exact tests PASS. Source-selected event: OPEN. Physical promotion: 0.
+ZIP SHA256: 5a660a3b739e09e4c4707e0b56ec80901ec777ea60d677a720c0a384f6885119

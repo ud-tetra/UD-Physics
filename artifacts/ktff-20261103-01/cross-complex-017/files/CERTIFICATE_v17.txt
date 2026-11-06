@@ -1,0 +1,15 @@
+UD-Physics Discovery K4 cross-complex run v1.7
+Source: ud-tetra/UD-Physics main@234f54471c32cc9ad4873cd8042103fa19795909
+Carrier: K0 graded (4,6,4,1), K1 graded (5,10,10,4); H0=I15, H1=I29.
+Signed chain map: D1 F=F D0; F^T F-I15=3 e_top e_top^T.
+All-state Q165 defect: ||Fx||^2-||x||^2=3 c_parent_top^2.
+Prepared unit shell b=B3_old e_top/2; w=A1 b=-F3 e_top/2.
+Exact postevent flow: A1 b=w, A1 w=-b; top stock sin(u)^2; shell cos(u)^2.
+Original same shell state: A0^2 b=-4 b; formal old frequency 2, new frequency 1.
+Conditional 10-face masks: 1024 total, 4 S4-invariant, 2 retain B2 diag(h) B3=0.
+Q171 sign alias: A=d-d^T gives top stock derivative -2 B3 c2 c3.
+Source Q171 literal has +2 B3 c2 c3; shared-convention sign unresolved.
+Source-selected complex-change event: OPEN. Physical promotion: 0.
+Local exact tests: 11/11 PASS; external non-constructor review: NOT_RUN.
+Archive: UD_K4_CROSS_COMPLEX_ADMISSION_v1.7.zip
+Archive SHA256: 1f4c8afb5fba580b3e5edf719deb61d772c8593f2fb07a19a21247ed3d5d7ae0

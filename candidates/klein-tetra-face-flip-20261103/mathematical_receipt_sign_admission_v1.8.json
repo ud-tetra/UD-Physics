@@ -1,0 +1,356 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-K4-Q171-SIGN-ADMISSION-018",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "session_id": "ktff-20261103-01",
+  "question": "Can the frozen Q169 and Q171 face/top currents be reconciled under identical signed simplicial boundaries, and does the exact Q165 defect determine a source-selected local 1-to-4 event or merely a conditional top-zero eligibility criterion?",
+  "evidence_labels": [
+    "EXACT",
+    "DERIVED",
+    "CANDIDATE",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "C_OLD",
+      "symbol": "C0,A0",
+      "object_type": "filled signed tetrahedron real graded chain and Q169 skew generator",
+      "definition": "K0=[0123], grades (4,6,4,1), D0 signed boundary, A0=D0−D0^T",
+      "domain": "C_*(K0;R), total dimension15",
+      "codomain": "same for A0",
+      "coefficient_domain": "Z boundary and Q exact audits, R phase",
+      "units": "formal native chain amplitude, u dimensionless",
+      "basis_orientation": "ascending simplex vertex order",
+      "metric_measure": "H0=I15",
+      "origin": "source QPB1 v1.0",
+      "exact_expression": "A0 e=2b,A0 b=−2e,b=B3old e/2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1",
+        "LEDGER"
+      ],
+      "assumption_ids": [
+        "UNIT"
+      ],
+      "dependency_ids": [],
+      "normalization": "A=D−D^T"
+    },
+    {
+      "object_id": "C_NEW",
+      "symbol": "C1,A1",
+      "object_type": "K4 centroid 1-to-4 signed real simplicial chain",
+      "definition": "grades (5,10,10,4), B3new full column rank4, A1=D1−D1^T",
+      "domain": "C_*(K1;R), dimension29",
+      "codomain": "same",
+      "coefficient_domain": "Z/Q and R",
+      "units": "native chain amplitude",
+      "basis_orientation": "ascending new vertex4 orientations",
+      "metric_measure": "H1=I29",
+      "origin": "source Pachner transport",
+      "exact_expression": "D1²=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PACHNER"
+      ],
+      "assumption_ids": [
+        "UNIT"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit coefficients"
+    },
+    {
+      "object_id": "F",
+      "symbol": "F",
+      "object_type": "unique integral degree-one boundary-identity subdivision chain map",
+      "definition": "old lower14 unchanged, parent top becomes oriented sum four children",
+      "domain": "C0",
+      "codomain": "C1",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "signed top column",
+      "metric_measure": "F^TF=diag(I14,4)",
+      "origin": "source Pachner v0.1 and v1.7",
+      "exact_expression": "F^TF−I15=3ee^T",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PACHNER",
+        "V17"
+      ],
+      "assumption_ids": [
+        "UNIT",
+        "BOUNDARY"
+      ],
+      "dependency_ids": [
+        "C_OLD",
+        "C_NEW"
+      ],
+      "normalization": "no top amplitude rescale"
+    },
+    {
+      "object_id": "CURRENT",
+      "symbol": "Jf←tau,Jtau←f",
+      "object_type": "opposite signed face/top native stock currents",
+      "definition": "Jf←tau=2 B3(f,tau)c_face c_top, Jtau←f=−Jf←tau",
+      "domain": "C2⊕C3",
+      "codomain": "paired real signed stock derivatives",
+      "coefficient_domain": "Q exact sign",
+      "units": "squared native amplitude per formal u",
+      "basis_orientation": "single shared B3 and A=D−D^T",
+      "metric_measure": "unit Q165",
+      "origin": "derived from Q169; Q171 literal convention collision",
+      "exact_expression": "dot S_top=−2∑ B3 cface ctop",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [
+        "SAME_B3"
+      ],
+      "dependency_ids": [
+        "C_NEW"
+      ],
+      "normalization": "inward/outward alias requires source amendment"
+    },
+    {
+      "object_id": "GUARD",
+      "symbol": "Adm_top",
+      "object_type": "candidate first simple-zero-crossing admission predicate",
+      "definition": "S_top=a²=0, ∂u²S_top>0; optional first positive root",
+      "domain": "old real chain state and formal A0 history",
+      "codomain": "Boolean allow/deny if controller added",
+      "coefficient_domain": "R and symbolic trig",
+      "units": "formal native u only",
+      "basis_orientation": "signed top and face pair",
+      "metric_measure": "unit Q165 stock, S4 invariant",
+      "origin": "new source-constructible rule, not source-selected",
+      "exact_expression": "a(u)=a cos2u−beta sin2u; ddot S|root=8(a²+beta²)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1",
+        "V17"
+      ],
+      "assumption_ids": [
+        "CHOSEN_TRIGGER"
+      ],
+      "dependency_ids": [
+        "F",
+        "C_OLD"
+      ],
+      "normalization": "no physical event seconds"
+    },
+    {
+      "object_id": "P13",
+      "symbol": "P13",
+      "object_type": "old A0-invariant no-defect subspace projector",
+      "definition": "I15−ee^T−bb^T, b=B3old e/2",
+      "domain": "C0",
+      "codomain": "C0",
+      "coefficient_domain": "Q",
+      "units": "none",
+      "basis_orientation": "native K4",
+      "metric_measure": "H0=I15",
+      "origin": "derived and verified using previous v1.1 R Gram",
+      "exact_expression": "rank13,[A0,P13]=0; R^TR=P13 for R=(I−Π)A1F",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "V11",
+        "V17"
+      ],
+      "assumption_ids": [
+        "UNIT"
+      ],
+      "dependency_ids": [
+        "F",
+        "C_NEW"
+      ],
+      "normalization": "F induced Gram"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "74fe8f61856792fda717f2fffe8d3ed9a6564da2",
+      "section_or_object_id": "Q165,Q166,Q169,Q170,Q171 positive-B3 printed top-stock derivative; Q173 masks",
+      "source_status": "frozen. Do not modify, literal sign collision remains until typed amendment"
+    },
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "74fe8f61856792fda717f2fffe8d3ed9a6564da2",
+      "section_or_object_id": "v1.0 §§1–3: A=d−d^T,J=A/2, signed S4, unit native chain metric",
+      "source_status": "read-only"
+    },
+    {
+      "source_id": "PACHNER",
+      "url_or_repo_path": "experiments/pachner-state-transport/README.md",
+      "version_or_commit": "74fe8f61856792fda717f2fffe8d3ed9a6564da2",
+      "section_or_object_id": "v0.1 1→4 signed degree-one F and Q165 unit norm defect",
+      "source_status": "read-only"
+    },
+    {
+      "source_id": "V17",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/CROSS_COMPLEX_NATIVE_TRANSFER_v1.7.md",
+      "version_or_commit": "6f65f2374cac1e59c8331b0aabbadb698f915fab",
+      "section_or_object_id": "v1.7 full rank-one defect, postevent 2D oscillator and source current gate",
+      "source_status": "prior Discovery"
+    },
+    {
+      "source_id": "V11",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/NATIVE_EIGHT_PROJECTOR_LEAKAGE_v1.1.md",
+      "version_or_commit": "43657ded3b1515b3cb11a635679efc2512e364a9",
+      "section_or_object_id": "v1.1 first refinement R^T R=I−Qtop rank13",
+      "source_status": "prior scoped Discovery"
+    }
+  ],
+  "assumptions": [
+    "Use exactly the same signed ascending B3 as both native A=D−D^T and ledger Q171 literal sign comparator",
+    "Use original Q165 H=I on each complex and the unique signed grade-preserving boundary-identity F",
+    "An event at top stock zero is a candidate, NOT an instruction in Q165/169/171 or QPB1 edge-quadrature event observer",
+    "Full old Q169 flow prior to event, new Q169 flow after chosen event; no global continuously varying K(u) sourced",
+    "Use formal continuous observation of top stock and its second derivative, not a physically sampled clock"
+  ],
+  "technique_plan": [
+    {
+      "technique": "signed incidence-pair conservation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "resolve algebraic top/face current signs and witness on actual B3"
+    },
+    {
+      "technique": "exact Q165 quadratic map defect",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive necessary/sufficient top-zero event eligibility"
+    },
+    {
+      "technique": "native invariant 2D oscillator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive simple root spacing, second derivative and null-state degeneracy"
+    },
+    {
+      "technique": "full signed S4 test",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "24 real simplex relabelings preserve zero-top guard and P13"
+    },
+    {
+      "technique": "projector rank and leakage metric",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "identify maximal invariant 13D eligibility and derivative mismatch lower bound"
+    },
+    {
+      "technique": "physical event time and energy calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "not sourced, physical promotion0"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "Old graded dimension15, top sign plane2, invariant complement13; new graded dimension29; F^TF top4 vs old1",
+    "reduced_expression": "norm defect3a²; 13D P13, R^TR=P13; prepared derivative mismatch squared9; first crossing π/4",
+    "factor_origins": [
+      "old native top and normalized oriented boundary b",
+      "unit 1-to-4 top Gram and signed B3"
+    ],
+    "factorization": "13 prime arises as rank15−2; 3 from 4−1 top Gram, no physical Planck identification",
+    "divisibility_gcd_lcm": "not needed for current sign or admission"
+  },
+  "clock_receipt": {
+    "clock_type": "formal native u; no SI seconds",
+    "modulus": null,
+    "residue_convention": "none",
+    "update_rule": "old a(u)=a cos2u−beta sin2u; candidate first isolated zero root selects K1",
+    "initial_phase": "arbitrary a,beta; equal-norm controls (1,±1)",
+    "coupling": "conditional carrier change and original Q169 on either side",
+    "period_claim": "isolated zero spacing π/2, event phase depends on initial preparation; no fixed clock",
+    "physical_unit_map": "NONE"
+  },
+  "dynamics_readout": {
+    "state_space": "old C15 and new C29 real graded chains",
+    "generator_or_update": "A0 and A1 fixed; event selection separate",
+    "initial_boundary_conditions": "parent signed top + outer face normalized mode, or any P13 state",
+    "conservation_and_sources": "F conserves stock iff a=0; candidate crossing continuity but derivative mismatch norm²9, new Q169 norm conserved after move",
+    "projection_and_kernel": "P13 largest invariant old isometric subspace; transverse leakage R^T R=P13",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "top-zero event hypothesis generated after source rank-one defect known; exploratory, not target-blind physical prediction",
+    "known_targets": [
+      "3a² Q165 event deficit",
+      "13D leak projector",
+      "Q171 signed mismatch"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "chosen first simple top-stock zero and ddot S>0 guard",
+      "no numerical coefficient fitted to physical target"
+    ],
+    "search_domain_and_budget": "full old15/new29 exact matrices, 24 signed S4, two modal prep controls, 13 exact tests",
+    "selection_criterion": "stock continuity plus source-selected trigger and generator/current consistency",
+    "baseline": "stay on K0 with A0 vs selected K1 plus F and A1"
+  },
+  "calculation_steps": [
+    "Freeze identical B3 sign convention and compute A_face,top=+B3, A_top,face=−B3 with pair currents",
+    "Construct literal Q171 printed plus-B3 versus direct top derivative and a concrete B3(012,0124)=-1 counterexample",
+    "Use old/new integral F^TF−I=3ee^T for iff a=0 event stock continuity",
+    "Use old A0 on top/face pair to derive a(u)=a cos2u−beta sin2u and isolated roots spacingπ/2",
+    "Compute core stock S/dotS/ddotS at root, null-state degeneracy and equal-norm phase controls π/8,3π/8",
+    "Construct P13 and prove maximal old-A0-invariant no-defect linear subspace rank13",
+    "Use source v1.1 R^T R=P13 to show exact lower bound on any generator intertwinement error on that subspace",
+    "Check prepared initial e reaches b at π/4, preserves Q165 at F, but derivative discontinuity norm²9",
+    "Verify 24 signed S4 actions, 13 exact local constructor tests and independent 2×2 current proof"
+  ],
+  "result": {
+    "exact_expression": "Q169 dot S_top=−2∑B3cfct, contrary Q171 literal plus-B3 if same B3; F stock continuity iff a=0; candidate first simple root; P13 rank13 and derivative mismatch ≥||x|| on im(P13)",
+    "approximation": null,
+    "units": "native squared chain support and formal dimensionless u",
+    "precision_and_error": "exact SymPy rational and symbolic trig, no numeric fit",
+    "scope": "fixed single K4 K0/centroid K1 signed unit metrics, changed carrier event not source-selected",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "full exact K4 old/new matrix replay",
+      "command_or_proof_path": "UD_K4_SIGN_ADMISSION_GATE_v1.8.zip/sign_admission_audit_v18.py",
+      "source_revision": "74fe8f61856792fda717f2fffe8d3ed9a6564da2",
+      "actual_result": "PASS exact 15D/29D sign, P13, residual and 24 S4 checks",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent 2D oscillator / pair-current proof",
+      "command_or_proof_path": "UD_K4_SIGN_ADMISSION_GATE_v1.8.zip/independent_modal_guard_v18.py",
+      "source_revision": "same",
+      "actual_result": "PASS exact M²=-4I, sign cancellation and core second derivative",
+      "review_relationship": "same constructor, distinct calculation"
+    },
+    {
+      "method": "local regression",
+      "command_or_proof_path": "UD_K4_SIGN_ADMISSION_GATE_v1.8.zip/test_sign_admission_v18.py",
+      "source_revision": "same",
+      "actual_result": "13/13 PASS local",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Same B3 cannot give both Q169 top derivative -2B3 and literal Q171 top derivative +2B3; direction alias needed",
+    "At top zero crossing both core stock and current vanish, as on stationary top-null states; instantaneous current-only guard fails uniqueness",
+    "Equal modal stock2 but different phases yield crossing timesπ/8 and3π/8, no universal clock",
+    "Rank13 old invariant no-stock-jump subspace is exactly the unit transverse leakage sector in the refined dynamics",
+    "Switch on prepared b has zero Q165 jump but nonzero derivative mismatch norm²9",
+    "No source-selected K(u) switch or physically measured action/current/time"
+  ],
+  "limitations": [
+    "Formal event guard hypothetical, not admitted QPB1 zero-crossing event",
+    "Q171 source wording conflict not changed; authoritative accepted amendment required",
+    "No physical event clock or Planck length/floor",
+    "Independent non-constructor review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/ktff-20261103-01/sign-admission-018/manifest.json"
+  ],
+  "next_discriminant": "Request authoritative Q171 signed-current direction amendment, then test a source-selected local first-crossing/gating law and generic cross-complex current/admission with frozen clocks and readout; otherwise freeze autonomous physical floor claims."
+}

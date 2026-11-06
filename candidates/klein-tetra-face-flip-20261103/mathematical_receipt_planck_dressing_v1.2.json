@@ -1,0 +1,273 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-PLANCK-DRESSING-012",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Does applying UD's previously sourced macroscopic dressing to native mean leakage 13/8 independently predict CODATA Planck length, and does N1=192 prove a physical smallest length?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "r_native",
+      "symbol": "13/8",
+      "object_type": "first 1-to-4 unweighted native sector-label mean squared leakage",
+      "definition": "trace(R01^TR01)/|Theta|",
+      "domain": "real K4 chain refinement C15->C29",
+      "codomain": "Q",
+      "coefficient_domain": "Q",
+      "units": "formal squared generator coefficient",
+      "basis_orientation": "native projectors Qtheta rank1+7x2",
+      "metric_measure": "unit Euclidean chain metric",
+      "origin": "v1.1 native eight projectors",
+      "exact_expression": "13/8",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "V11",
+        "LEDGER"
+      ],
+      "assumption_ids": [
+        "unit_metric",
+        "candidate_parity_assignment"
+      ],
+      "dependency_ids": [],
+      "normalization": "unweighted label mean"
+    },
+    {
+      "object_id": "dressing_rule",
+      "symbol": "Qobs=Q0(1+z_Q)",
+      "object_type": "historical general dressing relation, not an identified length map",
+      "definition": "historical v2.2 manuscript Part X generic typed output",
+      "domain": "same typed quantity Q0",
+      "codomain": "same Q after chosen z",
+      "coefficient_domain": "R",
+      "units": "same output units as Q0",
+      "basis_orientation": "not specified",
+      "metric_measure": "not specified",
+      "origin": "historical source",
+      "exact_expression": "z_length OPEN",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "MANUSCRIPT"
+      ],
+      "assumption_ids": [
+        "length_unit_map_missing"
+      ],
+      "dependency_ids": [
+        "r_native"
+      ],
+      "normalization": "OPEN"
+    },
+    {
+      "object_id": "planck_cod",
+      "symbol": "ell_P",
+      "object_type": "derived physical constant length",
+      "definition": "sqrt(hbar G/c^3) NIST CODATA2022",
+      "domain": "SI constants",
+      "codomain": "m",
+      "coefficient_domain": "measured decimal uncertainties",
+      "units": "m",
+      "basis_orientation": "none",
+      "metric_measure": "SI",
+      "origin": "NIST external comparator after target exposure",
+      "exact_expression": "1.616255(18)*10^-35 m",
+      "measured_value": "1.616255e-35 m",
+      "uncertainty": "0.000018e-35 m (1 sigma)",
+      "source_refs": [
+        "NIST"
+      ],
+      "assumption_ids": [
+        "not_native_source"
+      ],
+      "dependency_ids": [],
+      "normalization": "SI"
+    },
+    {
+      "object_id": "inverse_D",
+      "symbol": "D_req",
+      "object_type": "inverse fitted dressing factor from exposed CODATA central value",
+      "definition": "(1.616255)/(13/8) under CHOSEN 10^-35 m reference",
+      "domain": "printed rounded decimal CODATA coefficient",
+      "codomain": "dimensionless",
+      "coefficient_domain": "Q of printed decimal inputs",
+      "units": "none",
+      "basis_orientation": "none",
+      "metric_measure": "N/A",
+      "origin": "target-exposed diagnostic inverse problem",
+      "exact_expression": "323251/325000, z=-1749/325000",
+      "measured_value": null,
+      "uncertainty": "±9/812500 from printed CODATA digits",
+      "source_refs": [
+        "NIST"
+      ],
+      "assumption_ids": [
+        "L0_assumed_1e_minus_35_m"
+      ],
+      "dependency_ids": [
+        "r_native",
+        "planck_cod"
+      ],
+      "normalization": "not predicted by UD"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "V11",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/NATIVE_EIGHT_PROJECTOR_LEAKAGE_v1.1.md",
+      "version_or_commit": "43657ded3b1515b3cb11a635679efc2512e364a9",
+      "section_or_object_id": "Theorems A–C 13/8 unweighted mean",
+      "source_status": "Discovery exact conditional native math"
+    },
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
+      "section_or_object_id": "P01–P06 N1=192, P10 quarantined 32-level termination",
+      "source_status": "read-only frozen internal root counts"
+    },
+    {
+      "source_id": "MANUSCRIPT",
+      "url_or_repo_path": "User uploaded Unified Dynamics (Distinction Theory) v2.2_ Master Manuscript.pdf",
+      "version_or_commit": "v2.2, user attachment",
+      "section_or_object_id": "Part X, PDF page5 Qobs=Q0(1+z_Q)",
+      "source_status": "historical general dressing, no length z"
+    },
+    {
+      "source_id": "CAPACITY",
+      "url_or_repo_path": "User Library Pasted markdown(4).md",
+      "version_or_commit": "2026-08-09 S4-Invariant Capacity Dynamics Compatibility & Symmetrizer Audit v0.1",
+      "section_or_object_id": "VI 27/32 rehabilitation status",
+      "source_status": "QUARANTINED target-exposed 7D transfer operator, not Planck length rule"
+    },
+    {
+      "source_id": "ACTION",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/IDENTIFIABILITY_THEOREM.md",
+      "version_or_commit": "51bd7252473ecbbe3c4f5cb83011e45b5eeace09",
+      "section_or_object_id": "monomial native action anchor identifiability and units",
+      "source_status": "read-only dimensional identifiability theorem"
+    },
+    {
+      "source_id": "NIST",
+      "url_or_repo_path": "https://physics.nist.gov/cuu/pdf/all.pdf",
+      "version_or_commit": "CODATA recommended constants 2022",
+      "section_or_object_id": "Planck length sqrt(hbar G/c³)=1.616255(18)*10^-35 m",
+      "source_status": "derived physical benchmark with uncertainty"
+    }
+  ],
+  "assumptions": [
+    "No native SI length anchor or length dressing source has been supplied; a dimensional model must retain a free positive L0",
+    "Counterfactual L0=10^-35 m is a display reference chosen after physical scale exposure",
+    "27/32 7D transfer weight and 185/192 packet retention ratio do not type-match scalar length and were only tested counterfactually",
+    "CODATA printed central digits are rounded with G-related uncertainty, not exact observed physical length"
+  ],
+  "technique_plan": [
+    {
+      "technique": "fraction-first exact ratio",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive required D_req and z_req from rounded target digits without fitting them into model"
+    },
+    {
+      "technique": "SI dimension and identifiability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "show arbitrary L0 scaling leaves native ratios unchanged"
+    },
+    {
+      "technique": "quarantined historic dressing negative control",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "wrong-type 27/32 scalar test and explicit fail"
+    },
+    {
+      "technique": "hierarchical geometry limiting case",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "4^n recursion and vanishing descendant height preclude floor from 192 count alone"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "r=13/8, N1=24*8=192, CODATA printed coefficient=1616255/1000000, sigma=18/1000000",
+    "reduced_expression": "D_req=323251/325000; z_req=-1749/325000; sigma_D=9/812500; bare sigma discrepancy=2915/6",
+    "factor_origins": [
+      "native first-level leakage /8",
+      "target CODATA printed digits used only for diagnostic inverse problem"
+    ],
+    "factorization": "27/32 wrong type factor yields351/256; 185/192 wrong type yields2405/1536",
+    "divisibility_gcd_lcm": "no physical modular length inference"
+  },
+  "clock_receipt": {
+    "clock_type": "no SI clock; native unit parameter only",
+    "modulus": null,
+    "residue_convention": "not a parity-clock test",
+    "update_rule": "generic Qobs=Q0(1+z_Q) lacks z_length",
+    "initial_phase": "none",
+    "coupling": "none specified",
+    "period_claim": "not a smallest length theorem",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "K4 C15/finite Theta labels distinct from SI physical length",
+    "generator_or_update": "source native A, recursion 1-to-4",
+    "initial_boundary_conditions": "none for SI map",
+    "conservation_and_sources": "finite 192 local count, no derived metric floor; 4^n top subdivisions admissible mathematically",
+    "projection_and_kernel": "no source-identified map of squared leakage to length",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "EXPOSED: user and model saw 1.616255 Planck length before this dressing comparison",
+    "known_targets": [
+      "CODATA 2022 Planck coefficient",
+      "Planck physical length and 13/8 similarity"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "D_req and z_req are inverse-derived from printed target, never admitted source coefficients",
+      "10^-35 m reference arbitrarily fixed for comparison"
+    ],
+    "search_domain_and_budget": "generic dressing master rule, historical 27/32 transfer and 185/192 structural ratio counterfactuals, exact normalization inverse",
+    "selection_criterion": "independent parameter-free predicted length with native-to-SI units within uncertainty",
+    "baseline": "bare 13/8 under arbitrary SI reference"
+  },
+  "calculation_steps": [
+    "Retrieve source v2.2 master dressing, source-type unit map, historical 27/32 quarantine and native 13/8",
+    "Identify absence of z_length or SI reference L0",
+    "Compute bare 1.625 vs CODATA 1.616255(18) under chosen 10^-35m and error~0.541%, 2915/6 nominal sigma",
+    "Invert printed target to D_req=323251/325000 and z=-1749/325000 (FIT diagnostic)",
+    "Show 27/32 scalar misuse yields351/256, 15.1685% low; 185/192 yields2405/1536,3.1245% low",
+    "Prove no absolute length from pure dimensionless data under L0 rescaling",
+    "Check K4 4^n recursion permits arbitrarily small geometric descendant without stopping rule"
+  ],
+  "result": {
+    "exact_expression": "native 13/8 has no specified dimensionful dressing; under chosen 10^-35m bare miss 0.5411%, required z=-1749/325000 target-derived",
+    "approximation": "decimal comparisons rounded from exact rational printed CODATA digits",
+    "units": "native dimensionless -> SI m conversion OPEN",
+    "precision_and_error": "NIST 2022 uncertainty as stated, five local exact tests pass",
+    "scope": "no source-selected length-scale/dressing: non-identifiability, not falsification of a future specified UD bridge",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "fraction arithmetic and source typed controls",
+      "command_or_proof_path": "UD_13_OVER_8_PLANCK_DRESSING_GATE_v1.2.zip/planck_dressing_audit_v12.py",
+      "source_revision": "2026-11-05 source audited",
+      "actual_result": "PASS exact Fractions and 5/5 local unit tests",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "No precise macro length dressing z_length found; universal master rule lacks needed parameter and units",
+    "wrong-type 27/32 quarantined boundary-weight scalar fails numerical comparison",
+    "choosing z_req is target-inverse calibration despite independently starting with 13/8",
+    "finite packet count192 does not impose smallest Euclidean spatial interval when recursive 4^n subdivision remains allowed"
+  ],
+  "limitations": [
+    "Historical 7D dressing is quarantined; must not be promoted to length law",
+    "Planck length is derived from uncertain G and exact hbar,c, not exact observed ruler",
+    "No new empirical experiment or held-out check, no independent mathematical peer review",
+    "Physical promotion=0"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Recover a source-selected length-specific macroscopic dressing and independent SI length/action anchor; target-blind preregister formula, units, measurement uncertainty and null, then test genuinely held-out physics. Otherwise stop numerical 13/8 Planck identification."
+}

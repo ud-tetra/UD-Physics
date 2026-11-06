@@ -1,0 +1,306 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-K4-ACTION-METRIC-021",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Do frozen UD action and constitutive sources independently select the non-diagonal 1→4 barycentric positive metric/contact, rather than the v2.0 metric being inverse-constructed for continuity?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "old",
+      "symbol": "C0,D0,A0",
+      "object_type": "filled oriented K4 real graded simplex chain",
+      "definition": "grades (4,6,4,1), total15, A0=D0−D0T",
+      "domain": "R15",
+      "codomain": "R15",
+      "units": "formal unit-coefficient amplitudes",
+      "metric_measure": "I15",
+      "coefficient_domain": "Z incidence,Q matrices",
+      "basis_orientation": "ascending simplices",
+      "origin": "QPB1 v1.0"
+    },
+    {
+      "object_id": "refined",
+      "symbol": "C1,D1,A1",
+      "object_type": "1-to-4 centroid K4 chain",
+      "definition": "grades (5,10,10,4), total29, native A1=D1−D1T",
+      "domain": "R29",
+      "codomain": "R29",
+      "units": "formal amplitudes",
+      "metric_measure": "I29",
+      "coefficient_domain": "Z incidence,Q matrices",
+      "basis_orientation": "ascending simplices",
+      "origin": "Pachner state transport v0.1"
+    },
+    {
+      "object_id": "chain_map",
+      "symbol": "F",
+      "object_type": "integral grade-preserving subdivision chain map",
+      "definition": "D1F=FD0, FTF=diag(I14,4)",
+      "domain": "R15",
+      "codomain": "R29",
+      "units": "none",
+      "metric_measure": "original H0/H1 unit",
+      "coefficient_domain": "Z",
+      "basis_orientation": "signed oriented degree-one fundamental class",
+      "origin": "Pachner source v0.1"
+    },
+    {
+      "object_id": "retraction",
+      "symbol": "P,Q",
+      "object_type": "rational barycentric chain retraction and complementary idempotent",
+      "definition": "PF=I15,PD1=D0P,Q=I-FP",
+      "domain": "P:R29→R15,Q:R29→R29",
+      "codomain": "as specified",
+      "units": "none",
+      "metric_measure": "not yet a physical projection",
+      "coefficient_domain": "Q",
+      "basis_orientation": "centroid4→old vertex average",
+      "origin": "v2.0 inverse construction, not source selected"
+    },
+    {
+      "object_id": "family",
+      "symbol": "H_t",
+      "object_type": "continuous positive family of non-diagonal new-carrier chain metrics",
+      "definition": "Ht=PTP+tQTQ, t>0",
+      "domain": "R29",
+      "codomain": "dual R29",
+      "units": "native formal amplitude²",
+      "metric_measure": "positive but not original I29",
+      "coefficient_domain": "R positive t; rational sample t",
+      "basis_orientation": "signed original/new simplex basis",
+      "origin": "v2.1 theorem from v2.0 P"
+    },
+    {
+      "object_id": "generator",
+      "symbol": "A_t",
+      "object_type": "changed Ht metric-Hodge skew generator",
+      "definition": "D1−Ht^-1 D1T Ht",
+      "domain": "R29",
+      "codomain": "R29",
+      "units": "formal inverse u",
+      "metric_measure": "Ht",
+      "coefficient_domain": "Q sample/R positive t",
+      "basis_orientation": "signed simplex basis",
+      "origin": "v2.1 exact conditional"
+    },
+    {
+      "object_id": "newonly",
+      "symbol": "y",
+      "object_type": "centroid-complement chain state",
+      "definition": "y=Qe4, Py=0, yTy=5/4",
+      "domain": "R29",
+      "codomain": "scalar H norm",
+      "units": "formal squared amplitude",
+      "metric_measure": "yT Ht y=5t/4",
+      "coefficient_domain": "Q",
+      "basis_orientation": "centroid register and original vertices",
+      "origin": "v2.1 explicit nonselection witness"
+    }
+  ],
+  "source_refs": [
+    {
+      "key": "Q165_Q169",
+      "path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version": "main@322ea849bfb949e4136a898e05d9d7fa0ec7604f",
+      "section": "Q165–Q171/Q173/Q177–179",
+      "status": "frozen fixed-complex unit metric; no P,H,event"
+    },
+    {
+      "key": "O09_O14",
+      "path": "experiments/action-normalization-audit/README.md",
+      "version": "v1.0 main@322ea849",
+      "section": "§§1–3 O09–O15 and Q282–288",
+      "status": "native phase/action unit, no intercomplex metric"
+    },
+    {
+      "key": "ACTION_IDENT",
+      "path": "experiments/action-normalization-audit/sources/IDENTIFIABILITY_THEOREM.md",
+      "version": "v0.1 main@322ea849",
+      "section": "monomial anchor identifiability theorem",
+      "status": "native-to-SI map separate"
+    },
+    {
+      "key": "PACHNER",
+      "path": "experiments/pachner-state-transport/README.md",
+      "version": "v0.1 main@322ea849",
+      "section": "§1→4",
+      "status": "source F non-isometric"
+    },
+    {
+      "key": "NATIVE",
+      "path": "experiments/qpb1-local-generators/README.md",
+      "version": "v1.0 main@322ea849",
+      "section": "§§1–3",
+      "status": "unit metric and signed generator"
+    },
+    {
+      "key": "RENEWAL",
+      "path": "UD captures/2026-10-13T022858Z-codex-subdivision-candidate-d14acda4/UD_BARYCENTRIC_RENEWAL_CANDIDATE_v0.1.md",
+      "version": "2026-10-13",
+      "section": "§§1–4",
+      "status": "different 1→24 candidate, source selector absent"
+    },
+    {
+      "key": "SECTOR",
+      "path": "UD captures/2026-10-18T201837Z-codex-W-source-coverage-d8374ec5/sources/UD_PACHNER_CANONICAL_EVENT_SECTOR_SELECTOR_v0.1.md",
+      "version": "2026-09-18",
+      "section": "§§1–11",
+      "status": "different ∂Δ4 2→3 event sector"
+    },
+    {
+      "key": "HIST",
+      "path": "Unified Dynamics (Distinction Theory) v2.2_ Master Manuscript.pdf",
+      "version": "v2.2, 6-page user attachment, sha256 01ac4d1daceed22cfac52233de05f7e16a49626d2d1e1ada1b57003f2f29f3ef",
+      "section": "Part II X4/X10, Parts III V X",
+      "status": "qualitative admissibility and generic dressing; no 29D H"
+    },
+    {
+      "key": "V20",
+      "path": "experiments/klein-tetra-face-flip-20261103/NATIVE_CONTACT_METRIC_INTERFACE_v2.0.md",
+      "version": "prior branch@c4b26a68a34045e379e49dd0ba220d9765dfdf52",
+      "section": "Theorem 3",
+      "status": "conditional inverse-constructed barycentric metric"
+    }
+  ],
+  "assumptions": [
+    "Source Q165/Q169 metric I for the original native carrier; conditional H_t is a changed metric on the refined carrier, not accepted",
+    "Rational P is the prior constructed barycentric retraction; although symmetric, it is not a source-selected physical operator",
+    "Allow all real t>0, no fitting to event smoothness, Planck length or SI action",
+    "Event source and Q171 signed-current amendment remain OPEN; issue #338 still pending"
+  ],
+  "technique_plan": [
+    {
+      "technique": "typed source and historical audit",
+      "applicability": "APPLIED",
+      "reason": "source rows and carrier mismatch"
+    },
+    {
+      "technique": "full exact rational 29D K4 retraction and parameterized Hodge adjoint",
+      "applicability": "APPLIED",
+      "reason": "prove metric freedom under same interface"
+    },
+    {
+      "technique": "abstract independent-form direct sum model",
+      "applicability": "APPLIED",
+      "reason": "separate all-t algebra from K4 implementation"
+    },
+    {
+      "technique": "positive metric and S4 tests",
+      "applicability": "APPLIED",
+      "reason": "check t=1/4,1,2 and 24 signed actions"
+    },
+    {
+      "technique": "original Q165 negative test",
+      "applicability": "APPLIED",
+      "reason": "native unit metric and scalar rescaling can't make integral F isometry"
+    },
+    {
+      "technique": "physical Planck-scale comparison",
+      "applicability": "N/A",
+      "reason": "not part of target-blind native metric selection"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "14 old lower-grade +1 old top, refined total29, ker P dim14",
+    "reduced_expression": "F^TF=diag(I14,4); Ht=P^TP+tQ^TQ, yTHt y=5t/4",
+    "factor_origins": [
+      "centroid averaging of four original vertices",
+      "14 new-chain kernel coordinates",
+      "signed K4 incidence"
+    ],
+    "factorization": "3/5 for unit centroid e4 differs from13/19 for unit new edge04, forbids one t for both",
+    "divisibility_gcd_lcm": "not a physical clock or prime-factor bridge"
+  },
+  "clock_receipt": {
+    "clock_type": "formal native u",
+    "modulus": null,
+    "residue_convention": "none",
+    "update_rule": "A_t=D1−Ht^-1D1T Ht, A_tF=FA0 for all t",
+    "initial_phase": "arbitrary parent x and new-only kernel y",
+    "coupling": "changed metric on kerP not sourced",
+    "period_claim": "no physical clock",
+    "physical_unit_map": "NONE"
+  },
+  "dynamics_readout": {
+    "state_space": "old C15, new C29, imF⊕kerP",
+    "generator_or_update": "source old A0; changed new A_t (t-independent)",
+    "conservation_and_sources": "Ht stock invariant under A_t for fixed new complex, inherited old image unit; new-only stock depends on t",
+    "projection_and_kernel": "P chain retraction, Q rank14, both D-invariant",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "internal exact intertwining target fixed before v2.0 H inverse construction; v2.1 is nonselection audit",
+    "known_targets": [
+      "v2.0 exact interface identities and H at t=1"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "t symbolic positive, no particular t selected"
+    ],
+    "search_domain_and_budget": "all t by proof, t=1/4,1,2 exact samples, 24 S4, 10 local tests",
+    "selection_criterion": "an independently sourced metric uniquely fixed without imposing matching",
+    "baseline": "native H1=I29, non-isometric F"
+  },
+  "calculation_steps": [
+    "Read source ledger, action unit, QPB1, Pachner, historical UD and manuscript source statuses",
+    "Rebuild original integral F and barycentric rational P, check PF=I, PD1=D0P, QD1=D1Q",
+    "Prove Ht positive and F isometric for all t>0",
+    "Prove A_tF=FA0 and A_t independent of t from D1-invariant direct sum",
+    "Verify full exact matrices at t=1/4,1,2 with all signed S4 actions",
+    "Compute explicit centroid-complement stock5t/4 and conflicting newborn unit-coordinate normalizations t=3/5 vs13/19",
+    "Confirm no source-selected t or other independent metric/contact, park physical claim"
+  ],
+  "result": {
+    "exact_expression": "H_t=P^TP+t(I−FP)^T(I−FP), t>0; all satisfy FTHtF=I and A_tF=FA0 and same A_t, yet distinct newborn norm 5t/4",
+    "approximation": null,
+    "units": "native formal squared support; no SI",
+    "precision_and_error": "exact symbolic rational matrices and direct-sum algebra",
+    "scope": "given v2.0 chosen P, original K4 centroid1→4 F, altered Hodge adjoint; source unit-metric no-go remains",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "full exact K4 matrix family",
+      "command_or_proof_path": "UD_K4_ACTION_METRIC_SELECTION_AUDIT_v2.1.zip/action_metric_selector_v21.py",
+      "actual_result": "PASS t=1/4,1,2 and 24 signed S4 cases",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent-form abstract 4D direct sum",
+      "command_or_proof_path": "UD_K4_ACTION_METRIC_SELECTION_AUDIT_v2.1.zip/independent_metric_family_v21.py",
+      "actual_result": "PASS symbolic all t>0",
+      "review_relationship": "same constructor independent algebra"
+    },
+    {
+      "method": "10 exact regression tests",
+      "command_or_proof_path": "UD_K4_ACTION_METRIC_SELECTION_AUDIT_v2.1.zip/test_action_selector_v21.py",
+      "actual_result": "PASS 10/10 local",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "issue #338 source decision",
+      "command_or_proof_path": "https://github.com/ud-tetra/UD-Physics/issues/338",
+      "actual_result": "OPEN, no comments or authoritative acceptance",
+      "review_relationship": "pending"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Original Q165 H=I and original integral F cannot satisfy old/new isometry.",
+    "Positive barycentric metric H_t and exact full intertwining do not select t or newborn action stock.",
+    "No t assigns unit H_t norm to both centroid vertex and new edge04 basis vectors.",
+    "Historical qualitative formation-floor grammar gives no 1→4 constitutive predicate or intercomplex contact."
+  ],
+  "limitations": [
+    "No source-selected positive intercomplex metric or event contact found in examined sources; unpublished sources not ruled out.",
+    "Built metrics are inverse-selected relative to desired interface and not source Q165/Q169.",
+    "Q171 amendment not accepted, non-constructor review NOT_RUN, physical promotion0."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "SOURCE_BLOCKED: park physical 1→4 metric/contact selection until a source-authoritative independent newborn action/metric term and event rule exists; request external review of exact conditional family."
+}

@@ -1,0 +1,709 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ktff-20261103-01",
+  "runtime": "GPT-6; GitHub connector write and local exact Python compute",
+  "task": "klein-tetra-face-flip-20261103",
+  "goal": "Test Klein-bottle face flip vs tetrahedral shell and construct minimal orientation seam transport",
+  "created_at": "2026-11-03T23:20:00Z",
+  "base_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "klein-tetra-face-flip-20261103": {
+      "ref": "claims/klein-tetra-face-flip-20261103",
+      "commit": "667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4",
+      "status": "held"
+    }
+  },
+  "checks": [
+    {
+      "name": "108 exhaustive face pairing constructor enumeration",
+      "status": "PASS"
+    },
+    {
+      "name": "Klein integral boundary and O2 exact matrix check",
+      "status": "PASS"
+    },
+    {
+      "name": "four separately formulated local unit checks",
+      "status": "PASS"
+    },
+    {
+      "name": "repository integrity/CI",
+      "status": "PASS",
+      "workflow_run_id": 41739261769,
+      "source_head": "16c5225c60807d4778dc8c0a66024129730c0cfd",
+      "scope": "GitHub Discovery integrity validates records and capture, not mathematical truth"
+    },
+    {
+      "name": "external non-constructor mathematical review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "local four independent-form topology unit tests",
+      "status": "PASS",
+      "scope": "same-constructor suite run in local Python, 4/4"
+    },
+    {
+      "name": "v0.2 triangle lift Smith and orientation holonomy",
+      "status": "PASS",
+      "method": "local exact SymPy 1.14"
+    },
+    {
+      "name": "v0.2 independent Schreier CW",
+      "status": "PASS",
+      "method": "separate cellular presentation, same constructor"
+    },
+    {
+      "name": "v0.2 local four checks",
+      "status": "PASS",
+      "method": "4 unit tests"
+    },
+    {
+      "name": "external non-constructor mathematical review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.3 exact 60D differential ranks, nilpotency and Hodge spectrum",
+      "status": "PASS",
+      "method": "local SymPy exact 60x60 matrices, same constructor"
+    },
+    {
+      "name": "v0.3 independent factor-Laplacian spectral convolution",
+      "status": "PASS",
+      "method": "separate 4D CW + 15D K4 exact factor calculation"
+    },
+    {
+      "name": "v0.3 four unit checks",
+      "status": "PASS",
+      "method": "local tests, not external review"
+    },
+    {
+      "name": "v0.3 independent non-constructor review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.4 72-tetra exact incidence and rational ranks",
+      "status": "PASS",
+      "method": "local exact SymPy"
+    },
+    {
+      "name": "v0.4 tetrahedral orientability",
+      "status": "PASS",
+      "method": "all 72 tetrahedra, incompatible orientation constraints"
+    },
+    {
+      "name": "v0.4 twisted cellular chain-map compatibility",
+      "status": "PASS",
+      "method": "exact integer rank (2,5,4,1)"
+    },
+    {
+      "name": "v0.4 signed S4 seam completions",
+      "status": "PASS",
+      "method": "two exact 15x15 native K4 chain actions"
+    },
+    {
+      "name": "v0.4 explicit 72-simplicial to twisted cellular map",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.4 source-selected physical framed readout",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "external non-constructor review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.4 revised integral even-S4-equivariant interval-to-K4 bridge",
+      "status": "PASS",
+      "method": "exact local integer matrices, Gram non-isometry"
+    },
+    {
+      "name": "v0.4 odd S4 fixed-vertex dimension no-go",
+      "status": "PASS",
+      "method": "exact 4x4 permutation fixed-space rank one"
+    },
+    {
+      "name": "v0.4 full 72-tet twisted local-coefficient subdivision",
+      "status": "NOT_RUN",
+      "reason": "ordinary 72-tet boundary only, twisted CW bridge separately verified"
+    },
+    {
+      "name": "v0.4 physically source-selected frame readout",
+      "status": "NOT_RUN",
+      "reason": "two source-compatible signed S4 packet completions disagree"
+    },
+    {
+      "name": "v0.4 even equivariant bridge dynamical leakage",
+      "status": "PASS",
+      "method": "exact native 15x15 A_K test rank2, Frobenius squared8"
+    },
+    {
+      "name": "twisted 72-cell exact boundary and Smith",
+      "status": "PASS"
+    },
+    {
+      "name": "rational harmonic cellular map",
+      "status": "PASS"
+    },
+    {
+      "name": "five-dimensional native invariant hull",
+      "status": "PASS"
+    },
+    {
+      "name": "v0.5 local regression suite",
+      "status": "PASS"
+    },
+    {
+      "name": "integral local geometric subdivision",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "external non-constructor review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.6 exact integer 72-Delta to minimal CW strong deformation retract",
+      "status": "PASS",
+      "method": "165 unit-pivot complement cancellations, 3 minimal-CW cancellations, full integer chain-homotopy matrices verified locally"
+    },
+    {
+      "name": "v0.6 independent-form sparse matrix receipt readback",
+      "status": "PASS",
+      "method": "16 saved integer matrix blocks checked by a separate local script; same constructor"
+    },
+    {
+      "name": "v0.6 deterministic matrix JSON reproduction",
+      "status": "PASS",
+      "method": "local full replay produced byte-identical 120KB matrix receipt"
+    },
+    {
+      "name": "v0.6 strict geometric reverse-map locality",
+      "status": "NOT_RUN",
+      "reason": "integral algebraic Morse retraction only; finite bounded spatial support not audited"
+    },
+    {
+      "name": "v0.6 non-constructor mathematical review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.7 full-support graph-distance audit",
+      "status": "PASS",
+      "method": "local exact BFS for all 250 nonzero integral P entries"
+    },
+    {
+      "name": "v0.7 endpoint-anchored refinement no-go",
+      "status": "PASS",
+      "method": "symbolic midpoint argument and m=2..64 integer controls"
+    },
+    {
+      "name": "v0.7 exact coarse/fine skew mismatch",
+      "status": "PASS",
+      "method": "348x348 vs 12x12 exact integer matrices, rank and norm"
+    },
+    {
+      "name": "v0.7 non-constructor review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.8 exact 348D/12D induced metric and CW currents",
+      "status": "PASS",
+      "method": "local full SymPy v0.6 integral subdivision replay, 11 local incidence pairs"
+    },
+    {
+      "name": "v0.8 348D Galerkin residual and flux",
+      "status": "PASS",
+      "method": "exact rank11 Frobenius²157 weighted²242/3"
+    },
+    {
+      "name": "v0.8 unit-weight interval refinement clock control",
+      "status": "PASS",
+      "method": "symbolic m formula and seven exact m=1..64 calculations"
+    },
+    {
+      "name": "v0.8 physical clock and full generator intertwinement",
+      "status": "OPEN",
+      "reason": "nonzero fine-image residual; no physical unit map"
+    },
+    {
+      "name": "v0.8 independent non-constructor review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v0.9 K4 actual 1→4→16 exact chain maps and S4",
+      "status": "PASS",
+      "method": "24 signed relabelings; two integral chain maps and composite"
+    },
+    {
+      "name": "v0.9 exact Gram and generator residuals",
+      "status": "PASS",
+      "method": "local SymPy 15/29/85D exact matrices, squared residuals13,52,151/4"
+    },
+    {
+      "name": "v0.9 native spectrum clock no-go",
+      "status": "PASS",
+      "method": "exact characteristic polynomials K0,K1,induced"
+    },
+    {
+      "name": "v0.9 six local tests",
+      "status": "PASS",
+      "method": "six constructor regressions; not external peer review"
+    },
+    {
+      "name": "v0.9 external non-constructor review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.0 S4 opposite-pair parity orbit classification",
+      "status": "PASS",
+      "method": "24 exact actions, four orbit sizes 1,3,3,1"
+    },
+    {
+      "name": "v1.0 exact raw-state auxiliary projectors",
+      "status": "PASS",
+      "method": "1024 toy states, rank3 projection, 128 per fiber; NOT native real K4"
+    },
+    {
+      "name": "v1.0 uniform vs nonuniform positive S4 weights",
+      "status": "PASS",
+      "method": "exact Fraction alternative sector allocations"
+    },
+    {
+      "name": "v1.0 second refinement and normalization controls",
+      "status": "PASS",
+      "method": "native leakage13,52,151/4 and gain/metric factor2 controls"
+    },
+    {
+      "name": "v1.0 local exact regression tests",
+      "status": "PASS",
+      "method": "6/6 same-constructor"
+    },
+    {
+      "name": "v1.0 non-constructor math review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.1 native C15 exact eight orthogonal projectors",
+      "status": "PASS",
+      "method": "SymPy rational full 15D matrices, ranks 1+7x2; no added fiber"
+    },
+    {
+      "name": "v1.1 signed S4 covariance",
+      "status": "PASS",
+      "method": "all 24 K4 vertex relabelings"
+    },
+    {
+      "name": "v1.1 rank13 first leakage Gram identity",
+      "status": "PASS",
+      "method": "full exact R01^T R01=I-Q111 matrix, 13 unit singular values"
+    },
+    {
+      "name": "v1.1 source-native dynamics exchange",
+      "status": "PASS",
+      "method": "J sends each weight1 projector to complementary weight2; invariant 4D sums"
+    },
+    {
+      "name": "v1.1 second-step inherited and complement leakage",
+      "status": "PASS",
+      "method": "27 plus25 equals52; composite151/4 and gram-A commutator rank14"
+    },
+    {
+      "name": "v1.1 eight local regressions including independent-form v0.9",
+      "status": "PASS",
+      "method": "8/8 same researcher, separate construction replay"
+    },
+    {
+      "name": "v1.1 true constitutive Theta readout and Planck bridge",
+      "status": "OPEN",
+      "reason": "source does not prescribe parity-label assignment or physical unit map"
+    },
+    {
+      "name": "v1.1 non-constructor review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.2 source-specific dressing and dimensional bridge audit",
+      "status": "PASS",
+      "method": "v2.2 manuscript Part X, quarantined 27/32 symmetrizer, action normalization O10–O14"
+    },
+    {
+      "name": "v1.2 exact CODATA inverse dressing and counterfactual tests",
+      "status": "PASS",
+      "method": "5 of 5 local Fraction/Decimal tests; CODATA derived comparator"
+    },
+    {
+      "name": "v1.2 independent source length dressing",
+      "status": "OPEN",
+      "reason": "no source-selected z_length or SI unit anchor"
+    },
+    {
+      "name": "v1.2 physical Planck promotion",
+      "status": "BLOCKED",
+      "reason": "target-exposed and no independent dimensional bridge"
+    },
+    {
+      "name": "v1.3 exact factorization and modular clock orders",
+      "status": "PASS",
+      "method": "SymPy primes, gcd, n_order, Z8/Z24/Z192 residue enumerations"
+    },
+    {
+      "name": "v1.3 native K4 phase and paired-sector strobe",
+      "status": "PASS",
+      "method": "exact 15x15 matrices U(pi/4)^4=I and middle label pair swaps"
+    },
+    {
+      "name": "v1.3 192 address covariance group and max order",
+      "status": "PASS",
+      "method": "exhaustive 192 product-group elements and conditional S4/J orbits"
+    },
+    {
+      "name": "v1.3 64 S4-equivariant Theta-only maps no-eight-cycle",
+      "status": "PASS",
+      "method": "independent exact exhaustive enumeration;4 bijections max cycle2"
+    },
+    {
+      "name": "v1.3 ten exact local regression tests",
+      "status": "PASS",
+      "method": "10/10 constructor unit tests"
+    },
+    {
+      "name": "v1.3 physical-time or Planck-floor bridge",
+      "status": "OPEN",
+      "reason": "no source-selected successor or SI time/length map"
+    },
+    {
+      "name": "v1.3 independent non-constructor review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.4 minimum six effective frame states theorem",
+      "status": "PASS",
+      "method": "S3 stabilizer proof; all 48 effective coupled states"
+    },
+    {
+      "name": "v1.4 192 S4-labelled eight-cycle candidate",
+      "status": "PASS",
+      "method": "all 4608 full-frame covariance cases with chosen f, 24 eight-cycles"
+    },
+    {
+      "name": "v1.4 exhaustive affine three-bit no-eight-cycle",
+      "status": "PASS",
+      "method": "168 GL3 matrices×8 translations; all 1344 permutations"
+    },
+    {
+      "name": "v1.4 one-opposite-pair Gray locality",
+      "status": "PASS",
+      "method": "12 directed Hamiltonian cycles, 8 single-bit transitions"
+    },
+    {
+      "name": "v1.4 exploratory 6-edge-bit S4 covariance",
+      "status": "PASS",
+      "method": "1536 frame/raw states, 36,864 group checks, eight-step return"
+    },
+    {
+      "name": "v1.4 candidate categorical conserved-current check",
+      "status": "PASS",
+      "method": "nonnegative stock ∆14, influx59−outflux45; not physical Q170"
+    },
+    {
+      "name": "v1.4 source-native projector rank no-go",
+      "status": "PASS",
+      "method": "unique rank-one Q000 prevents invertible real eight-sector permutation"
+    },
+    {
+      "name": "v1.4 ten exact constructor regression tests",
+      "status": "PASS",
+      "method": "10/10 local; no independent non-constructor replication"
+    },
+    {
+      "name": "v1.4 native selected parity clock and physical bridge",
+      "status": "OPEN",
+      "reason": "QPB1 zero-crossing observation does not select Gray successor or SI event time"
+    },
+    {
+      "name": "v1.5 exact all-depth native unit-edge boundary response recursion",
+      "status": "PASS",
+      "method": "induction w_(n+1)=(11w_n+1)/4 and closed alpha_n"
+    },
+    {
+      "name": "v1.5 independent direct rational Schur n0–3",
+      "status": "PASS",
+      "method": "exact 4x4 boundary matrix, response 1,5/4,31/16,245/64, 24 S4 checks each"
+    },
+    {
+      "name": "v1.5 independent five-vertex Kron reduction",
+      "status": "PASS",
+      "method": "symbolic old-old2w and radial1+3w, eliminate centroid"
+    },
+    {
+      "name": "v1.5 Q171 equal-norm same-shell state counterexample",
+      "status": "PASS",
+      "method": "pure top cell vs uniform four child top cells, core stocks distinct at every n"
+    },
+    {
+      "name": "v1.5 eight local exact tests",
+      "status": "PASS",
+      "method": "8/8 SymPy, same constructor"
+    },
+    {
+      "name": "v1.5 all physical observables and finite operational length floor",
+      "status": "OPEN",
+      "reason": "observer/algebra, physical threshold/metric and stopping rule not source selected"
+    },
+    {
+      "name": "v1.5 non-constructor mathematical review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.6 all-depth generation-weighted boundary Schur recursion",
+      "status": "PASS",
+      "method": "exact five-node Kron induction and closed weighted sum"
+    },
+    {
+      "name": "v1.6 independent arbitrary g,w five-node elimination",
+      "status": "PASS",
+      "method": "SymPy symbolic Schur check"
+    },
+    {
+      "name": "v1.6 direct K4 weighted graph depth0–3, S4",
+      "status": "PASS",
+      "method": "rational full graph elimination for unit and quarter-proxy, 24 S4 checks each level"
+    },
+    {
+      "name": "v1.6 positive-edge no finite exact plateau and r<4/11 threshold",
+      "status": "PASS",
+      "method": "exact increment and geometric-series cases"
+    },
+    {
+      "name": "v1.6 weighted fixed-graph skew current and original Q169 metric uniqueness",
+      "status": "PASS",
+      "method": "H_W-skew identity and connected-Hasse scalar diagonal lemma"
+    },
+    {
+      "name": "v1.6 source native cross-complex admission and Q165 norm conservation",
+      "status": "OPEN",
+      "reason": "top-cell stock1→4 under integral chain transport; source trigger/reservoir not specified"
+    },
+    {
+      "name": "v1.6 local exact regression tests",
+      "status": "PASS",
+      "method": "8/8 local SymPy tests; repository code source equivalent only"
+    },
+    {
+      "name": "v1.6 full GitHub repo integration validation",
+      "status": "NOT_RUN",
+      "reason": "connector-only isolated Discovery branch, no integration; CI integrity checked separately"
+    },
+    {
+      "name": "v1.6 non-constructor mathematical review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.7 exact all-state F subdivision Q165 stock defect",
+      "status": "PASS",
+      "method": "rank B3_new=4 and full 15x15 F^TF−I15=3 eeT"
+    },
+    {
+      "name": "v1.7 conservative Q169 new top occupation from shell",
+      "status": "PASS",
+      "method": "exact A1 b=w,A1 w=−b and trigonometric solution"
+    },
+    {
+      "name": "v1.7 parent/new response contrast",
+      "status": "PASS",
+      "method": "same b, A0²b=−4b vs A1²b=−b"
+    },
+    {
+      "name": "v1.7 1024 Q173-like face mask nilpotency",
+      "status": "PASS",
+      "method": "all binary masks, four S4 invariants, two B2 diag(h) B3 nilpotent"
+    },
+    {
+      "name": "v1.7 literal Q171 versus Q169 signed current",
+      "status": "OPEN_CONVENTION",
+      "method": "direct B3(012,0124)=−1 and derivative+2, Q171 literal printed +2B3 gives−2"
+    },
+    {
+      "name": "v1.7 11 full exact local tests",
+      "status": "PASS",
+      "method": "11/11 local SymPy + separate mask construction"
+    },
+    {
+      "name": "v1.7 physical cross-complex move selection",
+      "status": "OPEN",
+      "reason": "admitted sources supply no time-changing K(t), switch or generic-state stock source"
+    },
+    {
+      "name": "v1.7 external non-constructor review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.8 Q169/Q171 same-B3 signed face/top current",
+      "status": "PASS_MATH_OPEN_SOURCE",
+      "method": "A=D−Dᵀ gives antisymmetric ±2B3; literal Q171 positive top equality conflicts"
+    },
+    {
+      "name": "v1.8 exact Q165 F admission iff old top amplitude zero",
+      "status": "PASS",
+      "method": "FᵀF−I15=3eeᵀ"
+    },
+    {
+      "name": "v1.8 first native simple-zero crossing candidate",
+      "status": "PASS_CONDITIONAL",
+      "method": "old top oscillator and core second derivative, phase controls π/8/3π/8"
+    },
+    {
+      "name": "v1.8 maximal 13D old invariant no-defect sector and residual",
+      "status": "PASS",
+      "method": "P13 rank13 and RᵀR=P13, derivative mismatch lower bound"
+    },
+    {
+      "name": "v1.8 first root stock continuity but derivative discontinuity",
+      "status": "PASS",
+      "method": "old x=e reaches b at π/4, jump derivative squared9"
+    },
+    {
+      "name": "v1.8 independent exact two-mode current proof and 13 tests",
+      "status": "PASS",
+      "method": "13/13 local SymPy constructor tests plus independent 2D proof"
+    },
+    {
+      "name": "v1.8 physical/native source-selected event trigger and Q171 amendment",
+      "status": "OPEN",
+      "reason": "not authorized by frozen source and physical clock not supplied"
+    },
+    {
+      "name": "v1.8 independent non-constructor peer review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.9 all old/new Q170 original-shell control volumes instant cut matching",
+      "status": "PASS",
+      "method": "analytic shared A block equality; 16384 rational cut fixture"
+    },
+    {
+      "name": "v1.9 new signed cone derivative and second-jet obstruction",
+      "status": "PASS",
+      "method": "rank14 isometry, M=4bbT−I14 eigen3/−1×13; full 15D/29D matrices"
+    },
+    {
+      "name": "v1.9 independent pure coning proof",
+      "status": "PASS",
+      "method": "14 distinct centroid cone cofaces + one new isolated centroid degree0 coordinate"
+    },
+    {
+      "name": "v1.9 exact local 12 tests",
+      "status": "PASS",
+      "method": "12/12 local SymPy, per-file sha256 package verified"
+    },
+    {
+      "name": "v1.9 source-authoritative Q171 directional amendment submission",
+      "status": "SUBMITTED_NOT_ACCEPTED",
+      "method": "UD-Physics issue #338, historical v0.39 unchanged"
+    },
+    {
+      "name": "v1.9 finite-time native generator Q170 continuation",
+      "status": "NO_GO_SCOPED",
+      "reason": "nonzero shared shell acceleration mismatch full rank14"
+    },
+    {
+      "name": "v1.9 independent non-constructor mathematical review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v2.0 issue #338 source-authoritative decision",
+      "status": "PENDING",
+      "method": "GitHub issue open and no comments; proposal not accepted"
+    },
+    {
+      "name": "v2.0 local cone rank and squared second-jet mismatch",
+      "status": "PASS",
+      "method": "C^TC=I14, old Gram4bbT, squared Frobenius22"
+    },
+    {
+      "name": "v2.0 exhaustive local weighting/Q173-like mask obstruction",
+      "status": "PASS",
+      "method": "independent minimum squared residual12; all 16 binary four-outer-face masks min22"
+    },
+    {
+      "name": "v2.0 scalar clock change cannot cancel universal second jet",
+      "status": "PASS",
+      "method": "nonzero symmetric M and skew Ashell decomposition"
+    },
+    {
+      "name": "v2.0 nonnative coherent rational differential completion",
+      "status": "PASS_CONDITIONAL",
+      "method": "Dstar²=0, Sstar isometry and intertwining, 12 added non-Hasse couplings; original F lost"
+    },
+    {
+      "name": "v2.0 barycentric positive metric completion",
+      "status": "PASS_CONDITIONAL",
+      "method": "PF=I, PD1=D0P, H positive, F^THF=I, AH F=F A0, all24 S4; Q169 numerical generator changed"
+    },
+    {
+      "name": "v2.0 local exact regression",
+      "status": "PASS",
+      "method": "14/14 SymPy tests, separate pure14D combinatorial proof; complete verified ZIP"
+    },
+    {
+      "name": "v2.0 non-constructor mathematical review",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "v2.1 live Q171 review gate",
+      "status": "OPEN_NOT_ACCEPTED",
+      "method": "issue #338 fetched, zero comments, no decision"
+    },
+    {
+      "name": "v2.1 source action and constitutive provenance audit",
+      "status": "PASS_SOURCE_AUDIT",
+      "method": "ledger Q165–179, action O09–O15 and theorem, Pachner QPB1, UD historical candidates, v2.2 manuscript, repository portal"
+    },
+    {
+      "name": "v2.1 all-positive-t barycentric metric family exact theorem",
+      "status": "PASS",
+      "method": "direct-sum algebra and full 29D SymPy at t=1/4,1,2"
+    },
+    {
+      "name": "v2.1 same full generator for different positive metrics",
+      "status": "PASS",
+      "method": "exact A_t matrix equality and 24 signed S4 covariance"
+    },
+    {
+      "name": "v2.1 incompatible native Q165 newborn normalization",
+      "status": "PASS",
+      "method": "F^TF=diag(I14,4), centroid t3/5 vs edge04 t13/19"
+    },
+    {
+      "name": "v2.1 local exact regression",
+      "status": "PASS",
+      "method": "10/10 SymPy constructor tests and separate abstract proof"
+    },
+    {
+      "name": "v2.1 source-selected physical intercomplex metric/contact",
+      "status": "SOURCE_BLOCKED",
+      "reason": "none of audited sources independently fixes P and positive kernel metric t or a 1→4 event"
+    },
+    {
+      "name": "v2.1 external nonconstructor review",
+      "status": "NOT_RUN"
+    }
+  ],
+  "finding": "v2.1 exact source audit: Q165/Q169 accepted unit metric and O09–O15 action unit do not source v2.0 barycentric P/H. Continuous H_t=P^TP+tQ^TQ (t>0) all positive, S4-equivariant, F isometric and A_tF=FA0 with SAME A_t for all t; new-only stock5t/4 undetermined. No scalar original unit metric makes F isometric; centroid/newedge unit norms require conflicting t=3/5 and13/19. Source-selected 1→4 positive metric/contact and physical floor PARK_SOURCE_BLOCKED; Q171 issue338 open. Physical promotion0.",
+  "next_action": "Stop physical metric/floor branch pending new independent newborn action or event/metric source; preserve exact v2.0/v2.1 conditional results; nonconstructor review and Q171 decision still pending.",
+  "mathematical_profile": {
+    "coefficient_domain": "Z native 1→4 simplex graph and chain counts, Q exact Schur response, R native top-cell amplitudes",
+    "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
+    "applicable_methods": [
+      "Euler",
+      "orientability",
+      "integral homology and 2-torsion",
+      "F2 orientation cocycle",
+      "closed-loop O(2) holonomy",
+      "Pachner vs seam gluing distinction"
+    ],
+    "clock_metric_units_conventions": "recursive depth n is not physical time; unit edge weights candidate boundary port, Q171 core support, no SI units or Planck target"
+  }
+}

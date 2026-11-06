@@ -1,0 +1,17 @@
+UD-Physics Discovery K4 action metric selection v2.1
+Source main: 322ea849bfb949e4136a898e05d9d7fa0ec7604f
+Claim HELD: 667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4
+Q171 issue338: OPEN, no comments or approved amendment
+Old source K4 unit stock: F^T F=diag(I14,4), no unit isometry
+Chosen barycentric P: P F=I15, P D1=D0 P
+Q=I29-FP, rank Q=14
+All t>0 positive H_t=P^T P+t Q^T Q
+For all t: F^T H_t F=I15; A_t F=F A0; A_t^T H_t+H_t A_t=0
+The full A_t is independent of t; 24 signed S4 actions checked
+Newborn y=Q e4: native norm^2=5/4, H_t norm^2=(5/4)t
+Unit centroid coordinate demands t=3/5; unit new edge04 demands t=13/19
+No source-selected intercomplex action/metric/contact or event
+Local exact constructor tests: 10/10 PASS; independent direct-sum control PASS
+Review: independent non-constructor NOT_RUN; physical promotion 0
+ZIP: UD_K4_ACTION_METRIC_SELECTION_AUDIT_v2.1.zip
+ZIP_SHA256=37077981370f88ee62f0e24234c782ebb63d24ea57b03560b10fe36f0f79ef46

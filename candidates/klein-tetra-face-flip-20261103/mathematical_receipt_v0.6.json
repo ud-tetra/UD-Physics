@@ -1,0 +1,257 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-INTEGRAL-SDR-006",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Can the 72-tetrahedron Klein×I orientation-twisted simplicial chain be mapped integrally to minimal Klein CW×I, preserving Z/2 torsion, with an exact inverse-up-to-homotopy, then into prior 60D K4 tensor chain?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "D72",
+      "symbol": "C_s",
+      "object_type": "integral twisted simplicial chain complex",
+      "definition": "anti-invariant orientation-double-cover chains of assumed Klein×I 72-tetrahedron Delta-complex",
+      "domain": "Z^18⊕Z^102⊕Z^156⊕Z^72",
+      "codomain": "graded degree -1",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "oriented barycentric flags and deck-sheet representatives",
+      "metric_measure": "none for boundary",
+      "origin": "source-derived conditional on candidate new seam gluing",
+      "exact_expression": "d_s²=0, rank_Q=(18,83,72), H0=Z/2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "KTFF05"
+      ],
+      "assumption_ids": [
+        "new_Klein_gluing"
+      ],
+      "dependency_ids": [],
+      "normalization": "incidence signs and orientation character w1=(1,0,1)"
+    },
+    {
+      "object_id": "COARSE",
+      "symbol": "C_c",
+      "object_type": "two-triangle prism twisted CW chain",
+      "definition": "cellular Klein two-triangle quotient×interval",
+      "domain": "Z²⊕Z^7⊕Z^7⊕Z²",
+      "codomain": "graded degree -1",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "selected h,v,x and two prism flag cells",
+      "metric_measure": "none",
+      "origin": "constructed",
+      "exact_expression": "dims (2,7,7,2)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "KTFF04"
+      ],
+      "assumption_ids": [
+        "new_Klein_gluing"
+      ],
+      "dependency_ids": [
+        "D72"
+      ],
+      "normalization": "integral signed CW incidence"
+    },
+    {
+      "object_id": "RETRACT",
+      "symbol": "(P,S,H)",
+      "object_type": "integral strong deformation retract of chain complexes",
+      "definition": "local CW-to-Delta barycentric subdivision S, algebraic Morse integral retraction P, degree+1 H",
+      "domain": "C_s",
+      "codomain": "minimal CW C(K;Zrho)⊗C(I)",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "graded original and minimal bases linked by signed permutations",
+      "metric_measure": "no metric selected",
+      "origin": "derived exact unimodular unit-pivot cancellation",
+      "exact_expression": "PS=I, dP=Pd, dS=Sd, dH+Hd=I-SP",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "KTFF05"
+      ],
+      "assumption_ids": [
+        "two_triangle_cw_cellulation"
+      ],
+      "dependency_ids": [
+        "D72",
+        "COARSE"
+      ],
+      "normalization": "168 pivots ±1, no fractions"
+    },
+    {
+      "object_id": "TARGET60",
+      "symbol": "M60 P",
+      "object_type": "composite integral chain map",
+      "definition": "prior minimal Klein cellular-to-60D K4 packet map composed with P",
+      "domain": "C_s",
+      "codomain": "C(K;Zrho)⊗C(K4;Z)",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "minimal CW chain and ascending K4 simplex",
+      "metric_measure": "not proven isometric or evolution-intertwining",
+      "origin": "derived composition with v0.4 cellular K4 inclusion",
+      "exact_expression": "graded ranks (2,5,4,1)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "KTFF04"
+      ],
+      "assumption_ids": [
+        "interval_edge_K4_selection"
+      ],
+      "dependency_ids": [
+        "RETRACT"
+      ],
+      "normalization": "no fitted scalar"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "KTFF05",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/TWISTED_72_AND_INVARIANT_HULL_v0.5.md",
+      "version_or_commit": "22ed5f027074071771e063d284815caefbc0f974",
+      "section_or_object_id": "twisted 72 boundary and H0 Smith certificate",
+      "source_status": "own exact conditional Discovery source"
+    },
+    {
+      "source_id": "KTFF04",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/THREED_KLEIN_PACKET_SEAM_v0.4.md",
+      "version_or_commit": "bb8175e74325a5925e097c3dd79d0eea0ef96020",
+      "section_or_object_id": "72-tetrahedron Klein×I gluing and minimal cellular-to-60D map",
+      "source_status": "own exact conditional geometry"
+    }
+  ],
+  "assumptions": [
+    "Klein×I is assumed nonorientable 3D gluing, not sourced by native K4 Pachner primitive",
+    "Integral orientation local coefficient is the same w1=(1,0,1) on all source and target chains",
+    "Forward barycentric subdivision is local within original prism cell; reverse algebraic Morse retraction not proved bounded-support geometric locality",
+    "Signed unit CW coordinate bases and K4 unit simplicial incidence, no physical metric/time/energy readout"
+  ],
+  "technique_plan": [
+    {
+      "technique": "signed barycentric flag incidence",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "cell-local integer CW subdivision into 72 tetrahedral flags"
+    },
+    {
+      "technique": "unimodular algebraic Morse cancellations",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "165 unit-pivot acyclic complement cancellation and 3 CW diagonal cancellations"
+    },
+    {
+      "technique": "integral chain homotopy matrices",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact PS=I and dH+Hd=I-SP, preserving torsion"
+    },
+    {
+      "technique": "independent sparse-matrix certificate readback",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify 16 integer matrix blocks and 60D composite without rerunning construction"
+    },
+    {
+      "technique": "physical units and clock",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no physically calibrated bridge or native seam selection"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "C_s dims (18,102,156,72); C_c (2,7,7,2); complement dims (16,95,149,70); 16+79+70=165; plus 3 CW pairs = 168",
+    "reduced_expression": "minimal CW dims (2,5,4,1), no remaining complement, integral H0 Z/2 preserved",
+    "factor_origins": [
+      "flag-count subdivision of two prisms (36 top tetra each)",
+      "twisted orientation local coefficients",
+      "exact elementary unit-pivot cancellation"
+    ],
+    "factorization": "168=2^3·3·7; 165=3·5·11, no physical identification",
+    "divisibility_gcd_lcm": "all cancellation pivot divisors units ±1; no rational denominators"
+  },
+  "clock_receipt": {
+    "clock_type": "not a dynamical clock; chain degrees and algebraic contractions",
+    "modulus": 2,
+    "residue_convention": "orientation character on seam",
+    "update_rule": "degree-preserving chain maps and degree+1 homotopy",
+    "initial_phase": "N/A",
+    "coupling": "none",
+    "period_claim": "none",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "twisted integral 72-tet chain, minimal CW, formal 60D tensor K4",
+    "generator_or_update": "graded integral boundary only; no native physical evolution claim",
+    "initial_boundary_conditions": "nonorientable 3D Klein×I two Klein boundaries",
+    "conservation_and_sources": "chain-map and homotopy identities exact; not energy/current law",
+    "projection_and_kernel": "integral P,S homotopy equivalence; composite 60D map not claimed equivalence",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "structural question posed after prior rational-map failure; no empirical target",
+    "known_targets": [
+      "H0=Z/2 torsion",
+      "minimal Klein CW integral structure",
+      "prior formal 60D K4 chain"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "unit pivot sequence picked for sparsity, does not affect existence of integral homotopy",
+      "chosen CW diagonal cancellation and basis permutations"
+    ],
+    "search_domain_and_budget": "all 168 exact unit-pivot cancellations and full matrix identities for four degrees",
+    "selection_criterion": "strong integral deformation retraction preserving all homology",
+    "baseline": "earlier noncanonical rational harmonic map which annihilated H0"
+  },
+  "calculation_steps": [
+    "construct local signed subdivision map S from original prism CW flags; verify integral d_s S=S d_c",
+    "split 72-tet chains into cellular image and integral complement, find 165 unit pivots and no residual groups",
+    "reconstruct quotient contraction h and integer P_big,H_big; verify homotopy equation",
+    "perform 3 additional diagonal-cell unit cancellations to minimal Klein CW×I",
+    "compose P,S,H using exact signed basis permutation W; verify PS=I and dH+Hd=I-SP in full source matrices",
+    "compose P with v0.4 minimal CW to 60D K4 map; verify exact integral chain commutation",
+    "read back 16 stored sparse integer block matrices and verify all identities independently of elimination algorithm"
+  ],
+  "result": {
+    "exact_expression": "integral 72-simplex strong deformation retract to minimal CW with 168 unit cancellations, H0=Z/2,H1=Z,H2=Z,H3=0; composite 60D map ranks (2,5,4,1)",
+    "approximation": null,
+    "units": "none",
+    "precision_and_error": "exact integer SymPy 1.14",
+    "scope": "assumed Klein×I 72-tetrahedron orientation local system, algebraic inverse not proven bounded geometrically local",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact local constructor Python",
+      "command_or_proof_path": "KLEIN_INTEGRAL_CHAIN_RETRACTION_v0.6.zip/full_integral_bridge_v06.py",
+      "source_revision": "22ed5f027074071771e063d284815caefbc0f974",
+      "actual_result": "PASS exact integral P,S,H with 165+3 cancellations and 60D composite; matrix JSON SHA256 3f7ffd1a1902da74055a3e6c1f969a8ff7101e60804a175e4a022d4d997b9a32",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent sparse certificate reader",
+      "command_or_proof_path": "KLEIN_INTEGRAL_CHAIN_RETRACTION_v0.6.zip/verify_integral_receipt_v06.py",
+      "source_revision": "same",
+      "actual_result": "PASS exact read-back 16 integer blocks, chain maps/homotopy, no independent researcher",
+      "review_relationship": "same constructor different implementation"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Prior rational map had degree-zero map zero, so it did not preserve Z/2; integral strong retraction corrects this",
+    "Naive pivot-only reverse P failed 50,52,16 chain equations in degrees1,2,3; integral homotopy correction necessary",
+    "Strict geometric locality of corrected reverse P not checked",
+    "Dynamical generator intertwining, physical frame and native seam selection not established"
+  ],
+  "limitations": [
+    "Actual full replay Python script and 120KB matrix JSON are supplied as verified standalone ZIP; repository text records proof and result, not byte-identical file copies",
+    "No physical time, energy/retention, mass, or observable bridge",
+    "Non-constructor adversarial proof review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Audit reverse-map bounded geometric locality; independently source K4 seam gluing and framed measurement or stop physical branch."
+}

@@ -1,0 +1,121 @@
+{
+  "carrier": "filled K4 centroid subdivisions levels0/1/2; unit incidence H=I; formal native u",
+  "levels": [
+    [
+      4,
+      6,
+      4,
+      1
+    ],
+    [
+      5,
+      10,
+      10,
+      4
+    ],
+    [
+      9,
+      26,
+      34,
+      16
+    ]
+  ],
+  "level0_to1": {
+    "G_diag": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      4
+    ],
+    "residual_Frobenius_squared": "13",
+    "weighted_residual_squared": "13",
+    "chain_map_exact": true,
+    "metric_skew": true
+  },
+  "level1_to2": {
+    "G_diag": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      4,
+      4,
+      4,
+      4
+    ],
+    "residual_Frobenius_squared": "52",
+    "weighted_residual_squared": "52",
+    "chain_map_exact": true,
+    "metric_skew": true
+  },
+  "level0_to2": {
+    "G_diag": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      16
+    ],
+    "residual_Frobenius_squared": "151/4",
+    "chain_map_exact": true
+  },
+  "charpolys": {
+    "native0": "lambda*(lambda**2+4)**7",
+    "native1": "lambda*(lambda**2+1)*(lambda**2+5)**13",
+    "induced0from1": "lambda*(lambda**2+1)*(lambda**2+4)**6",
+    "induced1from2": "lambda*(lambda**2+5)**10*(4*lambda**2+1)*(4*lambda**2+5)**3/256",
+    "induced0from2": "lambda*(lambda**2+4)**6*(4*lambda**2+1)/4"
+  },
+  "S4_signed_permutation_checks": 24,
+  "orientation_character": {
+    "h": -1,
+    "untwisted": 1,
+    "commutes_all_subdivision_maps": true,
+    "no_physical_reference": true
+  },
+  "clock_selection": "OPEN: scalar universal clock rescaling cannot map two distinct refined frequencies to the single parent frequency",
+  "physical_promotion": 0,
+  "status": "PASS_EXACT_CONDITIONAL"
+}

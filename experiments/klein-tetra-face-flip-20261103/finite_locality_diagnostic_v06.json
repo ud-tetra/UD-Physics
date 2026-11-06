@@ -1,0 +1,47 @@
+{
+  "scope": "one fixed 72-tetrahedron twisted complex, integral Morse reverse map P",
+  "method": "For each nonzero P[k][output_cell,input_simplex], take the minimum ordinary quotient 1-skeleton graph distance between any barycentric vertex of the input simplex and any barycentric vertex occurring in the integral forward subdivision S of the output CW cell. This is a weak minimum-distance diagnostic, not a full support-containment radius.",
+  "graph_vertices": 18,
+  "graph_diameter": 3,
+  "per_degree": [
+    {
+      "degree": 0,
+      "max_minimum_distance": 1,
+      "histogram": {
+        "0": 2,
+        "1": 16
+      },
+      "nonzero_P_entries": 18
+    },
+    {
+      "degree": 1,
+      "max_minimum_distance": 1,
+      "histogram": {
+        "0": 76,
+        "1": 105
+      },
+      "nonzero_P_entries": 181
+    },
+    {
+      "degree": 2,
+      "max_minimum_distance": 1,
+      "histogram": {
+        "0": 45,
+        "1": 5
+      },
+      "nonzero_P_entries": 50
+    },
+    {
+      "degree": 3,
+      "max_minimum_distance": 0,
+      "histogram": {
+        "0": 1
+      },
+      "nonzero_P_entries": 1
+    }
+  ],
+  "strict_support_confinement": "NOT_PROVEN",
+  "uniform_refinement_bound": "NOT_TESTED",
+  "physical_promotion": 0,
+  "status": "NUMERICAL_EXACT_FINITE_GRAPH_BFS"
+}

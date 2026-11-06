@@ -1,0 +1,93 @@
+{
+  "version": "v1.6",
+  "date": "2026-11-05",
+  "status": "EXACT_CONDITIONAL_NO_SOURCE_SELECTOR",
+  "source_revision": "738b9d205fd9f9735a05d4976de70f1519474bff",
+  "typed_source_provenance": {
+    "Q165": "unit fixed-complex quadratic support",
+    "Q166": "signed Hasse incidence currents",
+    "Q169": "fixed-complex skew operator A=d-d^T, unit coefficient metric",
+    "Q170": "cut-current conservation",
+    "Q171": "local top-cell core stock c3_tau^2",
+    "Q173": "masked face-cell currents but mask/event selection OPEN",
+    "Q177_Q179": "per-incident-top-cell stock ownership 1/n3, not edge conductance or refinement probability",
+    "first_split_Q177_old_edge_fraction_per_child": "1/2",
+    "first_split_Q177_radial_edge_fraction_per_child": "1/3",
+    "native_1_to_4_integral_top_map_Q165_norm_squared": "1->4"
+  },
+  "weighted_response": {
+    "observation": "fixed-original-four-vertex boundary Schur complement of B1 W B1^T, developmental port",
+    "alpha": "1+1/4*sum_(k=1)^n (11/4)^(k-1)*g_k",
+    "increment": "(11/4)^n*g_(n+1)/4",
+    "g_k_type": "hypothetical generation-weighted graph radial edge conductance, unrelated to cell volume",
+    "exact_saturation": "for nonnegative g, constant after N iff all later g_k=0 (energy-minimization convention for zero isolated edges)",
+    "positive_weights_exact_floor": false,
+    "geometric_family": {
+      "g_k": "g1*r^(k-1)",
+      "ratio": "rho=11*r/4",
+      "convergent_iff": "r<4/11",
+      "limit_if_convergent": "1+g1/(4-11*r)",
+      "linear_growth_at": "r=4/11",
+      "diverges_if": "r>4/11"
+    },
+    "geometric_proxy": {
+      "g_k": "1/4^(k-1)",
+      "status": "CHOSEN volume-inspired conductance proxy, NOT source-selected",
+      "alpha_n": "9/5-(4/5)*(11/16)^n",
+      "limit": "9/5",
+      "strict_increment": "(11/16)^n/4",
+      "tolerance_eps": "1/100 CHOSEN",
+      "first_n_adjacent_increment_at_most_eps": 9,
+      "first_n_tail_remaining_at_most_eps": 12
+    }
+  },
+  "direct_exact_checks": [
+    {
+      "n": 0,
+      "topcells": 1,
+      "unit_alpha": "1",
+      "candidate_alpha": "1"
+    },
+    {
+      "n": 1,
+      "topcells": 4,
+      "unit_alpha": "5/4",
+      "candidate_alpha": "5/4"
+    },
+    {
+      "n": 2,
+      "topcells": 16,
+      "unit_alpha": "31/16",
+      "candidate_alpha": "91/64"
+    },
+    {
+      "n": 3,
+      "topcells": 64,
+      "unit_alpha": "245/64",
+      "candidate_alpha": "1577/1024"
+    }
+  ],
+  "current_and_metric": {
+    "unchanged_Q169_positive_diagonal_metric": "H=cI on each connected fixed-complex Hasse graph",
+    "weighted_alternative_generator": "A_W=[[0,-B1*W],[B1^T,0]] on vertex⊕edge carrier",
+    "weighted_metric": "diag(I_vertices,W_edges)",
+    "identity": "A_W^T H_W+H_W A_W=0",
+    "conservation": "native chosen quadratic norm ||v||²+eᵀW e, incidence-local currents",
+    "physical_energy_bridge": false,
+    "Q165_cross_complex_source_sink": "OPEN, top norm changes1->4 even if fixed-complex weighted current conserved"
+  },
+  "source_selected_refinement_admission": false,
+  "source_selected_metric_threshold": false,
+  "Planck_comparison_used": false,
+  "SI_units": false,
+  "physical_promotion": 0,
+  "verification": {
+    "local_8_tests": "PASS",
+    "independent_5node_kron": "PASS",
+    "direct_rational_graph_depths": "0,1,2,3",
+    "S4_checks": "24 per depth for each of 2 weight families",
+    "ZIP": "UD_K4_WEIGHTED_ADMISSION_GATE_v1.6.zip",
+    "SHA256": "5a788ed7d60d469c473acee1a60232069471606e47651b68b2bf176ba0ce635d",
+    "independent_nonconstructor_review": "NOT_RUN"
+  }
+}

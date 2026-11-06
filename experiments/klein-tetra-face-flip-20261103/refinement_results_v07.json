@@ -1,0 +1,44 @@
+{
+  "hypotheses": "edge path with m refined steps, two original endpoints as coarse vertex targets, integral augmentation-preserving endpoint-anchored P0",
+  "necessary_maximum_hop_radius": "floor(m/2)",
+  "controls": [
+    {
+      "subdivision_edges": 2,
+      "lower_bound": 1,
+      "attained_example_radius": 1
+    },
+    {
+      "subdivision_edges": 4,
+      "lower_bound": 2,
+      "attained_example_radius": 2
+    },
+    {
+      "subdivision_edges": 8,
+      "lower_bound": 4,
+      "attained_example_radius": 4
+    },
+    {
+      "subdivision_edges": 16,
+      "lower_bound": 8,
+      "attained_example_radius": 8
+    },
+    {
+      "subdivision_edges": 32,
+      "lower_bound": 16,
+      "attained_example_radius": 16
+    },
+    {
+      "subdivision_edges": 64,
+      "lower_bound": 32,
+      "attained_example_radius": 32
+    }
+  ],
+  "claim": "NO-GO uniform bounded refined graph-hop radius as m->infinity under this endpoint-anchored regime",
+  "not_ruled_out": [
+    "physical-distance locality",
+    "coarse-cell support locality",
+    "different scale-aware carrier map",
+    "other geometric references"
+  ],
+  "status": "PASS_EXACT_SCOPED"
+}
