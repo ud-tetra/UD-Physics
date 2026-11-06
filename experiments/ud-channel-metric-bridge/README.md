@@ -86,3 +86,7 @@ and the strict sign rule on fault and boundary controls.
 The [frozen blind bench protocol](BLINDED_BENCH_v0.1.md) adds trial
 inventory, identity custody, endpoint/work gates, and a replayable scorer.
 No hardware run or allocation has been made.
+
+The [qualification and review handoff](QUALIFICATION_HANDOFF_v0.1.md)
+converts the frozen bench limits to instrument units and identifies
+the raw evidence required before a concealed assignment.

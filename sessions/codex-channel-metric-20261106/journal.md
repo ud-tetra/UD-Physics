@@ -82,3 +82,17 @@ Captured artifacts/codex-channel-metric-20261106/exact-005 (EXACT): Blinded benc
 Checkpoint (handoff): Bench protocol and exact scorer frozen; synthetic workflow controls passed.
 
 Next: Obtain independent protocol review, instrument certificates and concealed bench fixture assignment.
+
+## Independent review and qualification handoff
+
+Resumed 3fab543 under the held claim; live main 9360f55. PR discussion
+had no review records. Converted all frozen limits to SI and derived
+497/320 nJ of admissible observed round-trip imbalance at maximum
+integration uncertainty. Prepared an independent reviewer response
+and evidence checklist. No hardware qualification or assignment.
+
+## 2026-11-06T19:29:51.932424+00:00
+
+Checkpoint (handoff): Reviewer packet and SI qualification gates prepared; no empirical certificates or reviewer attestation.
+
+Next: Have a non-constructor replay the pinned scorer and attach measured charge, timing, integration, recovery and fixture certificates.
