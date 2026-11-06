@@ -538,10 +538,49 @@
     {
       "name": "v1.7 external non-constructor review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v1.8 Q169/Q171 same-B3 signed face/top current",
+      "status": "PASS_MATH_OPEN_SOURCE",
+      "method": "A=D−Dᵀ gives antisymmetric ±2B3; literal Q171 positive top equality conflicts"
+    },
+    {
+      "name": "v1.8 exact Q165 F admission iff old top amplitude zero",
+      "status": "PASS",
+      "method": "FᵀF−I15=3eeᵀ"
+    },
+    {
+      "name": "v1.8 first native simple-zero crossing candidate",
+      "status": "PASS_CONDITIONAL",
+      "method": "old top oscillator and core second derivative, phase controls π/8/3π/8"
+    },
+    {
+      "name": "v1.8 maximal 13D old invariant no-defect sector and residual",
+      "status": "PASS",
+      "method": "P13 rank13 and RᵀR=P13, derivative mismatch lower bound"
+    },
+    {
+      "name": "v1.8 first root stock continuity but derivative discontinuity",
+      "status": "PASS",
+      "method": "old x=e reaches b at π/4, jump derivative squared9"
+    },
+    {
+      "name": "v1.8 independent exact two-mode current proof and 13 tests",
+      "status": "PASS",
+      "method": "13/13 local SymPy constructor tests plus independent 2D proof"
+    },
+    {
+      "name": "v1.8 physical/native source-selected event trigger and Q171 amendment",
+      "status": "OPEN",
+      "reason": "not authorized by frozen source and physical clock not supplied"
+    },
+    {
+      "name": "v1.8 independent non-constructor peer review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v1.7 exact: signed degree-one K4 1→4 chain map F^TF−I15=3 eeT, so Q165 stock jump=3c_top² for all parent states and old shell14 isometric. Shell b=∂ oldtop/2 with zero top occupation supports exact native *post-event* conservative K1 oscillator x(u)=cos u b+sin u w, child top stock sin²u, shell cos²u and no added reservoir after event. Original old native b has frequency2 vs new1, so move trigger OPEN. If Q173 readout masks are promoted into B3 alone, only all-off/all-on of 1024 retain d²; mask doesn't source event. Q171 printed current has potential opposite sign to Q169 under identical B3, OPEN_CONVENTION.",
-  "next_action": "Establish Q171/Q169 exact orientation and direction alias before adopting current bridge, and seek an autonomous source-selected 1→4 event for generic occupied-top state with support and shell control.",
+  "finding": "v1.8 EXACT/conditional: Q169 top gain =−2B3cface ctop, Q171 literal positive B3 top derivative conflicts under same B3, direction alias OPEN. F Q165 stock jump3a² makes c_parent_top0 necessary/sufficient for isometric 1→4. Native top mode has simple zeros spacedπ/2, Sddot8(a²+beta²)>0; first-crossing gate S=0,Sddot>0 CANDIDATE, phase dependent. Max old-A invariant no-defect sector P13 rank13, but its refined transverse leakage RᵀR=P13 yields generator mismatch≥norm on nonzero states. Unit first switch derivative mismatch²9; physical K(u) unselected.",
+  "next_action": "Seek source-authorized Q171 current-direction amendment and an autonomous, S4-equivariant first-crossing/admission and Q165/Q170 conservation law, retaining exact 13D generator mismatch; independent review before integration.",
   "mathematical_profile": {
     "coefficient_domain": "Z native 1→4 simplex graph and chain counts, Q exact Schur response, R native top-cell amplitudes",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
