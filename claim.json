@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-history-source-index-20261105",
+  "session": "historysourceidx-20261105-01",
+  "status": "held",
+  "created_at": "2026-11-06T02:43:27.288Z",
+  "base_revision": "af7aab9395e4d5a598aa642e3567c028f06a83ae",
+  "owned_paths": [
+    "tasks/integration-history-source-index-20261105.json",
+    "sessions/historysourceidx-20261105-01",
+    "state/CURRENT.md"
+  ]
+}
