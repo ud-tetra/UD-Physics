@@ -202,3 +202,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-024 (EXACT): Interleaved pilot 
 ## 2026-11-06T17:25:55.742171+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-025 (EXACT): Timestamp-weighted reference interpolation under independent jitter
+
+## 2026-11-06T17:32:05.091294+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-026 (EXACT): Wrapped reference phase lift gate and cycle-slip controls
