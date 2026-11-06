@@ -186,3 +186,7 @@ Captured artifacts/clockmatrix-20261104-01/numerical-002 (NUMERICAL): Tracked ph
 ## 2026-11-06T03:59:42.913439+00:00
 
 Captured artifacts/clockmatrix-20261104-01/numerical-003 (NUMERICAL): Clock aperture sweep and conditional phasor tolerance
+
+## 2026-11-06T16:06:58.767593+00:00
+
+Captured artifacts/clockmatrix-20261104-01/numerical-004 (NUMERICAL): Radius-12 detector alignment and differential gain replay

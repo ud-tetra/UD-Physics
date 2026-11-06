@@ -112,3 +112,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Tracked current-clock phase](TRACKED_CURRENT_CLOCK.md) integrates the site clocks through packet dispersion and counterflow overlap.
 
 [Clock aperture and noise budget](WINDOW_NOISE.md) compares captured stock, phase contrast, and a deterministic complex-readout tolerance.
+
+[Clock alignment and gain replay](CLOCK_ALIGNMENT.md) compares terminal offsets with differential complex gain.

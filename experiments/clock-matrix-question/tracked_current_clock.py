@@ -49,9 +49,12 @@ def integrate(field, sites, head, tail, windows, step, total_stock):
     return samples
 
 
-def matched_probe(order, step, radii=(3,)):
+def matched_probe(order, step, radii=(3,), terminal_offsets=None):
     _, weights = np.polynomial.legendre.leggauss(order)
     outer_radius = max(radii)
+    padding = (0 if terminal_offsets is None else
+               int(np.ceil(np.max(np.linalg.norm(terminal_offsets, axis=1)))))
+    reach = outer_radius + padding
     gauss = weights[:, None, None] * weights[None, :, None] * weights[None, None, :]
 
     def probe(k, probability):
@@ -63,12 +66,13 @@ def matched_probe(order, step, radii=(3,)):
         amplitude = np.sqrt(probability * gauss / jacobian).ravel()
         omega = omega.ravel()
         wavevectors = np.array([axis.ravel() for axis in k])
-        points = np.array(list(product(*(range(-outer_radius, int(v * HORIZON) + outer_radius + 2)
+        points = np.array(list(product(*(range(-reach, int(v * HORIZON) + reach + 2)
                                          for v in center_velocity))))
-        if outer_radius > 3:
+        if reach > 3:
             covered = np.zeros(len(points), dtype=bool)
             for time in range(0, HORIZON + 1, 4):
-                covered |= np.sum((points - time * center_velocity)**2, axis=1) <= outer_radius**2
+                radius = reach if time == HORIZON else outer_radius
+                covered |= np.sum((points - time * center_velocity)**2, axis=1) <= radius**2
             points = points[covered]
         offsets = np.vstack((points, (points[:, None, :] + D).reshape(-1, 3),
                              (points[:, None, :] - D).reshape(-1, 3)))
@@ -82,6 +86,10 @@ def matched_probe(order, step, radii=(3,)):
 
         def windows(time):
             distance_sq = np.sum((points - time * center_velocity)**2, axis=1)
+            if terminal_offsets is not None and time == HORIZON:
+                centered = points - time * center_velocity
+                return [np.sum((centered - offset)**2, axis=1) <= radius**2
+                        for radius in radii for offset in terminal_offsets]
             return [distance_sq <= radius**2 for radius in radii]
 
         total_stock = 2 * (2 * np.pi)**3 * 20 * 100**2
