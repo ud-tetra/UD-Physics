@@ -116,3 +116,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Clock alignment and gain replay](CLOCK_ALIGNMENT.md) compares terminal offsets with differential complex gain.
 
 [Shared clock reference](SHARED_REFERENCE.md) derives same-path gain cancellation and the joint science/pilot additive budget.
+
+[Interleaved pilot timing](INTERLEAVED_REFERENCE.md) compares one-sided and bracketed calibration under bounded drift and timestamp skew.

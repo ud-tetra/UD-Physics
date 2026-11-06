@@ -194,3 +194,7 @@ Captured artifacts/clockmatrix-20261104-01/numerical-004 (NUMERICAL): Radius-12 
 ## 2026-11-06T16:10:45.189021+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-023 (EXACT): Shared pilot gain cancellation and joint phasor noise budget
+
+## 2026-11-06T17:14:38.785186+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-024 (EXACT): Interleaved pilot drift and timing bounds with extremal replay
