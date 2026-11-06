@@ -1,0 +1,28 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "cosmology-g0-weakfield-candidate-20261106-01",
+  "run_id": "weakfield-v01",
+  "created_at": "2026-11-06T18:12:05.774895+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "Conditional graph Poisson candidate and exact metric nonselection counterexample",
+  "command": "python3 experiments/cosmology-galactic-entry/weakfield_exact.py; python3 scripts/validate.py; python3 -m unittest discover -s tests -q",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "3579845792e07344ca9cbfd29c7e369570e4207f",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/G0_WEAKFIELD_CANDIDATE_v0.1.md",
+      "sha256": "fdce3bb120261cc63cdf8ab459216020c5f3d5ffabfe50c82ba3f4a6b3854c0e",
+      "size_bytes": 4975
+    },
+    {
+      "path": "files/weakfield_exact.py",
+      "sha256": "b2091ff3f8e6df1aa630ce736dd6643f296346b35c1f786a15063a45bce17d2a",
+      "size_bytes": 681
+    }
+  ]
+}
