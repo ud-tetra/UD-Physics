@@ -1,0 +1,28 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "filtration-stability-bound-20261106-01",
+  "run_id": "exact-filtration-stability",
+  "created_at": "2026-11-06T23:20:20.951110+00:00",
+  "evidence": "EXACT",
+  "summary": "Uniform 2dS time-shift interleaving and threshold margin",
+  "command": "python3 experiments/cosmology-native-spatial/filtration_stability.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "bdaf1e051a94910f98e445d5ead51ba0591afcb5",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/FILTRATION_STABILITY_v0.3.md",
+      "sha256": "45fac4087c36227e47ee3ea9b8561d61885f3026fca94bb4e91a41d0e5bfd506",
+      "size_bytes": 3504
+    },
+    {
+      "path": "files/filtration_stability.py",
+      "sha256": "68bd98873f0241366f14cc3f96e8c581b1b78a13b41c5d18825e9b24c09e7795",
+      "size_bytes": 1155
+    }
+  ]
+}
