@@ -1,0 +1,18 @@
+UD-Physics Discovery Q170 cross-complex interface v1.9
+source_main_sha=b04652406b5579ca172564d0e3a6fe3aca75693a
+claim_sha=667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4
+Q171_review_issue=https://github.com/ud-tetra/UD-Physics/issues/338
+Q171_status=PROPOSED_NOT_ACCEPTED
+native_unit_generators=A0=D0-D0^T;A1=D1-D1^T
+shared_shell_dim=14
+new_complement_dim=15
+first_jet_Q170_all_shell_cuts=PASS
+second_derivative_mismatch=4bbT-I14
+mismatch_eigenvalues=3_once;-1_thirteen
+new_cone_derivative_gram=I14
+old_top_derivative_gram=4bbT
+candidate_top_zero_switch_source_selected=NO
+local_regression_tests=12/12_PASS
+exhaustive_rational_shell_cut_fixture=16384_PASS
+physical_promotion=0
+archive_sha256=4650a66caf1016a7494348bb0aadbf1e7743f51e49400ccfa3813788f62f3704
