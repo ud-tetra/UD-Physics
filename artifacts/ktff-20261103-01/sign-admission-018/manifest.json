@@ -1,0 +1,46 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ktff-20261103-01",
+  "run_id": "sign-admission-018",
+  "created_at": "2026-11-06T02:57:00Z",
+  "evidence": "EXACT",
+  "summary": "Exact conditional signed Q169/Q171 current-direction witness, rank-one 1-to-4 Q165 admission gate, rank13 native invariant/leakage obstruction; proposed first-crossing event remains unselected.",
+  "command": "python3 sign_admission_audit_v18.py; python3 independent_modal_guard_v18.py; python3 -m unittest discover -s . -p 'test_sign_admission_v18.py' -v",
+  "command_execution": "EXECUTED_IN_LOCAL_CONSTRUCTOR_RUNTIME",
+  "source": {
+    "revision": "74fe8f61856792fda717f2fffe8d3ed9a6564da2",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/CERTIFICATE_v18.txt",
+      "sha256": "7a4f75de245b6dda6f38b3234e2b2116c31aa0653d4c5b1a3e16c68b9ce3d390",
+      "size_bytes": 834
+    }
+  ],
+  "result_paths": [
+    "experiments/klein-tetra-face-flip-20261103/Q171_SIGNED_ADMISSION_v1.8.md",
+    "experiments/klein-tetra-face-flip-20261103/sign_admission_v18.py",
+    "experiments/klein-tetra-face-flip-20261103/sign_admission_results_v18.json",
+    "candidates/klein-tetra-face-flip-20261103/mathematical_receipt_sign_admission_v1.8.json"
+  ],
+  "user_archive": {
+    "name": "UD_K4_SIGN_ADMISSION_GATE_v1.8.zip",
+    "sha256": "5a660a3b739e09e4c4707e0b56ec80901ec777ea60d677a720c0a384f6885119",
+    "size_bytes": 16129,
+    "files": 10
+  },
+  "source_input_limitations": [
+    "Version2 source input copies omitted for this Git run; local ZIP contains full v1.7 script input and verified per-file manifest.",
+    "Main source SHA and file source row references supplied in mathematical receipt."
+  ],
+  "physical_promotion": 0,
+  "checks": {
+    "local_constructor": "13/13 PASS",
+    "independent_two_mode": "PASS",
+    "S4_signed_actions": 24,
+    "nonconstructor": "NOT_RUN"
+  }
+}
