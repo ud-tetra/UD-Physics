@@ -1,0 +1,46 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "historycollision-20261105-01",
+  "runtime": "Codex Work Mode Git/compute and GitHub connector",
+  "task": "history-present-collision-20261105",
+  "goal": "Exact conditional history-to-present collision test",
+  "created_at": "2026-11-06T02:35:20.579563+00:00",
+  "base_revision": "234f54471c32cc9ad4873cd8042103fa19795909",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "history-present-collision-20261105": {
+      "ref": "refs/heads/claims/history-present-collision-20261105",
+      "sha": "9973e96f4311016dd9cd407737731eb5436c849f",
+      "status": "held",
+      "acquisition": "GitHub connector before edits"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/history-present-collision/audit.py",
+      "result": "PASS 3-bit pair-flip collisions and closed-mask inverse"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS 545 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS 16 tests"
+    }
+  ],
+  "finding": "Driven XOR endpoint and unordered counts collide for different ordered histories; closed fixed-mask state is invertible; candidate F readout has common-mode kernel.",
+  "next_action": "Source temporal packet event law and environment record; independently test allowed forcing and readout.",
+  "mathematical_profile": {
+    "coefficient_domain": "F2 for parity; integers for word counts; R/C for separately assumed Hodge projection",
+    "exactness_or_precision_plan": "Exact finite enumeration and symbolic proof; no physical numeric fit",
+    "applicable_methods": [
+      "mod-2 clock register",
+      "pigeonhole fiber count",
+      "projection kernel"
+    ],
+    "clock_metric_units_conventions": "integer tick N, XOR bit flip; no physical time; Hodge unit metric only separate candidate"
+  }
+}

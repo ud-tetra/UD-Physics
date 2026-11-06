@@ -1,0 +1,32 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "history-present-collision",
+  "session_id": "historycollision-20261105-01",
+  "question": "Can full present three-bit state plus counts reconstruct ordered external event history?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "A1: external labeled pair-flip event each tick; XOR update, not sourced",
+    "A2: event record readout is endpoint plus optionally per-label counts",
+    "A3: separate Hodge F projection is prior target-informed candidate"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "No physical target; prior interest in universal archive known",
+  "fitted_choices": [],
+  "sources": [
+    "ledger v0.85 P04/O09/Q136",
+    "UD@a78193d Foundational Axioms",
+    "prior G05/G06 F sourcegate v0.1"
+  ],
+  "baseline": "closed known fixed-mask XOR bijection",
+  "result": "AB and BA collide in endpoint and counts; AA,BB,CC return; full autonomous fixed-mask state reconstructs; Hodge projection kills common mode",
+  "next_discriminant": "Sourced temporal update and environment record/readout",
+  "mathematical_receipts": [
+    "candidates/history-present-collision/mathematical_receipt.json"
+  ]
+}

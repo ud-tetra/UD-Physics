@@ -1,0 +1,77 @@
+{
+  "alphabet": "three labeled opposite-pair flips 0,1,2",
+  "claim_boundary": "conditional driven toy law; no UD physical archive or source event update",
+  "closed_fixed_mask": "bijective; inverse uses same xor mask",
+  "counts_by_length": {
+    "1": {
+      "histories": 3,
+      "lower_bound_extra_bits": 0,
+      "max_fiber": 1,
+      "reachable_endpoints": 3
+    },
+    "2": {
+      "histories": 9,
+      "lower_bound_extra_bits": 2,
+      "max_fiber": 3,
+      "reachable_endpoints": 4
+    },
+    "3": {
+      "histories": 27,
+      "lower_bound_extra_bits": 3,
+      "max_fiber": 7,
+      "reachable_endpoints": 4
+    },
+    "4": {
+      "histories": 81,
+      "lower_bound_extra_bits": 5,
+      "max_fiber": 21,
+      "reachable_endpoints": 4
+    },
+    "5": {
+      "histories": 243,
+      "lower_bound_extra_bits": 6,
+      "max_fiber": 61,
+      "reachable_endpoints": 4
+    },
+    "6": {
+      "histories": 729,
+      "lower_bound_extra_bits": 8,
+      "max_fiber": 183,
+      "reachable_endpoints": 4
+    }
+  },
+  "status": "EXACT_CONDITIONAL",
+  "two_step_collision": {
+    "ordered_words": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "return_words": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "same_counts": [
+      1,
+      1,
+      0
+    ],
+    "same_final": 3
+  },
+  "update": "theta_next=theta xor (1<<event)"
+}
