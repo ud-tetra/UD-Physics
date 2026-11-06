@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "cells": 2,
+  "capacity": 2,
+  "distinct_histories_checked": 7,
+  "collision_count": 0,
+  "scope": "resolved token inputs; prepared orthogonal slots; external pulse; no native root or backreaction law"
+}

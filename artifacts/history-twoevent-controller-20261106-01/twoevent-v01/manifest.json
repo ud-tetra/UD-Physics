@@ -1,0 +1,23 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "history-twoevent-controller-20261106-01",
+  "run_id": "twoevent-v01",
+  "created_at": "2026-11-06T03:25:30.316954+00:00",
+  "evidence": "EXACT",
+  "summary": "Seven finite histories and capacity edge gate",
+  "command": "python3 experiments/history-twoevent-controller/check.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "116155bb07da16338fb36560549b68fb102d6058",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/twoevent-result.json",
+      "sha256": "13e2eb0d3529206c3ed90f4a5b8209762ae1a7e11be80d30c60c34bc6351aefa",
+      "size_bytes": 228
+    }
+  ]
+}
