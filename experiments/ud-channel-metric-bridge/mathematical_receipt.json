@@ -1,0 +1,161 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "first-refinement-signed-readout-v0.1",
+  "session_id": "codex-channel-metric-20261106",
+  "candidate_id": null,
+  "question": "Test signed eight-sector observability on the first K4 centroid refinement and delimit metric identifiability.",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "transport",
+      "symbol": "F",
+      "object_type": "chain map",
+      "definition": "degree-one centroid subdivision",
+      "domain": "Q15",
+      "codomain": "Q29",
+      "coefficient_domain": "Q",
+      "units": "formal coefficient units",
+      "basis_orientation": "ascending",
+      "metric_measure": "unit",
+      "origin": "derived",
+      "exact_expression": "degree-one centroid subdivision",
+      "source_refs": [
+        "transport",
+        "projectors"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unweighted"
+    },
+    {
+      "object_id": "new-complement",
+      "symbol": "N",
+      "object_type": "projector",
+      "definition": "I-F(F^T F)^-1 F^T",
+      "domain": "Q29",
+      "codomain": "Q29",
+      "coefficient_domain": "Q",
+      "units": "formal coefficient units",
+      "basis_orientation": "ascending",
+      "metric_measure": "unit",
+      "origin": "derived",
+      "exact_expression": "I-F(F^T F)^-1 F^T",
+      "source_refs": [
+        "transport",
+        "projectors"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unweighted"
+    },
+    {
+      "object_id": "receiver",
+      "symbol": "C",
+      "object_type": "linear readout",
+      "definition": "(N A1 F)^T",
+      "domain": "Q29",
+      "codomain": "Q15",
+      "coefficient_domain": "Q",
+      "units": "formal coefficient units",
+      "basis_orientation": "ascending",
+      "metric_measure": "unit",
+      "origin": "derived",
+      "exact_expression": "(N A1 F)^T",
+      "source_refs": [
+        "transport",
+        "projectors"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unweighted"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "transport",
+      "url_or_repo_path": "experiments/pachner-state-transport/README.md",
+      "version_or_commit": "9db0edba13db7af9999fcfd1b9d45d3c8d65cdb5",
+      "section_or_object_id": "1\u21924",
+      "source_status": "integrated"
+    },
+    {
+      "source_id": "projectors",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/NATIVE_EIGHT_PROJECTOR_LEAKAGE_v1.1.md",
+      "version_or_commit": "6606617f8274f435b42d28fefbd2786cf56142c4",
+      "section_or_object_id": "A\u2013D",
+      "source_status": "draft read-only"
+    }
+  ],
+  "assumptions": [],
+  "technique_plan": [
+    {
+      "technique": "Exact incidence, group action and rank",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Check new complement visibility"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "formal continuous parameter u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "y prime = A1 y",
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "No physical data or fit; historical mathematical identity known",
+    "known_targets": [],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": null,
+    "selection_criterion": null,
+    "baseline": null
+  },
+  "calculation_steps": [],
+  "result": {
+    "exact_expression": "rank(C|im N)=13; rank((C,CA1)|im N)=14; h^T CA1 e4=-2",
+    "approximation": null,
+    "units": null,
+    "precision_and_error": null,
+    "scope": "unit coefficient first centroid refinement",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "Exact stdlib replay and direct incidence proof",
+      "command_or_proof_path": "experiments/ud-channel-metric-bridge/replay.py",
+      "source_revision": "9db0edba13db7af9999fcfd1b9d45d3c8d65cdb5",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Instantaneous centroid null; trajectories with fixed H_t-independent generator and fixed ports do not select t."
+  ],
+  "limitations": [],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/codex-channel-metric-20261106/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Define an independently calibrated newborn support/energy readout."
+}
