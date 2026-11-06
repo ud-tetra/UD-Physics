@@ -5,6 +5,8 @@
     "Formalize conditional finite-graph burden Poisson candidate",
     "Test source/metric and force nonuniqueness without galaxy fit"
   ],
-  "status": "claimed",
-  "created_at": "2026-11-06"
+  "status": "released",
+  "created_at": "2026-11-06",
+  "result_commit": "66df80e235f7b7d7e69662a2ee520ef6cc569a0d",
+  "pull_request": 347
 }
