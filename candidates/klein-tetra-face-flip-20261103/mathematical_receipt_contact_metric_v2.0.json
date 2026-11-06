@@ -218,6 +218,8 @@
     "Constructed completions are not proof of native dynamics; no physical promotion.",
     "No external nonconstructor review; CI integrity only."
   ],
-  "artifact_manifest_refs": [],
+  "artifact_manifest_refs": [
+    "artifacts/ktff-20261103-01/contact-metric-020/manifest.json"
+  ],
   "next_discriminant": "Require an independent source-selected metric/contact/admission rule (with typed Q165/Q170 currents) and reviewer decision on Q171 issue #338; otherwise freeze physical finite-floor claim under current sources."
 }
