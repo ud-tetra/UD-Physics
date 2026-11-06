@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "history-sequential-receipts-20261105",
+  "goal": "Recover sequential receipt construction and finite environment recorder; test history injectivity only where coupled",
+  "owned_paths": [
+    "tasks/history-sequential-receipts-20261105.json",
+    "sessions/historyseq-20261105-01",
+    "experiments/history-sequential-receipts",
+    "candidates/history-sequential-receipts",
+    "artifacts/historyseq-20261105-01"
+  ],
+  "dependencies": [
+    "history-source-update-20261105"
+  ],
+  "status": "complete"
+}

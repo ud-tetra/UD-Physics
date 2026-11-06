@@ -1,0 +1,68 @@
+{
+  "conditional_product_readout": "(acknowledged count R, pending h, theta) under separately assumed labeled XOR coupling",
+  "physical_promotion": 0,
+  "source_recorder_widths": [
+    {
+      "acknowledged_max": 1,
+      "pending_at_stop": 1,
+      "source_count_at_stop": 2,
+      "width": 1
+    },
+    {
+      "acknowledged_max": 3,
+      "pending_at_stop": 1,
+      "source_count_at_stop": 4,
+      "width": 2
+    },
+    {
+      "acknowledged_max": 7,
+      "pending_at_stop": 1,
+      "source_count_at_stop": 8,
+      "width": 3
+    },
+    {
+      "acknowledged_max": 15,
+      "pending_at_stop": 1,
+      "source_count_at_stop": 16,
+      "width": 4
+    },
+    {
+      "acknowledged_max": 31,
+      "pending_at_stop": 1,
+      "source_count_at_stop": 32,
+      "width": 5
+    },
+    {
+      "acknowledged_max": 63,
+      "pending_at_stop": 1,
+      "source_count_at_stop": 64,
+      "width": 6
+    },
+    {
+      "acknowledged_max": 127,
+      "pending_at_stop": 1,
+      "source_count_at_stop": 128,
+      "width": 7
+    },
+    {
+      "acknowledged_max": 255,
+      "pending_at_stop": 1,
+      "source_count_at_stop": 256,
+      "width": 8
+    }
+  ],
+  "source_status": "finite recorder source audit only; no sourced coupling to Q198 or packet endpoint",
+  "status": "EXACT_CONDITIONAL",
+  "two_step_collisions": {
+    "AA_BB_CC_same": [
+      2,
+      0,
+      0
+    ],
+    "AB_BA_same": [
+      2,
+      0,
+      3
+    ]
+  }
+}
