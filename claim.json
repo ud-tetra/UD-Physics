@@ -3,9 +3,12 @@
   "protocol_version": 2,
   "task": "integration-pachner-timing-budget",
   "session": "codex-20261104-timing-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-06T02:47:11.299Z",
   "base_revision": "e9f42e5a8b1238c2919fe5ac70137059eb8c8699",
   "owned_paths": [],
-  "purpose": "Exact-head integration of PR #308"
+  "purpose": "Exact-head integration of PR #308",
+  "released_at": "2026-11-06T02:47:55.712Z",
+  "released_from_sha": "51e22ecf364c76636e593da7862d18097e745c32",
+  "integration_commit": "89d0ed67839e36fd317e2ac595eafb08ae1623a9"
 }
