@@ -1,0 +1,57 @@
+{
+  "environment_curvature_control": [
+    [
+      "5",
+      "0"
+    ],
+    [
+      "0",
+      "5"
+    ]
+  ],
+  "evidence": "EXACT_CONDITIONAL",
+  "gain_triples_checked": 64,
+  "native_g_selection": "OPEN",
+  "nonlinear_controls": [
+    {
+      "I_L": "1",
+      "I_R": "0.25",
+      "g_assumed": "0",
+      "omega_L": "2.0",
+      "omega_R": "2",
+      "ratio": "1.0"
+    },
+    {
+      "I_L": "1",
+      "I_R": "0.25",
+      "g_assumed": "1/2",
+      "omega_L": "2.125",
+      "omega_R": "5/2",
+      "ratio": "0.85"
+    },
+    {
+      "I_L": "1",
+      "I_R": "0.25",
+      "g_assumed": "1",
+      "omega_L": "2.25",
+      "omega_R": "3",
+      "ratio": "0.75"
+    },
+    {
+      "I_L": "1",
+      "I_R": "0.25",
+      "g_assumed": "2",
+      "omega_L": "2.5",
+      "omega_R": "4",
+      "ratio": "0.625"
+    }
+  ],
+  "oriented_common_rate_condition": "g1=g2=g3=r>0",
+  "physical_promotion": 0,
+  "posited_nonlinear_H": "2(I_L+I_R)+g I_L I_R",
+  "sector_ranks": [
+    6,
+    6,
+    2
+  ]
+}

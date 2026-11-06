@@ -1,0 +1,17 @@
+{
+  "evidence": "EXACT_CONDITIONAL",
+  "mu_window_left_closed_right_open": [
+    "31/5",
+    "77511/12500"
+  ],
+  "reference_action": "1",
+  "native_horizon": "1",
+  "initial_linear_gain_bound": "50",
+  "two_time_linear_gain_bound": "500",
+  "tube_radius": "1/1000",
+  "quadratic_remainder_bound": "160",
+  "initial_error_budget": "1/16000000",
+  "state_error_bound": "1/240000",
+  "phase_error_strict_upper_rad": "1/300000",
+  "physical_promotion": 0
+}

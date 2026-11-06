@@ -1,0 +1,137 @@
+{
+  "launch_stock_at_unit_amplitude": 100000000,
+  "replays": [
+    {
+      "order": 8,
+      "step": 0.25,
+      "rows": [
+        {
+          "amplitude": "1/4",
+          "axis": {
+            "phase_rad": 5.001874248767201e-05,
+            "contrast": 0.9999999999999953,
+            "stock_fraction": 7.472939485440778e-05
+          },
+          "diagonal": {
+            "phase_rad": 8.348964495560879e-06,
+            "contrast": 1.0,
+            "stock_fraction": 2.1607295337006754e-05
+          },
+          "diagonal_minus_axis_rad": -4.166977799211113e-05,
+          "split_over_amplitude_fourth_rad": -0.010667463165980448
+        },
+        {
+          "amplitude": "1/2",
+          "axis": {
+            "phase_rad": 0.0008002998798027523,
+            "contrast": 0.9999999999987619,
+            "stock_fraction": 7.472939485440778e-05
+          },
+          "diagonal": {
+            "phase_rad": 0.00013358343192897414,
+            "contrast": 0.9999999999999915,
+            "stock_fraction": 2.1607295337006754e-05
+          },
+          "diagonal_minus_axis_rad": -0.0006667164478737781,
+          "split_over_amplitude_fourth_rad": -0.01066746316598045
+        },
+        {
+          "amplitude": "1",
+          "axis": {
+            "phase_rad": 0.01280479807684602,
+            "contrast": 0.9999999996829316,
+            "stock_fraction": 7.472939485440778e-05
+          },
+          "diagonal": {
+            "phase_rad": 0.002137334910863587,
+            "contrast": 0.9999999999977556,
+            "stock_fraction": 2.1607295337006754e-05
+          },
+          "diagonal_minus_axis_rad": -0.010667463165982433,
+          "split_over_amplitude_fourth_rad": -0.010667463165982433
+        },
+        {
+          "amplitude": "2",
+          "axis": {
+            "phase_rad": 0.2048767692376192,
+            "contrast": 0.9999999188304579,
+            "stock_fraction": 7.472939485440778e-05
+          },
+          "diagonal": {
+            "phase_rad": 0.03419735857381971,
+            "contrast": 0.9999999994254792,
+            "stock_fraction": 2.1607295337006754e-05
+          },
+          "diagonal_minus_axis_rad": -0.1706794106637995,
+          "split_over_amplitude_fourth_rad": -0.010667463166487468
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "step": 0.125,
+      "rows": [
+        {
+          "amplitude": "1/4",
+          "axis": {
+            "phase_rad": 5.001874747694373e-05,
+            "contrast": 0.9999999999999953,
+            "stock_fraction": 7.472939485440789e-05
+          },
+          "diagonal": {
+            "phase_rad": 8.348965329170908e-06,
+            "contrast": 0.9999999999999998,
+            "stock_fraction": 2.160729533700678e-05
+          },
+          "diagonal_minus_axis_rad": -4.166978214777282e-05,
+          "split_over_amplitude_fourth_rad": -0.010667464229829842
+        },
+        {
+          "amplitude": "1/2",
+          "axis": {
+            "phase_rad": 0.0008002999596311005,
+            "contrast": 0.9999999999987612,
+            "stock_fraction": 7.472939485440789e-05
+          },
+          "diagonal": {
+            "phase_rad": 0.00013358344526673456,
+            "contrast": 0.9999999999999913,
+            "stock_fraction": 2.160729533700678e-05
+          },
+          "diagonal_minus_axis_rad": -0.0006667165143643659,
+          "split_over_amplitude_fourth_rad": -0.010667464229829855
+        },
+        {
+          "amplitude": "1",
+          "axis": {
+            "phase_rad": 0.01280479935409958,
+            "contrast": 0.9999999996829317,
+            "stock_fraction": 7.472939485440789e-05
+          },
+          "diagonal": {
+            "phase_rad": 0.0021373351242677534,
+            "contrast": 0.9999999999977555,
+            "stock_fraction": 2.160729533700678e-05
+          },
+          "diagonal_minus_axis_rad": -0.010667464229831827,
+          "split_over_amplitude_fourth_rad": -0.010667464229831827
+        },
+        {
+          "amplitude": "2",
+          "axis": {
+            "phase_rad": 0.2048767896736763,
+            "contrast": 0.999999918830427,
+            "stock_fraction": 7.472939485440789e-05
+          },
+          "diagonal": {
+            "phase_rad": 0.03419736198828638,
+            "contrast": 0.9999999994254787,
+            "stock_fraction": 2.160729533700678e-05
+          },
+          "diagonal_minus_axis_rad": -0.17067942768538993,
+          "split_over_amplitude_fourth_rad": -0.010667464230336871
+        }
+      ]
+    }
+  ]
+}

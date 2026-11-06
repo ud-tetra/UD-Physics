@@ -1,0 +1,58 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "clockmatrix-20261104-01",
+  "runtime": "Codex GPT-6; Git/compute and GitHub connector",
+  "task": "clock-matrix-question-20261104",
+  "goal": "Analyze whether UD seeks time dilation or a matrix; separate generator, metric, clock and physical evidence",
+  "created_at": "2026-11-05T02:14:19.661223+00:00",
+  "base_revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "clock-matrix-question-20261104": {
+      "ref": "refs/heads/claims/clock-matrix-question-20261104",
+      "sha": "72863501bd80db6aae1fd9b68467de48e92cb42c",
+      "status": "held"
+    }
+  },
+  "checks": [
+    "Exact Fraction toy controls PASS",
+    "16 repository unit tests PASS",
+    "Candidate status corrected from evidence label to ACTIVE workflow status",
+    "Nonconstructor review NOT_RUN",
+    "Two-clock exact replay PASS at w=0,1/2,1,2",
+    "Common-rate exact replay PASS:64 gain triples, positive-metric curvature control and4 reciprocal Hamiltonian fixtures",
+    "Local mediator exact replay PASS:54 fixtures and contact ranks",
+    "Mediator milestone integrity PASS:506 records; all16 repository tests PASS",
+    "Quartic exact classification PASS:99/225/309/330 coefficients and F1009 evaluation rank100",
+    "Quartic milestone integrity PASS507 records; all16 repository tests PASS; diff whitespace check PASS",
+    "Merged current main29f0eb2 after G05/G06 proof update; integrity PASS513 records and all16 tests PASS; no clock-source dependencies changed",
+    "Prepared-plane exact replay PASS:43/99 complete coefficient families, signedS4 gate,25 direct gradients and coefficient-error leakage15/16",
+    "Prepared-plane milestone PASS514 integrity records, all16 repository tests and whitespace check",
+    "Transverse exact proof PASS;10 numerical Floquet points with2048/4096 convergence; exact nonlinear finite-phase window PASS",
+    "Stability milestone PASS519 integrity records/digests, all16 repository tests and whitespace check",
+    "Merged currentmain51bd725 index-only changes; integrity PASS521 records and all16 tests PASS",
+    "PositivepenaltyexactPASS14weights,normaldimensions2/4/6,LDLsigns+/-/+;30coarse+10refinedFloquetcases",
+    "Local-penalty milestone PASS522 integrity records/digests, all16 repository tests and whitespace check",
+    "Merged currentmainfdab9d0 after transport/anchor audit; clock dependencies unchanged; integrity PASS528 and all16 tests PASS",
+    "Exact interval replay PASS:metric LDL bounds,mu2^-30 scalar margins,normal gain64 and modified nonlinear phase window",
+    "Explicit-interval milestone PASS529 integrity records/digests, all16 tests and whitespace check",
+    "Merged currentmaina4406f1 after Hodge-port calibration audit; clock dependencies unchanged; integrity PASS535 and all16 tests PASS",
+    "Fourier/Cayley exact rational replay PASS. Prior exact-009 results unchanged.",
+    "Exact block and outward-rounded boundary replay PASS.",
+    "Exact near-threshold entry, derivative and scalar margin replay PASS.",
+    "Exact finite nonlinear margin replay PASS.",
+    "Direct outward propagation and split nonlinear gate replay PASS."
+  ],
+  "finding": "Direct normal gains 5 and 8 over one native unit. Euclidean initial cap 1/3200000 or split tangent 1/8000000 and normal 1/120000 both give phase error <1/300000 rad.",
+  "next_action": "Derive a finite coefficient-drift allowance for the one-unit phase contract, separating orbit detuning from normal forcing.",
+  "access_mode": "Git compute; connector publication; Git push unavailable",
+  "checkpoint_at": "2026-11-06T02:20:41.234968+00:00",
+  "checkpoint_source": {
+    "revision": "88cb676d36ea934afe973ba3e7b2ea4855185119",
+    "dirty": true
+  },
+  "resume_integrated_revision": "234f54471c32cc9ad4873cd8042103fa19795909",
+  "last_published_parent": "84c59f35f58405c06820d5697c74674305aeedbc"
+}

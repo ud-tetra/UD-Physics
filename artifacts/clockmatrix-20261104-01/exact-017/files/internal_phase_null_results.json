@@ -1,0 +1,16 @@
+{
+  "grid_side": 97,
+  "samples": 25,
+  "last_native_time": 12.0,
+  "moving_final_centroid": [
+    20.41370589855926,
+    10.022488687825296,
+    10.022488687825296
+  ],
+  "stationary_max_centroid_norm": 2.8719887430770287e-15,
+  "max_null_phase_difference_rad": 2.220446049250313e-16,
+  "injected_final_phase_difference_rad": 0.375,
+  "max_injected_phase_error_rad": 0.0,
+  "min_normalized_contrast": 0.9999999999999997,
+  "min_window_stock_fraction": 0.0015402446820312599
+}

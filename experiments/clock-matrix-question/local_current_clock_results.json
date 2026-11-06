@@ -1,0 +1,22 @@
+{
+  "stationary_rate_increments": [
+    "0",
+    "0"
+  ],
+  "matched_center_rate_increments": [
+    "1/1000",
+    "27/13625"
+  ],
+  "single": {
+    "local_rate_increment": 0.005835716128883892,
+    "net_rate_increment": 0.005835692495551064
+  },
+  "overlapped": {
+    "local_rate_increment": 7.070987385579747e-35,
+    "net_rate_increment": 1.64333350483982e-35
+  },
+  "separated": {
+    "local_rate_increment": 0.005835715088872681,
+    "net_rate_increment": 0.0
+  }
+}

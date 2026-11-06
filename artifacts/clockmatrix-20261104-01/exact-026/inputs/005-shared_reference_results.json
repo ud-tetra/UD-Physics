@@ -1,0 +1,110 @@
+[
+  {
+    "order": 8,
+    "science_magnitude_floor": 1.9444013821025073e-05,
+    "controls": [
+      {
+        "reference_to_science_floor": 1,
+        "residual_phase_cap_each_rad": 0,
+        "uncalibrated_gap_rad": -0.0007200323733354613,
+        "calibrated_noiseless_gap_rad": 0.011779967626664556,
+        "adversarial_gap_rad": 0.005889983891440687,
+        "common_error_per_total_stock": 2.863122094174289e-08
+      },
+      {
+        "reference_to_science_floor": 4,
+        "residual_phase_cap_each_rad": 0,
+        "uncalibrated_gap_rad": -0.0007200323733354613,
+        "calibrated_noiseless_gap_rad": 0.011779967626664556,
+        "adversarial_gap_rad": 0.005889983891440687,
+        "common_error_per_total_stock": 4.5809935627882754e-08
+      },
+      {
+        "reference_to_science_floor": 10,
+        "residual_phase_cap_each_rad": 0,
+        "uncalibrated_gap_rad": -0.0007200323733354613,
+        "calibrated_noiseless_gap_rad": 0.011779967626664556,
+        "adversarial_gap_rad": 0.005889983891440909,
+        "common_error_per_total_stock": 5.2056727569211365e-08
+      },
+      {
+        "reference_to_science_floor": 1,
+        "residual_phase_cap_each_rad": 0.0025,
+        "uncalibrated_gap_rad": -0.00572003237333546,
+        "calibrated_noiseless_gap_rad": 0.0067799676266646625,
+        "adversarial_gap_rad": 0.0058899838914405755,
+        "common_error_per_total_stock": 4.326213976349848e-09
+      },
+      {
+        "reference_to_science_floor": 4,
+        "residual_phase_cap_each_rad": 0.0025,
+        "uncalibrated_gap_rad": -0.00572003237333546,
+        "calibrated_noiseless_gap_rad": 0.0067799676266646625,
+        "adversarial_gap_rad": 0.005889983891440909,
+        "common_error_per_total_stock": 6.9219423004797165e-09
+      },
+      {
+        "reference_to_science_floor": 10,
+        "residual_phase_cap_each_rad": 0.0025,
+        "uncalibrated_gap_rad": -0.00572003237333546,
+        "calibrated_noiseless_gap_rad": 0.0067799676266645514,
+        "adversarial_gap_rad": 0.005889983891440687,
+        "common_error_per_total_stock": 7.865843463028941e-09
+      }
+    ]
+  },
+  {
+    "order": 12,
+    "science_magnitude_floor": 1.9444013821025124e-05,
+    "controls": [
+      {
+        "reference_to_science_floor": 1,
+        "residual_phase_cap_each_rad": 0,
+        "uncalibrated_gap_rad": -0.0007200323733314506,
+        "calibrated_noiseless_gap_rad": 0.011779967626668664,
+        "adversarial_gap_rad": 0.005889983891443018,
+        "common_error_per_total_stock": 2.8631220941752728e-08
+      },
+      {
+        "reference_to_science_floor": 4,
+        "residual_phase_cap_each_rad": 0,
+        "uncalibrated_gap_rad": -0.0007200323733314506,
+        "calibrated_noiseless_gap_rad": 0.011779967626668664,
+        "adversarial_gap_rad": 0.005889983891442907,
+        "common_error_per_total_stock": 4.580993562789849e-08
+      },
+      {
+        "reference_to_science_floor": 10,
+        "residual_phase_cap_each_rad": 0,
+        "uncalibrated_gap_rad": -0.0007200323733314506,
+        "calibrated_noiseless_gap_rad": 0.011779967626668664,
+        "adversarial_gap_rad": 0.005889983891442574,
+        "common_error_per_total_stock": 5.205672756922925e-08
+      },
+      {
+        "reference_to_science_floor": 1,
+        "residual_phase_cap_each_rad": 0.0025,
+        "uncalibrated_gap_rad": -0.005720032373331449,
+        "calibrated_noiseless_gap_rad": 0.006779967626668548,
+        "adversarial_gap_rad": 0.005889983891442796,
+        "common_error_per_total_stock": 4.32621397635962e-09
+      },
+      {
+        "reference_to_science_floor": 4,
+        "residual_phase_cap_each_rad": 0.0025,
+        "uncalibrated_gap_rad": -0.005720032373331449,
+        "calibrated_noiseless_gap_rad": 0.006779967626668548,
+        "adversarial_gap_rad": 0.005889983891442907,
+        "common_error_per_total_stock": 6.921942300495352e-09
+      },
+      {
+        "reference_to_science_floor": 10,
+        "residual_phase_cap_each_rad": 0.0025,
+        "uncalibrated_gap_rad": -0.005720032373331449,
+        "calibrated_noiseless_gap_rad": 0.006779967626668659,
+        "adversarial_gap_rad": 0.005889983891442907,
+        "common_error_per_total_stock": 7.865843463046708e-09
+      }
+    ]
+  }
+]

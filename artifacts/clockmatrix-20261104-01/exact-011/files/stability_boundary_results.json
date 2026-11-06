@@ -1,0 +1,28 @@
+{
+  "evidence": "EXACT_CONDITIONAL",
+  "stable_through": "77511/12500",
+  "first_loss_open_bracket": [
+    "77511/12500",
+    "62009/10000"
+  ],
+  "monotonicity_bracket": [
+    "31/5",
+    "621/100"
+  ],
+  "trigger": "unique a=0 in the third reduced block, multiplicity three, half-return multiplier -1",
+  "certified_sign_margin_floor": "1/100000",
+  "bracket_da_drho_lower": "1/2",
+  "integration": {
+    "binary_fraction_bits": 100,
+    "time_steps": 16,
+    "taylor_degree": 28,
+    "interpolation_nodes": 8,
+    "parameter_cells": [
+      25,
+      25,
+      24,
+      1
+    ]
+  },
+  "physical_promotion": 0
+}

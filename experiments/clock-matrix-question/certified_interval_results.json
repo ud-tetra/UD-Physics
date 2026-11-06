@@ -1,0 +1,71 @@
+{
+  "actual_metric_bounds": [
+    "1/128",
+    "5"
+  ],
+  "all_time_linear_normal_gain_bound": "64",
+  "allowed_metric_error": "1/128",
+  "averaged_metric_bounds": [
+    "1/64",
+    "4"
+  ],
+  "evidence": "EXACT_CONDITIONAL",
+  "invariant_metric_error_bound": "33000*(400rho)",
+  "metric_margin_LDL_lower": [
+    "27/32",
+    "395/384",
+    "6489/6320",
+    "20475/26368",
+    "13/64",
+    "105/832",
+    "39/64",
+    "49/192",
+    "33/320",
+    "63/704",
+    "31/64",
+    "40687/77376",
+    "59455/113216",
+    "1265/3008",
+    "39/64"
+  ],
+  "metric_margin_LDL_upper": [
+    "201/64",
+    "3165/1072",
+    "3114/1055",
+    "540/173",
+    "121/32",
+    "14625/3872",
+    "27/8",
+    "3193/936",
+    "387159/103000",
+    "15624/4163",
+    "7/2",
+    "20329/6048",
+    "9425/2804",
+    "725/208",
+    "27/8"
+  ],
+  "mu_interval": {
+    "lower_open": "0",
+    "upper_closed": "1/1073741824"
+  },
+  "native_coefficient_selection": "OPEN",
+  "nonlinear_all_time_orbital_stability": "OPEN",
+  "nonlinear_hessian_bound": "18||x||^2",
+  "nonlinear_readout_gate": {
+    "initial_both_energy_max": "33/16",
+    "initial_state_error_max": "1/4096",
+    "lambda": "mu in certified interval",
+    "observation_horizon": "1/(128mu) native parameter units",
+    "phase_difference_from_lambda0_null": "1/128 rad",
+    "phase_error_bound": "<1/1000 rad",
+    "reference_I": "1",
+    "reference_initial": "q1,p0",
+    "state_error_bound": "<3/8192"
+  },
+  "physical_promotion": 0,
+  "projector_error_bound": "8192*(400rho)",
+  "return_log_generator_error_bound": "400rho",
+  "rho_upper": "1/2147483648",
+  "worst_interval_metric_error": "103125/16777216"
+}

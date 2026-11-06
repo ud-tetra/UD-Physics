@@ -1,0 +1,17 @@
+# Tracked phase of the local current clock v0.1
+
+**NUMERICAL / CONDITIONAL.** The matched-frequency packets retain a phase split in ideal moving windows through native time 12. The counterflow readout depends on overlap history. The narrowband matched-packet windows collect very little stock.
+
+## State and readout
+
+Discovery parent 7651c5b8366a2f83b36f30571717733f426ff9b0. Retain the unforced scalar lane, symmetric incidence stock allocation, metric G, and coefficient 1/128 of [Local current clock v0.1](LOCAL_CURRENT_CLOCK.md). Use the matched spectral charts and amplitudes of [Equal-frequency packets v0.1](ISOSPECTRAL_CLOCK.md). Each site clock integrates its own excess rate |j|_G²/(128ρ²) at a fixed lattice address, starting at zero, with zero increment at zero stock. The detector moves and samples those site clocks. The phase is therefore not the integral of a moving-window mean rate or a transported material clock.
+
+At each recorded time compute Z=ΣWρ exp(iφ)/ΣWρ, where φ is the site phase with baseline 2s removed. Report arg Z, |Z|, and window stock divided by total stock. Use positive-frequency Fourier evolution for transport. Matched packets use direct spatial reconstruction by spectral quadrature on the infinite lattice. The quadrature sums use amplitude weights proportional to sqrt(probability × Gauss weight / chart Jacobian). The radius-three Euclidean coordinate window follows the centroid predicted independently from the spectral mean velocity. Only sites in its swept box and their incidence neighbors need reconstruction. The stock fraction restores the chart scaling and Fourier normalization using Parseval. The counterflow uses the periodic axial reduction of length 256 with uniform transverse coordinates and the previous Gaussian/cutoff. Use coherent equal lobes with initial offset zero or approaching offsets ±12. Two Gaussian windows of width six track the opposite free lobe centers, including after crossing. These are planned lobe tracks, not centers estimated from the interfering image.
+
+## Replay
+
+Compare Gauss order 8 with trapezoid step 1/4 to order 12 with step 1/8. This is a joint numerical refinement check, not a certified bound. On the finer replay at s=12, matched axis and diagonal phase residuals are 0.01199977 and 0.02377974 rad, for a split of 0.01177997 rad. Ideal contrast is unity to displayed precision. The corresponding window stock fractions are approximately 1.20×10⁻⁶ and 3.15×10⁻⁷. The finite-width replay resolves an ideal phase difference, but these small fractions supply no claim of detector sensitivity.
+
+The two reflected counterflow windows agree to roundoff. Their terminal phases are 0.06792178 rad when initially overlapped and 0.05429962 rad when initially separated and approaching. In the approaching case the recorded phase increases only from 0.01832220 to 0.01842053 rad between s=4 and s=8, around the predicted crossing at s≈7.0. This change combines site-clock history and changing observation weights. The terminal counterflow phases vary by less than 3×10⁻⁷ rad between the two refinements, and the largest sampled phase difference between refinements is below 6×10⁻⁶ rad. No measurement noise was introduced.
+
+Reproduce with NumPy and `OPENBLAS_NUM_THREADS=1 python3 experiments/clock-matrix-question/tracked_current_clock.py`. The clocks are passive and the coupling is a declared model choice. Source selection, backreaction, detector calibration and independent physical tests remain open. Physical promotion 0. Independent review NOT_RUN.

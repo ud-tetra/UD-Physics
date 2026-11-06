@@ -1,0 +1,60 @@
+[
+  {
+    "order": 8,
+    "step": 0.25,
+    "offsets_per_channel": 125,
+    "nominal_gap_rad": 0.011779967782881668,
+    "minimum_offset_gap_rad": 0.01177996762666454,
+    "offset_margin_consumed_rad": 1.5621712777524888e-10,
+    "min_stock_fraction": 2.160445980113901e-05,
+    "gain_trials": [
+      {
+        "phase_cap_each_rad": 0,
+        "worst_gap_rad": 0.01177996762666453,
+        "retains_half_nominal": true,
+        "common_additive_budget_per_total_stock": 5.7262379804016106e-08
+      },
+      {
+        "phase_cap_each_rad": 0.0025,
+        "worst_gap_rad": 0.006779967626664531,
+        "retains_half_nominal": true,
+        "common_additive_budget_per_total_stock": 8.652427738532817e-09
+      },
+      {
+        "phase_cap_each_rad": 0.00625,
+        "worst_gap_rad": -0.0007200323733354691,
+        "retains_half_nominal": false,
+        "common_additive_budget_per_total_stock": 0.0
+      }
+    ]
+  },
+  {
+    "order": 12,
+    "step": 0.125,
+    "offsets_per_channel": 125,
+    "nominal_gap_rad": 0.011779967782885674,
+    "minimum_offset_gap_rad": 0.011779967626668551,
+    "offset_margin_consumed_rad": 1.5621712257107845e-10,
+    "min_stock_fraction": 2.160445980113904e-05,
+    "gain_trials": [
+      {
+        "phase_cap_each_rad": 0,
+        "worst_gap_rad": 0.011779967626668547,
+        "retains_half_nominal": true,
+        "common_additive_budget_per_total_stock": 5.726237980403578e-08
+      },
+      {
+        "phase_cap_each_rad": 0.0025,
+        "worst_gap_rad": 0.0067799676266685465,
+        "retains_half_nominal": true,
+        "common_additive_budget_per_total_stock": 8.652427738552403e-09
+      },
+      {
+        "phase_cap_each_rad": 0.00625,
+        "worst_gap_rad": -0.0007200323733314584,
+        "retains_half_nominal": false,
+        "common_additive_budget_per_total_stock": 0.0
+      }
+    ]
+  }
+]

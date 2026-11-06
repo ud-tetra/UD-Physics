@@ -1,0 +1,42 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-015",
+  "created_at": "2026-11-06T02:28:02.874303+00:00",
+  "evidence": "EXACT",
+  "summary": "Prepared-plane routing-budget countertest",
+  "command": "python3 experiments/clock-matrix-question/routing_clock_test.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "c07472d3f1a78c55c4ec4c1612162efe97f855e7",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "routing_clock_test.py",
+      "path": "inputs/001-routing_clock_test.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/routing_clock_test.py",
+      "sha256": "e7343cc0151dc0a93b76a10f59bbcce6262f553041c6b4eba0ec1557260bdb92",
+      "size_bytes": 868
+    },
+    {
+      "input_id": "input-002",
+      "name": "PREPARED_PLANE.md",
+      "path": "inputs/002-PREPARED_PLANE.md",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/PREPARED_PLANE.md",
+      "sha256": "96c4614d5f9e423afe5dcdcf67d9c5b54089300f38ded191cb15286e31bcb2e2",
+      "size_bytes": 9828
+    }
+  ],
+  "files": [
+    {
+      "path": "files/ROUTING_CLOCK_TEST.md",
+      "sha256": "87c00d074d5e8e51a3d97b89f205788fbbc663dc7abc3ee354acf8eb0ecb5542",
+      "size_bytes": 3350
+    }
+  ]
+}

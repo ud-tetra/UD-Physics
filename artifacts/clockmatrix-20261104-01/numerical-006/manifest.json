@@ -1,0 +1,65 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "numerical-006",
+  "created_at": "2026-11-06T23:20:52.630040+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Density-matched polynomial clock and common-stock counterfactual",
+  "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/clock-matrix-question/density_matched_clock.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "a9e36e8e2f7314bdc5a7c41b85d586ac9a6487fe",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "density_matched_clock.py",
+      "path": "inputs/001-density_matched_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/density_matched_clock.py",
+      "sha256": "9c66e31644dea7e0a8e1bb436e8b962f6116b0e637fa97dab4f2c74286fb71ed",
+      "size_bytes": 3941
+    },
+    {
+      "input_id": "input-002",
+      "name": "tracked_current_clock.py",
+      "path": "inputs/002-tracked_current_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/tracked_current_clock.py",
+      "sha256": "ac798a24ae42da5306576ca4cf1878eb24d49ecf177bc56bd690f262f88d12c5",
+      "size_bytes": 6516
+    },
+    {
+      "input_id": "input-003",
+      "name": "isospectral_clock.py",
+      "path": "inputs/003-isospectral_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/isospectral_clock.py",
+      "sha256": "09c400d7018fde73a47d2456e28aa49b16e605a2978f8ef33f7e03b7e0557b6c",
+      "size_bytes": 2731
+    },
+    {
+      "input_id": "input-004",
+      "name": "directional_packet.py",
+      "path": "inputs/004-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/DENSITY_MATCHED_CLOCK.md",
+      "sha256": "9bc1e75f2c4d8464add8af6123400fbbe8d1272942b1569e7b35508cf192e9c8",
+      "size_bytes": 2539
+    },
+    {
+      "path": "files/density_matched_clock_results.json",
+      "sha256": "e050bc64d26113d13caa7f0fc8e3d9c5cc434daa9b2e552ff7e8a4a230c41872",
+      "size_bytes": 1017
+    }
+  ]
+}

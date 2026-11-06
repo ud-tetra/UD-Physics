@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "clock-matrix-question-20261104",
+  "goal": "Analyze time dilation versus matrix with exact clock-rescaling and mode-ratio counterexamples",
+  "owned_paths": [
+    "tasks/clock-matrix-question-20261104.json",
+    "sessions/clockmatrix-20261104-01",
+    "experiments/clock-matrix-question",
+    "candidates/clock-matrix-question",
+    "artifacts/clockmatrix-20261104-01"
+  ],
+  "dependencies": [],
+  "status": "active"
+}

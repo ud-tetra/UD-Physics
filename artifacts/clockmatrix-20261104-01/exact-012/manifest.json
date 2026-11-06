@@ -1,0 +1,74 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-012",
+  "created_at": "2026-11-05T23:23:46.084534+00:00",
+  "evidence": "EXACT",
+  "summary": "Near-threshold gain and native growth bounds",
+  "command": "python3 experiments/clock-matrix-question/near_threshold.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "821b83bcb4e1645131a99af1b03215e6b09f1cfe",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "near_threshold.py",
+      "path": "inputs/001-near_threshold.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/near_threshold.py",
+      "sha256": "76ce3efd0dbb9a5cc5da8168a5ba12162f819b79509c9a21fbc08e69bae03475",
+      "size_bytes": 3856
+    },
+    {
+      "input_id": "input-002",
+      "name": "stability_boundary.py",
+      "path": "inputs/002-stability_boundary.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/stability_boundary.py",
+      "sha256": "4a1edd547caceb4c97f9fa9c6913b9d6f7f7c26bd42e679e9aa55c34681aea8e",
+      "size_bytes": 8912
+    },
+    {
+      "input_id": "input-003",
+      "name": "certified_interval.py",
+      "path": "inputs/003-certified_interval.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/certified_interval.py",
+      "sha256": "4afee3366ab72065dfb73a76c069c259af0de5e1afd1a07120d1d2f82bb027b9",
+      "size_bytes": 4451
+    },
+    {
+      "input_id": "input-004",
+      "name": "stabilization_exact.py",
+      "path": "inputs/004-stabilization_exact.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/stabilization_exact.py",
+      "sha256": "d3602ae4d49cfb45225481417959be9e460d629b0350a555a700c326fab1d2de",
+      "size_bytes": 4703
+    },
+    {
+      "input_id": "input-005",
+      "name": "near_threshold_receipt.json",
+      "path": "inputs/005-near_threshold_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/near_threshold_receipt.json",
+      "sha256": "690c3dce23e6f1a4b7b6ae56278b7551fc173aac207e7b6a6e07a41a0d299a24",
+      "size_bytes": 8456
+    }
+  ],
+  "files": [
+    {
+      "path": "files/NEAR_THRESHOLD.md",
+      "sha256": "25efbc384aa803cd73d1c5b28a485101c92a87629f5057dfda9601fa78666ffe",
+      "size_bytes": 4952
+    },
+    {
+      "path": "files/near_threshold_results.json",
+      "sha256": "8d4e55c98d157bdfbd86457e37e1a712339df89a916c6d93a3625338e48fb1c7",
+      "size_bytes": 665
+    }
+  ]
+}

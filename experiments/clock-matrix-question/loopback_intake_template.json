@@ -1,0 +1,29 @@
+{
+  "capture_manifest": null,
+  "calibration_receipt": null,
+  "operating_envelope": null,
+  "phasor_unit": null,
+  "time_unit": null,
+  "gap_floor_rad": null,
+  "target_rad": null,
+  "channels": {
+    "axis": {
+      "science_floor": null,
+      "pilot_floor": null,
+      "science_error": null,
+      "pilot_error": null,
+      "path_phase": null,
+      "drift_rate": null,
+      "time_skew": null
+    },
+    "diagonal": {
+      "science_floor": null,
+      "pilot_floor": null,
+      "science_error": null,
+      "pilot_error": null,
+      "path_phase": null,
+      "drift_rate": null,
+      "time_skew": null
+    }
+  }
+}

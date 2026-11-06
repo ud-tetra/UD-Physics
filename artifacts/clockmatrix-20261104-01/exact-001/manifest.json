@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-05T02:18:23.542541+00:00",
+  "evidence": "EXACT",
+  "summary": "Uniform clock scaling, detuning, similarity metric and single-phase alias: exact toy controls",
+  "command": "python3 experiments/clock-matrix-question/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/audit.py",
+      "sha256": "5b6f1027a73f87945aab1b8b1685194821d573248a7ca8dfce01f4a8d5e67b3c",
+      "size_bytes": 2192
+    },
+    {
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/002-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/mathematical_receipt.json",
+      "sha256": "228406cfffe53dc8f99b8b21647e7af577d8f873ec1c2a04a537c4eacbed2b88",
+      "size_bytes": 5701
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "1697fd5bc0fc9b8f6e8bd251e1666ac6856f547dd13d861b6254b5c621393793",
+      "size_bytes": 557
+    },
+    {
+      "path": "files/README.md",
+      "sha256": "ecad1fad3a7ac08f9a6e8757458ecd6fa13dadb7a5f8947123e75d96443ea4c8",
+      "size_bytes": 7856
+    }
+  ]
+}

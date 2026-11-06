@@ -1,0 +1,186 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "first-transverse-loss-011",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "Where does bounded linear transverse evolution first fail for fixed eta=1?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "CANDIDATE",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "certified-normal-metric",
+      "symbol": "H,U",
+      "object_type": "quarter and half phase returns on each invariant plane",
+      "definition": "H=Phi(pi/2,0), U=D H^-1 D H",
+      "domain": "six invariant real two-dimensional planes",
+      "codomain": "same",
+      "coefficient_domain": "rational block identities and outward dyadic integration",
+      "units": "dimensionless metric on native perturbations",
+      "basis_orientation": "ascending tetrahedral chain, fixed phase origin",
+      "metric_measure": "Euclidean input/output; certified invariant metric bounds1/128 to5",
+      "origin": "derived for inverse-designed eta1 clock",
+      "exact_expression": "tr(U)=4ad-2; first critical a=0 in block 3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "modified-clock"
+      ],
+      "assumption_ids": [
+        "fixed-modified-law",
+        "phase-origin"
+      ],
+      "dependency_ids": [
+        "fourier-cayley-interval-010"
+      ],
+      "normalization": "mu=lambdaI,rho=mu/(2+mu);normal coefficient half-periodpi"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    },
+    {
+      "source_id": "prepared-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/PREPARED_PLANE.md",
+      "version_or_commit": "8e94fd49ded70a00eb4986177d3463860d295960",
+      "section_or_object_id": "sections1-5:13-term Q, plane, rates and previous coarse bound",
+      "source_status": "conditional construction, not native interaction"
+    },
+    {
+      "source_id": "original-transverse",
+      "url_or_repo_path": "experiments/clock-matrix-question/TRANSVERSE_STABILITY.md",
+      "version_or_commit": "b65135ce434564c221d5991d5283b6a63aa328a7",
+      "section_or_object_id": "sections2-6,original weak instability and fixedQ finite window",
+      "source_status": "preserved exact/numerical conditional controls"
+    },
+    {
+      "source_id": "modified-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/LOCAL_STABILIZATION.md",
+      "version_or_commit": "b04d720d96b1c51842d51066a206e2afa92b1f33",
+      "section_or_object_id": "sections2,4,5,7:positivepenalty,weak spectrum and signature proof",
+      "source_status": "exact conditional inverse-designed clock"
+    },
+    {
+      "source_id": "exact-009",
+      "url_or_repo_path": "experiments/clock-matrix-question/CERTIFIED_INTERVAL.md",
+      "version_or_commit": "1de2e0299a813a4362ce38cb2c13d469822a7d1c",
+      "section_or_object_id": "sections 1\u20135",
+      "source_status": "EXACT_CONDITIONAL"
+    },
+    {
+      "source_id": "exact-010",
+      "url_or_repo_path": "experiments/clock-matrix-question/FOURIER_INTERVAL.md",
+      "version_or_commit": "c48a78b8f803fadce8d1b0779a05eb2b6b2fc1e3",
+      "section_or_object_id": "uniform interval through 1/64",
+      "source_status": "EXACT_CONDITIONAL"
+    }
+  ],
+  "assumptions": [
+    "Fixed prepared eta=1 Hamiltonian and Euclidean transverse metric.",
+    "Continuous native phase, no physical time calibration."
+  ],
+  "technique_plan": [
+    {
+      "technique": "Exact invariant-plane decomposition and reversible traces",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Reduce the full return to three distinct two-dimensional maps"
+    },
+    {
+      "technique": "Outward-rounded Taylor integration and Bernstein enclosures",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Certify all intervening parameter cells and a unique crossing"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2*(1+2+3)",
+    "reduced_expression": "12 transverse coordinates",
+    "factor_origins": [
+      "exact rational intertwining and orthogonality",
+      "three copies of crossing system"
+    ],
+    "factorization": "bracket width 1/50000",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "Fixed eta=1 generator",
+    "initial_phase": "0",
+    "coupling": "mu>=0, first threshold bracket (77511/12500,62009/10000)",
+    "period_claim": "quarter orbit pi/2, half-return pi",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "rank-12 normal space as six orthogonal 2D planes",
+    "generator_or_update": "reversible quarter-orbit fundamental matrix",
+    "initial_boundary_conditions": "phaseanchored reference;normal linearerror arbitrary;finite nonlinear energy/norm gates explicit",
+    "conservation_and_sources": "positive Hamiltonian energy conserved; no attraction or physical calibration",
+    "projection_and_kernel": "exact negative-frequency projector and invariant-metric extension;old all-state/S4 obstructions unchanged",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "Bracket selected after floating exploration",
+    "known_targets": [
+      "prior instability at mu=8",
+      "floating onset near mu=6.2"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "No model coefficient changes",
+      "Verification bracket and interpolation budget chosen after exploration"
+    ],
+    "search_domain_and_budget": "Fourier-certified initial segment then 75 validated parameter cells across three reduced systems",
+    "selection_criterion": "Trace stability and unique signed crossing",
+    "baseline": "exact-010 bounded through 1/64"
+  },
+  "calculation_steps": [
+    "Verify exact rational block intertwiners.",
+    "Enclose the quarter orbit by outward Taylor arithmetic.",
+    "Certify uniform signs and positive derivative via Bernstein and interpolation remainders.",
+    "Tighten bracket with two direct interval evaluations."
+  ],
+  "result": {
+    "exact_expression": "First loss of bounded linear transverse evolution for fixed eta=1 is unique in (77511/12500,62009/10000). Three identical -1 Jordan blocks at onset.",
+    "approximation": null,
+    "units": "native parameter and radians only",
+    "precision_and_error": "100 binary fractional bits, order-28 Taylor with Cauchy tail, degree-7 interpolation with explicit remainders",
+    "scope": "First loss of boundedness in the linear transverse equation",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "Exact block identities and outward interval replay",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/stability_boundary.py",
+      "source_revision": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Initial trig power-times-factorial enclosure was overly broad. Recurrence advancing divided powers kept the same rigorous remainder and resolved wrapping."
+  ],
+  "limitations": [
+    "Independent review OPEN.",
+    "Nonlinear all-time stability, calibration and any later reentrant stability OPEN."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/exact-011/manifest.json"
+  ],
+  "next_discriminant": "Quantify precritical transient gain and postcritical growth near the verified first loss."
+}

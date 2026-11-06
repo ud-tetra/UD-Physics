@@ -1,0 +1,7 @@
+{
+  "wrapped_bracket_checks": 512,
+  "maximum_pilot_step_cap_rad": 0.0237611485527525,
+  "maximum_lift_error_rad": 6.432490598706546e-16,
+  "maximum_raw_average_error_rad": 3.141592653589793,
+  "ambiguous_midpoint_gap_rad": 3.141592653589793
+}

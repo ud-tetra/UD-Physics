@@ -1,0 +1,91 @@
+{
+  "central_long_edge_symbols": [
+    "872/125",
+    "192/25"
+  ],
+  "central_phase_split_at_12_rad": "33/500",
+  "stationary_frequency_squared_and_symbol": [
+    [
+      16,
+      8
+    ],
+    [
+      16,
+      0
+    ]
+  ],
+  "quadrature": [
+    {
+      "order": 8,
+      "axis": {
+        "centroid_velocity": [
+          0.7155386835885309,
+          0.35776934179426545,
+          0.35776934179426545
+        ],
+        "centroid_speed": 0.3577693417942655,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783431,
+        "max_squared_frequency_error": 7.105427357601002e-15,
+        "probe": {
+          "mean_long_edge_symbol": 6.975999999958675,
+          "phase_residual_at_12_rad": 0.6539999999961259,
+          "contrast_at_12": 0.9999990012389011
+        }
+      },
+      "diagonal": {
+        "centroid_velocity": [
+          0.8224356998122808,
+          0.8224357647141065,
+          0.8224357647141065
+        ],
+        "centroid_speed": 0.5036369791932824,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783431,
+        "max_squared_frequency_error": 7.105427357601002e-15,
+        "probe": {
+          "mean_long_edge_symbol": 7.679996108452579,
+          "phase_residual_at_12_rad": 0.7199996351669957,
+          "contrast_at_12": 0.9999984394421503
+        }
+      },
+      "packet_phase_split_at_12_rad": 0.06599963517086982
+    },
+    {
+      "order": 16,
+      "axis": {
+        "centroid_velocity": [
+          0.7155386835885312,
+          0.3577693417942656,
+          0.3577693417942656
+        ],
+        "centroid_speed": 0.35776934179426567,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783437,
+        "max_squared_frequency_error": 7.105427357601002e-15,
+        "probe": {
+          "mean_long_edge_symbol": 6.975999999958681,
+          "phase_residual_at_12_rad": 0.653999999996126,
+          "contrast_at_12": 0.9999990012389017
+        }
+      },
+      "diagonal": {
+        "centroid_velocity": [
+          0.8224356998122813,
+          0.8224357647141071,
+          0.8224357647141071
+        ],
+        "centroid_speed": 0.503636979193283,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783437,
+        "max_squared_frequency_error": 8.881784197001252e-15,
+        "probe": {
+          "mean_long_edge_symbol": 7.679996108452584,
+          "phase_residual_at_12_rad": 0.7199996351669958,
+          "contrast_at_12": 0.9999984394421509
+        }
+      },
+      "packet_phase_split_at_12_rad": 0.06599963517086982
+    }
+  ]
+}

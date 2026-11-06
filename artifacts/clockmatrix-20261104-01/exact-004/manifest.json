@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-004",
+  "created_at": "2026-11-05T16:50:34.937169+00:00",
+  "evidence": "EXACT",
+  "summary": "Conditional passive mediator Gram bound and contact isotropy gate",
+  "command": "python3 experiments/clock-matrix-question/local_mediator.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "8acf2c1552329a0f159c63184c21bfe50544bdc0",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "local_mediator.py",
+      "path": "inputs/001-local_mediator.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/local_mediator.py",
+      "sha256": "447346ec90b5398ae86a4eb7ec26ae2e9ae8a90ca6e45c532c992f9ca11b9abd",
+      "size_bytes": 3225
+    },
+    {
+      "input_id": "input-002",
+      "name": "local_mediator_receipt.json",
+      "path": "inputs/002-local_mediator_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/local_mediator_receipt.json",
+      "sha256": "4ec83f0ac8768d102a20402742aa4cf5425094e1f747cb538d0839808d351e63",
+      "size_bytes": 6730
+    }
+  ],
+  "files": [
+    {
+      "path": "files/LOCAL_MEDIATOR.md",
+      "sha256": "6f6073bec041d97954743b4a3b97fefadd0ab102958df89ce2c39c76ced44b1d",
+      "size_bytes": 8776
+    },
+    {
+      "path": "files/local_mediator_results.json",
+      "sha256": "9a37889eb007fea74438cc2affe523d5f0f3b64969c0f24f0aeaeee6118a154b",
+      "size_bytes": 5659
+    }
+  ]
+}

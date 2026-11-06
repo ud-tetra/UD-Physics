@@ -1,0 +1,27 @@
+{
+  "status": "SYNTHETIC_ONLY",
+  "symmetric_skew_cap_native": "266288494785797/10067586360000000",
+  "symmetric_skew_cap_native_decimal": 0.026450082995443706,
+  "controls": {
+    "aligned": {
+      "gap_lower_bound_rad": "1748736559261253/251689659000000000",
+      "gap_lower_bound_decimal_rad": 0.006947987319817748,
+      "arithmetic_pass": true
+    },
+    "both_skew_1_over_50": {
+      "gap_lower_bound_rad": "1547384832061253/251689659000000000",
+      "gap_lower_bound_decimal_rad": 0.006147987319817748,
+      "arithmetic_pass": true
+    },
+    "both_skew_3_over_100": {
+      "gap_lower_bound_rad": "1446708968461253/251689659000000000",
+      "gap_lower_bound_decimal_rad": 0.005747987319817748,
+      "arithmetic_pass": false
+    },
+    "one_channel_weak_pilot": {
+      "gap_lower_bound_rad": "1144559006699911/600183033000000000",
+      "gap_lower_bound_decimal_rad": 0.0019070165995510755,
+      "arithmetic_pass": false
+    }
+  }
+}

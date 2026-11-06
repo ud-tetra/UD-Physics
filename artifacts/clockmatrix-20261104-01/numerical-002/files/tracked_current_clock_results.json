@@ -1,0 +1,430 @@
+[
+  {
+    "order": 8,
+    "time_step": 0.25,
+    "matched": {
+      "axis": [
+        {
+          "native_time": 0.0,
+          "ports": [
+            {
+              "phase_rad": 0.0,
+              "contrast": 1.0,
+              "stock_fraction": 1.2726282145369733e-06
+            }
+          ]
+        },
+        {
+          "native_time": 4.0,
+          "ports": [
+            {
+              "phase_rad": 0.003999924271261872,
+              "contrast": 1.0,
+              "stock_fraction": 1.1691693685720829e-06
+            }
+          ]
+        },
+        {
+          "native_time": 8.0,
+          "ports": [
+            {
+              "phase_rad": 0.007999848578539066,
+              "contrast": 1.0,
+              "stock_fraction": 1.1588212263836877e-06
+            }
+          ]
+        },
+        {
+          "native_time": 12.0,
+          "ports": [
+            {
+              "phase_rad": 0.011999772964192494,
+              "contrast": 1.0000000000000002,
+              "stock_fraction": 1.2002065283834714e-06
+            }
+          ]
+        }
+      ],
+      "diagonal": [
+        {
+          "native_time": 0.0,
+          "ports": [
+            {
+              "phase_rad": 0.0,
+              "contrast": 0.9999999999999999,
+              "stock_fraction": 3.6908754370584723e-07
+            }
+          ]
+        },
+        {
+          "native_time": 4.0,
+          "ports": [
+            {
+              "phase_rad": 0.00792658023774949,
+              "contrast": 0.9999999999999999,
+              "stock_fraction": 3.4508277566901433e-07
+            }
+          ]
+        },
+        {
+          "native_time": 8.0,
+          "ports": [
+            {
+              "phase_rad": 0.015853160483307836,
+              "contrast": 0.9999999999999998,
+              "stock_fraction": 3.540840513401439e-07
+            }
+          ]
+        },
+        {
+          "native_time": 12.0,
+          "ports": [
+            {
+              "phase_rad": 0.02377974074337645,
+              "contrast": 1.0000000000000002,
+              "stock_fraction": 3.150758844540408e-07
+            }
+          ]
+        }
+      ]
+    },
+    "overlapped_at_launch": [
+      {
+        "native_time": 0.0,
+        "ports": [
+          {
+            "phase_rad": 0.0,
+            "contrast": 1.0,
+            "stock_fraction": 0.834447662472821
+          },
+          {
+            "phase_rad": 0.0,
+            "contrast": 1.0,
+            "stock_fraction": 0.834447662472821
+          }
+        ]
+      },
+      {
+        "native_time": 4.0,
+        "ports": [
+          {
+            "phase_rad": 0.01344439151126057,
+            "contrast": 0.9999858381570713,
+            "stock_fraction": 0.48270375305326096
+          },
+          {
+            "phase_rad": 0.013444391511260567,
+            "contrast": 0.9999858381570713,
+            "stock_fraction": 0.4827037530532611
+          }
+        ]
+      },
+      {
+        "native_time": 8.0,
+        "ports": [
+          {
+            "phase_rad": 0.04320150388514423,
+            "contrast": 0.9999983364675169,
+            "stock_fraction": 0.416442286330087
+          },
+          {
+            "phase_rad": 0.04320150388514422,
+            "contrast": 0.9999983364675171,
+            "stock_fraction": 0.4164422863300871
+          }
+        ]
+      },
+      {
+        "native_time": 12.0,
+        "ports": [
+          {
+            "phase_rad": 0.06792156650157628,
+            "contrast": 0.9999971269789322,
+            "stock_fraction": 0.41489093836071006
+          },
+          {
+            "phase_rad": 0.06792156650157627,
+            "contrast": 0.9999971269789324,
+            "stock_fraction": 0.41489093836071006
+          }
+        ]
+      }
+    ],
+    "separated_at_launch": [
+      {
+        "native_time": 0.0,
+        "ports": [
+          {
+            "phase_rad": 0.0,
+            "contrast": 0.9999999999999999,
+            "stock_fraction": 0.4188126484029539
+          },
+          {
+            "phase_rad": 0.0,
+            "contrast": 0.9999999999999999,
+            "stock_fraction": 0.4188126484029539
+          }
+        ]
+      },
+      {
+        "native_time": 4.0,
+        "ports": [
+          {
+            "phase_rad": 0.018320154238582926,
+            "contrast": 0.9999761613052084,
+            "stock_fraction": 0.5704190289202301
+          },
+          {
+            "phase_rad": 0.018320154238582926,
+            "contrast": 0.9999761613052084,
+            "stock_fraction": 0.5704190289202301
+          }
+        ]
+      },
+      {
+        "native_time": 8.0,
+        "ports": [
+          {
+            "phase_rad": 0.018425853281232894,
+            "contrast": 0.9999390499588615,
+            "stock_fraction": 0.7823023338029129
+          },
+          {
+            "phase_rad": 0.018425853281232897,
+            "contrast": 0.9999390499588613,
+            "stock_fraction": 0.7823023338029129
+          }
+        ]
+      },
+      {
+        "native_time": 12.0,
+        "ports": [
+          {
+            "phase_rad": 0.054299871783563075,
+            "contrast": 0.99993983461476,
+            "stock_fraction": 0.43710656355589866
+          },
+          {
+            "phase_rad": 0.05429987178356309,
+            "contrast": 0.9999398346147598,
+            "stock_fraction": 0.4371065635558988
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "order": 12,
+    "time_step": 0.125,
+    "matched": {
+      "axis": [
+        {
+          "native_time": 0.0,
+          "ports": [
+            {
+              "phase_rad": 0.0,
+              "contrast": 1.0,
+              "stock_fraction": 1.2726282145369752e-06
+            }
+          ]
+        },
+        {
+          "native_time": 4.0,
+          "ports": [
+            {
+              "phase_rad": 0.003999924271261224,
+              "contrast": 1.0,
+              "stock_fraction": 1.169169368572085e-06
+            }
+          ]
+        },
+        {
+          "native_time": 8.0,
+          "ports": [
+            {
+              "phase_rad": 0.007999848578537768,
+              "contrast": 1.0,
+              "stock_fraction": 1.1588212263836896e-06
+            }
+          ]
+        },
+        {
+          "native_time": 12.0,
+          "ports": [
+            {
+              "phase_rad": 0.011999772964190542,
+              "contrast": 1.0000000000000002,
+              "stock_fraction": 1.2002065283834731e-06
+            }
+          ]
+        }
+      ],
+      "diagonal": [
+        {
+          "native_time": 0.0,
+          "ports": [
+            {
+              "phase_rad": 0.0,
+              "contrast": 1.0,
+              "stock_fraction": 3.6908754370584776e-07
+            }
+          ]
+        },
+        {
+          "native_time": 4.0,
+          "ports": [
+            {
+              "phase_rad": 0.00792658023775016,
+              "contrast": 1.0000000000000004,
+              "stock_fraction": 3.450827756690148e-07
+            }
+          ]
+        },
+        {
+          "native_time": 8.0,
+          "ports": [
+            {
+              "phase_rad": 0.015853160483309182,
+              "contrast": 1.0,
+              "stock_fraction": 3.5408405134014433e-07
+            }
+          ]
+        },
+        {
+          "native_time": 12.0,
+          "ports": [
+            {
+              "phase_rad": 0.023779740743378474,
+              "contrast": 0.9999999999999999,
+              "stock_fraction": 3.1507588445404136e-07
+            }
+          ]
+        }
+      ]
+    },
+    "overlapped_at_launch": [
+      {
+        "native_time": 0.0,
+        "ports": [
+          {
+            "phase_rad": 0.0,
+            "contrast": 1.0,
+            "stock_fraction": 0.834447662472821
+          },
+          {
+            "phase_rad": 0.0,
+            "contrast": 1.0,
+            "stock_fraction": 0.834447662472821
+          }
+        ]
+      },
+      {
+        "native_time": 4.0,
+        "ports": [
+          {
+            "phase_rad": 0.013443471205335619,
+            "contrast": 0.9999858333653537,
+            "stock_fraction": 0.48270375305326096
+          },
+          {
+            "phase_rad": 0.01344347120533562,
+            "contrast": 0.9999858333653537,
+            "stock_fraction": 0.4827037530532611
+          }
+        ]
+      },
+      {
+        "native_time": 8.0,
+        "ports": [
+          {
+            "phase_rad": 0.04320159629300473,
+            "contrast": 0.9999983364138006,
+            "stock_fraction": 0.416442286330087
+          },
+          {
+            "phase_rad": 0.043201596293004726,
+            "contrast": 0.9999983364138009,
+            "stock_fraction": 0.4164422863300871
+          }
+        ]
+      },
+      {
+        "native_time": 12.0,
+        "ports": [
+          {
+            "phase_rad": 0.06792178461584819,
+            "contrast": 0.9999971268822266,
+            "stock_fraction": 0.41489093836071006
+          },
+          {
+            "phase_rad": 0.06792178461584815,
+            "contrast": 0.999997126882227,
+            "stock_fraction": 0.41489093836071006
+          }
+        ]
+      }
+    ],
+    "separated_at_launch": [
+      {
+        "native_time": 0.0,
+        "ports": [
+          {
+            "phase_rad": 0.0,
+            "contrast": 0.9999999999999999,
+            "stock_fraction": 0.4188126484029539
+          },
+          {
+            "phase_rad": 0.0,
+            "contrast": 0.9999999999999999,
+            "stock_fraction": 0.4188126484029539
+          }
+        ]
+      },
+      {
+        "native_time": 4.0,
+        "ports": [
+          {
+            "phase_rad": 0.018322201101312736,
+            "contrast": 0.9999761557340182,
+            "stock_fraction": 0.5704190289202301
+          },
+          {
+            "phase_rad": 0.01832220110131273,
+            "contrast": 0.9999761557340185,
+            "stock_fraction": 0.5704190289202301
+          }
+        ]
+      },
+      {
+        "native_time": 8.0,
+        "ports": [
+          {
+            "phase_rad": 0.018420534257561735,
+            "contrast": 0.9999390881456423,
+            "stock_fraction": 0.7823023338029129
+          },
+          {
+            "phase_rad": 0.018420534257561738,
+            "contrast": 0.999939088145642,
+            "stock_fraction": 0.7823023338029129
+          }
+        ]
+      },
+      {
+        "native_time": 12.0,
+        "ports": [
+          {
+            "phase_rad": 0.05429961714928729,
+            "contrast": 0.9999398256960336,
+            "stock_fraction": 0.43710656355589866
+          },
+          {
+            "phase_rad": 0.05429961714928729,
+            "contrast": 0.9999398256960332,
+            "stock_fraction": 0.4371065635558988
+          }
+        ]
+      }
+    ]
+  }
+]

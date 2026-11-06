@@ -1,0 +1,92 @@
+[
+  {
+    "order": 8,
+    "target_gap_rad": 0.005889983891440834,
+    "per_detector_drift_allowance_rad": 0.0015306744767644323,
+    "maximum_nominal_one_sided_delay": 0.06512286271268442,
+    "maximum_bracket_half_spacing": 0.5157857068132913,
+    "trials": [
+      {
+        "bracket": false,
+        "nominal_delay": 0.05,
+        "worst_gap_rad": 0.0065153328449694126,
+        "retains_half_nominal": true
+      },
+      {
+        "bracket": true,
+        "nominal_delay": 0.05,
+        "worst_gap_rad": 0.00852533284496948,
+        "retains_half_nominal": true
+      },
+      {
+        "bracket": false,
+        "nominal_delay": 0.25,
+        "worst_gap_rad": -0.0021246671550303464,
+        "retains_half_nominal": false
+      },
+      {
+        "bracket": true,
+        "nominal_delay": 0.25,
+        "worst_gap_rad": 0.007925332844969546,
+        "retains_half_nominal": true
+      },
+      {
+        "bracket": false,
+        "nominal_delay": 0.6,
+        "worst_gap_rad": -0.019169667155030434,
+        "retains_half_nominal": false
+      },
+      {
+        "bracket": true,
+        "nominal_delay": 0.6,
+        "worst_gap_rad": 0.004950332844969596,
+        "retains_half_nominal": false
+      }
+    ]
+  },
+  {
+    "order": 12,
+    "target_gap_rad": 0.005889983891442837,
+    "per_detector_drift_allowance_rad": 0.00153067447676544,
+    "maximum_nominal_one_sided_delay": 0.06512286271273297,
+    "maximum_bracket_half_spacing": 0.5157857068134867,
+    "trials": [
+      {
+        "bracket": false,
+        "nominal_delay": 0.05,
+        "worst_gap_rad": 0.006515332844973409,
+        "retains_half_nominal": true
+      },
+      {
+        "bracket": true,
+        "nominal_delay": 0.05,
+        "worst_gap_rad": 0.008525332844973477,
+        "retains_half_nominal": true
+      },
+      {
+        "bracket": false,
+        "nominal_delay": 0.25,
+        "worst_gap_rad": -0.0021246671550264606,
+        "retains_half_nominal": false
+      },
+      {
+        "bracket": true,
+        "nominal_delay": 0.25,
+        "worst_gap_rad": 0.007925332844973432,
+        "retains_half_nominal": true
+      },
+      {
+        "bracket": false,
+        "nominal_delay": 0.6,
+        "worst_gap_rad": -0.019169667155026437,
+        "retains_half_nominal": false
+      },
+      {
+        "bracket": true,
+        "nominal_delay": 0.6,
+        "worst_gap_rad": 0.004950332844973593,
+        "retains_half_nominal": false
+      }
+    ]
+  }
+]

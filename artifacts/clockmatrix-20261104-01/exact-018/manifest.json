@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-018",
+  "created_at": "2026-11-06T02:57:19.800392+00:00",
+  "evidence": "EXACT",
+  "summary": "Even spectral detuning and two-window reference replay",
+  "command": "python3 experiments/clock-matrix-question/laplacian_clock.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "079f716f21e7a7f6cf411586f20252c34a2f5fa9",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "laplacian_clock.py",
+      "path": "inputs/001-laplacian_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/laplacian_clock.py",
+      "sha256": "b50f1882eb1ed969c7b9658d4c281c04cad1f4d7c6d8df5b69e73b09025acb7b",
+      "size_bytes": 3519
+    },
+    {
+      "input_id": "input-002",
+      "name": "directional_packet.py",
+      "path": "inputs/002-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/LAPLACIAN_CLOCK.md",
+      "sha256": "31e4e319362ad494fe497e08edd0c342fd4e148c8ded499443a6d81017809d80",
+      "size_bytes": 3764
+    },
+    {
+      "path": "files/laplacian_clock_results.json",
+      "sha256": "4311dfd506b7e0881d8ffc70f6d3aa119a9275a984ec301d9d2664ea960f6f43",
+      "size_bytes": 4692
+    }
+  ]
+}

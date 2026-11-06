@@ -1,0 +1,74 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-014",
+  "created_at": "2026-11-06T02:20:41.288538+00:00",
+  "evidence": "EXACT",
+  "summary": "Direct two-time and split preparation tolerance",
+  "command": "python3 experiments/clock-matrix-question/anisotropic_margin.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "84c59f35f58405c06820d5697c74674305aeedbc",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "anisotropic_margin.py",
+      "path": "inputs/001-anisotropic_margin.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/anisotropic_margin.py",
+      "sha256": "3fa188709412c58e2a446350c06be2889bf30892bdd2ab987deebb7a02373cd1",
+      "size_bytes": 3239
+    },
+    {
+      "input_id": "input-002",
+      "name": "stability_boundary.py",
+      "path": "inputs/002-stability_boundary.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/stability_boundary.py",
+      "sha256": "4a1edd547caceb4c97f9fa9c6913b9d6f7f7c26bd42e679e9aa55c34681aea8e",
+      "size_bytes": 8912
+    },
+    {
+      "input_id": "input-003",
+      "name": "certified_interval.py",
+      "path": "inputs/003-certified_interval.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/certified_interval.py",
+      "sha256": "4afee3366ab72065dfb73a76c069c259af0de5e1afd1a07120d1d2f82bb027b9",
+      "size_bytes": 4451
+    },
+    {
+      "input_id": "input-004",
+      "name": "stabilization_exact.py",
+      "path": "inputs/004-stabilization_exact.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/stabilization_exact.py",
+      "sha256": "d3602ae4d49cfb45225481417959be9e460d629b0350a555a700c326fab1d2de",
+      "size_bytes": 4703
+    },
+    {
+      "input_id": "input-005",
+      "name": "anisotropic_margin_receipt.json",
+      "path": "inputs/005-anisotropic_margin_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/anisotropic_margin_receipt.json",
+      "sha256": "bc4256e1ea642cf156120478e131a655320e95600f34fb837ec29f5b36f2e05d",
+      "size_bytes": 8771
+    }
+  ],
+  "files": [
+    {
+      "path": "files/ANISOTROPIC_MARGIN.md",
+      "sha256": "2e4aa39c0922cee330dff784e29aae1758e973ecf02f7ac7d7e98c139a06a54f",
+      "size_bytes": 4966
+    },
+    {
+      "path": "files/anisotropic_margin_results.json",
+      "sha256": "837b399a58906fa33800315d5b62ee34c1125c89aaa854e7aca0fa528b0717bc",
+      "size_bytes": 775
+    }
+  ]
+}

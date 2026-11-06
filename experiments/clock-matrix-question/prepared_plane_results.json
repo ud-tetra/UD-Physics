@@ -1,0 +1,153 @@
+{
+  "clock_action": "I=q^2+p^2",
+  "coefficient_error": {
+    "point": "q=p=1",
+    "term": "epsilon*x_vertex1^2*x_edge01^2",
+    "transverse_derivative_norm_squared": "15/16*epsilon^2"
+  },
+  "direct_gradient_fixtures": 25,
+  "evidence": "EXACT_CONDITIONAL",
+  "families": [
+    {
+      "coefficient_count": 43,
+      "constraint_rank": 13,
+      "family": "even quartics",
+      "homogeneous_null_dimension": 30,
+      "unit_shift_feasible": true
+    },
+    {
+      "coefficient_count": 99,
+      "constraint_rank": 30,
+      "family": "all nearest-incidence quartics",
+      "homogeneous_null_dimension": 69,
+      "unit_shift_feasible": true
+    }
+  ],
+  "physical_promotion": 0,
+  "plane_h": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "-1/2",
+    "1/2",
+    "0",
+    "1",
+    "1/2",
+    "-1/2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "plane_v": [
+    "0",
+    "1",
+    "-1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "signed_S4": {
+    "invariant_energy_dimension": 13,
+    "projected_constraint_rank": 6,
+    "unit_shift_feasible": false
+  },
+  "sparse_unit_shift_solution": [
+    {
+      "coefficient": "1/4",
+      "powers": {
+        "(1,)": 4
+      }
+    },
+    {
+      "coefficient": "1/4",
+      "powers": {
+        "(2,)": 4
+      }
+    },
+    {
+      "coefficient": "1",
+      "powers": {
+        "(0, 1)": 4
+      }
+    },
+    {
+      "coefficient": "1",
+      "powers": {
+        "(0, 2)": 4
+      }
+    },
+    {
+      "coefficient": "1/4",
+      "powers": {
+        "(1, 2)": 4
+      }
+    },
+    {
+      "coefficient": "1",
+      "powers": {
+        "(1, 3)": 4
+      }
+    },
+    {
+      "coefficient": "1",
+      "powers": {
+        "(2, 3)": 4
+      }
+    },
+    {
+      "coefficient": "1/2",
+      "powers": {
+        "(0, 1)": 2,
+        "(1,)": 2
+      }
+    },
+    {
+      "coefficient": "1/4",
+      "powers": {
+        "(1, 2)": 2,
+        "(1,)": 2
+      }
+    },
+    {
+      "coefficient": "1/2",
+      "powers": {
+        "(1, 3)": 2,
+        "(1,)": 2
+      }
+    },
+    {
+      "coefficient": "1/2",
+      "powers": {
+        "(0, 2)": 2,
+        "(2,)": 2
+      }
+    },
+    {
+      "coefficient": "1/4",
+      "powers": {
+        "(1, 2)": 2,
+        "(2,)": 2
+      }
+    },
+    {
+      "coefficient": "1/2",
+      "powers": {
+        "(2, 3)": 2,
+        "(2,)": 2
+      }
+    }
+  ],
+  "target_shift": "deltaOmega=lambda I"
+}

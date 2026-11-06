@@ -1,0 +1,38 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-029",
+  "created_at": "2026-11-06T18:13:53.845672+00:00",
+  "evidence": "EXACT",
+  "summary": "Bench reference acceptance protocol and rational arithmetic fixture",
+  "command": "python3 experiments/clock-matrix-question/bench_reference.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "c3c4d2aaca0baafdde455e9beea13a068f676049",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "bench_reference.py",
+      "path": "inputs/001-bench_reference.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/bench_reference.py",
+      "sha256": "5f72606fc45eca6e4a62d1ee37c37d05b1906e7be163e213a8aef837294ee1f3",
+      "size_bytes": 2615
+    }
+  ],
+  "files": [
+    {
+      "path": "files/BENCH_REFERENCE.md",
+      "sha256": "9032a4d16dd110b3f6b9808884431d8d07e7fa1b94fbe3efe927d0eb47d95466",
+      "size_bytes": 4881
+    },
+    {
+      "path": "files/bench_reference_results.json",
+      "sha256": "39887d99c1bbcea337481d97a153e9e763e5d3180a66f0078ec18535301a39b6",
+      "size_bytes": 949
+    }
+  ]
+}

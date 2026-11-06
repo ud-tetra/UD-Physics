@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-017",
+  "created_at": "2026-11-06T02:47:36.131036+00:00",
+  "evidence": "EXACT",
+  "summary": "Product-clock phase cancellation and injected detuning replay",
+  "command": "python3 experiments/clock-matrix-question/internal_phase_null.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "2e94035ea548242a97d01d361b761014d36acc7a",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "internal_phase_null.py",
+      "path": "inputs/001-internal_phase_null.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/internal_phase_null.py",
+      "sha256": "01b047112a410ec2ae3ba4cba0677b117f0bc13166ea97850e763b6345c9c709",
+      "size_bytes": 3238
+    },
+    {
+      "input_id": "input-002",
+      "name": "directional_packet.py",
+      "path": "inputs/002-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/INTERNAL_PHASE_NULL.md",
+      "sha256": "64eeb98a4c0fd5aa5dc8137d17643d79173473c71a7067aff77faa0dc2ee00e4",
+      "size_bytes": 3680
+    },
+    {
+      "path": "files/internal_phase_null_results.json",
+      "sha256": "ca63ef5c0f884de11b097d4d7ebbf1f42772a8d5d94d5e4da065e0bab1332c56",
+      "size_bytes": 477
+    }
+  ]
+}

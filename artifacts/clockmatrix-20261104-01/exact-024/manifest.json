@@ -1,0 +1,65 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-024",
+  "created_at": "2026-11-06T17:14:38.784764+00:00",
+  "evidence": "EXACT",
+  "summary": "Interleaved pilot drift and timing bounds with extremal replay",
+  "command": "python3 experiments/clock-matrix-question/interleaved_reference.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "79972df9c9102a822d669e0e96c49a913e7ed5cd",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "interleaved_reference.py",
+      "path": "inputs/001-interleaved_reference.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/interleaved_reference.py",
+      "sha256": "258da1663ea874af4d5c9bc8853c0267252e6f985622670657a1cefd1d8fadc9",
+      "size_bytes": 2833
+    },
+    {
+      "input_id": "input-002",
+      "name": "shared_reference.py",
+      "path": "inputs/002-shared_reference.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/shared_reference.py",
+      "sha256": "56c7b8f6963098ec5b2ea356d0bde942644854164f3ae7ad17394ce2fdc8cd54",
+      "size_bytes": 2754
+    },
+    {
+      "input_id": "input-003",
+      "name": "clock_alignment_results.json",
+      "path": "inputs/003-clock_alignment_results.json",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/clock_alignment_results.json",
+      "sha256": "a6623b883f5fc2da2b549918c7a9a9d39f4b83a8165851cebd5ef139f4707d26",
+      "size_bytes": 1849
+    },
+    {
+      "input_id": "input-004",
+      "name": "shared_reference_results.json",
+      "path": "inputs/004-shared_reference_results.json",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/shared_reference_results.json",
+      "sha256": "3dec769215ed5554491a9b495173d0ddfeaf6cd6acd9dad985a0304d2cacdd9d",
+      "size_bytes": 4238
+    }
+  ],
+  "files": [
+    {
+      "path": "files/INTERLEAVED_REFERENCE.md",
+      "sha256": "775789cfba2b458449536ba8f55ff354efb95c5973b094db12bfdc58d27512e6",
+      "size_bytes": 2973
+    },
+    {
+      "path": "files/interleaved_reference_results.json",
+      "sha256": "4971dbdcaa724a9642d5ad74bb7cdb2bef30c6361d9c8330f04e6fbf01b48f72",
+      "size_bytes": 2438
+    }
+  ]
+}

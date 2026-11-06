@@ -1,0 +1,61 @@
+{
+  "active_constraint": "sum of four vertex amplitudes=0",
+  "active_dimension": 14,
+  "distance_sweep": [
+    {
+      "allowed_pairs": 28,
+      "augmented_radial_rank": 100,
+      "monomial_count": 99,
+      "nonzero_radial_representable": false,
+      "radius": 1,
+      "restriction_kernel_dimension": 0,
+      "restriction_rank": 99
+    },
+    {
+      "allowed_pairs": 70,
+      "augmented_radial_rank": 219,
+      "monomial_count": 225,
+      "nonzero_radial_representable": false,
+      "radius": 2,
+      "restriction_kernel_dimension": 7,
+      "restriction_rank": 218
+    },
+    {
+      "allowed_pairs": 98,
+      "augmented_radial_rank": 296,
+      "monomial_count": 309,
+      "nonzero_radial_representable": false,
+      "radius": 3,
+      "restriction_kernel_dimension": 14,
+      "restriction_rank": 295
+    },
+    {
+      "allowed_pairs": 105,
+      "augmented_radial_rank": 312,
+      "monomial_count": 330,
+      "nonzero_radial_representable": true,
+      "radius": 4,
+      "restriction_kernel_dimension": 18,
+      "restriction_rank": 312
+    }
+  ],
+  "evidence": "EXACT_CONDITIONAL",
+  "hasse_diameter": 4,
+  "hasse_edges": 28,
+  "independent_evaluation_certificate": {
+    "augmented_rank": 100,
+    "field_prime": 1009,
+    "points": 120,
+    "scope": "second constructor implementation; not independent review",
+    "seed": 20261105
+  },
+  "locality_class": "homogeneous quartic monomials supported on one register or one distance-bounded pair",
+  "minimal_pair_distance_for_nonzero_radial": 4,
+  "native_coefficient_selection": "OPEN",
+  "nearest_incidence_uniform_quartic_dimension": 0,
+  "opposite_edge_witness": [
+    "01",
+    "23"
+  ],
+  "physical_promotion": 0
+}
