@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-pachner-timing-budget",
+  "session": "codex-20261104-timing-01",
+  "status": "held",
+  "created_at": "2026-11-06T02:47:11.299Z",
+  "base_revision": "e9f42e5a8b1238c2919fe5ac70137059eb8c8699",
+  "owned_paths": [],
+  "purpose": "Exact-head integration of PR #308"
+}
