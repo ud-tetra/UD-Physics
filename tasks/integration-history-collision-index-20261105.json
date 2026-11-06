@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-history-collision-index-20261105",
+  "goal": "Index merged conditional history collision gate without promoting a source or physical claim",
+  "owned_paths": [
+    "tasks/integration-history-collision-index-20261105.json",
+    "sessions/historyidx-20261105-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "history-present-collision-20261105"
+  ],
+  "status": "complete"
+}
