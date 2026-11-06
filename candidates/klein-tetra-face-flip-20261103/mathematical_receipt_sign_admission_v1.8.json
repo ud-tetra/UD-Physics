@@ -349,6 +349,8 @@
     "Independent non-constructor review NOT_RUN"
   ],
   "changed_dependencies": [],
-  "artifact_manifest_refs": [],
+  "artifact_manifest_refs": [
+    "artifacts/ktff-20261103-01/sign-admission-018/manifest.json"
+  ],
   "next_discriminant": "Request authoritative Q171 signed-current direction amendment, then test a source-selected local first-crossing/gating law and generic cross-complex current/admission with frozen clocks and readout; otherwise freeze autonomous physical floor claims."
 }
