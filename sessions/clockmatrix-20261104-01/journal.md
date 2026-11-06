@@ -154,3 +154,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-016 (EXACT): Direct periodic cl
 ## 2026-11-06T02:41:14.499663+00:00
 
 Captured artifacts/clockmatrix-20261104-01/numerical-001 (NUMERICAL): Directional scalar packet and moving phase port
+
+## 2026-11-06T02:47:36.131337+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-017 (EXACT): Product-clock phase cancellation and injected detuning replay
