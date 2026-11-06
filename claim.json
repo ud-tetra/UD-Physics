@@ -5,6 +5,8 @@
     "Recover current matter-to-field and metric selection evidence",
     "Derive operator only if source selected; otherwise amend G0 gate"
   ],
-  "status": "claimed",
-  "created_at": "2026-11-06"
+  "status": "released",
+  "created_at": "2026-11-06",
+  "result_commit": "3579845792e07344ca9cbfd29c7e369570e4207f",
+  "pull_request": 346
 }
