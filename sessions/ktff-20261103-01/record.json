@@ -650,10 +650,49 @@
     {
       "name": "v2.0 non-constructor mathematical review",
       "status": "NOT_RUN"
+    },
+    {
+      "name": "v2.1 live Q171 review gate",
+      "status": "OPEN_NOT_ACCEPTED",
+      "method": "issue #338 fetched, zero comments, no decision"
+    },
+    {
+      "name": "v2.1 source action and constitutive provenance audit",
+      "status": "PASS_SOURCE_AUDIT",
+      "method": "ledger Q165–179, action O09–O15 and theorem, Pachner QPB1, UD historical candidates, v2.2 manuscript, repository portal"
+    },
+    {
+      "name": "v2.1 all-positive-t barycentric metric family exact theorem",
+      "status": "PASS",
+      "method": "direct-sum algebra and full 29D SymPy at t=1/4,1,2"
+    },
+    {
+      "name": "v2.1 same full generator for different positive metrics",
+      "status": "PASS",
+      "method": "exact A_t matrix equality and 24 signed S4 covariance"
+    },
+    {
+      "name": "v2.1 incompatible native Q165 newborn normalization",
+      "status": "PASS",
+      "method": "F^TF=diag(I14,4), centroid t3/5 vs edge04 t13/19"
+    },
+    {
+      "name": "v2.1 local exact regression",
+      "status": "PASS",
+      "method": "10/10 SymPy constructor tests and separate abstract proof"
+    },
+    {
+      "name": "v2.1 source-selected physical intercomplex metric/contact",
+      "status": "SOURCE_BLOCKED",
+      "reason": "none of audited sources independently fixes P and positive kernel metric t or a 1→4 event"
+    },
+    {
+      "name": "v2.1 external nonconstructor review",
+      "status": "NOT_RUN"
     }
   ],
-  "finding": "v2.0 exact K4 source-gate no-go: Q171 review #338 remains OPEN. Original cone C^TC=I14 vs removed old top4bb^T rank1, mismatch²22; arbitrary local cone weights min residual²12, 16 face masks min22 and scalar timewarp cannot cancel symmetric second jet. Two explicit changed-assumption exact completions: coherent rational non-Hasse Dstar and integral F-preserving barycentric positive metric H with AH F=F A0. Source Q165/Q169 unchanged do not select either. Physical promotion0.",
-  "next_action": "Await source-authoritative #338 response and non-constructor review; preregister any new intercomplex metric/contact from accepted action, then verify K4 Q165/Q170 and physical port. Otherwise close physical resolution-floor branch as source blocked.",
+  "finding": "v2.1 exact source audit: Q165/Q169 accepted unit metric and O09–O15 action unit do not source v2.0 barycentric P/H. Continuous H_t=P^TP+tQ^TQ (t>0) all positive, S4-equivariant, F isometric and A_tF=FA0 with SAME A_t for all t; new-only stock5t/4 undetermined. No scalar original unit metric makes F isometric; centroid/newedge unit norms require conflicting t=3/5 and13/19. Source-selected 1→4 positive metric/contact and physical floor PARK_SOURCE_BLOCKED; Q171 issue338 open. Physical promotion0.",
+  "next_action": "Stop physical metric/floor branch pending new independent newborn action or event/metric source; preserve exact v2.0/v2.1 conditional results; nonconstructor review and Q171 decision still pending.",
   "mathematical_profile": {
     "coefficient_domain": "Z native 1→4 simplex graph and chain counts, Q exact Schur response, R native top-cell amplitudes",
     "exactness_or_precision_plan": "108 exhaustive face matchings; signed chain and integer minor Smith invariants",
