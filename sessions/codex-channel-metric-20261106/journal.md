@@ -96,3 +96,17 @@ and evidence checklist. No hardware qualification or assignment.
 Checkpoint (handoff): Reviewer packet and SI qualification gates prepared; no empirical certificates or reviewer attestation.
 
 Next: Have a non-constructor replay the pinned scorer and attach measured charge, timing, integration, recovery and fixture certificates.
+
+## Independent review intake
+
+Resumed cef8f37 under the held claim. Verified all three submitted hashes
+against the reviewed 3fab543 baseline and reproduced the synthetic output.
+Recorded the external disposition UNABLE TO VERIFY for physical qualification
+alongside verified protocol scope. No measured gate, custody execution, or
+physical bridge was accepted. Live main checked at 5c5c852.
+
+## 2026-11-06T19:35:04.480629+00:00
+
+Checkpoint (handoff): Independent protocol review intake recorded; physical qualification remains blocked.
+
+Next: Ingest uncoded hardware qualification data and audit the measured gates.

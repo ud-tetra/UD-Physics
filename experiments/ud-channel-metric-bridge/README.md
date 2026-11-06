@@ -90,3 +90,6 @@ No hardware run or allocation has been made.
 The [qualification and review handoff](QUALIFICATION_HANDOFF_v0.1.md)
 converts the frozen bench limits to instrument units and identifies
 the raw evidence required before a concealed assignment.
+
+[Independent review intake](REVIEW_INTAKE_v0.1.md) records the submitted
+scope and holds physical qualification open pending measured evidence.

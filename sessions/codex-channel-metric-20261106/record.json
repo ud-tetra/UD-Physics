@@ -13,8 +13,8 @@
     "ud-channel-metric-bridge": "577b2d5b4396066238b735b3e75b275d2349e427"
   },
   "checks": [],
-  "finding": "Reviewer packet and SI qualification gates prepared; no empirical certificates or reviewer attestation.",
-  "next_action": "Have a non-constructor replay the pinned scorer and attach measured charge, timing, integration, recovery and fixture certificates.",
+  "finding": "Independent protocol review intake recorded; physical qualification remains blocked.",
+  "next_action": "Ingest uncoded hardware qualification data and audit the measured gates.",
   "mathematical_profile": {
     "coefficient_domain": "Q; identities extend to R",
     "exactness_or_precision_plan": "Fraction replay",
@@ -25,9 +25,9 @@
     ],
     "clock_metric_units_conventions": "Formal u, unit coefficient metrics, ascending simplex orientations; no SI calibration"
   },
-  "checkpoint_at": "2026-11-06T19:29:51.912454+00:00",
+  "checkpoint_at": "2026-11-06T19:35:04.467566+00:00",
   "checkpoint_source": {
-    "revision": "3fab543a570ef544058ced91880fa823568276ac",
+    "revision": "cef8f373bbbce23212a88178c4b0ac79afa05a28",
     "dirty": true
   }
 }
