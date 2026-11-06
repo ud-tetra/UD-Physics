@@ -5,6 +5,8 @@
     "Finite native pattern versus pixel-topology readout",
     "Exact relabeling and coarse-graining counterexamples; no nebula scoring"
   ],
-  "status": "claimed",
-  "created_at": "2026-11-06"
+  "status": "released",
+  "created_at": "2026-11-06",
+  "result_commit": "9360f5571a495ea29316bdece020eb8378d1b87b",
+  "pull_request": 350
 }
