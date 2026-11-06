@@ -93,3 +93,7 @@ the raw evidence required before a concealed assignment.
 
 [Independent review intake](REVIEW_INTAKE_v0.1.md) records the submitted
 scope and holds physical qualification open pending measured evidence.
+
+[Hardware status](STATUS_2026-11-06.md) remains held. The separate
+[work Gram closure](WORK_GRAM_CLOSURE_v0.1.md) gives the exact plane
+reconstruction, uncertainty certificate, and prospective fourth check.

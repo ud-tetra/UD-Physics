@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-006",
+  "created_at": "2026-11-06T19:50:39.335800+00:00",
+  "evidence": "EXACT",
+  "summary": "Work Gram reconstruction and uncertainty corners",
+  "command": "python3 experiments/ud-channel-metric-bridge/work_gram_replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "322280af5afe1e4b9e30d78a08a176dc180f47cc",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "work_gram_replay.py",
+      "path": "inputs/001-work_gram_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/work_gram_replay.py",
+      "sha256": "a911207d492ed792a26ad1a8f00637682bc0991a70a0a94de5112b09727175f9",
+      "size_bytes": 1155
+    }
+  ],
+  "files": [
+    {
+      "path": "files/work_gram_results.json",
+      "sha256": "d6a9d0f7e7d2250a7b094711b4c7741d97bb8eec88d0f0a6b9364cbc43f45a38",
+      "size_bytes": 213
+    }
+  ]
+}

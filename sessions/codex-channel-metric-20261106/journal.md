@@ -110,3 +110,19 @@ physical bridge was accepted. Live main checked at 5c5c852.
 Checkpoint (handoff): Independent protocol review intake recorded; physical qualification remains blocked.
 
 Next: Ingest uncoded hardware qualification data and audit the measured gates.
+
+## Hardware hold and independent mathematics
+
+Logged missing measured calibration evidence at 322280a. Derived exact
+work-plane reconstruction, determinant corner certificate and fourth
+polarization discriminator. No changes to the frozen bench or scorer.
+
+## 2026-11-06T19:50:39.336167+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-006 (EXACT): Work Gram reconstruction and uncertainty corners
+
+## 2026-11-06T19:50:39.392767+00:00
+
+Checkpoint (handoff): Hardware hold logged; exact plane work-form reconstruction and fourth-preparation discriminator derived.
+
+Next: Independently review the polarization check and decide a separately frozen closure extension; keep hardware hold.
