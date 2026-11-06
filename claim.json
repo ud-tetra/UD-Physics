@@ -5,6 +5,8 @@
     "Test Q177 parent-cell ownership under local 1-to-4 subdivision in glued complex",
     "Derive conditional ancestry repair and Q169 compatibility"
   ],
-  "status": "claimed",
-  "created_at": "2026-11-06"
+  "status": "released",
+  "created_at": "2026-11-06",
+  "result_commit": "29d831b571a0a3177a1fb1b1a5bc7cf3c7a8f747",
+  "pull_request": 353
 }
