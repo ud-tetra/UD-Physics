@@ -182,3 +182,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-022 (EXACT): Local current rule
 ## 2026-11-06T03:50:39.371560+00:00
 
 Captured artifacts/clockmatrix-20261104-01/numerical-002 (NUMERICAL): Tracked phase through matched-packet propagation and counterflow overlap
+
+## 2026-11-06T03:59:42.913439+00:00
+
+Captured artifacts/clockmatrix-20261104-01/numerical-003 (NUMERICAL): Clock aperture sweep and conditional phasor tolerance

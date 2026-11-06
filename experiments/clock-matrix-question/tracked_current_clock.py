@@ -49,8 +49,9 @@ def integrate(field, sites, head, tail, windows, step, total_stock):
     return samples
 
 
-def matched_probe(order, step):
-    nodes, weights = np.polynomial.legendre.leggauss(order)
+def matched_probe(order, step, radii=(3,)):
+    _, weights = np.polynomial.legendre.leggauss(order)
+    outer_radius = max(radii)
     gauss = weights[:, None, None] * weights[None, :, None] * weights[None, None, :]
 
     def probe(k, probability):
@@ -62,8 +63,13 @@ def matched_probe(order, step):
         amplitude = np.sqrt(probability * gauss / jacobian).ravel()
         omega = omega.ravel()
         wavevectors = np.array([axis.ravel() for axis in k])
-        points = np.array(list(product(*(range(-3, int(v * HORIZON) + 5)
+        points = np.array(list(product(*(range(-outer_radius, int(v * HORIZON) + outer_radius + 2)
                                          for v in center_velocity))))
+        if outer_radius > 3:
+            covered = np.zeros(len(points), dtype=bool)
+            for time in range(0, HORIZON + 1, 4):
+                covered |= np.sum((points - time * center_velocity)**2, axis=1) <= outer_radius**2
+            points = points[covered]
         offsets = np.vstack((points, (points[:, None, :] + D).reshape(-1, 3),
                              (points[:, None, :] - D).reshape(-1, 3)))
         positions, inverse = np.unique(offsets, axis=0, return_inverse=True)
@@ -75,7 +81,8 @@ def matched_probe(order, step):
             return basis @ wave, basis @ (-1j * wave / omega)
 
         def windows(time):
-            return [(np.sum((points - time * center_velocity)**2, axis=1) <= 9)]
+            distance_sq = np.sum((points - time * center_velocity)**2, axis=1)
+            return [distance_sq <= radius**2 for radius in radii]
 
         total_stock = 2 * (2 * np.pi)**3 * 20 * 100**2
         return integrate(field, sites, head.reshape(n, 7), tail.reshape(n, 7),
