@@ -388,6 +388,8 @@
     "No Planck/meter/time/energy map or physical promotion"
   ],
   "changed_dependencies": [],
-  "artifact_manifest_refs": [],
+  "artifact_manifest_refs": [
+    "artifacts/ktff-20261103-01/q170-interface-019/manifest.json"
+  ],
   "next_discriminant": "Obtain source-authoritative decision on Q171 issue #338. If approved, build an explicitly new cross-complex event current or metric/contact law and test finite-time Q170 continuity with a source-selected admission controller; without new source, freeze autonomous physical refinement-floor claims."
 }
