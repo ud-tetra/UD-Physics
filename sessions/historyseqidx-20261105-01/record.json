@@ -1,0 +1,32 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "historyseqidx-20261105-01",
+  "runtime": "Codex Work Mode Git/compute and GitHub connector",
+  "task": "integration-history-sequential-index-20261105",
+  "goal": "Integrated finite recorder source finding",
+  "created_at": "2026-11-06T03:07:13.805344+00:00",
+  "base_revision": "a1aea78ce0abde4cb30c9348c54b1664d4eac0d4",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "integration-history-sequential-index-20261105": {
+      "ref": "refs/heads/claims/integration-history-sequential-index-20261105",
+      "sha": "836673914aae9ea519ed920aae466d32a4c0ab10",
+      "status": "held",
+      "acquisition": "GitHub connector before edit"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS 571 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS 16 tests"
+    }
+  ],
+  "finding": "CURRENT catalogs conditional bounded logical recorder and explicit missing coupling to Q198",
+  "next_action": "Recover manuscript v9/current source and typed Fire/Ack to packet lineage update"
+}

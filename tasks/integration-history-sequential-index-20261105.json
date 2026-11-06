@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-history-sequential-index-20261105",
+  "goal": "Index merged finite recorder history source gate",
+  "owned_paths": [
+    "tasks/integration-history-sequential-index-20261105.json",
+    "sessions/historyseqidx-20261105-01",
+    "state/CURRENT.md"
+  ],
+  "dependencies": [
+    "history-sequential-receipts-20261105"
+  ],
+  "status": "complete"
+}
