@@ -222,3 +222,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-029 (EXACT): Bench reference ac
 ## 2026-11-06T22:17:15.584696+00:00
 
 Captured artifacts/clockmatrix-20261104-01/numerical-005 (NUMERICAL): Polynomial clock amplitude scaling and phase ordering reversal
+
+## 2026-11-06T23:20:52.630392+00:00
+
+Captured artifacts/clockmatrix-20261104-01/numerical-006 (NUMERICAL): Density-matched polynomial clock and common-stock counterfactual

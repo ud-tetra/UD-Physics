@@ -130,3 +130,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Simultaneous-reference bench acceptance](BENCH_REFERENCE.md) defines calibration inputs, held-out controls and the exact-rational error gate.
 
 [Polynomial clock amplitude replay](POLYNOMIAL_CLOCK.md) tests the continuous current rule on equal-frequency localized packets.
+
+[Local density matching](DENSITY_MATCHED_CLOCK.md) compares the polynomial clock under matched local stock histories.
