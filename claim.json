@@ -5,6 +5,8 @@
     "Audit accepted native rules for gravity source and edge-weight selection",
     "Park G0 if absent and choose lower-dependency entry target"
   ],
-  "status": "claimed",
-  "created_at": "2026-11-06"
+  "status": "released",
+  "created_at": "2026-11-06",
+  "result_commit": "9db0edba13db7af9999fcfd1b9d45d3c8d65cdb5",
+  "pull_request": 348
 }
