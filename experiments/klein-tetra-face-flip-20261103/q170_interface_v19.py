@@ -12,8 +12,7 @@ A0,A1,F,b=z['A0'],z['A1'],z['F'],z['b']
 T=F[:,:14]                          # exact shared 14 original simplices
 N=s.eye(29)-T*T.T                   # 15 new simplices
 Lnew=N*A1*T
-Lold=s.zeros(1,15)[:, :]           # old single removed top row
-Lold=s.Matrix([z['e'].T*A0*T])
+Lold=z['e'].T*A0*T                 # old single removed top row
 bb=b[:14,:]
 assert T.T*T==s.eye(14) and N.rank()==15
 assert T.T*A1*T==A0[:14,:14]
