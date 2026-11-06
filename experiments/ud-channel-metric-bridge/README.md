@@ -82,3 +82,7 @@ deterministic decision margin. Bench performance remains unmeasured.
 The [signed acquisition replay](ACQUISITION_SIM_v0.1.md) exercises
 independent synthetic charge and work channels, certificate gates,
 and the strict sign rule on fault and boundary controls.
+
+The [frozen blind bench protocol](BLINDED_BENCH_v0.1.md) adds trial
+inventory, identity custody, endpoint/work gates, and a replayable scorer.
+No hardware run or allocation has been made.

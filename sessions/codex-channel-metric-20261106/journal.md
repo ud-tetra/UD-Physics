@@ -65,3 +65,20 @@ Captured artifacts/codex-channel-metric-20261106/exact-004 (EXACT): Synthetic si
 Checkpoint (handoff): Exact synthetic acquisition: 64 correct signs and 14 required abstentions.
 
 Next: Freeze bench acceptance protocol and independently certify the real charge, timebase and energy closure channels.
+
+## Blinded bench protocol
+
+Resumed e3ec2d3 with the held claim. Froze 16 coded blocks and the
+certificate, closure, interval, and run scoring rules. Dry-run controls
+verify both score thresholds and rejection of a mismatched key or seal.
+Bench assignment and independent hardware certificates are still open.
+
+## 2026-11-06T19:24:52.463609+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-005 (EXACT): Blinded bench workflow synthetic controls
+
+## 2026-11-06T19:24:52.520570+00:00
+
+Checkpoint (handoff): Bench protocol and exact scorer frozen; synthetic workflow controls passed.
+
+Next: Obtain independent protocol review, instrument certificates and concealed bench fixture assignment.
