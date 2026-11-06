@@ -124,3 +124,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Wrapped pilot phase admission](WRAPPED_REFERENCE.md) rejects inconsistent and ambiguous relative phase lifts.
 
 [Pilot dropout and excess drift](PILOT_FAULTS.md) tests surviving-bracket admission and a hidden full-turn alias.
+
+[Science-time phase reference](SCIENCE_TIME_REFERENCE.md) tests a separate simultaneous pilot against the hidden-turn control and half-gap budget.

@@ -210,3 +210,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-026 (EXACT): Wrapped reference 
 ## 2026-11-06T17:47:29.401766+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-027 (EXACT): Pilot dropout gate and invisible out-of-envelope drift
+
+## 2026-11-06T18:09:23.744824+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-028 (EXACT): Science-time pilot consistency and half-gap error budget
