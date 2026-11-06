@@ -1,0 +1,11 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "filtration-stability-bound-20261106",
+  "goal": "Quantify Q169 cell-filtration stability",
+  "owned_paths": [
+    "experiments/cosmology-native-spatial/FILTRATION_STABILITY_v0.3.md"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}
