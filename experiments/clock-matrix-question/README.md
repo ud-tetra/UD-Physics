@@ -92,3 +92,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Direct propagation and split preparation gates](ANISOTROPIC_MARGIN.md) tightens the one-unit phase contract.
 
 [Routing-budget clock test](ROUTING_CLOCK_TEST.md) separates native stock exchange from the proposed motion overhead and rejects the square-root law for the stock-fraction and affine-action readouts tested.
+
+[Periodic clock embedding](PERIODIC_CLOCK.md) gives the exact direct-embedding leakage and independent spatial spread test.
