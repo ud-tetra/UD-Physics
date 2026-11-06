@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "pachner-emulator-contract",
+  "session": "codex-pachner-emulator-01",
+  "base_revision": "89d0ed67839e36fd317e2ac595eafb08ae1623a9",
+  "status": "held",
+  "created_at": "2026-11-06T02:55:46.178Z",
+  "owned_paths": [
+    "tasks/pachner-emulator-contract.json",
+    "experiments/pachner-emulator-contract",
+    "sessions/codex-pachner-emulator-01",
+    "artifacts/codex-pachner-emulator-01"
+  ]
+}
