@@ -1,0 +1,46 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "historyseq-20261105-01",
+  "runtime": "Codex Work Mode Git/compute and GitHub connector",
+  "task": "history-sequential-receipts-20261105",
+  "goal": "Sequential receipt and finite recorder source gate",
+  "created_at": "2026-11-06T03:05:14.883402+00:00",
+  "base_revision": "89d0ed67839e36fd317e2ac595eafb08ae1623a9",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "history-sequential-receipts-20261105": {
+      "ref": "refs/heads/claims/history-sequential-receipts-20261105",
+      "sha": "06ef40eb72746a76b79c12dd7f0eec97439263fe",
+      "status": "held",
+      "acquisition": "GitHub connector before edits"
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 experiments/history-sequential-receipts/audit.py",
+      "result": "PASS widths 1–8 finite stop and conditional product fibers"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS 569 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS 16 tests"
+    }
+  ],
+  "finding": "SA-TIME-018 candidate counts bounded completed events; no source coupling to Q198 receipt lineage or retained global ordered record.",
+  "next_action": "Recover v9 manuscript/current source-complete update and typed Fire/Ack/receipt coupling, then test complete trajectory injectivity.",
+  "mathematical_profile": {
+    "coefficient_domain": "integers and F2^3 for separate candidate product",
+    "exactness_or_precision_plan": "exact finite counts, no measurements/fits",
+    "applicable_methods": [
+      "finite state capacity",
+      "clock/update and product-state collision",
+      "source provenance and readout typing"
+    ],
+    "clock_metric_units_conventions": "logical Fire/Ack and integer N_a; physical time/energy/metric open"
+  }
+}

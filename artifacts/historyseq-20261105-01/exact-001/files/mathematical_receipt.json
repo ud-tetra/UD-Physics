@@ -1,0 +1,172 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "HISTORY-SEQ-001",
+  "session_id": "historyseq-20261105-01",
+  "candidate_id": "history-sequential-receipts",
+  "question": "What does the sourced finite recorder retain, and is it coupled to the Q198 lineage operator?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "REC",
+      "symbol": "(X,α,p_a,R,h,N_a)",
+      "object_type": "logical recorder state/readout",
+      "definition": "N_a=R+h, h=p_a xor α; terminal R=2^w-1,h=1",
+      "domain": "positive integer width w and admitted Fire/Ack operations",
+      "codomain": "finite count/pending state",
+      "coefficient_domain": "integers and F2",
+      "units": "logical events",
+      "basis_orientation": "bit word low-to-high",
+      "metric_measure": "none",
+      "origin": "imported source audit conditional",
+      "exact_expression": "N_a<=2^w",
+      "source_refs": [
+        "UD957"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "w fixed"
+    },
+    {
+      "object_id": "PROD",
+      "symbol": "(R,h,θ)",
+      "object_type": "candidate product readout",
+      "definition": "finite count recorder plus separately assumed three-label XOR update",
+      "domain": "two labeled events",
+      "codomain": "integers × F2 × F2^3",
+      "coefficient_domain": "integers and F2",
+      "units": "logical events",
+      "basis_orientation": "A,B,C pair bits",
+      "metric_measure": "none",
+      "origin": "assumed product",
+      "exact_expression": "AB and BA both (2,0,eA xor eB)",
+      "source_refs": [
+        "UD957",
+        "LEDGER85"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "REC"
+      ],
+      "normalization": "none"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "UD957",
+      "url_or_repo_path": "ud-tetra/UD/Docs/UD capacity mechanisms and native crossing bridge audit.md",
+      "version_or_commit": "957d443e25008632ab9d9328c162343b6a651ee7 SHA-256 2ae26fc5ef8db72700057cbbd5b4ecb618f0c3f7b0b8637c1ef35d047f6c1b93",
+      "section_or_object_id": "Finite recorder mechanism; Bridge requirements; Current sources inspected",
+      "source_status": "dated audit of unavailable returned manuscript v9"
+    },
+    {
+      "source_id": "LEDGER85",
+      "url_or_repo_path": "artifacts/g0506step-20261105-01/exact-001/inputs/002-006-012-ledger_v0.85.json",
+      "version_or_commit": "v0.85 SHA-256 8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "section_or_object_id": "Q194–Q210",
+      "source_status": "recovered ledger"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "text": "separate toy XOR pair-flip coupled to Fire for product witness only; not source-admitted"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer capacity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "terminal finite count per word width"
+    },
+    {
+      "technique": "F2 clock/product",
+      "applicability": "APPLIED_CANDIDATE",
+      "purpose_or_na_reason": "ordered-label readout counterexample only"
+    },
+    {
+      "technique": "physical calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no physical time or apparatus"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "Rmax=2^w-1; h=1; N=R+h",
+    "reduced_expression": "Nmax=2^w",
+    "factor_origins": [
+      "binary w-bit word and pending flag"
+    ],
+    "factorization": "2^w capacity; no prime mechanism beyond binary word",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "logical admitted Fire/Ack operation count",
+    "modulus": "2^w word capacity, no wrap at FULL",
+    "residue_convention": "binary word",
+    "update_rule": "source audit IDLE/SEEK/CLEAR/COMMIT/FULL, not reexecuted",
+    "initial_phase": "initialized word",
+    "coupling": "to Q198 OPEN",
+    "period_claim": "finite stop; no recurrence claim",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "finite recorder state; Q198 obligation operator separate",
+    "generator_or_update": "source audit Fire/Ack controller; product XOR only assumed",
+    "initial_boundary_conditions": "initialized width w, reliable local operations",
+    "conservation_and_sources": "N=R+h invariant",
+    "projection_and_kernel": "count readout omits event labels and continuation maps",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "CONCEPTUAL_TARGET_EXPOSED",
+    "known_targets": [
+      "universal archive"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "source-bounded finite count and two-event product witness",
+    "selection_criterion": "typed distinction between count and lineage",
+    "baseline": "full ordered log"
+  },
+  "calculation_steps": [
+    "terminal R=2^w-1,h=1 gives N=2^w",
+    "two-step product AB and BA share count and XOR endpoint",
+    "source does not define product coupling or global receipt persistence"
+  ],
+  "result": {
+    "exact_expression": "finite stop at 2^w; product readout noninjective under extra assumption",
+    "approximation": null,
+    "units": "logical event count only",
+    "precision_and_error": "exact integer",
+    "scope": "SA-TIME-018 source audit and unsourced product separately typed",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "constructor exact integer replay",
+      "command_or_proof_path": "python3 experiments/history-sequential-receipts/audit.py",
+      "source_revision": "89d0ed67839e36fd317e2ac595eafb08ae1623a9",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "count does not encode order under assumed labeled product",
+    "fixed width blocks further Fire rather than wrap",
+    "v9 manuscript bytes unavailable, only dated audit inspected"
+  ],
+  "limitations": [
+    "source Q198 and recorder not coupled",
+    "no source-complete environment state or actual UD trajectory collision",
+    "independent review not run"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/historyseq-20261105-01/exact-001/manifest.json"
+  ],
+  "next_discriminant": "recover source-complete coupling and event identity retention"
+}

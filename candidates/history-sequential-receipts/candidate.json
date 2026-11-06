@@ -1,0 +1,31 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "history-sequential-receipts",
+  "session_id": "historyseq-20261105-01",
+  "question": "Does source bit recorder preserve ordered Q198 history?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "SA-TIME-018 finite recorder contract from source audit",
+    "three-label XOR coupling only for explicitly unsourced product witness"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "universal archive question known; no numerical target",
+  "fitted_choices": [],
+  "sources": [
+    "UD@957d443 Docs/UD capacity mechanisms and native crossing bridge audit.md §§Finite recorder mechanism, Bridge requirements",
+    "ledger v0.85 Q194–Q210",
+    "history-source-update v0.1"
+  ],
+  "baseline": "full ordered receipt log not sourced",
+  "result": "width-w recorder ends with R=2^w-1,h=1,N=2^w; no ordered label record or Q198 coupling; product model collides but is not source-admissible",
+  "next_discriminant": "recover v9 manuscript and typed coupling/environment update",
+  "mathematical_receipts": [
+    "candidates/history-sequential-receipts/mathematical_receipt.json"
+  ]
+}
