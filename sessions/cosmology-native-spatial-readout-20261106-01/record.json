@@ -1,0 +1,28 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "cosmology-native-spatial-readout-20261106-01",
+  "runtime": "Codex exact combinatorics and GitHub connector",
+  "task": "cosmology-native-spatial-readout-20261106",
+  "goal": "Construct relabeling-invariant assembled-cell filtration and test refinement behavior",
+  "created_at": "2026-11-06T19:29:29.619315+00:00",
+  "base_revision": "9360f5571a495ea29316bdece020eb8378d1b87b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "cosmology-native-spatial-readout-20261106": "e73db086a3059c8704c7258cc3714239e92e7d2f"
+  },
+  "checks": [],
+  "finding": "Intrinsic Q178 cell support plus candidate dual-face graph filtration is relabeling-invariant; adjacency and refinement remain unselected.",
+  "next_action": "Test source-permitted refinement/contact normalization and native trajectory stability of the intrinsic filtration; retain physical N0 gate.",
+  "mathematical_profile": {
+    "coefficient_domain": "assembled pure tetrahedral complex and real amplitudes; exact rational support controls",
+    "exactness_or_precision_plan": "symbolic covariance proof and 720 exact finite relabeling checks",
+    "applicable_methods": [
+      "Q177 ownership",
+      "dual-face graph sublevel filtration",
+      "refinement counterexample"
+    ],
+    "clock_metric_units_conventions": "native squared support threshold; no physical distance/time or image intensity; fixed-complex unit metric only"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "cosmology-native-spatial-readout-20261106-01",
+  "run_id": "assembled-readout-v01",
+  "created_at": "2026-11-06T19:30:36.451361+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "Intrinsic assembled-cell filtration and exact relabeling/refinement controls",
+  "command": "python3 experiments/cosmology-native-spatial/assembled_readout.py; python3 scripts/validate.py; python3 -m unittest discover -s tests -q",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "9360f5571a495ea29316bdece020eb8378d1b87b",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/README.md",
+      "sha256": "79881e37e347e7e3030bf0e478d809504413fe066dd703490957d4c6e3b400dc",
+      "size_bytes": 4107
+    },
+    {
+      "path": "files/assembled_readout.py",
+      "sha256": "818ea05eef21c0b4dbdb627c3a5cc7588807777cee469a70d63386f77a3a2855",
+      "size_bytes": 2266
+    }
+  ]
+}
