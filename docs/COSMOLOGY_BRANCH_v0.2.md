@@ -1,7 +1,0 @@
-# Cosmological Branch target order amendment v0.2
-
-2026-11-06. Supersedes only the **first-target order** of [v0.1](COSMOLOGY_BRANCH_v0.1.md); all source and physical-promotion gates remain. Session `cosmology-g0-selector-decision-20261106-01`, base `66df80e235f7b7d7e69662a2ee520ef6cc569a0d`. Physical promotion 0.
-
-**Decision:** park disk-galaxy G1–G3 scoring after the versioned G0 audits and finite-graph counterexample establish a missing source-selected `J,W,χ`, physical force readout and units. Make **N0 resolved nebular Hα map topology** the first *source/observable gate*. This is a relative dependency judgment: dimensionless static topology does not first require a mass/force law or physical clock; it still requires native pattern dynamics, a map readout and an observational measurement bridge. No UD nebular prediction or empirical fit exists.
-
-N0 measures thresholded-map connected components and holes across predeclared thresholds on a specified pixel adjacency, mask, noise and PSF. The native side must fix carrier, initial/boundary preparation, generator, readout and coarse-graining before a target-blind comparison. Stop before data scoring if the source does not select a spatial pattern/readout. See [G0 selector decision](../experiments/cosmology-galactic-entry/G0_SELECTOR_DECISION_v0.1.md) for exact provenance and constraints. G0 can reopen under its enumerated constitutive and dimensional receipts.
