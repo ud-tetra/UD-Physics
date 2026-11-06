@@ -5,6 +5,8 @@
     "Construct equivariant intrinsic cell-support filtration on assembled tetrahedra",
     "Test relabeling and refinement behavior; no physical map"
   ],
-  "status": "claimed",
-  "created_at": "2026-11-06"
+  "status": "released",
+  "created_at": "2026-11-06",
+  "result_commit": "5c5c85245fb0306574513c471b2e8e75f597a0b5",
+  "pull_request": 351
 }
