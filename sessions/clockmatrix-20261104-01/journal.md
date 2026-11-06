@@ -174,3 +174,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-020 (EXACT): Resolved edge-clas
 ## 2026-11-06T03:24:57.658944+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-021 (EXACT): Signed incidence transport current and stationary controls
+
+## 2026-11-06T03:35:05.875967+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-022 (EXACT): Local current rule and separated versus coherent counterflow

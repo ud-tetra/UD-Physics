@@ -106,3 +106,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Edge-class clock](EDGE_CLASS_CLOCK.md) separates local incidence detuning from a speed-only law.
 
 [Incidence transport current](INCIDENCE_CURRENT.md) derives signed stock flux and tests the stationary and matched moving controls.
+
+[Local current clock](LOCAL_CURRENT_CLOCK.md) tests stationary, matched-frequency, and counterpropagating controls for a passive rate rule.
