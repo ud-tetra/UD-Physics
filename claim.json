@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "history-write-trigger-20261106",
+  "session": "history-write-trigger-20261106-01",
+  "status": "held",
+  "created_at": "2026-11-06T00:00:00Z",
+  "base_revision": "b04652406b5579ca172564d0e3a6fe3aca75693a",
+  "owned_paths": [
+    "experiments/history-write-trigger/",
+    "sessions/history-write-trigger-20261106-01.json",
+    "artifacts/history-write-trigger-20261106-01/"
+  ]
+}
