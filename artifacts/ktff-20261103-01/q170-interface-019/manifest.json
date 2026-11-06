@@ -3,7 +3,7 @@
   "schema_version": 2,
   "session_id": "ktff-20261103-01",
   "run_id": "q170-interface-019",
-  "created_at": "2026-11-06T02:55:00Z",
+  "created_at": "2026-11-06T03:24:57Z",
   "evidence": "EXACT",
   "summary": "v1.9 conditional Q165/Q170 all shared-shell cuts match at candidate top-zero event, but cone-isometry makes second derivative of all nonzero shell amplitudes diverge under old/new native generators; source Q171 direction amendment proposed, not accepted.",
   "command": "python3 current_interface_v19.py; python3 independent_cone_current_v19.py; python3 -m unittest discover -s . -p test_current_interface_v19.py -v",
@@ -51,5 +51,6 @@
   "limitations": [
     "User ZIP includes complete earlier v1.7/v1.8 calculation scripts, sources and tests; GitHub replay is shorter and not byte-identical.",
     "No source-selected event, no adopted Q171 direction correction, and no SI time/length map."
-  ]
+  ],
+  "recorded_at_note": "Timestamp captured from execution environment at manifest correction; do not infer exact creation time of earlier files."
 }
