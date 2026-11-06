@@ -13,11 +13,11 @@
     "pachner-emulator-contract": "dd8b2c8b519d1168f1383159d05ade356a9b42e2"
   },
   "checks": [],
-  "finding": "Frozen constructor emulator passes all scored cases; native event law remains source-blocked",
-  "next_action": "Independent implementation with withheld schedules and independently calibrated channel inputs",
-  "checkpoint_at": "2026-11-06T02:57:34.284857+00:00",
+  "finding": "Matrix-source cross-implementation replay passes 48/48 post-freeze cases; native startup source-blocked",
+  "next_action": "Independent reviewer replay or actual calibration study",
+  "checkpoint_at": "2026-11-06T03:01:09.700137+00:00",
   "checkpoint_source": {
-    "revision": "4726e5fbe03facb05e5b28735c9c18d6e9ba803e",
+    "revision": "2360769074d4c04136e304dea4c232b12a453217",
     "dirty": true
   }
 }

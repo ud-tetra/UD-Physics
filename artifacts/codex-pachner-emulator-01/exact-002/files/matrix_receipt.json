@@ -1,0 +1,351 @@
+{
+  "contract_sha256": "13dee8ab74d54fabc349c834307f6107f591ec21638448654aaf95950bdfc33b",
+  "seed": "f622bee9439575932aae0bd888792f9cb6d671e76d43d7a227de5c54a9257323",
+  "counts": {
+    "FULL": 24,
+    "PROJECTED": 24,
+    "wrong": 0,
+    "abstain": 0
+  },
+  "remainder_bound": "1/2444265394033074477465600",
+  "cases": [
+    {
+      "case": 0,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 22,
+      "trace_sha256": "81e3ad3945ad37d5fc66346a9147413689b5f6dc882fd28782e9ff809e13a152"
+    },
+    {
+      "case": 1,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 21,
+      "trace_sha256": "2e284d3986963d41c873fe000e52419691b37f9b730486f7ee479cf098f5d7c7"
+    },
+    {
+      "case": 2,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 17,
+      "trace_sha256": "51112f36133c951d3757e9ba2885119ca0ff1469d67470ca70d83adfbf271c00"
+    },
+    {
+      "case": 3,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 23,
+      "trace_sha256": "6e5858608edf2a3d8e5381c79b8ffecc3baa159b1405c1bfe6ef7b53821238ba"
+    },
+    {
+      "case": 4,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 19,
+      "trace_sha256": "f8a3d940275cf1e6fdb61ca3a0f1542aa3cfc30ee6129862df60f37cb8948d67"
+    },
+    {
+      "case": 5,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 23,
+      "trace_sha256": "1650d0f1ce4430ac648cd5cbb755dc9fdf88930379f76f1c3aba767993be9dd7"
+    },
+    {
+      "case": 6,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 19,
+      "trace_sha256": "fe0d700f127f05eef9f945979404ee58363943fa683254bdd9ba7dea84795fcd"
+    },
+    {
+      "case": 7,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 15,
+      "trace_sha256": "2e02f79405b9f61f029ff884907d01f7c90d7af4b11b9d06eba63a2f8a0e25fd"
+    },
+    {
+      "case": 8,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 26,
+      "trace_sha256": "6a48cb66b6c820289a256427406e7802dd3399c9991eed7e57902f66f4f8f5ee"
+    },
+    {
+      "case": 9,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 23,
+      "trace_sha256": "0c1f93e140c52414ee5e23878bbd58710ddb4ca3f9ed4b8623efbd33539960ca"
+    },
+    {
+      "case": 10,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 22,
+      "trace_sha256": "70a1e8b0809d801bbe51a64ad524e70cf802b858bb4ae531687db2be957fec7d"
+    },
+    {
+      "case": 11,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 23,
+      "trace_sha256": "a67581f8cc60edba2a9bfac88c2d5630a6ba47083d942b9eb5f9314b9e44f297"
+    },
+    {
+      "case": 12,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 18,
+      "trace_sha256": "d19b67d9485ea73144fe8cc35ea352a885c82040e6424693d4dce6c7767d090b"
+    },
+    {
+      "case": 13,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 15,
+      "trace_sha256": "9654fc06f1110a1934ad94f67bd0b16e592d8e1d8c6a6dbbb1df5138677e2b32"
+    },
+    {
+      "case": 14,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 21,
+      "trace_sha256": "3ace131eee2ded53286178a4fb08ba9cde2bedddb2b6c6d5dc5f9363027c116e"
+    },
+    {
+      "case": 15,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 19,
+      "trace_sha256": "1281aec0ba0622fe61d5d3b3aab35e2f1dac8ccadb657f145b2e66859a4ed1dc"
+    },
+    {
+      "case": 16,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 22,
+      "trace_sha256": "bb144eabf331c9c58f2dc6e333bbec76c6d3103c85e8e40de5d7c34509db4962"
+    },
+    {
+      "case": 17,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 18,
+      "trace_sha256": "960beb638ddcf9512205dcf6cb43d05ba4af371cd6ddba4638ff6dd85bbb94ca"
+    },
+    {
+      "case": 18,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 17,
+      "trace_sha256": "f83733612d27a0de546fb72d146ae1c205a5f0c8e751ef6f30432a12f5844606"
+    },
+    {
+      "case": 19,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 26,
+      "trace_sha256": "5e190a0cd9eeb29c5c0f06bdd1e2850a7fd80fa664daeaffc43615bc885b7e11"
+    },
+    {
+      "case": 20,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 19,
+      "trace_sha256": "6e005098a151e5f71eef7b8bd6d9fd22edd9514c40ca41ac1c8865f505260015"
+    },
+    {
+      "case": 21,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 17,
+      "trace_sha256": "ee589b8cd2959e1eb14ee952f37fb0ebfa858e9021cad3f31c6b5700d0e69261"
+    },
+    {
+      "case": 22,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 20,
+      "trace_sha256": "558826329189920a24cca60952de9609e44d7ac9dfa8ff6f170b9e856931a88b"
+    },
+    {
+      "case": 23,
+      "expected": "FULL",
+      "observed": "FULL",
+      "sample_count": 25,
+      "trace_sha256": "4bd2a8e9f7f8297e61e977017f5b4f07baed3e6c3486b38b9dac58b1a0f119ed"
+    },
+    {
+      "case": 0,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 22,
+      "trace_sha256": "7ec62ff7a0e4f301359d4b3c54c1a8b638f9997acbe7e830237503f9397d1f1c"
+    },
+    {
+      "case": 1,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 21,
+      "trace_sha256": "668079aca81455d43d5a479687659b6245b207f9ce3bbb3e18660d4ab6eb4984"
+    },
+    {
+      "case": 2,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 17,
+      "trace_sha256": "34b8b1a02c5a4aabca2d0772bf0d23c3fd1599e3389327aa0d1925299cb19498"
+    },
+    {
+      "case": 3,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 23,
+      "trace_sha256": "60fde8662bd65228fa3371f827d87f2809e51c6a0243af3605199189caf71061"
+    },
+    {
+      "case": 4,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 19,
+      "trace_sha256": "d50698933ff798a1242c8cb8061349dc8f711953dcaf7f47cc660c2bc098da2f"
+    },
+    {
+      "case": 5,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 23,
+      "trace_sha256": "57f7203fddda6f1f6f58b4da5f283084f5bbddda0dd5045c3b5ed38257ad3180"
+    },
+    {
+      "case": 6,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 19,
+      "trace_sha256": "39cbd1708f68cd197771992b5a6291a476ba909b86ea37263ca1b12947c182e4"
+    },
+    {
+      "case": 7,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 15,
+      "trace_sha256": "31e850c381f3a51248e22f4c0a871cbc69a144fb5d784df95d55d23ac6cb7d1f"
+    },
+    {
+      "case": 8,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 26,
+      "trace_sha256": "19d64156c5a3eed7fb3dae303c0f649fb51728bbf7f35e9a7b05461a7dfdc15f"
+    },
+    {
+      "case": 9,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 23,
+      "trace_sha256": "b1157152f3fd9e80176f6d760b7ba1244fc6d0c0d3ad855503118e5c8684aebd"
+    },
+    {
+      "case": 10,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 22,
+      "trace_sha256": "a141144e62b5cc9592403aab13bdb752cae2ae669169c5173f8d1a523953f7a7"
+    },
+    {
+      "case": 11,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 23,
+      "trace_sha256": "d70821808d54b88ee465c9f39fbae2be01d5bb362f96a08ca76556bcddf7aee7"
+    },
+    {
+      "case": 12,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 18,
+      "trace_sha256": "c9b93958bae60b3ba5960e6c6740f3cabfa043d846110cb10d336cfb3834e484"
+    },
+    {
+      "case": 13,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 15,
+      "trace_sha256": "d1f01427d6feb0d34b26b9efaeb580c83e619bc262635f9ecd05fc15597a337c"
+    },
+    {
+      "case": 14,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 21,
+      "trace_sha256": "ff6d08f362c0918bcca238d066b2178b94b101e5fd61da4a61c239e88433f74f"
+    },
+    {
+      "case": 15,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 19,
+      "trace_sha256": "8e75d1b909be67f04fd99abd1292b8e813dd96aee77e38952068deba4b27290b"
+    },
+    {
+      "case": 16,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 22,
+      "trace_sha256": "aa60fc38b555046ab61afbbba23001b7d03351fc8f46b5e9fbd54900637ab7b8"
+    },
+    {
+      "case": 17,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 18,
+      "trace_sha256": "bc8e4b858c0e29a0e1cff214ea8d988bc50d644358ba83525570b1664c60f2c1"
+    },
+    {
+      "case": 18,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 17,
+      "trace_sha256": "6ccd28f6803cef34f4a88b1d47976efdfc988759ea1a9c82e88c1ff9bec4d501"
+    },
+    {
+      "case": 19,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 26,
+      "trace_sha256": "39a8235e6b6d74c013deb7076fc82331775f2fc02e1b12cdf52bcbac1a6df775"
+    },
+    {
+      "case": 20,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 19,
+      "trace_sha256": "4ae45bd1f748104e0903401a14e075872b1fe34fe19a154d133ff55da3c8a5df"
+    },
+    {
+      "case": 21,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 17,
+      "trace_sha256": "c81772a8507d594930875f063c2c7ae347042b2fec81942908262f5c00a2560a"
+    },
+    {
+      "case": 22,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 20,
+      "trace_sha256": "e0edf7f28a534ce8245411a85239a76212f5bcc2c11a8afa30d58105efc9eea9"
+    },
+    {
+      "case": 23,
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "sample_count": 25,
+      "trace_sha256": "d2ed3e6e43b33a09b6bfa1c7cdf690c49d333351c28d5e870cb94528e4b9bd38"
+    }
+  ],
+  "full_output_sha256": "d2f29551beef7edeaef3ecbec10dd18020a11298e287d0dd39e816c89664a150",
+  "sample_count": 980
+}
