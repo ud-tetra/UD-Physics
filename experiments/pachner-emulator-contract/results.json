@@ -1,0 +1,306 @@
+{
+  "contract_sha256": "0ec4462c4b94bb9f8847be515685c70dd39df301fc1e4f70548497f485cdb1d4",
+  "correct": {
+    "FULL": 18,
+    "PROJECTED": 18
+  },
+  "wrong": 0,
+  "abstentions": 0,
+  "matched_null": "IDENTICAL_TRACE_AND_LABEL",
+  "abstention_controls": {
+    "phase_cap": "UNREGISTERED_STEP",
+    "calibration_cap": "REJECTED_CALIBRATION",
+    "bad_event": "INVALID_EVENT_ENVELOPE",
+    "stalled": "NO_DECISION"
+  },
+  "cases": [
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1/2",
+      "pattern": 0,
+      "polarity": -1,
+      "samples": 28
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1/2",
+      "pattern": 0,
+      "polarity": 0,
+      "samples": 28
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1/2",
+      "pattern": 0,
+      "polarity": 1,
+      "samples": 28
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1/2",
+      "pattern": 1,
+      "polarity": -1,
+      "samples": 30
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1/2",
+      "pattern": 1,
+      "polarity": 0,
+      "samples": 31
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1/2",
+      "pattern": 1,
+      "polarity": 1,
+      "samples": 31
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1",
+      "pattern": 0,
+      "polarity": -1,
+      "samples": 14
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1",
+      "pattern": 0,
+      "polarity": 0,
+      "samples": 14
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1",
+      "pattern": 0,
+      "polarity": 1,
+      "samples": 14
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1",
+      "pattern": 1,
+      "polarity": -1,
+      "samples": 16
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1",
+      "pattern": 1,
+      "polarity": 0,
+      "samples": 16
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "1",
+      "pattern": 1,
+      "polarity": 1,
+      "samples": 16
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "3/2",
+      "pattern": 0,
+      "polarity": -1,
+      "samples": 10
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "3/2",
+      "pattern": 0,
+      "polarity": 0,
+      "samples": 10
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "3/2",
+      "pattern": 0,
+      "polarity": 1,
+      "samples": 10
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "3/2",
+      "pattern": 1,
+      "polarity": -1,
+      "samples": 10
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "3/2",
+      "pattern": 1,
+      "polarity": 0,
+      "samples": 10
+    },
+    {
+      "expected": "FULL",
+      "observed": "FULL",
+      "rate": "3/2",
+      "pattern": 1,
+      "polarity": 1,
+      "samples": 10
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1/2",
+      "pattern": 0,
+      "polarity": -1,
+      "samples": 28
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1/2",
+      "pattern": 0,
+      "polarity": 0,
+      "samples": 28
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1/2",
+      "pattern": 0,
+      "polarity": 1,
+      "samples": 28
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1/2",
+      "pattern": 1,
+      "polarity": -1,
+      "samples": 30
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1/2",
+      "pattern": 1,
+      "polarity": 0,
+      "samples": 31
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1/2",
+      "pattern": 1,
+      "polarity": 1,
+      "samples": 31
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1",
+      "pattern": 0,
+      "polarity": -1,
+      "samples": 14
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1",
+      "pattern": 0,
+      "polarity": 0,
+      "samples": 14
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1",
+      "pattern": 0,
+      "polarity": 1,
+      "samples": 14
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1",
+      "pattern": 1,
+      "polarity": -1,
+      "samples": 16
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1",
+      "pattern": 1,
+      "polarity": 0,
+      "samples": 16
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "1",
+      "pattern": 1,
+      "polarity": 1,
+      "samples": 16
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "3/2",
+      "pattern": 0,
+      "polarity": -1,
+      "samples": 10
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "3/2",
+      "pattern": 0,
+      "polarity": 0,
+      "samples": 10
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "3/2",
+      "pattern": 0,
+      "polarity": 1,
+      "samples": 10
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "3/2",
+      "pattern": 1,
+      "polarity": -1,
+      "samples": 10
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "3/2",
+      "pattern": 1,
+      "polarity": 0,
+      "samples": 10
+    },
+    {
+      "expected": "PROJECTED",
+      "observed": "PROJECTED",
+      "rate": "3/2",
+      "pattern": 1,
+      "polarity": 1,
+      "samples": 10
+    }
+  ]
+}
