@@ -1,0 +1,40 @@
+{
+  "version": "v0.3",
+  "evidence": "EXACT_CONDITIONAL",
+  "physical_promotion": 0,
+  "source_commit": "b2a8abbc3ea24d6aeb6b75d3c644c054d4a6cedf",
+  "sample_window": [
+    "1/240",
+    "1/120"
+  ],
+  "nominal_prediction_coefficients": {
+    "FULL": [
+      "-1/4",
+      "0",
+      "5/8",
+      "0",
+      "-25/96"
+    ],
+    "PROJECTED": [
+      "-1/4",
+      "0",
+      "3/8",
+      "0",
+      "-3/32"
+    ]
+  },
+  "nominal_prediction_radius": "1/382205952",
+  "threshold": "-1/4+s^2/2-17s^4/96",
+  "joint_error_budget": "78epsilon+15r+13nu+eta<=1/1000000",
+  "uniform_classification_slack_lower_bound": "492407/5971968000000",
+  "grid_sample_times": 257,
+  "adversarial_enclosure_endpoint_checks": 1028,
+  "coefficient_crosscheck": "forward state vs backward readout recurrences, orders 0..8",
+  "scope": "one signed +1/4 apex probe; rational nominal time; all-active instantaneous continuation; exact input parsing; error bounds externally guaranteed",
+  "limitations": [
+    "supplied error bounds are not estimated by classifier",
+    "arbitrary out-of-model readings may receive a label; label is not model validation",
+    "binary floating point and measurement quantization require separate bounds",
+    "original unmodified witness remains exactly blind"
+  ]
+}

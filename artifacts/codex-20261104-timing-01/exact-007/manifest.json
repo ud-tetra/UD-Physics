@@ -1,0 +1,195 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-20261104-timing-01",
+  "run_id": "exact-007",
+  "created_at": "2026-11-05T18:28:10.087201+00:00",
+  "evidence": "OPEN",
+  "summary": "Bounded native source audit: autonomous anchor and sampling law unresolved; conditional protocol retained",
+  "command": "python3 -B experiments/pachner-timing-budget/source_audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "b2c733dd9bf9185a38457cdca1aba44cd0a633d3",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "source_audit.py",
+      "path": "inputs/001-source_audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit.py",
+      "sha256": "adada1528ccc9799a31da036c1e7cf66812a2e4e4065e71edd60964492c71b9f",
+      "size_bytes": 4517
+    },
+    {
+      "input_id": "input-002",
+      "name": "SOURCE_GATE_v0.7.md",
+      "path": "inputs/002-SOURCE_GATE_v0.7.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/SOURCE_GATE_v0.7.md",
+      "sha256": "286c1175b696fa280fb7a6090364f652aa8b27bde09d63a34ac98d92ec1d56de",
+      "size_bytes": 7067
+    },
+    {
+      "input_id": "input-003",
+      "name": "source_audit_receipt.json",
+      "path": "inputs/003-source_audit_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/pachner-timing-budget/source_audit_receipt.json",
+      "sha256": "57d5681eeb37f0f83564d17be6a5981d110cd54e110159800deee35d43745bd7",
+      "size_bytes": 10104
+    },
+    {
+      "input_id": "input-004",
+      "name": "manifest.json",
+      "path": "inputs/004-manifest.json",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit_sources/manifest.json",
+      "sha256": "f8b667f63207678b20e4dd0740d699511982100439ad6945af4e227edf974605",
+      "size_bytes": 2883
+    },
+    {
+      "input_id": "input-005",
+      "name": "01-ledger-v0.39.txt",
+      "path": "inputs/005-01-ledger-v0.39.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit_sources/01-ledger-v0.39.txt",
+      "sha256": "1281aa8454013fbbdbcf8ada07af0aefe81014003f25a27f3929ad43afffae63",
+      "size_bytes": 43009
+    },
+    {
+      "input_id": "input-006",
+      "name": "02-pachner-trigger-lift.txt",
+      "path": "inputs/006-02-pachner-trigger-lift.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit_sources/02-pachner-trigger-lift.txt",
+      "sha256": "60f7c07fb1ae7b4bbebcc6e7fda637e264dc121dfb41ef6ef53ce6e7a7c426fb",
+      "size_bytes": 6880
+    },
+    {
+      "input_id": "input-007",
+      "name": "03-pachner-event-actuator.txt",
+      "path": "inputs/007-03-pachner-event-actuator.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit_sources/03-pachner-event-actuator.txt",
+      "sha256": "9ea78a2a3699532f47358e161b067bb8d5d4e9c8febecb02cf4b2178f8e1ddbd",
+      "size_bytes": 5466
+    },
+    {
+      "input_id": "input-008",
+      "name": "04-qpb1-native-events.txt",
+      "path": "inputs/008-04-qpb1-native-events.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit_sources/04-qpb1-native-events.txt",
+      "sha256": "48591fdba99d641d5ad8dd541ca13331dc531545d3c02d3f800c18737ce9be8c",
+      "size_bytes": 13455
+    },
+    {
+      "input_id": "input-009",
+      "name": "05-qpb1-unit-preparation.txt",
+      "path": "inputs/009-05-qpb1-unit-preparation.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit_sources/05-qpb1-unit-preparation.txt",
+      "sha256": "68050601f4208acb96a8651ff8a39ad6befc310cd0d64ed7a59cc938cdc9873f",
+      "size_bytes": 12510
+    },
+    {
+      "input_id": "input-010",
+      "name": "06-qpb1-finite-window.txt",
+      "path": "inputs/010-06-qpb1-finite-window.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit_sources/06-qpb1-finite-window.txt",
+      "sha256": "24267337ddf5aa341046e1a6e096d8aaa2825e71fdfe55d4f080f3966e8fbc6b",
+      "size_bytes": 15317
+    },
+    {
+      "input_id": "input-011",
+      "name": "07-graphite-endogenous-gate.txt",
+      "path": "inputs/011-07-graphite-endogenous-gate.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit_sources/07-graphite-endogenous-gate.txt",
+      "sha256": "b5f1569d5b5da5c4d50e16353bac749e62d1092d1e7a70f21c526c7ba82f0165",
+      "size_bytes": 5228
+    },
+    {
+      "input_id": "input-012",
+      "name": "08-pachner-current-metric.txt",
+      "path": "inputs/012-08-pachner-current-metric.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit_sources/08-pachner-current-metric.txt",
+      "sha256": "4a05cd35c45318c344e67de4ab0cbddb037f8ad68367bf762d8ce09b7c478f30",
+      "size_bytes": 5932
+    },
+    {
+      "input_id": "input-013",
+      "name": "09-g05-g06-joint-proof.txt",
+      "path": "inputs/013-09-g05-g06-joint-proof.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit_sources/09-g05-g06-joint-proof.txt",
+      "sha256": "9cda91b4c97473e0b7c36d1ce8119b2ae25051372f527b01e3f3a43efbb758ff",
+      "size_bytes": 8584
+    },
+    {
+      "input_id": "input-014",
+      "name": "keyword_scan.txt",
+      "path": "inputs/014-keyword_scan.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/source_audit_sources/keyword_scan.txt",
+      "sha256": "04f4bc40ddaf0ffb17bd4755390d4800a34b305c6f6d1bcb9a44d1b763ab839d",
+      "size_bytes": 9330
+    },
+    {
+      "input_id": "input-015",
+      "name": "audit.py",
+      "path": "inputs/015-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/audit.py",
+      "sha256": "89326be389d9cca47d8b4a7324b8b013f58368df4808978e1f89031ee1428310",
+      "size_bytes": 8361
+    },
+    {
+      "input_id": "input-016",
+      "name": "audit.py",
+      "path": "inputs/016-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-interface-defect/audit.py",
+      "sha256": "a3f1762db95e3845b09561906b229bc816c7e65b58ef3705e485cfe79099802a",
+      "size_bytes": 6091
+    },
+    {
+      "input_id": "input-017",
+      "name": "audit.py",
+      "path": "inputs/017-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-switch-ledger/audit.py",
+      "sha256": "8d1817d486add01a3e00da5d5ba16f4b06fea22551af50515bb68c3fc552b034",
+      "size_bytes": 5650
+    },
+    {
+      "input_id": "input-018",
+      "name": "audit.py",
+      "path": "inputs/018-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/audit.py",
+      "sha256": "472965714d8009d03e6916c4491e95514ccb7bff7ad9511d7a5fb8e8e3cd8aee",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-019",
+      "name": "audit.py",
+      "path": "inputs/019-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-boundary-observability/audit.py",
+      "sha256": "e8e36515d2f56fee6a8d849d0a9e368ced8cdff76ef199a796b15939630eb6de",
+      "size_bytes": 9321
+    }
+  ],
+  "files": [
+    {
+      "path": "files/source_audit_results.json",
+      "sha256": "864583268d821321f52c043fff6fcb2e4ad0b6bbd37c5631b830ea304395744c",
+      "size_bytes": 2242
+    }
+  ]
+}

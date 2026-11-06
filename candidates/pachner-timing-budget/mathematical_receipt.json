@@ -1,0 +1,156 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "pachner-timing-budget-v0.1",
+  "session_id": "codex-20261104-timing-01",
+  "candidate_id": "pachner-timing-budget",
+  "question": "Can preparation and reserve errors preserve one local crossing and distinguish fixed projected masks?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "event",
+      "symbol": "(c,R);K_h;V",
+      "object_type": "hybrid finite-dimensional model",
+      "definition": "old skew preflow; first inward reserve zero; projected postflow; signed vertex contrast",
+      "domain": "R^23 plus scalar reserve",
+      "codomain": "R^27 plus rank-2 memory",
+      "coefficient_domain": "Q matrices, real continuous evolution",
+      "units": "native amplitude, squared-amplitude reserve, dimensionless parameter",
+      "basis_orientation": "ascending oriented simplices",
+      "metric_measure": "unit before event; H=M^T M+P afterward",
+      "origin": "prior conditional plus derived bounds",
+      "exact_expression": "78epsilon+15r+13nu+eta<=1/800000",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "trigger",
+        "ledger"
+      ],
+      "assumption_ids": [
+        "projection",
+        "single_ball",
+        "prepared_signed_state"
+      ],
+      "dependency_ids": [],
+      "normalization": "no physical normalization"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "trigger",
+      "url_or_repo_path": "experiments/pachner-trigger-lift/README.md",
+      "version_or_commit": "41da46f2f3f3dd25f794fbbb5dedc16ea00854d8",
+      "section_or_object_id": "Objects; post-event projection; readout",
+      "source_status": "prior conditional"
+    },
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "v0.39",
+      "section_or_object_id": "Q165-Q173,Q177-Q179",
+      "source_status": "historical read-only"
+    }
+  ],
+  "assumptions": [
+    "one snapped 2-to-3 ball; signed prepared face and edge",
+    "fixed old skew preflow and constant reserve",
+    "event-image projection and metric H",
+    "two fixed mask hypotheses; max-absolute-edge selector and holding are posited",
+    "known nominal sample time; bounded jitter and signed scalar reading"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact Fraction linear algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "metric and derivative checks"
+    },
+    {
+      "technique": "norm bounds, Taylor theorem, monotone zero",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "continuous interval and perturbation proof"
+    },
+    {
+      "technique": "modular clocks and factorization",
+      "applicability": "NA",
+      "purpose_or_na_reason": "no modular register or divisibility question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2/6*125*sqrt(29/5)<105; (1/420)^2/2=1/352800",
+    "reduced_expression": "1/800000<1/705600",
+    "factor_origins": [
+      "5 generator norm; sqrt(2) contrast norm; 29/10 event stock; 1/6 Taylor remainder"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "real dimensionless evolution parameter",
+    "update_rule": "exponential of fixed generator between event and sample",
+    "physical_unit_map": "OPEN",
+    "period_claim": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "old R23; target R27 plus kernel memory",
+    "generator_or_update": "Ao; event T; K_h=H^-1 M^T A_h M",
+    "initial_boundary_conditions": "signed face 012=1 and edge 01=1; one ball",
+    "conservation_and_sources": "old norm; conditional event reserve balance; H-norm after event",
+    "projection_and_kernel": "rank-2 memory, event projection assumed",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "Prior chat mask comparisons exposed; no empirical data used",
+    "known_targets": [
+      "prior model derivatives"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "conservative sufficient constants and sample window selected after model derivative inspection"
+    ],
+    "search_domain_and_budget": "two fixed masks; target coordinates checked through order 3",
+    "selection_criterion": "earliest linear target boundary signal with conservative certificate",
+    "baseline": "all-active projected continuation"
+  },
+  "calculation_steps": [
+    "reconstruct prior rational transport, metric, generators",
+    "verify same initial coordinate values/velocities for both masks",
+    "contrast second derivative difference 2",
+    "bound crossing via commutator, derivative and endpoint margins",
+    "bound event-state, sampling-time and scalar readout errors"
+  ],
+  "result": {
+    "exact_expression": "Unique crossing locally; |t_star|<=(r+5epsilon)/2; joint classification condition 78epsilon+15r+13nu+eta<=1/800000",
+    "approximation": null,
+    "units": "native model units",
+    "precision_and_error": "rational matrix identities plus analytic inequalities",
+    "scope": "one declared preparation interval; fixed mask hypothesis; signed contrast",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "Fraction computation and analytic proof",
+      "command_or_proof_path": "experiments/pachner-timing-budget/audit.py; README.md",
+      "source_revision": "41da46f2f3f3dd25f794fbbb5dedc16ea00854d8",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Equal first derivatives cannot distinguish these masks",
+    "Local uniqueness does not establish earliest crossing over unrestricted history",
+    "Projection is not full new-carrier incidence flow"
+  ],
+  "limitations": [
+    "No independent review or empirical test",
+    "No native derivation of reserve, trigger, mask holding or event metric",
+    "Midpoint evaluated as exact model function; floating estimator unimplemented",
+    "No generator or metric perturbation coverage"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/codex-20261104-timing-01/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Independently check certificate and compare with full new-carrier flow before choosing projection"
+}

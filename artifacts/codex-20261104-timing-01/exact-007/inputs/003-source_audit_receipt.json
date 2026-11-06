@@ -1,0 +1,216 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "pachner-native-source-gate-v0.7",
+  "session_id": "codex-20261104-timing-01",
+  "candidate_id": "pachner-timing-budget",
+  "question": "Do current inspected native sources supply the event anchor and phase-step certificate?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "event",
+      "symbol": "event anchor; observation mesh",
+      "object_type": "source gate and acquisition specification",
+      "definition": "typed source dependencies of the conditional startup protocol",
+      "domain": "nine pinned source documents and continuous-generator trajectories",
+      "codomain": "source-supported, assumed, or source-blocked findings",
+      "coefficient_domain": "Q finite matrices; symbolic exact flow/periodicity",
+      "units": "native amplitude, squared-amplitude reserve, dimensionless parameter",
+      "basis_orientation": "ascending oriented simplices",
+      "metric_measure": "unit before event; H=M^T M+P afterward",
+      "origin": "prior conditional plus derived bounds",
+      "exact_expression": "F=0 or 1/10 for two supplied reserves; 1/2000<=1/1000<1/100",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "trigger",
+        "ledger"
+      ],
+      "assumption_ids": [
+        "projection",
+        "single_ball",
+        "prepared_signed_state"
+      ],
+      "dependency_ids": [],
+      "normalization": "no physical normalization"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+      "section_or_object_id": "see SOURCE_GATE_v0.7.md source table",
+      "source_status": "read-only selected source snapshot; digest in source manifest"
+    },
+    {
+      "source_id": "pachner-trigger-lift",
+      "url_or_repo_path": "experiments/pachner-trigger-lift/README.md",
+      "version_or_commit": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+      "section_or_object_id": "see SOURCE_GATE_v0.7.md source table",
+      "source_status": "read-only selected source snapshot; digest in source manifest"
+    },
+    {
+      "source_id": "pachner-event-actuator",
+      "url_or_repo_path": "experiments/pachner-event-actuator/README.md",
+      "version_or_commit": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+      "section_or_object_id": "see SOURCE_GATE_v0.7.md source table",
+      "source_status": "read-only selected source snapshot; digest in source manifest"
+    },
+    {
+      "source_id": "qpb1-native-events",
+      "url_or_repo_path": "experiments/qpb1-native-events/README.md",
+      "version_or_commit": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+      "section_or_object_id": "see SOURCE_GATE_v0.7.md source table",
+      "source_status": "read-only selected source snapshot; digest in source manifest"
+    },
+    {
+      "source_id": "qpb1-unit-preparation",
+      "url_or_repo_path": "experiments/qpb1-unit-preparation/README.md",
+      "version_or_commit": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+      "section_or_object_id": "see SOURCE_GATE_v0.7.md source table",
+      "source_status": "read-only selected source snapshot; digest in source manifest"
+    },
+    {
+      "source_id": "qpb1-finite-window",
+      "url_or_repo_path": "experiments/qpb1-finite-window/README.md",
+      "version_or_commit": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+      "section_or_object_id": "see SOURCE_GATE_v0.7.md source table",
+      "source_status": "read-only selected source snapshot; digest in source manifest"
+    },
+    {
+      "source_id": "graphite-endogenous-gate",
+      "url_or_repo_path": "experiments/graphite-endogenous-gate/README.md",
+      "version_or_commit": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+      "section_or_object_id": "see SOURCE_GATE_v0.7.md source table",
+      "source_status": "read-only selected source snapshot; digest in source manifest"
+    },
+    {
+      "source_id": "pachner-current-metric",
+      "url_or_repo_path": "experiments/pachner-current-metric/README.md",
+      "version_or_commit": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+      "section_or_object_id": "see SOURCE_GATE_v0.7.md source table",
+      "source_status": "read-only selected source snapshot; digest in source manifest"
+    },
+    {
+      "source_id": "g05-g06-joint-proof",
+      "url_or_repo_path": "experiments/g05-g06-joint-proof/README.md",
+      "version_or_commit": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+      "section_or_object_id": "see SOURCE_GATE_v0.7.md source table",
+      "source_status": "read-only selected source snapshot; digest in source manifest"
+    }
+  ],
+  "assumptions": [
+    "one snapped 2-to-3 ball; signed prepared face and edge",
+    "fixed old skew preflow and constant reserve",
+    "event-image projection and metric H",
+    "two fixed mask hypotheses; max-absolute-edge selector and holding are posited",
+    "known nominal sample time; bounded jitter and signed scalar reading",
+    "v0.2 probe deliberately adds 1/4 at old vertex 3; all-active flow in both continuation hypotheses",
+    "v0.4 fixed ambient metric and event map; post-event ramp/perturbation with norm and integrated-deficit bounds",
+    "v0.5 simultaneous signed W,Y readouts; registered first rising reference quarter; common scalar phase; bounded residual nonscalar error",
+    "v0.6 declared affine channel calibration envelopes; trusted phase-zero event receipt; valid per-sample phase advance upper bound 1/1000"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact Fraction linear algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "metric and derivative checks"
+    },
+    {
+      "technique": "norm bounds, Taylor theorem, monotone zero",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "continuous interval and perturbation proof"
+    },
+    {
+      "technique": "modular clocks and factorization",
+      "applicability": "NA",
+      "purpose_or_na_reason": "no modular register or divisibility question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "a+delta+h; a+2delta+2h",
+    "reduced_expression": "11001/1000000; 6001/500000",
+    "factor_origins": [
+      "a=1/100 observed trigger",
+      "delta=1/1000000 readout budget",
+      "h=1/1000 declared phase-step ceiling",
+      "2 reference derivative bound"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "monotone scalar phase with bounded sample increments",
+    "update_rule": "0<=delta_u<=1/1000; event anchor u=0",
+    "physical_unit_map": "none; a native phase-per-sample law still required",
+    "period_claim": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "old R23; target R27 plus kernel memory",
+    "generator_or_update": "v(t)BF or v(t)BP plus cumulative bounded ambient error",
+    "initial_boundary_conditions": "original c0 for no-go; c0+(1/4)e3 for probe",
+    "conservation_and_sources": "old norm; conditional event reserve balance; H-norm after event",
+    "projection_and_kernel": "rank-2 memory, event projection assumed",
+    "physical_mapping": "none; shared unknown scalar clock removed conditionally, relative readout normalization still assumed"
+  },
+  "target_exposure": {
+    "status": "Prior chat mask comparisons exposed; no empirical data used",
+    "known_targets": [
+      "v0.5 startup gap and readout budget"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "conservative phase-step cap",
+      "simultaneous calibration allocation"
+    ],
+    "search_domain_and_budget": "one first-crossing latch; 384 synthetic extrema streams",
+    "selection_criterion": "preserve v0.5 classifier and prevent skipped admission window",
+    "baseline": "full-flow residual zero"
+  },
+  "calculation_steps": [
+    "bind nine integrated source documents with SHA-256 and exact revision",
+    "inspect their claimed scope and retained open dependencies",
+    "verify reserve-choice and stationary-zero counterexamples",
+    "separate trajectory law from acquisition mesh",
+    "preserve clock/carrier types across QPB1 and bipyramid observers",
+    "park autonomous-source promotion and list reopening inputs"
+  ],
+  "result": {
+    "exact_expression": "autonomous event anchor and native phase-step acquisition law SOURCE_BLOCKED in inspected documents",
+    "approximation": null,
+    "units": "native model units",
+    "precision_and_error": "rational matrix identities plus analytic inequalities",
+    "scope": "bounded source audit, not global absence theorem",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "source digests, excerpt binding, Fraction finite-carrier checks and exact counterexample proofs",
+      "command_or_proof_path": "experiments/pachner-timing-budget/source_audit.py; SOURCE_GATE_v0.7.md",
+      "source_revision": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+      "actual_result": "PASS; source scope classification remains constructor analysis",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Same state/generator admits different assumed reserve predicates",
+    "Continuous evolution admits fine and coarse observation meshes",
+    "Endpoint phases can hide whole cycles",
+    "Native K4 quadrature phase has no supplied transfer to bipyramid observer"
+  ],
+  "limitations": [
+    "Nine selected documents and keyword scan; no exhaustive archive search",
+    "Source assertions are evidence, not global absence proof",
+    "No event/preparation or observer/update law newly derived"
+  ],
+  "changed_dependencies": [
+    "Autonomous promotion parked; all conditional v0.1-v0.6 results preserved"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/codex-20261104-timing-01/exact-007/manifest.json"
+  ],
+  "next_discriminant": "Supply a source-defined event/preparation and observation/update law, or explicitly instantiate an external emulator protocol"
+}

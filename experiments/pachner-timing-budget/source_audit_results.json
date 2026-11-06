@@ -1,0 +1,48 @@
+{
+  "version": "v0.7",
+  "evidence": [
+    "SOURCE_AUDIT",
+    "EXACT_CONDITIONAL",
+    "OPEN"
+  ],
+  "source_revision": "e21132a12dfea8b4da785a77d16a6a4d0eeb786f",
+  "bound_sources": 9,
+  "binding_checks": "SHA-256 and declared excerpt anchors PASS; not an absence proof",
+  "event_anchor": {
+    "status": "SOURCE_BLOCKED_AUTONOMOUS; CONDITIONAL_PROTOCOL_AVAILABLE",
+    "finding": "Q169 is fixed-complex flow; Q173 gates supplied couplings. Candidate reserve first-entry and event map can define an anchor once posited, but are not selected by those rows."
+  },
+  "phase_step": {
+    "status": "SOURCE_BLOCKED_NATIVE_LAW; DESIGNABLE_ACQUISITION",
+    "finding": "Existing sampling bounds assume a gap; continuous generator alone permits meshes 1/2000 and 1/100 and selects neither."
+  },
+  "native_event_observer": {
+    "status": "TYPED_NONTRANSFER",
+    "finding": "K4 edge quadrature observer is added, uses another carrier and phase convention, and does not identify this bipyramid move/preparation or its sample-phase law."
+  },
+  "exact_counterexamples": {
+    "same_preparation_reserve_choice": [
+      "R=9/10:F=0",
+      "R=1:F=1/10"
+    ],
+    "zero_state": "fixed for Q169 and no reserve crossing for R=9/10",
+    "alternative_sampling_meshes": [
+      "1/2000 admitted",
+      "1/100 outside required ceiling"
+    ],
+    "endpoint_winding_alias": "theta+2pi*n has identical reference endpoints"
+  },
+  "preserved": "all v0.1-v0.6 conditional algebra, classifiers, and their declared hypotheses",
+  "frozen_claim": "native autonomous startup or physical experimental readiness from this package",
+  "reopening_inputs": [
+    "state-defined move/preparation plus source-selected reserve/actuator or a declared external preparation protocol",
+    "observer/sampling update with a proved per-step accumulated phase bound or a no-missed-crossing detector contract",
+    "relative calibrated signed channel map and error receipts"
+  ],
+  "limitations": [
+    "nine selected documents plus bounded keyword scan; no exhaustive archive/PDF search",
+    "source classification is constructor reading, not machine proof of global absence",
+    "no cross-carrier phase transfer or physical clock inferred"
+  ],
+  "physical_promotion": 0
+}

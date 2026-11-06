@@ -1,0 +1,114 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-20261104-timing-01",
+  "run_id": "exact-004",
+  "created_at": "2026-11-05T17:31:31.956672+00:00",
+  "evidence": "EXACT",
+  "summary": "Post-event generator/ramp robustness and exact rate-alias obstruction",
+  "command": "python3 -B experiments/pachner-timing-budget/robustness.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "5549d2b077313eebe776850aa6aae8f70fd0729f",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "robustness.py",
+      "path": "inputs/001-robustness.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/robustness.py",
+      "sha256": "3f0f258cbbd6d786a5bc3c368827bd25db06788e78054cb038f2caa849d6275a",
+      "size_bytes": 4864
+    },
+    {
+      "input_id": "input-002",
+      "name": "ROBUSTNESS_v0.4.md",
+      "path": "inputs/002-ROBUSTNESS_v0.4.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/ROBUSTNESS_v0.4.md",
+      "sha256": "868814d62fe0e3f423c833d00671d7e68d63b4d34d75bdadfcae9c682dcf372b",
+      "size_bytes": 5843
+    },
+    {
+      "input_id": "input-003",
+      "name": "robustness_receipt.json",
+      "path": "inputs/003-robustness_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/pachner-timing-budget/robustness_receipt.json",
+      "sha256": "69e74f537d5dd1f3dfcad999df24c940e06a7ca15400fc16f1d51039ac67ec23",
+      "size_bytes": 7002
+    },
+    {
+      "input_id": "input-004",
+      "name": "classifier.py",
+      "path": "inputs/004-classifier.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/classifier.py",
+      "sha256": "e317aca6b455b27c9c9d58d26de55fdf250daf8a7a448ba21456dc9f474f8689",
+      "size_bytes": 6181
+    },
+    {
+      "input_id": "input-005",
+      "name": "audit.py",
+      "path": "inputs/005-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/audit.py",
+      "sha256": "89326be389d9cca47d8b4a7324b8b013f58368df4808978e1f89031ee1428310",
+      "size_bytes": 8361
+    },
+    {
+      "input_id": "input-006",
+      "name": "COMPARISON_v0.2.md",
+      "path": "inputs/006-COMPARISON_v0.2.md",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-timing-budget/COMPARISON_v0.2.md",
+      "sha256": "60837ca2489200a71cec33eb75246b503bf020b55c6af258ecf588dd76a9276f",
+      "size_bytes": 5772
+    },
+    {
+      "input_id": "input-007",
+      "name": "audit.py",
+      "path": "inputs/007-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-interface-defect/audit.py",
+      "sha256": "a3f1762db95e3845b09561906b229bc816c7e65b58ef3705e485cfe79099802a",
+      "size_bytes": 6091
+    },
+    {
+      "input_id": "input-008",
+      "name": "audit.py",
+      "path": "inputs/008-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-switch-ledger/audit.py",
+      "sha256": "8d1817d486add01a3e00da5d5ba16f4b06fea22551af50515bb68c3fc552b034",
+      "size_bytes": 5650
+    },
+    {
+      "input_id": "input-009",
+      "name": "audit.py",
+      "path": "inputs/009-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-state-transport/audit.py",
+      "sha256": "472965714d8009d03e6916c4491e95514ccb7bff7ad9511d7a5fb8e8e3cd8aee",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-010",
+      "name": "audit.py",
+      "path": "inputs/010-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-boundary-observability/audit.py",
+      "sha256": "e8e36515d2f56fee6a8d849d0a9e368ced8cdff76ef199a796b15939630eb6de",
+      "size_bytes": 9321
+    }
+  ],
+  "files": [
+    {
+      "path": "files/robustness_results.json",
+      "sha256": "41017aa98fcbfbe9c68a47abaf0b5910311abcbd430743e092e78665768f6ea3",
+      "size_bytes": 1822
+    }
+  ]
+}

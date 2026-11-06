@@ -1,0 +1,56 @@
+{
+  "version": "v0.2-comparison",
+  "evidence": "EXACT_CONDITIONAL",
+  "source_commit": "39d7c2d48a7670ae5b9d94402dcfd33b922d6e73",
+  "original_witness": {
+    "all_active": {
+      "krylov_dimension": 5,
+      "zero_defect_powers": 23,
+      "exact_all_times": "full target equals projected target; memory constant"
+    },
+    "single_edge": {
+      "krylov_dimension": 7,
+      "zero_defect_powers": 23,
+      "exact_all_times": "full target equals projected target; memory constant"
+    }
+  },
+  "no_go": "No uniform full/projected discriminator on any error set including the original zero-error witness",
+  "changed_preparation": {
+    "added_old_vertex_3": "1/4",
+    "reserve": "9/10",
+    "gdot": "-3",
+    "old_stock": "33/16",
+    "event_stock": "237/80"
+  },
+  "all_active_probe": {
+    "boundary_contrast": "x4-x3; full minus projected",
+    "derivatives": [
+      "0",
+      "0",
+      "1/2",
+      "0"
+    ],
+    "born_edge_34_derivatives": [
+      "0",
+      "1/4",
+      "0",
+      "-5/4"
+    ],
+    "separation": "Delta V(s)>=alpha*s^2-60alpha*s^3>=alpha*s^2/2",
+    "sample_window": [
+      "1/240",
+      "1/120"
+    ],
+    "separation_floor": "1/460800",
+    "joint_budget": "78epsilon+15r+13nu+eta<=1/1000000",
+    "same_v01_example_budget_used": "23/25000000"
+  },
+  "limitations": [
+    "new signed preparation is a deliberate probe, not native symmetry breaking",
+    "all-active generator held fixed; immediate event; no ramp uncertainty",
+    "projection and full flow are competing conditional laws; no selection between them",
+    "midpoint is exact model function; floating implementation untested",
+    "boundary sign/frame registration and physical instrumentation unprovided"
+  ],
+  "physical_promotion": 0
+}

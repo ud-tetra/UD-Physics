@@ -1,0 +1,22 @@
+[
+  {
+    "path": "Docs/UD phase-aware gate-transition audit v0.1.md",
+    "file": "1.txt",
+    "sha": "9d11d02fa3afd58213071d88e911aa2c2659fe30"
+  },
+  {
+    "path": "Docs/UD conserved support and event capacity source audit.md",
+    "file": "2.txt",
+    "sha": "acaf96d73324eab6cfc4899571286a9ef6f0603d"
+  },
+  {
+    "path": "Docs/UD contact transitions and persistent agreement.md",
+    "file": "3.txt",
+    "sha": "495a4534024f60185a1ac6c43affd54815390932"
+  },
+  {
+    "path": "Docs/UD amplitude, readiness and binary-interface audit v0.1.md",
+    "file": "4.txt",
+    "sha": "565213b02b54e3522a105a8b0374a16547494f20"
+  }
+]
