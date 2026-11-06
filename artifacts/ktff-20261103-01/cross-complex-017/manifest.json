@@ -1,69 +1,49 @@
 {
+  "record_type": "run",
   "schema_version": 2,
+  "session_id": "ktff-20261103-01",
   "run_id": "cross-complex-017",
-  "task": "klein-tetra-face-flip-20261103",
-  "session": "ktff-20261103-01",
-  "date": "2026-11-05",
-  "status": "PASS_EXACT_CONDITIONAL",
-  "physical_promotion": 0,
+  "created_at": "2026-11-05T23:55:00Z",
+  "evidence": "EXACT",
+  "summary": "Conditional exact K4 1-to-4 full Q165 norm defect, native two-mode post-event transfer, binary masked boundary nilpotency and Q171 signed-current direction gate. No event or physical promotion.",
+  "command": "python3 cross_complex_audit_v17.py; python3 mask_current_v17.py; python3 -m unittest discover -s . -p 'test_*v17.py' -v",
+  "command_execution": "RECORDED_EXECUTED_IN_LOCAL_CONSTRUCTOR_RUNTIME",
+  "source": {
+    "revision": "234f54471c32cc9ad4873cd8042103fa19795909",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/CERTIFICATE_v17.txt",
+      "sha256": "1d25c11c0ba40231b3efd757a089279fa2b037e0dbc441f70103b8f3c8c635f9",
+      "size_bytes": 1005
+    }
+  ],
   "claim": {
     "ref": "refs/heads/claims/klein-tetra-face-flip-20261103",
     "sha": "667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4",
     "status": "held"
   },
-  "branch": "discovery/klein-tetra-face-flip-20261103/ktff-20261103-01",
-  "source_main_revision": "234f54471c32cc9ad4873cd8042103fa19795909",
-  "inputs": [
-    "experiments/pachner-state-transport/README.md v0.1, section 1→4",
-    "experiments/qpb1-local-generators/README.md v1.0 §§1–3",
-    "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md Q165/Q166/Q169/Q170/Q171/Q173/Q177–Q179"
-  ],
-  "outputs": [
+  "physical_promotion": 0,
+  "result_paths": [
     "experiments/klein-tetra-face-flip-20261103/CROSS_COMPLEX_NATIVE_TRANSFER_v1.7.md",
-    "experiments/klein-tetra-face-flip-20261103/cross_complex_native_v17.py",
-    "experiments/klein-tetra-face-flip-20261103/test_cross_complex_native_v17.py",
     "experiments/klein-tetra-face-flip-20261103/cross_complex_results_v17.json",
-    "candidates/klein-tetra-face-flip-20261103/mathematical_receipt_cross_complex_v1.7.json",
-    "sessions/ktff-20261103-01/HANDOFF_CROSS_COMPLEX_v1.7.md"
+    "candidates/klein-tetra-face-flip-20261103/mathematical_receipt_cross_complex_v1.7.json"
   ],
   "user_archive": {
     "name": "UD_K4_CROSS_COMPLEX_ADMISSION_v1.7.zip",
     "sha256": "1f4c8afb5fba580b3e5edf719deb61d772c8593f2fb07a19a21247ed3d5d7ae0",
-    "bytes": 15427,
-    "files": 9,
-    "verified": "container zip test and per-file SHA256 manifest PASS"
+    "bytes": 15427
   },
-  "verification": [
-    {
-      "method": "15D/29D exact SymPy signed chain, norm and 2D invariant flow",
-      "result": "PASS"
-    },
-    {
-      "method": "separate 1024-mask exhaustive nilpotency and 24 signed S4",
-      "result": "PASS"
-    },
-    {
-      "method": "local regression unittest suite",
-      "result": "11/11 PASS"
-    },
-    {
-      "method": "GitHub repository integrity CI",
-      "result": "PENDING_FINAL_HEAD"
-    },
-    {
-      "method": "non-constructor independent review",
-      "result": "NOT_RUN"
-    }
-  ],
-  "exact_findings": [
-    "F^T F−I15=3 e_top e_top^T",
-    "A_K1 b=w, A_K1 w=−b, S_shell=cos²u, S_newtop=sin²u after externally chosen move",
-    "Two of 1024 face masks preserve B2 diag(h) B3=0 if B3 alone is modified",
-    "Q171 literal current orientation alias versus Q169 A=d−dT remains OPEN"
-  ],
+  "verification": {
+    "local_exact_tests": "11/11 PASS",
+    "full_git_integration": "NOT_RUN",
+    "nonconstructor": "NOT_RUN"
+  },
   "limitations": [
-    "No sourced dynamic event trigger or physical K0→K1 transition",
-    "No time/length/Planck correspondence",
-    "Reproducibility archive local sources not asserted byte-identical to GitHub concise replay"
+    "No version-2 source input copies captured in this run: inputs array intentionally empty; exact source revision and paths declared in mathematical receipt.",
+    "Full standalone source and inputs are in user-visible verified ZIP, not this one-certificate immutable Git run.",
+    "The report's Q171 sign comparison is an unresolved typed convention gate, not an authorized ledger amendment."
   ]
 }
