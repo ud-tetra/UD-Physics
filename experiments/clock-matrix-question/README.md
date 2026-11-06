@@ -108,3 +108,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Incidence transport current](INCIDENCE_CURRENT.md) derives signed stock flux and tests the stationary and matched moving controls.
 
 [Local current clock](LOCAL_CURRENT_CLOCK.md) tests stationary, matched-frequency, and counterpropagating controls for a passive rate rule.
+
+[Tracked current-clock phase](TRACKED_CURRENT_CLOCK.md) integrates the site clocks through packet dispersion and counterflow overlap.

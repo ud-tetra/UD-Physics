@@ -178,3 +178,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-021 (EXACT): Signed incidence t
 ## 2026-11-06T03:35:05.875967+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-022 (EXACT): Local current rule and separated versus coherent counterflow
+
+## 2026-11-06T03:50:39.371560+00:00
+
+Captured artifacts/clockmatrix-20261104-01/numerical-002 (NUMERICAL): Tracked phase through matched-packet propagation and counterflow overlap
