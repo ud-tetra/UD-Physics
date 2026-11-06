@@ -3,12 +3,14 @@
   "protocol_version": 2,
   "task": "integration-history-sequential-index-20261105",
   "session": "historyseqidx-20261105-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-06T03:06:30.122Z",
   "base_revision": "a1aea78ce0abde4cb30c9348c54b1664d4eac0d4",
   "owned_paths": [
     "tasks/integration-history-sequential-index-20261105.json",
     "sessions/historyseqidx-20261105-01",
     "state/CURRENT.md"
-  ]
+  ],
+  "released_at": "2026-11-06T03:08:13.970Z",
+  "released_from_sha": "836673914aae9ea519ed920aae466d32a4c0ab10"
 }
