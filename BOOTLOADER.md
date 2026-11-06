@@ -1,5 +1,9 @@
 # UD Discovery runtime bootloader v1.1
 
+## UD program policy load (proposed 2026-10-31)
+
+Before new prediction work read `docs/UD_PREDICTIVE_DISCOVERY_PROTOCOL_v1.0.md` and `instructions/UD_PREDICTIVE_DISCOVERY_PROGRAM_ADDENDUM_v1.0.md`. These expand permissible exploration without overriding task claims, frozen results, or independent mainline promotion gates. This bootloader update is proposed until merged; physical promotion remains 0.
+
 ## Copy-paste launch instruction
 
 > Prepare this runtime for UD Discovery in ud-tetra/UD-Physics. Read this bootloader, AGENTS.md, instructions/UD_DISCOVERY_v1.2.md, state/CURRENT.md, docs/CONCURRENCY.md, docs/ARTIFACTS.md, and docs/UD_MATHEMATICAL_METHOD_v1.0.md at a verified repository revision. Check the assigned task and live claim refs. Identify read/write/compute capabilities; do not assume shared memory or model identity. Create a unique session, claim the task, and work on an isolated branch/worktree. Report a short BOOT REPORT, including mathematical domains and applicable techniques, before substantive work. Then execute the authorized task, record assumptions and target exposure, capture reproducible artifacts, and leave a checkpoint. Hypothetical discovery is permitted; mainline export is separate.

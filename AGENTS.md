@@ -16,3 +16,8 @@ These instructions apply to the entire repository.
 12. Do not spawn agents merely because concurrent access is supported. Delegate only when the active user's instruction or applicable task instructions authorize parallel agent work.
 
 A successful CI run checks repository integrity and tooling, not the truth of a proposed physical bridge. Constructor checks and separate LLM reviews must be labeled honestly.
+
+
+## UD-wide predictive-discovery amendment (proposed 2026-10-31)
+
+Also read `docs/UD_PREDICTIVE_DISCOVERY_PROTOCOL_v1.0.md` (local frozen source copy) and `instructions/UD_PREDICTIVE_DISCOVERY_PROGRAM_ADDENDUM_v1.0.md` before observable-facing work. Retain the v1.2 Discovery sandbox, non-constructor CRL gates for mainline promotion and the existing atomic claim protocol. Unfrozen explorations have no registry status; target exposure is mandatory in receipts.
