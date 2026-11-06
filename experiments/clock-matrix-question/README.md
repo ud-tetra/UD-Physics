@@ -126,3 +126,5 @@ Reproduce: `python3 experiments/clock-matrix-question/audit.py`. The exact ratio
 [Pilot dropout and excess drift](PILOT_FAULTS.md) tests surviving-bracket admission and a hidden full-turn alias.
 
 [Science-time phase reference](SCIENCE_TIME_REFERENCE.md) tests a separate simultaneous pilot against the hidden-turn control and half-gap budget.
+
+[Simultaneous-reference bench acceptance](BENCH_REFERENCE.md) defines calibration inputs, held-out controls and the exact-rational error gate.

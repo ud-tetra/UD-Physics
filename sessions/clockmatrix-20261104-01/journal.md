@@ -214,3 +214,7 @@ Captured artifacts/clockmatrix-20261104-01/exact-027 (EXACT): Pilot dropout gate
 ## 2026-11-06T18:09:23.744824+00:00
 
 Captured artifacts/clockmatrix-20261104-01/exact-028 (EXACT): Science-time pilot consistency and half-gap error budget
+
+## 2026-11-06T18:13:53.846175+00:00
+
+Captured artifacts/clockmatrix-20261104-01/exact-029 (EXACT): Bench reference acceptance protocol and rational arithmetic fixture
