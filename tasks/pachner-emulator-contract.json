@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "pachner-emulator-contract",
+  "goal": "Controlled paired-readout emulator and negative controls",
+  "owned_paths": [
+    "tasks/pachner-emulator-contract.json",
+    "experiments/pachner-emulator-contract",
+    "sessions/codex-pachner-emulator-01",
+    "artifacts/codex-pachner-emulator-01"
+  ],
+  "dependencies": [
+    "pachner-timing-budget"
+  ],
+  "status": "active"
+}
