@@ -1,0 +1,33 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "codex-channel-metric-20261106",
+  "runtime": "Codex, exact local Python with GitHub connector",
+  "task": "ud-channel-metric-bridge",
+  "goal": "Test signed eight-sector observability on the first K4 centroid refinement and delimit metric identifiability.",
+  "created_at": "2026-11-06T18:57:50Z",
+  "base_revision": "9db0edba13db7af9999fcfd1b9d45d3c8d65cdb5",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ud-channel-metric-bridge": "577b2d5b4396066238b735b3e75b275d2349e427"
+  },
+  "checks": [],
+  "finding": "Hardware hold logged; exact plane work-form reconstruction and fourth-preparation discriminator derived.",
+  "next_action": "Independently review the polarization check and decide a separately frozen closure extension; keep hardware hold.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q; identities extend to R",
+    "exactness_or_precision_plan": "Fraction replay",
+    "applicable_methods": [
+      "signed incidence",
+      "group covariance",
+      "rational kernel and rank"
+    ],
+    "clock_metric_units_conventions": "Formal u, unit coefficient metrics, ascending simplex orientations; no SI calibration"
+  },
+  "checkpoint_at": "2026-11-06T19:50:39.377731+00:00",
+  "checkpoint_source": {
+    "revision": "322280af5afe1e4b9e30d78a08a176dc180f47cc",
+    "dirty": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-005",
+  "created_at": "2026-11-06T19:24:52.463302+00:00",
+  "evidence": "EXACT",
+  "summary": "Blinded bench workflow synthetic controls",
+  "command": "python3 experiments/ud-channel-metric-bridge/bench_dry_run.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "e3ec2d3cc097ce5f31f066b1698c33a7e8f54730",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "bench_score.py",
+      "path": "inputs/001-bench_score.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/bench_score.py",
+      "sha256": "845a38d2fdb2c263cd82eaa1f4c3a76cb9c0b2e65f09cf1d1d40579f6405c262",
+      "size_bytes": 4490
+    },
+    {
+      "input_id": "input-002",
+      "name": "bench_dry_run.py",
+      "path": "inputs/002-bench_dry_run.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/bench_dry_run.py",
+      "sha256": "6b9139e3b4ae690e92b9a758d6400d6597573a765dc0a38a04053451c8a1c4be",
+      "size_bytes": 2269
+    }
+  ],
+  "files": [
+    {
+      "path": "files/bench_dry_run_results.json",
+      "sha256": "86c66fb6d44cb2f3551e2feba675627fa2098eef8449647b47738f847401f00a",
+      "size_bytes": 1041
+    }
+  ]
+}

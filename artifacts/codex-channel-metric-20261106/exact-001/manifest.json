@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-001",
+  "created_at": "2026-11-06T19:00:26.649883+00:00",
+  "evidence": "EXACT",
+  "summary": "Signed leakage and first-derivative rank",
+  "command": "python3 experiments/ud-channel-metric-bridge/replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "9db0edba13db7af9999fcfd1b9d45d3c8d65cdb5",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay.py",
+      "path": "inputs/001-replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/replay.py",
+      "sha256": "74e44f9de1f44db280ad57c08bdbc138091c5ef2b22197cf1e3cc5da63aedd31",
+      "size_bytes": 4262
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "35375d0ea9d25d2545cc591d0b55c7e32fc98d3a3543bd4d2c47e970bdda2e3c",
+      "size_bytes": 2148
+    }
+  ]
+}

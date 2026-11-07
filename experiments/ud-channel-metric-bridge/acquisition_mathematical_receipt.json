@@ -1,0 +1,153 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "signed-acquisition-v0.1",
+  "session_id": "codex-channel-metric-20261106",
+  "candidate_id": null,
+  "question": "Does the certificate-only classifier recover sign or abstain with synthetic gain, loss and timing errors?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "capacitance",
+      "symbol": "C",
+      "object_type": "capacitance matrix",
+      "definition": "q=C V",
+      "domain": "R2 voltage",
+      "codomain": "R2 charge",
+      "coefficient_domain": "Q replay, R model",
+      "units": "F",
+      "basis_orientation": "ordered terminals x,c; current positive into fixture",
+      "metric_measure": "linear reciprocal capacitance",
+      "origin": "assumed",
+      "exact_expression": "q=C V",
+      "source_refs": [
+        "capacitor-port"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "W*=a²/(2C*)"
+    },
+    {
+      "object_id": "stiffness",
+      "symbol": "K",
+      "object_type": "dimensionless energy matrix",
+      "definition": "C* C^-1",
+      "domain": "R2",
+      "codomain": "R2",
+      "coefficient_domain": "Q replay, R model",
+      "units": "dimensionless",
+      "basis_orientation": "ordered terminals x,c; current positive into fixture",
+      "metric_measure": "linear reciprocal capacitance",
+      "origin": "derived",
+      "exact_expression": "C* C^-1",
+      "source_refs": [
+        "capacitor-port"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "W*=a²/(2C*)"
+    },
+    {
+      "object_id": "decision",
+      "symbol": "S",
+      "object_type": "work difference",
+      "definition": "W_c-W_y",
+      "domain": "two work receipts",
+      "codomain": "R",
+      "coefficient_domain": "Q replay, R model",
+      "units": "J",
+      "basis_orientation": "ordered terminals x,c; current positive into fixture",
+      "metric_measure": "linear reciprocal capacitance",
+      "origin": "derived",
+      "exact_expression": "W_c-W_y",
+      "source_refs": [
+        "capacitor-port"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "W*=a²/(2C*)"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "capacitor-port",
+      "url_or_repo_path": "experiments/ud-channel-metric-bridge/CAPACITOR_PORT_v0.1.md",
+      "version_or_commit": "5438685a9903201cadcacb05b41207d902191a10",
+      "section_or_object_id": "Circuit and preparation; exact decision",
+      "source_status": "Discovery draft"
+    }
+  ],
+  "assumptions": [],
+  "technique_plan": [
+    {
+      "technique": "rational matrix inversion and deterministic bounds",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Fixture synthesis and decision margin"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "Known synthetic fixture identities; no physical data, blind claim or fitting",
+    "known_targets": [],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": null,
+    "selection_criterion": null,
+    "baseline": null
+  },
+  "calculation_steps": [],
+  "result": {
+    "exact_expression": "64 correct signs; 14 abstentions; ideal sign value in every evaluated interval",
+    "approximation": null,
+    "units": "relative to W*",
+    "precision_and_error": null,
+    "scope": "Prescribed linear ramp and certified synthetic gain, shunt loss and sampling skew",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "Fraction replay of both fixtures, independent nuisance sign corners and abstention controls",
+      "command_or_proof_path": "experiments/ud-channel-metric-bridge/acquisition_replay.py",
+      "source_revision": "5438685a9903201cadcacb05b41207d902191a10",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Oversized charge, work and alignment errors; missing certificate; zero sign."
+  ],
+  "limitations": [
+    "No bench calibration, nonlinear loss, drift, switching redistribution or hardware measurement."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/codex-channel-metric-20261106/exact-004/manifest.json"
+  ],
+  "next_discriminant": "Freeze a blind bench protocol with measured, independent channel certificates."
+}

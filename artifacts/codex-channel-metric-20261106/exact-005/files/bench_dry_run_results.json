@@ -1,0 +1,63 @@
+{
+  "clean": {
+    "counts": {
+      "candidate": {
+        "correct": 8,
+        "abstain": 0,
+        "wrong": 0
+      },
+      "uniform": {
+        "correct": 8,
+        "abstain": 0,
+        "wrong": 0
+      }
+    },
+    "pass": true
+  },
+  "one_abstention": {
+    "counts": {
+      "candidate": {
+        "correct": 8,
+        "abstain": 0,
+        "wrong": 0
+      },
+      "uniform": {
+        "correct": 7,
+        "abstain": 1,
+        "wrong": 0
+      }
+    },
+    "pass": true
+  },
+  "two_same_arm_abstentions": {
+    "counts": {
+      "candidate": {
+        "correct": 8,
+        "abstain": 0,
+        "wrong": 0
+      },
+      "uniform": {
+        "correct": 6,
+        "abstain": 2,
+        "wrong": 0
+      }
+    },
+    "pass": false
+  },
+  "wrong_call": {
+    "counts": {
+      "candidate": {
+        "correct": 8,
+        "abstain": 0,
+        "wrong": 0
+      },
+      "uniform": {
+        "correct": 7,
+        "abstain": 0,
+        "wrong": 1
+      }
+    },
+    "pass": false
+  },
+  "tampered_key_and_seal": "rejected"
+}
