@@ -1,0 +1,209 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosa-reference-defect-001",
+  "session_id": "ico-refdefect-20261028-gpt6-a1",
+  "candidate_id": "icosahedral-reference-defect",
+  "question": "Does direct raw 560-state Gronwall using actual DOP853 residual certify reference sample error delta_num<.01031?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "J",
+      "symbol": "J",
+      "object_type": "original source raw 560-state mechanical Jacobian",
+      "definition": "unanchored reciprocal spring/damper source J(y)",
+      "domain": "R560",
+      "codomain": "R560",
+      "coefficient_domain": "real",
+      "units": "native time^-1",
+      "basis_orientation": "uniform 43 spatial translation q and v",
+      "metric_measure": "raw equally weighted Euclidean",
+      "origin": "source",
+      "exact_expression": "mu2(J)>=1/2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit q,v"
+    },
+    {
+      "object_id": "defect",
+      "symbol": "rho",
+      "object_type": "actual sampled DOP853 dense polynomial residual",
+      "definition": "piecewise p'(u)-f(p(u))",
+      "domain": "source u0..100",
+      "codomain": "R561 with first560 mechanical used",
+      "coefficient_domain": "Float64 samples",
+      "units": "native derivative",
+      "basis_orientation": "source phase ordering",
+      "metric_measure": "L2",
+      "origin": "executed GHA",
+      "exact_expression": null,
+      "measured_value": "1.388e-9/2.753e-9 maxima of sampled residuals",
+      "uncertainty": "sampled finite interior nodes, NOT uniform",
+      "source_refs": [
+        "GHA"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "J"
+      ],
+      "normalization": "3 probes per accepted dense step"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "source",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/jacobian.py",
+      "version_or_commit": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+      "section_or_object_id": "source Jacobian",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "GHA",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/actions/runs/40713694075",
+      "version_or_commit": "084408f4a44e0bd3294e8f15d39283550ab2bd31",
+      "section_or_object_id": "actual dense residual probe",
+      "source_status": "executed numeric"
+    },
+    {
+      "source_id": "prior",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/220",
+      "version_or_commit": "b57c1d3c2d32491ba5bc11461ff0ce7e2feda41c",
+      "section_or_object_id": "delta_num target .01031",
+      "source_status": "draft read-only"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "unanchored original 43 spatial masses, internal reciprocal forces/dampers, equal raw Euclidean q/v weights"
+    },
+    {
+      "id": "A2",
+      "description": "sampled residual not uniform; no verified Lipschitz tube or interval error"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "rigid translation lognorm",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact mu2 lower bound .5"
+    },
+    {
+      "technique": "dense polynomial residual probes",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "actual source DOP853 at 3 nodes per step"
+    },
+    {
+      "technique": "CM exact law",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "source Galilean comparison"
+    },
+    {
+      "technique": "interval projected residual/Green",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "next certification gate"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "560 mechanical plus heat, 43 masses, 3479+3481 dense accepted intervals",
+    "reduced_expression": "mu>=1/2, amplifier floor2(exp50-1), rho target9.944e-25",
+    "factor_origins": [
+      "Galilean translation Jq=0,Jv=q",
+      "Gronwall constant lognorm comparison"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native continuous u0..100",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "source unchanged ODE and DOP853 piecewise dense interpolation",
+    "initial_phase": "source unforced reference alpha=.1",
+    "coupling": "original passive mechanics",
+    "period_claim": "none",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "full mechanical 560 and heat",
+    "generator_or_update": "original source",
+    "initial_boundary_conditions": "two frozen source cases",
+    "conservation_and_sources": "exact Galilean CM momentum and mechanical positive dissipation",
+    "projection_and_kernel": "uniform 43-body rigid translation",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "POST_TARGET",
+    "known_targets": [
+      "delta_num<.01031 source criterion"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "3 defect nodes per step, original solver tolerance"
+    ],
+    "search_domain_and_budget": "two frozen cases all 3479/3481 dense pieces, 3 probes each, no material search",
+    "selection_criterion": "test scalar raw certificate",
+    "baseline": "classical reciprocal mass model"
+  },
+  "calculation_steps": [
+    "Prove mu2(J)>=.5 by normalized uniform spatial rigid position/velocity translation test vector.",
+    "Derive best-case sufficient residual threshold from scalar Gronwall for T100 and target .01031.",
+    "Execute original dense polynomial derivative/f defect diagnostics at 3 nodes per accepted interval.",
+    "Check mass-weighted CM numeric against exact source law.",
+    "Classify raw scalar estimate as impractical and projected Green as next gate."
+  ],
+  "result": {
+    "exact_expression": "mu2>=1/2, rho needed<9.94361297e-25 for raw Gronwall at target δ=.010310941, assuming best-case L=.5",
+    "approximation": "sampled full defect max1.38776e-9/2.75342e-9 and CM error1e-15/2.2e-15",
+    "units": "native raw norm and time",
+    "precision_and_error": "EXACT proof; NUMERICAL probes not certified residual global upper",
+    "scope": "proof-method obstruction, not true solution error lower",
+    "physical_interpretation": "ordinary mechanics null"
+  },
+  "verification": [
+    {
+      "method": "GitHub Actions actual source DOP853 defect",
+      "command_or_proof_path": "experiments/icosahedral-reference-defect/dense_defect.py",
+      "source_revision": "084408f4a44e0bd3294e8f15d39283550ab2bd31",
+      "actual_result": "PASS all sampled probes and exact CM checks",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "rigorous interval/global error",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "missing"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Raw scalar Gronwall amplification ≥1e22 due exact Galilean translation, despite true linear drift.",
+    "Residual samples cannot be treated as uniform bounds.",
+    "CM exact law comparison does not certify internal shape."
+  ],
+  "limitations": [
+    "Global δ_num remains OPEN.",
+    "Forced U(t,s), Hessian/phase-ball domain unproved.",
+    "No experimental physical mapping."
+  ],
+  "changed_dependencies": [
+    "Separate claimed branch, main/source/earlier PR220 read-only"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/ico-refdefect-20261028-gpt6-a1/defect-001/manifest.json"
+  ],
+  "next_discriminant": "Verified dense per-step residual and CM-exact/internal projected Green a posteriori bound to establish δ_num<.01031."
+}

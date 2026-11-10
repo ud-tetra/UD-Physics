@@ -1,0 +1,39 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-reference-defect",
+  "session_id": "ico-refdefect-20261028-gpt6-a1",
+  "question": "Can the original raw equal-weight full-state scalar Gronwall method certify true frozen reference numerical error below .01031?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Original unanchored reciprocal full560 mechanical source, all43 spatial masses, source alpha and 150 device coordinates retained.",
+    "Raw q/v Euclidean norm with equal native weights; other weighted norms may differ.",
+    "Three interior finite residual probes per accepted step are NOT rigorous interval upper bounds.",
+    "No material/coefficient fitting or physical calibration performed."
+  ],
+  "physical_mapping": "Uncalibrated source 3D mechanical surrogate; no new UD spacetime identification.",
+  "target_exposure": "PR220 target delta_num<.01031 known before residual selection; method check is post-target developmental.",
+  "fitted_choices": [
+    "Source original strict DOP853 rtol5e-12/atol5e-15; 3 Gauss-Legendre probes per step selected for diagnostics, not exhaustive."
+  ],
+  "sources": [
+    "cba74cc20ba323599339f88830bd0cc97fc9a6da:experiments/icosahedral-pulsetube/jacobian.py",
+    "cba74cc20ba323599339f88830bd0cc97fc9a6da:experiments/icosahedral-mountloss/mountloss.py",
+    "https://github.com/ud-tetra/UD-Physics/pull/220",
+    "https://github.com/ud-tetra/UD-Physics/actions/runs/40713694075"
+  ],
+  "baseline": "Ordinary 3D unanchored reciprocal spring/dashpot full-state ODE with DOP853 and scalar Gronwall.",
+  "result": "Exact full unanchored raw Euclidean Jacobian logarithmic norm mu2>=1/2; constant scalar Gronwall over u100 requires R<9.9436e-25 for delta<.01031 even if L=.5. Executed dense DOP853 residual sampled maxima limiting1.38776e-9 nominal2.75342e-9, CM samples match exact Galilean law 1e-15. Raw scalar estimator FAILED as useful method; true sampled numerical global error and all180 nonlinear tube OPEN.",
+  "next_discriminant": "Obtain verified dense residual upper and a positive CM-exact plus projected internal-shape Green bound, bootstrap to certify source reference numerical delta_num<.01031.",
+  "reopening_conditions": "Change raw exponential estimator to a CM-exact projected positive internal stability method and verified residual enclosure.",
+  "mathematical_receipts": [
+    "sessions/ico-refdefect-20261028-gpt6-a1/mathematical_receipt.json"
+  ]
+}

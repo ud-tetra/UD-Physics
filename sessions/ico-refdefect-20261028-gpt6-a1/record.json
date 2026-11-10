@@ -1,0 +1,56 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ico-refdefect-20261028-gpt6-a1",
+  "runtime": "GPT-6 isolated GitHub connector; pinned NumPy2.3.5 SciPy1.17.0 on GitHub Actions; downloaded actual result and local analytic math verification",
+  "task": "icosahedral-reference-defect-20261028",
+  "goal": "Test a posteriori frozen reference error via direct dense DOP853 residual and source Jacobian; establish whether unprojected Gronwall can certify delta_num<0.01031",
+  "created_at": "2026-10-28T15:21:55.761Z",
+  "base_revision": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "icosahedral-reference-defect-20261028": {
+      "ref": "refs/heads/claims/icosahedral-reference-defect-20261028",
+      "sha": "c29efc252f57f55e9469b6334a800801c4d2a406",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "GitHub Actions 40713694075 original source strict DOP853 dense residual run",
+      "result": "PASS limiting 3479 accepted steps and nominal 3481; full560 sampled max defects1.388e-9/2.753e-9, three Gauss nodes each, not interval-certified",
+      "scope": "NUMERICAL sampled original source"
+    },
+    {
+      "command": "Exact raw rigid q/v translation logarithmic norm and Gronwall analytic proof",
+      "result": "PASS mu2>=1/2, amplification>=2(exp50-1)=1.03694e22, required uniform residual<9.944e-25",
+      "scope": "EXACT/CONDITIONAL proof technique limitation, not global error estimate"
+    },
+    {
+      "command": "Source exact mass-weighted CM compared to 2001 source samples",
+      "result": "PASS sampled CM discrepancy1.042e-15 limiting and2.231e-15 nominal",
+      "scope": "NUMERICAL cross-check against exact CM source law"
+    },
+    {
+      "command": "sha256sum source and downloaded workflow full output",
+      "result": "PASS source f775e3f1b0815e1503a69acb33737c6bdda704cfe3235d1c683f9a72ffe0f0ff 5431B, JSON e60baeaf53b815cd875c5713304126c0634df821410cc0275071f22b0ae95d8f 3934B",
+      "scope": "immutable defect-001 captured full actual bytes"
+    }
+  ],
+  "finding": "Exact full unanchored raw Euclidean Jacobian logarithmic norm mu2>=1/2; constant scalar Gronwall over u100 requires R<9.9436e-25 for delta<.01031 even if L=.5. Executed dense DOP853 residual sampled maxima limiting1.38776e-9 nominal2.75342e-9, CM samples match exact Galilean law 1e-15. Raw scalar estimator FAILED as useful method; true sampled numerical global error and all180 nonlinear tube OPEN.",
+  "next_action": "Obtain verified dense residual upper and a positive CM-exact plus projected internal-shape Green bound, bootstrap to certify source reference numerical delta_num<.01031.",
+  "mathematical_profile": {
+    "coefficient_domain": "exact rigid translation/shear analytic and numerical source original Float64 DOP853 dense interpolation",
+    "exactness_or_precision_plan": "exact raw lognorm lower bound, finite residual probes with explicit non-enclosure scope, exact CM law numeric source check",
+    "applicable_methods": [
+      "Galilean raw-Jacobian lognorm Rayleigh",
+      "scalar Gronwall residual error method",
+      "DOP853 dense polynomial analytic derivative residual probes",
+      "mass-weighted CM exact translation comparison",
+      "positive projected internal Green alternative"
+    ],
+    "clock_metric_units_conventions": "source native u=0..100, raw q/v equally weighted Euclidean norm; original 560 mechanical phase variables plus heat"
+  }
+}
