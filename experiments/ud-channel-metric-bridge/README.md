@@ -97,3 +97,6 @@ scope and holds physical qualification open pending measured evidence.
 [Hardware status](STATUS_2026-11-06.md) remains held. The separate
 [work Gram closure](WORK_GRAM_CLOSURE_v0.1.md) gives the exact plane
 reconstruction, uncertainty certificate, and prospective fourth check.
+
+The [fourth-residual envelope](FOURTH_RESIDUAL_v0.1.md) gives the sharp
+box bound and the prospective budget needed to detect a chosen departure.

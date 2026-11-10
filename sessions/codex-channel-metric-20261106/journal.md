@@ -126,3 +126,19 @@ Captured artifacts/codex-channel-metric-20261106/exact-006 (EXACT): Work Gram re
 Checkpoint (handoff): Hardware hold logged; exact plane work-form reconstruction and fourth-preparation discriminator derived.
 
 Next: Independently review the polarization check and decide a separately frozen closure extension; keep hardware hold.
+
+## Fourth residual (2026-11-10)
+
+Sharp box radius 17513/40000 W* under the transferred planning budget.
+A half-W* true departure cannot be guaranteed detectable with that box.
+The two existing fixture forms are both quadratic nulls. No bench amendment.
+
+## 2026-11-10T18:44:57.451266+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-007 (EXACT): Fourth-work residual box and planning budget
+
+## 2026-11-10T18:44:57.525119+00:00
+
+Checkpoint (handoff): Sharp residual bound derived; present budget does not guarantee half-W* departure detection.
+
+Next: Derive a more efficient symmetric probe design or a certified joint error bound.

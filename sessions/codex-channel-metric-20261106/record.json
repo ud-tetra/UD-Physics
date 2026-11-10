@@ -13,8 +13,8 @@
     "ud-channel-metric-bridge": "577b2d5b4396066238b735b3e75b275d2349e427"
   },
   "checks": [],
-  "finding": "Hardware hold logged; exact plane work-form reconstruction and fourth-preparation discriminator derived.",
-  "next_action": "Independently review the polarization check and decide a separately frozen closure extension; keep hardware hold.",
+  "finding": "Sharp residual bound derived; present budget does not guarantee half-W* departure detection.",
+  "next_action": "Derive a more efficient symmetric probe design or a certified joint error bound.",
   "mathematical_profile": {
     "coefficient_domain": "Q; identities extend to R",
     "exactness_or_precision_plan": "Fraction replay",
@@ -25,9 +25,9 @@
     ],
     "clock_metric_units_conventions": "Formal u, unit coefficient metrics, ascending simplex orientations; no SI calibration"
   },
-  "checkpoint_at": "2026-11-06T19:50:39.377731+00:00",
+  "checkpoint_at": "2026-11-10T18:44:57.505741+00:00",
   "checkpoint_source": {
-    "revision": "322280af5afe1e4b9e30d78a08a176dc180f47cc",
+    "revision": "d0ed5860892fb17b48d74b48b67b56120608be82",
     "dirty": true
   }
 }
