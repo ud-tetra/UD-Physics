@@ -1,0 +1,49 @@
+{
+  "UD_comparison": "NOT_RUN: no calibrated and frozen UD physical map or held-out amplitude dataset",
+  "bias_model_only_NOT_measured_rows": [
+    {
+      "gamma": "0",
+      "model_GHz": 13.28
+    },
+    {
+      "gamma": "0.2",
+      "model_GHz": 13.145160202198417
+    },
+    {
+      "gamma": "0.4",
+      "model_GHz": 12.71358106468276
+    },
+    {
+      "gamma": "0.6",
+      "model_GHz": 11.877993096478884
+    },
+    {
+      "gamma": "0.8",
+      "model_GHz": 10.286643767526899
+    }
+  ],
+  "data_availability": "raw data from corresponding author on reasonable request; NOT acquired",
+  "derived_C_pF": 3.64850225477916,
+  "effective_area_um2_NOT_independently_measured": 100.2335784279989,
+  "evidence": [
+    "EMPIRICAL_SUMMARY",
+    "EXACT_IDENTITY",
+    "NUMERICAL_SENSITIVITY",
+    "OPEN"
+  ],
+  "fit_Ic_uA": "8.36 +/- 0.08",
+  "fit_c_fF_um2": "36.4 +/- 0.04",
+  "fit_covariance": "NOT_AVAILABLE; published f and Ic fitted together",
+  "fit_f_GHz": "13.28 +/- 0.05",
+  "naive_uncorrelated_deltaC_pF_NOT_valid_fit_uncertainty": 0.04442726972585009,
+  "rectangular_pm_range_pF": [
+    3.5865305092535973,
+    3.711310154221169
+  ],
+  "reference_correction": "PhysRevResearch.2.043091 includes Eq 13 theoretical amplitude-period relation, not empirical amplitude sweep",
+  "source_DOI": "10.1063/5.0082197",
+  "source_date": "2022-03-14",
+  "source_measurement": "DC-bias plasma resonance, NOT zero-bias phase turning-amplitude series",
+  "status": "PASS",
+  "validation": "FAILED_HELDOUT: joint-fit-derived capacitance is circular; peak phase/amplitude data absent"
+}

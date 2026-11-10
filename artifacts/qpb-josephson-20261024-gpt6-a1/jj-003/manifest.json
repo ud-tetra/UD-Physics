@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb-josephson-20261024-gpt6-a1",
+  "run_id": "jj-003",
+  "created_at": "2026-10-24T17:45:00Z",
+  "evidence": "EXACT",
+  "summary": "Two-harmonic Josephson current-phase sign test, 2024 spectroscopy dataset provenance and scope correction",
+  "command": "python3 /mnt/data/jj003_staging/harmonics_audit.py --out /mnt/data/jj003_staging/summary.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "d3d9b5caae9381404a75f3141f3bdb995fe4c9a0",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "harmonics-source",
+      "name": "harmonics_audit.py",
+      "path": "inputs/harmonics_audit.py",
+      "sha256": "51bf4b8301c11beb44b1e16d0195ddf55739242819cc37dfe1a591b05677d9d1",
+      "size_bytes": 4724,
+      "source_location": "repository",
+      "source_path": "experiments/qpb-josephson-physical-anchor/harmonics_audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "621b64bd5adc8c29485279b9c05be04b86894c8a8483106ab82b8f7e29bf6248",
+      "size_bytes": 3232
+    }
+  ]
+}

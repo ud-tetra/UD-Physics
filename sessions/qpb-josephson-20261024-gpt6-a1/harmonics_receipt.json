@@ -1,0 +1,252 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "jj003-higher-harmonics-source-audit",
+  "session_id": "qpb-josephson-20261024-gpt6-a1",
+  "candidate_id": "qpb-josephson-physical-anchor",
+  "question": "Does published Josephson spectroscopy furnish eligible classical phase-amplitude observations, and does adding physically allowed Josephson harmonics change the ideal sine-only sign discriminant?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "EMPIRICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "CPR",
+      "symbol": "I1,I2,q",
+      "object_type": "conventional two-harmonic Josephson current-phase law",
+      "definition": "I(phi)=I1 sin phi + I2 sin2phi, q=I2/I1, I1>0",
+      "domain": "phi real; q>-1/2 stable zero",
+      "codomain": "physical current",
+      "coefficient_domain": "real; rational fixture q",
+      "units": "current A and physical phase radians",
+      "basis_orientation": "zero-bias equilibrium phi0=0",
+      "metric_measure": "positive inertial C*(Phi0/2pi)^2",
+      "origin": "hypothetical conventional extension",
+      "exact_expression": "U/E1=1-cos phi+q(1-cos² phi)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "WILLSCH"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "E1=I1Phi0/(2pi)"
+    },
+    {
+      "object_id": "curve",
+      "symbol": "omega(a)/omega0",
+      "object_type": "dimensionless amplitude-frequency response",
+      "definition": "small-amplitude peak turning phase a with conserved JJ energy",
+      "domain": "small a≥0",
+      "codomain": "positive relative frequency",
+      "coefficient_domain": "real analytic; rational leading term",
+      "units": "dimensionless",
+      "basis_orientation": "phase peak a, not current bias ratio or quantum excitation index",
+      "metric_measure": "physical mass M>0",
+      "origin": "derived",
+      "exact_expression": "1-(1+8q)/(16(1+2q))*a²+O(a⁴)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "WILLSCH"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "CPR"
+      ],
+      "normalization": "omega0²=(E1/M)*(1+2q)"
+    },
+    {
+      "object_id": "dataset",
+      "symbol": "f0j",
+      "object_type": "published measured superconducting transmon quantum transitions",
+      "definition": "Willsch et al 2024 multisite spectroscopy and linked Jülich DOI",
+      "domain": "discrete level indices j",
+      "codomain": "measured transition frequencies",
+      "coefficient_domain": "published quantum spectroscopy and fitted models",
+      "units": "Hz",
+      "basis_orientation": "transmon excitations not phase turning amplitudes",
+      "metric_measure": "published measurement imprecision order 1 MHz, raw uncertainties not acquired",
+      "origin": "empirical published/source locator",
+      "exact_expression": null,
+      "measured_value": "paper reports f03 discrepancies >10MHz in some samples",
+      "uncertainty": "raw per-point uncertainty and covariance NOT_ACQUIRED",
+      "source_refs": [
+        "WILLSCH",
+        "DATA"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "transition energy difference E_j-E_0 divided by h"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "WILLSCH",
+      "url_or_repo_path": "https://doi.org/10.1038/s41567-024-02400-8",
+      "version_or_commit": "2024-02-14; publisher correction 2024-04-04",
+      "section_or_object_id": "Fig3 measured higher transmon transitions; Methods; Data availability",
+      "source_status": "peer-reviewed empirical spectroscopy, not classical amplitude sweep"
+    },
+    {
+      "source_id": "DATA",
+      "url_or_repo_path": "https://doi.org/10.26165/JUELICH-DATA/LGRHUH",
+      "version_or_commit": "landing version V2, inspected 2026-10-24",
+      "section_or_object_id": "Dataverse metadata/README 97 bytes and linked GitLab code repository",
+      "source_status": "verified primary research-data locator; raw GitLab bytes inaccessible due access challenge"
+    },
+    {
+      "source_id": "JJ001",
+      "url_or_repo_path": "experiments/qpb-josephson-physical-anchor/README.md",
+      "version_or_commit": "c99793b5f113d599aa3ee052dd1de7c3c769416d",
+      "section_or_object_id": "sine-only ideal physical sign and positive UD-star comparator",
+      "source_status": "previous conditional model, retained"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Lumped lossless and unbiased classical Josephson phase with constant positive inertia and first+second harmonic; selected q not inferred from publication."
+    },
+    {
+      "id": "A2",
+      "description": "Paper quantum f0j values and publicly listed dataset pointers are different typed observables from classical peak turning-phase a; no new empirical rows imported."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational and nonlinear oscillator perturbation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive general harmonic a² sign and stable q interval"
+    },
+    {
+      "technique": "energy/units",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "potential and physical current phase typed correctly, positive inertia"
+    },
+    {
+      "technique": "numerical quadrature",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "4,096 Simpson panels, endpoint regularization and sine-only AGM consistency"
+    },
+    {
+      "technique": "fit/null/model selection",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "mathematical q=-1/4 counterexample and conventional harmonic baseline; no measured q; no heldout"
+    },
+    {
+      "technique": "modular/homology/factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "physical oscillator not a modular discrete UD clock or new chain homology question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "I=I1 sin phi+I2 sin2phi, S1=I1+2I2, S3=I1+8I2",
+    "reduced_expression": "a² coefficient=-(1+8q)/(16(1+2q)); at q=-1/4 +1/8; at q=0 -1/16",
+    "factor_origins": [
+      "Taylor coefficients sin mphi",
+      "quartic secular frequency correction"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "SI physical seconds for Josephson, native UD time remains unmapped",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "M phi_ddot+phi0[I1 sin phi+I2 sin2phi]=0",
+    "initial_phase": "phi=a, phi_dot=0, zero bias",
+    "coupling": "physical Josephson CPR, not UD J fiber",
+    "period_claim": "leading small amplitude expansion and numerical finite-period quadrature",
+    "physical_unit_map": "no UD physical calibration"
+  },
+  "dynamics_readout": {
+    "state_space": "physical classical Josephson phase and conjugate charge; separate transmon quantum Hilbert space in empirical source",
+    "generator_or_update": "two-harmonic Hamiltonian via positive M and periodic U",
+    "initial_boundary_conditions": "zero bias stable phase minimum, a small for expansion",
+    "conservation_and_sources": "physical Hamiltonian conserved in ideal no-loss construction",
+    "projection_and_kernel": "turning-phase amplitude to period, distinct from measured f0j quantum transitions",
+    "physical_mapping": "no UD correspondence promoted"
+  },
+  "target_exposure": {
+    "status": "POST_IDEAL_SINE_SIGN_AND_PUBLIC_SOURCE_EXPOSURE",
+    "known_targets": [
+      "jj001 ideal sine softening",
+      "published harmonics and transmon higher-level spectra"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "q=-1/4 chosen as explicit analytic hardening counterexample, NOT measured",
+      "q sample grid [-1/4,-3/25,0,1/20]"
+    ],
+    "search_domain_and_budget": "single second-harmonic family, 4 q examples, five exact positivity samples, numerical quadrature; no empirical regression",
+    "selection_criterion": "challenge sign universality while preserving stable potential and matched conventional null",
+    "baseline": "ordinary Josephson harmonic current-phase circuit, not native UD"
+  },
+  "calculation_steps": [
+    "From I(phi)=sum I_m sin mphi, expand I=S1 phi-S3 phi³/6+..., S1=sum m I_m, S3=sum m³ I_m.",
+    "For M phi_ddot+const I(phi)=0, perturbation of weak cubic oscillator gives frequency/omega0=1-S3 a²/(16 S1)+O(a⁴).",
+    "For q=I2/I1 stable origin 1+2q>0, hardening if -1/2<q<-1/8. At q=-1/4, U/E1=(1-cos phi)(3-cos phi)/4>=0.",
+    "Compute nonlinear period by energy quadrature for selected q; check sine-only numerical result against exact AGM and q=-1/4 positive shift.",
+    "Verify 2024 experimental transmon higher-transition spectroscopy and Jülich dataset landing; note GitLab anti-bot block and unavailable raw bytes.",
+    "Differentiate quantum f0j transition spectroscopy from zero-bias classical amplitude a-vs-omega dataset; do NOT claim held-out UD evaluation."
+  ],
+  "result": {
+    "exact_expression": "omega(a)/omega0=1-[(1+8q)/(16(1+2q))]a²+O(a⁴), q=-1/4 yields +a²/8 (stable), q=0 yields -a²/16; general harmonic S3/S1 result",
+    "approximation": "at a=.4: q=-1/4 relative omega≈1.018874625 vs q=0≈0.990008204",
+    "units": "dimensionless frequency ratio; physical phase amplitude rad",
+    "precision_and_error": "Fraction exact leading coefficient, float64 Simpson quadrature; 2024 measured spectra not accessed for numeric regression",
+    "scope": "classical 2-harmonic conditional dynamics and independently published distinct quantum spectroscopy source",
+    "physical_interpretation": "No unique UD attribution; ideal sine-only contrast conditional and nonuniversal"
+  },
+  "verification": [
+    {
+      "method": "exact rational Taylor/positivity and independent Simpson period quadrature",
+      "command_or_proof_path": "experiments/qpb-josephson-physical-anchor/harmonics_audit.py",
+      "source_revision": "d3d9b5caae9381404a75f3141f3bdb995fe4c9a0",
+      "actual_result": "PASS local exact and numeric checks; output captured",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "public research-data inspection",
+      "command_or_proof_path": "https://data.fz-juelich.de/dataset.xhtml?persistentId=doi:10.26165/JUELICH-DATA/LGRHUH",
+      "source_revision": null,
+      "actual_result": "PASS metadata/README pointer only; raw code/data inaccessible under GitLab automated-access protection",
+      "review_relationship": "source audit"
+    },
+    {
+      "method": "independent physical UD experiment or heldout spectral fit",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED",
+      "review_relationship": "empirical"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Ideal sine-only softening sign is not universal with higher physical Josephson harmonics.",
+    "q=-1/4 hardening is a mathematical example, not a measured value or a claim about Willsch et al samples.",
+    "Quantum transition f0j differs from classical turning-phase a versus frequency; direct substitution invalid.",
+    "Public dataset pointer verified, but raw GitLab code/spectroscopy unavailable to current session."
+  ],
+  "limitations": [
+    "No raw dataset files, per-measurement uncertainties or model parameters acquired.",
+    "Conventional multi-harmonic Josephson law already accounts for source-identified effects; matched null must include harmonics.",
+    "No physical UD Hilbert-space quantization or action/phase map, no frozen held-out evaluation.",
+    "No independent mathematical reviewer or mainline export."
+  ],
+  "changed_dependencies": [
+    "jj001 sine-only sign retained with explicit conditional ideal-model scope; jj002 bias-fit remains unchanged; new jj003 widens classical null."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb-josephson-20261024-gpt6-a1/jj-003/manifest.json"
+  ],
+  "next_discriminant": "Acquire raw transmon spectra under ordinary authorized access and independently freeze a typed UD quantum mapping before any spectral comparison; or find true independently calibrated classical turning-amplitude data. Without these, retain negative model-scope certificate."
+}

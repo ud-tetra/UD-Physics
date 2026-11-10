@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb-josephson-20261024-gpt6-a1",
+  "run_id": "jj-002",
+  "created_at": "2026-10-24T16:55:00Z",
+  "evidence": "EMPIRICAL",
+  "summary": "Published joint-fit parameters audited for physical units; zero-bias amplitude dataset unavailable; no held-out test",
+  "command": "python3 experiments/qpb-josephson-physical-anchor/empirical_anchor_audit.py --out /tmp/jj002_empirical_summary.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "c99793b5f113d599aa3ee052dd1de7c3c769416d",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "empirical-audit",
+      "name": "empirical_anchor_audit.py",
+      "path": "inputs/empirical_anchor_audit.py",
+      "sha256": "24f2fafd84802deab3151032d7f2cfda8e5524095c7cf575c796337abd6f1d45",
+      "size_bytes": 2346,
+      "source_location": "repository",
+      "source_path": "experiments/qpb-josephson-physical-anchor/empirical_anchor_audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "5e14ab70528e9581eadc768a4db0f9ff0c1c23c788c0e8dc8be7c78548dcbaf5",
+      "size_bytes": 1581
+    }
+  ]
+}
