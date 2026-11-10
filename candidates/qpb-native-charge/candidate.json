@@ -1,0 +1,42 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb-native-charge",
+  "session_id": "qpb-charge-20261024-gpt6-a1",
+  "question": "Can the native finite discriminant/Weyl group supply a scalar additive physical charge and a nontrivial source-selected quantum Hamiltonian?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Concrete cut-lattice graph-Jacobian presentation of abstract D=Z4² is chosen; not silently identified with source flow-lattice bilinear form without sign/convention map.",
+    "Proposed quantum Hilbert C[D] and finite Weyl action are conventional extra representation choices; no physical hbar, Coulomb charge or Schr dynamics implied.",
+    "Scalar physically additive charge would be group homomorphism D->Z or R; alternative scalar invariant character D->U1 and S4-invariant diagonal energy are tested separately.",
+    "Full Weyl-commuting H is an extreme optional symmetry; S4-only H permits multiple parameters."
+  ],
+  "physical_mapping": "OPEN: q0 physical Coulomb, native chi/tau0, charge/phase conjugate port and physical Hamiltonian/measurement law not source-selected.",
+  "target_exposure": "Prior transmon quantum anharmonicity and earlier many-body/no-charge mechanisms known. New finite charge orbit and H examples selected for degeneracy stress, no physical data fitted.",
+  "fitted_choices": [
+    "Six illustrative positive S4 orbit energies (E2,E4)=(0,0),(1,1),(1,2),(2,1),(2,2),(1,3) in arbitrary units",
+    "Demanding full Weyl commutation is an explicit extra strong null hypothesis, not source-defined time evolution"
+  ],
+  "sources": [
+    "59814ea16e94ac4048dc878ef99d23097ca63b9b:experiments/qpb1-finite-pairing/README.md",
+    "59814ea16e94ac4048dc878ef99d23097ca63b9b:experiments/qpb1-integral-duality/README.md",
+    "59814ea16e94ac4048dc878ef99d23097ca63b9b:experiments/qpb1-charge-field/README.md",
+    "59814ea16e94ac4048dc878ef99d23097ca63b9b:experiments/qpb1-impedance-selection/README.md",
+    "59814ea16e94ac4048dc878ef99d23097ca63b9b:experiments/qpb1-loop-history/README.md",
+    "https://github.com/ud-tetra/UD-Physics/pull/159 (unmerged draft, read-only)"
+  ],
+  "baseline": "Ordinary K4 graph chip-firing critical group, finite Heisenberg/Weyl matrix representation, arbitrary S4 orbit-potential energies exactly reproduce algebra.",
+  "result": "EXACT/CONDITIONAL: D finite of exponent4 has only zero homomorphism to additive Z/R; under full S4 fixed subgroup is trivial, so only trivial invariant scalar character. Finite Weyl translation/modulation irrep commutant CI16; S4-only diagonal Hamiltonians yield arbitrary energy for identity/order2/order4 orbit (1,3,12). No native quantum electric-charge unit or interaction coefficient.",
+  "next_discriminant": "Require independently defined vector-valued or source-reservoir charge, physical constitutive law and quantum commutator/action/time, with frozen data; otherwise park this finite scalar-charge route.",
+  "reopening_conditions": "An independently sourced charge operator/current with physical unit q0 and nontrivial Hamiltonian fixed prior to observation, plus a measured port and heldout signal.",
+  "mathematical_receipts": [
+    "sessions/qpb-charge-20261024-gpt6-a1/mathematical_receipt.json"
+  ]
+}

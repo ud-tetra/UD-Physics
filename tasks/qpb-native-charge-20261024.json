@@ -1,0 +1,22 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb-native-charge-20261024",
+  "goal": "Test whether the native K4 critical/discriminant charge labels and finite Weyl algebra independently select an additive physical charge operator and nontrivial quantum interaction Hamiltonian",
+  "owned_paths": [
+    "tasks/qpb-native-charge-20261024.json",
+    "sessions/qpb-charge-20261024-gpt6-a1/",
+    "experiments/qpb-native-charge/",
+    "candidates/qpb-native-charge/",
+    "artifacts/qpb-charge-20261024-gpt6-a1/"
+  ],
+  "dependencies": [
+    "qpb1-local-generators-20261023",
+    "qpb1-finite-pairing-20261023",
+    "qpb1-integral-duality-20261022",
+    "qpb1-impedance-selection-20261022"
+  ],
+  "status": "complete",
+  "result": "Exact cut-lattice K4 graph critical group D=Z4^2 and 24 S4 action have charge-label orbits1,3,12. Every scalar additive D->Z physical charge is zero; S4-invariant U1 character trivial. Full finite Weyl symmetry leaves only scalar H, while S4-invariant diagonal H has three free orbit energies; no physical q0, clock or interaction selected.",
+  "next_action": "Park finite-discriminant scalar-charge/quantum-Hamiltonian physical identification unless a new independently defined charge/phase or source law fixes energy and physical maps."
+}

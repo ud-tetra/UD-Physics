@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb-charge-20261024-gpt6-a1",
+  "run_id": "charge-001",
+  "created_at": "2026-10-24T19:52:43.775Z",
+  "evidence": "EXACT",
+  "summary": "Exact K4 discriminant scalar charge obstruction, S4 orbits and full finite Weyl Hamiltonian commutant with positive energy counterfamily",
+  "command": "python3 experiments/qpb-native-charge/audit.py --out /tmp/qpb-native-charge-001.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON; equivalent repository-root command shown",
+  "source": {
+    "revision": "f2fb9700de4e729e9f84f25de6d1fc269f31aaa0",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "native-charge-script",
+      "name": "audit.py",
+      "path": "inputs/audit.py",
+      "sha256": "e62712e44162e3d4433c0a983cf1239c69917f0f339dd85ab8e6850e63cd8e6c",
+      "size_bytes": 5770,
+      "source_location": "repository",
+      "source_path": "experiments/qpb-native-charge/audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "1d4c6701b36badd8933bff10045362a2a35df40088f6f3c6912bc2acc1be8f81",
+      "size_bytes": 2291
+    }
+  ]
+}
