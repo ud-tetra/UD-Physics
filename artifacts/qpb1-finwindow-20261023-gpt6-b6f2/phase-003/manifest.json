@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "run_id": "phase-003",
+  "created_at": "2026-10-24T01:20:30Z",
+  "evidence": "EXACT",
+  "summary": "Exact Richardson short-time calibration error budget with numerical constructor checks",
+  "command": "python3 /mnt/data/ud_qpb_calibration/calibration_audit.py --out /mnt/data/ud_qpb_calibration/summary.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "dabd8037cc635b51042b79562c18ea15614d4890",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "calibration-source",
+      "name": "calibration_audit.py",
+      "path": "inputs/calibration_audit.py",
+      "sha256": "784eedc38b32187a383dda3be5e6bb28614b3572b4d389f0515cd7ff1f4251c6",
+      "size_bytes": 4491,
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-window-phase/calibration_audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "fb92ac9b048f259d94b4d475bdf37bc164fffcce0659c6e3b2a8e91fcfb7bc67",
+      "size_bytes": 1539
+    }
+  ]
+}

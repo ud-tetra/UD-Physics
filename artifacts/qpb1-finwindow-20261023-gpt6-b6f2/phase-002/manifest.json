@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "run_id": "phase-002",
+  "created_at": "2026-10-24T01:09:17Z",
+  "evidence": "EXACT",
+  "summary": "Alternative analytic operational receiver certificate and 243+25000 constructor checks",
+  "command": "python3 experiments/qpb1-finite-window-phase/operational_audit.py --out /mnt/data/ud-finwindow-option1/summary2.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "faabd63e9fafc44e824423e85a272d1fca71d750",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "operational-audit-source",
+      "name": "operational_audit.py",
+      "path": "inputs/operational_audit.py",
+      "sha256": "ba77e87a80e2fb6eb48d7dd0faabaad9ec76a700654c9511cc38f8c5c0e004c3",
+      "size_bytes": 3600,
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-window-phase/operational_audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "1a5501cc82220e5661df0543979cebb0c5be3d03ea49f40d3df2f92fb1a7f98f",
+      "size_bytes": 895
+    }
+  ]
+}

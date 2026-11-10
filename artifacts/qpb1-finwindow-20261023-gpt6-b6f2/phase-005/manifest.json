@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "run_id": "phase-005",
+  "created_at": "2026-10-24T02:00:10Z",
+  "evidence": "EXACT",
+  "summary": "Three-channel reference monitor, path-matched null and conventional-tone identifiability stress",
+  "command": "python3 experiments/qpb1-finite-window-phase/null_protocol.py --out /mnt/data/qpb_phase005/summary.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "63c4f997b68563460b54af73b04105b3f15ab687",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "three-channel-source",
+      "name": "null_protocol.py",
+      "path": "inputs/null_protocol.py",
+      "sha256": "8945b9ccc1273673ecef9577e23a3ecea9679961c53bf9e57275bed6c89ec05f",
+      "size_bytes": 5722,
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-window-phase/null_protocol.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "347c9094dce14eadc1a2cbf87e4bdc56cabd18007441199ed833d90ce3b86330",
+      "size_bytes": 3450
+    }
+  ]
+}

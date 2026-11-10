@@ -1,0 +1,42 @@
+{
+  "base": "QPB local 3-sector conserved time-independent generator",
+  "conditional_bound": {
+    "fringe_and_probe_timing_rate": "10359/125000000",
+    "intershot_repeatability_rate": "201/5000000",
+    "kappa_phase_decimal": 0.0009639223458380443,
+    "kappa_phase_rad": "699576281715419/725760000000000000",
+    "main_clock_rad": "151/5000000",
+    "new_total_phase_decimal": 0.008214198086935355,
+    "new_total_phase_rad": "534794619424186500609612131837359/65106126461057096943360000000000000",
+    "trunc_rate": "78502725751/3110400000000000"
+  },
+  "estimator": "R=(4S(h/2)-S(h))/3, S(h)=[Im Z(h)-Im Z(-h)]/(2h)",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL"
+  ],
+  "h_native": "1/12",
+  "inputs": {
+    "gain_abs_error": "1/100",
+    "gain_repeat_abs": "1/200000",
+    "main_native_time_metrology_error": "1/100000",
+    "prep_repeat_state_norm": "1/200000",
+    "probe_complex_noise_abs": "1/500000",
+    "probe_native_time_error": "1/10000000"
+  },
+  "omega_max": "151/50",
+  "samples": {
+    "five_cubed_gain_fixture": 125,
+    "four_probe_sign_challenges": 16,
+    "max_trunc_bias_gain_grid": 1.4283713519080976e-05,
+    "max_trunc_bias_random": 2.4627462015924806e-05,
+    "random_gain_weight_probes": 10000
+  },
+  "status": "PASS",
+  "untracked_baseline": {
+    "unknown_mean_rate_uncertainty_phase_at_T0": 0.12566370614359174,
+    "untracked_main_time_jitter_phase": 0.025
+  },
+  "validation_scope": "constructor checks; no external review; clock and phase-reference metrology assumed, not measured"
+}

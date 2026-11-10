@@ -1,0 +1,101 @@
+{
+  "alternate_prep": "t=0 gives (1,1,4/3); t=1/2 gives (4/3,2/3,4/3)",
+  "effective_gains": "g_i=1+sum_j L_ij*r_j",
+  "energy": "H=||x||^2/2+(r^T L r)/4, r_k=x^T P_k x",
+  "exact_grid_checks": 320,
+  "examples": [
+    {
+      "probe_g": [
+        "1",
+        "1",
+        "4/3"
+      ],
+      "reference_g": [
+        "1",
+        "1",
+        "3/2"
+      ],
+      "t": "0"
+    },
+    {
+      "probe_g": [
+        "7/6",
+        "5/6",
+        "4/3"
+      ],
+      "reference_g": [
+        "1",
+        "1",
+        "3/2"
+      ],
+      "t": "1/4"
+    },
+    {
+      "probe_g": [
+        "4/3",
+        "2/3",
+        "4/3"
+      ],
+      "reference_g": [
+        "1",
+        "1",
+        "3/2"
+      ],
+      "t": "1/2"
+    },
+    {
+      "probe_g": [
+        "5/3",
+        "1/3",
+        "4/3"
+      ],
+      "reference_g": [
+        "1",
+        "1",
+        "3/2"
+      ],
+      "t": "1"
+    },
+    {
+      "probe_g": [
+        "7/3",
+        "-1/3",
+        "4/3"
+      ],
+      "reference_g": [
+        "1",
+        "1",
+        "3/2"
+      ],
+      "t": "2"
+    }
+  ],
+  "family": "L(t)=E33+t*(1,-1,0)(1,-1,0)^T, t>=0",
+  "kernel_dimension": 3,
+  "labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FIT",
+    "FAILED",
+    "OPEN"
+  ],
+  "linearization": "Original A at zero for every t; all sector supports are conserved",
+  "one_prep_target": "g=(1,1,3/2) for all t>=0 (exposed, not predictive)",
+  "physical_attribution": "FAILED: ordinary classical Hamiltonian with same Poisson A and H has identical dynamics",
+  "positivity_identity": "r^T L(t) r=r3^2+t*(r1-r2)^2 >=0",
+  "reference_map_rank": 3,
+  "reference_r": [
+    "1/4",
+    "1/4",
+    "1/2"
+  ],
+  "scope": "3-sector model; 15-register projectors and sign conventions verified in phase-008; no measured physics",
+  "second_r": [
+    "2/3",
+    "0",
+    "1/3"
+  ],
+  "source_selection": "OPEN; this family is an explicit exact counterexample to selection by listed symmetries/positivity/reference",
+  "status": "PASS",
+  "symmetric_parameter_count": 6
+}

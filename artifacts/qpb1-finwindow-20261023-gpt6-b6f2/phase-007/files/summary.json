@@ -1,0 +1,29 @@
+{
+  "J_equivariance_defect": "3/8",
+  "classical_matched_quartic": "exactly identical Poisson A, Hamiltonian H and evolution; UD physical attribution FAILED",
+  "constitutive_hypothesis": "xprime=A(x+lambda*x**3 componentwise), H=sum(x_i\u00b2/2+lambda*x_i\u2074/4)",
+  "energy_conserved": true,
+  "energy_current_cuts": 6,
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FAILED"
+  ],
+  "independent_review": "NOT_RUN",
+  "lambda": "1/4 (target-informed free choice)",
+  "native_identity": "A^3=-4A",
+  "native_only_skew_function": "Any real analytic skew-adjoint f(A)=c*A; no native detuning",
+  "original_norm_conserved": false,
+  "physical_port_clock": "OPEN",
+  "plane_fixtures": 16,
+  "rate_difference": "3/8",
+  "signed_face_pattern": "+,-,+,-",
+  "signed_permutations": 24,
+  "source_selection": "OPEN",
+  "status": "PASS",
+  "two_preparation_normalized_face_rates": [
+    "5/2",
+    "17/8"
+  ]
+}

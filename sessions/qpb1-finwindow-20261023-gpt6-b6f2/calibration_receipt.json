@@ -1,0 +1,251 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb-finwindow-calibration-003",
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "candidate_id": "qpb1-finite-window-phase",
+  "question": "Can a same-gauge short-time interferometric estimator supply the previously assumed .001 rad correction under explicit measurement/repeatability bounds?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS"
+  ],
+  "objects": [
+    {
+      "object_id": "source-G",
+      "symbol": "G",
+      "object_type": "skew local 3-sector generator",
+      "definition": "G=sum gk Kk; |gk-g0k|<=1/100",
+      "domain": "R15",
+      "codomain": "R15",
+      "coefficient_domain": "Q finite audit, R general gains",
+      "units": "inverse native time",
+      "basis_orientation": "ascending tetrahedron simplex orientation",
+      "metric_measure": "unit Euclidean H=I",
+      "origin": "imported/assumed",
+      "exact_expression": "g0=(1,1,3/2)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "qpb-local"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit support x"
+    },
+    {
+      "object_id": "Z",
+      "symbol": "Z(t)",
+      "object_type": "complex endpoint overlap",
+      "definition": "Z=sum rk exp(i2gkt); M=Im Z'(0)",
+      "domain": "R native time",
+      "codomain": "C",
+      "coefficient_domain": "C",
+      "units": "dimensionless",
+      "basis_orientation": "J acts as +i",
+      "metric_measure": "unit Hermitian active-carrier",
+      "origin": "assumed/derived",
+      "exact_expression": "M=sum rk 2gk",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "phase-002"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "source-G"
+      ],
+      "normalization": "rk nonnegative sum1"
+    },
+    {
+      "object_id": "R",
+      "symbol": "R_h",
+      "object_type": "Richardson mean-frequency estimator",
+      "definition": "[4 Im Z(h/2)/(h/2) - Im Z(h)/h]/3",
+      "domain": "complex fringe readings at h and h/2",
+      "codomain": "real native angular rate",
+      "coefficient_domain": "R/analytic fractions",
+      "units": "1/native time",
+      "basis_orientation": "positive phase convention",
+      "metric_measure": "same gauge, calibrated complex quadratures",
+      "origin": "assumed/derived",
+      "exact_expression": "h=1/12",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "phase-002"
+      ],
+      "assumption_ids": [
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [
+        "Z"
+      ],
+      "normalization": "Z(0)=1"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "qpb-local",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "section_or_object_id": "sectors and eigenfrequencies",
+      "source_status": "integrated constructor"
+    },
+    {
+      "source_id": "phase-002",
+      "url_or_repo_path": "experiments/qpb1-finite-window-phase/OPERATIONAL_RECEIVER.md",
+      "version_or_commit": "dabd8037cc635b51042b79562c18ea15614d4890",
+      "section_or_object_id": "receiver correction D and joint budget",
+      "source_status": "branch conditional model"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "positive three-gain time-independent generator, norm conservation and phase-centered support fractions"
+    },
+    {
+      "id": "A2",
+      "description": "accurate complex fringe measurements |delta Z|<=2e-6 per calibration point, probe timing <=1e-7 native units and common reference gauge"
+    },
+    {
+      "id": "A3",
+      "description": "cross-run unit-state repeatability norm <=5e-6, gain repeatability abs<=5e-6, main time readout precision <=1e-5 while its true jitter from 2pi may be 0.01"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational/symbolic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Richardson error and propagated deterministic budget as exact fractions"
+    },
+    {
+      "technique": "spectral/operator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Hermitian time reversibility Z(-h)=conj Z(h), spectral frequency ceiling"
+    },
+    {
+      "technique": "metric/estimation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "projective state distance bounds L1 sector-weight change"
+    },
+    {
+      "technique": "numerical/sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "125 gain triples,10000 arbitrary weights,16 sign noise probes; target-selected design contrast"
+    },
+    {
+      "technique": "integer factorization/modular-clock/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no new divisibility, finite time register or chain boundary claim"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "125=5^3 gain fixtures; 10000 seeded weighted fixtures; 16=2^4 noise sign cases",
+    "reduced_expression": "h=1/12; Omega_max=151/50; kappa=699576281715419/725760000000000000",
+    "factor_origins": [
+      "five gain values across three sectors; four independent imaginary residual directions"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless continuous native",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "U(t)=exp(tG); h=1/12,T near2pi",
+    "initial_phase": "unit state, Z(0)=1",
+    "coupling": "three fixed orthogonal sectors",
+    "period_claim": "no new exact-return claim",
+    "physical_unit_map": "OPEN tau0"
+  },
+  "dynamics_readout": {
+    "state_space": "rank14 active complex J model",
+    "generator_or_update": "G=sum gkKk",
+    "initial_boundary_conditions": "unit state norm with repeated x x' distance <=5e-6",
+    "conservation_and_sources": "conserves norm and all sector weights on each run",
+    "projection_and_kernel": "complex endpoint overlap Z, measured by four analyzer phases; all physical accesses hypothetical",
+    "physical_mapping": "calibration phase D=T M, with unmeasured native-clock and same-gauge coupling"
+  },
+  "target_exposure": {
+    "status": "FIT_DESIGN_AFTER_001_AND_002",
+    "known_targets": [
+      "existing .001 rad D correction budget",
+      "existing .01 rad phase screen and -1 reference"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "h=1/12, probe noise 2e-6, probe timing 1e-7, state/gain repeatability 5e-6, main timing 1e-5"
+    ],
+    "search_domain_and_budget": "single design plus 125+10000+16 constructor fixtures",
+    "selection_criterion": "calibration error<.001 and total phase<.01",
+    "baseline": "untracked ±.01 common gain shifts D by >.125 rad"
+  },
+  "calculation_steps": [
+    "For Z(t)=sum rk exp(i omega_k t), Im Z'(0)=M=sum rk omega_k; dynamic correction D=TM.",
+    "S(h)=sum rk sin(omega_k h)/h; R=(4 S(h/2)-S(h))/3 removes O(h²) term.",
+    "For |omega h|<1, exact alternating series yields |R−M| <= Omega_max^5 h^4/480.",
+    "Each probe |error Z|<=eta_c+Omega_max sigma_probe; two symmetric slopes combine error <=3(eta_c+Omega_max sigma_probe)/h.",
+    "With normalized state repeatability ζ, total variation in sector weights <=ζ; L1 weight difference <=2ζ. Mean rate drift <=2 Omega_max ζ+2 gain_repeat.",
+    "Observed main time differs from true by <=sigma_main; combine at T_max into rational bound kappa.",
+    "Replace phase-002 calibration error budget only, preserving target exposure and limitations."
+  ],
+  "result": {
+    "exact_expression": "kappa=699576281715419/725760000000000000 rad; total=534794619424186500609612131837359/65106126461057096943360000000000000 rad",
+    "approximation": "kappa=0.00096392234584; total=0.00821419808694",
+    "units": "radians; dimensionless native time",
+    "precision_and_error": "symbolic exact rational enclosure using pi<22/7; float64 constructor samples with numerical tolerance",
+    "scope": "conditional 3-sector time-independent law with assumed calibration noise/repeatability and same-phase reference",
+    "physical_interpretation": "HYPOTHESIS: coherent receiver, no physical demonstration"
+  },
+  "verification": [
+    {
+      "method": "analytic sinc remainder and deterministic norm error propagation",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/CALIBRATION_REVIEW.md",
+      "source_revision": "dabd8037cc635b51042b79562c18ea15614d4890",
+      "actual_result": "PASS same-assistant proof, external reviewer NOT_RUN",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate Python with rational certificate and probes",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/calibration_audit.py",
+      "source_revision": "dabd8037cc635b51042b79562c18ea15614d4890",
+      "actual_result": "PASS 125+10000+16 constructor probes",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "external independent review",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "none"
+    },
+    {
+      "method": "physical phase-reference receiver",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED",
+      "review_relationship": "empirical"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Omitting calibration: a common unknown gain shift 0.01 changes dynamical D by 0.1256637 rad at T=2pi.",
+    "Using nominal main T despite 0.01 jitter produces about 0.025 rad calibration error.",
+    "Probe reference drift, state/gain variation or source selection beyond stated budgets voids estimate."
+  ],
+  "limitations": [
+    "Probe/fringe 2e-6 error and native-time metrology are stipulated and target-selected, not observed.",
+    "A conventional coherent three-tone interferometer has same receiver mathematics.",
+    "No independent mathematical review, physics experiment, or native selection/clock/energy map."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-003/manifest.json"
+  ],
+  "next_discriminant": "Independent non-constructor verification and physical realization of sub-ppm fringe metrology/shared gauge with measured error budgets."
+}

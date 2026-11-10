@@ -1,0 +1,242 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb-phase004-shot-frame",
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "candidate_id": "qpb1-finite-window-phase",
+  "question": "What event count is sufficient for two 2e-6 complex overlap measurements, and can reference drift spoil calibrated geometric phase?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS"
+  ],
+  "objects": [
+    {
+      "object_id": "carrier",
+      "symbol": "Z(t)",
+      "object_type": "complex overlap of rank14 real J carrier",
+      "definition": "sum rk exp(i2gkt) under time-independent Euclidean skew G",
+      "domain": "native real t",
+      "codomain": "C",
+      "coefficient_domain": "R/C with rational gains",
+      "units": "dimensionless overlap",
+      "basis_orientation": "ascending tetrahedron, J as +i",
+      "metric_measure": "H=I",
+      "origin": "imported",
+      "exact_expression": "Z=sum rk exp(i omega_k t)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "phase003"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "sum rk=1"
+    },
+    {
+      "object_id": "receiver",
+      "symbol": "p_beta",
+      "object_type": "Bernoulli intensity model",
+      "definition": "[1+Re(exp(-i beta)Z)]/2 with four quadratures at each of two delays",
+      "domain": "probability outcome space",
+      "codomain": "[0,1]",
+      "coefficient_domain": "R probabilities; rational sample counts",
+      "units": "probability",
+      "basis_orientation": "beta=0,pi/2,pi,3pi/2",
+      "metric_measure": "IID Bernoulli",
+      "origin": "assumed",
+      "exact_expression": "eta=1/500000;m=7400000000000",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "phase002"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "carrier"
+      ],
+      "normalization": "balanced intensity"
+    },
+    {
+      "object_id": "reference",
+      "symbol": "theta_ref",
+      "object_type": "instrument phase offset",
+      "definition": "Z_obs=e^{i theta_ref(t)} Z",
+      "domain": "native time",
+      "codomain": "U1",
+      "coefficient_domain": "R",
+      "units": "radians",
+      "basis_orientation": "positive J orientation",
+      "metric_measure": "magnitude-preserving rotation",
+      "origin": "assumed",
+      "exact_expression": "theta_ref(T)=1/500, theta_ref(h)=theta_ref(h/2)=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "phase003"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "carrier"
+      ],
+      "normalization": "no physical gauge calibration"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "phase003",
+      "url_or_repo_path": "experiments/qpb1-finite-window-phase/CALIBRATION_REVIEW.md",
+      "version_or_commit": "7e100fa6504fde634fab08497afeb4467ecae710",
+      "section_or_object_id": "error budget kappa",
+      "source_status": "branch conditional"
+    },
+    {
+      "source_id": "phase002",
+      "url_or_repo_path": "experiments/qpb1-finite-window-phase/OPERATIONAL_RECEIVER.md",
+      "version_or_commit": "7e100fa6504fde634fab08497afeb4467ecae710",
+      "section_or_object_id": "four-phase fringe",
+      "source_status": "branch conditional"
+    },
+    {
+      "source_id": "outside1",
+      "url_or_repo_path": "https://www.nature.com/articles/s41566-017-0011-5",
+      "version_or_commit": "2017",
+      "section_or_object_id": "abstract shot-noise scaling",
+      "source_status": "external conventional"
+    },
+    {
+      "source_id": "outside2",
+      "url_or_repo_path": "https://doi.org/10.1364/AO.418495",
+      "version_or_commit": "2021",
+      "section_or_object_id": "abstract instrument error sources",
+      "source_status": "external conventional"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "eight independent Bernoulli streams, m trials per setting, known analyzer phases; no systematic detector or state drift"
+    },
+    {
+      "id": "A2",
+      "description": "untracked external phase reference may differ at final endpoint from calibration probes"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact fractions and combinatorics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "eight settings, exact count and rational Taylor certificate"
+    },
+    {
+      "technique": "probability/concentration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Hoeffding and union, 99% simultaneous tail"
+    },
+    {
+      "technique": "spectral/gauge",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "reference rotation affects corrected phase but not overlap magnitude"
+    },
+    {
+      "technique": "modular/factorization/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no relevant divisibility or boundary question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2*4*7400000000000",
+    "reduced_expression": "59200000000000",
+    "factor_origins": [
+      "two inherited probe delays",
+      "four receiver analyzer quadratures",
+      "per-setting m from Hoeffding threshold"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native clock, physical tau0 OPEN",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x'=Gx; measured Z rotates by exp(i theta_ref)",
+    "initial_phase": "probe frame fixed, main frame possibly shifted",
+    "coupling": "interferometer frame assumed",
+    "period_claim": "N/A",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "rank14 active carrier + 8 Bernoulli sample streams",
+    "generator_or_update": "G=sum gk Kk, separate readout frame",
+    "initial_boundary_conditions": "norm1, two short-time probes",
+    "conservation_and_sources": "G norm-preserving, photon counting independent assumption",
+    "projection_and_kernel": "four quadrature estimates; visibility insensitive to frame drift",
+    "physical_mapping": "UNSCORED unimplemented"
+  },
+  "target_exposure": {
+    "status": "KNOWN_PREVIOUS_SCREENS",
+    "known_targets": [
+      "eta_c 2e-6",
+      "kappa<0.001rad",
+      "total<0.01rad"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "joint confidence 99%",
+      "m=7.4e12",
+      "external bias 0.002"
+    ],
+    "search_domain_and_budget": "one ideal IID Bernoulli receiver, one adversarial drift stress",
+    "selection_criterion": "Hoeffding sufficient 99% and investigate potential failure",
+    "baseline": "ordinary three-tone interferometer"
+  },
+  "calculation_steps": [
+    "Eight Bernoulli means within eta/(2sqrt2) imply both two-quadrature complex errors<=eta.",
+    "Hoeffding and union: failure <=16exp(-m eta²/4).",
+    "m=7.4e12 and eta=1/500000 yield m eta²/4=37/5; rational 13th Taylor sum for exp(37/5)>1600 -> failure<1/100.",
+    "Total count 8m=59.2e12; not optimal and no physical evidence.",
+    "Unobserved theta_ref(T)=1/500 with zero theta_ref on probes rotates only final Z; contrast unchanged.",
+    "Calibration spare margin/(Tmax)=2014132175737/351475200000000000 rad/native; plus step raises previous upper budget to 0.010214198086935355."
+  ],
+  "result": {
+    "exact_expression": "m=7400000000000; N=59200000000000; 16 exp(-37/5)<.01; frame rate margin=2014132175737/351475200000000000",
+    "approximation": "tail 0.009780044178; drift margin 5.73051e-6 rad/native; with bias upper budget 0.01021419808694rad",
+    "units": "events, probability, radians/native time",
+    "precision_and_error": "exact rational and known concentration inequality; numeric exponent/rate durations for context",
+    "scope": "ideal detector, no empirical instrument",
+    "physical_interpretation": "HYPOTHESIS, NOT_EXECUTED"
+  },
+  "verification": [
+    {
+      "method": "Fraction plus rational Taylor series",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/shot_noise_audit.py",
+      "source_revision": "2d7c383f5c0c3a784918b7ef54bf0e4bd97842c8",
+      "actual_result": "PASS constructor",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "non-constructor mathematical review",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "external"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "If reference phase is unobserved at main endpoint, corrected signal phase is ambiguous despite unchanged visibility.",
+    "99% confidence under IID assumptions is not absolute noise bound."
+  ],
+  "limitations": [
+    "No independent external reviewer.",
+    "No measured detector count, tau0, clock or reference drift.",
+    "Shot count is a sufficient model bound not physical minimum."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-004/manifest.json"
+  ],
+  "next_discriminant": "Test real receiver phase-frame stability, correlated photodetection and independent conventional null."
+}

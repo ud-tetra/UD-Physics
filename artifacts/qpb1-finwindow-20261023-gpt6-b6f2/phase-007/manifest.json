@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "run_id": "phase-007",
+  "created_at": "2026-10-24T15:31:00Z",
+  "evidence": "EXACT",
+  "summary": "Exact source-only analytic closure, local quartic Hamiltonian, phase-J failure and classical matched null",
+  "command": "python3 experiments/qpb1-finite-window-phase/constitutive_audit.py --out /tmp/qpb-constitutive-phase007.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "a2e3d8846104811c67559b0d3233c8a758dbccd9",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "constitutive-source",
+      "name": "constitutive_audit.py",
+      "path": "inputs/constitutive_audit.py",
+      "sha256": "06b5432a01f69ab6c685ccb91253531482c836057d6619284e312f959d34a6ce",
+      "size_bytes": 3402,
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-window-phase/constitutive_audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "e490ced302dc5d500e8e58d95eceb04c99e60fba86c12b31748a5628a02afa57",
+      "size_bytes": 927
+    }
+  ]
+}

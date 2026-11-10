@@ -1,0 +1,244 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb-phase009-psd-coefficient-degeneracy",
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "candidate_id": "qpb1-finite-window-phase",
+  "question": "Does native symmetry, J phase, positivity, original linearization and the exposed reference identify a nonlinear constitutive coefficient against a matched classical null?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FIT",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "carrier",
+      "symbol": "C",
+      "object_type": "15D real oriented tetrahedral chain",
+      "definition": "C0..C3 with f=(4,6,4,1), unit metric, signed S4",
+      "domain": "R15",
+      "codomain": null,
+      "coefficient_domain": "Q incidences; R states",
+      "units": "dimensionless",
+      "basis_orientation": "ascending simplices",
+      "metric_measure": "H=I",
+      "origin": "imported",
+      "exact_expression": "rank P1,P2,P3=(6,6,2)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit norm when comparing fraction r"
+    },
+    {
+      "object_id": "L",
+      "symbol": "L(t)",
+      "object_type": "positive semidefinite symmetric quartic coefficient matrix",
+      "definition": "E33 + t (1,-1,0)(1,-1,0)^T, t>=0",
+      "domain": "R³",
+      "codomain": "R³",
+      "coefficient_domain": "Q fixtures, R parameter",
+      "units": "dimensionless quartic coefficient",
+      "basis_orientation": "sector index k=1,2,3",
+      "metric_measure": "PSD quadratic form",
+      "origin": "assumed and target exposed",
+      "exact_expression": "sTLs=s3²+t(s1-s2)²",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "phase008"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "carrier"
+      ],
+      "normalization": "raw support s=xTPx"
+    },
+    {
+      "object_id": "H",
+      "symbol": "H_L",
+      "object_type": "postulated conservative Hamiltonian",
+      "definition": "||x||²/2+sTLs/4, evolution x'=A grad H",
+      "domain": "R15",
+      "codomain": "R",
+      "coefficient_domain": "R",
+      "units": "native unmapped energy",
+      "basis_orientation": "original J and S4",
+      "metric_measure": "Poisson A constant skew",
+      "origin": "hypothesis",
+      "exact_expression": "g_i=1+sum_j Lij s_j",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "phase008"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "L"
+      ],
+      "normalization": "at norm1 raw s equals normalized r"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "local",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "section_or_object_id": "§§1–4 Pk and Kk algebra",
+      "source_status": "integrated constructor"
+    },
+    {
+      "source_id": "phase008",
+      "url_or_repo_path": "experiments/qpb1-finite-window-phase/PHASE_COMPATIBLE_CONSTITUTIVE.md",
+      "version_or_commit": "1f6717a8a6fdbe004aae6fda8ae278e3d4498d4a",
+      "section_or_object_id": "coupled quartic positive law, target origin",
+      "source_status": "isolated Discovery branch"
+    },
+    {
+      "source_id": "source-ports",
+      "url_or_repo_path": "experiments/qpb1-source-reservoir/README.md",
+      "version_or_commit": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
+      "section_or_object_id": "coupling/port freedom",
+      "source_status": "integrated conditional source audit"
+    },
+    {
+      "source_id": "field-energy",
+      "url_or_repo_path": "experiments/qpb1-charge-field/README.md",
+      "version_or_commit": "5fd737fda4dadd6f1cc3d9c3c6c086473b7f72bb",
+      "section_or_object_id": "quadratic coefficient family and no impedance selection",
+      "source_status": "integrated conditional model"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "General symmetric quartic sector coefficient L, PSD as sufficient positive energy; unchanged original carrier A, J, S4; reference was already target exposed."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact fractions and linear algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "reference map rank3, symmetric matrix dimensions6, PSD null-ray degeneracy"
+    },
+    {
+      "technique": "spectral/operator and J/S4",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "imported projectors and commuting original generator"
+    },
+    {
+      "technique": "normalization",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "unit-norm initial preparations necessary for raw supports to equal normalized fractions"
+    },
+    {
+      "technique": "fit/null/identifiability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "target reference exposed, distinguish alternative t by second preparation, exact classical Hamiltonian equivalence"
+    },
+    {
+      "technique": "modular clocks, prime valuations, homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous real sector dynamics, no discrete register/divisibility or new topology"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "Sym(3) dimension6, rank of L->Lr0 is3, kernel dimension3; five t values x 4³ signed support checks =320",
+    "reduced_expression": "r0=(1/4,1/4,1/2), r1=(2/3,0,1/3), t=1/2 gains=(4/3,2/3,4/3)",
+    "factor_origins": [
+      "imported sector projectors, selected reference and second preparation"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native real s",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x'=A grad H_L; s_i conserved, gain_i=1+sum Lij*s_j",
+    "initial_phase": "norm1 reference and second preparation",
+    "coupling": "free symmetric sector quartic coefficient matrix",
+    "period_claim": "preparation-dependent sector frequencies; physical period unknown",
+    "physical_unit_map": "OPEN tau0"
+  },
+  "dynamics_readout": {
+    "state_space": "R15 native oriented tetrahedron",
+    "generator_or_update": "constant Poisson A and symmetric quartic H_L",
+    "initial_boundary_conditions": "unit states x0=(e01+ec)/sqrt2, x1=(e0-e1+ec)/sqrt3",
+    "conservation_and_sources": "sector supports and positive total energy conserved; no source mechanism selected",
+    "projection_and_kernel": "three sector projectors P1/P2/P3 and their effective gains",
+    "physical_mapping": "OPEN no time/energy/port conversion"
+  },
+  "target_exposure": {
+    "status": "REFERENCE_TARGET_PREVIOUSLY_EXPOSED",
+    "known_targets": [
+      "r0=(1/4,1/4,1/2), g0=(1,1,3/2) chosen in prior phase experiments"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "choose family L0=E33 and PSD null-ray vv^T to show nonidentifiability",
+      "second preparation selected after knowing reference"
+    ],
+    "search_domain_and_budget": "explicit continuum t>=0 plus five t fixtures; 320 rational checks, not empirical search",
+    "selection_criterion": "maximally preserve source/phase/symmetry/energy and exposed gains while changing independent preparation",
+    "baseline": "conventional Poisson Hamiltonian with identical A,H_L"
+  },
+  "calculation_steps": [
+    "Define H_L=||x||²/2+s^TLs/4, raw s_i=x^TP_i x; derive g_i=1+(Ls)_i and conservation of all s_i using commuting K_i.",
+    "For L PSD, quartic is nonnegative; H coercive and original A linearization holds at x0.",
+    "For normalized r0=(1/4,1/4,1/2), map Sym3->R3 L->Lr0 has rank3, with 3-dimensional kernel.",
+    "Take v=(1,-1,0), v·r0=0; define L(t)=E33+t vv^T PSD for all t>=0.",
+    "Show L(t)r0=(0,0,1/2) for all t; all yield exposed g=(1,1,3/2).",
+    "At normalized r1=(2/3,0,1/3), g(t)=(1+2t/3,1-2t/3,4/3), so t0 and t1/2 differ exactly.",
+    "The original native source and all reviewed sources do not select t, and a classical matched Hamiltonian has identical dynamics."
+  ],
+  "result": {
+    "exact_expression": "L(t)=E33+t vv^T, t>=0 PSD; g(r0)=(1,1,3/2) independent of t; g(r1)=(1+2t/3,1-2t/3,4/3); map rank3/kernel3",
+    "approximation": null,
+    "units": "dimensionless native quantities, physical scale OPEN",
+    "precision_and_error": "exact Q rational checks and analytic continuum t PSD proof",
+    "scope": "quartic energies in fixed 3-sector tetrahedral J/S4 invariant class, original linearization, no physical mapping",
+    "physical_interpretation": "FAILED uniquely physical attribution, PARKED until independent source selection"
+  },
+  "verification": [
+    {
+      "method": "compact exact Fraction audit plus earlier 15D crosscheck",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/phase009_compact.py --out /tmp/ud-qpb-phase009.json",
+      "source_revision": "1f6717a8a6fdbe004aae6fda8ae278e3d4498d4a",
+      "actual_result": "PASS 320 exact fixture checks and rank/PSD identities; earlier constructor 24 signed permutations",
+      "review_relationship": "same assistant constructor"
+    },
+    {
+      "method": "independent mathematical and physical evaluation",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "external"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Continuous positive-semidefinite coefficient degeneracy survives all listed symmetries and exposed reference triple.",
+    "Stricter hidden-star-only coefficient remains free without target backsolving; target-selected t=1 cannot be an independent prediction.",
+    "Even selecting t from second preparation would identify only the phenomenological model, because an ordinary classical Hamiltonian with same Poisson tensor and energy is identical.",
+    "At t>=1 some non-hidden modal gain may vanish or reverse for certain normalized preparations; PSD energy does not imply all positive angular rates."
+  ],
+  "limitations": [
+    "No source-selected coefficient or native physical units, no held-out empirical tests.",
+    "Only current specified local model/source selection claims checked; unread or new source laws may change premises.",
+    "No independent non-constructor review."
+  ],
+  "changed_dependencies": [
+    "Candidate unique physical attribution now PARKED; phase001..009 exact conditional scope retained, no mainline promotion."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-009/manifest.json"
+  ],
+  "next_discriminant": "Reopen only with an independently versioned constitutive restriction, calibrated physical map and new held-out data that outperform matched classical nonlinear null."
+}

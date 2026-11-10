@@ -1,0 +1,233 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb1-finwindow-operational-002",
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "candidate_id": "qpb1-finite-window-phase",
+  "question": "Can a declared four-fringe receiver and independent phase correction retain the nominal -1 holonomy under simultaneous independent gains, timing, preparation, receiver and calibration error?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "HYPOTHESIS"
+  ],
+  "objects": [
+    {
+      "object_id": "C",
+      "symbol": "C",
+      "object_type": "imported active tetrahedron chain carrier",
+      "definition": "rank14 J-complex Euclidean active space with orthogonal Pk of ranks6,6,2",
+      "domain": "R^15",
+      "codomain": null,
+      "coefficient_domain": "Q incidences, R states",
+      "units": "dimensionless",
+      "basis_orientation": "ascending source simplices",
+      "metric_measure": "H=I",
+      "origin": "imported",
+      "exact_expression": "r1+r2+r3=1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local-generators"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "||x||=1"
+    },
+    {
+      "object_id": "receiver",
+      "symbol": "Z,D",
+      "object_type": "assumed coherent receiver with model dynamical correction",
+      "definition": "Z=sum rk exp(i2gkT); D=2T sum rk gk; four phase-stepped fringes estimate Z",
+      "domain": "normalized C x g x T",
+      "codomain": "C x R",
+      "coefficient_domain": "complex analytic",
+      "units": "Z dimensionless, D radians",
+      "basis_orientation": "J acts as +i",
+      "metric_measure": "complex Hermitian from H=I",
+      "origin": "assumed/derived",
+      "exact_expression": "I(beta)=(1+Re(exp(-i beta)Z))/2; Phi=Arg Z-D",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "continuous-phase"
+      ],
+      "assumption_ids": [
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [
+        "C"
+      ],
+      "normalization": "balanced reference and test arms"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "local-generators",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "section_or_object_id": "1-5 skew local G and sectors",
+      "source_status": "integrated constructor"
+    },
+    {
+      "source_id": "continuous-phase",
+      "url_or_repo_path": "experiments/qpb1-continuous-phase/README.md",
+      "version_or_commit": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "section_or_object_id": "2-5 U1 connection and phase",
+      "source_status": "integrated conditional model"
+    },
+    {
+      "source_id": "phase-001",
+      "url_or_repo_path": "experiments/qpb1-finite-window-phase/README.md",
+      "version_or_commit": "faabd63e9fafc44e824423e85a272d1fca71d750",
+      "section_or_object_id": "fixed-window overlap and all-box bound",
+      "source_status": "previous session constructor"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "unchanged original local skew three-sector model and target-selected g0,r0,T0"
+    },
+    {
+      "id": "A2",
+      "description": "coherent two-arm balanced interference can produce normalized four-fringe complex Z"
+    },
+    {
+      "id": "A3",
+      "description": "separate same-gauge D estimator has absolute error<=.001 rad; not derived from UD"
+    },
+    {
+      "id": "A4",
+      "description": "gain abs error<=.01, native jitter<=.01, unit-state prep norm distance<=.0005, complex overlap error<=.001"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational algebra and trigonometric enclosure",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "nonzero-visibility and phase upper bounds via pi<22/7"
+    },
+    {
+      "technique": "metric/projection",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prep-to-sector probability trace-distance bound"
+    },
+    {
+      "technique": "spectral/phase",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "three-sector overlap and gauge subtraction"
+    },
+    {
+      "technique": "numerical deterministic checks",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "243 structured,25000 seeded and four analyzer directions"
+    },
+    {
+      "technique": "prime factorization/modular clock/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no new divisibility, finite register, or boundary question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "3^5=243 structured and 25000 seeded probes",
+    "reduced_expression": "S=2291/8750; V>=607251319/612500000",
+    "factor_origins": [
+      "independent gains, time, preparation five ternary axes"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x'=Gx, T=2pi+u",
+    "initial_phase": "g0=(1,1,3/2);r0=(1/4,1/4,1/2)",
+    "coupling": "three orthogonal sectors",
+    "period_claim": "baseline closure only, not perturbed exact recurrence",
+    "physical_unit_map": "t_physical=tau0*s, tau0 OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "rank14 Euclidean with J",
+    "generator_or_update": "G=sum gkKk",
+    "initial_boundary_conditions": "norm1 x near x0, no drive",
+    "conservation_and_sources": "conserves each rk and norm",
+    "projection_and_kernel": "Pk, endpoint complex overlap; nonzero under certified spread",
+    "physical_mapping": "ideal phase-referenced interferometer hypothesis; D calibration unimplemented"
+  },
+  "target_exposure": {
+    "status": "EXPLORATORY_TARGET_SELECTED",
+    "known_targets": [
+      "prior -1 at g0,r0,T0",
+      "selected 0.01 rad error/99% visibility screen"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "epsilon=.01; time jitter=.01; prep=.0005; eta=.001; kappa=.001"
+    ],
+    "search_domain_and_budget": "analytic closed box with 243 structured plus 25000 seeded probes",
+    "selection_criterion": "meet selected phase and visibility budget",
+    "baseline": "standard two-arm complex interferometer, no UD distinction"
+  },
+  "calculation_steps": [
+    "Baseline sector angles 4pi,4pi,6pi; nominal Hol=-exp(0)=-1 for r3=1/2; arbitrary preparation yields exp(-i2pi r3).",
+    "Residual angles a_k=2g0k u+2delta_gk(T0+u) have range S<2291/8750; mean-centering gives sum(rk yk)=0.",
+    "Sine remainder and positive real part imply phase drift<=S^3/[6(1-S^2/2)], while angular-midrange rotation implies V>=1-S^2/8.",
+    "Unit preparation implies |r3-1/2|<=zeta, causing nominal phase <=2pi zeta<11/3500.",
+    "Receiver complex error eta and visibility v imply angle error<=eta/(v-eta); add independent D estimate error kappa.",
+    "Total rational bound=11101676085864605533/1345612732743408915000 radians <1/100."
+  ],
+  "result": {
+    "exact_expression": "V>=607251319/612500000; total phase error<=11101676085864605533/1345612732743408915000 radians",
+    "approximation": "V>=0.99143; phase error<=0.00825027574110 rad",
+    "units": "radians; native dimensionless time; Z dimensionless",
+    "precision_and_error": "Exact rational enclosure; Python float64 constructor tolerance 2e-13",
+    "scope": "all continuous closed box for mathematical receiver assumptions; no independent physics",
+    "physical_interpretation": "HYPOTHESIS: phase-reference apparatus and D calibration are assumed"
+  },
+  "verification": [
+    {
+      "method": "second-route analytical inequalities",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/OPERATIONAL_RECEIVER.md",
+      "source_revision": "faabd63e9fafc44e824423e85a272d1fca71d750",
+      "actual_result": "PASS same-assistant derivation; not external independent review",
+      "review_relationship": "same-constructor alternate method"
+    },
+    {
+      "method": "second stand-alone implementation and stress samples",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/operational_audit.py --out summary.json",
+      "source_revision": "faabd63e9fafc44e824423e85a272d1fca71d750",
+      "actual_result": "PASS 243 structured and 25000 seeded checks",
+      "review_relationship": "same-constructor alternative implementation"
+    },
+    {
+      "method": "outside expert mathematical review",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "external reviewer"
+    },
+    {
+      "method": "physical interference apparatus",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED",
+      "review_relationship": "empirical"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Raw Arg Z baseline zero while Hol=-1: fails as standalone geometric phase estimator.",
+    "Unspecified same-gauge phase-reference drift invalidates the chosen kappa bound.",
+    "For angular spreads outside V>0 domain, near-zero overlap defeats phase estimation."
+  ],
+  "limitations": [
+    "All budgets are target-selected, not measured uncertainties",
+    "No apparatus dynamics, source selection or physical time calibration",
+    "No outside mathematical review, empirical replication or mainline promotion"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-002/manifest.json"
+  ],
+  "next_discriminant": "Independent non-constructor derivation check plus physically realizable same-gauge D-calibration/test protocol"
+}

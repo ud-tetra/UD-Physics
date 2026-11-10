@@ -1,0 +1,248 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb-phase005-reference-null",
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "candidate_id": "qpb1-finite-window-phase",
+  "question": "Can an independently monitored reference and path-bypass null disambiguate UD phase from optical drift, and what signal would distinguish UD from a conventional three-tone model?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "Z",
+      "symbol": "Z(T)",
+      "object_type": "complex overlap readout",
+      "definition": "Z=sum rk exp(i2gkT)",
+      "domain": "positive metric rank14 active tetrahedral carrier",
+      "codomain": "C",
+      "coefficient_domain": "Q gains/weights for analytic receipt; R/C amplitudes",
+      "units": "dimensionless overlap",
+      "basis_orientation": "ascending tetrahedra with J=+i",
+      "metric_measure": "H=I and normalized ||x||=1",
+      "origin": "imported",
+      "exact_expression": "sum rk exp(i2gkT)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "qpb-source",
+        "phase004"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "sum rk=1"
+    },
+    {
+      "object_id": "triple",
+      "symbol": "S,R,N",
+      "object_type": "three-channel complex optical receiver hypothesis",
+      "definition": "S=Z exp(i(theta+ds))+es,R=exp(i theta)+er,N=exp(i(theta+dn))+en",
+      "domain": "Z x (R phase)^3 x C^3",
+      "codomain": "C^3",
+      "coefficient_domain": "C",
+      "units": "dimensionless complex amplitude",
+      "basis_orientation": "positive +i phase",
+      "metric_measure": "unit reference and null, independent complex error bounds",
+      "origin": "assumed",
+      "exact_expression": "PhiN=Arg(S/N)-D; PhiR=Arg(S/R)-D; C=Arg(N/R)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "phase004"
+      ],
+      "assumption_ids": [
+        "A2",
+        "A3"
+      ],
+      "dependency_ids": [
+        "Z"
+      ],
+      "normalization": "|R|=|N|=1 in noiseless model"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "qpb-source",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "section_or_object_id": "three sector skew local operator",
+      "source_status": "integrated constructor"
+    },
+    {
+      "source_id": "phase004",
+      "url_or_repo_path": "experiments/qpb1-finite-window-phase/SHOT_NOISE_AND_FRAME.md",
+      "version_or_commit": "63c4f997b68563460b54af73b04105b3f15ab687",
+      "section_or_object_id": "shot and reference drift no-go",
+      "source_status": "branch source"
+    },
+    {
+      "source_id": "conventional-reference",
+      "url_or_repo_path": "https://pubmed.ncbi.nlm.nih.gov/23695326/",
+      "version_or_commit": "2013",
+      "section_or_object_id": "heterodyne phase reference subtraction",
+      "source_status": "empirical instrumentation background; not UD evidence"
+    },
+    {
+      "source_id": "phase-stepping",
+      "url_or_repo_path": "https://doi.org/10.1364/AO.28.003889",
+      "version_or_commit": "1989",
+      "section_or_object_id": "phase-step error correction",
+      "source_status": "empirical instrumentation background; not UD evidence"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Inherited time-independent local skew generator, 3 conserved sector weights, conditional phase003 receiver and correction error contract."
+    },
+    {
+      "id": "A2",
+      "description": "Independent phase reference R, path-matched null N and signal S can be measured in the same phase frame with sample-timestamp synchronization."
+    },
+    {
+      "id": "A3",
+      "description": "Additional |en|<=1/10000 and untracked differential |ds-dn|<=1/2000; these are fitted engineering budgets, not measured."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "rational and exact symbolic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact error accumulation and finite Taylor probability certificate"
+    },
+    {
+      "technique": "spectral/operator and projection",
+      "applicability": "IMPORTED",
+      "purpose_or_na_reason": "native 3-sector complex Z follows integrated local generator"
+    },
+    {
+      "technique": "gauge/phase analysis",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive cancellation of common theta and survival of differential ds-dn"
+    },
+    {
+      "technique": "probability/statistical null",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "monitor Bernoulli 99% sufficiency, identifiability of alternative 3-tone null"
+    },
+    {
+      "technique": "integer/combinatorics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "5*1024 synthetic stress counts; 2*4*3e9 monitor event counts"
+    },
+    {
+      "technique": "prime factorization/modular clock/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no new divisibility, finite state clock, or boundary-map calculation"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "5*1024=5120; 2*4*3000000000=24000000000",
+    "reduced_expression": "Bprev+1/2000+1/9999=637557289480616985856355558471305849/72332906498234434704072960000000000000",
+    "factor_origins": [
+      "five injection classes",
+      "seeded synthetic cases per class",
+      "2 monitor channels",
+      "4 phase steps",
+      "m counts selected from Hoeffding"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless native parameter T; physical tau0 unresolved",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x'=Gx; 3 receiver phasors with common theta(T) and path residual",
+    "initial_phase": "arbitrary common theta; independent ds,dn",
+    "coupling": "hypothetical split phase reference and bypass",
+    "period_claim": "T near2pi not perturbed exact return",
+    "physical_unit_map": "t_phys=tau0*T OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "3-sector rank14 plus three complex instrument channels",
+    "generator_or_update": "G=sum gkKk; S,R,N readouts as defined",
+    "initial_boundary_conditions": "normalized state; simultaneous reference controls; 5 explicitly chosen drift injections",
+    "conservation_and_sources": "3-sector amplitudes constant; optical source unspecified",
+    "projection_and_kernel": "S/N cancels theta; ds-dn remains; conventional omega=2g fits same Z",
+    "physical_mapping": "phase-reference interferometer design ONLY, physical source/clock not identified"
+  },
+  "target_exposure": {
+    "status": "EXPOSED_DESIGN_SCREENS",
+    "known_targets": [
+      "baseline phase -1",
+      "Bprev 0.0082142 rad",
+      "screen 0.01 rad",
+      "earlier 0.002 rad drift challenge"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "path null eta=0.0001",
+      "bounded ds-dn=0.0005 rad",
+      "synthetic common/matched/unmatched .002 injections",
+      "3e9 per monitor setting sample count"
+    ],
+    "search_domain_and_budget": "5 deterministic scenario classes, 1024 seeded each, one analytic conventional 3-tone comparator",
+    "selection_criterion": "cancel matched drift without incorrectly absorbing unmatched bias; conditional budget <0.01",
+    "baseline": "standard 3-frequency oscillator with omega_k=2gk; exact same Z for same weights"
+  },
+  "calculation_steps": [
+    "Noiseless channels S=Z exp(i(theta+ds)),R=exp(i theta),N=exp(i(theta+dn)); therefore Arg(S/R)=Arg Z+ds and Arg(S/N)=Arg Z+ds-dn modulo2pi.",
+    "Subtracting calibrated D preserves these identities; ordinary complex noise eta_n<1 adds at most eta_n/(1-eta_n) to the null estimator.",
+    "Inherited phase003 combined deterministic error plus absolute differential cap 1/2000 and monitor error 1/9999 gives new B=0.008814208087935455<.01, conditional on existing probe gauge calibration.",
+    "For 2 monitor channels x 4 settings with Bernoulli η=1/10000, m=3e9 samples/setting yield failure probability <=16exp(-15/2)<.01 using exact rational Taylor sum through k=11>1600.",
+    "Simulate 5 x 1024 seeded frames, state weights and gain/time perturbations; common and matched drift cancel, unmatched ds=.002 dn=0 persists.",
+    "For every T and all rk,gk, conventional Znull=sum rk exp(iomega_kT) with omega_k=2gk equals the UD readout. With same readout noise, KL divergence zero and these hypotheses not identifiable on this observable."
+  ],
+  "result": {
+    "exact_expression": "Bnew=Bprev+1/2000+1/9999=637557289480616985856355558471305849/72332906498234434704072960000000000000<1/100; Zconventional(T)=ZUD(T) for omega_k=2g_k",
+    "approximation": "Bnew 0.008814208087935455 rad; min sampled visibility 0.9931327589489719; 5120/5120 pass; unmatched 0.002 rad residual",
+    "units": "phase radians; dimensionless native time; monitor detected binary events",
+    "precision_and_error": "exact rational inequality and symbolic cancellation; float64 synthetic with 1e-12 algebra tolerance and fixed random seed",
+    "scope": "conditional three-tone scalar overlap and assumed 3-channel hardware model; no measured device",
+    "physical_interpretation": "HYPOTHESIS/FAILED identifiability: physical UD not distinguishable from conventional 3-tone null"
+  },
+  "verification": [
+    {
+      "method": "analytic complex phasor and rational composition",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/REFERENCE_NULL_PROTOCOL.md",
+      "source_revision": "e295097cab20be94861e63c220be42d615ab02e4",
+      "actual_result": "PASS same-constructor analytic identities; independent review NOT_RUN",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "standard-library random seeded stress",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/null_protocol.py --out /mnt/data/qpb_phase005/summary.json",
+      "source_revision": "e295097cab20be94861e63c220be42d615ab02e4",
+      "actual_result": "PASS 5120 synthetic cases and conventional baseline exact implementation",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent receiver experiment",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED",
+      "review_relationship": "empirical"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Unmatched ds=.002,dn=0 leaves exactly .002 bias after both reference and path null cancellation, even at high visibility.",
+    "Conventional three-tone model with identical weights and eigenfrequencies reproduces entire Z(T) function, so no UD attribution from current observable.",
+    "Physical path matching, short-time D calibration reference and source selection have no measured validation."
+  ],
+  "limitations": [
+    "No coherent UD optical apparatus, calibrated lab clock or independent experiment.",
+    "Synthetic weight perturbations not separately certified inside original norm-state preparation radius; full bound conditional on original state assumption.",
+    "Bernoulli monitor sample 99% alone does not imply end-to-end 99% measurement probability; prior short-time calibration still requires separate evidence.",
+    "No non-constructor review; existing PR remains draft; no physical mainline promotion."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-005/manifest.json"
+  ],
+  "next_discriminant": "Derive a source-constrained UD-specific measurable residual absent from conventional three-frequency null; concurrently specify physical reference-path matching tests."
+}

@@ -1,0 +1,18 @@
+{
+  "classical_null": "Matched classical Hamiltonian using Poisson A and same H is exactly equivalent",
+  "connected_registers": 15,
+  "frequencies": "omega1=omega2=2; omega3=2*(1+lambda*r3); r3 invariant",
+  "hidden_face_pair_couplings": 6,
+  "hidden_projector_rank": 2,
+  "inverse_design": "g3=3/2 at r3=1/2 requires lambda=1 (FIT, exposed target)",
+  "method": "Q exact incidence, analytic two-site proof and rational constructor",
+  "model": "H=||x||^2/2+lambda*(||P3x||^2)^2/4; xprime=A x+lambda*r3*K3 x",
+  "onsite_locality": "FAILED: phase-compatible hidden quartic mixes all four faces via P3",
+  "onsite_theorem": "Differentiable H=sum h_i(x_i) with h_i_prime(0)=0 and exp(theta J) invariance forces H=c||x||^2/2+constant on connected Hasse graph",
+  "phase_rotation_checks": 288,
+  "quartic_fixture_states": 72,
+  "review": "Same-context constructor; external and empirical NOT_RUN",
+  "signed_S4_actions": 24,
+  "source_coefficient": "OPEN: no source selection for lambda",
+  "status": "PASS"
+}

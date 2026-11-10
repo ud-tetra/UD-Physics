@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "run_id": "phase-008",
+  "created_at": "2026-10-24T15:49:00Z",
+  "evidence": "EXACT",
+  "summary": "Onsite J-invariant no-go, conditional hidden-star quartic and classical matched baseline",
+  "command": "python3 experiments/qpb1-finite-window-phase/sector_law_audit.py --out /tmp/ud-qpb-phase008.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "5e5f64a5bb4f84f3ab5ec6ae627f6d5d300c2381",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "phase-star-audit",
+      "name": "sector_law_audit.py",
+      "path": "inputs/sector_law_audit.py",
+      "sha256": "27919dff8c85dd54a45957fb4aa22c6297d6fcd0532984e6f0d49d61b27a6f33",
+      "size_bytes": 4192,
+      "source_location": "repository",
+      "source_path": "experiments/qpb1-finite-window-phase/sector_law_audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "de061ac754a0d1cfe77ec1b37510215cd29e13cb14f0c5ac1adcb22e0c25fe67",
+      "size_bytes": 1006
+    }
+  ]
+}

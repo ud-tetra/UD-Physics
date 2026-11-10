@@ -1,0 +1,266 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb-phase007-source-closure-quartic",
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "candidate_id": "qpb1-finite-window-phase",
+  "question": "Does a source-constrained UD constitutive law yield a response that a physically matched classical network cannot emulate?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "carrier",
+      "symbol": "C",
+      "object_type": "full oriented tetrahedral real chain",
+      "definition": "sum of C0,C1,C2,C3, dimensions 4,6,4,1",
+      "domain": "R15",
+      "codomain": null,
+      "coefficient_domain": "Q incidences; R states",
+      "units": "dimensionless",
+      "basis_orientation": "ascending simplex vertices, full signed S4",
+      "metric_measure": "Euclidean H=I",
+      "origin": "imported",
+      "exact_expression": "15D, rank P=14",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local-source"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "coordinate basis unit"
+    },
+    {
+      "object_id": "native",
+      "symbol": "A,J,P",
+      "object_type": "native skew incidence generator and complex structure",
+      "definition": "A=d-d^T, J=A/2, P=-A²/4",
+      "domain": "R15",
+      "codomain": "R15",
+      "coefficient_domain": "Q exact",
+      "units": "inverse native time for generator after unit rate",
+      "basis_orientation": "signed simplex orientation",
+      "metric_measure": "positive H=I",
+      "origin": "imported/verified",
+      "exact_expression": "A³=-4A",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local-source"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [
+        "carrier"
+      ],
+      "normalization": "unit incidence"
+    },
+    {
+      "object_id": "nonlinear",
+      "symbol": "H_lambda,F_lambda",
+      "object_type": "hypothetical onsite quartic Hamiltonian and local Poisson evolution",
+      "definition": "H=sum_i(x_i²/2+lambda x_i⁴/4), F=A grad H",
+      "domain": "R15",
+      "codomain": "R15",
+      "coefficient_domain": "Q test lambda and R family",
+      "units": "native energy dimensionless",
+      "basis_orientation": "coordinatewise odd onsite constitutive force; signed S4",
+      "metric_measure": "H=I for source coordinates, Poisson A",
+      "origin": "assumed",
+      "exact_expression": "lambda=1/4 in development fixtures",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "phase006"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "native"
+      ],
+      "normalization": "positive energy for lambda>=0"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "local-source",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "section_or_object_id": "§§1-4, K products and source-selection limits",
+      "source_status": "integrated exact constructor"
+    },
+    {
+      "source_id": "phase006",
+      "url_or_repo_path": "experiments/qpb1-finite-window-phase/MULTIPORT_DISCRIMINANT.md",
+      "version_or_commit": "a2e3d8846104811c67559b0d3233c8a758dbccd9",
+      "section_or_object_id": "signed face port response and classical null",
+      "source_status": "branch exact constructor"
+    },
+    {
+      "source_id": "unit-source",
+      "url_or_repo_path": "experiments/qpb1-unit-preparation/README.md",
+      "version_or_commit": "4aaf0a39d24328e27bc425e333e3612baea888a5",
+      "section_or_object_id": "normalization and source selection",
+      "source_status": "read-only integrated conditional"
+    },
+    {
+      "source_id": "impedance-source",
+      "url_or_repo_path": "experiments/qpb1-impedance-selection/README.md",
+      "version_or_commit": "4aaf0a39d24328e27bc425e333e3612baea888a5",
+      "section_or_object_id": "source law/dimensional obstruction",
+      "source_status": "read-only integrated audit"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Original Euclidean linear native source A and signed S4 exactly as imported; analytic functional calculus f(A) only."
+    },
+    {
+      "id": "A2",
+      "description": "New all-register quartic Hamiltonian with onsite identical lambda>=0; lambda=1/4 is development choice and not source selected."
+    },
+    {
+      "id": "A3",
+      "description": "Classical matched nonlinear Hamiltonian baseline may share Poisson A and energy H_lambda; physical time and ports are not identified."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact integer/incidence and fractions",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "15 oriented simplex registers, A^3=-4A and signed S4 action, 24 group tests"
+    },
+    {
+      "technique": "spectral/analytic functional calculus",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "skew analytic f(A) collapse to scalar native generator"
+    },
+    {
+      "technique": "Hamiltonian/Poisson and local continuity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "positive quartic energy, conserved antisymmetric local energy currents"
+    },
+    {
+      "technique": "symmetry and gauge",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "signed S4 preserved, original J/U1 flow equivariance fails by exact 3/8"
+    },
+    {
+      "technique": "fit, sensitivity, baseline and identifiability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "preparation 2-slope contrast vs fixed linear and matched classical quartic"
+    },
+    {
+      "technique": "finite field, modular clock, factorization and homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous real flow with no divisibility, modulus or new boundary rank question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "f=(4,6,4,1): 4+6+4+1=15; 24 signed permutations, 4x4=16 invariant-plane fixtures, six subset energy-current cuts",
+    "reduced_expression": "lambda=1/4; rates 5/2 and 17/8; difference 3/8; J defect 3/8",
+    "factor_origins": [
+      "source tetrahedral simplex enumeration",
+      "selected quartic lambda=1/4",
+      "native J=A/2 and q ecell+p Jecell manifold"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "real continuous native time",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x'=A(x+lambda*x^3 componentwise)",
+    "initial_phase": "on manifold ecell, q=1 or 1/2 and p=0",
+    "coupling": "incidence-local onsite quartic energy gradients",
+    "period_claim": "no physically calibrated period or J ray closure",
+    "physical_unit_map": "tphysical=tau0 t OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R15 full oriented simplex chain",
+    "generator_or_update": "constant Poisson A, nonlinear vector field A grad H_lambda",
+    "initial_boundary_conditions": "top-cell preparations q=1 and q=1/2, otherwise identical constitutive parameters",
+    "conservation_and_sources": "H_lambda conserved; local energy flux Aij y_i y_j antisymmetric; Euclidean norm not generally conserved",
+    "projection_and_kernel": "invariant top-cell / alternating oriented four-face plane; edge and vertex readouts zero there",
+    "physical_mapping": "OPEN: simplex amplitudes and positive Hamiltonian are not physical calibrated observables"
+  },
+  "target_exposure": {
+    "status": "DEVELOPMENT_POST_PHASE006",
+    "known_targets": [
+      "earlier -1 phase and detuned gain g3=3/2 inspected",
+      "prior scalar and 15-port classical-null failures"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "quartic onsite functional form chosen as minimal alternative",
+      "lambda=1/4 selected for rational nonzero response",
+      "two amplitudes q=1 and 1/2 selected as development fixtures"
+    ],
+    "search_domain_and_budget": "one quartic model with fixed lambda and 16 rational plane fixtures, 24 signed symmetry checks, six energy cuts; no empirical optimization",
+    "selection_criterion": "separate fixed linear from local nonlinear while testing earlier phase gauge and matched classical null",
+    "baseline": "fixed linear g unchanged across preparations and conventional exactly matched Poisson quartic dynamics"
+  },
+  "calculation_steps": [
+    "Native A³=-4A implies minimal polynomial divides s(s²+4); analytic f(A) decomposes over harmonic and active projectors and the skew part is cA only.",
+    "Postulate quartic H_lambda=sum_i[x_i²/2+lambda x_i⁴/4] and local x'=A grad H_lambda, with lambda selected, not source derived.",
+    "Compute energy rate grad H·A grad H=0, local current Aij y_i y_j, signed S4 equivariance of cubic coordinate map and positive/coercive H for lambda>=0.",
+    "On x=q ec+p f (f=J ec), derive qdot=-2(p+lambda p³/4), pdot=2(q+lambda q³).",
+    "At q=1 and q=1/2 with p=0, normalized p-dot/q rates 2(1+lambda) and 2(1+lambda/4), which differ by 3lambda/2=3/8 for lambda=1/4.",
+    "Show F(Je)-J F(e)=(3lambda/2)e=3/8 e: old J fiber not an equivariance of this added law.",
+    "A conventional nonlinear Hamiltonian with exactly the same constant skew Poisson A and quartic H has the same ODE for all initial conditions and interventions, so UD attribution fails."
+  ],
+  "result": {
+    "exact_expression": "f(A) skew analytic=cA; nonlinear normalized two-prep rate difference=3lambda/2=3/8 at lambda=1/4; J defect=(3lambda/2)ec; classical Poisson Hamiltonian evolution identical",
+    "approximation": null,
+    "units": "dimensionless rates per native time, uncalibrated energy",
+    "precision_and_error": "rational exact 15x15 matrices, finite S4 tests plus analytic proof for all real trajectories",
+    "scope": "fixed original 15D carrier, real analytic functions of single native A for no-go; separately added quartic positive model for alternative",
+    "physical_interpretation": "FAILED uniquely UD physics; added classical Hamiltonian counterpart; source selection OPEN"
+  },
+  "verification": [
+    {
+      "method": "exact rational compact constructor and repeat execution in repository-shaped staging",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/constitutive_audit.py --out /tmp/qpb-constitutive-phase007.json",
+      "source_revision": "a2e3d8846104811c67559b0d3233c8a758dbccd9",
+      "actual_result": "PASS 24 signed S4, 16 plane fixtures, six energy-current cuts, J defect and slopes, byte-identical output",
+      "review_relationship": "same-constructor"
+    },
+    {
+      "method": "outside non-constructor mathematical review",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "independent"
+    },
+    {
+      "method": "physical source/port experiment",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED",
+      "review_relationship": "empirical"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Higher powers of native A cannot generate relative gain detuning under skew-adjointness.",
+    "Quartic onsite law changes norm and fails original J phase fiber equivariance; past phase certificates not inherited.",
+    "Matched conventional nonlinear Poisson Hamiltonian exactly reproduces full nonlinear vector field; unique UD attribution failed.",
+    "The quartic lambda has no source-selection or physical calibration rule."
+  ],
+  "limitations": [
+    "All source and physical unit identifications remain OPEN, no measured calibration or held-out data.",
+    "S4 covariance is a representational fact, not evidence of spacetime symmetry.",
+    "Constructor self-review is not independent review."
+  ],
+  "changed_dependencies": [
+    "A new nonlinear Hamiltonian changes original quadratic energy and J phase symmetry premises; all prior conditional phase results retain original model scope."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-007/manifest.json"
+  ],
+  "next_discriminant": "Find independently source-selected constitutive form/coefficient and a physical response absent from realistically parameter-budgeted classical nonlinear controls; otherwise park unique attribution."
+}

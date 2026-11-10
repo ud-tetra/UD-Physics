@@ -1,0 +1,287 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb1-finwindow-analytic-001",
+  "session_id": "qpb1-finwindow-20261023-gpt6-b6f2",
+  "candidate_id": "qpb1-finite-window-phase",
+  "question": "Does endpoint-corrected open-path phase stay stable on a fixed window when g1,g2,g3 have independent errors?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL"
+  ],
+  "objects": [
+    {
+      "object_id": "C",
+      "symbol": "C",
+      "object_type": "15D real chain carrier",
+      "definition": "C_*(Delta3;R) active projectors P1+P2+P3 rank14",
+      "domain": "R^15",
+      "codomain": null,
+      "coefficient_domain": "Q incidences; R states",
+      "units": "dimensionless",
+      "basis_orientation": "ascending vertex simplex orientation (imported)",
+      "metric_measure": "H=I",
+      "origin": "imported",
+      "exact_expression": "dim=15; rank P=(6+6+2)=14",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local-generators"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "||x||^2=1"
+    },
+    {
+      "object_id": "G",
+      "symbol": "G(g)",
+      "object_type": "skew evolution generator",
+      "definition": "G=sum gk (Dk-Dk^T), x'=Gx",
+      "domain": "R^15",
+      "codomain": "R^15",
+      "coefficient_domain": "Q gain parameters, R extension",
+      "units": "inverse dimensionless s",
+      "basis_orientation": "imported J=A/2 as +i",
+      "metric_measure": "H=I; G^T=-G",
+      "origin": "assumed",
+      "exact_expression": "g0=(1,1,3/2)+delta, |delta|<=1/100",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local-generators"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "C"
+      ],
+      "normalization": "angle_k=2gkT"
+    },
+    {
+      "object_id": "Z",
+      "symbol": "Z(T)",
+      "object_type": "complex endpoint overlap",
+      "definition": "sum r_k exp(i 2g_k T) with rk=||Pkx||^2/||x||^2",
+      "domain": "S(active) x gainBox x R",
+      "codomain": "C",
+      "coefficient_domain": "complex analytic",
+      "units": "dimensionless",
+      "basis_orientation": "J acts as multiplication by +i",
+      "metric_measure": "Hermitian inherited from H=I",
+      "origin": "derived",
+      "exact_expression": "Z(T)=sum r_k e^{i2g_kT}",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "continuous-phase"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "C",
+        "G"
+      ],
+      "normalization": "sum rk=1; V=|Z|"
+    },
+    {
+      "object_id": "Hol",
+      "symbol": "Hol_open(T)",
+      "object_type": "endpoint-corrected U1 phase",
+      "definition": "Z/|Z| times exp(-i 2T sum gkrk), defined for V>0",
+      "domain": "V>0",
+      "codomain": "U(1)",
+      "coefficient_domain": "complex analytic",
+      "units": "dimensionless phase, radians argument",
+      "basis_orientation": "positive J phase",
+      "metric_measure": "alpha=<Jx,dx>/||x||^2",
+      "origin": "assumed/derived",
+      "exact_expression": "(Z/|Z|)*exp(-i integral alpha)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "continuous-phase"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "Z"
+      ],
+      "normalization": "ordinary 2pi fiber"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "local-generators",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "section_or_object_id": "secs 1-5, G=sum gkKk, sector projectors, odd-N",
+      "source_status": "integrated mathematical constructor"
+    },
+    {
+      "source_id": "continuous-phase",
+      "url_or_repo_path": "experiments/qpb1-continuous-phase/README.md",
+      "version_or_commit": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "section_or_object_id": "secs 2-5, alpha and Hol, declared U1",
+      "source_status": "integrated conditional geometry"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Fixed 15D H=I simplex chain and local skew generator with three independent |delta gk|<=1/100."
+    },
+    {
+      "id": "A2",
+      "description": "Adopt Pancharatnam nonzero-overlap endpoint phase as proposed readout; no physical measuring device."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "rational/exact algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "rational reference weights, gain bounds, and pi<22/7 enclosure"
+    },
+    {
+      "technique": "integer/combinatorial",
+      "applicability": "IMPORTED",
+      "purpose_or_na_reason": "sector ranks and signed tetrahedral incidence from qpb1-local-generators at pinned revision; no new counting"
+    },
+    {
+      "technique": "spectral/operator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "orthogonal J-invariant sectors, skew G with eigenphase 2gT and fixed H=I"
+    },
+    {
+      "technique": "geometry/projective",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "open-path overlap, endpoint gauge correction and phase normalization"
+    },
+    {
+      "technique": "fit/null/sensitivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "independent +/-1% box, explicit 99% and .01 rad screens; compare moving-return phase"
+    },
+    {
+      "technique": "clock/modular",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous dimensionless s; no finite register or modulus"
+    },
+    {
+      "technique": "factorization/valuations",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no structural divisibility question"
+    },
+    {
+      "technique": "chain/homology",
+      "applicability": "IMPORTED",
+      "purpose_or_na_reason": "single tetrahedron sector decomposition, no new boundary/homology assertion"
+    },
+    {
+      "technique": "physical calibration",
+      "applicability": "OPEN",
+      "purpose_or_na_reason": "time, energy and apparatus not mapped"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "three mutually orthogonal sector ranks 6+6+2=14 imported; sample grid 5^3=125",
+    "reduced_expression": "epsilon=1/100; B=8*(22/7)*(1/100)=44/175",
+    "factor_origins": [
+      "prior sector ranks from local-generators",
+      "5 sampled values along each of 3 independent gains"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": "N/A except prior rational exact-return gcd; not used in fixed-window proof"
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless s",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x'=Gx; T=2pi fixed",
+    "initial_phase": "x(0) normalized, sector fractions r",
+    "coupling": "three orthogonal independent sectors",
+    "period_claim": "T=2pi baseline ray closure, not perturbed exact recurrence",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "active real rank14 carrier with J complex structure",
+    "generator_or_update": "G=sum gkKk; exp(TG) acts by exp(i2gkT) on k sector",
+    "initial_boundary_conditions": "nonzero norm1 state, fixed sector fractions r=(1/4,1/4,1/2) for phase -1, no forcing",
+    "conservation_and_sources": "G skew, total and all sector squared norms conserved; no sources, dissipation or support transfer",
+    "projection_and_kernel": "sector projectors Pk, endpoint overlap scalar Z; V=|Z| floor",
+    "physical_mapping": "none; proposed interference readout only"
+  },
+  "target_exposure": {
+    "status": "EXPOSED_REFERENCE_AND_ENGINEERING_SCREENS",
+    "known_targets": [
+      "prior reference Hol=-1 at g=(1,1,3/2), r=(1/4,1/4,1/2)",
+      "new selected V>=99%, |delta phase|<=0.01 rad screens"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "chosen T=2pi (old ray period)",
+      "chosen epsilon=1/100 independent box",
+      "Pancharatnam endpoint correction model"
+    ],
+    "search_domain_and_budget": "analytic all-box proof, 125=5^3 grid constructor points and odd N=(101,1001,10001)",
+    "selection_criterion": "satisfy user-model engineering screens with no physical fitting",
+    "baseline": "return-time-adjusted exact phase discontinuity and uncorrected dynamical phase linear gain shift"
+  },
+  "calculation_steps": [
+    "At fixed T=2pi, 2g0kT=(4pi,4pi,6pi), so Z0=1 and Hol0=exp(-i5pi)=-1 for r=(1/4,1/4,1/2).",
+    "Write xk=4pi delta_gk and mu=sum rk xk, yk=xk-mu; then delta_phi=Arg(sum rk exp(i yk)), sum rk yk=0.",
+    "Since |delta_gk|<=1/100, |yk|<=8pi/100 < B=44/175 using pi<22/7. Re sum rk exp(i yk)>=1-B^2/2>0 and |Im sum rk exp(i yk)|<=B^3/6 by sin y - y bound.",
+    "Hence |delta_phi|<=atan((B^3/6)/(1-B^2/2))<=42592/15569925<1/100 radians.",
+    "The xk have range at most 8pi/100. Rotating by their midrange puts them inside +/-4pi/100; therefore V>=cos(4pi/100)>=1-(22/175)^2/2=30383/30625>99/100.",
+    "Third-order drift locally follows from zero first moment: delta_phi=-(sum rk yk^3)/6+O(epsilon^5); the first-order uncorrected dynamical phase does not cancel without endpoint correction.",
+    "Python standard-library rational assertions and 125 float64 development grid checks pass; three odd-N fixtures demonstrate fixed-T continuity despite different moving exact recurrence."
+  ],
+  "result": {
+    "exact_expression": "V>=30383/30625; |Arg(Hol_open/Hol0)|<=42592/15569925 radians for all gains in independent epsilon=1/100 box",
+    "approximation": "V>=0.9920979591836735; phase_error<=0.0027355301968378137 rad",
+    "units": "visibility dimensionless, angle radians",
+    "precision_and_error": "exact rational enclosure via pi<22/7 and elementary trigonometric bounds; sample float64 only, tolerance 3e-15 for rational-threshold assertions",
+    "scope": "Fixed 15D conditional local skew model, T=2pi, all nonnegative normalized sector fractions relative to each state's own nominal phase; chosen reference yields -1",
+    "physical_interpretation": "HYPOTHESIS: interference receiver needed; no measured physical phase"
+  },
+  "verification": [
+    {
+      "method": "analytic inequality and rational fraction evaluation",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/README.md",
+      "source_revision": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "actual_result": "PASS constructor proof and rational checks",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "standard-library numerical audit",
+      "command_or_proof_path": "experiments/qpb1-finite-window-phase/audit.py --out .../summary.json",
+      "source_revision": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "actual_result": "PASS 125 grid points and 3 odd-N checks",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "repository integrity checks",
+      "command_or_proof_path": "python3 scripts/validate.py; python3 -m unittest discover -s tests -v",
+      "source_revision": "41ebf960d90d8147f2ebb8c8b9ecb0700516e9bb",
+      "actual_result": "NOT_RUN no authenticated full checkout",
+      "review_relationship": "not run"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Exact ray-return phase computed at a perturbed minimal return period differs discontinuously: odd N perturbations give +1 versus -1 at the reference, while T=2pi fixed-window open-path phase is continuous.",
+    "Open-path readout undefined at Z=0, but this gain box has certified V>0.",
+    "Pure dynamic-phase integral without endpoint correction has O(epsilon) drift."
+  ],
+  "limitations": [
+    "Positive metric H=I, three-sector linear conservative mechanism assumed; gain selection unproved",
+    "No physical interference readout, measured noise, clock jitter or calibrated units",
+    "Reference gain, phase, window and engineering screens target-informed; not a held-out prediction"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/qpb1-finwindow-20261023-gpt6-b6f2/phase-001/manifest.json"
+  ],
+  "next_discriminant": "Model physical interference endpoint estimator, preparation errors, timing jitter and independent calibration; external review."
+}

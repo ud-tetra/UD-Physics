@@ -1,0 +1,64 @@
+{
+  "carrier": "Three-frequency conserved local UD toy; ideal independent Bernoulli four-step fringes",
+  "conditions_not_verified": [
+    "physical UD carrier access",
+    "reference phase stability",
+    "shot rate and losses",
+    "IID photons/events",
+    "phase steps accurately spaced",
+    "state/gain repeatability",
+    "native clock conversion"
+  ],
+  "counterexample": "Unknown reference phase step of 0.002 rad at main readout changes corrected holonomy by 0.002 rad while all probe fringes and visibilities remain otherwise unchanged. No device-only data can separate this from an extra phase without reference calibration.",
+  "evidence_notes": "Exact algebra and Hoeffding inequality for the stated estimator; exp/log and durations are numerical evaluations. Same-context constructor audit, not independent external reviewer or experiment.",
+  "exact_drift": {
+    "adversarial_reference_step_radians": "1/500",
+    "allowed_ramp_decimal": 5.730510077914459e-06,
+    "allowed_unbudgeted_reference_ramp_radians_per_native_time": "2014132175737/351475200000000000",
+    "joint_budget_with_step_decimal": 0.010214198086935355,
+    "joint_budget_with_step_radians": "665006872346300694496332131837359/65106126461057096943360000000000000",
+    "measured_probe_phase_shift": 0,
+    "nominal_max_window_native": "4407/700",
+    "previous_calibration_bound_radians": "699576281715419/725760000000000000",
+    "reference_step_only_at_main_endpoint": true,
+    "unused_calibration_margin_radians": "26183718284581/725760000000000000",
+    "visibility_unchanged_under_reference_step": true
+  },
+  "labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "model": {
+    "Hoeffding_union_tail": "P_fail<=16*exp(-m*eta^2/4)",
+    "analyzer_phases": [
+      "0",
+      "pi/2",
+      "pi",
+      "3pi/2"
+    ],
+    "exact_failure_certificate": "sum_{k=0}^{13}(37/5)^k/k! > 1600 implies 16 exp(-37/5) < 1/100",
+    "iid_Bernoulli_assumption": true,
+    "joint_failure_probability_ceiling": "1/100",
+    "nominal_detection_rate_examples_events_per_second": [
+      100000000,
+      1000000000
+    ],
+    "number_of_settings": 8,
+    "probe_complex_error_budget": "1/500000",
+    "probes": [
+      "h=1/12",
+      "h/2=1/24"
+    ],
+    "single_setting_photons_or_events": 7400000000000,
+    "sufficient_m_continuous_decimal": 7377758908227.873,
+    "tail_probability_evaluated": 0.009780044178073157,
+    "total_acquisition_hours_illustrative": [
+      164.44444444444446,
+      16.444444444444443
+    ],
+    "total_independent_binary_events": 59200000000000
+  },
+  "status": "PASS"
+}
