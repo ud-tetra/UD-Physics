@@ -1,0 +1,21 @@
+{
+  "G_lower_bound": "33277/10000",
+  "actual_nonlinear_relative_Frobenius_radius_assumed": "9/250",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "nonlinear_SO3_chart_remainder_upper_float": 0.0009763856400239676,
+  "nonlinear_SO3_chart_remainder_upper_fraction": "26619144063633/27262940965600000",
+  "reference_Frobenius_radius_assumed": "7/100",
+  "scope": "NO full-time reference enclosure, no nonlinear 180-phase ball radius proof, no forced Green/Hessian, no volume or physical UD promotion",
+  "selection_origin": "d=.070 chosen AFTER earlier d=.050 was contradicted by u9.25 numerical reference samples",
+  "skew_operator_bound": "63261/4159625",
+  "source_reference_maximum_sampled_0p25": {
+    "limiting": 0.050392408410262046,
+    "nominal": 0.05109022585379984
+  },
+  "status": "PASS",
+  "threshold_met": "<1/1000 only IF BOTH actual displacement radius premises hold"
+}

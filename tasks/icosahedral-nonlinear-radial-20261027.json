@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "icosahedral-nonlinear-radial-20261027",
+  "goal": "Stress test actual nonlinear 3D icosahedral relative primary radius using worst raw final 560x180 housing tangent directions, and verify moving-reference chart domain with tighter time sampling",
+  "owned_paths": [
+    "tasks/icosahedral-nonlinear-radial-20261027.json",
+    "sessions/ico-radial-20261027-gpt6-a1/",
+    "experiments/icosahedral-nonlinear-radial/",
+    "candidates/icosahedral-nonlinear-radial/",
+    "artifacts/ico-radial-20261027-gpt6-a1/",
+    ".github/workflows/icosahedral-nonlinear-radial-20261027.yml"
+  ],
+  "dependencies": [
+    "integration-icosahedral-pulsetube-20261022"
+  ],
+  "status": "complete",
+  "result": "NUMERICAL frozen original full 560-state ODE ±1,±.5 raw worst tangent phase for two source cases at 401 time samples: all selected relative primary radii<.036, strut lengths and cell volumes positive, energy+heat ~1e-12. More densely sampled reference peaks .0503924/.0510902 at u9.25, invalidating old d=.05 as a uniform sampled antecedent. EXACT/CONDITIONAL new d=.07,r=.036 moving SO3 chart Taylor bound<=26619144063633/27262940965600000≈.000976386<.001. Full 180-phase ball, continuous/time interval, Hessian/forced Green and 80% breathing remain OPEN.",
+  "next_action": "Validate continuous reference/relative displacement and full 180-phase nonlinear forcing Green/Hessian/strut/volume with interval/a-posteriori estimates; selected finite-phase checks are development data only."
+}

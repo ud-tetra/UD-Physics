@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ico-radial-20261027-gpt6-a1",
+  "run_id": "radial-001",
+  "created_at": "2026-10-27T17:58:13.118Z",
+  "evidence": "NUMERICAL",
+  "summary": "Executed original frozen 560-state nonlinear source for 8 selected full/half-amplitude housing phase trajectories and one reference per limiting/nominal case, sampled at u0..100 step0.25; reference d0.05 premise fails at u9.25; exact conditional replacement d0.07 chart",
+  "command": "GitHub Actions 40554459813 job122366658578: pinned NumPy2.3.5 SciPy1.17.0 DOP853; python experiments/icosahedral-nonlinear-radial/nonlinear_radial.py --case limiting/nominal; locally python chart_bound_d007.py --out chart_bound_d007.json",
+  "command_execution": "EXECUTED_GITHUB_ACTIONS_40554459813_AND_LOCAL_STANDARD_LIBRARY_FRACTION",
+  "source": {
+    "revision": "7d7eee182c7e8adaccafdccca20324d202848093",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "frozen-nonlinear-source",
+      "name": "nonlinear_radial.py",
+      "path": "inputs/nonlinear_radial.py",
+      "sha256": "6627a81b15fc715c43fb8f9bea13b34e9165848cecea2a892ca027c40c5a1728",
+      "size_bytes": 4745,
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-nonlinear-radial/nonlinear_radial.py"
+    },
+    {
+      "input_id": "updated-chart-proof",
+      "name": "chart_bound_d007.py",
+      "path": "inputs/chart_bound_d007.py",
+      "sha256": "17980dc96d0e7a996c237d914b51d9a3594656bab40ea5c4791483d516f2ac4a",
+      "size_bytes": 1944,
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-nonlinear-radial/chart_bound_d007.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "343b1325d9bb318dd50a30f1917480940d498726315ae897636785e95a58b07a",
+      "size_bytes": 5682
+    },
+    {
+      "path": "files/chart_bound_d007.json",
+      "sha256": "369feb80ea6fbb27638d2893b46fad57938a5342dfcbef962d099fa68aeb177a",
+      "size_bytes": 904
+    }
+  ]
+}
