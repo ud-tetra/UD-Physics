@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "icosahedral-fulltime-20261026",
+  "goal": "Run unchanged full560x180 limiting and nominal tangent across u0..100 with pinned SciPy, moving proper SO3 frame, then repair and audit exact conditional chart domain without physical promotion",
+  "owned_paths": [
+    "tasks/icosahedral-fulltime-20261026.json",
+    "sessions/ico-fulltime-20261026-gpt6-a1/",
+    "experiments/icosahedral-fulltime/",
+    "candidates/icosahedral-fulltime/",
+    "artifacts/ico-fulltime-20261026-gpt6-a1/",
+    ".github/workflows/icosahedral-fulltime-20261026.yml"
+  ],
+  "dependencies": [
+    "integration-icosahedral-pulsetube-20261022"
+  ],
+  "status": "complete",
+  "result": "NUMERICAL/SAMPLED original full 560x180 201-timepoint DOP853 runs success in isolated GHA. Max moving shape .000226945 worst/.000229308 nominal; max reference .0394404/.0466766, so older d=.011 fails. EXACT/CONDITIONAL rational improved proper-SO3 chart error<=245802834179/264666314250000≈.000928727 for reference d<=.05 and actual nonlinear relative r<=.036. Actual nonlinear relative radius, continuous reference maxima, forced U(t,s), flow Hessian and volume/strut tube OPEN.",
+  "next_action": "Validate full-time continuous bounds and nonlinear finite-amplitude housing-phase flow (especially .00079062 margin) against ordinary 3D mechanical null; freeze and test source constraints before physical promotion."
+}

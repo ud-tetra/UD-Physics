@@ -1,0 +1,285 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosa-fulltime-001",
+  "session_id": "ico-fulltime-20261026-gpt6-a1",
+  "candidate_id": "icosahedral-fulltime",
+  "question": "Does the frozen source 560x180 moving-pulse tangent remain small in moving SO3 shape across u0..100, and can the chart bound cover the observed reference excursion without asserting a nonlinear certificate?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "W",
+      "symbol": "W(u)",
+      "object_type": "full frozen source mechanical variational tangent",
+      "definition": "W(u)=U(u,0)B, 560x180 from same nonlinear reference y(u) with original MountLoss and linearization",
+      "domain": "initial 180 housing phase ball",
+      "codomain": "560 mechanical phase directions",
+      "coefficient_domain": "Float64 source DOP853 with frozen source coefficients",
+      "units": "native length,time,energy",
+      "basis_orientation": "13 primary points and housing blocks unchanged",
+      "metric_measure": "source full Euclidean/mass-weighted phase and readout operator norms",
+      "origin": "executed source",
+      "exact_expression": "W'=J(y(u))W, y'=f(y)",
+      "measured_value": "201 samples limiting/nominal as GitHub Actions artifact",
+      "uncertainty": "DOP853 tolerance, sampled time, NOT interval validation",
+      "source_refs": [
+        "pulse",
+        "gha"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "Eh=Ep/40000, nu=.05"
+    },
+    {
+      "object_id": "readout",
+      "symbol": "D F_ref(u)",
+      "object_type": "moving SO3 primary aligned linear readout",
+      "definition": "shell centroid subtraction and skew Sylvester including hub term",
+      "domain": "39x180 primary tangent",
+      "codomain": "39x180 aligned tangent",
+      "coefficient_domain": "real floating matrices",
+      "units": "native ell0",
+      "basis_orientation": "proper 3D spatial rotation, shell geometry time dependent",
+      "metric_measure": "induced 2 operator norm times sqrt2Eh",
+      "origin": "imported/source-compatible chart",
+      "exact_expression": "GΩ+ΩG=2skew(Xref^T Ecentered)",
+      "measured_value": "max limiting .000226945452, nominal .000229308153",
+      "uncertainty": "sampled numeric, original ODE not interval",
+      "source_refs": [
+        "pr201",
+        "gha"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "W"
+      ],
+      "normalization": "full180 housing directions"
+    },
+    {
+      "object_id": "newchart",
+      "symbol": "B(d,r)",
+      "object_type": "exact conditional nonlinear SO3 chart Taylor remainder",
+      "definition": "reference error <=d=1/20 and actual nonlinear relative primary error <=r=9/250",
+      "domain": "time-point primary error Frobenius ball",
+      "codomain": "chart remainder <= rational bound",
+      "coefficient_domain": "Q exact majorant and Q(sqrt5) geometry",
+      "units": "native ell0",
+      "basis_orientation": "proper SO3, all13 positions incl hub",
+      "metric_measure": "Frobenius norm",
+      "origin": "new post-source-exposure proof",
+      "exact_expression": "B<=245802834179/264666314250000<1/1000",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "pr187",
+        "pr192"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "readout"
+      ],
+      "normalization": "r chosen post old tangent; d=.05 chosen after observing sample"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "pulse",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/variational.py",
+      "version_or_commit": "b608e327b9fce95e87172c861985d7e252a8e2aa",
+      "section_or_object_id": "source frozen 560x180 DOP853 and 180 injection/energy",
+      "source_status": "integrated source unchanged"
+    },
+    {
+      "source_id": "pr201",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/201",
+      "version_or_commit": "79be6e78d43743a11287222a8bc35eff9f85b963",
+      "section_or_object_id": "previous unexecuted 4410-byte time sampler",
+      "source_status": "unmerged versioned read-only prior"
+    },
+    {
+      "source_id": "pr192",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/192",
+      "version_or_commit": "6027bc0a40c41eb58cf0a58f93ea48db7963d8cd",
+      "section_or_object_id": "same moving SO3 projection and hub correction",
+      "source_status": "unmerged exact/numerical read-only"
+    },
+    {
+      "source_id": "pr187",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/187",
+      "version_or_commit": "f1294cd0b7a6887ff9722fb5f8cb6dfc2b065b03",
+      "section_or_object_id": "previous strict SO3 equilibrium chart bound",
+      "source_status": "unmerged conditional result"
+    },
+    {
+      "source_id": "gha",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/actions/runs/40373318159",
+      "version_or_commit": "cea75f2c378c0072826395d3d84613698f6f0f69",
+      "section_or_object_id": "full SciPy execution logs and 30-day full JSON output artifact id12674050859",
+      "source_status": "machine-executed sampled numerical source data; independently downloaded/hashed"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Original unchanged source nu=.05, alpha0=.1, all180 initial housing phase directions and original mechanical force/damping; 201 sampled grid and source DOP853 solver tolerance, not interval bounds."
+    },
+    {
+      "id": "A2",
+      "description": "A posteriori chosen reference radius d=.05 and relative actual nonlinear perturbation radius r=.036 hold uniformly at target time; both are unvalidated for all nonlinear trajectories."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "full SciPy augmented variational ODE",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "actually executed 560x180 original m.ode and L.apply with 201 time samples for limiting/nominal"
+    },
+    {
+      "technique": "moving SO3 frame and spectral operator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "39x180 singular radii throughout sampled u0..100"
+    },
+    {
+      "technique": "endpoint and sampling sensitivity checks",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact source archived final match within floating error and decimation sensitivity"
+    },
+    {
+      "technique": "exact rational geometric SO3 majorant",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "conditionally bound nonlinear alignment chart for moving d=.05 and r=.036"
+    },
+    {
+      "technique": "full Green U(t,s)/interval ODE/Hessian/nonlinear",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "full forced operator and true phase-ball nonlinear enclosure remain missing"
+    },
+    {
+      "technique": "empirical physical UD bridge and conventional null",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "no physical material/time calibration or real experimental measurements, ordinary mechanics reproduces all"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "560 mechanical phase variables×180 tangent columns, 201 time samples per frozen case; golden ratio c=(5+sqrt5)/2",
+    "reduced_expression": "d=1/20,r=9/250,Gmin=6813/2000,t=6958/473125,chart B=245802834179/264666314250000",
+    "factor_origins": [
+      "source icosahedron geometry",
+      "Riemannian SO3 frame skew Sylvester matrix",
+      "finite rational majorants for geometry and exponential"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "source continuous native u=t/t0, sampled step .5",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "same original SciPy DOP853 full reference and 560x180 tangent",
+    "initial_phase": "original 180 housing initial perturbation directions, epsilon=sqrt2Eh",
+    "coupling": "original passive MountLoss spring/viscous forces",
+    "period_claim": "none; u100 target horizon",
+    "physical_unit_map": "ell0,t0,E* remain uncalibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "original complete 560 mechanical phase plus heat from reference, tangent W560x180",
+    "generator_or_update": "source m.ode and analytic Linearization.apply, full state unchanged",
+    "initial_boundary_conditions": "source frozen limiting and nominal nu=.05, alpha0=.1, full180 energy ellipsoid",
+    "conservation_and_sources": "source unanchored internal-only momentum, dissipative heat; no new source/constitutive tuning",
+    "projection_and_kernel": "postprocess primary 39 position components under moving shell SO3; no mechanical state discarded",
+    "physical_mapping": "no empirical spacetime or material identification"
+  },
+  "target_exposure": {
+    "status": "POST prior endpoint and reference/shape target exposure",
+    "known_targets": [
+      "old raw final .0350097199/.0352093794",
+      "old d=.011 chart and <.001 target",
+      "old 80% breathing design threshold"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "d=.05 chosen after seeing sampled reference max .046677",
+      "r=.036 retained from earlier exposed tangent target",
+      "sample grid .5 and original source DOP853 settings"
+    ],
+    "search_domain_and_budget": "two frozen source cases x201 sampled times, full180 housing input, no material parameter scan or physical fit",
+    "selection_criterion": "reproduce archived endpoint, locate shape/reference sampled extrema, repair analytic chart without hiding nonlinear-flow dependency",
+    "baseline": "ordinary fully equivalent unanchored reciprocal spring/dashpot 3D mechanics"
+  },
+  "calculation_steps": [
+    "Claim disjoint branch and create isolated pinned SciPy/NumPy workflow; copy old source-compatible sampler verbatim, no source model edits.",
+    "Execute limiting and nominal 560x180 DOP853 for u0..100, 201 half-unit samples, producing full JSON files.",
+    "Compare final raw primary tangent radii with original frozen integrated archive; both agree within7e-18.",
+    "Take maxima over 201 samples for raw and moving-SO3 aligned operator norm, reference displacement; old d=.011 fails at 145 and124 samples.",
+    "Download GitHub artifact ZIP, verify full individual SHA256 and store summary JSON in Git repo as captured run result.",
+    "Derive sharper rational geometry/Gmin/skew/exponential constants for d=.05,r=.036, giving B=.00092872731<.001 on full assumed ball.",
+    "Keep true nonlinear relative radius, validated reference maximum, forced U(t,s), nonlinear Hessian and volume/strut domain OPEN; no 80% guarantee."
+  ],
+  "result": {
+    "exact_expression": "Conditional SO3 chart remainder<=245802834179/264666314250000 for d=.05,r=.036",
+    "approximation": "limiting sampled shape max .0002269454524 at u1, nominal .0002293081534 at u12.5; reference sampled max .0394403755 at u9 and .0466765926 at u64.5",
+    "units": "native icosahedral length ell0 and time u, no physical SI calibration",
+    "precision_and_error": "Float64 SciPy DOP853 tolerance with finite .5 sampling; exact Fraction chart bound; no interval/higher order flow certification",
+    "scope": "sampled full-time first-derivative source dynamics and conditional nonlinear SO3 geometric readout only",
+    "physical_interpretation": "valid numerical conventional mechanical analogue, uniquely UD physics not established"
+  },
+  "verification": [
+    {
+      "method": "GitHub Actions actual full160x? corrected 560x180 SciPy integrations",
+      "command_or_proof_path": "experiments/icosahedral-fulltime/timeframe_sampler.py",
+      "source_revision": "cea75f2c378c0072826395d3d84613698f6f0f69",
+      "actual_result": "PASS limiting 34352 nfev and nominal 28892, sampled 201 timepoints, archived endpoint residual6.94e-18",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "Exact rational local chart bound",
+      "command_or_proof_path": "experiments/icosahedral-fulltime/chart_bound.py",
+      "source_revision": "b3aff72e209b21b4f08b8c49c2def1348dffdf02",
+      "actual_result": "PASS exact rational 245802834179/264666314250000<.001",
+      "review_relationship": "same assistant constructor"
+    },
+    {
+      "method": "Verified SHA256 of downloaded GHA ZIP outputs",
+      "command_or_proof_path": "https://github.com/ud-tetra/UD-Physics/actions/runs/40373318159",
+      "source_revision": "cea75f2c378c0072826395d3d84613698f6f0f69",
+      "actual_result": "PASS full limiting,nominal,summary file hashes; artifact retention30days",
+      "review_relationship": "source/provenance check"
+    },
+    {
+      "method": "validated full nonlinear all-phase u100 and independent physical mechanics review",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED / NOT_RUN",
+      "review_relationship": "independent"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Prior d=.011 moving chart reference condition violated in 145 limiting and124 nominal sampled times; its all-time application invalid.",
+    "Nominal raw first-order max .035209379 leaves only .000790621 margin below .036 relative radius before any nonlinear errors.",
+    "Half-unit sampling misses some true between-sample maxima; step1 decimation changes nominal shape/reference maxima.",
+    "Exact chart d=.05 bound requires actual continuous reference and actual nonlinear relative phase-ball radius, neither certified.",
+    "Ordinary mechanical network yields all effects, no empirical unique UD physical test."
+  ],
+  "limitations": [
+    "Full time U(t,s) forcing Green not computed, only U(t,0)B.",
+    "No interval global time-continuous reference/phase-ball/nonlinear Hessian/remainder/positive strut domain/volume.",
+    "No measured material/physical time/length/energy scale, no independently sourced UD spacetime.",
+    "No non-constructor scientific review or hardware."
+  ],
+  "changed_dependencies": [
+    "Disjoint isolated branch with own GHA workflow, no mainline or prior draft PR writeback; original 560-state mechanics unchanged."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/ico-fulltime-20261026-gpt6-a1/fulltime-001/manifest.json"
+  ],
+  "next_discriminant": "Full-time sampled tolerance sensitivity and actual nonlinear housing-phase trials, then mathematically verified nonlinear/forced Green/reference/error/strut/volume envelopes beyond conventional network before any u100 all-phase physical claim."
+}
