@@ -1,0 +1,8 @@
+Commands actually executed in a local isolated scratch directory, 2026-10-23 UTC (constructor checks):
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python barrier_audit.py --out . --starts 60
+python verify_witness.py --witness flat_witness.json --out witness_result.json
+OPENBLAS_NUM_THREADS=1 python independent_check.py
+All three completed with exit code 0. The first uses NumPy 2.3.5/SciPy 1.17.0, and the latter two additionally SymPy 1.14.0.
+Exact witness uses integer-rational floor square root enclosures; numerical optimizer not a global theorem.
+The frozen rational witness was generated from a prior local minimizing candidate and is supplied byte-for-byte as an input; make_witness.py is an optional generation helper, not necessary to verify the frozen witness.
+Repository checkout validation and independent mathematical replication: NOT_RUN.

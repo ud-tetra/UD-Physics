@@ -1,0 +1,39 @@
+{
+  "housing_energy_max": "51/20000000",
+  "initial_preparation": "heart pulse alpha, reference primary/device positions and zero velocities, arbitrary housing phase of energy<=EH",
+  "limitations": [
+    "No original amplitude .1 all-time certificate",
+    "No ringdown-by-u100 or breathing-coherence bound",
+    "No empirical data or physical calibration",
+    "Chosen rational amplitude thresholds are development selections"
+  ],
+  "nonlinear_all_time_cell_orientation": {
+    "all_member_lengths_positive": true,
+    "all_struts_strict_lower": "2/15",
+    "alpha_max": "3/100",
+    "edge_strain_upper": "1/5",
+    "energy_upper": "122451/20000000",
+    "global_existence": true,
+    "gram_frobenius_squared_upper": "206656471/855000000",
+    "gram_relative_spectral_upper": "123/125",
+    "housing_lag_upper": "4/15",
+    "median_squared_lower": "7/25",
+    "oriented_cell_sign_preserved": true,
+    "oriented_cell_volume_lower": "(2/125)^(3/2)",
+    "oriented_cell_volume_upper": "(248/125)^(3/2)",
+    "radial_strain_upper": "1/9"
+  },
+  "nonlinear_all_time_struts": {
+    "all_member_lengths_positive": true,
+    "all_struts_strict_lower": "1/40",
+    "alpha_max": "1/25",
+    "edge_strain_upper": "1/4",
+    "energy_upper": "217651/20000000",
+    "global_existence": true,
+    "housing_lag_upper": "7/20",
+    "median_squared_lower": "11/64",
+    "radial_strain_upper": "3/20"
+  },
+  "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+  "status": "EXACT_CONDITIONAL"
+}

@@ -1,0 +1,280 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "global-barrier-007",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Can energy conservation certify all-time centre-to-face oriented volume safety for the original alpha0=1/10 pulse by proving a global collapse-energy barrier above 1360051/20000000?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FIT",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "shell",
+      "symbol": "X_i",
+      "object_type": "12 independent 3D vertex coordinates relative to centre",
+      "domain": "R^36",
+      "codomain": null,
+      "coefficient_domain": "R with Q(sqrt5) reference",
+      "units": "ell0=1",
+      "basis_orientation": "reference icosahedron, chosen oriented face",
+      "metric_measure": "Euclidean length",
+      "origin": "imported",
+      "definition": "outer shell vertices of icosahedron; 30 edges, 20 faces",
+      "exact_expression": "R\u00b2=(5+sqrt5)/8",
+      "source_refs": [
+        "S1"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit shell edge"
+    },
+    {
+      "object_id": "energy",
+      "symbol": "U_primary",
+      "object_type": "nonnegative conservative primary potential",
+      "domain": "R^36 x R_alpha",
+      "codomain": "R_nonnegative",
+      "coefficient_domain": "real algebraic/rational bounds",
+      "units": "model E_*",
+      "basis_orientation": "N/A",
+      "metric_measure": "positive spring lengths",
+      "origin": "imported",
+      "definition": "(alpha\u00b2+sum s\u00b2+sum g(s-alpha)\u00b2+sum k e\u00b2)/2",
+      "exact_expression": "alpha_opt=(19/20)*sum(s)/(1+12*(19/20))",
+      "source_refs": [
+        "S1"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "shell"
+      ],
+      "normalization": "gmin=19/20,kmin=19/50"
+    },
+    {
+      "object_id": "cell",
+      "symbol": "det[a b c]",
+      "object_type": "oriented centre-to-face tetrahedral determinant",
+      "domain": "R^9",
+      "codomain": "R",
+      "coefficient_domain": "R/Q",
+      "units": "ell0\u00b3",
+      "basis_orientation": "fixed face orientation",
+      "metric_measure": "determinant",
+      "origin": "derived",
+      "definition": "coplanarity iff determinant=0",
+      "exact_expression": "0 for frozen rational witness",
+      "source_refs": [
+        "S2"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "shell"
+      ],
+      "normalization": "reference face"
+    },
+    {
+      "object_id": "pulse",
+      "symbol": "E0",
+      "object_type": "original initial pulse-energy ceiling",
+      "domain": "Q_nonnegative",
+      "codomain": null,
+      "coefficient_domain": "Q",
+      "units": "E_*",
+      "basis_orientation": "N/A",
+      "metric_measure": "total mechanical energy including initial housing ball",
+      "origin": "imported",
+      "definition": "(1+12*21/20)(1/10)\u00b2/2+51/20000000",
+      "exact_expression": "1360051/20000000",
+      "source_refs": [
+        "S1"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "original amplitude 1/10"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "url_or_repo_path": "experiments/icosahedral-free3d/model.py; experiments/icosahedral-mountloss/mountloss.py; experiments/icosahedral-tolerances/hardware.py",
+      "version_or_commit": "467e2208fba9da086535bd5b8a6a07f6d6f8e08b",
+      "section_or_object_id": "Model.energy_force; Hardware.energy/mount_force; MountLoss.ode",
+      "source_status": "verified read-only integrated mechanics"
+    },
+    {
+      "source_id": "S2",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/relative_tube.py",
+      "version_or_commit": "4b821868e15a0a53eec10bc61a240bf9fbdabbac",
+      "section_or_object_id": "earlier finite u49/50 pulse",
+      "source_status": "owned branch historical conditional result"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Original passive law and coefficients with g_i in[.95,1.05], k_ij in[.38,.42], initial amplitude .1, extra housing phase energy<=51/20000000 unchanged",
+      "origin": "imported"
+    },
+    {
+      "id": "A2",
+      "statement": "For a static collapsed cell, centre may be translated to origin, alpha optimized, device extensions and housing mounts chosen at zero stored energy; force equilibrium is not required",
+      "origin": "defined model"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "geometric combinatorics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "12 vertices,30 edges,20 faces, one representative face under uniform minimum coefficients"
+    },
+    {
+      "technique": "exact rational interval bounds",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "strict constructive energy upper bound and exact coplanarity"
+    },
+    {
+      "technique": "nonlinear constrained optimization",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "explore possible collapse energy; not global proof"
+    },
+    {
+      "technique": "null and sensitivity analysis",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare local six-length witness and full graph response; multiple start alternatives"
+    },
+    {
+      "technique": "modular clocks and homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite clocks or chain complexes in this static energy subproblem"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "12 shell points x3=36 coords;30 outer edges;12 radial spokes;20 cells;1 face determinant condition",
+    "reduced_expression": "36,30,12,20",
+    "factor_origins": [
+      "icosahedral shell combinatorics"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous u=t/t0, not used in static barrier",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "original passive ODE E_prime<=0",
+    "initial_phase": "arbitrary initial housing phases at fixed energy",
+    "coupling": "radial and edge spring constitutive energy",
+    "period_claim": null,
+    "physical_unit_map": "uncalibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "static R^36 shell and alpha; original full560 dynamic system retained only as conditional energy interpretation",
+    "generator_or_update": "unchanged positive energy with nonnegative dissipation",
+    "initial_boundary_conditions": "original alpha=.1 pulse E0 ceiling",
+    "conservation_and_sources": "E(u)<=E0 if full trajectory exists on positive-length domain",
+    "projection_and_kernel": "collapsed face determinant zero; minimize static auxiliary storage by equal port/midpoint choices",
+    "physical_mapping": "no empirical physical time/energy, no native UD identification"
+  },
+  "target_exposure": {
+    "status": "All original energy target, fixed pulse amplitude and previous failed energy-only strut certificate are already exposed; exploratory comparison only",
+    "known_targets": [
+      "energy threshold 1360051/20000000",
+      "geometric sign preservation",
+      "nonlinear u100 pulse remain OPEN"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "chose g/k at lower allowed coefficients",
+      "72 optimization starts, three noise sizes and seed20261022",
+      "selected rational grid1e6 for explicit witness",
+      "rational alpha -9/500"
+    ],
+    "search_domain_and_budget": "72 numerical SLSQP starts (60 seeded random plus 12 deterministic variations), one follow-up no-constraint L-BFGS-B; no global exhaustive search",
+    "selection_criterion": "smallest found static U under exact det=0, then explicit upper witness U<1/8",
+    "baseline": "original energy E0 and earlier u49/50 time certificate"
+  },
+  "calculation_steps": [
+    "Eliminate alpha analytically and set ideal auxiliary/housing storage to zero",
+    "Run 72 constrained numerical multi-start searches on 36 coordinates; record residual and alternative local stationary values",
+    "Crosscheck with independent coplanarity parameterization",
+    "Rationalize eleven vertices and two plane coefficients; exact coplanarity follows linearly",
+    "Use rational integer sqrt interval bounds on all spoke/edge lengths, certify U<1/8 and all strut paths nonzero",
+    "Construct planar six-member witness with 3 radial lengths R and face angular positions -pi/4,0,+pi/4, certify local cost<0.050747479<E0",
+    "Record that no global lower bound greater than E0 is proved"
+  ],
+  "result": {
+    "exact_expression": "det=0 for rational witness; its conservative static energy U<1/8; six-member local cost<E0; neither is a global lower bound",
+    "approximation": {
+      "numerical_lowest_energy": 0.12442609483988352,
+      "seeds": 72,
+      "near_minimum_count": 59,
+      "independent_parameterization_energy": 0.12442609483988154,
+      "original_pulse_energy": 0.06800255,
+      "constructive_exact_witness_energy_upper_display": 0.12442617888682435,
+      "local_flat_face_six_member_cost_display": 0.05074747831685271
+    },
+    "units": "dimensionless model E_*",
+    "precision_and_error": "Scientific optimization float64 with 2e-13 ftol and analytic gradient; exact independent rational upper witness uses floor sqrt bounds denominator 1e10; no global numerical error certificate",
+    "scope": "NUMERICAL global-geometry development, EXACT constructive energy upper witness; global minimum lower bound and u100 theorem OPEN",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "72 SLSQP runs analytic gradients",
+      "command_or_proof_path": "python barrier_audit.py --out . --starts 60",
+      "source_revision": "467e2208fba9da086535bd5b8a6a07f6d6f8e08b",
+      "actual_result": "EXECUTED local; 72/72 converged, 59 near best, no global certification",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent coplanarity optimization and finite differences",
+      "command_or_proof_path": "python independent_check.py",
+      "source_revision": "same",
+      "actual_result": "PASS; same runtime implementation",
+      "review_relationship": "constructor self-check"
+    },
+    {
+      "method": "exact arithmetic witness",
+      "command_or_proof_path": "python verify_witness.py --witness flat_witness.json --out witness_result.json",
+      "source_revision": "same",
+      "actual_result": "PASS determinant=0, U<1/8, all paths nonzero; local cost<E0",
+      "review_relationship": "constructor exact"
+    },
+    {
+      "method": "repository integrity",
+      "command_or_proof_path": "python3 scripts/validate.py && python3 -m unittest discover -s tests -v",
+      "source_revision": "research branch upcoming",
+      "actual_result": "NOT_RUN locally; must inspect CI",
+      "review_relationship": "not yet executed"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Local-only six-member energy below E0 for planar face: cannot prove global orientation from six-member energies alone",
+    "Original housing-strut collapse witness within original total-energy sublevel remains valid",
+    "Multiple optimizer stationary energies and no interval exhaustive search; lowest found value is not a proved global barrier"
+  ],
+  "limitations": [
+    "Cannot infer all-time orientation positivity for original E0=.06800255",
+    "Does not prove flow reaches flattened witness",
+    "No physical realization or tests",
+    "No overlap with PR44 forced Green recovery",
+    "No mainline export"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/phasewindow-20261022-gpt6-7c41/global-barrier-007/manifest.json"
+  ],
+  "next_discriminant": "Certified all-shell minimum collapse energy lower bound above E0 using interval branch-and-bound/SOS or exact global rigidity; coordinate with independent PR44 recovery for u100 dynamic route."
+}

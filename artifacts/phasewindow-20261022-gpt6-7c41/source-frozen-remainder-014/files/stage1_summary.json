@@ -1,0 +1,16 @@
+{
+  "status": "NUMERICAL_EIGHT_DIRECTIONS",
+  "source_case_id": "edge-p1-b0.005-cf0.0",
+  "source_coeff_sha256": "8c4d98b69171792190178b12b10a0648ca69aa545a750d3836963747015e98fd",
+  "nu": 0.05,
+  "T": 100.0,
+  "samples": 401,
+  "jvp_error": 1.2764985513058491e-08,
+  "nfev": 24641,
+  "runtime_seconds": 14.133202109999957,
+  "max_first_order_among_eight": 0.0003726089188233788,
+  "peak_time": 4.0,
+  "peak_selected_direction": 6,
+  "max_baseline_Z": 0.000370606147600837,
+  "Eh": 2.430311755526067e-06
+}

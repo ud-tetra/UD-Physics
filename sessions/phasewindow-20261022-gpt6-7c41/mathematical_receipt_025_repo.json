@@ -1,0 +1,164 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "hermite-defect-025",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Can the source-matched A5-reduced moving pulse gain be rigorously enclosed through u=100?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "sources": [
+    {
+      "source_id": "m",
+      "url_or_repo_path": "ud-tetra/UD-Physics main",
+      "version_or_commit": "060e9187d88da7062ff4edce5513efabd1b100ff",
+      "source_status": "read-only verified six matching mechanical source blobs"
+    },
+    {
+      "source_id": "prev",
+      "url_or_repo_path": "local checkpoint 024 ZIP and draft PR45",
+      "version_or_commit": "27b95110eacbc9beaa5326f050c2b4b0c440b02b",
+      "source_status": "previously frozen full reduced numerical source"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "sym",
+      "statement": "Uniform-property symmetric moving baseline alpha0=.1,beta=.005,nu=.05,cf=0; exact A5 reduction holds",
+      "status": "MODEL PREMISE"
+    },
+    {
+      "id": "node",
+      "statement": "True-ODE g<=1/12500, v<=7/10000, w<=1/125 at all 4001 mesh nodes",
+      "status": "NOT CERTIFIED"
+    },
+    {
+      "id": "jerk",
+      "statement": "True-ODE continuous ||L'''(u)||<=1 on [0,100]",
+      "status": "NOT CERTIFIED"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "L",
+      "symbol": "L(u)",
+      "object_type": "time-dependent linear operator",
+      "definition": "sqrt(2Eh) C Phi(u,0) B",
+      "domain": "R^180 initial housing phase ball",
+      "codomain": "R^24 non-affine shell output",
+      "coefficient_domain": "original 560-phase mechanical model",
+      "units": "normalized reference edge lengths",
+      "basis_orientation": "A5 multiplicity sectors 3,3prime,4,5",
+      "metric_measure": "Euclidean operator norm",
+      "origin": "assumed mechanical mapping plus derived tangent",
+      "exact_expression": "sqrt(2Eh) C Phi(u,0) B"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4001 nodes, 4000 intervals, distance to nearest 1/80",
+    "reduced_expression": "G + V/80 + W/(2*80^2)+J/(6*80^3)",
+    "factor_origins": [
+      "selected after inspecting checkpoint024 sampled gains",
+      "exact norm-valued Taylor remainder"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "uncalibrated continuous mechanical u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "full 560-phase linearized ODE",
+    "initial_phase": "all energy-normalized 180 housing phases",
+    "coupling": "time-dependent moving-reference Jacobian",
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "R^560 full tangent, 180 input, 24 output",
+    "generator_or_update": "J(u)=Df(y_symmetric(u))",
+    "initial_boundary_conditions": "original heart alpha=.1, zero reference housing phase; all allowed housing perturbations",
+    "conservation_and_sources": "nonlinear source passive but moving tangent not necessarily contractive",
+    "projection_and_kernel": "rank24 shell affine complement; A5 sectors",
+    "physical_mapping": "analogue; native UD physical correspondence open"
+  },
+  "target_exposure": {
+    "status": "FIT / DEVELOPMENT",
+    "known_targets": [
+      "u100",
+      "1/40 oriented-cell exclusion threshold",
+      "4001 checkpoint024 selected numerical time nodes"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "robust node thresholds g=.00008,v=.0007,w=.008, jerk=1",
+      "tight alternative thresholds"
+    ],
+    "search_domain_and_budget": "four symmetry sectors, two spline coefficient grids .1/.05, 4001 times, 401 fixed-log-norm samples",
+    "selection_criterion": "simple gate with broad nodal error margins",
+    "baseline": "checkpoint024 conditional first-order bound .0001096875"
+  },
+  "calculation_steps": [
+    {
+      "id": "a",
+      "statement": "Rational Hermite node-to-continuous proof checked with Fraction and separately SymPy"
+    },
+    {
+      "id": "b",
+      "statement": "Recomputed full-180 sector gains g,v,w,j at 4001 samples, two coefficient grids"
+    },
+    {
+      "id": "c",
+      "statement": "Checked jerk via operator-valued finite differences and direct-source time derivatives"
+    },
+    {
+      "id": "d",
+      "statement": "Tested and rejected crude fixed positive-metric logarithmic-norm majorant"
+    }
+  ],
+  "result": {
+    "exact_expression": "robust sup ||L|| <= 6889/76800000, sup ||L'|| <= 281/320000; if premises are verified",
+    "approximation": "numerical sector4 maxima g=0.0000667420, v=0.000608075, w=0.00614435, j=0.0621201",
+    "units": "uncalibrated edge-length / model time",
+    "precision_and_error": "DOP853/spline float64 convergence only, NO interval integration error",
+    "scope": "uniform symmetric moving baseline, full initial-phase first-order only",
+    "physical_interpretation": "none established"
+  },
+  "verification": [
+    {
+      "method": "Exact fraction rational checker",
+      "command_or_proof_path": "experiments/icosahedral-phasewindow-20261022/hermite_gain_checker_025.py",
+      "source_revision": "this branch",
+      "actual_result": "PASS_AS_ALGEBRA; true ODE premises NOT CERTIFIED",
+      "review_relationship": "same-runtime mathematical check"
+    },
+    {
+      "method": "Fresh extraction and SHA-256",
+      "command_or_proof_path": "local UD_3D_Hermite_Defect_025_20261024.zip",
+      "source_revision": "local artifact",
+      "actual_result": "PASS 21 inputs 15 outputs; exact and sampled replay",
+      "review_relationship": "same-runtime reproduction"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Fixed metric logarithmic-norm sector3 positive growth integral about 34.76, sector4 4.17, sector5 5.85; too loose, not a physical instability",
+    "Spline Jacobian time-derivative spectral discrepancy up to 0.00111 coarse and 0.000198 fine in sampled source comparisons",
+    "Initial draft exact checker had syntax typo, corrected and rerun"
+  ],
+  "limitations": [
+    "Not a validated continuous original ODE gain",
+    "Not a full nonlinear u100 / strut safety or property scatter guarantee",
+    "Full archived sources and 4001 rows reside in user-downloadable ZIP, not GitHub artifact run"
+  ],
+  "changed_dependencies": [
+    "No constitutive law edits",
+    "One portable import path adjustment relative to checkpoint024 local scripts"
+  ],
+  "artifact_manifest_refs": [
+    "local hermite-defect-025/manifest.json in downloadable ZIP"
+  ],
+  "next_discriminant": "Validated time-slab Green kernel with moving baseline interval errors and sector4 co-moving gauge; then enclose all 4001 nodes and global jerk."
+}

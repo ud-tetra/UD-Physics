@@ -1,0 +1,71 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "run_id": "rank3-stress-009",
+  "created_at": "2026-10-23T03:20:00Z",
+  "evidence": "EXACT",
+  "summary": "Exactly flat genuine R3 induced nine-vertex patch U<1/20, exact icosahedral PSD graph stress; full 12-vertex lower energy barrier OPEN.",
+  "command": "Locally executed extended rank3_patch.py and second SymPy checker on frozen rational witness; compact branch verifier is NOT_RUN in this runtime. See locally captured zip for executable original exact checks.",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "bbf7b9ec09a86378f6503c16460771a033e48593",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "rank3_patch.py",
+      "path": "inputs/001-rank3_patch.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/rank3_patch.py",
+      "sha256": "7e6b3533aee14e3c2b0751a330dc18ccc3937f6a0bc85309f43dd45f60fe2136",
+      "size_bytes": 3548
+    },
+    {
+      "input_id": "input-002",
+      "name": "rank3_partial_witness.json",
+      "path": "inputs/002-rank3_partial_witness.json",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/rank3_partial_witness.json",
+      "sha256": "b95d76ea57453e4fc0407f98bbf356744f8735533a2c12af5796043c3977454c",
+      "size_bytes": 1059
+    },
+    {
+      "input_id": "input-003",
+      "name": "rank3_patch_independent.py",
+      "path": "inputs/003-rank3_patch_independent.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/rank3_patch_independent.py",
+      "sha256": "2b767c7a390bdb698a78e26de7ace61f398e5b92241bfe18e1141e66fd5dc187",
+      "size_bytes": 1579
+    }
+  ],
+  "files": [
+    {
+      "path": "files/RANK3_STRESS.md",
+      "sha256": "d6d2184a4f7a4d387bb28f6ea02152a751db2fb7f157c54859f61c25989cdca8",
+      "size_bytes": 5093
+    },
+    {
+      "path": "files/rank3_stress_receipt.json",
+      "sha256": "764a33295241cda1502b941099f9f52f16414f36b6296138fd60173b4fecd14b",
+      "size_bytes": 7084
+    },
+    {
+      "path": "files/RANK3_STRESS_CHECKPOINT.md",
+      "sha256": "32d8394ac383f5f49f123b84c14f361bc14574a605bbec8eb9199776be12c0a5",
+      "size_bytes": 1696
+    },
+    {
+      "path": "files/rank3_patch_numerical_scan.json",
+      "sha256": "ae17b8a01cbb72bdf05d8d63cd317f6af8face793dec1486623f24c29b65b2de",
+      "size_bytes": 1678
+    },
+    {
+      "path": "files/findings.json",
+      "sha256": "7a8c01b9fd34576befc45caf6ec9836931cbc92527df337155c019d73e5de1c8",
+      "size_bytes": 1320
+    }
+  ]
+}

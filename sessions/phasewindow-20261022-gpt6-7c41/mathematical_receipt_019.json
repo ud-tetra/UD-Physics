@@ -1,0 +1,278 @@
+{
+  "artifact_manifest_refs": [
+    "symmetry-sector-019/manifest.json"
+  ],
+  "assumptions": [
+    {
+      "description": "uniform masses/stiffnesses/reciprocal gains/housing weights and radial-symmetric housing preparation",
+      "id": "A1"
+    },
+    {
+      "description": "original passive nonlinear force law and energy dissipation, beta>0, damping>=0, initial alpha0=1/10, housing initial energy cap 51/20000000",
+      "id": "A2"
+    }
+  ],
+  "calculation_id": "symmetry-sector-019",
+  "calculation_steps": [
+    {
+      "id": "C1",
+      "method": "exact symmetry and equal strain cancellation",
+      "result": "3-coordinate alpha,b,c family is ODE invariant"
+    },
+    {
+      "id": "C2",
+      "method": "complete square in U_primary",
+      "result": "U_primary >= 162/13(b-1)^2"
+    },
+    {
+      "id": "C3",
+      "method": "energy monotonicity",
+      "result": "|b-1|<3/40 for all u"
+    },
+    {
+      "id": "C4",
+      "method": "all-edge Qsqrt5 geometry",
+      "result": "every strut length >37/80; volume ratio b\u00b3"
+    },
+    {
+      "id": "C5",
+      "method": "static one-housing energy sublevel family",
+      "result": "Z=0 and energy<1/36 permit epsilon/2 struts ->0, outside dynamic symmetric preparation"
+    }
+  ],
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "changed_dependencies": [],
+  "clock_receipt": {
+    "clock_type": "continuous Newtonian internal u",
+    "coupling": "current-axis damping and symmetric spring geometry",
+    "initial_phase": "alpha(0)=1/10, radial housing c(0),c_dot(0)",
+    "modulus": null,
+    "period_claim": null,
+    "physical_unit_map": null,
+    "residue_convention": null,
+    "update_rule": "ODE from original passive forces"
+  },
+  "counterexamples_and_failures": [
+    "Exact low energy static zero-Z housing degeneracy invalidates any claim that energy+Z alone control all struts.",
+    "No long-time perturbed Green bound was computed; symmetric invariance fails under scattered material coefficients or arbitrary initial housing directions."
+  ],
+  "dynamics_readout": {
+    "conservation_and_sources": "E_dot=-30cf b_dot\u00b2-60eta(r_e\u00b2+r_o\u00b2)<=0",
+    "generator_or_update": "restricted original 6-state nonlinear ODE; full formula in report",
+    "initial_boundary_conditions": "symmetric shell b0=1 and housing phase E_h<=51/20000000",
+    "physical_mapping": "none; mechanical surrogate internal units only",
+    "projection_and_kernel": "all shell projected nonaffinity Z=0 in invariant family; no general 180-phase implication",
+    "state_space": "three-coordinate invariant family within 280 coordinate and 560 mechanical phase space"
+  },
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "integer_fraction_receipt": {
+    "divisibility_gcd_lcm": null,
+    "factor_origins": [
+      "12 equal spoke strains",
+      "30 shell-edge strains with k=2/5",
+      "heart coupling 13=1+12",
+      "each housing has four anchors"
+    ],
+    "factorization": "36-144/13=324/13, half gives 162/13",
+    "raw_count_expression": "12 spokes;30 edges;120 struts;20 oriented cells",
+    "reduced_expression": "U_primary>=(162/13)(b-1)^2"
+  },
+  "limitations": [
+    "The symmetric sector is only a two-dimensional initial housing-phase set, not all 180 directions.",
+    "This result does not prove u100 breathing/RMS retention, ringdown, or time/energy calibration.",
+    "Original full-state numeric check uses checkpoint 011 source reimplementation rather than direct repository checkout."
+  ],
+  "next_discriminant": "Certified time-dependent perturbation/Green bootstrap around this safe moving baseline, including both shell shape and housing-relative errors; switch to actual non-symmetric source-frozen baseline for tolerance-box extension.",
+  "objects": [
+    {
+      "assumption_ids": [
+        "A1"
+      ],
+      "basis_orientation": "right-handed Euclidean 3D, fixed regular reference ordering",
+      "codomain": "R^(12x3)",
+      "coefficient_domain": "Q(sqrt(5)) reference; R for dynamics",
+      "definition": "12 regular icosahedral vertices scaled by b; centre=0",
+      "dependency_ids": [],
+      "domain": "R^3 times R_+",
+      "exact_expression": "X_i=b v_i",
+      "measured_value": null,
+      "metric_measure": "Euclidean +++",
+      "normalization": "edge rest length=1",
+      "object_id": "sym-shell",
+      "object_type": "3D shell positions in symmetric invariant family",
+      "origin": "assumed sector mapping",
+      "source_refs": [
+        "source-model"
+      ],
+      "symbol": "X_i=b v_i",
+      "uncertainty": null,
+      "units": "reference exterior-edge units"
+    },
+    {
+      "assumption_ids": [
+        "A1"
+      ],
+      "basis_orientation": "same Euclidean reference as X",
+      "codomain": "R^(30x3)",
+      "coefficient_domain": "Q(sqrt(5)) reference; R for dynamics",
+      "definition": "m_e=(v_i+v_j)/2 for each exterior edge",
+      "dependency_ids": [
+        "sym-shell"
+      ],
+      "domain": "R^2 scalar b,c",
+      "exact_expression": "H_e=c(v_i+v_j)/2",
+      "measured_value": null,
+      "metric_measure": "Euclidean +++",
+      "normalization": "edge length=1",
+      "object_id": "sym-house",
+      "object_type": "30 housing vectors",
+      "origin": "assumed sector mapping",
+      "source_refs": [
+        "source-mount"
+      ],
+      "symbol": "H_e=c m_e",
+      "uncertainty": null,
+      "units": "reference exterior-edge units"
+    },
+    {
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "basis_orientation": "alpha,b,c and u-derivatives",
+      "codomain": "R_nonnegative",
+      "coefficient_domain": "Q(sqrt(5))",
+      "definition": "original passive energy with auxiliary z=0",
+      "dependency_ids": [
+        "sym-shell",
+        "sym-house"
+      ],
+      "domain": "R^6",
+      "exact_expression": "1/2[ad\u00b2+12 bd\u00b2+Mc cd\u00b2+13a\u00b2-24a(b-1)+36(b-1)\u00b2+100Mc(c-b)\u00b2]",
+      "measured_value": null,
+      "metric_measure": "positive quadratic mass kinetic energy",
+      "normalization": "Mc=12 beta ((3+sqrt5)/8)/R\u00b2",
+      "object_id": "sym-energy",
+      "object_type": "mechanical energy restricted to invariant family",
+      "origin": "derived",
+      "source_refs": [
+        "source-model",
+        "source-mount"
+      ],
+      "symbol": "E",
+      "uncertainty": null,
+      "units": "normalized internal model energy"
+    }
+  ],
+  "question": "Does an actual nonlinear original-pulse moving baseline have a global positive-length domain, and can shell Z alone bound strut distances?",
+  "receipt_schema_version": 1,
+  "result": {
+    "approximation": {
+      "u100_constructed_min_b": 0.9837524029879106,
+      "u100_constructed_min_strut": 0.49187999199285887
+    },
+    "exact_expression": "37/40<b(u)<43/40; min_all_120_struts>37/80; (37/40)^3<oriented_cell_ratio<(43/40)^3, u>=0 in symmetric family",
+    "physical_interpretation": "Conditional mechanical toy control, not native UD physical law",
+    "precision_and_error": "exact Fraction / SymPy bounds; numerical DOP853 rtol2e-11, atol1e-13, not validated global numeric error",
+    "scope": "uniform coefficient and 2D radial housing-phase invariant family only; general 180-phase/scattered source case OPEN",
+    "units": "unit reference edge length and uncalibrated internal model time"
+  },
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "sources": [
+    {
+      "section_or_object_id": "Model.energy_force",
+      "source_id": "source-model",
+      "source_status": "read-only integrated model",
+      "url_or_repo_path": "experiments/icosahedral-free3d/model.py",
+      "version_or_commit": "c480411dea76a32b0703651744fd66549fc7df4e"
+    },
+    {
+      "section_or_object_id": "MountLoss.housing_loss",
+      "source_id": "source-mount",
+      "source_status": "read-only integrated model",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/mountloss.py",
+      "version_or_commit": "aa4ad28348e22733340aad0cde6ae33a633f0b75"
+    },
+    {
+      "section_or_object_id": "finite-time all-phase domain",
+      "source_id": "source-018",
+      "source_status": "previous checkpoint, versioned",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/STRUT_CONVEX_TUBE.md",
+      "version_or_commit": "93a2a9e198bb5b642c5611f09609e6004f443a72"
+    }
+  ],
+  "target_exposure": {
+    "baseline": "prior all-180 exact u1.019 tube; prior 011/015 numerical moving-pulse tests",
+    "fitted_parameters_or_formula_choices": [
+      "symmetric 2D housing sector chosen to secure exact control benchmark",
+      "b bound 37/40 selected from conservative energy threshold"
+    ],
+    "known_targets": [
+      "u100 domain",
+      "original alpha0=.1",
+      "80% breathing",
+      "previous 1/40 non-affine orientation threshold"
+    ],
+    "search_domain_and_budget": "one analytically selected invariant family, 12 numerical constructor cases, one reduced u100 integration",
+    "selection_criterion": "all-time strict strut domain with useful margin",
+    "status": "FIT / development control; original u100/80% targets exposed"
+  },
+  "technique_plan": [
+    {
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "global moving-baseline domain",
+      "technique": "symmetry reduction and rational energy inequality"
+    },
+    {
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "noncollapse and orientation",
+      "technique": "exact Q(sqrt(5)) edge geometry and all-anchor check"
+    },
+    {
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "constructor/tangency cross-check",
+      "technique": "finite source-reimplementation nonlinear ODE replay"
+    },
+    {
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "remain another separately held task and open bootstrap",
+      "technique": "full projected Green and nonlinear remainders"
+    }
+  ],
+  "verification": [
+    {
+      "actual_result": "PASS",
+      "command_or_proof_path": "python3 exact_symmetry.py --out result.json",
+      "method": "Fraction/Qsqrt5 exact calculator",
+      "review_relationship": "primary constructor",
+      "source_revision": "a7c6b123c144d37fb7a3fcefed36a3ff764af027"
+    },
+    {
+      "actual_result": "PASS",
+      "command_or_proof_path": "python3 independent_symmetry.py --out independent_result.json",
+      "method": "SymPy independent geometry and energy implementation",
+      "review_relationship": "same-runtime second implementation",
+      "source_revision": "a7c6b123c144d37fb7a3fcefed36a3ff764af027"
+    },
+    {
+      "actual_result": "PASS",
+      "command_or_proof_path": "OPENBLAS_NUM_THREADS=1 python3 symmetry_dynamics_check.py --out dynamics_result.json",
+      "method": "full560 mechanical force versus exact reduced ODE",
+      "review_relationship": "constructor cross-check",
+      "source_revision": "checkpoint 011 local full-state source implementation"
+    },
+    {
+      "actual_result": "PASS",
+      "command_or_proof_path": "python3 zero_Z_strut_obstruction.py --out obstruction_result.json",
+      "method": "static strut degeneracy with zero shell Z",
+      "review_relationship": "negative control",
+      "source_revision": "a7c6b123c144d37fb7a3fcefed36a3ff764af027"
+    }
+  ]
+}

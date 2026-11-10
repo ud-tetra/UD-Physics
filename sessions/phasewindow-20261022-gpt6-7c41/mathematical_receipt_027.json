@@ -1,0 +1,198 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "source-reference-peak-027",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Can the actual 3D symmetric pulse's six-state trajectory be certified to the checkpoint026 peak slab while retaining original model equations?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "sym_source_state",
+      "symbol": "y=(alpha,b,c,dalpha,db,dc)",
+      "object_type": "six-dimensional invariant submanifold state",
+      "definition": "shell and housing uniform scales in the unchanged original 560-phase 3D MountLoss ODE",
+      "domain": "0<=u<=187/40",
+      "codomain": "R^6",
+      "coefficient_domain": "Q(sqrt5), interval-represented by rational sqrt5 truncation",
+      "units": "dimensionless unit-edge model",
+      "basis_orientation": "physical reference R3",
+      "metric_measure": "positive K/M mechanical energy norm",
+      "origin": "derived",
+      "exact_expression": "SOURCE_PEAK_027.md",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source_main"
+      ],
+      "assumption_ids": [
+        "uniform"
+      ],
+      "dependency_ids": [],
+      "normalization": "reference edge length=1"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "source_main",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/mountloss.py and original model dependencies",
+      "version_or_commit": "3b9f6dee5e8c69cf9b4d11787966bda05f99137d",
+      "section_or_object_id": "symmetric source reduction; source blobs unchanged",
+      "source_status": "read-only"
+    },
+    {
+      "source_id": "checkpoint026",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/A5_INTERVAL_SLAB_026.md",
+      "version_or_commit": "bf9f5f3010b36bf6fa22ef5816a0d131f575fe04",
+      "section_or_object_id": "frozen sector4 spline",
+      "source_status": "binary input unavailable here"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "uniform",
+      "text": "g=m=1, k=2/5, beta=1/200, nu=1/20, cf=0, gain=1, housing weights1, omega=10, alpha0=1/10, all velocities0, b=c=1"
+    },
+    {
+      "id": "rationaljets",
+      "text": "187 degree20 rational Taylor segments constructed then exactly checked for C0 continuity, Bernstein energy, domain, residual."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational polynomial defect and Bernstein positivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "certify every source-state approximation segment"
+    },
+    {
+      "technique": "energy-weighted one-sided lognorm bound",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "stable global error propagation"
+    },
+    {
+      "technique": "direct 120-axis force reconstruction",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "numerical constructor check"
+    },
+    {
+      "technique": "source sector4 interval Jacobian minus binary spline",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "frozen checkpoint026 21MB binary missing"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "187 slabs; 20th-order rational Taylor; 120 housing paths",
+    "reduced_expression": "T=187/40; mu<64/555<1/8; r<33/10^31; error_E<3/10^28",
+    "factor_origins": [
+      "12 shell vertices",
+      "30 edges",
+      "4 housing anchors per edge",
+      "mu via 120 path sums"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous Newtonian surrogate u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "six-state moving-axis ODE",
+    "initial_phase": "alpha0=1/10",
+    "coupling": "mass-spring and current-axis passive housing",
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "R6 invariant inside original R560 mechanical phases",
+    "generator_or_update": "source six-state ODE given in SOURCE_PEAK_027.md",
+    "initial_boundary_conditions": "alpha=.1,b=c=1, three zero velocities",
+    "conservation_and_sources": "E'=-eta sum120 rate² <=0",
+    "projection_and_kernel": "symmetric reference Z=0; sector4 tangent remains separate",
+    "physical_mapping": "mechanical surrogate only, not native UD"
+  },
+  "target_exposure": {
+    "status": "FIT/DEVELOPMENT",
+    "known_targets": [
+      "peak slab [4.65,4.675]",
+      "checkpoint026 eta<=1e-8",
+      "u100 orientation 1/40"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "h=1/40",
+      "Taylor order20",
+      "75-decimal rational rounding"
+    ],
+    "search_domain_and_budget": "187 exact residual/energy/C0 verifications; 18 selected numerical constructor tests",
+    "selection_criterion": "original source baseline state interval accurate enough for future coefficient comparison",
+    "baseline": "checkpoint026 spline-only transfer certificate"
+  },
+  "calculation_steps": [
+    "Exact symmetric source reduction and 120 anchor combinatorics",
+    "187 rational Taylor segments, coefficient rounding, Bernstein domain and exact defects",
+    "sqrt5 rational interval and dF/dsqrt5<4 bound",
+    "energy-weighted lognorm <64/555; global error <3e-28",
+    "independent source force and DOP853 checks"
+  ],
+  "result": {
+    "exact_expression": "sup_u ||y_source-P||_E < 3/10^28 for 0<=u<=187/40",
+    "approximation": "r_max≈3.272329094714965e-30; certified E-error upper≈2.8796496033491693e-28",
+    "units": "normalized 3D mechanical model",
+    "precision_and_error": "exact Q after frozen coefficient rounding; root parameter interval; no sector4 spline enclosure",
+    "scope": "symmetric moving reference only, u<=4.675",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "187 exact Q residuals + exact Bernstein + continuity",
+      "command_or_proof_path": "local ZIP validated_peak.py eight incremental checks",
+      "source_revision": "local checkpoint027",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "sqrt5 parameter derivative gate",
+      "command_or_proof_path": "local ZIP sqrt5_derivative_gate.py",
+      "source_revision": "local checkpoint027",
+      "actual_result": "PASS",
+      "review_relationship": "independent analytic estimate"
+    },
+    {
+      "method": "global source error gate",
+      "command_or_proof_path": "local ZIP source_error_gate.py",
+      "source_revision": "local checkpoint027",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "120-path force + DOP853 endpoint",
+      "command_or_proof_path": "local ZIP independent_anchors.py",
+      "source_revision": "local checkpoint027",
+      "actual_result": "PASS numerical only, force2.54e-16 endpoint6.98e-14",
+      "review_relationship": "same-runtime independent constructor"
+    },
+    {
+      "method": "compact GitHub proof checker",
+      "command_or_proof_path": "experiments/icosahedral-phasewindow-20261022/source_error_gate_027.py",
+      "source_revision": "research branch",
+      "actual_result": "NOT_RUN in checkout; equivalent local exact gate executed",
+      "review_relationship": "compact reimplementation"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "No available frozen checkpoint026 sector4 spline coefficients, so original-source B_true-B_spline<1e-8 is NOT verified."
+  ],
+  "limitations": [
+    "No source sector4 Jacobian enclosure",
+    "No u100 nonlinear all-180 phase result",
+    "No physical SI calibration"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "local ZIP UD_3D_Exact_Source_Peak_027_20261102.zip sha256 0eb7227b5e51ac918e3f6cf871aec10c7d3e47feade66734ba18f2ae48a8edd7"
+  ],
+  "next_discriminant": "Recover exact frozen checkpoint026 spline and interval evaluate sector4 source Jacobian on certified reference [4.65,4.675]."
+}

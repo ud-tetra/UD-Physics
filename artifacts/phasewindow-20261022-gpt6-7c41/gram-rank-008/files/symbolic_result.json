@@ -1,0 +1,8 @@
+{
+  "face_rank_exact": 2,
+  "full_rank_exact": 4,
+  "face_gram_determinant_exact": "0",
+  "reference_edges_verified_exactly": 30,
+  "potential_high_precision_decimal": "0.0478421108423681912628790016826725255715338924137",
+  "status": "SYMBOLIC_RANK_EXACT / NUMERICAL_HIGH_PRECISION_ENERGY; primary Fraction enclosure establishes strict inequality"
+}

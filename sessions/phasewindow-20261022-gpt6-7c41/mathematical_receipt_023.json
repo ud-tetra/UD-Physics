@@ -1,0 +1,94 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "continuous-gain-gate-023",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Validate six-channel u100 gain and derive an explicit continuous-time and nonlinear bootstrap criterion.",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "sources": [
+    {
+      "source_id": "ud-model",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/mountloss.py",
+      "version_or_commit": "59814ea16e94ac4048dc878ef99d23097ca63b9b",
+      "source_status": "read-only verified unchanged"
+    },
+    {
+      "source_id": "checkpoint-022",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/SIX_MOVING_022.md",
+      "version_or_commit": "1b630ebd6829a7016d4d4656666a183625020cbb",
+      "source_status": "development numerical source; complete computational archive held locally"
+    }
+  ],
+  "assumptions": [
+    "uniform A5 symmetric moving pulse, alpha0=0.1, beta=0.005, nu=0.05, cf=0",
+    "Energy-normalized all-180 initial housing phase ball Eh<=51/20000000",
+    "Premise node ||L_E(t_j)||<=1/10000 at 12 nodes: OPEN",
+    "Premise sup_[0,100] ||L_E'(t)||<=1/1000: OPEN",
+    "Additional nonlinear remainder <99/10000 and positive struts: OPEN"
+  ],
+  "dynamics_readout": {
+    "state_space": "560 real mechanical tangent phases plus heat ledger",
+    "generator_or_update": "Full moving-baseline Df(y_sym(u)), six A5-adjoint output seeds",
+    "projection_and_kernel": "24D non-affine shell projector, 180D initial housing phase coordinates",
+    "physical_mapping": "Uncalibrated 3D passive surrogate"
+  },
+  "target_exposure": {
+    "status": "FIT/development; post-exposed rational sufficient-gates",
+    "known_targets": [
+      "1/40 orientation threshold",
+      "u100 window",
+      "existing node mesh",
+      "published checkpoint022 u4 peak"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "node gate 1/10000",
+      "velocity operator gate 1/1000"
+    ],
+    "search_domain_and_budget": "u100 adjoint rtol3e-7/1e-7 and forward rtol1e-5/1e-6/1e-7; tighter runs timed out"
+  },
+  "calculation_steps": [
+    "Exact operator FTC plus nearest grid node, maximum mesh gap30",
+    "u100 opposite-time tangent transpose check with same Jacobian implementation",
+    "Fine sampled gain near u4.04",
+    "Compute six-seed velocity-response gain at selected times"
+  ],
+  "result": {
+    "exact_expression": "(node gain<=1/10000 and sup derivative gain<=1/1000) => sup gain<=151/10000; nonlinear spare99/10000",
+    "approximation": "u100 adjoint4.279958539e-6, selected forward4.280822724e-6, sampled peak u4.04=6.638579048e-5, sampled velocity gain u4.04=6.006680801e-4",
+    "scope": "Exact conditional lemma only; requested validated continuous-time certificate and nonlinear u100 phase-ball safety OPEN",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "Exact rational Fraction replay",
+      "actual_result": "PASS"
+    },
+    {
+      "method": "Forward versus backward tangent propagation u100",
+      "actual_result": "NUMERICAL_PASS ~0.0202% relative difference, same Jacobian source"
+    },
+    {
+      "method": "Validated all-node and all-time derivative enclosures",
+      "actual_result": "NOT_RUN"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Adjoint rtol1e-8 and forward rtol3e-8 timed out",
+    "Energy-only domain/Hessian certification obstructed by checkpoints017/019"
+  ],
+  "limitations": [
+    "No interval ODE error bound",
+    "No continuous-time derivative enclosure",
+    "No full180 nonlinear remainder bound",
+    "No u100 perturbed-strut domain"
+  ],
+  "artifact_manifest_refs": [
+    "Local SHA256 verified UD_3D_Continuous_Gain_Gate_023_20261024.zip; complete archive not committed to GitHub"
+  ],
+  "next_discriminant": "Interval or defect-based validation of 12 node gains<1/10000 and sup velocity gain<1/1000, then nonlinear remainder and strut bootstrap."
+}

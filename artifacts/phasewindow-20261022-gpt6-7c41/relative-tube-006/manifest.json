@@ -1,0 +1,56 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "run_id": "relative-tube-006",
+  "created_at": "2026-10-23T02:43:43.628577+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact conditional original amplitude alpha=1/10 all-180 housing-phase u<=49/50 strut positive and oriented cell nonsingularity; full u100 response OPEN. Supersedes relative-tube-005 only as a tighter sufficient safety horizon; earlier immutable run unchanged.",
+  "command": "python3 tube098.py --out result.json ; python3 independent_check.py (executed in local isolated compute runtime)",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "782cd7fb93e0001bd6bb159857d85e09f1fc4100",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "tube098.py",
+      "path": "inputs/001-tube098.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/tube098.py",
+      "sha256": "57daa52afdc61ebecbb27ba3bb1a082d3f87783120473cbe4242e22595b13ded",
+      "size_bytes": 5112
+    },
+    {
+      "input_id": "input-002",
+      "name": "independent_check.py",
+      "path": "inputs/002-tube098_check.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/tube098_check.py",
+      "sha256": "a60637afca532f5a3d4e73e19cc90b68586e7fdbc5fa861df909e99636328084",
+      "size_bytes": 1029
+    },
+    {
+      "input_id": "input-003",
+      "name": "relative_tube.py",
+      "path": "inputs/003-relative_tube.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/relative_tube.py",
+      "sha256": "40789928f702d99de135867b4b4c5c1277ae3c739941729c54fc9d943e4251d9",
+      "size_bytes": 6414
+    }
+  ],
+  "files": [
+    {
+      "path": "files/result.json",
+      "sha256": "6f01edd1b14c25c29cdb74ea1acf0f9bbd69021c787b40a9aac0a7383d84aeed",
+      "size_bytes": 2573
+    },
+    {
+      "path": "files/PROOF.md",
+      "sha256": "c30f53a823618d313cf9dc345a86d0d56a18e313b42222a3d76fcbf0b10527b0",
+      "size_bytes": 8603
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "run_id": "global-barrier-007",
+  "created_at": "2026-10-23T02:59:37.302343+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "72 numerical constrained minimizations of flattened icosahedral cell energy, exact rational global flattened-cell witness below 1/8, exact local-only six-member witness below original pulse budget; global minimum lower bound OPEN.",
+  "command": "See files/EXECUTION.txt for actual executed commands. Capture copies bytes; not execution.",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "467e2208fba9da086535bd5b8a6a07f6d6f8e08b",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "barrier_audit.py",
+      "path": "inputs/001-barrier_audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/barrier/barrier_audit.py",
+      "sha256": "698b23446e938e6d613e44f8f280b0e1ae6eea1bd7eaab86ee631dfa4d01b741",
+      "size_bytes": 8653
+    },
+    {
+      "input_id": "input-002",
+      "name": "verify_witness.py",
+      "path": "inputs/002-verify_witness.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/barrier/verify_witness.py",
+      "sha256": "d09642c1693de557b30b2bfbe61f289629be34113bc1c3b9f37c3c7c16a7b664",
+      "size_bytes": 6001
+    },
+    {
+      "input_id": "input-003",
+      "name": "independent_check.py",
+      "path": "inputs/003-independent_check.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/barrier/independent_check.py",
+      "sha256": "3c0422e5bd543b9cad5af59f58fdf0b572a1b6ac7dbc6e78ed413f916650cbc0",
+      "size_bytes": 1852
+    },
+    {
+      "input_id": "input-004",
+      "name": "flat_witness.json",
+      "path": "inputs/004-flat_witness.json",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/barrier/flat_witness.json",
+      "sha256": "3033890f9e325480438c6a1a725c248b2a33db27a7c65282502dd8e944859366",
+      "size_bytes": 1554
+    }
+  ],
+  "files": [
+    {
+      "path": "files/barrier_results.json",
+      "sha256": "8a65038ec2a5cbbfb019fd51be2579a3c9bfa9c94a0b768eb3b7dab7e4614739",
+      "size_bytes": 16091
+    },
+    {
+      "path": "files/witness_result.json",
+      "sha256": "b9f599537fc101690bf59a8a0fe31eb78e0704b661eaf65cd1ef1ac380a0988e",
+      "size_bytes": 1130
+    },
+    {
+      "path": "files/candidate_flat_vertices.csv",
+      "sha256": "fac823b9c1bc9aa363636cc015f77843ff226c105f451688d9d4d5bf4f726920",
+      "size_bytes": 925
+    },
+    {
+      "path": "files/REPORT.md",
+      "sha256": "a22b32c06cadf790b83e5cc9d595013248e5c129388e6e5e2682f350a485a88a",
+      "size_bytes": 8385
+    },
+    {
+      "path": "files/CHECKPOINT.md",
+      "sha256": "ae3b475ef7793beb23a273f5e9b2a83109b899115737869538def6fbc9c0a87c",
+      "size_bytes": 2157
+    },
+    {
+      "path": "files/mathematical_receipt_barrier.json",
+      "sha256": "8137975ef7c3954685e3a8ddf80bbd6662dd89b05768ef10ac13f8f5ea7fe755",
+      "size_bytes": 12080
+    },
+    {
+      "path": "files/EXECUTION.txt",
+      "sha256": "98926f3724413e39d4ab8cd4889be9255306f36518082159f4179d53b5ccdf2c",
+      "size_bytes": 852
+    }
+  ]
+}

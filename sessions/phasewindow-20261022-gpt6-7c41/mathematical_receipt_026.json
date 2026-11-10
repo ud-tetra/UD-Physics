@@ -1,0 +1,185 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "a5-sector4-spline-slab-026",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Can all sector-4 local propagator Taylor truncations be exactly bounded for a binary64 spline frozen from the symmetric u100 original pulse, and what original-source defect remains?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "A5_sector4_spline",
+      "symbol": "B_j(z)",
+      "object_type": "36x36 cubic polynomial generator",
+      "definition": "binary64 stiffness and damping matrices from numerical symmetric baseline, frozen and treated as exact dyadic coefficients",
+      "domain": "j=0,...,3999 and z in [0,1]",
+      "codomain": "End(R^36)",
+      "coefficient_domain": "Q dyadic",
+      "units": "dimensionless slab time",
+      "basis_orientation": "A5 sector4 18-coordinate orthonormal basis, phase x=(16q,v)",
+      "metric_measure": "matrix infinity norm",
+      "origin": "assumed",
+      "exact_expression": "h_j[[0,16I],[-K_j(z)/16,-C_j(z)]]",
+      "measured_value": null,
+      "uncertainty": "original source interpolation not bounded",
+      "source_refs": [
+        "checkpoint025",
+        "binary_source026"
+      ],
+      "assumption_ids": [
+        "frozen_surrogate"
+      ],
+      "dependency_ids": [],
+      "normalization": "z=(u-t_j)/h_j"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "checkpoint025",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/HERMITE_DEFECT_GATE_025.md",
+      "version_or_commit": "a6f9db8bc2c35bffd454f2184065597d1313fa8e",
+      "section_or_object_id": "source cubic coefficient generators",
+      "source_status": "read-only imported"
+    },
+    {
+      "source_id": "binary_source026",
+      "url_or_repo_path": "local ZIP UD_3D_A5_Sector4_Slab_Certificate_026_20261025.zip",
+      "version_or_commit": "sha256:fb0476f40c90eaf8cc210db7b7955b9b253b409de43bdd19c9c247d15c5cf449",
+      "section_or_object_id": "sector4_spline_binary64_026.npz",
+      "source_status": "frozen local archive not repo"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "frozen_surrogate",
+      "text": "Saved binary64 coefficients and nodes interpreted as exact rational numbers; this does not validate source coefficients."
+    },
+    {
+      "id": "IEEE_upward",
+      "text": "Binary64 arithmetic correctly rounded and nextafter upward applied after all positive coefficient operations."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational fixed-point Taylor polynomial residual",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "three representative local transfer errors"
+    },
+    {
+      "technique": "complex-analytic Cauchy Taylor coefficient majorant",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "all 4000 spline local exact Taylor truncation errors"
+    },
+    {
+      "technique": "interval source-Jacobian and QR time-slab composition",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "original-source coefficient enclosure and stable propagator composition unavailable"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4000 slabs; four cubic coefficients each; 36x36 scaled first-order generator; degree20",
+    "reduced_expression": "Mmax<401/1000; Qmax<321/100; Taylor tail<4/10^18",
+    "factor_origins": [
+      "source 280-coordinate reduction to 18 sector4 config variables",
+      "time normalization h=1/40",
+      "post-selected Taylor degree20 and Cauchy radius8"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "uncalibrated continuous mechanical time u",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x_z=B_j(z)x",
+    "initial_phase": "alpha(0)=1/10, housing initial energy<=51/20000000",
+    "coupling": "symmetric moving source state, tangent Jacobian",
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "original 560 mechanical phases, A5 sector4 36 reduced first-order coordinates",
+    "generator_or_update": "cubic B_j(z), binary64 coefficient surrogate",
+    "initial_boundary_conditions": "Phi_j(0)=I; beta=.005 nu=.05 cf=0 uniform primary",
+    "conservation_and_sources": "passive mechanical source law; surrogate lacks validated original coefficient defect",
+    "projection_and_kernel": "24-dimensional non-affine shell output, four-dimensional irrep with rank18 multiplicity",
+    "physical_mapping": "surrogate only; 3D Euclidean physical reference, uncalibrated u"
+  },
+  "target_exposure": {
+    "status": "FIT/DEVELOPMENT",
+    "known_targets": [
+      "true-source u100 gain certificate",
+      "non-affine norm threshold 1/40",
+      "Hermite robust gate 025"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "h=1/40",
+      "x=(16q,v)",
+      "S=10^24",
+      "Taylor degree20",
+      "Cauchy radius8",
+      "hypothetical eta=1e-8"
+    ],
+    "search_domain_and_budget": "three representative slab matrix residuals and exhaustive 4000-coefficient scalar majorants, five independent Fraction spotchecks",
+    "selection_criterion": "uniform spline Taylor <4e-18, robust local coefficient-error gate",
+    "baseline": "checkpoint025 conditional u100 Hermite gate not verified"
+  },
+  "calculation_steps": [
+    "Freeze binary64 sector4 coefficients and exact dyadic nodes",
+    "Outward enclose coefficient row sums on 4000 intervals",
+    "Apply complex radius8 Taylor bound and exact rational exp upper",
+    "Build fixed point degree20 matrix polynomials and bound exact residual on three slabs",
+    "Numerically probe original source vs spline at 23 peak-slab times",
+    "Derive conditional source transfer error if eta<=1e-8"
+  ],
+  "result": {
+    "exact_expression": "Taylor_tail <= (1-Qmax/64)^(-64)/(8^20*7) < 4e-18; ||Phi_spline-P20|| <= r/(1-M)+eps/(1-M-eps)",
+    "approximation": "Uniform displayed 3.3045975200932015e-18; selected peak residual 2.203184367848278e-21; conditional original source transfer 1.6667181104465005e-8",
+    "units": "dimensionless scaled infinity operator norm",
+    "precision_and_error": "Exact rational surrogate bound; no true source interval coefficient error",
+    "scope": "EXACT frozen spline / CONDITIONAL true-source peak slab / OPEN original u100",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "4000-slab outward + Fraction",
+      "command_or_proof_path": "local ZIP uniform_cubic_slab.py --coeff sector4_spline_binary64_026.npz",
+      "source_revision": "frozen ZIP",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent exact rational spot checks",
+      "command_or_proof_path": "local ZIP independent_rational_majorant.py",
+      "source_revision": "frozen ZIP",
+      "actual_result": "PASS 5 intervals",
+      "review_relationship": "same-runtime independently formulated"
+    },
+    {
+      "method": "fresh extracted exact replay",
+      "command_or_proof_path": "time_slab_fixedpoint.py --coeff ... --left 0/4.65/99.975",
+      "source_revision": "frozen ZIP",
+      "actual_result": "PASS byte-identical",
+      "review_relationship": "replay"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "No proof that true source moving generator differs by <=1e-8 from numerical spline on selected slab",
+    "No stable QR/interval composition of 4000 transfers; local error does not imply global gain",
+    "Physical nonlinear u100 positive-strut/phase-ball result is open"
+  ],
+  "limitations": [
+    "No source integration-error enclosure",
+    "No validation of all 4000 computed fixed-point matrices; uniform result concerns mathematical Taylor truncation",
+    "No new empirical/physical identification"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "local ZIP manifest_026.json, not committed GitHub binary artifact"
+  ],
+  "next_discriminant": "Directed-rounding interval enclosure of source baseline and original sector4 Jacobian on [4.65,4.675], certify eta<=1e-8, then QR interval transfer composition."
+}

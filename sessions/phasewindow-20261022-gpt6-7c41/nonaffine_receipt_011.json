@@ -1,0 +1,255 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "nonaffine-011",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Is all-phase dynamic non-affine shell deformation <=1/40 through u100? Can energy alone prove the bound?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "shell",
+      "symbol": "Y",
+      "object_type": "12 by 3 relative physical shell coordinates",
+      "domain": "R^(12x3)",
+      "coefficient_domain": "Q(sqrt5) reference, R dynamics",
+      "units": "ell0=1",
+      "origin": "imported",
+      "definition": "Y_i=X_i-C"
+    },
+    {
+      "object_id": "non_affine",
+      "symbol": "Z",
+      "object_type": "projected relative shell displacement",
+      "domain": "R^(12x3)",
+      "codomain": "R^(12x3)",
+      "coefficient_domain": "R",
+      "units": "ell0",
+      "origin": "derived",
+      "definition": "(I-P0-PV)Y; P0=11^T/12; PV=VV^T/(4R\u00b2)"
+    },
+    {
+      "object_id": "energy",
+      "symbol": "U",
+      "object_type": "positive mechanical scalar energy",
+      "domain": "R^(560)",
+      "codomain": "R_nonnegative",
+      "units": "E_*",
+      "origin": "imported",
+      "definition": "primary spring + port + housing mount + kinetic, with passive E prime <=0"
+    },
+    {
+      "object_id": "initial_housing_phase",
+      "symbol": "a",
+      "object_type": "180-dimensional position/velocity phase",
+      "domain": "R^180",
+      "codomain": "R^560",
+      "units": "unit energy-normalized phase",
+      "origin": "assumed/selected",
+      "definition": "E_h<=3Ep/80000; chosen zero, Gaussian and u0 largest-singular-vector directions"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "model",
+      "url_or_repo_path": "experiments/icosahedral-cone/analyze.py",
+      "version_or_commit": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "section_or_object_id": "code; git_blob da375361c20c089409e84197c720026aadc93c9e",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "model",
+      "url_or_repo_path": "experiments/icosahedral-free3d/model.py",
+      "version_or_commit": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "section_or_object_id": "code; git_blob c480411dea76a32b0703651744fd66549fc7df4e",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "model",
+      "url_or_repo_path": "experiments/icosahedral-damping/damping.py",
+      "version_or_commit": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "section_or_object_id": "code; git_blob fbb81690ce70f2ec5b5602f2f7d467bdebd40c27",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "model",
+      "url_or_repo_path": "experiments/icosahedral-multiport/network.py",
+      "version_or_commit": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "section_or_object_id": "code; git_blob 010629e4239c012048ff3cf49196099e3502eb4f",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "model",
+      "url_or_repo_path": "experiments/icosahedral-tolerances/hardware.py",
+      "version_or_commit": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "section_or_object_id": "code; git_blob 663ee8cd3a059920e3463fd33307d4908f6743d2",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "model",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/mountloss.py",
+      "version_or_commit": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "section_or_object_id": "code; git_blob aa4ad28348e22733340aad0cde6ae33a633f0b75",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "affine",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/AFFINE_STRESS_CERTIFICATE.md",
+      "version_or_commit": "ddffa85202c2671e5f62b67808bd531b8c4b4aa2",
+      "section_or_object_id": "flattened cell => ||Z||>1/40 at original pulse budget",
+      "source_status": "prior branch exact conditional"
+    }
+  ],
+  "assumptions": [
+    "3D Euclidean reference icosahedron 12 shell + centre; original conservative and reciprocal dissipative law",
+    "13 free 3D primary positions, 150 devices, 30 3D housings, one heart scalar = 280 config / 560 phase plus heat",
+    "Initial pulse alpha=.1, primary reference rest, added housing phase energy <=3Ep/80000",
+    "Numerical only: nu=.05, beta=.05 or .005, cf=0, selected property patterns (not continuous property box)",
+    "Scalar time u=t/t0 independent from spatial coordinates"
+  ],
+  "technique_plan": [
+    {
+      "technique": "Exact rational/surd geometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "12-vertex degree5, projector, energy-only witness"
+    },
+    {
+      "technique": "Finite-difference and symmetry/Noether verification",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "check gradient and pair-force/torque reciprocity"
+    },
+    {
+      "technique": "Numerical ODE DOP853 and timestep refinement",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "finite 560-state pulses u<=100"
+    },
+    {
+      "technique": "Singular-value optimization",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "selected direction over all 180 phases for initial acceleration only"
+    },
+    {
+      "technique": "Modular arithmetic",
+      "applicability": "NA",
+      "purpose_or_na_reason": "continuous Newtonian evolution, no modular registers"
+    },
+    {
+      "technique": "Factorization",
+      "applicability": "NA",
+      "purpose_or_na_reason": "no arithmetic factorization claim beyond typed counts"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "1 scalar+13*3+150+30*3=280; 2*280=560; 30*4=120; housing phases2*30*3=180; one moved vertex touches exactly five edges",
+    "reduced_expression": "280,560,120,180; (1/25)^2*(2/3)=2/1875; U<=197/56250",
+    "factor_origins": [
+      "icosahedron 12 vertices, degree 5, 30 edges"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless u",
+    "modulus": null,
+    "update_rule": "M qdd+gradU+D(q) qdot=0, heat dot=qdot D(q) qdot",
+    "physical_unit_map": "uncalibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "R^560 plus heat scalar",
+    "generator_or_update": "Newtonian passive spring, port, mount, current-axis central losses",
+    "initial_boundary_conditions": "pulse alpha=.1, primary/devices rest at source reference, housing displacement/velocity E_h ball",
+    "conservation_and_sources": "mechanical+heat conserved numerically; spatial force/torque conserved analytically from reciprocal pair forces",
+    "projection_and_kernel": "Z=orthogonal projection to 8-dimensional vertex non-affine multiplicity times three Cartesian coordinates",
+    "physical_mapping": "HYPOTHESIS only; no hardware realization or calibrated clock"
+  },
+  "target_exposure": {
+    "status": "Prior target 1/40, 0.1 amplitude and u100 exposed. Gaussian seed 10422, random property scatters and initial-acceleration SVD postselected for development; no independent dataset.",
+    "known_targets": [
+      "Z<=1/40 at u100; 80/5/50 mechanical screens"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "one site displacement1/25 deliberately chosen to exceed the threshold",
+      "four finite preparation choices; initial-gain SVD targets u0 acceleration"
+    ],
+    "search_domain_and_budget": "4 trajectories, 2 refined repeats, 1 exact witness",
+    "selection_criterion": "falsify energy-only static implication and measure finite Z response",
+    "baseline": "uniform symmetry Z=0; energy sublevel ceiling 1360051/20000000"
+  },
+  "calculation_steps": [
+    "Exactly compute P_perp diagonal 2/3 and 12-spoke/30-edge graph; construct full 3D static witness with residual squared2/1875",
+    "Bound positive spring energy by 197/56250 for any qualified g,k; set port and mount storage zero",
+    "Reimplement all source mechanical forces; finite-difference energy gradient and spatial force/torque conservation tests",
+    "Solve DOP853 on four explicitly named u<=100 pulses, re-integrate two cases at tighter tolerances and twice the readout points",
+    "Optimize 36x180 initial non-affine acceleration map and test singular value against finite direct initial acceleration"
+  ],
+  "result": {
+    "exact_expression": "U<197/56250<1360051/20000000 and ||Z||\u00b2=2/1875>1/1600 for an admissible full 3D static shell configuration; therefore energy-only Z<=1/40 implication is false",
+    "approximation": {
+      "largest_sampled_nonaffine": 0.0004942907863496156,
+      "case_count": 4,
+      "energy_relative_max": 6.631632255636054e-10,
+      "initial_gain_singular": 0.0009940180212190607
+    },
+    "scope": "EXACT static no-go; NUMERICAL finite trajectories only",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "Separate SymPy Qsqrt5 exact checker",
+      "command_or_proof_path": "python3 exact_witness.py",
+      "source_revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "actual_result": "PASS",
+      "review_relationship": "same-runtime constructor"
+    },
+    {
+      "method": "Independent gradient/force/torque/gain checks",
+      "command_or_proof_path": "python3 verify_audit.py",
+      "source_revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "DOP853 560-state trajectories",
+      "command_or_proof_path": "python3 nonaffine_audit.py --out final100 --until 100 --samples 1001 --cases uniform-none,uniform-random,adverse-random,adverse-initial-gain --rtol 2e-9 --atol 2e-11",
+      "source_revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "actual_result": "PASS energy balance and finite simulation",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "Tightened DOP853 and sampled-readout refinement",
+      "command_or_proof_path": "python3 nonaffine_audit.py --out refined100 --until 100 --samples 2001 --cases adverse-random,adverse-initial-gain --rtol 3e-11 --atol 3e-13",
+      "source_revision": "a4ae75dd55cd2b691c811c4d6eeae1367fcba015",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "Repository validation and tests",
+      "command_or_proof_path": "scripts/validate.py; python3 -m unittest discover -s tests -v",
+      "actual_result": "NOT_RUN locally; no full GitHub checkout, seek PR CI",
+      "review_relationship": "tooling"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "EXACT energy-only Z invariant false: a legitimate static energy-sublevel 3D state has Z>1/40, despite no cell collapse",
+    "Nonlinearly dynamically reachable from prescribed initial pulse NOT established by this witness",
+    "Four trajectory samples and an optimized u0 acceleration do not optimize or bound all 180 phases over t\u2208[0,100]",
+    "No full Green or nonlinear aligned error bound, PR44 separate scope"
+  ],
+  "limitations": [
+    "No continuous-time extrema enclosure",
+    "No high-dimensional phase-ball or qualified material box certificate",
+    "No independent experimental validation",
+    "Source model reimplemented from code; independent original-source replay/review pending",
+    "Hardware ideal struts/routing unverified; physical time and energy uncalibrated"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/phasewindow-20261022-gpt6-7c41/nonaffine-011/manifest.json"
+  ],
+  "next_discriminant": "Obtain projected 8x3 non-affine Green/variational and uniform nonlinear remainder for all 180 housing phases, independent of readout-frame rigid motion; coordinate PR44 source recovery."
+}

@@ -1,0 +1,85 @@
+{
+  "Eh": 2.430311755526067e-06,
+  "coefficient_sha256": "8c4d98b69171792190178b12b10a0648ca69aa545a750d3836963747015e98fd",
+  "finite": {
+    "half_negative": {
+      "L_drift": 4.482848988637827e-15,
+      "P_drift": 1.7271888648092398e-15,
+      "balance_error": 2.8497733322977264e-10,
+      "final_E": 0.06295614395426104,
+      "initial_E": 0.06480892105863399,
+      "max_Z": 0.0003699541773034331,
+      "max_Z_at_u": 4.0,
+      "min_strut": 0.4916849249026848,
+      "nfev": 23285
+    },
+    "half_positive": {
+      "L_drift": 5.821390730224394e-15,
+      "P_drift": 9.012862136130934e-16,
+      "balance_error": 2.45858707758423e-10,
+      "final_E": 0.06295608172415434,
+      "initial_E": 0.06480892105863399,
+      "max_Z": 0.000371491662311321,
+      "max_Z_at_u": 4.0,
+      "min_strut": 0.49169610307611394,
+      "nfev": 23297
+    },
+    "negative": {
+      "L_drift": 8.44522309477182e-15,
+      "P_drift": 1.262233445017923e-15,
+      "balance_error": 2.2839501702163095e-10,
+      "final_E": 0.06295625766416327,
+      "initial_E": 0.06481074379245064,
+      "max_Z": 0.0003695369696665055,
+      "max_Z_at_u": 4.0,
+      "min_strut": 0.4914498683612911,
+      "nfev": 21869
+    },
+    "positive": {
+      "L_drift": 8.454470620238335e-15,
+      "P_drift": 1.0868906688840634e-15,
+      "balance_error": 2.2406106853108945e-10,
+      "final_E": 0.06295613321443574,
+      "initial_E": 0.06481074379245064,
+      "max_Z": 0.00037260906299183244,
+      "max_Z_at_u": 4.0,
+      "min_strut": 0.4914351493143998,
+      "nfev": 21881
+    },
+    "reference": {
+      "L_drift": 7.892500716472553e-16,
+      "P_drift": 1.2703466033095628e-15,
+      "balance_error": 3.2770311876427603e-10,
+      "final_E": 0.06295608530574216,
+      "initial_E": 0.06480831348069511,
+      "max_Z": 0.0003706061494579161,
+      "max_Z_at_u": 4.0,
+      "min_strut": 0.4919143296245473,
+      "nfev": 23885
+    }
+  },
+  "finite_rtol": 2e-09,
+  "horizon": 100.0,
+  "limits": [
+    "No nonlinear phase-ball uniformity: one postselected direction only.",
+    "No continuous-time validated integration error; 401 sampled instants.",
+    "Property case is source-matched but this case alone does not cover full parameter uncertainty box.",
+    "Original all-time nonlinear pulse orientation, strut safety, ringdown and breathing criteria OPEN."
+  ],
+  "max_energy_balance_error": 3.2770311876427603e-10,
+  "max_even_difference_from_baseline": 2.9357476064356202e-09,
+  "max_momentum_L_drift": 8.454470620238335e-15,
+  "max_momentum_P_drift": 1.7271888648092398e-15,
+  "max_nonaffine_any_finite_phase": 0.00037260906299183244,
+  "max_odd_centered_difference_from_tangent": 4.233157412601372e-12,
+  "max_selected_sampled_linearized_Z": 0.0003726089188233788,
+  "maximum_observed_full_phase_remainder": 2.9373336896436815e-09,
+  "maximum_observed_half_phase_remainder": 7.343383852791809e-10,
+  "min_sampled_strut": 0.4914351493143998,
+  "peak_time": 4.0,
+  "phase_direction_index": 6,
+  "phase_selection": "Maximum first-order projected norm over 8 frozen initial directions and 401 sampled times; not complete180-dimensional singular optimum",
+  "remainder_half_over_full": 0.25000168958272534,
+  "sample_count": 401,
+  "status": "NUMERICAL_SOURCE_MATCHED_FIVE_FINITE_DIRECTIONS"
+}

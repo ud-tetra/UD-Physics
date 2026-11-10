@@ -1,0 +1,307 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "pulse-safety-002",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-pulse-safety",
+  "question": "Can the complete nonlinear 3D MountLoss mechanics with all initial housing phases and enlarged Eh admit an all-time positive length/oriented volume certificate at reduced heart pulse amplitudes?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FIT",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "configuration",
+      "symbol": "q",
+      "object_type": "3D passive mechanical configuration and phase",
+      "definition": "280 configuration coordinates (alpha,13 primary xyz,150 auxiliary,30 housing xyz) and 280 velocities",
+      "domain": "R^560",
+      "codomain": null,
+      "coefficient_domain": "Q(sqrt5) reference; real dynamics",
+      "units": "internal ell0,E_*,u=t/t0",
+      "basis_orientation": "Cartesian xyz; fixed oriented icosahedral 20-cell reference",
+      "metric_measure": "positive diagonal mass and nonnegative storage; positive Euclidean 3D lengths",
+      "normalization": "reference edge length ell0=1 in calculation",
+      "origin": "imported",
+      "source_refs": [
+        "mechanics"
+      ],
+      "assumption_ids": [
+        "a-mech"
+      ]
+    },
+    {
+      "object_id": "initial-energy",
+      "symbol": "E_max(a)",
+      "object_type": "nonnegative mechanical energy majorant",
+      "definition": "E(0) for pulse amplitude a and housing energy ball; conserved modulo nonnegative passive dissipation",
+      "domain": "|a|<=1/25, Eh<=51/20000000",
+      "codomain": "Q nonnegative upper bound",
+      "coefficient_domain": "Q",
+      "units": "E_*",
+      "basis_orientation": "not applicable",
+      "metric_measure": "E'=-P_loss<=0",
+      "normalization": "reference pulse alpha_ref=1/10",
+      "origin": "derived",
+      "exact_expression": "E(u)<=E_max(a):=(34/5)a^2+51/20000000",
+      "source_refs": [
+        "mechanics",
+        "jointwindow"
+      ],
+      "assumption_ids": [
+        "a-mech",
+        "a-budget"
+      ]
+    },
+    {
+      "object_id": "housing-strut",
+      "symbol": "ell_ea",
+      "object_type": "length of 120 housing-anchor paths",
+      "definition": "|H_e-X_a| for each of 4 neighboring face anchors per shell edge",
+      "domain": "R^560 on all positive-member-length domain",
+      "codomain": "R>=0",
+      "coefficient_domain": "R",
+      "units": "ell0",
+      "basis_orientation": "3D Euclidean",
+      "metric_measure": "positive norm",
+      "origin": "imported",
+      "normalization": "ell0",
+      "source_refs": [
+        "mechanics"
+      ],
+      "assumption_ids": [
+        "a-mech"
+      ]
+    },
+    {
+      "object_id": "cell-gram",
+      "symbol": "G_k",
+      "object_type": "3x3 Gram of centre-to-face columns",
+      "definition": "G_k=A_k^T A_k, A_k=[X_i-C,X_j-C,X_l-C]",
+      "domain": "R^(3x3)",
+      "codomain": "symmetric 3x3",
+      "coefficient_domain": "Q(sqrt5) at reference; R along flow",
+      "units": "ell0^2",
+      "basis_orientation": "original oriented exterior triangular face",
+      "metric_measure": "Euclidean dot product; reference min eigen 1/2",
+      "normalization": "ell0^2",
+      "origin": "derived",
+      "source_refs": [
+        "nonlinear-tube"
+      ],
+      "assumption_ids": [
+        "a-mech"
+      ],
+      "exact_expression": "G0=I/2+(R^2-1/2)11^T, R²=(5+sqrt5)/8"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "mechanics",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/README.md",
+      "version_or_commit": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "§§1–4 exact passivity and 120 central strut definition",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "jointwindow",
+      "url_or_repo_path": "experiments/icosahedral-jointwindow/BUDGET.md",
+      "version_or_commit": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "qualified beta, k, g, c_f, Omega, housing weights, original Ep/40000",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "nonlinear-tube",
+      "url_or_repo_path": "experiments/icosahedral-nonlineartube/README.md",
+      "version_or_commit": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "section_or_object_id": "§§2–4 energy strain/median/Gram method and original amplitude .1 witness",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "phase-extension",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/README.md",
+      "version_or_commit": "f446e6aa456d0b256f0a590d77702001a3957bd8",
+      "section_or_object_id": "expanded Eh=3Ep/80000 development budget",
+      "source_status": "preintegration branch-only read-only assumption"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "a-mech",
+      "statement": "Unchanged passive 280-coordinate MountLoss constitutive law, Euclidean 3D lengths and 120 ideal current-axis viscous paths, all positive stiffness/masses; heat is bookkeeping and no physical time calibration.",
+      "origin": "imported"
+    },
+    {
+      "id": "a-box",
+      "statement": "Qualified property box beta[1/200,1/20], housing weight[9/10,11/10], Omega=10, primary g<=21/20, k>=19/50, passive cf>=0 and nu>=0.",
+      "origin": "imported"
+    },
+    {
+      "id": "a-budget",
+      "statement": "Initial primary at reference/rest; initial devices z=zdot=0; arbitrary housing positions/velocities of Eh<=3 Ep_ref/80000 with Ep_ref defined at original alpha=1/10.",
+      "origin": "FIT/assumed preparation"
+    },
+    {
+      "id": "a-threshold",
+      "statement": "Rational trial pulse caps 1/25 and 3/100 deliberately chosen using known original amplitude=.1 failure of unrestricted energy-only method.",
+      "origin": "FIT"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational arithmetic and positive storage",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "certify strict global strain bounds for all initial housing phases"
+    },
+    {
+      "technique": "Euclidean icosahedral incidence and face median",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "bound 120 struts against displacement of housing from moving midpoint"
+    },
+    {
+      "technique": "Gram spectral/adjoint analysis",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "positive reference eigenvalues and determinant positivity preserve signed cell volumes"
+    },
+    {
+      "technique": "ODE continuation and passivity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "strict collision-domain margin plus bounded energy gives solutions for all u>=0"
+    },
+    {
+      "technique": "integer count",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "280 coordinates,560 phase dimensions,30*4 struts,20 oriented cells"
+    },
+    {
+      "technique": "modular clocks",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no finite register or modular time"
+    },
+    {
+      "technique": "integer prime-factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no factor divisibility mechanism"
+    },
+    {
+      "technique": "homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "fixed simplicial incidence used for face median, not homology computation"
+    },
+    {
+      "technique": "fits/nulls",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "report trial alpha thresholds and original alpha=.1 energy-only failure"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "1+13*3+150+30*3=280 configuration; 2*280=560 mechanical phase; 30*4=120 struts",
+    "reduced_expression": "280 configuration,560 phase,120 struts; 20 oriented cell volumes",
+    "factor_origins": [
+      "1 scalar alpha,13 point xyz,150 device coords,30 housing xyz",
+      "one housing for each of 30 shell edges, four adjacent face anchors"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous dimensionless u=t/t0",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "q'=v, Mv'=-grad U(q)-D(q)v",
+    "initial_phase": "all 180 housing position/velocity phases inside energy ball",
+    "coupling": "reciprocal central strut losses; nonlinear length-unit directions",
+    "period_claim": null,
+    "physical_unit_map": "t0 uncalibrated"
+  },
+  "dynamics_readout": {
+    "state_space": "R^560 with heat accumulator separate",
+    "generator_or_update": "positive second-order passive ODE, energy nonincrease",
+    "initial_boundary_conditions": "alpha0 bounded by1/25 or3/100; initial primary/device at reference/rest; housing phase energy ball",
+    "conservation_and_sources": "dE/du=-P_loss<=0, total P,L incl housings conserved; energy budget independent of P,L",
+    "projection_and_kernel": "no state quotient; all 180 housing phases and all 120 struts counted; 20 centre-to-face signed volumes",
+    "physical_mapping": "no identification with spacetime; no calibrated material or clock"
+  },
+  "target_exposure": {
+    "status": "Development, not independent prediction: targets/existing failures already inspected before choosing lower rational pulse amplitudes.",
+    "known_targets": [
+      "original alpha=1/10, ringdown <=1/2 at u100, breathing >=4/5",
+      "previous alpha=0 all-time domain proof",
+      "original full-pulse energy sublevel has strut singularity witness"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "chosen sufficient trial caps |alpha0|<=1/25 and <=3/100, no universal threshold inferred",
+      "housing energy multiplier 3/2 inherited from prior development"
+    ],
+    "search_domain_and_budget": "Two rational trial amplitudes plus rational-majorant failure checks at 41/1000 and31/1000; no broad scan or empirical target fitting",
+    "selection_criterion": "exactly positive strut length margin for all time; stronger Gram positive-definite/orientation criterion",
+    "baseline": "prior exact alpha=0 housing-only and alpha=.1 short time u<=1/20 only"
+  },
+  "calculation_steps": [
+    "From E'<=0, E(0)<=34 a²/5+51/20000000 using g_i<=21/20 and positive housing initial energy.",
+    "From radial/edge/mount positive storage, bound |s_i|<sigma, |e_ij|<epsilon, |H-A|<delta with strict rational inequalities.",
+    "For a<=1/25 choose sigma=3/20,epsilon=1/4,delta=7/20; endpoint strut>(1-eps)/2-delta=1/40; median identity gives opposite strut>1/40.",
+    "For a<=3/100 choose sigma=1/9,epsilon=1/5,delta=4/15; every strut>2/15.",
+    "Gram: reference eig(1/2,1/2,(7+3sqrt5)/8), use shared energy to bound ||DeltaG||_F²<206656471/855000000<(123/250)².",
+    "Normalize Gram by G0^-1/2: relative operator norm<123/125; all eigenvalues positive, each oriented volume ratio between (2/125)^(3/2) and (248/125)^(3/2), signs preserved.",
+    "Positive member/strut length margins and bounded velocities over finite intervals exclude vector-field singularities; global solution by local ODE continuation.",
+    "Preserve original alpha=.1 energy-sublevel witness and note chosen rational-majorant failure just above trial thresholds is not a dynamical counterexample."
+  ],
+  "result": {
+    "exact_expression": "At |alpha0|<=1/25, Eh<=51/20000000: all 120 struts >1/40 for all u>=0 and global solution exists; at |alpha0|<=3/100 additionally all oriented 20 cell volumes retain reference sign, with ratio in ((2/125)^(3/2),(248/125)^(3/2)).",
+    "approximation": null,
+    "units": "dimensionless internal ell0,E_* and u; cell volume ratio dimensionless",
+    "precision_and_error": "All rational tests exact via Python fractions; reference Gram eigenvalues cross-checked symbolically over Q(sqrt5) in SymPy; no finite-precision dynamics asserted",
+    "scope": "complete nonlinear 560-dimensional passive ODE conditional on model; arbitrary housing initial phase in enlarged ball and continuous qualified property box, reduced initial heart amplitudes only",
+    "physical_interpretation": "None established; exact safety within the assumed 3D mechanical surrogate"
+  },
+  "verification": [
+    {
+      "method": "Replayed byte-identical committed script in local container",
+      "command_or_proof_path": "python /mnt/data/UD_3D_pulse_safety_20261022/replay.py --out /mnt/data/UD_3D_pulse_safety_20261022/replay_results.json",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "PASS; committed script Git blob b3f3138cd5cf3d9009c27e1ccd075ad3c4ec6f9f matches local git hash-object",
+      "review_relationship": "same-runtime constructor"
+    },
+    {
+      "method": "Separate expanded rational checker",
+      "command_or_proof_path": "python /mnt/data/UD_3D_pulse_safety_20261022/pulse_safety.py --out /mnt/data/UD_3D_pulse_safety_20261022/results.json",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "PASS exact Fraction assertions",
+      "review_relationship": "same-runtime second implementation"
+    },
+    {
+      "method": "SymPy reference Gram cross-check",
+      "command_or_proof_path": "eigenvals(I/2+(R²-1/2)*ones(3)) with R²=(5+sqrt5)/8",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "PASS eigenvalues {1/2:2,(7+3sqrt5)/8:1}",
+      "review_relationship": "same-runtime independent algebraic pathway, not independent experiment"
+    },
+    {
+      "method": "Repository integrity and unit suite",
+      "command_or_proof_path": "CI validate.py; python3 -m unittest discover -s tests -v",
+      "source_revision": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+      "actual_result": "NOT_RUN at current new head until CI completes",
+      "review_relationship": "tooling"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Original full pulse alpha=1/10 has energy-sublevel endpoint witness at beta=1/200 costing 1/(40 R²)<1/36<13/200; this refutes an unrestricted energy-only positive-domain theorem for that pulse, not actual trajectory safety.",
+    "At alpha=41/1000 and alpha=31/1000 the selected rational majorants fail; no dynamic collapse inference.",
+    "Rigidity/determinant positivity at alpha<=3/100 does not imply closeness of the mean-volume pulse RMS to original undamped response or any half-energy deadline."
+  ],
+  "limitations": [
+    "The stronger source protocol with PR44 addresses forced Green/physical readout separately; not duplicated here.",
+    "Ideal massless struts, reciprocal routing and fixed Omega=10 are assumed, not hardware tested.",
+    "No numerical/nonlinear trajectories needed for exact theorem; no independent empirical data.",
+    "No continuous uncertainty box beyond the previously qualified parameter bounds.",
+    "The signed cell-volume bounds are conservative and do not establish convexity or lack of global self-intersection.",
+    "The original alpha=.1, u100 nonlinear all-phase certificate is OPEN."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/phasewindow-20261022-gpt6-7c41/pulse-safety-002/manifest.json"
+  ],
+  "next_discriminant": "Independently review exact inequality/continuation proof and recover PR44 forced Green/alignments; then tackle original alpha=.1 pulse with time-dependent tube, rather than energy-only."
+}

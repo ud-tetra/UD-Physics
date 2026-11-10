@@ -1,0 +1,349 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "shorttube-003",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "candidate_id": "icosahedral-phasewindow-20261022",
+  "question": "Does the original alpha(0)=1/10 full nonlinear 560-phase model retain all 120 positive housing strut lengths and 20 signed cell volumes through u=2/5 for every allowed 180-dimensional housing initial phase under amplified energy budget?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FIT",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "full_phase",
+      "symbol": "(q,v)",
+      "object_type": "nonlinear 3D Newtonian state",
+      "definition": "280 positions (alpha, 13*3 primary, 150 relative devices, 30*3 housing), 280 velocities; separate heat accumulator",
+      "domain": "R^560 on positive length domain",
+      "codomain": "R^560",
+      "coefficient_domain": "R with Q(sqrt5) reference and rational bounds",
+      "units": "normalized ell0, E*, u",
+      "basis_orientation": "13 points and 30 housing points in fixed Cartesian right-handed 3D reference; 20 oriented tetrahedral cells",
+      "metric_measure": "positive diagonal mass M and positive elastic storage U; no quotient of rigid energy",
+      "origin": "imported",
+      "exact_expression": "2*(1+13*3+150+30*3)=560",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "ell0=1,u=t/t0"
+    },
+    {
+      "object_id": "housing_energy",
+      "symbol": "E_h",
+      "object_type": "nonnegative initial housing displacement/velocity energy",
+      "definition": "all 90 housing position and 90 housing velocity phase components",
+      "domain": "R>=0",
+      "codomain": null,
+      "coefficient_domain": "Q",
+      "units": "E*",
+      "basis_orientation": "housing Cartesian positions and velocities",
+      "metric_measure": "positive house mass/mount k_h=100 m_h",
+      "origin": "fitted original allowance x3/2",
+      "exact_expression": "0<=E_h<=51/20000000",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S4"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [],
+      "normalization": "reference Ep at alpha0=1/10"
+    },
+    {
+      "object_id": "damping",
+      "symbol": "nu",
+      "object_type": "dimensionless current-axis loss coefficient",
+      "definition": "eta/m_he = nu/w_e for each housing; 4 paths/housing",
+      "domain": "[0,1/20]",
+      "codomain": null,
+      "coefficient_domain": "Q/R",
+      "units": "dimensionless",
+      "basis_orientation": "current axis n_ea and relative velocity rate",
+      "metric_measure": "Rayleigh dissipation; nonnegative power",
+      "origin": "assumed existing",
+      "exact_expression": "eta/m_he=nu/w_e<=1/18",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "Omega=10"
+    },
+    {
+      "object_id": "strut_readout",
+      "symbol": "ell_ea(u)",
+      "object_type": "positive housing-anchor Euclidean length",
+      "definition": "|H_e(u)-X_a(u)| for 4 anchors of each of 30 housings",
+      "domain": "[0,2/5]",
+      "codomain": "R>0",
+      "coefficient_domain": "R",
+      "units": "ell0",
+      "basis_orientation": "Euclidean 3D orientation, unit n_ea",
+      "metric_measure": "ordinary 3D distance",
+      "origin": "derived",
+      "exact_expression": "ell_ea(u)>13/1500 for 0<=u<=2/5",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S1",
+        "S2"
+      ],
+      "assumption_ids": [
+        "A1",
+        "A2"
+      ],
+      "dependency_ids": [
+        "full_phase"
+      ],
+      "normalization": "outer edge a=1"
+    },
+    {
+      "object_id": "volume",
+      "symbol": "V_k(u)/V_k(0)",
+      "object_type": "oriented tetrahedral cell determinant ratio",
+      "definition": "signed determinant of 3 centre-to-corner vectors normalized by reference",
+      "domain": "[0,2/5]",
+      "codomain": "R>0",
+      "coefficient_domain": "R and Q(sqrt5) reference",
+      "units": "dimensionless",
+      "basis_orientation": "same ordered oriented face as reference",
+      "metric_measure": "Euclidean determinant in positively oriented 3D frame",
+      "origin": "derived",
+      "exact_expression": "1/125 < V_k(u)/V_k(0) < 729/125",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "S3"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "full_phase"
+      ],
+      "normalization": "V_k(0)>0"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "url_or_repo_path": "experiments/icosahedral-mountloss/mountloss.py",
+      "version_or_commit": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+      "section_or_object_id": "exact reciprocal current-axis housing ODE; blob aa4ad28348e22733340aad0cde6ae33a633f0b75",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "S2",
+      "url_or_repo_path": "experiments/icosahedral-tolerances/hardware.py",
+      "version_or_commit": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+      "section_or_object_id": "housing masses and midpoint harmonic mounts; blob 663ee8cd3a059920e3463fd33307d4908f6743d2",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "S3",
+      "url_or_repo_path": "experiments/icosahedral-nonlineartube/README.md",
+      "version_or_commit": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+      "section_or_object_id": "older u<=1/20 all-phase full pulse bound and energy-sublevel obstruction; blob ca0a55860add62963c43bafc5c400f2784aa045d",
+      "source_status": "integrated read-only"
+    },
+    {
+      "source_id": "S4",
+      "url_or_repo_path": "experiments/icosahedral-phasewindow-20261022/PULSE_SAFETY.md",
+      "version_or_commit": "0391afb4617db89690a5eaee9b5fc6c0ae3c9b70",
+      "section_or_object_id": "enlarged housing energy budget; small pulse all-time theorem; blob verified branch",
+      "source_status": "integrated read-only"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "statement": "Unchanged passive reciprocal MountLoss ODE, positive energy, and qualified property box; all material coefficients in existing positive ranges, Omega=10, nu<=.05, cf>=0, struts smooth away from zero length",
+      "origin": "imported"
+    },
+    {
+      "id": "A2",
+      "statement": "Original alpha0=.1 pulse with every primary/device position at reference and zero velocities, arbitrary 180 housing initial phases satisfying enlarged E_h<=3Ep_ref/80000",
+      "origin": "development FIT"
+    },
+    {
+      "id": "A3",
+      "statement": "Horizon T=2/5 selected from the derived sufficient polynomial after seeing old u<=1/20 limit; not an observed threshold",
+      "origin": "target-exposed FIT"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "rational arithmetic and energy",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "velocity, mount displacement, damping acceleration bounds verified by fractions"
+    },
+    {
+      "technique": "Duhamel and scalar oscillator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "time-distributed response of forced housing with unchanged moving anchors and dampers"
+    },
+    {
+      "technique": "locality and geometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "triangle inequality bounds all 120 struts without freezing shell or housing"
+    },
+    {
+      "technique": "spectral/Gram orientation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "sigma_min reference 3x3 cell matrix, singular-value perturbation, oriented determinants"
+    },
+    {
+      "technique": "ODE continuation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "excludes first finite-time singularity prior to u=2/5"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no divisibility problem"
+    },
+    {
+      "technique": "modular clock",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous uncalibrated Newtonian time; no modular register"
+    },
+    {
+      "technique": "chain topology/homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "orientation/metric determinant, not boundary rank/torsion"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "1 + 13*3+150+30*3=280 configurations, 2*280=560 phase, 30*4=120 struts, 2*(30*3)=180 housing initial phase",
+    "reduced_expression": "280/560/120/180",
+    "factor_origins": [
+      "13 primary points from icosahedral shell with centre",
+      "30 exterior edges each carrying one housing and four anchors",
+      "150 auxiliary device coordinates"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous u=t/t0",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "M q'' + ∇U(q)+D(q)q'=0; heat'=-E' ",
+    "initial_phase": "alpha=.1 and full 180 phase housing energy ball",
+    "coupling": "housing mounts Ω=10 and current-axis central loss, reciprocal primary reactions",
+    "period_claim": null,
+    "physical_unit_map": "uncalibrated t0"
+  },
+  "dynamics_readout": {
+    "state_space": "full R^560 mechanics plus heat accumulator, positive member/strut length domain",
+    "generator_or_update": "passive nonlinear MountLoss q'=v and mass-normalized force law",
+    "initial_boundary_conditions": "alpha0=1/10, reference primary/device state, arbitrary housing initial energy phase <=51/20000000",
+    "conservation_and_sources": "E'=-P_loss<=0; total spatial P,L conserved including housings; rigid energy not discarded",
+    "projection_and_kernel": "direct housing lengths and oriented cell determinants; no quotient, no frozen points, no first-order-only readout",
+    "physical_mapping": "none; ideal mechanical surrogate in internal units"
+  },
+  "target_exposure": {
+    "status": "Development after all original pulse and energy budgets exposed; rational T=2/5 selected by checking sufficient inequality; no empirical data",
+    "known_targets": [
+      "Original alpha0=1/10; previously certified through u=1/20",
+      "All 180 allowed housing initial phases; all120 positive struts and20 oriented cells",
+      "Future u=100 nonlinear coherence remains open"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Time horizon 2/5 chosen as rational proof margin, not selected to fit measured outputs",
+      "Existing nu upper1/20 and energy increase 3/2 inherited without retuning"
+    ],
+    "search_domain_and_budget": "One conservative closed-form majorant based on |sin x|<=min(|x|,1); tested horizon 2/5 with exact fractions; no broad automated search",
+    "selection_criterion": "Positive lower bound on all housing-anchor lengths and cell invertibility uniformly for u<=T",
+    "baseline": "Inherited exact u<=1/20 full pulse tube with original housing energy; previous alpha=.1 all-time energy-only failure"
+  },
+  "calculation_steps": [
+    "Define E <= (34/5)(1/10)^2 +51/20000000=1360051/20000000 and derive point speed, initial housing offset/speed, and damping acceleration bound94/45.",
+    "Use exact midpoint-mounted housing oscillator H''+100H=100A - (eta/mh) sum n r and Duhamel integral.",
+    "Apply |sin 10τ|<=min(10τ,1) and |A(s)-A0|<(2/5)s; integrate piecewise through τ=1/10.",
+    "For u∈[1/10,2/5] derive min strut length >1/2 -(7/900+92u/225+2u²), strictly >13/1500 at u=2/5.",
+    "For u∈[0,1/10] bound via short polynomial; match at 1/10 with 647/1500.",
+    "Point-position estimate gives ||A_cell,ref^-1 ΔA_cell||<2u<=4/5; preserve orientation and normalized volume ratios between1/125 and729/125.",
+    "Bootstrap first singularity and apply finite-dimensional smooth ODE continuation.",
+    "Preserve energy-only endpoint-collapse witness and all remaining u100 goals as OPEN.",
+    "CORRECTION: at u=0 normalized volume and both time-dependent bounds equal 1; use weak inequalities for 0<=u<=2/5 and strict fixed bounds 1/125<Vratio<729/125 on the entire interval. New corrected source captured in shorttube-004."
+  ],
+  "result": {
+    "exact_expression": "For all qualified 3D trajectories, all 120 housing struts >13/1500 and every cell 1/125<V_k(u)/V_k(0)<729/125 on 0<=u<=2/5, including every initial housing phase at E_h<=51/20000000.",
+    "approximation": {
+      "T": 0.4,
+      "min_strut_at_T": 0.008666666666666666,
+      "relative_to_previous_T": 8
+    },
+    "units": "dimensionless u; strut in ell0, volume ratio unitless",
+    "precision_and_error": "All asserted inequalities use Python Fraction; second same-runtime SymPy symbolic Duhamel/Gram check; no floating ODE error or interval integration is claimed",
+    "scope": "EXACT / CONDITIONAL finite-horizon nonlinear safety, not full-u100 coherence or physical validation",
+    "physical_interpretation": "No physical identification; ideal damping/strut surrogate only"
+  },
+  "verification": [
+    {
+      "method": "Exact Fraction full-source checks",
+      "command_or_proof_path": "python3 shorttube.py --out result.json",
+      "source_revision": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+      "actual_result": "PASS in local runtime",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "SymPy independent integral formulation",
+      "command_or_proof_path": "python3 independent_check.py",
+      "source_revision": "7ae79d882e44446c7b4aefd4fdbe9ee781b9bafe",
+      "actual_result": "PASS in same runtime; separate implementation not independent review",
+      "review_relationship": "constructor cross-check"
+    },
+    {
+      "method": "Source SHA-1 Git blob byte equality",
+      "command_or_proof_path": "GitHub fetch_file of code/proof/result at research branch vs local git hash",
+      "source_revision": "0391afb4617db89690a5eaee9b5fc6c0ae3c9b70",
+      "actual_result": "PASS, all four source/capture files matched expected local Git blob SHA-1; manifest stores separate SHA-256",
+      "review_relationship": "byte audit"
+    },
+    {
+      "method": "Repository scripts/validate.py and tests",
+      "command_or_proof_path": "GitHub Actions PR45 merge-head once new commit triggers",
+      "source_revision": null,
+      "actual_result": "NOT_RUN at receipt creation; check after commit",
+      "review_relationship": "integrity only"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Original full amplitude alpha0=.1 energy-only all-time argument fails due to low-beta endpoint collapse configuration with U=1/(40 R²)<13/200, not proven reachable.",
+    "This new all-phase length/volume proof expires at u=2/5; it does not imply u=100 safety or breathing retention.",
+    "Full forced Green, nonlinear remainder, alignment and reference defect are owned by separate PR44 and remain unvalidated."
+  ],
+  "limitations": [
+    "Enlarged housing phase budget is prior development FIT; original physical applicability unknown.",
+    "Sufficient constants are conservative, especially 1/125–729/125 volume range.",
+    "This finite-horizon proof does not bound time-integrated readout RMS or half-energy ringdown.",
+    "Only a mechanical surrogate with ideal current-axis massless struts, uncalibrated time and energy, hardware UNSCORED.",
+    "The same runtime's algebra checks are not independent physics experiments."
+  ],
+  "changed_dependencies": [
+    "Versioned mathematical notation correction SHORTTUBE_ERRATUM.md; u=0 forces weak time-dependent displacement/volume enclosures; captured original shorttube-003 not edited."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/phasewindow-20261022-gpt6-7c41/shorttube-003/manifest.json",
+    "artifacts/phasewindow-20261022-gpt6-7c41/shorttube-004/manifest.json"
+  ],
+  "next_discriminant": "Validate full560 forced Green and alignment nonlinear tube at original alpha=.1 without modifying PR44; certify strictly larger horizon or u100 coherent readout by controlled local recurrence; check source replay and independent review."
+}

@@ -1,0 +1,133 @@
+{
+  "record_type": "discovery_result",
+  "schema_version": 1,
+  "calculation_id": "projected-adjoint-015",
+  "status": "NUMERICAL_DEVELOPMENT_NOT_CERTIFIED",
+  "source_case_id": "edge-p1-b0.005-cf0.0",
+  "source_coeff_sha256": "8c4d98b69171792190178b12b10a0648ca69aa545a750d3836963747015e98fd",
+  "parameters": {
+    "alpha0": 0.1,
+    "nu": 0.05,
+    "beta": 0.005,
+    "cf": 0,
+    "Eh": 0.000002430311755526067,
+    "u_horizon": 100
+  },
+  "dimensions": {
+    "mechanical_phase": 560,
+    "initial_housing_phase": 180,
+    "nonaffine_output": 24
+  },
+  "method": "24-output full560 sparse adjoint from selected target times to0, max singular value on24x180 map",
+  "selected_time_rows": [
+    {
+      "u": 1,
+      "sampled_linear_triangle_bound": 0.00020283092189825723,
+      "all180_phase_initial_contribution": 0.00004591039697871949
+    },
+    {
+      "u": 2,
+      "sampled_linear_triangle_bound": 0.00015103286648586632,
+      "all180_phase_initial_contribution": 0.000041864933938821906
+    },
+    {
+      "u": 3,
+      "sampled_linear_triangle_bound": 0.00018245101286353156,
+      "all180_phase_initial_contribution": 0.00005933952073335667
+    },
+    {
+      "u": 4,
+      "sampled_linear_triangle_bound": 0.00043566468926851335,
+      "all180_phase_initial_contribution": 0.00006505854181835997
+    },
+    {
+      "u": 5,
+      "sampled_linear_triangle_bound": 0.0001773250751279682,
+      "all180_phase_initial_contribution": 0.000052938981931050095
+    },
+    {
+      "u": 6,
+      "sampled_linear_triangle_bound": 0.0002731212280765342,
+      "all180_phase_initial_contribution": 0.00006339828746670793
+    },
+    {
+      "u": 8,
+      "sampled_linear_triangle_bound": 0.00013363665660002524,
+      "all180_phase_initial_contribution": 0.00004944070886645114
+    },
+    {
+      "u": 10,
+      "sampled_linear_triangle_bound": 0.00028638654734272357,
+      "all180_phase_initial_contribution": 0.00003688903132396099
+    },
+    {
+      "u": 20,
+      "sampled_linear_triangle_bound": 0.0003672789421692476,
+      "all180_phase_initial_contribution": 0.00002403476362721994
+    },
+    {
+      "u": 40,
+      "sampled_linear_triangle_bound": 0.00009844239029491109,
+      "all180_phase_initial_contribution": 0.00001524410152904778
+    },
+    {
+      "u": 70,
+      "sampled_linear_triangle_bound": 0.00033044025336411277,
+      "all180_phase_initial_contribution": 0.000007977403847838144
+    },
+    {
+      "u": 100,
+      "sampled_linear_triangle_bound": 0.0001728614707534111,
+      "all180_phase_initial_contribution": 0.0000043204650330680075
+    }
+  ],
+  "postexposure_u_near4": [
+    3.25,
+    3.5,
+    3.75,
+    4,
+    4.25,
+    4.5,
+    4.75
+  ],
+  "maximum_sampled_triangle": 0.00043566468926851335,
+  "at_u": 4,
+  "pointwise_combined_firstorder_optimum_u4": 0.0004049292549756757,
+  "refined_u100_triangle": 0.0001728615569899642,
+  "finite_selected_SVD_phase": {
+    "max_Z": 0.0003805824862601185,
+    "full_remainder": 1.6826487408475257e-8,
+    "half_remainder": 4.206228292049427e-9,
+    "half_full_remainder_ratio": 0.24997661068172852,
+    "minimum_strut": 0.4913436742836597,
+    "energy_balance_relative": 5.238042971206334e-11
+  },
+  "finite_selected_combined_optimizing_phase": {
+    "Z_u4": 0.0004049295658472044,
+    "firstorder_prediction_u4": 0.0004049292549756757,
+    "vector_remainder_u4": 2.376474387720263e-9
+  },
+  "verification": {
+    "sparse_JVP_error_about": 2.13e-13,
+    "adjoint_forward_u4_rel_error": 1.8765158873556587e-8,
+    "adjoint_forward_u100_rel_error": 0.0000618145575480983,
+    "adjoint_forward_u100_abs_error": 1.5882350742186212e-8,
+    "full_u100_numerical_error_interval_proof": false
+  },
+  "target_exposure": "12 selected times and seven postexposure near u4; archived case and u100 original target exposed; no heldout claim",
+  "limitations": [
+    "Not continuous-time upper bound",
+    "One archived tolerance coefficient set only",
+    "Selected finite nonlinear phases only; uniform remainder missing",
+    "Fixed numerical solver tolerance not validated interval integration",
+    "Full nonlinear u100 phase ball, physical identification and calibration open"
+  ],
+  "reproduction": {
+    "archive": "UD_3D_Full180_Projected_Adjoint_015_20261023.zip",
+    "zip_sha256": "8a270616332dd8860fff1ba9e807dcdb94344651a40c1bf9ec0eb59a90911342",
+    "local_inputs": 12,
+    "local_outputs": 33,
+    "local_hash_verified": true,
+    "github_complete_capture": false
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "all_time_strut_bound": "37/80",
+  "anchors_checked": 120,
+  "edges": 30,
+  "energy_identity": true,
+  "exact_geometry": true,
+  "faces": 20,
+  "spokes": 12,
+  "status": "PASS"
+}

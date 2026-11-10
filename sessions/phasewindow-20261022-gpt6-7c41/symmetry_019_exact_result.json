@@ -1,0 +1,31 @@
+{
+  "R2": "(5+sqrt(5))/8",
+  "all_strut_length_lower_strict": "37/80",
+  "b_lower_strict": "37/40",
+  "b_upper_strict": "43/40",
+  "configuration_submanifold": "alpha, b, c with centre=0, X_i=b*v_i, housing H_e=c*(v_i+v_j)/2, z_pairs=0",
+  "endpoint_distance_squared": "m2*(c-b)^2+b^2/4",
+  "evidence": "EXACT / CONDITIONAL",
+  "housing_budget": "51/20000000",
+  "housing_phase_constraint": "all 30 housing displacements and velocities follow the single radial midpoint scaling, with total housing energy <= 51/20000000",
+  "initial_pulse_energy": "13/200",
+  "m2": "(3+sqrt(5))/8",
+  "opposite_distance_squared": "m2*b^2+m2*(c-b*(R2-1/2)/m2)^2",
+  "positive_cell_orientation": "all 20, all u>=0 within icosahedrally symmetric invariant family",
+  "primary_radial_energy_lower_coefficient": "162/13",
+  "result_scope": "all-time strut and volume positivity in symmetric 3-coordinate submanifold; NOT arbitrary 180-phase or scattered materials; no u100 coherence/ringdown",
+  "status": "PASS",
+  "total_energy_ceiling": "1300051/20000000",
+  "uniform_assumptions": {
+    "beta": "positive (qualified [1/200,1/20])",
+    "cf": "nonnegative",
+    "housing_weights": "1",
+    "nu": "nonnegative (qualified [1/25,1/20])",
+    "primary_g": "1",
+    "primary_k": "2/5",
+    "primary_m": "1",
+    "ratio_gains": "1"
+  },
+  "volume_ratio_lower_strict": "50653/64000",
+  "volume_ratio_upper_strict": "79507/64000"
+}

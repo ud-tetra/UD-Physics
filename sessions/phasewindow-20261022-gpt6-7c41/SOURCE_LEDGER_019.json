@@ -1,0 +1,16 @@
+{
+  "local_full_state_constructor": "nonaffine_audit.py imported byte-identical from checkpoint011 (local source reimplementation; not a GitHub source module)",
+  "local_full_state_source_sha256": "c1d168e43ec36a49027f8eed50a251e3ab15a590dee4373c1f5d54b81a8b0e00",
+  "model_source_blobs": {
+    "damping.py": "fbb81690ce70f2ec5b5602f2f7d467bdebd40c27",
+    "hardware.py": "663ee8cd3a059920e3463fd33307d4908f6743d2",
+    "model.py": "c480411dea76a32b0703651744fd66549fc7df4e",
+    "mountloss.py": "aa4ad28348e22733340aad0cde6ae33a633f0b75",
+    "network.py": "010629e4239c012048ff3cf49196099e3502eb4f"
+  },
+  "model_sources_verified_at_revision": true,
+  "previous_readonly_checkpoint": "strut-convex-018",
+  "read_only_source_revision": "a7c6b123c144d37fb7a3fcefed36a3ff764af027",
+  "repository": "ud-tetra/UD-Physics",
+  "scope": "3-coordinate invariant family, 2 housing initial scalars; original 180-phase problem OPEN"
+}

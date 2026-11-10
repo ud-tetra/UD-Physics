@@ -1,0 +1,48 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "run_id": "affine-barrier-010",
+  "created_at": "2026-10-23T04:37:00Z",
+  "evidence": "EXACT",
+  "summary": "Genuine full 12-vertex rank3 shell: any flattened cell with U<=1360051/20000000 requires non-affine Frobenius projection >1/40. Structural barrier is necessary only, not full global flat-energy lower bound.",
+  "command": "Local EXECUTED: python3 affine_barrier.py --out result.json; python3 whole_shell_nonaffine.py --out whole_shell_result.json; OPENBLAS_NUM_THREADS=1 python3 independent_check.py --out independent_result.json. Compact GitHub source nonaffine_certificate.py reproduces same symbolic/rational identities but has NOT_RUN in branch checkout.",
+  "command_execution": "Locally executed original full exact sources; compact repository script NOT_RUN in an authenticated checkout; GitHub CI tooling separate.",
+  "source": {
+    "revision": "0a058176d9dd079b6aad8fa530cd8093f1fcf43c",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "nonaffine_certificate.py",
+      "path": "inputs/001-nonaffine_certificate.py",
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-phasewindow-20261022/nonaffine_certificate.py",
+      "sha256": "111a12060d3135541920678c4eb775f723301cb9fea0640ee61745512bf5c2db",
+      "size_bytes": 3515
+    }
+  ],
+  "files": [
+    {
+      "path": "files/001-NONAFFINE_THRESHOLD.md",
+      "sha256": "60b1a6e3b8846dc8bcdce1a8adb12fffc6c20930b42e5f8a7bb9cde7e9247aee",
+      "size_bytes": 10625
+    },
+    {
+      "path": "files/002-nonaffine_result.json",
+      "sha256": "b273f69ffe453443a9ac1c06873736b6f344357e12500bb8119b6367bd4bb3dd",
+      "size_bytes": 865
+    },
+    {
+      "path": "files/003-nonaffine_threshold_receipt.json",
+      "sha256": "ce6698a55256a83282aafa640ac9f846a6466adc00c776517f732f3934ba60d6",
+      "size_bytes": 8171
+    },
+    {
+      "path": "files/004-NONAFFINE_CHECKPOINT.md",
+      "sha256": "cd8c433f7e00f2284ae6ad8282a6b4ce8ec7b67aed039788662d3879e0e5576a",
+      "size_bytes": 2866
+    }
+  ]
+}

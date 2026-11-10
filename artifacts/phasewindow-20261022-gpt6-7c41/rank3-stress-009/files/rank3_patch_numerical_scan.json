@@ -1,0 +1,66 @@
+{
+  "record_type": "numeric_patch_scan_summary",
+  "status": "NUMERICAL_DEVELOPMENT_NOT_GLOBAL",
+  "source_main": "bbf7b9ec09a86378f6503c16460771a033e48593",
+  "method": "SLSQP analytic gradients, one face det=0; only induced spring terms plus alpha; same model g=19/20,k=19/50",
+  "target_exposure": "Original 0.06800255 threshold known; subsets/starts selected adaptively; no heldout data.",
+  "initial_nine": {
+    "subsets": 84,
+    "starts_per_subset": 7,
+    "apparent_above_threshold": 8
+  },
+  "targeted_nine": {
+    "subsets": 5,
+    "starts_per_subset": 80,
+    "all_five_found_lower_minima": true,
+    "example_omitted": [
+      7,
+      9,
+      11
+    ],
+    "initial_apparent_energy": 0.08855284181469228,
+    "revised_observed": 0.05533492363996024
+  },
+  "ten": {
+    "subsets": 36,
+    "starts_per_subset": 10,
+    "additional_targeted_starts": [
+      55,
+      200
+    ],
+    "example_selected_10_patch_observed": 0.07037374751071512,
+    "not_global": true
+  },
+  "eleven": {
+    "subsets": 9,
+    "starts_per_subset": 60,
+    "smallest_observed": 0.07608685923862497,
+    "not_global": true
+  },
+  "full_twelve_previous": {
+    "starts": 72,
+    "best_observed": 0.12442609483988352,
+    "not_global": true
+  },
+  "exact_partial_witness": {
+    "kept": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "included_edges": 18,
+    "flat_rank": 2,
+    "whole_rank": 3,
+    "upper_energy_strict": "1/20"
+  },
+  "limitations": [
+    "Numerical restart minima are upper bounds on subproblem infima, never lower bounds.",
+    "Patch costs omit positive springs; no full twelve-vertex E<0.06800255 witness follows."
+  ]
+}

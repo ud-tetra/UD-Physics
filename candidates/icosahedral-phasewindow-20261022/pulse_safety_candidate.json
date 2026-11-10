@@ -1,0 +1,46 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-pulse-safety",
+  "session_id": "phasewindow-20261022-gpt6-7c41",
+  "question": "What full nonlinear all-phase positive-length and oriented-volume guarantees follow from total passive energy when heart-pulse amplitude is reduced but housing-phase budget remains enlarged?",
+  "status": "DEVELOPMENT_EXACT_CONDITIONAL",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "FIT",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Unchanged positive-energy 280-configuration MountLoss 3D ODE, 120 central massless viscous housing-anchor links, all reactions and phase modes retained",
+    "Qualified continuous property box beta[.005,.05],Omega10,housing weights[.9,1.1],k>=19/50,g<=21/20; cf,nu nonnegative",
+    "Initial primary at reference/rest, auxiliary z=zdot=0; arbitrary housing phase Eh<=3Ep_ref/80000 with original reference alpha_ref=1/10",
+    "Trial reduced amplitudes |alpha0|<=1/25 and <=3/100, selected after known original alpha=.1 global energy-method obstruction"
+  ],
+  "physical_mapping": "No physical material or clock calibration; conditional theorem for idealized passive 3D mechanical surrogate, not source-derived physical law.",
+  "target_exposure": "Both rational trial amplitudes are target-informed sufficient-bound choices; original 0.1 pulse, previous failures, damping candidates and all linear-model development cases previously exposed. No new independent validation.",
+  "fitted_choices": [
+    "Rational sufficient amplitude caps 1/25 and3/100",
+    "Previously selected 1.5x initial housing-energy budget preserved, not refitted"
+  ],
+  "sources": [
+    {
+      "path": "experiments/icosahedral-mountloss/README.md",
+      "revision": "ce89a9cd15439463d9a64d983d91c22ea4368726"
+    },
+    {
+      "path": "experiments/icosahedral-nonlineartube/README.md",
+      "revision": "ce89a9cd15439463d9a64d983d91c22ea4368726"
+    },
+    {
+      "path": "experiments/icosahedral-jointwindow/BUDGET.md",
+      "revision": "ce89a9cd15439463d9a64d983d91c22ea4368726"
+    }
+  ],
+  "baseline": "Prior housing-only alpha0 global noncollapse at original smaller Eh, original alpha=.1 full-pulse short-time tube only; energy witness excludes unrestricted energy-only global certificate at alpha=.1.",
+  "result": "EXACT/CONDITIONAL full nonlinear all-phase global solution and 120 strut length>1/40 for |alpha0|<=1/25 at Eh<=51/20000000. For |alpha0|<=3/100 additionally 20 oriented cell volumes remain positive; all struts>2/15 and V/Vref in ((2/125)^(3/2),(248/125)^(3/2)). These do not assert ringdown or breathing thresholds.",
+  "next_discriminant": "Review exact proof; recover validated forced Green and nonlinear frame-aware tube for original alpha=.1 while avoiding overlap with PR44; no claim of physical 4D or mainline promotion.",
+  "mathematical_receipts": [
+    "sessions/phasewindow-20261022-gpt6-7c41/pulse_safety_receipt.json"
+  ]
+}

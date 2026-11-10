@@ -1,0 +1,131 @@
+{
+  "record_type": "ud_discovery_calculation",
+  "calculation_id": "phasewindow-amplification-001",
+  "source_main_ref": "ce89a9cd15439463d9a64d983d91c22ea4368726",
+  "source_files": [
+    {
+      "path": "artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/linear.csv",
+      "sha256": "971a8dc46bc42fc9b246ef7c20b13b9f3651d29d4704e111fa402f9e2edaf3e5"
+    },
+    {
+      "path": "artifacts/icosahedral-jointwindow-20261022-a1/jointwindow-001/files/full_housing_refined.json",
+      "sha256": "d3fc9c63f21811b65e3d0bed04063d8f4725eaab01970602e560876ccc569427"
+    }
+  ],
+  "target_exposure": "Development/FIT: inherited nu range, old nine adaptively selected nodes, original 50 parameter cases and design screens; no newly held-out data; factor 3/2 intentionally chosen for a demonstrable margin.",
+  "method": "Read 450 stored linear node rows. For each parameter case/node compute r=(Rp-sqrt(3/2)*delta-(4/5)*R0)/L; take minimum over 50 cases at each nu. Check overlap of intervals [nu-r,nu+r]. Combine with separately established full-180-phase energy fraction bound, amplitude-independent in the linear model.",
+  "housing_initial_energy_Eh_over_Ep": "3/80000",
+  "energy_multiplier": 1.5,
+  "nu_range": [
+    0.04,
+    0.05
+  ],
+  "cases_count": 50,
+  "source_rows": 450,
+  "nodes_count": 9,
+  "all_phase_dim": 180,
+  "full_housing_linear_energy_max_upper": 0.4566660701874066,
+  "full_housing_linear_ringdown_screen": 0.5,
+  "all_phase_linear_breathing_screen": 0.8,
+  "minimum_adjacent_coverage_overlap": 0.0003100046982429448,
+  "strength_neighborhoods": [
+    {
+      "nu": 0.04,
+      "minimum_breathing_radius": 0.001189480339137828,
+      "limiter": "seed10422-0-boundary2",
+      "Rp": 0.021541711923270077,
+      "R0": 0.024421500202858295,
+      "delta": 0.0010950793564836053,
+      "L": 0.5576543920382374
+    },
+    {
+      "nu": 0.04117675473654193,
+      "minimum_breathing_radius": 0.001141532319128309,
+      "limiter": "seed10422-0-boundary2",
+      "Rp": 0.021514641201596543,
+      "R0": 0.024421500202858295,
+      "delta": 0.0010950793564836053,
+      "L": 0.5573632940814645
+    },
+    {
+      "nu": 0.04242639498275245,
+      "minimum_breathing_radius": 0.0010908292307187624,
+      "limiter": "seed10422-0-boundary2",
+      "Rp": 0.021486045772186827,
+      "R0": 0.024421500202858295,
+      "delta": 0.0010950793564836053,
+      "L": 0.5570558316260938
+    },
+    {
+      "nu": 0.04367603522896297,
+      "minimum_breathing_radius": 0.0010403463178309616,
+      "limiter": "seed10422-0-boundary2",
+      "Rp": 0.021457605850651755,
+      "R0": 0.024421500202858295,
+      "delta": 0.0010950793564836053,
+      "L": 0.5567500483422027
+    },
+    {
+      "nu": 0.045,
+      "minimum_breathing_radius": 0.0009870999151853337,
+      "limiter": "seed10422-0-boundary2",
+      "Rp": 0.021427642892103298,
+      "R0": 0.024421500202858295,
+      "delta": 0.0010950793564836053,
+      "L": 0.5564278709247363
+    },
+    {
+      "nu": 0.04618208261361921,
+      "minimum_breathing_radius": 0.0009397665016487014,
+      "limiter": "seed10422-0-boundary2",
+      "Rp": 0.021401036371247295,
+      "R0": 0.024421500202858295,
+      "delta": 0.0010950793564836053,
+      "L": 0.556141746299372
+    },
+    {
+      "nu": 0.04743177684220563,
+      "minimum_breathing_radius": 0.0008899369513720703,
+      "limiter": "seed10422-0-boundary2",
+      "Rp": 0.021373056247168766,
+      "R0": 0.024421500202858295,
+      "delta": 0.0010950793564836053,
+      "L": 0.5558407913047982
+    },
+    {
+      "nu": 0.04868147107079204,
+      "minimum_breathing_radius": 0.0008403234358889582,
+      "limiter": "seed10422-0-boundary2",
+      "Rp": 0.02134522743257971,
+      "R0": 0.024421500202858295,
+      "delta": 0.0010950793564836053,
+      "L": 0.555541384108991
+    },
+    {
+      "nu": 0.05,
+      "minimum_breathing_radius": 0.0007882101915619467,
+      "limiter": "seed10422-0-boundary2",
+      "Rp": 0.02131602867115471,
+      "R0": 0.024421500202858295,
+      "delta": 0.0010950793564836053,
+      "L": 0.5552271309518837
+    }
+  ],
+  "outcome": "NUMERICAL: continuous nu interval covered for the 50 exposed parameter sets; all 180 initial phase directions in the linearized model. No fully nonlinear pulse or uncertainty-box guarantee.",
+  "exact_housing_only_addendum": {
+    "assumed_housing_energy_max": "51/20000000",
+    "strut_length_lower_bound": "554/1125",
+    "orientation_volume_ratio_bounds": [
+      "(19/20)^(3/2)",
+      "(21/20)^(3/2)"
+    ],
+    "scope": "All time, housing-only alpha=0, all phases, qualified property box, passivity, positive strut domain."
+  },
+  "limitations": [
+    "Full numerical source inputs are from already integrated development data, not independent validation.",
+    "Source floating bounds do not constitute interval-arithmetic certificates.",
+    "Finite family of 50 property sets only; no continuous multidimensional property uncertainty-box bound.",
+    "Full alpha=0.1 pulse, all-housing-phase nonlinear u100 guarantee remains OPEN.",
+    "Native UD constitutive selection and physical calibration remain OPEN."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "source_revision": "1b214f66e00e8430fed0ce7c23506da7965bc977",
+  "provenance": "constructive rationalization of target-exposed four-dimensional Gram relaxation optimizer; not a 3D witness",
+  "full_dimension": 4,
+  "icosahedron_graph_order": "canonical sorted sign-phi points as in prior barrier_audit.py",
+  "face_indices": [
+    0,
+    1,
+    2
+  ],
+  "dependent_face_vertex_index": 2,
+  "independent_vertex_numerators": [
+    [
+      -4360,
+      7074,
+      2591,
+      2979
+    ],
+    [
+      1558,
+      -4112,
+      4815,
+      6501
+    ],
+    [
+      2054,
+      3357,
+      -1670,
+      8465
+    ],
+    [
+      -8163,
+      -1316,
+      -878,
+      4588
+    ],
+    [
+      -5217,
+      -3402,
+      7168,
+      -355
+    ],
+    [
+      -3621,
+      4704,
+      -7061,
+      2255
+    ],
+    [
+      -6677,
+      390,
+      1438,
+      6611
+    ],
+    [
+      -544,
+      -6719,
+      2256,
+      6288
+    ],
+    [
+      -2625,
+      8502,
+      2136,
+      2546
+    ],
+    [
+      -27,
+      2205,
+      -1417,
+      9133
+    ],
+    [
+      1125,
+      1560,
+      7609,
+      5365
+    ]
+  ],
+  "coordinate_denominator": 10000,
+  "dependent_coefficients_numerators": [
+    7811,
+    7764
+  ],
+  "dependent_coefficients_denominator": 10000,
+  "alpha_numerator": -27,
+  "alpha_denominator": 10000,
+  "spoke_strength": "19/20",
+  "edge_strength": "19/50"
+}
