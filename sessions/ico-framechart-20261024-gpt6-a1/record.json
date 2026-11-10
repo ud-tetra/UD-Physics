@@ -1,0 +1,51 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ico-framechart-20261024-gpt6-a1",
+  "runtime": "GPT-6; authenticated GitHub connector isolated branch, local Python3 NumPy, Fraction exact proof checks; not complete authenticated git clone",
+  "task": "icosahedral-framechart-20261024",
+  "goal": "Derive and execute an exact proper-frame nonlinear readout error bound for the integrated 3D icosahedral full-state passive mechanics without changing constitutive coefficients",
+  "created_at": "2026-10-25T01:10:55.192Z",
+  "base_revision": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "icosahedral-framechart-20261024": {
+      "ref": "refs/heads/claims/icosahedral-framechart-20261024",
+      "sha": "e877572e58ec84c0a9120c118453fdda64e392e8",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "python /mnt/data/ico_frame_20261024/audit.py --out /mnt/data/ico_frame_20261024/result.json",
+      "result": "PASS exact Fraction rational bound 5589/6160000 and 120 deterministic perturbation fixtures, rigid translations and finite rotations; no actual 560-state trajectory data generated",
+      "scope": "local constructor, not peer review or validated numerical ODE"
+    },
+    {
+      "command": "sha256sum /mnt/data/ico_frame_20261024/audit.py /mnt/data/ico_frame_20261024/result.json",
+      "result": "PASS source 4c9467ece8d7ee92e236eb71efe3abd18a028dcd6866d359ce116bd7921d0d6, result b72b139995f3f220b26b1de7e09bcb3d50bc50be7ed4244e2ba77c9ceb9da98e; GitHub blob SHA1 matches exact local file bytes",
+      "scope": "immutable frame-001 schema-v2 capture"
+    },
+    {
+      "command": "python3 scripts/validate.py ; python3 -m unittest discover -s tests -v",
+      "result": "NOT_RUN locally without full authenticated checkout; GitHub CI pending",
+      "scope": "CI repository integrity, not physical/mathematical independent replication"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL: an explicit shell-centroid and SO3 exponential readout on 13 primary points has chart first derivative annihilating all six rigid tangents, with uniform nonlinear chart remainder <=5589/6160000≈0.000907305 if actual displacement Frobenius radius <=9/250=.036. 120 numeric constructor cases PASS. Does not validate actual full state radius, full Green response or u100 nonlinear all-phase guarantee.",
+  "next_action": "Reproject full 180-column source tangent under new frame derivative and obtain validated continuous primary radius and forced-Green nonlinear remainder; retain full 560 state/rigid momentum and compare to ordinary 3D mechanics null.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q rational proof constants and Q(sqrt5) exact icosahedral geometry, R SO3 chart, Float64 NumPy constructor",
+    "exactness_or_precision_plan": "analytic matrix norm bounds, rational strict inequalities; randomized fixed-seed numerical tests supplementary only",
+    "applicable_methods": [
+      "exact 3D golden-ratio geometry",
+      "SO3 Lie exponential and 6 rigid-tangent cancellation",
+      "matrix exponential uniform nonlinear remainder",
+      "centroid linear operator norm and metric/readout frame",
+      "all-phase tube reference/Green/Hessian dependency audit"
+    ],
+    "clock_metric_units_conventions": "reference edge length ell0=1 native, time u=t/t0 uncalibrated; r=.036 native length F norm on full13x3 primary coordinate delta; 560-phase mechanical dynamics unchanged"
+  }
+}

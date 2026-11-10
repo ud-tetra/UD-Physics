@@ -1,0 +1,19 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "icosahedral-framechart-20261024",
+  "goal": "Derive and execute an exact proper-frame nonlinear readout error bound for the integrated 3D icosahedral full-state passive mechanics without changing constitutive coefficients",
+  "owned_paths": [
+    "tasks/icosahedral-framechart-20261024.json",
+    "sessions/ico-framechart-20261024-gpt6-a1/",
+    "experiments/icosahedral-framechart/",
+    "candidates/icosahedral-framechart/",
+    "artifacts/ico-framechart-20261024-gpt6-a1/"
+  ],
+  "dependencies": [
+    "integration-icosahedral-pulsetube-20261022"
+  ],
+  "status": "complete",
+  "result": "EXACT/CONDITIONAL: an explicit shell-centroid and SO3 exponential readout on 13 primary points has chart first derivative annihilating all six rigid tangents, with uniform nonlinear chart remainder <=5589/6160000≈0.000907305 if actual displacement Frobenius radius <=9/250=.036. 120 numeric constructor cases PASS. Does not validate actual full state radius, full Green response or u100 nonlinear all-phase guarantee.",
+  "next_action": "Reproject full 180-column source tangent under new frame derivative and obtain validated continuous primary radius and forced-Green nonlinear remainder; retain full 560 state/rigid momentum and compare to ordinary 3D mechanics null."
+}

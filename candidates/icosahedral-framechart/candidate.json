@@ -1,0 +1,39 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-framechart",
+  "session_id": "ico-framechart-20261024-gpt6-a1",
+  "question": "Can a smooth proper-frame alignment readout close a tractable nonlinear chart-remainder piece of the 3D icosahedral u100 energy-ball certificate?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Integrated MountLoss full280 configuration/560 phase variable constitutive law unchanged; ideal housing and loss remain source assumptions.",
+    "Readout-only proper rotation/translation chart on 12 shell plus center, native shell edge length1 and c=(5+sqrt5)/2.",
+    "Assume actual primary Frobenius displacement radius <=9/250=.036 continuously, not previously verified; radius chosen after numerical tangent radius .03500972 exposed.",
+    "No physical time/length scale, material, damping or readout calibration selected."
+  ],
+  "physical_mapping": "native length ell0 and continuous u=t/t0 source; 13-point readout frame is not a physical spacetime gauge nor a dynamics modification.",
+  "target_exposure": "Post-exposure to pulsetube failed raw radius margin and Procrustes-aligned shape tangent .0002420865; r=.036 selected to cover numerical raw tangent radius, not demonstrated nonlinear radius.",
+  "fitted_choices": [
+    "Use centroid of 12 shell points for translation gauge and an SO3 exponential with linear skew cross covariance instead of Procrustes polar chart.",
+    "Choose rational conservative c bounds 7/2 and15/4, ||X||F<27/8, centroid factor<21/20 and target r=9/250.",
+    "Threshold 1/1000 is previously exposed design goal; no new mechanical tuning."
+  ],
+  "sources": [
+    "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7:experiments/icosahedral-pulsetube/README.md",
+    "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7:experiments/icosahedral-pulsetube/TUBE_THEOREM.md",
+    "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7:experiments/icosahedral-pulsetube/RESULTS.md",
+    "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7:experiments/icosahedral-jointwindow/README.md"
+  ],
+  "baseline": "Ordinary 3D isotropic point-cloud proper-frame alignment; same rotation-invariant volume and shape measurements in classical icosahedral mechanics.",
+  "result": "EXACT/CONDITIONAL: for all E∈R13x3 with ||E||F<=.036, chart nonlinear remainder <=5589/6160000<.001. The frame derivative removes global translation and infinitesimal rotations; full mechanical rigid energy retained. NUMERICAL 120 fixed-seed samples plus translation/rotation checks PASS. Does not certify 560-state flow or prior source Procrustes tangent bound in this different chart.",
+  "next_discriminant": "Re-evaluate full180 housing tangent columns in this chart and derive a continuous nonlinear primary displacement radius with forced Green/Hessian/reference bound; then bound volume determinant/readout and strut domain.",
+  "mathematical_receipts": [
+    "sessions/ico-framechart-20261024-gpt6-a1/mathematical_receipt.json"
+  ]
+}
