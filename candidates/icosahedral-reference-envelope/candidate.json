@@ -1,0 +1,40 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-reference-envelope",
+  "session_id": "ico-ref-envelope-20261027-gpt6-a1",
+  "question": "Can source energy positivity and a high-resolution fixed reference run bridge sampled d≈.051 to a justified continuous reference d=.070 through u=100?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Original positive kinetic/potential and nonincreasing mechanical energy plus heat; unforced reference.",
+    "Frozen nu=.05, alpha0=.1, case masses and source 560-state ODE unchanged.",
+    "Actual source reference exists through interval and source mechanical potential and dissipation assumptions hold.",
+    "Numerical sampled primary reference error delta_num is unknown; two tolerance agreement NOT a mathematical bound."
+  ],
+  "physical_mapping": "Original uncalibrated native 3D icosahedral mechanical analogue, no physical material/time/UD spacetime mapping.",
+  "target_exposure": "d=.070 chart radius inherited from PR219, chosen after sampled d=.05 failure, so evaluating against that bound is target-informed.",
+  "fitted_choices": [
+    "Grid Δu=.05 chosen to make conservative speed interpolation allowance small, not independent physics fit.",
+    "No material/damping/geometry coefficients changed; no physical observation selected."
+  ],
+  "sources": [
+    "cba74cc20ba323599339f88830bd0cc97fc9a6da:experiments/icosahedral-mountloss/mountloss.py",
+    "cba74cc20ba323599339f88830bd0cc97fc9a6da:experiments/icosahedral-tolerances/hardware.py",
+    "cba74cc20ba323599339f88830bd0cc97fc9a6da:experiments/icosahedral-pulsetube/variational.py",
+    "https://github.com/ud-tetra/UD-Physics/pull/219",
+    "https://github.com/ud-tetra/UD-Physics/actions/runs/40569925956"
+  ],
+  "baseline": "Ordinary dissipative classical mechanical mass/positive-energy speed bound and standard DOP853 reference solution, no unique UD signal.",
+  "result": "EXACT/CONDITIONAL on true reference mechanical energy/positive masses and verified sampled numerical error: continuous reference displacement <=D_sample+.025 sqrt(2E0/m_min)+delta_num. NUMERICAL original DOP853 2001 samples gives D=.050392408/.051116351, provisional continuous upper .059122282/.059689059 if samples exact, requiring validated sample error <.010877718/.010310941 to close assumed d=.07. Two-tolerance differences ~1.1e-12 not validated error. Full 180 housing-phase nonlinear relative radius and u100 breathing OPEN.",
+  "next_discriminant": "Validate a full-time ODE reference sampled global position error <.01031 with rigorous a-posteriori/interval analysis; separate full180-phase nonlinear forced response untouched.",
+  "reopening_conditions": "Verified reference numerical error/continuous-time enclosure and independent nonlinear all-phase source mechanics.",
+  "mathematical_receipts": [
+    "sessions/ico-ref-envelope-20261027-gpt6-a1/mathematical_receipt.json"
+  ]
+}

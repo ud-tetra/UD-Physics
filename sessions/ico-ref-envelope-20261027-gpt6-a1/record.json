@@ -1,0 +1,57 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ico-ref-envelope-20261027-gpt6-a1",
+  "runtime": "GPT-6; GitHub isolated connector, GitHub Actions pinned NumPy2.3.5/SciPy1.17.0; local downloaded full JSON and SHA256 verification",
+  "task": "icosahedral-reference-envelope-20261027",
+  "goal": "Provide continuous-time reference radius d=.070 estimate using exact source energy-to-speed interpolation and high-resolution frozen SciPy reference trajectories, exposing numerical-error certification budget",
+  "created_at": "2026-10-27T19:40:41.172Z",
+  "base_revision": "cba74cc20ba323599339f88830bd0cc97fc9a6da",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "icosahedral-reference-envelope-20261027": {
+      "ref": "refs/heads/claims/icosahedral-reference-envelope-20261027",
+      "sha": "175f08dfac8c2e96d37f98d2637fc296523f1bd7",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "GitHub Actions #40569925956 source reference_envelope.py Δu=.05, 2 × frozen cases × 2 DOP853 tolerances",
+      "result": "PASS 2001 samples each; limiting Dmax .05039240841022644 u9.25, nominal .05111635138364076 u9.20; strict source positive mechanical energy and speed samples",
+      "scope": "NUMERICAL reference sample values, no interval accuracy"
+    },
+    {
+      "command": "Exact conservation/kinetic energy interpolation inequality",
+      "result": "PASS analytic sup reference <= max_grid+Δ/2 sqrt(2E0/mmin)+delta_num; conditional ≤.059122282/.059689059 when delta_num0",
+      "scope": "EXACT/CONDITIONAL; requires verified global delta_num to claim source reference time-continuous enclosure"
+    },
+    {
+      "command": "Original solver tolerance sensitivity",
+      "result": "PASS sample trajectory differences 1.11447e-12 limiting,1.21011e-12 nominal",
+      "scope": "NOT a certified absolute numerical error bound"
+    },
+    {
+      "command": "sha256sum reference_envelope.py envelope.json from GHA and user-visible ZIP",
+      "result": "PASS input 408f6aeba43ca08df22a2d288b65def8d4206e5b84d01ffd085b227c8f1cd6f5 (4220 bytes); output 13f126c8a2ea8aab5ba47c4923b70d74929b06f9522f32e897cf8eb871e57040 (2992 bytes); copied exact immutable Git blobs",
+      "scope": "machine byte-level provenance, not ODE rigorous error"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL on true reference mechanical energy/positive masses and verified sampled numerical error: continuous reference displacement <=D_sample+.025 sqrt(2E0/m_min)+delta_num. NUMERICAL original DOP853 2001 samples gives D=.050392408/.051116351, provisional continuous upper .059122282/.059689059 if samples exact, requiring validated sample error <.010877718/.010310941 to close assumed d=.07. Two-tolerance differences ~1.1e-12 not validated error. Full 180 housing-phase nonlinear relative radius and u100 breathing OPEN.",
+  "next_action": "Compute mathematically validated full reference ODE error <.01031 (dense residual+Jacobian/Green/interval), then pursue full180-phase nonlinear r=.036 and forced Green/Hessian/strut-volume gate.",
+  "mathematical_profile": {
+    "coefficient_domain": "R classical mechanical source, positive masses, exact analytic energy bound, Float64 SciPy source ODE samples",
+    "exactness_or_precision_plan": "analytic Lipschitz interpolation from energy; numerical 2001 samples and solver tolerance differences with explicit unknown delta_num",
+    "applicable_methods": [
+      "mechanical energy positivity and dissipative monotonicity",
+      "Cauchy global 13-point speed bound",
+      "nearest-sample continuous interval interpolation",
+      "2-tolerance DOP853 development test",
+      "explicit a posteriori numerical error budget",
+      "conventional 3D spring-damper null"
+    ],
+    "clock_metric_units_conventions": "source native u0..100 with Δu=.05, frozen E0 Ep, min primary spatial mass mmin, physical ell0,t0 not selected"
+  }
+}

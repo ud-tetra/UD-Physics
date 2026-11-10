@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ico-ref-envelope-20261027-gpt6-a1",
+  "run_id": "reference-001",
+  "created_at": "2026-10-27T19:37:11.963Z",
+  "evidence": "CONDITIONAL",
+  "summary": "Exact energy-speed sampling gap plus 2001-point SciPy frozen reference-only survey and explicit unvalidated numerical-error budget for moving SO3 reference d=0.070",
+  "command": "GitHub Actions run40569925956 job122421103002 Python pinned NumPy2.3.5 SciPy1.17.0: reference_envelope.py --step .05 --out envelope.json",
+  "command_execution": "EXECUTED_GITHUB_ACTIONS_40569925956; EXACT_INTERSAMPLE_LEMMA_WITH_NUMERICAL_SAMPLED_STATE_ERROR_NOT_CERTIFIED",
+  "source": {
+    "revision": "efb1fd11cf097382b682ad1bbd116ae6e9139b79",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "energy-reference",
+      "name": "reference_envelope.py",
+      "path": "inputs/reference_envelope.py",
+      "sha256": "408f6aeba43ca08df22a2d288b65def8d4206e5b84d01ffd085b227c8f1cd6f5",
+      "size_bytes": 4230,
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-reference-envelope/reference_envelope.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/envelope.json",
+      "sha256": "13f126c8a2ea8aab5ba47c4923b70d74929b06f9522f32e897cf8eb871e57040",
+      "size_bytes": 2992
+    }
+  ]
+}
