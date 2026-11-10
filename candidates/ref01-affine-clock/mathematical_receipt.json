@@ -1,0 +1,130 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "affine-clock-001",
+  "session_id": "codex-20261103-affine-01",
+  "candidate_id": "ref01-affine-clock",
+  "question": "Separate constant clock offset and rate drift in bipyramid raw returns",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FIT"
+  ],
+  "objects": [
+    {
+      "object_id": "raw-returns-6",
+      "symbol": "F",
+      "object_type": "return map",
+      "definition": "Six scalar R exp(((1+gamma)*t+Delta)*A_g(theta)) S diagonal port returns",
+      "domain": "R^6, infinity ball radius 1/10^10",
+      "codomain": "R^6",
+      "coefficient_domain": "Q matrices, R flow",
+      "units": "dimensionless",
+      "basis_orientation": "PR #120 signed simplex order and prior rational K basis",
+      "metric_measure": "H+sum theta_j K_j",
+      "origin": "derived",
+      "exact_expression": null,
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "UD-PR120"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit coarse port, initial return 1"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "UD-PR120",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/120",
+      "version_or_commit": "53c96276623fee508f521c6c6a983f0798c1aacd",
+      "section_or_object_id": "BIPYRAMID_DATA.json: S,R,H,A_weighted",
+      "source_status": "Imported finite model"
+    }
+  ],
+  "assumptions": [
+    "Fixed Q167/Q173-style masks with candidate weighted adjoints",
+    "One common affine time warp across all samples",
+    "Same four-dimensional ungated-generator-preserving family"
+  ],
+  "technique_plan": [
+    {
+      "technique": "Exact rational Taylor and operator norm bounds",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Certify inverse sensitivity uniformly"
+    },
+    {
+      "technique": "Modular clocks and factorization",
+      "applicability": "NA",
+      "purpose_or_na_reason": "Continuous affine time and no divisibility question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous model parameter",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "actual=(1+gamma)*nominal+Delta",
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R^41",
+    "generator_or_update": "A_g=H(theta)^-1 B_g^T H(theta)-B_g",
+    "initial_boundary_conditions": "Embedded unit coarse port; fixed mask for each return",
+    "conservation_and_sources": "H(theta) isometry per fixed mask",
+    "projection_and_kernel": "R: R^41 -> R^23",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "Design scan only; no empirical data",
+    "known_targets": [],
+    "fitted_parameters_or_formula_choices": [
+      "Channel 2 at 5/4"
+    ],
+    "search_domain_and_budget": "4 channels x 5 times {1/4,3/4,1,5/4,2}",
+    "selection_criterion": "Minimum numerical inverse infinity norm among scan choices",
+    "baseline": "Five returns for common offset"
+  },
+  "calculation_steps": [
+    "Differentiate flow powers through degree 80 in Q; offset and rate columns y_t and t*y_t.",
+    "Bound combined tail below 10^-29 and inverse polynomial Jacobian norm below 210.",
+    "Bound full Hessian below 8e6 using metric isometry and prior generator bounds. Integrate the Jacobian along the parameter segment and precondition with inverse baseline polynomial."
+  ],
+  "result": {
+    "exact_expression": "Six raw returns on max-norm radius 1/10^10 jointly identify four metric parameters, additive offset and fractional rate with inverse Lipschitz <=420.",
+    "approximation": null,
+    "units": null,
+    "precision_and_error": "Two fits with per-return residual <= epsilon differ by <=840 epsilon; epsilon <=1/16800000000000 yields half-radius ambiguity.",
+    "scope": "Candidate model and declared box only",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact rational assertions and numeric design scan",
+      "command_or_proof_path": "OPENBLAS_NUM_THREADS=1 python -B affine.py bip.json",
+      "source_revision": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "At five samples and a locally invertible metric-plus-offset sub-Jacobian, rate changes can be compensated locally by those five coordinates."
+  ],
+  "limitations": [
+    "No native actuator, independent timing jitter model or physical time conversion; no independent review."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/codex-20261103-affine-01/affine-001/manifest.json"
+  ],
+  "next_discriminant": "Test a time reference or expanded parameter domain and error budget with native preparation and gate realization explicitly sourced."
+}

@@ -1,0 +1,105 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-20261103-affine-01",
+  "run_id": "affine-001",
+  "created_at": "2026-11-03T23:03:03.900472+00:00",
+  "evidence": "EXACT",
+  "summary": "Conditional six-return affine clock inverse bound",
+  "command": "cd candidates/ref01-affine-clock && OPENBLAS_NUM_THREADS=1 python -B affine.py bip.json",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "REF01_bipyramid_detail_visibility.py",
+      "path": "inputs/001-REF01_bipyramid_detail_visibility.py",
+      "source_location": "repository",
+      "source_path": "candidates/ref01-affine-clock/REF01_bipyramid_detail_visibility.py",
+      "sha256": "bc02349ba0f34ccc4f9662df781f79a47f0d36a6f1bec6962c932744fe967d4e",
+      "size_bytes": 1372
+    },
+    {
+      "input_id": "input-002",
+      "name": "REF01_bipyramid_locality.py",
+      "path": "inputs/002-REF01_bipyramid_locality.py",
+      "source_location": "repository",
+      "source_path": "candidates/ref01-affine-clock/REF01_bipyramid_locality.py",
+      "sha256": "ca0bd3386c8cc9f641725b03db05548363660227deb98488b4922441fae09b5d",
+      "size_bytes": 2537
+    },
+    {
+      "input_id": "input-003",
+      "name": "REF01_exact_verifier.py",
+      "path": "inputs/003-REF01_exact_verifier.py",
+      "source_location": "repository",
+      "source_path": "candidates/ref01-affine-clock/REF01_exact_verifier.py",
+      "sha256": "f0001d5cb65ad5fc74777b7f015ea1ac2b95dd1ca64022b2404de179424765d2",
+      "size_bytes": 3569
+    },
+    {
+      "input_id": "input-004",
+      "name": "REF01_four_norm_probes.py",
+      "path": "inputs/004-REF01_four_norm_probes.py",
+      "source_location": "repository",
+      "source_path": "candidates/ref01-affine-clock/REF01_four_norm_probes.py",
+      "sha256": "55a320b9fea17eaead965d85ca66b424042ee79285543a732aa343e16075189c",
+      "size_bytes": 796
+    },
+    {
+      "input_id": "input-005",
+      "name": "REF01_raw_return_certificate.py",
+      "path": "inputs/005-REF01_raw_return_certificate.py",
+      "source_location": "repository",
+      "source_path": "candidates/ref01-affine-clock/REF01_raw_return_certificate.py",
+      "sha256": "cd57d031cfcf2643d8b7cf8a52ae4783c2fa29435b66f21e78831a502d19a45d",
+      "size_bytes": 2858
+    },
+    {
+      "input_id": "input-006",
+      "name": "affine.py",
+      "path": "inputs/006-affine.py",
+      "source_location": "repository",
+      "source_path": "candidates/ref01-affine-clock/affine.py",
+      "sha256": "3c8c219d4651e15bf2b7b7c787b755513398a384d176c3657945650a79d5358d",
+      "size_bytes": 1381
+    },
+    {
+      "input_id": "input-007",
+      "name": "sub.py",
+      "path": "inputs/007-sub.py",
+      "source_location": "repository",
+      "source_path": "candidates/ref01-affine-clock/sub.py",
+      "sha256": "1bc01c94ac77a723622060736f0c4cf586fceefea1a037ac899f65ee3d6d414f",
+      "size_bytes": 7638
+    },
+    {
+      "input_id": "input-008",
+      "name": "bip.json",
+      "path": "inputs/008-bip.json",
+      "source_location": "repository",
+      "source_path": "candidates/ref01-affine-clock/bip.json",
+      "sha256": "47f146b7288bb13063a3daa43d7daf741f509ab3fdfc4cbe46847a4e8bbf68ff",
+      "size_bytes": 67324
+    },
+    {
+      "input_id": "input-009",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/009-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/ref01-affine-clock/mathematical_receipt.json",
+      "sha256": "9636ec9dec055202a09f8d3f11bec017c9435c8f132e817aacbcb263beaa2e17",
+      "size_bytes": 5105
+    }
+  ],
+  "files": [
+    {
+      "path": "files/ref01-affine-output.txt",
+      "sha256": "6d1d30755a81fe755ed0a7a3a5c11957efef26923c57177dd95c8fe7f0d479f1",
+      "size_bytes": 1216
+    }
+  ]
+}
