@@ -1,4 +1,8 @@
-# Local Hasse quarter-turn event hypothesis (current review v0.5)
+# Local Hasse quarter-turn event hypothesis (current review v0.6)
+
+## v0.6 source comparison (2026-11-11)
+
+**OPEN_GATED / CANDIDATE:** [Q198 and Gibson full-complement clue](Q198_GIBSON_CLUE_v0.6.md) audits the conditional receipt-index parity interface against Gibson's channel explanation of a pre-event four-neighbor token complement. The clue is a test-contract design question, not an imported UD event law. Q198 still requires source-selected obligation spaces, continuation, burden and a typed lift to the full carrier. The v0.2 and v0.5 scoped obstructions remain; the hypothesis stays AGILE, physical promotion 0.
 
 ## v0.5 addendum (2026-11-11): Q201/Q202 source guard audit
 

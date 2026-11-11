@@ -1,0 +1,42 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "gibsonq198-20261111-01",
+  "run_id": "q198-gibson-source-gate",
+  "created_at": "2026-11-11T23:07:38.905450+00:00",
+  "evidence": "OPEN",
+  "summary": "Q198 conditional interface versus Gibson pre-event complement explainer, typed non-transfer",
+  "command": "source audit of ledger v0.85 Q194-Q210 and dated Gibson channel video English ASR",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "cf0db72ede98ba70ff7d78b3fb936f8c868d701f",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "ledger_v0.85.json",
+      "path": "inputs/001-ledger_v0.85.json",
+      "source_location": "repository",
+      "source_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "size_bytes": 444587
+    },
+    {
+      "input_id": "input-002",
+      "name": "Q198_GIBSON_CLUE_v0.6.md",
+      "path": "inputs/002-Q198_GIBSON_CLUE_v0.6.md",
+      "source_location": "repository",
+      "source_path": "experiments/local-hasse-quarter-event/Q198_GIBSON_CLUE_v0.6.md",
+      "sha256": "9f1885dc54d59288f00b980a179df08c7d9e9dd844b7798efb27128edeeccf09",
+      "size_bytes": 5261
+    }
+  ],
+  "files": [
+    {
+      "path": "files/Q198_GIBSON_SOURCE_GATE_v0.6.json",
+      "sha256": "a288ed3463ad558add27cb4b31229b3ccb2199afe3443f5477a3306f77d6ba16",
+      "size_bytes": 1607
+    }
+  ]
+}
