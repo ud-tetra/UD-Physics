@@ -1,0 +1,151 @@
+{
+  "checked_states": 256,
+  "covariance_checks": 1536,
+  "one_hot_address_100_table": [
+    {
+      "endpoint": "000",
+      "remaining": 0,
+      "reserve": 0,
+      "theta": "000",
+      "verdict": "HOLD_STOCK"
+    },
+    {
+      "endpoint": "100",
+      "remaining": 0,
+      "reserve": 1,
+      "theta": "000",
+      "verdict": "EVENT"
+    },
+    {
+      "endpoint": "001",
+      "remaining": 0,
+      "reserve": 0,
+      "theta": "001",
+      "verdict": "HOLD_STOCK"
+    },
+    {
+      "endpoint": "101",
+      "remaining": 0,
+      "reserve": 1,
+      "theta": "001",
+      "verdict": "EVENT"
+    },
+    {
+      "endpoint": "010",
+      "remaining": 0,
+      "reserve": 0,
+      "theta": "010",
+      "verdict": "HOLD_STOCK"
+    },
+    {
+      "endpoint": "110",
+      "remaining": 0,
+      "reserve": 1,
+      "theta": "010",
+      "verdict": "EVENT"
+    },
+    {
+      "endpoint": "011",
+      "remaining": 0,
+      "reserve": 0,
+      "theta": "011",
+      "verdict": "HOLD_STOCK"
+    },
+    {
+      "endpoint": "111",
+      "remaining": 0,
+      "reserve": 1,
+      "theta": "011",
+      "verdict": "EVENT"
+    },
+    {
+      "endpoint": "000",
+      "remaining": 1,
+      "reserve": 0,
+      "theta": "100",
+      "verdict": "EVENT"
+    },
+    {
+      "endpoint": "000",
+      "remaining": 2,
+      "reserve": 1,
+      "theta": "100",
+      "verdict": "EVENT"
+    },
+    {
+      "endpoint": "001",
+      "remaining": 1,
+      "reserve": 0,
+      "theta": "101",
+      "verdict": "EVENT"
+    },
+    {
+      "endpoint": "001",
+      "remaining": 2,
+      "reserve": 1,
+      "theta": "101",
+      "verdict": "EVENT"
+    },
+    {
+      "endpoint": "010",
+      "remaining": 1,
+      "reserve": 0,
+      "theta": "110",
+      "verdict": "EVENT"
+    },
+    {
+      "endpoint": "010",
+      "remaining": 2,
+      "reserve": 1,
+      "theta": "110",
+      "verdict": "EVENT"
+    },
+    {
+      "endpoint": "011",
+      "remaining": 1,
+      "reserve": 0,
+      "theta": "111",
+      "verdict": "EVENT"
+    },
+    {
+      "endpoint": "011",
+      "remaining": 2,
+      "reserve": 1,
+      "theta": "111",
+      "verdict": "EVENT"
+    }
+  ],
+  "physical_promotion": 0,
+  "status": "EXACT_CONDITIONAL",
+  "theta_only_allowed": {
+    "000": [
+      "000"
+    ],
+    "001": [
+      "001"
+    ],
+    "010": [
+      "010"
+    ],
+    "011": [
+      "011"
+    ],
+    "100": [
+      "100"
+    ],
+    "101": [
+      "101"
+    ],
+    "110": [
+      "110"
+    ],
+    "111": [
+      "111"
+    ]
+  },
+  "verdict_counts": {
+    "EVENT": 84,
+    "HOLD_ADDRESS": 160,
+    "HOLD_STOCK": 12
+  }
+}

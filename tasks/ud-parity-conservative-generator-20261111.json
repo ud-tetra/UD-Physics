@@ -1,0 +1,13 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "ud-parity-conservative-generator-20261111",
+  "goal": "Define and test a minimal symmetric stock-conserving parity event candidate without target fitting",
+  "owned_paths": [
+    "experiments/ud-parity-conservative-generator",
+    "candidates/ud-parity-conservative-generator",
+    "tasks/ud-parity-conservative-generator-20261111.json"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}
