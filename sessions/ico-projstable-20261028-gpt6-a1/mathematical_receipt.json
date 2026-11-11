@@ -1,0 +1,201 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "icosa-projected-001",
+  "session_id": "ico-projstable-20261028-gpt6-a1",
+  "candidate_id": "icosahedral-projected-stability",
+  "question": "Does CM mass-orthogonal projection decouple original 560-state source and is its internal instantaneous tangent stiffness symmetric positive along frozen reference?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "projector",
+      "symbol": "P,T,M",
+      "object_type": "source mass-orthogonal internal configuration projector",
+      "definition": "P=I−T(TᵀMT)^−1TᵀM on 280 configuration coordinates",
+      "domain": "R280",
+      "codomain": "R280",
+      "coefficient_domain": "real positive masses",
+      "units": "mass-weighted native state",
+      "basis_orientation": "three global spatial translations of 43 free point masses",
+      "metric_measure": "M inner product",
+      "origin": "derived",
+      "exact_expression": "P²=P, PT=0, TᵀMP=0, [diag(P,P),J]=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "full original state unchanged"
+    },
+    {
+      "object_id": "K",
+      "symbol": "K_sym,K_skew,C",
+      "object_type": "source tangent effective stiffness and damping",
+      "definition": "J=[[0,I],[-M^-1K,-M^-1C]] with K including ∂q(D(q)v)",
+      "domain": "R280 relative q/v",
+      "codomain": "R280",
+      "coefficient_domain": "Float64 source",
+      "units": "native stiffness/damping",
+      "basis_orientation": "mass normalization via M^-1/2",
+      "metric_measure": "symmetric internal eigenspectrum and skew Frobenius",
+      "origin": "executed source numerical",
+      "exact_expression": "K=K_sym+K_skew",
+      "measured_value": "initial internal λmin −.09623694/−.09651155; moving K skew up to .00184",
+      "uncertainty": "sampled finite numerical eigenvalues",
+      "source_refs": [
+        "GHA"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "projector"
+      ],
+      "normalization": "3 CM eigenvalues removed by rank3 lift"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "source",
+      "url_or_repo_path": "experiments/icosahedral-pulsetube/jacobian.py",
+      "version_or_commit": "6d5462c51e5a966066197bb56f33022ecd3a56aa",
+      "section_or_object_id": "Linearization.matrices, moving source K,C",
+      "source_status": "read-only integrated"
+    },
+    {
+      "source_id": "GHA",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/actions/runs/40717553809",
+      "version_or_commit": "c922aab9f31b6335b4b4a9a7113b23c38213e70c",
+      "section_or_object_id": "12 timepoint projected spectra and CM leakage",
+      "source_status": "executed numerical"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "source global translations are unanchored and all forces/dampers reciprocal/relative, M positive"
+    },
+    {
+      "id": "A2",
+      "description": "strict DOP853 reference and six sample times, not interval-certified full time"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact mass projector commutation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact CM/internal dynamic decoupling"
+    },
+    {
+      "technique": "numerical projected K/C source eigenspectra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "inspect positive internal norm hypothesis and tangent nonconservativity"
+    },
+    {
+      "technique": "shifted energy exact derivative",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "expose κ, K_skew, dK_sym/dt cost"
+    },
+    {
+      "technique": "verified time-continuous projected Green and residual",
+      "applicability": "NOT_RUN",
+      "purpose_or_na_reason": "future δ_num certification"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "280 configurations,560 mechanical phases, 43 free spatial masses, 3 CM spatial and 3 CM velocity directions",
+    "reduced_expression": "internal dimension 554; 12 source spectral snapshots",
+    "factor_origins": [
+      "source true spatial mass weighted translation symmetry"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "source continuous u0..100",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "original unmodified DOP853 reference linearized J",
+    "initial_phase": "frozen α=.1, nu=.05",
+    "coupling": "original reciprocal internal and damped forces",
+    "period_claim": "none",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "full source 560 mechanical phases with separate heat",
+    "generator_or_update": "J source, CM shear + projected internal 554 operator",
+    "initial_boundary_conditions": "two frozen source cases",
+    "conservation_and_sources": "center-of-mass momentum exact, internal energy dissipation",
+    "projection_and_kernel": "P mass-orth on all43 free point masses, all rigid rotations remain",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "POST_PR226_METHOD_FAILURE",
+    "known_targets": [
+      "δ_num<.01031, raw lognorm obstruction"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "6 observation times",
+      "κ=.11 regularization suggested after observed negative λmin, not physically sourced"
+    ],
+    "search_domain_and_budget": "2 cases x6 source time slices, one CM projection and K/C symmetric decomposition",
+    "selection_criterion": "can direct positive internal stiffness energy justify projected error bound?",
+    "baseline": "ordinary unanchored reciprocal mechanics"
+  },
+  "calculation_steps": [
+    "Derive P mass-orthogonal, translation source K/C left-right kernel and J commutation exact.",
+    "Execute source strict 560-state DOP853 at 6 times per frozen case.",
+    "Mass normalize K,C and check CM kernels/symmetric and skew components.",
+    "Find λmin internal symK negative at u0; previous K symmetric assertion fail due ∂q damping.",
+    "Derive shifted energy Eκ derivative and identify missing uniform norm/Green and interval residual."
+  ],
+  "result": {
+    "exact_expression": "[diag(P,P),J]=0; Eκ'=−vᵀCv+vᵀ(κMP−K_skew)q+1/2 qᵀ(dot K_sym)q for projected homogeneous dynamics",
+    "approximation": "u0 λmin −.09624/−.09651, moving skew K~.00184, CM leakage <4.3e-14",
+    "units": "mass-normalized internal source native units",
+    "precision_and_error": "exact block algebra, float source eigenspectra only six times; no interval",
+    "scope": "internal positive metric feasibility, NOT δ_num proof",
+    "physical_interpretation": "generic classical mechanics stability problem"
+  },
+  "verification": [
+    {
+      "method": "GHA executed source original frozen K/C",
+      "command_or_proof_path": "experiments/icosahedral-projected-stability/projected_stability.py",
+      "source_revision": "c922aab9f31b6335b4b4a9a7113b23c38213e70c",
+      "actual_result": "PASS 12 snapshots, full 14343-byte JSON, SHA verified",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "interval Green and external reviewer",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "none"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Unshifted sym K has λmin<0 at initial source reference, cannot serve as positive internal energy norm.",
+    "K nonsymmetric when damping depends on positions/velocity.",
+    "κ=.11 shift chosen after observed negative eigenvalue is not validated uniformly or source-selected."
+  ],
+  "limitations": [
+    "No source certified δ_num<.01031, no time-continuous K spectrum/Kdot or verified interval residual.",
+    "No full180 nonlinear phase-ball or physical hardware/UD bridge."
+  ],
+  "changed_dependencies": [
+    "Separate own claimed research task, source integrated mechanics and PR226 unchanged."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/ico-projstable-20261028-gpt6-a1/projected-001/manifest.json"
+  ],
+  "next_discriminant": "Construct verified positive shifted mass-normalized projected norm, bound K_skew/dK_sym/dt and projected Green+interval residual, then attempt δ_num<.01031; preserve all rigid energy."
+}

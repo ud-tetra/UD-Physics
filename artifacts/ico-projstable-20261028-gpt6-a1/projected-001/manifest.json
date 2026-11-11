@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ico-projstable-20261028-gpt6-a1",
+  "run_id": "projected-001",
+  "created_at": "2026-10-28T15:40:52.449Z",
+  "evidence": "CONDITIONAL",
+  "summary": "Exact CM mass-orthogonal invariant decomposition and sampled internal symmetric tangent stiffness spectra at six frozen 3D source reference times, including negative initial eigenvalues and nonsymmetric moving damping-position tangent",
+  "command": "GitHub Actions #40717553809: python3 experiments/icosahedral-projected-stability/projected_stability.py --out /tmp/ico-projected/stability.json",
+  "command_execution": "EXECUTED_GITHUB_ACTIONS_40717553809; FINITE_SIX_TIME_SAMPLES_NOT_INTERVAL_CERTIFIED",
+  "source": {
+    "revision": "c922aab9f31b6335b4b4a9a7113b23c38213e70c",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "projection-spectral-audit",
+      "name": "projected_stability.py",
+      "path": "inputs/projected_stability.py",
+      "sha256": "fb51d73c10efe1d129d6b35153a7b26841fa6a22055c0481717a4a53f825bc19",
+      "size_bytes": 4800,
+      "source_location": "repository",
+      "source_path": "experiments/icosahedral-projected-stability/projected_stability.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/stability.json",
+      "sha256": "1cfd06eb21f89e895ef31cc5a0c98d95a0f842c55b81e56b119df62ee0d152c9",
+      "size_bytes": 14343
+    }
+  ]
+}

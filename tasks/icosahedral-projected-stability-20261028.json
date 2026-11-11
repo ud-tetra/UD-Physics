@@ -1,0 +1,20 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "icosahedral-projected-stability-20261028",
+  "goal": "Test exact mass-weighted center-of-mass/internal block decoupling and source frozen internal stiffness/damping spectra for a positive projected a posteriori reference error norm",
+  "owned_paths": [
+    "tasks/icosahedral-projected-stability-20261028.json",
+    "sessions/ico-projstable-20261028-gpt6-a1/",
+    "experiments/icosahedral-projected-stability/",
+    "candidates/icosahedral-projected-stability/",
+    "artifacts/ico-projstable-20261028-gpt6-a1/",
+    ".github/workflows/icosahedral-projected-stability-20261028.yml"
+  ],
+  "dependencies": [
+    "integration-icosahedral-pulsetube-20261022"
+  ],
+  "status": "complete",
+  "result": "EXACT/CONDITIONAL CM mass-orthogonal projector commutes with original 560-state Jacobian because of reciprocal internal translation-invariant source mechanics. NUMERICAL strict DOP853 frozen source at 6 times each case: symmetric CM-free K min initial −.09623694/−.09651155; later positive at selected points, K develops damping-position derivative antisymmetry up to .00184; damping C symmetric PSD numerically, CM leakage<4.3e-14. FAILED direct unshifted positive Hessian energy. Candidate κ=.11 adjusted after target exposure gives positive sampled form but not verified continuous/stability; true δ_num<.01031 and full nonlinear tube OPEN.",
+  "next_action": "Rigorous time-continuous positivity and growth bound for shifted CM-free internal norm including K_skew and dK_sym/dt, plus interval residual and bootstrap; test δ_num<.01031."
+}
