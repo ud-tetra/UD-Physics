@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "ud-parity-conservative-generator-20261111",
+  "session": "udparity-20261111-01",
+  "created_at": "2026-11-11T19:45:02.735398+00:00",
+  "base_revision": "8b11c934e7960b2b57d147e1364aaea195397998",
+  "owned_paths": [
+    "experiments/ud-parity-conservative-generator",
+    "candidates/ud-parity-conservative-generator",
+    "tasks/ud-parity-conservative-generator-20261111.json"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
