@@ -35,3 +35,5 @@ Exact replay PASS: source character and Hom dimension2; example rank2/kernel5; u
 Checkpoint (handoff): Under natural linear full-S4 P06 parity source, all response maps have rank<=2 and kill uniform seven-state source; edge+top alternative rank5 but does not select coupling or 1/5.
 
 Next: Source-select nonuniform parity weights and typed electromagnetic interaction or park alpha correspondence; preserve scoped no-go.
+
+Closure: PR #362 merged at `327af58fea22491bce3fe7ed5a5ae04925e2fa77`; CI workflow `43092948383` succeeded. Task claim released by exact-SHA marker `84935d4028bed921343580ad8a382843465e714b`. No scientific promotion; closure-only metadata.
