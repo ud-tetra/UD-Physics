@@ -1,0 +1,16 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "receipt-polarity-endpoint-gate-20261111-01",
+  "runtime": "local",
+  "task": "receipt-polarity-endpoint-gate-20261111",
+  "goal": "Exact 64-pair endpoint multiplicity under Q194/Q195 net polarity, with Q198 source gate",
+  "created_at": "2026-11-11T19:38:36.981239+00:00",
+  "base_revision": "022b1bac56a76b2c2862e81fba5d003fa37596e8",
+  "source_dirty_at_boot": true,
+  "status": "active",
+  "claims": {},
+  "checks": [],
+  "finding": "",
+  "next_action": ""
+}
