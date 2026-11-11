@@ -11,5 +11,7 @@
     "tasks/ud-quadrupole-source-20261111.json"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-11T20:04:15.287Z",
+  "released_from_sha": "87eeed8be82dffcd329d05054e9fca43c0650265"
 }
