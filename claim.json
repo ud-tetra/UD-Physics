@@ -11,5 +11,7 @@
     "tasks/ud-parity-conservative-generator-20261111.json"
   ],
   "protocol_version": 2,
-  "status": "held"
+  "status": "released",
+  "released_at": "2026-11-11T19:49:59.785Z",
+  "released_from_sha": "cd52ba2738d530f62d55d705b23aefb55d717cff"
 }
