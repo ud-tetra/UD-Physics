@@ -1,0 +1,44 @@
+{
+  "status": "EXACT_CONDITIONAL_CANDIDATE",
+  "sample_signed_pair": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      -1
+    ],
+    [
+      -1,
+      -2
+    ],
+    [
+      -2,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "sample_vertex_stock": [
+    1,
+    4,
+    1,
+    4,
+    1
+  ],
+  "hold_baseline_vertex_stock": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "sample_total_stock": 5,
+  "event_preparations": 192,
+  "signed_s4_covariance_checks": 4608,
+  "hold_checks": 3,
+  "physical_promotion": 0
+}

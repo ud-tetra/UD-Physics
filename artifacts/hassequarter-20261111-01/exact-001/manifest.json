@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "hassequarter-20261111-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-11T22:17:48.326747+00:00",
+  "evidence": "EXACT",
+  "summary": "Local integer Hasse quarter-turn event and readout",
+  "command": "python3 experiments/local-hasse-quarter-event/replay.py > experiments/local-hasse-quarter-event/results.json",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "c2c156c2c6d53e470e2ebbc894b01ffc12b2e736",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay.py",
+      "path": "inputs/001-replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/local-hasse-quarter-event/replay.py",
+      "sha256": "a11c98dea9ef6206b95fea7dc5764e6793191dae0dc8475ee0de491528cb8223",
+      "size_bytes": 3564
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/local-hasse-quarter-event/README.md",
+      "sha256": "a8f8adab43c2d04aec85a38902f785ec6217b93d641d192af5afca198cca74aa",
+      "size_bytes": 5787
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/local-hasse-quarter-event/mathematical_receipt.json",
+      "sha256": "a9b70e8cedbc792de84ff594e36f7928953074133656b1b2de71da2e7cf1069b",
+      "size_bytes": 8692
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "9839e1c38561cde8533d6d17bf752df51701f36d5d48c479add0dfa07bb59ad0",
+      "size_bytes": 511
+    }
+  ]
+}
