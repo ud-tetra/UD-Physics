@@ -35,3 +35,5 @@ Final constructor checks: validate PASS 627 records; 16 repository tests PASS; e
 Checkpoint (handoff): Candidate local integer Hasse quarter-turn is conservative, signed-S4 covariant, globally F^4=id with HOLD; internal stock contrast 3 in predeclared example.
 
 Next: Compare the finite event to sourced Q169 on the same initial carrier and check leakage/compatibility; no physical promotion.
+
+Closure: PR #366 merged at `288f4f7f876f3375ffd71a027075127989f89a05`; CI workflow `43110691449` succeeded. Task claim released by exact-SHA marker `79f7730a64f89d99dce9eec3c32d7b66d89b93f3`. No scientific promotion; closure-only metadata.
