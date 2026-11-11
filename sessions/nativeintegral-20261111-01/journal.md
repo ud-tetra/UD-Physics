@@ -23,3 +23,7 @@ Exact Q169 no-go and conditional quarter-phase congruence-gated map captured in 
 Checkpoint (complete): No nonidentity Q169 sample preserves all Z15; a chosen quarter-phase preserves a proper admission sublattice with four-step dynamics and exact invariants.
 
 Next: Seek a source-selected event phase and amplitude lattice; if unavailable freeze conditional mathematics and test a different native event mechanism.
+
+## 2026-11-11T23:20:01.511167+00:00
+
+PR #378 passed GitHub Discovery integrity run 43118825091 and merged at e258f3ccf4f5fd3060bdd79586f04076f2487321. Claim released with exact held-SHA lease; marker bca12d6bd65bfe139b6dbb2fd69880558f2db5c2 verified live. Closure records integration and release only.
