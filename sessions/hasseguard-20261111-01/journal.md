@@ -23,3 +23,7 @@ Q201/Q202/Q204 identical receipt (1,4,1) gives Q169 signed currents +4,-4,+2 and
 Checkpoint (handoff): Q201/Q202 receipts do not select native signed current or candidate event guard; preserve narrow conditional results and park source-selected interpretation.
 
 Next: Source signed endpoint allocation and a constitutive trigger, or stop this branch until new evidence.
+
+## Integration closure
+
+PR #374 merged at `1ad2a084df74241ff4a76be2965f54cb25cb3bcc` after Discovery integrity workflow 43116216153 succeeded. Claim released from `0bb9d3670639cade32f02f602820f4aba67b5114` to marker `0d39c54f651273d7fa9bf9f98eb9d2f3a7de8aa6`. Metadata only; no substantive research changes.
