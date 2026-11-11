@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "task": "ud-quadrupole-source-20261111",
+  "session": "udquad-20261111-01",
+  "created_at": "2026-11-11T19:58:40.910869+00:00",
+  "base_revision": "4aa087681f700ab8cb1177a2d8aa1d0866417da3",
+  "owned_paths": [
+    "experiments/ud-quadrupole-source",
+    "candidates/ud-quadrupole-source",
+    "tasks/ud-quadrupole-source-20261111.json"
+  ],
+  "protocol_version": 2,
+  "status": "held"
+}
