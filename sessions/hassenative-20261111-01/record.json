@@ -13,8 +13,9 @@
     "local-hasse-quarter-event-20261111": {
       "ref": "refs/heads/claims/local-hasse-quarter-event-20261111",
       "sha": "6f44f57968d7c7abd1f1102f32798d52d1482862",
-      "status": "held",
-      "protocol_version": 2
+      "status": "released",
+      "protocol_version": 2,
+      "release_sha": "a13658743f3966b9e5393b0141cf590a242566b8"
     }
   },
   "checks": [
@@ -37,5 +38,10 @@
   "checkpoint_source": {
     "revision": "6194e2314ff2e59f13468a43ed55ed734ae8159c",
     "dirty": true
+  },
+  "integration": {
+    "pull_request": 368,
+    "merge_sha": "c22988645c7d5c1fc64ef1d910e2be631a0e2358",
+    "ci": "Discovery integrity SUCCESS; workflow 43112910458"
   }
 }
