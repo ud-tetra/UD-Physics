@@ -23,3 +23,7 @@ Full-carrier Q169 A=d-dT gives lower-to-upper j=-2B c_lower c_upper. For v0+2e01
 Checkpoint (handoff): Native flux readout distinguishes formal flow from stationary HOLD at first order; candidate event remains separate and AGILE.
 
 Next: Source-select discrete guard or calibrated physical time/readout bridge; independently test a held-out preparation.
+
+## Integration closure
+
+PR #372 merged at `375d1354664bbf721eb6869630b861de9b4fb219` after Discovery integrity workflow 43115386235 succeeded. Claim released from `40cc86ca478c33ba4c9e1e70edd490b33cca51fa` to marker `1b686354f13c1afcbe80caa28abc881459b44d7d`. Metadata only; no substantive changes.
