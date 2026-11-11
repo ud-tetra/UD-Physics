@@ -27,6 +27,15 @@
   "result": "F^4=id, exact local stock balance and signed S4 covariance; sample Y0 alternates 1,4 versus fixed baseline1",
   "next_discriminant": "independent preparation/readout of signed local channels and source-selected event guard/tick",
   "mathematical_receipts": [
-    "candidates/local-hasse-quarter-event/mathematical_receipt.json"
-  ]
+    "candidates/local-hasse-quarter-event/mathematical_receipt.json",
+    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json"
+  ],
+  "native_Q169_comparison_v0_2": {
+    "status": "PARKED",
+    "finding": "No native flow time reaches prepared candidate full endpoint: vertex sum 1 versus 2; native derivative leaks into five other registers.",
+    "scope": "fixed filled K4, unit metric, unmodified A=d-d^T, same initial amplitudes",
+    "reopen_if": "sourced different state space/generator/metric/source or explicit coarse observable bridge",
+    "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json",
+    "physical_promotion": 0
+  }
 }

@@ -1,0 +1,45 @@
+# Local Hasse quarter-turn event candidate v0.1
+
+## v0.2 addendum (2026-11-11): comparison with native Q169
+
+**NO-GO / EXACT, scoped:** The v0.1 event is not a time sample of the unmodified Q169 flow on the same filled tetrahedron with ascending orientations and unit Euclidean metric. This rules out a native-Q169 identification of the event map under these premises; it does not invalidate the conditional quarter-turn algebra or rule out a different generator, state space, metric, or external source.
+
+Source: recovered ledger v0.85, Q169 (`experiments/action-normalization-audit/sources/ledger_v0.85.json`, SHA-256 `8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec`); compare the explicit full-carrier convention in `experiments/qpb1-local-generators/README.md` §1 at base revision `6194e2314ff2e59f13468a43ed55ed734ae8159c`. Let `C=⊕_{k=0}^3 C_k(Δ³;R)` of dimension 15, `d=B1+B2+B3` in embedded blocks, and `A=d−dᵀ:C→C`. Q169 evolution is `x(s)=exp(sA)x(0)` for real parameter `s`, with initial `v0=1,e01=2` and all other simplex amplitudes zero. The candidate event is the v0.1 separate map on integer `C0⊕C1` amplitudes and a binary hard mask, with `h01=1`; its endpoint has `v0=2,e01=−1` and all other amplitudes zero. The hard mask has no Q169 coordinate. We compare only the common amplitude carrier, without identifying event ticks with physical time or fitting `s`.
+
+**Invariant proof:** The linear functional `L(x)=v0+v1+v2+v3` satisfies `L(Ax)=1ᵀB1 e=0`, because each oriented edge has one `−1` tail and one `+1` head. Therefore `L(exp(sA)x)=L(x)=1` for every real `s`. The candidate endpoint has `L=2`. The two full amplitude states cannot coincide at any real flow time. Both have Euclidean quadratic stock `5`; stock agreement is insufficient for dynamical equivalence. The proof depends on the unmodified boundary generator and no vertex source. A different generator or open-system source defines a separate branch requiring its own conservation accounting.
+
+**Initial leakage:** In the ascending basis, the exact native derivative `Ax(0)` is `−2 v0+2 v1+e01+e02+e03−2 f012−2 f013`. In particular `v1,e02,e03,f012,f013` leave zero at first order. The native full flow does not preserve the candidate's two-register support even infinitesimally. The full 15-register calculation checks `d²=0`, `Aᵀ=−A`, `A³=−4A`, `x·Ax=0`, and `L A=0` exactly. At the illustrative phase `s=π/4`, the exact state is `(−3v0+5v1+v2+v3+2e01+2e02+2e03−4f012−4f013)/4`; it is neither the candidate endpoint nor a comparison at an event tick. This single sample is supplementary; the conserved-functional proof covers all real `s`.
+
+The reproducible [exact script](native_compare.py), [result](native_results.json), and [v0.2 mathematical receipt](../../candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json) preserve the comparison. **CANDIDATE:** v0.1 remains internally consistent as an additional gated constitutive model; its identification as native Q169 is **PARKED**. The gate, mask and finite clock remain unsourced. No physical readout, calibrated units, or empirical test is claimed; physical promotion remains 0.
+
+**HYPOTHESIS / exact conditional mathematics.** An isolated hard-integrity vertex–edge flag on one filled K4 executes one orientation-preserving, integer-lattice quarter-turn per declared event tick. A missing or nonunique flag returns HOLD. This supplies a fully specified *candidate* update, stock balance and finite internal readout; it is not a derivation of a UD physical event or of the continuous Q169 generator.
+
+## Source and state contract
+
+Base `ud-tetra/UD-Physics@c2c156c2c6d53e470e2ebbc894b01ffc12b2e736`. Recovered ledger v0.85, `experiments/action-normalization-audit/sources/ledger_v0.85.json`, SHA-256 `8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec`: Q169 is the real skew Hodge-Dirac on the unique simplices; Q170 conserves the quadratic Hasse stock with continuous incidence-cut currents; Q201 uses hard edge integrity; Q202 defines pre-gate vertex/edge support. None selects the following integral lattice, unique-flag event guard or quarter-turn step. The [v0.1 parity-event candidate](../ud-parity-conservative-generator/README.md) is a different bit/reserve model, not a source of this update. No target constant or empirical endpoint enters construction.
+
+Work on ordered vertices `0,1,2,3`, ascending unoriented labels for six *oriented* edges `01,02,03,12,13,23`, with signed incidence `B1_(i,ij)=-1` at tail `i`, `+1` at head `j`. The explicitly added discrete carrier is
+
+`X=Z^4_vertices ⊕ Z^6_edges × {0,1}^6_hard`.
+
+Higher simplex amplitudes are fixed to zero. Vertex/edge amplitudes are signed integers; edge amplitudes transform with orientation sign under S4. Hard-integrity mask `h_e` is a binary pre-event input and remains unchanged. The Euclidean metric on these ten amplitudes defines dimensionless stock `N=sum_i v_i²+sum_e z_e²`. This is a restricted model of Q170's stock, **not** physical energy. The clock is only `n -> n+1` per call, with no SI duration or physical event claim. State readouts are signed `(v_i,z_e)`, vertex stock `Y_i=v_i²`, and an external EVENT/HOLD verdict.
+
+Define the local candidate flags at the start of each tick as
+
+`F(X)={(i,e): i incident to e, h_e=1, z_e!=0, v_i!=0}`.
+
+This is a declared guard inspired by Q201/Q202's pre-gate support and integrity types; Q201/Q202 do not prescribe it. For `|F|=0` return `HOLD_ZERO`, for `|F|>1` return `HOLD_TIE`. In both cases the complete state is unchanged. If `F={(i,e)}`, let `s=B1_(i,e)∈{-1,+1}` and update only the flag's amplitudes by
+
+`(v_i',z_e')=(-s z_e,s v_i)`; all other amplitudes and masks remain unchanged, verdict `EVENT`.
+
+The local matrix is `[[0,-s],[s,0]]`. It belongs to `SO(2,Z)`; its square is `-I` and fourth power `I`. Indeed every integer orthogonal 2×2 determinant-one matrix is one of `I,-I,J,-J`; **conditional on the added requirement that one step transfers coordinate axes**, the only possibilities are the two quarter-turn signs, and the selected incidence orientation chooses one. This algebra does not establish that nature or Q169 selects that requirement.
+
+## Exact invariants and a discriminating internal readout
+
+**EXACT / conditional:** The step is local to one Hasse vertex–edge incidence; `v_i'^2=z_e²`, `z_e'^2=v_i²`, so `N'=N` and the two-site cut balance is `Delta Y_i=z_e²-v_i²=-Delta(z_e²)`. No outside source, sink or leakage is added. Signed S4 relabeling transforms `s` and the edge amplitude by the same orientation sign, so the guard and update commute with all 24 relabelings. A prepared isolated flag with both amplitudes nonzero remains the same unique flag and has exact period four as a signed state; its squared local stock has period two when the two magnitudes differ. HOLD is a fixed point. Since every guard class is invariant, the **global state map obeys `F⁴=id`** and is bijective on this declared state space. It cannot yield contraction or an attractor by itself.
+
+For a source preparation `v_0=1,z_01=2,h_01=1`, all other coordinates zero, signed pairs across ticks are `(1,2),(2,-1),(-1,-2),(-2,1),(1,2)`, with constant total stock `5`. The predeclared vertex-stock readout is `Y_0=(1,4,1,4,1)`; identity/HOLD gives `(1,1,1,1,1)`. Thus `Y_0(1)-Y_0(0)=3` distinguishes this event from identity/HOLD and the conserving half-turn `-I`, which also leaves local squared stock unchanged. This is a **model-internal** discriminant. If `|v_i|=|z_e|`, squared stock is constant even though the signed state cycles; such preparations require a signed/quadrature readout. If both endpoints of one active edge are nonzero, two flags tie and HOLD; if no edge mask is active or one required amplitude is zero, HOLD. These are explicit negative controls.
+
+The [exact script](replay.py) checks 192 isolated integer preparations (six edges, two endpoints, four nonzero vertex values, four nonzero edge values), 4,608 signed-S4 covariance cases, four-tick returns and stock balances, plus three HOLD cases; [results](results.json) capture the trace. The proof covers all integer amplitudes within the stated guard. This constructor replay and repository CI establish the finite model's mathematics, not an independently sourced event law.
+
+**OPEN / stopping condition:** Hard-integrity masks and amplitudes are input/preparation; the event guard and quarter-turn are new constitutive choices. There is no source theorem selecting them, no parity-fiber update, no charge unit, no physical clock, and no apparatus readout. Physical promotion 0. A future correspondence needs an independently prepared flag, a measured vertex/edge proxy with units and uncertainty, a same-device HOLD/half-turn null, and a frozen acceptance rule. Until those are available, do not promote the internal `3` stock contrast to physics or to fine structure.
