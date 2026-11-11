@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "evidence": [
+    "NUMERICAL",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "archive_source_revision": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+  "script_head": "72723dbd34ad6966ca570535928cba51e3d2718a",
+  "archive_blob_sha": "d76143e950b724ce8893a211b21044115c7aba0b",
+  "run_id": 40213880131,
+  "source_role": "Archived complete final 560x180 tangent and reference initial/final; NOT time-dependent U(t,0)B",
+  "cases": {
+    "nominal_normal": {
+      "epsilon": 0.0018027756377319948,
+      "equilibrium_frame_final_primary_linear_radius": 0.00016894760813335866,
+      "exceeds_frame001_0_036_radius_in_linearization": true,
+      "feasible_linearized_total_primary_radius_lower_bound": 0.036430082902677664,
+      "frame001_ball_contains_moving_reference_final": true,
+      "frame001_radius": 0.036,
+      "initial_shell_gram_anisotropy_max": 0,
+      "lower_bound_phase_type": "probe2,sign-1",
+      "moving_reference_frame_final_primary_linear_radius": 0.00016894760813335866,
+      "moving_shell_gram_anisotropy_max": 5.329070518200751e-15,
+      "raw_final_primary_linear_radius": 0.03520937943792633,
+      "reference_final_displacement_from_equilibrium": 0.009351499339359103,
+      "reference_hub_relative_to_shell_centroid_norm": 8.006345345739709e-16,
+      "source_id": "uniform-b0.05-cf0.0"
+    },
+    "worst_fine": {
+      "epsilon": 0.0018001154613065118,
+      "equilibrium_frame_final_primary_linear_radius": 0.00009867394738141803,
+      "exceeds_frame001_0_036_radius_in_linearization": true,
+      "feasible_linearized_total_primary_radius_lower_bound": 0.036613097867334986,
+      "frame001_ball_contains_moving_reference_final": true,
+      "frame001_radius": 0.036,
+      "initial_shell_gram_anisotropy_max": 0,
+      "lower_bound_phase_type": "probe1,sign-1",
+      "moving_reference_frame_final_primary_linear_radius": 0.00009867394310088079,
+      "moving_shell_gram_anisotropy_max": 0.00009928572140150995,
+      "raw_final_primary_linear_radius": 0.03500971996661153,
+      "reference_final_displacement_from_equilibrium": 0.01052593951520894,
+      "reference_hub_relative_to_shell_centroid_norm": 0.000019520123815901887,
+      "source_id": "seed10422-0-boundary2"
+    },
+    "worst_normal": {
+      "epsilon": 0.0018001154613065118,
+      "equilibrium_frame_final_primary_linear_radius": 0.0000986739425632899,
+      "exceeds_frame001_0_036_radius_in_linearization": true,
+      "feasible_linearized_total_primary_radius_lower_bound": 0.03661309786647931,
+      "frame001_ball_contains_moving_reference_final": true,
+      "frame001_radius": 0.036,
+      "initial_shell_gram_anisotropy_max": 0,
+      "lower_bound_phase_type": "probe1,sign-1",
+      "moving_reference_frame_final_primary_linear_radius": 0.00009867393828275132,
+      "moving_shell_gram_anisotropy_max": 0.00009928572185292213,
+      "raw_final_primary_linear_radius": 0.03500971996661518,
+      "reference_final_displacement_from_equilibrium": 0.010525939511743599,
+      "reference_hub_relative_to_shell_centroid_norm": 0.000019520123787673264,
+      "source_id": "seed10422-0-boundary2"
+    }
+  },
+  "physical_interpretation": "Endpoint linearized only. Feasible initial housing phases violate previous equilibrium-centered .036 radius at first order; no nonlinear trajectory counterexample.",
+  "validation": "Executed GitHub-hosted Python3 standard library on archived binary; 17 unittest tests passed, not a certified numerical ODE error bound"
+}

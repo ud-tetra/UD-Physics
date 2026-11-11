@@ -1,0 +1,25 @@
+{
+  "actual_relative_perturbation_condition": "||Yactual - Yref||F<=9/250, NOT proven uniformly or for nonlinear flow",
+  "baseline_displacement_condition": "||Yref - Y0||F<=11/1000 at a considered time (only endpoint source data checked numerically)",
+  "constants": {
+    "centroid_map_bound": "21/20",
+    "d": "11/1000",
+    "r": "9/250",
+    "reference_full_Frob_bound": "27/8",
+    "reference_op_bound": "39/20"
+  },
+  "labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "nonlinear_chart_remainder_upper_float": 0.0009913339059654139,
+  "nonlinear_chart_remainder_upper_fraction": "93325499434647/94141337114624000",
+  "omega_operator_norm_rational": "52947/3456979",
+  "orientation": "proper SO3, shell-centroid-subtracted 13-primary layout",
+  "reference_gram_lambda_min_rational": "3456979/1000000",
+  "scope": "generic 3D moving-reference chart; not a flow-invariant tube, Green estimate, volume remainder or UD-specific signature",
+  "status": "PASS",
+  "threshold_strict": "<1/1000 at time where BOTH displacement assumptions hold"
+}

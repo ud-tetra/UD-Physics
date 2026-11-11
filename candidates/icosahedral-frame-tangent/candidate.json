@@ -1,0 +1,39 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "icosahedral-frame-tangent",
+  "session_id": "ico-frametangent-20261025-gpt6-a1",
+  "question": "Does the new proper-frame chart reduce the frozen 180-housing-phase linear response and can its radius antecedent apply to the moving nonlinear pulse?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Full source 280 coordinate/560 mechanical phase model and 180 initial housing phases unchanged.",
+    "Source checkpoint holds only full final W(100), not time-dependent tangent U(t,0)B or forced Green U(t,s).",
+    "Numerical endpoint singular values and explicit unit-phase directions calculated from published source checkpoint using standard-library Jacobi/power iteration.",
+    "Moving chart theorem assumes reference error <=11/1000 and actual relative primary error <=9/250; neither continuously validated for nonlinear u100 dynamics."
+  ],
+  "physical_mapping": "Uncalibrated native ell0,E*,t0 mechanical surrogate; only a conventional proper SO3 readout, no UD physical identification.",
+  "target_exposure": "Previous frame001 equilibrium radius .036, prior .03500972 raw tangent, prior .0002420865 Procrustes tangent shape, pre-existing 80% breathing threshold; new projected tests are developmental, not blind predictions.",
+  "fitted_choices": [
+    "Use exact source limiting and nominal property cases without retuning, endpoint u100 because full Wfinal archived.",
+    "Select deterministic matched-reference and 500-step power iterations as counterphase search; not full maximum optimization.",
+    "Choose moving baseline d=11/1000 slightly above exposed .01052594, relative r=9/250 from frame001 .036; rational bounding constants picked to achieve <.001."
+  ],
+  "sources": [
+    "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7:experiments/icosahedral-pulsetube/README.md",
+    "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7:experiments/icosahedral-pulsetube/TUBE_THEOREM.md",
+    "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7:artifacts/icosahedral-pulsetube-20261022-a1/pulsetube-001/files/compact_checkpoints.npz",
+    "https://github.com/ud-tetra/UD-Physics/pull/187 (unmerged read-only frame001)"
+  ],
+  "baseline": "Ordinary proper-frame aligned 3D mechanical response of the same local spring/dashpot network, no uniquely UD phenomenon.",
+  "result": "NUMERICAL archived final 560x180 W: limiting raw primary radius .03500971997, moving-shape radius .00009867394310; nominal raw .03520937944 vs moving .00016894760813. Explicit feasible combined reference plus tangent phases yield linearized total raw endpoint radii .03661309787 worst and .03643008290 nominal, exceeding frame001 equilibrium .036 bound; not actual nonlinear counterexamples. EXACT/CONDITIONAL moving frame SO3 nonlinear chart remainder <=93325499434647/94141337114624000≈.00099133 given reference||Yref-Y0||F<=.011 and actual relative||Y-Yref||F<=.036. Source full u100 nonlinear trajectory/error bound remains OPEN.",
+  "next_discriminant": "Compute full time-dependent frame-projected180-column tangent and verify continuous reference/true nonlinear relative radius in full560-state positive norm, then forced Green/Hessian/volume bounds.",
+  "mathematical_receipts": [
+    "sessions/ico-frametangent-20261025-gpt6-a1/mathematical_receipt.json"
+  ]
+}
