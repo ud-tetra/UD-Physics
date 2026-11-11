@@ -1,0 +1,21 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb-native-manybody-20261024",
+  "goal": "Test whether integrated native UD finite pairing, loop action and tetrahedral bosonic composition select a many-body U/epsilon without fitting transmon spectra",
+  "owned_paths": [
+    "tasks/qpb-native-manybody-20261024.json",
+    "sessions/qpb-manybody-20261024-gpt6-a1/",
+    "experiments/qpb-native-manybody/",
+    "candidates/qpb-native-manybody/",
+    "artifacts/qpb-manybody-20261024-gpt6-a1/"
+  ],
+  "dependencies": [
+    "qpb1-local-generators-20261023",
+    "qpb1-finite-pairing-20261023",
+    "qpb1-loop-history-20261023"
+  ],
+  "status": "complete",
+  "result": "Exact Sym²(C7) dim28 and S4 Hermitian commutant dim39; invariant positive hidden-pair interaction U>=0 arbitrary. Even extra Weyl phase identification leaves infinite aliases; no native U/epsilon selection.",
+  "next_action": "Require a source-selected two-body interaction and independently calibrated action/time/port map before heldout spectra; park unique quantum attribution."
+}

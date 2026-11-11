@@ -1,0 +1,304 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "qpb-manybody-001",
+  "session_id": "qpb-manybody-20261024-gpt6-a1",
+  "candidate_id": "qpb-native-manybody",
+  "question": "Can integrated tetrahedral S4, finite Weyl pairing, native action and bosonic composition select a quantum two-body U/epsilon before target exposure?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "V",
+      "symbol": "V",
+      "object_type": "active one-particle complex signed S4 representation",
+      "definition": "native oriented real15 chain active rank14 with J=A/2, assume i=-J, V=3+3prime+sign1prime",
+      "domain": "S4",
+      "codomain": "U(C7)",
+      "coefficient_domain": "Q characters, complex amplitudes",
+      "units": "dimensionless",
+      "basis_orientation": "ascending simplex signs and 24 permutations",
+      "metric_measure": "native positive Euclidean H=I",
+      "origin": "imported exact source with extra complex physical map assumption",
+      "exact_expression": "chiV=(7,-1,-1,1,-1)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local",
+        "qext"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit active norm"
+    },
+    {
+      "object_id": "V2",
+      "symbol": "Sym2(V)",
+      "object_type": "symmetrized two-boson complex Hilbert space",
+      "definition": "symmetric tensor product, dimension 7*8/2=28",
+      "domain": "C7 tensor C7",
+      "codomain": "C28",
+      "coefficient_domain": "Q character, C Hilbert",
+      "units": "dimensionless state",
+      "basis_orientation": "bosonic exchange assumed",
+      "metric_measure": "tensor Hermitian",
+      "origin": "assumed/derived",
+      "exact_expression": "3*1+1prime+3*2+4*3+2*3prime; Hermitian commutant real dim39",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "local",
+        "qext"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [
+        "V"
+      ],
+      "normalization": "orthonormal bosonic pair states"
+    },
+    {
+      "object_id": "Hint",
+      "symbol": "H2,U",
+      "object_type": "postulated positive two-hidden rank1 interaction",
+      "definition": "H2=dGamma(h)+UQhh, Qhh=|hh><hh|; U>=0",
+      "domain": "Sym2(V)",
+      "codomain": "Hermitian operators",
+      "coefficient_domain": "real U; Q fixture values",
+      "units": "physical U joules if chi/tau0 known, otherwise ratio dimensionless",
+      "basis_orientation": "hidden sign squared is S4 trivial",
+      "metric_measure": "positive semidefinite extra energy",
+      "origin": "assumed",
+      "exact_expression": "Ehh=2epsilon+U; U/epsilon free nonnegative",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "source-port"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "V2"
+      ],
+      "normalization": "epsilon=2chi*g3/tau0 assumed"
+    },
+    {
+      "object_id": "Dweyl",
+      "symbol": "D,k",
+      "object_type": "native finite discriminant/Weyl phase algebra",
+      "definition": "D=Z4^2 perfect bilinear pairing, primitive characters k=1,3",
+      "domain": "D x D",
+      "codomain": "Q/Z and roots of unity",
+      "coefficient_domain": "Z/4 ring",
+      "units": "dimensionless phase",
+      "basis_orientation": "inherited signed S4",
+      "metric_measure": "perfect finite pairing, no scalar S4-fixed quadratic refinement",
+      "origin": "imported finite exact source",
+      "exact_expression": "OPTIONAL new identification exp(-i2pi U/epsilon)=i^k",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "finite"
+      ],
+      "assumption_ids": [
+        "A3"
+      ],
+      "dependency_ids": [],
+      "normalization": "physical phase-time map NOT source selected"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "local",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "e8a6a40d229090a1c6c783aef2832d38c3e7784f",
+      "section_or_object_id": "source K/P, J and signed S4",
+      "source_status": "integrated exact"
+    },
+    {
+      "source_id": "finite",
+      "url_or_repo_path": "experiments/qpb1-finite-pairing/README.md",
+      "version_or_commit": "e8a6a40d229090a1c6c783aef2832d38c3e7784f",
+      "section_or_object_id": "D=Z4^2 primitive k and no fixed refinement",
+      "source_status": "integrated finite algebra; physical hbar OPEN"
+    },
+    {
+      "source_id": "history",
+      "url_or_repo_path": "experiments/qpb1-loop-history/README.md",
+      "version_or_commit": "e8a6a40d229090a1c6c783aef2832d38c3e7784f",
+      "section_or_object_id": "native action support/winding and finite records",
+      "source_status": "integrated conditional"
+    },
+    {
+      "source_id": "source-port",
+      "url_or_repo_path": "experiments/qpb1-source-reservoir/README.md",
+      "version_or_commit": "e8a6a40d229090a1c6c783aef2832d38c3e7784f",
+      "section_or_object_id": "reversible source port and externally supplied g",
+      "source_status": "integrated conditional source hypothesis"
+    },
+    {
+      "source_id": "qext",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/154",
+      "version_or_commit": "dc1cdbed71a77fb10ced2d482715d03d5c45269b",
+      "section_or_object_id": "complex representation 3+3prime+sign and free Kerr interaction",
+      "source_status": "unmerged draft, read-only not integrated task dependency"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Extra bosonic identical-particle symmetric tensor rule on the native complex candidate V; original S4 action retained."
+    },
+    {
+      "id": "A2",
+      "description": "Permissible but not source-selected hidden-pair S4-invariant UQhh with U>=0."
+    },
+    {
+      "id": "A3",
+      "description": "OPTIONAL FIT phase bridge assumes e^{-i U(pi tau0)/chi}=i^k for native recurrence s=pi and epsilon*tau0/chi=2; no native physical action normalization or event rule."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "finite group character/combinatorics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "24 signed S4 elements and cycle-square classes, character formula for Sym²"
+    },
+    {
+      "technique": "Schur Hermitian operator commutant",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "multiplicity squared count 39, compare 3 one-body directions"
+    },
+    {
+      "technique": "exact rational and modular phase",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Fraction interaction ratios and primitive Z4 aliases"
+    },
+    {
+      "technique": "source and physical units",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "finite Weyl root phase not a Hamiltonian, chi and tau0 unselected"
+    },
+    {
+      "technique": "nonlinear quantum null/identifiability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "continuous U family and conventional identical projector/Kerr model"
+    },
+    {
+      "technique": "integer factorization, homology beyond imported pairing",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no new homology or divisibility claim; finite source D imported unchanged"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "dim Sym² C7=7*8/2=28; S4 class sizes (1,6,3,8,6); symmetric-square character (28,4,4,1,0)",
+    "reduced_expression": "irrep multiplicities (3,1,3,4,2), commutant real dimension 3²+1²+3²+4²+2²=39, extra=39-3=36; Weyl phase implies U/epsilon=-k/4 mod1 under new hypothesis",
+    "factor_origins": [
+      "source complex S4 character from native C7",
+      "bosonic symmetric tensor and finite-group characters",
+      "optional primitive Z4 central phase"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native real continuous dimensionless s; optional physical tau0 seconds",
+    "modulus": "4 only finite Weyl phase, not a native clock",
+    "residue_convention": "k=1 or 3 primitive i^k; congruence -k/4 mod1",
+    "update_rule": "conditional two-particle exp(-i H2 t/chi), optional native s=pi phasing",
+    "initial_phase": "no physical clock or state prep",
+    "coupling": "hidden-pair UQhh extra",
+    "period_claim": "native free onebody source rate2 returns at s=pi; no native two-body U selected",
+    "physical_unit_map": "epsilon=2chi*g3/tau0 assumed, chi and tau0 external"
+  },
+  "dynamics_readout": {
+    "state_space": "native C7 single particle plus ASSUMED bosonic Sym² C7",
+    "generator_or_update": "H2=dGamma(h)+U|hh><hh|, optional Weyl i^k mapping",
+    "initial_boundary_conditions": "two hidden bosons |hh> or spectator pairs; U>=0 chosen",
+    "conservation_and_sources": "number sector two, Hermitian unitary evolution; no source/sink law",
+    "projection_and_kernel": "pair energy 2epsilon+U and associated relative phase; physical spectroscopy map unspecified",
+    "physical_mapping": "OPEN unselected quantum statistics, action/clock and measured charge/port"
+  },
+  "target_exposure": {
+    "status": "TARGET_KNOWN_PRIOR_TO_MODEL_CHOICE",
+    "known_targets": [
+      "quantum transmon anharmonic ladder, earlier PR154 free Kerr coefficient",
+      "finite Weyl primitive phases source already imported"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "bosonic Sym² candidate selected after known multilevel gap",
+      "six U/epsilon rational fixtures for nonselection",
+      "optional primitive-to-interaction phase map imposed for strongest-case stress"
+    ],
+    "search_domain_and_budget": "entire 39-real-dimensional S4 Hermitian two-boson commutant; continuous nonnegative rank1 U family, six fixtures, two Weyl characters with four aliases each",
+    "selection_criterion": "determine whether source/symmetry fixes U/epsilon and whether model uniquely beats conventional quantum null",
+    "baseline": "conventional identical two-boson rank1 projector and Kerr"
+  },
+  "calculation_steps": [
+    "Classify source complex V=3+3prime+sign with class character (7,-1,-1,1,-1), sizes (1,6,3,8,6).",
+    "Enumerate g² and calculate chiSym²(g)=[chiV(g)²+chiV(g²)]/2=(28,4,4,1,0).",
+    "Inner products against S4 irreps give (3,1,3,4,2); full Hermitian equivariant commutant dim39.",
+    "Induced source onebody Hamiltonians span three dimensions; 36 additional pair-operator directions remain.",
+    "Hidden sign square is trivial, so positive UQhh permitted for any U>=0; source cannot select energy.",
+    "OPTIONAL map exp(-i2pi U/epsilon)=i^k from finite Weyl requires added physical phase, and yields U/epsilon=-k/4 modulo1 with infinite aliases for k=1,3.",
+    "Matched conventional bosonic Hamiltonian exactly reproduces observables; no source-selected UD physical prediction."
+  ],
+  "result": {
+    "exact_expression": "Sym² V=3*1+1prime+3*2+4*3+2*3prime; dim28; Hermitian commutant dim39; U>=0 arbitrary; optional U/epsilon≡-k/4(mod1)",
+    "approximation": null,
+    "units": "dimensionless group and U/epsilon, action Js and native to physical seconds OPEN",
+    "precision_and_error": "exact 24-element enumeration and Fraction modular phase, six positive rational fixtures",
+    "scope": "assumed bosonic Sym² of source C7 and conditional optional phase-to-energy mapping; no physical quantum mechanism",
+    "physical_interpretation": "HYPOTHESIS and FAILED uniquely selected U/epsilon"
+  },
+  "verification": [
+    {
+      "method": "exact standard-library Fraction group and alias audit",
+      "command_or_proof_path": "experiments/qpb-native-manybody/audit.py",
+      "source_revision": "e8a6a40d229090a1c6c783aef2832d38c3e7784f",
+      "actual_result": "PASS 24 S4, character/commutant/positivity and 8 Weyl alias fixtures",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate longer same-context Python algebra check",
+      "command_or_proof_path": "/mnt/data/qpb_manybody_20261024/audit.py",
+      "source_revision": null,
+      "actual_result": "PASS; not independent reviewer",
+      "review_relationship": "same constructor"
+    },
+    {
+      "method": "external mathematical review/physical spectral data",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN / NOT_EXECUTED",
+      "review_relationship": "none"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Full S4 symmetry permits a continuum U>=0 on invariant pair projector, so no unique interaction.",
+    "Bosonic Sym² enlarges Hamiltonian family from three onebody to 39 equivariant Hermitian directions.",
+    "Primitive finite Weyl k1/3 does not imply an energy; even extra phase mapping leaves infinite positive U/epsilon aliases.",
+    "Ordinary matched bosonic projector Hamiltonian reproduces every modeled readout."
+  ],
+  "limitations": [
+    "Native complex C7 quantum meaning and bosonic statistics imposed rather than derived.",
+    "No physical chi,tau0, physical charge/phase or measurement map.",
+    "No held-out transmon spectrum, physical experiment or external non-constructor review.",
+    "Source scan bounded to listed integrated audits."
+  ],
+  "changed_dependencies": [
+    "New disjoint task, earlier draft PR154 imported read-only; only hypothetical bosonic and phase-to-energy bridges added."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb-manybody-20261024-gpt6-a1/manybody-001/manifest.json"
+  ],
+  "next_discriminant": "Source-select unique microscopic two-body U/epsilon and calibrated physical quantum map before unused spectral measurements; otherwise keep parked."
+}

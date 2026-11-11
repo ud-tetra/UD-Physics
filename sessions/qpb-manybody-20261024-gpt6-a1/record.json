@@ -1,0 +1,56 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "qpb-manybody-20261024-gpt6-a1",
+  "runtime": "GPT-6 GitHub connector isolated branch; local Python standard-library Fraction, no authenticated git checkout",
+  "task": "qpb-native-manybody-20261024",
+  "goal": "Test whether integrated native UD finite pairing, loop action and tetrahedral bosonic composition select a many-body U/epsilon without fitting transmon spectra",
+  "created_at": "2026-10-24T18:06:57.593Z",
+  "base_revision": "e8a6a40d229090a1c6c783aef2832d38c3e7784f",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "qpb-native-manybody-20261024": {
+      "ref": "refs/heads/claims/qpb-native-manybody-20261024",
+      "sha": "7409f88a14489118058a62c96fa84119f050dd35",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 /mnt/data/qpb_manybody_20261024/compact.py --out /mnt/data/qpb_manybody_20261024/compact_summary.json",
+      "result": "PASS 24 exact S4 actions, Sym² irrep decomposition, commutant39, six positive U ratios, eight Weyl alias fixtures",
+      "scope": "executed local compact source identical to committed audit.py"
+    },
+    {
+      "command": "python3 /mnt/data/qpb_manybody_20261024/audit.py --out /mnt/data/qpb_manybody_20261024/summary.json",
+      "result": "PASS separate longer same-assistant Fraction implementation with equivalent algebra; not outside reviewer",
+      "scope": "constructor method crosscheck"
+    },
+    {
+      "command": "sha256sum /mnt/data/qpb_manybody_20261024/compact.py /mnt/data/qpb_manybody_20261024/compact_summary.json",
+      "result": "PASS b8f7310bceddb67a45b8c00f20e929a0f171d21795d50787ed36ff48fdc40c38 and b5b02dd4b3f90390ecc8e815a95bf8f6b2e06570463102fcc1e2c0ad5a9001fe",
+      "scope": "immutable manybody-001 source/summary exact byte capture"
+    },
+    {
+      "command": "python3 scripts/validate.py; python3 -m unittest discover -s tests -v",
+      "result": "NOT_RUN locally: full authenticated checkout absent; GitHub Actions checks pending",
+      "scope": "repository checks not science peer review"
+    }
+  ],
+  "finding": "Exact Sym²(C7) dim28 and S4 Hermitian commutant dim39; invariant positive hidden-pair interaction U>=0 arbitrary. Even extra Weyl phase identification leaves infinite aliases; no native U/epsilon selection.",
+  "next_action": "Require a source-selected two-body interaction and independently calibrated action/time/port map before heldout spectra; park unique quantum attribution.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q exact group character and modular fractions; C7 complex inferred from source J; R U/epsilon",
+    "exactness_or_precision_plan": "enumerate S4 24 classes and exact integer character products, Fraction phase aliases and positive projector",
+    "applicable_methods": [
+      "S4 symmetric tensor group characters",
+      "Schur multiplicity commutant",
+      "positive two-body rank1 projector construction",
+      "Z4 finite Weyl modular phases and time/action distinction",
+      "conventional bosonic Hamiltonian null"
+    ],
+    "clock_metric_units_conventions": "native s dimensionless with optional return s=pi; physically chi Js and tau0 seconds unselected; U/epsilon ratio dimensionless; metric H=I native"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb-manybody-20261024-gpt6-a1",
+  "run_id": "manybody-001",
+  "created_at": "2026-10-24T18:01:26.493Z",
+  "evidence": "EXACT",
+  "summary": "Exact S4 symmetric-square commutant and two-body interaction nonselection, including optional finite-Weyl phase alias stress",
+  "command": "python3 experiments/qpb-native-manybody/audit.py --out /tmp/ud-manybody-001.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON",
+  "source": {
+    "revision": "e8a6a40d229090a1c6c783aef2832d38c3e7784f",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "sym2-constructor",
+      "name": "audit.py",
+      "path": "inputs/audit.py",
+      "sha256": "b8f7310bceddb67a45b8c00f20e929a0f171d21795d50787ed36ff48fdc40c38",
+      "size_bytes": 3305,
+      "source_location": "repository",
+      "source_path": "experiments/qpb-native-manybody/audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "b5b02dd4b3f90390ecc8e815a95bf8f6b2e06570463102fcc1e2c0ad5a9001fe",
+      "size_bytes": 2249
+    }
+  ]
+}
