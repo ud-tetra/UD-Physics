@@ -19,3 +19,7 @@ Re-evaluated v0.1 and v0.2 at integrated 05a9caf6. Marked hypothesis AGILE as re
 Checkpoint (handoff): AGILE hypothesis flag added; conditional finite model and scoped Q169 no-go retained; no new dynamical result.
 
 Next: Develop source-bound Q169/Q170 native local flux readout and compare to explicit baseline.
+
+## Integration closure
+
+PR #370 merged at `765f1ac88487386b0ba87fbc22958243a64c46af` after workflow 43113933227 succeeded. Claim released from `922f1b12fb71cf2c8c787214350c7ada24f30d6a` to `148d1f2ffc241edbb3464d1b2bc689a5bd368915`. Closure only; no substantive change.
