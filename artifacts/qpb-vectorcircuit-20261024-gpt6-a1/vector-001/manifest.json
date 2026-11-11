@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "qpb-vectorcircuit-20261024-gpt6-a1",
+  "run_id": "vector-001",
+  "created_at": "2026-10-24T20:13:39.854Z",
+  "evidence": "EXACT",
+  "summary": "Driven K4 vector-charge continuity, source work, dipole/cycle port and physical-matrix scale nonidentifiability; representative numeric output excerpt",
+  "command": "python3 experiments/qpb-vector-circuit/port_audit.py --out /tmp/qpb-vector-full.json",
+  "command_execution": "EXECUTED_LOCAL_STANDARD_LIBRARY_PYTHON; representative exact case/pulse excerpt retained as summary.json; full output locally executed, see journal",
+  "source": {
+    "revision": "0fbbe933eaa133480b79b56703dfa34620f79c28",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "vector-source",
+      "name": "port_audit.py",
+      "path": "inputs/port_audit.py",
+      "sha256": "44f2d0f6203320a12786a57364b6bd91cee0a2f911b34effdab61494fd00f137",
+      "size_bytes": 4047,
+      "source_location": "repository",
+      "source_path": "experiments/qpb-vector-circuit/port_audit.py"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/summary.json",
+      "sha256": "e06bd01e17a4702d45ad9564c9cc74a9e569f4053bf3002eb4cb7c5cdf73595e",
+      "size_bytes": 223
+    }
+  ]
+}
