@@ -3,16 +3,14 @@
   "schema_version": 1,
   "protocol_version": 2,
   "task": "local-hasse-quarter-event-20261111",
-  "session": "nativeintegral-20261111-01",
-  "status": "released",
-  "created_at": "2026-11-11T23:12:58.523Z",
-  "base_revision": "7eeb05b1facf2a5b6efd03a8626a312f98cdfb54",
-  "previous_claim_sha": "904860979ccc868b30629e1c1d8a1c2192fec950",
+  "session": "phaselattice-20261111-01",
+  "status": "held",
+  "created_at": "2026-11-11T23:24:29.208Z",
+  "base_revision": "39a1d553d90a0945ab488123419ab29235ddde74",
+  "previous_claim_sha": "bca12d6bd65bfe139b6dbb2fd69880558f2db5c2",
   "owned_paths": [
     "experiments/local-hasse-quarter-event",
     "candidates/local-hasse-quarter-event",
     "tasks/local-hasse-quarter-event-20261111.json"
-  ],
-  "released_at": "2026-11-11T23:19:35.864Z",
-  "released_from_sha": "9245e2ca5570c9a58321fb334c186499f690c7d3"
+  ]
 }
