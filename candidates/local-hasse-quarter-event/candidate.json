@@ -1,0 +1,32 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "local-hasse-quarter-event",
+  "session_id": "hassequarter-20261111-01",
+  "question": "Can an addressed local integral Hasse update conserve stock, specify HOLD and yield a discriminating readout?",
+  "status": "ACTIVE",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "assumptions": [
+    "integer amplitude sublattice on C0+C1",
+    "static binary hard-integrity mask",
+    "unique nonzero incident vertex-edge flag triggers a quarter-turn",
+    "incidence sign fixes quarter-turn orientation"
+  ],
+  "physical_mapping": "none; physical promotion 0",
+  "target_exposure": "Gibson and alpha comparator known but not used; no empirical endpoint used",
+  "fitted_choices": [],
+  "sources": [
+    "recovered ledger v0.85 Q169,Q170,Q201,Q202 SHA256 8845ca23...",
+    "UD-Physics@c2c156c2 base"
+  ],
+  "baseline": "identity/HOLD and conservative half-turn -I",
+  "result": "F^4=id, exact local stock balance and signed S4 covariance; sample Y0 alternates 1,4 versus fixed baseline1",
+  "next_discriminant": "independent preparation/readout of signed local channels and source-selected event guard/tick",
+  "mathematical_receipts": [
+    "candidates/local-hasse-quarter-event/mathematical_receipt.json"
+  ]
+}
