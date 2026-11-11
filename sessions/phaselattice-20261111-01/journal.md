@@ -23,3 +23,7 @@ Exact root-of-unity proof restricts finite-order full-rank integral flow samples
 Checkpoint (complete): Q169/Q170 do not uniquely select quarter phase: half sample has larger index-2 admitted lattice versus quarter index-256; amplitude unit remains unsourced.
 
 Next: Search for a separate source-bound clock and lattice criterion; if absent park finite-sampling family and explore a different event generator.
+
+## 2026-11-11T23:30:24.737223+00:00
+
+PR #380 passed Discovery integrity run 43120197451 and merged at c71c4419c1a6554c2fff3c2af7f36d481deb7811. Claim released by exact held-SHA lease; marker b8192bbc036ed19ce29491bdb2c56b86932d97cb verified live. Closure records integration and release only.
