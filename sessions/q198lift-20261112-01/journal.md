@@ -23,3 +23,7 @@ v0.9 exact additive no-go p:R15->F2^3; conditional one-event product lifts E(0) 
 Checkpoint (complete): Q198 does not supply an intrinsic autonomous Q169 lift: additive parity readout is zero; conditional augmented lift exists but amplitude update and next receipt are unselected.
 
 Next: Source a discrete/nonlinear parity extraction, accepted receipt constructor and environment/next-receipt update; otherwise park this finite-sampling branch.
+
+## 2026-11-11T23:41:26.634081+00:00
+
+PR #382 passed Discovery integrity run 43121627188 and merged at b7df60f09636025a7bc28d37991aae3aff9661da. Claim released by exact held-SHA lease; marker 500ee48fc10f07343144dc92886bbb1afc73603b verified live. Closure records integration and release only.
