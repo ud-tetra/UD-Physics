@@ -25,14 +25,15 @@
   ],
   "baseline": "identity/HOLD and conservative half-turn -I",
   "result": "F^4=id, exact local stock balance and signed S4 covariance; sample Y0 alternates 1,4 versus fixed baseline1",
-  "next_discriminant": "Source-select event interval and amplitude unit with a typed independent criterion; otherwise park this finite-sampling family and seek another native event mechanism.",
+  "next_discriminant": "Source a nonlinear/discrete parity extraction, accepted receipt constructor and next receipt/environment update; otherwise park intrinsic Q169 lift.",
   "mathematical_receipts": [
     "candidates/local-hasse-quarter-event/mathematical_receipt.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.4.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.5.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.7.json",
-    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.8.json"
+    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.8.json",
+    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.9.json"
   ],
   "native_Q169_comparison_v0_2": {
     "status": "PARKED",
@@ -43,7 +44,7 @@
     "physical_promotion": 0
   },
   "hypothesis_flag": "AGILE",
-  "hypothesis_revision": "v0.8",
+  "hypothesis_revision": "v0.9",
   "revision_policy": {
     "meaning": "Revisable constitutive hypothesis; ACTIVE is workflow status, AGILE is revision flag, not evidence grade.",
     "re_evaluation": "v0.1 exact conditional finite-event identities remain; v0.2 exact scoped Q169 full-endpoint no-go remains. Gate, mask and tick are unselected assumptions; no empirical test has been completed.",
@@ -109,6 +110,12 @@
       "status": "EXACT scoped classification; NO-GO unique source selection",
       "result": "finite-order full-rank integer sublattice samples are identity, half, quarter and inverse quarter; half index2 versus quarter index256, no source choice",
       "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.8.json"
+    },
+    {
+      "version": "v0.9",
+      "status": "EXACT scoped additive no-go; CONDITIONAL product lift, source selection OPEN",
+      "result": "no nontrivial additive C_R->Theta readout; accepted Q198 endpoint admits multiple Q169-conserving amplitude updates, with no autonomous next receipt",
+      "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.9.json"
     }
   ],
   "native_flux_v0_4": {
@@ -144,6 +151,12 @@
     "status": "OPEN_GATED",
     "finding": "Q169/Q170 conservation and signed S4 permit half and quarter finite samples on distinct invariant sublattices; no unique event phase or amplitude unit",
     "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.8.json",
+    "physical_promotion": 0
+  },
+  "q198_full_carrier_lift_v0_9": {
+    "status": "PARKED_AS_SOURCE_DERIVED_LAW",
+    "finding": "one-event augmented product lift conditional on accepted r exists but is nonunique; no source g, additive parity readout or next receipt",
+    "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.9.json",
     "physical_promotion": 0
   }
 }
