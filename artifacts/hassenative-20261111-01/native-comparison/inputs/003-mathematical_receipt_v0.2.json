@@ -1,0 +1,194 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "Q169-native-vs-quarter-event-v0.2",
+  "session_id": "hassenative-20261111-01",
+  "candidate_id": "local-hasse-quarter-event",
+  "question": "Can the prepared candidate endpoint be reached by native Q169 flow on the same K4 carrier?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED"
+  ],
+  "objects": [
+    {
+      "object_id": "native_Q169_A",
+      "symbol": "A=d-d^T",
+      "object_type": "generator",
+      "definition": "Full filled-tetrahedron Hodge boundary skew operator",
+      "domain": "C0+C1+C2+C3",
+      "codomain": "C0+C1+C2+C3",
+      "coefficient_domain": "integer matrix over real amplitudes",
+      "units": "dimensionless formal flow parameter",
+      "basis_orientation": "ascending simplex orientations",
+      "metric_measure": "unit Euclidean",
+      "origin": "imported",
+      "exact_expression": "d-d^T",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "ledger_v0.85_Q169"
+      ],
+      "assumption_ids": [
+        "fixed_carrier",
+        "unit_metric"
+      ],
+      "dependency_ids": [],
+      "normalization": "native unit incidence"
+    },
+    {
+      "object_id": "candidate_F",
+      "symbol": "F",
+      "object_type": "finite update",
+      "definition": "Unique-flag integral vertex-edge quarter-turn with hard mask",
+      "domain": "Z^4+Z^6 times {0,1}^6",
+      "codomain": "same",
+      "coefficient_domain": "Z",
+      "units": "dimensionless tick",
+      "basis_orientation": "ascending oriented edges",
+      "metric_measure": "unit Euclidean amplitude stock",
+      "origin": "candidate",
+      "exact_expression": "(v_i,z_e)->(-s z_e,s v_i)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "candidate_v0.1"
+      ],
+      "assumption_ids": [
+        "unique_flag"
+      ],
+      "dependency_ids": [],
+      "normalization": "one step per declared tick"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "ledger_v0.85_Q169",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "version_or_commit": "v0.85 SHA256 8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "section_or_object_id": "Q169",
+      "source_status": "recovered ledger"
+    },
+    {
+      "source_id": "candidate_v0.1",
+      "url_or_repo_path": "experiments/local-hasse-quarter-event/README.md",
+      "version_or_commit": "UD-Physics@6194e2314ff2e59f13468a43ed55ed734ae8159c",
+      "section_or_object_id": "Source and state contract; Exact invariants",
+      "source_status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "fixed_carrier: same filled K4 with all 15 amplitudes; absent external source",
+    "unit_metric: Euclidean metric and ascending orientations",
+    "unique_flag: h01=1, v0=1, e01=2, others zero"
+  ],
+  "technique_plan": [
+    {
+      "technique": "chain/homology",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Verify d\u00b2=0 and oriented edge cancellation"
+    },
+    {
+      "technique": "spectral/operator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Check skew generator and exact phase state"
+    },
+    {
+      "technique": "local transport/support",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Compare initial derivative support and stock"
+    },
+    {
+      "technique": "clock/modular",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Keep real s distinct from candidate integer tick"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No count divisibility or prime-structure question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": "native phase pi/4 state has denominator 4",
+    "factor_origins": [
+      "4 from A^3=-4A and sin(2s)=1 at s=pi/4"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous formal flow versus discrete candidate event",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "exp(sA) versus F",
+    "initial_phase": "s=0",
+    "coupling": "no calibrated coupling",
+    "period_claim": "no matching time for endpoint; invariant proof",
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "15 real native amplitudes; candidate integer C0+C1 plus mask",
+    "generator_or_update": "A=d-d^T and separate gated F",
+    "initial_boundary_conditions": "v0=1,e01=2,h01=1; other amplitudes zero",
+    "conservation_and_sources": "native L=sum vertices=1 and norm\u00b2=5; event L=2 and norm\u00b2=5; no source",
+    "projection_and_kernel": "Comparison embeds candidate amplitude endpoint into full 15-register carrier with higher amplitudes zero; mask excluded",
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "model-internal endpoint exposed; no empirical target",
+    "known_targets": [
+      "candidate endpoint (v0,e01)=(2,-1)"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "all real s excluded by invariant; phase sample supplementary",
+    "selection_criterion": "exact full-state equality",
+    "baseline": "native Q169 same initial amplitude state"
+  },
+  "calculation_steps": [
+    "For each ascending edge ij, 1^T B1[:,ij]=-1+1=0. Thus L A=0 on C0+C1+C2+C3.",
+    "L(x(0))=1; L(F(x(0)))=2; therefore exp(sA)x(0) != F(x(0)) for every real s.",
+    "Compute Ax(0)=-2v0+2v1+e01+e02+e03-2f012-2f013; exact stock derivative 2x.Ax=0.",
+    "Check A\u00b3=-4A and exp(pi A/4)x=(4x+2Ax+A\u00b2x)/4 on this carrier."
+  ],
+  "result": {
+    "exact_expression": "L(exp(sA)x0)=1 != 2=L(F(x0)) for all real s",
+    "approximation": null,
+    "units": "dimensionless amplitudes",
+    "precision_and_error": "exact integers and fractions, no tolerance",
+    "scope": "fixed filled K4, native unit-metric Q169, prepared full amplitude state, unmodified generator, no source",
+    "physical_interpretation": "none; physical promotion 0"
+  },
+  "verification": [
+    {
+      "method": "analytic conserved-functional proof",
+      "command_or_proof_path": "experiments/local-hasse-quarter-event/README.md v0.2",
+      "source_revision": "6194e2314ff2e59f13468a43ed55ed734ae8159c",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "exact full-matrix checks",
+      "command_or_proof_path": "python3 experiments/local-hasse-quarter-event/native_compare.py",
+      "source_revision": "6194e2314ff2e59f13468a43ed55ed734ae8159c",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Equal quadratic stock 5 fails to imply a native endpoint.",
+    "A\u00b2x has odd coefficients, so quarter-phase state needs denominator 4; an initial attempt to encode it over denominator 2 failed and was corrected.",
+    "The candidate hard mask is an extra state type absent from Q169."
+  ],
+  "limitations": [
+    "Different generators, metrics, carriers, source terms or coarse readouts are outside this no-go.",
+    "No empirical preparation, clock calibration, measurement or independent nonconstructor review."
+  ],
+  "changed_dependencies": [
+    "Candidate v0.1 remains internally valid; native-Q169 identification parked."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/hassenative-20261111-01/native-comparison/manifest.json"
+  ],
+  "next_discriminant": "Return to source-defined native incidence current and seek a target-independent local observable/gate, or formulate a separately sourced modified law."
+}

@@ -1,0 +1,57 @@
+{
+  "source": "recovered ledger v0.85 Q169, unit filled K4, A=d-d^T",
+  "basis": [
+    "v0",
+    "v1",
+    "v2",
+    "v3",
+    "e01",
+    "e02",
+    "e03",
+    "e12",
+    "e13",
+    "e23",
+    "f012",
+    "f013",
+    "f023",
+    "f123",
+    "t0123"
+  ],
+  "initial_nonzero": {
+    "v0": 1,
+    "e01": 2
+  },
+  "candidate_endpoint_nonzero": {
+    "v0": 2,
+    "e01": -1
+  },
+  "native_initial_derivative_nonzero": {
+    "v0": -2,
+    "v1": 2,
+    "e01": 1,
+    "e02": 1,
+    "e03": 1,
+    "f012": -2,
+    "f013": -2
+  },
+  "native_quarter_phase_numerator_denominator_4": {
+    "v0": -3,
+    "v1": 5,
+    "v2": 1,
+    "v3": 1,
+    "e01": 2,
+    "e02": 2,
+    "e03": 2,
+    "f012": -4,
+    "f013": -4
+  },
+  "vertex_sum_initial": 1,
+  "vertex_sum_candidate_endpoint": 2,
+  "stock_both": 5,
+  "native_dot_stock_derivative_half": 0,
+  "d_squared_zero": true,
+  "A_cubed_equals_minus_4A": true,
+  "native_full_state_can_equal_candidate_endpoint_at_any_real_s": false,
+  "reason": "vertex sum conserved by 1^T B1=0, but event changes 1 to 2",
+  "physical_promotion": 0
+}
