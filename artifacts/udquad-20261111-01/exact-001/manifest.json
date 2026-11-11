@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "udquad-20261111-01",
+  "run_id": "exact-001",
+  "created_at": "2026-11-11T20:02:59.085569+00:00",
+  "evidence": "EXACT",
+  "summary": "P06 seven-state S4 response obstruction and alternate edge dyad map",
+  "command": "python3 experiments/ud-quadrupole-source/audit.py > experiments/ud-quadrupole-source/results.json",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "4aa087681f700ab8cb1177a2d8aa1d0866417da3",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-quadrupole-source/audit.py",
+      "sha256": "f9b5bc131d4df6a7f7188f9b5bdebe654daca827a580832868639dc02b251d07",
+      "size_bytes": 6566
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/ud-quadrupole-source/README.md",
+      "sha256": "3a207c778565c321d631b71e5820b3440779e6b17f78670ddeb70e826a3e8897",
+      "size_bytes": 5824
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/ud-quadrupole-source/mathematical_receipt.json",
+      "sha256": "c14b9aaddfd1509d97e822c2804b0fddb7ef2e4dc9a9016e3292377c198f2b0a",
+      "size_bytes": 8453
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "d9b51032a75bc1ebf6669073b49c1839791b122213b386fb11f54727caa6d80a",
+      "size_bytes": 1942
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "udquad-20261111-01",
+  "runtime": "Codex GPT-6.1",
+  "task": "ud-quadrupole-source-20261111",
+  "goal": "Construct exact S4 intertwiner, Gram spectrum, and uniform-source obstruction",
+  "created_at": "2026-11-11T19:58:40.910869+00:00",
+  "base_revision": "4aa087681f700ab8cb1177a2d8aa1d0866417da3",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ud-quadrupole-source-20261111": {
+      "ref": "refs/heads/claims/ud-quadrupole-source-20261111",
+      "sha": "87eeed8be82dffcd329d05054e9fca43c0650265",
+      "status": "held",
+      "protocol_version": 2
+    }
+  },
+  "checks": [],
+  "finding": "Under natural linear full-S4 P06 parity source, all response maps have rank<=2 and kill uniform seven-state source; edge+top alternative rank5 but does not select coupling or 1/5.",
+  "next_action": "Source-select nonuniform parity weights and typed electromagnetic interaction or park alpha correspondence; preserve scoped no-go.",
+  "checkpoint_at": "2026-11-11T20:03:14.535777+00:00",
+  "checkpoint_source": {
+    "revision": "4aa087681f700ab8cb1177a2d8aa1d0866417da3",
+    "dirty": true
+  }
+}
