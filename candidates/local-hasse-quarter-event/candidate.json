@@ -25,7 +25,7 @@
   ],
   "baseline": "identity/HOLD and conservative half-turn -I",
   "result": "F^4=id, exact local stock balance and signed S4 covariance; sample Y0 alternates 1,4 versus fixed baseline1",
-  "next_discriminant": "independent preparation/readout of signed local channels and source-selected event guard/tick",
+  "next_discriminant": "Q169/Q170 native incidence-cut flux readout on full carrier with exact early-time baseline; separately source a discrete event guard or state bridge.",
   "mathematical_receipts": [
     "candidates/local-hasse-quarter-event/mathematical_receipt.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json"
@@ -37,5 +37,44 @@
     "reopen_if": "sourced different state space/generator/metric/source or explicit coarse observable bridge",
     "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json",
     "physical_promotion": 0
-  }
+  },
+  "hypothesis_flag": "AGILE",
+  "hypothesis_revision": "v0.3",
+  "revision_policy": {
+    "meaning": "Revisable constitutive hypothesis; ACTIVE is workflow status, AGILE is revision flag, not evidence grade.",
+    "re_evaluation": "v0.1 exact conditional finite-event identities remain; v0.2 exact scoped Q169 full-endpoint no-go remains. Gate, mask and tick are unselected assumptions; no empirical test has been completed.",
+    "revision_triggers": [
+      "source-bound event/guard constraint",
+      "exact counterexample or changed conservation/current requirement",
+      "independent preparation/readout data with declared uncertainty and null",
+      "new full-carrier native flux comparison"
+    ],
+    "required_for_revision": [
+      "new version and explicit changed premises",
+      "state space, update/clock, metric, source/sink and readout",
+      "old versus new predictions and a reproducible check",
+      "target-exposure and fit disclosure",
+      "unchanged historical receipts and scoped no-go"
+    ],
+    "physical_promotion": 0
+  },
+  "version_history": [
+    {
+      "version": "v0.1",
+      "status": "historical candidate",
+      "result": "conditional finite update and internal exact checks",
+      "source": "experiments/local-hasse-quarter-event/README.md original v0.1 sections"
+    },
+    {
+      "version": "v0.2",
+      "status": "historical scoped NO-GO",
+      "result": "unmodified Q169 cannot reach prepared candidate full endpoint",
+      "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json"
+    },
+    {
+      "version": "v0.3",
+      "status": "AGILE flag and governance amendment",
+      "result": "hypothesis may be revised under versioned testing; no new dynamical or empirical result"
+    }
+  ]
 }
