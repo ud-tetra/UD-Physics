@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "nativeintegral-20261111-01",
+  "run_id": "integral-gate",
+  "created_at": "2026-11-11T23:17:19.887402+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact no-go for nonidentity all-Z15 Q169 samples; conditional invariant sublattice quarter-phase event candidate, clock unselected and physical promotion zero",
+  "command": "python3 experiments/local-hasse-quarter-event/native_integral_event.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "b698cc1071c010583f33ee0b3bec616a80eb7bcb",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "native_integral_event.py",
+      "path": "inputs/001-native_integral_event.py",
+      "source_location": "repository",
+      "source_path": "experiments/local-hasse-quarter-event/native_integral_event.py",
+      "sha256": "240b23c2c30ff905dd1a4333563a0acb1c7e6c6ffdd85f3448dfbbd6517af062",
+      "size_bytes": 4197
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/local-hasse-quarter-event/README.md",
+      "sha256": "d8fab2e719c77a92250a4ef856a86c3340cfe6320bb8922cee8ff502a28daf7c",
+      "size_bytes": 21229
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt_v0.7.json",
+      "path": "inputs/003-mathematical_receipt_v0.7.json",
+      "source_location": "repository",
+      "source_path": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.7.json",
+      "sha256": "b49f44d4fc037222b0c877e1278826e61b4c0cb1b5ed68d3c389a7a3105037ab",
+      "size_bytes": 9373
+    }
+  ],
+  "files": [
+    {
+      "path": "files/native_integral_results.json",
+      "sha256": "2bce2d2f839cb0d45e02aec91ab4149554fc4214e97348b88c4a4e528456e2ed",
+      "size_bytes": 1109
+    }
+  ]
+}

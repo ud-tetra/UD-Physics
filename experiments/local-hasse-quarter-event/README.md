@@ -1,4 +1,22 @@
-# Local Hasse quarter-turn event hypothesis (current review v0.6)
+# Local Hasse quarter-turn event hypothesis (current review v0.7)
+
+## v0.7 native integral event branch (2026-11-11)
+
+**EXACT / scoped NO-GO:** On the original filled K4 `C=⊕C_k(R)` (dimension 15), ascending orientations, unit Euclidean metric and Q169 `A=d−dᵀ`, no nonidentity native flow sample `exp(sA)` maps **all** of `Z^15` into `Z^15`. The source convention and `A³=−4A` are recorded in `experiments/qpb1-local-generators/README.md` §1 and the v0.2 addendum. Since
+
+`exp(sA)=I+[sin(2s)/2]A+[(1−cos(2s))/4]A²`,
+
+an adjacent-grade incidence entry with `A_{v0,e01}=−1` and `(A²)_{v0,e01}=0` forces `sin(2s)/2` to be an integer if the whole matrix is integral. Its absolute value is at most `1/2`, so `sin(2s)=0`. If `cos(2s)=−1`, the vertex diagonal is `1+(2/4)(−3)=−1/2`, not integral. Thus `cos(2s)=1` and the operator is identity. This excludes a nontrivial *global original-lattice* native tick. It does not exclude other invariant sublattices, nonlinear or extended events, or noninteger amplitudes.
+
+**CANDIDATE / exact construction given a chosen phase:** Choose `s=π/4`, one quarter of the native active period `π`, **as an added event schedule**. The resulting full-carrier map is
+
+`U=exp(πA/4)=(4I+2A+A²)/4`, with `U⁴=I`.
+
+Define the pre-event admission predicate on `Z^15` by `(2A+A²)x≡0 (mod 4)` coordinatewise and let `L={x∈Z^15: Ux∈Z^15}`. If admitted, update `x→Ux`; otherwise HOLD with state unchanged. This is a deterministic autonomous **mathematical map given the chosen schedule**, using only the source boundary matrix to evaluate the guard. The gate is source-computable but the choice to treat integrality as physical permission, the phase, and HOLD semantics are new constitutive choices. The congruence implies `A²x` is even; then `U²=I+A²/2` and `U³=U−A` show that `Ux∈Z^15` implies `U²x,U³x∈Z^15`. Since `U⁴=I`, the inverse also preserves the admitted set, so `U(L)=L`. The sublattice contains `4Z^15`, is proper, and the global gated map satisfies `F⁴=id`. `U` is orthogonal, commutes with signed S4, and preserves `L_vertex=Σ_i c0,i`; thus admitted events conserve quadratic stock and vertex sum exactly, while HOLD conserves both. There is no fitted physical constant or SI clock.
+
+For `x=4v0`, the four-event orbit is `4v0 → Σ_i v_i+2(e01+e02+e03) → −2v0+2(v1+v2+v3) → Σ_i v_i−2(e01+e02+e03) → 4v0`; stock remains `16`, vertex sum `4`. The previous `v0+2e01` preparation fails the integer gate and HOLDS, despite having nonzero native continuous derivative; this is an explicit limitation of the new event interpretation. [Exact replay](native_integral_event.py) checks matrix identities, 75 scaled-basis cases, 1,800 signed-S4 cases and the two preparations; [results](native_integral_results.json) and [receipt](../../candidates/local-hasse-quarter-event/mathematical_receipt_v0.7.json) preserve the scope. Constructor checks do not establish an empirical tick.
+
+**OPEN_GATED:** The Q169 spectrum fixes a formal active period but does not select `π/4` as an event interval or an integer amplitude unit. Other phases, lattices, and admission rules remain alternatives. The v0.1 pair-only quarter-turn is historically valid within its own model but remains incompatible with Q169 on its tested preparation; v0.7 is a new full-carrier branch, not a silent repair of v0.1. Physical promotion 0. Next discriminant: derive or independently justify a clock/lattice selection rule, then freeze its predictions before any measured comparison.
 
 ## v0.6 source comparison (2026-11-11)
 

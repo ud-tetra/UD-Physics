@@ -1,0 +1,48 @@
+{
+  "source": "Q169 native filled K4, A=d-d^T, A^3=-4A",
+  "chosen_phase": "s=pi/4, active angle 2s=pi/2; not source-selected event time",
+  "finite_map": "U=(4I+2A+A^2)/4, U^4=I",
+  "pre_event_gate": "(2A+A^2)x == 0 mod 4 in every coordinate",
+  "admitted_lattice": "L={x in Z^15: Ux in Z^15}; U(L)=L, contains 4Z^15",
+  "hold_rule": "identity when gate fails",
+  "no_go": "exp(sA) preserves all Z^15 only when exp(sA)=I on this carrier",
+  "prepared_v0_plus_2e01_verdict": "HOLD_NONINTEGRAL",
+  "four_v0_orbit": [
+    {
+      "v0": 4
+    },
+    {
+      "v0": 1,
+      "v1": 1,
+      "v2": 1,
+      "v3": 1,
+      "e01": 2,
+      "e02": 2,
+      "e03": 2
+    },
+    {
+      "v0": -2,
+      "v1": 2,
+      "v2": 2,
+      "v3": 2
+    },
+    {
+      "v0": 1,
+      "v1": 1,
+      "v2": 1,
+      "v3": 1,
+      "e01": -2,
+      "e02": -2,
+      "e03": -2
+    },
+    {
+      "v0": 4
+    }
+  ],
+  "unit_basis_cases": 75,
+  "unit_basis_events": 41,
+  "unit_basis_holds": 34,
+  "signed_S4_singleton_checks": 1800,
+  "invariants": "unit Euclidean norm squared and total vertex amplitude",
+  "physical_promotion": 0
+}

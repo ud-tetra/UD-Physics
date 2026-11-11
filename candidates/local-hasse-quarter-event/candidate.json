@@ -25,12 +25,13 @@
   ],
   "baseline": "identity/HOLD and conservative half-turn -I",
   "result": "F^4=id, exact local stock balance and signed S4 covariance; sample Y0 alternates 1,4 versus fixed baseline1",
-  "next_discriminant": "Independent pre-event construction g of Q198 L\u00b1,T,W plus full-carrier/environment lift U; stop event-law claim until sourced.",
+  "next_discriminant": "Source-select finite event phase and integer amplitude unit; otherwise keep v0.7 conditional and stop physical promotion.",
   "mathematical_receipts": [
     "candidates/local-hasse-quarter-event/mathematical_receipt.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.4.json",
-    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.5.json"
+    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.5.json",
+    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.7.json"
   ],
   "native_Q169_comparison_v0_2": {
     "status": "PARKED",
@@ -41,7 +42,7 @@
     "physical_promotion": 0
   },
   "hypothesis_flag": "AGILE",
-  "hypothesis_revision": "v0.6",
+  "hypothesis_revision": "v0.7",
   "revision_policy": {
     "meaning": "Revisable constitutive hypothesis; ACTIVE is workflow status, AGILE is revision flag, not evidence grade.",
     "re_evaluation": "v0.1 exact conditional finite-event identities remain; v0.2 exact scoped Q169 full-endpoint no-go remains. Gate, mask and tick are unselected assumptions; no empirical test has been completed.",
@@ -95,6 +96,12 @@
       "status": "OPEN_GATED source comparison",
       "result": "Gibson full-complement video suggests pre-event input completeness; Q198 is conditional on receipt tuple and no typed lift from K4 amplitudes is supplied",
       "note": "experiments/local-hasse-quarter-event/Q198_GIBSON_CLUE_v0.6.md"
+    },
+    {
+      "version": "v0.7",
+      "status": "EXACT conditional native integral branch; event phase CANDIDATE",
+      "result": "full original-lattice native nonidentity tick excluded; quarter-phase integral-admission F has F\u2074=id, preserves norm and vertex sum; prior preparation HOLD",
+      "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.7.json"
     }
   ],
   "native_flux_v0_4": {
@@ -117,6 +124,13 @@
     "status": "CANDIDATE_METHOD_CLUE_ONLY",
     "finding": "Q198 parity interface is source-complete conditional, not autonomous Q169 amplitude update; Gibson video describes pre-event four-token complement but no verified complete transaction specification",
     "reopen_if": "source a formal Gibson local transaction for comparative audit, or independently construct UD pre-event g and full-state U with held-out validation",
+    "physical_promotion": 0
+  },
+  "native_integral_event_v0_7": {
+    "status": "CANDIDATE_WITH_EXACT_CONDITIONAL_MATH",
+    "gate": "(2A+A\u00b2)x congruent 0 mod4",
+    "phase": "s=pi/4 assumed, not source selected",
+    "full_lattice_no_go": "exp(sA) integral on all original Z15 implies identity",
     "physical_promotion": 0
   }
 }
