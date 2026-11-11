@@ -1,0 +1,43 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "qpb-metrology-anchor",
+  "session_id": "qpb-metanchor-20261024-gpt6-a1",
+  "question": "Do independently fixed SI h,e and superconducting flux quantum select native UD action/charge or compact-phase anharmonicity?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FIT",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Imported noncompact tetrahedral R12 charge-field with native action A0 and current/flux q0 map; original UD R14 not identified.",
+    "Externally exact SI h,e and conventional Josephson Φ0=h/(2e) independently sourced.",
+    "Optional bridge sets q0=n*e and native coordinate period 2π*m; neither native period nor Cooper-pair charge source-selected.",
+    "Optional replacement of native noncompact quadratic potential with a periodic first/second harmonic Josephson energy."
+  ],
+  "physical_mapping": "HYPOTHESIS: Phi=A0 alpha/q0, Q=q0 beta, physical phase alpha=superconducting Josephson φ, native period and physical action imported in special case.",
+  "target_exposure": "Known Josephson Φ0,hbar relation and earlier UD eta_A=2 before choice of phase/charge period; explicit FIT choices not independent predictions.",
+  "fitted_choices": [
+    "q0=2e and native Δalpha=2π chosen to recover A0=ħ by definition; alternatives e,4e and period π,4π evaluated.",
+    "λ=0,1/16,1/8,1/4,1/2 as independently chosen periodic constitutive counterfamily, no measured spectral fit.",
+    "Five positive internal r scale parameters retain physical LC response without native period."
+  ],
+  "sources": [
+    "f0f6b707b77467f28c8e3892384fa0e8b28a4869:experiments/qpb1-charge-field/README.md",
+    "f0f6b707b77467f28c8e3892384fa0e8b28a4869:experiments/qpb1-quantized-charge/README.md",
+    "https://www.bipm.org/en/measurement-units/si-defining-constants",
+    "https://www.nist.gov/ctl/rf-technology-division/superconductive-electronics-group/quantum-locking-ranges",
+    "https://github.com/ud-tetra/UD-Physics/pull/177 (draft read-only)"
+  ],
+  "baseline": "Conventional Josephson LC/transmon circuit with physically defined Cooper-pair charge, flux quantum, charge energy and Josephson harmonics; all selected spectral responses reproducible by this null.",
+  "result": "EXACT q0=n e and Δalpha=2πm plus ΔΦ=Φ0 imply A0/ħ=n/(2m); at chosen n2,m1 ->1 by premise. NONCOMPACT quadratic native energy not 2π-periodic. Even with physically fixed phase/flux, periodic conventional λ-family has same positive curvature but arbitrary a² amplitude-frequency coefficient. Native physical action source/unique attribution FAILED.",
+  "next_discriminant": "Independently define a native compact quantum charge/phase primitive, interaction and physical port or shift to a different non-circuit physical bridge.",
+  "reopening_conditions": "Native phase-period/charge quantum selected without referencing Josephson calibration plus held-out mechanism-specific data beyond conventional models.",
+  "mathematical_receipts": [
+    "sessions/qpb-metanchor-20261024-gpt6-a1/mathematical_receipt.json"
+  ]
+}

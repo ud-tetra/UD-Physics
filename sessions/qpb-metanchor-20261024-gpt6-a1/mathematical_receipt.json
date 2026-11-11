@@ -1,0 +1,311 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "metanchor-001-independent-charge-flux",
+  "session_id": "qpb-metanchor-20261024-gpt6-a1",
+  "candidate_id": "qpb-metrology-anchor",
+  "question": "Do independently defined SI elementary charge and superconducting flux quantum select UD's original action reference and native quantum phase constitutive response?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FIT",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "native-field",
+      "symbol": "alpha,beta",
+      "object_type": "added tetrahedral edge-field transverse canonical mode",
+      "definition": "a=alpha w,p=beta w in R12 source field, native H_w=uT beta²/2+2v alpha²",
+      "domain": "R² inside R12",
+      "codomain": "real classical oscillator phase plane",
+      "coefficient_domain": "rational source coefficients, real trajectories",
+      "units": "native dimensionless",
+      "basis_orientation": "unit transverse face-cycle w and native s",
+      "metric_measure": "Euclidean edge inner product and canonical beta d alpha",
+      "origin": "imported read-only conditional source",
+      "exact_expression": "H_w=uT beta²/2+2v alpha²; omega_native²=4uTv",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "native-field"
+      ],
+      "assumption_ids": [
+        "A1"
+      ],
+      "dependency_ids": [],
+      "normalization": "||w||=1, physical flux/charge unit unselected"
+    },
+    {
+      "object_id": "SI",
+      "symbol": "h,e,Phi0",
+      "object_type": "physical SI defining constants and conventional superconducting flux quantum",
+      "definition": "h and e exact BIPM; Phi0=h/(2e) from Josephson superconducting phase law",
+      "domain": "positive SI physical constants",
+      "codomain": "h Js, e C, Phi0 Wb",
+      "coefficient_domain": "exact decimal rational h/e",
+      "units": "J s, C, Wb",
+      "basis_orientation": "positive magnitudes",
+      "metric_measure": "SI exact definition of h,e; Josephson physical law defines Phi0",
+      "origin": "external physical source",
+      "exact_expression": "2ePhi0=h",
+      "measured_value": null,
+      "uncertainty": "exact SI defining constants, not device calibration",
+      "source_refs": [
+        "BIPM",
+        "NIST"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "SI post2019"
+    },
+    {
+      "object_id": "map",
+      "symbol": "A0,q0,n,m",
+      "object_type": "hypothetical physical/native phase charge dictionary",
+      "definition": "Phi=A0 alpha/q0,Q=q0 beta,q0=n e,Delta alpha=2pi m; Delta Phi=Phi0",
+      "domain": "real native phase/amplitude and positive n,m",
+      "codomain": "physical Wb and C with native coordinate period",
+      "coefficient_domain": "rational example n,m, analytic pi",
+      "units": "A0 Js, q0 C, phase radians",
+      "basis_orientation": "positive flux/charge phase convention",
+      "metric_measure": "canonical one-form QdPhi=A0 beta d alpha",
+      "origin": "assumed/FIT",
+      "exact_expression": "A0/hbar=n/(2m)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "native-field",
+        "NIST"
+      ],
+      "assumption_ids": [
+        "A2"
+      ],
+      "dependency_ids": [
+        "SI",
+        "native-field"
+      ],
+      "normalization": "physical 2pi phase period chosen, not native theorem"
+    },
+    {
+      "object_id": "periodic",
+      "symbol": "V_lambda",
+      "object_type": "conventional added Josephson harmonic potential",
+      "definition": "V=K/(1+4lambda)*[(1-cos alpha)+lambda(1-cos2alpha)], lambda>=0",
+      "domain": "alpha in S1",
+      "codomain": "positive bounded potential",
+      "coefficient_domain": "real lambda and positive K, rational fixtures",
+      "units": "K physical energy scale if externally calibrated",
+      "basis_orientation": "zero-phase stable equilibrium",
+      "metric_measure": "V''(0)=K and physical positive inertial term",
+      "origin": "hypothetical conventional model family",
+      "exact_expression": "omega(a)/omega0=1-[(1+16lambda)/(16(1+4lambda))]a²+O(a⁴)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "NIST"
+      ],
+      "assumption_ids": [
+        "A3"
+      ],
+      "dependency_ids": [
+        "map"
+      ],
+      "normalization": "fixed low-amplitude curvature"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "native-field",
+      "url_or_repo_path": "experiments/qpb1-charge-field/README.md",
+      "version_or_commit": "f0f6b707b77467f28c8e3892384fa0e8b28a4869",
+      "section_or_object_id": "§§2,6–9 noncompact R12 source, native action and unit-matching freedom",
+      "source_status": "integrated hypothetical analogue"
+    },
+    {
+      "source_id": "native-charge",
+      "url_or_repo_path": "experiments/qpb1-quantized-charge/README.md",
+      "version_or_commit": "f0f6b707b77467f28c8e3892384fa0e8b28a4869",
+      "section_or_object_id": "§§1–4 positive impedance and electron-count action obstruction",
+      "source_status": "integrated conditional negative result"
+    },
+    {
+      "source_id": "native-impedance",
+      "url_or_repo_path": "experiments/qpb1-impedance-selection/README.md",
+      "version_or_commit": "f0f6b707b77467f28c8e3892384fa0e8b28a4869",
+      "section_or_object_id": "§§2–5 source action and charge dimension gap",
+      "source_status": "integrated negative source audit"
+    },
+    {
+      "source_id": "BIPM",
+      "url_or_repo_path": "https://www.bipm.org/en/measurement-units/si-defining-constants",
+      "version_or_commit": "SI revised 2019, read 2026-10-24",
+      "section_or_object_id": "exact h=6.62607015e-34 Js, e=1.602176634e-19 C",
+      "source_status": "primary SI definition"
+    },
+    {
+      "source_id": "NIST",
+      "url_or_repo_path": "https://www.nist.gov/ctl/rf-technology-division/superconductive-electronics-group/quantum-locking-ranges",
+      "version_or_commit": "read 2026-10-24",
+      "section_or_object_id": "2pi superconducting Josephson phase slip has voltage integral h/(2e)",
+      "source_status": "primary physical Josephson description"
+    },
+    {
+      "source_id": "vector-pr",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/177",
+      "version_or_commit": "0b49de51a83d17a31e81efe44825499756a1be19",
+      "section_or_object_id": "continuous native action/constitutive rescaling h>0",
+      "source_status": "draft/unmerged read-only separate branch"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "A1",
+      "description": "Use previously hypothesized noncompact real K4 edge-field and its native canonical transverse mode; no source-native compact phase."
+    },
+    {
+      "id": "A2",
+      "description": "Impose charge assignment q0=n e, a native phase interval Delta alpha=2pi m, and physical flux-period equality; these are new identifications."
+    },
+    {
+      "id": "A3",
+      "description": "To make globally compact Josephson phase mechanics, REPLACE original quadratic potential by a periodic positive cosine/harmonic family with optional free lambda."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact SI rational arithmetic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Fraction(Decimal) h/e and exact flux quantum ratio without observed uncertainty"
+    },
+    {
+      "technique": "dimensional canonical map",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "A0/q0 native flux scale, q0 beta charge, tau time, A0/hbar from period"
+    },
+    {
+      "technique": "noncompact vs compact topology and periodicity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "native alpha² cannot descend to S1 while physical Josephson phase requires 2pi periodicity"
+    },
+    {
+      "technique": "weak nonlinear oscillator perturbation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "fixed curvature family with varying quartic derivative, a² frequency correction"
+    },
+    {
+      "technique": "identifiability and target exposure",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "SI anchored e,h do not select native charge or phase period; exact rescaling and conventional harmonic null"
+    },
+    {
+      "technique": "modular clocks and finite field homology",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no native phase-clock modulus or new homology proposed"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "q0=n e, Deltaalpha=2pi m, Phi0=h/(2e); physical flux equality A0(2pi m)/(ne)=h/(2e)",
+    "reduced_expression": "A0/hbar=n/(2m); e,q0 examples n=1,2,4 and m=1/2,1,2; periodic a² coefficient -(1+16lambda)/[16(1+4lambda)]",
+    "factor_origins": [
+      "SI flux quantum 2e Cooper-pair physics",
+      "chosen q0/e factor n and phase-period m",
+      "native oscillator curvature and chosen extra periodic harmonic"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native continuous uncalibrated s and externally SI physical t=tau0 s",
+    "modulus": null,
+    "residue_convention": "postulated native Deltaalpha=2pi m is NOT established native period",
+    "update_rule": "noncompact quadratic H_w versus optional periodic Josephson potential V_lambda",
+    "initial_phase": "charged oscillator beta=N and superconducting phase alpha=phi are extra physical correspondences",
+    "coupling": "physical q0, flux Phi0 external; device EJ/EC/harmonic not native",
+    "period_claim": "Josephson angle 2pi periodic from external physical source; native a real noncompact originally",
+    "physical_unit_map": "A0/hbar=n/(2m) conditional, q0=ne external, tau0 remains free"
+  },
+  "dynamics_readout": {
+    "state_space": "R² native mode (alpha,beta) vs optional phase circle S1 x integer charge",
+    "generator_or_update": "original quadratic native oscillator; if compactified must replace with periodic potential, new charge quantization",
+    "initial_boundary_conditions": "native variable alpha unrestricted real, physical superconducting phase modulo2pi only under new rule",
+    "conservation_and_sources": "linear energy native conserved, Josephson periodic energy model conventional",
+    "projection_and_kernel": "physical flux/charge maps conditional; no native source-selected angle/charge operator",
+    "physical_mapping": "not derived; no measured device-specific charge/flux/phase/calibration"
+  },
+  "target_exposure": {
+    "status": "POST_JOSEPHSON_HBAR_AND_PRIOR_UD_ETA_TARGET",
+    "known_targets": [
+      "hbar physical action, 2e Cooper-pair Josephson flux quantum, previous UD eta_A=2 candidate"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "n=2,m=1 deliberately maps to hbar; alternatives enumerate consequences without fitting",
+      "five lambda periodic harmonic alternatives chosen as exact development fixtures",
+      "four rational LC coefficient scenarios and five scale-rescaling scenarios"
+    ],
+    "search_domain_and_budget": "one algebraic n/m mapping class, 5 discrete anchors, 4 linear LC fixtures, 5 periodic potentials, 5 rescalings; no empirical parameters/data fit",
+    "selection_criterion": "test whether external exact constants plus source compactness select physical action/anharmonicity",
+    "baseline": "standard Josephson circuit with same flux/charge normalization, measured parameters and harmonic terms"
+  },
+  "calculation_steps": [
+    "Import exact SI h/e, derive exact phi0=h/(2e) from conventional Josephson phase-slip law.",
+    "Assume native q0=n e and Deltaalpha=2pi m maps to physical Phi0: solve A0/hbar=n/(2m), exhibit 5 different mappings and fit status.",
+    "Imposing q0=2e,Deltaalpha=2pi makes A0=hbar by definition and yields conventional EC/hbar=uT/(8tau), EJ/hbar=4v/tau, omega0²=4uTv/tau².",
+    "Show original Vnat=2v alpha² changes by 8pi v alpha+8pi²v under 2pi shift, so fails as a Hamiltonian on compact phase circle.",
+    "Replace with conventional positive periodic V_lambda and prove same zero-phase curvature K for all lambda>=0, but quartic/a² frequency coefficient varies.",
+    "Recover full positive native scaling family for unselected native phase, preserving physical LC tensors even given exact physical h/e.",
+    "Conclude physical hbar equality and physical spectral nonlinearity are imported choices, not independent native UD derivation or evidence."
+  ],
+  "result": {
+    "exact_expression": "A0/hbar=n/(2m) if q0=n e and Deltaalpha=2pi m is assumed; Vnat fails 2pi periodicity; for periodic V_lambda fixed curvature K leading omega(a)/omega0=1-(1+16lambda)a²/[16(1+4lambda)]+O(a⁴)",
+    "approximation": null,
+    "units": "h Js, e C, flux Wb, hbar Js, native dimensionless alpha/beta and physical tau seconds",
+    "precision_and_error": "exact rational Fraction/Decimal SI h/e, symbolic pi and analytic harmonic derivatives; no device observational residual",
+    "scope": "specific hypothetical R12 source field and separately chosen physical Josephson dictionary, not original native R14 UD quantum carrier",
+    "physical_interpretation": "FAILED independent native physical scale selection; conditional circuit normalization VALID by mapping premise"
+  },
+  "verification": [
+    {
+      "method": "exact standard-library Fraction/Decimal audit",
+      "command_or_proof_path": "experiments/qpb-metrology-anchor/anchor_audit.py --out /tmp/qpb-metrology-anchor-001.json",
+      "source_revision": "f0f6b707b77467f28c8e3892384fa0e8b28a4869",
+      "actual_result": "PASS exact 5 anchor cases,4 LC identities,5 periodic alternatives,5 rescalings; source+result full SHA256 manifest",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent physical Josephson apparatus and native quantum bridge",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_EXECUTED",
+      "review_relationship": "empirical"
+    },
+    {
+      "method": "external mathematical non-constructor review",
+      "command_or_proof_path": null,
+      "source_revision": null,
+      "actual_result": "NOT_RUN",
+      "review_relationship": "external"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "SI e,h without native q0 and phase period leave the internal h>0 scale orbit unchanged.",
+    "Physically chosen q0=2e and native 2pi period produce hbar by import/assumption, not native source derivation.",
+    "Positive native quadratic field potential is not a globally 2pi periodic Josephson phase potential.",
+    "Five positive harmonic periodic potentials with identical calibrated curvature and flux/charge period yield different anharmonicity coefficients.",
+    "Conventional Josephson circuit reproduces every physical consequence under same mapping, no unique UD prediction."
+  ],
+  "limitations": [
+    "No native independent phase compactness/source-selected Cooper-pair quantum identified.",
+    "No experimental circuit-specific data or uncertainties; physical constants exact by SI definition are not experimental UD evidence.",
+    "No quantum Hilbert/physical action operator derived from original R14 carrier.",
+    "No external independent scientific reviewer."
+  ],
+  "changed_dependencies": [
+    "Separate disjoint claim; PR #177 and integrated source records read-only, action identification only new FIT hypothesis."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/qpb-metanchor-20261024-gpt6-a1/anchor-001/manifest.json"
+  ],
+  "next_discriminant": "Find an independently native compact phase/charge/energy law selecting physical q0/A0 and anharmonic potential before unused data; otherwise park LC quantization as conventional identification and pivot to a distinct physical mechanism."
+}

@@ -1,0 +1,21 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "qpb-metrology-anchor-20261024",
+  "goal": "Test independent physical h,e and Josephson flux quantum as potential action/charge anchors for the hypothetical tetrahedral vector LC port and verify compactness/anharmonic null",
+  "owned_paths": [
+    "tasks/qpb-metrology-anchor-20261024.json",
+    "sessions/qpb-metanchor-20261024-gpt6-a1/",
+    "experiments/qpb-metrology-anchor/",
+    "candidates/qpb-metrology-anchor/",
+    "artifacts/qpb-metanchor-20261024-gpt6-a1/"
+  ],
+  "dependencies": [
+    "qpb1-charge-field-20261022",
+    "qpb1-quantized-charge-20261022",
+    "qpb1-impedance-selection-20261022"
+  ],
+  "status": "complete",
+  "result": "Externally fixed e,h and Josephson Φ0 do not fix native A0 without mapping q0 and native phase period. Imposing q0=2e and native 2π period yields A0=ħ algebraically (FIT/conditional). Original noncompact quadratic native potential fails compact phase descent. Positive periodic conventional higher harmonics share physical anchors and linear curvature but retain arbitrary nonlinear response. No UD source-selected physical action, quantum charge or independent physical prediction.",
+  "next_action": "Seek native physical phase compactification and charge conjugacy independent of Josephson target, or park LC action-anchor trajectory and pivot to a distinct physical primitive."
+}

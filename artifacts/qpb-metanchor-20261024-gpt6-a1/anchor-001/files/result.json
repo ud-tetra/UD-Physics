@@ -1,0 +1,140 @@
+{
+  "LC_exact_fixtures": [
+    {
+      "EC_over_hbar_per_second": "1/8",
+      "EJ_over_hbar_per_second": "4",
+      "omega0_squared_per_second2": "4",
+      "tau_seconds_per_native_unit": "1",
+      "uT": "1",
+      "v": "1"
+    },
+    {
+      "EC_over_hbar_per_second": "1/6",
+      "EJ_over_hbar_per_second": "4/3",
+      "omega0_squared_per_second2": "16/9",
+      "tau_seconds_per_native_unit": "3/2",
+      "uT": "2",
+      "v": "1/2"
+    },
+    {
+      "EC_over_hbar_per_second": "15/224",
+      "EJ_over_hbar_per_second": "80/21",
+      "omega0_squared_per_second2": "100/49",
+      "tau_seconds_per_native_unit": "7/5",
+      "uT": "3/4",
+      "v": "4/3"
+    },
+    {
+      "EC_over_hbar_per_second": "1/48",
+      "EJ_over_hbar_per_second": "6",
+      "omega0_squared_per_second2": "1",
+      "tau_seconds_per_native_unit": "2",
+      "uT": "1/3",
+      "v": "3"
+    }
+  ],
+  "LC_quadratic_dictionary": "under conditional Josephson mapping EC/hbar=uT/(8*tau), EJ/hbar=4*v/tau, omega0^2=8EC EJ/hbar^2=4uT*v/tau^2",
+  "anchor_scenarios": [
+    {
+      "implied_A0_over_hbar_IF_PHASE_MAP_ASSUMED": "1",
+      "native_delta_alpha_over_2pi": "1",
+      "q0_over_e": "2"
+    },
+    {
+      "implied_A0_over_hbar_IF_PHASE_MAP_ASSUMED": "1/2",
+      "native_delta_alpha_over_2pi": "1",
+      "q0_over_e": "1"
+    },
+    {
+      "implied_A0_over_hbar_IF_PHASE_MAP_ASSUMED": "1/2",
+      "native_delta_alpha_over_2pi": "2",
+      "q0_over_e": "2"
+    },
+    {
+      "implied_A0_over_hbar_IF_PHASE_MAP_ASSUMED": "2",
+      "native_delta_alpha_over_2pi": "1/2",
+      "q0_over_e": "2"
+    },
+    {
+      "implied_A0_over_hbar_IF_PHASE_MAP_ASSUMED": "2",
+      "native_delta_alpha_over_2pi": "1",
+      "q0_over_e": "4"
+    }
+  ],
+  "compactness_failure": "Native positive quadratic cycle V=2v*alpha^2 is not periodic: V(alpha+2*pi)-V(alpha)=8*pi*v*alpha+8*pi^2*v; cannot descend to compact 2*pi phase",
+  "conditional_Josephson_import": "Choosing q0=2e, delta_alpha=2*pi and identifying native alpha with Josephson phase yields A0=hbar by definitions, not independent UD derivation",
+  "empirical_data": "NONE; BIPM exact constants and NIST Josephson law are external source anchors, not a new device measurement",
+  "exact_SI": {
+    "e_C": "801088317/5000000000000000000000000000",
+    "h_Js": "132521403/200000000000000000000000000000000000000000",
+    "superconducting_flux_quantum_h_over_2e_Wb": "44173801/21362355120000000000000"
+  },
+  "independent_UD_prediction": "NONE: native phase period, charge unit, physical action and anharmonic higher harmonic coefficients not source-selected",
+  "labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "FIT",
+    "FAILED",
+    "OPEN"
+  ],
+  "native_scale_rescaling": "Without a native phase-period postulate, (U,v,a,A0,psi)->(sU,v/s,s*a,A0/s,s*psi) preserves all physical LC ports even when e,h,Phi0 are known",
+  "native_scale_rescaling_samples": [
+    "1/5",
+    "1/2",
+    "1",
+    "2",
+    "5"
+  ],
+  "periodic_examples": [
+    {
+      "EJ1_over_fixed_curvature": "1",
+      "EJ2_over_fixed_curvature": "0",
+      "curvature_over_K": "1",
+      "lambda": "0",
+      "omega_over_omega0_a_squared_coefficient": "-1/16",
+      "quartic_fourth_derivative_over_K": "-1"
+    },
+    {
+      "EJ1_over_fixed_curvature": "4/5",
+      "EJ2_over_fixed_curvature": "1/20",
+      "curvature_over_K": "1",
+      "lambda": "1/16",
+      "omega_over_omega0_a_squared_coefficient": "-1/10",
+      "quartic_fourth_derivative_over_K": "-8/5"
+    },
+    {
+      "EJ1_over_fixed_curvature": "2/3",
+      "EJ2_over_fixed_curvature": "1/12",
+      "curvature_over_K": "1",
+      "lambda": "1/8",
+      "omega_over_omega0_a_squared_coefficient": "-1/8",
+      "quartic_fourth_derivative_over_K": "-2"
+    },
+    {
+      "EJ1_over_fixed_curvature": "1/2",
+      "EJ2_over_fixed_curvature": "1/8",
+      "curvature_over_K": "1",
+      "lambda": "1/4",
+      "omega_over_omega0_a_squared_coefficient": "-5/32",
+      "quartic_fourth_derivative_over_K": "-5/2"
+    },
+    {
+      "EJ1_over_fixed_curvature": "1/3",
+      "EJ2_over_fixed_curvature": "1/6",
+      "curvature_over_K": "1",
+      "lambda": "1/2",
+      "omega_over_omega0_a_squared_coefficient": "-3/16",
+      "quartic_fourth_derivative_over_K": "-3"
+    }
+  ],
+  "periodic_family": "K/(1+4lambda)*[(1-cos alpha)+lambda*(1-cos 2alpha)], lambda>=0, fixed zero-phase curvature K, arbitrary higher harmonics",
+  "primary_sources": [
+    "https://www.bipm.org/en/measurement-units/si-defining-constants",
+    "https://www.nist.gov/ctl/rf-technology-division/superconductive-electronics-group/quantum-locking-ranges"
+  ],
+  "scenario_anchor_dictionary": "q0=n*e; delta_alpha=2*pi*m; physical Phi=A0*alpha/q0; imposed flux period Phi0 then A0/hbar=n/(2*m)",
+  "source_status": "Integrated K4 charge-field native a is NONCOMPACT and no alpha phase periodicity or quantum charge q0 is source-selected",
+  "standard_null": "ordinary superconducting Josephson/LC circuit with physical e,h and externally measured EJm and EC already gives exactly the conditional map",
+  "status": "PASS"
+}
