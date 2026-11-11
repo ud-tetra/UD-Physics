@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "audit_id": "Q198_GIBSON_CLUE_v0.6",
+  "session": "gibsonq198-20261111-01",
+  "ud_base_revision": "52afa5a2864cf5fede1f087172a82547de47857a",
+  "ud_source": {
+    "path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+    "sha256": "8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+    "rows": [
+      "Q194",
+      "Q195",
+      "Q197",
+      "Q198",
+      "Q200",
+      "Q201",
+      "Q202",
+      "Q204",
+      "Q205",
+      "Q208",
+      "Q210"
+    ]
+  },
+  "gibson_source": {
+    "url": "https://www.youtube.com/watch?v=01H5ld186qE",
+    "title": "Correctly Unified Physics",
+    "channel": "Discrete Physics Unification",
+    "published_at": "2026-05-17T14:03:38Z",
+    "transcript_kind": "asr",
+    "language": "en",
+    "relevant_segment_ms": [
+      71760,
+      101960
+    ],
+    "retrieved_at": "2026-11-11",
+    "scope": "video explanation: four neighbors, full four-token complement before tick; formal transaction not verified"
+  },
+  "typed_comparison": {
+    "gibson_site_token_inputs": "not identified with UD parity or amplitude registers",
+    "ud_q198_domain": "theta_bar_minus,L_minus,L_plus,T,W_B2",
+    "ud_q198_codomain": "theta_plus or HOLD/INFEASIBLE",
+    "missing_from_original_K4_amplitude_carrier": [
+      "source-selected g to Q198 input tuple",
+      "lift U for full carrier/environment",
+      "HOLD/clock convention"
+    ]
+  },
+  "claim": "CANDIDATE method clue, OPEN_GATED UD transfer; physical promotion 0",
+  "tests": "source/text audit; no new numerical computation or independent empirical review"
+}

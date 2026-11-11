@@ -25,7 +25,7 @@
   ],
   "baseline": "identity/HOLD and conservative half-turn -I",
   "result": "F^4=id, exact local stock balance and signed S4 covariance; sample Y0 alternates 1,4 versus fixed baseline1",
-  "next_discriminant": "Seek source rule for signed endpoint allocation and event trigger; do not treat Q201/Q202 support receipt as authorization.",
+  "next_discriminant": "Independent pre-event construction g of Q198 L\u00b1,T,W plus full-carrier/environment lift U; stop event-law claim until sourced.",
   "mathematical_receipts": [
     "candidates/local-hasse-quarter-event/mathematical_receipt.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json",
@@ -41,7 +41,7 @@
     "physical_promotion": 0
   },
   "hypothesis_flag": "AGILE",
-  "hypothesis_revision": "v0.5",
+  "hypothesis_revision": "v0.6",
   "revision_policy": {
     "meaning": "Revisable constitutive hypothesis; ACTIVE is workflow status, AGILE is revision flag, not evidence grade.",
     "re_evaluation": "v0.1 exact conditional finite-event identities remain; v0.2 exact scoped Q169 full-endpoint no-go remains. Gate, mask and tick are unselected assumptions; no empirical test has been completed.",
@@ -89,6 +89,12 @@
       "status": "NO-GO scoped to source selection from Q201/Q202 receipts",
       "result": "same pair receipt gives opposite signed current and EVENT/HOLD_TIE ambiguity; fixed-weight vertex-sum condition derived",
       "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.5.json"
+    },
+    {
+      "version": "v0.6",
+      "status": "OPEN_GATED source comparison",
+      "result": "Gibson full-complement video suggests pre-event input completeness; Q198 is conditional on receipt tuple and no typed lift from K4 amplitudes is supplied",
+      "note": "experiments/local-hasse-quarter-event/Q198_GIBSON_CLUE_v0.6.md"
     }
   ],
   "native_flux_v0_4": {
@@ -105,6 +111,12 @@
     "finding": "pair integrity/support receipt does not select signed current or unique-flag event; Q204 binary receipt needs separate constitutive interpretation",
     "scope": "receipt-only selection on pair 01/23; fixed scalar incidence weight invariant condition",
     "reopen_if": "versioned source rule supplies signed state allocation, event trigger, admissible update and clock; new model independently tested",
+    "physical_promotion": 0
+  },
+  "gibson_q198_comparison_v0_6": {
+    "status": "CANDIDATE_METHOD_CLUE_ONLY",
+    "finding": "Q198 parity interface is source-complete conditional, not autonomous Q169 amplitude update; Gibson video describes pre-event four-token complement but no verified complete transaction specification",
+    "reopen_if": "source a formal Gibson local transaction for comparative audit, or independently construct UD pre-event g and full-state U with held-out validation",
     "physical_promotion": 0
   }
 }
