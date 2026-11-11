@@ -1,13 +1,17 @@
-# UD Discovery runtime bootloader v1.1
+# UD Discovery runtime bootloader v1.2
+
+## Mandatory agile governance gate
+
+Before any research, load [UD-AGILE-001](docs/governance/UD-AGILE-001.md). Register a versioned hypothesis, disclose target exposure and external inspiration, and keep FIT separate from independent DERIVED claims. Any Gibsonian Mathematics idea must be rederived from admitted UD primitives; imported physical conclusions cannot be promoted. The hypothesis may be RETAINED, REVISED, REJECTED or HELD with immutable prior evidence. Physical Promotion = 0.
 
 ## Copy-paste launch instruction
 
-> Prepare this runtime for UD Discovery in ud-tetra/UD-Physics. Read this bootloader, AGENTS.md, instructions/UD_DISCOVERY_v1.2.md, state/CURRENT.md, docs/CONCURRENCY.md, docs/ARTIFACTS.md, and docs/UD_MATHEMATICAL_METHOD_v1.0.md at a verified repository revision. Check the assigned task and live claim refs. Identify read/write/compute capabilities; do not assume shared memory or model identity. Create a unique session, claim the task, and work on an isolated branch/worktree. Report a short BOOT REPORT, including mathematical domains and applicable techniques, before substantive work. Then execute the authorized task, record assumptions and target exposure, capture reproducible artifacts, and leave a checkpoint. Hypothetical discovery is permitted; mainline export is separate.
+> Prepare this runtime for UD Discovery in ud-tetra/UD-Physics. Read this bootloader, docs/governance/UD-AGILE-001.md, AGENTS.md, instructions/UD_DISCOVERY_v1.2.md, state/CURRENT.md, docs/CONCURRENCY.md, docs/ARTIFACTS.md, and docs/UD_MATHEMATICAL_METHOD_v1.0.md at a verified repository revision. Check the assigned task and live claim refs. Identify read/write/compute capabilities; do not assume shared memory or model identity. Create a unique session, claim the task, and work on an isolated branch/worktree. Report a short BOOT REPORT, including mathematical domains and applicable techniques, before substantive work. Then execute the authorized task, record assumptions and target exposure, capture reproducible artifacts, and leave a checkpoint. Hypothetical discovery is permitted; mainline export is separate.
 
 ## Load order
 
 1. Verify repository identity, default-branch head, and your branch/working-tree state. Fetch or read current files; never discard uncommitted work to boot.
-2. Read AGENTS.md, the canonical Discovery instructions, and docs/UD_MATHEMATICAL_METHOD_v1.0.md.
+2. Read docs/governance/UD-AGILE-001.md, AGENTS.md, the canonical Discovery instructions, and docs/UD_MATHEMATICAL_METHOD_v1.0.md.
 3. Read state/CURRENT.md and the assigned task, including dependencies. Inspect relevant open PRs and live refs/heads/claims/* metadata: missing status means held; released markers are available only through exact-SHA acquisition. A stale local task file does not prove availability.
 4. Read docs/CONCURRENCY.md, docs/ARTIFACTS.md, and relevant candidate/source records.
 5. State the runtime's actual access mode: read-only; connector write; or Git/compute. Record the model only if known, otherwise unknown.
