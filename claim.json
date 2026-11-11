@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "local-hasse-quarter-event-20261111",
   "session": "q198lift-20261112-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-11T23:36:07.676Z",
   "base_revision": "afd57de0463ebf5a0ad49811f7bd58b6c273cc50",
   "previous_claim_sha": "b8192bbc036ed19ce29491bdb2c56b86932d97cb",
@@ -12,5 +12,7 @@
     "experiments/local-hasse-quarter-event",
     "candidates/local-hasse-quarter-event",
     "tasks/local-hasse-quarter-event-20261111.json"
-  ]
+  ],
+  "released_at": "2026-11-11T23:41:02.986Z",
+  "released_from_sha": "bdf2822b343e36ba53b791fa9b21ed53c187c8ba"
 }
