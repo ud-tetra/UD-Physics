@@ -1,0 +1,61 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "ico-timeframe-20261025-gpt6-a1",
+  "runtime": "GPT-6; GitHub connector isolated claim; GitHub Actions Python3.12 stdlib for Wfinal archive, local Python3 with NumPy/SciPy but no complete checkout",
+  "task": "icosahedral-timeframe-20261025",
+  "goal": "Resume the frozen 3D icosahedral moving-pulse u100 sensitivity; attempt full 560x180 time integration and otherwise close exact Galilean Green/CM subblocks with archived tangent verification",
+  "created_at": "2026-10-25T17:36:43.649Z",
+  "base_revision": "447ee4df3b9bc3e71bdfee3e29f7ee9379410df7",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "icosahedral-timeframe-20261025": {
+      "ref": "refs/heads/claims/icosahedral-timeframe-20261025",
+      "sha": "79c28d2456a5074bc2b490bdd4e665173f145ce5",
+      "status": "held",
+      "verified": true
+    }
+  },
+  "checks": [
+    {
+      "command": "GitHub Actions 40215676829 capability check",
+      "result": "PASS confirmed NumPy and SciPy both ABSENT in default runner",
+      "scope": "full time augmented ODE NOT_EXECUTED"
+    },
+    {
+      "command": "GitHub Actions 40216245891 stdlib archived 560x180 Wfinal CM column check",
+      "result": "PASS 3x180 COM columns worst/nominal within 1.15e-11/1.72e-11, residual CM-only primary norm .0315",
+      "scope": "NUMERICAL source endpoint verification, not interval or independent review"
+    },
+    {
+      "command": "python3 /mnt/data/ico_timeframe_20261025/rigid_green.py --out /mnt/data/ico_timeframe_20261025/rigid_green.json",
+      "result": "PASS exact shear and Cauchy all-time housing energy ball CM formula, frozen source mass/Eh substitutions",
+      "scope": "actually executed local standard-library Python"
+    },
+    {
+      "command": "sha256sum rigid_green.py rigid_green.json",
+      "result": "PASS full source904ab54b485e95661c23723e5405aece99874409095080100426444573a27f36 and output d719e9868ca641d365fbfd031f589b422c626412d3f4235ad6ab5bf24d408efe, Git blob verified",
+      "scope": "immutable timeframe-001"
+    },
+    {
+      "command": "python -m py_compile /mnt/data/ico_timeframe_20261025/timeframe_sampler.py",
+      "result": "PASS syntax only, full SciPy solver NOT_EXECUTED",
+      "scope": "do not report sampled full-time results"
+    }
+  ],
+  "finding": "EXACT full-time 3D Galilean center-of-mass dynamics and all-180-phase housing-energy CM bound; full-state raw Euclidean Green norm >=50+sqrt2501≈100.01 through u100. CI full archived 560x180 tangent CM verification discrepancy <=1.72e-11; source limiting/nominal lifted CM radius .0348326/.0352092; CM-only residual ~.0315 and proper frame readout ~1e-4. Full SciPy augmented u100 trajectory NOT_EXECUTED because CI lacks NumPy/SciPy and local full source download unavailable. Script syntax checked; actual nonlinear robustness remains OPEN.",
+  "next_action": "Run original full-time SciPy 560x180 sampler in a fully provisioned checkout, then validate projected shape Green/Hessian/reference/domain and nonlinear oriented-volume tube in positive full-state norm.",
+  "mathematical_profile": {
+    "coefficient_domain": "symbolic exact Galilean 2x2 operator, positive real point masses/energy, rational canonical native time and Float64 archived case substitution",
+    "exactness_or_precision_plan": "exact full-time translation/COM and Cauchy input extremal; frozen source full180 Wfinal checked numerically in CI; other Green and nonlinear flow OPEN",
+    "applicable_methods": [
+      "Galilean invariance / zero-force momentum conservation",
+      "full-state linearized 2x2 rigid shear singular norm",
+      "sharp mass-weighted housing-position/velocity energy ellipsoid bound",
+      "source archived 3x180 CM verification",
+      "moving-frame shape/rotation norm separation and projected forced-Green dependency"
+    ],
+    "clock_metric_units_conventions": "source u=t/t0, native R²=(5+sqrt5)/8, point masses m_i/R² and housing .4 beta w_j/R², beta .05, Omega10, u100, 560 phase variables unchanged"
+  }
+}
