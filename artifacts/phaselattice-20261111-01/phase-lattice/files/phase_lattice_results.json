@@ -1,0 +1,28 @@
+{
+  "source": "UD-Physics Q169/Q170 ledger v0.85; full filled K4, unit Euclidean, ascending orientations",
+  "target_use": "none in construction, enumeration, or phase classification; historical alpha exposure disclosed",
+  "continuous_family": "E(s)=I+sin(2s)A/2+(1-cos(2s))A^2/4",
+  "finite_order_full_rank_integer_lattice_phases": [
+    "2s=0 mod 2pi: identity",
+    "2s=pi/2 mod 2pi: quarter orientation U, order 4",
+    "2s=pi mod 2pi: half H, order 2",
+    "2s=3pi/2 mod 2pi: inverse quarter U^-1, order 4"
+  ],
+  "phase_selection": "not unique; Q169/Q170 do not prescribe integer amplitude unit, admission criterion or event interval",
+  "half": {
+    "operator": "H=I+A^2/2=U^2",
+    "gate": "sum of four vertex amplitudes even",
+    "maximal_admitted_lattice_index_in_Z15": 2,
+    "quotient": "Z/2",
+    "witness": "2v0 -> -v0+v1+v2+v3 -> 2v0"
+  },
+  "quarter": {
+    "operator": "U=(4I+2A+A^2)/4",
+    "gate": "(2A+A^2)x=0 mod4",
+    "maximal_admitted_lattice_index_in_Z15": 256,
+    "quotient": "(Z/4) x (Z/2)^6",
+    "witness": "4v0 four-step orbit; 2v0 fails quarter gate but passes half gate"
+  },
+  "relation": "L_quarter proper subset L_half; index [L_half:L_quarter]=128",
+  "physical_promotion": 0
+}

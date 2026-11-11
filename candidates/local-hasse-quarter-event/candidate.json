@@ -25,13 +25,14 @@
   ],
   "baseline": "identity/HOLD and conservative half-turn -I",
   "result": "F^4=id, exact local stock balance and signed S4 covariance; sample Y0 alternates 1,4 versus fixed baseline1",
-  "next_discriminant": "Source-select finite event phase and integer amplitude unit; otherwise keep v0.7 conditional and stop physical promotion.",
+  "next_discriminant": "Source-select event interval and amplitude unit with a typed independent criterion; otherwise park this finite-sampling family and seek another native event mechanism.",
   "mathematical_receipts": [
     "candidates/local-hasse-quarter-event/mathematical_receipt.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.4.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.5.json",
-    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.7.json"
+    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.7.json",
+    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.8.json"
   ],
   "native_Q169_comparison_v0_2": {
     "status": "PARKED",
@@ -42,7 +43,7 @@
     "physical_promotion": 0
   },
   "hypothesis_flag": "AGILE",
-  "hypothesis_revision": "v0.7",
+  "hypothesis_revision": "v0.8",
   "revision_policy": {
     "meaning": "Revisable constitutive hypothesis; ACTIVE is workflow status, AGILE is revision flag, not evidence grade.",
     "re_evaluation": "v0.1 exact conditional finite-event identities remain; v0.2 exact scoped Q169 full-endpoint no-go remains. Gate, mask and tick are unselected assumptions; no empirical test has been completed.",
@@ -100,8 +101,14 @@
     {
       "version": "v0.7",
       "status": "EXACT conditional native integral branch; event phase CANDIDATE",
-      "result": "full original-lattice native nonidentity tick excluded; quarter-phase integral-admission F has F\u2074=id, preserves norm and vertex sum; prior preparation HOLD",
+      "result": "full original-lattice native nonidentity tick excluded; quarter-phase integral-admission F has F⁴=id, preserves norm and vertex sum; prior preparation HOLD",
       "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.7.json"
+    },
+    {
+      "version": "v0.8",
+      "status": "EXACT scoped classification; NO-GO unique source selection",
+      "result": "finite-order full-rank integer sublattice samples are identity, half, quarter and inverse quarter; half index2 versus quarter index256, no source choice",
+      "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.8.json"
     }
   ],
   "native_flux_v0_4": {
@@ -110,7 +117,7 @@
     "cut": "{v0}",
     "initial_current": "4 from v0 to e01",
     "initial_stock_derivative": "-4 versus external HOLD zero",
-    "sign_conflict": "historical HASSE_CURRENT_CURL.md \u00a72 uses opposite generator sign; reconciliation OPEN",
+    "sign_conflict": "historical HASSE_CURRENT_CURL.md §2 uses opposite generator sign; reconciliation OPEN",
     "physical_promotion": 0
   },
   "Q201_Q202_guard_audit_v0_5": {
@@ -128,9 +135,15 @@
   },
   "native_integral_event_v0_7": {
     "status": "CANDIDATE_WITH_EXACT_CONDITIONAL_MATH",
-    "gate": "(2A+A\u00b2)x congruent 0 mod4",
+    "gate": "(2A+A²)x congruent 0 mod4",
     "phase": "s=pi/4 assumed, not source selected",
     "full_lattice_no_go": "exp(sA) integral on all original Z15 implies identity",
+    "physical_promotion": 0
+  },
+  "phase_lattice_selection_v0_8": {
+    "status": "OPEN_GATED",
+    "finding": "Q169/Q170 conservation and signed S4 permit half and quarter finite samples on distinct invariant sublattices; no unique event phase or amplitude unit",
+    "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.8.json",
     "physical_promotion": 0
   }
 }

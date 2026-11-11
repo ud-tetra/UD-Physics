@@ -1,0 +1,273 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "Q169-phase-lattice-selection-v0.8",
+  "session_id": "phaselattice-20261111-01",
+  "candidate_id": "local-hasse-quarter-event",
+  "question": "Do Q169/Q170 source constraints select a finite event phase and amplitude lattice without target fitting?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "Q169_A",
+      "symbol": "A=d-d^T",
+      "object_type": "real skew generator",
+      "definition": "full filled K4 boundary skew operator",
+      "domain": "C0⊕C1⊕C2⊕C3 over R",
+      "codomain": "same",
+      "coefficient_domain": "integer entries, real amplitudes",
+      "units": "formal flow parameter",
+      "basis_orientation": "ascending simplices",
+      "metric_measure": "unit Euclidean",
+      "origin": "imported",
+      "exact_expression": "A^3=-4A",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "Q169",
+        "qpb1_full_convention"
+      ],
+      "assumption_ids": [
+        "fixed_carrier"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit incidence"
+    },
+    {
+      "object_id": "original_lattice",
+      "symbol": "Z^15",
+      "object_type": "assumed amplitude lattice",
+      "definition": "integer coefficients in original simplex basis",
+      "domain": "C",
+      "codomain": null,
+      "coefficient_domain": "Z",
+      "units": "dimensionless",
+      "basis_orientation": "ascending simplices",
+      "metric_measure": "unit Euclidean",
+      "origin": "assumed",
+      "exact_expression": "Z^15",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "integer_amplitudes"
+      ],
+      "dependency_ids": [
+        "Q169_A"
+      ],
+      "normalization": "integer unit chosen"
+    },
+    {
+      "object_id": "half_lattice",
+      "symbol": "L_H",
+      "object_type": "maximal half-sample admission sublattice",
+      "definition": "{x in Z^15:H x integer}, H=I+A²/2",
+      "domain": "Z^15",
+      "codomain": "Z^15",
+      "coefficient_domain": "Z",
+      "units": "dimensionless",
+      "basis_orientation": "ascending simplices",
+      "metric_measure": "unit Euclidean",
+      "origin": "derived conditional",
+      "exact_expression": "sum of vertex amplitudes even, index 2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "Q169"
+      ],
+      "assumption_ids": [
+        "integer_amplitudes",
+        "half_phase"
+      ],
+      "dependency_ids": [
+        "Q169_A",
+        "original_lattice"
+      ],
+      "normalization": "original integer unit"
+    },
+    {
+      "object_id": "quarter_lattice",
+      "symbol": "L_U",
+      "object_type": "maximal quarter-sample admission sublattice",
+      "definition": "{x in Z^15:Ux integer}, U=(4I+2A+A²)/4",
+      "domain": "Z^15",
+      "codomain": "Z^15",
+      "coefficient_domain": "Z",
+      "units": "dimensionless",
+      "basis_orientation": "ascending simplices",
+      "metric_measure": "unit Euclidean",
+      "origin": "derived conditional",
+      "exact_expression": "(2A+A²)x=0 mod4, index 256",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "Q169"
+      ],
+      "assumption_ids": [
+        "integer_amplitudes",
+        "quarter_phase"
+      ],
+      "dependency_ids": [
+        "Q169_A",
+        "original_lattice"
+      ],
+      "normalization": "original integer unit"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "version_or_commit": "v0.85 SHA256 8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "locked mathematical generator and stock, no physical clock"
+    },
+    {
+      "source_id": "qpb1_full_convention",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "UD-Physics@39a1d553d90a0945ab488123419ab29235ddde74",
+      "section_or_object_id": "§1 A=d-d^T, A³=-4A",
+      "source_status": "integrated mathematical convention"
+    },
+    {
+      "source_id": "project_site",
+      "url_or_repo_path": "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/",
+      "version_or_commit": "landing page retrieved 2026-11-11, Papers I–III 1.1.1 / IV 0.1",
+      "section_or_object_id": "Physical promotion 0 landing-page statement",
+      "source_status": "status cross-check only; no phase rule imported"
+    }
+  ],
+  "assumptions": [
+    "fixed_carrier: filled K4 full real C, ascending orientations, unit Euclidean metric, A³=-4A",
+    "integer_amplitudes: original simplex coordinates in Z, unit not source-selected",
+    "finite-order selection family: flow sample has finite order on a full-rank invariant integer sublattice; not all event models",
+    "half_phase 2s=pi and quarter_phase 2s=pi/2 are candidate schedules, not source ticks"
+  ],
+  "technique_plan": [
+    {
+      "technique": "spectral/operator",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "minimal polynomial and finite-order root-of-unity classification"
+    },
+    {
+      "technique": "modular/group",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "enumerate exact numerator images mod2/mod4 and infer quotient invariants"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare exact lattice indices 2,256=2^8 and relative index128=2^7 without physical identification"
+    },
+    {
+      "technique": "chain/symmetry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "native boundary square parity and signed S4 covariance"
+    },
+    {
+      "technique": "physical calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no physical observable or time map; promotion zero"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "|image(H_num mod2)|=2; |image(U_num mod4)|=256; |2 image(U_num mod4)|=2",
+    "reduced_expression": "[Z^15:L_H]=2; [Z^15:L_U]=256=2^8; [L_H:L_U]=128=2^7",
+    "factor_origins": [
+      "denominator2 from half E(pi/2)=I+A²/2",
+      "denominator4 from quarter E(pi/4)=(4I+2A+A²)/4",
+      "indices from exact modular numerator images, not theta-fiber counts"
+    ],
+    "factorization": "2=2^1; 256=2^8; 128=2^7",
+    "divisibility_gcd_lcm": "finite image exponent4; size256 and doubled image size2 imply (Z/4)⊕(Z/2)^6"
+  },
+  "clock_receipt": {
+    "clock_type": "formal Q169 continuous s, candidate finite samples",
+    "modulus": "active angle 2s mod2pi; finite-order samples four axis phases",
+    "residue_convention": "phase 2s=0,pi/2,pi,3pi/2 mod2pi",
+    "update_rule": "E(s)=exp(sA), candidate U or H on admitted lattice",
+    "initial_phase": "s=0",
+    "coupling": "none; no source event schedule",
+    "period_claim": "H²=I, U⁴=I as distinct candidate operators",
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "full real C or assumed original Z15 with candidate invariant sublattice",
+    "generator_or_update": "Q169 A=d-d^T, E(s)=exp(sA)",
+    "initial_boundary_conditions": "fixed filled K4; half witness 2v0; quarter witness 4v0 from v0.7",
+    "conservation_and_sources": "unit norm² and vertex sum; no source terms",
+    "projection_and_kernel": "full-rank lattice criterion, no observable projection",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "historical alpha and Gibson comparator known before audit, but excluded from formula choice and enumeration; target-blind in this scoped calculation, not preregistered independent prediction",
+    "known_targets": [
+      "historical alpha comparison exposed in prior sessions"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "all formal s under finite-order full-rank integer-lattice condition, exact four-class classification",
+    "selection_criterion": "existence and uniqueness from source Q169/Q170 constraints",
+    "baseline": "v0.7 quarter-only candidate and identity; half alternative"
+  },
+  "calculation_steps": [
+    "A³=-4A gives E(s)=I+sin(2s)A/2+(1-cos(2s))A²/4.",
+    "Full-rank invariant integer lattice implies rational E(s); adjacent entry and vertex diagonal force rational sin(2s),cos(2s).",
+    "Finite order gives z=exp(2is) root of unity; 2cos(2s)=z+z^-1 rational algebraic integer, hence integer; rational sine excludes cos=±1/2. Four axis phases remain.",
+    "For H=I+A²/2, A² mod2 is all-ones vertex block; admission iff vertex sum even, index2.",
+    "For U=(4I+2A+A²)/4, enumerate image numerator mod4 size256 and doubled image size2; quotient Z/4⊕(Z/2)^6. L_U subset L_H, relative index128.",
+    "Half witness 2v0 cycles but fails quarter admission; source conservation and symmetry do not select quarter phase."
+  ],
+  "result": {
+    "exact_expression": "Finite-order full-rank integral-lattice flow samples are I,U,H=U²,U^-1; L_H index2, L_U index256; no unique phase/lattice from Q169/Q170 alone",
+    "approximation": null,
+    "units": "dimensionless amplitudes, formal phase",
+    "precision_and_error": "exact rational, modular and algebraic-integer proof",
+    "scope": "one filled K4, unit metric, original Z15 assumption and finite-order full-rank invariant sublattice criterion",
+    "physical_interpretation": "none; physical promotion 0"
+  },
+  "verification": [
+    {
+      "method": "analytic root-of-unity classification and parity proof",
+      "command_or_proof_path": "experiments/local-hasse-quarter-event/README.md v0.8",
+      "source_revision": "39a1d553d90a0945ab488123419ab29235ddde74",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "standard-library exact modular image enumeration",
+      "command_or_proof_path": "python3 experiments/local-hasse-quarter-event/phase_lattice_audit.py",
+      "source_revision": "39a1d553d90a0945ab488123419ab29235ddde74",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate Smith normal form calculation with SymPy 1.14.0",
+      "command_or_proof_path": "smith_normal_form(4I+2A+A²), smith_normal_form(2I+A²) over ZZ",
+      "source_revision": "39a1d553d90a0945ab488123419ab29235ddde74",
+      "actual_result": "PASS; indices 256 and 2, respectively",
+      "review_relationship": "independent algorithm same constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "2v0 admitted under half but not quarter, despite common invariants.",
+    "All original unit basis amplitudes cannot support a nonidentity global integral Q169 sample (v0.7 no-go).",
+    "Any positive integer rescaling kL remains invariant and is not source-selected."
+  ],
+  "limitations": [
+    "Finite-order full-rank integer lattice is an added selection family; other dynamical laws remain open.",
+    "No source amplitude quantum, event interval or physical clock.",
+    "No empirical target, observable bridge, nonconstructor review or independent physical validation."
+  ],
+  "changed_dependencies": [
+    "v0.7 conditional quarter remains exact; its phase selection remains unsourced",
+    "v0.7 all-Z15 no-go preserved",
+    "AGILE hypothesis gains half alternative and finite-order classification"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/phaselattice-20261111-01/phase-lattice/manifest.json"
+  ],
+  "next_discriminant": "Search source for an independent admissibility/clock criterion; if absent park phase selection and do not reuse amplitude-gate counts as alpha."
+}
