@@ -23,3 +23,7 @@ Next: Stop event-law branch until source-selected pre-event g and full-state lif
 ## 2026-11-11T23:07:38.905756+00:00
 
 Captured artifacts/gibsonq198-20261111-01/q198-gibson-source-gate (OPEN): Q198 conditional interface versus Gibson pre-event complement explainer, typed non-transfer
+
+## Integration closure
+
+PR #376 merged at `4100d5c547a7ab6b64d7f4c96168584e708fe3a0` after Discovery integrity workflow 43117504217 succeeded. Claim released from `a9ff5e353b6de4a9c7b040d2b13b1a5726669ffa` to marker `904860979ccc868b30629e1c1d8a1c2192fec950`. Metadata only; no substantive change.
