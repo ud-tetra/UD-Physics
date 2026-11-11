@@ -16,3 +16,7 @@ These instructions apply to the entire repository.
 12. Do not spawn agents merely because concurrent access is supported. Delegate only when the active user's instruction or applicable task instructions authorize parallel agent work.
 
 A successful CI run checks repository integrity and tooling, not the truth of a proposed physical bridge. Constructor checks and separate LLM reviews must be labeled honestly.
+
+## Agile hypothesis governance (2026-11-11)
+
+At boot, read `docs/governance/UD-AGILE-001.md` and the repository `BOOTLOADER.md`. All future hypotheses must be versioned, falsifiable where physical, and revisable through RETAIN/REVISE/REJECT/HOLD. External theories (including Gibsonian Mathematics) may inspire investigation but do not supply accepted UD derivations. Label target-informed work FIT and independently derive claims from explicit UD primitives before considering mainline export. Physical Promotion = 0. Preserve source-backed, symmetric criticism and negative results.
