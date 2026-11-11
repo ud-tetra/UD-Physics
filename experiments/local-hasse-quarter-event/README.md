@@ -1,4 +1,12 @@
-# Local Hasse quarter-turn event candidate v0.1
+# Local Hasse quarter-turn event hypothesis (current review v0.3)
+
+## v0.3 amendment (2026-11-11): AGILE hypothesis
+
+**CANDIDATE / AGILE:** The hard-mask, unique-flag, integer quarter-turn event is a *revisable constitutive hypothesis*, not a fixed UD event law. Re-evaluation of v0.1 and the v0.2 comparison finds (i) exact conservation, covariance and four-tick recurrence **within the declared v0.1 model**, and (ii) an exact obstruction to equating its prepared full-state endpoint with any time sample of unmodified Q169 under the v0.2 fixed-carrier assumptions. These findings justify continued exploration of alternatives but give no empirical support to the gate, mask, tick or physical mapping.
+
+Revision is invited by new source constraints, counterexamples, exact comparisons, or independent tests. A revision must name its changed state space, guard, update, metric, clock, boundary/source terms and readout; state which prior predictions change; and save a new versioned receipt, executable check and baseline comparison. Preserve v0.1 and v0.2 as historical results. A changed premise opens a new scoped branch; it does not erase the v0.2 no-go. Failed tests or degeneracies must be retained, and target-informed changes labeled FIT or exploratory before fresh held-out evaluation. An agile flag grants no physical promotion.
+
+**Next test, OPEN:** Construct a Q169/Q170 native incidence-cut flux readout on the full 15-register carrier, with prepared initial state and zero-flux/HOLD baseline, then compare exact early-time behavior with any proposed discrete-event observable. The test can refine or replace the candidate only after the state/readout bridge is stated; it does not by itself calibrate physical time or establish an observed event.
 
 ## v0.2 addendum (2026-11-11): comparison with native Q169
 
