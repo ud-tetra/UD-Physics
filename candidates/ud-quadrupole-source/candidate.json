@@ -22,9 +22,10 @@
     "historical UD@957d443 Fine-Structure Coupling/Dressing preserved in qpb1-impedance-selection excerpts"
   ],
   "baseline": "uniform seven-state source and zero response",
-  "result": "P06 source is 3\u00b71+2\u00b72; response 2+3; every linear S4 map has rank<=2 and kills uniform source. Alternate edge+top can span five but still kills uniform edge source and has two independent scales.",
-  "next_discriminant": "source-select a nonuniform parity input and constitutive operator with independent normalization and electrical readout",
+  "result": "P06 source is 3\u00b71+2\u00b72; response 2+3; every linear S4 map has rank<=2 and kills uniform source. Alternate edge+top can span five but still kills uniform edge source and has two independent scales. Addendum v0.2: Q204 mask admits both point and orbit-uniform positive normalized covariant seven-state weights; six masks yield distinct response norms 8/3 versus 0. No source selects the choice.",
+  "next_discriminant": "source-derived pre-event weights or edge contrast; absent this, park alpha route",
   "mathematical_receipts": [
-    "candidates/ud-quadrupole-source/mathematical_receipt.json"
+    "candidates/ud-quadrupole-source/mathematical_receipt.json",
+    "candidates/ud-quadrupole-source/mathematical_receipt_v0.2.json"
   ]
 }

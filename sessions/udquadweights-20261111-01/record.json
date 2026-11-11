@@ -1,0 +1,29 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "udquadweights-20261111-01",
+  "runtime": "Codex GPT-6.1",
+  "task": "ud-quadrupole-source-20261111",
+  "goal": "Test whether Q204 latent mask uniquely selects seven-state weights and a quadrupole source",
+  "created_at": "2026-11-11T22:04:50.710231+00:00",
+  "base_revision": "8930d21a9261ecb17d2d21c46a20344ba2e632f1",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "ud-quadrupole-source-20261111": {
+      "ref": "refs/heads/claims/ud-quadrupole-source-20261111",
+      "sha": "02183562a43ce909780055adba50b23a180d8825",
+      "status": "held",
+      "protocol_version": 2,
+      "previous_claim_sha": "84935d4028bed921343580ad8a382843465e714b"
+    }
+  },
+  "checks": [],
+  "finding": "Q204 source receipt does not uniquely select seven-state weights: positive normalized covariant point versus orbit laws give nonzero versus zero response for six masks.",
+  "next_action": "Park current alpha route until a source theorem selects nonuniform weights and the interaction operator; then reopen with independent bridge test.",
+  "checkpoint_at": "2026-11-11T22:07:16.897050+00:00",
+  "checkpoint_source": {
+    "revision": "8930d21a9261ecb17d2d21c46a20344ba2e632f1",
+    "dirty": true
+  }
+}
