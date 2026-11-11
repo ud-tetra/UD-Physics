@@ -3,15 +3,14 @@
   "schema_version": 1,
   "protocol_version": 2,
   "task": "local-hasse-quarter-event-20261111",
-  "session": "hassequarter-20261111-01",
-  "status": "released",
-  "created_at": "2026-11-11T22:15:00Z",
-  "base_revision": "c2c156c2c6d53e470e2ebbc894b01ffc12b2e736",
+  "session": "hassenative-20261111-01",
+  "status": "held",
+  "created_at": "2026-11-11T22:31:01.578Z",
+  "base_revision": "6194e2314ff2e59f13468a43ed55ed734ae8159c",
+  "previous_claim_sha": "79f7730a64f89d99dce9eec3c32d7b66d89b93f3",
   "owned_paths": [
     "experiments/local-hasse-quarter-event",
     "candidates/local-hasse-quarter-event",
     "tasks/local-hasse-quarter-event-20261111.json"
-  ],
-  "released_at": "2026-11-11T22:19:11.164Z",
-  "released_from_sha": "15ad3c807bbf138b51155a0b24007bc0a1527e90"
+  ]
 }
