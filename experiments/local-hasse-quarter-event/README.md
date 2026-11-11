@@ -1,4 +1,16 @@
-# Local Hasse quarter-turn event hypothesis (current review v0.3)
+# Local Hasse quarter-turn event hypothesis (current review v0.4)
+
+## v0.4 addendum (2026-11-11): native Q169/Q170 local flux gate
+
+**EXACT / conditional:** On the original filled `K4` with 15 real simplex amplitudes, ascending orientations, unit Euclidean metric, `d=B1+B2+B3`, `A=d−dᵀ` and `c'(s)=Ac(s)`, define each directed Hasse arc from lower `σ` to upper `η`. Let `B_{ση}=d_{ση}=±1`, the stock `ρ_σ=c_σ²`, and the signed lower-to-upper current `j_{σ→η}=−2B_{ση}c_σ c_η`. If `D` has `−1` at `σ` and `+1` at `η`, then `ρ'=Dj`; for any fixed address set `R`, `S_R=Σ_{σ∈R}ρ_σ` obeys `S_R'=−Σ_{arcs leaving R}j+Σ_{arcs entering R}j`. This implements recovered ledger v0.85 Q169/Q170 (`experiments/action-normalization-audit/sources/ledger_v0.85.json`, SHA-256 `8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec`), with the full-generator sign pinned by `experiments/qpb1-local-generators/README.md` §1. It is a formal parameter `s`, not a physical time or discrete event count.
+
+For the already-declared preparation `c(0)=v0+2e01`, choose the fixed control volume `R={v0}` and signed outgoing current as readout. Exactly one of the 28 Hasse arcs initially carries current: `j_{v0→e01}=4`. Hence `S_R(0)=1`, `S_R'(0)=−4`; the edge `e01` stock derivative is `+4`; total stock remains `5`. For the declared *external stationary HOLD baseline* `c_H(s)=c(0)`, every current and stock derivative is zero. HOLD is a comparison map, **not** a Q169 solution for this preparation. Native `S_R(s)=1−4s+s²+O(s³)`, whereas HOLD gives `1`. The candidate v0.1 one-tick readout gives `4` on its own integer clock. The different signed initial response is an internal discriminant; no time-to-tick bridge or measured coupling is implied.
+
+Full-carrier leakage is visible at quadratic stock order: `ρ_{v1}=4s²+O(s³)`, `ρ_{e02}=ρ_{e03}=s²+O(s³)`, `ρ_{f012}=ρ_{f013}=4s²+O(s³)`. The original stocks have `ρ_{v0}=1−4s+s²+O(s³)` and `ρ_{e01}=4+4s−15s²+O(s³)`, so the sum of quadratic coefficients is `0`. These coefficients follow `c(s)=c(0)+sAc(0)+(s²/2)A²c(0)+O(s³)`. The exact vertex amplitude is `c_{v0}(s)=1−sin(2s)−3(1−cos(2s))/4` using `A³=−4A` on this carrier.
+
+**Convention note / OPEN:** The historical exploratory `experiments/qpb1-impedance-selection/sources/HASSE_CURRENT_CURL.md` §2 defines `j_{σ→η}=+2B_{ση}c_σc_η` with lower-to-upper arrows and explicitly uses `A_{ησ}=B_{ση}`; that is `A=dᵀ−d`, opposite to the `A=d−dᵀ` convention fixed here and in `qpb1-local-generators` §1. The older current identity is valid under its own sign; it must not be imported without changing the generator or reversing the arrow. This addendum declares the convention for the present calculation; a source-level sign reconciliation remains open. The v0.2 no-go and v0.3 AGILE flag remain intact.
+
+The [exact script](native_flux.py), [results](native_flux_results.json), and [v0.4 mathematical receipt](../../candidates/local-hasse-quarter-event/mathematical_receipt_v0.4.json) capture this gate. No apparatus readout, uncertainty model, source-selected HOLD, or calibrated physical unit map was tested; physical promotion 0.
 
 ## v0.3 amendment (2026-11-11): AGILE hypothesis
 

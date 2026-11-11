@@ -1,0 +1,60 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "hasseflux-20261111-01",
+  "run_id": "native-flux",
+  "created_at": "2026-11-11T22:51:59.813323+00:00",
+  "evidence": "EXACT",
+  "summary": "Q169/Q170 native Hasse current, cut stock Taylor response, HOLD and sign convention",
+  "command": "python3 experiments/local-hasse-quarter-event/native_flux.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "ee8c2b5631be2fd783644c37510c655d93bd000e",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "native_flux.py",
+      "path": "inputs/001-native_flux.py",
+      "source_location": "repository",
+      "source_path": "experiments/local-hasse-quarter-event/native_flux.py",
+      "sha256": "6b347ffec7503d75527f8c4a08ed84f77f4cb023e45e4396b8bb3efff3e4130d",
+      "size_bytes": 3041
+    },
+    {
+      "input_id": "input-002",
+      "name": "native_compare.py",
+      "path": "inputs/002-native_compare.py",
+      "source_location": "repository",
+      "source_path": "experiments/local-hasse-quarter-event/native_compare.py",
+      "sha256": "0d4d5aeb98551d0eca99818c7568eb5bd47000cd58253cd69e355f9252ddefa3",
+      "size_bytes": 3612
+    },
+    {
+      "input_id": "input-003",
+      "name": "README.md",
+      "path": "inputs/003-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/local-hasse-quarter-event/README.md",
+      "sha256": "029c32617b9e4eb306765c17fe95e8de928910897d9a13ed400b7ca5fd7cccd1",
+      "size_bytes": 13801
+    },
+    {
+      "input_id": "input-004",
+      "name": "mathematical_receipt_v0.4.json",
+      "path": "inputs/004-mathematical_receipt_v0.4.json",
+      "source_location": "repository",
+      "source_path": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.4.json",
+      "sha256": "3412c401147e8ceb974832deca4b2518db89ac794975def5707c9d1c1d2d13be",
+      "size_bytes": 9450
+    }
+  ],
+  "files": [
+    {
+      "path": "files/native_flux_results.json",
+      "sha256": "15b58a120d5ab71ee52a37fc1493581f0dd307d8382704aed590f9f041adea59",
+      "size_bytes": 1626
+    }
+  ]
+}

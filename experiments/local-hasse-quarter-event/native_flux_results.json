@@ -1,0 +1,103 @@
+{
+  "source_convention": "Q169 A=d-d^T, lower-to-upper Hasse arrow",
+  "current_formula": "j_lower_to_upper=-2 B_lower,upper c_lower c_upper",
+  "incidence_cut_count": 28,
+  "nonzero_initial_arcs": [
+    {
+      "lower": [
+        0
+      ],
+      "upper": [
+        0,
+        1
+      ],
+      "signed_current": 4
+    }
+  ],
+  "initial_vertex_0_stock_derivative": -4,
+  "initial_edge_01_stock_derivative": 4,
+  "stock_taylor_coefficients_constant_linear_quadratic": {
+    "0": [
+      1,
+      -4,
+      1
+    ],
+    "1": [
+      0,
+      0,
+      4
+    ],
+    "2": [
+      0,
+      0,
+      0
+    ],
+    "3": [
+      0,
+      0,
+      0
+    ],
+    "01": [
+      4,
+      4,
+      -15
+    ],
+    "02": [
+      0,
+      0,
+      1
+    ],
+    "03": [
+      0,
+      0,
+      1
+    ],
+    "12": [
+      0,
+      0,
+      0
+    ],
+    "13": [
+      0,
+      0,
+      0
+    ],
+    "23": [
+      0,
+      0,
+      0
+    ],
+    "012": [
+      0,
+      0,
+      4
+    ],
+    "013": [
+      0,
+      0,
+      4
+    ],
+    "023": [
+      0,
+      0,
+      0
+    ],
+    "123": [
+      0,
+      0,
+      0
+    ],
+    "0123": [
+      0,
+      0,
+      0
+    ]
+  },
+  "vertex_0_amplitude_exact": "1-sin(2s)-3(1-cos(2s))/4",
+  "hold_vertex_0_stock_constant": 1,
+  "hold_vertex_0_stock_derivative": 0,
+  "candidate_one_tick_vertex_0_stock": 4,
+  "interpretation": "Native initial S_{v0}=1-4s+s^2+O(s^3); HOLD is 1; candidate tick jumps to 4 on a distinct clock.",
+  "sign_note": "Historical HASSE_CURRENT_CURL.md lower-to-upper j=+2 B c_lower c_upper uses A=d^T-d; its sign is opposite to this Q169 convention.",
+  "physical_promotion": 0
+}

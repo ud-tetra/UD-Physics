@@ -25,10 +25,11 @@
   ],
   "baseline": "identity/HOLD and conservative half-turn -I",
   "result": "F^4=id, exact local stock balance and signed S4 covariance; sample Y0 alternates 1,4 versus fixed baseline1",
-  "next_discriminant": "Q169/Q170 native incidence-cut flux readout on full carrier with exact early-time baseline; separately source a discrete event guard or state bridge.",
+  "next_discriminant": "Source-select discrete event guard or physical clock/readout bridge; evaluate a genuinely held-out preparation.",
   "mathematical_receipts": [
     "candidates/local-hasse-quarter-event/mathematical_receipt.json",
-    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json"
+    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json",
+    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.4.json"
   ],
   "native_Q169_comparison_v0_2": {
     "status": "PARKED",
@@ -39,7 +40,7 @@
     "physical_promotion": 0
   },
   "hypothesis_flag": "AGILE",
-  "hypothesis_revision": "v0.3",
+  "hypothesis_revision": "v0.4",
   "revision_policy": {
     "meaning": "Revisable constitutive hypothesis; ACTIVE is workflow status, AGILE is revision flag, not evidence grade.",
     "re_evaluation": "v0.1 exact conditional finite-event identities remain; v0.2 exact scoped Q169 full-endpoint no-go remains. Gate, mask and tick are unselected assumptions; no empirical test has been completed.",
@@ -75,6 +76,21 @@
       "version": "v0.3",
       "status": "AGILE flag and governance amendment",
       "result": "hypothesis may be revised under versioned testing; no new dynamical or empirical result"
+    },
+    {
+      "version": "v0.4",
+      "status": "EXACT conditional native flux, AGILE hypothesis still active",
+      "result": "Q169 current j_v0->e01=4, cut stock derivative -4 versus stationary HOLD 0; quadratic leakage and sign-convention conflict",
+      "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.4.json"
     }
-  ]
+  ],
+  "native_flux_v0_4": {
+    "status": "EXACT_CONDITIONAL",
+    "source": "recovered ledger v0.85 Q169/Q170 plus full-sign convention",
+    "cut": "{v0}",
+    "initial_current": "4 from v0 to e01",
+    "initial_stock_derivative": "-4 versus external HOLD zero",
+    "sign_conflict": "historical HASSE_CURRENT_CURL.md \u00a72 uses opposite generator sign; reconciliation OPEN",
+    "physical_promotion": 0
+  }
 }
