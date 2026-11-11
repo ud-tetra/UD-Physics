@@ -1,0 +1,217 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "Q201-Q202-source-guard-v0.5",
+  "session_id": "hasseguard-20261111-01",
+  "candidate_id": "local-hasse-quarter-event",
+  "question": "Do Q201/Q202 pair receipts select signed Q169 current or the unique-flag finite event guard while respecting vertex sum?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "pair_receipt",
+      "symbol": "(T_p,Lambda_p,omega_p)",
+      "object_type": "source readout",
+      "definition": "Q201/Q202/Q204 pair integrity and latent support receipt on M_p={01,23}",
+      "domain": "hard integrity edge bits plus C0/C1 amplitudes",
+      "codomain": "{0,1} x R_nonnegative x {0,1}",
+      "coefficient_domain": "integer witnesses, real formula",
+      "units": "dimensionless",
+      "basis_orientation": "ascending edges",
+      "metric_measure": "absolute amplitude in Lambda",
+      "origin": "imported source",
+      "exact_expression": "T=product hard; Lambda=sum 2|e|(|v_i|+|v_j|); omega=T 1[Lambda>0]",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "ledger_Q201_Q204"
+      ],
+      "assumption_ids": [
+        "fixed_pair"
+      ],
+      "dependency_ids": [],
+      "normalization": "none"
+    },
+    {
+      "object_id": "native_current",
+      "symbol": "j_v0_to_e01",
+      "object_type": "signed readout",
+      "definition": "Q169/Q170 unit-metric Hasse current",
+      "domain": "C0+C1+C2+C3",
+      "codomain": "R",
+      "coefficient_domain": "R",
+      "units": "dimensionless stock per formal s",
+      "basis_orientation": "lower-to-upper",
+      "metric_measure": "unit Euclidean",
+      "origin": "derived v0.4",
+      "exact_expression": "-2 B_0,01 v0 e01",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "native_flux_v0.4"
+      ],
+      "assumption_ids": [
+        "A_sign"
+      ],
+      "dependency_ids": [],
+      "normalization": "none"
+    },
+    {
+      "object_id": "weighted_generator",
+      "symbol": "A_w",
+      "object_type": "candidate generator family",
+      "definition": "fixed scalar incidence weights on vertex-edge block with skew transpose partner",
+      "domain": "C",
+      "codomain": "C",
+      "coefficient_domain": "R",
+      "units": "formal rate",
+      "basis_orientation": "ascending simplex",
+      "metric_measure": "unit Euclidean",
+      "origin": "assumed for obstruction",
+      "exact_expression": "A_w[i,e]=w_i,e B1[i,e]; A_w[e,i]=-A_w[i,e]",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "fixed_weights"
+      ],
+      "dependency_ids": [],
+      "normalization": "none"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "ledger_Q201_Q204",
+      "url_or_repo_path": "experiments/action-normalization-audit/sources/ledger_v0.85.json",
+      "version_or_commit": "v0.85 SHA256 8845ca23e178e043ef0c7bac01be3afba9cabbefd866c366921387a8ca843aec",
+      "section_or_object_id": "Q201-Q204, Q205, Q208, Q210",
+      "source_status": "Q201-Q204 exact internal readouts; Q205/Q208 candidate; Q210 obstruction"
+    },
+    {
+      "source_id": "native_flux_v0.4",
+      "url_or_repo_path": "experiments/local-hasse-quarter-event/README.md",
+      "version_or_commit": "UD-Physics@73ea66f5533de9db639e3c96fbb09c764c19557f",
+      "section_or_object_id": "v0.4 addendum",
+      "source_status": "exact conditional internal"
+    }
+  ],
+  "assumptions": [
+    "fixed_pair: M_p={01,23}; both hard integrities one; other pair amplitudes zero",
+    "A_sign: Q169 A=d-d^T and lower-to-upper current -2B c_lower c_upper",
+    "candidate mask identified with pair hard bits only for verdict witness; not a source theorem",
+    "fixed_weights: independent state-independent vertex-edge incidence weights; skew transpose retained; other blocks arbitrary but do not enter L derivative"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact integer witness",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Demonstrate pair-receipt noninjectivity for signed flux and guard"
+    },
+    {
+      "technique": "chain/incidence and conservation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Derive necessary and sufficient endpoint weight equality for universal vertex-sum conservation in fixed-weight family"
+    },
+    {
+      "technique": "clock/modular",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No source event clock; keep continuous s and candidate tick distinct"
+    },
+    {
+      "technique": "prime factorization",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No factorization question"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": "three witness receipts (1,4,1); signed currents (4,-4,2)",
+    "factor_origins": [
+      "2 factor in Q202 and current definition",
+      "B1 tail=-1/head=+1"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "Q169 formal real s versus candidate integer tick",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "native exp(sA) vs assumed gated F",
+    "initial_phase": "s=0",
+    "coupling": "none",
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "full 15 real amplitudes and separate Q201 hard integrity bits; candidate integer amplitude/mask added only for verdict",
+    "generator_or_update": "Q169 A=d-d^T; fixed weighted skew A_w as explicit alternate family; candidate F separate",
+    "initial_boundary_conditions": "three exact states x+=v0+2e01,x-=v0-2e01,xt=v0+v1+e01; T01=T23=1",
+    "conservation_and_sources": "native norm and L; fixed-weight A_w has universal L iff both endpoint weights equal per edge; no source",
+    "projection_and_kernel": "absolute-value pair receipt loses signs and endpoint allocation; explicit collisions",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "source and previous candidate endpoint known; no empirical target",
+    "known_targets": [
+      "Q201/Q202/Q204 pair readouts",
+      "candidate EVENT/HOLD verdict"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "three constructed integer witnesses, fixed one pair; no exhaustive claim",
+    "selection_criterion": "exact receipt collision with distinct native current or candidate verdict",
+    "baseline": "native signed current and prior candidate unique-flag rule"
+  },
+  "calculation_steps": [
+    "Q201=1 and Q202=2|e01|(|v0|+|v1|)=4 for all three; Q204=1.",
+    "With B1[0,01]=-1, native j_v0->e01=2 v0 e01 gives 4,-4,2.",
+    "Under assumed hardmask h01=h23=1, candidate flags have cardinality 1,1,2, hence EVENT,EVENT,HOLD_TIE.",
+    "For fixed weighted incidence A_w, L A_w x=sum_e (w_head,e-w_tail,e)e_e. Universal zero iff both endpoint weights agree for every edge."
+  ],
+  "result": {
+    "exact_expression": "(T,Lambda,omega)=(1,4,1) for three states, while j=(4,-4,2) and candidate verdict=(EVENT,EVENT,HOLD_TIE); universal L conservation iff w_tail,e=w_head,e in fixed-weight family",
+    "approximation": null,
+    "units": "dimensionless",
+    "precision_and_error": "exact integer witness and symbolic identity",
+    "scope": "Q201/Q202/Q204 receipts alone on M_p={01,23}; fixed-weight generator family for invariant condition",
+    "physical_interpretation": "none; physical promotion 0"
+  },
+  "verification": [
+    {
+      "method": "exact replay",
+      "command_or_proof_path": "python3 experiments/local-hasse-quarter-event/source_guard_audit.py",
+      "source_revision": "73ea66f5533de9db639e3c96fbb09c764c19557f",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "algebraic incidence and absolute-value check",
+      "command_or_proof_path": "experiments/local-hasse-quarter-event/README.md v0.5",
+      "source_revision": "73ea66f5533de9db639e3c96fbb09c764c19557f",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Identical Q201/Q202/Q204 receipt gives opposite signed native flux.",
+    "Identical receipt gives both unique-event and HOLD_TIE under candidate mapping.",
+    "One-endpoint weight breaks universal vertex-sum conservation; equal zero or one weights both conserve but select different transport."
+  ],
+  "limitations": [
+    "A full signed state could distinguish witnesses, but no Q201/Q202 source rule turns it into an event guard.",
+    "No universal statement about all nonlinear, coupled or source-driven generators.",
+    "No apparatus test or clock mapping; independent nonconstructor review not run."
+  ],
+  "changed_dependencies": [
+    "v0.4 current sign retained",
+    "v0.3 AGILE preserved",
+    "Q201/Q202 source-selected guard identification parked; Q210 constitutive semantics remains gated"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/hasseguard-20261111-01/source-guard/manifest.json"
+  ],
+  "next_discriminant": "Find independent source rule for signed endpoint allocation and an event trigger, or stop this candidate as native event law; do not backfill from desired verdict."
+}
