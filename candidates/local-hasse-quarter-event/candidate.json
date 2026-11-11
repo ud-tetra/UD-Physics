@@ -25,11 +25,12 @@
   ],
   "baseline": "identity/HOLD and conservative half-turn -I",
   "result": "F^4=id, exact local stock balance and signed S4 covariance; sample Y0 alternates 1,4 versus fixed baseline1",
-  "next_discriminant": "Source-select discrete event guard or physical clock/readout bridge; evaluate a genuinely held-out preparation.",
+  "next_discriminant": "Seek source rule for signed endpoint allocation and event trigger; do not treat Q201/Q202 support receipt as authorization.",
   "mathematical_receipts": [
     "candidates/local-hasse-quarter-event/mathematical_receipt.json",
     "candidates/local-hasse-quarter-event/mathematical_receipt_v0.2.json",
-    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.4.json"
+    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.4.json",
+    "candidates/local-hasse-quarter-event/mathematical_receipt_v0.5.json"
   ],
   "native_Q169_comparison_v0_2": {
     "status": "PARKED",
@@ -40,7 +41,7 @@
     "physical_promotion": 0
   },
   "hypothesis_flag": "AGILE",
-  "hypothesis_revision": "v0.4",
+  "hypothesis_revision": "v0.5",
   "revision_policy": {
     "meaning": "Revisable constitutive hypothesis; ACTIVE is workflow status, AGILE is revision flag, not evidence grade.",
     "re_evaluation": "v0.1 exact conditional finite-event identities remain; v0.2 exact scoped Q169 full-endpoint no-go remains. Gate, mask and tick are unselected assumptions; no empirical test has been completed.",
@@ -82,6 +83,12 @@
       "status": "EXACT conditional native flux, AGILE hypothesis still active",
       "result": "Q169 current j_v0->e01=4, cut stock derivative -4 versus stationary HOLD 0; quadratic leakage and sign-convention conflict",
       "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.4.json"
+    },
+    {
+      "version": "v0.5",
+      "status": "NO-GO scoped to source selection from Q201/Q202 receipts",
+      "result": "same pair receipt gives opposite signed current and EVENT/HOLD_TIE ambiguity; fixed-weight vertex-sum condition derived",
+      "receipt": "candidates/local-hasse-quarter-event/mathematical_receipt_v0.5.json"
     }
   ],
   "native_flux_v0_4": {
@@ -91,6 +98,13 @@
     "initial_current": "4 from v0 to e01",
     "initial_stock_derivative": "-4 versus external HOLD zero",
     "sign_conflict": "historical HASSE_CURRENT_CURL.md \u00a72 uses opposite generator sign; reconciliation OPEN",
+    "physical_promotion": 0
+  },
+  "Q201_Q202_guard_audit_v0_5": {
+    "status": "PARKED_AS_SOURCE_SELECTED_EVENT_GUARD",
+    "finding": "pair integrity/support receipt does not select signed current or unique-flag event; Q204 binary receipt needs separate constitutive interpretation",
+    "scope": "receipt-only selection on pair 01/23; fixed scalar incidence weight invariant condition",
+    "reopen_if": "versioned source rule supplies signed state allocation, event trigger, admissible update and clock; new model independently tested",
     "physical_promotion": 0
   }
 }
