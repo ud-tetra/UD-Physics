@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "local-hasse-quarter-event-20261111",
+  "session": "hassequarter-20261111-01",
+  "status": "held",
+  "created_at": "2026-11-11T22:15:00Z",
+  "base_revision": "c2c156c2c6d53e470e2ebbc894b01ffc12b2e736",
+  "owned_paths": [
+    "experiments/local-hasse-quarter-event",
+    "candidates/local-hasse-quarter-event",
+    "tasks/local-hasse-quarter-event-20261111.json"
+  ]
+}
