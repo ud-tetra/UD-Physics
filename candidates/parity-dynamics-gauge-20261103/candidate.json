@@ -1,0 +1,39 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "parity-dynamics-gauge-20261103",
+  "session_id": "pdyg-20261103-01",
+  "question": "Does source-native K4 parity projection close under dynamics, and what is a valid gauge quotient?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Raw F2^4 direct sum F2^6 toy state",
+    "All 1024 states admitted only in toy model",
+    "T(b,e)=(b,e+δb) illustrative not canonical",
+    "P opposite-edge parities"
+  ],
+  "physical_mapping": "NONE",
+  "target_exposure": "Previous 128-fiber and 90-orbit counts already known; no physical measurements",
+  "fitted_choices": [],
+  "sources": [
+    "UD-Physics main 2207611450df9106adccaf8189a50734fef5a46b, BOOTLOADER v1.1, Discovery v1.2, Method v1.0",
+    "experiments/pachner-boundary-observability/README.md, 2026-11-03"
+  ],
+  "result": "Source-native QPB1 12-dimensional edge quadrature closure; 3-dimensional hidden edge-history sector; exact no-go for nonzero additive F2<->R interface and full-time finite moving alphabet; sampled u=pi/2 candidate yields 8 of 1024 states all theta=000; canonical binary Adm,T OPEN. Added v0.4 QPB1 source-native sampled nonzero sign-admissibility: 64 paired parity states with swap evolution; θq alone fails; sign-only material energy retention source blocked. v0.5: Q170–Q179 exact ownership/current and conditional event retention receipt for all simplices; null and capture both conserve, showing no source-selected retention mechanism or persistence theorem. v0.6 source QPB1 matched 17D reservoir transfers reversibly but cannot autonomously select latch; null, exchange, externally switched controls are all conservative. 29D Q170–Q179 support law has no defined typed interface to modal port. v0.7: exact determinant obstruction for every scalar matched-port feedback, reservoir floor D²/N. CANDIDATE bounded normalized stock-gate g=||y||²/N has aligned asymptotic capture but FAILS generic-phase complete retention. v0.8: complex compatible aI+bj is scalar port after source phase rotation and preserves D_R; anisotropic branch changes compatibility assumptions and remains reversible.",
+  "next_discriminant": "Find source-selected inequivalent port after reservoir-frame rotation; test conserved stock, generic phases and controller budget.",
+  "baseline": "Instantaneous three-bit parity P versus full projected P-history; native QPB1 edge-only versus full edge-history readout; no physical calibration",
+  "mathematical_receipts": [
+    "candidates/parity-dynamics-gauge-20261103/mathematical_receipt.json",
+    "candidates/parity-dynamics-gauge-20261103/mathematical_receipt_native_chain_v0.2.json",
+    "candidates/parity-dynamics-gauge-20261103/mathematical_receipt_interface_v0.3.json",
+    "candidates/parity-dynamics-gauge-20261103/mathematical_receipt_retention_v0.4.json",
+    "candidates/parity-dynamics-gauge-20261103/mathematical_receipt_retention_v0.5.json",
+    "candidates/parity-dynamics-gauge-20261103/mathematical_receipt_reciprocal_v0.6.json",
+    "candidates/parity-dynamics-gauge-20261103/mathematical_receipt_autonomous_v0.7.json",
+    "candidates/parity-dynamics-gauge-20261103/mathematical_receipt_multiport_v0.8.json"
+  ]
+}

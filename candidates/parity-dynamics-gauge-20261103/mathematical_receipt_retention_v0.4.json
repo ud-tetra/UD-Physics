@@ -1,0 +1,228 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD-PDY-RETENTION-004",
+  "session_id": "pdyg-20261103-01",
+  "candidate_id": "parity-dynamics-gauge-20261103",
+  "question": "Does source-native K4 transport plus a nonzero sign-admissibility gate yield a dynamically closed and physically retained finite alphabet?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "C",
+      "symbol": "C",
+      "object_type": "real filled-tetrahedron chain space",
+      "definition": "direct sum C0..C3 of Δ³",
+      "domain": "R15",
+      "codomain": null,
+      "coefficient_domain": "R, integral incidences",
+      "units": "native dimensionless",
+      "basis_orientation": "lex oriented K4 simplices",
+      "metric_measure": "Euclidean H=I",
+      "origin": "imported",
+      "exact_expression": "dim(C)=15",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit incidence"
+    },
+    {
+      "object_id": "QUAD",
+      "symbol": "Q=(E,EJ)",
+      "object_type": "quadrature readout",
+      "definition": "edge q and J-rotated edge p",
+      "domain": "R15",
+      "codomain": "R12",
+      "coefficient_domain": "R",
+      "units": "native amplitude",
+      "basis_orientation": "ordered six edges",
+      "metric_measure": "H=I",
+      "origin": "derived from source",
+      "exact_expression": "rank 12",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1",
+        "EVENT"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [
+        "C"
+      ],
+      "normalization": "J=A/2"
+    },
+    {
+      "object_id": "THETA_PAIR",
+      "symbol": "(theta_q,theta_p)",
+      "object_type": "finite sampled parity readout",
+      "definition": "XOR of signs on three opposite edge pairs separately in q and p",
+      "domain": "U subset R15 with 12 nonzero quadratures",
+      "codomain": "F2^6",
+      "coefficient_domain": "F2",
+      "units": "none",
+      "basis_orientation": "opposite pairs 01/23, 02/13, 03/12",
+      "metric_measure": "none",
+      "origin": "candidate derived observable",
+      "exact_expression": "64 labels",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "sample at pi/4",
+        "nonzero gate"
+      ],
+      "dependency_ids": [
+        "QUAD"
+      ],
+      "normalization": "sign positive=0,negative=1"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "2207611450df9106adccaf8189a50734fef5a46b",
+      "section_or_object_id": "v1.0 §§1-3 signed K4 generator",
+      "source_status": "source-native unit-metric linear model"
+    },
+    {
+      "source_id": "EVENT",
+      "url_or_repo_path": "experiments/qpb1-native-events/EVENT_CONTRACT.md",
+      "version_or_commit": "2207611450df9106adccaf8189a50734fef5a46b",
+      "section_or_object_id": "Native flow and observed quadratures",
+      "source_status": "read-only source"
+    }
+  ],
+  "assumptions": [
+    "source QPB1 conservative unit chain metric H=I",
+    "chosen native sampling interval pi/4; not SI time or derived event clock",
+    "sampled admissible domain U requires all 12 q/p components nonzero; no continuous-in-time invariance claimed",
+    "sign parity is observer readout, not native material retention"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational simplex incidence and matrix polynomial",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive quarter-turn F and QF=RQ"
+    },
+    {
+      "technique": "F2 finite bit enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "4096 sign states and 64 labels"
+    },
+    {
+      "technique": "signed S4 action/orbit congruence",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "check equivariance for 24 actions"
+    },
+    {
+      "technique": "dynamical observability and information loss",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "64 minimal observable histories, norm ambiguity"
+    },
+    {
+      "technique": "physical clock and calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no physical unit bridge"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2^12 sign words -> 2^6 paired parity labels, fiber 2^6; 24*4096 checks",
+    "reduced_expression": "4096,64,64,98304",
+    "factor_origins": [
+      "6 q signs",
+      "6 p signs",
+      "3 q parity bits",
+      "3 p parity bits",
+      "S4 group order 24"
+    ],
+    "factorization": "4096=2^12;64=2^6;98304=2^15*3",
+    "divisibility_gcd_lcm": "bit-pair negation flips two signs; XOR preserved"
+  },
+  "clock_receipt": {
+    "clock_type": "native real flow sampled at user-declared interval",
+    "modulus": null,
+    "residue_convention": "sign bit in F2 at each strobe",
+    "update_rule": "F=exp(pi*A/4), (q,p)->(p,-q)",
+    "initial_phase": "arbitrary x with all 12 quadratures nonzero",
+    "coupling": "QPB1 unit incidence, no external source",
+    "period_claim": "F^4=I full active flow, paired parity swap has period at most 2",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "C=R15; admitted open U",
+    "generator_or_update": "A=d-d^T; sampled F=I+A/2+A²/4",
+    "initial_boundary_conditions": "all U; no physical boundaries",
+    "conservation_and_sources": "source-native ||x||² conserved; no retention source/sink law",
+    "projection_and_kernel": "64 parity-pair label map; 64 sign words per label",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "QPB1 frequency and previous parity fiber size exposed before construction",
+    "known_targets": [
+      "8 θ states",
+      "QPB1 eigenfrequency 2"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "sample interval chosen as source quarter-rotation",
+      "nonzero sign-admission gate and sign encoding selected for interpretability"
+    ],
+    "search_domain_and_budget": "all 4096 sign words and all 24 permutations",
+    "selection_criterion": "exact deterministic parity closure and covariance",
+    "baseline": "theta_q alone fails autonomous next-state readout"
+  },
+  "calculation_steps": [
+    "A³+4A=0 gives F=I+A/2+A²/4 at sampled pi/4",
+    "QF=R Q yields (q,p)->(p,-q)",
+    "nonzero sampled domain U invariant",
+    "(theta_q,theta_p)->(theta_p,theta_q), 64 labels and 64 sign antecedents per label",
+    "all 24 S4 signed edge actions preserve induced parity swap across 4096 sign states",
+    "64 distinct θq observation histories require 64 deterministic states",
+    "x and λx have same sign label but native norm differs by λ²; sign-only material reset requires additional reservoir"
+  ],
+  "result": {
+    "exact_expression": "64-state parity-pair sampled quotient; 4096 sign state checks; 98304 S4 checks",
+    "approximation": null,
+    "units": "dimensionless native u; no SI",
+    "precision_and_error": "exact F2 and rational symbolic",
+    "scope": "declared source QPB1 unit-metric sampled observer with nonzero admission",
+    "physical_interpretation": "none; irreversible retention OPEN"
+  },
+  "verification": [
+    {
+      "method": "constructor exact symbolic enumeration and signed-permutation checks",
+      "command_or_proof_path": "python3 experiments/parity-dynamics-gauge-20261103/retention_gate_v04.py",
+      "source_revision": "2207611450df9106adccaf8189a50734fef5a46b",
+      "actual_result": "PASS local equivalent script; 4096 sign states, 98304 signed covariance checks",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate implementation unit test",
+      "command_or_proof_path": "python3 -m unittest discover -s experiments/parity-dynamics-gauge-20261103 -p test_retention_gate_v04.py -v",
+      "source_revision": "same",
+      "actual_result": "PASS four constructor unit tests locally",
+      "review_relationship": "same constructor alternative approach"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "three-bit theta_q alone nonautonomous under the source quarter-turn",
+    "sign-only labeling fails to preserve native quadratic energy if reinterpreted as physical state reset",
+    "no proof that the chosen sampled gate or clock is dynamically selected"
+  ],
+  "limitations": [
+    "non-constructor review not run",
+    "no source-native irreversible matter retention or source/sink generator",
+    "physical time, energy and burden bridge open"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Derive source-native irreversible retention with typed reservoir and energy/current receipt, or freeze interpretive scope as closed sampled sign-parity observer"
+}

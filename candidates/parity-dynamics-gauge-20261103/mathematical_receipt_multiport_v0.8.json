@@ -1,0 +1,234 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD-MULTIPORT-PHASE-008",
+  "session_id": "pdyg-20261103-01",
+  "candidate_id": "parity-dynamics-gauge-20261103",
+  "question": "Does the K4 source permit an independently effective second port that removes conserved phase-area and selects generic-phase retention?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "TARGET_R",
+      "symbol": "r",
+      "object_type": "top-cell addressed modal vector",
+      "definition": "E_top^T x in R2",
+      "domain": "R2",
+      "codomain": null,
+      "coefficient_domain": "R",
+      "units": "dimensionless native modal amplitude",
+      "basis_orientation": "oriented top-cell and its boundary-face plane",
+      "metric_measure": "Euclidean unit",
+      "origin": "source QPB1 v1.1",
+      "exact_expression": "|r|²",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "E_top^T E_top=I2"
+    },
+    {
+      "object_id": "SOURCE_Y",
+      "symbol": "y",
+      "object_type": "matched additional source modal vector",
+      "definition": "R2 source sign representation",
+      "domain": "R2",
+      "codomain": null,
+      "coefficient_domain": "R",
+      "units": "dimensionless native modal amplitude",
+      "basis_orientation": "same j orientation as target",
+      "metric_measure": "unit Euclidean",
+      "origin": "source QPB1 v1.1",
+      "exact_expression": "|y|²",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "MATCHED_SIGN"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit source"
+    },
+    {
+      "object_id": "PORT_M",
+      "symbol": "M",
+      "object_type": "linear reciprocal modal port matrix",
+      "definition": "2x2 real; complex compatible iff M=aI+bj",
+      "domain": "R2",
+      "codomain": "R2",
+      "coefficient_domain": "R",
+      "units": "inverse native u",
+      "basis_orientation": "j=[[0,-1],[1,0]]",
+      "metric_measure": "transpose adjoint under unit Euclidean",
+      "origin": "source permits M, test values assumed",
+      "exact_expression": "r'=My, y'=-M^T r",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "MATCHED_SIGN"
+      ],
+      "dependency_ids": [
+        "TARGET_R",
+        "SOURCE_Y"
+      ],
+      "normalization": "a=3/5, b=4/5 only in exact fixture"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-source-reservoir/README.md",
+      "version_or_commit": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+      "section_or_object_id": "v1.1 §§1–2: S4 sign-representation port and complex compatibility",
+      "source_status": "read-only source; port coupling still model choice"
+    },
+    {
+      "source_id": "QLEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+      "section_or_object_id": "Q170–Q179 separate 29D support accounting",
+      "source_status": "no port identification supplied"
+    }
+  ],
+  "assumptions": [
+    "co-rotating modal state (r,y) in R2⊕R2 under source unit metric",
+    "common sign representation for source and target is explicitly assumed in QPB1",
+    "fixed complex-compatible M=aI+bj with nonzero g; illustrative a=3/5 b=4/5",
+    "anisotropic M held fixed in co-rotating frame is a DIFFERENT candidate source-frame dynamics requiring time-dependent source-frame port",
+    "no physical clock, length, energy, charge or mass mapping"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact linear algebra and polar decomposition",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "factor fixed aI+bj into scalar times SO2 basis rotation"
+    },
+    {
+      "technique": "determinant/differential invariants",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "show changed D but conserved D_R"
+    },
+    {
+      "technique": "SVD/spectral two-rate test",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "show synchronized transfer ratio constraints for anisotropic candidate"
+    },
+    {
+      "technique": "skew-isometry distance preservation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "no full-state attractor for fixed source-frame G_M"
+    },
+    {
+      "technique": "integer/fraction discipline",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "exact 3/5,4/5,9/50,1/5 fixtures"
+    },
+    {
+      "technique": "physical calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no bridge proposed"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "a²+b²=9/25+16/25=1; D_R²/N=(9/25)/2=9/50; source minimum (2-8/5)/2=1/5",
+    "reduced_expression": "g=1, 9/50, 1/5",
+    "factor_origins": [
+      "a=3/5,b=4/5 chosen exact rational SO2 fixture",
+      "N=2 and D_R=3/5 source phase test"
+    ],
+    "factorization": "denominators 50=2·5² and 5 prime; structural interpretation NOT claimed",
+    "divisibility_gcd_lcm": "odd integer rate synchrony needed for chosen π/2 endpoint, not a native clock"
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless source native u; co-rotating frame",
+    "modulus": null,
+    "residue_convention": "not modular",
+    "update_rule": "r'=M y, y'=-M^T r for fixed co-rotating M",
+    "initial_phase": "varied rational r,y; anisotropic tests initial r=0",
+    "coupling": "complex compatible M=aI+bj vs anisotropic candidates diag(1,2),diag(1,3)",
+    "period_claim": "two independent oscillator rates in *candidate* fixed co-rotating M; no attracted fixed point",
+    "physical_unit_map": "NONE"
+  },
+  "dynamics_readout": {
+    "state_space": "QPB1 15D filled K4 + source R2; addressed co-rotating sector 4D",
+    "generator_or_update": "source G_M block skew; rotation-compatible M or time-modulated candidate",
+    "initial_boundary_conditions": "arbitrary native target and reservoir modes, source free rotations matched",
+    "conservation_and_sources": "N=||r||²+||y||²; D_R conserved for aI+bj; no irreversible controller",
+    "projection_and_kernel": "new rotated determinant D_R; no typed 17D-to-29D stock map",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "prior D obstruction and retention target were known; no empirical target data",
+    "known_targets": [
+      "source QPB1 sign-port v1.1",
+      "failed scalar capture at D!=0"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "a=3/5,b=4/5 chosen rational rotation fixture",
+      "diag(1,2) and diag(1,3) comparative gain ratios",
+      "sample native u=pi/2"
+    ],
+    "search_domain_and_budget": "four rational phase fixtures, two anisotropic comparative matrices",
+    "selection_criterion": "remove D without hidden basis change and obtain generic source capture",
+    "baseline": "source scalar gI port with rotated D invariant"
+  },
+  "calculation_steps": [
+    "M=aI+bj, g=sqrt(a²+b²), R=M/g in SO2",
+    "set ybar=R y, reduce to scalar reciprocal r'=g ybar,ybar'=-g r",
+    "derive D'=b(||r||²-||y||²), D_R'=0, source >=D_R²/N",
+    "verify a=3/5,b=4/5 and generic source minimum 1/5",
+    "under dropped complex compatibility, SVD M; full source transfer requires each nonzero sigma_i phase odd π/2",
+    "test diag(1,2) impossible simultaneous capture, diag(1,3) exact chosen-time transfer followed by release",
+    "show constant anisotropic co-rotating M requires lab-frame time-modulation, and any fixed source-frame skew G_M is isometric"
+  ],
+  "result": {
+    "exact_expression": "fixed complex compatible b-port is rotated scalar port; generic D_R!=0 residual ≥D_R²/N; anisotropic synchronized capture depends on assumed rate ratio and control",
+    "approximation": null,
+    "units": "dimensionless native squared support",
+    "precision_and_error": "exact rational matrix and integer trigonometric endpoint",
+    "scope": "QPB1 matched source with fixed 2x2 compatible port; alternative anisotropic co-rotating candidate separate",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact Fraction matrix replay",
+      "command_or_proof_path": "python3 experiments/parity-dynamics-gauge-20261103/multiport_v08.py",
+      "source_revision": "d4b10ea6abeab50d5e1b74e8735fb98955c6e017",
+      "actual_result": "PASS equivalent local exact script; final committed replay pending CI",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent-form four unit fixtures",
+      "command_or_proof_path": "python3 -m unittest discover -s experiments/parity-dynamics-gauge-20261103 -p test_multiport_v08.py -v",
+      "source_revision": "same",
+      "actual_result": "PASS 4 local tests, same constructor",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "D changes under b≠0 but rotated D_R is conserved: apparent repair is basis rotation",
+    "r=(1,0), y=(0,1), a=3/5,b=4/5 has irreducible reservoir stock at least 9/50, actual min 1/5",
+    "diag(1,2) cannot simultaneously swap both channels at any common time",
+    "diag(1,3) swaps at selected endpoint but reversibly returns later",
+    "noncompatible time-fixed co-rotating coupling implies additional time-dependent source-frame control"
+  ],
+  "limitations": [
+    "source does not select a,b or anisotropic singular values",
+    "17D source port and 29D Q170–179 support are distinct",
+    "S4 equivariance not physical gauge nor retention mechanism",
+    "non-constructor review NOT_RUN; no physical time map"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Find source-selected additional independent local port or source/environment law which changes all conserved phase-area obstructions and produces robust retained-state persistence with exact controller/stock receipts."
+}

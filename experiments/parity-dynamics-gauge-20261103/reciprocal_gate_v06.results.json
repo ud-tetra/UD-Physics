@@ -1,0 +1,68 @@
+{
+  "source": "experiments/qpb1-source-reservoir/README.md v1.1 §§1-5",
+  "preparation": "r0=0, incoming y0=(1,0); g=1 reciprocal control",
+  "transport": "matched rotating-frame r=sin(u), y=cos(u)",
+  "units": "native dimensionless u; no physical clock",
+  "exact_fixtures": [
+    {
+      "u": "0",
+      "constant_coupling_target": "0",
+      "constant_coupling_reservoir": "1",
+      "null_target": "0",
+      "switched_off_target": "0"
+    },
+    {
+      "u": "pi/6",
+      "constant_coupling_target": "1/4",
+      "constant_coupling_reservoir": "3/4",
+      "null_target": "0",
+      "switched_off_target": "1/4"
+    },
+    {
+      "u": "pi/4",
+      "constant_coupling_target": "1/2",
+      "constant_coupling_reservoir": "1/2",
+      "null_target": "0",
+      "switched_off_target": "1/2"
+    },
+    {
+      "u": "pi/2",
+      "constant_coupling_target": "1",
+      "constant_coupling_reservoir": "0",
+      "null_target": "0",
+      "switched_off_target": "1"
+    },
+    {
+      "u": "pi",
+      "constant_coupling_target": "0",
+      "constant_coupling_reservoir": "1",
+      "null_target": "0",
+      "switched_off_target": "1"
+    },
+    {
+      "u": "3pi/2",
+      "constant_coupling_target": "1",
+      "constant_coupling_reservoir": "0",
+      "null_target": "0",
+      "switched_off_target": "1"
+    },
+    {
+      "u": "2pi",
+      "constant_coupling_target": "0",
+      "constant_coupling_reservoir": "1",
+      "null_target": "0",
+      "switched_off_target": "1"
+    }
+  ],
+  "rational_orthogonal_fixture_checks": "PASS",
+  "phase_counterexamples": {
+    "old_target_same_source_at_pi_over_4": "2",
+    "old_target_opposite_source_at_pi_over_4": "0"
+  },
+  "zero_current_selector": "FAIL: zero current at u=0 empty and u=pi/2 full",
+  "null_release_latch_at_pi": "target stock 0,0,1 respectively",
+  "conservation": "target+source=1 for all empty-target fixture times",
+  "fixed_skew_attraction": "NO-GO: joint isometry preserves distinct full-state distances",
+  "selection_status": "OPEN: timed shutoff is an additional controller",
+  "physical_promotion": 0
+}

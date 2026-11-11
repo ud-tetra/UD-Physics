@@ -1,0 +1,167 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "K4-PDY-GAUGE-001",
+  "session_id": "pdyg-20261103-01",
+  "candidate_id": "parity-dynamics-gauge-20261103",
+  "question": "Do P and S4 force an autonomous dynamics and gauge interpretation?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "S",
+      "symbol": "S",
+      "object_type": "raw F2 state carrier",
+      "definition": "F2^4 ⊕ F2^6",
+      "domain": "F2",
+      "codomain": null,
+      "coefficient_domain": "F2",
+      "units": "none",
+      "basis_orientation": "4 vertex, 6 unoriented edge bits",
+      "metric_measure": "none",
+      "origin": "assumed",
+      "exact_expression": "2^10=1024",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "none"
+    },
+    {
+      "object_id": "P",
+      "symbol": "P",
+      "object_type": "linear parity projection",
+      "definition": "XOR of 3 disjoint opposite edge pairs",
+      "domain": "S",
+      "codomain": "F2^3",
+      "coefficient_domain": "F2",
+      "units": "none",
+      "basis_orientation": "pair order (01,23),(02,13),(03,12)",
+      "metric_measure": "none",
+      "origin": "defined",
+      "exact_expression": "rank 3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "none"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "DISCOVERY",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics",
+      "version_or_commit": "2207611450df9106adccaf8189a50734fef5a46b",
+      "section_or_object_id": "BOOTLOADER.md; docs/UD_MATHEMATICAL_METHOD_v1.0.md; experiments/pachner-boundary-observability/README.md",
+      "source_status": "read-only input"
+    }
+  ],
+  "assumptions": [
+    "All raw states admissible only in test",
+    "Illustrative reversible update, not canonical UD"
+  ],
+  "technique_plan": [
+    {
+      "technique": "F2 rank-nullity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "128 fibers"
+    },
+    {
+      "technique": "S4 group orbit enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "90 orbits"
+    },
+    {
+      "technique": "Dynamical quotient",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "16-state closure test"
+    },
+    {
+      "technique": "Physical units",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "No physical mapping"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2^(4+6), 2^(10−3), 2^(10−4), 2^(10−6)",
+    "reduced_expression": "1024,128,64,16",
+    "factor_origins": [
+      "4 vertex bits",
+      "6 edge bits",
+      "3 independent opposite-edge parities",
+      "q vertex parity",
+      "δu=0 commuting constraint"
+    ],
+    "factorization": "1024=2^10;128=2^7;64=2^6;16=2^4",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "formal update index",
+    "modulus": 2,
+    "residue_convention": "F2",
+    "update_rule": "T(b,e)=(b,e+δb)",
+    "initial_phase": "arbitrary",
+    "coupling": "none",
+    "period_claim": "T²=id",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "F2^10",
+    "generator_or_update": "illustrative T",
+    "initial_boundary_conditions": "all raw states; no boundaries",
+    "conservation_and_sources": "vertex bits q fixed; no burden law",
+    "projection_and_kernel": "P with kernel cardinality128",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "prior mathematical count exposure",
+    "known_targets": [
+      "128",
+      "90"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "all 1024 states, all 24 S4 permutations",
+    "selection_criterion": "exact identities",
+    "baseline": "instantaneous P"
+  },
+  "calculation_steps": [
+    "rank(P)=3",
+    "P(Ts)=P(s)+q(s)111",
+    "P alone non-closed; (P,q) closed",
+    "kernel shifts: 128, history-invisible 64, commuting 16",
+    "S4 orbit histogram gives 90"
+  ],
+  "result": {
+    "exact_expression": "128/64/16 groups,90 S4 orbits,16-state quotient",
+    "approximation": null,
+    "units": "none",
+    "precision_and_error": "exact integer",
+    "scope": "illustrative update only",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exhaustive integer enumeration",
+      "command_or_proof_path": "python3 experiments/parity-dynamics-gauge-20261103/audit.py",
+      "source_revision": "2207611450df9106adccaf8189a50734fef5a46b",
+      "actual_result": "PASS in local equivalent standalone audit; exact committed script replay in repository CI NOT_RUN",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "same P different next P (different q)",
+    "P-preserving translations not all update-commuting"
+  ],
+  "limitations": [
+    "canonical raw-state Adm,T unavailable from reviewed sources",
+    "independent review NOT_RUN",
+    "repository CI NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "source-native Adm and evolution; action- and port-preserving gauge tests"
+}

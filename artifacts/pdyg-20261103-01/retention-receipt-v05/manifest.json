@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "pdyg-20261103-01",
+  "run_id": "retention-receipt-v05",
+  "created_at": "2026-11-03T22:10:00Z",
+  "evidence": "EXACT",
+  "summary": "Exact 1-to-4 K4 ownership/current and assumed full-versus-null retention receipt; mathematical choice not source-selected",
+  "command": "python3 experiments/parity-dynamics-gauge-20261103/retention_receipt_v05.py",
+  "command_execution": "EXECUTED_EQUIVALENT_LOCAL_PYTHON; CAPTURED_REPOSITORY_SCRIPT_REPLAY_NOT_RUN",
+  "source": {
+    "revision": "6c9f3b855169448d224d7c9f9badee02d4d5a1e3",
+    "dirty": false
+  },
+  "inputs": [
+    {
+      "input_id": "retention-v05-code",
+      "name": "retention_receipt_v05.py",
+      "path": "inputs/001-retention_receipt_v05.py",
+      "source_location": "repository",
+      "source_path": "experiments/parity-dynamics-gauge-20261103/retention_receipt_v05.py",
+      "sha256": "839b0f9a93635bd13750a1ca5511099da9a208643fadc3674a05aa8a51532ae7",
+      "size_bytes": 3086
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "8e0f165121bd543a67d525aae9818e54b59163002a708e0a26b55d960131f22c",
+      "size_bytes": 1320
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "source": "experiments/qpb1-source-reservoir/README.md v1.1 §§1-5",
+  "carrier": "two R2 vectors in co-rotating matched top-cell/reservoir plane",
+  "feedback": "CANDIDATE g=||y||²/N for N>0; g(0)=0, not source-selected",
+  "update": "dr/du=g*y, dy/du=-g*r; native co-rotation factored out",
+  "invariants": [
+    "N=||r||²+||y||²",
+    "D=r1*y2-r2*y1"
+  ],
+  "no_go": "if D!=0 then ||y||² >= D²/N>0 under every scalar feedback g",
+  "phase_generic": "D!=0 implies candidate g>=D²/N²>0, so continuous reciprocal exchanges do not latch",
+  "aligned_initial_target_zero_exact_stock": {
+    "0": {
+      "target": "0",
+      "source": "1"
+    },
+    "1": {
+      "target": "1/2",
+      "source": "1/2"
+    },
+    "2": {
+      "target": "4/5",
+      "source": "1/5"
+    },
+    "3": {
+      "target": "9/10",
+      "source": "1/10"
+    },
+    "10": {
+      "target": "100/101",
+      "source": "1/101"
+    },
+    "100": {
+      "target": "10000/10001",
+      "source": "1/10001"
+    }
+  },
+  "aligned_limit": "target->N and reservoir->0 only as u->infinity; no finite latching",
+  "phase_cases": [
+    {
+      "r": [
+        "0",
+        "0"
+      ],
+      "y": [
+        "1",
+        "0"
+      ],
+      "N": "1",
+      "D": "0",
+      "source_lower_bound": "0"
+    },
+    {
+      "r": [
+        "1",
+        "0"
+      ],
+      "y": [
+        "0",
+        "1"
+      ],
+      "N": "2",
+      "D": "1",
+      "source_lower_bound": "1/2"
+    },
+    {
+      "r": [
+        "1",
+        "1"
+      ],
+      "y": [
+        "2",
+        "-1"
+      ],
+      "N": "7",
+      "D": "-3",
+      "source_lower_bound": "9/7"
+    },
+    {
+      "r": [
+        "1",
+        "0"
+      ],
+      "y": [
+        "1",
+        "0"
+      ],
+      "N": "2",
+      "D": "0",
+      "source_lower_bound": "0"
+    },
+    {
+      "r": [
+        "-1",
+        "0"
+      ],
+      "y": [
+        "1",
+        "0"
+      ],
+      "N": "2",
+      "D": "0",
+      "source_lower_bound": "0"
+    }
+  ],
+  "null_control": "g=0: no transfer",
+  "reversible_control": "fixed g>0: periodic transfer",
+  "selection_status": "OPEN: stock feedback is a constitutive assumption",
+  "physical_promotion": 0,
+  "checks": "PASS"
+}

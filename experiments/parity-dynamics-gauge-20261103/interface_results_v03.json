@@ -1,0 +1,27 @@
+{
+  "carrier_dimension": 15,
+  "binary_candidates": 1024,
+  "source_flow_kernel_dimension": 1,
+  "halfstep_operator": "I + A^2/2",
+  "halfstep_embedded_survivors": [
+    0,
+    3,
+    5,
+    6,
+    9,
+    10,
+    12,
+    15
+  ],
+  "survivor_count": 8,
+  "fixed_candidates": [
+    0,
+    15
+  ],
+  "all_survivors_have_edge_bits_zero": true,
+  "opposite_edge_parity_on_all_survivors": "000",
+  "sample_parameter": "u=pi/2 (dimensionless)",
+  "source_model": "QPB1 unit-metric filled-simplex flow",
+  "status": "EXACT CONDITIONAL; NOT canonical binary-register realization",
+  "physical_promotion": 0
+}
