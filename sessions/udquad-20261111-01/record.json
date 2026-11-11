@@ -13,8 +13,9 @@
     "ud-quadrupole-source-20261111": {
       "ref": "refs/heads/claims/ud-quadrupole-source-20261111",
       "sha": "87eeed8be82dffcd329d05054e9fca43c0650265",
-      "status": "held",
-      "protocol_version": 2
+      "status": "released",
+      "protocol_version": 2,
+      "release_sha": "84935d4028bed921343580ad8a382843465e714b"
     }
   },
   "checks": [],
@@ -24,5 +25,10 @@
   "checkpoint_source": {
     "revision": "4aa087681f700ab8cb1177a2d8aa1d0866417da3",
     "dirty": true
+  },
+  "integration": {
+    "pull_request": 362,
+    "merge_sha": "327af58fea22491bce3fe7ed5a5ae04925e2fa77",
+    "ci": "Discovery integrity SUCCESS; workflow 43092948383"
   }
 }
