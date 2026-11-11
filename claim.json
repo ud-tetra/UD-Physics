@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "ud-quadrupole-source-20261111",
   "session": "udquadweights-20261111-01",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-11T22:04:50.710231+00:00",
   "base_revision": "8930d21a9261ecb17d2d21c46a20344ba2e632f1",
   "owned_paths": [
@@ -12,5 +12,7 @@
     "candidates/ud-quadrupole-source",
     "tasks/ud-quadrupole-source-20261111.json"
   ],
-  "previous_claim_sha": "84935d4028bed921343580ad8a382843465e714b"
+  "previous_claim_sha": "84935d4028bed921343580ad8a382843465e714b",
+  "released_at": "2026-11-11T22:08:23.279Z",
+  "released_from_sha": "02183562a43ce909780055adba50b23a180d8825"
 }
