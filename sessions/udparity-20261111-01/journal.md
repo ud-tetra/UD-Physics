@@ -35,3 +35,5 @@ Validation: first candidate status/evidence metadata rejected by validator; repa
 Checkpoint (handoff): Exact parity-only no-go under S4 and Hamming conservation; new addressed reserve event candidate is conservative, covariant, period-two or HOLD; no Q198 or physics promotion.
 
 Next: Seek source-selected address and reserve preparation or independent target-blind event corpus; retain candidate as toy.
+
+Closure: PR #360 merged at `1bcb2c29e13d42f6d4c410812e997988aa7c06b3`; Discovery integrity CI workflow `43090744706` succeeded. Exact-SHA release marker `9be7ce0bfe3de78503c479d9f0b6e24687644542` now heads the task claim. No scientific promotion; closure-only session metadata update.

@@ -13,8 +13,9 @@
     "ud-parity-conservative-generator-20261111": {
       "ref": "refs/heads/claims/ud-parity-conservative-generator-20261111",
       "sha": "cd52ba2738d530f62d55d705b23aefb55d717cff",
-      "status": "held",
-      "protocol_version": 2
+      "status": "released",
+      "protocol_version": 2,
+      "release_sha": "9be7ce0bfe3de78503c479d9f0b6e24687644542"
     }
   },
   "checks": [],
@@ -24,5 +25,10 @@
   "checkpoint_source": {
     "revision": "8b11c934e7960b2b57d147e1364aaea195397998",
     "dirty": true
+  },
+  "integration": {
+    "pull_request": 360,
+    "merge_sha": "1bcb2c29e13d42f6d4c410812e997988aa7c06b3",
+    "ci": "Discovery integrity SUCCESS; workflow 43090744706"
   }
 }
