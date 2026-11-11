@@ -31,3 +31,5 @@ Exact replay PASS seven masks, 336 covariance checks, six inequivalent response 
 Checkpoint (handoff): Q204 source receipt does not uniquely select seven-state weights: positive normalized covariant point versus orbit laws give nonzero versus zero response for six masks.
 
 Next: Park current alpha route until a source theorem selects nonuniform weights and the interaction operator; then reopen with independent bridge test.
+
+Closure: PR #364 merged at `6900cc02cc753f49b4e06e25b793b1ef29b2d449`; CI workflow `43109112134` succeeded. Task claim released by exact-SHA marker `9e472b9a433d879972732470e09ef3fa0f2c4776`. No scientific promotion; closure-only metadata.
