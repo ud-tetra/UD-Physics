@@ -1,0 +1,203 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "transverse-stability-007",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "Is the constructed prepared clock transversely stable and what nonlinear finite readout window is guaranteed?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "normal-variational-flow",
+      "symbol": "T_N,U_rho",
+      "object_type": "averaged transverse generator and periodic return map",
+      "definition": "normal space N=V intersect W-perp; fixed13-term Q; mu=lambda I,rho=mu/(2+mu)",
+      "domain": "N=R12",
+      "codomain": "N=R12",
+      "coefficient_domain": "exact rational matrices for leading generator;float64 numerical return maps",
+      "units": "native inverse dimensionless parameter or phase",
+      "basis_orientation": "ascending simplex orientation; orthogonal normal projector",
+      "metric_measure": "positive Euclidean metric",
+      "origin": "derived from previously inverse-designed Q",
+      "exact_expression": "spec(T_N)=+-3/8,(+-1/4)^3,(+-i)^2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "prepared-clock"
+      ],
+      "assumption_ids": [
+        "fixed-Q",
+        "positive-coupling"
+      ],
+      "dependency_ids": [
+        "prepared-plane-quartic-006"
+      ],
+      "normalization": "theta=(2+mu)s; half-return phase pi"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    },
+    {
+      "source_id": "prepared-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/PREPARED_PLANE.md",
+      "version_or_commit": "8e94fd49ded70a00eb4986177d3463860d295960",
+      "section_or_object_id": "sections1-5:13-term Q, plane, rates and previous coarse bound",
+      "source_status": "conditional construction, not native interaction"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "fixed-Q",
+      "text": "same13-term anisotropic local Q and selectedW; fixed J and unit metric"
+    },
+    {
+      "id": "positive-coupling",
+      "text": "lambda>=0, I>0; exact instability theorem only sufficiently smallpositive mu, with endpoint not bounded"
+    },
+    {
+      "id": "finite-window",
+      "text": "referenceI1,lambda1/64,initial active error<=1/4096,both energies<=33/16, horizon128pi/129 native units"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact averaging and rational eigenspaces",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "weak-coupling hyperbolic multiplier theorem"
+    },
+    {
+      "technique": "periodic variational integration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "finite-grid Floquet corroboration with step doubling and symplectic residual"
+    },
+    {
+      "technique": "Hamiltonian energy/Hessian error bounds",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "nonlinear finite observation guarantee despite asymptotic instability"
+    },
+    {
+      "technique": "exact rational series bounds",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "certify exponential growth factor and phase tolerance"
+    },
+    {
+      "technique": "factorization",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "annihilator t(t^2-9/64)(t^2-1/16)(t^2+1) and eigenspace dimensions"
+    },
+    {
+      "technique": "modular clock arithmetic",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "continuous phase and periodic linear ODE, no discrete clock"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "14 active minus2 plane coordinates",
+    "reduced_expression": "12 transverse; real eigenspace multiplicities1+1+3+3 plus4 imaginary=12",
+    "factor_origins": [
+      "fixed active carrier and prepared plane"
+    ],
+    "factorization": "exact matrix annihilator t(t^2-9/64)(t^2-1/16)(t^2+1)",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "xiPrime=J[2Id+lambda HessQ(xstar)]xi; nonlinear error bound exp(13lambda R^2|s|)",
+    "initial_phase": "arbitrary q,p on selected W",
+    "coupling": "fixed13-term positive Q",
+    "period_claim": "reference native cycle2pi/(2+mu), coefficient half-periodpi/(2+mu); finite gateT128pi/129",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "nonlinearV14, invariantW2, normalN12",
+    "generator_or_update": "H=norm2+lambdaQ; normal periodic linearization",
+    "initial_boundary_conditions": "fixed selectedW reference; perturbations inV with stated error/energy gates",
+    "conservation_and_sources": "H conserved globally; lambda>=0 gives bounded trajectories; not orbital stability",
+    "projection_and_kernel": "P_N excludes tangent2 and harmonic1; exact T has no transverse zero eigenvalue",
+    "physical_mapping": "OPEN; all scales/readouts formal dimensionless"
+  },
+  "target_exposure": {
+    "status": "question-informed stability audit, no parameter fit",
+    "known_targets": [
+      "previous invariant clock and weak-coupling rate"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "illustrative finite gate lambda1/64,I1 selected for readable sufficient error budget"
+    ],
+    "search_domain_and_budget": "exact weakmu asymptotic;10-pointmu grid0,1/64,1/16,1/4,1,2,4,8,16,64;2048/4096 RK4 steps",
+    "selection_criterion": "transverse multiplier and finite nonlinear phase error",
+    "baseline": "lambda0 orthogonal clock"
+  },
+  "calculation_steps": [
+    "differentiate Q and split normal space",
+    "derive normalized periodic equation and first interaction-picture average",
+    "prove exact averaged eigenspaces and annihilator by Fraction arithmetic",
+    "positive simple eigenvalue yields weakpositive expanding multiplier",
+    "integrate return matrices at10 grid points with convergence diagnostics",
+    "derive global Hessian13norm2 bound, cancel skew linear error term, prove nonlinear one-cycle error gates"
+  ],
+  "result": {
+    "exact_expression": "weakpositive growth3mu/8+O(mu^2); finite nonlinear phaseerror<1/1000 for lambda1/64,I1,T128pi/129 under stated gates",
+    "approximation": "numeric multipliers1.0091872708 atmu1/64 through3.8161540838 atmu64; no continuous full-range theorem",
+    "units": "native parameter and radians, not physicaltime",
+    "precision_and_error": "Fraction exact weak generator/gate certificates;float64 RK4 stepdiff<=2.85e-12 and symplecticresidual<=1.93e-14, not rigorous enclosures",
+    "scope": "fixed13-termQ; not entire30-dimensional null-modification family",
+    "physical_interpretation": "OPEN"
+  },
+  "verification": [
+    {
+      "method": "written averaging/instability proof plus exact rational rank/annihilator and exponential/phase certificates",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/transverse_exact.py; TRANSVERSE_STABILITY.md",
+      "source_revision": "dca1009ae232fe3d392d815eb3525aaf97d39dba",
+      "actual_result": "PASS12 transverse dimensions, eigenvalues, finite gate inequalities",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "ownRK4 with independent differentiated Hessian and NumPy2.3.5 eigensolver",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/transverse_stability.py",
+      "source_revision": "same",
+      "actual_result": "PASS10-casegrid, every9positive case has multiplier>1;2048/4096 agreement and symplectic checks",
+      "review_relationship": "constructor numerical cross-check, not independent review"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "invariant plane and globally bounded energy do not ensure transverse orbital stability",
+    "specificQ fails robustweakpositive clock criterion",
+    "exploratory unavailable symbolic package failed before exactwork; final proof uses standalone Fraction arithmetic instead"
+  ],
+  "limitations": [
+    "weak-instability endpoint not explicitly bounded",
+    "finite-grid instability not proof for allpositive couplings",
+    "negativecoupling notclassified",
+    "finite window gates require calibration/preparation; no apparatus provided",
+    "modifying30 zero-on-plane coefficient directions changes stability",
+    "independent review NOT_RUN"
+  ],
+  "changed_dependencies": [
+    "fixed13-term robustclock PARKED; invariant-orbit and finitewindow results preserved"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/stability-007/manifest.json"
+  ],
+  "next_discriminant": "Test whether positive nearest-incidence quartic modifications in the30 even zero-on-plane directions can remove transverse hyperbolicity without changing the clock law; coefficient choices remain inverse design"
+}

@@ -1,0 +1,199 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "finite-nonlinear-margin-013",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "What finite nonlinear state and phase tolerance follows below the certified threshold?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "CANDIDATE",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "certified-normal-metric",
+      "symbol": "e,Phi",
+      "object_type": "full nonlinear state error and two-time variational map",
+      "definition": "e=x-z on V=W orthogonal direct sum N",
+      "domain": "14-dimensional V",
+      "codomain": "same",
+      "coefficient_domain": "rational verified margins, Euclidean operator bounds",
+      "units": "dimensionless metric on native perturbations",
+      "basis_orientation": "ascending tetrahedral chain, fixed phase origin",
+      "metric_measure": "Euclidean input/output; certified invariant metric bounds1/128 to5",
+      "origin": "derived for inverse-designed eta1 clock",
+      "exact_expression": "||e(s)|| <= A_T epsilon/(1-160 K_T A_T epsilon s)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "modified-clock"
+      ],
+      "assumption_ids": [
+        "fixed-modified-law",
+        "phase-origin"
+      ],
+      "dependency_ids": [
+        "near-threshold-gain-growth-012"
+      ],
+      "normalization": "mu=lambdaI,rho=mu/(2+mu);normal coefficient half-periodpi"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    },
+    {
+      "source_id": "prepared-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/PREPARED_PLANE.md",
+      "version_or_commit": "8e94fd49ded70a00eb4986177d3463860d295960",
+      "section_or_object_id": "sections1-5:13-term Q, plane, rates and previous coarse bound",
+      "source_status": "conditional construction, not native interaction"
+    },
+    {
+      "source_id": "original-transverse",
+      "url_or_repo_path": "experiments/clock-matrix-question/TRANSVERSE_STABILITY.md",
+      "version_or_commit": "b65135ce434564c221d5991d5283b6a63aa328a7",
+      "section_or_object_id": "sections2-6,original weak instability and fixedQ finite window",
+      "source_status": "preserved exact/numerical conditional controls"
+    },
+    {
+      "source_id": "modified-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/LOCAL_STABILIZATION.md",
+      "version_or_commit": "b04d720d96b1c51842d51066a206e2afa92b1f33",
+      "section_or_object_id": "sections2,4,5,7:positivepenalty,weak spectrum and signature proof",
+      "source_status": "exact conditional inverse-designed clock"
+    },
+    {
+      "source_id": "exact-009",
+      "url_or_repo_path": "experiments/clock-matrix-question/CERTIFIED_INTERVAL.md",
+      "version_or_commit": "1de2e0299a813a4362ce38cb2c13d469822a7d1c",
+      "section_or_object_id": "sections 1\u20135",
+      "source_status": "EXACT_CONDITIONAL"
+    },
+    {
+      "source_id": "exact-010",
+      "url_or_repo_path": "experiments/clock-matrix-question/FOURIER_INTERVAL.md",
+      "version_or_commit": "c48a78b8f803fadce8d1b0779a05eb2b6b2fc1e3",
+      "section_or_object_id": "uniform interval through 1/64",
+      "source_status": "EXACT_CONDITIONAL"
+    },
+    {
+      "source_id": "exact-011",
+      "url_or_repo_path": "experiments/clock-matrix-question/STABILITY_BOUNDARY.md",
+      "version_or_commit": "e762e5f559bceb65f63929cfc72e9c8bce10ab62",
+      "section_or_object_id": "exact blocks and threshold bracket",
+      "source_status": "EXACT_CONDITIONAL"
+    },
+    {
+      "source_id": "exact-012",
+      "url_or_repo_path": "experiments/clock-matrix-question/NEAR_THRESHOLD.md",
+      "version_or_commit": "fca1a8afb36f7037b3917f88d58873823c2ab7f8",
+      "section_or_object_id": "quarter-orbit margins and finite-return powers",
+      "source_status": "EXACT_CONDITIONAL"
+    }
+  ],
+  "assumptions": [
+    "Fixed eta=1 prepared orbit, I=1, phase zero and identical autonomous dynamics.",
+    "Initial errors in V, Euclidean norm, no coefficient or detector noise."
+  ],
+  "technique_plan": [
+    {
+      "technique": "Periodic two-time propagator and tangent shear",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Bound forcing separately from phase-zero preparation gain"
+    },
+    {
+      "technique": "Hessian polarization and scalar comparison",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Close a finite nonlinear tube"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2+2*(1+2+3)",
+    "reduced_expression": "14 active coordinates",
+    "factor_origins": [
+      "prepared plane and prior normal splitting",
+      "at most three half-return index increments in one native unit"
+    ],
+    "factorization": "16000000=640*500*50",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "Same autonomous fixed eta=1 Hamiltonian",
+    "initial_phase": "0",
+    "coupling": "mu=lambda, I=1, 31/5<=mu<77511/12500",
+    "period_claim": "half-return phase pi, native time pi/(2+mu)",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "W plus N in V, two-coordinate phase projection",
+    "generator_or_update": "Nonlinear error equation with quadratic remainder <=160||e||\u00b2 on tube",
+    "initial_boundary_conditions": "phaseanchored reference;normal linearerror arbitrary;finite nonlinear energy/norm gates explicit",
+    "conservation_and_sources": "positive Hamiltonian energy conserved; no attraction or physical calibration",
+    "projection_and_kernel": "exact negative-frequency projector and invariant-metric extension;old all-state/S4 obstructions unchanged",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "Prior gain envelopes exposed, design horizon and tolerances selected analytically",
+    "known_targets": [
+      "near-threshold gain-growth enclosure"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "No model coefficient changes",
+      "I=1, T=1, bootstrap radius 1/1000"
+    ],
+    "search_domain_and_budget": "Rational sufficient bounds in previously certified subcritical window",
+    "selection_criterion": "Close tube and retain lifted phase readout",
+    "baseline": "prior linear preparation and forcing bounds"
+  },
+  "calculation_steps": [
+    "Bound two-time normal propagator with both endpoint factors and tangent shear.",
+    "Polarize inherited Hessian bound and integrate to get quadratic remainder.",
+    "Apply scalar reciprocal comparison and strict tube closure.",
+    "Verify one-unit rational preparation and readout gates."
+  ],
+  "result": {
+    "exact_expression": "For I=1 and 31/5<=mu<77511/12500, initial state error <=1/16000000 gives state error <=1/240000 and lifted phase error <1/300000 rad through one native time unit.",
+    "approximation": null,
+    "units": "native parameter and radians only",
+    "precision_and_error": "Exact inequalities and rational replay",
+    "scope": "Finite nonlinear initial-state error, fixed model",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "Rational replay plus analytic comparison",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/nonlinear_margin.py",
+      "source_revision": "234f54471c32cc9ad4873cd8042103fa19795909",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Phase-zero gain alone is insufficient for errors injected at intermediate phases."
+  ],
+  "limitations": [
+    "Finite-time sufficient bound. Coefficient drift, detector error, nonlinear all-time stability, and calibration OPEN.",
+    "Independent review OPEN."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/exact-013/manifest.json"
+  ],
+  "next_discriminant": "Tighten the finite margin by bounding the two-time propagator over the observation horizon and separating tangential and normal error transfer."
+}

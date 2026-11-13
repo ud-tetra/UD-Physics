@@ -1,0 +1,61 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "stability-007",
+  "created_at": "2026-11-05T17:34:37.190124+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Exact weak-coupling transverse instability and nonlinear finite phase window, with numerical Floquet grid",
+  "command": "python3 experiments/clock-matrix-question/transverse_exact.py; python3 experiments/clock-matrix-question/transverse_stability.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "a17284d8addf9825f2037780efdc97448f911c3a",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "transverse_exact.py",
+      "path": "inputs/001-transverse_exact.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/transverse_exact.py",
+      "sha256": "80ef4aa9fa5ae4e9a193cdc1d322e2b0d7bc61a88610c848c98d2f47c1564a1f",
+      "size_bytes": 4032
+    },
+    {
+      "input_id": "input-002",
+      "name": "transverse_stability.py",
+      "path": "inputs/002-transverse_stability.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/transverse_stability.py",
+      "sha256": "4a266260beeafcf6d39ba9b44a6319180f92da0c01f1e4a6190726a887f36215",
+      "size_bytes": 3590
+    },
+    {
+      "input_id": "input-003",
+      "name": "transverse_receipt.json",
+      "path": "inputs/003-transverse_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/transverse_receipt.json",
+      "sha256": "6ef239633b84c00e09ba1951915c6bb0a4cde761bf9ce35fd6327f2b101a15db",
+      "size_bytes": 9547
+    }
+  ],
+  "files": [
+    {
+      "path": "files/TRANSVERSE_STABILITY.md",
+      "sha256": "f1b78214eb2e15bc4b84cdb7327400a51c77fd4fc842c30aefa3e523554096bb",
+      "size_bytes": 10713
+    },
+    {
+      "path": "files/transverse_exact_results.json",
+      "sha256": "15a8a114d7d4565ace1c344e3b5bca9e6ceb3e763e4518f850009525c9566a87",
+      "size_bytes": 985
+    },
+    {
+      "path": "files/transverse_stability_results.json",
+      "sha256": "aeef96413eac01f0555f6f4680c52082098517c5c470fbbfd1540e3a42bfaa8f",
+      "size_bytes": 13143
+    }
+  ]
+}

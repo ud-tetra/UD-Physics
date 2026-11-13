@@ -1,0 +1,192 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "near-threshold-gain-growth-012",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "How large is transverse amplification below first loss and how fast is growth above it?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "CANDIDATE",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "certified-normal-metric",
+      "symbol": "U^n,gamma",
+      "object_type": "half-return powers and maximal native exponent",
+      "definition": "Reversible 2D normal blocks with delta=abs(mu-mu_star)",
+      "domain": "12-dimensional orthogonal normal splitting",
+      "codomain": "same",
+      "coefficient_domain": "outward dyadic enclosures and rational margins",
+      "units": "dimensionless metric on native perturbations",
+      "basis_orientation": "ascending tetrahedral chain, fixed phase origin",
+      "metric_measure": "Euclidean input/output; certified invariant metric bounds1/128 to5",
+      "origin": "derived for inverse-designed eta1 clock",
+      "exact_expression": "ell=2asinh(sqrt(-ad)), gamma=(2+mu)ell/pi above onset",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "modified-clock"
+      ],
+      "assumption_ids": [
+        "fixed-modified-law",
+        "phase-origin"
+      ],
+      "dependency_ids": [
+        "first-transverse-loss-011"
+      ],
+      "normalization": "mu=lambdaI,rho=mu/(2+mu);normal coefficient half-periodpi"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    },
+    {
+      "source_id": "prepared-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/PREPARED_PLANE.md",
+      "version_or_commit": "8e94fd49ded70a00eb4986177d3463860d295960",
+      "section_or_object_id": "sections1-5:13-term Q, plane, rates and previous coarse bound",
+      "source_status": "conditional construction, not native interaction"
+    },
+    {
+      "source_id": "original-transverse",
+      "url_or_repo_path": "experiments/clock-matrix-question/TRANSVERSE_STABILITY.md",
+      "version_or_commit": "b65135ce434564c221d5991d5283b6a63aa328a7",
+      "section_or_object_id": "sections2-6,original weak instability and fixedQ finite window",
+      "source_status": "preserved exact/numerical conditional controls"
+    },
+    {
+      "source_id": "modified-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/LOCAL_STABILIZATION.md",
+      "version_or_commit": "b04d720d96b1c51842d51066a206e2afa92b1f33",
+      "section_or_object_id": "sections2,4,5,7:positivepenalty,weak spectrum and signature proof",
+      "source_status": "exact conditional inverse-designed clock"
+    },
+    {
+      "source_id": "exact-009",
+      "url_or_repo_path": "experiments/clock-matrix-question/CERTIFIED_INTERVAL.md",
+      "version_or_commit": "1de2e0299a813a4362ce38cb2c13d469822a7d1c",
+      "section_or_object_id": "sections 1\u20135",
+      "source_status": "EXACT_CONDITIONAL"
+    },
+    {
+      "source_id": "exact-010",
+      "url_or_repo_path": "experiments/clock-matrix-question/FOURIER_INTERVAL.md",
+      "version_or_commit": "c48a78b8f803fadce8d1b0779a05eb2b6b2fc1e3",
+      "section_or_object_id": "uniform interval through 1/64",
+      "source_status": "EXACT_CONDITIONAL"
+    },
+    {
+      "source_id": "exact-011",
+      "url_or_repo_path": "experiments/clock-matrix-question/STABILITY_BOUNDARY.md",
+      "version_or_commit": "e762e5f559bceb65f63929cfc72e9c8bce10ab62",
+      "section_or_object_id": "exact blocks and threshold bracket",
+      "source_status": "EXACT_CONDITIONAL"
+    }
+  ],
+  "assumptions": [
+    "Fixed eta=1 prepared orbit and Euclidean normal metric.",
+    "Initial phase zero. Mu in [31/5,621/100]. Linear perturbations only."
+  ],
+  "technique_plan": [
+    {
+      "technique": "Rational Bernstein and derivative enclosures",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Obtain uniform bounds on a derivative and off-diagonal shear"
+    },
+    {
+      "technique": "Closed 2D return powers and logarithmic norm",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Bound sampled and continuous gains and the exponential rate"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2*(1+2+3)",
+    "reduced_expression": "12 transverse coordinates",
+    "factor_origins": [
+      "prior invariant splitting",
+      "mean value bounds on ad"
+    ],
+    "factorization": "delta<1/100 on window",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "Fixed eta=1 generator",
+    "initial_phase": "0",
+    "coupling": "mu=lambda I in [31/5,621/100]",
+    "period_claim": "half-return phase pi, native time pi/(2+mu)",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "rank-12 normal space as six orthogonal 2D planes",
+    "generator_or_update": "U^n and intervening continuous linear transverse evolution",
+    "initial_boundary_conditions": "phaseanchored reference;normal linearerror arbitrary;finite nonlinear energy/norm gates explicit",
+    "conservation_and_sources": "positive Hamiltonian energy conserved; no attraction or physical calibration",
+    "projection_and_kernel": "exact negative-frequency projector and invariant-metric extension;old all-state/S4 obstructions unchanged",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "Earlier crossing and approximate entry magnitudes exposed",
+    "known_targets": [
+      "exact-011 crossing bracket and block structure"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "No model coefficient changes",
+      "Rational envelope constants chosen after inspecting entry enclosures"
+    ],
+    "search_domain_and_budget": "One certified rho cell per block, eight nodes each",
+    "selection_criterion": "Uniform rational gain and growth bounds",
+    "baseline": "exact-011 first crossing certificate"
+  },
+  "calculation_steps": [
+    "Verify quarter-orbit entry boxes and derivative enclosure on one window.",
+    "Relate abs(ad) to delta by mean value theorem.",
+    "Use 2D powers and logarithmic norms for gains.",
+    "Convert expanding log multiplier to native exponent."
+  ],
+  "result": {
+    "exact_expression": "On [31/5,621/100], fixed eta=1 sampled peak gain below onset is between (47/10)/sqrt(delta) and (51/10)/sqrt(delta). Continuous gain upper is 41/sqrt(delta). Native growth exponent above onset is between sqrt(delta)/4 and (27/100)sqrt(delta).",
+    "approximation": null,
+    "units": "native parameter and radians only",
+    "precision_and_error": "Inherited 100-bit outward Taylor and explicit Bernstein remainders",
+    "scope": "Linear transverse dynamics in fixed model only",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "Rational replay plus analytic inequalities",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/near_threshold.py",
+      "source_revision": "d65c8a27637d3bd73cc855e8fb1173b7e98ce6af",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Pointwise boundedness below onset does not give a uniform bound as delta tends to zero."
+  ],
+  "limitations": [
+    "Nonlinear saturation and calibrated physical rates OPEN.",
+    "Independent review OPEN."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/exact-012/manifest.json"
+  ],
+  "next_discriminant": "Derive a finite nonlinear operating margin near the threshold using the linear gain bounds and a controlled nonlinear remainder."
+}

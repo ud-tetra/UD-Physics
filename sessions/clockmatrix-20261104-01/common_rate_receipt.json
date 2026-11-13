@@ -1,0 +1,187 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "common-rate-classification-003",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "Which couplings preserve one oriented rate across all active tetrahedral clock sectors?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "tetrahedral-gain-family",
+      "symbol": "G",
+      "object_type": "equivariant skew generator",
+      "definition": "sum g_k K_k on one filled tetrahedron",
+      "domain": "R^15",
+      "codomain": "R^15",
+      "coefficient_domain": "Q matrices for rational w; R states",
+      "units": "inverse dimensionless parameter",
+      "basis_orientation": "ascending simplex orientation; degree ordered",
+      "metric_measure": "H=I",
+      "origin": "assumed topology, imported evolution convention",
+      "exact_expression": "sum g_k K_k; P_k=-K_k^2/4",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "Q169"
+      ],
+      "assumption_ids": [
+        "carrier",
+        "clockprep"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit native boundary, explicit gain changes"
+    },
+    {
+      "object_id": "nonlinear-reciprocal-candidate",
+      "symbol": "F",
+      "object_type": "dimensionless Hamiltonian",
+      "definition": "2(I_L+I_R)+g I_L I_R on two active copies",
+      "domain": "im P x im P",
+      "codomain": "R",
+      "coefficient_domain": "smooth real model, rational fixtures",
+      "units": "dimensionless",
+      "basis_orientation": "source complex structure J=A/2 on active copy",
+      "metric_measure": "unit positive metric",
+      "origin": "assumed",
+      "exact_expression": "2(I_L+I_R)+g I_L I_R",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "radial-H"
+      ],
+      "dependency_ids": [],
+      "normalization": "isolated rate2; unknown physical energy/action/time maps"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "linear-class",
+      "text": "real time-independent S4-equivariant skew source family, fixed positive metric and oriented readout"
+    },
+    {
+      "id": "local-autonomy",
+      "text": "arbitrary independent clock preparations, fixed local coordinates, exact all-time linear closure"
+    },
+    {
+      "id": "radial-H",
+      "text": "posited active Poisson J, radial action Hamiltonian, no self terms and quartic amplitude cross polynomial"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational/operator algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "separate common scaling, basis change and detuning"
+    },
+    {
+      "technique": "clock/readout identifiability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "single-channel lapse/oscillator alias"
+    },
+    {
+      "technique": "prime factors/modular arithmetic",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no defined discrete clock or divisibility claim"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "rank sectors (6,6,2); gain controls 4^3",
+    "reduced_expression": "14 active coordinates; 64 gain triples",
+    "factor_origins": [
+      "source projector ranks and declared fixture grid"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "linear G=sum g_k K_k; nonlinear xprime=(2+g I_other)J x",
+    "initial_phase": "arbitrary independently prepared nonzero phase-plane states",
+    "coupling": "posited reciprocal action product",
+    "period_claim": "linear phase rates2g_k; nonlinear period2pi/(2+g I_other) when positive",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "R^15 linear; im P x im P nonlinear",
+    "generator_or_update": "G=sum g_k K_k; Hamiltonian F=2(I_L+I_R)+g I_L I_R",
+    "initial_boundary_conditions": "all active preparations; no harmonic mode in nonlinear copies",
+    "conservation_and_sources": "each nonlinear action and F conserved; no relaxation",
+    "projection_and_kernel": "fixed local oriented phase planes; cannot hide C mixing by changing readout",
+    "physical_mapping": "OPEN; g and local mediator not native-selected"
+  },
+  "target_exposure": {
+    "status": "question-informed design",
+    "known_targets": [
+      "common versus mode-dependent clock scaling"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "radial Hamiltonian and quartic interaction are declared hypotheses, not fits"
+    ],
+    "search_domain_and_budget": "source three-gain linear family; general radial Hamiltonian family; four cross-coupling fixtures",
+    "selection_criterion": "uniform within-clock phase rate and reciprocal consistency",
+    "baseline": "disjoint tetrahedra"
+  },
+  "calculation_steps": [
+    "restrict source family to each P_k to prove equal-gain criterion",
+    "vary independent preparations to force off-diagonal linear mixing zero",
+    "compare first and second derivatives with initially zero hidden memory: defect=-CC^T",
+    "radial Hamiltonian yields action gradients and symmetric mixed derivatives",
+    "check candidate action-product conservation and phase rates"
+  ],
+  "result": {
+    "exact_expression": "common oriented rate iff g1=g2=g3=r>0; exact local linear autonomy forces C=0; nonlinear Omega_L=2+g I_R, Omega_R=2+g I_L",
+    "approximation": null,
+    "units": "dimensionless only",
+    "precision_and_error": "rational matrix and Hamiltonian fixtures exact",
+    "scope": "declared linear/preparation hypotheses and posited radial nonlinear branch",
+    "physical_interpretation": "OPEN"
+  },
+  "verification": [
+    {
+      "method": "written proofs plus exact Fraction constructor controls",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/common_rate.py; COMMON_RATE.md",
+      "source_revision": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "equal unsigned frequencies permit opposite phase orientation",
+    "nonzero hidden linear coupling produces CC^T curvature",
+    "radial reciprocity allows different rates but does not select g"
+  ],
+  "limitations": [
+    "nonlinear isotropy stronger than source S4",
+    "whole-carrier stock product has no derived local mediator",
+    "no physical clock/energy/action map or relativity law",
+    "independent review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/exact-003/manifest.json"
+  ],
+  "next_discriminant": "derive or obstruct a local reciprocal mediator for the action product without fitting g"
+}

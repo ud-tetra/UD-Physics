@@ -1,0 +1,57 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "clock-matrix-question",
+  "session_id": "clockmatrix-20261104-01",
+  "question": "Does a matrix clock-rate change constitute physical time dilation?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Finite real linear autonomous toy model",
+    "Two visible active phase modes",
+    "No assumed UD lapse or spacetime metric",
+    "posited radial reciprocal nonlinear action-product branch",
+    "positive harmonic mediator with collective stock ports; prepared reduction distinct from generic dynamics",
+    "selectedW and inverse-designed13-term anisotropic nearest-incidence Q; lambda unselected",
+    "inverse-designed14-termpositivepenaltyandeta1;no nativeparameterselection"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Question and conventional clock concepts exposed before toy choice; no fitted empirical target",
+  "fitted_choices": [],
+  "sources": [
+    "experiments/qpb1-local-generators/README.md",
+    "experiments/action-normalization-audit/README.md",
+    "experiments/clock-map-smoke/README.md",
+    "https://tetrahedral-packet-complexes.ben-w-mayes.chatgpt.site/"
+  ],
+  "baseline": "Ordinary oscillator retuning and time-unit rescaling",
+  "result": "Direct normal gains 5 and 8 over one native unit. Euclidean initial cap 1/3200000 or split tangent 1/8000000 and normal 1/120000 both give phase error <1/300000 rad.",
+  "next_discriminant": "Derive a finite coefficient-drift allowance for the one-unit phase contract, separating orbit detuning from normal forcing.",
+  "mathematical_receipts": [
+    "sessions/clockmatrix-20261104-01/mathematical_receipt.json",
+    "sessions/clockmatrix-20261104-01/two_clock_receipt.json",
+    "sessions/clockmatrix-20261104-01/common_rate_receipt.json",
+    "sessions/clockmatrix-20261104-01/local_mediator_receipt.json",
+    "sessions/clockmatrix-20261104-01/local_quartic_receipt.json",
+    "sessions/clockmatrix-20261104-01/prepared_plane_receipt.json",
+    "sessions/clockmatrix-20261104-01/transverse_receipt.json",
+    "sessions/clockmatrix-20261104-01/stabilization_receipt.json",
+    "sessions/clockmatrix-20261104-01/certified_interval_receipt.json",
+    "sessions/clockmatrix-20261104-01/fourier_interval_receipt.json",
+    "sessions/clockmatrix-20261104-01/stability_boundary_receipt.json",
+    "sessions/clockmatrix-20261104-01/near_threshold_receipt.json",
+    "sessions/clockmatrix-20261104-01/nonlinear_margin_receipt.json",
+    "sessions/clockmatrix-20261104-01/anisotropic_margin_receipt.json"
+  ],
+  "parked_scope": "fixed13-termQ as long-time robust clock; preserves invariant plane and finite observation theorem; prior all-V local obstruction unchanged",
+  "reopening_conditions": [
+    "explicit local mediator and controlled limit",
+    "restricted prepared clock sector with leakage bound",
+    "changed permitted interaction support"
+  ],
+  "active_scope": "Linear first-loss certificate and prior finite nonlinear readout. Physical maps OPEN."
+}

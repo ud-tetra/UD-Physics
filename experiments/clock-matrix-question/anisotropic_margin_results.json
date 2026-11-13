@@ -1,0 +1,29 @@
+{
+  "evidence": "EXACT_CONDITIONAL",
+  "mu_interval": [
+    "31/5",
+    "77511/12500"
+  ],
+  "native_horizon": "1",
+  "normal_gain_phase_zero": "5",
+  "normal_gain_two_time": "8",
+  "phase_error_strict_upper_rad": "1/300000",
+  "grid_nodes_per_block": 85,
+  "gate_options": {
+    "isotropic": {
+      "tangent_initial_cap": "1/3200000",
+      "normal_initial_cap": "1/3200000",
+      "state_tube_radius": "1/200000",
+      "tangent_error_cap": "4407/1000000000",
+      "normal_error_cap": "3189/2000000000"
+    },
+    "split": {
+      "tangent_initial_cap": "1/8000000",
+      "normal_initial_cap": "1/120000",
+      "state_tube_radius": "1/22000",
+      "tangent_error_cap": "2127/484000000",
+      "normal_error_cap": "3217/72600000"
+    }
+  },
+  "physical_promotion": 0
+}

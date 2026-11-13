@@ -1,0 +1,8 @@
+{
+  "global_scalar_closure_residual_norm_squared": "14",
+  "local_p_first_derivative": "2",
+  "local_q_second_derivative": "-15",
+  "mean_squared_radius_initial": "3/32",
+  "mean_squared_radius_quadratic_coefficient": "45/32",
+  "outside_stock_quadratic_coefficient": "11"
+}

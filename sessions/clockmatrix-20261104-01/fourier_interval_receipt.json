@@ -1,0 +1,180 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "fourier-cayley-interval-010",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "Can the prepared clock certify the entire interval through the exposed sample mu=1/64?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "CANDIDATE",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "certified-normal-metric",
+      "symbol": "G_rho",
+      "object_type": "positive invariant metric for the scaled Cayley generator",
+      "definition": "K_rho times the signed Riesz projector involution on N",
+      "domain": "normalN12 with ambient15 extension",
+      "codomain": "normalN12",
+      "coefficient_domain": "exact rational static matrices and norm margins; analytic functions for proofs",
+      "units": "dimensionless metric on native perturbations",
+      "basis_orientation": "ascending tetrahedral chain, fixed phase origin",
+      "metric_measure": "Euclidean input/output; certified invariant metric bounds1/128 to5",
+      "origin": "derived for inverse-designed eta1 clock",
+      "exact_expression": "G_rho=K_rho(Id-2Pi_rho)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "modified-clock"
+      ],
+      "assumption_ids": [
+        "fixed-modified-law",
+        "phase-origin"
+      ],
+      "dependency_ids": [
+        "explicit-coupling-interval-009"
+      ],
+      "normalization": "mu=lambdaI,rho=mu/(2+mu);normal coefficient half-periodpi"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    },
+    {
+      "source_id": "prepared-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/PREPARED_PLANE.md",
+      "version_or_commit": "8e94fd49ded70a00eb4986177d3463860d295960",
+      "section_or_object_id": "sections1-5:13-term Q, plane, rates and previous coarse bound",
+      "source_status": "conditional construction, not native interaction"
+    },
+    {
+      "source_id": "original-transverse",
+      "url_or_repo_path": "experiments/clock-matrix-question/TRANSVERSE_STABILITY.md",
+      "version_or_commit": "b65135ce434564c221d5991d5283b6a63aa328a7",
+      "section_or_object_id": "sections2-6,original weak instability and fixedQ finite window",
+      "source_status": "preserved exact/numerical conditional controls"
+    },
+    {
+      "source_id": "modified-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/LOCAL_STABILIZATION.md",
+      "version_or_commit": "b04d720d96b1c51842d51066a206e2afa92b1f33",
+      "section_or_object_id": "sections2,4,5,7:positivepenalty,weak spectrum and signature proof",
+      "source_status": "exact conditional inverse-designed clock"
+    },
+    {
+      "source_id": "exact-009",
+      "url_or_repo_path": "experiments/clock-matrix-question/CERTIFIED_INTERVAL.md",
+      "version_or_commit": "1de2e0299a813a4362ce38cb2c13d469822a7d1c",
+      "section_or_object_id": "sections 1\u20135",
+      "source_status": "EXACT_CONDITIONAL"
+    }
+  ],
+  "assumptions": [
+    "Fixed eta=1 Q+R, prepared W, Euclidean ascending basis and reference phase zero.",
+    "Separate nonlinear readout at I=1 with prior norm and energy gates."
+  ],
+  "technique_plan": [
+    {
+      "technique": "Rational Fourier matrices and signed spectral projection",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Bound actual Cayley generator and invariant metric"
+    },
+    {
+      "technique": "Modular discrete clock arithmetic",
+      "applicability": "NA",
+      "purpose_or_na_reason": "Continuous native phase"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "15 ambient minus 3 excluded",
+    "reduced_expression": "12 transverse coordinates",
+    "factor_origins": [
+      "Fourier frequencies 2,4 from conjugation and quadratic Hessian",
+      "rho(1/64)=1/129"
+    ],
+    "factorization": "129=3*43",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "Same fixed eta=1 Hamiltonian",
+    "initial_phase": "0",
+    "coupling": "0<lambda I<=1/64",
+    "period_claim": "Phase half-return at pi",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "normal linearN12;separate nonlinearV14",
+    "generator_or_update": "Scaled Cayley of minus the normal half-return",
+    "initial_boundary_conditions": "phaseanchored reference;normal linearerror arbitrary;finite nonlinear energy/norm gates explicit",
+    "conservation_and_sources": "positive Hamiltonian energy conserved; no attraction or physical calibration",
+    "projection_and_kernel": "exact negative-frequency projector and invariant-metric extension;old all-state/S4 obstructions unchanged",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "Previously sampled endpoint exposed",
+    "known_targets": [
+      "mu=1/64"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "No new model coefficients fitted",
+      "Rational norm caps selected for sufficient margins"
+    ],
+    "search_domain_and_budget": "Analytic verification on (0,1/64]",
+    "selection_criterion": "Positive invariant metric and gain <=8",
+    "baseline": "exact-009 interval through 2^-30, gain 64"
+  },
+  "calculation_steps": [
+    "Expand exact Fourier terms and check G0 norms by rational LDL.",
+    "Integrate second Dyson commutator and bound Cayley remainder.",
+    "Enclose the signed projector and prove relative metric positivity.",
+    "Check gain and finite nonlinear phase margins."
+  ],
+  "result": {
+    "exact_expression": "Fixed eta=1 clock certified for 0<mu<=1/64 with all-time linear normal gain <=8 at phase zero. Finite nonlinear phase error <1/1000 under declared gates.",
+    "approximation": null,
+    "units": "native parameter and radians only",
+    "precision_and_error": "Cayley error <1/100, projector error <=2/19, relative metric error <=103/380",
+    "scope": "Linear all-time and nonlinear finite-time statements for the fixed model",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "Exact rational replay plus written analytic proof",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/fourier_interval.py",
+      "source_revision": "9d934337c0a9f7a6341b20cf116c8b6cd31c79eb",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Prior norm-only bound reached 2^-30. Numerical instability at mu=8 remains prior evidence."
+  ],
+  "limitations": [
+    "Independent review OPEN.",
+    "Full stability boundary, nonlinear all-time stability, physical calibration and native coefficient selection OPEN."
+  ],
+  "changed_dependencies": [
+    "Backward-compatible model_matrices extraction in certified_interval.py. The old replay produced identical results."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/exact-010/manifest.json"
+  ],
+  "next_discriminant": "Bound the larger-coupling loss of transverse stability using verified signed spectral enclosures."
+}

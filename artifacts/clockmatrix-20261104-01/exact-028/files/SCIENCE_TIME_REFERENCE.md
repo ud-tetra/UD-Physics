@@ -1,0 +1,13 @@
+# Science-time phase reference v0.1
+
+**EXACT / CONDITIONAL.** A pilot acquired independently of the endpoint interpolation can test its science-time phase prediction. If it is simultaneous and shares the science gain phase to a known tolerance, it also supplies a direct calibration.
+
+Discovery parent ea3c49a6a93d99cf9a65cacc389b1e56e40165be. Retain the synthetic half-gap criterion of [Shared reference v0.1](SHARED_REFERENCE.md), the noise cap E=1/40000000 of launch stock from [Interleaved reference v0.1](INTERLEAVED_REFERENCE.md), and the hidden-turn control of [Pilot faults v0.1](PILOT_FAULTS.md). Set science magnitude floor S and simultaneous pilot floor P=10S as in the preceding finer replay. Assume the science-time pilot has the same phase origin as the endpoint pilots and samples the same detector gain as science up to a residual mismatch b per detector. This independence refers to acquisition from the endpoint samples. It does not require the monitor to have an unrelated phase origin or gain. Simultaneity and bounded mismatch are synthetic premises.
+
+For an admitted endpoint bracket with timing penalty B_t, the circular distance between its prediction and the direct pilot phase is at most B_t+b+2 asin(E/P) when both paths meet their error contracts. Endpoint pilot readout errors enter through convex interpolation. On the nominal bracket B_t=0.000538 rad and b=1/1000 give a consistency threshold of 0.00179515 rad. The nominal history passes. The hidden-turn history gives distance at least 3.14046 rad and is rejected. A discrepancy flags inconsistency and does not by itself identify the faulty channel.
+
+For direct calibration divide the simultaneous science phasor by the simultaneous pilot phasor. Even for the hidden-turn control the common instantaneous gain phase cancels algebraically. The worst differential penalty is 2[b+asin(E/S)+asin(E/P)], by the two disk-angle bounds. The saved minimum science gap gives an allowable b of approximately 0.00153067 rad per detector to retain half the nominal gap. With adversarial complex perturbations the replay retains 0.00695133 rad at b=1/1000 and fails the half-gap at b=1/500 with 0.00495133 rad. The outcomes agree for nominal drift and the hidden-turn control.
+
+The computations use synthetic phasors. An actual reference needs a verified phase origin, same-path mismatch, synchronized acquisition, magnitude floor and calibrated error bound. This test imposes no claim about drift elsewhere in the interval. Independent review NOT_RUN. Physical promotion 0.
+
+Reproduce with `python3 experiments/clock-matrix-question/science_time_reference.py`.

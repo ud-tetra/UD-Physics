@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-002",
+  "created_at": "2026-11-05T02:25:15.036361+00:00",
+  "evidence": "EXACT",
+  "summary": "Two protected tetrahedral clocks remain equal-rate; bridge changes other modes rather than a common lapse",
+  "command": "python3 experiments/clock-matrix-question/two_clock.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "5dc88115103809b397285f1229384f0ec24ec86c",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "two_clock.py",
+      "path": "inputs/001-two_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/two_clock.py",
+      "sha256": "e6a28377df56eb3323f32800e4090aa6663e640e2f5832f5e3e3e61aa1f51b64",
+      "size_bytes": 2975
+    },
+    {
+      "input_id": "input-002",
+      "name": "two_clock_receipt.json",
+      "path": "inputs/002-two_clock_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/two_clock_receipt.json",
+      "sha256": "53deba01d512534968ab559f7eb179b956ef61ddbd63aee7127549ab6b35005e",
+      "size_bytes": 6233
+    }
+  ],
+  "files": [
+    {
+      "path": "files/two_clock_results.json",
+      "sha256": "13595c760454dd13b1335be7d9bf45ff5e98ac1dc40d5796ab9c2712a7156f00",
+      "size_bytes": 2498
+    },
+    {
+      "path": "files/TWO_CLOCKS.md",
+      "sha256": "27faeae3a32f2bec4db331e613bf1ce4723917ef24d3f200f7cc080320704067",
+      "size_bytes": 5098
+    }
+  ]
+}

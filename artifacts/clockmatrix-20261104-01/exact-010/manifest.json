@@ -1,0 +1,65 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-010",
+  "created_at": "2026-11-05T22:20:26.666557+00:00",
+  "evidence": "EXACT",
+  "summary": "Uniform Fourier and Cayley interval through mu=1/64",
+  "command": "python3 experiments/clock-matrix-question/fourier_interval.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "07979f0fc1886c1e44bf0ca4bf4c9704a6553041",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "fourier_interval.py",
+      "path": "inputs/001-fourier_interval.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/fourier_interval.py",
+      "sha256": "ba5ab7e2d433fd32efc7e6e79bf8f7c0ac51652761dd847588562a6e1e795f83",
+      "size_bytes": 3806
+    },
+    {
+      "input_id": "input-002",
+      "name": "certified_interval.py",
+      "path": "inputs/002-certified_interval.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/certified_interval.py",
+      "sha256": "4afee3366ab72065dfb73a76c069c259af0de5e1afd1a07120d1d2f82bb027b9",
+      "size_bytes": 4451
+    },
+    {
+      "input_id": "input-003",
+      "name": "stabilization_exact.py",
+      "path": "inputs/003-stabilization_exact.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/stabilization_exact.py",
+      "sha256": "d3602ae4d49cfb45225481417959be9e460d629b0350a555a700c326fab1d2de",
+      "size_bytes": 4703
+    },
+    {
+      "input_id": "input-004",
+      "name": "fourier_interval_receipt.json",
+      "path": "inputs/004-fourier_interval_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/fourier_interval_receipt.json",
+      "sha256": "775995ddd63e542b32efae8eae3bbd4d29d2307408f37cd8a046c7f754f795a0",
+      "size_bytes": 7846
+    }
+  ],
+  "files": [
+    {
+      "path": "files/FOURIER_INTERVAL.md",
+      "sha256": "aed79310d0169ae396fe4dfe97b9d28aaf459580a1766fe87421c6bd1ebf150c",
+      "size_bytes": 5689
+    },
+    {
+      "path": "files/fourier_interval_results.json",
+      "sha256": "6dbd0ee3e81db184ba32cb8826822aa152d8b1aeabbeb8c00e44b37539753952",
+      "size_bytes": 393
+    }
+  ]
+}

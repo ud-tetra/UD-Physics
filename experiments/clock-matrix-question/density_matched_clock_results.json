@@ -1,0 +1,46 @@
+[
+  {
+    "order": 8,
+    "time_step": 0.25,
+    "centers": [
+      [
+        9,
+        4,
+        4
+      ],
+      [
+        10,
+        10,
+        10
+      ]
+    ],
+    "diagonal_stock_scale": 3.445508550152599,
+    "max_relative_stock_mismatch": 0.004937531020235674,
+    "relative_l2_stock_mismatch": 0.0009689601188301836,
+    "unmatched_split_rad": -0.010666479660474501,
+    "density_matched_split_rad": 0.012569190444986418,
+    "common_density_counterfactual_split_rad": 0.012569242686416066
+  },
+  {
+    "order": 12,
+    "time_step": 0.125,
+    "centers": [
+      [
+        9,
+        4,
+        4
+      ],
+      [
+        10,
+        10,
+        10
+      ]
+    ],
+    "diagonal_stock_scale": 3.4455085467696223,
+    "max_relative_stock_mismatch": 0.0049375300335368685,
+    "relative_l2_stock_mismatch": 0.000968166715082617,
+    "unmatched_split_rad": -0.010666480724036058,
+    "density_matched_split_rad": 0.01256919165149812,
+    "common_density_counterfactual_split_rad": 0.012569243939985309
+  }
+]

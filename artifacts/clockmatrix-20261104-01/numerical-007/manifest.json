@@ -1,0 +1,74 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "numerical-007",
+  "created_at": "2026-11-06T23:25:09.256769+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Same-spectrum chirp control under local density matching",
+  "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/clock-matrix-question/shape_matched_clock.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "5344e640a819a2288f10e68daf55e0626f67f890",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "shape_matched_clock.py",
+      "path": "inputs/001-shape_matched_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/shape_matched_clock.py",
+      "sha256": "5a4c183f3910ca8b75503178566a84afc79c09e94edb16783bf8113b164fda27",
+      "size_bytes": 1819
+    },
+    {
+      "input_id": "input-002",
+      "name": "density_matched_clock.py",
+      "path": "inputs/002-density_matched_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/density_matched_clock.py",
+      "sha256": "797d872822a4e87c07101e4a7d4d94bc05ac10c4294d13c9fc9073eea9a43b9c",
+      "size_bytes": 4114
+    },
+    {
+      "input_id": "input-003",
+      "name": "tracked_current_clock.py",
+      "path": "inputs/003-tracked_current_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/tracked_current_clock.py",
+      "sha256": "ac798a24ae42da5306576ca4cf1878eb24d49ecf177bc56bd690f262f88d12c5",
+      "size_bytes": 6516
+    },
+    {
+      "input_id": "input-004",
+      "name": "isospectral_clock.py",
+      "path": "inputs/004-isospectral_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/isospectral_clock.py",
+      "sha256": "09c400d7018fde73a47d2456e28aa49b16e605a2978f8ef33f7e03b7e0557b6c",
+      "size_bytes": 2731
+    },
+    {
+      "input_id": "input-005",
+      "name": "directional_packet.py",
+      "path": "inputs/005-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/SHAPE_MATCHED_CLOCK.md",
+      "sha256": "dca199b71afc294a63585e27be68f357c413fba9ec3612eae1a9df4cdcd67a06",
+      "size_bytes": 2510
+    },
+    {
+      "path": "files/shape_matched_clock_results.json",
+      "sha256": "3d16359f5155ac9655b0cb047acdef18a995e7ad02c19347db389247c9caec25",
+      "size_bytes": 1439
+    }
+  ]
+}

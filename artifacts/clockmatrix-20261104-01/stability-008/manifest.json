@@ -1,0 +1,70 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "stability-008",
+  "created_at": "2026-11-05T18:10:28.833050+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Positive local penalties preserve clock law and give exact weak linear transverse stability, with finite-coupling counterexamples",
+  "command": "python3 experiments/clock-matrix-question/stabilization_exact.py; python3 experiments/clock-matrix-question/local_stabilization.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "9965dbda8ca58eb351c7ccb6bb3c7cdd03a8f4bf",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "stabilization_exact.py",
+      "path": "inputs/001-stabilization_exact.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/stabilization_exact.py",
+      "sha256": "d3602ae4d49cfb45225481417959be9e460d629b0350a555a700c326fab1d2de",
+      "size_bytes": 4703
+    },
+    {
+      "input_id": "input-002",
+      "name": "local_stabilization.py",
+      "path": "inputs/002-local_stabilization.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/local_stabilization.py",
+      "sha256": "f229c0a884f8cb65a68b3839d049f7b796087d5b4675c33535bf20531bef80fe",
+      "size_bytes": 1967
+    },
+    {
+      "input_id": "input-003",
+      "name": "transverse_stability.py",
+      "path": "inputs/003-transverse_stability.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/transverse_stability.py",
+      "sha256": "4a266260beeafcf6d39ba9b44a6319180f92da0c01f1e4a6190726a887f36215",
+      "size_bytes": 3590
+    },
+    {
+      "input_id": "input-004",
+      "name": "stabilization_receipt.json",
+      "path": "inputs/004-stabilization_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/stabilization_receipt.json",
+      "sha256": "c14ed2701a1ae5fe1ef918666f2dfe5f6d5e74f034421f50e870c44d4b106e73",
+      "size_bytes": 9493
+    }
+  ],
+  "files": [
+    {
+      "path": "files/LOCAL_STABILIZATION.md",
+      "sha256": "1c726f33c4d3cdcbde36bd84f7e1fb9dae13bd2aba6a521e665e744838f751f4",
+      "size_bytes": 11303
+    },
+    {
+      "path": "files/stabilization_exact_results.json",
+      "sha256": "39b73bcd5a7948fb1b647b6ce9880beba9416ea3d50cbd2c488e8f49233c5cd3",
+      "size_bytes": 2674
+    },
+    {
+      "path": "files/local_stabilization_results.json",
+      "sha256": "4bc5c767c1f07737cf8cb34c1a721474cc3e32b32efe0490a5a93af09eeef581",
+      "size_bytes": 14798
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-016",
+  "created_at": "2026-11-06T02:38:24.211397+00:00",
+  "evidence": "EXACT",
+  "summary": "Direct periodic clock embedding and independent spatial stock test",
+  "command": "python3 experiments/clock-matrix-question/periodic_clock.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "6145840b9ffce6b17f8ffee32e61c126ff07a360",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "periodic_clock.py",
+      "path": "inputs/001-periodic_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/periodic_clock.py",
+      "sha256": "def42486762c544fddeb63e4bba95b3e3cd199dbd8b2028fb0910d8f805f3592",
+      "size_bytes": 2943
+    }
+  ],
+  "files": [
+    {
+      "path": "files/PERIODIC_CLOCK.md",
+      "sha256": "9ef46e3c1bbbd4a5a2af583a7ce0141fdaa941f680c1c2dbb2ca5ad62613f6d0",
+      "size_bytes": 4070
+    },
+    {
+      "path": "files/periodic_clock_results.json",
+      "sha256": "5b031fcef965f69430acf447d929d82ae393561b784199e09291d90864f384d6",
+      "size_bytes": 275
+    }
+  ]
+}

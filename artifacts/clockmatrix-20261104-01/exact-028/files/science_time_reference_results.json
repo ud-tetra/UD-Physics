@@ -1,0 +1,53 @@
+{
+  "consistency_cap_rad": 0.0017951485527524951,
+  "monitor_checks": {
+    "nominal": {
+      "min_distance_rad": 0.001128574276376247,
+      "max_distance_rad": 0.0011285742763762472
+    },
+    "hidden_turn": {
+      "min_distance_rad": 3.140464079313417,
+      "max_distance_rad": 3.1404640793134173
+    }
+  },
+  "maximum_mismatch_each_rad": 0.00153067447676544,
+  "target_half_gap_rad": 0.005889983891442837,
+  "direct_reference_controls": [
+    {
+      "mismatch_each_rad": 0,
+      "hidden_turn": false,
+      "worst_gap_rad": 0.008951332844973712,
+      "half_gap_pass": true
+    },
+    {
+      "mismatch_each_rad": 0,
+      "hidden_turn": true,
+      "worst_gap_rad": 0.008951332844973493,
+      "half_gap_pass": true
+    },
+    {
+      "mismatch_each_rad": 0.001,
+      "hidden_turn": false,
+      "worst_gap_rad": 0.006951332844973713,
+      "half_gap_pass": true
+    },
+    {
+      "mismatch_each_rad": 0.001,
+      "hidden_turn": true,
+      "worst_gap_rad": 0.006951332844973607,
+      "half_gap_pass": true
+    },
+    {
+      "mismatch_each_rad": 0.002,
+      "hidden_turn": false,
+      "worst_gap_rad": 0.004951332844973712,
+      "half_gap_pass": false
+    },
+    {
+      "mismatch_each_rad": 0.002,
+      "hidden_turn": true,
+      "worst_gap_rad": 0.004951332844973713,
+      "half_gap_pass": false
+    }
+  ]
+}

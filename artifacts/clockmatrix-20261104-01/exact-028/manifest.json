@@ -1,0 +1,110 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-028",
+  "created_at": "2026-11-06T18:09:23.744228+00:00",
+  "evidence": "EXACT",
+  "summary": "Science-time pilot consistency and half-gap error budget",
+  "command": "python3 experiments/clock-matrix-question/science_time_reference.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "ea3c49a6a93d99cf9a65cacc389b1e56e40165be",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "science_time_reference.py",
+      "path": "inputs/001-science_time_reference.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/science_time_reference.py",
+      "sha256": "140e7891c7de64764e20fe6929f4dfd371f23e4859688b5949e0e81bbd43aa46",
+      "size_bytes": 2797
+    },
+    {
+      "input_id": "input-002",
+      "name": "pilot_faults.py",
+      "path": "inputs/002-pilot_faults.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/pilot_faults.py",
+      "sha256": "5b752e3f8f23c2e2d620226e966bfd2a46686b9f7e57bb967458584a1d77d5dd",
+      "size_bytes": 2720
+    },
+    {
+      "input_id": "input-003",
+      "name": "interleaved_reference.py",
+      "path": "inputs/003-interleaved_reference.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/interleaved_reference.py",
+      "sha256": "258da1663ea874af4d5c9bc8853c0267252e6f985622670657a1cefd1d8fadc9",
+      "size_bytes": 2833
+    },
+    {
+      "input_id": "input-004",
+      "name": "shared_reference.py",
+      "path": "inputs/004-shared_reference.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/shared_reference.py",
+      "sha256": "56c7b8f6963098ec5b2ea356d0bde942644854164f3ae7ad17394ce2fdc8cd54",
+      "size_bytes": 2754
+    },
+    {
+      "input_id": "input-005",
+      "name": "timestamp_reference.py",
+      "path": "inputs/005-timestamp_reference.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/timestamp_reference.py",
+      "sha256": "cc1b41eb8c3ffa8599f9f9d3d7199e7a5ab726900ebce172b87ee11af1507264",
+      "size_bytes": 2826
+    },
+    {
+      "input_id": "input-006",
+      "name": "wrapped_reference.py",
+      "path": "inputs/006-wrapped_reference.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/wrapped_reference.py",
+      "sha256": "b205ed57f27de4ad9480f3e17a1a25ebaaeffff669bd5ad77c24daa6e3d18aed",
+      "size_bytes": 3095
+    },
+    {
+      "input_id": "input-007",
+      "name": "clock_alignment_results.json",
+      "path": "inputs/007-clock_alignment_results.json",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/clock_alignment_results.json",
+      "sha256": "a6623b883f5fc2da2b549918c7a9a9d39f4b83a8165851cebd5ef139f4707d26",
+      "size_bytes": 1849
+    },
+    {
+      "input_id": "input-008",
+      "name": "interleaved_reference_results.json",
+      "path": "inputs/008-interleaved_reference_results.json",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/interleaved_reference_results.json",
+      "sha256": "4971dbdcaa724a9642d5ad74bb7cdb2bef30c6361d9c8330f04e6fbf01b48f72",
+      "size_bytes": 2438
+    },
+    {
+      "input_id": "input-009",
+      "name": "shared_reference_results.json",
+      "path": "inputs/009-shared_reference_results.json",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/shared_reference_results.json",
+      "sha256": "3dec769215ed5554491a9b495173d0ddfeaf6cd6acd9dad985a0304d2cacdd9d",
+      "size_bytes": 4238
+    }
+  ],
+  "files": [
+    {
+      "path": "files/SCIENCE_TIME_REFERENCE.md",
+      "sha256": "07acb64cdbbcd2dbbb6640a0d54ec6733319dcff9d33eb008332ce3996468407",
+      "size_bytes": 2632
+    },
+    {
+      "path": "files/science_time_reference_results.json",
+      "sha256": "98fb9de167a77663456c661459c0baed084c8cdbcc58f1c84b4cc2b2dedde4c3",
+      "size_bytes": 1330
+    }
+  ]
+}

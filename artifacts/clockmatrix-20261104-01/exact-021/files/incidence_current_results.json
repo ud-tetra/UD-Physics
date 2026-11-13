@@ -1,0 +1,108 @@
+{
+  "zero_speed_controls": [
+    {
+      "pi_character": [
+        1,
+        0,
+        0
+      ],
+      "zero_incidence_currents": 14
+    },
+    {
+      "pi_character": [
+        1,
+        1,
+        1
+      ],
+      "zero_incidence_currents": 14
+    }
+  ],
+  "quadrature": [
+    {
+      "order": 8,
+      "axis": {
+        "centroid_velocity": [
+          0.7155386835885309,
+          0.35776934179426545,
+          0.35776934179426545
+        ],
+        "centroid_speed": 0.3577693417942655,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783431,
+        "max_squared_frequency_error": 7.105427357601002e-15,
+        "probe": {
+          "normalized_current": [
+            0.7155386835885309,
+            0.35776934179426545,
+            0.3577693417942654
+          ],
+          "current_norm": 0.35776934179426556,
+          "max_current_minus_group_component": 2.220446049250313e-16
+        }
+      },
+      "diagonal": {
+        "centroid_velocity": [
+          0.8224356998122808,
+          0.8224357647141065,
+          0.8224357647141065
+        ],
+        "centroid_speed": 0.5036369791932824,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783431,
+        "max_squared_frequency_error": 7.105427357601002e-15,
+        "probe": {
+          "normalized_current": [
+            0.8224356998122807,
+            0.8224357647141065,
+            0.8224357647141065
+          ],
+          "current_norm": 0.5036369791932824,
+          "max_current_minus_group_component": 3.3306690738754696e-16
+        }
+      }
+    },
+    {
+      "order": 16,
+      "axis": {
+        "centroid_velocity": [
+          0.7155386835885312,
+          0.3577693417942656,
+          0.3577693417942656
+        ],
+        "centroid_speed": 0.35776934179426567,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783437,
+        "max_squared_frequency_error": 7.105427357601002e-15,
+        "probe": {
+          "normalized_current": [
+            0.7155386835885311,
+            0.3577693417942656,
+            0.3577693417942656
+          ],
+          "current_norm": 0.35776934179426567,
+          "max_current_minus_group_component": 3.3306690738754696e-16
+        }
+      },
+      "diagonal": {
+        "centroid_velocity": [
+          0.8224356998122813,
+          0.8224357647141071,
+          0.8224357647141071
+        ],
+        "centroid_speed": 0.503636979193283,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783437,
+        "max_squared_frequency_error": 8.881784197001252e-15,
+        "probe": {
+          "normalized_current": [
+            0.8224356998122813,
+            0.822435764714107,
+            0.822435764714107
+          ],
+          "current_norm": 0.503636979193283,
+          "max_current_minus_group_component": 3.3306690738754696e-16
+        }
+      }
+    }
+  ]
+}

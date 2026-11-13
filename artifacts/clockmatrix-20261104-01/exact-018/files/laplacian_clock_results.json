@@ -1,0 +1,133 @@
+{
+  "grid": 97,
+  "rows": [
+    {
+      "strength": 0,
+      "native_time": 0,
+      "moving_centroid": [
+        0.0,
+        0.0,
+        9.715684417529868e-18
+      ],
+      "global_clock_residual": -2.879229415062982e-35,
+      "global_contrast": 1.0,
+      "isolated_lobe_residual": -7.72461993396705e-35,
+      "coherent_reference_two_window_residual": 0.0,
+      "coherent_reference_window_minus_lobe": 7.72461993396705e-35,
+      "reference_two_window_stock_fraction": 0.5818288705755886,
+      "reference_centroid_window_stock_fraction": 0.5818288705755886
+    },
+    {
+      "strength": 0,
+      "native_time": 4,
+      "moving_centroid": [
+        6.80458603310409,
+        3.3408309860602325,
+        3.340830986060232
+      ],
+      "global_clock_residual": 0.0,
+      "global_contrast": 0.9999999999999997,
+      "isolated_lobe_residual": 0.0,
+      "coherent_reference_two_window_residual": 2.7755575615628914e-17,
+      "coherent_reference_window_minus_lobe": 2.7755575615628914e-17,
+      "reference_two_window_stock_fraction": 0.3088579515787179,
+      "reference_centroid_window_stock_fraction": 0.29990850843491795
+    },
+    {
+      "strength": 0,
+      "native_time": 8,
+      "moving_centroid": [
+        13.609162371004981,
+        6.681663415518299,
+        6.681663415518301
+      ],
+      "global_clock_residual": -5.55111512312578e-17,
+      "global_contrast": 1.0000000000000004,
+      "isolated_lobe_residual": 0.0,
+      "coherent_reference_two_window_residual": -2.7755575615628914e-17,
+      "coherent_reference_window_minus_lobe": -2.7755575615628914e-17,
+      "reference_two_window_stock_fraction": 0.28117482301295316,
+      "reference_centroid_window_stock_fraction": 0.041189023501255445
+    },
+    {
+      "strength": 0,
+      "native_time": 12,
+      "moving_centroid": [
+        20.41370589855926,
+        10.022488687825296,
+        10.022488687825296
+      ],
+      "global_clock_residual": 5.551115123125783e-17,
+      "global_contrast": 1.0,
+      "isolated_lobe_residual": -2.7755575615628907e-17,
+      "coherent_reference_two_window_residual": 0.0,
+      "coherent_reference_window_minus_lobe": 2.7755575615628907e-17,
+      "reference_two_window_stock_fraction": 0.27006525757545347,
+      "reference_centroid_window_stock_fraction": 0.0015402446820312599
+    },
+    {
+      "strength": 0.0078125,
+      "native_time": 0,
+      "moving_centroid": [
+        0.0,
+        0.0,
+        9.715684417529868e-18
+      ],
+      "global_clock_residual": -2.879229415062982e-35,
+      "global_contrast": 1.0,
+      "isolated_lobe_residual": -7.72461993396705e-35,
+      "coherent_reference_two_window_residual": 0.0,
+      "coherent_reference_window_minus_lobe": 7.72461993396705e-35,
+      "reference_two_window_stock_fraction": 0.5818288705755886,
+      "reference_centroid_window_stock_fraction": 0.5818288705755886
+    },
+    {
+      "strength": 0.0078125,
+      "native_time": 4,
+      "moving_centroid": [
+        6.804586028035403,
+        3.3408309880108447,
+        3.340830988010844
+      ],
+      "global_clock_residual": 0.12899020409805884,
+      "global_contrast": 0.9977837152376755,
+      "isolated_lobe_residual": 0.13020096964334785,
+      "coherent_reference_two_window_residual": 0.13003062529617446,
+      "coherent_reference_window_minus_lobe": -0.0001703443471733901,
+      "reference_two_window_stock_fraction": 0.30872558972248065,
+      "reference_centroid_window_stock_fraction": 0.2999724133311625
+    },
+    {
+      "strength": 0.0078125,
+      "native_time": 8,
+      "moving_centroid": [
+        13.609162382594338,
+        6.68166338978798,
+        6.68166338978798
+      ],
+      "global_clock_residual": 0.25792860467816475,
+      "global_contrast": 0.9911647847118467,
+      "isolated_lobe_residual": 0.2608510014742285,
+      "coherent_reference_two_window_residual": 0.26085051060840037,
+      "coherent_reference_window_minus_lobe": -4.908658281510547e-07,
+      "reference_two_window_stock_fraction": 0.2804330616655226,
+      "reference_centroid_window_stock_fraction": 0.041663336202085066
+    },
+    {
+      "strength": 0.0078125,
+      "native_time": 12,
+      "moving_centroid": [
+        20.413706133597014,
+        10.022488673692552,
+        10.022488673692553
+      ],
+      "global_clock_residual": 0.3867632765939371,
+      "global_contrast": 0.9802323168537252,
+      "isolated_lobe_residual": 0.39222327821441805,
+      "coherent_reference_two_window_residual": 0.3922232817169554,
+      "coherent_reference_window_minus_lobe": 3.502537371247172e-09,
+      "reference_two_window_stock_fraction": 0.2684824714134525,
+      "reference_centroid_window_stock_fraction": 0.0016417597248185114
+    }
+  ]
+}

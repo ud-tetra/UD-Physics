@@ -1,0 +1,242 @@
+[
+  {
+    "grid": 65,
+    "carrier_sign": 1,
+    "width": 0.18,
+    "spectral_velocity": [
+      1.7011522369728802,
+      0.8352126824293578,
+      0.8352126824293578
+    ],
+    "observations": [
+      {
+        "s": 0,
+        "centroid": [
+          -2.0727420429957163e-16,
+          2.5909275537446454e-17,
+          8.096648605452017e-17
+        ],
+        "fraction_in_radius_12": 0.9757839368652723,
+        "phase_coherence": 0.9999937355010593,
+        "phase_residual_rad": 3.874897277800521e-17,
+        "centroid_residual_norm": 2.2403003859061554e-16
+      },
+      {
+        "s": 4,
+        "centroid": [
+          6.804550700258912,
+          3.34082702984185,
+          3.34082702984185
+        ],
+        "fraction_in_radius_12": 0.974078131599529,
+        "phase_coherence": 0.9960651668679824,
+        "phase_residual_rad": -0.05357192070707953,
+        "centroid_residual_norm": 6.720234303689517e-05
+      },
+      {
+        "s": 8,
+        "centroid": [
+          13.608873169665241,
+          6.681650880130029,
+          6.68165088013003
+        ],
+        "fraction_in_radius_12": 0.965222497904363,
+        "phase_coherence": 0.9858227148471403,
+        "phase_residual_rad": -0.10617506145709472,
+        "centroid_residual_norm": 0.0003520690677248986
+      },
+      {
+        "s": 12,
+        "centroid": [
+          20.32326510394333,
+          10.022362264944954,
+          10.022362264944952
+        ],
+        "fraction_in_radius_12": 0.9487175418632969,
+        "phase_coherence": 0.9729441853141564,
+        "phase_residual_rad": -0.1564274857390667,
+        "centroid_residual_norm": 0.09056213803547518
+      }
+    ]
+  },
+  {
+    "grid": 97,
+    "carrier_sign": 1,
+    "width": 0.18,
+    "spectral_velocity": [
+      1.7011485090522318,
+      0.8352087896355606,
+      0.8352087896355607
+    ],
+    "observations": [
+      {
+        "s": 0,
+        "centroid": [
+          0.0,
+          0.0,
+          6.477122945019912e-18
+        ],
+        "fraction_in_radius_12": 0.9757795060771195,
+        "phase_coherence": 0.9999934881301359,
+        "phase_residual_rad": 0.0,
+        "centroid_residual_norm": 6.477122945019912e-18
+      },
+      {
+        "s": 4,
+        "centroid": [
+          6.804586033104088,
+          3.3408309860602325,
+          3.340830986060232
+        ],
+        "fraction_in_radius_12": 0.9740754823260995,
+        "phase_coherence": 0.9960635927734243,
+        "phase_residual_rad": -0.05357501366759478,
+        "centroid_residual_norm": 9.943284131419965e-06
+      },
+      {
+        "s": 8,
+        "centroid": [
+          13.609162371004977,
+          6.681663415518298,
+          6.681663415518298
+        ],
+        "fraction_in_radius_12": 0.9652243596383859,
+        "phase_coherence": 0.9858164707394896,
+        "phase_residual_rad": -0.10618171236343417,
+        "centroid_residual_norm": 2.749228720080213e-05
+      },
+      {
+        "s": 12,
+        "centroid": [
+          20.413705898559265,
+          10.022488687825296,
+          10.022488687825296
+        ],
+        "fraction_in_radius_12": 0.948914186995448,
+        "phase_coherence": 0.9728661980709253,
+        "phase_residual_rad": -0.15699192106915047,
+        "centroid_residual_norm": 7.982252153993565e-05
+      }
+    ]
+  },
+  {
+    "grid": 65,
+    "carrier_sign": -1,
+    "width": 0.18,
+    "spectral_velocity": [
+      -1.70115223697288,
+      -0.8352126824293576,
+      -0.8352126824293578
+    ],
+    "observations": [
+      {
+        "s": 0,
+        "centroid": [
+          0.0,
+          2.5909275537446454e-17,
+          9.06824643810626e-17
+        ],
+        "fraction_in_radius_12": 0.9757839368652723,
+        "phase_coherence": 0.9999937355010593,
+        "phase_residual_rad": 2.912594210568215e-17,
+        "centroid_residual_norm": 9.431118653212887e-17
+      },
+      {
+        "s": 4,
+        "centroid": [
+          -6.804550700258912,
+          -3.3408270298418494,
+          -3.3408270298418494
+        ],
+        "fraction_in_radius_12": 0.9740781315995288,
+        "phase_coherence": 0.9960651668679824,
+        "phase_residual_rad": -0.05357192070707953,
+        "centroid_residual_norm": 6.720234303628195e-05
+      },
+      {
+        "s": 8,
+        "centroid": [
+          -13.608873169665234,
+          -6.681650880130027,
+          -6.681650880130027
+        ],
+        "fraction_in_radius_12": 0.9652224979043628,
+        "phase_coherence": 0.98582271484714,
+        "phase_residual_rad": -0.10617506145709472,
+        "centroid_residual_norm": 0.0003520690677306269
+      },
+      {
+        "s": 12,
+        "centroid": [
+          -20.323265103943328,
+          -10.022362264944954,
+          -10.022362264944954
+        ],
+        "fraction_in_radius_12": 0.9487175418632972,
+        "phase_coherence": 0.9729441853141566,
+        "phase_residual_rad": -0.1564274857390667,
+        "centroid_residual_norm": 0.09056213803547516
+      }
+    ]
+  },
+  {
+    "grid": 97,
+    "carrier_sign": 1,
+    "width": 0.12,
+    "spectral_velocity": [
+      1.7185478719493894,
+      0.8523186511290947,
+      0.8523186511290944
+    ],
+    "observations": [
+      {
+        "s": 0,
+        "centroid": [
+          0.0,
+          0.0,
+          -1.3647448376763259e-18
+        ],
+        "fraction_in_radius_12": 0.7507455344820524,
+        "phase_coherence": 0.9999999999997117,
+        "phase_residual_rad": -3.317217842004793e-23,
+        "centroid_residual_norm": 1.3647448376763259e-18
+      },
+      {
+        "s": 4,
+        "centroid": [
+          6.874191482953838,
+          3.409274602186832,
+          3.4092746021868328
+        ],
+        "fraction_in_radius_12": 0.7526434514745677,
+        "phase_coherence": 0.999680880436625,
+        "phase_residual_rad": -0.03375698963784249,
+        "centroid_residual_norm": 5.857916338188144e-09
+      },
+      {
+        "s": 8,
+        "centroid": [
+          13.748382750602095,
+          6.818549205541464,
+          6.818549205541464
+        ],
+        "fraction_in_radius_12": 0.747131336414659,
+        "phase_coherence": 0.998759063726956,
+        "phase_residual_rad": -0.06725459741004232,
+        "centroid_residual_norm": 2.250471888146685e-07
+      },
+      {
+        "s": 12,
+        "centroid": [
+          20.62244082928622,
+          10.227823773659715,
+          10.227823773659715
+        ],
+        "fraction_in_radius_12": 0.7397916671442498,
+        "phase_coherence": 0.9973322011832008,
+        "phase_residual_rad": -0.1002507116880774,
+        "centroid_residual_norm": 0.00013363411836127796
+      }
+    ]
+  }
+]

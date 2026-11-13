@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-003",
+  "created_at": "2026-11-05T02:59:19.452453+00:00",
+  "evidence": "EXACT",
+  "summary": "Source-family equal-gain criterion, linear autonomy obstruction and posited reciprocal nonlinear rate law",
+  "command": "python3 experiments/clock-matrix-question/common_rate.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "88cb676d36ea934afe973ba3e7b2ea4855185119",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "common_rate.py",
+      "path": "inputs/001-common_rate.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/common_rate.py",
+      "sha256": "ccc947fbaf28628af219837f984675b6a8648008b731c3e5651315beb11f51b5",
+      "size_bytes": 2989
+    },
+    {
+      "input_id": "input-002",
+      "name": "common_rate_receipt.json",
+      "path": "inputs/002-common_rate_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/common_rate_receipt.json",
+      "sha256": "7e34dc38d9766c276adb0a8de149d32b8b34c8a077935c429ab330f0b518e64e",
+      "size_bytes": 7653
+    }
+  ],
+  "files": [
+    {
+      "path": "files/common_rate_results.json",
+      "sha256": "7923251128357181a452093414b1c244dfdf76fdef27ccae8d0030c8fbaa9030",
+      "size_bytes": 995
+    },
+    {
+      "path": "files/COMMON_RATE.md",
+      "sha256": "c8e92833ef67d16c638c6857497a6f533812342619f8709e5a1c7836e773def6",
+      "size_bytes": 7414
+    }
+  ]
+}

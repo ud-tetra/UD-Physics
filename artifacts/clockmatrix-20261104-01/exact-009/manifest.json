@@ -1,0 +1,56 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-009",
+  "created_at": "2026-11-05T18:24:28.774562+00:00",
+  "evidence": "EXACT",
+  "summary": "Explicit conservative coupling interval, all-time linear normal gain and nonlinear finite phase contract",
+  "command": "python3 experiments/clock-matrix-question/certified_interval.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "90f76db3662b185d0a62984f0b31ec190198aba8",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "certified_interval.py",
+      "path": "inputs/001-certified_interval.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/certified_interval.py",
+      "sha256": "fe89a481fe2991b974a7d5d1cbc5145511c850ba3f59a3fd3f2a55f02b9d3179",
+      "size_bytes": 4370
+    },
+    {
+      "input_id": "input-002",
+      "name": "stabilization_exact.py",
+      "path": "inputs/002-stabilization_exact.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/stabilization_exact.py",
+      "sha256": "d3602ae4d49cfb45225481417959be9e460d629b0350a555a700c326fab1d2de",
+      "size_bytes": 4703
+    },
+    {
+      "input_id": "input-003",
+      "name": "certified_interval_receipt.json",
+      "path": "inputs/003-certified_interval_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/certified_interval_receipt.json",
+      "sha256": "2577bbafeb78b4b1d1e3200b43a83695aecfbd8a08e445b81829e3d605945c07",
+      "size_bytes": 9989
+    }
+  ],
+  "files": [
+    {
+      "path": "files/CERTIFIED_INTERVAL.md",
+      "sha256": "62acfcd0a3c6b5614e86ae40d85a002bb42b0fb7b62ed03160f83ea9c3bd139e",
+      "size_bytes": 10412
+    },
+    {
+      "path": "files/certified_interval_results.json",
+      "sha256": "91fa0786e5884e69dff9293c027961d9ba540f0444f1ebaba907993618329239",
+      "size_bytes": 1640
+    }
+  ]
+}

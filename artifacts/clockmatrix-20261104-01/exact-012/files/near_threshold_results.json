@@ -1,0 +1,40 @@
+{
+  "evidence": "EXACT_CONDITIONAL",
+  "mu_window": [
+    "31/5",
+    "621/100"
+  ],
+  "mu_star_open_bracket": [
+    "77511/12500",
+    "62009/10000"
+  ],
+  "a_derivative_rho": [
+    "11/20",
+    "14/25"
+  ],
+  "abs_ad_over_distance": [
+    "1573/680000",
+    "84/34375"
+  ],
+  "critical_shear_per_half_return": [
+    "47/100",
+    "12/25"
+  ],
+  "sampled_gain_times_sqrt_distance": [
+    "47/10",
+    "51/10"
+  ],
+  "continuous_gain_times_sqrt_distance": [
+    "47/10",
+    "41"
+  ],
+  "expanding_log_multiplier_over_sqrt_distance": [
+    "12/125",
+    "1/10"
+  ],
+  "native_exponent_over_sqrt_distance": [
+    "1/4",
+    "27/100"
+  ],
+  "physical_promotion": 0
+}

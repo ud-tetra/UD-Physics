@@ -1,0 +1,121 @@
+{
+  "cases": [
+    {
+      "bridge_Laplacian_weight": "0",
+      "bridge_boundary_weight": "0",
+      "carrier_dimension": 31,
+      "f_vector": [
+        8,
+        13,
+        8,
+        2
+      ],
+      "other_squared_frequencies_polynomial": "lambda^2 - (4) lambda + (0)",
+      "protected_clock_frequencies": [
+        "2",
+        "2"
+      ],
+      "relative_rate": "1",
+      "vertex_charpoly_descending": [
+        "1",
+        "-24",
+        "240",
+        "-1280",
+        "3840",
+        "-6144",
+        "4096",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "bridge_Laplacian_weight": "1/4",
+      "bridge_boundary_weight": "1/2",
+      "carrier_dimension": 31,
+      "f_vector": [
+        8,
+        13,
+        8,
+        2
+      ],
+      "other_squared_frequencies_polynomial": "lambda^2 - (9/2) lambda + (1/2)",
+      "protected_clock_frequencies": [
+        "2",
+        "2"
+      ],
+      "relative_rate": "1",
+      "vertex_charpoly_descending": [
+        "1",
+        "-49/2",
+        "501/2",
+        "-1370",
+        "4240",
+        "-7104",
+        "5248",
+        "-512",
+        "0"
+      ]
+    },
+    {
+      "bridge_Laplacian_weight": "1",
+      "bridge_boundary_weight": "1",
+      "carrier_dimension": 31,
+      "f_vector": [
+        8,
+        13,
+        8,
+        2
+      ],
+      "other_squared_frequencies_polynomial": "lambda^2 - (6) lambda + (2)",
+      "protected_clock_frequencies": [
+        "2",
+        "2"
+      ],
+      "relative_rate": "1",
+      "vertex_charpoly_descending": [
+        "1",
+        "-26",
+        "282",
+        "-1640",
+        "5440",
+        "-9984",
+        "8704",
+        "-2048",
+        "0"
+      ]
+    },
+    {
+      "bridge_Laplacian_weight": "4",
+      "bridge_boundary_weight": "2",
+      "carrier_dimension": 31,
+      "f_vector": [
+        8,
+        13,
+        8,
+        2
+      ],
+      "other_squared_frequencies_polynomial": "lambda^2 - (12) lambda + (8)",
+      "protected_clock_frequencies": [
+        "2",
+        "2"
+      ],
+      "relative_rate": "1",
+      "vertex_charpoly_descending": [
+        "1",
+        "-32",
+        "408",
+        "-2720",
+        "10240",
+        "-21504",
+        "22528",
+        "-8192",
+        "0"
+      ]
+    }
+  ],
+  "coupling_origin": "declared topology/weight; not source-selected physical interaction",
+  "evidence": "EXACT_CONDITIONAL",
+  "physical_promotion": 0,
+  "physical_time_map": "OPEN",
+  "unit_bridge_other_squared_frequencies": "3-sqrt(7), 3+sqrt(7)"
+}

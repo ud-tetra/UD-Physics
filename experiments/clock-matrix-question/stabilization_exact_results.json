@@ -1,0 +1,118 @@
+{
+  "average_annihilator": "t(t^2+19/256)(t^2+35/64)(t^2+3/64)",
+  "eta": "1 inverse-designed",
+  "evidence": "EXACT_CONDITIONAL",
+  "native_parameter_selection": "OPEN",
+  "nonlinear_orbital_stability": "OPEN",
+  "penalty_Hessian_on_W": "p^2 D6",
+  "penalty_gradient_on_W": "zero",
+  "physical_promotion": 0,
+  "positive_penalty_terms": [
+    {
+      "active_edge": "(0, 1)",
+      "coefficient": "1",
+      "inactive_register": "(0,)"
+    },
+    {
+      "active_edge": "(0, 2)",
+      "coefficient": "1",
+      "inactive_register": "(0,)"
+    },
+    {
+      "active_edge": "(1, 3)",
+      "coefficient": "1",
+      "inactive_register": "(3,)"
+    },
+    {
+      "active_edge": "(2, 3)",
+      "coefficient": "1",
+      "inactive_register": "(3,)"
+    },
+    {
+      "active_edge": "(0, 1)",
+      "coefficient": "1/3",
+      "inactive_register": "(0, 1, 2)"
+    },
+    {
+      "active_edge": "(0, 2)",
+      "coefficient": "1/3",
+      "inactive_register": "(0, 1, 2)"
+    },
+    {
+      "active_edge": "(1, 2)",
+      "coefficient": "1/3",
+      "inactive_register": "(0, 1, 2)"
+    },
+    {
+      "active_edge": "(0, 1)",
+      "coefficient": "1",
+      "inactive_register": "(0, 1, 3)"
+    },
+    {
+      "active_edge": "(1, 3)",
+      "coefficient": "1",
+      "inactive_register": "(0, 1, 3)"
+    },
+    {
+      "active_edge": "(0, 2)",
+      "coefficient": "1",
+      "inactive_register": "(0, 2, 3)"
+    },
+    {
+      "active_edge": "(2, 3)",
+      "coefficient": "1",
+      "inactive_register": "(0, 2, 3)"
+    },
+    {
+      "active_edge": "(1, 2)",
+      "coefficient": "1/3",
+      "inactive_register": "(1, 2, 3)"
+    },
+    {
+      "active_edge": "(1, 3)",
+      "coefficient": "1/3",
+      "inactive_register": "(1, 2, 3)"
+    },
+    {
+      "active_edge": "(2, 3)",
+      "coefficient": "1/3",
+      "inactive_register": "(1, 2, 3)"
+    }
+  ],
+  "transverse_blocks": [
+    {
+      "Krein_sign": "positive",
+      "LDL_pivots": [
+        "19/4",
+        "1/4"
+      ],
+      "frequency_squared": "19/256",
+      "real_subspace_dimension": 2
+    },
+    {
+      "Krein_sign": "negative",
+      "LDL_pivots": [
+        "-5/8",
+        "-7/2",
+        "-7/2",
+        "-5/8"
+      ],
+      "frequency_squared": "35/64",
+      "real_subspace_dimension": 4
+    },
+    {
+      "Krein_sign": "positive",
+      "LDL_pivots": [
+        "3/8",
+        "5/24",
+        "1/5",
+        "15/16",
+        "9/10",
+        "1/2"
+      ],
+      "frequency_squared": "3/64",
+      "real_subspace_dimension": 6
+    }
+  ],
+  "weak_positive_conclusion": "all transverse Floquet multipliers unit modulus and semisimple for sufficiently small positive mu; endpoint not certified"
+}

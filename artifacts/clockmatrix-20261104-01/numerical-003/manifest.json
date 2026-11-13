@@ -1,0 +1,65 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "numerical-003",
+  "created_at": "2026-11-06T03:59:42.913105+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Clock aperture sweep and conditional phasor tolerance",
+  "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/clock-matrix-question/window_noise.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "db3e2918d165b497fe27fc76648fac6cf2c030b4",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "window_noise.py",
+      "path": "inputs/001-window_noise.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/window_noise.py",
+      "sha256": "02e4580f7cc6072875afe59389ee2b77b8a5625d21edbe48fbe303c341197a87",
+      "size_bytes": 1153
+    },
+    {
+      "input_id": "input-002",
+      "name": "tracked_current_clock.py",
+      "path": "inputs/002-tracked_current_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/tracked_current_clock.py",
+      "sha256": "a7dd52c7ce59524f5cea43f33d1962cd1b083b9a10e86b562c0a9958a478199d",
+      "size_bytes": 5722
+    },
+    {
+      "input_id": "input-003",
+      "name": "isospectral_clock.py",
+      "path": "inputs/003-isospectral_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/isospectral_clock.py",
+      "sha256": "09c400d7018fde73a47d2456e28aa49b16e605a2978f8ef33f7e03b7e0557b6c",
+      "size_bytes": 2731
+    },
+    {
+      "input_id": "input-004",
+      "name": "directional_packet.py",
+      "path": "inputs/004-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/WINDOW_NOISE.md",
+      "sha256": "ec8a2ba2622d3bd24c957ad9e4e49c3aa7b87687d27a8ab99f628a1f82621cfb",
+      "size_bytes": 2939
+    },
+    {
+      "path": "files/window_noise_results.json",
+      "sha256": "26cf8a16715e2563a51facd3a326cd7be810687d9d6945a37e062183a0cdc282",
+      "size_bytes": 3329
+    }
+  ]
+}

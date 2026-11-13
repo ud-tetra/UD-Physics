@@ -1,0 +1,65 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-022",
+  "created_at": "2026-11-06T03:35:05.875623+00:00",
+  "evidence": "EXACT",
+  "summary": "Local current rule and separated versus coherent counterflow",
+  "command": "python3 experiments/clock-matrix-question/local_current_clock.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "fe8929a1096965deda1c53a533987b72dd1c1602",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "local_current_clock.py",
+      "path": "inputs/001-local_current_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/local_current_clock.py",
+      "sha256": "c56401e9768c0a12629c7a9d959c9be68e897c26f4b419e817bd18d8f2483752",
+      "size_bytes": 2771
+    },
+    {
+      "input_id": "input-002",
+      "name": "incidence_current.py",
+      "path": "inputs/002-incidence_current.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/incidence_current.py",
+      "sha256": "9a5da1834215688a680c426ebc6608aa1654e174602b0f7b33139299168d7cd5",
+      "size_bytes": 2196
+    },
+    {
+      "input_id": "input-003",
+      "name": "isospectral_clock.py",
+      "path": "inputs/003-isospectral_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/isospectral_clock.py",
+      "sha256": "09c400d7018fde73a47d2456e28aa49b16e605a2978f8ef33f7e03b7e0557b6c",
+      "size_bytes": 2731
+    },
+    {
+      "input_id": "input-004",
+      "name": "directional_packet.py",
+      "path": "inputs/004-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/LOCAL_CURRENT_CLOCK.md",
+      "sha256": "2621b71cc510e5b845f1a9cdb638759b3a77a3def2cb6833a00e89cdfb743220",
+      "size_bytes": 4235
+    },
+    {
+      "path": "files/local_current_clock_results.json",
+      "sha256": "a15ac8c8ecd2eae8dd27aee4946c34817cd900f81282e18015a7366a8ec076db",
+      "size_bytes": 470
+    }
+  ]
+}

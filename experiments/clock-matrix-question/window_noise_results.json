@@ -1,0 +1,110 @@
+[
+  {
+    "order": 8,
+    "step": 0.25,
+    "rows": [
+      {
+        "radius": 3,
+        "axis": {
+          "phase_rad": 0.011999772964192492,
+          "contrast": 1.0,
+          "stock_fraction": 1.2002065283834716e-06
+        },
+        "diagonal": {
+          "phase_rad": 0.02377974074337645,
+          "contrast": 1.0,
+          "stock_fraction": 3.150758844540409e-07
+        },
+        "split_rad": 0.01177996777918396,
+        "error_over_window_stock_each": 0.0029449876878229965,
+        "error_over_total_stock_each": 9.278946004470914e-10
+      },
+      {
+        "radius": 6,
+        "axis": {
+          "phase_rad": 0.011999772955159646,
+          "contrast": 1.0,
+          "stock_fraction": 9.485351384174704e-06
+        },
+        "diagonal": {
+          "phase_rad": 0.023779740735412745,
+          "contrast": 0.9999999999999998,
+          "stock_fraction": 2.7303232030675347e-06
+        },
+        "split_rad": 0.011779967780253099,
+        "error_over_window_stock_each": 0.0029449876880902792,
+        "error_over_total_stock_each": 8.040768217541106e-09
+      },
+      {
+        "radius": 12,
+        "axis": {
+          "phase_rad": 0.011999772921705022,
+          "contrast": 1.0000000000000002,
+          "stock_fraction": 7.472939485440778e-05
+        },
+        "diagonal": {
+          "phase_rad": 0.02377974070458669,
+          "contrast": 0.9999999999999999,
+          "stock_fraction": 2.1607295337006754e-05
+        },
+        "split_rad": 0.01177996778288167,
+        "error_over_window_stock_each": 0.00294498768874742,
+        "error_over_total_stock_each": 6.363321875461442e-08
+      }
+    ]
+  },
+  {
+    "order": 12,
+    "step": 0.125,
+    "rows": [
+      {
+        "radius": 3,
+        "axis": {
+          "phase_rad": 0.011999772964190544,
+          "contrast": 1.0000000000000002,
+          "stock_fraction": 1.2002065283834731e-06
+        },
+        "diagonal": {
+          "phase_rad": 0.023779740743378477,
+          "contrast": 0.9999999999999999,
+          "stock_fraction": 3.150758844540413e-07
+        },
+        "split_rad": 0.011779967779187933,
+        "error_over_window_stock_each": 0.0029449876878239896,
+        "error_over_total_stock_each": 9.278946004474056e-10
+      },
+      {
+        "radius": 6,
+        "axis": {
+          "phase_rad": 0.0119997729551577,
+          "contrast": 0.9999999999999999,
+          "stock_fraction": 9.485351384174717e-06
+        },
+        "diagonal": {
+          "phase_rad": 0.023779740735414764,
+          "contrast": 0.9999999999999997,
+          "stock_fraction": 2.7303232030675385e-06
+        },
+        "split_rad": 0.011779967780257064,
+        "error_over_window_stock_each": 0.0029449876880912706,
+        "error_over_total_stock_each": 8.040768217543824e-09
+      },
+      {
+        "radius": 12,
+        "axis": {
+          "phase_rad": 0.011999772921703053,
+          "contrast": 1.0000000000000004,
+          "stock_fraction": 7.472939485440789e-05
+        },
+        "diagonal": {
+          "phase_rad": 0.023779740704588728,
+          "contrast": 0.9999999999999999,
+          "stock_fraction": 2.160729533700678e-05
+        },
+        "split_rad": 0.011779967782885675,
+        "error_over_window_stock_each": 0.0029449876887484207,
+        "error_over_total_stock_each": 6.363321875463613e-08
+      }
+    ]
+  }
+]

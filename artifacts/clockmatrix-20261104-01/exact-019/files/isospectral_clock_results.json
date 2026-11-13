@@ -1,0 +1,58 @@
+{
+  "center_speeds_squared": [
+    "16/125",
+    "3456/13625"
+  ],
+  "quadrature": [
+    {
+      "order": 8,
+      "axis": {
+        "centroid_velocity": [
+          0.7155386835885309,
+          0.35776934179426545,
+          0.35776934179426545
+        ],
+        "centroid_speed": 0.3577693417942655,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783431,
+        "max_squared_frequency_error": 7.105427357601002e-15
+      },
+      "diagonal": {
+        "centroid_velocity": [
+          0.8224356998122808,
+          0.8224357647141065,
+          0.8224357647141065
+        ],
+        "centroid_speed": 0.5036369791932824,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783431,
+        "max_squared_frequency_error": 7.105427357601002e-15
+      }
+    },
+    {
+      "order": 16,
+      "axis": {
+        "centroid_velocity": [
+          0.7155386835885312,
+          0.3577693417942656,
+          0.3577693417942656
+        ],
+        "centroid_speed": 0.35776934179426567,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783437,
+        "max_squared_frequency_error": 7.105427357601002e-15
+      },
+      "diagonal": {
+        "centroid_velocity": [
+          0.8224356998122813,
+          0.8224357647141071,
+          0.8224357647141071
+        ],
+        "centroid_speed": 0.503636979193283,
+        "phase_residual_at_12_rad": 1.3079999999999998,
+        "contrast_at_12": 0.9999960049783437,
+        "max_squared_frequency_error": 8.881784197001252e-15
+      }
+    }
+  ]
+}

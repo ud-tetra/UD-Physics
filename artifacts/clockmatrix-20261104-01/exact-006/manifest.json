@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-006",
+  "created_at": "2026-11-05T17:24:55.460850+00:00",
+  "evidence": "EXACT",
+  "summary": "Restricted prepared-plane local quartic witness, symmetry obstruction and leakage check",
+  "command": "python3 experiments/clock-matrix-question/prepared_plane.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "463e4980dfa4007559a85306700d87f6684c4abc",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "prepared_plane.py",
+      "path": "inputs/001-prepared_plane.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/prepared_plane.py",
+      "sha256": "3fc2650e1ef52aea7164c2ac952d0e2fe1157f2270b9af0de8f049080bc65ab1",
+      "size_bytes": 5940
+    },
+    {
+      "input_id": "input-002",
+      "name": "prepared_plane_receipt.json",
+      "path": "inputs/002-prepared_plane_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/prepared_plane_receipt.json",
+      "sha256": "8a99418228b28c7b44a05461e5758bfb8ad1efe116594e0110741ac57d375775",
+      "size_bytes": 8742
+    }
+  ],
+  "files": [
+    {
+      "path": "files/PREPARED_PLANE.md",
+      "sha256": "96c4614d5f9e423afe5dcdcf67d9c5b54089300f38ded191cb15286e31bcb2e2",
+      "size_bytes": 9828
+    },
+    {
+      "path": "files/prepared_plane_results.json",
+      "sha256": "8ec120326954d6c93d08fe12d3a281a7d55e8a5da001e8d6484da76bfdc3f957",
+      "size_bytes": 2445
+    }
+  ]
+}

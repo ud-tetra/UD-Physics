@@ -1,0 +1,192 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "incidence-local-quartic-005",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "Which incidence-local quartic Hamiltonians give one rate across every active tetrahedral phase plane?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "quartic-restriction",
+      "symbol": "Q",
+      "object_type": "homogeneous quartic Hamiltonian",
+      "definition": "single-register and distance-bounded register-pair quartic monomials",
+      "domain": "R^15 restricted to V=h-perp",
+      "codomain": "R",
+      "coefficient_domain": "Q polynomial matrices; arbitrary real coefficients/states",
+      "units": "dimensionless formal energy",
+      "basis_orientation": "ascending tetrahedral simplex chains; eliminate fourth vertex on active plane",
+      "metric_measure": "Euclidean positive metric; J=A/2",
+      "origin": "assumed locality class; derived classification",
+      "exact_expression": "J grad Q=deltaOmega Jx iff Q|V=c||x||^4",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "G1",
+        "Q169"
+      ],
+      "assumption_ids": [
+        "fixed-clock",
+        "energy-locality"
+      ],
+      "dependency_ids": [
+        "common-rate-classification-003",
+        "local-reciprocal-mediator-004"
+      ],
+      "normalization": "H0=||x||^2=2I; isolated rate2"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "fixed-clock",
+      "text": "V rank14, unit positive metric, J=A/2, all active independent preparations, fixed oriented readouts"
+    },
+    {
+      "id": "energy-locality",
+      "text": "quartic energy monomials supported on one register or one allowed pair, nearest incidence first; distance cutoff1..4 explicitly compared"
+    },
+    {
+      "id": "smooth-extension",
+      "text": "C2 unary/pair Hamiltonian on whole ambient R15 and global all-preparation requirement; separate extension beyond polynomial ranks"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact polynomial restriction and rank",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "complete finite quartic coefficient classification"
+    },
+    {
+      "technique": "connected spheres and homogeneous Hamiltonians",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove all-state common-rate radial necessity"
+    },
+    {
+      "technique": "graph distances",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "locate first allowed opposite-edge interaction"
+    },
+    {
+      "technique": "prime finite-field certificate",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "independent evaluation-based exact rank lower bound over Q; prime1009 verified"
+    },
+    {
+      "technique": "discrete clock/modular period",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "finite field used only as algebraic certificate, not clock dynamics"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "15+3*(12+12+4)",
+    "reduced_expression": "99 nearest-incidence quartics; restriction rank99; radial augmentation rank100",
+    "factor_origins": [
+      "15 pure fourth powers",
+      "3 mixed powers for each of28 Hasse incidences"
+    ],
+    "factorization": "N/A; no divisibility question",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "xprime=J grad(H0+Q), H0=||x||^2",
+    "initial_phase": "every active state in V",
+    "coupling": "declared single/pair quartic energies",
+    "period_claim": "only constant active rates survive nearest-incidence locality; radial collective rate2+8cI permitted at diameter4",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "V=h-perp subset R15,dim14",
+    "generator_or_update": "xprime=J grad(H0+Q)",
+    "initial_boundary_conditions": "all V, closed finite carrier",
+    "conservation_and_sources": "Hamiltonian always conserved; quadratic I conserved under common-rate property, not arbitrary Q",
+    "projection_and_kernel": "nearest-incidence restriction kernel0; distance2/3/4 kernel7/14/18",
+    "physical_mapping": "OPEN; no SI time, action or energy"
+  },
+  "target_exposure": {
+    "status": "question-informed classification",
+    "known_targets": [
+      "prior collective action-squared counterterms and all-mode rate"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "single/pair energy locality explicitly selected"
+    ],
+    "search_domain_and_budget": "complete99 nearest-incidence monomials;225,309,330 at distances2,3,4",
+    "selection_criterion": "exact all-active common signed clock rate",
+    "baseline": "native unit-incidence linear clock"
+  },
+  "calculation_steps": [
+    "invert J on V and use connected spheres to prove radial form",
+    "opposite-edge plane forbids radial mixed coefficient at distances1..3",
+    "substitute harmonic constraint and compute exact coefficient ranks",
+    "independent finite-field evaluations certify central rank100",
+    "complete-pair norm expansion attains radial interaction at distance4",
+    "smooth mixed-derivative argument extends constant-rate obstruction"
+  ],
+  "result": {
+    "exact_expression": "nearest-incidence all-state uniform quartic space={0}; at pair radii1..4 physical radial dimensions0,0,0,1; radius4 coefficient family c||x||^4+kernel18",
+    "approximation": null,
+    "units": "dimensionless",
+    "precision_and_error": "exact Fraction elimination and F1009 certificate, no floating arithmetic",
+    "scope": "fixed single tetrahedron, metric, J, all-state readout and declared pair locality",
+    "physical_interpretation": "OPEN"
+  },
+  "verification": [
+    {
+      "method": "written proof and exact polynomial coefficient elimination",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/local_quartic.py; LOCAL_QUARTIC.md",
+      "source_revision": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "actual_result": "PASS ranks99/218/295/312; radial augmented100/219/296/312",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent implementation: direct point evaluations and modular row elimination",
+      "command_or_proof_path": "local_quartic.py rank_mod;120 points seed20261105 mod1009",
+      "source_revision": "same",
+      "actual_result": "PASS rank100",
+      "review_relationship": "second constructor implementation, not independent review"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "nonzero collective norm^4 exists at diameter4, but violates nearest energy locality",
+    "sparse A times total-stock gain preserves incidence currents but depends on global stock",
+    "restriction-null polynomials at larger radii give zero active effect, not extra rates"
+  ],
+  "limitations": [
+    "not all possible notions of locality or neighborhood many-body interactions",
+    "no changing Poisson/metric, mediators, glued carriers or effective reduction classified",
+    "restricted-preparation and approximate clocks outside obstruction",
+    "no physical map or native coefficient selected",
+    "independent review NOT_RUN"
+  ],
+  "changed_dependencies": [
+    "nearest-incidence all-state quartic implementation PARKED; prior collective model remains valid under prior assumptions"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/exact-005/manifest.json"
+  ],
+  "next_discriminant": "Test whether a specified prepared phase plane admits an incidence-local quartic with an amplitude-dependent rate and zero transverse leakage; record preparation selection as an assumption"
+}

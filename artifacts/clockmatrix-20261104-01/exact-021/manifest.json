@@ -1,0 +1,56 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-021",
+  "created_at": "2026-11-06T03:24:57.658553+00:00",
+  "evidence": "EXACT",
+  "summary": "Signed incidence transport current and stationary controls",
+  "command": "python3 experiments/clock-matrix-question/incidence_current.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "11a5448d070c867ebc644f55646ff75a065b14ef",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "incidence_current.py",
+      "path": "inputs/001-incidence_current.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/incidence_current.py",
+      "sha256": "9a5da1834215688a680c426ebc6608aa1654e174602b0f7b33139299168d7cd5",
+      "size_bytes": 2196
+    },
+    {
+      "input_id": "input-002",
+      "name": "isospectral_clock.py",
+      "path": "inputs/002-isospectral_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/isospectral_clock.py",
+      "sha256": "09c400d7018fde73a47d2456e28aa49b16e605a2978f8ef33f7e03b7e0557b6c",
+      "size_bytes": 2731
+    },
+    {
+      "input_id": "input-003",
+      "name": "directional_packet.py",
+      "path": "inputs/003-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/INCIDENCE_CURRENT.md",
+      "sha256": "26f54981fa4dd7641a7cd26c850d069a3bdbf8b1f2d2ab308ea95cdb6925315c",
+      "size_bytes": 4075
+    },
+    {
+      "path": "files/incidence_current_results.json",
+      "sha256": "02ca4114f2d92f1ac6da22cc30f169c550868dc1a38c2011c33be135bb47486c",
+      "size_bytes": 2966
+    }
+  ]
+}

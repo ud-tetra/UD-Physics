@@ -1,0 +1,56 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "numerical-002",
+  "created_at": "2026-11-06T03:50:39.371148+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Tracked phase through matched-packet propagation and counterflow overlap",
+  "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/clock-matrix-question/tracked_current_clock.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "7651c5b8366a2f83b36f30571717733f426ff9b0",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "tracked_current_clock.py",
+      "path": "inputs/001-tracked_current_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/tracked_current_clock.py",
+      "sha256": "c6e39b790beac24f98d8b2fa8a14e86f1dd7e031d18627192386d9aabc09039e",
+      "size_bytes": 5323
+    },
+    {
+      "input_id": "input-002",
+      "name": "isospectral_clock.py",
+      "path": "inputs/002-isospectral_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/isospectral_clock.py",
+      "sha256": "09c400d7018fde73a47d2456e28aa49b16e605a2978f8ef33f7e03b7e0557b6c",
+      "size_bytes": 2731
+    },
+    {
+      "input_id": "input-003",
+      "name": "directional_packet.py",
+      "path": "inputs/003-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/TRACKED_CURRENT_CLOCK.md",
+      "sha256": "6a69e28cd37b48ffd5764efb0b892fcf9b0689ea91e8361971588307983229bc",
+      "size_bytes": 3576
+    },
+    {
+      "path": "files/tracked_current_clock_results.json",
+      "sha256": "1ae1b6b31a0fdffb50eb7b4bc9627b1d18dbce7817f353ab7b71c13b99cf68bf",
+      "size_bytes": 10633
+    }
+  ]
+}

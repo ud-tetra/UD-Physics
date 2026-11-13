@@ -1,0 +1,38 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "numerical-001",
+  "created_at": "2026-11-06T02:41:14.499353+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Directional scalar packet and moving phase port",
+  "command": "python3 experiments/clock-matrix-question/directional_packet.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "3a492e1cd28a791170a5c7b60e270bb63b7d41a1",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "directional_packet.py",
+      "path": "inputs/001-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/DIRECTIONAL_PACKET.md",
+      "sha256": "d092dfdbe772f972c536e29d7740b75237ce914f8a8e9ecae46e32517b929720",
+      "size_bytes": 4314
+    },
+    {
+      "path": "files/directional_packet_results.json",
+      "sha256": "c45afbc8db28cf64b74e2013951d477ac14b5c80c7fa22484421ea6a91a5bf4f",
+      "size_bytes": 6551
+    }
+  ]
+}

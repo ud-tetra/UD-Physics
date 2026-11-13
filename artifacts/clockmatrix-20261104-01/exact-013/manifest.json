@@ -1,0 +1,83 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "exact-013",
+  "created_at": "2026-11-05T23:48:14.688781+00:00",
+  "evidence": "EXACT",
+  "summary": "Finite nonlinear state and phase preparation margin",
+  "command": "python3 experiments/clock-matrix-question/nonlinear_margin.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "39aac5e9e0b8b711b3ea99e16825d93fcf07e979",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "nonlinear_margin.py",
+      "path": "inputs/001-nonlinear_margin.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/nonlinear_margin.py",
+      "sha256": "6cbbc2c93d8f83112f9429a0836803c432e363e174dcd0171b4c4b819a2e8b86",
+      "size_bytes": 2436
+    },
+    {
+      "input_id": "input-002",
+      "name": "near_threshold.py",
+      "path": "inputs/002-near_threshold.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/near_threshold.py",
+      "sha256": "76ce3efd0dbb9a5cc5da8168a5ba12162f819b79509c9a21fbc08e69bae03475",
+      "size_bytes": 3856
+    },
+    {
+      "input_id": "input-003",
+      "name": "stability_boundary.py",
+      "path": "inputs/003-stability_boundary.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/stability_boundary.py",
+      "sha256": "4a1edd547caceb4c97f9fa9c6913b9d6f7f7c26bd42e679e9aa55c34681aea8e",
+      "size_bytes": 8912
+    },
+    {
+      "input_id": "input-004",
+      "name": "certified_interval.py",
+      "path": "inputs/004-certified_interval.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/certified_interval.py",
+      "sha256": "4afee3366ab72065dfb73a76c069c259af0de5e1afd1a07120d1d2f82bb027b9",
+      "size_bytes": 4451
+    },
+    {
+      "input_id": "input-005",
+      "name": "stabilization_exact.py",
+      "path": "inputs/005-stabilization_exact.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/stabilization_exact.py",
+      "sha256": "d3602ae4d49cfb45225481417959be9e460d629b0350a555a700c326fab1d2de",
+      "size_bytes": 4703
+    },
+    {
+      "input_id": "input-006",
+      "name": "nonlinear_margin_receipt.json",
+      "path": "inputs/006-nonlinear_margin_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/clockmatrix-20261104-01/nonlinear_margin_receipt.json",
+      "sha256": "8ea5f99f2e2b918dffcb89cbf611bae928b34fac69475fddcf4282a744afbf6a",
+      "size_bytes": 8843
+    }
+  ],
+  "files": [
+    {
+      "path": "files/NONLINEAR_MARGIN.md",
+      "sha256": "e6251f5f7fe1ed9cc8cf7fb0d2c7ee01ced854d8505ce65126d854f9e0de2206",
+      "size_bytes": 5677
+    },
+    {
+      "path": "files/nonlinear_margin_results.json",
+      "sha256": "6cf5b3c9810f0433485dc057e34142f1f6d76055a9ac94e3ab03191263e4f6f0",
+      "size_bytes": 454
+    }
+  ]
+}

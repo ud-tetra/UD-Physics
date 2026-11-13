@@ -1,0 +1,65 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "numerical-005",
+  "created_at": "2026-11-06T22:17:15.584242+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Polynomial clock amplitude scaling and phase ordering reversal",
+  "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/clock-matrix-question/polynomial_clock.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "9ee6da4a50e8518658c6617defd5b501c501d98d",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "polynomial_clock.py",
+      "path": "inputs/001-polynomial_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/polynomial_clock.py",
+      "sha256": "6883f2bc7479139bab00c0085f3e4b15536839cb8bcb6ac0f9f673bdf0111cd3",
+      "size_bytes": 1184
+    },
+    {
+      "input_id": "input-002",
+      "name": "tracked_current_clock.py",
+      "path": "inputs/002-tracked_current_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/tracked_current_clock.py",
+      "sha256": "ac798a24ae42da5306576ca4cf1878eb24d49ecf177bc56bd690f262f88d12c5",
+      "size_bytes": 6516
+    },
+    {
+      "input_id": "input-003",
+      "name": "isospectral_clock.py",
+      "path": "inputs/003-isospectral_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/isospectral_clock.py",
+      "sha256": "09c400d7018fde73a47d2456e28aa49b16e605a2978f8ef33f7e03b7e0557b6c",
+      "size_bytes": 2731
+    },
+    {
+      "input_id": "input-004",
+      "name": "directional_packet.py",
+      "path": "inputs/004-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/POLYNOMIAL_CLOCK.md",
+      "sha256": "8880782b61cac5be21182bb5f364473da0ab380b5bf30986ca4b5b72a5943006",
+      "size_bytes": 2543
+    },
+    {
+      "path": "files/polynomial_clock_results.json",
+      "sha256": "9e1e586d9e21c5023cb297a0a9ee5b173a8b07706096e950f44dd6c47dcceebe",
+      "size_bytes": 4474
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "split-preparation-gates-014",
+  "session_id": "clockmatrix-20261104-01",
+  "candidate_id": "clock-matrix-question",
+  "question": "Can direct two-time bounds and separate tangent readout improve the initial-state tolerance?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "CANDIDATE",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "certified-normal-metric",
+      "symbol": "P_W e,P_N e",
+      "object_type": "orthogonal tangent and normal state errors",
+      "definition": "Separate projected remainders in V",
+      "domain": "14-dimensional V",
+      "codomain": "same",
+      "coefficient_domain": "rational verified margins, Euclidean operator bounds",
+      "units": "dimensionless metric on native perturbations",
+      "basis_orientation": "ascending tetrahedral chain, fixed phase origin",
+      "metric_measure": "Euclidean input/output; certified invariant metric bounds1/128 to5",
+      "origin": "derived for inverse-designed eta1 clock",
+      "exact_expression": "||w||<=14||w0||+1280R\u00b2, ||n||<=5||n0||+1280R\u00b2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "modified-clock"
+      ],
+      "assumption_ids": [
+        "fixed-modified-law",
+        "phase-origin"
+      ],
+      "dependency_ids": [
+        "finite-nonlinear-margin-013",
+        "first-transverse-loss-011"
+      ],
+      "normalization": "mu=lambdaI,rho=mu/(2+mu);normal coefficient half-periodpi"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "Q169/Q170",
+      "source_status": "historical imported finite dynamics, not physical interaction selection"
+    },
+    {
+      "source_id": "G1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "sections 1-4: classification, sector ranks and gain nonselection",
+      "source_status": "finite generator convention"
+    },
+    {
+      "source_id": "prepared-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/PREPARED_PLANE.md",
+      "version_or_commit": "8e94fd49ded70a00eb4986177d3463860d295960",
+      "section_or_object_id": "sections1-5:13-term Q, plane, rates and previous coarse bound",
+      "source_status": "conditional construction, not native interaction"
+    },
+    {
+      "source_id": "original-transverse",
+      "url_or_repo_path": "experiments/clock-matrix-question/TRANSVERSE_STABILITY.md",
+      "version_or_commit": "b65135ce434564c221d5991d5283b6a63aa328a7",
+      "section_or_object_id": "sections2-6,original weak instability and fixedQ finite window",
+      "source_status": "preserved exact/numerical conditional controls"
+    },
+    {
+      "source_id": "modified-clock",
+      "url_or_repo_path": "experiments/clock-matrix-question/LOCAL_STABILIZATION.md",
+      "version_or_commit": "b04d720d96b1c51842d51066a206e2afa92b1f33",
+      "section_or_object_id": "sections2,4,5,7:positivepenalty,weak spectrum and signature proof",
+      "source_status": "exact conditional inverse-designed clock"
+    },
+    {
+      "source_id": "exact-009",
+      "url_or_repo_path": "experiments/clock-matrix-question/CERTIFIED_INTERVAL.md",
+      "version_or_commit": "1de2e0299a813a4362ce38cb2c13d469822a7d1c",
+      "section_or_object_id": "sections 1\u20135",
+      "source_status": "EXACT_CONDITIONAL"
+    },
+    {
+      "source_id": "exact-010",
+      "url_or_repo_path": "experiments/clock-matrix-question/FOURIER_INTERVAL.md",
+      "version_or_commit": "c48a78b8f803fadce8d1b0779a05eb2b6b2fc1e3",
+      "section_or_object_id": "uniform interval through 1/64",
+      "source_status": "EXACT_CONDITIONAL"
+    },
+    {
+      "source_id": "exact-011",
+      "url_or_repo_path": "experiments/clock-matrix-question/STABILITY_BOUNDARY.md",
+      "version_or_commit": "e762e5f559bceb65f63929cfc72e9c8bce10ab62",
+      "section_or_object_id": "exact blocks and threshold bracket",
+      "source_status": "EXACT_CONDITIONAL"
+    },
+    {
+      "source_id": "exact-012",
+      "url_or_repo_path": "experiments/clock-matrix-question/NEAR_THRESHOLD.md",
+      "version_or_commit": "fca1a8afb36f7037b3917f88d58873823c2ab7f8",
+      "section_or_object_id": "quarter-orbit margins and finite-return powers",
+      "source_status": "EXACT_CONDITIONAL"
+    },
+    {
+      "source_id": "exact-013",
+      "url_or_repo_path": "experiments/clock-matrix-question/NONLINEAR_MARGIN.md",
+      "version_or_commit": "84c59f35f58405c06820d5697c74674305aeedbc",
+      "section_or_object_id": "quadratic remainder and tangent shear",
+      "source_status": "EXACT_CONDITIONAL"
+    }
+  ],
+  "assumptions": [
+    "Fixed eta=1, action 1, phase zero, 31/5<=mu<=77511/12500, native horizon 1.",
+    "Euclidean initial-state error in V."
+  ],
+  "technique_plan": [
+    {
+      "technique": "Outward Taylor phase grid and parameter Gronwall",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Direct two-time normal propagation"
+    },
+    {
+      "technique": "Orthogonal component bootstrap",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Separate phase readout from normal state allowance"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "84+1",
+    "reduced_expression": "85 phase grid nodes per block",
+    "factor_origins": [
+      "Taylor step pi/32",
+      "84 steps reach 21pi/8"
+    ],
+    "factorization": "84=4*21",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "continuous native phase",
+    "modulus": "2pi for measured phase, with unwrapped lift for comparisons",
+    "residue_convention": null,
+    "update_rule": "Same autonomous fixed eta=1 Hamiltonian",
+    "initial_phase": "0",
+    "coupling": "31/5<=mu<=77511/12500, I=1",
+    "period_claim": "Half-return phase pi and native horizon 1",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "Orthogonal W plus N, phase measured only on W",
+    "generator_or_update": "Fixed autonomous flow and bounded projected remainder",
+    "initial_boundary_conditions": "phaseanchored reference;normal linearerror arbitrary;finite nonlinear energy/norm gates explicit",
+    "conservation_and_sources": "positive Hamiltonian energy conserved; no attraction or physical calibration",
+    "projection_and_kernel": "exact negative-frequency projector and invariant-metric extension;old all-state/S4 obstructions unchanged",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "Prior phase target exposed",
+    "known_targets": [
+      "1/300000 rad over native horizon 1"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Grid caps chosen after inspecting reference-grid calculation",
+      "Sufficient gate radii chosen analytically",
+      "No model fitting"
+    ],
+    "search_domain_and_budget": "85 grid nodes and all ordered pairs, three distinct blocks",
+    "selection_criterion": "Exact box checks and strict tube closure",
+    "baseline": "exact-013 initial norm cap 1/16000000"
+  },
+  "calculation_steps": [
+    "Enclose three reference block flows on the phase grid.",
+    "Extend by logarithmic norm and parameter Gronwall.",
+    "Close two component gates and check phase disk."
+  ],
+  "result": {
+    "exact_expression": "Direct normal gains 5 and 8 over one native unit. Euclidean initial cap 1/3200000 or split tangent 1/8000000 and normal 1/120000 both give phase error <1/300000 rad.",
+    "approximation": null,
+    "units": "native parameter and radians only",
+    "precision_and_error": "Outward dyadic Taylor and exact rational inequalities",
+    "scope": "One-unit initial-state error only",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "Outward propagation replay and rational tube checks",
+      "command_or_proof_path": "python3 experiments/clock-matrix-question/anisotropic_margin.py",
+      "source_revision": "234f54471c32cc9ad4873cd8042103fa19795909",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [],
+  "limitations": [
+    "Independent review, coefficient drift, detector error, physical calibration and all-time nonlinear stability OPEN."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/clockmatrix-20261104-01/exact-014/manifest.json"
+  ],
+  "next_discriminant": "Derive a finite coefficient-drift allowance for the one-unit phase contract, separating orbit detuning from normal forcing."
+}

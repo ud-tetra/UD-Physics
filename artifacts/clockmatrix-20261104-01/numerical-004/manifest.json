@@ -1,0 +1,65 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "clockmatrix-20261104-01",
+  "run_id": "numerical-004",
+  "created_at": "2026-11-06T16:06:58.767228+00:00",
+  "evidence": "NUMERICAL",
+  "summary": "Radius-12 detector alignment and differential gain replay",
+  "command": "OPENBLAS_NUM_THREADS=1 python3 experiments/clock-matrix-question/clock_alignment.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "d5390bd3a627ba0dd4b6b14862390329d27a90bc",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "clock_alignment.py",
+      "path": "inputs/001-clock_alignment.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/clock_alignment.py",
+      "sha256": "37d47869bfce08aca293ab1d63a52a43f3030b9fa78ece438205f6fa84ea8a57",
+      "size_bytes": 2358
+    },
+    {
+      "input_id": "input-002",
+      "name": "tracked_current_clock.py",
+      "path": "inputs/002-tracked_current_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/tracked_current_clock.py",
+      "sha256": "31f0da67e61fa00af468264475641e08479ce818a3d3b0292f70b450a6ca2b52",
+      "size_bytes": 6226
+    },
+    {
+      "input_id": "input-003",
+      "name": "isospectral_clock.py",
+      "path": "inputs/003-isospectral_clock.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/isospectral_clock.py",
+      "sha256": "09c400d7018fde73a47d2456e28aa49b16e605a2978f8ef33f7e03b7e0557b6c",
+      "size_bytes": 2731
+    },
+    {
+      "input_id": "input-004",
+      "name": "directional_packet.py",
+      "path": "inputs/004-directional_packet.py",
+      "source_location": "repository",
+      "source_path": "experiments/clock-matrix-question/directional_packet.py",
+      "sha256": "208c173df5774731c2029434fda1db78ad308b94021ffd3975868a7ac64daddc",
+      "size_bytes": 3258
+    }
+  ],
+  "files": [
+    {
+      "path": "files/CLOCK_ALIGNMENT.md",
+      "sha256": "c3570c9dfae0fc1f6e2a1bd2f5f10df862d1318de6251d72db1a4494332c92da",
+      "size_bytes": 3218
+    },
+    {
+      "path": "files/clock_alignment_results.json",
+      "sha256": "a6623b883f5fc2da2b549918c7a9a9d39f4b83a8165851cebd5ef139f4707d26",
+      "size_bytes": 1849
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "fault_controls": [
+    [
+      "nominal",
+      "admitted",
+      0.0005380000000000001,
+      0.005
+    ],
+    [
+      "drop_no_replacement",
+      "missing_or_invalid_bracket",
+      null
+    ],
+    [
+      "drop_near_replacement",
+      "admitted",
+      0.0011755000000000001,
+      0.005
+    ],
+    [
+      "drop_far_replacement",
+      "timing_budget_exceeded",
+      0.0018046666666666669
+    ],
+    [
+      "visible_excess_drift",
+      "phase_increment_rejected",
+      0.0005380000000000001
+    ]
+  ],
+  "hidden_extra_turn_admission": "admitted",
+  "hidden_turn_midpoint_error_rad": 3.141592653589793
+}
