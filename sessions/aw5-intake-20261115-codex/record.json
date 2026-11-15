@@ -1,0 +1,46 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "aw5-intake-20261115-codex",
+  "runtime": "Codex, GitHub connector and local Python",
+  "task": "aw5-hollow-star-intake",
+  "goal": "AW5 offline intake",
+  "created_at": "2026-11-15T23:42:14.543264+00:00",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "aw5-hollow-star-intake": {
+      "ref": "refs/heads/claims/aw5-hollow-star-intake",
+      "sha": "0041ecff29188c08099a53723e713552f6b8e3e9",
+      "status": "held",
+      "protocol_version": 2
+    }
+  },
+  "checks": [
+    {
+      "command": "python3 aw5.py",
+      "result": "PASS constructor replay in companion UD capture"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS: 645 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS: 16 tests"
+    }
+  ],
+  "finding": "Hollow H2 is one-dimensional; normalized harmonic mode has exterior-face squared weight 1/4.",
+  "next_action": "Test zero-frequency face-readout residue against filled and orthogonal-sensor controls.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q for exact incidence arithmetic, R for dynamics",
+    "exactness_or_precision_plan": "Exact rank, projection and spectrum",
+    "applicable_methods": [
+      "Oriented simplicial incidence",
+      "Orthogonal projector",
+      "Exact spectral factorization"
+    ],
+    "clock_metric_units_conventions": "Unit simplex metric; native dimensionless flow parameter"
+  }
+}

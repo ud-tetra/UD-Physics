@@ -1,0 +1,31 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "aw5-hollow-star-intake",
+  "session_id": "aw5-intake-20261115-codex",
+  "question": "Can a cavity-sensitive face readout distinguish hollow AW5 from filled AW5 under declared dynamics?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Oriented real simplicial chain model with unit simplex inner product",
+    "Toy damping \u2212\u03b3 P_ext"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Offline flux, shielding, routing and matter/vacuum ideas exposed before intake replay",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD/blob/contrib/ud-tetra/2026-11-15-aw5-7cf191/captures/2026-11-15T174000Z-codex-aw5-7cf191/AW5_AUDIT.md",
+    "User-supplied offline LLM report; citation keys unresolved"
+  ],
+  "baseline": "Filled AW5 under matching model and readout",
+  "result": "Hollow H2 is one-dimensional; normalized harmonic mode has exterior-face squared weight 1/4.",
+  "next_discriminant": "Test zero-frequency face-readout residue against filled and orthogonal-sensor controls.",
+  "mathematical_receipts": [
+    "candidates/aw5-hollow-star-intake/mathematical_receipt.json"
+  ]
+}
