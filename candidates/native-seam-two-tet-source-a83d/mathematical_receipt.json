@@ -144,7 +144,7 @@
     "Face covariance projection and rank-one limit"
   ],
   "result": {
-    "exact_expression": "spec(B)={-2,-2 (twice),-2±sqrt(2)}; R''_1(0)=3/2 and R''_0(0)=1; unique face mode v with eigenvalue 1/4",
+    "exact_expression": "spec(B)={-2 (multiplicity 2),-2±sqrt(2)}; R''_1(0)=3/2 and R''_0(0)=1; unique face mode v with eigenvalue 1/4",
     "approximation": "R_1(1)=0.4401017526359883; R_0(1)=0.3678794411714423",
     "units": "dimensionless",
     "precision_and_error": "matrix exponential vs spectral closed form <1e-12",
