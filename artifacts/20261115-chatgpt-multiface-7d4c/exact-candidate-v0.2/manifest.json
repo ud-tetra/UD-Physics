@@ -1,0 +1,110 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261115-chatgpt-multiface-7d4c",
+  "run_id": "exact-candidate-v0.2",
+  "created_at": "2026-11-15T21:37:00Z",
+  "evidence": "EXACT_CONDITIONAL",
+  "summary": "672-state exact two-cell multichannel conservative candidate and source uniqueness NO-GO with March source input copies",
+  "command": "cd artifacts/20261115-chatgpt-multiface-7d4c/exact-candidate-v0.2/files && python3 verify.py && python3 replay_stdlib.py",
+  "command_execution": "EXECUTED_LOCALLY_BEFORE_GITHUB_PUBLICATION",
+  "source": {
+    "revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "verify.py",
+      "path": "inputs/verify.py",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "b428da3e4cdd92b7ab259cbbf142f6a8e1095377cc97ff715b8abdb735efb165",
+      "size_bytes": 9994
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_stdlib.py",
+      "path": "inputs/replay_stdlib.py",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "90e03572a79489fdd71a6591b73e657de69e4aa27cb832113a6b84e52c921dab",
+      "size_bytes": 3225
+    },
+    {
+      "input_id": "input-003",
+      "name": "triangular_transport_symbol_alphabet.md",
+      "path": "inputs/triangular_transport_symbol_alphabet.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "b61c75fc41d4ca702af2f7324a75016de15be17cc3c79a1e40c0cd9db781e033",
+      "size_bytes": 1806
+    },
+    {
+      "input_id": "input-004",
+      "name": "seam_phase_transport.md",
+      "path": "inputs/seam_phase_transport.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "1cc5a0450648fa59b55dc20e1eb79f4112f552aa9d1a1e710abd00c5ac958235",
+      "size_bytes": 1737
+    },
+    {
+      "input_id": "input-005",
+      "name": "packet_modulation_layer.md",
+      "path": "inputs/packet_modulation_layer.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "8e4b23e43ca4b4a0e44eb39d39a4b807ac4674ad1ac14d69eec1f27bbba6fc6d",
+      "size_bytes": 1709
+    },
+    {
+      "input_id": "input-006",
+      "name": "packet_field_equation.md",
+      "path": "inputs/packet_field_equation.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "777f4a957077c665dc7bdba6823a71a5bea9947b4d0f4379a5656b1b3dd271c1",
+      "size_bytes": 1964
+    }
+  ],
+  "files": [
+    {
+      "path": "files/REPORT.md",
+      "sha256": "6a14c0358ae81c6cb039b985e083b6b15d57ef07ebc7d695a7043d59790c6d11",
+      "size_bytes": 13719
+    },
+    {
+      "path": "files/verify.py",
+      "sha256": "b428da3e4cdd92b7ab259cbbf142f6a8e1095377cc97ff715b8abdb735efb165",
+      "size_bytes": 9994
+    },
+    {
+      "path": "files/replay_stdlib.py",
+      "sha256": "90e03572a79489fdd71a6591b73e657de69e4aa27cb832113a6b84e52c921dab",
+      "size_bytes": 3225
+    },
+    {
+      "path": "files/results.json",
+      "sha256": "ebc8787f7a24540f43053cabfa07b8cc916c0564106247f14e43c0e84b177f9e",
+      "size_bytes": 3927
+    },
+    {
+      "path": "files/MANIFEST.json",
+      "sha256": "9c9713615fa2b05b89d67fb676c11ea32826f8ab454c141484715e69401900f7",
+      "size_bytes": 1450
+    },
+    {
+      "path": "files/run.log",
+      "sha256": "9757b2b729199119dc219806dc3f05054472c26d076375773102374d36ef4db4",
+      "size_bytes": 155
+    },
+    {
+      "path": "files/replay.log",
+      "sha256": "884ee5cc7ca1e8808736d5c6563b8a74e76b1e301ad4ddbd35b683b7d5c667c3",
+      "size_bytes": 141
+    }
+  ],
+  "physical_promotion": 0,
+  "claim_scope": "development no registry entry"
+}

@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "native-admission-multiface-20261115-7d4c",
+  "goal": "Study and test source-bound pre-event admissible transition rules and at least two independent face-stock modes on two glued tetrahedra",
+  "owned_paths": [
+    "tasks/native-admission-multiface-20261115-7d4c.json",
+    "sessions/20261115-chatgpt-multiface-7d4c",
+    "candidates/native-admission-multiface-20261115-7d4c",
+    "artifacts/20261115-chatgpt-multiface-7d4c"
+  ],
+  "dependencies": [
+    "march-native-mode-publication-20261115-2ce90b"
+  ],
+  "status": "handoff_review"
+}

@@ -1,0 +1,56 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261115-chatgpt-multiface-7d4c",
+  "runtime": "GPT-6; local Python 3.13 SymPy SciPy and standard library; GitHub connector write",
+  "task": "native-admission-multiface-20261115-7d4c",
+  "goal": "Study and test source-bound pre-event admissible transition rules and at least two independent face-stock modes on two glued tetrahedra",
+  "created_at": "2026-11-15T21:37:00Z",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "source_dirty_at_boot": false,
+  "status": "handoff_review",
+  "claims": {
+    "task": "native-admission-multiface-20261115-7d4c",
+    "claim_ref": "refs/heads/claims/native-admission-multiface-20261115-7d4c",
+    "claim_commit": "fdfffd57cfe38c78c6ffaafc776150b75ad2bb22",
+    "claim_status": "held"
+  },
+  "checks": [
+    {
+      "name": "python verify.py",
+      "status": "PASS",
+      "details": "Local 672-state, 6972 directed transitions exact Fraction validation plus SymPy/SciPy"
+    },
+    {
+      "name": "python replay_stdlib.py",
+      "status": "PASS",
+      "details": "Independent arithmetic implementation, same construction context"
+    },
+    {
+      "name": "python scripts/validate.py",
+      "status": "NOT_RUN",
+      "reason": "GitHub connector-only publication, no repository checkout/CI report"
+    },
+    {
+      "name": "python3 -m unittest discover -s tests -v",
+      "status": "NOT_RUN",
+      "reason": "GitHub connector-only publication, no repository checkout/CI report"
+    }
+  ],
+  "finding": "Exactly six admitted b states, two K3 minimal move components, native transition selectivity NO-GO; candidate 7-face stock generator gives 3 orthogonal modes and Rw=e^-3s Rv.",
+  "next_action": "Independent nonconstructor review; derive pre-event constitutive law selecting p(d), rate normalization and physical readout only after native source bridge.",
+  "mathematical_profile": {
+    "coefficient_domain": "integers/rational Fractions and algebraic exact matrices",
+    "exactness_or_precision_plan": "exact finite enumeration plus double-precision SciPy exponential at s=1",
+    "applicable_methods": [
+      "simplicial binary admissibility",
+      "finite Markov detailed balance",
+      "unsigned face-edge incidence",
+      "spectral common eigenmodes",
+      "source/sink conservation",
+      "gauge compensation",
+      "null controls"
+    ],
+    "clock_metric_units_conventions": "Z4 gauge-invariant relative phase; event-count s, no SI unit; unsigned face-edge metric unit and multinomial stock readout"
+  }
+}

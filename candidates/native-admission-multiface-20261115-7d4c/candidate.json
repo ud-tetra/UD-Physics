@@ -1,0 +1,36 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "native-admission-multiface-20261115-7d4c",
+  "session_id": "20261115-chatgpt-multiface-7d4c",
+  "question": "Does the March substrate uniquely authorize a phase-sensitive pre-event move, and can a conservative enriched model support multiple independent structural face modes?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT_CONDITIONAL",
+    "CANDIDATE",
+    "NO-GO_SCOPED"
+  ],
+  "assumptions": [
+    "all-face closure χ as product admission gate",
+    "choose minimum nontrivial Hamming move for binary b",
+    "add M independently conserved face-stock units, not present as historical source definition",
+    "seam U=i^d, p(d)=|1+U|²/4 from assumed equal-channel interference",
+    "unit intra-cell rates, symmetric phase diffusion and bit transitions",
+    "no physical clock or energy"
+  ],
+  "physical_mapping": "OPEN; no cosmological wave number, QED coupling or SI time",
+  "target_exposure": "EXPOSED: historical CMB tilt/running values known; not used in finite generator construction",
+  "fitted_choices": [],
+  "sources": [
+    "recovered March triangular_transport_symbol_alphabet.md",
+    "recovered March seam_phase_transport.md",
+    "https://github.com/ud-tetra/UD/commit/2b1df905e16fb4e04f47d0b50a338e1052c5049d",
+    "ud-tetra/UD-Physics/state/CURRENT.md"
+  ],
+  "baseline": "phase blind p=1, seam off p=0, closure sham χR=0, empty stock, isolated vertex",
+  "result": "EXACT_CONDITIONAL 672-state conservative family; two independent eigenmodes v,w with distinct decay Rw=e^-3s Rv. NO-GO: source rules cannot choose p, clock or transition generator.",
+  "next_discriminant": "Native source-specified pre-event constitutive law and physical unit/readout; independent nonconstructor review",
+  "mathematical_receipts": [
+    "candidates/native-admission-multiface-20261115-7d4c/mathematical_receipt.json"
+  ]
+}
