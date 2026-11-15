@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "native-constitutive-contrast-20261115-b7cf",
+  "goal": "Determine whether source-defined phase/closure/burden contracts uniquely select the finite generator; adversarially test phase, stock and boundary alternatives",
+  "owned_paths": [
+    "tasks/native-constitutive-contrast-20261115-b7cf.json",
+    "sessions/20261115-chatgpt-constitutive-b7cf",
+    "candidates/constitutive-selection-b7cf",
+    "artifacts/20261115-chatgpt-constitutive-b7cf"
+  ],
+  "dependencies": [
+    "native-admission-multiface-20261115-7d4c"
+  ],
+  "status": "handoff_review"
+}
