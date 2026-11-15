@@ -1,0 +1,55 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261115-chatgpt-two-tet-source-a83d",
+  "runtime": "GPT-6 / GitHub connector plus local Python",
+  "task": "native-seam-burden-source-20261115-a83d",
+  "goal": "Two-tetra native source selection and exact conservative candidate test",
+  "created_at": "2026-11-15T21:37:00Z",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "source_dirty_at_boot": false,
+  "status": "review_handoff",
+  "claims": {
+    "task": "native-seam-burden-source-20261115-a83d",
+    "claim_ref": "refs/heads/claims/native-seam-burden-source-20261115-a83d",
+    "claim_commit": "d3dba61fa3c2825272829928c954bbc4305d70d8",
+    "status": "held"
+  },
+  "checks": [
+    {
+      "name": "SymPy+SciPy exact and numerical audit",
+      "status": "PASS",
+      "command": "python3 UD_TWO_TETRA_NATIVE_SOURCE_GATE_v0.1_check.py"
+    },
+    {
+      "name": "pure Fraction independent replay",
+      "status": "PASS",
+      "command": "python3 UD_TWO_TETRA_NATIVE_SOURCE_GATE_v0.1_independent.py"
+    },
+    {
+      "name": "scripts/validate.py",
+      "status": "NOT_RUN",
+      "reason": "GitHub-connector only; CI pending"
+    },
+    {
+      "name": "python -m unittest discover -s tests -v",
+      "status": "NOT_RUN",
+      "reason": "GitHub-connector only; CI pending"
+    }
+  ],
+  "finding": "Six fully admitted binary configurations with no single-flip update; conservative source-gated candidate Markov family nonunique; one structural face mode excited, phase-sensitive autocorrelation differs from controls",
+  "next_action": "Find source-selected local transition/gating law and non-constructor review; do not promote G05/G06 or physical correspondence",
+  "mathematical_profile": {
+    "coefficient_domain": "Q, Z4, algebraic spectra; positive stock integers",
+    "exactness_or_precision_plan": "symbolic exact, independent Fraction replay and numeric expm at stated tolerance",
+    "applicable_methods": [
+      "simplicial admissibility",
+      "seam reversal/gauge covariance",
+      "local conserved stock",
+      "finite Markov generators",
+      "spectral projections",
+      "null controls"
+    ],
+    "clock_metric_units_conventions": "dimensionless Markov parameter s; unit stock and Z4 phase are CANDIDATE, no SI physical map"
+  }
+}
