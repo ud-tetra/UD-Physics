@@ -13,8 +13,8 @@
     "ud-channel-metric-bridge": "577b2d5b4396066238b735b3e75b275d2349e427"
   },
   "checks": [],
-  "finding": "Both declared witnesses identifiable in exact data; joint error rule resolves tested cancellation but pure J sensitivity remains open.",
-  "next_action": "Search bounded preparations for improved guaranteed sensitivity in the pure J direction.",
+  "finding": "Pure half-amplitude J resolved conditionally by the radial probe; frozen bench unchanged.",
+  "next_action": "Combine radial and square work to certify a uniform two-witness sensitivity bound.",
   "mathematical_profile": {
     "coefficient_domain": "Q; identities extend to R",
     "exactness_or_precision_plan": "Fraction replay",
@@ -25,9 +25,9 @@
     ],
     "clock_metric_units_conventions": "Formal u, unit coefficient metrics, ascending simplex orientations; no SI calibration"
   },
-  "checkpoint_at": "2026-11-15T23:35:37.668276+00:00",
+  "checkpoint_at": "2026-11-15T23:49:19.158690+00:00",
   "checkpoint_source": {
-    "revision": "7f3b7a202625843ec55559acdced3c2455c35d45",
+    "revision": "bfcad4f883a3957613fafe1af108c54ef07cf50b",
     "dirty": true
   }
 }

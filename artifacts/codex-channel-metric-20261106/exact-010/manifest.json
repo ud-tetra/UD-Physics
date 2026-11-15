@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-010",
+  "created_at": "2026-11-15T23:49:19.103449+00:00",
+  "evidence": "EXACT",
+  "summary": "Pure-J radial search and certified error margin",
+  "command": "python3 experiments/ud-channel-metric-bridge/radial_probe_replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "bfcad4f883a3957613fafe1af108c54ef07cf50b",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "radial_probe_replay.py",
+      "path": "inputs/001-radial_probe_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/radial_probe_replay.py",
+      "sha256": "d3d33b5d17e817927b6be840c384e36738c0e73421ce7d76e6a3734966c8f1a3",
+      "size_bytes": 1631
+    }
+  ],
+  "files": [
+    {
+      "path": "files/radial_probe_results.json",
+      "sha256": "5f7d240f7b8f9ffc9ee8c8a008734f588d630034f9f2375f92143616c65c9e2b",
+      "size_bytes": 311
+    }
+  ]
+}

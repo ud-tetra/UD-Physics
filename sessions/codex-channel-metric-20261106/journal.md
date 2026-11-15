@@ -177,3 +177,20 @@ Captured artifacts/codex-channel-metric-20261106/exact-009 (EXACT): Joint work r
 Checkpoint (handoff): Both declared witnesses identifiable in exact data; joint error rule resolves tested cancellation but pure J sensitivity remains open.
 
 Next: Search bounded preparations for improved guaranteed sensitivity in the pure J direction.
+
+## Radial pure-J probe
+
+Refreshed main 2ab32f5 and draft bfcad4f, held claim unchanged.
+No imported work bound. A 99-point rational radial search and local
+polynomial bounds certify the simpler 4/5 command ratio for pure
+half-amplitude J. Physical path certificates remain open.
+
+## 2026-11-15T23:49:19.103762+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-010 (EXACT): Pure-J radial search and certified error margin
+
+## 2026-11-15T23:49:19.168660+00:00
+
+Checkpoint (handoff): Pure half-amplitude J resolved conditionally by the radial probe; frozen bench unchanged.
+
+Next: Combine radial and square work to certify a uniform two-witness sensitivity bound.
