@@ -110,3 +110,6 @@ declared departure amplitudes and gives the strict shared-error test.
 
 The [radial pure-J probe](RADIAL_J_PROBE_v0.1.md) certifies a two-amplitude
 test for the remaining benchmark under prospective path-level bounds.
+
+[Square and radial mixture coverage](SQUARE_RADIAL_MIXTURES_v0.1.md)
+gives the shared-error criterion and a uniform sufficient amplitude.

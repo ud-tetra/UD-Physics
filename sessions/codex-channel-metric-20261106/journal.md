@@ -194,3 +194,20 @@ Captured artifacts/codex-channel-metric-20261106/exact-010 (EXACT): Pure-J radia
 Checkpoint (handoff): Pure half-amplitude J resolved conditionally by the radial probe; frozen bench unchanged.
 
 Next: Combine radial and square work to certify a uniform two-witness sensitivity bound.
+
+## Square/radial mixture certification
+
+Resumed 14ca4c6 under the held claim. Three-strip joint criterion and
+rational vertex enumeration bound the remaining overlap region.
+Both pure half-amplitude witnesses are covered; mixed half-amplitude
+coverage fails under the enclosing boxes. No empirical claim.
+
+## 2026-11-15T23:56:40.333375+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-011 (EXACT): Square-radial joint mixture coverage
+
+## 2026-11-15T23:56:40.405194+00:00
+
+Checkpoint (handoff): Uniform sufficient sup-norm amplitude 723/1000; half-amplitude counterexample retained.
+
+Next: Test whether adding the existing y receipt and old residual closes the mixed half-amplitude gap.
