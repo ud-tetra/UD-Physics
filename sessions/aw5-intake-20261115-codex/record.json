@@ -29,10 +29,14 @@
     {
       "command": "python3 -m unittest discover -s tests -v",
       "result": "PASS: 16 tests"
+    },
+    {
+      "command": "python3 candidates/aw5-hollow-star-intake/residue.py",
+      "result": "PASS exact controls"
     }
   ],
-  "finding": "Hollow H2 is one-dimensional; normalized harmonic mode has exterior-face squared weight 1/4.",
-  "next_action": "Test zero-frequency face-readout residue against filled and orthogonal-sensor controls.",
+  "finding": "Exact conditional hollow matched exterior residue 1/4; filled, orthogonal and positively exterior-damped controls have zero pole residue.",
+  "next_action": "Weak-damping pole migration and finite observation-time contrast",
   "mathematical_profile": {
     "coefficient_domain": "Q for exact incidence arithmetic, R for dynamics",
     "exactness_or_precision_plan": "Exact rank, projection and spectrum",

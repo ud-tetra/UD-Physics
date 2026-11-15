@@ -23,9 +23,10 @@
     "User-supplied offline LLM report; citation keys unresolved"
   ],
   "baseline": "Filled AW5 under matching model and readout",
-  "result": "Hollow H2 is one-dimensional; normalized harmonic mode has exterior-face squared weight 1/4.",
-  "next_discriminant": "Test zero-frequency face-readout residue against filled and orthogonal-sensor controls.",
+  "result": "Exact conditional hollow matched exterior residue 1/4; filled, orthogonal and positively exterior-damped controls have zero pole residue.",
+  "next_discriminant": "Weak-damping pole migration and finite observation-time contrast",
   "mathematical_receipts": [
-    "candidates/aw5-hollow-star-intake/mathematical_receipt.json"
+    "candidates/aw5-hollow-star-intake/mathematical_receipt.json",
+    "candidates/aw5-hollow-star-intake/zero_frequency_receipt.json"
   ]
 }
