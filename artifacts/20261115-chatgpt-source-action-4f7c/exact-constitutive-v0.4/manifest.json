@@ -1,0 +1,100 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261115-chatgpt-source-action-4f7c",
+  "run_id": "exact-constitutive-v0.4",
+  "created_at": "2026-11-15",
+  "evidence": "EXACT_CONDITIONAL",
+  "summary": "Exact 672-state and independent four-phase variational source selection no-go",
+  "command": "python3 verify.py && python3 replay_independent.py",
+  "command_execution": "EXECUTED_LOCALLY_2026-11-15",
+  "source": {
+    "revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "id": "input1",
+      "path": "inputs/PREDECESSOR_v0.3_REPORT.md",
+      "original_basename": "PREDECESSOR_v0.3_REPORT.md",
+      "sha256": "8db234fe8722da13087fd4a3d768d90825a7275adf41f4134e40a0501b867b1c",
+      "size_bytes": 11792
+    },
+    {
+      "id": "input2",
+      "path": "inputs/master_action.md",
+      "original_basename": "master_action.md",
+      "sha256": "f7e138154d24446b653f10069c82717ffeba93d5c1856ca56efca85f61af0ee7",
+      "size_bytes": 2104
+    },
+    {
+      "id": "input3",
+      "path": "inputs/packet_modulation_layer.md",
+      "original_basename": "packet_modulation_layer.md",
+      "sha256": "8e4b23e43ca4b4a0e44eb39d39a4b807ac4674ad1ac14d69eec1f27bbba6fc6d",
+      "size_bytes": 1709
+    },
+    {
+      "id": "input4",
+      "path": "inputs/seam_phase_transport.md",
+      "original_basename": "seam_phase_transport.md",
+      "sha256": "1cc5a0450648fa59b55dc20e1eb79f4112f552aa9d1a1e710abd00c5ac958235",
+      "size_bytes": 1737
+    },
+    {
+      "id": "input5",
+      "path": "inputs/triangular_transport_symbol_alphabet.md",
+      "original_basename": "triangular_transport_symbol_alphabet.md",
+      "sha256": "b61c75fc41d4ca702af2f7324a75016de15be17cc3c79a1e40c0cd9db781e033",
+      "size_bytes": 1806
+    }
+  ],
+  "files": [
+    {
+      "path": "files/MANIFEST.json",
+      "sha256": "d955dd0f59e0e4214f5aa5682c168e5d924bd9aa0293a90018e7a61e10967c6f",
+      "size_bytes": 2368
+    },
+    {
+      "path": "files/RECEIPT.json",
+      "sha256": "1c1387ee6d57d00dc794278dac075e54d05adf1990a15d4d851514eafed45829",
+      "size_bytes": 4065
+    },
+    {
+      "path": "files/REPORT.md",
+      "sha256": "4f40cacd8726fa132e122f0d9f0dc6eefa7894d47a97d637ffaf58c5383e175f",
+      "size_bytes": 12638
+    },
+    {
+      "path": "files/replay.log",
+      "sha256": "4d9d968cce53efb9afd0499e3fde30f605891904797405cd4c1ca42d805f90de",
+      "size_bytes": 570
+    },
+    {
+      "path": "files/replay_independent.py",
+      "sha256": "ec640f3ece29cff185048abef698428789d6160a387231084249691cc5123241",
+      "size_bytes": 2172
+    },
+    {
+      "path": "files/replay_results.json",
+      "sha256": "041255593748b86baf6432436ff52c25552ce9cfad9f80dd08dcd14ec41b77bf",
+      "size_bytes": 536
+    },
+    {
+      "path": "files/results.json",
+      "sha256": "c3b517172fe2289c4d66ed6fdbbf869bbc45113b6bf14e167b834554216145fd",
+      "size_bytes": 2647
+    },
+    {
+      "path": "files/run.log",
+      "sha256": "d142f3c754271eb6bf6d36426a1e5d8a6297f6f5004b7efb5fa2d7a73c18af08",
+      "size_bytes": 620
+    },
+    {
+      "path": "files/verify.py",
+      "sha256": "b44f03101ec285728df762405d0d87a158c761813b304ef9d65bc238325edcb0",
+      "size_bytes": 7387
+    }
+  ],
+  "physical_promotion": 0
+}

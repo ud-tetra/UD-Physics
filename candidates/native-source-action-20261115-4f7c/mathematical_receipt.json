@@ -1,0 +1,71 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD_SOURCE_ACTION_NO_GO_20261115",
+  "session_id": "20261115-chatgpt-source-action-4f7c",
+  "candidate_id": "native-source-action-20261115-4f7c",
+  "question": "Is native finite transition kinetic law unique under action/entropy?",
+  "evidence_labels": [
+    "DERIVED_CONDITIONAL",
+    "EXACT_CONDITIONAL",
+    "NO-GO_SCOPED"
+  ],
+  "objects": [
+    {
+      "symbol": "c",
+      "object_type": "symmetric conductance on admitted state edges",
+      "domain": "E(S)",
+      "codomain": "Q>=0",
+      "units": "inverse dimensionless clock"
+    },
+    {
+      "symbol": "Q",
+      "object_type": "reversible Markov generator",
+      "domain": "Q^672",
+      "codomain": "Q^672",
+      "units": "inverse dimensionless clock"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "march",
+      "url_or_repo_path": "March packet_modulation_layer.md",
+      "version_or_commit": "recovered 2026-03",
+      "section_or_object_id": "§3",
+      "source_status": "stylized ansatz"
+    }
+  ],
+  "assumptions": [
+    "β=ln4, demonstration-only",
+    "p=(1,1/2,0,1/2) candidate",
+    "closed conserved stock M2"
+  ],
+  "calculation_steps": [
+    "reversible conductance theorem",
+    "derive entropy/Onsager action",
+    "compare A/B under fixed traffic",
+    "check phase-blind and donor nulls"
+  ],
+  "result": {
+    "exact_expression": "R''''_B(0)-R''''_A(0)=729/400",
+    "scope": "672-state conditional finite source generator"
+  },
+  "verification": [
+    {
+      "method": "Fraction exhaustive and independent four-phase",
+      "actual_result": "PASS",
+      "review_relationship": "constructor; nonconstructor NOT_RUN"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "first three derivatives do not distinguish A and B"
+  ],
+  "limitations": [
+    "source mobility unselected",
+    "physical time uncalibrated",
+    "G05/G06 unchanged"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/20261115-chatgpt-source-action-4f7c/exact-constitutive-v0.4/manifest.json"
+  ],
+  "next_discriminant": "native conductance law"
+}

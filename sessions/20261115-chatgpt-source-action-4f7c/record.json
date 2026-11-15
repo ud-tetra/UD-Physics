@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261115-chatgpt-source-action-4f7c",
+  "runtime": "GPT-6; GitHub connector and local Python",
+  "task": "native-source-action-20261115-4f7c",
+  "goal": "Exact finite source-action counterexample",
+  "created_at": "2026-11-15",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "status": "handoff_review",
+  "source_dirty_at_boot": false,
+  "claims": {
+    "claim_ref": "refs/heads/claims/native-source-action-20261115-4f7c",
+    "claim_commit": "4b38a476dc29e86010d7b253ed5220edad80ea9c",
+    "status": "held"
+  },
+  "checks": [
+    {
+      "name": "python3 verify.py",
+      "status": "PASS",
+      "scope": "local 672-state Fraction"
+    },
+    {
+      "name": "python3 replay_independent.py",
+      "status": "PASS",
+      "scope": "local independent four-state"
+    },
+    {
+      "name": "GitHub repository CI and unit suite",
+      "status": "NOT_RUN",
+      "scope": "connector-only"
+    },
+    {
+      "name": "non-constructor review",
+      "status": "NOT_RUN"
+    }
+  ],
+  "finding": "No unique source-selected conductance; same stationary phase law and total traffic, distinct fourth derivative by 729/400",
+  "next_action": "Source microscopic transition mobility and phase noise/readout; keep physical promotion zero"
+}

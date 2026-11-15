@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "native-source-action-20261115-4f7c",
+  "goal": "Attempt source-selected Onsager seam/stock transition generator and test unique selection",
+  "owned_paths": [
+    "tasks/native-source-action-20261115-4f7c.json",
+    "sessions/20261115-chatgpt-source-action-4f7c",
+    "candidates/native-source-action-20261115-4f7c",
+    "artifacts/20261115-chatgpt-source-action-4f7c"
+  ],
+  "dependencies": [
+    "native-admission-multiface-20261115-7d4c"
+  ],
+  "status": "handoff_review"
+}
