@@ -211,3 +211,19 @@ Captured artifacts/codex-channel-metric-20261106/exact-011 (EXACT): Square-radia
 Checkpoint (handoff): Uniform sufficient sup-norm amplitude 723/1000; half-amplitude counterexample retained.
 
 Next: Test whether adding the existing y receipt and old residual closes the mixed half-amplitude gap.
+
+## Three-residual coverage
+
+Added the existing y reading to the jointly bounded residuals. Ten
+facet normals certify strict separation of the former counterexample,
+with a smaller mixed half-amplitude overlap still present.
+
+## 2026-11-15T23:59:21.275593+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-012 (EXACT): Three-residual shared-receipt overlap
+
+## 2026-11-15T23:59:21.337679+00:00
+
+Checkpoint (handoff): Adding old y reduces the uniform sufficient amplitude to 633/1000; a half-amplitude ambiguity remains.
+
+Next: Test a gain from a joint Taylor bound on the mixed polynomial before proposing additional readings.

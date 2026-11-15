@@ -113,3 +113,6 @@ test for the remaining benchmark under prospective path-level bounds.
 
 [Square and radial mixture coverage](SQUARE_RADIAL_MIXTURES_v0.1.md)
 gives the shared-error criterion and a uniform sufficient amplitude.
+
+[Three-residual coverage](THREE_PROBE_COVERAGE_v0.1.md) adds the old y
+reading, tightening the uniform bound while retaining a half-amplitude gap.
