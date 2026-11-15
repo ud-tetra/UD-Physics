@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "native-source-action-20261115-4f7c",
+  "session": "20261115-chatgpt-source-action-4f7c",
+  "status": "held",
+  "created_at": "2026-11-15",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "owned_paths": [
+    "tasks/native-source-action-20261115-4f7c.json",
+    "sessions/20261115-chatgpt-source-action-4f7c",
+    "candidates/native-source-action-20261115-4f7c",
+    "artifacts/20261115-chatgpt-source-action-4f7c"
+  ]
+}
