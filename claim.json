@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "aw5-hollow-star-intake",
+  "session": "aw5-intake-20261115-codex",
+  "status": "held",
+  "created_at": "2026-11-15T23:39:13.433Z",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "owned_paths": [
+    "tasks/aw5-hollow-star-intake.json",
+    "sessions/aw5-intake-20261115-codex/",
+    "candidates/aw5-hollow-star-intake/"
+  ]
+}
