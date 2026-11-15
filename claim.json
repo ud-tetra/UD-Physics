@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "native-constitutive-contrast-20261115-b7cf",
+  "session": "20261115-chatgpt-constitutive-b7cf",
+  "status": "held",
+  "created_at": "2026-11-15T23:05:00Z",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "owned_paths": [
+    "tasks/native-constitutive-contrast-20261115-b7cf.json",
+    "sessions/20261115-chatgpt-constitutive-b7cf/",
+    "candidates/constitutive-selection-b7cf/",
+    "artifacts/20261115-chatgpt-constitutive-b7cf/"
+  ]
+}
