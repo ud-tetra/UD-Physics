@@ -1,0 +1,153 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "MARCH_FACE_MODE_COV_20261115",
+  "session_id": "20261115-chatgpt-march-native-mode-2ce90b",
+  "candidate_id": "march-native-face-mode-20261115-2ce90b",
+  "question": "Which face modes and fluctuations follow exactly from March trion admissibility on a finite K?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO_SCOPED"
+  ],
+  "objects": [
+    {
+      "object_id": "face_gate",
+      "symbol": "A_f",
+      "object_type": "binary face admissibility",
+      "definition": "1-δ_bi,bj δ_bj,bk",
+      "domain": "(Z2)^V",
+      "codomain": "{0,1}",
+      "coefficient_domain": "Q",
+      "units": "dimensionless",
+      "basis_orientation": "unsigned unordered triangles",
+      "metric_measure": "iid uniform raw vertex assignments",
+      "origin": "imported March source",
+      "exact_expression": "3/4-(zij+zjk+zki)/4",
+      "source_refs": [
+        "March triangular_transport_symbol_alphabet.md §3"
+      ],
+      "normalization": "A_f centered by 3/4"
+    },
+    {
+      "object_id": "C",
+      "symbol": "C",
+      "object_type": "face covariance",
+      "definition": "E[(A-3/4)(A-3/4)^T]",
+      "domain": "Q^F",
+      "codomain": "Sym_F(Q)",
+      "coefficient_domain": "Q",
+      "units": "dimensionless",
+      "basis_orientation": "unsigned face-edge incidence",
+      "metric_measure": "raw-state uniform expectation",
+      "origin": "derived",
+      "exact_expression": "HHᵀ/16",
+      "source_refs": [],
+      "normalization": "edge Walsh orthogonality"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "MARCH_TRI",
+      "url_or_repo_path": "March triangular_transport_symbol_alphabet.md",
+      "version_or_commit": "recovered March 2026 snapshot, content date not independently authenticated",
+      "section_or_object_id": "§3",
+      "source_status": "historical source stratum"
+    },
+    {
+      "source_id": "UD_CAPTURE",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/commit/dfa3d08de54205ad13bc29b8aa100a75024d7b46",
+      "version_or_commit": "dfa3d08de54205ad13bc29b8aa100a75024d7b46",
+      "section_or_object_id": "native mode gate v0.1",
+      "source_status": "development archive"
+    }
+  ],
+  "assumptions": [
+    "iid uniform raw bits",
+    "distinct unordered edges",
+    "one-vertex uniform flip added only for dynamical null"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact Walsh expansion",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive C"
+    },
+    {
+      "technique": "finite spectral/transition test",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive K4 modes and q_N"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4 faces × 6 edges; 2^4 raw binary states",
+    "reduced_expression": "C=HHᵀ/16",
+    "factor_origins": [
+      "1/4 gate Walsh factor squared"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "discrete event count only",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "one vertex bit flip per tick (ASSUMED)",
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "(Z2)^N",
+    "generator_or_update": "single uniformly selected vertex flips",
+    "initial_boundary_conditions": "raw uniform ensemble",
+    "conservation_and_sources": "no native source/energy stated",
+    "projection_and_kernel": "A_f gate, zero variance on fully admitted K4",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "EXPOSED_HISTORICAL_CMB_VALUES_NOT_USED_IN_FACE_COV",
+    "known_targets": [
+      "n_s≈0.965",
+      "historical running −0.008"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "baseline": "raw uniform bit ensemble and isolated-vertex control"
+  },
+  "calculation_steps": [
+    "Walsh-expand face gate",
+    "use edge character orthogonality",
+    "diagonalize HHᵀ for K4",
+    "compute conditional one-bit Markov moment",
+    "check admitted-only and isolated-vertex counterexamples"
+  ],
+  "result": {
+    "exact_expression": "C=HHᵀ/16; q_N=1−4/N",
+    "scope": "finite raw-state combinatorics and explicit null-update only",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "exhaustive independent Fraction replay",
+      "command_or_proof_path": "artifacts/20261115-chatgpt-march-native-mode-2ce90b/native-face-mode-replay-v0.1/files/UD_NATIVE_FACE_MODE_INDEPENDENT_REPLAY_v0.1.py",
+      "source_revision": "local user artifact v0.1",
+      "actual_result": "PASS local exit 0",
+      "review_relationship": "constructor-context separate implementation, not non-constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "fully admitted K4 face-gate readout has no fluctuation",
+    "isolated vertex alters q_N but not C"
+  ],
+  "limitations": [
+    "unsourced event generator",
+    "no physical k-map",
+    "no G05/G06 promotion",
+    "code/receipt v0.1 ZIP other originals not fully transferred"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261115-chatgpt-march-native-mode-2ce90b/native-face-mode-replay-v0.1/manifest.json"
+  ],
+  "next_discriminant": "native source-selected seam/phase/burden/closure generator"
+}

@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "march-native-mode-publication-20261115-2ce90b",
+  "goal": "Publish March provenance/Gap 2 no-go and conditional native face-mode development with explicit mainline firewall; do not promote physical or registry claims",
+  "owned_paths": [
+    "tasks/march-native-mode-publication-20261115-2ce90b.json",
+    "sessions/20261115-chatgpt-march-native-mode-2ce90b",
+    "candidates/march-native-face-mode-20261115-2ce90b",
+    "artifacts/20261115-chatgpt-march-native-mode-2ce90b"
+  ],
+  "dependencies": [
+    "g05-g06-joint-proof-20261105"
+  ],
+  "status": "review_handoff"
+}

@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "march-native-face-mode-20261115-2ce90b",
+  "session_id": "20261115-chatgpt-march-native-mode-2ce90b",
+  "question": "Can native finite trion admissibility select mode covariance and a mode-specific production generator without target fitting?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT_CONDITIONAL",
+    "NO-GO_SCOPED",
+    "OPEN_GATED"
+  ],
+  "assumptions": [
+    "raw vertex bits iid Bernoulli(1/2) for covariance null",
+    "selected vertex uniformly random for one-bit event model",
+    "unsigned face-edge incidence, unit combinatorial metric",
+    "no physical k/time/energy map"
+  ],
+  "physical_mapping": "OPEN; no primordial spectrum/EM/GR identification",
+  "target_exposure": "historical CMB targets were already exposed; none fitted in finite covariance derivation",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD/commit/dfa3d08de54205ad13bc29b8aa100a75024d7b46",
+    "March triangular_transport_symbol_alphabet.md §3",
+    "March Gap2_REVISED_Omega_Convergence.md §§2,5,6"
+  ],
+  "baseline": "single filled K4, adjacent face-glued tetrahedra, isolated-vertex null",
+  "result": "C=HHᵀ/16; K4 spec 3/8, 1/8×3; q_N=1−4/N assumed event generator; no mode-specific normalized response; admissible-face fluctuations vanish",
+  "next_discriminant": "Derive source-selected admissible seam/burden/closure update and mode-to-physical-readout contract",
+  "mathematical_receipts": [
+    "candidates/march-native-face-mode-20261115-2ce90b/mathematical_receipt.json"
+  ]
+}
