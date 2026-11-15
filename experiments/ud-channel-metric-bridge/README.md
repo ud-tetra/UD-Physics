@@ -100,3 +100,7 @@ reconstruction, uncertainty certificate, and prospective fourth check.
 
 The [fourth-residual envelope](FOURTH_RESIDUAL_v0.1.md) gives the sharp
 box bound and the prospective budget needed to detect a chosen departure.
+
+The [symmetric probe](SYMMETRIC_PROBE_v0.1.md) guarantees detection
+for the prior polynomial witness under the transferred error assumptions.
+A cancellation witness limits that gain to the declared alternative.

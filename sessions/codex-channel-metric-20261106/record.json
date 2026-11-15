@@ -13,8 +13,8 @@
     "ud-channel-metric-bridge": "577b2d5b4396066238b735b3e75b275d2349e427"
   },
   "checks": [],
-  "finding": "Sharp residual bound derived; present budget does not guarantee half-W* departure detection.",
-  "next_action": "Derive a more efficient symmetric probe design or a certified joint error bound.",
+  "finding": "Square probe resolves the specified half-reference polynomial departure under conditional budgets; no general dominance.",
+  "next_action": "Build a two-residual rank test for declared departures before any protocol extension.",
   "mathematical_profile": {
     "coefficient_domain": "Q; identities extend to R",
     "exactness_or_precision_plan": "Fraction replay",
@@ -25,9 +25,9 @@
     ],
     "clock_metric_units_conventions": "Formal u, unit coefficient metrics, ascending simplex orientations; no SI calibration"
   },
-  "checkpoint_at": "2026-11-10T18:44:57.505741+00:00",
+  "checkpoint_at": "2026-11-15T23:33:27.887047+00:00",
   "checkpoint_source": {
-    "revision": "d0ed5860892fb17b48d74b48b67b56120608be82",
+    "revision": "32d6761596121fc49f84c2c6a596e6aea222861e",
     "dirty": true
   }
 }

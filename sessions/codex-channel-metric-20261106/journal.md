@@ -142,3 +142,21 @@ Captured artifacts/codex-channel-metric-20261106/exact-007 (EXACT): Fourth-work 
 Checkpoint (handoff): Sharp residual bound derived; present budget does not guarantee half-W* departure detection.
 
 Next: Derive a more efficient symmetric probe design or a certified joint error bound.
+
+## Symmetric probe (2026-11-15)
+
+Restored isolated draft head 32d6761 from GitHub; claim 577b2d5 held.
+Square work probe at the unit terminal corners has tenfold response
+to the prior polynomial witness. Null and alternative budgets verified
+exactly. A separate polynomial defeats general dominance. No empirical
+target, no change to frozen bench, and no hardware qualification.
+
+## 2026-11-15T23:33:27.834317+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-008 (EXACT): Symmetric work probe, alternate bound and cancellation witness
+
+## 2026-11-15T23:33:27.901449+00:00
+
+Checkpoint (handoff): Square probe resolves the specified half-reference polynomial departure under conditional budgets; no general dominance.
+
+Next: Build a two-residual rank test for declared departures before any protocol extension.
