@@ -104,3 +104,6 @@ box bound and the prospective budget needed to detect a chosen departure.
 The [symmetric probe](SYMMETRIC_PROBE_v0.1.md) guarantees detection
 for the prior polynomial witness under the transferred error assumptions.
 A cancellation witness limits that gain to the declared alternative.
+
+The [joint work probe](JOINT_WORK_PROBE_v0.1.md) identifies the two
+declared departure amplitudes and gives the strict shared-error test.

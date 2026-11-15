@@ -160,3 +160,20 @@ Captured artifacts/codex-channel-metric-20261106/exact-008 (EXACT): Symmetric wo
 Checkpoint (handoff): Square probe resolves the specified half-reference polynomial departure under conditional budgets; no general dominance.
 
 Next: Build a two-residual rank test for declared departures before any protocol extension.
+
+## Joint probe
+
+Resumed 7f3b7a2 with held claim. Derived full-rank witness map, exact
+shared-receipt polygon, and alternate-side allowance. Half-amplitude
+P and the cancellation mixture are resolved; pure half-amplitude J
+is not guaranteed. No scored bench amendment or hardware qualification.
+
+## 2026-11-15T23:35:37.596285+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-009 (EXACT): Joint work residual rank and shared-error polygon
+
+## 2026-11-15T23:35:37.678761+00:00
+
+Checkpoint (handoff): Both declared witnesses identifiable in exact data; joint error rule resolves tested cancellation but pure J sensitivity remains open.
+
+Next: Search bounded preparations for improved guaranteed sensitivity in the pure J direction.

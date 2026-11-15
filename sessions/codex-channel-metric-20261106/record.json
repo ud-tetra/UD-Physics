@@ -13,8 +13,8 @@
     "ud-channel-metric-bridge": "577b2d5b4396066238b735b3e75b275d2349e427"
   },
   "checks": [],
-  "finding": "Square probe resolves the specified half-reference polynomial departure under conditional budgets; no general dominance.",
-  "next_action": "Build a two-residual rank test for declared departures before any protocol extension.",
+  "finding": "Both declared witnesses identifiable in exact data; joint error rule resolves tested cancellation but pure J sensitivity remains open.",
+  "next_action": "Search bounded preparations for improved guaranteed sensitivity in the pure J direction.",
   "mathematical_profile": {
     "coefficient_domain": "Q; identities extend to R",
     "exactness_or_precision_plan": "Fraction replay",
@@ -25,9 +25,9 @@
     ],
     "clock_metric_units_conventions": "Formal u, unit coefficient metrics, ascending simplex orientations; no SI calibration"
   },
-  "checkpoint_at": "2026-11-15T23:33:27.887047+00:00",
+  "checkpoint_at": "2026-11-15T23:35:37.668276+00:00",
   "checkpoint_source": {
-    "revision": "32d6761596121fc49f84c2c6a596e6aea222861e",
+    "revision": "7f3b7a202625843ec55559acdced3c2455c35d45",
     "dirty": true
   }
 }
