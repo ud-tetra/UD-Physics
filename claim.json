@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "aw5-exterior-digitization-fixture",
+  "session": "aw5-digitization-codex-20261116",
+  "status": "held",
+  "created_at": "2026-11-16T23:07:25.817Z",
+  "base_revision": "0f6a5c25d2008591fff7c705cd429f6f05557c6c",
+  "owned_paths": [
+    "tasks/aw5-exterior-digitization-fixture.json",
+    "sessions/aw5-digitization-codex-20261116/",
+    "candidates/aw5-exterior-digitization-fixture/",
+    "artifacts/aw5-digitization-codex-20261116/"
+  ]
+}
