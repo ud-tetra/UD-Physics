@@ -23,8 +23,8 @@
     "User-supplied offline LLM report; citation keys unresolved"
   ],
   "baseline": "Filled AW5 under matching model and readout",
-  "result": "Two-state circuit and LTI transition-to-generator certificate specified. Three synthetic outcomes verified. Bench evidence OPEN.",
-  "next_discriminant": "Bench the signed pair and collect timing loopback, basis shots, and held-out preparations.",
+  "result": "Unit-cell bench intake v1 scores loopback, signed basis injections and held-out comparisons. Five synthetic cases and CLI receipt verified. Bench evidence OPEN.",
+  "next_discriminant": "Collect signed pair bench data and audit timestamp, endpoint and scope certificates.",
   "mathematical_receipts": [
     "candidates/aw5-hollow-star-intake/mathematical_receipt.json",
     "candidates/aw5-hollow-star-intake/zero_frequency_receipt.json",

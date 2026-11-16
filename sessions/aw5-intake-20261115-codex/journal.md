@@ -90,3 +90,16 @@ Mainline merge verified at c48ffb8b2f9c82b33bcd25fc24755d16c0053424. WBS v2.7 en
 ## Next step
 
 1. **Priority 92/100** — Bench the signed pair with the proposed timing loopback and held-out preparations, then evaluate the uncertainty certificate before scaling.
+
+## AW5 bench pair intake and WBS update
+
+Prepared the v2.7 WBS manifest from the supplied master text with the verified UD #516 merge c48ffb8b2f9c82b33bcd25fc24755d16c0053424 and the pending Discovery calibration gate. The supplied offline path was unavailable in this runtime.
+
+- **Mission** — Prepare the formal intake for timing-loopback and signed basis-injection records.
+- **Done** — Implemented a machine-readable gate receipt and replayed nominal, timing, held-out, missing-evidence and rank-deficient fixtures.
+- **Finding** — The prototype distinguishes independently scoped gate shortfalls from unscorable input.
+- **Bridge value** — Bench packets can now be reduced consistently once the underlying measurements and certificates are supplied.
+
+## Next step
+
+1. **Priority 92/100** — Acquire the timing-loopback and paired basis shots with held-out mixed inputs. Audit their certificate sources, then run the unchanged unit-cell intake.
