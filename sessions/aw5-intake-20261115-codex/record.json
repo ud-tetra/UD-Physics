@@ -61,10 +61,14 @@
     {
       "command": "python3 candidates/aw5-hollow-star-intake/check_platform_budget.py",
       "result": "PASS exact degree and bench-budget replay"
+    },
+    {
+      "command": "python3 candidates/aw5-hollow-star-intake/check_signed_pair.py",
+      "result": "PASS three synthetic certificate outcomes"
     }
   ],
-  "finding": "Active analog is the first AW5 prototype candidate. Desk budgets derived; measured hardware gates OPEN.",
-  "next_action": "Design the two-state signed integrator pair and an uncertainty-bounded basis-injection calibration.",
+  "finding": "Two-state circuit and LTI transition-to-generator certificate specified. Three synthetic outcomes verified. Bench evidence OPEN.",
+  "next_action": "Bench the signed pair and collect timing loopback, basis shots, and held-out preparations.",
   "mathematical_profile": {
     "coefficient_domain": "Q for exact incidence arithmetic, R for dynamics",
     "exactness_or_precision_plan": "Exact rank, projection and spectrum",

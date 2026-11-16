@@ -23,12 +23,13 @@
     "User-supplied offline LLM report; citation keys unresolved"
   ],
   "baseline": "Filled AW5 under matching model and readout",
-  "result": "Active analog is the first AW5 prototype candidate. Desk budgets derived; measured hardware gates OPEN.",
-  "next_discriminant": "Design the two-state signed integrator pair and an uncertainty-bounded basis-injection calibration.",
+  "result": "Two-state circuit and LTI transition-to-generator certificate specified. Three synthetic outcomes verified. Bench evidence OPEN.",
+  "next_discriminant": "Bench the signed pair and collect timing loopback, basis shots, and held-out preparations.",
   "mathematical_receipts": [
     "candidates/aw5-hollow-star-intake/mathematical_receipt.json",
     "candidates/aw5-hollow-star-intake/zero_frequency_receipt.json",
     "candidates/aw5-hollow-star-intake/weak_damping_receipt.json",
-    "candidates/aw5-hollow-star-intake/sampled_acquisition_receipt.json"
+    "candidates/aw5-hollow-star-intake/sampled_acquisition_receipt.json",
+    "candidates/aw5-hollow-star-intake/signed_pair_receipt.json"
   ]
 }

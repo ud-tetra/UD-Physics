@@ -77,3 +77,16 @@ UD mathematical capture and scorer provenance integrated at c48ffb8b2f9c82b33bcd
 ## Next step
 
 1. **Priority 90/100** — Specify the two-state signed pair, then test whether a basis-injection calibration with explicit uncertainty can establish the generator and timing budgets before full-carrier replication.
+
+## AW5 signed pair and WBS receipt
+
+Mainline merge verified at c48ffb8b2f9c82b33bcd25fc24755d16c0053424. WBS v2.7 entry pending a path to the existing master manifest.
+
+- **Mission** — Specify the signed pair and an uncertainty-aware calibration before AW5 replication.
+- **Done** — Derived the circuit polarity, basis-injection identification and explicit operator certificate gates.
+- **Finding** — Coefficient certification requires a tighter endpoint budget than the scorer's timing tolerance alone supplies.
+- **Bridge value** — An auditable calibration candidate is available. Hardware evidence and independent review remain open.
+
+## Next step
+
+1. **Priority 92/100** — Bench the signed pair with the proposed timing loopback and held-out preparations, then evaluate the uncertainty certificate before scaling.
