@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "aw5-gap4-real-observable",
+  "session": "aw5-real-codex-20261116",
+  "status": "held",
+  "created_at": "2026-11-16T22:26:53.411Z",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "owned_paths": [
+    "tasks/aw5-gap4-real-observable.json",
+    "sessions/aw5-real-codex-20261116/",
+    "candidates/aw5-gap4-real-observable/",
+    "artifacts/aw5-real-codex-20261116/"
+  ]
+}
