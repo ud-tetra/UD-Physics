@@ -89,6 +89,10 @@
     {
       "command": "python3 refined_trace_freeze.py and unchanged intake_score.py (one-leaf replay)",
       "result": "PASS pre-reveal digest verification on published bytes and synthetic adjudication"
+    },
+    {
+      "command": "bash -n candidates/aw5-hollow-star-intake/aw5_archive_preflight.sh and synthetic batch preflight",
+      "result": "PASS byte-identical archival copy, three raw formats and expected gate failures"
     }
   ],
   "finding": "Unit-cell bench intake v1 scores loopback, signed basis injections and held-out comparisons. Five synthetic cases and CLI receipt verified. Bench evidence OPEN.",

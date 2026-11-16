@@ -156,3 +156,7 @@ Next: Derive a metric-aware refinement and readout-transfer rule, or exhibit an 
 ## Next step
 
 1. **Priority 92/100** — Bind the declared carrier and probe map to independently calibrated hardware records, beginning with the signed-pair bench packet and timing loopback.
+
+## AW5 raw archive preflight
+
+Archived the verified shell script and linked it from the bench intake. The raw archive and independently authenticated digest remain pending. Physical Promotion = 0.

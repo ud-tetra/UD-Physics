@@ -18,6 +18,16 @@ PASS_CONDITIONAL means the packet's supplied bounds meet the unit-cell criteria.
 
 See [refined-carrier intake scope](REFINED_INTAKE_SCOPE.md) for the audit of parasitic or intentional subdivisions.
 
+## Raw archive preflight
+
+Verify the custodian's signature, timestamp, and role-key chronology through the custody record. Then run the preflight against the authenticated SHA-256 manifest and the raw delivery directory. The expected manifest uses the standard sha256sum line format with paths relative to the delivery directory.
+
+```bash
+./aw5_archive_preflight.sh /path/to/expected.sha256 /path/to/raw > preflight.json
+```
+
+The script requires Bash and Python 3.11 or later. It checks every listed raw file before inspecting any formats and emits a JSON result. A missing file or SHA-256 mismatch skips format inspection for the entire batch. After all digests match, format inspection checks delimited-text structure for CSV and container metadata for ZIP and gzip tar. It performs no extraction, waveform conversion, or scoring. Preserve the JSON result with the authenticated manifest and the original bytes. The receipt itself is ordinary JSON. Instrument certificates and trace-specific validation are separate inputs to measured intake.
+
 ## Run footer
 
 - **Mission** — Prepare the formal intake for timing-loopback and signed basis-injection records.
