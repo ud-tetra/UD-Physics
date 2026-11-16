@@ -37,10 +37,22 @@
     {
       "command": "python3 candidates/aw5-hollow-star-intake/check_weak_damping.py",
       "result": "PASS exact frequency floor and finite window"
+    },
+    {
+      "command": "python3 candidates/aw5-hollow-star-intake/check_acquisition.py",
+      "result": "PASS exact joint budget"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -q",
+      "result": "PASS 16 tests"
     }
   ],
-  "finding": "Matched hollow time-average exceeds both controls by at least 1/8 for T=32 and gamma at most 1/512.",
-  "next_action": "Derive discrete-sampling, noise and channel-mismatch contrast guarantees.",
+  "finding": "Under the stated sampling, mismatch and independent noise budgets, both observed contrasts are at least 3/64 with probability at least 1 - 2 exp(-16).",
+  "next_action": "Implement a target-blind synthetic intake scorer with timing, offset, noise and operator certificates.",
   "mathematical_profile": {
     "coefficient_domain": "Q for exact incidence arithmetic, R for dynamics",
     "exactness_or_precision_plan": "Exact rank, projection and spectrum",

@@ -23,11 +23,12 @@
     "User-supplied offline LLM report; citation keys unresolved"
   ],
   "baseline": "Filled AW5 under matching model and readout",
-  "result": "Matched hollow time-average exceeds both controls by at least 1/8 for T=32 and gamma at most 1/512.",
-  "next_discriminant": "Derive discrete-sampling, noise and channel-mismatch contrast guarantees.",
+  "result": "Under the stated sampling, mismatch and independent noise budgets, both observed contrasts are at least 3/64 with probability at least 1 - 2 exp(-16).",
+  "next_discriminant": "Implement a target-blind synthetic intake scorer with timing, offset, noise and operator certificates.",
   "mathematical_receipts": [
     "candidates/aw5-hollow-star-intake/mathematical_receipt.json",
     "candidates/aw5-hollow-star-intake/zero_frequency_receipt.json",
-    "candidates/aw5-hollow-star-intake/weak_damping_receipt.json"
+    "candidates/aw5-hollow-star-intake/weak_damping_receipt.json",
+    "candidates/aw5-hollow-star-intake/sampled_acquisition_receipt.json"
   ]
 }

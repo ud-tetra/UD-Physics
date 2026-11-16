@@ -31,3 +31,14 @@ Agile hypothesis, target exposure recorded, no physical promotion.
 ## Next step
 
 1. **Priority 90/100** — Derive a contrast guarantee with discrete sampling, independent readout noise, and bounded channel mismatch. This converts the continuous-time prediction into a testable acquisition specification.
+
+## AW5 sampled acquisition sprint
+
+- **Mission** — Convert the finite-window AW5 contrast into a sampled acquisition specification.
+- **Done** — Derived independent sampling, mismatch, and noise bounds and checked their joint rational budget.
+- **Finding** — The declared tolerances preserve at least 3/64 signed contrast against both controls with failure probability at most 2 exp(−16).
+- **Bridge value** — The specification defines which quantities an engineered realization must certify before comparing the three responses.
+
+## Next step
+
+1. **Priority 90/100** — Build a target-blind synthetic intake scorer with separate timing, offset, noise, and operator certificates. Replay passing, failing, and correlated-noise controls before admitting a measured dataset.
