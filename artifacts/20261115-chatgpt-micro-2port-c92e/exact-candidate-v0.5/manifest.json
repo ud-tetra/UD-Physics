@@ -45,14 +45,15 @@
     {
       "path": "files/REPORT.md",
       "sha256": "5d958f09f6723ef06c8b1b373ed035a2996cc4d6d757105c5d0092e83c2c491c",
-      "size_bytes": 12271
+      "size_bytes": 12298
     },
     {
       "path": "files/replay_portable.py",
       "sha256": "760f592e6c806cdfd3a0d3b498a9b83c655fb98766c565e55790f96b59779cfe",
-      "size_bytes": 2861
+      "size_bytes": 2918
     }
   ],
   "physical_promotion": 0,
-  "scope_notice": "Full verify.py and replay_sympy.py are in user's downloadable local ZIP, not included in this GitHub draft capture"
+  "scope_notice": "Full verify.py and replay_sympy.py are in user's downloadable local ZIP, not included in this GitHub draft capture",
+  "byte_count_erratum": "Initial manifest used JavaScript character length; corrected to original UTF-8 byte lengths, as verified with local wc -c and Git blob hash."
 }
