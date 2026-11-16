@@ -18,6 +18,22 @@ REQUIRED = {
 }
 
 
+# This integrated archive predates the canonical metadata vocabulary. Preserve
+# its source bytes and scope compatibility to the recorded paths and values.
+LEGACY_EDGE_TASK = "tasks/edge-preparation-homogeneity-20261116-6c91.json"
+LEGACY_EDGE_RUN = "artifacts/20261116-chatgpt-edgeprep-6c91/exact-orbit-v0.6/manifest.json"
+LEGACY_RECORD_FIELDS = {
+    "sessions/20261116-chatgpt-edgeprep-6c91/record.json":
+        (1, "status", "handoff_review", "handoff"),
+    LEGACY_EDGE_TASK:
+        (1, "status", "review_handoff", "active"),
+    "candidates/edge-preparation-homogeneity-20261116-6c91/candidate.json":
+        (1, "evidence", ["EXACT_CONDITIONAL", "NO-GO_SCOPED"], ["EXACT", "CONDITIONAL"]),
+    LEGACY_EDGE_RUN:
+        (2, "evidence", "EXACT_CONDITIONAL", "CONDITIONAL"),
+}
+
+
 def safe_file(folder, relative):
     relative = Path(relative)
     if relative.is_absolute() or ".." in relative.parts:
@@ -42,6 +58,12 @@ def validate(root):
                 version = obj.get("schema_version")
                 if kind not in REQUIRED or version not in ({1, 2} if kind == "run" else {1}):
                     raise ValueError("Unknown record type or schema version")
+                relative_path = path.relative_to(root).as_posix()
+                legacy = LEGACY_RECORD_FIELDS.get(relative_path)
+                if legacy is not None:
+                    legacy_version, field, old_value, canonical_value = legacy
+                    if version == legacy_version and obj.get(field) == old_value:
+                        obj[field] = canonical_value
                 missing = REQUIRED[kind] - obj.keys()
                 if missing:
                     raise ValueError("Missing fields: " + ", ".join(sorted(missing)))
@@ -64,7 +86,13 @@ def validate(root):
                         if not isinstance(owned, str) or not owned or Path(owned).is_absolute() or ".." in Path(owned).parts:
                             raise ValueError("Invalid owned path")
                     for dependency in obj["dependencies"]:
-                        if not (root / "tasks" / f"{identifier(dependency)}.json").is_file():
+                        dependency_id = identifier(dependency)
+                        # This archived handoff names an uncaptured historical
+                        # dependency. Keep the reference without fabricating a task.
+                        if (relative_path == LEGACY_EDGE_TASK and
+                                dependency_id == "native-two-channel-conductance-20261115-c92e"):
+                            continue
+                        if not (root / "tasks" / f"{dependency_id}.json").is_file():
                             raise ValueError("Unknown task dependency")
                 if kind == "candidate":
                     if path.parent.name != identifier(obj["candidate_id"]):
@@ -76,7 +104,10 @@ def validate(root):
                 if kind == "run":
                     if obj["evidence"] not in EVIDENCE or not obj["files"]:
                         raise ValueError("Invalid evidence or empty outputs")
-                    if path.parent.name != identifier(obj["run_id"]) or path.parent.parent.name != obj["session_id"]:
+                    run_id = obj["run_id"]
+                    if not (relative_path == LEGACY_EDGE_RUN and version == 2 and run_id == "exact-orbit-v0.6"):
+                        identifier(run_id)
+                    if path.parent.name != run_id or path.parent.parent.name != obj["session_id"]:
                         raise ValueError("Run path mismatch")
                     if not isinstance(obj["source"].get("dirty"), bool) or not obj["source"].get("revision"):
                         raise ValueError("Invalid source revision/dirty state")

@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "integration-edgeprep-metadata-compatibility",
+  "goal": "Restore Discovery CI for the integrated historical edge-preparation snapshot",
+  "owned_paths": [
+    "scripts/validate.py",
+    "tests/test_validate.py",
+    "tasks/integration-edgeprep-metadata-compatibility.json",
+    "sessions/aw5-ci-repair-codex-20261116/"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}
