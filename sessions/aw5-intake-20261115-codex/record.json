@@ -49,10 +49,14 @@
     {
       "command": "python3 -m unittest discover -s tests -q",
       "result": "PASS 16 tests"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 candidates/aw5-hollow-star-intake/replay_intake.py",
+      "result": "PASS 10 synthetic decision cases"
     }
   ],
-  "finding": "Under the stated sampling, mismatch and independent noise budgets, both observed contrasts are at least 3/64 with probability at least 1 - 2 exp(-16).",
-  "next_action": "Implement a target-blind synthetic intake scorer with timing, offset, noise and operator certificates.",
+  "finding": "AW5-v1 blind synthetic scorer replay passes 10 decision and acquisition cases.",
+  "next_action": "Replay model-generated signed impulse traces; specify independent calibration certificate provenance.",
   "mathematical_profile": {
     "coefficient_domain": "Q for exact incidence arithmetic, R for dynamics",
     "exactness_or_precision_plan": "Exact rank, projection and spectrum",

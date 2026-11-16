@@ -42,3 +42,14 @@ Agile hypothesis, target exposure recorded, no physical promotion.
 ## Next step
 
 1. **Priority 90/100** — Build a target-blind synthetic intake scorer with separate timing, offset, noise, and operator certificates. Replay passing, failing, and correlated-noise controls before admitting a measured dataset.
+
+## AW5 blind intake replay
+
+- **Mission** — Freeze and exercise blind intake before measured trace admission.
+- **Done** — Implemented exact rational scoring, commitment-checked role reveal, two-control adjudication, and synthetic gate replay.
+- **Finding** — Equality at 3/64 passes, a single shortfall fails, and correlation, certificate violations, altered scores, or an altered reveal are inadmissible.
+- **Bridge value** — The intake separates acquisition eligibility from observed agreement. Physical validation and independent review remain open.
+
+## Next step
+
+1. **Priority 90/100** — Replay model-generated signed impulse traces through the same frozen scorer, then specify independently auditable certificate provenance for timing, operators, and noise.
