@@ -103,3 +103,14 @@ Prepared the v2.7 WBS manifest from the supplied master text with the verified U
 ## Next step
 
 1. **Priority 92/100** — Acquire the timing-loopback and paired basis shots with held-out mixed inputs. Audit their certificate sources, then run the unchanged unit-cell intake.
+
+## AW5 heat trace and retriangulation
+
+- **Mission** — Test a topology-preserving control against the cavity heat-trace identity.
+- **Done** — Replayed signed incidence, local and exterior boundary preservation, exact face spectra and nullities.
+- **Finding** — Hub removal changes the long-time face trace by one. The filled bistellar move changes the finite-time trace and preserves the limiting count.
+- **Bridge value** — The controls isolate harmonic count from triangulation-dependent spectral response. The bench gate remains open.
+
+## Next step
+
+1. **Priority 90/100** — Test a boundary-fixed refinement of the hollow star and quantify how the exterior readout residue changes at fixed b₂.

@@ -30,6 +30,14 @@
     "candidates/aw5-hollow-star-intake/zero_frequency_receipt.json",
     "candidates/aw5-hollow-star-intake/weak_damping_receipt.json",
     "candidates/aw5-hollow-star-intake/sampled_acquisition_receipt.json",
-    "candidates/aw5-hollow-star-intake/signed_pair_receipt.json"
+    "candidates/aw5-hollow-star-intake/signed_pair_receipt.json",
+    "candidates/aw5-hollow-star-intake/face_heat_trace_receipt.json"
+  ],
+  "supporting_results": [
+    {
+      "result": "Exact plus-sign cavity formula; legal filled 2-to-3 control changes the finite-time face spectrum and preserves b2=0.",
+      "record": "candidates/aw5-hollow-star-intake/FACE_HEAT_TRACE_CONTROL.md",
+      "next_discriminant": "Apply a boundary-fixed refinement to hollow AW5 and separate lifetime, external readout residue and harmonic count."
+    }
   ]
 }
