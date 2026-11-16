@@ -134,3 +134,14 @@ Next: Derive a metric-aware refinement and readout-transfer rule, or exhibit an 
 ## Next step
 
 1. **Priority 92/100** — Freeze an identified refined carrier and derive a finite-window guarantee using its actual damping, readout transfer and controls.
+
+## AW5 one-leaf acquisition certificate
+
+- **Mission** — Certify the sampled one-leaf AW5 contrast with fixed exterior drives.
+- **Done** — Froze the carrier and three probes, replayed the spectral factors and derivative bounds, and evaluated the uncertainty budget.
+- **Finding** — Both contrasts clear the 3/64 margin under the declared model and noise assumptions.
+- **Bridge value** — The refined test has a quantitative acquisition target for the identified carrier. Measured admission and independent hardware calibration remain open.
+
+## Next step
+
+1. **Priority 92/100** — Generate the three refined model packets through the frozen scorer, then bind the carrier and probe declarations to the independently audited hardware and calibration evidence.

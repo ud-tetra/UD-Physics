@@ -81,6 +81,10 @@
     {
       "command": "python3 metric_transfer_aw5.py (UD companion capture)",
       "result": "PASS exact transfer and Whitney replay; scorer scope audited"
+    },
+    {
+      "command": "python3 candidates/aw5-hollow-star-intake/check_refined_window.py",
+      "result": "PASS exact one-leaf spectral and contrast certificate"
     }
   ],
   "finding": "Unit-cell bench intake v1 scores loopback, signed basis injections and held-out comparisons. Five synthetic cases and CLI receipt verified. Bench evidence OPEN.",
