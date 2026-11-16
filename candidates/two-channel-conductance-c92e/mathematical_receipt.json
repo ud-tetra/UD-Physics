@@ -1,0 +1,192 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "TWO_PORT_CONDUCTANCE_20261115",
+  "session_id": "20261115-chatgpt-micro-2port-c92e",
+  "candidate_id": "two-channel-conductance-c92e",
+  "question": "Can a two-port phase transport readout uniquely select pre-event reversible conductances?",
+  "evidence_labels": [
+    "EXACT_CONDITIONAL",
+    "NO-GO_SCOPED"
+  ],
+  "objects": [
+    {
+      "object_id": "U",
+      "symbol": "U_st",
+      "object_type": "unitary seam transport",
+      "definition": "e^{iφ} in U(1)",
+      "domain": "complex incoming channel",
+      "codomain": "complex received channel",
+      "coefficient_domain": "complex",
+      "units": "dimensionless",
+      "basis_orientation": "oriented seam; U_ts=U_st^{-1}",
+      "metric_measure": "Hermitian norm",
+      "origin": "historical source",
+      "exact_expression": "U=e^{iφ}",
+      "source_refs": [
+        "March seam_phase_transport.md §4"
+      ],
+      "normalization": "|U|=1"
+    },
+    {
+      "object_id": "port",
+      "symbol": "y±",
+      "object_type": "two-channel readout amplitude",
+      "definition": "(a±Ub)/√2",
+      "domain": "C²",
+      "codomain": "C²",
+      "coefficient_domain": "complex",
+      "units": "amplitude arbitrary",
+      "basis_orientation": "bright/dark output",
+      "metric_measure": "Hermitian ℓ²",
+      "origin": "assumed",
+      "exact_expression": "|y+|²+|y-|²=|a|²+|b|²",
+      "source_refs": [],
+      "normalization": "unitary 2-port"
+    },
+    {
+      "object_id": "c",
+      "symbol": "c_st",
+      "object_type": "reversible event conductance",
+      "definition": "µ_edge p(φ)",
+      "domain": "undirected allowed phase edges",
+      "codomain": "Q≥0",
+      "coefficient_domain": "Q for finite test",
+      "units": "event-parameter inverse",
+      "basis_orientation": "symmetric",
+      "metric_measure": "Q_st=c_st/π_s",
+      "origin": "candidate",
+      "exact_expression": "c=µ/2 on quarter-turn U=i",
+      "source_refs": [
+        "v0.4 report §5"
+      ],
+      "normalization": "aggregate traffic 4/5 assumed"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "MARCH_SEAM",
+      "url_or_repo_path": "March seam_phase_transport.md",
+      "version_or_commit": "March recovered snapshot, line-level date not externally authenticated",
+      "section_or_object_id": "§4",
+      "source_status": "historical stratum"
+    },
+    {
+      "source_id": "PR515",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/515",
+      "version_or_commit": "draft/unmerged",
+      "section_or_object_id": "v0.4 §§4–6",
+      "source_status": "development"
+    }
+  ],
+  "assumptions": [
+    "balanced two-port mixer",
+    "coherent amplitudes",
+    "full bright transmission at U=1",
+    "π externally specified",
+    "per-edge µ unconstrained"
+  ],
+  "technique_plan": [
+    {
+      "technique": "complex unitary identity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "two-port conservation and gauge covariance"
+    },
+    {
+      "technique": "AM-GM equality",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "conditional q=1/2 selection"
+    },
+    {
+      "technique": "finite Markov detailed balance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "A/B distinct conductances and transient response"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "6 admitted bits × 4 phases × C(8,6)=672",
+    "reduced_expression": "672=2^5·3·7",
+    "factor_origins": [
+      "two-face glued K4 admissible states and M=2 stock allocations"
+    ],
+    "factorization": "672=2^5×3×7",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless Markov evolution s",
+    "modulus": 4,
+    "residue_convention": "d mod4",
+    "update_rule": "phase jumps d±1 with Q_de=(µ_edge/2)/π_d (CANDIDATE)",
+    "initial_phase": "stationary π assumed",
+    "coupling": "phase-dependent stock transfer p(d)",
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "6×4×28 Markov configurations",
+    "generator_or_update": "Q_de=c_de/π_d and donor-linear stock moves",
+    "initial_boundary_conditions": "stationary rational Gibbs π_d and multinomial stocks",
+    "conservation_and_sources": "I++I-=n and Σ stock=2; no exogenous source",
+    "projection_and_kernel": "readout Z_v and phase-adjusted moments",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "HISTORICALLY_EXPOSED",
+    "known_targets": [
+      "A/B ΔR4=729/400",
+      "old CMB tilt/running"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "baseline": "phase-blind gate and altered input norm/donor mobility"
+  },
+  "calculation_steps": [
+    "unitary two-port norm identity",
+    "AM-GM full-transmission criterion",
+    "two µ allocations with equal aggregate",
+    "reversible phase generators",
+    "fourth-derivative difference exact",
+    "672 state and 4-state independent replays"
+  ],
+  "result": {
+    "exact_expression": "p=(1+cosφ)/2 under balance+anchor; Σµ_A=Σµ_B=8/5; ΔR''''=729/400",
+    "scope": "conditional microscopic two-channel detector plus assumed π and Markov jump interpretation",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "exact 672-state Fraction",
+      "command_or_proof_path": "local verify.py in v0.5 user ZIP",
+      "actual_result": "PASS, constructor",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent SymPy matrix",
+      "command_or_proof_path": "local replay_sympy.py in v0.5 user ZIP",
+      "actual_result": "PASS, distinct implementation",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "portable Fraction replay",
+      "command_or_proof_path": "artifacts/20261115-chatgpt-micro-2port-c92e/exact-candidate-v0.5/files/replay_portable.py",
+      "actual_result": "PASS locally",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "µ_A and µ_B same total/input readout, different conductances",
+    "unequal amplitude (3/5,4/5) gives p0=49/50 not 1",
+    "phase-blind readout erases fourth derivative difference",
+    "symmetric nonlinear donor mobility survives readout construction"
+  ],
+  "limitations": [
+    "mixer and Born-like intensity-to-event readout not native source selected",
+    "event edge channel norm profile remains free",
+    "not a physical clock",
+    "G05/G06 unaffected",
+    "non-constructor review not run"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261115-chatgpt-micro-2port-c92e/exact-candidate-v0.5/manifest.json"
+  ],
+  "next_discriminant": "Source-derived µ_edge allocation with independent readout"
+}

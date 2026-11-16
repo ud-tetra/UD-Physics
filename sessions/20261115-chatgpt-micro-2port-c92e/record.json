@@ -1,0 +1,53 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261115-chatgpt-micro-2port-c92e",
+  "runtime": "GPT-6, local Python+SymPy and GitHub connector write",
+  "task": "native-two-channel-conductance-20261115-c92e",
+  "goal": "Two-channel amplitude transport-readout and unique conductance selection test",
+  "created_at": "2026-11-15T23:59:00Z",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "source_dirty_at_boot": false,
+  "status": "handoff_review",
+  "claims": {
+    "claim_ref": "refs/heads/claims/native-two-channel-conductance-20261115-c92e",
+    "claim_sha": "2682e1cb981c9e594beb625e89b54dde6a32d239",
+    "status": "held"
+  },
+  "checks": [
+    {
+      "command": "python verify.py",
+      "status": "PASS local full 672-state"
+    },
+    {
+      "command": "python replay_sympy.py",
+      "status": "PASS independent symbolic 4-state"
+    },
+    {
+      "command": "python replay_portable.py",
+      "status": "PASS source-preserved portable replay"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "status": "NOT_RUN, connector-only Git checkout unavailable"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "status": "NOT_RUN"
+    }
+  ],
+  "finding": "Balanced coherent two-port plus perfect bright-port anchor selects p=(1+cos phi)/2 conditionally; edge-resolved channel input norm allocation remains free; A/B same aggregate input norm and traffic but fourth derivative differs by 729/400.",
+  "next_action": "Derive or independently measure edge-specific channel preparation, mobility and clock; nonconstructor review of A/B counterexample.",
+  "mathematical_profile": {
+    "coefficient_domain": "rationals, complex amplitudes, exact SymPy radicals",
+    "exactness_or_precision_plan": "Fraction 672-state enumeration, separate 4-state SymPy replay, no CMB fitting",
+    "applicable_methods": [
+      "U(1) gauge",
+      "unitary two-port norm",
+      "finite detailed balance",
+      "exact matrix spectral moment",
+      "source and clock type audit"
+    ],
+    "clock_metric_units_conventions": "discrete Z4 phase labels; local continuous U(1) seam; dimensionless Markov parameter s; no physical time/energy"
+  }
+}

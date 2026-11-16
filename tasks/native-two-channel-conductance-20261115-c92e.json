@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "native-two-channel-conductance-20261115-c92e",
+  "goal": "Test source-derived balanced two-channel pre-event transport readout against equal-equilibrium/equal-traffic fourth derivative controls; retain constitutive nonuniqueness",
+  "owned_paths": [
+    "tasks/native-two-channel-conductance-20261115-c92e.json",
+    "sessions/20261115-chatgpt-micro-2port-c92e",
+    "candidates/two-channel-conductance-c92e",
+    "artifacts/20261115-chatgpt-micro-2port-c92e"
+  ],
+  "dependencies": [
+    "native-source-action-20261115-4f7c"
+  ],
+  "status": "handoff_review"
+}
