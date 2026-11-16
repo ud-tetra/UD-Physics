@@ -73,6 +73,10 @@
     {
       "command": "python3 heat_trace_aw5.py (companion UD capture)",
       "result": "PASS exact corrected identity and bistellar control"
+    },
+    {
+      "command": "python3 refine_aw5.py (UD supplement)",
+      "result": "PASS exact fixed and aligned residue formulas for m=0..4"
     }
   ],
   "finding": "Unit-cell bench intake v1 scores loopback, signed basis injections and held-out comparisons. Five synthetic cases and CLI receipt verified. Bench evidence OPEN.",

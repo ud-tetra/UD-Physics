@@ -114,3 +114,12 @@ Prepared the v2.7 WBS manifest from the supplied master text with the verified U
 ## Next step
 
 1. **Priority 90/100** — Test a boundary-fixed refinement of the hollow star and quantify how the exterior readout residue changes at fixed b₂.
+
+## AW5 exterior residue under refinement
+
+- **Mission** — Test exterior residue at fixed cavity homology.
+- **Done** — Replayed five refinement counts and recorded the [AW5 supplement](https://github.com/ud-tetra/UD/blob/b378ede7269c2a793f90e0692b517a2fd4237ee2/captures/2026-11-16T011802Z-codex-aw5-refine-1dd290/REVISED_MANUSCRIPT_REPRODUCIBILITY_SUPPLEMENT_AW5.md).
+- **Finding** — Boundary-fixed refinement preserves b2=1 but moves the original exterior residue from 1/4 to 19/80; best aligned residue is 91/380 after one leaf.
+- **Bridge value** — The original AW5 amplitude applies to the frozen triangulation and metric. Physical Promotion = 0.
+
+Next: Derive a metric-aware refinement and readout-transfer rule, or exhibit an obstruction.

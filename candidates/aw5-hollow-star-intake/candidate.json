@@ -31,13 +31,19 @@
     "candidates/aw5-hollow-star-intake/weak_damping_receipt.json",
     "candidates/aw5-hollow-star-intake/sampled_acquisition_receipt.json",
     "candidates/aw5-hollow-star-intake/signed_pair_receipt.json",
-    "candidates/aw5-hollow-star-intake/face_heat_trace_receipt.json"
+    "candidates/aw5-hollow-star-intake/face_heat_trace_receipt.json",
+    "candidates/aw5-hollow-star-intake/boundary_refinement_receipt.json"
   ],
   "supporting_results": [
     {
       "result": "Exact plus-sign cavity formula; legal filled 2-to-3 control changes the finite-time face spectrum and preserves b2=0.",
       "record": "candidates/aw5-hollow-star-intake/FACE_HEAT_TRACE_CONTROL.md",
       "next_discriminant": "Apply a boundary-fixed refinement to hollow AW5 and separate lifetime, external readout residue and harmonic count."
+    },
+    {
+      "result": "Boundary-fixed refinement preserves b2=1 but moves the original exterior residue from 1/4 to 19/80; best aligned residue is 91/380 after one leaf.",
+      "record": "https://github.com/ud-tetra/UD/blob/b378ede7269c2a793f90e0692b517a2fd4237ee2/captures/2026-11-16T011802Z-codex-aw5-refine-1dd290/REVISED_MANUSCRIPT_REPRODUCIBILITY_SUPPLEMENT_AW5.md",
+      "next_discriminant": "Derive a metric-aware refinement and readout-transfer rule, or exhibit an obstruction."
     }
   ]
 }
