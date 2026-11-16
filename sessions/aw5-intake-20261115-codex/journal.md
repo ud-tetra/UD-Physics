@@ -64,3 +64,16 @@ Agile hypothesis, target exposure recorded, no physical promotion.
 ## Next step
 
 1. **Priority 90/100** — Identify a realizable signed-coupling platform and test whether independent operator, timing, and noise certificates can meet the native acquisition budgets.
+
+## AW5 signed-coupling feasibility
+
+UD mathematical capture and scorer provenance integrated at c48ffb8b2f9c82b33bcd25fc24755d16c0053424.
+
+- **Mission** — Compare physical platforms against the frozen AW5 acquisition limits.
+- **Done** — Screened photonics, superconducting circuits, and active analog circuits and calculated a candidate bench budget.
+- **Finding** — Analog is the first prototype candidate. The induced-norm generator certificate is the hardest gate in this desk screen.
+- **Bridge value** — The design supports a calibrated classical emulator test. No platform has certified AW5 compliance.
+
+## Next step
+
+1. **Priority 90/100** — Specify the two-state signed pair, then test whether a basis-injection calibration with explicit uncertainty can establish the generator and timing budgets before full-carrier replication.

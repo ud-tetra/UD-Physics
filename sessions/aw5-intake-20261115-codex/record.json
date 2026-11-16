@@ -57,10 +57,14 @@
     {
       "command": "python3 candidates/aw5-hollow-star-intake/replay_model_intake.py",
       "result": "PASS two numerical model packets"
+    },
+    {
+      "command": "python3 candidates/aw5-hollow-star-intake/check_platform_budget.py",
+      "result": "PASS exact degree and bench-budget replay"
     }
   ],
-  "finding": "Both synthetic AW5 model packets pass the frozen scorer at gamma=0 and 1/512; measured certification OPEN.",
-  "next_action": "Identify a realization and audit feasibility of timing, operator and noise certificates.",
+  "finding": "Active analog is the first AW5 prototype candidate. Desk budgets derived; measured hardware gates OPEN.",
+  "next_action": "Design the two-state signed integrator pair and an uncertainty-bounded basis-injection calibration.",
   "mathematical_profile": {
     "coefficient_domain": "Q for exact incidence arithmetic, R for dynamics",
     "exactness_or_precision_plan": "Exact rank, projection and spectrum",
