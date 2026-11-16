@@ -53,10 +53,14 @@
     {
       "command": "PYTHONDONTWRITEBYTECODE=1 python3 candidates/aw5-hollow-star-intake/replay_intake.py",
       "result": "PASS 10 synthetic decision cases"
+    },
+    {
+      "command": "python3 candidates/aw5-hollow-star-intake/replay_model_intake.py",
+      "result": "PASS two numerical model packets"
     }
   ],
-  "finding": "AW5-v1 blind synthetic scorer replay passes 10 decision and acquisition cases.",
-  "next_action": "Replay model-generated signed impulse traces; specify independent calibration certificate provenance.",
+  "finding": "Both synthetic AW5 model packets pass the frozen scorer at gamma=0 and 1/512; measured certification OPEN.",
+  "next_action": "Identify a realization and audit feasibility of timing, operator and noise certificates.",
   "mathematical_profile": {
     "coefficient_domain": "Q for exact incidence arithmetic, R for dynamics",
     "exactness_or_precision_plan": "Exact rank, projection and spectrum",

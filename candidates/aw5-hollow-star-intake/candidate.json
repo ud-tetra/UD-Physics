@@ -23,8 +23,8 @@
     "User-supplied offline LLM report; citation keys unresolved"
   ],
   "baseline": "Filled AW5 under matching model and readout",
-  "result": "AW5-v1 blind synthetic scorer replay passes 10 decision and acquisition cases.",
-  "next_discriminant": "Replay model-generated signed impulse traces; specify independent calibration certificate provenance.",
+  "result": "Both synthetic AW5 model packets pass the frozen scorer at gamma=0 and 1/512; measured certification OPEN.",
+  "next_discriminant": "Identify a realization and audit feasibility of timing, operator and noise certificates.",
   "mathematical_receipts": [
     "candidates/aw5-hollow-star-intake/mathematical_receipt.json",
     "candidates/aw5-hollow-star-intake/zero_frequency_receipt.json",

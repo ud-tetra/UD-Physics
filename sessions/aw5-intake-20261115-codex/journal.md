@@ -53,3 +53,14 @@ Agile hypothesis, target exposure recorded, no physical promotion.
 ## Next step
 
 1. **Priority 90/100** — Replay model-generated signed impulse traces through the same frozen scorer, then specify independently auditable certificate provenance for timing, operators, and noise.
+
+## AW5 model intake replay
+
+- **Mission** — Check the frozen evaluator using signed responses from the AW5 operators.
+- **Done** — Scored six traces across two damping cases and specified auditable certificate inputs.
+- **Finding** — Both simulated packets passed against both controls. No measured packet was admitted.
+- **Bridge value** — The model and scorer now connect through a reproducible pipeline. Instrumentation and independent review remain open.
+
+## Next step
+
+1. **Priority 90/100** — Identify a realizable signed-coupling platform and test whether independent operator, timing, and noise certificates can meet the native acquisition budgets.
