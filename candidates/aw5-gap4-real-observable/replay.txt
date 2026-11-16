@@ -1,0 +1,2 @@
+PASS gauge and top-face orthogonality, shared output closure and exact conserved norm.
+PASS inequivalent native readouts for integer-shifted compact lifts, including half-turn discrepancy.

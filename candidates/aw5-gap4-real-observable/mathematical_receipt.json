@@ -1,0 +1,145 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "aw5-real-cycle-face-readout",
+  "session_id": "aw5-real-codex-20261116",
+  "candidate_id": "aw5-gap4-real-observable",
+  "question": "Which real loop and face observables survive additive gauge shifts and close under the flow?",
+  "evidence_labels": [
+    "EXACT",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "REAL-LOOP-PAIR",
+      "symbol": "(F,G)",
+      "object_type": "linear readout",
+      "definition": "Shared-loop amplitude and normalized conjugate face quadrature",
+      "domain": "Z1 plus Y2",
+      "codomain": "R^2",
+      "coefficient_domain": "Z incidence and sqrt(5) normalization",
+      "units": "Native amplitudes",
+      "basis_orientation": "Ascending simplex orientations",
+      "metric_measure": "Unit simplex inner products",
+      "origin": "derived",
+      "exact_expression": "F=<x,j>, G=<B2^T x,q>/sqrt(5)",
+      "source_refs": [
+        "PHASE"
+      ],
+      "assumption_ids": [
+        "REAL"
+      ],
+      "normalization": "Equal norms of edge and normalized face test vectors"
+    },
+    {
+      "object_id": "NATIVE-NORM",
+      "symbol": "I012",
+      "object_type": "conserved quadratic form",
+      "definition": "Squared norm projected onto the shared oscillator plane",
+      "domain": "Z1 plus Y2",
+      "codomain": "R nonnegative",
+      "coefficient_domain": "Q in unnormalized output coordinates",
+      "units": "Squared native amplitudes",
+      "basis_orientation": "As above",
+      "metric_measure": "Unit simplex inner products",
+      "origin": "derived",
+      "exact_expression": "(F^2+G^2)/3",
+      "source_refs": [
+        "PHASE"
+      ],
+      "assumption_ids": [
+        "REAL"
+      ],
+      "normalization": "Unit plane basis"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "PHASE",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/blob/4ace239c3fa5e874ca077087c2a731bc58cb45c6/candidates/aw5-gap4-phase-dynamics/AW5_BIPYRAMID_PHASE_DYNAMICS.md",
+      "version_or_commit": "4ace239c3fa5e874ca077087c2a731bc58cb45c6",
+      "section_or_object_id": "Exact current-to-face response",
+      "source_status": "Pinned Discovery derivation"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "REAL",
+      "definition": "Real cochains modulo additive vertex coboundaries, unit simplex metric"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Exact incidence, invariant mode projection and quadratic conservation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Verify gauge invariance and reduced dynamics"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "Shared oscillator",
+    "modulus": "2pi/sqrt(5)",
+    "residue_convention": "Native s",
+    "update_rule": "Skew two-quadrature rotation",
+    "initial_phase": "Preparation dependent",
+    "coupling": "sqrt(5)",
+    "period_claim": "Projected plane only",
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "Edge cycles and coexact face states",
+    "generator_or_update": "A=B^T-B",
+    "initial_boundary_conditions": "Arbitrary real cycle and face states",
+    "conservation_and_sources": "I012 conserved",
+    "projection_and_kernel": "Discard cut edge sector and modes orthogonal to shared oscillator",
+    "physical_mapping": "None"
+  },
+  "target_exposure": {
+    "status": "EXPOSED",
+    "known_targets": [
+      "Prior exact harmonic response"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "Exact shared-face plane",
+    "selection_criterion": "Closed gauge invariant output",
+    "baseline": "Conditional compact readout"
+  },
+  "calculation_steps": [
+    "Assemble integer boundary maps",
+    "Derive shared readout closure and gauge invariance",
+    "Verify rational quadratic conservation and compact lift distinction"
+  ],
+  "result": {
+    "exact_expression": "Additive-gauge invariant F and G rotate at sqrt(5). (F^2+G^2)/3 is the conserved projected plane norm.",
+    "approximation": null,
+    "units": "Native",
+    "precision_and_error": "Exact",
+    "scope": "Shared-face bipyramid oscillator",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "Constructor exact incidence replay",
+      "command_or_proof_path": "python3 candidates/aw5-gap4-real-observable/replay_aw5_real_observable.py",
+      "source_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Orthogonal modes can have identical shared-loop output."
+  ],
+  "limitations": [
+    "No measurement calibration or compact gauge dynamics is derived."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/aw5-real-codex-20261116/real-observable-replay/manifest.json"
+  ],
+  "next_discriminant": "Specify an independently tested physical readout, or construct and test autonomous compact transport separately."
+}
