@@ -1,0 +1,29 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "aw5-gap4-phase-dynamics",
+  "session_id": "aw5-phase-codex-20261116",
+  "question": "Derive and test the shared-face Wilson readout and compact descent of the skew Hodge\u2013Dirac flow",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Oriented filled bipyramid, unit simplex metric and real linear generator",
+    "Compact edge readout and its scale are declared"
+  ],
+  "physical_mapping": "OPEN / Physical Promotion = 0",
+  "target_exposure": "Known pinned -i compact witness. No empirical fit.",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD-Physics/blob/c9c5baa756ae4bc22658c7086ae0e8ea72886e87/candidates/aw5-gap4-native-holonomy/AW5_DEFECT_SELECTION_AND_BIPYRAMID_HOLONOMY.md"
+  ],
+  "baseline": "Real paired-sector flow versus descent to compact edge quotient",
+  "result": "Shared-face signal is harmonic at sqrt(5); no nonzero DC or native phase selection. Declared compact Wilson readout gives -i at selected times. Real skew flow fails descent to the edge-only compact quotient.",
+  "next_discriminant": "Construct and test an autonomous compact transport law or specify a real-lift readout and an independently derived normalization.",
+  "mathematical_receipts": [
+    "candidates/aw5-gap4-phase-dynamics/mathematical_receipt.json"
+  ]
+}
