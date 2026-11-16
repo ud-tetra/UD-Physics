@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "aw5-gap4-codex-20261116",
+  "run_id": "structural-gap4-replay",
+  "created_at": "2026-11-16T21:56:17.768513+00:00",
+  "evidence": "EXACT",
+  "summary": "Constructor replay of conditional defect selection and bipyramid compact witness. Physical Promotion = 0.",
+  "command": "python3 candidates/aw5-gap4-native-holonomy/replay_aw5_structural_gap4.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay_aw5_structural_gap4.py",
+      "path": "inputs/001-replay_aw5_structural_gap4.py",
+      "source_location": "repository",
+      "source_path": "candidates/aw5-gap4-native-holonomy/replay_aw5_structural_gap4.py",
+      "sha256": "a250bed3d84a7b122d60c69aecf55df0cf5eaa01fdb68da1c7dffe0fd76db93f",
+      "size_bytes": 4286
+    },
+    {
+      "input_id": "input-002",
+      "name": "AW5_STRUCTURAL_EXCLUSIVITY_AND_GAP4_DRAFT.md",
+      "path": "inputs/002-AW5_STRUCTURAL_EXCLUSIVITY_AND_GAP4_DRAFT.md",
+      "source_location": "repository",
+      "source_path": "candidates/aw5-gap4-native-holonomy/AW5_STRUCTURAL_EXCLUSIVITY_AND_GAP4_DRAFT.md",
+      "sha256": "68d10ec33e3f5ba090dabf76bcda310496317c2f6d32d5d1d30d74be9a046d8a",
+      "size_bytes": 6462
+    },
+    {
+      "input_id": "input-003",
+      "name": "AW5_DEFECT_SELECTION_AND_BIPYRAMID_HOLONOMY.md",
+      "path": "inputs/003-AW5_DEFECT_SELECTION_AND_BIPYRAMID_HOLONOMY.md",
+      "source_location": "repository",
+      "source_path": "candidates/aw5-gap4-native-holonomy/AW5_DEFECT_SELECTION_AND_BIPYRAMID_HOLONOMY.md",
+      "sha256": "c609e63482401cbd8ca8e2d622c74d8fa8adba486a286d1e01dd0cc51d16355c",
+      "size_bytes": 4217
+    }
+  ],
+  "files": [
+    {
+      "path": "files/replay.txt",
+      "sha256": "79b5b4980fb1d05800735baca17b66f6f73b037ae9ddf4c280e7bf1d6d57ab75",
+      "size_bytes": 286
+    }
+  ]
+}
