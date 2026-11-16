@@ -116,3 +116,6 @@ gives the shared-error criterion and a uniform sufficient amplitude.
 
 [Three-residual coverage](THREE_PROBE_COVERAGE_v0.1.md) adds the old y
 reading, tightening the uniform bound while retaining a half-amplitude gap.
+
+[Direct mixed Taylor coverage](MIXED_TAYLOR_COVERAGE_v0.1.md) tightens the
+six-reading enclosure without changing the charge or work tolerances.

@@ -13,8 +13,8 @@
     "ud-channel-metric-bridge": "577b2d5b4396066238b735b3e75b275d2349e427"
   },
   "checks": [],
-  "finding": "Adding old y reduces the uniform sufficient amplitude to 633/1000; a half-amplitude ambiguity remains.",
-  "next_action": "Test a gain from a joint Taylor bound on the mixed polynomial before proposing additional readings.",
+  "finding": "Direct mixed Taylor bound improves sufficient norm to 618/1000; half-amplitude overlap persists.",
+  "next_action": "Screen charge-bounded seventh preparations by their ability to separate the remaining overlap.",
   "mathematical_profile": {
     "coefficient_domain": "Q; identities extend to R",
     "exactness_or_precision_plan": "Fraction replay",
@@ -25,9 +25,9 @@
     ],
     "clock_metric_units_conventions": "Formal u, unit coefficient metrics, ascending simplex orientations; no SI calibration"
   },
-  "checkpoint_at": "2026-11-15T23:59:21.327999+00:00",
+  "checkpoint_at": "2026-11-16T00:01:48.308430+00:00",
   "checkpoint_source": {
-    "revision": "99680a3d9f1194fde027425f2ba1b5b14b0479a5",
+    "revision": "e48b44caa932fe9e126c9f5510d7897f221401d1",
     "dirty": true
   }
 }

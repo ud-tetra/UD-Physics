@@ -227,3 +227,20 @@ Captured artifacts/codex-channel-metric-20261106/exact-012 (EXACT): Three-residu
 Checkpoint (handoff): Adding old y reduces the uniform sufficient amplitude to 633/1000; a half-amplitude ambiguity remains.
 
 Next: Test a gain from a joint Taylor bound on the mixed polynomial before proposing additional readings.
+
+## Direct mixed Taylor bound
+
+Resumed e48b44c. Combined P and J Taylor coefficients before taking
+absolute values, and exhaustively minimized the exact directional score
+over 83 affine segments. Uniform sufficient radius drops to 618/1000;
+the prior (1/20,1/2) overlap persists. Frozen bench unchanged.
+
+## 2026-11-16T00:01:48.237965+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-013 (EXACT): Exact mixed Taylor coverage on the unit amplitude boundary
+
+## 2026-11-16T00:01:48.319958+00:00
+
+Checkpoint (handoff): Direct mixed Taylor bound improves sufficient norm to 618/1000; half-amplitude overlap persists.
+
+Next: Screen charge-bounded seventh preparations by their ability to separate the remaining overlap.
