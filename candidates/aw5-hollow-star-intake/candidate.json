@@ -23,10 +23,11 @@
     "User-supplied offline LLM report; citation keys unresolved"
   ],
   "baseline": "Filled AW5 under matching model and readout",
-  "result": "Exact conditional hollow matched exterior residue 1/4; filled, orthogonal and positively exterior-damped controls have zero pole residue.",
-  "next_discriminant": "Weak-damping pole migration and finite observation-time contrast",
+  "result": "Matched hollow time-average exceeds both controls by at least 1/8 for T=32 and gamma at most 1/512.",
+  "next_discriminant": "Derive discrete-sampling, noise and channel-mismatch contrast guarantees.",
   "mathematical_receipts": [
     "candidates/aw5-hollow-star-intake/mathematical_receipt.json",
-    "candidates/aw5-hollow-star-intake/zero_frequency_receipt.json"
+    "candidates/aw5-hollow-star-intake/zero_frequency_receipt.json",
+    "candidates/aw5-hollow-star-intake/weak_damping_receipt.json"
   ]
 }

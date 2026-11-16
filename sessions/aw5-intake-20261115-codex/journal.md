@@ -20,3 +20,14 @@ Agile hypothesis, target exposure recorded, no physical promotion.
 ## Next step
 
 1. **Priority 90/100** — Derive the weak-damping pole location and residue, then obtain a finite observation-time contrast bound. This tests whether the exact undamped discriminator survives finite bandwidth and damping.
+
+## AW5 weak-damping continuation
+
+- **Mission** — Determine whether the hollow-star impulse signature remains distinguishable over a finite window under exterior damping.
+- **Done** — Derived the pole displacement and residue order, and bounded the signed time-average against each control.
+- **Finding** — The pole moves initially at slope −1/4 with respect to damping. The controlled contrast is at least 1/8 for T = 32 and γ ≤ 1/512.
+- **Bridge value** — The result supplies a finite-duration mathematical test with explicit nuisance bounds. Instrument response and calibrated mapping remain open.
+
+## Next step
+
+1. **Priority 90/100** — Derive a contrast guarantee with discrete sampling, independent readout noise, and bounded channel mismatch. This converts the continuous-time prediction into a testable acquisition specification.

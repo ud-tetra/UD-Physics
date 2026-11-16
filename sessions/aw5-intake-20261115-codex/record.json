@@ -33,10 +33,14 @@
     {
       "command": "python3 candidates/aw5-hollow-star-intake/residue.py",
       "result": "PASS exact controls"
+    },
+    {
+      "command": "python3 candidates/aw5-hollow-star-intake/check_weak_damping.py",
+      "result": "PASS exact frequency floor and finite window"
     }
   ],
-  "finding": "Exact conditional hollow matched exterior residue 1/4; filled, orthogonal and positively exterior-damped controls have zero pole residue.",
-  "next_action": "Weak-damping pole migration and finite observation-time contrast",
+  "finding": "Matched hollow time-average exceeds both controls by at least 1/8 for T=32 and gamma at most 1/512.",
+  "next_action": "Derive discrete-sampling, noise and channel-mismatch contrast guarantees.",
   "mathematical_profile": {
     "coefficient_domain": "Q for exact incidence arithmetic, R for dynamics",
     "exactness_or_precision_plan": "Exact rank, projection and spectrum",
