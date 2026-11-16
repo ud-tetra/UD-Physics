@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "edge-preparation-homogeneity-20261116-6c91",
+  "goal": "Edge-resolved source-preparation selection vs A/B under two-channel plus closure constraints",
+  "owned_paths": [
+    "tasks/edge-preparation-homogeneity-20261116-6c91.json",
+    "sessions/20261116-chatgpt-edgeprep-6c91",
+    "candidates/edge-preparation-homogeneity-20261116-6c91",
+    "artifacts/20261116-chatgpt-edgeprep-6c91/exact-orbit-v0.6"
+  ],
+  "dependencies": [
+    "native-two-channel-conductance-20261115-c92e"
+  ],
+  "status": "review_handoff"
+}

@@ -1,0 +1,163 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD_EDGE_PREP_ORBIT_v0.6",
+  "session_id": "20261116-chatgpt-edgeprep-6c91",
+  "candidate_id": "edge-preparation-homogeneity-20261116-6c91",
+  "question": "Do March trion/phase/burden variables uniquely determine edge-resolved incoming norm and generator?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO_SCOPED"
+  ],
+  "objects": [
+    {
+      "object_id": "pi4",
+      "symbol": "pi",
+      "object_type": "assumed four-phase stationary probability",
+      "domain": "Z4",
+      "codomain": "Q_{>0}",
+      "coefficient_domain": "Q",
+      "definition": "(16,4,1,4)/25",
+      "units": "probability",
+      "basis_orientation": "phase-cycle 01,12,23,30",
+      "metric_measure": "assumed Gibbs sample",
+      "origin": "previous v0.4 development",
+      "exact_expression": "(16,4,1,4)/25",
+      "normalization": "sum=1"
+    },
+    {
+      "object_id": "rho",
+      "symbol": "rho_i",
+      "object_type": "packet burden",
+      "domain": "packet carrier sites",
+      "codomain": "nonnegative amplitudes/stock",
+      "coefficient_domain": "Q>=0",
+      "definition": "Historical March packet state X_i=(rho_i,theta_i,chi_i)",
+      "units": "internal burden, physical map OPEN",
+      "basis_orientation": "site/packet—not phase register",
+      "metric_measure": "not specified",
+      "origin": "March source",
+      "exact_expression": null,
+      "normalization": "unspecified"
+    },
+    {
+      "object_id": "mu",
+      "symbol": "mu_e",
+      "object_type": "two-channel input norm",
+      "domain": "phase-cycle edges",
+      "codomain": "Q>=0",
+      "coefficient_domain": "Q",
+      "definition": "f(pi_i,pi_j) under extra input load identification",
+      "units": "dimensionless modeled input stock",
+      "basis_orientation": "undirected phase edges",
+      "metric_measure": "assumed symmetric homogeneous local f",
+      "origin": "candidate",
+      "exact_expression": "(4h,h,h,4h)",
+      "normalization": "sum_e mu=8/5 imposed comparison"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "historical-March",
+      "url_or_repo_path": "captured inputs/packet_modulation_layer.md and seam_phase_transport.md",
+      "version_or_commit": "recovered historical, March dating not independently authenticated",
+      "section_or_object_id": "§§1-4",
+      "source_status": "SOURCE_STRATUM"
+    },
+    {
+      "source_id": "UD-archive-v0.6",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/commit/cae144cd1a3666c9d31715192451f0e9e86c19fd",
+      "version_or_commit": "cae144cd1a3666c9d31715192451f0e9e86c19fd",
+      "section_or_object_id": "edge-preparation v0.6 REPORT.md",
+      "source_status": "DEVELOPMENT"
+    }
+  ],
+  "assumptions": [
+    "pi_d is equated to channel load; source map not established",
+    "positive symmetric degree-one homogeneous f",
+    "four-phase Gibbs pi chosen in historical development",
+    "sum mu=8/5 is a comparison-clock normalization",
+    "balanced two-port mixing only a candidate"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational orbit scaling",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove restricted A profile for all homogeneous symmetric f"
+    },
+    {
+      "technique": "six-phase cosine refinement",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "seek counterexample to universal f independence"
+    },
+    {
+      "technique": "zero-stock and unbalanced readout control",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "identify unaccounted source/sink preparation"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4 phase edges (01,12,23,30), pi=(16,4,1,4)/25",
+    "reduced_expression": "mu=(16,4,4,16)/25 under imposed sum8/5",
+    "factor_origins": [
+      "4:1 adjacent load pair homogeneity",
+      "10h=8/5 normalization"
+    ]
+  },
+  "clock_receipt": {
+    "clock_type": "unphysical Markov parameter",
+    "modulus": 4,
+    "update_rule": "not sourced",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "phase-register four/six sample with separate packet burden",
+    "generator_or_update": "Q_de=(mu_de/2)/pi_d conditional",
+    "initial_boundary_conditions": "positive pi, separate zero-receiver control",
+    "conservation_and_sources": "two-port norm conserved; stock distribution across edges not source-defined",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "A/B earlier benchmark known; no R4 fitting",
+    "known_targets": [
+      "internal A/B normalized conductances"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "8/5 total imposed for same-traffic comparison"
+    ],
+    "baseline": "six-phase stress, homogeneous source laws, uniform input and zero-stock boundary"
+  },
+  "calculation_steps": [
+    "symmetry and degree-one homogeneity imply 4h:h:h:4h",
+    "normalize h=4/25 by imposed budget",
+    "compute two distinct six-phase ratios 80/17 vs8",
+    "compute direct unequal dark-port residual 1/10 and 9/34"
+  ],
+  "result": {
+    "exact_expression": "mu=(16,4,4,16)/25 only within restricted prep orbit; no unique native f",
+    "scope": "pure finite phase-register candidate",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "local exact Fraction verifier, separate orbit method",
+      "command_or_proof_path": "local v0.6 ZIP; report and reduced replay committed",
+      "source_revision": "cae144cd1a3666c9d31715192451f0e9e86c19fd",
+      "actual_result": "PASS constructor; fresh repository execution NOT_RUN",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "six-phase cosine sample lifts four-state f degeneracy",
+    "direct unequal inputs fail perfect seam-off",
+    "zero receiver splits sum vs matched laws"
+  ],
+  "limitations": [
+    "original verify.py and full rerun logs included in local ZIP but not fully committed to this PR",
+    "no physical time, G05/G06, native source map"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/20261116-chatgpt-edgeprep-6c91/exact-orbit-v0.6/manifest.json"
+  ],
+  "next_discriminant": "derive phase probability-to-burden mapping and uniquely sourced local mobility including empty ports"
+}
