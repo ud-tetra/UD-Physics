@@ -37,7 +37,8 @@
     "candidates/aw5-hollow-star-intake/refined_window_receipt.json",
     "candidates/aw5-hollow-star-intake/refinement_depth_receipt.json",
     "candidates/aw5-hollow-star-intake/recursive_dtn_receipt.json",
-    "candidates/aw5-hollow-star-intake/adaptive_dtn_depth_seven_receipt.json"
+    "candidates/aw5-hollow-star-intake/adaptive_dtn_depth_seven_receipt.json",
+    "candidates/aw5-hollow-star-intake/depth_seven_modes_receipt.json"
   ],
   "supporting_results": [
     {
@@ -79,6 +80,11 @@
       "result": "Depth-six lower bound 0.060216. Depth-seven undamped fixed-reference gap encloses [0.082828,0.086642], but an admissible Gaussian witness violates the uniform failure level under the original budget.",
       "record": "candidates/aw5-hollow-star-intake/ADAPTIVE_DTN_DEPTH_SEVEN.md",
       "next_discriminant": "Derive a sharper noise or deterministic budget for the fixed-reference contrast and identify its spectral weight."
+    },
+    {
+      "result": "The depth-seven target is exactly edge-free. Two interval-verified constant-terminal modes contribute +0.083500 and +0.033991; the differential sector offsets part of the positive top-cell transient.",
+      "record": "candidates/aw5-hollow-star-intake/DEPTH_SEVEN_MODE_DECOMPOSITION.md",
+      "next_discriminant": "Lift the selected eigenvectors and measure their norm distribution by refinement level and cell orbit."
     }
   ]
 }

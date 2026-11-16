@@ -203,3 +203,15 @@ Depth-six lower bound 0.060216. Depth-seven undamped fixed-reference gap enclose
 [Derivation](../../candidates/aw5-hollow-star-intake/ADAPTIVE_DTN_DEPTH_SEVEN.md) · [Receipt](../../candidates/aw5-hollow-star-intake/adaptive_dtn_depth_seven_receipt.json) · [Capture](../../artifacts/aw5-intake-20261115-codex/aw5-adaptive-dtn-depth7/manifest.json).
 
 Next: Derive a sharper noise or deterministic budget for the fixed-reference contrast and identify its spectral weight. Physical Promotion = 0.
+
+## 2026-11-16T21:02:08.396363+00:00
+
+Captured artifacts/aw5-intake-20261115-codex/aw5-depth-seven-modal-analysis (NUMERICAL): Exact AW5 top-cell sector identities, selected interval pole enclosures and numerical sector means. Physical Promotion = 0.
+
+## AW5 depth-seven modal attribution
+
+The depth-seven target is exactly edge-free. Two interval-verified constant-terminal modes contribute +0.083500 and +0.033991; the differential sector offsets part of the positive top-cell transient.
+
+[Derivation](../../candidates/aw5-hollow-star-intake/DEPTH_SEVEN_MODE_DECOMPOSITION.md) · [Receipt](../../candidates/aw5-hollow-star-intake/depth_seven_modes_receipt.json) · [Captured replay](../../artifacts/aw5-intake-20261115-codex/aw5-depth-seven-modal-analysis/manifest.json).
+
+Next: Lift the selected eigenvectors and measure their norm distribution by refinement level and cell orbit. Physical Promotion = 0.
