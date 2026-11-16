@@ -1,0 +1,13 @@
+filled [0, 0, 0] [0, 0, 0]
+hollow [1/48, 1/4, 0] [0, 0, 0]
+enclosure per midpoint mean: +/-1/1000000000000; combined comparison loss: 62254150391649/512000000000000
+refined=0; subsets=1; filled floor=0.1228598499; fixed-reference floor=0.1305335946; worst subset=()
+refined=1; subsets=4; filled floor=0.1110037855; fixed-reference floor=0.1228849923; worst subset=(0,)
+refined=2; subsets=6; filled floor=0.0991477211; fixed-reference floor=0.1111364517; worst subset=(0, 2)
+refined=3; subsets=4; filled floor=0.0872916566; fixed-reference floor=0.0979944538; worst subset=(0, 2, 3)
+refined=4; subsets=1; filled floor=0.0754355922; fixed-reference floor=0.0837986590; worst subset=(0, 1, 2, 3)
+maximum fixed-reference harmonic leakage 1/2040
+uniform lower bound 4274814147512619692820270848855671/56668397794435742564352000000000000 = 0.0754355922
+headroom above 3/64 = 0.0285605922
+uniform outward-rounded lower bound 7/100
+conditional floor at joint noise proxy factor 361/100: 0.0473105922

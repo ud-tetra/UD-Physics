@@ -34,7 +34,8 @@
     "candidates/aw5-hollow-star-intake/face_heat_trace_receipt.json",
     "candidates/aw5-hollow-star-intake/boundary_refinement_receipt.json",
     "candidates/aw5-hollow-star-intake/metric_transfer_receipt.json",
-    "candidates/aw5-hollow-star-intake/refined_window_receipt.json"
+    "candidates/aw5-hollow-star-intake/refined_window_receipt.json",
+    "candidates/aw5-hollow-star-intake/refinement_depth_receipt.json"
   ],
   "supporting_results": [
     {
@@ -61,6 +62,11 @@
       "result": "Frozen one-leaf synthetic packet passes both contrasts at gamma=1/512; committed envelope and packet hashes verified before reveal.",
       "record": "candidates/aw5-hollow-star-intake/one-leaf-replay-v1/REPLAY.md",
       "next_discriminant": "Bind the refined probe map to calibrated hardware records, starting with signed-pair timing and basis shots."
+    },
+    {
+      "result": "First-level subsets guarantee contrast >= 7/100. Uniform depth 3 clears 3/64 with direct damped enclosure. Static residue equals 1/[2(1+(3/2)^d)] and tends to zero.",
+      "record": "candidates/aw5-hollow-star-intake/REFINEMENT_SWEEP_WINDOW_CERTIFICATE.md",
+      "next_discriminant": "Derive frequency-dependent four-terminal reduction or an equivalent certified method for depth four and beyond."
     }
   ]
 }

@@ -1,0 +1,5 @@
+filled [0, 0, 0] [0, 0, 0]
+hollow [1/48, 1/4, 0] [0, 0, 0]
+depth 3 damped floor vs. filled: 0.0543102417
+depth 3 damped floor vs. fixed reference: 0.0587109715
+PASS: original threshold, independently varying arm damping in [0, 1/512]

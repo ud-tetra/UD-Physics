@@ -164,3 +164,18 @@ Archived the verified shell script and linked it from the bench intake. The raw 
 ## AW5 exact timing boundary
 
 The pinned preflight-era unit-cell CLI rounded a decimal just above 1/1024 ms into the passing boundary. Decimal JSON timing inputs now feed an exact rational maximum and uncertainty sum. Eight CLI cases passed, including positive and negative deviations, sums at and above the gate, and a decimal beyond floating-point resolution. The measured archive and custody evidence remain pending. Physical Promotion = 0.
+
+## 2026-11-16T19:49:02.408531+00:00
+
+## 2026-11-16T19:51:58.928782+00:00
+
+Captured artifacts/aw5-intake-20261115-codex/aw5-refinement-depth-20261116 (EXACT): Exact AW5 stationary depth law and conditional sampled clearance through depth three. Physical Promotion = 0.
+
+## AW5 refinement-depth continuation
+
+- **Mission** — Determine the range of the original AW5 acquisition window under refinement.
+- **Done** — Verified the [finite-window certificate](../../candidates/aw5-hollow-star-intake/REFINEMENT_SWEEP_WINDOW_CERTIFICATE.md) and [recursive residue law](../../candidates/aw5-hollow-star-intake/RECURSIVE_LEAF_RESIDUE.md). See the [mathematical receipt](../../candidates/aw5-hollow-star-intake/refinement_depth_receipt.json) and [captured replay](../../artifacts/aw5-intake-20261115-codex/aw5-refinement-depth-20261116/manifest.json).
+- **Finding** — First-level subsets guarantee contrast >= 7/100. Uniform depth 3 clears 3/64 with direct damped enclosure. Static residue equals 1/[2(1+(3/2)^d)] and tends to zero.
+- **Bridge value** — The declared finite-window margin survives refinements through the verified scopes. Hardware evidence remains open. Physical Promotion = 0.
+
+Next: Derive frequency-dependent four-terminal reduction or an equivalent certified method for depth four and beyond.

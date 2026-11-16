@@ -97,6 +97,10 @@
     {
       "command": "python3 candidates/aw5-hollow-star-intake/replay_bench_pair.py and eight CLI timing cases",
       "result": "PASS exact boundary, uncertainty sum and sub-float decimal regression"
+    },
+    {
+      "command": "Run four constructor replays in AW5 candidate",
+      "result": "PASS exact arithmetic and conditional clearance through depth three"
     }
   ],
   "finding": "Unit-cell bench intake v1 scores loopback, signed basis injections and held-out comparisons. Five synthetic cases and CLI receipt verified. Bench evidence OPEN.",
