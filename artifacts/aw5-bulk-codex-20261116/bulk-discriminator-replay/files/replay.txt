@@ -1,0 +1,4 @@
+PASS exterior shell support and closed-cycle incidence.
+PASS exact spectral weights hollow (0:1/4, 4:3/4) and filled (2:3/4, 6:1/4).
+PASS common damping leaves the first separating derivative at order six, value 12.
+PASS undamped lower bound s^6/280 on 0 < s <= 1.
