@@ -56,6 +56,11 @@
       "result": "One-leaf AW5 model contrast against each control is at least 978548309/16095641600 with joint confidence at least 1-2 exp(-16) under stated acquisition tolerances.",
       "record": "candidates/aw5-hollow-star-intake/REFINED_WINDOW_CERTIFICATE.md",
       "next_discriminant": "Replay the refined model traces through the frozen scorer and bind the identified probe map to calibration evidence."
+    },
+    {
+      "result": "Frozen one-leaf synthetic packet passes both contrasts at gamma=1/512; committed envelope and packet hashes verified before reveal.",
+      "record": "candidates/aw5-hollow-star-intake/one-leaf-replay-v1/REPLAY.md",
+      "next_discriminant": "Bind the refined probe map to calibrated hardware records, starting with signed-pair timing and basis shots."
     }
   ]
 }

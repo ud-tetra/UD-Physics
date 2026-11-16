@@ -145,3 +145,14 @@ Next: Derive a metric-aware refinement and readout-transfer rule, or exhibit an 
 ## Next step
 
 1. **Priority 92/100** — Generate the three refined model packets through the frozen scorer, then bind the carrier and probe declarations to the independently audited hardware and calibration evidence.
+
+## AW5 one-leaf committed replay
+
+- **Mission** — Exercise the frozen scorer on the specified one-leaf carrier with both controls.
+- **Done** — Generated and froze signed model traces, verified the published digests before reveal, and replayed adjudication.
+- **Finding** — Both gaps clear 3/64 with γ=1/512 on the declared synthetic packet.
+- **Bridge value** — The refined model and acquisition scorer now connect end to end. Calibration, measured admission, and independent custody remain open.
+
+## Next step
+
+1. **Priority 92/100** — Bind the declared carrier and probe map to independently calibrated hardware records, beginning with the signed-pair bench packet and timing loopback.
