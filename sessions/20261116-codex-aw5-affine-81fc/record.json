@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261116-codex-aw5-affine-81fc",
+  "runtime": "Codex GitHub connector and local exact compute",
+  "task": "aw5-affine-local-gauge-covariance",
+  "goal": "Capture the exact affine local gauge covariance and homogeneous no-go",
+  "created_at": "2026-11-16T23:38:42.086006+00:00",
+  "base_revision": "11eead3ab89eb98a97e1f2d26b2dae8a9313aab2",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "aw5-affine-local-gauge-covariance": "737ce6c6b0cd743ef21bc1583f6aecf087884101"
+  },
+  "checks": [
+    {
+      "command": "python3 candidates/aw5-affine-local-gauge-covariance/replay_affine_covariance.py",
+      "result": "PASS_EXACT on four carriers"
+    }
+  ],
+  "finding": "Exact affine covariance and homogeneous linear no-go; four integer replays passed.",
+  "next_action": "Independent proof review, then investigate a separate curvature evolution law.",
+  "mathematical_profile": {
+    "coefficient_domain": "R with integer incidence verification",
+    "exactness_or_precision_plan": "Exact symbolic proof and integer basis replay",
+    "applicable_methods": [
+      "Simplicial boundaries",
+      "Affine covariance",
+      "Zero-state obstruction"
+    ],
+    "clock_metric_units_conventions": "Increasing simplex order, unit simplex inner product, native time"
+  },
+  "checkpoint_at": "2026-11-16T23:39:34.751513+00:00",
+  "checkpoint_source": {
+    "revision": "11eead3ab89eb98a97e1f2d26b2dae8a9313aab2",
+    "dirty": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "aw5-affine-local-gauge-covariance",
+  "goal": "Capture the exact affine local gauge covariance and homogeneous no-go",
+  "owned_paths": [
+    "tasks/aw5-affine-local-gauge-covariance.json",
+    "sessions/20261116-codex-aw5-affine-81fc/",
+    "candidates/aw5-affine-local-gauge-covariance/",
+    "artifacts/20261116-codex-aw5-affine-81fc/"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}
