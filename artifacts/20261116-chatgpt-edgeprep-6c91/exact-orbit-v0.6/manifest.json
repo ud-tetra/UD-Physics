@@ -1,0 +1,53 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261116-chatgpt-edgeprep-6c91",
+  "run_id": "exact-orbit-v0.6",
+  "created_at": "2026-11-16T00:24:00Z",
+  "evidence": "EXACT_CONDITIONAL",
+  "summary": "four-phase homogeneity orbit theorem and six-phase nonuniqueness gate",
+  "command": "python verify.py && python replay_independent.py (original local v0.6 package)",
+  "command_execution": "EXECUTED_LOCALLY; GitHub-copy replay NOT_RUN",
+  "source": {
+    "revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "source-01",
+      "name": "packet_modulation_layer.md",
+      "path": "inputs/packet_modulation_layer.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "8e4b23e43ca4b4a0e44eb39d39a4b807ac4674ad1ac14d69eec1f27bbba6fc6d",
+      "size_bytes": 1709
+    },
+    {
+      "input_id": "source-02",
+      "name": "seam_phase_transport.md",
+      "path": "inputs/seam_phase_transport.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "1cc5a0450648fa59b55dc20e1eb79f4112f552aa9d1a1e710abd00c5ac958235",
+      "size_bytes": 1737
+    },
+    {
+      "input_id": "source-03",
+      "name": "triangular_transport_symbol_alphabet.md",
+      "path": "inputs/triangular_transport_symbol_alphabet.md",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "b61c75fc41d4ca702af2f7324a75016de15be17cc3c79a1e40c0cd9db781e033",
+      "size_bytes": 1806
+    }
+  ],
+  "files": [
+    {
+      "path": "files/REPORT.md",
+      "size_bytes": 11742,
+      "sha256": "d2430add3a5f9f86db059d3401f240979b200ba7df8d97f7115092c5561ce422"
+    }
+  ],
+  "physical_promotion": 0,
+  "review": "non-constructor pending"
+}
