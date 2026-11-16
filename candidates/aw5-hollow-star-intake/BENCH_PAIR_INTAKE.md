@@ -16,6 +16,8 @@ Retain zero-input shots, gain/offset calibration, pulse and clock provenance wit
 
 PASS_CONDITIONAL means the packet's supplied bounds meet the unit-cell criteria. FAIL_GATES means the packet was scored and a recorded gate missed. INADMISSIBLE identifies incomplete or unusable input, including an uncertifiable initial span or a transition outside the logarithm radius. A pass from this tool reaches the two-state calibration scope only. The separate AW5 contrast scorer still admits synthetic data only.
 
+See [refined-carrier intake scope](REFINED_INTAKE_SCOPE.md) for the audit of parasitic or intentional subdivisions.
+
 ## Run footer
 
 - **Mission** — Prepare the formal intake for timing-loopback and signed basis-injection records.

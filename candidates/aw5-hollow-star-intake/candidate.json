@@ -32,7 +32,8 @@
     "candidates/aw5-hollow-star-intake/sampled_acquisition_receipt.json",
     "candidates/aw5-hollow-star-intake/signed_pair_receipt.json",
     "candidates/aw5-hollow-star-intake/face_heat_trace_receipt.json",
-    "candidates/aw5-hollow-star-intake/boundary_refinement_receipt.json"
+    "candidates/aw5-hollow-star-intake/boundary_refinement_receipt.json",
+    "candidates/aw5-hollow-star-intake/metric_transfer_receipt.json"
   ],
   "supporting_results": [
     {
@@ -44,6 +45,11 @@
       "result": "Boundary-fixed refinement preserves b2=1 but moves the original exterior residue from 1/4 to 19/80; best aligned residue is 91/380 after one leaf.",
       "record": "https://github.com/ud-tetra/UD/blob/b378ede7269c2a793f90e0692b517a2fd4237ee2/captures/2026-11-16T011802Z-codex-aw5-refine-1dd290/REVISED_MANUSCRIPT_REPRODUCIBILITY_SUPPLEMENT_AW5.md",
       "next_discriminant": "Derive a metric-aware refinement and readout-transfer rule, or exhibit an obstruction."
+    },
+    {
+      "result": "Exact split metric with matched drive/readout preserves 1/4 at any finite depth. The normalized raw exterior and Euclidean Whitney controls differ. Refined-carrier scoring remains open.",
+      "record": "candidates/aw5-hollow-star-intake/REFINED_INTAKE_SCOPE.md",
+      "next_discriminant": "Derive and freeze a finite-window contrast bound for an identified refined carrier and its actual exterior readout."
     }
   ]
 }

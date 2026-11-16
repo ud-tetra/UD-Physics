@@ -123,3 +123,14 @@ Prepared the v2.7 WBS manifest from the supplied master text with the verified U
 - **Bridge value** — The original AW5 amplitude applies to the frozen triangulation and metric. Physical Promotion = 0.
 
 Next: Derive a metric-aware refinement and readout-transfer rule, or exhibit an obstruction.
+
+## AW5 metric transfer and bench scope
+
+- **Mission** — Separate exact metric/readout transfer from physical acceptance of parasitic refinements.
+- **Done** — Replayed the split and Whitney metrics and audited both scorer entry points.
+- **Finding** — Matched transfer preserves the mathematical response. The ideal 1/5 floor cannot be used as a finite-window bench tolerance.
+- **Bridge value** — The audit specifies the scope evidence needed to compare a refined hardware carrier.
+
+## Next step
+
+1. **Priority 92/100** — Freeze an identified refined carrier and derive a finite-window guarantee using its actual damping, readout transfer and controls.
