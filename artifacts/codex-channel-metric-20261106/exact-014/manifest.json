@@ -1,0 +1,74 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-014",
+  "created_at": "2026-11-16T00:06:19.618136+00:00",
+  "evidence": "EXACT",
+  "summary": "Seventh preparation ranking and exact finalist coverage",
+  "command": "python3 experiments/ud-channel-metric-bridge/seventh_probe_screen.py && python3 experiments/ud-channel-metric-bridge/seventh_probe_replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "d2483e23c6005b391d7c0519d64f5261fa888dcd",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "seventh_probe_screen.py",
+      "path": "inputs/001-seventh_probe_screen.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/seventh_probe_screen.py",
+      "sha256": "be9ce629bfb42821f0cde3d329bb108d42e7132526acaba330c160bef1a4a118",
+      "size_bytes": 1532
+    },
+    {
+      "input_id": "input-002",
+      "name": "seventh_probe_replay.py",
+      "path": "inputs/002-seventh_probe_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/seventh_probe_replay.py",
+      "sha256": "c3d88793304abeb4622e9a9457087ffbff2063ec39495fd8f9187aa8de388be2",
+      "size_bytes": 3687
+    },
+    {
+      "input_id": "input-003",
+      "name": "mixed_taylor_replay.py",
+      "path": "inputs/003-mixed_taylor_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/mixed_taylor_replay.py",
+      "sha256": "28514c4b8a2e085a32e18e031a5ba89d290a85ff7d61966021b3303dd3828229",
+      "size_bytes": 3477
+    },
+    {
+      "input_id": "input-004",
+      "name": "three_probe_replay.py",
+      "path": "inputs/004-three_probe_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/three_probe_replay.py",
+      "sha256": "f25aac4154b305ec2f32f6b73fb1cb72d8c6a6e5dd7609c8cc664ab8d0165e26",
+      "size_bytes": 2710
+    },
+    {
+      "input_id": "input-005",
+      "name": "mixture_probe_replay.py",
+      "path": "inputs/005-mixture_probe_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/mixture_probe_replay.py",
+      "sha256": "27dd2fd6fd04f6fd748312f594545acdab117e23339bc5b353c04d021e4b9aba",
+      "size_bytes": 3012
+    }
+  ],
+  "files": [
+    {
+      "path": "files/seventh_probe_screen.txt",
+      "sha256": "302f4b919eb91f0a6f0b79a9aa496b1c379b6c69171f8de2d37b17ae0c139cdc",
+      "size_bytes": 1393
+    },
+    {
+      "path": "files/seventh_probe_results.json",
+      "sha256": "4a8a58aa43ba7ad4254a62a2a9bcf807f7e2bfc844eabd0ce6ff894a895bb52d",
+      "size_bytes": 2955
+    }
+  ]
+}

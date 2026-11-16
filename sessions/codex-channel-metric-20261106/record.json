@@ -13,8 +13,8 @@
     "ud-channel-metric-bridge": "577b2d5b4396066238b735b3e75b275d2349e427"
   },
   "checks": [],
-  "finding": "Direct mixed Taylor bound improves sufficient norm to 618/1000; half-amplitude overlap persists.",
-  "next_action": "Screen charge-bounded seventh preparations by their ability to separate the remaining overlap.",
+  "finding": "Seventh-probe best exact finalist gives sufficient norm 604/1000; half-amplitude overlap remains.",
+  "next_action": "Bound the remaining overlap for the entire charge box before adding more preparations.",
   "mathematical_profile": {
     "coefficient_domain": "Q; identities extend to R",
     "exactness_or_precision_plan": "Fraction replay",
@@ -25,9 +25,9 @@
     ],
     "clock_metric_units_conventions": "Formal u, unit coefficient metrics, ascending simplex orientations; no SI calibration"
   },
-  "checkpoint_at": "2026-11-16T00:01:48.308430+00:00",
+  "checkpoint_at": "2026-11-16T00:06:19.660896+00:00",
   "checkpoint_source": {
-    "revision": "e48b44caa932fe9e126c9f5510d7897f221401d1",
+    "revision": "d2483e23c6005b391d7c0519d64f5261fa888dcd",
     "dirty": true
   }
 }

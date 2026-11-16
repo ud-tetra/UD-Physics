@@ -119,3 +119,6 @@ reading, tightening the uniform bound while retaining a half-amplitude gap.
 
 [Direct mixed Taylor coverage](MIXED_TAYLOR_COVERAGE_v0.1.md) tightens the
 six-reading enclosure without changing the charge or work tolerances.
+
+[Seventh preparation screen](SEVENTH_PROBE_SCREEN_v0.1.md) improves the
+uniform sufficient amplitude to 604/1000 under the same bounds.

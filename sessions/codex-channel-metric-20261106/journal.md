@@ -244,3 +244,20 @@ Captured artifacts/codex-channel-metric-20261106/exact-013 (EXACT): Exact mixed 
 Checkpoint (handoff): Direct mixed Taylor bound improves sufficient norm to 618/1000; half-amplitude overlap persists.
 
 Next: Screen charge-bounded seventh preparations by their ability to separate the remaining overlap.
+
+## Seventh preparation screen
+
+Resumed d2483e2 with held claim. Screened the unit charge grid, checked
+six finalists exactly, and reproduced the six-reading control with the
+new quotient method. Best exact candidate (-5/8,1); uniform sufficient
+norm 604/1000. Half-amplitude overlap persists. No bench changes.
+
+## 2026-11-16T00:06:19.618558+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-014 (EXACT): Seventh preparation ranking and exact finalist coverage
+
+## 2026-11-16T00:06:19.671407+00:00
+
+Checkpoint (handoff): Seventh-probe best exact finalist gives sufficient norm 604/1000; half-amplitude overlap remains.
+
+Next: Bound the remaining overlap for the entire charge box before adding more preparations.
