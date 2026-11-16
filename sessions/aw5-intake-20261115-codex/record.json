@@ -105,6 +105,10 @@
     {
       "command": "OPENBLAS_NUM_THREADS=1 python3 candidates/aw5-hollow-star-intake/recursive_dtn.py",
       "result": "PASS shallow sweep and certified comparison floors"
+    },
+    {
+      "command": "Replay adaptive_dtn_enclosure.py and compare old recursive_dtn.py output",
+      "result": "PASS adaptive bounds and witness; existing depth 4\u20136 replay byte-identical"
     }
   ],
   "finding": "Unit-cell bench intake v1 scores loopback, signed basis injections and held-out comparisons. Five synthetic cases and CLI receipt verified. Bench evidence OPEN.",

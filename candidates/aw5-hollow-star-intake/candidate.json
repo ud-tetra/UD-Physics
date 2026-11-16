@@ -36,7 +36,8 @@
     "candidates/aw5-hollow-star-intake/metric_transfer_receipt.json",
     "candidates/aw5-hollow-star-intake/refined_window_receipt.json",
     "candidates/aw5-hollow-star-intake/refinement_depth_receipt.json",
-    "candidates/aw5-hollow-star-intake/recursive_dtn_receipt.json"
+    "candidates/aw5-hollow-star-intake/recursive_dtn_receipt.json",
+    "candidates/aw5-hollow-star-intake/adaptive_dtn_depth_seven_receipt.json"
   ],
   "supporting_results": [
     {
@@ -73,6 +74,11 @@
       "result": "Four-face terminal response exists after shared graded assembly; the recursive 14-coordinate leaf ports and final 16-face AW5 resolvent certify the original gate at uniform depths 4\u20136. Depth-six margin is 0.000240.",
       "record": "candidates/aw5-hollow-star-intake/RECURSIVE_FREQUENCY_RESPONSE.md",
       "next_discriminant": "Tighten the depth-six numerical enclosure and test whether depth seven clears the fixed gate."
+    },
+    {
+      "result": "Depth-six lower bound 0.060216. Depth-seven undamped fixed-reference gap encloses [0.082828,0.086642], but an admissible Gaussian witness violates the uniform failure level under the original budget.",
+      "record": "candidates/aw5-hollow-star-intake/ADAPTIVE_DTN_DEPTH_SEVEN.md",
+      "next_discriminant": "Derive a sharper noise or deterministic budget for the fixed-reference contrast and identify its spectral weight."
     }
   ]
 }

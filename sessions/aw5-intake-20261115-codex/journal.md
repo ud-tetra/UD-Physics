@@ -191,3 +191,15 @@ Four-face terminal response exists after shared graded assembly; the recursive 1
 [Derivation](../../candidates/aw5-hollow-star-intake/RECURSIVE_FREQUENCY_RESPONSE.md) · [Receipt](../../candidates/aw5-hollow-star-intake/recursive_dtn_receipt.json) · [Captured replay](../../artifacts/aw5-intake-20261115-codex/aw5-dynamic-dtn-depth6/manifest.json).
 
 Next: Tighten the depth-six numerical enclosure and test whether depth seven clears the fixed gate. Physical Promotion = 0.
+
+## 2026-11-16T20:52:10.513766+00:00
+
+Captured artifacts/aw5-intake-20261115-codex/aw5-adaptive-dtn-depth7 (NUMERICAL): Adaptive fixed-grid AW5 depth-six enclosure and admissible depth-seven noise witness. Physical Promotion = 0.
+
+## AW5 adaptive depth-seven enclosure
+
+Depth-six lower bound 0.060216. Depth-seven undamped fixed-reference gap encloses [0.082828,0.086642], but an admissible Gaussian witness violates the uniform failure level under the original budget.
+
+[Derivation](../../candidates/aw5-hollow-star-intake/ADAPTIVE_DTN_DEPTH_SEVEN.md) · [Receipt](../../candidates/aw5-hollow-star-intake/adaptive_dtn_depth_seven_receipt.json) · [Capture](../../artifacts/aw5-intake-20261115-codex/aw5-adaptive-dtn-depth7/manifest.json).
+
+Next: Derive a sharper noise or deterministic budget for the fixed-reference contrast and identify its spectral weight. Physical Promotion = 0.

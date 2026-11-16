@@ -1,0 +1,15 @@
+filled [0, 0, 0] [0, 0, 0]
+hollow [1/48, 1/4, 0] [0, 0, 0]
+PASS: reduced transfer vs full matrices at depths 0–2, 4 frequencies and 2 damping values
+K=4096: common radius per arm 10839/1000000; max numerical resolvent allowance 0.000890274
+  depth 6: budgeted floors 0.158307, 0.038665; undamped fixed-reference gap [0.100856, 0.145087]; NO UNIFORM PASS CERTIFICATE
+  depth 7: budgeted floors 0.157635, -0.000915; undamped fixed-reference gap [0.061276, 0.108194]; NO UNIFORM PASS CERTIFICATE
+K=8192: common radius per arm 9/31250; max numerical resolvent allowance 0.000890308
+  depth 6: budgeted floors 0.179409, 0.059766; undamped fixed-reference gap [0.121957, 0.123985]; CERTIFIED PASS
+  depth 7: budgeted floors 0.178737, 0.020187; undamped fixed-reference gap [0.082378, 0.087092]; NO UNIFORM PASS CERTIFICATE
+K=16384: common radius per arm 63/1000000; max numerical resolvent allowance 0.000890309
+  depth 6: budgeted floors 0.179859, 0.060216; undamped fixed-reference gap [0.122407, 0.123535]; CERTIFIED PASS
+  depth 7: budgeted floors 0.179187, 0.020637; undamped fixed-reference gap [0.082828, 0.086642]; NO UNIFORM PASS CERTIFICATE
+depth 7 admissible witness: mean gap upper 0.074377; actual failure probability > 2 exp(-16)
+depth 7 sufficient alternative sigma <= 1/128: floor 0.047980
+PASS: adaptive truncation radius target met on frozen midpoint grid

@@ -90,18 +90,23 @@ def assemble(s, base, delta, children, baseline_size):
     return M, len(base)*128*U*(absolute_entries(M)+4*absolute_entries(delta)+baseline_size+1)
 
 
-def leaf_schur(s, depth):
+def leaf_schur_components(s, depth):
     baseline = shifted(s,LEAF_A)
     # Last simplex is the oriented tetrahedron. A[v3,v2] is its signed boundary.
     v = np.array([(-1)**(TET.index(next(i for i in TET if i not in face))) for face in PARENT[2]])
     w = np.r_[np.zeros(10),v]
     H = baseline+np.outer(w,w)/s[:,None,None]
-    error = 14*128*U*(absolute_entries(H)+absolute_entries(baseline)+1)
+    errors = [14*128*U*(absolute_entries(H)+absolute_entries(baseline)+1)]
     for _ in range(depth):
         M, assembly_error = assemble(s,CONE_A,H-baseline,CHILD_INDEX,absolute_entries(baseline))
         H, correction = schur(M,PORT_INDEX)
-        error = 4*error+assembly_error+correction
-    return H-baseline, error
+        errors.append(assembly_error+correction)
+    return H-baseline, errors
+
+
+def leaf_schur(s, depth):
+    delta, errors = leaf_schur_components(s,depth)
+    return delta, sum(4**(depth-i)*err for i,err in enumerate(errors))
 
 
 def probe_vector(indices, count, coefficients):
@@ -118,7 +123,7 @@ FILLED_PROBE = HOLLOW_PROBES[:,:1]
 assert AW5[2] == filled_basis[2]
 
 
-def response(s, matrix, probes, error, exterior, gamma):
+def response(s, matrix, probes, error, exterior, gamma, operator_norm=None):
     M = matrix.copy()
     M[:,exterior,exterior] += gamma
     rhs = np.broadcast_to(probes,(len(s),*probes.shape))
@@ -132,10 +137,13 @@ def response(s, matrix, probes, error, exterior, gamma):
     # has support only on retained coordinates.
     error = error+128*m*U*(abs(s)+absolute_entries(M)+1)
     assert np.all(error<ALPHA)
+    minimum = ALPHA if operator_norm is None else np.maximum(
+        ALPHA, abs(s.imag)*(1-8*U)-operator_norm
+    )[:,None]
     resid = residual + 128*(m+1)*U*(
         m*absolute_entries(M)[:,None]*np.max(abs(X),axis=1)+1)
-    radius = (error[:,None]/(ALPHA*(ALPHA-error[:,None]))+
-              np.sqrt(m)*resid/(np.sqrt(norms)*(ALPHA-error[:,None]))+
+    radius = (error[:,None]/(minimum*(minimum-error[:,None]))+
+              np.sqrt(m)*resid/(np.sqrt(norms)*(minimum-error[:,None]))+
               128*m*U*(abs(values)+1))
     return values,radius
 
