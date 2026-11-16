@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "aw5-gap4-native-holonomy",
+  "session": "aw5-gap4-codex-20261116",
+  "status": "held",
+  "created_at": "2026-11-16T21:52:49.708Z",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "owned_paths": [
+    "tasks/aw5-gap4-native-holonomy.json",
+    "sessions/aw5-gap4-codex-20261116/",
+    "candidates/aw5-gap4-native-holonomy/",
+    "artifacts/aw5-gap4-codex-20261116/"
+  ]
+}
