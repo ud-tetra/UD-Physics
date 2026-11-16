@@ -179,3 +179,15 @@ Captured artifacts/aw5-intake-20261115-codex/aw5-refinement-depth-20261116 (EXAC
 - **Bridge value** — The declared finite-window margin survives refinements through the verified scopes. Hardware evidence remains open. Physical Promotion = 0.
 
 Next: Derive frequency-dependent four-terminal reduction or an equivalent certified method for depth four and beyond.
+
+## 2026-11-16T20:39:26.500526+00:00
+
+Captured artifacts/aw5-intake-20261115-codex/aw5-dynamic-dtn-depth6 (NUMERICAL): Exact recursive Schur reduction and conditional midpoint bounds through depth six. Physical Promotion = 0.
+
+## AW5 recursive boundary response
+
+Four-face terminal response exists after shared graded assembly; the recursive 14-coordinate leaf ports and final 16-face AW5 resolvent certify the original gate at uniform depths 4–6. Depth-six margin is 0.000240.
+
+[Derivation](../../candidates/aw5-hollow-star-intake/RECURSIVE_FREQUENCY_RESPONSE.md) · [Receipt](../../candidates/aw5-hollow-star-intake/recursive_dtn_receipt.json) · [Captured replay](../../artifacts/aw5-intake-20261115-codex/aw5-dynamic-dtn-depth6/manifest.json).
+
+Next: Tighten the depth-six numerical enclosure and test whether depth seven clears the fixed gate. Physical Promotion = 0.

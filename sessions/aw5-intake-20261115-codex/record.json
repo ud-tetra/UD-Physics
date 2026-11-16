@@ -101,6 +101,10 @@
     {
       "command": "Run four constructor replays in AW5 candidate",
       "result": "PASS exact arithmetic and conditional clearance through depth three"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 candidates/aw5-hollow-star-intake/recursive_dtn.py",
+      "result": "PASS shallow sweep and certified comparison floors"
     }
   ],
   "finding": "Unit-cell bench intake v1 scores loopback, signed basis injections and held-out comparisons. Five synthetic cases and CLI receipt verified. Bench evidence OPEN.",

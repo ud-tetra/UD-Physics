@@ -35,7 +35,8 @@
     "candidates/aw5-hollow-star-intake/boundary_refinement_receipt.json",
     "candidates/aw5-hollow-star-intake/metric_transfer_receipt.json",
     "candidates/aw5-hollow-star-intake/refined_window_receipt.json",
-    "candidates/aw5-hollow-star-intake/refinement_depth_receipt.json"
+    "candidates/aw5-hollow-star-intake/refinement_depth_receipt.json",
+    "candidates/aw5-hollow-star-intake/recursive_dtn_receipt.json"
   ],
   "supporting_results": [
     {
@@ -67,6 +68,11 @@
       "result": "First-level subsets guarantee contrast >= 7/100. Uniform depth 3 clears 3/64 with direct damped enclosure. Static residue equals 1/[2(1+(3/2)^d)] and tends to zero.",
       "record": "candidates/aw5-hollow-star-intake/REFINEMENT_SWEEP_WINDOW_CERTIFICATE.md",
       "next_discriminant": "Derive frequency-dependent four-terminal reduction or an equivalent certified method for depth four and beyond."
+    },
+    {
+      "result": "Four-face terminal response exists after shared graded assembly; the recursive 14-coordinate leaf ports and final 16-face AW5 resolvent certify the original gate at uniform depths 4\u20136. Depth-six margin is 0.000240.",
+      "record": "candidates/aw5-hollow-star-intake/RECURSIVE_FREQUENCY_RESPONSE.md",
+      "next_discriminant": "Tighten the depth-six numerical enclosure and test whether depth seven clears the fixed gate."
     }
   ]
 }
