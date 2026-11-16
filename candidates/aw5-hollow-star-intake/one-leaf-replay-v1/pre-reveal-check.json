@@ -1,0 +1,12 @@
+{
+  "status": "PASS_PRE_REVEAL",
+  "checks": {
+    "frozen_scorer": true,
+    "certificate_revision": true,
+    "packet_bytes": true,
+    "packet_canonical": true,
+    "all_trace_envelopes": true,
+    "role_commitment": true,
+    "blind_scores": true
+  }
+}
