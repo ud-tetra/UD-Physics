@@ -126,3 +126,6 @@ uniform sufficient amplitude to 604/1000 under the same bounds.
 [Full charge-box overlap](CHARGE_BOX_OVERLAP_v0.1.md) gives a fixed
 half-amplitude witness that adding bounded readings cannot separate under
 the stated receipt boxes.
+
+[Independent baseline anchors](BASELINE_ANCHOR_v0.1.md) give sufficient
+calibration radii for uniform half-amplitude discrimination.

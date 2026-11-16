@@ -13,8 +13,8 @@
     "ud-channel-metric-bridge": "577b2d5b4396066238b735b3e75b275d2349e427"
   },
   "checks": [],
-  "finding": "A fixed half-amplitude alternative and quadratic null overlap across all bounded commands under the receipt-box model.",
-  "next_action": "Determine what independently certified nuisance or shared-error constraint would break the full-box witness.",
+  "finding": "Two independent coefficient anchors at 7/200 each suffice for the six-reading half-amplitude guarantee.",
+  "next_action": "Derive finite-amplitude independent anchor measurements and bound their contamination.",
   "mathematical_profile": {
     "coefficient_domain": "Q; identities extend to R",
     "exactness_or_precision_plan": "Fraction replay",
@@ -25,9 +25,9 @@
     ],
     "clock_metric_units_conventions": "Formal u, unit coefficient metrics, ascending simplex orientations; no SI calibration"
   },
-  "checkpoint_at": "2026-11-16T00:13:58.698774+00:00",
+  "checkpoint_at": "2026-11-16T00:20:04.500421+00:00",
   "checkpoint_source": {
-    "revision": "178e3d5e8f28f8575a6ae071489fb528a2b94294",
+    "revision": "17d09c6f101b9895583704e756a64b6b045f9e3e",
     "dirty": true
   }
 }

@@ -278,3 +278,20 @@ Captured artifacts/codex-channel-metric-20261106/exact-015 (EXACT): Full-box Ber
 Checkpoint (handoff): A fixed half-amplitude alternative and quadratic null overlap across all bounded commands under the receipt-box model.
 
 Next: Determine what independently certified nuisance or shared-error constraint would break the full-box witness.
+
+## Independent baseline anchors
+
+Resumed 17d09c6 under held claim. Augmented six-receipt quotient with
+coefficient observations and solved exact directional minimax. Two
+coordinate anchors suffice at 7/200 each for u² and uv. Single
+coordinate anchors fail in the enlarged model. Calibration not measured.
+
+## 2026-11-16T00:20:04.456949+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-016 (EXACT): Independent quadratic-anchor sensitivity certificate
+
+## 2026-11-16T00:20:04.512227+00:00
+
+Checkpoint (handoff): Two independent coefficient anchors at 7/200 each suffice for the six-reading half-amplitude guarantee.
+
+Next: Derive finite-amplitude independent anchor measurements and bound their contamination.

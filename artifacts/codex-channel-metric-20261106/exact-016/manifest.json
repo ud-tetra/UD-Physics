@@ -1,0 +1,78 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-016",
+  "created_at": "2026-11-16T00:20:04.456515+00:00",
+  "evidence": "EXACT",
+  "summary": "Independent quadratic-anchor sensitivity certificate",
+  "command": "python3 experiments/ud-channel-metric-bridge/baseline_anchor_replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "17d09c6f101b9895583704e756a64b6b045f9e3e",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "baseline_anchor_replay.py",
+      "path": "inputs/001-baseline_anchor_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/baseline_anchor_replay.py",
+      "sha256": "b96dc181450f44554ece27974535993756c896aa15bf16c7781cfd16dfefb92a",
+      "size_bytes": 4426
+    },
+    {
+      "input_id": "input-002",
+      "name": "seventh_probe_replay.py",
+      "path": "inputs/002-seventh_probe_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/seventh_probe_replay.py",
+      "sha256": "c3d88793304abeb4622e9a9457087ffbff2063ec39495fd8f9187aa8de388be2",
+      "size_bytes": 3687
+    },
+    {
+      "input_id": "input-003",
+      "name": "continuum_overlap_replay.py",
+      "path": "inputs/003-continuum_overlap_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/continuum_overlap_replay.py",
+      "sha256": "73a05a9387b8985e5384e281b74d2bd8bcd14b569f117a4d73e9175324081f68",
+      "size_bytes": 2965
+    },
+    {
+      "input_id": "input-004",
+      "name": "mixed_taylor_replay.py",
+      "path": "inputs/004-mixed_taylor_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/mixed_taylor_replay.py",
+      "sha256": "28514c4b8a2e085a32e18e031a5ba89d290a85ff7d61966021b3303dd3828229",
+      "size_bytes": 3477
+    },
+    {
+      "input_id": "input-005",
+      "name": "three_probe_replay.py",
+      "path": "inputs/005-three_probe_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/three_probe_replay.py",
+      "sha256": "f25aac4154b305ec2f32f6b73fb1cb72d8c6a6e5dd7609c8cc664ab8d0165e26",
+      "size_bytes": 2710
+    },
+    {
+      "input_id": "input-006",
+      "name": "mixture_probe_replay.py",
+      "path": "inputs/006-mixture_probe_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/mixture_probe_replay.py",
+      "sha256": "27dd2fd6fd04f6fd748312f594545acdab117e23339bc5b353c04d021e4b9aba",
+      "size_bytes": 3012
+    }
+  ],
+  "files": [
+    {
+      "path": "files/baseline_anchor_results.json",
+      "sha256": "23078bf694340e46ac3b7a272276adfa968b2d25e138f790eb9d0e7349f9256a",
+      "size_bytes": 1959
+    }
+  ]
+}
