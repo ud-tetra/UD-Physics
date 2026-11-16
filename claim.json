@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "integration-edgeprep-metadata-compatibility",
+  "session": "aw5-ci-repair-codex-20261116",
+  "status": "held",
+  "created_at": "2026-11-16T23:00:22.611Z",
+  "base_revision": "17ce43794977068a27b8805d4004a89fd9f83b5a",
+  "owned_paths": [
+    "scripts/validate.py",
+    "tests/test_validate.py",
+    "tasks/integration-edgeprep-metadata-compatibility.json",
+    "sessions/aw5-ci-repair-codex-20261116/"
+  ]
+}
