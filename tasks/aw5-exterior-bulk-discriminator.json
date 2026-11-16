@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "aw5-exterior-bulk-discriminator",
+  "goal": "Derive an exterior scalar readout that separates hollow and filled AW5",
+  "owned_paths": [
+    "tasks/aw5-exterior-bulk-discriminator.json",
+    "sessions/aw5-bulk-codex-20261116/",
+    "candidates/aw5-exterior-bulk-discriminator/",
+    "artifacts/aw5-bulk-codex-20261116/"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}

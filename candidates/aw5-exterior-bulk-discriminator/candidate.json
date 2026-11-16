@@ -1,0 +1,29 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "aw5-exterior-bulk-discriminator",
+  "session_id": "aw5-bulk-codex-20261116",
+  "question": "Derive an exterior scalar readout that separates hollow and filled AW5",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Coherent signed exterior face preparation",
+    "Unit simplex weights",
+    "Optional identical uniform bulk damping"
+  ],
+  "physical_mapping": "OPEN / Physical Promotion = 0",
+  "target_exposure": "Prior exterior pole residue known. No measured target.",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD-Physics/pull/396"
+  ],
+  "baseline": "B2-only matched exterior trace",
+  "result": "One exterior scalar distinguishes matched AW5 preparations. The first separating derivative is order six and equals 12 for common bulk damping. Undamped gap is at least s^6/280 for 0<s<=1.",
+  "next_discriminant": "Translate the signed shell preparation and readout into a bench calibration and error budget.",
+  "mathematical_receipts": [
+    "candidates/aw5-exterior-bulk-discriminator/mathematical_receipt.json"
+  ]
+}
