@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "aw5-multiface-real-readout",
+  "goal": "Extend AW5 real gauge-invariant quadratures to both multiface carriers",
+  "owned_paths": [
+    "tasks/aw5-multiface-real-readout.json",
+    "sessions/aw5-multiface-codex-20261116/",
+    "candidates/aw5-multiface-real-readout/",
+    "artifacts/aw5-multiface-codex-20261116/"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}
