@@ -1,0 +1,38 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "two-channel-conductance-c92e",
+  "session_id": "20261115-chatgpt-micro-2port-c92e",
+  "question": "Does a microscopic coherent two-channel transport readout determine reversible phase-edge conductance before events?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT_CONDITIONAL",
+    "NO-GO_SCOPED",
+    "OPEN_GATED"
+  ],
+  "assumptions": [
+    "balanced 2×2 unitary mixer is selected",
+    "complex coherent superposition represents native packet amplitudes",
+    "bright-port intensity maps to conditional pre-event jump rate",
+    "perfect transmission at U=1",
+    "edge channel norm µ is not source-selected",
+    "phase equilibrium π=(16,4,1,4)/25 is assumed"
+  ],
+  "physical_mapping": "OPEN; no physical apparatus or SI unit",
+  "target_exposure": "Historical CMB and v0.4 A/B fourth derivative exposed; structural audit not a held-out physics prediction",
+  "fitted_choices": [
+    "none fitted to empirical data; π rational Gibbs chosen in predecessor for exact arithmetic"
+  ],
+  "sources": [
+    "https://github.com/ud-tetra/UD/commit/dd1629e1cc8d7c54a8fbb87c970b1bc0db339648",
+    "https://github.com/ud-tetra/UD/pull/515",
+    "March seam_phase_transport.md §4",
+    "March packet_modulation_layer.md §3"
+  ],
+  "baseline": "A/B equal equilibrium, equal channel input total, equal phase-event traffic; phase-blind and unbalanced source nulls",
+  "result": "Conditional p=1/2(1+cos phi), but µ edge distribution nonunique; ΔR''''=729/400 remains.",
+  "next_discriminant": "Source local edge µ, donor and absolute clock without using observed fourth derivative as target.",
+  "mathematical_receipts": [
+    "candidates/two-channel-conductance-c92e/mathematical_receipt.json"
+  ]
+}
