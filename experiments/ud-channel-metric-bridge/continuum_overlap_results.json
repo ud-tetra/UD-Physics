@@ -1,0 +1,27 @@
+{
+  "a": "1/25",
+  "b": "1/2",
+  "ratio": "19/20",
+  "cells": {
+    "-1,-1": {
+      "leaves": 3,
+      "depth": 2,
+      "bernstein_floor": "4391/5400000"
+    },
+    "-1,+1": {
+      "leaves": 8,
+      "depth": 5,
+      "bernstein_floor": "27/50000"
+    },
+    "+1,-1": {
+      "leaves": 8,
+      "depth": 6,
+      "bernstein_floor": "4581/6400000"
+    },
+    "+1,+1": {
+      "leaves": 1,
+      "depth": 0,
+      "bernstein_floor": "683/200000"
+    }
+  }
+}

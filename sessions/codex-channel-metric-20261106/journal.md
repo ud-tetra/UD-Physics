@@ -261,3 +261,20 @@ Captured artifacts/codex-channel-metric-20261106/exact-014 (EXACT): Seventh prep
 Checkpoint (handoff): Seventh-probe best exact finalist gives sufficient norm 604/1000; half-amplitude overlap remains.
 
 Next: Bound the remaining overlap for the entire charge box before adding more preparations.
+
+## Full charge-box overlap
+
+Resumed 178e3d5 under held claim. Rational quadratic selected from an
+exploratory fit; exact Bernstein positivity on 20 cells proves
+full-box receipt overlap with slack. Additional probes alone cannot
+certify uniform half-amplitude detection in this error model.
+
+## 2026-11-16T00:13:58.645694+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-015 (EXACT): Full-box Bernstein overlap certificate
+
+## 2026-11-16T00:13:58.711710+00:00
+
+Checkpoint (handoff): A fixed half-amplitude alternative and quadratic null overlap across all bounded commands under the receipt-box model.
+
+Next: Determine what independently certified nuisance or shared-error constraint would break the full-box witness.
