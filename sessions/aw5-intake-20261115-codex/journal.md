@@ -160,3 +160,7 @@ Next: Derive a metric-aware refinement and readout-transfer rule, or exhibit an 
 ## AW5 raw archive preflight
 
 Archived the verified shell script and linked it from the bench intake. The raw archive and independently authenticated digest remain pending. Physical Promotion = 0.
+
+## AW5 exact timing boundary
+
+The pinned preflight-era unit-cell CLI rounded a decimal just above 1/1024 ms into the passing boundary. Decimal JSON timing inputs now feed an exact rational maximum and uncertainty sum. Eight CLI cases passed, including positive and negative deviations, sums at and above the gate, and a decimal beyond floating-point resolution. The measured archive and custody evidence remain pending. Physical Promotion = 0.

@@ -1,5 +1,7 @@
 """Reduce signed AW5 bench shots under supplied uncertainty certificates."""
 import argparse
+from decimal import Decimal
+from fractions import Fraction
 import hashlib
 import json
 from pathlib import Path
@@ -11,6 +13,7 @@ H = 1/8
 RADIUS = 1/4
 TARGET = np.array([[-1/1024, -1], [1, 0]])
 SHOT_IDS = ("+e1", "-e1", "+e2", "-e2")
+TIMING_LIMIT_MS = Fraction(1, 1024)
 
 
 def finite(value, shape):
@@ -31,6 +34,17 @@ def norm(matrix):
     return float(np.linalg.norm(matrix, ord=2))
 
 
+def loopback_error(timing):
+    times = timing["midpoint_times_ms"]
+    if not isinstance(times, (list, tuple, np.ndarray)) or len(times) != 256:
+        raise ValueError("Expected 256 effective midpoint timestamps")
+    uncertainty = Fraction(str(timing["uncertainty_ms"]))
+    if uncertainty < 0:
+        raise ValueError("Timing uncertainty must be nonnegative")
+    return max(abs(Fraction(str(value))-Fraction(2*k+1, 16))
+               for k, value in enumerate(times))+uncertainty
+
+
 def assess(packet):
     try:
         evidence = packet["evidence"]
@@ -43,10 +57,7 @@ def assess(packet):
         g_limit = bound(cert["generator_norm_upper"])
         if g_limit > 3/2:
             raise ValueError("Generator prior exceeds the declared logarithm scope")
-        timing = packet["timing"]
-        axis = finite(timing["midpoint_times_ms"], (256,))
-        nominal = (np.arange(256)+0.5)/8
-        timing_error = float(np.max(np.abs(axis-nominal)))+bound(timing["uncertainty_ms"])
+        timing_error = loopback_error(packet["timing"])
 
         shots = packet["shots"]
         if set(shots) != set(SHOT_IDS):
@@ -73,7 +84,7 @@ def assess(packet):
         off = float(max(abs(G[0, 1]+1), abs(G[1, 0]-1)))+rho
         upper_sym = float(np.linalg.eigvalsh((G+G.T)/2)[-1])+rho
         gamma = float(G[1, 1]-G[0, 0])
-        gates = {"timing_loopback": timing_error <= 1/1024,
+        gates = {"timing_loopback": timing_error <= TIMING_LIMIT_MS,
                  "generator": norm(G-TARGET)+rho <= 1/4096,
                  "signed_coefficients": off <= 1/49152,
                  "dissipativity": upper_sym <= 0,
@@ -99,10 +110,11 @@ def assess(packet):
         gates["heldout"] = bool(gates["dissipativity"] and all(item["pass"] for item in residuals))
         return {"status": "PASS_CONDITIONAL" if all(gates.values()) else "FAIL_GATES",
                 "scope": evidence, "generator_estimate": G.tolist(), "transition_error_upper": epsilon,
-                "generator_error_upper": rho, "loopback_error_ms": timing_error,
+                "generator_error_upper": rho, "loopback_error_ms": float(timing_error),
+                "loopback_error_ms_exact": str(timing_error),
                 "selective_loss_interval": [gamma-2*rho, gamma+2*rho],
                 "gates": gates, "heldout": residuals, "physical_promotion": 0}
-    except (KeyError, TypeError, ValueError, OverflowError, np.linalg.LinAlgError) as exc:
+    except (KeyError, TypeError, ValueError, ArithmeticError, np.linalg.LinAlgError) as exc:
         return {"status": "INADMISSIBLE", "reason": str(exc), "physical_promotion": 0}
 
 
@@ -112,8 +124,8 @@ def main():
     path = parser.parse_args().packet
     raw = path.read_bytes()
     try:
-        result = assess(json.loads(raw))
-    except (UnicodeError, json.JSONDecodeError) as exc:
+        result = assess(json.loads(raw, parse_float=Decimal))
+    except (UnicodeError, json.JSONDecodeError, ArithmeticError) as exc:
         result = {"status": "INADMISSIBLE", "reason": str(exc), "physical_promotion": 0}
     result["packet_sha256"] = hashlib.sha256(raw).hexdigest()
     print(json.dumps(result, indent=2, allow_nan=False))

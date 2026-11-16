@@ -1,5 +1,11 @@
 """Synthetic packet builder and formal intake regression replay."""
 from copy import deepcopy
+from fractions import Fraction
+import json
+from pathlib import Path
+import subprocess
+import sys
+import tempfile
 
 import numpy as np
 from scipy.linalg import expm
@@ -44,6 +50,28 @@ def check(name, packet, expected, gate=None):
     print(f"{name}: {expected}")
 
 
+def check_timing_boundary(nominal):
+    packet = deepcopy(nominal)
+    packet["timing"]["uncertainty_ms"] = 0
+    packet["timing"]["midpoint_times_ms"][-1] = "LAST_MIDPOINT"
+    raw = json.dumps(packet)
+    scorer = Path(__file__).with_name("bench_pair_intake.py")
+    cases = (
+        ("decimal just below", "31.9384765624999999999", True),
+        ("exact timing limit", "31.9384765625", True),
+        ("decimal just above", "31.9384765625000000001", False),
+        ("rounded 0.977 microseconds", "31.938477", False),
+    )
+    with tempfile.TemporaryDirectory() as directory:
+        path = Path(directory)/"packet.json"
+        for label, timestamp, expected in cases:
+            path.write_text(raw.replace('"LAST_MIDPOINT"', timestamp), encoding="utf-8")
+            receipt = json.loads(subprocess.check_output([sys.executable, scorer, path]))
+            assert receipt["gates"]["timing_loopback"] is expected, receipt
+            assert Fraction(receipt["loopback_error_ms_exact"]) == Fraction(timestamp) - Fraction(511, 16)
+            print(f"{label}: {receipt['status']}")
+
+
 if __name__ == "__main__":
     nominal = fixture()
     check("nominal signed shots and held-out response", nominal, "PASS_CONDITIONAL")
@@ -60,3 +88,4 @@ if __name__ == "__main__":
     bad = deepcopy(nominal)
     bad["shots"]["+e2"], bad["shots"]["-e2"] = bad["shots"]["+e1"], bad["shots"]["-e1"]
     check("rank-deficient injection", bad, "INADMISSIBLE")
+    check_timing_boundary(nominal)

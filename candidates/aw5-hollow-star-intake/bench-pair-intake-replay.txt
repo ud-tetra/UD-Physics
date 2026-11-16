@@ -3,3 +3,7 @@ timing_loopback: FAIL_GATES
 heldout: FAIL_GATES
 missing uncertainty reference: INADMISSIBLE
 rank-deficient injection: INADMISSIBLE
+decimal just below: PASS_CONDITIONAL
+exact timing limit: PASS_CONDITIONAL
+decimal just above: FAIL_GATES
+rounded 0.977 microseconds: FAIL_GATES
