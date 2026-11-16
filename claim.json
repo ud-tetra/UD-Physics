@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "native-two-channel-conductance-20261115-c92e",
+  "session": "20261115-chatgpt-micro-2port-c92e",
+  "status": "held",
+  "created_at": "2026-11-15T23:59:00Z",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "owned_paths": [
+    "tasks/native-two-channel-conductance-20261115-c92e.json",
+    "sessions/20261115-chatgpt-micro-2port-c92e/",
+    "candidates/micro-two-port-20261115-c92e/",
+    "artifacts/20261115-chatgpt-micro-2port-c92e/"
+  ]
+}
