@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "edge-preparation-homogeneity-20261116-6c91",
+  "session": "20261116-chatgpt-edgeprep-6c91",
+  "status": "held",
+  "created_at": "2026-11-16T00:24:00Z",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "owned_paths": [
+    "tasks/edge-preparation-homogeneity-20261116-6c91.json",
+    "sessions/20261116-chatgpt-edgeprep-6c91/",
+    "candidates/edge-preparation-homogeneity-20261116-6c91/",
+    "artifacts/20261116-chatgpt-edgeprep-6c91/"
+  ]
+}
