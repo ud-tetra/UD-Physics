@@ -1,0 +1,160 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "aw5-grade-aware-dtn",
+  "session_id": "aw5-intake-20261115-codex",
+  "candidate_id": "aw5-hollow-star-intake",
+  "question": "Can the fixed AW5 midpoint gate be certified through depth six using a recursive boundary resolvent?",
+  "evidence_labels": [
+    "EXACT",
+    "NUMERICAL",
+    "CONDITIONAL"
+  ],
+  "objects": [
+    {
+      "object_id": "AW5-DTN-LEAF",
+      "symbol": "H_d(s)",
+      "object_type": "frequency-dependent Schur complement",
+      "definition": "Schur of sI\u2212A on original tetrahedron boundary",
+      "domain": "14 boundary simplex coordinates",
+      "codomain": "14 boundary simplex coordinates",
+      "coefficient_domain": "Q(s); complex evaluation with Re(s)>0",
+      "units": "native generator rate",
+      "basis_orientation": "ascending simplex labels",
+      "metric_measure": "unit simplex metric",
+      "origin": "derived",
+      "exact_expression": "Schur_boundary(sI_skeleton\u2212A_skeleton+\u03a3 E_i^T(H_d\u2212K_boundary)E_i)",
+      "source_refs": [
+        "AW5-PRIOR"
+      ],
+      "assumption_ids": [
+        "UNIT"
+      ],
+      "normalization": "one incidence and one spectral parameter per global simplex"
+    },
+    {
+      "object_id": "AW5-DTN-PROBE",
+      "symbol": "F_q(s;gamma)",
+      "object_type": "collocated scalar resolvent",
+      "definition": "Normalized drive and readout on 16 face ports",
+      "domain": "right-half-plane frequency and declared gamma interval",
+      "codomain": "C",
+      "coefficient_domain": "rational function with binary64 replay and certified arithmetic allowances",
+      "units": "native time per unit signed impulse",
+      "basis_orientation": "ascending faces",
+      "metric_measure": "unit simplex metric",
+      "origin": "derived",
+      "exact_expression": "q^T (S_F(s)+gamma P)^(-1) q / (q^T q)",
+      "source_refs": [
+        "AW5-PRIOR"
+      ],
+      "assumption_ids": [
+        "UNIT",
+        "ACQ"
+      ],
+      "normalization": "unit probe"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "AW5-PRIOR",
+      "url_or_repo_path": "candidates/aw5-hollow-star-intake/REFINEMENT_SWEEP_WINDOW_CERTIFICATE.md",
+      "version_or_commit": "359989a70d2fd604c3b213b2f3245574a867fb2c",
+      "section_or_object_id": "Fixed exterior probes, tolerances and damping interpolation",
+      "source_status": "Prior Discovery depth certificate"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "UNIT",
+      "definition": "Uniform stellar refinement, unit simplex metric and real skew signed generator"
+    },
+    {
+      "id": "ACQ",
+      "definition": "Original timing, I/O, drift, operator and independent-noise budgets; each arm has gamma in [0,1/512]; binary64 normal arithmetic model"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Nested Schur complement and rational Fourier truncation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Enclose original midpoint means without recursive dense volume construction"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "Real oriented graded chains, exact projected complex resolvent",
+    "generator_or_update": "A=B^T\u2212B, damped G=A\u2212gamma P",
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": "14 per leaf, 16 final AW5 faces",
+    "physical_mapping": "Proposed analog readout; no calibration"
+  },
+  "target_exposure": {
+    "status": "EXPOSED",
+    "known_targets": [
+      "3/64 threshold",
+      "Prior depth 1\u20133 bounds",
+      "Exact stationary residue law"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "Uniform depths 4\u20136; 8192 positive Fourier modes",
+    "selection_criterion": "Fixed original acquisition window and both controls",
+    "baseline": null
+  },
+  "calculation_steps": [
+    "Retain vertices, edges and faces when gluing child leaves",
+    "Assemble original AW5 skeleton with shared terms counted once",
+    "Reduce to 16 face ports and include exterior damping",
+    "Bound Fourier tails, aliasing, and lifted local solve residuals",
+    "Subtract acquisition and interpolation losses"
+  ],
+  "result": {
+    "exact_expression": "Grade-aware H_{d+1} Schur recursion and exact transfer identity; certified sampled contrasts exceed 3/64 at d=4,5,6",
+    "approximation": "minimum floors 0.052667, 0.109238 and 0.047115",
+    "units": "normalized sample mean contrast",
+    "precision_and_error": "Conservative downward six-decimal summaries after all allowances",
+    "scope": "Uniform depths four through six and declared AW5 probes; no full deep model constructed",
+    "physical_interpretation": "HYPOTHESIS"
+  },
+  "verification": [
+    {
+      "method": "Cross-check reduced and full shallow transfer; replay analytical bounds and numerical enclosures",
+      "command_or_proof_path": "artifacts/aw5-intake-20261115-codex/aw5-dynamic-dtn-depth6/manifest.json",
+      "source_revision": "359989a70d2fd604c3b213b2f3245574a867fb2c",
+      "actual_result": "PASS depths 0\u20132 shallow cross-check; depth 4\u20136 fixed threshold",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Leafwise elimination of shared degrees discards gluing information.",
+    "Depth-six stationary residue below gate does not imply finite-window failure."
+  ],
+  "limitations": [
+    "Hardware and independent review remain open.",
+    "Narrow depth-six clearance under the declared arithmetic model.",
+    "No claim beyond depth six."
+  ],
+  "changed_dependencies": [
+    "Replaces full-grid deep propagation by a reduced frequency-domain calculation."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/aw5-intake-20261115-codex/aw5-dynamic-dtn-depth6/manifest.json"
+  ],
+  "next_discriminant": "Tighten the depth-six numerical enclosure and test whether depth seven clears the fixed gate."
+}

@@ -1,0 +1,120 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "aw5-face-heat-trace-control",
+  "session_id": "aw5-intake-20261115-codex",
+  "candidate_id": "aw5-hollow-star-intake",
+  "question": "Which features of the AW5 face heat trace survive boundary-fixed retriangulation?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "objects": [
+    {
+      "object_id": "AW5-L2",
+      "symbol": "L2",
+      "object_type": "face Hodge Laplacian",
+      "definition": "B2^T B2+B3 B3^T",
+      "domain": "oriented face chains",
+      "codomain": "oriented face chains",
+      "coefficient_domain": "Z incidence; R diffusion",
+      "units": "native",
+      "basis_orientation": "ascending vertex labels",
+      "metric_measure": "unit simplex inner product",
+      "origin": "derived",
+      "exact_expression": "B2^T B2+B3 B3^T",
+      "source_refs": [
+        "UD-AW5-TRACE"
+      ],
+      "assumption_ids": [
+        "UNIT"
+      ],
+      "normalization": "unnormalized unless noted"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "UD-AW5-TRACE",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/848aef0f1729f1a39f3939b92e008ffec3a2f02e/captures/2026-11-16T004932Z-codex-aw5-heat-729e4b/AW5_FACE_HEAT_TRACE.md",
+      "version_or_commit": "848aef0f1729f1a39f3939b92e008ffec3a2f02e",
+      "section_or_object_id": "Corrected cavity identity and filled-star 2-to-3 control",
+      "source_status": "pinned PR capture"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "UNIT",
+      "definition": "Unit simplex metric; fixed auxiliary spectral parameter"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Exact characteristic polynomial and boundary comparison",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Test spectral change and unchanged nullity under bistellar move"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "Oriented real degree-2 chains",
+    "generator_or_update": "L2=B2^T B2+B3 B3^T; heat semigroup exp(-t L2)",
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": "Trace; long-time harmonic rank",
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "EXPOSED",
+    "known_targets": [
+      "User-supplied corrected factorization",
+      "Topologically preserved b2 in bistellar control"
+    ],
+    "fitted_parameters_or_formula_choices": []
+  },
+  "calculation_steps": [
+    "Cancel the common rank-11 lower face block for hub removal",
+    "Factor the difference of exact heat traces",
+    "Verify the legal local 2-to-3 replacement and compute exact nullities"
+  ],
+  "result": {
+    "exact_expression": "cavity: (1-exp(-2t))(1+exp(-4t)); flipped-minus-filled limit 0",
+    "scope": "AW5 unit simplex face heat trace and single bistellar control",
+    "units": "dimensionless trace",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "Exact signed incidence replay and UD integrity check",
+      "command_or_proof_path": "https://github.com/ud-tetra/UD/blob/848aef0f1729f1a39f3939b92e008ffec3a2f02e/captures/2026-11-16T004932Z-codex-aw5-heat-729e4b/AW5_FACE_HEAT_TRACE.md",
+      "source_revision": "848aef0f1729f1a39f3939b92e008ffec3a2f02e",
+      "actual_result": "PASS constructor replay",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "The minus-sign product predicts slope zero and contradicts the exact trace moment.",
+    "Equal b2 does not fix the finite-time face trace."
+  ],
+  "limitations": [
+    "Heat parameter is auxiliary.",
+    "Finite-time spectra and exterior readout depend on the metric and triangulation."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Apply a boundary-fixed refinement to hollow AW5 and separate lifetime, external readout residue and harmonic count."
+}

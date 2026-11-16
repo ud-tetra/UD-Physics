@@ -1,0 +1,3 @@
+guarded nominal: PASS synthetic certificate; rho=2.558e-06
+wrong polarity: FAIL synthetic certificate; rho=2.728e-06
+excess coupling error: FAIL synthetic certificate; rho=2.558e-06

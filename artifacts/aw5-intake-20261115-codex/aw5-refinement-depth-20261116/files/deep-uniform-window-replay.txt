@@ -1,0 +1,4 @@
+filled [0, 0, 0] [0, 0, 0]
+hollow [1/48, 1/4, 0] [0, 0, 0]
+depth 2, states 326: undamped gaps 0.1778983989, 0.1772682427; budgeted minimum 0.0556781053
+depth 3, states 1222: undamped gaps 0.1143683970, 0.1187691267; budgeted minimum -0.0072217405

@@ -1,0 +1,6 @@
+depth 0: 1 cells per leaf, exact exterior response coefficient 1/4
+depth 1: 4 cells per leaf, exact exterior response coefficient 1/5
+depth 2: 16 cells per leaf, exact exterior response coefficient 2/13
+depth 3: 64 cells per leaf, exact exterior response coefficient 4/35
+depth 5 static residue 16/275; depth 6 static residue 32/793
+PASS: closed form and four-terminal reduction

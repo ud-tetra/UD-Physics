@@ -1,0 +1,9 @@
+filled [0, 0, 0] [0, 0, 0]
+hollow [1/48, 1/4, 0] [0, 0, 0]
+PASS: reduced transfer vs full matrices at depths 0–2, 4 frequencies and 2 damping values
+depth | lower gap vs filled | lower gap vs fixed reference | headroom vs 3/64
+4 | 0.052667 | 0.055295 | 0.005792
+5 | 0.177999 | 0.109238 | 0.062363
+6 | 0.173116 | 0.047115 | 0.000240
+fourier tail, alias and scalar arithmetic allowance per arm: 1/4000
+PASS: independently bounded arm damping in [0, 1/512], fixed 3/64 gate

@@ -1,0 +1,96 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "aw5-hollow-star-intake",
+  "session_id": "aw5-intake-20261115-codex",
+  "question": "Can a cavity-sensitive face readout distinguish hollow AW5 from filled AW5 under declared dynamics?",
+  "status": "HYPOTHESIS",
+  "evidence": [
+    "HYPOTHESIS",
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Oriented real simplicial chain model with unit simplex inner product",
+    "Toy damping \u2212\u03b3 P_ext"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Offline flux, shielding, routing and matter/vacuum ideas exposed before intake replay",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD/blob/contrib/ud-tetra/2026-11-15-aw5-7cf191/captures/2026-11-15T174000Z-codex-aw5-7cf191/AW5_AUDIT.md",
+    "User-supplied offline LLM report; citation keys unresolved"
+  ],
+  "baseline": "Filled AW5 under matching model and readout",
+  "result": "Unit-cell bench intake v1 scores loopback, signed basis injections and held-out comparisons. Five synthetic cases and CLI receipt verified. Bench evidence OPEN.",
+  "next_discriminant": "Collect signed pair bench data and audit timestamp, endpoint and scope certificates.",
+  "mathematical_receipts": [
+    "candidates/aw5-hollow-star-intake/mathematical_receipt.json",
+    "candidates/aw5-hollow-star-intake/zero_frequency_receipt.json",
+    "candidates/aw5-hollow-star-intake/weak_damping_receipt.json",
+    "candidates/aw5-hollow-star-intake/sampled_acquisition_receipt.json",
+    "candidates/aw5-hollow-star-intake/signed_pair_receipt.json",
+    "candidates/aw5-hollow-star-intake/face_heat_trace_receipt.json",
+    "candidates/aw5-hollow-star-intake/boundary_refinement_receipt.json",
+    "candidates/aw5-hollow-star-intake/metric_transfer_receipt.json",
+    "candidates/aw5-hollow-star-intake/refined_window_receipt.json",
+    "candidates/aw5-hollow-star-intake/refinement_depth_receipt.json",
+    "candidates/aw5-hollow-star-intake/recursive_dtn_receipt.json",
+    "candidates/aw5-hollow-star-intake/adaptive_dtn_depth_seven_receipt.json",
+    "candidates/aw5-hollow-star-intake/depth_seven_modes_receipt.json",
+    "candidates/aw5-hollow-star-intake/depth_seven_mode_lift_receipt.json"
+  ],
+  "supporting_results": [
+    {
+      "result": "Exact plus-sign cavity formula; legal filled 2-to-3 control changes the finite-time face spectrum and preserves b2=0.",
+      "record": "candidates/aw5-hollow-star-intake/FACE_HEAT_TRACE_CONTROL.md",
+      "next_discriminant": "Apply a boundary-fixed refinement to hollow AW5 and separate lifetime, external readout residue and harmonic count."
+    },
+    {
+      "result": "Boundary-fixed refinement preserves b2=1 but moves the original exterior residue from 1/4 to 19/80; best aligned residue is 91/380 after one leaf.",
+      "record": "https://github.com/ud-tetra/UD/blob/b378ede7269c2a793f90e0692b517a2fd4237ee2/captures/2026-11-16T011802Z-codex-aw5-refine-1dd290/REVISED_MANUSCRIPT_REPRODUCIBILITY_SUPPLEMENT_AW5.md",
+      "next_discriminant": "Derive a metric-aware refinement and readout-transfer rule, or exhibit an obstruction."
+    },
+    {
+      "result": "Exact split metric with matched drive/readout preserves 1/4 at any finite depth. The normalized raw exterior and Euclidean Whitney controls differ. Refined-carrier scoring remains open.",
+      "record": "candidates/aw5-hollow-star-intake/REFINED_INTAKE_SCOPE.md",
+      "next_discriminant": "Derive and freeze a finite-window contrast bound for an identified refined carrier and its actual exterior readout."
+    },
+    {
+      "result": "One-leaf AW5 model contrast against each control is at least 978548309/16095641600 with joint confidence at least 1-2 exp(-16) under stated acquisition tolerances.",
+      "record": "candidates/aw5-hollow-star-intake/REFINED_WINDOW_CERTIFICATE.md",
+      "next_discriminant": "Replay the refined model traces through the frozen scorer and bind the identified probe map to calibration evidence."
+    },
+    {
+      "result": "Frozen one-leaf synthetic packet passes both contrasts at gamma=1/512; committed envelope and packet hashes verified before reveal.",
+      "record": "candidates/aw5-hollow-star-intake/one-leaf-replay-v1/REPLAY.md",
+      "next_discriminant": "Bind the refined probe map to calibrated hardware records, starting with signed-pair timing and basis shots."
+    },
+    {
+      "result": "First-level subsets guarantee contrast >= 7/100. Uniform depth 3 clears 3/64 with direct damped enclosure. Static residue equals 1/[2(1+(3/2)^d)] and tends to zero.",
+      "record": "candidates/aw5-hollow-star-intake/REFINEMENT_SWEEP_WINDOW_CERTIFICATE.md",
+      "next_discriminant": "Derive frequency-dependent four-terminal reduction or an equivalent certified method for depth four and beyond."
+    },
+    {
+      "result": "Four-face terminal response exists after shared graded assembly; the recursive 14-coordinate leaf ports and final 16-face AW5 resolvent certify the original gate at uniform depths 4\u20136. Depth-six margin is 0.000240.",
+      "record": "candidates/aw5-hollow-star-intake/RECURSIVE_FREQUENCY_RESPONSE.md",
+      "next_discriminant": "Tighten the depth-six numerical enclosure and test whether depth seven clears the fixed gate."
+    },
+    {
+      "result": "Depth-six lower bound 0.060216. Depth-seven undamped fixed-reference gap encloses [0.082828,0.086642], but an admissible Gaussian witness violates the uniform failure level under the original budget.",
+      "record": "candidates/aw5-hollow-star-intake/ADAPTIVE_DTN_DEPTH_SEVEN.md",
+      "next_discriminant": "Derive a sharper noise or deterministic budget for the fixed-reference contrast and identify its spectral weight."
+    },
+    {
+      "result": "The depth-seven target is exactly edge-free. Two interval-verified constant-terminal modes contribute +0.083500 and +0.033991; the differential sector offsets part of the positive top-cell transient.",
+      "record": "candidates/aw5-hollow-star-intake/DEPTH_SEVEN_MODE_DECOMPOSITION.md",
+      "next_discriminant": "Lift the selected eigenvectors and measure their norm distribution by refinement level and cell orbit."
+    },
+    {
+      "result": "Mode A is nodeless and nearly uniform. Mode B is sign-changing and shell-dominated. The internal shared-face dual-cycle projection vanishes exactly for both lifts.",
+      "record": "candidates/aw5-hollow-star-intake/DEPTH_SEVEN_MODE_LIFT.md",
+      "next_discriminant": "Lift the first-order response to a one-leaf perturbation and test the shell and dual-cycle observables under the same probe."
+    }
+  ]
+}

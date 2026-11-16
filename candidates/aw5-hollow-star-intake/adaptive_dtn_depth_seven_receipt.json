@@ -1,0 +1,157 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "aw5-adaptive-dtn-depth-seven",
+  "session_id": "aw5-intake-20261115-codex",
+  "candidate_id": "aw5-hollow-star-intake",
+  "question": "Can sharper fixed-grid enclosure certify depth seven under the same budgets?",
+  "evidence_labels": [
+    "EXACT",
+    "NUMERICAL",
+    "CONDITIONAL"
+  ],
+  "objects": [
+    {
+      "object_id": "AW5-DTN-ADAPTIVE-ENCLOSURE",
+      "symbol": "C^-_d",
+      "object_type": "certified lower sample mean contrast",
+      "definition": "Endpoint and Fourier intervals tightened by overlap multiplicity and singular-value bounds",
+      "domain": "Uniform depths 6 and 7; fixed AW5 probes",
+      "codomain": "real mean contrast",
+      "coefficient_domain": "binary64 interval enclosures with rational tail checks",
+      "units": "native normalized readout",
+      "basis_orientation": "ascending simplex labels",
+      "metric_measure": "unit simplex metric",
+      "origin": "derived",
+      "exact_expression": "C^-_6=0.060216, C^-_7=0.020637 as outward lower bounds",
+      "source_refs": [
+        "AW5-PRIOR"
+      ],
+      "assumption_ids": [
+        "ACQ"
+      ],
+      "normalization": "unit drive and readout"
+    },
+    {
+      "object_id": "AW5-D7-GAUSSIAN-WITNESS",
+      "symbol": "p_fail",
+      "object_type": "probability of failing fixed-reference comparison",
+      "definition": "Admissible adverse gain and offset, asymmetric damping, independent Gaussian noise",
+      "domain": "declared scope at depth seven",
+      "codomain": "[0,1]",
+      "coefficient_domain": "real probability with rational endpoint checks",
+      "units": "dimensionless",
+      "basis_orientation": "ascending simplex labels",
+      "metric_measure": "unit simplex metric",
+      "origin": "derived",
+      "exact_expression": "p_fail > (5/26) exp(-25/2)/sqrt(2*pi) > 2 exp(-16)",
+      "source_refs": [
+        "AW5-PRIOR"
+      ],
+      "assumption_ids": [
+        "ACQ"
+      ],
+      "normalization": "sample noise standard deviation 1/16"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "AW5-PRIOR",
+      "url_or_repo_path": "candidates/aw5-hollow-star-intake/RECURSIVE_FREQUENCY_RESPONSE.md",
+      "version_or_commit": "107d9c9feed6416b7eb59b6b215158bf5bd0ddfd",
+      "section_or_object_id": "Recursive resolvent, local backward error and acquisition",
+      "source_status": "Prior Discovery certificate"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "UNIT",
+      "definition": "Uniform stellar refinement, unit simplex metric and real skew signed generator"
+    },
+    {
+      "id": "ACQ",
+      "definition": "Original timing, I/O, drift, operator and independent-noise budgets; each arm has gamma in [0,1/512]; binary64 normal arithmetic model"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Overlap bound, frequency conditioning and Gaussian Mills lower bound",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Sharpen numerical enclosure and disprove uniform depth-seven pass under original tolerances"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "Real oriented graded chains, exact projected complex resolvent",
+    "generator_or_update": "A=B^T\u2212B, damped G=A\u2212gamma P",
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": "14 per leaf, 16 final AW5 faces",
+    "physical_mapping": "Proposed analog readout; no calibration"
+  },
+  "target_exposure": {
+    "status": "EXPOSED",
+    "known_targets": [
+      "3/64 gate",
+      "2 exp(-16) probability allowance",
+      "Prior depth-six headroom 0.000240"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "Uniform depths six and seven, cutoffs 4096 through 16384; no probe or sampling changes",
+    "selection_criterion": "Fixed window and acquisition protocol",
+    "baseline": null
+  },
+  "calculation_steps": [
+    "Bound repeated local corrections by maximum support multiplicity",
+    "Use high-frequency singular-value separation and a growing Fourier cutoff",
+    "Intersect per-arm intervals at the original damping endpoints",
+    "Construct allowed gains, offsets and Gaussian noise at depth seven"
+  ],
+  "result": {
+    "exact_expression": "Depth-six lower bound 0.060216. Depth-seven undamped fixed-reference gap encloses [0.082828,0.086642], but an admissible Gaussian witness violates the uniform failure level under the original budget.",
+    "approximation": "Depth-six headroom 0.013341; depth-seven alternative with sigma at most 1/128 has floor 0.047980",
+    "units": "normalized sample contrast",
+    "precision_and_error": "Floors rounded downward; final common radius 0.000063 per arm plus weighted local residuals",
+    "scope": "Uniform depths six and seven, original probes, no measured input",
+    "physical_interpretation": "HYPOTHESIS"
+  },
+  "verification": [
+    {
+      "method": "Replay adaptive and legacy paths; rational threshold and Mills inequalities",
+      "command_or_proof_path": "artifacts/aw5-intake-20261115-codex/aw5-adaptive-dtn-depth7/manifest.json",
+      "source_revision": "107d9c9feed6416b7eb59b6b215158bf5bd0ddfd",
+      "actual_result": "PASS depth-six certificate, ideal depth-seven finite-window pass, and adverse Gaussian witness",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "A legal pair of damping endpoints, signed gain/bias errors and independent Gaussian sample noise fails the depth-seven uniform probability target."
+  ],
+  "limitations": [
+    "No hardware evidence or independent review.",
+    "Numerical enclosure assumes stated binary64 arithmetic model.",
+    "Sufficient quieter noise budget is a mathematical alternative."
+  ],
+  "changed_dependencies": [
+    "Overlap aggregation replaces disjoint-child counting at each level for the new certificate."
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/aw5-intake-20261115-codex/aw5-adaptive-dtn-depth7/manifest.json"
+  ],
+  "next_discriminant": "Derive a sharper noise or deterministic budget for the fixed-reference contrast and identify its spectral weight."
+}

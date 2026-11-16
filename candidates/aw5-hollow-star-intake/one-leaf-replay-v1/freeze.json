@@ -1,0 +1,13 @@
+{
+  "certificate_revision": "c26feb7e1c93b3eb54d3d055df7a1fab3d6243cf",
+  "scorer_git_blob": "29fa3c87e5b34b376558eb154f9fd38795452aed",
+  "scorer_sha256": "6ce2fc8f89e8f206e2672c70201de11d4612cf7650aa1bae0335076fefe9e4c4",
+  "packet_file_sha256": "3fce6fa261d106cbb961dd87e5b55f6a208d508f443b03f5efe1deb492a62dc6",
+  "packet_canonical_sha256": "c51d0494f385280bcfb9e9f97485d840017d240aaf0f32bde07a67c066f14d2f",
+  "envelope_canonical_sha256": {
+    "B8": "4dee611b336c08a28d22f25e437579108662e60d9fab57ef78d249b17d0934ac",
+    "K3": "906ff77d2ca8dc993402f0c316a9b5fe515e6e829dd5b9f0337e258ae98af157",
+    "Z6": "27fb8de553d7fdee0faff51b44520c1133793aad4a13b6714397050ce90f53cf"
+  },
+  "role_commitment": "baaebd61c0037bed9f71213e2749305f269e0316f43622004a0d8d457f80ac5c"
+}
