@@ -215,3 +215,15 @@ The depth-seven target is exactly edge-free. Two interval-verified constant-term
 [Derivation](../../candidates/aw5-hollow-star-intake/DEPTH_SEVEN_MODE_DECOMPOSITION.md) · [Receipt](../../candidates/aw5-hollow-star-intake/depth_seven_modes_receipt.json) · [Captured replay](../../artifacts/aw5-intake-20261115-codex/aw5-depth-seven-modal-analysis/manifest.json).
 
 Next: Lift the selected eigenvectors and measure their norm distribution by refinement level and cell orbit. Physical Promotion = 0.
+
+## 2026-11-16T21:20:05.704931+00:00
+
+Captured artifacts/aw5-intake-20261115-codex/aw5-depth-seven-mode-lift (NUMERICAL): Interior Schur lift verifies shell profiles for the two constant-terminal AW5 depth-seven modes. Physical Promotion = 0.
+
+## AW5 depth-seven interior mode lift
+
+Mode A is nodeless and nearly uniform. Mode B is sign-changing and shell-dominated. The internal shared-face dual-cycle projection vanishes exactly for both lifts.
+
+[Derivation](../../candidates/aw5-hollow-star-intake/DEPTH_SEVEN_MODE_LIFT.md) · [Receipt](../../candidates/aw5-hollow-star-intake/depth_seven_mode_lift_receipt.json) · [Capture](../../artifacts/aw5-intake-20261115-codex/aw5-depth-seven-mode-lift/manifest.json).
+
+Next: Lift the first-order response to a one-leaf perturbation and test the shell and dual-cycle observables under the same probe. Physical Promotion = 0.

@@ -38,7 +38,8 @@
     "candidates/aw5-hollow-star-intake/refinement_depth_receipt.json",
     "candidates/aw5-hollow-star-intake/recursive_dtn_receipt.json",
     "candidates/aw5-hollow-star-intake/adaptive_dtn_depth_seven_receipt.json",
-    "candidates/aw5-hollow-star-intake/depth_seven_modes_receipt.json"
+    "candidates/aw5-hollow-star-intake/depth_seven_modes_receipt.json",
+    "candidates/aw5-hollow-star-intake/depth_seven_mode_lift_receipt.json"
   ],
   "supporting_results": [
     {
@@ -85,6 +86,11 @@
       "result": "The depth-seven target is exactly edge-free. Two interval-verified constant-terminal modes contribute +0.083500 and +0.033991; the differential sector offsets part of the positive top-cell transient.",
       "record": "candidates/aw5-hollow-star-intake/DEPTH_SEVEN_MODE_DECOMPOSITION.md",
       "next_discriminant": "Lift the selected eigenvectors and measure their norm distribution by refinement level and cell orbit."
+    },
+    {
+      "result": "Mode A is nodeless and nearly uniform. Mode B is sign-changing and shell-dominated. The internal shared-face dual-cycle projection vanishes exactly for both lifts.",
+      "record": "candidates/aw5-hollow-star-intake/DEPTH_SEVEN_MODE_LIFT.md",
+      "next_discriminant": "Lift the first-order response to a one-leaf perturbation and test the shell and dual-cycle observables under the same probe."
     }
   ]
 }

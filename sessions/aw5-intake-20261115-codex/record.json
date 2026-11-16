@@ -113,6 +113,10 @@
     {
       "command": "OPENBLAS_NUM_THREADS=1 python3 candidates/aw5-hollow-star-intake/depth_seven_modes.py",
       "result": "PASS shallow dual checks, interval pole enclosures and numerical contrast decomposition"
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 python3 candidates/aw5-hollow-star-intake/lift_depth_seven_modes.py",
+      "result": "PASS full dual residual and terminal spectral mass cross-checks for both depth-seven lifts"
     }
   ],
   "finding": "Unit-cell bench intake v1 scores loopback, signed basis injections and held-out comparisons. Five synthetic cases and CLI receipt verified. Bench evidence OPEN.",
