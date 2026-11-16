@@ -1,0 +1,159 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "aw5-defect-selection-and-compact-holonomy",
+  "session_id": "aw5-gap4-codex-20261116",
+  "candidate_id": "aw5-gap4-native-holonomy",
+  "question": "What is forced by the declared selection and connection rules?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "DEFECTS",
+      "symbol": "D",
+      "object_type": "subset",
+      "definition": "Defect assignments on the three opposite-edge pairs",
+      "domain": "Reference fiber F2^3",
+      "codomain": null,
+      "coefficient_domain": "F2",
+      "units": "dimensionless",
+      "basis_orientation": "Unordered opposite-edge pairs",
+      "metric_measure": "Hamming weight",
+      "origin": "derived under selection axioms",
+      "exact_expression": "D = F2^3 excluding zero",
+      "source_refs": [
+        "DRAFT"
+      ],
+      "assumption_ids": [
+        "SEED"
+      ],
+      "normalization": "One independent bit per opposite-edge pair"
+    },
+    {
+      "object_id": "COMPACT-WITNESS",
+      "symbol": "W_x",
+      "object_type": "Wilson observable",
+      "definition": "Compact phase around the shared-face boundary",
+      "domain": "Bipyramid edge phases modulo one",
+      "codomain": "U(1)",
+      "coefficient_domain": "Z incidence and Q/Z witness",
+      "units": "turns before exponentiation",
+      "basis_orientation": "Increasing vertex order",
+      "metric_measure": "Unit simplex weights for the single-cell phase algebra",
+      "origin": "derived in declared compact connection",
+      "exact_expression": "W_x = exp(2 pi i 3t); W_x(1/4) = -i",
+      "source_refs": [
+        "DRAFT"
+      ],
+      "assumption_ids": [
+        "COMPACT"
+      ],
+      "normalization": "Phase in turns modulo one"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "DRAFT",
+      "url_or_repo_path": "candidates/aw5-gap4-native-holonomy/AW5_STRUCTURAL_EXCLUSIVITY_AND_GAP4_DRAFT.md",
+      "version_or_commit": "sha256:68d10ec33e3f5ba090dabf76bcda310496317c2f6d32d5d1d30d74be9a046d8a",
+      "section_or_object_id": "Structural exclusivity and single-cell U(1) boundary",
+      "source_status": "Earlier constructor draft, captured byte-for-byte"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "SEED",
+      "definition": "Reference fiber, active zero, one defective singleton, equivariance and disjoint union closure"
+    },
+    {
+      "id": "COMPACT",
+      "definition": "Edge and vertex phases modulo one with declared coboundary action"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "Finite action and exhaustive subset enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Determine closure and exhibit alternatives"
+    },
+    {
+      "technique": "Integral incidence and exact fractions",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Verify cycle lattice and compact witness"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4! times 2^3 exposure assignments; choose(3,1)+choose(3,2)+choose(3,3) defective",
+    "reduced_expression": "192=185+7",
+    "factor_origins": [
+      "24 vertex permutations",
+      "8 binary assignments"
+    ],
+    "factorization": "192=2^6 times 3",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "Single-cell paired-sector rotation",
+    "modulus": "pi in native s",
+    "residue_convention": "Phase 2s radians",
+    "update_rule": "exp(sA)",
+    "initial_phase": "0",
+    "coupling": "2 in native units",
+    "period_claim": "pi on the paired sector",
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "Paired edge and face subspace; separate compact bipyramid edge model",
+    "generator_or_update": "A=B^T-B; a(t,chi)=t B2 e_f + B1^T chi mod 1",
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": "B2 B3 = 0; vertex coboundaries cancel on loops",
+    "projection_and_kernel": "Fundamental integer cycles and incident face turns",
+    "physical_mapping": "Physical Promotion = 0"
+  },
+  "target_exposure": {
+    "status": "EXPOSED",
+    "known_targets": [
+      "185+7 structural count"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "128 reference-fiber defect subsets and one rational compact witness",
+    "selection_criterion": "Closure of seeded relabeling-invariant defects and a nontrivial shared-face phase",
+    "baseline": "Weight-one defects; flat connection"
+  },
+  "calculation_steps": [
+    "Enumerate induced opposite-edge permutations and test seeded disjoint unions",
+    "Build signed simplicial matrices for the filled tetrahedron and bipyramid",
+    "Verify the unimodular chord-coordinate cycle bases and exact compact witness"
+  ],
+  "result": {
+    "exact_expression": "Singleton seed plus equivariance and disjoint composition forces seven defects. The compact shared-face witness gives three quarters of a turn while both tetrahedral face relations vanish.",
+    "approximation": null,
+    "units": "Dimensionless counts and compact turns",
+    "precision_and_error": "Exact integer and rational arithmetic",
+    "scope": "Declared axioms and oriented toy carriers",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "Constructor exact replay",
+      "command_or_proof_path": "python3 candidates/aw5-gap4-native-holonomy/replay_aw5_structural_gap4.py",
+      "source_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Weight-one survives relabeling and fails disjoint union closure.",
+    "Flat bipyramid connections have trivial Wilson loops."
+  ],
+  "limitations": [
+    "No derivation of defect dynamics, compactification, gauge forcing or physical correspondence."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/aw5-gap4-codex-20261116/structural-gap4-replay/manifest.json"
+  ],
+  "next_discriminant": "Derive the elementary defect seed and closure law from native distinguishability dynamics, and derive the compactification and vertex gauge action from native transport."
+}
