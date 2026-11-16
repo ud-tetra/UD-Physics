@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "aw5-phase-codex-20261116",
+  "run_id": "phase-dynamics-replay",
+  "created_at": "2026-11-16T22:08:12.289527+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact shared-face oscillator and compact descent obstruction. Physical Promotion = 0.",
+  "command": "python3 candidates/aw5-gap4-phase-dynamics/replay_aw5_bipyramid_phase.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "replay_aw5_bipyramid_phase.py",
+      "path": "inputs/001-replay_aw5_bipyramid_phase.py",
+      "source_location": "repository",
+      "source_path": "candidates/aw5-gap4-phase-dynamics/replay_aw5_bipyramid_phase.py",
+      "sha256": "c7594dd6204c276b6a47a06733957584ce9b1cf494aaae6b9282df982d0f0c11",
+      "size_bytes": 1418
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_aw5_structural_gap4.py",
+      "path": "inputs/002-replay_aw5_structural_gap4.py",
+      "source_location": "repository",
+      "source_path": "candidates/aw5-gap4-phase-dynamics/replay_aw5_structural_gap4.py",
+      "sha256": "a250bed3d84a7b122d60c69aecf55df0cf5eaa01fdb68da1c7dffe0fd76db93f",
+      "size_bytes": 4286
+    },
+    {
+      "input_id": "input-003",
+      "name": "AW5_BIPYRAMID_PHASE_DYNAMICS.md",
+      "path": "inputs/003-AW5_BIPYRAMID_PHASE_DYNAMICS.md",
+      "source_location": "repository",
+      "source_path": "candidates/aw5-gap4-phase-dynamics/AW5_BIPYRAMID_PHASE_DYNAMICS.md",
+      "sha256": "8cb8efd88237aba3efcc0bf568686453c6414213a262f37f1719137390156395",
+      "size_bytes": 4174
+    }
+  ],
+  "files": [
+    {
+      "path": "files/replay.txt",
+      "sha256": "79e3fe89037c8406fbceefa4b1c07f4dedc25a8bd025f1c8073509078397cba9",
+      "size_bytes": 232
+    }
+  ]
+}
