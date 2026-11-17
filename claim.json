@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "c06-stock-balance-crossing",
+  "session": "20261117-codex-c06-balance-b71f",
+  "status": "held",
+  "created_at": "2026-11-17T02:39:32.027Z",
+  "base_revision": "29be140f397732490b264543376e8bd6383775ed",
+  "owned_paths": [
+    "tasks/c06-stock-balance-crossing.json",
+    "sessions/20261117-codex-c06-balance-b71f/",
+    "candidates/c06-stock-balance-crossing/",
+    "artifacts/20261117-codex-c06-balance-b71f/"
+  ]
+}
