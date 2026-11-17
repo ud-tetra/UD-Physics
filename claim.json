@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-variational-fold",
   "session": "20261117-codex-c06-variational-fold-2ad6",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T20:51:25.326Z",
   "base_revision": "8b648f3ee56dfe8175fd8317c8410800b2477089",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-variational-fold-2ad6/",
     "candidates/c06-variational-fold/",
     "artifacts/20261117-codex-c06-variational-fold-2ad6/"
-  ]
+  ],
+  "released_at": "2026-11-17T21:02:30.926Z",
+  "released_from_sha": "f2ea6cf35fa029283de0ea31b7284cd763b9959b",
+  "release_reason": "Integrated in UD-Physics #432."
 }
