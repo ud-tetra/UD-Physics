@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-native-completion-memory",
   "session": "20261117-codex-c06-completion-memory-74ac",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T18:32:38.479Z",
   "base_revision": "9086d7aeb094b44a761536df7a884f832d4cb58f",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-completion-memory-74ac/",
     "candidates/c06-native-completion-memory/",
     "artifacts/20261117-codex-c06-completion-memory-74ac/"
-  ]
+  ],
+  "released_at": "2026-11-17T18:38:30.960Z",
+  "released_from_sha": "aa6142f00e8140d3d4fad9c5b36381aa3f4fc25d",
+  "release_reason": "Integrated in UD-Physics #421 with green CI."
 }
