@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-projective-phase",
   "session": "20261117-codex-c06-projective-phase-5f19",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T20:43:08.277Z",
   "base_revision": "677e94a8e18264f143598c754ad6104c8b7e5ad5",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-projective-phase-5f19/",
     "candidates/c06-projective-phase/",
     "artifacts/20261117-codex-c06-projective-phase-5f19/"
-  ]
+  ],
+  "released_at": "2026-11-17T20:51:25.326Z",
+  "released_from_sha": "bb96111d86e7f23ff029f3db42bc08d727d76645",
+  "release_reason": "Integrated in UD-Physics #431."
 }
