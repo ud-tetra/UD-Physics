@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "c06-regular-simplex-whitney-law",
+  "session": "20261117-codex-c06-simplex-a4e3",
+  "created_at": "2026-11-17T02:02:27.981Z",
+  "base_revision": "d272d7362637831a3cc1e6adf08d8e04bb8de377",
+  "owned_paths": [
+    "tasks/c06-regular-simplex-whitney-law.json",
+    "sessions/20261117-codex-c06-simplex-a4e3/",
+    "candidates/c06-regular-simplex-whitney-law/",
+    "artifacts/20261117-codex-c06-simplex-a4e3/"
+  ]
+}
