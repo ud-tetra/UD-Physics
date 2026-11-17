@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-whitney-port-e47b",
+  "runtime": "Codex via GitHub and local Python",
+  "task": "c06-whitney-unsigned-port",
+  "goal": "Test whether regular Whitney boundary transport supplies a common shear-port phase.",
+  "created_at": "2026-11-17T04:21:58.967Z",
+  "base_revision": "c971738a180d9fcf355bba6b1baddb7683c493e4",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-whitney-unsigned-port": "769c084423ca8112e800bf1a1a9000a9b874ba66"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-whitney-port-e47b/whitney-unsigned-port-replay/inputs/001-replay_c06_whitney_unsigned.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS: 739 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests",
+      "result": "PASS: 17 tests"
+    }
+  ],
+  "finding": "The cooriented Whitney flag block has u=5/9 and v=-1/9. Squared rates (4/3,10/9) exclude exact simultaneous half transfer at any positive time. One additional copy of resident rotation restores equal rates conditionally.",
+  "next_action": "Test whether a native action adds an independent rotational channel with the required weight or selects sector-resolved latches.",
+  "mathematical_profile": {
+    "coefficient_domain": "real with rational replay",
+    "exactness_or_precision_plan": "exact spectra, moments and irrationality proof",
+    "applicable_methods": [
+      "Whitney integration",
+      "graph incidence",
+      "prime valuations"
+    ],
+    "clock_metric_units_conventions": "dimensionless unit cell, area-average flag metric"
+  },
+  "validation_base_revision": "c971738a180d9fcf355bba6b1baddb7683c493e4"
+}
