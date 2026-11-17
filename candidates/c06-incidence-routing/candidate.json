@@ -1,0 +1,47 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-incidence-routing",
+  "session_id": "20261117-codex-c06-incidence-routing-231a",
+  "question": "Test incidence-only opposite-edge readout and whether it entails simultaneous cut.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Unsigned tetrahedral face-edge incidence and mean-zero ordinary edge data.",
+    "Closed primal Whitney copies in the declared metric.",
+    "Candidate synchronous cell-level transition shares a Ready state."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Synchronous cell-level actuation is a declared candidate; no empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v020",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/3318b92dcb9677ed986cd35b2639aaf7606d3276/captures/20261117T194221Z-codex-c06-flag-readout-4e70/UD_C06_FLAG_READOUT_COMMIT_v0.20.md",
+      "version_or_commit": "v0.20",
+      "section_or_object_id": "Local flag observations and simultaneous receipts",
+      "source_status": "integrated conditional readout and arbiter"
+    },
+    {
+      "source_id": "C06-v011",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/3318b92dcb9677ed986cd35b2639aaf7606d3276/captures/20261117T043209Z-codex-c06-action-d84a/UD_C06_BOUNDARY_ACTION_COEFFICIENT_v0.11.md",
+      "version_or_commit": "v0.11",
+      "section_or_object_id": "Defined action and direct-port dynamics",
+      "source_status": "integrated flag metric and sector rates"
+    }
+  ],
+  "baseline": "C06 v0.20 flag readout and shared arbiter",
+  "result": "The sum of two incident face sums recovers the opposite-edge difference on the mean-zero copied range. The incidence and conservation identities allow both cut and record-only extensions, so synchronous actuation remains open.",
+  "next_discriminant": "Test a specified native transition law for simultaneous aggregation, recording and port selection.",
+  "mathematical_receipts": [
+    "candidates/c06-incidence-routing/mathematical_receipt.json"
+  ]
+}
