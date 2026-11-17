@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "c06-whitney-trace-variation",
+  "session": "20261117-codex-c06-trace-909c",
+  "created_at": "2026-11-17T02:12:40.546Z",
+  "base_revision": "b85b0e22352c61fc4685963ad0055fb9f3da7177",
+  "owned_paths": [
+    "tasks/c06-whitney-trace-variation.json",
+    "sessions/20261117-codex-c06-trace-909c/",
+    "candidates/c06-whitney-trace-variation/",
+    "artifacts/20261117-codex-c06-trace-909c/"
+  ]
+}

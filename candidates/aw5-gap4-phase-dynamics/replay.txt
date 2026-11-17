@@ -1,3 +1,0 @@
-PASS plane: A x = B2^T x, A(B2^T x) = -5 x, shared-face coboundary = 3.
-PASS compact descent counterexample: same initial edge phase, later shared turn differs by 1/2.
-PASS conditional Wilson witness: shared-face turn 3/4 gives -i.
