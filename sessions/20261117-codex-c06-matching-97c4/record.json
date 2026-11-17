@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-matching-97c4",
+  "runtime": "Codex with connector and local Git/Python",
+  "task": "c06-local-matching-exchange",
+  "goal": "Test whether a local norm-preserving interaction yields positive equal shear weights beyond leading order.",
+  "created_at": "2026-11-17T02:15:19.460Z",
+  "base_revision": "e08205962cd021e149028574d3b5d65822e6ce91",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-local-matching-exchange": "3ac1643545217b6eb1f38761f0265958dbfe8855"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-matching-97c4/matching-exchange-replay/inputs/001-replay_c06_matching.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS: 715 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests",
+      "result": "PASS: 17 tests"
+    }
+  ],
+  "finding": "Equal-rate continuous exchange gives the target at leading order but fails at quartic order; a fixed balanced exchange followed by a full matching swap realizes the ratio conditionally.",
+  "next_action": "Derive or rule out a native trigger for the balanced split and complete matching transfer, using conserved local receipts.",
+  "mathematical_profile": {
+    "coefficient_domain": "real, rational replay",
+    "exactness_or_precision_plan": "exact Gram and Taylor coefficients",
+    "applicable_methods": [
+      "Parity projection",
+      "spectral reduction",
+      "norm conservation"
+    ],
+    "clock_metric_units_conventions": "dimensionless time, Euclidean orthogonal registers; no physical unit map"
+  },
+  "validation_base_revision": "b85b0e22352c61fc4685963ad0055fb9f3da7177"
+}
