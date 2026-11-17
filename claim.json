@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "c06-local-matching-exchange",
+  "session": "20261117-codex-c06-matching-97c4",
+  "status": "held",
+  "created_at": "2026-11-17T01:32:23.015Z",
+  "base_revision": "e08205962cd021e149028574d3b5d65822e6ce91",
+  "owned_paths": [
+    "tasks/c06-local-matching-exchange.json",
+    "sessions/20261117-codex-c06-matching-97c4/",
+    "candidates/c06-local-matching-exchange/",
+    "artifacts/20261117-codex-c06-matching-97c4/"
+  ]
+}
