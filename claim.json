@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-hard-edge-isolation",
   "session": "20261117-codex-c06-isolation-6ef4",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T04:53:44.107Z",
   "base_revision": "e2013f8f29dbf0732bd5f304f6b6ca9c168570b3",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-isolation-6ef4/",
     "candidates/c06-hard-edge-isolation/",
     "artifacts/20261117-codex-c06-isolation-6ef4/"
-  ]
+  ],
+  "released_at": "2026-11-17T05:06:04.785Z",
+  "released_from_sha": "5129bae3c774c4ade8174644402ee5e13dc4e937",
+  "release_reason": "Integrated in UD-Physics #417 with green CI."
 }
