@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "c06-evidence-capture",
+  "session": "20261117-codex-c06-evidence-5d21",
+  "status": "held",
+  "created_at": "2026-11-17T01:15:04.837Z",
+  "base_revision": "7bde374619601854c9645c9a584d49d2aa99cf4b",
+  "owned_paths": [
+    "tasks/c06-evidence-capture.json",
+    "sessions/20261117-codex-c06-evidence-5d21/",
+    "candidates/c06-evidence-capture/",
+    "artifacts/20261117-codex-c06-evidence-5d21/"
+  ]
+}
