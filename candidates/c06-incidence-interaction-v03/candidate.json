@@ -1,0 +1,31 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-incidence-interaction-v03",
+  "session_id": "20261117-codex-c06-8e71",
+  "question": "Audit C06 edge cancellation, flag selection, and the AW5 extension",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Unit simplex inner products, increasing vertex orientation and native time",
+    "Duplicated signed edge amplitudes for the flag pullback",
+    "Declared equal unit flag and midpoint gains for the conditional shear operator"
+  ],
+  "physical_mapping": "OPEN / Physical Promotion = 0",
+  "target_exposure": "Known structural target; no empirical fit",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD-Physics/pull/393"
+  ],
+  "baseline": "Full unit-weight tetrahedral edge form and supplied C06 readout audit",
+  "result": "K4 edge form 4I_6; positive inequivalent flag-metric extensions; identical AW5 edge blocks with 24 uncancelled wedges",
+  "next_discriminant": "Derive a native flag-readout and midpoint gain law, or identify a discriminant among the extensions.",
+  "mathematical_receipts": [
+    "candidates/c06-incidence-interaction-v03/mathematical_receipt.json"
+  ]
+}
