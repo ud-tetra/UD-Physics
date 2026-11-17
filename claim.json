@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-bulk-hodge-trigger",
   "session": "20261117-codex-c06-bulk-hodge-6ed2",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T20:12:24.358Z",
   "base_revision": "395215d0d0e7c0e9ab016d8e6398da60a91b1545",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-bulk-hodge-6ed2/",
     "candidates/c06-bulk-hodge-trigger/",
     "artifacts/20261117-codex-c06-bulk-hodge-6ed2/"
-  ]
+  ],
+  "released_at": "2026-11-17T20:18:01.345Z",
+  "released_from_sha": "9897e46f8692aed4681032640fdc1850ac79adf3",
+  "release_reason": "Integrated in UD-Physics #428."
 }
