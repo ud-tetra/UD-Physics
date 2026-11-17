@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-pair-actuation-8f47",
+  "runtime": "Codex via GitHub and local Python",
+  "task": "c06-pair-balance-actuation",
+  "goal": "Test whether opposite-pair stock sensing can autonomously stop reciprocal odd exchange at finite half transfer.",
+  "created_at": "2026-11-17T05:06:04.785Z",
+  "base_revision": "3f8906ce648382255997b2dad9e325cfce149071",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-pair-balance-actuation": "228e67c4127c211750f617081a067706f2158232"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-pair-actuation-8f47/pair-balance-replay/inputs/001-replay_c06_pair_balance.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS; 755 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS; 17 tests"
+    }
+  ],
+  "finding": "The symmetric pair product mixes even and odd stock. A projected odd stock balance is exact. Locally Lipschitz feedback vanishing on that surface only approaches it from an unbalanced preparation. A prescribed discontinuous switch reaches and holds it.",
+  "next_action": "Audit source-admitted event receipts for a parity-resolved crossing, persistent reciprocal hold and separate Stage 2 handoff.",
+  "mathematical_profile": {
+    "coefficient_domain": "real with rational replay",
+    "exactness_or_precision_plan": "Pair-product identities, finite-dimensional uniqueness and exact Fraction controls",
+    "applicable_methods": [
+      "Parity projection",
+      "Stock continuity",
+      "ODE uniqueness",
+      "Exact rational controls"
+    ],
+    "clock_metric_units_conventions": "dimensionless phase, Euclidean ordinary edge source and isometrically aligned records"
+  }
+}
