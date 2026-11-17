@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-trace-909c",
+  "runtime": "Codex GitHub connector and rational replay",
+  "task": "c06-whitney-trace-variation",
+  "goal": "Test unweighted Whitney boundary-to-bulk variation for cycle equalization",
+  "created_at": "2026-11-17T02:13:47.671285+00:00",
+  "base_revision": "b85b0e22352c61fc4685963ad0055fb9f3da7177",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-whitney-trace-variation": "0129a54fc0903a43c49accd2e7646213fefe9f16"
+  },
+  "checks": [
+    {
+      "command": "python3 candidates/c06-whitney-trace-variation/replay_whitney_trace_variation.py",
+      "result": "PASS_EXACT"
+    }
+  ],
+  "finding": "Both declared lifts retain a cut-cycle split; the degree-one codifferential contributes on cuts.",
+  "next_action": "Review these scoped obstructions and test any separately motivated interface law.",
+  "mathematical_profile": {
+    "coefficient_domain": "real, rational replay",
+    "exactness_or_precision_plan": "Exact signed incidence contraction",
+    "applicable_methods": [
+      "Trace unisolvency",
+      "Quadratic elimination",
+      "Whitney adjoints"
+    ],
+    "clock_metric_units_conventions": "Static volume and face averages, side ell, unit edge integral"
+  },
+  "checkpoint_at": "2026-11-17T02:14:23.973723+00:00",
+  "checkpoint_source": {
+    "revision": "b85b0e22352c61fc4685963ad0055fb9f3da7177",
+    "dirty": true
+  }
+}
