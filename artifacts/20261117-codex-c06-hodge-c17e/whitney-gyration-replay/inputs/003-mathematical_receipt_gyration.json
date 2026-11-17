@@ -1,0 +1,128 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "c06-whitney-gyration-domain",
+  "session_id": "20261117-codex-c06-hodge-c17e",
+  "candidate_id": "c06-whitney-hodge-completion",
+  "question": "Does the bulk centroidal rotation term reproduce boundary equalization?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "bulk-mass-and-curl",
+      "symbol": "M_v,Q_v",
+      "object_type": "symmetric Gram forms",
+      "definition": "Face rotation weight ell^2/48. Bulk rotation weight ell^2/80; bulk mass eigenvalues 1/(2ell^2) and 1/(5ell^2). Target-selected bulk augmentation 3ell^2/160.",
+      "domain": "edge coefficients",
+      "codomain": "dual edge coefficients",
+      "coefficient_domain": "rational after unit normalization",
+      "units": "M_v length^-2, Q_v length^-4",
+      "basis_orientation": "increasing simplex order",
+      "metric_measure": "regular Euclidean simplex, normalized volume",
+      "origin": "derived",
+      "exact_expression": "Face rotation weight ell^2/48. Bulk rotation weight ell^2/80; bulk mass eigenvalues 1/(2ell^2) and 1/(5ell^2). Target-selected bulk augmentation 3ell^2/160.",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "whitney-hodge"
+      ],
+      "assumption_ids": [
+        "regular"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit oriented edge integral"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "whitney-hodge",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/405",
+      "version_or_commit": "03760114b3b092f12aaeb27b798073d30e9c3080",
+      "section_or_object_id": "Whitney face Hodge energy",
+      "source_status": "draft proof"
+    }
+  ],
+  "assumptions": [
+    "Regular Euclidean geometry, linear Whitney forms and the declared integration measures"
+  ],
+  "technique_plan": [
+    {
+      "technique": "uniform barycentric moments and constant curl Gram",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Derive geometric weights without a scalar target"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "Scalar goal known; geometric moment calculated independently",
+    "known_targets": [
+      "scalar edge mass"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "Bulk equalizing weight selected analytically from the scalar goal; no empirical fit"
+    ],
+    "search_domain_and_budget": null,
+    "selection_criterion": null,
+    "baseline": null
+  },
+  "calculation_steps": [
+    "Derive centroidal moments",
+    "Split Whitney field into mean and skew rotation",
+    "Evaluate bulk Gram independently and compare one-copy and equalizing weights"
+  ],
+  "result": {
+    "exact_expression": "Face rotation weight ell^2/48. Bulk rotation weight ell^2/80; bulk mass eigenvalues 1/(2ell^2) and 1/(5ell^2). Target-selected bulk augmentation 3ell^2/160.",
+    "approximation": null,
+    "units": "length-scaled according to the form",
+    "precision_and_error": "exact",
+    "scope": "regular simplex Whitney fields",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "rational constructor replay",
+      "command_or_proof_path": "python3 candidates/c06-whitney-hodge-completion/replay_whitney_gyration.py",
+      "source_revision": "03760114b3b092f12aaeb27b798073d30e9c3080",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Bulk doubling leaves cut-cycle weights 1/2 and 2/5 at unit length."
+  ],
+  "limitations": [
+    "Geometric rotational weight does not select the constitutive augmentation."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261117-codex-c06-hodge-c17e/whitney-gyration-replay/manifest.json"
+  ],
+  "next_discriminant": "Derive an interaction law that selects the contribution of the rotational term."
+}

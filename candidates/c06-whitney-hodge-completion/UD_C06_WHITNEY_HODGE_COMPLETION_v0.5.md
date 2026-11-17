@@ -37,4 +37,6 @@ At the flag level the term adds \(b_fb_f^\mathsf T/9\) to each face block, givin
 
 The rational replay assembles the Whitney masses on the four faces and multiplies the signed coboundary matrices. It checks the two energy forms, eigenvalue assignments, equalizing mass, and unchanged gap under a full-energy addition. Sources are the [merged Whitney derivation](https://github.com/ud-tetra/UD-Physics/pull/404) and [UD capture](https://github.com/ud-tetra/UD/pull/528).
 
+[Gyration and integration-domain addendum](UD_C06_WHITNEY_GYRATION_v0.6.md) derives the face coefficient from its centroidal moment and tests bulk rotational doubling. The face convention sums the four individual face averages.
+
 **Claim boundary footer:** Physical Promotion = 0. This result uses the declared regular Euclidean duality and does not establish a midpoint gain or physical response allocation.

@@ -29,6 +29,7 @@
   "result": "Q_down=(64/3)P_cut, Q_up=(64/3)P_cycle. A cycle-only weight of 1/48 gives augmented mass (4/3)I_6.",
   "next_discriminant": "Seek a constitutive law for the relative Hodge weight independently of the scalar equalization target.",
   "mathematical_receipts": [
-    "candidates/c06-whitney-hodge-completion/mathematical_receipt.json"
+    "candidates/c06-whitney-hodge-completion/mathematical_receipt.json",
+    "candidates/c06-whitney-hodge-completion/mathematical_receipt_gyration.json"
   ]
 }
