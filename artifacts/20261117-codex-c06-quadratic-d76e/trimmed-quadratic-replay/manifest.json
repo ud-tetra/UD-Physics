@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-quadratic-d76e",
+  "run_id": "trimmed-quadratic-replay",
+  "created_at": "2026-11-17T02:25:52.223564+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact trace ranks and second-order Whitney energy minima",
+  "command": "python3 candidates/c06-trimmed-quadratic-lift/replay_trimmed_quadratic.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "7615b4686ebcc47e62f03a87fa1b5110b2434995",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "UD_C06_TRIMMED_QUADRATIC_LIFT_v0.9.md",
+      "path": "inputs/001-UD_C06_TRIMMED_QUADRATIC_LIFT_v0.9.md",
+      "source_location": "repository",
+      "source_path": "candidates/c06-trimmed-quadratic-lift/UD_C06_TRIMMED_QUADRATIC_LIFT_v0.9.md",
+      "sha256": "ee4570cdd844a265675bc13f47f3e951f23b4fa199f17e38080964370e6f1162",
+      "size_bytes": 4315
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_trimmed_quadratic.py",
+      "path": "inputs/002-replay_trimmed_quadratic.py",
+      "source_location": "repository",
+      "source_path": "candidates/c06-trimmed-quadratic-lift/replay_trimmed_quadratic.py",
+      "sha256": "eec833c6ca39942b6908ea5d148797b2e5c96612f37d0a5e25c834936126f539",
+      "size_bytes": 4333
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-trimmed-quadratic-lift/mathematical_receipt.json",
+      "sha256": "1fad253f136b4eada0c7b647d77d4b6ce889d7725f7f8ad18ba3591888611f30",
+      "size_bytes": 4777
+    }
+  ],
+  "files": [
+    {
+      "path": "files/c06_trimmed_quadratic_replay.json",
+      "sha256": "9dccfb292e0162bce5c982fe0caa6cb3767e7d03d90c12367256a6dbac8f9b6c",
+      "size_bytes": 408
+    }
+  ]
+}
