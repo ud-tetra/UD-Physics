@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-completion-memory-74ac",
+  "run_id": "completion-memory-replay",
+  "created_at": "2026-11-17T18:32:38.479Z",
+  "evidence": "EXACT",
+  "summary": "Under the bounded counter contract, the last reserved Fire supplies persistent completion. An unrestricted recorder accepts an unrelated Fire into the same terminal state and can falsely hold 1/50. The amplitude-to-Fire authorization and selective actuator are declared hypotheses.",
+  "command": "python3 artifacts/20261117-codex-c06-completion-memory-74ac/completion-memory-replay/inputs/001-replay_c06_completion_memory.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "9086d7aeb094b44a761536df7a884f832d4cb58f",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_completion_memory.py",
+      "sha256": "c84b2c7154b55af94e984f347ef037b77b0a053a942b5266f2656f34de7eb774",
+      "size_bytes": 1992,
+      "input_id": "input-001",
+      "name": "replay_c06_completion_memory.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "1e2e0f1be5c0f9744dd30fbc01538420ed3dfe297d59d59d58e98fffc72ea494",
+      "size_bytes": 6928,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-native-completion-memory/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_COMPLETION_MEMORY_v0.17.md",
+      "sha256": "9959fc04bdca7fc7c4f674dd2fb4a5abd87edbe5759e0dec37b8c1b0b0c2753e",
+      "size_bytes": 5971
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "bd7583a20864d41191590c0dcd1f26ae7ad480d35c6fd8a2872648cce52af2e2",
+      "size_bytes": 168
+    }
+  ]
+}

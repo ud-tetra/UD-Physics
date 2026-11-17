@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-completion-memory-74ac",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-native-completion-memory",
+  "goal": "Test whether terminal recorder state can retain and actuate the first directed C06 balance.",
+  "created_at": "2026-11-17T18:32:38.479Z",
+  "base_revision": "9086d7aeb094b44a761536df7a884f832d4cb58f",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-native-completion-memory": "aa6142f00e8140d3d4fad9c5b36381aa3f4fc25d"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-completion-memory-74ac/completion-memory-replay/inputs/001-replay_c06_completion_memory.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "Under the bounded counter contract, the last reserved Fire supplies persistent completion. An unrestricted recorder accepts an unrelated Fire into the same terminal state and can falsely hold 1/50. The amplitude-to-Fire authorization and selective actuator are declared hypotheses.",
+  "next_action": "Find a source-admitted rule excluding unrelated Fire and atomically coupling the directed guard to the recorder and port before Stage 2.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Abstract finite recorder transition proof and exact Fraction replay",
+    "applicable_methods": [
+      "Finite transition replay",
+      "Stock conservation",
+      "Readout aliasing",
+      "Hybrid switching"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}
