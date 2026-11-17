@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "c06-whitney-hodge-completion",
+  "session": "20261117-codex-c06-hodge-c17e",
+  "created_at": "2026-11-17T01:29:32.343Z",
+  "base_revision": "d67b113bb2a3cd113bd56f5f93a1b0087da80d0d",
+  "owned_paths": [
+    "tasks/c06-whitney-hodge-completion.json",
+    "sessions/20261117-codex-c06-hodge-c17e/",
+    "candidates/c06-whitney-hodge-completion/",
+    "artifacts/20261117-codex-c06-hodge-c17e/"
+  ]
+}
