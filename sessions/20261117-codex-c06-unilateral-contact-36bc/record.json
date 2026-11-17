@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-unilateral-contact-36bc",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-unilateral-contact",
+  "goal": "Determine whether a rigid apex stop arrests the odd exchange and preserves stored stock.",
+  "created_at": "2026-11-17T21:02:30.926Z",
+  "base_revision": "6b4e5ef787b2ead0c0539a89e464f203331641cd",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-unilateral-contact": "4c6595002f695a29cebf2969c3a33e79d8e15d0b"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-unilateral-contact-36bc/unilateral-contact-replay/inputs/001-replay_c06_unilateral_contact.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "In the declared scalar plastic stop on the v0.28 symmetric branch, hinge velocity vanishes while odd phase rate stays positive and stock changes. Native cut authority remains open.",
+  "next_action": "Test a source-admitted multi-channel event law with appropriate stock and energy accounting.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Canonical impulse and exact rational replay",
+    "applicable_methods": [
+      "Canonical action-angle reduction",
+      "Plastic impact",
+      "Exact rational replay"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}

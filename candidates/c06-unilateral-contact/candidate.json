@@ -1,0 +1,47 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-unilateral-contact",
+  "session_id": "20261117-codex-c06-unilateral-contact-36bc",
+  "question": "Determine whether a rigid apex stop arrests the odd exchange and preserves stored stock.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Single aligned odd pair and symmetric common hinge coordinate.",
+    "Preset half-stock fold gain and positive residual oscillator action.",
+    "Declared canonical impulse and perfectly plastic unilateral stop."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Preset half-stock gain and declared plastic stop; no empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v028",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/995f4f5163418521a0e4806a5a94a1d5284d6f17/captures/20261117T205125Z-codex-c06-variational-fold-2ad6/UD_C06_VARIATIONAL_FOLD_v0.28.md",
+      "version_or_commit": "v0.28",
+      "section_or_object_id": "Joint derivative-coupled action",
+      "source_status": "integrated conditional incoming dynamics"
+    },
+    {
+      "source_id": "C06-v025",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/995f4f5163418521a0e4806a5a94a1d5284d6f17/captures/20261117T201801Z-codex-c06-boundary-impedance-b712/UD_C06_BOUNDARY_IMPEDANCE_v0.25.md",
+      "version_or_commit": "v0.25",
+      "section_or_object_id": "Hard constraint on the drive",
+      "source_status": "integrated conditional hold"
+    }
+  ],
+  "baseline": "C06 v0.28 symmetric action with unilateral stop",
+  "result": "In the declared scalar plastic stop on the v0.28 symmetric branch, hinge velocity vanishes while odd phase rate stays positive and stock changes. Native cut authority remains open.",
+  "next_discriminant": "Test a source-admitted multi-channel event law with appropriate stock and energy accounting.",
+  "mathematical_receipts": [
+    "candidates/c06-unilateral-contact/mathematical_receipt.json"
+  ]
+}
