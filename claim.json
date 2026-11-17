@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-winding-edge-receipts",
   "session": "20261117-codex-c06-winding-edge-5ab2",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T19:09:33.384Z",
   "base_revision": "54ff5bd87aee1e3146f2cdbe38066fcccfad8c78",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-winding-edge-5ab2/",
     "candidates/c06-winding-edge-receipts/",
     "artifacts/20261117-codex-c06-winding-edge-5ab2/"
-  ]
+  ],
+  "released_at": "2026-11-17T19:42:21.189Z",
+  "released_from_sha": "4eb01c4e34c3abd1e064fae7702e9ba480f976c9",
+  "release_reason": "Integrated in UD-Physics #423 with green CI."
 }
