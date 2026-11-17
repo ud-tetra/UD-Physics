@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-port-b6df",
+  "run_id": "direct-port-spectrum-replay",
+  "created_at": "2026-11-17T04:10:46.268Z",
+  "evidence": "EXACT",
+  "summary": "Independent Euclidean flags give (2,2) squared rates. Equivariant face cross terms split them. Coherent face sums give (0,2). The signed joint incidence port has squared rate 4 but its module has no E.",
+  "command": "python3 artifacts/20261117-codex-c06-port-b6df/direct-port-spectrum-replay/inputs/001-replay_c06_direct_ports.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "7e7a0eef252a48ca5af50ce8bd1f492f74bcd45b",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_direct_ports.py",
+      "sha256": "818ef7a2c12837f67c179163141730d059575284ed6651f79f3be5490bd98f69",
+      "size_bytes": 1841,
+      "input_id": "input-001",
+      "name": "replay_c06_direct_ports.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "2dbef1beffe273236daea42d7cdbb483bfbe43ac27a13eceebfaedff00e926b6",
+      "size_bytes": 5534,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-direct-port-spectrum/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_DIRECT_PORT_SPECTRUM_v0.9.md",
+      "sha256": "e86991b7067554080dcc8a109cdc272b7d501516d965f3ae9c654c28cae59506",
+      "size_bytes": 4385
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "d8e01ecaf7b222d84230b7ff5e6b3fe5811e54f94ee704fe96e1694c2f8271b6",
+      "size_bytes": 120
+    }
+  ]
+}
