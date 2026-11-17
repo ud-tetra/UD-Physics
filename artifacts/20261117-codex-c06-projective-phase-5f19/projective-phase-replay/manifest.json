@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-projective-phase-5f19",
+  "run_id": "projective-phase-replay",
+  "created_at": "2026-11-17T20:43:08.277Z",
+  "evidence": "EXACT",
+  "summary": "The joint real-ray fraction has derivative Rdot/N. The oscillator complex-ray quotient erases the transfer. Real-ray dynamics retains the crossing when phase visibility is positive and leaves fold and cut authority open.",
+  "command": "python3 artifacts/20261117-codex-c06-projective-phase-5f19/projective-phase-replay/inputs/001-replay_c06_projective_phase.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "677e94a8e18264f143598c754ad6104c8b7e5ad5",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_projective_phase.py",
+      "sha256": "5220234976743da39427c0854224465ef0809f076a87cb6e84a096e6f2581c6f",
+      "size_bytes": 1355,
+      "input_id": "input-001",
+      "name": "replay_c06_projective_phase.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "895ba48259abe3f221c491c35d1292a7267be47b9fe18617d25de63ac6f95192",
+      "size_bytes": 5418,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-projective-phase/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_PROJECTIVE_PHASE_v0.27.md",
+      "sha256": "70611ff7dc5875919d87b5979bcd6d5cef586db3954f39991486388aa72a2c74",
+      "size_bytes": 3279
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "07a9c070dd132b31d139cccc53eb43f9ebcf7487f5397c66c62de48ea589275a",
+      "size_bytes": 100
+    }
+  ]
+}
