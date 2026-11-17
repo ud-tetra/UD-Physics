@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-quadratic-phase-receipt",
   "session": "20261117-codex-c06-quadratic-phase-62bd",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T18:26:04.108Z",
   "base_revision": "a043cd214610a4b12b0fd46bf0296a090545eb55",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-quadratic-phase-62bd/",
     "candidates/c06-quadratic-phase-receipt/",
     "artifacts/20261117-codex-c06-quadratic-phase-62bd/"
-  ]
+  ],
+  "released_at": "2026-11-17T18:32:38.479Z",
+  "released_from_sha": "7d6d14aa5f845f283ffdc9a67c77c011eaac6165",
+  "release_reason": "Integrated in UD-Physics #420 with green CI."
 }
