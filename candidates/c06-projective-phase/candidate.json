@@ -1,0 +1,47 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-projective-phase",
+  "session_id": "20261117-codex-c06-projective-phase-5f19",
+  "question": "Determine whether projective odd dynamics derives normalized flux, the fold law and same-event cut.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Aligned carrier and record with common positive odd rate and conserved nonzero stock.",
+    "Real rays rescale both registers together.",
+    "The complex quotient uses the aligned oscillator complex structure."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Real and oscillator-phase quotients tested; no empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v026",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/eced710986d12fa999a786e06d2443b937ab81ff/captures/20261117T203643Z-codex-c06-fold-current-4fb2/UD_C06_FOLD_CURRENT_TRIGGER_v0.26.md",
+      "version_or_commit": "v0.26",
+      "section_or_object_id": "Candidate normalized law",
+      "source_status": "integrated conditional flux and fold audit"
+    },
+    {
+      "source_id": "C06-v018",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/eced710986d12fa999a786e06d2443b937ab81ff/captures/20261117T183830Z-codex-c06-directed-authorization-91e4/UD_C06_DIRECTED_EVENT_AUTHORIZATION_v0.18.md",
+      "version_or_commit": "v0.18",
+      "section_or_object_id": "Balance and directed flux",
+      "source_status": "integrated signed flux convention"
+    }
+  ],
+  "baseline": "C06 v0.26 normalized folding candidate",
+  "result": "The joint real-ray fraction has derivative Rdot/N. The oscillator complex-ray quotient erases the transfer. Real-ray dynamics retains the crossing when phase visibility is positive and leaves fold and cut authority open.",
+  "next_discriminant": "Test a reciprocal coupling that selects a hinge map and hard drive constraint from the retained real-ray balance.",
+  "mathematical_receipts": [
+    "candidates/c06-projective-phase/mathematical_receipt.json"
+  ]
+}

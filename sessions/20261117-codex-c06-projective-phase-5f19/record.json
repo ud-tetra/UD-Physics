@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-projective-phase-5f19",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-projective-phase",
+  "goal": "Determine whether projective odd dynamics derives normalized flux, the fold law and same-event cut.",
+  "created_at": "2026-11-17T20:43:08.277Z",
+  "base_revision": "677e94a8e18264f143598c754ad6104c8b7e5ad5",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-projective-phase": "bb96111d86e7f23ff029f3db42bc08d727d76645"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-projective-phase-5f19/projective-phase-replay/inputs/001-replay_c06_projective_phase.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "The joint real-ray fraction has derivative Rdot/N. The oscillator complex-ray quotient erases the transfer. Real-ray dynamics retains the crossing when phase visibility is positive and leaves fold and cut authority open.",
+  "next_action": "Test a reciprocal coupling that selects a hinge map and hard drive constraint from the retained real-ray balance.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Homogeneous observables, analytic rotation and exact rational replay",
+    "applicable_methods": [
+      "Real projectivization",
+      "Oscillator-phase quotient",
+      "Exact rational replay"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}
