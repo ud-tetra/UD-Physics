@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-8e71",
+  "run_id": "c06-incidence-replay",
+  "created_at": "2026-11-17T00:56:54.408043+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact edge cancellation, flag-metric counterexample, and AW5 wedge replay",
+  "command": "python3 candidates/c06-incidence-interaction-v03/replay_c06_incidence.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "7bde374619601854c9645c9a584d49d2aa99cf4b",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "UD_C06_INCIDENCE_INTERACTION_v0.3.md",
+      "path": "inputs/001-UD_C06_INCIDENCE_INTERACTION_v0.3.md",
+      "source_location": "repository",
+      "source_path": "candidates/c06-incidence-interaction-v03/UD_C06_INCIDENCE_INTERACTION_v0.3.md",
+      "sha256": "958fc31232e365727af0c4efe1b7425597bef0eda44305be9713b2102e176c5a",
+      "size_bytes": 6238
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_c06_incidence.py",
+      "path": "inputs/002-replay_c06_incidence.py",
+      "source_location": "repository",
+      "source_path": "candidates/c06-incidence-interaction-v03/replay_c06_incidence.py",
+      "sha256": "4dfcc519753e4d0afaa3e23cd2068cc89a7b115dd22d7a816c79e7896923f834",
+      "size_bytes": 4775
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-incidence-interaction-v03/mathematical_receipt.json",
+      "sha256": "1248e40aa9305b23ced29a9a40d84ee0996b46752889b2608a548896a6382ffc",
+      "size_bytes": 4387
+    }
+  ],
+  "files": [
+    {
+      "path": "files/c06_incidence_replay.json",
+      "sha256": "9f712ff59a12fece2734986a3b08f52302ab088b1c4dc04404724fda176dd2e9",
+      "size_bytes": 355
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "tetrahedron_edge_form": "4I_6",
+  "nonunique_flag_metric_within_face_entries": [
+    "-1/4",
+    "1/4"
+  ],
+  "conditional_equal_unit_gain_shear": "2I_5",
+  "aw5_filled_hollow_edge_forms_equal": true,
+  "aw5_diagonal_multiplicities": {
+    "4": 12,
+    "6": 6
+  },
+  "aw5_uncancelled_unordered_wedges": 24,
+  "aw5_nonzero_off_diagonal_entries": 48
+}

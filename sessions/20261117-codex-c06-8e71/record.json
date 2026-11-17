@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-8e71",
+  "runtime": "Codex GitHub connector and local exact compute",
+  "task": "c06-incidence-interaction-v03",
+  "goal": "Audit C06 edge cancellation, flag selection, and the AW5 extension",
+  "created_at": "2026-11-17T00:55:30.869372+00:00",
+  "base_revision": "7bde374619601854c9645c9a584d49d2aa99cf4b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-incidence-interaction-v03": "5c5d9b8fe98767fa7ac7538b851e4ea47bf7f879"
+  },
+  "checks": [
+    {
+      "command": "python3 candidates/c06-incidence-interaction-v03/replay_c06_incidence.py",
+      "result": "PASS_EXACT"
+    }
+  ],
+  "finding": "K4 cancellation exact. Independent flag metric and midpoint gain underdetermined. Both AW5 blocks retain 24 unfilled wedges.",
+  "next_action": "Seek independent proof review and a native interaction selection law.",
+  "mathematical_profile": {
+    "coefficient_domain": "R with exact integer and rational arithmetic",
+    "exactness_or_precision_plan": "Independent signed incidence assembly and rational Gram replay",
+    "applicable_methods": [
+      "Boundary composition",
+      "Flag Gram matrices",
+      "Simplex incidence counts"
+    ],
+    "clock_metric_units_conventions": "Increasing vertex order, unit simplex inner product, native time"
+  },
+  "checkpoint_at": "2026-11-17T00:56:54.484868+00:00",
+  "checkpoint_source": {
+    "revision": "7bde374619601854c9645c9a584d49d2aa99cf4b",
+    "dirty": true
+  }
+}
