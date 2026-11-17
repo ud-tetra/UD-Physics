@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "c06-binary-fiber-clock",
+  "session": "20261117-codex-c06-clock-af9e",
+  "created_at": "2026-11-17T02:36:29.927Z",
+  "base_revision": "e0a73ade57f9568855005a3d8b40113aa5086825",
+  "owned_paths": [
+    "tasks/c06-binary-fiber-clock.json",
+    "sessions/20261117-codex-c06-clock-af9e/",
+    "candidates/c06-binary-fiber-clock/",
+    "artifacts/20261117-codex-c06-clock-af9e/"
+  ]
+}
