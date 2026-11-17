@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-simplex-a4e3",
+  "runtime": "Codex GitHub connector and exact rational replay",
+  "task": "c06-regular-simplex-whitney-law",
+  "goal": "Prove the regular-simplex Whitney spectrum and capture a manuscript §5.3 draft",
+  "created_at": "2026-11-17T02:03:34.645924+00:00",
+  "base_revision": "d272d7362637831a3cc1e6adf08d8e04bb8de377",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-regular-simplex-whitney-law": "df6fdcee9ec4ebbe34993ab9f940e18a4270834d"
+  },
+  "checks": [
+    {
+      "command": "python3 candidates/c06-regular-simplex-whitney-law/replay_regular_simplex_whitney.py",
+      "result": "PASS_EXACT"
+    }
+  ],
+  "finding": "General proof and twelve rational checks completed.",
+  "next_action": "Review the proposed manuscript insertion and test interaction selection separately.",
+  "mathematical_profile": {
+    "coefficient_domain": "real; rational replay",
+    "exactness_or_precision_plan": "Exact proof and rational checks",
+    "applicable_methods": [
+      "Barycentric covariance",
+      "Signed incidence",
+      "Whitney Gram assembly"
+    ],
+    "clock_metric_units_conventions": "Static regular simplex with side length ell, mean field norms"
+  },
+  "checkpoint_at": "2026-11-17T02:04:06.721887+00:00",
+  "checkpoint_source": {
+    "revision": "d272d7362637831a3cc1e6adf08d8e04bb8de377",
+    "dirty": true
+  }
+}
