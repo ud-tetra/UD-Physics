@@ -1,0 +1,47 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-signed-circulation",
+  "session_id": "20261117-codex-c06-signed-circulation-5bf8",
+  "question": "Determine whether signed triangular circulation can universally detect odd balance and authorize a stock-preserving port cut.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Euclidean polarized edge coordinates embedded as signed coefficients in a fixed test convention.",
+    "Positive metric stock and metric-orthogonal carrier projector.",
+    "Common odd phase for the blind-trajectory witness."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Increasing edge orientation followed by exhaustive sign choices; no empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v029",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/168ca1bf3a1fc4d86caec74bee1f90eb22703765/captures/20261117T210230Z-codex-c06-unilateral-contact-36bc/UD_C06_UNILATERAL_CONTACT_v0.29.md",
+      "version_or_commit": "v0.29",
+      "section_or_object_id": "Apply the plastic stop to the v0.28 action",
+      "source_status": "integrated conditional scalar stop"
+    },
+    {
+      "source_id": "C06-v022",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/168ca1bf3a1fc4d86caec74bee1f90eb22703765/captures/20261117T195651Z-codex-c06-face-balance-8d31/UD_C06_FACE_BALANCE_COVER_v0.22.md",
+      "version_or_commit": "v0.22",
+      "section_or_object_id": "Face-local balance readout",
+      "source_status": "integrated conditional face-local stock detector"
+    }
+  ],
+  "baseline": "C06 v0.29 unilateral contact and v0.22 face-local stock readout",
+  "result": "Increasing-orientation signed face circulation has an odd blind direction. All diagonal edge sign choices leak even stock. A declared reciprocal hold preserves stock with identity reset, while native switch authorization remains open.",
+  "next_discriminant": "Test whether a sourced typed incidence update simultaneously authorizes and persists the sector cut on directed parity-resolved balance.",
+  "mathematical_receipts": [
+    "candidates/c06-signed-circulation/mathematical_receipt.json"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-signed-circulation-5bf8",
+  "run_id": "signed-circulation-replay",
+  "created_at": "2026-11-17T21:13:51.683Z",
+  "evidence": "EXACT",
+  "summary": "Increasing-orientation signed face circulation has an odd blind direction. All diagonal edge sign choices leak even stock. A declared reciprocal hold preserves stock with identity reset, while native switch authorization remains open.",
+  "command": "python3 artifacts/20261117-codex-c06-signed-circulation-5bf8/signed-circulation-replay/inputs/001-replay_c06_signed_circulation.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "0a8bc5f70b0b48242dbe5717dedcb0de8e7a5b00",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_signed_circulation.py",
+      "sha256": "37790afd2469fb5e31855d0de241ebf7fc973ba61452dc3e2879f441ceb123b9",
+      "size_bytes": 2231,
+      "input_id": "input-001",
+      "name": "replay_c06_signed_circulation.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "62e5ae7ed9e145991609f195dcac365ac9bd8f5ff04e7b5acb48877804c51161",
+      "size_bytes": 5852,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-signed-circulation/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_SIGNED_CIRCULATION_ACTUATION_v0.30.md",
+      "sha256": "8b3d6bfdb85bec862bb5073e923b7dd53d4b93b1a1543e40b861ef2a4cbb122a",
+      "size_bytes": 4722
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "3b9796921e140b5339c452328ab77d76132993c0451cbdfb453f9659e3e2d7e0",
+      "size_bytes": 208
+    }
+  ]
+}
