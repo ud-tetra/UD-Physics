@@ -1,0 +1,10 @@
+{
+  "cut_mass": "4/3",
+  "cycle_mass": "8/9",
+  "required_cycle_increment": "4/9",
+  "down_energy": "(64/3) P_cut",
+  "up_energy": "(64/3) P_cycle",
+  "full_energy": "(64/3) I_6",
+  "selected_up_weight": "1/48",
+  "augmented_mass": "(4/3) I_6"
+}

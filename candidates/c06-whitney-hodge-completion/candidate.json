@@ -1,0 +1,34 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-whitney-hodge-completion",
+  "session_id": "20261117-codex-c06-hodge-c17e",
+  "question": "Test whether consistent Whitney Hodge terms supply the missing cycle weight",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Regular Euclidean unit tetrahedron",
+    "Consistent area-averaged Whitney masses on its boundary",
+    "Increasing simplex orientation"
+  ],
+  "physical_mapping": "OPEN / Physical Promotion = 0",
+  "target_exposure": "Analytic target (4/3)I_6 specified",
+  "fitted_choices": [
+    "Relative up weight is target-selected"
+  ],
+  "sources": [
+    "https://github.com/ud-tetra/UD-Physics/pull/404",
+    "https://github.com/ud-tetra/UD/pull/528"
+  ],
+  "baseline": "Standard consistent Whitney trace mass",
+  "result": "Q_down=(64/3)P_cut, Q_up=(64/3)P_cycle. A cycle-only weight of 1/48 gives augmented mass (4/3)I_6.",
+  "next_discriminant": "Seek a constitutive law for the relative Hodge weight independently of the scalar equalization target.",
+  "mathematical_receipts": [
+    "candidates/c06-whitney-hodge-completion/mathematical_receipt.json"
+  ]
+}
