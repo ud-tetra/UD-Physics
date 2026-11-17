@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-signed-circulation",
   "session": "20261117-codex-c06-signed-circulation-5bf8",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T21:13:51.683Z",
   "base_revision": "0a8bc5f70b0b48242dbe5717dedcb0de8e7a5b00",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-signed-circulation-5bf8/",
     "candidates/c06-signed-circulation/",
     "artifacts/20261117-codex-c06-signed-circulation-5bf8/"
-  ]
+  ],
+  "released_at": "2026-11-17T21:27:05.230Z",
+  "released_from_sha": "5c4c20d814928e928944b770e0417e17cf9a870b",
+  "release_reason": "Discovery PR #434 merged"
 }
