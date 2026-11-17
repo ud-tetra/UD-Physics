@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "c06-bulk-hodge-trigger",
+  "session": "20261117-codex-c06-bulk-hodge-6ed2",
+  "status": "held",
+  "created_at": "2026-11-17T20:12:24.358Z",
+  "base_revision": "395215d0d0e7c0e9ab016d8e6398da60a91b1545",
+  "owned_paths": [
+    "tasks/c06-bulk-hodge-trigger.json",
+    "sessions/20261117-codex-c06-bulk-hodge-6ed2/",
+    "candidates/c06-bulk-hodge-trigger/",
+    "artifacts/20261117-codex-c06-bulk-hodge-6ed2/"
+  ]
+}
