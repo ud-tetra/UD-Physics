@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-pair-balance-actuation",
   "session": "20261117-codex-c06-pair-actuation-8f47",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T05:06:04.785Z",
   "base_revision": "3f8906ce648382255997b2dad9e325cfce149071",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-pair-actuation-8f47/",
     "candidates/c06-pair-balance-actuation/",
     "artifacts/20261117-codex-c06-pair-actuation-8f47/"
-  ]
+  ],
+  "released_at": "2026-11-17T18:17:03.403Z",
+  "released_from_sha": "228e67c4127c211750f617081a067706f2158232",
+  "release_reason": "Integrated in UD-Physics #418 with green CI."
 }
