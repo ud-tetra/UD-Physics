@@ -18,10 +18,20 @@ REQUIRED = {
 }
 
 
-# This integrated archive predates the canonical metadata vocabulary. Preserve
-# its source bytes and scope compatibility to the recorded paths and values.
+# These integrated archives predate the canonical metadata vocabulary. Preserve
+# source bytes and scope compatibility to the recorded paths and values.
 LEGACY_EDGE_TASK = "tasks/edge-preparation-homogeneity-20261116-6c91.json"
 LEGACY_EDGE_RUN = "artifacts/20261116-chatgpt-edgeprep-6c91/exact-orbit-v0.6/manifest.json"
+LEGACY_CONDUCTANCE_TASK = "tasks/native-two-channel-conductance-20261115-c92e.json"
+LEGACY_CONDUCTANCE_RUN = "artifacts/20261115-chatgpt-micro-2port-c92e/exact-candidate-v0.5/manifest.json"
+LEGACY_MISSING_DEPENDENCIES = {
+    (LEGACY_EDGE_TASK, "native-two-channel-conductance-20261115-c92e"),
+    (LEGACY_CONDUCTANCE_TASK, "native-source-action-20261115-4f7c"),
+}
+LEGACY_RUN_IDS = {
+    (LEGACY_EDGE_RUN, 2, "exact-orbit-v0.6"),
+    (LEGACY_CONDUCTANCE_RUN, 2, "exact-candidate-v0.5"),
+}
 LEGACY_RECORD_FIELDS = {
     "sessions/20261116-chatgpt-edgeprep-6c91/record.json":
         (1, "status", "handoff_review", "handoff"),
@@ -30,6 +40,14 @@ LEGACY_RECORD_FIELDS = {
     "candidates/edge-preparation-homogeneity-20261116-6c91/candidate.json":
         (1, "evidence", ["EXACT_CONDITIONAL", "NO-GO_SCOPED"], ["EXACT", "CONDITIONAL"]),
     LEGACY_EDGE_RUN:
+        (2, "evidence", "EXACT_CONDITIONAL", "CONDITIONAL"),
+    "sessions/20261115-chatgpt-micro-2port-c92e/record.json":
+        (1, "status", "handoff_review", "handoff"),
+    LEGACY_CONDUCTANCE_TASK:
+        (1, "status", "handoff_review", "active"),
+    "candidates/two-channel-conductance-c92e/candidate.json":
+        (1, "evidence", ["EXACT_CONDITIONAL", "NO-GO_SCOPED", "OPEN_GATED"], ["EXACT", "CONDITIONAL", "OPEN"]),
+    LEGACY_CONDUCTANCE_RUN:
         (2, "evidence", "EXACT_CONDITIONAL", "CONDITIONAL"),
 }
 
@@ -89,8 +107,7 @@ def validate(root):
                         dependency_id = identifier(dependency)
                         # This archived handoff names an uncaptured historical
                         # dependency. Keep the reference without fabricating a task.
-                        if (relative_path == LEGACY_EDGE_TASK and
-                                dependency_id == "native-two-channel-conductance-20261115-c92e"):
+                        if (version == 1 and (relative_path, dependency_id) in LEGACY_MISSING_DEPENDENCIES):
                             continue
                         if not (root / "tasks" / f"{dependency_id}.json").is_file():
                             raise ValueError("Unknown task dependency")
@@ -105,7 +122,7 @@ def validate(root):
                     if obj["evidence"] not in EVIDENCE or not obj["files"]:
                         raise ValueError("Invalid evidence or empty outputs")
                     run_id = obj["run_id"]
-                    if not (relative_path == LEGACY_EDGE_RUN and version == 2 and run_id == "exact-orbit-v0.6"):
+                    if (relative_path, version, run_id) not in LEGACY_RUN_IDS:
                         identifier(run_id)
                     if path.parent.name != run_id or path.parent.parent.name != obj["session_id"]:
                         raise ValueError("Run path mismatch")

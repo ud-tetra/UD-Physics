@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "discovery-391-metadata-compat",
+  "goal": "Restore Discovery validation for the integrated #391 archive",
+  "owned_paths": [
+    "scripts/validate.py",
+    "tests/test_validate.py",
+    "tasks/discovery-391-metadata-compat.json",
+    "sessions/20261117-codex-391-compat-59cd/"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}
