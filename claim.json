@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-face-balance-cover",
   "session": "20261117-codex-c06-face-balance-8d31",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T19:56:51.925Z",
   "base_revision": "20e20239c1c86bb89890122a960903d1f181ad68",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-face-balance-8d31/",
     "candidates/c06-face-balance-cover/",
     "artifacts/20261117-codex-c06-face-balance-8d31/"
-  ]
+  ],
+  "released_at": "2026-11-17T20:04:40.839Z",
+  "released_from_sha": "79bb953be253deb57c76ce6d91fe0e9e46adb0d1",
+  "release_reason": "Integrated in UD-Physics #426 with green CI."
 }
