@@ -1,0 +1,62 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-pair-balance-actuation",
+  "session_id": "20261117-codex-c06-pair-actuation-8f47",
+  "question": "Test whether opposite-pair stock sensing can autonomously stop reciprocal odd exchange at finite half transfer.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Ordinary unordered edge source and v0.12 isometrically aligned records.",
+    "Closed independent skew exchange on odd and even blocks, initially empty records.",
+    "Regular branch uses a locally Lipschitz shared odd coefficient vanishing at every balanced state.",
+    "Comparator prescribes discontinuity and ideal isolation."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Isolate the completed sector and preserve the other sector, as specified by v0.12",
+  "fitted_choices": [
+    "Aligned record identification, projected stock guard and discontinuous threshold prescribed. No empirical fit."
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v013",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/541",
+      "version_or_commit": "v0.13 / 1c9d5bcf1504cd46d016c2028b398b16194a68ac",
+      "section_or_object_id": "Sections 1–3; flag and parity split",
+      "source_status": "integrated exact conditional result"
+    },
+    {
+      "source_id": "C06-v012",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/540",
+      "version_or_commit": "v0.12",
+      "section_or_object_id": "Declared switched interaction and exact retention",
+      "source_status": "integrated exact conditional result"
+    },
+    {
+      "source_id": "C06-v07",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/534",
+      "version_or_commit": "v0.7",
+      "section_or_object_id": "Scoped receipt insufficiency; candidate quantitative guards",
+      "source_status": "integrated scoped result"
+    },
+    {
+      "source_id": "Q166-170",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/1c9d5bcf1504cd46d016c2028b398b16194a68ac/docs/UD_Native_Gate_Trigger_and_Recovery_v0.1.md",
+      "version_or_commit": "Ledger v0.39 Q166–Q170; gate audit v0.1",
+      "section_or_object_id": "Micro support current and control volume; gate audit §§1–2.1",
+      "source_status": "signed incidence scope; transition source open"
+    }
+  ],
+  "baseline": "v0.13 controlled parity projection, with v0.12 aligned flag records",
+  "result": "The symmetric pair product mixes even and odd stock. A projected odd stock balance is exact. Locally Lipschitz feedback vanishing on that surface only approaches it from an unbalanced preparation. A prescribed discontinuous switch reaches and holds it.",
+  "next_discriminant": "Audit source-admitted event receipts for a parity-resolved crossing, persistent reciprocal hold and separate Stage 2 handoff.",
+  "mathematical_receipts": [
+    "candidates/c06-pair-balance-actuation/mathematical_receipt.json"
+  ]
+}

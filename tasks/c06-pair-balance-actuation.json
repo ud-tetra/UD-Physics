@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-pair-balance-actuation",
+  "goal": "Test whether opposite-pair stock sensing can autonomously stop reciprocal odd exchange at finite half transfer.",
+  "owned_paths": [
+    "tasks/c06-pair-balance-actuation.json",
+    "sessions/20261117-codex-c06-pair-actuation-8f47/",
+    "candidates/c06-pair-balance-actuation/",
+    "artifacts/20261117-codex-c06-pair-actuation-8f47/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
