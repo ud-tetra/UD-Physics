@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-quadratic-phase-62bd",
+  "run_id": "quadratic-phase-replay",
+  "created_at": "2026-11-17T18:26:04.108Z",
+  "evidence": "EXACT",
+  "summary": "Metric-aligned odd-stock ratios distinguish all three witnesses. The test needs first-event selection, and an orthogonal parity block condition lets a declared switch hold the odd record while the even block runs.",
+  "command": "python3 artifacts/20261117-codex-c06-quadratic-phase-62bd/quadratic-phase-replay/inputs/001-replay_c06_quadratic_phase.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "a043cd214610a4b12b0fd46bf0296a090545eb55",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_quadratic_phase.py",
+      "sha256": "47edb7ffbf504bb463543fe7710340cb9b0ec8ec3c84516dad62841c0bf6dfaa",
+      "size_bytes": 1661,
+      "input_id": "input-001",
+      "name": "replay_c06_quadratic_phase.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "9a72a5c8750238ea357f705cc6bbc7015e6cc640f6822bdb7c0d1e8d485c945a",
+      "size_bytes": 6550,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-quadratic-phase-receipt/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_QUADRATIC_PHASE_RECEIPT_v0.16.md",
+      "sha256": "e3e99b57007c36e659791f00b1eb852ef7e745baa9c07ea7b258b670797bcdbd",
+      "size_bytes": 5184
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "3c4043b187134f6a6045a7233291b491987a134d5bf5025734f1f46fa26f7566",
+      "size_bytes": 192
+    }
+  ]
+}

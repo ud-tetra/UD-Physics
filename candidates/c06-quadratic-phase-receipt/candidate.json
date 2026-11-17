@@ -1,0 +1,54 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-quadratic-phase-receipt",
+  "session_id": "20261117-codex-c06-quadratic-phase-62bd",
+  "question": "Test the quadratic ratio and a stock-preserving selective update against the fixed-receipt witnesses.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Ordinary edge X, declared metric on Whitney flag records Y, and G*G with positive scalar blocks on E and T2.",
+    "Initially empty records, nonzero odd preparation, dimensionless time, and closed reciprocal exchange.",
+    "The candidate supplies a first directed crossing guard, persistent Hold state and identity amplitude reset."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Half-stock criterion and fixed-receipt witnesses known from C06 v0.15",
+  "fitted_choices": [
+    "Declared directed guard and absorbing state; no empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v011",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/f7f9815d21bdd80a009d641a12ec0be16849fd6a/captures/20261117T043209Z-codex-c06-action-d84a/UD_C06_BOUNDARY_ACTION_COEFFICIENT_v0.11.md",
+      "version_or_commit": "v0.11",
+      "section_or_object_id": "Whitney curl Gram and unweighted exchange spectrum",
+      "source_status": "integrated exact conditional metric and rates"
+    },
+    {
+      "source_id": "C06-v012",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/f7f9815d21bdd80a009d641a12ec0be16849fd6a/captures/20261117T043941Z-codex-c06-async-a971/UD_C06_ASYNCHRONOUS_LATCH_v0.12.md",
+      "version_or_commit": "v0.12",
+      "section_or_object_id": "Declared switched interaction and exact retention",
+      "source_status": "integrated conditional sector isometries"
+    },
+    {
+      "source_id": "C06-v015",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/f7f9815d21bdd80a009d641a12ec0be16849fd6a/captures/20261117T181703Z-codex-c06-receipt-latch-3ce2/UD_C06_RECEIPT_LATCH_AUDIT_v0.15.md",
+      "version_or_commit": "v0.15",
+      "section_or_object_id": "Sections 2–3",
+      "source_status": "integrated conditional witnesses and reciprocal comparator"
+    }
+  ],
+  "baseline": "v0.12 aligned port and v0.15 fixed-receipt witnesses",
+  "result": "Metric-aligned odd-stock ratios distinguish all three witnesses. The test needs first-event selection, and an orthogonal parity block condition lets a declared switch hold the odd record while the even block runs.",
+  "next_discriminant": "Test whether a source-admitted state stores completion and couples directed balance to the selective operator change before Stage 2.",
+  "mathematical_receipts": [
+    "candidates/c06-quadratic-phase-receipt/mathematical_receipt.json"
+  ]
+}
