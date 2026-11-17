@@ -1,0 +1,31 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-trimmed-quadratic-lift",
+  "session_id": "20261117-codex-c06-quadratic-d76e",
+  "question": "Test exact second-order trimmed Whitney trace and Dirichlet lifts",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Regular unit Euclidean tetrahedron",
+    "Quadratic trimmed Whitney edge space",
+    "Volume-averaged squared norms and oriented unit edge integrals"
+  ],
+  "physical_mapping": "OPEN / Physical Promotion = 0",
+  "target_exposure": "Analytic target known, no empirical fit",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD-Physics/pull/407"
+  ],
+  "baseline": "Lowest-order bulk Whitney trace and masses",
+  "result": "Trimmed quadratic space and full trace rank 20. Six edge integrals leave 14 free modes. Mass split 31/560, 1/12. Pure curl split 0, 144/19; full gradient 0, 48/11.",
+  "next_discriminant": "If pursued, test a higher-order space with a nontrivial zero-trace kernel under full boundary control.",
+  "mathematical_receipts": [
+    "candidates/c06-trimmed-quadratic-lift/mathematical_receipt.json"
+  ]
+}
