@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-flag-readout-4e70",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-flag-readout-commit",
+  "goal": "Test paired flag locality and single terminal commit for simultaneous odd balance receipts.",
+  "created_at": "2026-11-17T19:42:21.189Z",
+  "base_revision": "052e591a3259b39fc89aada2405d3a77314871dc",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-flag-readout-commit": "1694471f8da41e16e99d186bffa4e5b4ac1560d2"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-flag-readout-4e70/flag-readout-replay/inputs/001-replay_c06_flag_readout.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "Two opposite-edge flag samples recover the aligned odd coordinate on the invariant copied range. Off-range flag perturbations defeat pair-only readout. Shared Ready/Hold arbitration yields a single conditional commit.",
+  "next_action": "Test native access across opposite edges, off-range sensitivity, and same-event arbiter implementation.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Exact Whitney adjoint identities and rational replay",
+    "applicable_methods": [
+      "Metric projection",
+      "Quadratic flux",
+      "Readout aliasing",
+      "Hybrid switching"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}

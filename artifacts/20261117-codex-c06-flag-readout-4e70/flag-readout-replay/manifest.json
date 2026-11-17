@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-flag-readout-4e70",
+  "run_id": "flag-readout-replay",
+  "created_at": "2026-11-17T19:42:21.189Z",
+  "evidence": "EXACT",
+  "summary": "Two opposite-edge flag samples recover the aligned odd coordinate on the invariant copied range. Off-range flag perturbations defeat pair-only readout. Shared Ready/Hold arbitration yields a single conditional commit.",
+  "command": "python3 artifacts/20261117-codex-c06-flag-readout-4e70/flag-readout-replay/inputs/001-replay_c06_flag_readout.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "052e591a3259b39fc89aada2405d3a77314871dc",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_flag_readout.py",
+      "sha256": "0093b105439786506288348529df34a2bb26c0d0d2ae69ef89859bd27ff06dac",
+      "size_bytes": 2014,
+      "input_id": "input-001",
+      "name": "replay_c06_flag_readout.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "1ef03c48efe483f46a54d2429eeb908360db53c6b3e0fa7d78eb1e154ba8e6d7",
+      "size_bytes": 5688,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-flag-readout-commit/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_FLAG_READOUT_COMMIT_v0.20.md",
+      "sha256": "c18f757ca99a8147edc36898156f2e052e085b2cac5fe16efb7f57f00ad2ebbf",
+      "size_bytes": 3456
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "5873635cfd5650e21bfe949d5e3ad0a852dcc149370a2fbe97cc2ca020966de2",
+      "size_bytes": 112
+    }
+  ]
+}
