@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-hodge-c17e",
+  "run_id": "whitney-gyration-replay",
+  "created_at": "2026-11-17T01:45:46.615631+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact centroidal moment and face versus bulk Whitney curl comparison",
+  "command": "python3 candidates/c06-whitney-hodge-completion/replay_whitney_gyration.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "0f47b327d2e059d2535d1c95b0bf946b34fe4893",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "UD_C06_WHITNEY_GYRATION_v0.6.md",
+      "path": "inputs/001-UD_C06_WHITNEY_GYRATION_v0.6.md",
+      "source_location": "repository",
+      "source_path": "candidates/c06-whitney-hodge-completion/UD_C06_WHITNEY_GYRATION_v0.6.md",
+      "sha256": "784032e2d79a94989d207c30a0830034b4a9ba2b710275508eb4e6c25794cd73",
+      "size_bytes": 4242
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_whitney_gyration.py",
+      "path": "inputs/002-replay_whitney_gyration.py",
+      "source_location": "repository",
+      "source_path": "candidates/c06-whitney-hodge-completion/replay_whitney_gyration.py",
+      "sha256": "14d07674e0c9bca36fb9a2a71eaba972e701569fcf42ed898e24cfd3090db9e6",
+      "size_bytes": 2188
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt_gyration.json",
+      "path": "inputs/003-mathematical_receipt_gyration.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-whitney-hodge-completion/mathematical_receipt_gyration.json",
+      "sha256": "bc690b16206b42a8b5d4bf67c31e28c1e449425360a506bcc755beaf93f5d167",
+      "size_bytes": 4583
+    }
+  ],
+  "files": [
+    {
+      "path": "files/c06_whitney_gyration_replay.json",
+      "sha256": "0834090404d736c50354f41ebe1ee66bc512129b04f0dc52488549b3b9533cb8",
+      "size_bytes": 278
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-hodge-c17e",
+  "runtime": "Codex GitHub connector and exact rational replay",
+  "task": "c06-whitney-hodge-completion",
+  "goal": "Test whether consistent Whitney Hodge terms supply the missing cycle weight",
+  "created_at": "2026-11-17T01:30:51.304297+00:00",
+  "base_revision": "d67b113bb2a3cd113bd56f5f93a1b0087da80d0d",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-whitney-hodge-completion": "dd941976c8a934485e1d78f80770a696ec124927"
+  },
+  "checks": [
+    {
+      "command": "python3 candidates/c06-whitney-hodge-completion/replay_whitney_hodge_completion.py",
+      "result": "PASS_EXACT"
+    }
+  ],
+  "finding": "Full Hodge energy is scalar; equalization requires a target-selected relative cycle coefficient.",
+  "next_action": "Independent proof review and constitutive source test.",
+  "mathematical_profile": {
+    "coefficient_domain": "exact rational",
+    "exactness_or_precision_plan": "Signed cochain matrix replay",
+    "applicable_methods": [
+      "Whitney masses",
+      "Metric adjoints",
+      "Cut-cycle projectors"
+    ],
+    "clock_metric_units_conventions": "Unit side boundary, area averaging, static energy forms"
+  },
+  "checkpoint_at": "2026-11-17T01:31:25.616617+00:00",
+  "checkpoint_source": {
+    "revision": "d67b113bb2a3cd113bd56f5f93a1b0087da80d0d",
+    "dirty": true
+  }
+}

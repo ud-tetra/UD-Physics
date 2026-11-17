@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-hodge-c17e",
+  "run_id": "whitney-hodge-replay",
+  "created_at": "2026-11-17T01:31:25.563943+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact Whitney Hodge energy and cycle correction",
+  "command": "python3 candidates/c06-whitney-hodge-completion/replay_whitney_hodge_completion.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "d67b113bb2a3cd113bd56f5f93a1b0087da80d0d",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "UD_C06_WHITNEY_HODGE_COMPLETION_v0.5.md",
+      "path": "inputs/001-UD_C06_WHITNEY_HODGE_COMPLETION_v0.5.md",
+      "source_location": "repository",
+      "source_path": "candidates/c06-whitney-hodge-completion/UD_C06_WHITNEY_HODGE_COMPLETION_v0.5.md",
+      "sha256": "a7c52919e5397026f11134732d732bf8484b43a9861b4bbb32b6c4aa54dd8c63",
+      "size_bytes": 3737
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_whitney_hodge_completion.py",
+      "path": "inputs/002-replay_whitney_hodge_completion.py",
+      "source_location": "repository",
+      "source_path": "candidates/c06-whitney-hodge-completion/replay_whitney_hodge_completion.py",
+      "sha256": "2d4950a2bd29513ca55f78eb0b16ee6d4cea5f1b7b36971e36146ff8e316a7e0",
+      "size_bytes": 2726
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-whitney-hodge-completion/mathematical_receipt.json",
+      "sha256": "d7bade384d68b8040a621d918852f543ea3c6f2fb6967decd563c60f967f7704",
+      "size_bytes": 4311
+    }
+  ],
+  "files": [
+    {
+      "path": "files/c06_whitney_hodge_replay.json",
+      "sha256": "330e6afcca10c230a89ad7d9010a75b6ff7f06027edcf1eb5bfe58c84abf7759",
+      "size_bytes": 246
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "face_weight": "1/48",
+  "bulk_weight": "1/80",
+  "face_sum_curl_cycle": "64/3",
+  "bulk_curl_cycle": "16",
+  "bulk_mass_cut_cycle": [
+    "1/2",
+    "1/5"
+  ],
+  "bulk_after_one_rotational_copy": [
+    "1/2",
+    "2/5"
+  ],
+  "bulk_equalizing_added_curl_weight": "3/160"
+}
