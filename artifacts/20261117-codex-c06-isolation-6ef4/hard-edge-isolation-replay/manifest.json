@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-isolation-6ef4",
+  "run_id": "hard-edge-isolation-replay",
+  "created_at": "2026-11-17T04:53:44.107Z",
+  "evidence": "EXACT",
+  "summary": "On the fixed injective flag port, every nonzero diagonal edge mask couples both shear sectors. A pure isometric pushforward preserves rank. Opposite-pair coupling isolates the odd sector under a declared completion bit.",
+  "command": "python3 artifacts/20261117-codex-c06-isolation-6ef4/hard-edge-isolation-replay/inputs/001-replay_c06_hard_edge_isolation.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "e2013f8f29dbf0732bd5f304f6b6ca9c168570b3",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_hard_edge_isolation.py",
+      "sha256": "2e9b8c6df497eda4d460ad0797e2862b6f0c4c0e2bb1622ce447604854a52fbc",
+      "size_bytes": 3244,
+      "input_id": "input-001",
+      "name": "replay_c06_hard_edge_isolation.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "c1db52c0b473942eec0056de3457fa924e98dd7394675ebc29c8713ab66d12f1",
+      "size_bytes": 6608,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-hard-edge-isolation/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_HARD_EDGE_ISOLATION_v0.13.md",
+      "sha256": "f068b297d717eed6ea49ef31e2f5de2c531048513bba293ead356b79c24ca86d",
+      "size_bytes": 5445
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "ad762a31a1954bd75c78fe1cc0701e3ca1ba65443dd96549a3024fd5c2a1bf13",
+      "size_bytes": 214
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-hard-edge-isolation",
+  "session_id": "20261117-codex-c06-isolation-6ef4",
+  "question": "Test whether hard-edge eligibility or a Pachner pushforward supplies the sector-selective stop of C06 v0.12.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Ordinary unordered edge module, Euclidean source, fixed positive record metric and injective flag-copy map.",
+    "Boolean edge gate acts as a diagonal pre-mask in the tested model. The full record adjoint provides reciprocal exchange.",
+    "Pachner comparator assumes a pure isometric pushforward; topology-changing branches require separate data.",
+    "Candidate parity coupler uses a supplied persistent completion state and the v0.11 orthogonality of record sectors."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Isolate the completed sector and preserve the other sector, as specified by v0.12",
+  "fitted_choices": [
+    "Flag application of the diagonal mask is declared. Opposite-pair comparator assumes a completion bit. No empirical fit."
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v012",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/540",
+      "version_or_commit": "v0.12 / b938e4d3d9efd7f09759f2e98b9c54c1a859e47b",
+      "section_or_object_id": "Declared switched interaction; Exact retention and handoff",
+      "source_status": "integrated exact conditional result"
+    },
+    {
+      "source_id": "Q156",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/b938e4d3d9efd7f09759f2e98b9c54c1a859e47b/docs/UD_Native_Gate_Trigger_and_Recovery_v0.1.md",
+      "version_or_commit": "v0.1; ledger v0.39 Q156",
+      "section_or_object_id": "Sections 1–2.1; Boolean product and admission scope",
+      "source_status": "source audit and scoped internal predicate"
+    },
+    {
+      "source_id": "Pachner-v01",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/tree/b938e4d3d9efd7f09759f2e98b9c54c1a859e47b/captures/2026-10-18T201837Z-codex-W-source-coverage-d8374ec5/sources",
+      "version_or_commit": "Pachner selector and Darboux pushforward v0.1",
+      "section_or_object_id": "Selector §§1–2 and Darboux map §§7–9",
+      "source_status": "separate signed carrier and conditional generator pushforward"
+    }
+  ],
+  "baseline": "v0.12 ideal sector stop on the v0.11 action port",
+  "result": "On the fixed injective flag port, every nonzero diagonal edge mask couples both shear sectors. A pure isometric pushforward preserves rank. Opposite-pair coupling isolates the odd sector under a declared completion bit.",
+  "next_discriminant": "Audit a source-defined opposite-pair interaction or genuine retessellation for a stock-preserving handoff and sector-dependent operator kernel.",
+  "mathematical_receipts": [
+    "candidates/c06-hard-edge-isolation/mathematical_receipt.json"
+  ]
+}
