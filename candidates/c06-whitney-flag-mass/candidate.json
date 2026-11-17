@@ -1,0 +1,32 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-whitney-flag-mass",
+  "session_id": "20261117-codex-c06-whitney-d41e",
+  "question": "Test the Whitney tangential-trace metric against C06 flag and edge isotropy",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Regular Euclidean unit tetrahedron",
+    "Signed edges in increasing order",
+    "Tangential Whitney boundary trace with area-normalized consistent mass"
+  ],
+  "physical_mapping": "OPEN / Physical Promotion = 0",
+  "target_exposure": "C06 scalar form known; no empirical fit",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD-Physics/pull/401",
+    "https://github.com/ud-tetra/UD/pull/526"
+  ],
+  "baseline": "Unit incidence edge energy 4I_6",
+  "result": "Four Whitney blocks (6I-b_f b_f^T)/9. Edge pullback (12I-B2 B2^T)/9 has eigenvalues 4/3 and 8/9, each triple.",
+  "next_discriminant": "Specify an independently motivated interaction that couples Whitney trace geometry to the native edge form.",
+  "mathematical_receipts": [
+    "candidates/c06-whitney-flag-mass/mathematical_receipt.json"
+  ]
+}
