@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "c06-incidence-routing",
+  "session": "20261117-codex-c06-incidence-routing-231a",
+  "status": "held",
+  "created_at": "2026-11-17T19:50:23.961Z",
+  "base_revision": "dd2f272dda92fb43a0dabc3ad5454bf15358224b",
+  "owned_paths": [
+    "tasks/c06-incidence-routing.json",
+    "sessions/20261117-codex-c06-incidence-routing-231a/",
+    "candidates/c06-incidence-routing/",
+    "artifacts/20261117-codex-c06-incidence-routing-231a/"
+  ]
+}
