@@ -1,0 +1,47 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-fold-current-trigger",
+  "session_id": "20261117-codex-c06-fold-current-4fb2",
+  "question": "Test fixed linear odd flux coupling as a preparation-independent fold trigger.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Empty odd records and flat net on the upward branch.",
+    "Fixed linear signed flux-to-hinge velocity for the no-go.",
+    "Common odd phase for pure-pair coverage."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Kinematic and torque controls declared; normalized candidate enforces the known target; no empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v025",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/71f3bd43088f0c51a7ce83d4394cc5e63b78e239/captures/20261117T201801Z-codex-c06-boundary-impedance-b712/UD_C06_BOUNDARY_IMPEDANCE_v0.25.md",
+      "version_or_commit": "v0.25",
+      "section_or_object_id": "Hard constraint on the drive",
+      "source_status": "integrated conditional cut in UD"
+    },
+    {
+      "source_id": "C06-v018",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/71f3bd43088f0c51a7ce83d4394cc5e63b78e239/captures/20261117T183830Z-codex-c06-directed-authorization-91e4/UD_C06_DIRECTED_EVENT_AUTHORIZATION_v0.18.md",
+      "version_or_commit": "v0.18",
+      "section_or_object_id": "Balance and directed flux",
+      "source_status": "integrated signed flux convention"
+    }
+  ],
+  "baseline": "C06 v0.18 signed odd flux and v0.25 constraint",
+  "result": "Fixed linear routing closes at half stock for every common-phase share at one stock only if it uses total flux. The gain then scales inversely with stock. Normalized phase locking is candidate only.",
+  "next_discriminant": "Derive or falsify a native source of normalized phase locking and same-event authority.",
+  "mathematical_receipts": [
+    "candidates/c06-fold-current-trigger/mathematical_receipt.json"
+  ]
+}
