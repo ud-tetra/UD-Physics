@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-winding-edge-5ab2",
+  "run_id": "winding-edge-replay",
+  "created_at": "2026-11-17T19:09:33.384Z",
+  "evidence": "EXACT",
+  "summary": "Completed winding is constant at the three witnesses. A fixed edge-local projection can miss populated odd directions. The OR of three directed pair guards is exact under empty-record common-phase preparation but can fire early outside it.",
+  "command": "python3 artifacts/20261117-codex-c06-winding-edge-5ab2/winding-edge-replay/inputs/001-replay_c06_winding_edge.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "54ff5bd87aee1e3146f2cdbe38066fcccfad8c78",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_winding_edge.py",
+      "sha256": "f3ae7e465fdbdc0300182d58c6c7f55332f8f6e7a66063b77439c5334c5266e9",
+      "size_bytes": 1444,
+      "input_id": "input-001",
+      "name": "replay_c06_winding_edge.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "9a721ad62d9764b0344a58e68aac98a16f5c8334ebb6fd05b742e1ecdde81b17",
+      "size_bytes": 6512,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-winding-edge-receipts/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_WINDING_EDGE_RECEIPTS_v0.19.md",
+      "sha256": "73ff198216dcbe546981c61d02a2bfa3e08d67efda81a8d466ff15a98a4bf505",
+      "size_bytes": 3865
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "dbf5ce1e6c8eb9e152c83be1d46167972cff7fffffe53bc2223318e1a44e626d",
+      "size_bytes": 103
+    }
+  ]
+}

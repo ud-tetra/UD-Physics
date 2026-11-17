@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-winding-edge-5ab2",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-winding-edge-receipts",
+  "goal": "Test whether integer winding or edge saturation can authorize first upward odd balance and same-event hold.",
+  "created_at": "2026-11-17T19:09:33.384Z",
+  "base_revision": "54ff5bd87aee1e3146f2cdbe38066fcccfad8c78",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-winding-edge-receipts": "4eb01c4e34c3abd1e064fae7702e9ba480f976c9"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-winding-edge-5ab2/winding-edge-replay/inputs/001-replay_c06_winding_edge.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "Completed winding is constant at the three witnesses. A fixed edge-local projection can miss populated odd directions. The OR of three directed pair guards is exact under empty-record common-phase preparation but can fire early outside it.",
+  "next_action": "Test whether the source supplies a local aligned record and an atomic arbiter for co-occurring pair receipts.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Exact oscillator identities and integer replay",
+    "applicable_methods": [
+      "Metric projection",
+      "Quadratic flux",
+      "Readout aliasing",
+      "Hybrid switching"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}

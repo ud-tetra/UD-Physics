@@ -1,0 +1,62 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-winding-edge-receipts",
+  "session_id": "20261117-codex-c06-winding-edge-5ab2",
+  "question": "Test whether integer winding or edge saturation can authorize first upward odd balance and same-event hold.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Aligned odd coordinates in the three orthonormal opposite-pair directions.",
+    "Positive odd stock, empty initial odd record, and common fixed oscillator rate for the exact OR result.",
+    "The single-coordinate obstruction assumes no independent phase source.",
+    "The candidate requires exclusive same-event actuation and access to aligned record coordinates."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Common-phase preparation, aligned readout and shared arbiter declared; no empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v018",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/41767fc5911fcb5c9bb1a08d23a7bc964e5b87c3/captures/20261117T183830Z-codex-c06-directed-authorization-91e4/UD_C06_DIRECTED_EVENT_AUTHORIZATION_v0.18.md",
+      "version_or_commit": "v0.18",
+      "section_or_object_id": "Balance, differential and directed flux; Receipt sufficiency",
+      "source_status": "integrated directed guard and proposed atomic transition"
+    },
+    {
+      "source_id": "C06-v015",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/41767fc5911fcb5c9bb1a08d23a7bc964e5b87c3/captures/20261117T181703Z-codex-c06-receipt-latch-3ce2/UD_C06_RECEIPT_LATCH_AUDIT_v0.15.md",
+      "version_or_commit": "v0.15",
+      "section_or_object_id": "Sections 1–2",
+      "source_status": "same winding and receipt witnesses"
+    },
+    {
+      "source_id": "C06-v016",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/41767fc5911fcb5c9bb1a08d23a7bc964e5b87c3/captures/20261117T182604Z-codex-c06-quadratic-phase-62bd/UD_C06_QUADRATIC_PHASE_RECEIPT_v0.16.md",
+      "version_or_commit": "v0.16",
+      "section_or_object_id": "Sections 1–3",
+      "source_status": "aligned metric and hold"
+    },
+    {
+      "source_id": "Q156",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/41767fc5911fcb5c9bb1a08d23a7bc964e5b87c3/docs/UD_Native_Gate_Trigger_and_Recovery_v0.1.md",
+      "version_or_commit": "v0.1; ledger Q156",
+      "section_or_object_id": "Section 2.1",
+      "source_status": "retained-sector null theorem"
+    }
+  ],
+  "baseline": "C06 v0.18 guard and v0.15 winding receipt aliases",
+  "result": "Completed winding is constant at the three witnesses. A fixed edge-local projection can miss populated odd directions. The OR of three directed pair guards is exact under empty-record common-phase preparation but can fire early outside it.",
+  "next_discriminant": "Test whether the source supplies a local aligned record and an atomic arbiter for co-occurring pair receipts.",
+  "mathematical_receipts": [
+    "candidates/c06-winding-edge-receipts/mathematical_receipt.json"
+  ]
+}

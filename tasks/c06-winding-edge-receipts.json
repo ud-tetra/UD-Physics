@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-winding-edge-receipts",
+  "goal": "Test whether integer winding or edge saturation can authorize first upward odd balance and same-event hold.",
+  "owned_paths": [
+    "tasks/c06-winding-edge-receipts.json",
+    "sessions/20261117-codex-c06-winding-edge-5ab2/",
+    "candidates/c06-winding-edge-receipts/",
+    "artifacts/20261117-codex-c06-winding-edge-5ab2/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
