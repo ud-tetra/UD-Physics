@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "c06-face-balance-cover",
+  "session": "20261117-codex-c06-face-balance-8d31",
+  "status": "held",
+  "created_at": "2026-11-17T19:56:51.925Z",
+  "base_revision": "20e20239c1c86bb89890122a960903d1f181ad68",
+  "owned_paths": [
+    "tasks/c06-face-balance-cover.json",
+    "sessions/20261117-codex-c06-face-balance-8d31/",
+    "candidates/c06-face-balance-cover/",
+    "artifacts/20261117-codex-c06-face-balance-8d31/"
+  ]
+}
