@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-directed-authorization-91e4",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-directed-event-authorization",
+  "goal": "Test whether balance differential or flux information can authorize the first directed odd-stock hold.",
+  "created_at": "2026-11-17T18:38:30.960Z",
+  "base_revision": "42622396d5dd693eba5250e023c1676c20bdccdb",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-directed-event-authorization": "c4a3d9b752b7e4a7ffb2dc608c1ed421b98e448d"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-directed-authorization-91e4/directed-authorization-replay/inputs/001-replay_c06_directed_authorization.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "Flux sign agrees at 1/50, 1/2 and 49/50. A directed balance is a valid guard in the declared model. Audited coarse receipts do not select it. The proposed atomic transition requires an exclusive issuer with direct guard access.",
+  "next_action": "Find a source rule that produces the projected guard before Fire and changes the port at the same event.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Balance differential, flux identity and finite transition replay",
+    "applicable_methods": [
+      "Metric projection",
+      "Quadratic flux",
+      "Readout aliasing",
+      "Hybrid switching"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}
