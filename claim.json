@@ -2,7 +2,7 @@
   "record_type": "claim",
   "schema_version": 1,
   "protocol_version": 2,
-  "status": "held",
+  "status": "released",
   "task": "c06-whitney-flag-mass",
   "session": "20261117-codex-c06-whitney-d41e",
   "created_at": "2026-11-17T01:18:02.077Z",
@@ -12,5 +12,7 @@
     "sessions/20261117-codex-c06-whitney-d41e/",
     "candidates/c06-whitney-flag-mass/",
     "artifacts/20261117-codex-c06-whitney-d41e/"
-  ]
+  ],
+  "released_at": "2026-11-17T01:33:04.375Z",
+  "released_from_sha": "ce64f7e65128f9573bef2606eaa172337eefe632"
 }
