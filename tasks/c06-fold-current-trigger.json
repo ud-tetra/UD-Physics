@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-fold-current-trigger",
+  "goal": "Test fixed linear odd flux coupling as a preparation-independent fold trigger.",
+  "owned_paths": [
+    "tasks/c06-fold-current-trigger.json",
+    "sessions/20261117-codex-c06-fold-current-4fb2/",
+    "candidates/c06-fold-current-trigger/",
+    "artifacts/20261117-codex-c06-fold-current-4fb2/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
