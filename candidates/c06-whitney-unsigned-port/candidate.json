@@ -1,0 +1,55 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-whitney-unsigned-port",
+  "session_id": "20261117-codex-c06-whitney-port-e47b",
+  "question": "Test whether regular Whitney boundary transport supplies a common shear-port phase.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Unit regular cell and area-averaged tangential Whitney energy.",
+    "Face boundary signs identify the unordered input with the face field, independently of global edge orientation.",
+    "Closed skew source/flag port with zero initial auxiliary stock.",
+    "Rotational completion is a declared additional interaction with target-aware weight."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Common-rate criterion known from v0.9",
+  "fitted_choices": [
+    "Additional rotational multiplier one is selected by equal-rate criterion. No empirical fit."
+  ],
+  "sources": [
+    {
+      "source_id": "Whitney",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/404",
+      "version_or_commit": "v0.4",
+      "section_or_object_id": "regular tangential trace flag mass",
+      "source_status": "signed flag theorem"
+    },
+    {
+      "source_id": "variation",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/405",
+      "version_or_commit": "v0.5 and regular simplex addendum",
+      "section_or_object_id": "centered rotational weight",
+      "source_status": "geometrical weight, additional constitutive term open"
+    },
+    {
+      "source_id": "C06-v09",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/537",
+      "version_or_commit": "v0.9",
+      "section_or_object_id": "direct-port flag metric",
+      "source_status": "integrated conditional result"
+    }
+  ],
+  "baseline": "Unaugmented Whitney face mass",
+  "result": "The cooriented Whitney flag block has u=5/9 and v=-1/9. Squared rates (4/3,10/9) exclude exact simultaneous half transfer at any positive time. One additional copy of resident rotation restores equal rates conditionally.",
+  "next_discriminant": "Test whether a native action adds an independent rotational channel with the required weight or selects sector-resolved latches.",
+  "mathematical_receipts": [
+    "candidates/c06-whitney-unsigned-port/mathematical_receipt.json"
+  ]
+}
