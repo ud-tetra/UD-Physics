@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-direct-port-spectrum",
   "session": "20261117-codex-c06-port-b6df",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T04:10:46.268Z",
   "base_revision": "7e7a0eef252a48ca5af50ce8bd1f492f74bcd45b",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-port-b6df/",
     "candidates/c06-direct-port-spectrum/",
     "artifacts/20261117-codex-c06-port-b6df/"
-  ]
+  ],
+  "released_at": "2026-11-17T04:24:58.350Z",
+  "released_from_sha": "f1be1a7c2bd27e33299df9c5a75e12c2dbe57b20",
+  "release_reason": "Discovery #413 integrated with successful CI."
 }
