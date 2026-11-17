@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-receipt-223f",
+  "run_id": "parity-receipt-replay",
+  "created_at": "2026-11-17T02:28:28.453Z",
+  "evidence": "EXACT",
+  "summary": "Same binary receipts and conserved norm admit unequal gain ratios. Positive equality requires eta=f/(1-f); full transfer imposes f=1/2 only under the selected two-stage model.",
+  "command": "python3 artifacts/20261117-codex-c06-receipt-223f/parity-receipt-replay/inputs/001-replay_c06_receipts.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "96cba1d9a660f02ecf882960a50a77ac509f5263",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_receipts.py",
+      "sha256": "c6c1465b0f545d7e5462bebdcaae58c0f290ecba2d9afad63c39f762b0ce6389",
+      "size_bytes": 1160,
+      "input_id": "input-001",
+      "name": "replay_c06_receipts.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "8f95ab94432b4636f24b00db53d8eea9ff6e37482a13a40c7573b9d612a24e99",
+      "size_bytes": 6587,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-parity-receipt-source-test/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_PARITY_RECEIPT_SOURCE_TEST_v0.7.md",
+      "sha256": "54a13ee17bd62a05581c61b5749c3ca50bacbf7f2a185a7289b9b6ad1a967e16",
+      "size_bytes": 4917
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "5a8e25fa56ac725da847fd8b373ee914a04f0dea31569a2b276e6bb4ae6cce67",
+      "size_bytes": 93
+    }
+  ]
+}

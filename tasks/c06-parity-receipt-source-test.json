@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-parity-receipt-source-test",
+  "goal": "Test whether binary parity and hard-gate receipts identify the C06 staged transfer fractions.",
+  "owned_paths": [
+    "tasks/c06-parity-receipt-source-test.json",
+    "sessions/20261117-codex-c06-receipt-223f/",
+    "candidates/c06-parity-receipt-source-test/",
+    "artifacts/20261117-codex-c06-receipt-223f/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
