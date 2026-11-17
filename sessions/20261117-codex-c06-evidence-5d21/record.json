@@ -1,0 +1,47 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-evidence-5d21",
+  "runtime": "Codex GitHub connector and local Python/Git",
+  "task": "c06-evidence-capture",
+  "goal": "Preserve and replay the five C06 response notes, with the exact results, scoped obstructions, hypotheses and evidence recorded separately.",
+  "created_at": "2026-11-17T01:15:04.837Z",
+  "base_revision": "7bde374619601854c9645c9a584d49d2aa99cf4b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-evidence-capture": "d957b6cc97bfd3df251fe3b9628e99477c493590"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-evidence-5d21/c06-proof-replay-v05/inputs/006-replay_c06_capture.py artifacts/20261117-codex-c06-evidence-5d21/c06-proof-replay-v05/inputs",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS: 694 records; manifest digests and local documentation links valid."
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS: all 17 tests"
+    }
+  ],
+  "finding": "The ordinary linear signed-chain preparation erases E. The polarized current restores it. The relation energies and Euclidean flags fail the 2:1 pair-gain test. A declared joint matching-sum readout meets it conditionally.",
+  "next_action": "Test a local norm-preserving interaction for equal-gain direct and matching receipts. Establish the deficit allocation separately.",
+  "mathematical_profile": {
+    "coefficient_domain": "Real inputs with exact rational finite checks",
+    "exactness_or_precision_plan": "Preserve bytes and replay five exact embedded scripts",
+    "applicable_methods": [
+      "Representation characters",
+      "Incidence enumeration",
+      "Exact Gram spectra and projection"
+    ],
+    "clock_metric_units_conventions": "Closed dimensionless skew flow, fixed orientation and stated Euclidean/Frobenius metrics"
+  },
+  "checkpoint_at": "2026-11-17T01:15:04.837Z",
+  "checkpoint_source": {
+    "revision": "7bde374619601854c9645c9a584d49d2aa99cf4b",
+    "dirty": true
+  },
+  "validation_base_revision": "8b231fed46b507e0cbbf2929f553ba1b1fad3490"
+}

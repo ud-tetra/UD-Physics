@@ -1,0 +1,92 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-evidence-5d21",
+  "run_id": "c06-proof-replay-v05",
+  "created_at": "2026-11-17T01:15:04.837Z",
+  "evidence": "EXACT",
+  "summary": "The ordinary linear signed-chain preparation erases E. The polarized current restores it. The relation energies and Euclidean flags fail the 2:1 pair-gain test. A declared joint matching-sum readout meets it conditionally.",
+  "command": "python3 artifacts/20261117-codex-c06-evidence-5d21/c06-proof-replay-v05/inputs/006-replay_c06_capture.py artifacts/20261117-codex-c06-evidence-5d21/c06-proof-replay-v05/inputs",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "7bde374619601854c9645c9a584d49d2aa99cf4b",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-UD_C06_TETRAHEDRAL_RESPONSE_SOURCE_v0.1.md",
+      "size_bytes": 7204,
+      "sha256": "7a95fd18478d8c72ce4bd0df896672e4c95ee2bea0a42807c49029706c870f50",
+      "input_id": "input-001",
+      "name": "UD_C06_TETRAHEDRAL_RESPONSE_SOURCE_v0.1.md",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-UD_C06_INCIDENCE_INTERACTION_v0.2.md",
+      "size_bytes": 7359,
+      "sha256": "1a828c665f7b33951304bf818282aad9287baeaefb2571f6ab5b3f6d1cfe05eb",
+      "input_id": "input-002",
+      "name": "UD_C06_INCIDENCE_INTERACTION_v0.2.md",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/003-UD_C06_SIGNED_HODGE_SOURCE_TEST_v0.3.md",
+      "size_bytes": 6161,
+      "sha256": "204aff6a078c2adf829c920500de9cbd1686047e253bb4c7dff8995dd41949cb",
+      "input_id": "input-003",
+      "name": "UD_C06_SIGNED_HODGE_SOURCE_TEST_v0.3.md",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/004-UD_C06_BILINEAR_CURRENT_TEST_v0.4.md",
+      "size_bytes": 6495,
+      "sha256": "2df55307ebe6213071e9d76ee2fa3309236617e36c5cd0a6694a39df3b8019ae",
+      "input_id": "input-004",
+      "name": "UD_C06_BILINEAR_CURRENT_TEST_v0.4.md",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/005-UD_C06_OPPOSITE_PAIR_GAIN_TEST_v0.5.md",
+      "size_bytes": 7062,
+      "sha256": "1d9aad535f6ec3f04ccf1b6ee316eb9c1a14ab03b8797ee5c134efefd4f61035",
+      "input_id": "input-005",
+      "name": "UD_C06_OPPOSITE_PAIR_GAIN_TEST_v0.5.md",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/006-replay_c06_capture.py",
+      "size_bytes": 1405,
+      "sha256": "f80acfc26ca7bb6ac8c468d0b934fa25090a56d95fc447528d899439599e9c25",
+      "input_id": "input-006",
+      "name": "replay_c06_capture.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/007-mathematical_receipt.json",
+      "size_bytes": 7374,
+      "sha256": "caeb898b2a1cb39f94cf857e72b3ce6960eba174a0859ede4c2a758da805912b",
+      "input_id": "input-007",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-evidence-capture/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/C06_EVIDENCE_INDEX.md",
+      "size_bytes": 2266,
+      "sha256": "3183efd7264943be3e047dc1c66fc8a89883448a0e889c413cacc14feff1eca7"
+    },
+    {
+      "path": "files/replay-results.json",
+      "size_bytes": 1451,
+      "sha256": "23620e21d2b275cfe699f77cfabb1863e0266b172d97cabf330c40a84cd1bca9"
+    }
+  ]
+}
