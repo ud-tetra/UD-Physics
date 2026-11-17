@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-action-d84a",
+  "run_id": "boundary-action-replay",
+  "created_at": "2026-11-17T04:32:09.262Z",
+  "evidence": "EXACT",
+  "summary": "The literal unit-cell curl energy supplies 16/3, 48 times the required 1/9. Squared rates are (4/3,106/9) and exact common half transfer is impossible for this port.",
+  "command": "python3 artifacts/20261117-codex-c06-action-d84a/boundary-action-replay/inputs/001-replay_c06_boundary_action.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "4939346324a9cb589dd92db486aed4da3001964e",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_boundary_action.py",
+      "sha256": "96d47202ff9a57ecadde32074b91e1cb713cc95f7daba71b6cb5d595076e9802",
+      "size_bytes": 1551,
+      "input_id": "input-001",
+      "name": "replay_c06_boundary_action.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "d974ef430972285cc0b778a25ae6edbd948d69955109e5567a85dced492ba1ed",
+      "size_bytes": 5535,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-boundary-action-coefficient/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_BOUNDARY_ACTION_COEFFICIENT_v0.11.md",
+      "sha256": "00b8f80de7e5084499af806789f939fd2308bad7895683d476cfe878575ef2d4",
+      "size_bytes": 4402
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "57b3282dabf4f6c99acebed34f32e29f0fb6e9be7c81ef1c7e9f3040de39a389",
+      "size_bytes": 110
+    }
+  ]
+}
