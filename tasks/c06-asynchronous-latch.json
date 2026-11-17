@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-asynchronous-latch",
+  "goal": "Test sector-resolved half-stock stops and holding before matching transfer.",
+  "owned_paths": [
+    "tasks/c06-asynchronous-latch.json",
+    "sessions/20261117-codex-c06-async-a971/",
+    "candidates/c06-asynchronous-latch/",
+    "artifacts/20261117-codex-c06-async-a971/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
