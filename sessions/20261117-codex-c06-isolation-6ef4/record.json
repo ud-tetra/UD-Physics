@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-isolation-6ef4",
+  "runtime": "Codex via GitHub and local Python",
+  "task": "c06-hard-edge-isolation",
+  "goal": "Test whether hard-edge eligibility or a Pachner pushforward supplies the sector-selective stop of C06 v0.12.",
+  "created_at": "2026-11-17T04:53:44.107Z",
+  "base_revision": "e2013f8f29dbf0732bd5f304f6b6ca9c168570b3",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-hard-edge-isolation": "5129bae3c774c4ade8174644402ee5e13dc4e937"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-isolation-6ef4/hard-edge-isolation-replay/inputs/001-replay_c06_hard_edge_isolation.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "result": "PASS; 751 records"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "result": "PASS; 17 tests"
+    }
+  ],
+  "finding": "On the fixed injective flag port, every nonzero diagonal edge mask couples both shear sectors. A pure isometric pushforward preserves rank. Opposite-pair coupling isolates the odd sector under a declared completion bit.",
+  "next_action": "Audit a source-defined opposite-pair interaction or genuine retessellation for a stock-preserving handoff and sector-dependent operator kernel.",
+  "mathematical_profile": {
+    "coefficient_domain": "real with rational replay",
+    "exactness_or_precision_plan": "Projector-trace identity, adjoints and exact Fraction replay of all masks",
+    "applicable_methods": [
+      "Operator kernels",
+      "Orthogonal parity projectors",
+      "Exact finite masks",
+      "Metric adjoints"
+    ],
+    "clock_metric_units_conventions": "dimensionless phase, Euclidean ordinary edge source and fixed positive action metric on records"
+  }
+}

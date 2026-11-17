@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-hard-edge-isolation",
+  "goal": "Test whether hard-edge eligibility or a Pachner pushforward supplies the sector-selective stop of C06 v0.12.",
+  "owned_paths": [
+    "tasks/c06-hard-edge-isolation.json",
+    "sessions/20261117-codex-c06-isolation-6ef4/",
+    "candidates/c06-hard-edge-isolation/",
+    "artifacts/20261117-codex-c06-isolation-6ef4/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
