@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "c06-boundary-action-coefficient",
+  "session": "20261117-codex-c06-action-d84a",
+  "status": "held",
+  "created_at": "2026-11-17T04:32:09.262Z",
+  "base_revision": "4939346324a9cb589dd92db486aed4da3001964e",
+  "owned_paths": [
+    "tasks/c06-boundary-action-coefficient.json",
+    "sessions/20261117-codex-c06-action-d84a/",
+    "candidates/c06-boundary-action-coefficient/",
+    "artifacts/20261117-codex-c06-action-d84a/"
+  ]
+}
