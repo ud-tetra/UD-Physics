@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-boundary-action-coefficient",
+  "goal": "Test whether the unweighted boundary action supplies the Whitney shear-port equalizer.",
+  "owned_paths": [
+    "tasks/c06-boundary-action-coefficient.json",
+    "sessions/20261117-codex-c06-action-d84a/",
+    "candidates/c06-boundary-action-coefficient/",
+    "artifacts/20261117-codex-c06-action-d84a/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
