@@ -1,0 +1,54 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-direct-port-spectrum",
+  "session_id": "20261117-codex-c06-port-b6df",
+  "question": "Compute direct-port phase spectra on the unordered E plus T2 shear current and compare signed incidence.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Single regular cell, unit Euclidean current metric and source-only preparation.",
+    "Flag record metric block diagonal by face, identical symmetric diagonal/off-diagonal coefficients in every face.",
+    "Signed and unsigned carriers typed independently."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Common-rate criterion known from v0.8",
+  "fitted_choices": [
+    "Positive split metric tested as a rational counterexample; no measured fit"
+  ],
+  "sources": [
+    {
+      "source_id": "PI-P4.5",
+      "url_or_repo_path": "https://unified-dynamics-public.ben-w-mayes.chatgpt.site/sources/repo-03-UD_PAPER_I_REVIEW_DRAFT_v1.1.1.md",
+      "version_or_commit": "v1.1.1",
+      "section_or_object_id": "§4.3 T4.4 and P4.5",
+      "source_status": "signed chain identities"
+    },
+    {
+      "source_id": "PIII",
+      "url_or_repo_path": "https://unified-dynamics-public.ben-w-mayes.chatgpt.site/sources/repo-00-UD_PAPER_III_REVIEW_DRAFT_v1.1.1.md",
+      "version_or_commit": "v1.1.1",
+      "section_or_object_id": "§9",
+      "source_status": "unsigned edge relations"
+    },
+    {
+      "source_id": "C06-v08",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/536",
+      "version_or_commit": "v0.8",
+      "section_or_object_id": "signed stock-balance crossing",
+      "source_status": "integrated conditional result"
+    }
+  ],
+  "baseline": "v0.8 sector latch and Paper I native signed boundary",
+  "result": "Independent Euclidean flags give (2,2) squared rates. Equivariant face cross terms split them. Coherent face sums give (0,2). The signed joint incidence port has squared rate 4 but its module has no E.",
+  "next_discriminant": "Derive a native flag metric and observed port separation before using the common-phase latch; otherwise test sector-resolved receipts.",
+  "mathematical_receipts": [
+    "candidates/c06-direct-port-spectrum/mathematical_receipt.json"
+  ]
+}
