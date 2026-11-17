@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "c06-whitney-flag-mass",
+  "session": "20261117-codex-c06-whitney-d41e",
+  "created_at": "2026-11-17T01:18:02.077Z",
+  "base_revision": "8b231fed46b507e0cbbf2929f553ba1b1fad3490",
+  "owned_paths": [
+    "tasks/c06-whitney-flag-mass.json",
+    "sessions/20261117-codex-c06-whitney-d41e/",
+    "candidates/c06-whitney-flag-mass/",
+    "artifacts/20261117-codex-c06-whitney-d41e/"
+  ]
+}
