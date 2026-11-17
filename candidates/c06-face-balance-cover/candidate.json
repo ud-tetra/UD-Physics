@@ -1,0 +1,47 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-face-balance-cover",
+  "session_id": "20261117-codex-c06-face-balance-8d31",
+  "question": "Test whether face-local readout can detect odd balance and determine minimal universal coverage.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Mean-zero carrier and copied primal flags in the closed Whitney model.",
+    "Common-phase preparation for individual face guards.",
+    "Shared atomic transition is assumed for candidate actuation."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Face-local receipt with shared atomic commit is a declared candidate; no empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v021",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/e7091f5892c9f03b68d037bbdc0577643c33aa64/captures/20261117T195023Z-codex-c06-incidence-routing-231a/UD_C06_INCIDENCE_ROUTING_v0.21.md",
+      "version_or_commit": "v0.21",
+      "section_or_object_id": "Incidence supplies the opposite-edge difference",
+      "source_status": "integrated incidence identity"
+    },
+    {
+      "source_id": "C06-v011",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/e7091f5892c9f03b68d037bbdc0577643c33aa64/captures/20261117T043209Z-codex-c06-action-d84a/UD_C06_BOUNDARY_ACTION_COEFFICIENT_v0.11.md",
+      "version_or_commit": "v0.11",
+      "section_or_object_id": "Defined action and direct-port dynamics",
+      "source_status": "integrated flag metric and sector rates"
+    }
+  ],
+  "baseline": "C06 v0.21 incidence and v0.19 common-phase preparation",
+  "result": "Each face sum annihilates mean-zero even data. Three faces suffice for universal detection under common phase. Any two have a blind odd preparation. Full summed face balance recovers twice the odd stock balance.",
+  "next_discriminant": "Test physical access to face sums, shared commit and an off-range error bound.",
+  "mathematical_receipts": [
+    "candidates/c06-face-balance-cover/mathematical_receipt.json"
+  ]
+}

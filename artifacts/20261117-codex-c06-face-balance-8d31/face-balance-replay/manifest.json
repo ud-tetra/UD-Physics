@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-face-balance-8d31",
+  "run_id": "face-balance-replay",
+  "created_at": "2026-11-17T19:56:51.925Z",
+  "evidence": "EXACT",
+  "summary": "Each face sum annihilates mean-zero even data. Three faces suffice for universal detection under common phase. Any two have a blind odd preparation. Full summed face balance recovers twice the odd stock balance.",
+  "command": "python3 artifacts/20261117-codex-c06-face-balance-8d31/face-balance-replay/inputs/001-replay_c06_face_balance.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "20e20239c1c86bb89890122a960903d1f181ad68",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_face_balance.py",
+      "sha256": "3ca5d02de8682d854aa8dc5fc0c5cbe5be64b71e96a1e1cfdce6e7ffa387d545",
+      "size_bytes": 2000,
+      "input_id": "input-001",
+      "name": "replay_c06_face_balance.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "3318c6bef0ca13ab9c3aff32e771249e5a265a8ec4ec3ed3903385f99f00069b",
+      "size_bytes": 5285,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-face-balance-cover/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_FACE_BALANCE_COVER_v0.22.md",
+      "sha256": "b9be350be0e561dadcc5a0279c8b500f9d38c32ffc9f1f98a24cf89344b2ec5b",
+      "size_bytes": 2867
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "af35dd9b878dd904baa88cfa7e804ce4338d51a77304c34183593cb68c0df0eb",
+      "size_bytes": 95
+    }
+  ]
+}
