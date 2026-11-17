@@ -1,0 +1,32 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-binary-fiber-clock",
+  "session_id": "20261117-codex-c06-clock-af9e",
+  "question": "Classify equivariant clocks on the C06 binary pair fiber",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Theta=F2^3 with coordinate-permutation S3 action",
+    "Declared XOR closure map with supplied receipts",
+    "Real exchange is an independently defined compatible completion"
+  ],
+  "physical_mapping": "OPEN / Physical Promotion = 0",
+  "target_exposure": "Analytic 2:1 target known",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD-Physics/pull/410",
+    "https://github.com/ud-tetra/UD-Physics/pull/408"
+  ],
+  "baseline": "C06 supplied parity receipt and staged exchange",
+  "result": "Unique invariant linear parity toggles precisely on odd receipts. Exactly four equivariant automorphisms; all involutive. No autonomous phase-to-transfer or stopping rule.",
+  "next_discriminant": "Investigate a source for odd receipts and a quantitative coupling of their labels to transfer amplitudes.",
+  "mathematical_receipts": [
+    "candidates/c06-binary-fiber-clock/mathematical_receipt.json"
+  ]
+}

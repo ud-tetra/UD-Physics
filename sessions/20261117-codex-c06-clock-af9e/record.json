@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-clock-af9e",
+  "runtime": "Codex GitHub connector and exact finite replay",
+  "task": "c06-binary-fiber-clock",
+  "goal": "Classify equivariant clocks on the C06 binary pair fiber",
+  "created_at": "2026-11-17T02:37:43.500375+00:00",
+  "base_revision": "e0a73ade57f9568855005a3d8b40113aa5086825",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-binary-fiber-clock": "1f441c36de376ae120d093b47d5a56b25145723f"
+  },
+  "checks": [
+    {
+      "command": "python3 candidates/c06-binary-fiber-clock/replay_binary_fiber_clock.py",
+      "result": "PASS_EXACT"
+    }
+  ],
+  "finding": "Parity clocks supplied odd events without selecting the transfer or stop.",
+  "next_action": "Test any independently motivated source for odd receipts.",
+  "mathematical_profile": {
+    "coefficient_domain": "finite F2 and rational overlap replay",
+    "exactness_or_precision_plan": "Complete finite enumeration",
+    "applicable_methods": [
+      "Equivariant permutations",
+      "Linear parity",
+      "Exact projector overlap"
+    ],
+    "clock_metric_units_conventions": "Discrete eligible-receipt count; real record gains dimensionless"
+  },
+  "checkpoint_at": "2026-11-17T02:38:21.201789+00:00",
+  "checkpoint_source": {
+    "revision": "e0a73ade57f9568855005a3d8b40113aa5086825",
+    "dirty": true
+  }
+}
