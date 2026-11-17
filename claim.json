@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-asynchronous-latch",
   "session": "20261117-codex-c06-async-a971",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T04:39:41.487Z",
   "base_revision": "7841ac98060adb9fb60ba711fff4dc6cf0ea871b",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-async-a971/",
     "candidates/c06-asynchronous-latch/",
     "artifacts/20261117-codex-c06-async-a971/"
-  ]
+  ],
+  "released_at": "2026-11-17T04:53:44.107Z",
+  "released_from_sha": "eafeeea231353d0f737cc313b9d0bece9dc832cb",
+  "release_reason": "Integrated in UD-Physics #416 after passing CI."
 }
