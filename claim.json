@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-face-projector-cut",
   "session": "20261117-codex-c06-face-projector-7bc4",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T20:04:40.839Z",
   "base_revision": "3218c677525bd8cd853af2ecf973f36a90196d04",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-face-projector-7bc4/",
     "candidates/c06-face-projector-cut/",
     "artifacts/20261117-codex-c06-face-projector-7bc4/"
-  ]
+  ],
+  "released_at": "2026-11-17T20:12:24.358Z",
+  "released_from_sha": "066235d801b2ff920d4f2cebbc5b86b0cf43dd26",
+  "release_reason": "Integrated in UD-Physics #427 with green CI."
 }
