@@ -1,0 +1,47 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-face-projector-cut",
+  "session_id": "20261117-codex-c06-face-projector-7bc4",
+  "question": "Test whether saturation or flag deletion implements the selective odd cut and derive the required face operator.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Mean-zero edge carrier, fixed primal Whitney flag copy and orthogonal metric sectors.",
+    "Collapse means pointwise suppression or reweighting in original flag coordinates.",
+    "A shared synchronous transition is a candidate."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Shared face-projector actuation declared; no empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v022",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/d6d12887fe962e3bcdeac390d46d2ef6b966ebb8/captures/20261117T195651Z-codex-c06-face-balance-8d31/UD_C06_FACE_BALANCE_COVER_v0.22.md",
+      "version_or_commit": "v0.22",
+      "section_or_object_id": "Face Gram and scalar coverage",
+      "source_status": "integrated conditional detector"
+    },
+    {
+      "source_id": "Q156",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/d6d12887fe962e3bcdeac390d46d2ef6b966ebb8/docs/UD_Native_Gate_Trigger_and_Recovery_v0.1.md",
+      "version_or_commit": "v0.1",
+      "section_or_object_id": "Section 2.1",
+      "source_status": "retained-sector null theorem"
+    }
+  ],
+  "baseline": "C06 v0.22 face coverage and Whitney port",
+  "result": "Pointwise flag masks cannot leave even exchange active while killing the odd sector. The incidence projector realizes the target algebraically. Three faces need cross terms. Native actuation remains open.",
+  "next_discriminant": "Test a native same-event update that applies the complete incidence projector.",
+  "mathematical_receipts": [
+    "candidates/c06-face-projector-cut/mathematical_receipt.json"
+  ]
+}

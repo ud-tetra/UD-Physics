@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-face-projector-cut",
+  "goal": "Test whether saturation or flag deletion implements the selective odd cut and derive the required face operator.",
+  "owned_paths": [
+    "tasks/c06-face-projector-cut.json",
+    "sessions/20261117-codex-c06-face-projector-7bc4/",
+    "candidates/c06-face-projector-cut/",
+    "artifacts/20261117-codex-c06-face-projector-7bc4/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
