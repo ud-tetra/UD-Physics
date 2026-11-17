@@ -1,0 +1,47 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-stock-balance-crossing",
+  "session_id": "20261117-codex-c06-balance-b71f",
+  "question": "Test signed cut balance as a robust half-transfer guard and discriminate aggregate from sector-resolved transfer.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Real Euclidean source and direct ports with closed skew exchange and nonzero source-only initial stock.",
+    "Shared continuous positive rate for the half-transfer theorem. Separate sector rates for the counterexample.",
+    "Additive normalized balance error with amplitude and derivative bounds over a declared bracket."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Known 1/2 guard and 2:1 target from v0.7",
+  "fitted_choices": [
+    "Witness rates chosen to distinguish aggregate from component balance; no fitted data"
+  ],
+  "sources": [
+    {
+      "source_id": "PI-T5.1",
+      "url_or_repo_path": "https://unified-dynamics-public.ben-w-mayes.chatgpt.site/sources/repo-03-UD_PAPER_I_REVIEW_DRAFT_v1.1.1.md",
+      "version_or_commit": "v1.1.1",
+      "section_or_object_id": "§5.1 Proposition T5.1",
+      "source_status": "sourced mathematical cut balance"
+    },
+    {
+      "source_id": "C06-v07",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/534",
+      "version_or_commit": "v0.7",
+      "section_or_object_id": "two-stage fraction identity",
+      "source_status": "integrated conditional result"
+    }
+  ],
+  "baseline": "v0.7 staged transfer",
+  "result": "Common positive phase gives an exact transversal half split. Observation error epsilon bounds fraction error by epsilon/2 in a certified bracket. Unsynchronized sector rates give a transversal aggregate zero at fractions 1/4 and 3/4.",
+  "next_discriminant": "Derive or test shared phase or sector-resolved cut latches in a native interaction, then source depletion separately.",
+  "mathematical_receipts": [
+    "candidates/c06-stock-balance-crossing/mathematical_receipt.json"
+  ]
+}

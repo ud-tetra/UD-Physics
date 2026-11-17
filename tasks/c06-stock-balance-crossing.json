@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-stock-balance-crossing",
+  "goal": "Test signed cut balance as a robust half-transfer guard and discriminate aggregate from sector-resolved transfer.",
+  "owned_paths": [
+    "tasks/c06-stock-balance-crossing.json",
+    "sessions/20261117-codex-c06-balance-b71f/",
+    "candidates/c06-stock-balance-crossing/",
+    "artifacts/20261117-codex-c06-balance-b71f/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
