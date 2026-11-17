@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-incidence-support",
   "session": "20261117-codex-c06-incidence-support-2ca7",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T21:27:05.230Z",
   "base_revision": "124558297d14d646b774bb78cadd2b1724aa0588",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-incidence-support-2ca7/",
     "candidates/c06-incidence-support/",
     "artifacts/20261117-codex-c06-incidence-support-2ca7/"
-  ]
+  ],
+  "released_at": "2026-11-17T21:48:43.922Z",
+  "released_from_sha": "ccba761b0adaa4b042a322f34e229aaf5fc00ebb",
+  "release_reason": "Discovery PR #435 merged"
 }
