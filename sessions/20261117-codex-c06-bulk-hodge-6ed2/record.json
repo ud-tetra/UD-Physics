@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-bulk-hodge-6ed2",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-bulk-hodge-trigger",
+  "goal": "Test whether bulk incidence or a fixed boundary Hodge star supplies the required odd-port cut and trigger.",
+  "created_at": "2026-11-17T20:12:24.358Z",
+  "base_revision": "395215d0d0e7c0e9ab016d8e6398da60a91b1545",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-bulk-hodge-trigger": "9897e46f8692aed4681032640fdc1850ac79adf3"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-bulk-hodge-6ed2/bulk-hodge-replay/inputs/001-replay_c06_bulk_hodge.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "A single scalar bulk channel has rank at most one, and its common-face pullback vanishes on mean-zero edges. The face complement realizes the projector. A fixed metric and incidence leave the switch underdetermined.",
+  "next_action": "Test an explicit state-dependent cell law with three independent face channels and one event authority.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Signed boundary identities and exact face pullbacks",
+    "applicable_methods": [
+      "Metric projection",
+      "Quadratic flux",
+      "Readout aliasing",
+      "Hybrid switching"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}
