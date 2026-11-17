@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-directed-event-authorization",
   "session": "20261117-codex-c06-directed-authorization-91e4",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T18:38:30.960Z",
   "base_revision": "42622396d5dd693eba5250e023c1676c20bdccdb",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-directed-authorization-91e4/",
     "candidates/c06-directed-event-authorization/",
     "artifacts/20261117-codex-c06-directed-authorization-91e4/"
-  ]
+  ],
+  "released_at": "2026-11-17T19:09:33.384Z",
+  "released_from_sha": "c4a3d9b752b7e4a7ffb2dc608c1ed421b98e448d",
+  "release_reason": "Integrated in UD-Physics #422 with green CI."
 }
