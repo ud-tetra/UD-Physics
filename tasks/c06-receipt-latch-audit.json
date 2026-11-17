@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-receipt-latch-audit",
+  "goal": "Test whether the audited event receipts entail first odd half-stock arrival and persistent reciprocal shutoff.",
+  "owned_paths": [
+    "tasks/c06-receipt-latch-audit.json",
+    "sessions/20261117-codex-c06-receipt-latch-3ce2/",
+    "candidates/c06-receipt-latch-audit/",
+    "artifacts/20261117-codex-c06-receipt-latch-3ce2/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
