@@ -1,0 +1,52 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-matching-97c4",
+  "run_id": "matching-exchange-replay",
+  "created_at": "2026-11-17T02:15:19.460Z",
+  "evidence": "EXACT",
+  "summary": "Equal-rate continuous exchange gives the target at leading order but fails at quartic order; a fixed balanced exchange followed by a full matching swap realizes the ratio conditionally.",
+  "command": "python3 artifacts/20261117-codex-c06-matching-97c4/matching-exchange-replay/inputs/001-replay_c06_matching.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "e08205962cd021e149028574d3b5d65822e6ce91",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_matching.py",
+      "sha256": "c2d0a52e160130e8ad373da3556ad8d6d7c083f0b266e428bb37af8c08476369",
+      "size_bytes": 1841,
+      "input_id": "input-001",
+      "name": "replay_c06_matching.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "eb74cfc2997890670c8ea4756fcd1850db71f62d6901557e89465ee383016f2d",
+      "size_bytes": 5635,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-local-matching-exchange/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_LOCAL_MATCHING_EXCHANGE_v0.6.md",
+      "sha256": "b79574dac888f5e3640c385835eae1873d838baf4e5cf2192f4655e62e8fd863",
+      "size_bytes": 4158
+    },
+    {
+      "path": "files/UD_THEORY_NARRATIVE_SECTION_9_ADDENDUM_v0.1.md",
+      "sha256": "000769d4ef7bdd53444dc42688950a361e8362945bbd46346c4ade4247b7fc75",
+      "size_bytes": 1588
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "ffac3047e8dee4d8e0b2dbefba6bf31d0b6076b5b02a2669ad08ac7047e91ea3",
+      "size_bytes": 97
+    }
+  ]
+}

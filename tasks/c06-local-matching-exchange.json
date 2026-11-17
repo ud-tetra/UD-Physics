@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-local-matching-exchange",
+  "goal": "Test whether a local norm-preserving interaction yields positive equal shear weights beyond leading order.",
+  "owned_paths": [
+    "tasks/c06-local-matching-exchange.json",
+    "sessions/20261117-codex-c06-matching-97c4/",
+    "candidates/c06-local-matching-exchange/",
+    "artifacts/20261117-codex-c06-matching-97c4/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
