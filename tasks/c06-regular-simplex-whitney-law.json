@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-regular-simplex-whitney-law",
+  "goal": "Prove the regular-simplex Whitney spectrum and capture a manuscript §5.3 draft",
+  "owned_paths": [
+    "tasks/c06-regular-simplex-whitney-law.json",
+    "sessions/20261117-codex-c06-simplex-a4e3/",
+    "candidates/c06-regular-simplex-whitney-law/",
+    "artifacts/20261117-codex-c06-simplex-a4e3/"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}

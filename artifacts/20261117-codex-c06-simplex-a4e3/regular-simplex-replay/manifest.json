@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-simplex-a4e3",
+  "run_id": "regular-simplex-replay",
+  "created_at": "2026-11-17T02:04:06.642706+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact regular-simplex Whitney spectrum for proposed manuscript §5.3",
+  "command": "python3 candidates/c06-regular-simplex-whitney-law/replay_regular_simplex_whitney.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "d272d7362637831a3cc1e6adf08d8e04bb8de377",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "UD_THEORY_NARRATIVE_SECTION_5_3_WHITNEY_SPECTRUM.md",
+      "path": "inputs/001-UD_THEORY_NARRATIVE_SECTION_5_3_WHITNEY_SPECTRUM.md",
+      "source_location": "repository",
+      "source_path": "candidates/c06-regular-simplex-whitney-law/UD_THEORY_NARRATIVE_SECTION_5_3_WHITNEY_SPECTRUM.md",
+      "sha256": "5b49ac6fb6258af9939058e37c7b20975ded4433ad669bf1c7dc05ab95ec0ec1",
+      "size_bytes": 4219
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_regular_simplex_whitney.py",
+      "path": "inputs/002-replay_regular_simplex_whitney.py",
+      "source_location": "repository",
+      "source_path": "candidates/c06-regular-simplex-whitney-law/replay_regular_simplex_whitney.py",
+      "sha256": "9ffeeb5081d1fbfec433bf770cd8e729627c4165786f25001a92ec1b3beca662",
+      "size_bytes": 1634
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-regular-simplex-whitney-law/mathematical_receipt.json",
+      "sha256": "667bbd4334ed6da1e70114be44a926dcf4c8394eb179d512ca3d63c0d0b54af8",
+      "size_bytes": 4328
+    }
+  ],
+  "files": [
+    {
+      "path": "files/c06_regular_simplex_replay.json",
+      "sha256": "d377a48b76dce1e8337789da64a37801067618dba4fc3beff736246a6ef76d14",
+      "size_bytes": 1555
+    }
+  ]
+}

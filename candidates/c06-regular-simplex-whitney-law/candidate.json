@@ -1,0 +1,30 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-regular-simplex-whitney-law",
+  "session_id": "20261117-codex-c06-simplex-a4e3",
+  "question": "Prove the regular-simplex Whitney spectrum and capture a manuscript \u00a75.3 draft",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Regular Euclidean simplex, side ell",
+    "Oriented unit-integral Whitney basis",
+    "Volume averaged field inner products"
+  ],
+  "physical_mapping": "OPEN / Physical Promotion = 0",
+  "target_exposure": "Analytic scalar target known",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD-Physics/pull/405"
+  ],
+  "baseline": "C06 regular triangle and tetrahedron gyration",
+  "result": "For d>=2: cut 2/((d+1)ell^2), cycle 4/((d+1)(d+2)ell^2); equalization at the cut eigenvalue requires d/2 added rotational copies.",
+  "next_discriminant": "Derive or test a constitutive strength independently of the scalar target.",
+  "mathematical_receipts": [
+    "candidates/c06-regular-simplex-whitney-law/mathematical_receipt.json"
+  ]
+}
