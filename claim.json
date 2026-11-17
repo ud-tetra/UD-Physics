@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "c06-whitney-unsigned-port",
+  "session": "20261117-codex-c06-whitney-port-e47b",
+  "status": "held",
+  "created_at": "2026-11-17T04:21:58.967Z",
+  "base_revision": "c971738a180d9fcf355bba6b1baddb7683c493e4",
+  "owned_paths": [
+    "tasks/c06-whitney-unsigned-port.json",
+    "sessions/20261117-codex-c06-whitney-port-e47b/",
+    "candidates/c06-whitney-unsigned-port/",
+    "artifacts/20261117-codex-c06-whitney-port-e47b/"
+  ]
+}
