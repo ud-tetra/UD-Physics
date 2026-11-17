@@ -1,0 +1,40 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261117-codex-c06-variational-fold-2ad6",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-variational-fold",
+  "goal": "Determine whether shared joint action stationarity and flat preparation select half-stock fold closure.",
+  "created_at": "2026-11-17T20:51:25.326Z",
+  "base_revision": "8b648f3ee56dfe8175fd8317c8410800b2477089",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-variational-fold": "f2ea6cf35fa029283de0ea31b7284cd763b9959b"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261117-codex-c06-variational-fold-2ad6/variational-fold-replay/inputs/001-replay_c06_variational_fold.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "An exact tracking branch of a symmetric joint action exists at any declared gain. Potential-only tracking fails from rest at finite stiffness. A native gain and cut law remain open.",
+  "next_action": "Test a specific native constitutive action with independent data and separate switch law.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Invertible point transformation and rational replay",
+    "applicable_methods": [
+      "Analytic Euler–Lagrange reduction",
+      "Exact rational replay"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}
