@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "status": "held",
+  "task": "c06-trimmed-quadratic-lift",
+  "session": "20261117-codex-c06-quadratic-d76e",
+  "created_at": "2026-11-17T02:24:20.087Z",
+  "base_revision": "7615b4686ebcc47e62f03a87fa1b5110b2434995",
+  "owned_paths": [
+    "tasks/c06-trimmed-quadratic-lift.json",
+    "sessions/20261117-codex-c06-quadratic-d76e/",
+    "candidates/c06-trimmed-quadratic-lift/",
+    "artifacts/20261117-codex-c06-quadratic-d76e/"
+  ]
+}
