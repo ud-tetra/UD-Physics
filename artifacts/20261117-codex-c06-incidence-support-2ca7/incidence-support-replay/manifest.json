@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-incidence-support-2ca7",
+  "run_id": "incidence-support-replay",
+  "created_at": "2026-11-17T21:27:05.230Z",
+  "evidence": "EXACT",
+  "summary": "Any single-face or vertex-star output support forces a zero map if the odd sector is killed. The unique sparsest exact flag row averages opposite edges. Native mode authority remains open.",
+  "command": "python3 artifacts/20261117-codex-c06-incidence-support-2ca7/incidence-support-replay/inputs/001-replay_c06_incidence_support.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "124558297d14d646b774bb78cadd2b1724aa0588",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_incidence_support.py",
+      "sha256": "68704f9719cf5be79f38125d4b37d9e9b36ae3b5cc44dcaef6303ee3106f79ac",
+      "size_bytes": 2840,
+      "input_id": "input-001",
+      "name": "replay_c06_incidence_support.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "aa734e1f7d3891676a323f2218ffd13fd577934b9ce90177b8d08811055e1a8d",
+      "size_bytes": 6321,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-incidence-support/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_INCIDENCE_SUPPORT_v0.31.md",
+      "sha256": "ac254a68562ad3d5ac7a391ab546a148ad45f16e7f0aeed7450620f6ddf9a3bd",
+      "size_bytes": 4261
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "dc76a5b73f5d0c9f1abc506d49d5f71a4e6582e3e08ce1db45de14bb6ea8e8a5",
+      "size_bytes": 250
+    }
+  ]
+}
