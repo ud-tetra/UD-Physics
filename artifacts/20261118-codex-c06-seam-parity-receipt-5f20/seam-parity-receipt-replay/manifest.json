@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261118-codex-c06-seam-parity-receipt-5f20",
+  "run_id": "seam-parity-receipt-replay",
+  "created_at": "2026-11-18T16:39:30.136Z",
+  "evidence": "EXACT",
+  "summary": "Admitted diagonal masks do not purify general input. Three unsigned vertex sums per register permit exact odd readout at a common capture. Staggered readings can alias completion even if sector stocks and transport factors are known.",
+  "command": "python3 artifacts/20261118-codex-c06-seam-parity-receipt-5f20/seam-parity-receipt-replay/inputs/001-replay_c06_seam_parity_receipt.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "5207dad0530bdb576fc21894913de8541533d4fd",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_seam_parity_receipt.py",
+      "sha256": "49ce698366966b5ad2e787b4ea04ab74414884d15c698527ed1e00b86006760e",
+      "size_bytes": 2569,
+      "input_id": "input-001",
+      "name": "replay_c06_seam_parity_receipt.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "1d3b1f4f40aa344702d1edbc77572cfcce6814f5afd3428e6142b539c0f6476a",
+      "size_bytes": 7196,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-seam-parity-receipt/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_SEAM_PARITY_RECEIPT_v0.41.md",
+      "sha256": "939c3bb8816469cea6a2a0b06f12940371a1e914f294039c3a16caf2ed35f11b",
+      "size_bytes": 7476
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "daf432b966e4c3b36312704e4ee5fe06bcef69fe539a6a0a8b71ae1f00c6ec4e",
+      "size_bytes": 202
+    }
+  ]
+}
