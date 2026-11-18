@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-seam-alignment",
   "session": "20261118-codex-c06-seam-alignment-7c34",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-18T16:19:57.001Z",
   "base_revision": "8d077e3fd9f88409c50714803cc6b7fd02193532",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261118-codex-c06-seam-alignment-7c34/",
     "candidates/c06-seam-alignment/",
     "artifacts/20261118-codex-c06-seam-alignment-7c34/"
-  ]
+  ],
+  "released_at": "2026-11-18T16:39:30.136Z",
+  "released_from_sha": "e68bf925e1cc2b77c9e043aea554429015a2d562",
+  "release_reason": "Discovery PR #444 merged"
 }
