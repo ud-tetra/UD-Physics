@@ -1,0 +1,54 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-oriented-latch",
+  "session_id": "20261118-codex-c06-oriented-latch-6b23",
+  "question": "Check whether oriented incidence supplies the loader signs and whether a zero-donor guard distinguishes first completion.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Coherent orientation of two tetrahedra along a common face.",
+    "Aligned incoming donor and empty antisymmetric archive with positive loader rate.",
+    "One-shot model latch is declared."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Declared aligned correlation guard; no empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v038",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/cda5dd1d6d5cf1ef41bca217df38251ea575c348/captures/20261118T160207Z-codex-c06-antisymmetric-loading-3f5c/UD_C06_ANTISYMMETRIC_LOADING_v0.38.md",
+      "version_or_commit": "v0.38",
+      "section_or_object_id": "Exact candidate transfer with the shared block live",
+      "source_status": "integrated declared gradient loader"
+    },
+    {
+      "source_id": "C06-v024",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/cda5dd1d6d5cf1ef41bca217df38251ea575c348/captures/20261117T201224Z-codex-c06-bulk-hodge-6ed2/UD_C06_BULK_HODGE_TRIGGER_v0.24.md",
+      "version_or_commit": "v0.24",
+      "section_or_object_id": "Bulk signed boundary",
+      "source_status": "integrated oriented top-incidence scope"
+    },
+    {
+      "source_id": "C06-v033",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/cda5dd1d6d5cf1ef41bca217df38251ea575c348/captures/20261118T002315Z-codex-c06-cell-transition-audit-6d4b/UD_C06_CELL_TRANSITION_AUDIT_v0.33.md",
+      "version_or_commit": "v0.33",
+      "section_or_object_id": "Source audit",
+      "source_status": "integrated Q171 and event authority audit"
+    }
+  ],
+  "baseline": "C06 v0.38 archive loader and Q169–Q173 scalar incidence",
+  "result": "Shared-face incidence supplies a scalar sign pair only. Directed correlation detects the first zero donor under aligned preparation; a graded lift and native latch remain open.",
+  "next_discriminant": "Test whether a local seam can carry the full odd module with source-bound alignment and a receipt-controlled cut.",
+  "mathematical_receipts": [
+    "candidates/c06-oriented-latch/mathematical_receipt.json"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-oriented-latch",
+  "goal": "Check whether oriented incidence supplies the loader signs and whether a zero-donor guard distinguishes first completion.",
+  "owned_paths": [
+    "tasks/c06-oriented-latch.json",
+    "sessions/20261118-codex-c06-oriented-latch-6b23/",
+    "candidates/c06-oriented-latch/",
+    "artifacts/20261118-codex-c06-oriented-latch-6b23/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
