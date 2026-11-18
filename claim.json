@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-face-receipt-delay",
   "session": "20261117-codex-c06-face-receipt-delay-7d2a",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-17T21:48:43.922Z",
   "base_revision": "43b427f07bf2d4ca9867e7f2dbf8a787e7e6b4f4",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261117-codex-c06-face-receipt-delay-7d2a/",
     "candidates/c06-face-receipt-delay/",
     "artifacts/20261117-codex-c06-face-receipt-delay-7d2a/"
-  ]
+  ],
+  "released_at": "2026-11-18T00:23:15.246Z",
+  "released_from_sha": "5a043dbdb3b86bc7b88207f6ff2959b65cfca6fa",
+  "release_reason": "Discovery PR #436 merged"
 }
