@@ -1,0 +1,61 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-gradient-isolation",
+  "session_id": "20261118-codex-c06-gradient-isolation-4c22",
+  "question": "Test whether vertex-edge control isolates the gradient archive while allowing even matching exchange.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Regular K4 and full Euclidean support stock.",
+    "Reciprocal vertex-edge generator with paired controls.",
+    "Stage 2 even matching block typed separately."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Declared fixed-metric block mask; no empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v036",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/38ca1a1f2268723c263ba07daeda1b90b905b854/captures/20261118T023517Z-codex-c06-oriented-receiver-2a79/UD_C06_ORIENTED_RECEIVER_v0.36.md",
+      "version_or_commit": "v0.36",
+      "section_or_object_id": "Stock transfer and readback",
+      "source_status": "integrated gradient receiver and half-stock readout"
+    },
+    {
+      "source_id": "C06-v035",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/38ca1a1f2268723c263ba07daeda1b90b905b854/captures/20261118T022935Z-codex-c06-stage2-receiver-1f5c/UD_C06_STAGE2_RECEIVER_AUDIT_v0.35.md",
+      "version_or_commit": "v0.35",
+      "section_or_object_id": "Source and accounting",
+      "source_status": "integrated conditional even matching transfer"
+    },
+    {
+      "source_id": "C06-v033",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/38ca1a1f2268723c263ba07daeda1b90b905b854/captures/20261118T002315Z-codex-c06-cell-transition-audit-6d4b/UD_C06_CELL_TRANSITION_AUDIT_v0.33.md",
+      "version_or_commit": "v0.33",
+      "section_or_object_id": "Source audit",
+      "source_status": "integrated Q156 transition scope"
+    },
+    {
+      "source_id": "native-gate",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/38ca1a1f2268723c263ba07daeda1b90b905b854/docs/UD_Native_Gate_Trigger_and_Recovery_v0.1.md",
+      "version_or_commit": "v0.1",
+      "section_or_object_id": "2 and 2.1",
+      "source_status": "native gate product and open factor histories"
+    }
+  ],
+  "baseline": "C06 v0.36 signed gradient receiver and Q156/Q167 gates",
+  "result": "For one archive block every universally isolating diagonal control closes all six edges. Generic distinct vertex potentials force the same decision for state-chosen nonnegative masks. An added two-copy stationary sector is only a comparator.",
+  "next_discriminant": "Find an admitted stock-moving event and persistent gate mode, or prove that the declared two-copy receiver has a sourced loading law.",
+  "mathematical_receipts": [
+    "candidates/c06-gradient-isolation/mathematical_receipt.json"
+  ]
+}

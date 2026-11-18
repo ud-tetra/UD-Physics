@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261118-codex-c06-gradient-isolation-4c22",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-gradient-isolation",
+  "goal": "Test whether vertex-edge control isolates the gradient archive while allowing even matching exchange.",
+  "created_at": "2026-11-18T15:46:16.803Z",
+  "base_revision": "9ad1a400ee9166868bd4f1407c8944eb21ae03e7",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-gradient-isolation": "625fc46a4101e861533932333af0e219e654d1c0"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261118-codex-c06-gradient-isolation-4c22/gradient-isolation-replay/inputs/001-replay_c06_gradient_isolation.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "For one archive block every universally isolating diagonal control closes all six edges. Generic distinct vertex potentials force the same decision for state-chosen nonnegative masks. An added two-copy stationary sector is only a comparator.",
+  "next_action": "Find an admitted stock-moving event and persistent gate mode, or prove that the declared two-copy receiver has a sourced loading law.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Weighted Laplacian and exact mask replay",
+    "applicable_methods": [
+      "Weighted Laplacian",
+      "Reciprocal generator",
+      "Exact mask replay"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}
