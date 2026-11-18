@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-oriented-receiver",
+  "goal": "Test which oriented edge subspace can hold odd stock with a faithful action and normalized readback.",
+  "owned_paths": [
+    "tasks/c06-oriented-receiver.json",
+    "sessions/20261118-codex-c06-oriented-receiver-2a79/",
+    "candidates/c06-oriented-receiver/",
+    "artifacts/20261118-codex-c06-oriented-receiver-2a79/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
