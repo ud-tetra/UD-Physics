@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261118-codex-c06-capture-cut-4e90",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-capture-cut",
+  "goal": "Test whether an admitted event certifies common-state readout and commits the cut at the first resolved completion.",
+  "created_at": "2026-11-18T16:46:08.410Z",
+  "base_revision": "409d989eabdaf7d440faa76469cf0054e76e3a34",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-capture-cut": "386a58d859e582669e9a354792839ebeb9b63094"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261118-codex-c06-capture-cut-4e90/capture-cut-replay/inputs/001-replay_c06_capture_cut.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "The audited event sources provide neither a common amplitude capture nor cut authority. With both granted conditionally, the exact guard holds full archive stock. A delayed identity cut leaves sin squared accumulated angle as donor residue.",
+  "next_action": "Audit a source-defined state-bound capture token and reciprocal cut authority, or derive a separate reset with exact phase transport.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Exact Gram, state-token and latency controls",
+    "applicable_methods": [
+      "Vertex sums",
+      "State binding",
+      "Exact rational rotation replay"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}
