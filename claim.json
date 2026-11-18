@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-receipt-consumption",
   "session": "20261118-codex-c06-receipt-consumption-8b61",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-18T16:52:57.582Z",
   "base_revision": "1dc72c5f4a0516de8c077b999219b7dcc4c19a01",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261118-codex-c06-receipt-consumption-8b61/",
     "candidates/c06-receipt-consumption/",
     "artifacts/20261118-codex-c06-receipt-consumption-8b61/"
-  ]
+  ],
+  "released_at": "2026-11-18T17:02:33.096Z",
+  "released_from_sha": "760d783ad6486f4f5cf8595b3e9c4eb7b878f722",
+  "release_reason": "Discovery PR #447 merged"
 }
