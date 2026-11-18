@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-stage2-receiver",
   "session": "20261118-codex-c06-stage2-receiver-1f5c",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-18T02:29:35.747Z",
   "base_revision": "1668b8f69d95e211b8ac5b3939b2694beb2ab88b",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261118-codex-c06-stage2-receiver-1f5c/",
     "candidates/c06-stage2-receiver/",
     "artifacts/20261118-codex-c06-stage2-receiver-1f5c/"
-  ]
+  ],
+  "released_at": "2026-11-18T02:35:17.997Z",
+  "released_from_sha": "b67418af76d2f41605701af7ac79368822672cc4",
+  "release_reason": "Discovery PR #439 merged"
 }
