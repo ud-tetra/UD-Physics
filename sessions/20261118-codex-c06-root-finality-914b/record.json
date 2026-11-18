@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261118-codex-c06-root-finality-914b",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-root-finality",
+  "goal": "Identify the exact root-time information requirement and test whether an admitted event rule closes C06 root veto finality.",
+  "created_at": "2026-11-18T18:45:13.205Z",
+  "base_revision": "39982511fb9950f6fa84d369b44978c2e41ebde7",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-root-finality": "58fac848aa92a3ee48a274d0dace4c0b1de300aa"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261118-codex-c06-root-finality-914b/root-finality-replay/inputs/001-replay_c06_root_finality.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "A deterministic exact immediate disposition exists exactly when its required output is constant on all admitted root-state completions of each observation. Full typed veto output is stricter than a coarse abort. An immutable complete common-state seal suffices conditionally. The audited source rules leave native root operand coverage, finality and actuation open.",
+  "next_action": "Test whether the local support generator and event order yield a closed predicate dependency footprint and exclude still-effective writes before root sealing.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Exact decision factorization, seals, mixed reads and reciprocal cut controls",
+    "applicable_methods": [
+      "Observation factorization",
+      "Torn-read witness",
+      "Root-local finality",
+      "Exact stock controls"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}
