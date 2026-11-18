@@ -1,0 +1,54 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-contested-authority",
+  "session_id": "20261118-codex-c06-contested-authority-2b0e",
+  "question": "Determine when competing eligible simplicial contacts can select one cut owner and what the source hard gates establish about abort.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "A finite relabeling group, equivariant eligibility and one required contact on the prepared orbit.",
+    "The replay abstracts edge eligibility to graph controls and declares separate complete-context witnesses.",
+    "Supplied hard-gate histories and reciprocal identity-amplitude abort for the kinematic controls."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Declared candidate actuator and scope of cut controls without an empirical fit"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v045",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/409ca5cb505ce2dde001b261b1a36ef637f0c1de/captures/20261118T170805Z-codex-c06-cut-reservation-5a2d/UD_C06_CUT_RESERVATION_v0.45.md",
+      "version_or_commit": "v0.45",
+      "section_or_object_id": "Reservation and early abort",
+      "source_status": "integrated conditional reservation and reciprocal abort"
+    },
+    {
+      "source_id": "paper-I",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/409ca5cb505ce2dde001b261b1a36ef637f0c1de/captures/2026-10-07T191951Z-codex-ud-bootstrap-5170f8b8/browse/dist/papers/UD_PAPER_I_REVIEW_DRAFT_v1.1.1.md",
+      "version_or_commit": "v1.1.1",
+      "section_or_object_id": "7.4–7.5; 8.4 I.R2",
+      "source_status": "authored pre-event boundary and local symmetry no-go"
+    },
+    {
+      "source_id": "native-gate",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/409ca5cb505ce2dde001b261b1a36ef637f0c1de/docs/UD_Native_Gate_Trigger_and_Recovery_v0.1.md",
+      "version_or_commit": "v0.1",
+      "section_or_object_id": "2–2.1; 6–7; Q156; Q167",
+      "source_status": "authored typed hard-gate evaluation and masked-stock recovery scope"
+    }
+  ],
+  "baseline": "C06 v0.45 reservation and Paper I I.R2",
+  "result": "An exclusive equivariant selector exists on a prepared orbit exactly when its eligible contacts include a point fixed by the prepared-state stabilizer. Positive odd stock permits contexts without any fixed contact. The hard-gate product evaluates supplied factor histories and leaves native abort and cut authority open.",
+  "next_discriminant": "Test whether admitted same-operator contacts can spend one cell-level capability in a symmetric batch without confusing different operators or typed vetoes.",
+  "mathematical_receipts": [
+    "candidates/c06-contested-authority/mathematical_receipt.json"
+  ]
+}

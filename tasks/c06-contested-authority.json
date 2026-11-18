@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-contested-authority",
+  "goal": "Determine when competing eligible simplicial contacts can select one cut owner and what the source hard gates establish about abort.",
+  "owned_paths": [
+    "tasks/c06-contested-authority.json",
+    "sessions/20261118-codex-c06-contested-authority-2b0e/",
+    "candidates/c06-contested-authority/",
+    "artifacts/20261118-codex-c06-contested-authority-2b0e/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
