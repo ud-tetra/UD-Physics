@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-quadratic-handoff",
+  "goal": "Test whether a quadratic capture adapter and distinct handoff can rearm without releasing completed odd stock.",
+  "owned_paths": [
+    "tasks/c06-quadratic-handoff.json",
+    "sessions/20261118-codex-c06-quadratic-handoff-8d3f/",
+    "candidates/c06-quadratic-handoff/",
+    "artifacts/20261118-codex-c06-quadratic-handoff-8d3f/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
