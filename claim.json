@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-cut-reservation",
   "session": "20261118-codex-c06-cut-reservation-5a2d",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-18T17:08:05.583Z",
   "base_revision": "77436e65e086e0cb232dcb7485279557ba4af913",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261118-codex-c06-cut-reservation-5a2d/",
     "candidates/c06-cut-reservation/",
     "artifacts/20261118-codex-c06-cut-reservation-5a2d/"
-  ]
+  ],
+  "released_at": "2026-11-18T18:15:25.517Z",
+  "released_from_sha": "47268c2bf75f536e9fede262f34b61cccaf2c3eb",
+  "release_reason": "Discovery PR #449 merged"
 }
