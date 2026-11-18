@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "c06-antisymmetric-loading",
+  "session": "20261118-codex-c06-antisymmetric-loading-3f5c",
+  "status": "held",
+  "created_at": "2026-11-18T16:02:07.752Z",
+  "base_revision": "9ad1a400ee9166868bd4f1407c8944eb21ae03e7",
+  "owned_paths": [
+    "tasks/c06-antisymmetric-loading.json",
+    "sessions/20261118-codex-c06-antisymmetric-loading-3f5c/",
+    "candidates/c06-antisymmetric-loading/",
+    "artifacts/20261118-codex-c06-antisymmetric-loading-3f5c/"
+  ]
+}
