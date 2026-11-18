@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261118-codex-c06-contested-authority-2b0e",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-contested-authority",
+  "goal": "Determine when competing eligible simplicial contacts can select one cut owner and what the source hard gates establish about abort.",
+  "created_at": "2026-11-18T18:15:25.517Z",
+  "base_revision": "a2202355dc43130146d32366e1049f4b6d01a483",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-contested-authority": "5ac8696c39fb67863d344c2982257384187e0166"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261118-codex-c06-contested-authority-2b0e/contested-authority-replay/inputs/001-replay_c06_contested_authority.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "An exclusive equivariant selector exists on a prepared orbit exactly when its eligible contacts include a point fixed by the prepared-state stabilizer. Positive odd stock permits contexts without any fixed contact. The hard-gate product evaluates supplied factor histories and leaves native abort and cut authority open.",
+  "next_action": "Test whether admitted same-operator contacts can spend one cell-level capability in a symmetric batch without confusing different operators or typed vetoes.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Exact group action, typed veto and reciprocal abort controls",
+    "applicable_methods": [
+      "Finite-group stabilizer",
+      "Orbit enumeration",
+      "Exact reciprocal abort control"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}
