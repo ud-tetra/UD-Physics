@@ -1,0 +1,41 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261118-codex-c06-antisymmetric-loading-3f5c",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-antisymmetric-loading",
+  "goal": "Test whether an admitted stock-transfer event can load the antisymmetric archive with the shared vertex block live.",
+  "created_at": "2026-11-18T16:02:07.752Z",
+  "base_revision": "9ad1a400ee9166868bd4f1407c8944eb21ae03e7",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-antisymmetric-loading": "7efe3c3e7113916994f56af1e2ace7cfcc1aafe0"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261118-codex-c06-antisymmetric-loading-3f5c/antisymmetric-loading-replay/inputs/001-replay_c06_antisymmetric_loading.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "Common vertex controls and copy-symmetric linear events cannot load the antisymmetric archive. A declared oppositely signed reciprocal transfer loads it with exact stock and half-stock readback.",
+  "next_action": "Search for a source-defined oriented second copy and independent reciprocal connection with deterministic endpoint selection.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Skew direct-sum proof and rational rotation replay",
+    "applicable_methods": [
+      "Copy exchange symmetry",
+      "Reciprocal generator",
+      "Exact rational rotation replay"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}
