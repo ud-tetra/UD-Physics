@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-receipt-consumption",
+  "goal": "Test whether an admitted receipt identifies the original resolved state and consumes it for a one-shot cut.",
+  "owned_paths": [
+    "tasks/c06-receipt-consumption.json",
+    "sessions/20261118-codex-c06-receipt-consumption-8b61/",
+    "candidates/c06-receipt-consumption/",
+    "artifacts/20261118-codex-c06-receipt-consumption-8b61/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
