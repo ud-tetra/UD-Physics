@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261118-codex-c06-cell-transition-audit-6d4b",
+  "run_id": "cell-transition-replay",
+  "created_at": "2026-11-18T00:23:15.246Z",
+  "evidence": "EXACT",
+  "summary": "Every fixed linear scalar cell observation misses a nonzero aligned odd preparation. Retained root publication can lag the balance. Root-side selection is a conditional candidate lacking source authority.",
+  "command": "python3 artifacts/20261118-codex-c06-cell-transition-audit-6d4b/cell-transition-replay/inputs/001-replay_c06_cell_transition.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "9fb44c52b47c6e7ef9a19ed44fdb86c213b025cf",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_cell_transition.py",
+      "sha256": "71676c2d8f3646919118f5d45c48dc175f64147ab49e2715b3106525e9afeb48",
+      "size_bytes": 1768,
+      "input_id": "input-001",
+      "name": "replay_c06_cell_transition.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "d8b4c1db33e2ddcd4b3dad3d8b8e56f700159f3ccfa22bdd551c3471bf4400e7",
+      "size_bytes": 7422,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-cell-transition-audit/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_CELL_TRANSITION_AUDIT_v0.33.md",
+      "sha256": "09d38f324ae7c51c657185e4a7754b5143f500d4cd0d80ac97ffea3b502b535a",
+      "size_bytes": 5722
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "d64a90a471de7ccaf1f4312169ac5a155d1124a44b4e6367b49b58baf345b91c",
+      "size_bytes": 165
+    }
+  ]
+}
