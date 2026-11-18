@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "c06-seam-alignment",
+  "session": "20261118-codex-c06-seam-alignment-7c34",
+  "status": "held",
+  "created_at": "2026-11-18T16:19:57.001Z",
+  "base_revision": "8d077e3fd9f88409c50714803cc6b7fd02193532",
+  "owned_paths": [
+    "tasks/c06-seam-alignment.json",
+    "sessions/20261118-codex-c06-seam-alignment-7c34/",
+    "candidates/c06-seam-alignment/",
+    "artifacts/20261118-codex-c06-seam-alignment-7c34/"
+  ]
+}
