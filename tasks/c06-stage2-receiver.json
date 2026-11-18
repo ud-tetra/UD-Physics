@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-stage2-receiver",
+  "goal": "Audit whether the declared Stage 2 matching receiver can preserve or consume the completed odd stock.",
+  "owned_paths": [
+    "tasks/c06-stage2-receiver.json",
+    "sessions/20261118-codex-c06-stage2-receiver-1f5c/",
+    "candidates/c06-stage2-receiver/",
+    "artifacts/20261118-codex-c06-stage2-receiver-1f5c/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}

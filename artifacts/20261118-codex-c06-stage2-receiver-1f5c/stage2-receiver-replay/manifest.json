@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261118-codex-c06-stage2-receiver-1f5c",
+  "run_id": "stage2-receiver-replay",
+  "created_at": "2026-11-18T02:29:35.747Z",
+  "evidence": "EXACT",
+  "summary": "Stage 2 moves retained even stock only. The matching action is trivial on V4 and cannot receive a lossless equivariant odd archive.",
+  "command": "python3 artifacts/20261118-codex-c06-stage2-receiver-1f5c/stage2-receiver-replay/inputs/001-replay_c06_stage2_receiver.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "1668b8f69d95e211b8ac5b3939b2694beb2ab88b",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_stage2_receiver.py",
+      "sha256": "1f55beb96f8625e14af45c959ab0abff5af019b6ea7bc01218cd9de65edf9502",
+      "size_bytes": 1680,
+      "input_id": "input-001",
+      "name": "replay_c06_stage2_receiver.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "0e9be3fbdc6490a563d352a1ca1aa59d9006d1f0eeea869210e737391f10b0b9",
+      "size_bytes": 6013,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-stage2-receiver/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_STAGE2_RECEIVER_AUDIT_v0.35.md",
+      "sha256": "3636c4169e78fe7f18c1fd22ba18892e4d5105469821b908a37a3c14ceab0f75",
+      "size_bytes": 4008
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "39865dbff1fc5d6a5aa486854d1c01064008a4531ff21ac1b74b3d7f0b7710b2",
+      "size_bytes": 123
+    }
+  ]
+}
