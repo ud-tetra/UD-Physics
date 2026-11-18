@@ -1,0 +1,61 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "c06-face-receipt-delay",
+  "session_id": "20261117-codex-c06-face-receipt-delay-7d2a",
+  "question": "Test partial and delayed installation of the face-to-cell diagonal correction at the directed balance event.",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "HYPOTHESIS",
+    "OPEN"
+  ],
+  "agile": true,
+  "assumptions": [
+    "Mean-zero Euclidean ordinary edges and the prescribed flag metric.",
+    "Common-rate incoming aligned odd exchange with empty record and positive odd stock.",
+    "Diagonal face installation and reciprocal adjoint with identity amplitude reset."
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "First directed half-stock hold target established in C06 v0.16–v0.17",
+  "fitted_choices": [
+    "Fixed diagonal face installation compared with the full operator"
+  ],
+  "sources": [
+    {
+      "source_id": "C06-v031",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/b84f598dcba0103d67f203e8d4d38a8375916929/captures/20261117T212705Z-codex-c06-incidence-support-2ca7/UD_C06_INCIDENCE_SUPPORT_v0.31.md",
+      "version_or_commit": "v0.31",
+      "section_or_object_id": "Smallest support for a selective flag cut",
+      "source_status": "integrated minimum flag support"
+    },
+    {
+      "source_id": "C06-v023",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/b84f598dcba0103d67f203e8d4d38a8375916929/captures/20261117T200440Z-codex-c06-face-projector-7bc4/UD_C06_FACE_PROJECTOR_CUT_v0.23.md",
+      "version_or_commit": "v0.23",
+      "section_or_object_id": "Exact projector and three-face alternative",
+      "source_status": "integrated unsigned incidence projector"
+    },
+    {
+      "source_id": "C06-v021",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/b84f598dcba0103d67f203e8d4d38a8375916929/captures/20261117T195023Z-codex-c06-incidence-routing-231a/UD_C06_INCIDENCE_ROUTING_v0.21.md",
+      "version_or_commit": "v0.21",
+      "section_or_object_id": "Shared actuation remains a transition law",
+      "source_status": "integrated routing and delay comparison"
+    },
+    {
+      "source_id": "C06-v020",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/blob/b84f598dcba0103d67f203e8d4d38a8375916929/captures/20261117T194221Z-codex-c06-flag-readout-4e70/UD_C06_FLAG_READOUT_COMMIT_v0.20.md",
+      "version_or_commit": "v0.20",
+      "section_or_object_id": "Local flag observations",
+      "source_status": "integrated flag-copy port and metric"
+    }
+  ],
+  "baseline": "C06 v0.23 projector and v0.31 fixed incidence support",
+  "result": "Any missing diagonal face correction leaves residual odd coupling. One missing term leaves rate 3/4 of the active odd rate on one mode. Atomic selection of the full live operator is a conditional candidate.",
+  "next_discriminant": "Evaluate a source-defined cell transition for a preinstalled live map and same-event persistent selection.",
+  "mathematical_receipts": [
+    "candidates/c06-face-receipt-delay/mathematical_receipt.json"
+  ]
+}
