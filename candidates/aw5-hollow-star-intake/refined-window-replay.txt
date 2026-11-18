@@ -1,9 +1,0 @@
-filled [0, 0, 0] [0, 0, 0]
-hollow [1/48, 1/4, 0] [0, 0, 0]
-PASS: nullity 1; positive frequencies in [1, 6]
-PASS: nullity 2; positive frequencies in [1, 7]
-PASS: refined derivative bound 9/4
-PASS: filled derivative bound 9/4
-PASS: orthogonal derivative bound 9/4
-PASS: contrast lower bound 978548309/16095641600 = 0.060795856
-PASS: headroom above frozen 3/64 = 224065109/16095641600
