@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-cut-reservation",
+  "goal": "Find whether admitted UD events grant and preserve exclusive reciprocal cut authority from activation to the first resolved root.",
+  "owned_paths": [
+    "tasks/c06-cut-reservation.json",
+    "sessions/20261118-codex-c06-cut-reservation-5a2d/",
+    "candidates/c06-cut-reservation/",
+    "artifacts/20261118-codex-c06-cut-reservation-5a2d/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
