@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-oriented-latch",
   "session": "20261118-codex-c06-oriented-latch-6b23",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-18T16:09:51.766Z",
   "base_revision": "4c7bbf0c068ea72c43865bc286d80b81ffd7dfca",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261118-codex-c06-oriented-latch-6b23/",
     "candidates/c06-oriented-latch/",
     "artifacts/20261118-codex-c06-oriented-latch-6b23/"
-  ]
+  ],
+  "released_at": "2026-11-18T16:19:57.001Z",
+  "released_from_sha": "7f554343bea996bf6149dbb36a92c0d7d927dd3d",
+  "release_reason": "Discovery PR #443 merged"
 }
