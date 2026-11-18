@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "c06-cell-transition-audit",
+  "session": "20261118-codex-c06-cell-transition-audit-6d4b",
+  "status": "held",
+  "created_at": "2026-11-18T00:23:15.246Z",
+  "base_revision": "9fb44c52b47c6e7ef9a19ed44fdb86c213b025cf",
+  "owned_paths": [
+    "tasks/c06-cell-transition-audit.json",
+    "sessions/20261118-codex-c06-cell-transition-audit-6d4b/",
+    "candidates/c06-cell-transition-audit/",
+    "artifacts/20261118-codex-c06-cell-transition-audit-6d4b/"
+  ]
+}
