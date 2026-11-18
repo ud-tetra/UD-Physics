@@ -1,0 +1,47 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261118-codex-c06-collective-reservation-7f41",
+  "run_id": "collective-reservation-replay",
+  "created_at": "2026-11-18T18:31:20.808Z",
+  "evidence": "EXACT",
+  "summary": "A single target operation is fixed under preparation symmetries even when all its individual contacts move. A collective reservation with a complete live snapshot can perform one reciprocal cut and preserve all typed vetoes. Delayed root-time vetoes rule out simultaneously safe and immediate dispatch from an incomplete prefix.",
+  "command": "python3 artifacts/20261118-codex-c06-collective-reservation-7f41/collective-reservation-replay/inputs/001-replay_c06_collective_reservation.py",
+  "command_execution": "EXECUTED_LOCAL_REPLAY",
+  "source": {
+    "revision": "39982511fb9950f6fa84d369b44978c2e41ebde7",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "path": "inputs/001-replay_c06_collective_reservation.py",
+      "sha256": "7b93cf9ecfc626906245e34a857ee75cef1dcdbaee645ce873f681cbd6f92aff",
+      "size_bytes": 8980,
+      "input_id": "input-001",
+      "name": "replay_c06_collective_reservation.py",
+      "source_location": "external",
+      "source_path": null
+    },
+    {
+      "path": "inputs/002-mathematical_receipt.json",
+      "sha256": "0dec54a5dc518f98cc3ac9180741752ceee475b9fbe797cd26a0ea7792401180",
+      "size_bytes": 7982,
+      "input_id": "input-002",
+      "name": "mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-collective-reservation/mathematical_receipt.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/UD_C06_COLLECTIVE_RESERVATION_v0.47.md",
+      "sha256": "b9b2deec6b6a055f20445cd93d6aa52931fe1e4cebf40cc0c3b1a6bd29344417",
+      "size_bytes": 8129
+    },
+    {
+      "path": "files/replay-results.txt",
+      "sha256": "69b1356d3d1398a8873b94110692569fce1567c0c4dac49c919e0aaf145d2e74",
+      "size_bytes": 481
+    }
+  ]
+}

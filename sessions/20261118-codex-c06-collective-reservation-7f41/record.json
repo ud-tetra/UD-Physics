@@ -1,0 +1,42 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261118-codex-c06-collective-reservation-7f41",
+  "runtime": "Codex via GitHub connector and local Python",
+  "task": "c06-collective-reservation",
+  "goal": "Determine whether cotargeting contacts can share one equivariant reciprocal cut reservation and retain each typed veto.",
+  "created_at": "2026-11-18T18:31:20.808Z",
+  "base_revision": "39982511fb9950f6fa84d369b44978c2e41ebde7",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "c06-collective-reservation": "6543b62f2c55d2869d95569c5a20ac96424ce7d1"
+  },
+  "checks": [
+    {
+      "command": "python3 artifacts/20261118-codex-c06-collective-reservation-7f41/collective-reservation-replay/inputs/001-replay_c06_collective_reservation.py",
+      "result": "PASS_EXACT"
+    },
+    {
+      "command": "python3 scripts/validate.py on the new payload",
+      "result": "PASS; 4 new records"
+    },
+    {
+      "command": "full local repository integrity and suite",
+      "result": "NOT_RUN_NO_AUTHENTICATED_LOCAL_CHECKOUT; PR HAS REMOTE CI"
+    }
+  ],
+  "finding": "A single target operation is fixed under preparation symmetries even when all its individual contacts move. A collective reservation with a complete live snapshot can perform one reciprocal cut and preserve all typed vetoes. Delayed root-time vetoes rule out simultaneously safe and immediate dispatch from an incomplete prefix.",
+  "next_action": "Test whether any admitted state-access and event contract can certify root snapshot finality before cut actuation and independently of downstream publication.",
+  "mathematical_profile": {
+    "coefficient_domain": "real flow with exact rational controls",
+    "exactness_or_precision_plan": "Exact action on operation bindings, typed snapshot and reciprocal cut controls",
+    "applicable_methods": [
+      "Finite-group stabilizer",
+      "Common snapshot control",
+      "Indistinguishable prefix",
+      "Exact reciprocal cut"
+    ],
+    "clock_metric_units_conventions": "Dimensionless aligned Euclidean stock and independent event indexing"
+  }
+}
