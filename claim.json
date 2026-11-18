@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "c06-seam-parity-receipt",
   "session": "20261118-codex-c06-seam-parity-receipt-5f20",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-18T16:39:30.136Z",
   "base_revision": "5207dad0530bdb576fc21894913de8541533d4fd",
   "owned_paths": [
@@ -12,5 +12,8 @@
     "sessions/20261118-codex-c06-seam-parity-receipt-5f20/",
     "candidates/c06-seam-parity-receipt/",
     "artifacts/20261118-codex-c06-seam-parity-receipt-5f20/"
-  ]
+  ],
+  "released_at": "2026-11-18T16:46:08.410Z",
+  "released_from_sha": "1bf72d07f50d0dad7b345588f5f7ffedc3f0d70a",
+  "release_reason": "Discovery PR #445 merged"
 }
