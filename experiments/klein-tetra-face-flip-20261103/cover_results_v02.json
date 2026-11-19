@@ -1,0 +1,126 @@
+{
+  "source": "two adjacent K4 faces [012],[023] cut from sphere; new quotient edge identifications",
+  "base": {
+    "cells": [
+      1,
+      3,
+      2
+    ],
+    "Euler": 0,
+    "B2": [
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "Smith": [
+      1,
+      2
+    ],
+    "H1_Z": "Z + Z/2Z",
+    "H2_Z": "0",
+    "orientation_w1": [
+      1,
+      0,
+      1
+    ]
+  },
+  "cover": {
+    "cells": [
+      2,
+      6,
+      4
+    ],
+    "Euler": 0,
+    "B1": [
+      [
+        -1,
+        1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        0,
+        0,
+        -1,
+        1
+      ]
+    ],
+    "B2": [
+      [
+        1,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        -1
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        -1
+      ]
+    ],
+    "rank_B1": 1,
+    "rank_B2": 3,
+    "Smith_B2": [
+      1,
+      1,
+      1
+    ],
+    "gcd_cycle_minors": 1,
+    "H1_Z": "Z^2",
+    "H2_Z": "Z",
+    "pulled_back_w1": "coboundary mod2 with potential (0,1)"
+  },
+  "transport": {
+    "U_h": "F=diag(1,-1)",
+    "U_v": "R=quarter turn (arbitrary angle fixture)",
+    "U_x": "R F",
+    "face_holonomy": [
+      "I",
+      "I"
+    ],
+    "det_twist_loop": -1,
+    "det_twist_twice": 1,
+    "gauge_conjugation_invariant": true
+  },
+  "scope": "2D tetrahedral face-patch seam quotient; 3D bulk closure OPEN",
+  "status": "PASS_EXACT_CONDITIONAL",
+  "physical_promotion": 0
+}

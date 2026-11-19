@@ -1,0 +1,274 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-DOUBLE-COVER-002",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Does a cut pair of adjacent K4 triangular faces with explicitly added Klein seam identifications carry a nontrivial flat orientation loop, and does its orientation double cover reproduce torus integral homology?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "BASE_K",
+      "symbol": "K",
+      "object_type": "closed two-triangle Delta-complex; NOT original K4 shell",
+      "definition": "faces [012],[023], new identifications 01~32 and 03~21",
+      "domain": "Delta complexes",
+      "codomain": null,
+      "coefficient_domain": "Z signed chain groups",
+      "units": "none",
+      "basis_orientation": "vertices 0..3 prior to quotient; basis h,v,x and oriented faces [012],[023]",
+      "metric_measure": "none",
+      "origin": "hypothesized gluing with source K4 face patches",
+      "exact_expression": "C0=Z,C1=Z^3,C2=Z²; B2=[[1,-1],[-1,-1],[-1,1]]",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "K4",
+        "KTFF1"
+      ],
+      "assumption_ids": [
+        "new_gluing"
+      ],
+      "dependency_ids": [],
+      "normalization": "no metric"
+    },
+    {
+      "object_id": "ORIENT_COVER",
+      "symbol": "Ktilde",
+      "object_type": "two-sheet orientable surface Delta-complex",
+      "definition": "four triangles (t0,s),(t1,s), s in F2; paired edges flip sheet only when original boundary orientations agree",
+      "domain": "two-sheet gluing covers",
+      "codomain": null,
+      "coefficient_domain": "Z signed chain groups, F2 sheet label",
+      "units": "none",
+      "basis_orientation": "ordered faces (t0,0),(t0,1),(t1,0),(t1,1); six lifted edges",
+      "metric_measure": "none",
+      "origin": "derived conditional on K gluing",
+      "exact_expression": "(V,E,F)=(2,6,4), ranks B1=1,B2=3, SNF(B2)=(1,1,1), H1=Z²,H2=Z",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "KTFF1"
+      ],
+      "assumption_ids": [
+        "new_gluing"
+      ],
+      "dependency_ids": [
+        "BASE_K"
+      ],
+      "normalization": "orientation sheets not physical sectors"
+    },
+    {
+      "object_id": "ORIENT_CHARACTER",
+      "symbol": "w1",
+      "object_type": "F2 orientation cocycle",
+      "definition": "w1(h)=1,w1(v)=0,w1(x)=1",
+      "domain": "C1(K;Z)",
+      "codomain": "F2",
+      "coefficient_domain": "F2",
+      "units": "none",
+      "basis_orientation": "edge basis h,v,x",
+      "metric_measure": "none",
+      "origin": "derived from orientation reversal gluing",
+      "exact_expression": "w1*B2=0 mod2; pullback=(1,1,0,0,1,1)=delta(0,1) mod2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "new_gluing"
+      ],
+      "dependency_ids": [
+        "ORIENT_COVER"
+      ],
+      "normalization": "1 means reflection"
+    },
+    {
+      "object_id": "O2_SEAM",
+      "symbol": "U",
+      "object_type": "flat framed O2 edge transport",
+      "definition": "U_h=F=diag(1,-1), U_v=R90, U_x=R90 F",
+      "domain": "pi1(K) path groupoid",
+      "codomain": "O(2)",
+      "coefficient_domain": "Z matrix fixture; R symbolic phases otherwise",
+      "units": "none",
+      "basis_orientation": "local 2D frame with unit matrix metric",
+      "metric_measure": "Euclidean on O2 frame only",
+      "origin": "hypothesized representation, NOT native K4 generator",
+      "exact_expression": "U_{boundary(t0)}=I=U_{boundary(t1)}, det U_h=-1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LOOP"
+      ],
+      "assumption_ids": [
+        "Rquarter"
+      ],
+      "dependency_ids": [
+        "BASE_K",
+        "ORIENT_CHARACTER"
+      ],
+      "normalization": "quarter turn is illustrative"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "K4",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "section_or_object_id": "v1.0 §§1-3; signed oriented K4 incidence and S4 action",
+      "source_status": "imported native K4 chain framework; NOT seam law"
+    },
+    {
+      "source_id": "LOOP",
+      "url_or_repo_path": "experiments/qpb1-loop-history/HISTORY_CONTRACT.md",
+      "version_or_commit": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "section_or_object_id": "v1.0 edgewise sign curvature caveat",
+      "source_status": "imported obstruction to identifying nonflat sign connection with flat Klein w1"
+    },
+    {
+      "source_id": "KTFF1",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/README.md",
+      "version_or_commit": "1183c4283ef69a21e3eadd03bb804a5faa42ee83",
+      "section_or_object_id": "v0.1 Theorems A-C; 108 matchings and two-triangle Klein",
+      "source_status": "own prior development proof"
+    }
+  ],
+  "assumptions": [
+    "new_gluing: remove two original tetra shell faces and impose new edge identifications on remaining two; this changes topology",
+    "the 3D filled tetra bulk is NOT transported or proved to remain a manifold",
+    "Rquarter: orientation-preserving loop matrix chosen as R(pi/2), free phase remains",
+    "No SI units, time generator, physical mass or charge readout; path composition only",
+    "The original user-exposed Klein mechanism is known, not blind discovery"
+  ],
+  "technique_plan": [
+    {
+      "technique": "signed integral chain calculation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "construct lifted B1,B2 from face-side pairings and test B1 B2=0"
+    },
+    {
+      "technique": "Smith normal form and primitive cycle minors",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove integral H1 without torsion and H2=Z"
+    },
+    {
+      "technique": "F2 orientation cocycle and cohomology",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "w1 nontrivial on base, exact after pullback"
+    },
+    {
+      "technique": "independent Schreier CW cover",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify torus H1/H2 with unrelated incidence presentation"
+    },
+    {
+      "technique": "flat O2 path holonomy",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify triangle identity and global reflection conjugacy"
+    },
+    {
+      "technique": "physical calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no measured quantity or time proposed"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "base 1−3+2=0; lifted cover 2−6+4=0; B1 rank1, B2 rank3",
+    "reduced_expression": "chi=0 both, H1(K)=Z+Z/2, H1(cover)=Z²",
+    "factor_origins": [
+      "twofold orientation sheets; four lifted triangle faces",
+      "integral Smith invariant factors"
+    ],
+    "factorization": "base torsion order 2; cover rank-three minors gcd1",
+    "divisibility_gcd_lcm": "base Smith B2(1,2); cover Smith B2(1,1,1) and primitive image in ker B1"
+  },
+  "clock_receipt": {
+    "clock_type": "discrete path composition, NOT physical time",
+    "modulus": 2,
+    "residue_convention": "sheet 0/1 and orientation sign",
+    "update_rule": "transport U_path by ordered multiplication, det(U_twist)=-1",
+    "initial_phase": "local oriented frame at basepoint",
+    "coupling": "no source-selected seam phase or transport coupling",
+    "period_claim": "two traversals of reflection loop return sign, not time periodicity",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "local oriented 2D frame over face-patch Klein quotient or orientable cover",
+    "generator_or_update": "path transport U_e; no UD continuous-time law",
+    "initial_boundary_conditions": "flat contractible triangular faces; global seam gluing as stated",
+    "conservation_and_sources": "flat face relations, no stock/current action proposed",
+    "projection_and_kernel": "orientation double cover, orientation w1 becomes coboundary",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "Klein bottle proposal explicit prior to calculation; phase quarter-turn selected for exact arithmetic",
+    "known_targets": [
+      "Klein bottle nonorientable, torus orientable cover"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "new edge seam identifications chosen to realize Klein",
+      "R90 phase chosen as exact O2 fixture"
+    ],
+    "search_domain_and_budget": "finite two-triangle face lift, all six edges and four lifted triangles, independent 2-cell CW lift",
+    "selection_criterion": "integral homology, orientability, face flatness, gauge-invariant twist determinant",
+    "baseline": "unchanged tetrahedral sphere and untwisted torus"
+  },
+  "calculation_steps": [
+    "Declare cut K4 adjacent two-face patch and new h,v,x gluing; recover B2 from boundary orientations",
+    "Enumerate double-cover edge pairings by sheet permutation, union local vertices; reconstruct exact integer B1 (2x6), B2 (6x4)",
+    "Check B1B2=0; ranks 1,3; Smith nonzero (1,1,1); gcd cycle-lattice rank3 minors=1; kernel B2 rank1",
+    "Compute pullback w1=(1,1,0,0,1,1) equals B1^T*(0,1) mod2",
+    "Independent group relator h v h^-1 v creates 2-vertex,4-edge,2-cell cover with ranks (1,1), primitive relation",
+    "For O2 U_h=F,U_v=R,U_x=R F, compute both triangle holonomies I and det(global twist)=-1",
+    "Contrast original K4 S2 null flat w1 and untwisted torus orientation control"
+  ],
+  "result": {
+    "exact_expression": "Klein two-face patch gives orientable 2-fold cover torus, H1=Z²,H2=Z; local flat O2 face transport and global twist det=-1",
+    "approximation": null,
+    "units": "none",
+    "precision_and_error": "integer symbolic SymPy and exact matrix algebra",
+    "scope": "two-dimensional cut K4 face-patch quotient with added gluing, not canonical 3D UD packet network",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "algorithm 1 triangle-face lift and Smith/cycle-minor",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/cover_audit_v02.py",
+      "source_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "actual_result": "PASS equivalent local exact calculation; committed source pending independent CI script replay",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "algorithm 2 independent Schreier CW cover",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/independent_cw_v02.py",
+      "source_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "actual_result": "PASS local independent algorithm, same research constructor",
+      "review_relationship": "same constructor"
+    },
+    {
+      "method": "four tests in local environment",
+      "command_or_proof_path": "python3 -m unittest discover -s experiments/klein-tetra-face-flip-20261103 -p test_cover_v02.py -v",
+      "source_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "actual_result": "Equivalent four local tests passed; GitHub integrity separate",
+      "review_relationship": "same constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "A full unchanged K4 boundary is S2, not Klein; topology-preserving face flip cannot create nontrivial w1",
+    "Flat global twist is distinct from source QPB1 nonflat edge sign connection",
+    "A local frame reversal on double cover is gauge-exact, but base closed-loop determinant is invariant",
+    "No closed 3D bulk gluing or dynamical persistence established"
+  ],
+  "limitations": [
+    "The new seam is a designed input rather than selected UD geometry",
+    "Two algorithms are not independent people or physical replication",
+    "The 2D carrier is not the full 15D source K4 evolution with selected coupling",
+    "No physical clock, action/energy or measurement bridge"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Derive a sourced K4 packet adjacency/gluing and compatible transport map on full carrier with flat orientation twist; define clock and energy readouts before claiming dynamics or physical correspondence."
+}

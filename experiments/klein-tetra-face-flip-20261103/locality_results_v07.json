@@ -1,0 +1,73 @@
+{
+  "graph_vertices": 18,
+  "graph_diameter": 3,
+  "degrees": [
+    {
+      "degree": 0,
+      "nonzero_P_entries": 18,
+      "min_distance": {
+        "0": 2,
+        "1": 16
+      },
+      "max_pair_distance": {
+        "0": 2,
+        "1": 16
+      },
+      "hausdorff_distance": {
+        "0": 2,
+        "1": 16
+      },
+      "maximum_absolute_coefficient": 1
+    },
+    {
+      "degree": 1,
+      "nonzero_P_entries": 181,
+      "min_distance": {
+        "0": 76,
+        "1": 105
+      },
+      "max_pair_distance": {
+        "1": 67,
+        "2": 114
+      },
+      "hausdorff_distance": {
+        "0": 4,
+        "1": 133,
+        "2": 44
+      },
+      "maximum_absolute_coefficient": 2
+    },
+    {
+      "degree": 2,
+      "nonzero_P_entries": 50,
+      "min_distance": {
+        "0": 45,
+        "1": 5
+      },
+      "max_pair_distance": {
+        "2": 50
+      },
+      "hausdorff_distance": {
+        "1": 47,
+        "2": 3
+      },
+      "maximum_absolute_coefficient": 1
+    },
+    {
+      "degree": 3,
+      "nonzero_P_entries": 1,
+      "min_distance": {
+        "0": 1
+      },
+      "max_pair_distance": {
+        "2": 1
+      },
+      "hausdorff_distance": {
+        "2": 1
+      },
+      "maximum_absolute_coefficient": 1
+    }
+  ],
+  "definition": "maximum pair distance between vertices of each input barycentric simplex and all vertices in the full image of its target CW cell under forward S",
+  "status": "PASS_EXACT_FINITE"
+}

@@ -1,0 +1,113 @@
+{
+  "version": "v1.5",
+  "status": "PASS_EXACT_CONDITIONAL_SCOPED_NO_GO",
+  "date": "2026-11-05",
+  "source_revision": "738b9d205fd9f9735a05d4976de70f1519474bff",
+  "typed_observables": {
+    "outer_shell": "4 vertices,6 edges,4 faces at all levels; no interior distinction",
+    "unit_edge_boundary_port": "Schur complement of L=B1 B1^T with fixed outer vertex Dirichlet probe; candidate measurement",
+    "native_core_stock": "Q171 c_(3,tau)^2, mathematical local support; physical access not proven",
+    "packet_capacity": "192=24*8 local label count, not global cell cap or metric"
+  },
+  "all_depth_theorem": {
+    "old_old_child_multiplicity": 2,
+    "centroid_old_child_multiplicity": 3,
+    "inner_response_start": "w_0=0",
+    "inner_response_recursion": "w_(n+1)=(11*w_n+1)/4",
+    "inner_response_closed": "w_n=((11/4)^n-1)/7",
+    "boundary_matrix": "Lambda_n=((6+(11/4)^n)/7)*(4I4-11^T)",
+    "alpha_increment": "(11/4)^n/4>0",
+    "strictly_increasing": true,
+    "divergent_under_unit_weights": true
+  },
+  "exact_direct_checks": [
+    {
+      "n": 0,
+      "f": [
+        4,
+        6,
+        4,
+        1
+      ],
+      "alpha": "1",
+      "nonconstant_boundary_eigenvalue": "4",
+      "probe_energy": "4"
+    },
+    {
+      "n": 1,
+      "f": [
+        5,
+        10,
+        10,
+        4
+      ],
+      "alpha": "5/4",
+      "nonconstant_boundary_eigenvalue": "5",
+      "probe_energy": "5"
+    },
+    {
+      "n": 2,
+      "f": [
+        9,
+        26,
+        34,
+        16
+      ],
+      "alpha": "31/16",
+      "nonconstant_boundary_eigenvalue": "31/4",
+      "probe_energy": "31/4"
+    },
+    {
+      "n": 3,
+      "f": [
+        25,
+        90,
+        130,
+        64
+      ],
+      "alpha": "245/64",
+      "nonconstant_boundary_eigenvalue": "245/16",
+      "probe_energy": "245/16"
+    }
+  ],
+  "local_stock_counterexample": {
+    "all_depth_n_gte_1": true,
+    "state_x": "e_(tau0)",
+    "state_y": "(e_(tau0)+e_(tau1)+e_(tau2)+e_(tau3))/2",
+    "total_squared_norms": [
+      "1",
+      "1"
+    ],
+    "original_shell_chain_amplitudes": "zero in both",
+    "Q171_core_stock_x": [
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "Q171_core_stock_y": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+    ],
+    "not_equivalent_under_simplex_permutations": true,
+    "not_physical_persistence": "direct algebraic preparation only"
+  },
+  "verification": {
+    "independent_analytic_kron": true,
+    "direct_rational_graph_levels": 4,
+    "S4_permutation_checks_per_level": 24,
+    "local_regression_passed": 8,
+    "local_zip": "UD_K4_OPERATIONAL_RESOLUTION_FLOOR_v1.5.zip",
+    "local_zip_sha256": "67623c6beedfb8068c345eca0634f6c99dc16b930180e35235261bb541387114",
+    "external_nonconstructor_review": "NOT_RUN"
+  },
+  "decision": {
+    "no_finite_floor_under_unit_edge_port": true,
+    "all_physical_observers_floor": "OPEN",
+    "finite_192_architecture_implies_floor": false,
+    "physical_length_units": "NONE",
+    "physical_promotion": 0
+  }
+}

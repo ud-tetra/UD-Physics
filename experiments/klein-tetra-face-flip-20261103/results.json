@@ -1,0 +1,155 @@
+{
+  "Klein_Delta_complex": {
+    "V": 1,
+    "E": 3,
+    "F": 2,
+    "Euler": 0,
+    "B1": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "B2": [
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "rank_B2_Q": 2,
+    "rank_B2_F2": 1,
+    "Smith_nonzero": [
+      1,
+      2
+    ],
+    "H1_Z": "Z + Z/2Z",
+    "H2_Z": "0",
+    "boundary_of_sum_of_faces": [
+      0,
+      -2,
+      0
+    ],
+    "orientation_w1": {
+      "H": 1,
+      "V": 0,
+      "X": 1
+    }
+  },
+  "tetra_shell": {
+    "V": 4,
+    "E": 6,
+    "F": 4,
+    "Euler": 2,
+    "H1_Z": "0",
+    "H2_Z": "Z"
+  },
+  "whole_face_pairs": {
+    "total": 108,
+    "closed_surface_2_incident_edge_cases": 0,
+    "patterns": [
+      {
+        "V": 1,
+        "E": 1,
+        "side_profile": [
+          6
+        ],
+        "count": 36
+      },
+      {
+        "V": 1,
+        "E": 2,
+        "side_profile": [
+          1,
+          5
+        ],
+        "count": 36
+      },
+      {
+        "V": 1,
+        "E": 2,
+        "side_profile": [
+          2,
+          4
+        ],
+        "count": 6
+      },
+      {
+        "V": 1,
+        "E": 2,
+        "side_profile": [
+          3,
+          3
+        ],
+        "count": 6
+      },
+      {
+        "V": 1,
+        "E": 3,
+        "side_profile": [
+          1,
+          2,
+          3
+        ],
+        "count": 12
+      },
+      {
+        "V": 2,
+        "E": 3,
+        "side_profile": [
+          1,
+          1,
+          4
+        ],
+        "count": 9
+      },
+      {
+        "V": 2,
+        "E": 4,
+        "side_profile": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "count": 3
+      }
+    ]
+  },
+  "torus_control": {
+    "B2": [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "rank_B2_Q": 1,
+    "H1_Z": "Z^2",
+    "H2_Z": "Z"
+  },
+  "O2_transport": {
+    "twist": "reflection diag(1,-1)",
+    "phase": "R_pi/2",
+    "relation": "F R F^-1 R=I",
+    "general_phase_angle": "undetermined; pi/2 exact fixture only"
+  },
+  "scope": "Delta-complex quotient requires a NEW gluing interface; not a standard 4-face tetrahedron simplicial structure",
+  "physical_promotion": 0,
+  "status": "EXACT_PASS"
+}

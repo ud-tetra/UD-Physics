@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ktff-20261103-01",
+  "run_id": "contact-metric-020",
+  "created_at": "2026-11-06T03:56:29Z",
+  "evidence": "EXACT",
+  "summary": "K4 1-to-4 exact local-cone and scalar-clock second-jet no-go; explicit nonnative rational-contact and barycentric non-diagonal metric mathematical completions. Q171 source issue338 pending; physical promotion0.",
+  "command": "python contact_metric_v20.py; python metric_retraction_v20.py; python independent_rank_contact_v20.py; python -m unittest -v test_interface_v20.py",
+  "command_execution": "EXECUTED_IN_LOCAL_CONSTRUCTOR_RUNTIME",
+  "source": {
+    "revision": "7ef45805563b47cbe1e2f34bb9e6e97ce5f5c962",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/CERTIFICATE_v20.txt",
+      "sha256": "d8bd9035f1d75a5b4317129509dacc89d02a8624c854ecdf3c94435c4db930c8",
+      "size_bytes": 1058
+    }
+  ],
+  "task": "klein-tetra-face-flip-20261103",
+  "claim_sha": "667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4",
+  "review_issue": "https://github.com/ud-tetra/UD-Physics/issues/338",
+  "result_paths": [
+    "experiments/klein-tetra-face-flip-20261103/NATIVE_CONTACT_METRIC_INTERFACE_v2.0.md",
+    "experiments/klein-tetra-face-flip-20261103/metric_completion_v20.py",
+    "experiments/klein-tetra-face-flip-20261103/local_contact_no_go_v20.py",
+    "experiments/klein-tetra-face-flip-20261103/contact_metric_results_v20.json",
+    "candidates/klein-tetra-face-flip-20261103/mathematical_receipt_contact_metric_v2.0.json"
+  ],
+  "user_archive": {
+    "name": "UD_K4_CROSS_COMPLEX_CONTACT_METRIC_v2.0.zip",
+    "sha256": "a8bf4b76dd692cb73534e67bc5d434050e4f9cdfb89e5a376d9296bd0ec238d4",
+    "bytes": 32091,
+    "files": 19
+  },
+  "verification": {
+    "local_exact_tests": "14/14 PASS",
+    "independent_14D_cone_proof": "PASS",
+    "S4_actions_each_completion": 24,
+    "nonconstructor": "NOT_RUN",
+    "source_amendment": "OPEN_NOT_ACCEPTED",
+    "physical_promotion": 0
+  },
+  "limitations": [
+    "Version2 run inputs intentionally empty: original source paths and full local source snapshot are recorded in mathematical receipt and exact ZIP, not immutable run input copies.",
+    "The local exact scripts may differ in bytes from separate GitHub concise replay sources. CI checks repository integrity only."
+  ]
+}

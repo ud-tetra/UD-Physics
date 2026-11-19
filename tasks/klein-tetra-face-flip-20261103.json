@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "klein-tetra-face-flip-20261103",
+  "goal": "Exact Klein-bottle orientation seam gluing tests against tetrahedral face incidence and explicit transport holonomy",
+  "owned_paths": [
+    "tasks/klein-tetra-face-flip-20261103.json",
+    "sessions/ktff-20261103-01",
+    "candidates/klein-tetra-face-flip-20261103",
+    "experiments/klein-tetra-face-flip-20261103",
+    "artifacts/ktff-20261103-01"
+  ],
+  "dependencies": [],
+  "status": "active"
+}

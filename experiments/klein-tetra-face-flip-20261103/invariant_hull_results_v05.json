@@ -1,0 +1,16 @@
+{
+  "initial_even_S4_interval_rank": 3,
+  "minimal_A_invariant_hull_rank": 5,
+  "even_S4_fixed_K4_dimension": 7,
+  "hull_harmonic_dimension": 1,
+  "hull_active_dimension": 4,
+  "projector_commutes_with_native_A": true,
+  "twist_on_hull": "-I5",
+  "null_even_transport_on_hull": "+I5",
+  "native_framed_correlation": "<x,U_twist x>=-||x||²; <x,U_null x>=+||x||²",
+  "physical_frame_reference_selected": false,
+  "full_72_bulk_generator_intertwining": false,
+  "source_selected_even_completion": false,
+  "status": "PASS_EXACT_CONDITIONAL",
+  "physical_promotion": 0
+}

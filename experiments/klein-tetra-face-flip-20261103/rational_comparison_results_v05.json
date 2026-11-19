@@ -1,0 +1,32 @@
+{
+  "domain": "twisted simplicial 72-tet chains with Q coefficients",
+  "cellular_codomain": "twisted minimal Klein CW x I",
+  "packet_codomain": "twisted 60D CW x K4",
+  "formula": "Phi_k=t_k h_k^T/(h_k^T h_k), k=1,2; zero in degrees0,3",
+  "harmonic_norms": [
+    {
+      "degree": 1,
+      "source_harmonic_norm_squared": "160",
+      "cellular_harmonic_norm_squared": "2"
+    },
+    {
+      "degree": 2,
+      "source_harmonic_norm_squared": "84",
+      "cellular_harmonic_norm_squared": "2"
+    }
+  ],
+  "graded_ranks": [
+    0,
+    1,
+    1,
+    0
+  ],
+  "chain_map_exact": true,
+  "induced_H1_H2_Q_isomorphism": true,
+  "geometric_subdivision_retraction": false,
+  "integral_H0_torsion_preserved": false,
+  "canonical": false,
+  "dynamics_intertwiner": false,
+  "status": "PASS_EXACT_NONCANONICAL",
+  "physical_promotion": 0
+}

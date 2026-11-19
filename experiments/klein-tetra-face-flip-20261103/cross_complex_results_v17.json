@@ -1,0 +1,85 @@
+{
+  "schema": "UD-Physics Discovery exact result v1.7",
+  "date": "2026-11-05",
+  "status": "PASS_EXACT_CONDITIONAL",
+  "source_main": "234f54471c32cc9ad4873cd8042103fa19795909",
+  "old_carrier": "C_*(K0;R), graded (4,6,4,1), total15, unit Euclidean",
+  "new_carrier": "C_*(K1;R), graded (5,10,10,4), total29, unit Euclidean",
+  "subdivision": {
+    "F_chain": true,
+    "F3_coefficients": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "B3_new_rank": 4,
+    "Gram": "diag(1^14,4)",
+    "norm_defect": "||F x||^2-||x||^2=3*c_old_top^2",
+    "defect_rank": 1,
+    "isometric_shell_dimension": 14,
+    "halved_top_map_norm_conserving": true,
+    "halved_top_map_chain_compatible": false
+  },
+  "postevent_exact_flow": {
+    "preparation": "b=B3_old e_parent/2, unit signed old outer face chain",
+    "new_top_direction": "w=A_K1 b=-(F3 e_parent)/2",
+    "two_mode": "A_K1 b=w, A_K1 w=-b; ||b||^2=||w||^2=1, b dot w=0",
+    "state": "x(u)=cos(u)b+sin(u)w",
+    "outer_shell_stock": "cos(u)^2",
+    "four_child_top_stock": "sin(u)^2",
+    "net_current_into_new_top": "sin(2u)",
+    "first_derivative_top_coefficients": [
+      "-1/2",
+      "1/2",
+      "-1/2",
+      "1/2"
+    ],
+    "old_parent_response": "A_K0^2 b=-4 b, formal frequency2; old top stock sin(2u)^2",
+    "new_response": "formal frequency1, top stock sin(u)^2",
+    "sign_S4_checks": 24,
+    "conserved_total_Q165": 1,
+    "source_selected_event": false,
+    "source_selected_retention": false
+  },
+  "masks": {
+    "status": "Q173 masked current readout is not generator update",
+    "new_faces": 10,
+    "outer_faces": 4,
+    "inner_faces": 6,
+    "binary_masks": 1024,
+    "S4_invariant": 4,
+    "B2_diag_h_B3_nilpotent_masks": 2,
+    "identities": [
+      "all off",
+      "all on"
+    ],
+    "all_off_new_generator": "added hypothesis; top derivative zero",
+    "all_on_new_generator": "native Q169; top derivative squared norm1",
+    "other_masks": "generally violate d²=0 if substituted for B3 alone"
+  },
+  "signed_current_gate": {
+    "source_form": "ledger Q171 literal dot(c3_tau²)=+2 sum_f B3(f,tau)c2_f c3_tau",
+    "matrix_form": "Q169 A=D-D^T implies dot(c3_tau²)=-2 sum_f B3(f,tau)c2_f c3_tau",
+    "witness": "B3(012,0124)=-1; c_f=c_tau=1 gives direct derivative+2 vs literal plus-B3 gives-2",
+    "status": "OPEN_CONVENTION_ALIAS; reconcile orientation or inward/outward current without overwriting frozen source"
+  },
+  "no_go": {
+    "all_state_isometry_and_boundary_identity": false,
+    "pointwise_shell_stock_preserved_and_zero_initial_inner_with_total_conservation_yields_positive_new_inner": false,
+    "source_selected_cross_complex_event": false
+  },
+  "review": {
+    "local_exact_regressions": "11/11 PASS",
+    "full_matrix_comparison": "local exact 15D/29D",
+    "independent_mask_exhaustive": "1024",
+    "S4_covariance": "24",
+    "nonconstructor": "NOT_RUN"
+  },
+  "archive": {
+    "filename": "UD_K4_CROSS_COMPLEX_ADMISSION_v1.7.zip",
+    "sha256": "1f4c8afb5fba580b3e5edf719deb61d772c8593f2fb07a19a21247ed3d5d7ae0",
+    "complete_code_and_manifest": true
+  },
+  "physical_promotion": 0
+}

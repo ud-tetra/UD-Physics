@@ -1,0 +1,248 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-K4-REFINEMENT-009",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Can native K4 unit-incidence dynamics and metric pullback produce a single scale-consistent clock across two actual 1-to-4 tetrahedral refinements?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "K_N",
+      "symbol": "K_n",
+      "object_type": "finite oriented simplicial 3-ball",
+      "definition": "K0 original K4; K1 four centroid tetrahedra; K2 sixteen centroid tetrahedra",
+      "domain": "finite simplicial complexes",
+      "codomain": null,
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "ascending simplex vertices",
+      "metric_measure": "unit Euclidean coefficients",
+      "origin": "source four-cell v1.0",
+      "exact_expression": "f0=(4,6,4,1),f1=(5,10,10,4),f2=(9,26,34,16)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "FOURCELL"
+      ],
+      "assumption_ids": [
+        "UNIT"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit signed incidence"
+    },
+    {
+      "object_id": "F_N",
+      "symbol": "F_n",
+      "object_type": "integer degree-preserving subdivision chain map",
+      "definition": "old lower-degree simplices fixed, oriented top tetra is signed sum of four children",
+      "domain": "C_*(K_n;Z)",
+      "codomain": "C_*(K_(n+1);Z)",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "ascending top-cell orientations",
+      "metric_measure": "top stock 1 becomes 4",
+      "origin": "source Pachner 1-to-4",
+      "exact_expression": "d_(n+1)F=Fd_n",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PACHNER"
+      ],
+      "assumption_ids": [
+        "UNIT"
+      ],
+      "dependency_ids": [
+        "K_N"
+      ],
+      "normalization": "degree +1 top map"
+    },
+    {
+      "object_id": "G_N",
+      "symbol": "G_n",
+      "object_type": "induced coarse Gram metric",
+      "definition": "F_n^TF_n",
+      "domain": "real chain C_*(K_n)",
+      "codomain": "dual real chain",
+      "coefficient_domain": "Z",
+      "units": "native amplitude squared",
+      "basis_orientation": "graded simplices",
+      "metric_measure": "diag(1^14,4), diag(1^25,4^4), composed diag(1^14,16)",
+      "origin": "exact derived",
+      "exact_expression": "G=F^T F",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PACHNER"
+      ],
+      "assumption_ids": [
+        "UNIT"
+      ],
+      "dependency_ids": [
+        "F_N"
+      ],
+      "normalization": "no fitted gain"
+    },
+    {
+      "object_id": "A_G",
+      "symbol": "A_G",
+      "object_type": "metric skew Galerkin generator",
+      "definition": "G^-1 F^T (d_f-d_f^T)F",
+      "domain": "real coarse chain",
+      "codomain": "real coarse chain",
+      "coefficient_domain": "Q",
+      "units": "per formal native u",
+      "basis_orientation": "graded simplices",
+      "metric_measure": "G",
+      "origin": "exact derived under selected metric",
+      "exact_expression": "A_G=d_c-G^-1 d_c^T G; A_G^T G+GA_G=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "UNIT"
+      ],
+      "dependency_ids": [
+        "G_N"
+      ],
+      "normalization": "unit fine rates"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "FOURCELL",
+      "url_or_repo_path": "experiments/four-cell-tetrahedron/README.md",
+      "version_or_commit": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "section_or_object_id": "v1.0 Definition and scope; recursive counts",
+      "source_status": "source-native conditional geometry"
+    },
+    {
+      "source_id": "PACHNER",
+      "url_or_repo_path": "experiments/pachner-state-transport/README.md",
+      "version_or_commit": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "section_or_object_id": "v0.1 1-to-4 chain map and metric mismatch",
+      "source_status": "source-bound mathematical result"
+    },
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "section_or_object_id": "v1.0 §§1–3 unit-incidence K4 skew generator",
+      "source_status": "native single packet operator, not physical clock"
+    }
+  ],
+  "assumptions": [
+    "unit Euclidean chain metric H=I at each of K0,K1,K2",
+    "native A=d-d^T with no rate fitting",
+    "degree+1 integral top-cell subdivision map; old lower simplices fixed",
+    "Klein rho(h)=-1 remains a separate optional unsourced topology character, not part of ordinary K4 refinement"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact integer simplicial incidence and subdivision",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "dF=Fd and nested 1-to-4 maps"
+    },
+    {
+      "technique": "metric-adjoint algebra and current",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "G skew and local quadratic support conservation"
+    },
+    {
+      "technique": "exact characteristic polynomial and S4 symmetry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare full native frequency sets and all 24 relabelings"
+    },
+    {
+      "technique": "physical clock map",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no physical calibration sourced"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "total dimensions 15,29,85; top cells 1,4,16; exact residual squares 13,52,151/4",
+    "reduced_expression": "G01 diag(1^14,4), G12 diag(1^25,4^4), G02 diag(1^14,16)",
+    "factor_origins": [
+      "centroid 1-to-4 top subdivision",
+      "unit signed simplex coefficients"
+    ],
+    "factorization": "4=2²,16=2⁴; 52=4*13 observed in this finite test",
+    "divisibility_gcd_lcm": "no clock modulus used"
+  },
+  "clock_receipt": {
+    "clock_type": "formal continuous dimensionless u",
+    "modulus": null,
+    "residue_convention": "none",
+    "update_rule": "x'=A_nx, y'=A_G y",
+    "initial_phase": "any chain state at each level",
+    "coupling": "unmodified unit incidence",
+    "period_claim": "parent active magnitude2, K1 magnitudes1,sqrt5; scalar time rescaling cannot align complete active sets",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "K0 R15, K1 R29, K2 R85",
+    "generator_or_update": "signed incidence skew and Galerkin metric projection",
+    "initial_boundary_conditions": "filled tetrahedral balls, no physical boundary flux",
+    "conservation_and_sources": "native fine norm and induced coarse G norm conserved independently",
+    "projection_and_kernel": "nonzero leakage squared 13,52,151/4",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "known K4 recurrence and goal of a consistent clock before calculation; no empirical targets",
+    "known_targets": [
+      "source K4 active magnitude2"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "none"
+    ],
+    "search_domain_and_budget": "two centroid splits, composite map, exact charpolys, 24 signed S4 relabelings",
+    "selection_criterion": "full frequency and flow compatibility under one time scale",
+    "baseline": "unmodified native K4 unit-incidence generator"
+  },
+  "calculation_steps": [
+    "Build three actual nested K4 simplicial complexes and signed boundary matrices",
+    "Construct signed degree-one integer top subdivision maps, check dF=Fd",
+    "Check 24 S4 relabelings and generator equivariance",
+    "Compute Gram metrics G01,G12,G02 from source unit fine metrics",
+    "Compute G-skew Galerkin A_G and local support current",
+    "Compute exact nonzero residual squared norms 13,52,151/4",
+    "Compute parent and first refined native charpolys, show distinct refined frequencies preclude one scalar clock factor"
+  ],
+  "result": {
+    "exact_expression": "K0 λ(λ²+4)^7 vs K1 λ(λ²+1)(λ²+5)^13; two nonzero Galerkin residuals 13,52",
+    "approximation": null,
+    "units": "dimensionless native u",
+    "precision_and_error": "exact SymPy rational/integer and 24 S4 checks",
+    "scope": "finite actual K4 levels0,1,2 under unit incidence and metric",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "local exact equivalent generator and six regressions",
+      "command_or_proof_path": "KLEIN_K4_TWO_REFINEMENT_v0.9.zip/refinement_v09.py and test_refinement_v09.py",
+      "source_revision": "e400dfb715262a44b3bbb2e929c7b438028af67e",
+      "actual_result": "PASS: exact chain maps/Gram/spectra/residual/S4 and 6 of 6 local tests",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "no single scalar clock mapping K1 native frequencies 1 and sqrt5 to only K0 native2",
+    "each fine image leaks under native A, even though chain map and S4 pass",
+    "unit top-cell stock 1 maps to4 then16"
+  ],
+  "limitations": [
+    "only finite K4 levels, not universal limit",
+    "no physical metric/clock source or independent orientation reference",
+    "Klein seam remains separate assumed quotient; cannot identify native K4 split with Klein inside-outside dynamics",
+    "non-constructor review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Select native material metric and physical clock/readout using independent source, freeze a two-level test and compare against the exact unit-incidence null without gain fitting."
+}

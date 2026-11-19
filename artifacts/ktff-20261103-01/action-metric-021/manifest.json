@@ -1,0 +1,55 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ktff-20261103-01",
+  "run_id": "action-metric-021",
+  "created_at": "2026-11-06T15:25:05Z",
+  "evidence": "EXACT",
+  "summary": "Source audit found no independently selected K4 1→4 positive intercomplex metric/contact. Exact all-positive-t Ht=P^TP+tQ^TQ isometry and intertwined Hodge generator family proves nonuniqueness and retains native Q165 unit-metric obstruction.",
+  "command": "python3 action_metric_selector_v21.py; python3 independent_metric_family_v21.py; python3 -m unittest -v test_action_selector_v21.py",
+  "command_execution": "EXECUTED_IN_LOCAL_CONSTRUCTOR_RUNTIME",
+  "source": {
+    "revision": "322ea849bfb949e4136a898e05d9d7fa0ec7604f",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/CERTIFICATE_v21.txt",
+      "sha256": "5172806aa78852c3cdf2e5b2c543292ca9a432bb1b402b9664118f5e739b2bbd",
+      "size_bytes": 953
+    }
+  ],
+  "task": "klein-tetra-face-flip-20261103",
+  "claim_sha": "667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4",
+  "Q171_review": {
+    "url": "https://github.com/ud-tetra/UD-Physics/issues/338",
+    "status": "OPEN_NOT_APPROVED"
+  },
+  "result_paths": [
+    "experiments/klein-tetra-face-flip-20261103/ACTION_METRIC_SELECTION_GATE_v2.1.md",
+    "experiments/klein-tetra-face-flip-20261103/action_metric_selector_v21.py",
+    "experiments/klein-tetra-face-flip-20261103/abstract_metric_family_v21.py",
+    "experiments/klein-tetra-face-flip-20261103/action_metric_results_v21.json",
+    "candidates/klein-tetra-face-flip-20261103/mathematical_receipt_action_metric_v2.1.json"
+  ],
+  "user_archive": {
+    "name": "UD_K4_ACTION_METRIC_SELECTION_AUDIT_v2.1.zip",
+    "sha256": "37077981370f88ee62f0e24234c782ebb63d24ea57b03560b10fe36f0f79ef46",
+    "bytes": 20292,
+    "files": 13
+  },
+  "verification": {
+    "constructor_exact_tests": "10/10 PASS",
+    "independent_form_direct_sum": "PASS",
+    "S4_signed_actions": 24,
+    "nonconstructor": "NOT_RUN",
+    "source_selection": "SOURCE_BLOCKED",
+    "physical_promotion": 0
+  },
+  "limitations": [
+    "Run inputs are in complete user-verifiable ZIP rather than Git capture inputs; v2.0 original source scripts and GitHub source versions are documented in mathematical receipt.",
+    "Local full code and GitHub concise replay are not asserted byte-identical; GitHub CI checks schema/integrity, not mathematical truth.",
+    "Source audit cannot exclude unpublished material; only verified current/historical source strata are assessed."
+  ]
+}

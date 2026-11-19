@@ -1,0 +1,359 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-K4-CROSS-COMPLEX-017",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Can source native Q165/Q166/Q169/Q170/Q171/Q173 currents and a 1→4 map conserve support while admitting previously absent tetrahedral modes, without an arbitrary reservoir, source, or trigger?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "K0",
+      "symbol": "C(K0)",
+      "object_type": "old filled tetrahedron real simplicial chain",
+      "definition": "graded (4,6,4,1), one parent top [0123]",
+      "domain": "C_*(K0;R)",
+      "codomain": null,
+      "coefficient_domain": "Z boundary and R flow",
+      "units": "native dimensionless coefficients",
+      "basis_orientation": "ascending signed simplex basis",
+      "metric_measure": "H0=I15",
+      "origin": "K4 Q169 source",
+      "exact_expression": "D0²=0; A0=D0−D0^T",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1",
+        "PACHNER"
+      ],
+      "assumption_ids": [
+        "native_unit_metric"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit native incidence"
+    },
+    {
+      "object_id": "K1",
+      "symbol": "C(K1)",
+      "object_type": "new 1-to-4 centroid tetrahedron real simplicial chain",
+      "definition": "graded (5,10,10,4), parent outer shell fixed",
+      "domain": "C_*(K1;R)",
+      "codomain": null,
+      "coefficient_domain": "Z boundary and R flow",
+      "units": "native formal amplitude",
+      "basis_orientation": "ascending simplices, new vertex4",
+      "metric_measure": "H1=I29",
+      "origin": "four-cell K4 source",
+      "exact_expression": "D1²=0; A1=D1−D1^T; rank B3_new=4",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PACHNER"
+      ],
+      "assumption_ids": [
+        "native_unit_metric"
+      ],
+      "dependency_ids": [],
+      "normalization": "unit native incidence"
+    },
+    {
+      "object_id": "F",
+      "symbol": "F:C(K0)→C(K1)",
+      "object_type": "integral degree-preserving 1-to-4 chain transport",
+      "definition": "identity on original 14 lower-grade simplices; old top becomes signed sum of four new tops",
+      "domain": "R15",
+      "codomain": "R29",
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "oriented top signs [1,-1,1,-1]",
+      "metric_measure": "F^TF=diag(1^14,4)",
+      "origin": "source Pachner transport v0.1, new full-defect theorem",
+      "exact_expression": "D1 F=F D0; F^T F−I15=3ee^T",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PACHNER"
+      ],
+      "assumption_ids": [
+        "shell_boundary_identity"
+      ],
+      "dependency_ids": [
+        "K0",
+        "K1"
+      ],
+      "normalization": "unscaled degree-one top transport"
+    },
+    {
+      "object_id": "B_W",
+      "symbol": "b,w",
+      "object_type": "normalized shell face and new top collective mode",
+      "definition": "b=B3_old e/2; w=A1 b=−F3 e/2",
+      "domain": "span{b,w}⊂R29",
+      "codomain": "R29",
+      "coefficient_domain": "Q exact; R phase",
+      "units": "formal native amplitude",
+      "basis_orientation": "b oriented outer 2-cycle, w new 3-cell sum",
+      "metric_measure": "unit Euclidean, b·w=0, ||b||=||w||=1",
+      "origin": "new v1.7 exact derivation from native A1",
+      "exact_expression": "A1 b=w,A1 w=−b, x(u)=cos(u)b+sin(u)w",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1",
+        "LEDGER"
+      ],
+      "assumption_ids": [
+        "postulated_K1_event",
+        "special_shell_preparation"
+      ],
+      "dependency_ids": [
+        "K1"
+      ],
+      "normalization": "b unit"
+    },
+    {
+      "object_id": "MASK",
+      "symbol": "h_f",
+      "object_type": "conditional binary face-current diagnostic or changed-boundary mask",
+      "definition": "10 new faces, 4 outer+6 interior; distinguish masked readout from modifying B3",
+      "domain": "{0,1}^10",
+      "codomain": "masked J23 or candidate new B3_h",
+      "coefficient_domain": "F2 bits, Q matrices",
+      "units": "none",
+      "basis_orientation": "new oriented triangle faces",
+      "metric_measure": "unit for modified skew generator",
+      "origin": "source Q173 concept adapted to new face set, not accepted event rule",
+      "exact_expression": "1024 masks,4 S4 invariant, only2 with B2 diag(h) B3=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [
+        "candidate_mask_update"
+      ],
+      "dependency_ids": [
+        "K1"
+      ],
+      "normalization": "none"
+    },
+    {
+      "object_id": "SIGN_GATE",
+      "symbol": "J23 sign",
+      "object_type": "literal native derivative versus Q171 printed current-direction convention",
+      "definition": "direct A1 top-row coupling = -B3^T, so dot ctop²=-2 Σ B3 cface ctop",
+      "domain": "C2(K1)⊕C3(K1)",
+      "codomain": "signed scalar stock derivative",
+      "coefficient_domain": "Z/Q",
+      "units": "formal per u",
+      "basis_orientation": "ascending signed boundary B3",
+      "metric_measure": "unit Q165 stock",
+      "origin": "new exact comparator with frozen ledger literal Q171",
+      "exact_expression": "B3(012,0124)=-1,cface=ctop=1: matrix derivative+2, ledger literal +2B3 gives−2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER",
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "shared_B3_convention"
+      ],
+      "dependency_ids": [
+        "K1"
+      ],
+      "normalization": "inward/outward current alias unresolved"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "234f54471c32cc9ad4873cd8042103fa19795909",
+      "section_or_object_id": "Q165/Q166/Q169/Q170/Q171/Q173/Q177–Q179",
+      "source_status": "frozen mathematical source; literal Q171 sign needs convention audit"
+    },
+    {
+      "source_id": "PACHNER",
+      "url_or_repo_path": "experiments/pachner-state-transport/README.md",
+      "version_or_commit": "234f54471c32cc9ad4873cd8042103fa19795909",
+      "section_or_object_id": "v0.1 §1→4 integral chain transport and unit norm1→4",
+      "source_status": "read-only established exact conditional source"
+    },
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "234f54471c32cc9ad4873cd8042103fa19795909",
+      "section_or_object_id": "v1.0 §§1–3 native A=d−dT, signed S4, unit Euclidean",
+      "source_status": "read-only native formal K4 evolution"
+    },
+    {
+      "source_id": "CURRENT",
+      "url_or_repo_path": "experiments/pachner-current-metric/README.md",
+      "version_or_commit": "234f54471c32cc9ad4873cd8042103fa19795909",
+      "section_or_object_id": "v0.1 positive diagonal metric gate and transverse modes",
+      "source_status": "read-only current limitation"
+    },
+    {
+      "source_id": "LOCAL",
+      "url_or_repo_path": "experiments/pachner-local-jump-current/README.md",
+      "version_or_commit": "234f54471c32cc9ad4873cd8042103fa19795909",
+      "section_or_object_id": "v0.1 masked native Hasse current and shell-fix obstruction",
+      "source_status": "separate 2-to-3 geometry; not directly transplanted"
+    },
+    {
+      "source_id": "EVENT",
+      "url_or_repo_path": "experiments/qpb1-native-events/EVENT_CONTRACT.md",
+      "version_or_commit": "234f54471c32cc9ad4873cd8042103fa19795909",
+      "section_or_object_id": "v1.0 observer added; physical clock OPEN",
+      "source_status": "no source-selected event or physical time"
+    }
+  ],
+  "assumptions": [
+    "Use ascending integral incidence, Q169 A=d−d^T, unit Euclidean on each fixed real carrier; D²=0",
+    "Grade-preserving old boundary identity on 1→4 transport, unique top fundamental-chain column",
+    "Special source-free prepared postevent shell face cycle b=∂e_parent/2 has zero old top amplitude",
+    "Switching the active carrier K0→K1 is EXTERNALLY POSTULATED; no source event/time gate",
+    "Q173 face masks are originally readout controls; promoting to modified B3 is separate hypothetical branch",
+    "The literal Q171 plus-current formula may use an inward/outward sign alias; do not rewrite frozen source"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact integer chain map, Gram, B3 rank",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "all-state Q165 defect and maximal isometric shell"
+    },
+    {
+      "technique": "exact Krylov two-mode closure, signed S4 covariance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "find reservoir-free postevent shell-to-new-top transfer and recurrence"
+    },
+    {
+      "technique": "exhaustive masked boundary nilpotency",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "1024 masks, four full S4 invariants, two retain d²=0 if mask becomes B3"
+    },
+    {
+      "technique": "direct signed current witness",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "test ledger Q171 literal sign against native A=d−dT using same B3"
+    },
+    {
+      "technique": "cross-carrier admission identifiability",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare valid old/new native continuations of common shell initial state"
+    },
+    {
+      "technique": "physical SI conversion",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no physical clock or metric and target-blind native task"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "old chain15, new chain29; F top coefficients±1 across four children; Gram diag(1^14,4)",
+    "reduced_expression": "||Fx||²-||x||²=3*c_parent_top²; b=∂e/2, w=−F3e/2; new stock sin²u",
+    "factor_origins": [
+      "4 simplex top child coefficients and one parent top",
+      "normalizing oriented outer4 faces by 1/2",
+      "10 new triangular faces =4 outer+6 inner, 2^10 binary masks"
+    ],
+    "factorization": "14 original shell modes +1 parent top; 1024=2^10, exact nilpotent masks2",
+    "divisibility_gcd_lcm": "no Planck/clock arithmetic imported"
+  },
+  "clock_receipt": {
+    "clock_type": "native formal dimensionless u, not physical time",
+    "modulus": null,
+    "residue_convention": "N/A",
+    "update_rule": "K0 x'=A0x vs K1 x'=A1x, carrier selection OPEN",
+    "initial_phase": "unit shell b common to both complexes",
+    "coupling": "native signed face-top incidence after K1 assumed",
+    "period_claim": "old period π, refined period2π for specific invariant 2D shell preparation; no SI time",
+    "physical_unit_map": "NONE"
+  },
+  "dynamics_readout": {
+    "state_space": "real K0 R15 and postevent K1 R29",
+    "generator_or_update": "A0=D0−D0^T, A1=D1−D1^T; no generator on varying K",
+    "initial_boundary_conditions": "x=b as normalized original outer face 2-cycle, new top empty",
+    "conservation_and_sources": "within K1 S_shell=cos²u, S_top=sin²u; total=1; no added reservoir; generic F top support defect+3c3²",
+    "projection_and_kernel": "old shell14 exact isometry; old top1 obstructs; B3 new rank4",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "user authorized native cross-complex conservative admission test following known one-to-four norm mismatch; no physical target",
+    "known_targets": [
+      "source Q165 old top1→new top4",
+      "source Q166/Q173 face current and Q169 within-complex skew"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "special normalized shell preparation chosen constructively; not source-selected event",
+      "all-off mask hypothetical changed generator"
+    ],
+    "search_domain_and_budget": "15×15 and29×29 exact matrices,4 child tops, all 1024 binary face masks, all24 signed S4 actions;11 local tests",
+    "selection_criterion": "exact top transport isometry under chain constraint or conditional existing Q169 conservative transfer; selected event and current direction",
+    "baseline": "ordinary old K0 continuation, boundary-compatible F and all-on Q169 K1"
+  },
+  "calculation_steps": [
+    "Build K0 and K1 oriented boundaries and unit-metric A0/A1, confirm D²=0",
+    "Construct F and exact F^TF=diag(I14,4), derive full-state Q165 defect3 c_oldtop² and B3 injectivity",
+    "Prepare common shell b=B3old e/2, compute exact w=A1b=−F3e/2 and A1w=−b, solve x(u) exactly",
+    "Compare old native A0²b=−4b versus new A1²b=−b to exhibit incompatible continuations without chosen event",
+    "Verify 24 signed S4 orientation covariance of b,w and exact native stock/current",
+    "Distinguish Q173 masked diagnostic from hypothetical B3_h, enumerate all1024 masks, only all off/on nilpotent",
+    "Compare direct Q169 inward top-core derivative −2B3 product to Q171 printed +2B3 product on explicit unit-amplitude witness",
+    "Conclude postevent support transfer possible without new reservoir for shell-only preparation; generic occupied top and event admission remain obstructed"
+  ],
+  "result": {
+    "exact_expression": "F^TF−I15=3eeᵀ; x_new(u)=cos(u)b+sin(u)w, shell cos²u, new top sin²u; only2 of1024 face masks preserve B2 diag(h) B3=0",
+    "approximation": null,
+    "units": "dimensionless native support and formal parameter u",
+    "precision_and_error": "full exact integer/rational SymPy and algebraic trig consequence, no numerical fitting",
+    "scope": "1→4 K4 exact source unit metric, given event and special shell preparation, not universal cross-complex law",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact full 15D/29D primary chain and postevent flow",
+      "command_or_proof_path": "UD_K4_CROSS_COMPLEX_ADMISSION_v1.7.zip/cross_complex_audit_v17.py",
+      "source_revision": "234f54471c32cc9ad4873cd8042103fa19795909",
+      "actual_result": "PASS F chain, all-state norm defect, native 2D oscillator, Q171 sign witness",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate exhaustive mask/S4 program",
+      "command_or_proof_path": "UD_K4_CROSS_COMPLEX_ADMISSION_v1.7.zip/mask_current_v17.py",
+      "source_revision": "same",
+      "actual_result": "PASS 1024 binary masks, 24 signed S4 checks, only all-off/all-on nilpotency",
+      "review_relationship": "same constructor independent-form"
+    },
+    {
+      "method": "eleven exact regression tests",
+      "command_or_proof_path": "UD_K4_CROSS_COMPLEX_ADMISSION_v1.7.zip/test_cross_complex_v17.py",
+      "source_revision": "same",
+      "actual_result": "PASS 11/11 local",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Arbitrary occupied old top amplitude violates unchanged unit Q165 stock under unique boundary-compatible F",
+    "Postevent K1 shell face state can transfer support natively without reservoir, disproving overbroad no-transfer claim",
+    "Q173 h=0 masked current can report no flux even though unmasked A1 carries nonzero face-to-top stock",
+    "Promoting nonconstant 10-face mask into only B3 breaks d²=0; source Q173 does not select all-off vs all-on",
+    "At same common shell state, K0 and K1 native continuations have different formal frequency; no source chooses carrier switch",
+    "Literal Q171 sign differs from direct Q169 derivative when boundary B3 basis is shared; direction convention OPEN"
+  ],
+  "limitations": [
+    "Current collision might be sign alias, not mathematical falsification of source if Q171 uses opposite current direction",
+    "No physical event/trigger, retention, energy source, SI clock/metric or Planck bridge",
+    "Masked B3 modification and special source shell state are conditional demonstration, not universal native selected matter",
+    "Local exact constructor checks are not independent non-constructor peer review; physical promotion0"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/ktff-20261103-01/cross-complex-017/manifest.json"
+  ],
+  "next_discriminant": "Reconcile Q171 signed current direction with Q169 under identical oriented basis, then source a local cross-complex admission predicate and generic-state Q165 stock/interface receipt; if absent freeze autonomous physical refinement claim while retaining exact postevent native oscillator."
+}

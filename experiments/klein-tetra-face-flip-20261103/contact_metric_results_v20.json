@@ -1,0 +1,104 @@
+{
+  "version": "v2.0",
+  "date": "2026-11-05/06",
+  "status": "PASS_EXACT_CONDITIONAL_SCOPED_NO_GO",
+  "physical_promotion": 0,
+  "source": {
+    "main_checked": "7ef45805563b47cbe1e2f34bb9e6e97ce5f5c962",
+    "task": "klein-tetra-face-flip-20261103",
+    "claim_ref_sha": "667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4",
+    "issue338": "OPEN_NO_COMMENTS_NO_AUTHORIZED_DECISION",
+    "original_ledger": "v0.39 Q165–Q171/Q173/Q177–Q179 unchanged"
+  },
+  "native_test": {
+    "carrier_old": "C15 unit Euclidean",
+    "carrier_new": "C29 unit Euclidean",
+    "generator": "A=D-D^T",
+    "shell_dimension": 14,
+    "born_dimension": 15,
+    "original_subdivision": "D1 F=F D0, integral degree one",
+    "new_cone_gram": "I14",
+    "old_removed_top_gram": "4bb^T",
+    "rank_new_cone": 14,
+    "rank_old_top": 1,
+    "shared_acceleration_mismatch": "4bb^T-I14",
+    "spectrum": {
+      "3": 1,
+      "-1": 13
+    },
+    "mismatch_squared_frobenius": 22
+  },
+  "local_contacts": {
+    "any_independent_real_cone_weights_unit_born_metric": {
+      "minimum_squared_frobenius": 12,
+      "unavoidable_cross_face_ordered_terms": 12,
+      "fully_exact_second_jet_match": false
+    },
+    "positive_definite_born_metric_with_one_to_one_cone_support": {
+      "exact_match": false,
+      "reason": "rank(C_w^T H C_w)=rank(C_w), at most one active column would be required, incompatible with four face-supported old rank-one Gram"
+    },
+    "Q173_like_four_outer_face_masks": {
+      "count": 16,
+      "min_squared_frobenius": 22,
+      "max_squared_frobenius": 26,
+      "unique_best": "all-on, still nonzero"
+    },
+    "scalar_rate_reparameterization": {
+      "universal_first_jet_forces_lambda_at_zero": "1",
+      "second_jet": "M+lambda_prime(0) A_shell",
+      "symmetric_skew_no_go": true
+    }
+  },
+  "candidate_changed_rational_boundary": {
+    "selected_by_source": false,
+    "scope": "unit metric new rational Dstar, non-Hasse coherent rank1 contact",
+    "new_born_coupling": "Cstar=-2 h b^T, h=C b, ||h||=1",
+    "new_contact_rank": 1,
+    "new_contact_gram": "4bb^T",
+    "new_Dstar_squared_zero": true,
+    "full_S4_covariance": 24,
+    "new_Sstar_unit_isometry": true,
+    "new_Astar_Sstar_equals_Sstar_A0": true,
+    "new_Dstar_Sstar_equals_Sstar_D0": true,
+    "original_integer_degree_one_F_used": false,
+    "original_native_D1_used": false,
+    "half_integral_coefficients": true,
+    "added_non_Hasse_unordered_pairs": 12,
+    "changed_unordered_coupling_pairs": 26
+  },
+  "candidate_changed_metric": {
+    "selected_by_source": false,
+    "barycentric_P": "center vertex 4 -> (e0+e1+e2+e3)/4 via exterior powers",
+    "P_F": "I15",
+    "P_D1": "D0 P",
+    "Q": "I29-FP",
+    "H": "P^T P+Q^TQ",
+    "H_positive_definite": true,
+    "metric_preserves_original_simplicial_D1": true,
+    "metric_preserves_original_integral_degree_one_F": true,
+    "F_transpose_H_F": "I15",
+    "A_H": "D1-H^-1 D1^T H",
+    "A_H_transpose_H_plus_H_A_H": "0",
+    "A_H_F": "F A0",
+    "signed_S4_checked": 24,
+    "nonzero_metric_offdiagonal_unordered_pairs": 52,
+    "changed_generator_directed_entries": 50,
+    "added_non_Hasse_directed_entries": 12,
+    "native_chi": "lambda*(lambda^2+1)*(lambda^2+5)^13",
+    "changed_chi": "lambda*(lambda^2+4)^7*(lambda^2+5)^7",
+    "Q165_unit_metric_changed": true,
+    "Q169_numerical_generator_changed": true
+  },
+  "verification": {
+    "constructor_exact_tests": "14/14 PASS",
+    "independent_14D_rank_proof": "PASS",
+    "matrix_scripts_reproduced": "PASS",
+    "archive": "UD_K4_CROSS_COMPLEX_CONTACT_METRIC_v2.0.zip",
+    "archive_size_bytes": 32091,
+    "archive_files": 19,
+    "archive_sha256": "a8bf4b76dd692cb73534e67bc5d434050e4f9cdfb89e5a376d9296bd0ec238d4",
+    "nonconstructor_review": "NOT_RUN"
+  },
+  "conclusion": "No source-admitted metric/contact/controller identifies the old/new Q170 current histories under original Q169; alternative exact mathematical completions change explicit assumptions, and do not establish physical refinement admission."
+}

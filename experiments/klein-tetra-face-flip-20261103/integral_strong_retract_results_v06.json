@@ -1,0 +1,71 @@
+{
+  "version": "v0.6",
+  "source": "assumed Klein×I 72-tetrahedron with orientation local coefficients rho",
+  "simplicial_dims": [
+    18,
+    102,
+    156,
+    72
+  ],
+  "coarse_cellular_dims": [
+    2,
+    7,
+    7,
+    2
+  ],
+  "minimal_cellular_dims": [
+    2,
+    5,
+    4,
+    1
+  ],
+  "prior_60D_dims": [
+    4,
+    14,
+    20,
+    15,
+    6,
+    1
+  ],
+  "local_forward_subdivision_matrix_nonzeros": [
+    2,
+    14,
+    48,
+    72
+  ],
+  "Morse_unit_cancellations": {
+    "between_0_1": 16,
+    "between_1_2": 79,
+    "between_2_3": 70,
+    "total": 165,
+    "residue": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "minimal_CW_unit_cancellations": 3,
+  "total_unit_cancellations": 168,
+  "integer_chain_maps": true,
+  "P_S_identity": true,
+  "integral_chain_homotopy": true,
+  "integral_H0_Z2_preserved": true,
+  "integer_composite_to_60D_ranks": [
+    2,
+    5,
+    4,
+    1
+  ],
+  "strict_geometric_locality_reverse_map": "OPEN_NOT_PROVEN",
+  "metric_or_dynamical_intertwiner": false,
+  "physical_promotion": 0,
+  "local_certificate": {
+    "matrix_json_sha256": "3f7ffd1a1902da74055a3e6c1f969a8ff7101e60804a175e4a022d4d997b9a32",
+    "archive_sha256": "de4227b9b92b68d853ee5976b939c2ac7ff528e7add5dfe7a9451e32815aea41",
+    "archive_filename": "KLEIN_INTEGRAL_CHAIN_RETRACTION_v0.6.zip",
+    "source_files_in_archive": true,
+    "byte_identical_to_github_scripts": false
+  },
+  "status": "PASS_EXACT_CONDITIONAL"
+}

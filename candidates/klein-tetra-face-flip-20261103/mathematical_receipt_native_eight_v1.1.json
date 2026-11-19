@@ -1,0 +1,320 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-NATIVE-EIGHT-PROJECTORS-011",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Can the original 15D K4 signed incidence and opposite-edge geometry define eight orthogonal parity-compatible projectors, without adding a Hilbert fiber, and how does the exact refinement leakage act on them at two levels?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "CANDIDATE",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "K4_CHAIN_C15",
+      "symbol": "C",
+      "object_type": "real filled K4 graded simplicial chain",
+      "definition": "C0⊕C1⊕C2⊕C3 with dimensions (4,6,4,1)",
+      "domain": "R15",
+      "codomain": null,
+      "coefficient_domain": "Z signed incidence, R amplitudes",
+      "units": "formal unitless coefficient",
+      "basis_orientation": "ascending simplices",
+      "metric_measure": "unit Euclidean H=I",
+      "origin": "read-only source QPB1 local generators",
+      "exact_expression": "J=(d-d^T)/2, J³=-J, active rank14",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "unit_metric"
+      ],
+      "dependency_ids": [],
+      "normalization": "native source rate2"
+    },
+    {
+      "object_id": "THETA",
+      "symbol": "Theta",
+      "object_type": "finite opposite-edge parity label set",
+      "definition": "F2³ with opposite pairs A=(01,23), B=(02,13), C=(03,12)",
+      "domain": "finite three-bit words",
+      "codomain": null,
+      "coefficient_domain": "F2",
+      "units": "none",
+      "basis_orientation": "three opposite-edge-pair indices",
+      "metric_measure": "no Hilbert metric from label count",
+      "origin": "frozen coefficient ledger P04",
+      "exact_expression": "|Theta|=2³=8",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "none"
+    },
+    {
+      "object_id": "NATIVE_Q",
+      "symbol": "Qtheta",
+      "object_type": "real orthogonal projectors constructed on native C15",
+      "definition": "Q000=hhT, Q(weight1)=Epair EpairT, Q(weight2)=J Epair EpairT JT, Q111=vvT+(Jv)(Jv)T",
+      "domain": "C15",
+      "codomain": "C15",
+      "coefficient_domain": "Q exact matrices",
+      "units": "none",
+      "basis_orientation": "ascending K4 simplices and source opposite-edge pair labels",
+      "metric_measure": "unit Euclidean",
+      "origin": "new source-constructible mathematical object; parity-label interpretation chosen",
+      "exact_expression": "sum Q=I15; pairwise Qtheta Qphi=delta Qtheta; ranks 1,2×7",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1",
+        "LEDGER"
+      ],
+      "assumption_ids": [
+        "chosen_Theta_identification",
+        "unit_metric"
+      ],
+      "dependency_ids": [
+        "K4_CHAIN_C15",
+        "THETA"
+      ],
+      "normalization": "native J=A/2"
+    },
+    {
+      "object_id": "R01",
+      "symbol": "R01",
+      "object_type": "native fine-image generator leakage",
+      "definition": "R01=A1 F01−F01 G01^-1 F01T A1 F01",
+      "domain": "C15",
+      "codomain": "C29",
+      "coefficient_domain": "Q exact",
+      "units": "inverse formal native u",
+      "basis_orientation": "oriented K4 1-to-4 simplex bases",
+      "metric_measure": "unit C29 and induced G01 on C15",
+      "origin": "source v0.9 refinement; v1.1 gram identity verified",
+      "exact_expression": "R01T R01=I15−Q111; singular values 1×13,0×2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "K4REF"
+      ],
+      "assumption_ids": [
+        "unit_metric"
+      ],
+      "dependency_ids": [
+        "NATIVE_Q"
+      ],
+      "normalization": "unit fine incidence"
+    },
+    {
+      "object_id": "R12_R02",
+      "symbol": "R12,R02",
+      "object_type": "next-level and direct-composite leakage operators",
+      "definition": "R12:C29→C85, R02:C15→C85",
+      "domain": "different typed real chain spaces",
+      "codomain": "different typed real chain spaces",
+      "coefficient_domain": "Q",
+      "units": "inverse native formal u",
+      "basis_orientation": "nested centroid simplex bases",
+      "metric_measure": "fine-unit induced metrics",
+      "origin": "source v0.9, tested with inherited and original parent projectors",
+      "exact_expression": "norm² R12=52, R02=151/4; inherited 27 + complement25 at K1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "K4REF"
+      ],
+      "assumption_ids": [
+        "unit_metric"
+      ],
+      "dependency_ids": [
+        "R01"
+      ],
+      "normalization": "no per-level extra gain"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "v1.0 §§1–3, native 15D chain, signed S4, J=A/2",
+      "source_status": "read-only established source mathematics"
+    },
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "section_or_object_id": "P01–P06, Theta=8 opposite-edge parity labels",
+      "source_status": "read-only count; does NOT define projector label map"
+    },
+    {
+      "source_id": "K4REF",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/K4_MULTILEVEL_METRIC_CLOCK_v0.9.md",
+      "version_or_commit": "5a697d922779d3f96e0811663938a0c7dc47a60b",
+      "section_or_object_id": "integral K0→K1→K2 chain maps, residual norm13,52,151/4",
+      "source_status": "prior scoped exact Discovery calculation"
+    },
+    {
+      "source_id": "PREV",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/PARITY_13_OVER_8_SOURCE_AUDIT_v1.0.md",
+      "version_or_commit": "a264605f8534ea304bedc656f66ab72d983f0f6d",
+      "section_or_object_id": "auxiliary uniform-fiber lift; source native projector previously not constructed",
+      "source_status": "prior audit preserved, amended by current source-bound native projector construction"
+    }
+  ],
+  "assumptions": [
+    "H=I unit real K4 chain metric and J=A/2 with formal native rate2",
+    "Use source opposite-edge pairs for coordinate embeddings E_A,E_B,E_C",
+    "The map from harmonic, edge, transported-edge and top sectors to Theta bit patterns is a new candidate interpretation, not a source-defined constitutive polarity law",
+    "Normalize first-refinement leakage using fine unit metric and induced Gram G01=diag(1^14,4), no fitted rate",
+    "The eight-label arithmetic mean is a chosen statistic, distinct from rank-weighted mean or physical energy average"
+  ],
+  "technique_plan": [
+    {
+      "technique": "signed chain/edge-pair geometry",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "explicit Q from native edges and J, no new fiber"
+    },
+    {
+      "technique": "exact orthogonal resolution and S4 covariance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "all projector products/ranks and 24 full signed actions"
+    },
+    {
+      "technique": "native generator commutators",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "individual-sector exchange versus invariant 4D pair sums"
+    },
+    {
+      "technique": "independent refinement matrices",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify full R01/R12/R02 against earlier distinct v0.9 implementation"
+    },
+    {
+      "technique": "exact partial-isometry and spectral identity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "R01T R01=I−Q111, rank13, singular values"
+    },
+    {
+      "technique": "second-refinement inherited/complement audit",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "27 inherited leakage +25 on 14 new modes"
+    },
+    {
+      "technique": "Planck calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no independently sourced physical length or action bridge"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "projector ranks 1 + 7×2 =15; first sector scores 1+6×2+0=13; equal-label mean13/8",
+    "reduced_expression": "second step 3+3×4+3×15/4+3/4=27 and complement25 gives52; direct composite4+3×6+3×5+3/4=151/4",
+    "factor_origins": [
+      "source 15D K4 harmonic/edge/top decomposition",
+      "3 opposite edge pairs doubled by native J images",
+      "source 1→4 residual Gram equals I−top 2D projector"
+    ],
+    "factorization": "13 prime, 8=2³, rank13=15−2; no physical length identification",
+    "divisibility_gcd_lcm": "eight-label mean is not rank-weighted 13/15"
+  },
+  "clock_receipt": {
+    "clock_type": "formal dimensionless K4 native u",
+    "modulus": 2,
+    "residue_convention": "candidate three-bit Theta labels, not an autonomous finite Hamming event",
+    "update_rule": "x'=A x, J exchanges each edge pair and transported pair at native rate2",
+    "initial_phase": "arbitrary C15 real state",
+    "coupling": "source A=d−dT on parent; refinement residuals R",
+    "period_claim": "top/native active angular rate2, no SI seconds",
+    "physical_unit_map": "NONE"
+  },
+  "dynamics_readout": {
+    "state_space": "real C15 parent; C29/C85 refined; no added fiber",
+    "generator_or_update": "source native A on parent, partial-isometry leakage Gram and two refined residuals",
+    "initial_boundary_conditions": "filled K4 and centroid splits; no physical boundary flux",
+    "conservation_and_sources": "xT R01T R01 x conserved under parent A, but not composite R02T R02; not energy",
+    "projection_and_kernel": "Q111 2D nullspace of R01, complementary 13D isometry; inherited second level only 15D of 29D",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "user requested native eight sectors and 13/8 after prior target exposed; sector assignment exploratory",
+    "known_targets": [
+      "13 native first leakage norm squared",
+      "8 opposite-edge parity states",
+      "Planck numerical comparison previously discussed"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "candidate mapping bit patterns to harmonic/edge/JE/top rank sectors chosen after exposure",
+      "unweighted averaging over eight labels, not a source-selected sector probability law"
+    ],
+    "search_domain_and_budget": "8 exact native Q, 24 signed S4 actions, 3 refinement residuals, 8 local tests, 2 selected normalization controls",
+    "selection_criterion": "orthogonality, completeness, covariance, dynamics, exact residual Gram, refinement stability",
+    "baseline": "previous v1.0 added R8 uniform lift and no native Q identification"
+  },
+  "calculation_steps": [
+    "Build native C15 signed boundary A, J=A/2 and harmonic h and oriented top v",
+    "Construct 3 opposite-edge embeddings E_p and J images; prove orthogonality by exact matrix products; Q rank1+7rank2",
+    "Check resolution sum I and signed S4 covariance under all 24 vertex permutations",
+    "Check J swaps each weight1/weight2 pair and each 4D sum is A invariant, but individual pair projectors are not",
+    "Build actual R01:C15→C29, independently verify exact R01T R01=I−Q111 and score distribution 1,2×6,0",
+    "Cross-check full R01,R12,R02 matrices against independently coded v0.9 refinement",
+    "Lift parent Q via T=F01G01^-1/2 to K1; compute inherited 27 and 14D complement25 of R12 total52",
+    "Compute R02 sector scores 4,6×3,5×3,3/4, Gram/A commutator rank14, mean151/32",
+    "Check generator gain and measurement-metric scaling and separate Planck physical bridge gap"
+  ],
+  "result": {
+    "exact_expression": "Qtheta resolution I15 with ranks 1,2×7; R01T R01=I−Q111, trace13, scores 1,2×6,0, mean13/8; second level 27 inherited+25 extra; composite mean151/32",
+    "approximation": null,
+    "units": "native formal squared amplitude, not length",
+    "precision_and_error": "integer and rational exact SymPy; eight local pass",
+    "scope": "single native unit metric C15 K4 and actual 1→4→16 refinements, label assignment candidate",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact native 8 projector construction",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/NATIVE_EIGHT_PROJECTORS_v1.1.py",
+      "source_revision": "698d6d66147131d43e364a1736ca07ad0f3fa9d4",
+      "actual_result": "PASS equivalent local code, complete orthogonal resolution, all 24 signed S4",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent source matrices prior v0.9",
+      "command_or_proof_path": "K4_NATIVE_EIGHT_PROJECTOR_13_OVER_8_v1.1.zip/test_native_eight_v11.py",
+      "source_revision": "5a697d922779d3f96e0811663938a0c7dc47a60b",
+      "actual_result": "PASS full R01/R12/R02 matrix equality with separately implemented v0.9 script",
+      "review_relationship": "same constructor, alternative implementation"
+    },
+    {
+      "method": "eight local exact regression checks",
+      "command_or_proof_path": "K4_NATIVE_EIGHT_PROJECTOR_13_OVER_8_v1.1.zip/test_native_eight_v11.py",
+      "source_revision": "same",
+      "actual_result": "PASS 8/8; not a non-constructor peer review",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Q labels are not eight individually invariant native dynamical states: J maps weight1 ↔ weight2",
+    "Sector leakage scores are unequal (1,2×6,0); mean13/8 depends on unweighted label counting",
+    "At K1 the transported Q resolution covers 15 of 29 modes; 14 new modes carry leakage25 not assigned to eight inherited labels",
+    "Composite R02 Gram does not commute with A0 (rank14) or three weight2 Q (rank4 each)",
+    "Normalizing generator or metric changes measured leakage average",
+    "No physical Planck unit bridge, no experimentally registered predictor"
+  ],
+  "limitations": [
+    "Parity-label-to-subspace assignment is source-constructible but not specified as constitutive Theta law",
+    "Unit metric and J normalization required; nonuniform metrics need fresh proof",
+    "Full refined 29D parity projector and evolving packet selection not supplied",
+    "Non-constructor review NOT_RUN; physical promotion 0"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Investigate whether a source-stated parity readout selects the rank1+7rank2 native Q correspondence, then derive a complete refined-carrier projector law and independently observable scalar across refinement; Planck length remains OPEN."
+}
