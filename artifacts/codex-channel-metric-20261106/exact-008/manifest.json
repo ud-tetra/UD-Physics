@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-008",
+  "created_at": "2026-11-15T23:33:27.833985+00:00",
+  "evidence": "EXACT",
+  "summary": "Symmetric work probe, alternate bound and cancellation witness",
+  "command": "python3 experiments/ud-channel-metric-bridge/symmetric_probe_replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "32d6761596121fc49f84c2c6a596e6aea222861e",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "symmetric_probe_replay.py",
+      "path": "inputs/001-symmetric_probe_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/symmetric_probe_replay.py",
+      "sha256": "b8e9238d876d88eae335506dd0085a0e96d12eb1b1bb1b177513bfb213f646b4",
+      "size_bytes": 1265
+    }
+  ],
+  "files": [
+    {
+      "path": "files/symmetric_probe_results.json",
+      "sha256": "dff4aa59369630fc218c30d7298332493f5302cdafc860f92c82888b901b38cb",
+      "size_bytes": 195
+    }
+  ]
+}

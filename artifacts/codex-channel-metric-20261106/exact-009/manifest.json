@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-009",
+  "created_at": "2026-11-15T23:35:37.595937+00:00",
+  "evidence": "EXACT",
+  "summary": "Joint work residual rank and shared-error polygon",
+  "command": "python3 experiments/ud-channel-metric-bridge/joint_probe_replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "7f3b7a202625843ec55559acdced3c2455c35d45",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "joint_probe_replay.py",
+      "path": "inputs/001-joint_probe_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/joint_probe_replay.py",
+      "sha256": "e68f5a77840074495387a190cc25d71a351161c7dd004e0891d5f012dcbe9bca",
+      "size_bytes": 1971
+    }
+  ],
+  "files": [
+    {
+      "path": "files/joint_probe_results.json",
+      "sha256": "9cbf830a7be8517cd04b5f9a2fe435613f6f99126b3cbef9f4c5ce17498dea02",
+      "size_bytes": 352
+    }
+  ]
+}

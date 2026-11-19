@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-002",
+  "created_at": "2026-11-06T19:05:09.813926+00:00",
+  "evidence": "EXACT",
+  "summary": "Symmetric signed work ratios, gain ambiguity and mixed control",
+  "command": "python3 experiments/ud-channel-metric-bridge/work_replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "668c5970888baadae13b7bd174518380426bacf0",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "work_replay.py",
+      "path": "inputs/001-work_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/work_replay.py",
+      "sha256": "2adb4b55b7605b322779f2a7f20531fb3956a342a2d21f133f80ba91f3b99584",
+      "size_bytes": 2098
+    }
+  ],
+  "files": [
+    {
+      "path": "files/work_results.json",
+      "sha256": "22bccaa64751b4f7aa195c962103f9b20b1f12bc1f87f11ab0caaf73c469eaab",
+      "size_bytes": 782
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+# Handoff, 2026-11-06
+
+Claim 577b2d5b4396066238b735b3e75b275d2349e427; base 9db0edb.
+The draft v1.1 source identifies 13 as first-refinement leakage rank, not
+depth; the parity label assignment is candidate. No physical data or fit.
+The signed replay reconstructs rank 13 and all 192 frame/sector covariance
+checks. The first derivative resolves the centroid null with slope −2 in
+the declared outward-edge convention; the initial +2 fixture was corrected
+by direct incidence. The pinned exact result and executable are captured.
+The v2.1 same-generator family blocks inference of metric scale from fixed
+signed trajectories. Next: an independently specified newborn support port.
+Non-constructor review and physical measurement not run.
+
+## 2026-11-06T19:05:09.814268+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-002 (EXACT): Symmetric signed work ratios, gain ambiguity and mixed control
+
+## 2026-11-06T19:05:09.863417+00:00
+
+Checkpoint (handoff): Symmetric work ratio identifies t conditionally; mixed centroid receipt distinguishes the uniform control at t=1.
+
+Next: Audit a realizable work and state port for common gain, reversibility and mode preparation.
+
+## Work port follow-up
+
+Resumed exact published head 668c597 under the existing claim. Three
+symmetry-invariant vertex preparations and sign-reversed work receipts
+isolate t if work is a common calibrated quadratic energy. The mixed
+centroid receipt rejects the uniform-energy null even when t=1 ties the
+pure-port ratio. Relative preparation gain is a confound. No apparatus
+or physical target admitted. See WORK_PORT_v0.1.md and exact-002.
+
+## 2026-11-06T19:08:56.298555+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-003 (EXACT): Two-port capacitor inverse and deterministic classification margin
+
+## 2026-11-06T19:08:56.351001+00:00
+
+Checkpoint (handoff): Two passive capacitor fixtures implement the mixed work control; sufficient certified error bound 1857/20000 per work receipt.
+
+Next: Construct or simulate a measurement chain and independently certify the signed charge and loss bounds.
+
+## Capacitor emulator follow-up
+
+Resumed exact head 025c9f0 with the held claim. Derived passive
+two-terminal fixtures for t=1 and the uniform control. Both tie on pure
+work ratio; opposite signs of W_c−W_y survive the declared endpoint
+and work budgets. The fixtures implement the hypotheses by design.
+Signed charge and loss certificates remain unmeasured.
+
+## Acquisition replay follow-up
+
+Resumed published head 5438685 under the held claim. Exact rational
+two-port ramps model shunt loss, gain error and voltage/current skew.
+The classifier receives observations and synthetic certificates only.
+64 valid cases classified, 14 fault/boundary cases abstained. No
+hardware noise or calibration measurements were collected.
+
+## 2026-11-06T19:15:19.832530+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-004 (EXACT): Synthetic signed acquisition, error intervals and abstention controls
+
+## 2026-11-06T19:15:19.880796+00:00
+
+Checkpoint (handoff): Exact synthetic acquisition: 64 correct signs and 14 required abstentions.
+
+Next: Freeze bench acceptance protocol and independently certify the real charge, timebase and energy closure channels.
+
+## Blinded bench protocol
+
+Resumed e3ec2d3 with the held claim. Froze 16 coded blocks and the
+certificate, closure, interval, and run scoring rules. Dry-run controls
+verify both score thresholds and rejection of a mismatched key or seal.
+Bench assignment and independent hardware certificates are still open.
+
+## 2026-11-06T19:24:52.463609+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-005 (EXACT): Blinded bench workflow synthetic controls
+
+## 2026-11-06T19:24:52.520570+00:00
+
+Checkpoint (handoff): Bench protocol and exact scorer frozen; synthetic workflow controls passed.
+
+Next: Obtain independent protocol review, instrument certificates and concealed bench fixture assignment.
+
+## Independent review and qualification handoff
+
+Resumed 3fab543 under the held claim; live main 9360f55. PR discussion
+had no review records. Converted all frozen limits to SI and derived
+497/320 nJ of admissible observed round-trip imbalance at maximum
+integration uncertainty. Prepared an independent reviewer response
+and evidence checklist. No hardware qualification or assignment.
+
+## 2026-11-06T19:29:51.932424+00:00
+
+Checkpoint (handoff): Reviewer packet and SI qualification gates prepared; no empirical certificates or reviewer attestation.
+
+Next: Have a non-constructor replay the pinned scorer and attach measured charge, timing, integration, recovery and fixture certificates.
+
+## Independent review intake
+
+Resumed cef8f37 under the held claim. Verified all three submitted hashes
+against the reviewed 3fab543 baseline and reproduced the synthetic output.
+Recorded the external disposition UNABLE TO VERIFY for physical qualification
+alongside verified protocol scope. No measured gate, custody execution, or
+physical bridge was accepted. Live main checked at 5c5c852.
+
+## 2026-11-06T19:35:04.480629+00:00
+
+Checkpoint (handoff): Independent protocol review intake recorded; physical qualification remains blocked.
+
+Next: Ingest uncoded hardware qualification data and audit the measured gates.
+
+## Hardware hold and independent mathematics
+
+Logged missing measured calibration evidence at 322280a. Derived exact
+work-plane reconstruction, determinant corner certificate and fourth
+polarization discriminator. No changes to the frozen bench or scorer.
+
+## 2026-11-06T19:50:39.336167+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-006 (EXACT): Work Gram reconstruction and uncertainty corners
+
+## 2026-11-06T19:50:39.392767+00:00
+
+Checkpoint (handoff): Hardware hold logged; exact plane work-form reconstruction and fourth-preparation discriminator derived.
+
+Next: Independently review the polarization check and decide a separately frozen closure extension; keep hardware hold.
+
+## Fourth residual (2026-11-10)
+
+Sharp box radius 17513/40000 W* under the transferred planning budget.
+A half-W* true departure cannot be guaranteed detectable with that box.
+The two existing fixture forms are both quadratic nulls. No bench amendment.
+
+## 2026-11-10T18:44:57.451266+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-007 (EXACT): Fourth-work residual box and planning budget
+
+## 2026-11-10T18:44:57.525119+00:00
+
+Checkpoint (handoff): Sharp residual bound derived; present budget does not guarantee half-W* departure detection.
+
+Next: Derive a more efficient symmetric probe design or a certified joint error bound.
+
+## Symmetric probe (2026-11-15)
+
+Restored isolated draft head 32d6761 from GitHub; claim 577b2d5 held.
+Square work probe at the unit terminal corners has tenfold response
+to the prior polynomial witness. Null and alternative budgets verified
+exactly. A separate polynomial defeats general dominance. No empirical
+target, no change to frozen bench, and no hardware qualification.
+
+## 2026-11-15T23:33:27.834317+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-008 (EXACT): Symmetric work probe, alternate bound and cancellation witness
+
+## 2026-11-15T23:33:27.901449+00:00
+
+Checkpoint (handoff): Square probe resolves the specified half-reference polynomial departure under conditional budgets; no general dominance.
+
+Next: Build a two-residual rank test for declared departures before any protocol extension.
+
+## Joint probe
+
+Resumed 7f3b7a2 with held claim. Derived full-rank witness map, exact
+shared-receipt polygon, and alternate-side allowance. Half-amplitude
+P and the cancellation mixture are resolved; pure half-amplitude J
+is not guaranteed. No scored bench amendment or hardware qualification.
+
+## 2026-11-15T23:35:37.596285+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-009 (EXACT): Joint work residual rank and shared-error polygon
+
+## 2026-11-15T23:35:37.678761+00:00
+
+Checkpoint (handoff): Both declared witnesses identifiable in exact data; joint error rule resolves tested cancellation but pure J sensitivity remains open.
+
+Next: Search bounded preparations for improved guaranteed sensitivity in the pure J direction.
+
+## Radial pure-J probe
+
+Refreshed main 2ab32f5 and draft bfcad4f, held claim unchanged.
+No imported work bound. A 99-point rational radial search and local
+polynomial bounds certify the simpler 4/5 command ratio for pure
+half-amplitude J. Physical path certificates remain open.
+
+## 2026-11-15T23:49:19.103762+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-010 (EXACT): Pure-J radial search and certified error margin
+
+## 2026-11-15T23:49:19.168660+00:00
+
+Checkpoint (handoff): Pure half-amplitude J resolved conditionally by the radial probe; frozen bench unchanged.
+
+Next: Combine radial and square work to certify a uniform two-witness sensitivity bound.
+
+## Square/radial mixture certification
+
+Resumed 14ca4c6 under the held claim. Three-strip joint criterion and
+rational vertex enumeration bound the remaining overlap region.
+Both pure half-amplitude witnesses are covered; mixed half-amplitude
+coverage fails under the enclosing boxes. No empirical claim.
+
+## 2026-11-15T23:56:40.333375+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-011 (EXACT): Square-radial joint mixture coverage
+
+## 2026-11-15T23:56:40.405194+00:00
+
+Checkpoint (handoff): Uniform sufficient sup-norm amplitude 723/1000; half-amplitude counterexample retained.
+
+Next: Test whether adding the existing y receipt and old residual closes the mixed half-amplitude gap.
+
+## Three-residual coverage
+
+Added the existing y reading to the jointly bounded residuals. Ten
+facet normals certify strict separation of the former counterexample,
+with a smaller mixed half-amplitude overlap still present.
+
+## 2026-11-15T23:59:21.275593+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-012 (EXACT): Three-residual shared-receipt overlap
+
+## 2026-11-15T23:59:21.337679+00:00
+
+Checkpoint (handoff): Adding old y reduces the uniform sufficient amplitude to 633/1000; a half-amplitude ambiguity remains.
+
+Next: Test a gain from a joint Taylor bound on the mixed polynomial before proposing additional readings.
+
+## Direct mixed Taylor bound
+
+Resumed e48b44c. Combined P and J Taylor coefficients before taking
+absolute values, and exhaustively minimized the exact directional score
+over 83 affine segments. Uniform sufficient radius drops to 618/1000;
+the prior (1/20,1/2) overlap persists. Frozen bench unchanged.
+
+## 2026-11-16T00:01:48.237965+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-013 (EXACT): Exact mixed Taylor coverage on the unit amplitude boundary
+
+## 2026-11-16T00:01:48.319958+00:00
+
+Checkpoint (handoff): Direct mixed Taylor bound improves sufficient norm to 618/1000; half-amplitude overlap persists.
+
+Next: Screen charge-bounded seventh preparations by their ability to separate the remaining overlap.
+
+## Seventh preparation screen
+
+Resumed d2483e2 with held claim. Screened the unit charge grid, checked
+six finalists exactly, and reproduced the six-reading control with the
+new quotient method. Best exact candidate (-5/8,1); uniform sufficient
+norm 604/1000. Half-amplitude overlap persists. No bench changes.
+
+## 2026-11-16T00:06:19.618558+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-014 (EXACT): Seventh preparation ranking and exact finalist coverage
+
+## 2026-11-16T00:06:19.671407+00:00
+
+Checkpoint (handoff): Seventh-probe best exact finalist gives sufficient norm 604/1000; half-amplitude overlap remains.
+
+Next: Bound the remaining overlap for the entire charge box before adding more preparations.
+
+## Full charge-box overlap
+
+Resumed 178e3d5 under held claim. Rational quadratic selected from an
+exploratory fit; exact Bernstein positivity on 20 cells proves
+full-box receipt overlap with slack. Additional probes alone cannot
+certify uniform half-amplitude detection in this error model.
+
+## 2026-11-16T00:13:58.645694+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-015 (EXACT): Full-box Bernstein overlap certificate
+
+## 2026-11-16T00:13:58.711710+00:00
+
+Checkpoint (handoff): A fixed half-amplitude alternative and quadratic null overlap across all bounded commands under the receipt-box model.
+
+Next: Determine what independently certified nuisance or shared-error constraint would break the full-box witness.
+
+## Independent baseline anchors
+
+Resumed 17d09c6 under held claim. Augmented six-receipt quotient with
+coefficient observations and solved exact directional minimax. Two
+coordinate anchors suffice at 7/200 each for u² and uv. Single
+coordinate anchors fail in the enlarged model. Calibration not measured.
+
+## 2026-11-16T00:20:04.456949+00:00
+
+Captured artifacts/codex-channel-metric-20261106/exact-016 (EXACT): Independent quadratic-anchor sensitivity certificate
+
+## 2026-11-16T00:20:04.512227+00:00
+
+Checkpoint (handoff): Two independent coefficient anchors at 7/200 each suffice for the six-reading half-amplitude guarantee.
+
+Next: Derive finite-amplitude independent anchor measurements and bound their contamination.

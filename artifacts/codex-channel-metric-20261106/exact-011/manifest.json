@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-011",
+  "created_at": "2026-11-15T23:56:40.333018+00:00",
+  "evidence": "EXACT",
+  "summary": "Square-radial joint mixture coverage",
+  "command": "python3 experiments/ud-channel-metric-bridge/mixture_probe_replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "14ca4c63178854da0a36010ccd11c3afb88f43b7",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "mixture_probe_replay.py",
+      "path": "inputs/001-mixture_probe_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/mixture_probe_replay.py",
+      "sha256": "27dd2fd6fd04f6fd748312f594545acdab117e23339bc5b353c04d021e4b9aba",
+      "size_bytes": 3012
+    }
+  ],
+  "files": [
+    {
+      "path": "files/mixture_probe_results.json",
+      "sha256": "5526bf3ccf246d44839357b376e6232d1ca6264474dcd1c90ed739915e794128",
+      "size_bytes": 697
+    }
+  ]
+}

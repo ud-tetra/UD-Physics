@@ -1,0 +1,12 @@
+{
+  "candidate": {
+    "cross": "0",
+    "fourth": "3/2",
+    "box_det_floor": "1287762163/1280000000"
+  },
+  "uniform": {
+    "cross": "-1/2",
+    "fourth": "2",
+    "box_det_floor": "997474163/1280000000"
+  }
+}

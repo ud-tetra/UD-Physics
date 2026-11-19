@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-007",
+  "created_at": "2026-11-10T18:44:57.450834+00:00",
+  "evidence": "EXACT",
+  "summary": "Fourth-work residual box and planning budget",
+  "command": "python3 experiments/ud-channel-metric-bridge/fourth_residual_replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "d0ed5860892fb17b48d74b48b67b56120608be82",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "fourth_residual_replay.py",
+      "path": "inputs/001-fourth_residual_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/fourth_residual_replay.py",
+      "sha256": "2a7fbe33a3358afa0c62f328f2fa20568863dc402f27246330a1c3fb941c45af",
+      "size_bytes": 1142
+    }
+  ],
+  "files": [
+    {
+      "path": "files/fourth_residual_results.json",
+      "sha256": "590139d015e8096889d866ddaa2d429ad61f284338d0479fc317f758ccd10368",
+      "size_bytes": 217
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-015",
+  "created_at": "2026-11-16T00:13:58.645372+00:00",
+  "evidence": "EXACT",
+  "summary": "Full-box Bernstein overlap certificate",
+  "command": "python3 experiments/ud-channel-metric-bridge/continuum_overlap_replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "178e3d5e8f28f8575a6ae071489fb528a2b94294",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "continuum_overlap_replay.py",
+      "path": "inputs/001-continuum_overlap_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/continuum_overlap_replay.py",
+      "sha256": "73a05a9387b8985e5384e281b74d2bd8bcd14b569f117a4d73e9175324081f68",
+      "size_bytes": 2965
+    },
+    {
+      "input_id": "input-002",
+      "name": "mixture_probe_replay.py",
+      "path": "inputs/002-mixture_probe_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/mixture_probe_replay.py",
+      "sha256": "27dd2fd6fd04f6fd748312f594545acdab117e23339bc5b353c04d021e4b9aba",
+      "size_bytes": 3012
+    }
+  ],
+  "files": [
+    {
+      "path": "files/continuum_overlap_results.json",
+      "sha256": "7c60a1ec144c86a755a11e913bde3b51f3d52caf459c9ae78504ed4f4d4fb4bc",
+      "size_bytes": 459
+    }
+  ]
+}

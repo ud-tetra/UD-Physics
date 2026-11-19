@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "ud-channel-metric-bridge",
+  "goal": "Test signed eight-sector observability on the first K4 centroid refinement and delimit metric identifiability.",
+  "owned_paths": [
+    "tasks/ud-channel-metric-bridge.json",
+    "sessions/codex-channel-metric-20261106",
+    "experiments/ud-channel-metric-bridge",
+    "artifacts/codex-channel-metric-20261106"
+  ],
+  "dependencies": [
+    "pachner-state-transport-20261103"
+  ],
+  "status": "active"
+}

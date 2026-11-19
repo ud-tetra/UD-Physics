@@ -1,0 +1,153 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "centroid-work-port-v0.1",
+  "session_id": "codex-channel-metric-20261106",
+  "candidate_id": null,
+  "question": "Can a calibrated work ratio identify the newborn metric weight?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "energy",
+      "symbol": "E",
+      "object_type": "stored energy",
+      "definition": "κ z^T H_t z/2",
+      "domain": "R29",
+      "codomain": "R",
+      "coefficient_domain": "rational replay, real proof",
+      "units": "J",
+      "basis_orientation": "ascending simplex bases",
+      "metric_measure": "H_t and uniform null",
+      "origin": "assumed",
+      "exact_expression": "κ z^T H_t z/2",
+      "source_refs": [
+        "family"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "equal achieved coefficients, common energy gain"
+    },
+    {
+      "object_id": "work",
+      "symbol": "W_v",
+      "object_type": "symmetric work difference",
+      "definition": "(W_+ + W_-)/2 - W_0",
+      "domain": "vertex preparations",
+      "codomain": "R",
+      "coefficient_domain": "rational replay, real proof",
+      "units": "J",
+      "basis_orientation": "ascending simplex bases",
+      "metric_measure": "H_t and uniform null",
+      "origin": "derived",
+      "exact_expression": "(W_+ + W_-)/2 - W_0",
+      "source_refs": [
+        "family"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "equal achieved coefficients, common energy gain"
+    },
+    {
+      "object_id": "weight",
+      "symbol": "t",
+      "object_type": "metric weight",
+      "definition": "4 W_y/(5 W_x)",
+      "domain": "positive reals",
+      "codomain": null,
+      "coefficient_domain": "rational replay, real proof",
+      "units": "dimensionless",
+      "basis_orientation": "ascending simplex bases",
+      "metric_measure": "H_t and uniform null",
+      "origin": "derived",
+      "exact_expression": "4 W_y/(5 W_x)",
+      "source_refs": [
+        "family"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "equal achieved coefficients, common energy gain"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "family",
+      "url_or_repo_path": "UD_K4_ACTION_METRIC_SELECTION_AUDIT_v2.1.zip",
+      "version_or_commit": "v2.1; sha256 37077981370f88ee62f0e24234c782ebb63d24ea57b03560b10fe36f0f79ef46",
+      "section_or_object_id": "§§3–5",
+      "source_status": "read-only Discovery artifact"
+    }
+  ],
+  "assumptions": [],
+  "technique_plan": [
+    {
+      "technique": "rational quadratic polarization",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Cancel baseline and test mixed energy response"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "No physical data or fitting",
+    "known_targets": [],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": null,
+    "selection_criterion": null,
+    "baseline": null
+  },
+  "calculation_steps": [],
+  "result": {
+    "exact_expression": "t=4W_y/(5W_x); (W_c−W_y−W_x/4)/W_x = 0 for H_t and −1/2 for uniform control",
+    "approximation": null,
+    "units": "dimensionless",
+    "precision_and_error": null,
+    "scope": "equal independently verified coefficients and reversible common quadratic work map",
+    "physical_interpretation": "CANDIDATE"
+  },
+  "verification": [
+    {
+      "method": "Exact rational replay plus symbolic derivation",
+      "command_or_proof_path": "experiments/ud-channel-metric-bridge/work_replay.py",
+      "source_revision": "668c5970888baadae13b7bd174518380426bacf0",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Pure ratio agrees with uniform null at t=1; relative amplitude gain g aliases t by g²."
+  ],
+  "limitations": [
+    "No calibrated device, error bounds, physical observations or independent review."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/codex-channel-metric-20261106/exact-002/manifest.json"
+  ],
+  "next_discriminant": "Audit a concrete actuator and independent signed state readout."
+}

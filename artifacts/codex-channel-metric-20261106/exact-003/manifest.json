@@ -1,0 +1,33 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-channel-metric-20261106",
+  "run_id": "exact-003",
+  "created_at": "2026-11-06T19:08:56.297919+00:00",
+  "evidence": "EXACT",
+  "summary": "Two-port capacitor inverse and deterministic classification margin",
+  "command": "python3 experiments/ud-channel-metric-bridge/capacitor_replay.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "025c9f0845055b7be148c10b07f46752d81359e5",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "capacitor_replay.py",
+      "path": "inputs/001-capacitor_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/ud-channel-metric-bridge/capacitor_replay.py",
+      "sha256": "2158270a6b5987f901b29f159f7aeb389b855e6f5be1c9b6d3b54db9b63af727",
+      "size_bytes": 1508
+    }
+  ],
+  "files": [
+    {
+      "path": "files/capacitor_results.json",
+      "sha256": "dcfbe86e8da58b1c799f2d5260171d90279dfde85238d14403e93a22ab53ca8d",
+      "size_bytes": 628
+    }
+  ]
+}
