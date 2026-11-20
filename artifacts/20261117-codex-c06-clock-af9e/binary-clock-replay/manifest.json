@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261117-codex-c06-clock-af9e",
+  "run_id": "binary-clock-replay",
+  "created_at": "2026-11-17T02:38:21.147759+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact finite clock classification and receipt parity",
+  "command": "python3 candidates/c06-binary-fiber-clock/replay_binary_fiber_clock.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "e0a73ade57f9568855005a3d8b40113aa5086825",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "UD_C06_BINARY_FIBER_CLOCK_v1.0.md",
+      "path": "inputs/001-UD_C06_BINARY_FIBER_CLOCK_v1.0.md",
+      "source_location": "repository",
+      "source_path": "candidates/c06-binary-fiber-clock/UD_C06_BINARY_FIBER_CLOCK_v1.0.md",
+      "sha256": "497f647921ac55c504a9e5a462269fb42e0d41c5ffdd40e03aedc14655ceadda",
+      "size_bytes": 4212
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_binary_fiber_clock.py",
+      "path": "inputs/002-replay_binary_fiber_clock.py",
+      "source_location": "repository",
+      "source_path": "candidates/c06-binary-fiber-clock/replay_binary_fiber_clock.py",
+      "sha256": "ccea37f8882e9ad2264827f19497108e8f1e720c98227afcb4c2ef6e0866ee76",
+      "size_bytes": 2524
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "candidates/c06-binary-fiber-clock/mathematical_receipt.json",
+      "sha256": "a7e455a9bb5de227918d0f8b3337f24626a12a57d4b1ac9e429d7bed8fd0111a",
+      "size_bytes": 4596
+    }
+  ],
+  "files": [
+    {
+      "path": "files/c06_binary_fiber_clock_replay.json",
+      "sha256": "2cdeee3e6480fb1f5cf42b489e5518e56296a96d1dba2bb57e99940fa9572cee",
+      "size_bytes": 260
+    }
+  ]
+}

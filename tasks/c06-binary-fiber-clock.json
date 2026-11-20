@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "c06-binary-fiber-clock",
+  "goal": "Classify equivariant clocks on the C06 binary pair fiber",
+  "owned_paths": [
+    "tasks/c06-binary-fiber-clock.json",
+    "candidates/c06-binary-fiber-clock/",
+    "sessions/20261117-codex-c06-clock-af9e/",
+    "artifacts/20261117-codex-c06-clock-af9e/"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}

@@ -1,0 +1,24 @@
+{
+  "fixed_states": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "equivariant_bijections": 4,
+  "receipt_checks": 384,
+  "record_gain_witnesses": [
+    "2",
+    "4"
+  ],
+  "hodge_overlaps": [
+    "3/2",
+    "3/2"
+  ]
+}

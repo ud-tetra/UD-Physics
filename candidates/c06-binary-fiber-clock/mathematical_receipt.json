@@ -1,0 +1,129 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "c06-binary-fiber-clock",
+  "session_id": "20261117-codex-c06-clock-af9e",
+  "candidate_id": "c06-binary-fiber-clock",
+  "question": "Does the binary pair fiber autonomously select the two-stage transfer clock?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "pair-parity",
+      "symbol": "p",
+      "object_type": "invariant linear bit",
+      "definition": "Unique invariant linear parity toggles precisely on odd receipts. Exactly four equivariant automorphisms; all involutive. No autonomous phase-to-transfer or stopping rule.",
+      "domain": "F2^3",
+      "codomain": "F2",
+      "coefficient_domain": "F2",
+      "units": "dimensionless",
+      "basis_orientation": "three matching labels",
+      "metric_measure": "N/A",
+      "origin": "derived",
+      "exact_expression": "Unique invariant linear parity toggles precisely on odd receipts. Exactly four equivariant automorphisms; all involutive. No autonomous phase-to-transfer or stopping rule.",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "parity-receipts"
+      ],
+      "assumption_ids": [
+        "coordinate-permutations"
+      ],
+      "dependency_ids": [],
+      "normalization": "nonzero invariant bit"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "parity-receipts",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/410",
+      "version_or_commit": "29be140f397732490b264543376e8bd6383775ed",
+      "section_or_object_id": "Supplied closure map and receipt insufficiency",
+      "source_status": "merged"
+    }
+  ],
+  "assumptions": [
+    "Theta=F2^3 with coordinate-permutation S3 action",
+    "Declared XOR closure map with supplied receipts",
+    "Real exchange is an independently defined compatible completion"
+  ],
+  "technique_plan": [
+    {
+      "technique": "finite permutation classification and rational verification",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Separate clock phases, symmetry, and real transfer gains"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "Known analytical target from C06",
+    "known_targets": [
+      "Two-stage 2:1 record gain"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": null,
+    "selection_criterion": null,
+    "baseline": null
+  },
+  "calculation_steps": [
+    "Find invariant linear functional",
+    "Classify equivariant reversible maps",
+    "Verify XOR receipt law and unequal transfer countermodels"
+  ],
+  "result": {
+    "exact_expression": "Unique invariant linear parity toggles precisely on odd receipts. Exactly four equivariant automorphisms; all involutive. No autonomous phase-to-transfer or stopping rule.",
+    "approximation": null,
+    "units": "dimensionless",
+    "precision_and_error": "exact",
+    "scope": "declared coordinate-permutation fiber and update",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact finite replay",
+      "command_or_proof_path": "python3 candidates/c06-binary-fiber-clock/replay_binary_fiber_clock.py",
+      "source_revision": "e0a73ade57f9568855005a3d8b40113aa5086825",
+      "actual_result": "PASS_EXACT, 384 receipt checks and complete permutation enumeration",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Identity and complement each commute with relabelings.",
+    "The same parity history permits two different record gains."
+  ],
+  "limitations": [
+    "No endogenous receipt, transfer latch, or physical rate derived."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261117-codex-c06-clock-af9e/binary-clock-replay/manifest.json"
+  ],
+  "next_discriminant": "Investigate a source for odd receipts and a quantitative coupling of their labels to transfer amplitudes."
+}
