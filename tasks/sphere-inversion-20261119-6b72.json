@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "sphere-inversion-20261119-6b72",
+  "goal": "Test a source-separated spherical information-inversion candidate on tetrahedron shell with conventional simplicial-duality null",
+  "owned_paths": [
+    "tasks/sphere-inversion-20261119-6b72.json",
+    "sessions/20261119-gpt6-sphere-6b72/",
+    "candidates/sphere-information-inversion-6b72/",
+    "artifacts/20261119-gpt6-sphere-6b72/"
+  ],
+  "dependencies": [],
+  "status": "handoff",
+  "source_base": "03722496f5b00e8f3f01b2400e4015eb65fdebc4",
+  "physical_promotion": 0
+}

@@ -1,0 +1,75 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261119-gpt6-sphere-6b72",
+  "run_id": "exact-duality-001",
+  "created_at": "2026-11-20T03:09:32+00:00",
+  "evidence": "EXACT_CONDITIONAL",
+  "summary": "Tetrahedral S2 duality, Euclidean inversion/antipodal distinction, S4 full symmetry, injective-readout obstruction and conventional null",
+  "command": "python3 verify.py && python3 replay_stdlib.py",
+  "command_execution": "ACTUALLY_EXECUTED_LOCALLY_BEFORE_CAPTURE",
+  "source": {
+    "revision": "03722496f5b00e8f3f01b2400e4015eb65fdebc4",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "SOURCE_ANCHORS.json",
+      "path": "inputs/001-SOURCE_ANCHORS.json",
+      "source_location": "local_selected_source_reference_metadata_NOT_REMOTE_SOURCE_BYTES",
+      "source_path": "SOURCE_ANCHORS.json",
+      "sha256": "f0d69bfc3a4b9f5c5ccc1a51428f3edb2a21d31d99b872a5b1d083eb3b797ecb",
+      "size_bytes": 1152
+    }
+  ],
+  "files": [
+    {
+      "path": "files/REPORT.md",
+      "sha256": "430e9fe3c06f9aac22f1e961b02bf1b8fc1d8c2822bf03e10acae5954e194a8b",
+      "size_bytes": 14987
+    },
+    {
+      "path": "files/verify.py",
+      "sha256": "f3ac9f8b6d94259ecd98abf4687c7f59b83266fedfe3cb3455b7a7fbe084918c",
+      "size_bytes": 5785
+    },
+    {
+      "path": "files/replay_stdlib.py",
+      "sha256": "ed66d1c655be0ae06aadb413c9ff33bbe70a7c9af85dd95cadcc69ca8ac510f3",
+      "size_bytes": 4206
+    },
+    {
+      "path": "files/results.json",
+      "sha256": "945f369ed6a8c6c5cf2c4fd76f6b4486738f939bf6233853eddab137f4392926",
+      "size_bytes": 1540
+    },
+    {
+      "path": "files/replay_results.json",
+      "sha256": "8000c20eb90c2231cf209d7e5796e46ecf848caa36143ece68092ddfa717ebbb",
+      "size_bytes": 466
+    },
+    {
+      "path": "files/verify.log",
+      "sha256": "ec9828d02fb2fa11c1518da15758bcf6f99ce22bbf8f0c2f9544db6ea93ca064",
+      "size_bytes": 1632
+    },
+    {
+      "path": "files/replay.log",
+      "sha256": "8000c20eb90c2231cf209d7e5796e46ecf848caa36143ece68092ddfa717ebbb",
+      "size_bytes": 466
+    },
+    {
+      "path": "files/BOOT_REPORT.md",
+      "sha256": "797d3a5dcd93cd8b4cdec8625013900bdaed85519cdfbf8d0fd92c6779eab9fe",
+      "size_bytes": 1515
+    }
+  ],
+  "verification": {
+    "local_symbolic": "PASS",
+    "local_independent_stdlib": "PASS",
+    "repository_tests": "NOT_RUN",
+    "human_review": "NOT_DONE"
+  },
+  "physical_promotion": 0
+}

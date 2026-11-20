@@ -1,0 +1,32 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "sphere-information-inversion-6b72",
+  "session_id": "20261119-gpt6-sphere-6b72",
+  "question": "Can a tetrahedral packet information inversion produce observed spherical geometry in a nontrivial testable way?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT_CONDITIONAL",
+    "NO_GO_SCOPED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "regular unit-circumradius Euclidean tetrahedron for geometric realization",
+    "radial readout chosen, not UD-derived",
+    "no dynamic generator or physical correspondence"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "EXPLORATORY_TARGET_EXPOSED (user's sphere/inverse hypothesis)",
+  "fitted_choices": [],
+  "sources": [
+    "UD-SCOPE-001, main@cef84ca5c996ec21b67247c74ee85c2c6c5dd995",
+    "UD-Physics k5-four-cell/README.md@03722496f5b00e8f3f01b2400e4015eb65fdebc4",
+    "UD-Physics geometry-s4-selection/README.md@03722496f5b00e8f3f01b2400e4015eb65fdebc4"
+  ],
+  "baseline": "conventional simplicial/polar dual: all positive identities reproduced",
+  "result": "exact S2/dual; antipodal commuting map under assumed Euclidean realization; ambient inversion identity on S2; injective-map no-go; no UD-specific discriminator",
+  "next_discriminant": "source-selected UD inversion, physical readout and transport/receipt contrast not reproduced by conventional tetra dual",
+  "mathematical_receipts": [
+    "mathematical_receipt.json"
+  ]
+}
