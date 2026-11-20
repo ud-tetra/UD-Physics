@@ -1,0 +1,35 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "native-source-action-20261115-4f7c",
+  "session_id": "20261115-chatgpt-source-action-4f7c",
+  "question": "Do phase potential plus entropy/least action uniquely determine finite packet generator?",
+  "status": "PARKED",
+  "evidence": [
+    "DERIVED_CONDITIONAL",
+    "EXACT_CONDITIONAL",
+    "NO-GO_SCOPED"
+  ],
+  "assumptions": [
+    "two-site March sine gradient ansatz",
+    "sampled Gibbs law beta=ln4 (illustrative)",
+    "seven face stocks M=2",
+    "conditional harmonic gate",
+    "reversible Markov generator"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "historical cosmology target known; not used for v0.4",
+  "fitted_choices": [],
+  "sources": [
+    "March packet_modulation_layer.md §3",
+    "March seam_phase_transport.md §4",
+    "UD PR #514",
+    "UD-Physics PR #388"
+  ],
+  "baseline": "equal stationary phase equilibrium and total phase event traffic",
+  "result": "R4(B)-R4(A)=729/400; generator not unique",
+  "next_discriminant": "derive source conductance and clock; test against fourth-order/boundary controls",
+  "mathematical_receipts": [
+    "candidates/native-source-action-20261115-4f7c/mathematical_receipt.json"
+  ]
+}
