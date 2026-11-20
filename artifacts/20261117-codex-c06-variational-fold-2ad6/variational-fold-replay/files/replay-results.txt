@@ -1,1 +1,0 @@
-84 exact closure and initial acceleration controls passed.
