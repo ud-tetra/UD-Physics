@@ -1,0 +1,49 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261115-chatgpt-march-native-mode-2ce90b",
+  "runtime": "GPT-6 / GitHub connector + local Python compute",
+  "task": "march-native-mode-publication-20261115-2ce90b",
+  "goal": "Preserve reproducible early source audit and smallest face-mode result in Discovery",
+  "created_at": "2026-11-15T20:30:00Z",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "source_dirty_at_boot": false,
+  "status": "handoff_review",
+  "claims": {
+    "task": "march-native-mode-publication-20261115-2ce90b",
+    "claim_ref": "refs/heads/claims/march-native-mode-publication-20261115-2ce90b",
+    "claim_commit": "0c0757cf0f2d9878a23f37c04f47ea4efb983a7a",
+    "claim_status": "held"
+  },
+  "checks": [
+    {
+      "name": "local_script_execution",
+      "status": "PASS",
+      "command": "python /mnt/data/UD_NATIVE_FACE_MODE_INDEPENDENT_REPLAY_v0.1.py"
+    },
+    {
+      "name": "scripts/validate.py",
+      "status": "NOT_RUN",
+      "reason": "Connector-only GitHub checkout unavailable; requires PR CI"
+    },
+    {
+      "name": "python3 -m unittest discover -s tests -v",
+      "status": "NOT_RUN",
+      "reason": "Connector-only GitHub checkout unavailable; requires PR CI"
+    }
+  ],
+  "finding": "Exact conditional face-mode covariance C=HHᵀ/16; minimal uniform one-bit event law has mode-independent normalized time response; fully admissible K4 suppresses face-gate fluctuation.",
+  "next_action": "Non-constructor review of source/selection assumptions, follow with native seam/burden/closure generator; no physical promotion.",
+  "mathematical_profile": {
+    "coefficient_domain": "integers, rational Fractions, algebraic eigenvalues",
+    "exactness_or_precision_plan": "finite exact enumeration; no fitted CMB target",
+    "applicable_methods": [
+      "binary parity",
+      "finite incidence",
+      "spectral covariance",
+      "conditional Markov update",
+      "null controls"
+    ],
+    "clock_metric_units_conventions": "discrete event count only, unsigned face-edge incidence H, no physical clock/metric/units"
+  }
+}

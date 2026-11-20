@@ -1,0 +1,40 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261115-chatgpt-march-native-mode-2ce90b",
+  "run_id": "native-face-mode-replay-v0.1",
+  "created_at": "2026-11-15T20:30:00Z",
+  "evidence": "EXACT_CONDITIONAL",
+  "summary": "Historical source-derived native finite face-mode covariance with assumed one-bit event null and negative controls; no CMB bridge",
+  "command": "python3 files/UD_NATIVE_FACE_MODE_INDEPENDENT_REPLAY_v0.1.py",
+  "command_execution": "EXECUTED_LOCALLY_2026-11-15_BEFORE_REPO_PUBLICATION",
+  "source": {
+    "revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/UD_NATIVE_MODE_PRODUCTION_COHERENCE_GATE_v0.1.md",
+      "sha256": "6d061f13fdccdb90636e6ec0ebae2b3302e9bd29609ddcc44c365b9db0a1d629",
+      "size_bytes": 14684
+    },
+    {
+      "path": "files/UD_GAP2_SIGN_SCALE_AMENDMENT_v0.2.md",
+      "sha256": "5482d3506fb8d4cca92c1c3d6fe99669acde16254836a9ff182156d704b9c9b8",
+      "size_bytes": 15311
+    },
+    {
+      "path": "files/UD_MARCH_PROVENANCE_GAP_AUDIT_v0.1.md",
+      "sha256": "142172904706d3e54e0605b7bc869a947ccd8f0dd4e84a68a8e560d135d1a343",
+      "size_bytes": 13770
+    },
+    {
+      "path": "files/UD_NATIVE_FACE_MODE_INDEPENDENT_REPLAY_v0.1.py",
+      "sha256": "8952e7de6f8bc335d3f01a46a4724dc1fd417305663e3ebf17ae4ed61fde07c6",
+      "size_bytes": 1982
+    }
+  ],
+  "physical_promotion": 0,
+  "source_migration_note": "recovered historical source original bytes and broader proof code archived separately in UD capture; not all files from ZIP transferred to Discovery"
+}
