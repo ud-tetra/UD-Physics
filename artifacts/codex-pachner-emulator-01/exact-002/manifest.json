@@ -1,0 +1,60 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "codex-pachner-emulator-01",
+  "run_id": "exact-002",
+  "created_at": "2026-11-06T03:01:09.650792+00:00",
+  "evidence": "CONDITIONAL",
+  "summary": "48 matrix-source classifications on post-freeze schedules",
+  "command": "See experiments/pachner-emulator-contract/MATRIX_REPLAY.md",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "2360769074d4c04136e304dea4c232b12a453217",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "MATRIX_CONTRACT.json",
+      "path": "inputs/001-MATRIX_CONTRACT.json",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-emulator-contract/MATRIX_CONTRACT.json",
+      "sha256": "13dee8ab74d54fabc349c834307f6107f591ec21638448654aaf95950bdfc33b",
+      "size_bytes": 884
+    },
+    {
+      "input_id": "input-002",
+      "name": "matrix_replay.py",
+      "path": "inputs/002-matrix_replay.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-emulator-contract/matrix_replay.py",
+      "sha256": "6d5822bb2bdcff1edc035caab813ac8dbdf4ce0fc3d36c600e37df7633fa9797",
+      "size_bytes": 3564
+    },
+    {
+      "input_id": "input-003",
+      "name": "seed.txt",
+      "path": "inputs/003-seed.txt",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-emulator-contract/seed.txt",
+      "sha256": "d0fa4babd007aee5c4a683d704c9035ee45070e82940aa96c9bac5c2c1cfcca3",
+      "size_bytes": 65
+    },
+    {
+      "input_id": "input-004",
+      "name": "summarize_matrix.py",
+      "path": "inputs/004-summarize_matrix.py",
+      "source_location": "repository",
+      "source_path": "experiments/pachner-emulator-contract/summarize_matrix.py",
+      "sha256": "1ad0712f30410066e446ea80b76aef134805d5175a5ec8b239061df63c07aa5b",
+      "size_bytes": 513
+    }
+  ],
+  "files": [
+    {
+      "path": "files/matrix_receipt.json",
+      "sha256": "f6fdded4e7078ced08f1b12487b388d041df45ba53c77c83b9ace2fceef89872",
+      "size_bytes": 10167
+    }
+  ]
+}

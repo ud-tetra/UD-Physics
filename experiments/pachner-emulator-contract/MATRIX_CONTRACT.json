@@ -1,0 +1,19 @@
+{
+  "version": "0.2",
+  "parent_contract_sha256": "0ec4462c4b94bb9f8847be515685c70dd39df301fc1e4f70548497f485cdb1d4",
+  "source": "pinned full and projected matrices, direct vector Taylor expansion",
+  "schedule": "derive per-sample rate and interval from SHA256 of seed, case and index",
+  "seed_rule": "one 32-byte system entropy draw after local contract and runner freeze; no redraw",
+  "rates": ["1/3", "2/3", "4/3", "7/4"],
+  "intervals": ["1/9000", "1/5000", "1/3500", "1/2500"],
+  "case_count_per_model": 24,
+  "max_samples": 96,
+  "max_phase": "1/20",
+  "degree": 16,
+  "gain_bound": "1/5000000",
+  "offset_bound": "1/12000000",
+  "noise_amplitude": "1/12000000",
+  "noise_budget": "1/5000000",
+  "expected": {"FULL": 24, "PROJECTED": 24, "wrong": 0, "abstain": 0},
+  "scope": "constructor cross-implementation replay; synthetic calibration and external phase-zero marker"
+}
