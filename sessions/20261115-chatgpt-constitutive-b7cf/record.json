@@ -1,0 +1,58 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261115-chatgpt-constitutive-b7cf",
+  "runtime": "GPT-6; Python compute and GitHub connector write",
+  "task": "native-constitutive-contrast-20261115-b7cf",
+  "goal": "source uniqueness and positive-stock adversarial finite tests",
+  "created_at": "2026-11-15T23:05:00Z",
+  "base_revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+  "source_dirty_at_boot": false,
+  "status": "handoff_review",
+  "claims": {
+    "task": "native-constitutive-contrast-20261115-b7cf",
+    "claim_ref": "refs/heads/claims/native-constitutive-contrast-20261115-b7cf",
+    "claim_commit": "d314c594138bce6f1f93c792fbeddd88bb4b2e6f",
+    "status": "held"
+  },
+  "checks": [
+    {
+      "name": "local v0.3 full 672-state script",
+      "status": "PASS"
+    },
+    {
+      "name": "independent 112-state Fraction replay",
+      "status": "PASS"
+    },
+    {
+      "name": "repository python scripts/validate.py",
+      "status": "NOT_RUN",
+      "reason": "connector-only runtime"
+    },
+    {
+      "name": "repository test suite",
+      "status": "NOT_RUN",
+      "reason": "connector-only runtime"
+    },
+    {
+      "name": "nonconstructor review",
+      "status": "PENDING"
+    }
+  ],
+  "finding": "Gauge/reversal/phase endpoints leave free q; same equilibrium/detailed balance permits free donor κ; boundary alters spectrum, so no unique native pre-event selection.",
+  "next_action": "Source a constraining interference/readout action and independently chosen stock-response/clock; complete missing code transfer before merge.",
+  "mathematical_profile": {
+    "coefficient_domain": "rational exact + symbolic p; real nonnegative rates",
+    "exactness_or_precision_plan": "exhaustive 672-state generator checks and independent 112-state rational moments",
+    "applicable_methods": [
+      "Z4 gauge",
+      "reversal",
+      "finite Markov chain",
+      "detailed balance",
+      "spectra",
+      "source/sink conservation",
+      "boundary nulls"
+    ],
+    "clock_metric_units_conventions": "dimensionless continuous-time Markov s; no SI map/metric or physical k"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261115-chatgpt-constitutive-b7cf",
+  "run_id": "source-contrast-full-v0.3.3",
+  "created_at": "2026-11-15T23:05:00Z",
+  "evidence": "EXACT_CONDITIONAL / NO-GO_SCOPED",
+  "summary": "Complete original-byte source/result/receipt v0.3 capture correcting the partial previous connector run",
+  "command": "python3 files/verify.py && python3 files/replay_stdlib.py",
+  "command_execution": "EXECUTED_LOCALLY_2026-11-15: both PASS; not yet executed by fresh GitHub checkout",
+  "source": {
+    "revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+    "dirty": true
+  },
+  "supersedes_run": "artifacts/20261115-chatgpt-constitutive-b7cf/source-contrast-v0.3",
+  "inputs": [
+    {
+      "input_id": "src-1",
+      "path": "inputs/triangular_transport_symbol_alphabet.md",
+      "sha256": "b61c75fc41d4ca702af2f7324a75016de15be17cc3c79a1e40c0cd9db781e033",
+      "size_bytes": 1806
+    },
+    {
+      "input_id": "src-2",
+      "path": "inputs/seam_phase_transport.md",
+      "sha256": "1cc5a0450648fa59b55dc20e1eb79f4112f552aa9d1a1e710abd00c5ac958235",
+      "size_bytes": 1737
+    },
+    {
+      "input_id": "src-3",
+      "path": "inputs/packet_modulation_layer.md",
+      "sha256": "8e4b23e43ca4b4a0e44eb39d39a4b807ac4674ad1ac14d69eec1f27bbba6fc6d",
+      "size_bytes": 1709
+    },
+    {
+      "input_id": "src-4",
+      "path": "inputs/packet_field_equation.md",
+      "sha256": "777f4a957077c665dc7bdba6823a71a5bea9947b4d0f4379a5656b1b3dd271c1",
+      "size_bytes": 1964
+    },
+    {
+      "input_id": "src-5",
+      "path": "inputs/UD_NATIVE_ADMISSIBLE_MULTI_FACE_v0.2_REPORT.md",
+      "sha256": "6a14c0358ae81c6cb039b985e083b6b15d57ef07ebc7d695a7043d59790c6d11",
+      "size_bytes": 13719
+    }
+  ],
+  "files": [
+    {
+      "path": "files/REPORT.md",
+      "sha256": "8db234fe8722da13087fd4a3d768d90825a7275adf41f4134e40a0501b867b1c",
+      "size_bytes": 11792
+    },
+    {
+      "path": "files/replay_stdlib.py",
+      "sha256": "76396439e4faef9ec8f2bb50a8fd61a32846550e281b3ba6289057f4eac9d396",
+      "size_bytes": 2887
+    },
+    {
+      "path": "files/verify.py",
+      "sha256": "dd62b30990797a2042014188861daf997ee72608d40396fe10169d93c174e708",
+      "size_bytes": 9454
+    },
+    {
+      "path": "files/results.json",
+      "sha256": "46c149dcd8a006437a551b203e9d5c0c35439480a4080c624ff725ac5efb434a",
+      "size_bytes": 5338
+    },
+    {
+      "path": "files/run.log",
+      "sha256": "9c545d45e0aa034d1acf3fc2a7e25ad1574772275064769796bb3c8164c2f1b6",
+      "size_bytes": 809
+    },
+    {
+      "path": "files/replay.log",
+      "sha256": "038c68d553b43eee1f8903062a7a0e15544fef2c2e7afd68af1b9abc7a51caba",
+      "size_bytes": 358
+    }
+  ],
+  "physical_promotion": 0,
+  "review": "PENDING",
+  "excluded_nonphysical": "No physical units/time/k; no native selector",
+  "zip_original_sha256": "99bd803422f03fc1edfd5d6ea14242192f0834ad696ec4a430be2aaefb291ab0"
+}

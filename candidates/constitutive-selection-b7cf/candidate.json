@@ -1,0 +1,34 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "constitutive-selection-b7cf",
+  "session_id": "20261115-chatgpt-constitutive-b7cf",
+  "question": "Does native seam transport, closure, positive stock, phase-reversal and equilibrium uniquely select p(d) and donor rates?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT_CONDITIONAL",
+    "NO-GO_SCOPED",
+    "OPEN_GATED"
+  ],
+  "assumptions": [
+    "d∈Z4 candidate discretization of U(1)",
+    "p(0)=1 and p(π)=0 added for a strong uniqueness test",
+    "symmetric reversible Markov generator with uniform phase and multinomial stock π",
+    "M=2 integer face stock not derived physical matter",
+    "phase diffusion nearest-neighbor rate 1/2 as clock convention"
+  ],
+  "physical_mapping": "OPEN: no physical clock, units or k",
+  "target_exposure": "Previously known CMB values not used; no observational fit",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD/pull/514",
+    "https://github.com/ud-tetra/UD-Physics/pull/387",
+    "recovered March trion/seam/packet source strata"
+  ],
+  "baseline": "q=1/2, q=1/4, q=0; κ=0/1; full/reflect/omit shared-face boundary",
+  "result": "Source conditions leave q∈[0,1], donor κ≥0 and clock free; exact moments and spectra differ, including same equilibrium but non-clock-equivalent dynamics",
+  "next_discriminant": "additional native constitutive action with unique pre-event selection and independently calibrated phase/time/stock readout",
+  "mathematical_receipts": [
+    "candidates/constitutive-selection-b7cf/mathematical_receipt.json"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "CAPTURE_COMPLETED",
+  "old_run": "artifacts/20261115-chatgpt-constitutive-b7cf/source-contrast-v0.3",
+  "new_run": "artifacts/20261115-chatgpt-constitutive-b7cf/source-contrast-full-v0.3.3",
+  "original_byte_git_sha_verified": true,
+  "inputs_count": 5,
+  "outputs_count": 6,
+  "local_execution": "PASS",
+  "github_ci": "NOT_RUN",
+  "nonconstructor_review": "PENDING",
+  "physical_promotion": 0
+}

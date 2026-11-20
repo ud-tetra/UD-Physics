@@ -1,0 +1,173 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "CONSTITUTIVE_NO_GO_20261115_B7CF",
+  "session_id": "20261115-chatgpt-constitutive-b7cf",
+  "candidate_id": "constitutive-selection-b7cf",
+  "question": "Are gauge, closure, positivity, reversibility and endpoint constraints sufficient for unique native transition weight and donor law?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO_SCOPED"
+  ],
+  "objects": [
+    {
+      "object_id": "phase_weight",
+      "symbol": "p",
+      "object_type": "gauge invariant seam conductance",
+      "definition": "p:Z4→[0,1], even, p0=1,p2=0",
+      "domain": "Z4",
+      "codomain": "[0,1]",
+      "coefficient_domain": "Q and real interval",
+      "units": "dimensionless",
+      "basis_orientation": "d=(θ_R−θ_L+aLR) mod 4",
+      "metric_measure": "no metric; reversal even",
+      "origin": "assumed function class",
+      "exact_expression": "p=(1,q,0,q)",
+      "source_refs": [
+        "March seam_phase_transport.md §§1,4 (phase only); H5 added"
+      ],
+      "normalization": "p(0)=1"
+    },
+    {
+      "object_id": "donor_rate",
+      "symbol": "q_ij",
+      "object_type": "candidate transition intensity",
+      "definition": "x_i w_ij(d)(1+κ(x_i+x_j−1))",
+      "domain": "admissible (b,d,x), ordered neighboring face pair",
+      "codomain": "R_nonnegative",
+      "coefficient_domain": "Q for tested κ, symbolic κ≥0",
+      "units": "per native event parameter",
+      "basis_orientation": "reversal pairs",
+      "metric_measure": "uniform multinomial π",
+      "origin": "candidate",
+      "exact_expression": "κ∈[0,∞); κ=0,1 tested",
+      "source_refs": [
+        "March packet_modulation_layer.md §3 (not selection)"
+      ],
+      "normalization": "intra-face intensity 1 is clock convention"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "ud-pr514",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/514",
+      "version_or_commit": "87f778a3936637e448fdd0b6b4c112ff69062522 then c9659fe1b99063136c08113a6f8585702ee4517e",
+      "section_or_object_id": "REPORT.md §§2–4",
+      "source_status": "development draft"
+    },
+    {
+      "source_id": "March",
+      "url_or_repo_path": "attached March 2026 source four Markdown files",
+      "version_or_commit": "historical 2026-03 claimed date; content dates independently unverified",
+      "section_or_object_id": "trion §3; seam §§1,4; packet §§1–3",
+      "source_status": "source stratum"
+    }
+  ],
+  "assumptions": [
+    "finite Z4 seam",
+    "reversal even",
+    "nonnegative and endpoint normalized",
+    "assumed Markov process, M=2",
+    "independent phase diffusion and bit generator"
+  ],
+  "technique_plan": [
+    {
+      "technique": "finite group phase parity",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "classify even p with boundary endpoints"
+    },
+    {
+      "technique": "exact Markov chain detailed balance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "construct two inequivalent same-π generators"
+    },
+    {
+      "technique": "spectral boundary perturbation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compare zero modes and rates"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "6 admitted binary ×4 phase ×C(M+F−1,F−1); F=7 M=2→672; F=6 M=2→504",
+    "reduced_expression": "Even phase endpoint constraints: p(d)=(1,q,0,q), q∈[0,1]. For M=2,F=7, κ=1 donor-slope factor 1+2κ(M−1)/F=9/7.",
+    "factor_origins": [
+      "2(M−1)/F is binomial pair moment"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless Markov parameter",
+    "modulus": 4,
+    "residue_convention": "0,1,2,3",
+    "update_rule": "d→d±1 at 1/2 each (assumed)",
+    "initial_phase": "uniform",
+    "coupling": "w_ij(d)=p(d) for interface only",
+    "period_claim": "none",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "6×4×C(M+F−1,F−1)",
+    "generator_or_update": "bidirectional stock transfers plus assumed symmetric b and phase updates",
+    "initial_boundary_conditions": "uniform admitted b, uniform d, multinomial stocks",
+    "conservation_and_sources": "every outgoing stock transfer decreases one component and increases another; no external source",
+    "projection_and_kernel": "intercell face-stock difference v, boundary changes full/reflect/omit",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "KNOWN_TARGETS_NOT_USED",
+    "known_targets": [
+      "historical CMB spectral index and running"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "baseline": "harmonic/squared/strict and κ=0/1 under same stationary π"
+  },
+  "calculation_steps": [
+    "derive p=(1,q,0,q) from symmetry/endpoints",
+    "prove same-π detailed balance for pair-invariant κ",
+    "enumerate joint 672 and 504 states",
+    "derive exact derivative moments and check independent replay",
+    "calculate boundary graph Laplacian spectra"
+  ],
+  "result": {
+    "exact_expression": "R'_harmonic=-3/2; R''=27/8; R'_κ1=-27/14; R''κ1=351/56; reflective boundary R'=-1",
+    "scope": "conditional finite source law family, no physics",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "independent 112-state Fraction replay",
+      "command_or_proof_path": "artifacts/20261115-chatgpt-constitutive-b7cf/source-contrast-v0.3/files/replay_stdlib.py",
+      "source_revision": "local v0.3",
+      "actual_result": "PASS",
+      "review_relationship": "same constructor context second implementation"
+    },
+    {
+      "method": "full 672-state local main verifier",
+      "command_or_proof_path": "local user ZIP sha256 99bd803...",
+      "source_revision": "local v0.3",
+      "actual_result": "PASS; GitHub source file NOT_TRANSFFERED",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "q=1/2 vs q=1/4 at same endpoint gauge constraints",
+    "κ=0 vs κ=1 same stationary π but different R'' beyond clock scaling",
+    "reflective/omitted shared-face alters relaxation without violating total stock"
+  ],
+  "limitations": [
+    "full main verifier/result ZIP locally held, not yet transferred to GitHub",
+    "no physical correspondence",
+    "no source law selected",
+    "G05/G06 unchanged",
+    "CI and non-constructor review pending"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261115-chatgpt-constitutive-b7cf/source-contrast-v0.3/manifest.json"
+  ],
+  "next_discriminant": "native action picks q,κ and clock without target selection",
+  "supersedes": "candidates/constitutive-selection-b7cf/mathematical_receipt.json",
+  "amendment_reason": "Correct an editorial stray token in the drafted reduced-expression summary; no mathematics changed; original receipt remains",
+  "amendment_version": "v0.3.1"
+}

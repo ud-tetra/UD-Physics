@@ -1,0 +1,80 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261115-chatgpt-constitutive-b7cf",
+  "run_id": "source-contrast-v0.3",
+  "created_at": "2026-11-15T23:05:00Z",
+  "evidence": "EXACT_CONDITIONAL / NO-GO_SCOPED",
+  "summary": "Two-K4 pre-event source selection family and reversible donor/boundary negative controls",
+  "command": "python3 files/replay_stdlib.py",
+  "command_execution": "EXECUTED_LOCALLY_BEFORE_REPO_CAPTURE; code original-byte matched; 112-state exact replay PASS",
+  "source": {
+    "revision": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-1",
+      "path": "inputs/triangular_transport_symbol_alphabet.md",
+      "sha256": "b61c75fc41d4ca702af2f7324a75016de15be17cc3c79a1e40c0cd9db781e033",
+      "size_bytes": 1806,
+      "source_path": "artifacts/20261115-chatgpt-multiface-7d4c/exact-candidate-v0.2/inputs/triangular_transport_symbol_alphabet.md",
+      "source_repo": "ud-tetra/UD-Physics",
+      "source_ref": "0ce650e15087c1c3feaf27fef41690681c70f6ac"
+    },
+    {
+      "input_id": "input-2",
+      "path": "inputs/seam_phase_transport.md",
+      "sha256": "1cc5a0450648fa59b55dc20e1eb79f4112f552aa9d1a1e710abd00c5ac958235",
+      "size_bytes": 1737,
+      "source_path": "artifacts/20261115-chatgpt-multiface-7d4c/exact-candidate-v0.2/inputs/seam_phase_transport.md",
+      "source_repo": "ud-tetra/UD-Physics",
+      "source_ref": "0ce650e15087c1c3feaf27fef41690681c70f6ac"
+    },
+    {
+      "input_id": "input-3",
+      "path": "inputs/packet_modulation_layer.md",
+      "sha256": "8e4b23e43ca4b4a0e44eb39d39a4b807ac4674ad1ac14d69eec1f27bbba6fc6d",
+      "size_bytes": 1709,
+      "source_path": "artifacts/20261115-chatgpt-multiface-7d4c/exact-candidate-v0.2/inputs/packet_modulation_layer.md",
+      "source_repo": "ud-tetra/UD-Physics",
+      "source_ref": "0ce650e15087c1c3feaf27fef41690681c70f6ac"
+    },
+    {
+      "input_id": "input-4",
+      "path": "inputs/packet_field_equation.md",
+      "sha256": "777f4a957077c665dc7bdba6823a71a5bea9947b4d0f4379a5656b1b3dd271c1",
+      "size_bytes": 1964,
+      "source_path": "artifacts/20261115-chatgpt-multiface-7d4c/exact-candidate-v0.2/inputs/packet_field_equation.md",
+      "source_repo": "ud-tetra/UD-Physics",
+      "source_ref": "0ce650e15087c1c3feaf27fef41690681c70f6ac"
+    },
+    {
+      "input_id": "input-5",
+      "path": "inputs/UD_NATIVE_ADMISSIBLE_MULTI_FACE_v0.2_REPORT.md",
+      "sha256": "6a14c0358ae81c6cb039b985e083b6b15d57ef07ebc7d695a7043d59790c6d11",
+      "size_bytes": 13719,
+      "source_path": "artifacts/20261115-chatgpt-multiface-7d4c/exact-candidate-v0.2/files/REPORT.md",
+      "source_repo": "ud-tetra/UD-Physics",
+      "source_ref": "0ce650e15087c1c3feaf27fef41690681c70f6ac"
+    }
+  ],
+  "files": [
+    {
+      "path": "files/REPORT.md",
+      "sha256": "8db234fe8722da13087fd4a3d768d90825a7275adf41f4134e40a0501b867b1c",
+      "size_bytes": 11792
+    },
+    {
+      "path": "files/replay_stdlib.py",
+      "sha256": "76396439e4faef9ec8f2bb50a8fd61a32846550e281b3ba6289057f4eac9d396",
+      "size_bytes": 2887
+    }
+  ],
+  "not_transferred": [
+    "local full 672-state v0.3 verify.py SHA256 dd62b30990797a2042014188861daf997ee72608d40396fe10169d93c174e708",
+    "local full results.json SHA256 46c149dcd8a006437a551b203e9d5c0c35439480a4080c624ff725ac5efb434a",
+    "source ZIP SHA256 99bd803422f03fc1edfd5d6ea14242192f0834ad696ec4a430be2aaefb291ab0"
+  ],
+  "physical_promotion": 0
+}
