@@ -1,0 +1,40 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "native-seam-two-tet-source-a83d",
+  "session_id": "20261115-chatgpt-two-tet-source-a83d",
+  "question": "Is an admissible source-selected transition generator forced by March face admission, seam phase U, burden stocks and closure, and does a conservative candidate yield mode-selective coherence?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT_CONDITIONAL",
+    "NO-GO_SCOPED",
+    "NUMERICAL"
+  ],
+  "assumptions": [
+    "fixed fully admitted vertex bits b",
+    "chi_t product of four face admission gates",
+    "Z4 U(1) reduction U=i^d",
+    "integer conserved burden M",
+    "donor-proportional CTMC rates",
+    "h_a=(1+a Re U)/2 with a free in [-1,1]",
+    "phase random walk rate gamma/2 assumed",
+    "separate burden-to-face readout"
+  ],
+  "physical_mapping": "OPEN: no SI units, physical time or native k",
+  "target_exposure": "Historical CMB model known, but no CMB numbers used to construct or tune generator",
+  "fitted_choices": [],
+  "sources": [
+    "March triangular_transport_symbol_alphabet.md §§2-4",
+    "March seam_phase_transport.md §§1-5",
+    "March packet_modulation_layer.md §§1-3",
+    "ud-tetra/UD PR #511",
+    "ud-tetra/UD PR #512",
+    "ud-tetra/UD-Physics integrated state 2026-11-05"
+  ],
+  "baseline": "constant-gate a=0, seam-off/closure-sham, empty stock, admissible one-bit flip NO-GO",
+  "result": "CANDIDATE Q_{a,gamma}, exact no-go uniqueness, 16-state detailed balance/conservation; one face eigenmode with conditional coherent phase-sensitive response; no multi-mode physical bridge",
+  "next_discriminant": "Derive a predictive pre-event authorization rule and full faced-mode coupling with separate native phase/current reservoir",
+  "mathematical_receipts": [
+    "candidates/native-seam-two-tet-source-a83d/mathematical_receipt.json"
+  ]
+}

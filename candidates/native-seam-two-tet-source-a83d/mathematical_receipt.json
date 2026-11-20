@@ -1,0 +1,185 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD_TWO_TETRA_SOURCE_GATE_20261115",
+  "session_id": "20261115-chatgpt-two-tet-source-a83d",
+  "candidate_id": "native-seam-two-tet-source-a83d",
+  "question": "Does March native source uniquely select an admissible two-cell generator and mode-dependent coherence?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO_SCOPED",
+    "NUMERICAL"
+  ],
+  "objects": [
+    {
+      "object_id": "K2tet",
+      "symbol": "K",
+      "object_type": "glued filled simplicial complex",
+      "definition": "[0123] union_[012] [0124]",
+      "domain": "finite simplicial complex",
+      "codomain": null,
+      "coefficient_domain": "Z and Q",
+      "units": "none",
+      "basis_orientation": "sorted faces; unsigned incidence H",
+      "metric_measure": "unit face Euclidean coefficient metric only for C_raw",
+      "origin": "declared object",
+      "exact_expression": "f=(5,9,7,2)",
+      "source_refs": [
+        "March trion gate"
+      ],
+      "normalization": "n/a"
+    },
+    {
+      "object_id": "Q_candidate",
+      "symbol": "Q_{a,gamma}",
+      "object_type": "continuous-time finite Markov generator",
+      "definition": "donor transfer gated by chi_L chi_R (1+a Re U)/2 plus phase-neighbor random walk",
+      "domain": "real functions on {0,1,2,3} x Z4",
+      "codomain": "same",
+      "coefficient_domain": "Q for test a=0,1 gamma=1",
+      "units": "dimensionless event parameter s",
+      "basis_orientation": "n left stock and d right-left phase",
+      "metric_measure": "stationary Binom(3,1/2)×Uniform(Z4)",
+      "origin": "CANDIDATE",
+      "exact_expression": "Qf=n g(d)(f[n-1]-f[n])+(M-n)g(d)(f[n+1]-f[n])+gamma/2(f[d+1]+f[d-1]-2f)",
+      "source_refs": [
+        "March seam_phase_transport.md",
+        "March packet_modulation_layer.md"
+      ],
+      "normalization": "Q1=0"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "MARCH",
+      "url_or_repo_path": "Recovered March original seam_phase_transport.md",
+      "version_or_commit": "March historic snapshot, independent content timestamp unconfirmed",
+      "section_or_object_id": "§§1-5",
+      "source_status": "SOURCE_STRATUM"
+    },
+    {
+      "source_id": "MAIN_CAP",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/512",
+      "version_or_commit": "7542d6e25189d7f6f33da8ff53b474cb445b5bec",
+      "section_or_object_id": "UD_TWO_TETRA_NATIVE_SOURCE_GATE_v0.1.md",
+      "source_status": "draft development capture"
+    },
+    {
+      "source_id": "G0506",
+      "url_or_repo_path": "ud-tetra/UD-Physics/experiments/g0506-packet-hodge-sourcegate/README.md",
+      "version_or_commit": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+      "section_or_object_id": "§§1-2",
+      "source_status": "latest integrated source gate"
+    }
+  ],
+  "assumptions": [
+    "closure from all-face admission",
+    "Markov stochastic transfer selection not native",
+    "finite Z4 U(1) phase and gamma unit",
+    "M demonstration=3, no physical time"
+  ],
+  "technique_plan": [
+    {
+      "technique": "finite combinatorics",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "admitted binary states/no-go"
+    },
+    {
+      "technique": "Markov/stock conservation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Q1=0, positivity, per-transition receipts, detailed balance"
+    },
+    {
+      "technique": "spectral symbolic",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "four-phase burden generator eigenvalues and normalized correlation"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "5 vertices, 9 edges, 7 faces, 2 cells; 6/32 fully admitted",
+    "reduced_expression": "Q1=0; R''_a(0)=1+a^2/2",
+    "factor_origins": [
+      "Z4 quadrature real parts 1,0,-1,0",
+      "binomial donor rates"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "Markov parameter s; not a physical clock",
+    "modulus": "4 phase labels",
+    "residue_convention": "d mod 4",
+    "update_rule": "phase random walk neighboring d±1 at gamma/2",
+    "initial_phase": "stationary uniform",
+    "coupling": "g(d) burden transfer",
+    "period_claim": "none",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "{0,...,M}×Z4 with fixed all-admitted binary vertex labels",
+    "generator_or_update": "Q_{a,gamma} candidate",
+    "initial_boundary_conditions": "finite glued complex; stationary pi for correlation",
+    "conservation_and_sources": "stock B_L+B_R=M conserved at each jump, no external sink/source",
+    "projection_and_kernel": "centered face burden Y=D*v/2 rank-one; C_raw v=v/4 separate typed object",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "KNOWN_FROM_HISTORICAL_CMB_EXPOSURE_NOT_FITTED",
+    "known_targets": [
+      "n_s~0.965",
+      "historical -0.008 spectral running"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "two controls a=0 vs a=1; a-family analytic [-1,1]",
+    "selection_criterion": "none; compare exact nulls",
+    "baseline": "closure disabled; phase blind; isolated empty stock"
+  },
+  "calculation_steps": [
+    "Enumerate 2^5 bits for all admitted face labels",
+    "Classify closure-preserving transitions",
+    "Define family Q and show many members satisfy same exact laws",
+    "Exact stationary measure and detailed balance",
+    "Exact antisymmetric burden/phase matrix eigenvalues",
+    "Independent pure Fraction replay and SciPy expm check",
+    "Face covariance projection and rank-one limit"
+  ],
+  "result": {
+    "exact_expression": "spec(B)={-2 (multiplicity 2),-2±sqrt(2)}; R''_1(0)=3/2 and R''_0(0)=1; unique face mode v with eigenvalue 1/4",
+    "approximation": "R_1(1)=0.4401017526359883; R_0(1)=0.3678794411714423",
+    "units": "dimensionless",
+    "precision_and_error": "matrix exponential vs spectral closed form <1e-12",
+    "scope": "exact conditional generator; nonunique selection",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "SymPy exact and SciPy matrix exponential",
+      "command_or_proof_path": "experiments/native-seam-two-tet-source-a83d/UD_TWO_TETRA_NATIVE_SOURCE_GATE_v0.1_check.py",
+      "actual_result": "PASS local 2026-11-15",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent pure Fraction full-state replay",
+      "command_or_proof_path": "experiments/native-seam-two-tet-source-a83d/UD_TWO_TETRA_NATIVE_SOURCE_GATE_v0.1_independent.py",
+      "actual_result": "PASS local 2026-11-15",
+      "review_relationship": "same constructor, separate implementation"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "No admissible one-vertex bit flips in glued K",
+    "a=0 and a=1 both admissible but distinct",
+    "face burden readout excites only one spatial eigenmode",
+    "no physical mode k or clock source"
+  ],
+  "limitations": [
+    "source selection family remains free",
+    "time rate gamma and donor proportionality assumed",
+    "nonconstructor review pending",
+    "physical promotion=0"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261115-chatgpt-two-tet-source-a83d/exact-conditional-001/manifest.json"
+  ],
+  "next_discriminant": "native pre-event source authorization and multi-mode face operator"
+}

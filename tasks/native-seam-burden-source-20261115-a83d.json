@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "native-seam-burden-source-20261115-a83d",
+  "goal": "Derive most constrained admissible seam/phase/burden/closure source-gate family and test its mode coherence on two face-glued K4s with null controls and stock receipts, preserving source-selection NO-GO",
+  "owned_paths": [
+    "tasks/native-seam-burden-source-20261115-a83d.json",
+    "sessions/20261115-chatgpt-two-tet-source-a83d",
+    "candidates/native-seam-two-tet-source-a83d",
+    "artifacts/20261115-chatgpt-two-tet-source-a83d",
+    "experiments/native-seam-two-tet-source-a83d"
+  ],
+  "dependencies": [
+    "g0506-packet-hodge-sourcegate-20261105",
+    "march-native-mode-publication-20261115-2ce90b"
+  ],
+  "status": "review_handoff"
+}
