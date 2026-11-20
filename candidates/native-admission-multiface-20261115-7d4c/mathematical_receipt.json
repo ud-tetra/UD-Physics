@@ -1,0 +1,211 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD_ADMISSIBLE_MULTIFACE_20261115",
+  "session_id": "20261115-chatgpt-multiface-7d4c",
+  "candidate_id": "native-admission-multiface-20261115-7d4c",
+  "question": "Characterize pre-event closure authorization, source-selection freedom and conditional multimode dynamics on two glued K4 cells",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "CANDIDATE",
+    "NO-GO_SCOPED"
+  ],
+  "objects": [
+    {
+      "object_id": "K",
+      "symbol": "K",
+      "object_type": "finite simplicial complex",
+      "definition": "filled [0123] union [0124] sharing face [012]",
+      "domain": "two filled tetrahedra",
+      "codomain": null,
+      "coefficient_domain": "Z2 for bits, Q for rates",
+      "units": "dimensionless",
+      "basis_orientation": "sorted unordered vertex faces (shared orientations tracked separately if required)",
+      "metric_measure": "unsigned face-edge incidence; unit finite metric",
+      "origin": "source geometry",
+      "exact_expression": "|V,E,F,C3|=(5,9,7,2)",
+      "source_refs": [
+        "March trion source §3"
+      ],
+      "normalization": "unit combinatorial data"
+    },
+    {
+      "object_id": "x",
+      "symbol": "x",
+      "object_type": "nonnegative conserved face-stock register",
+      "definition": "x in N0^7, sum x=M",
+      "domain": "finite face occupancy",
+      "codomain": "N0^7",
+      "coefficient_domain": "Q Markov generator",
+      "units": "count",
+      "basis_orientation": "(012,013,014,023,024,123,124)",
+      "metric_measure": "M-multinomial stationary ensemble",
+      "origin": "assumed",
+      "exact_expression": "M=2 for full 672-state test",
+      "source_refs": [],
+      "normalization": "uniform face measure 1/7"
+    },
+    {
+      "object_id": "Q",
+      "symbol": "Q",
+      "object_type": "candidate Markov jump generator",
+      "definition": "bit Hamming2 plus seam-weighted one-unit stock face moves plus symmetric Z4 phase diffusion",
+      "domain": "functions on six b states × four phases × 28 occupancies",
+      "codomain": "same",
+      "coefficient_domain": "Q",
+      "units": "inverse arbitrary event parameter",
+      "basis_orientation": "face basis above",
+      "metric_measure": "reversible multinomial × uniform stationary law",
+      "origin": "candidate",
+      "exact_expression": "w_intra=1; w_seam=p(d)=(1+Re i^d)/2",
+      "source_refs": [
+        "March seam-phase and packet-modulation sources"
+      ],
+      "normalization": "unit example clock rate selected, not sourced"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "MARCH_TRION",
+      "url_or_repo_path": "recovered March triangular_transport_symbol_alphabet.md",
+      "version_or_commit": "March 2026 recovered source; file contents only, independent first-content timestamp not verified",
+      "section_or_object_id": "§3",
+      "source_status": "SOURCE_STRATUM"
+    },
+    {
+      "source_id": "MARCH_SEAM",
+      "url_or_repo_path": "recovered March seam_phase_transport.md",
+      "version_or_commit": "March 2026 recovered source",
+      "section_or_object_id": "§§1-5",
+      "source_status": "SOURCE_STRATUM"
+    },
+    {
+      "source_id": "UD_CAPTURE",
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/commit/2b1df905e16fb4e04f47d0b50a338e1052c5049d",
+      "version_or_commit": "2b1df905e16fb4e04f47d0b50a338e1052c5049d",
+      "section_or_object_id": "REPORT.md §§2-7",
+      "source_status": "development exact conditional / no promotion"
+    },
+    {
+      "source_id": "DISCOVERY_STATE",
+      "url_or_repo_path": "ud-tetra/UD-Physics/state/CURRENT.md",
+      "version_or_commit": "2ab32f5f28d0461dc4d35a389e814e8415cb58e8",
+      "section_or_object_id": "G05/G06 source-gate paragraphs",
+      "source_status": "current integrated state"
+    }
+  ],
+  "assumptions": [
+    "iid raw-bit ensemble only for C_raw",
+    "same-face transition requires face-edge adjacency",
+    "stock transfers are donor proportional",
+    "b minimal Hamming2 update with unit rate",
+    "equal-channel interference p(d) not source selected"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact finite enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "admission components and 672-state transition controls"
+    },
+    {
+      "technique": "rational/spectral",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "C_raw and L(p) eigenspaces"
+    },
+    {
+      "technique": "null and counterexample",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "phase-blind, sham, isolated vertex and alternative p"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2^5=32 b; 6 admitted; 4 Z4 phases; C(8,6)=28 stock words; 6*4*28=672",
+    "reduced_expression": "C_raw=HH^T/16; Rw=e^-3s Rv",
+    "factor_origins": [
+      "bit face gate Walsh factor 1/4 squared",
+      "two K4 two-complex face incidence",
+      "chosen four phase sectors"
+    ],
+    "factorization": "672=2^5*3*7",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "arbitrary continuous Markov parameter s, with discrete Z4 internal phase",
+    "modulus": 4,
+    "residue_convention": "d=(θR-θL+aLR) mod4",
+    "update_rule": "symmetric phase jumps ±1 at rate 1/2 (assumed)",
+    "initial_phase": "phase-uniform stationary distribution",
+    "coupling": "p(d) from equal-channel assumed intensity",
+    "period_claim": null,
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "six admitted b states × Z4 × M=2 stocks in seven faces",
+    "generator_or_update": "candidate Q_stock+Q_b+Q_phase",
+    "initial_boundary_conditions": "stationary reversible finite ensemble, no physical boundary condition",
+    "conservation_and_sources": "total stock M conserved at every event; no source/birth",
+    "projection_and_kernel": "common raw covariance + L(p) eigenmodes; these matrices do not commute globally",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "KNOWN_HISTORICAL_CMB_TARGETS_EXPOSED_UNUSED",
+    "known_targets": [
+      "n_s historic 0.965",
+      "alpha_s historical -0.008"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "baseline": "phase-blind p=1, p=0 seam off, χR=0 sham, isolated vertex"
+  },
+  "calculation_steps": [
+    "enumerate six admissible vertex strings and two K3 Hamming2 components",
+    "construct gauge-compensated Z4 seam phase",
+    "construct face-stock candidate Markov generator",
+    "verify 672-state detailed balance, positivity and budget per event",
+    "diagonalize exact C_raw and L(p)",
+    "verify distinct common modes and Rw=exp(-3s)Rv for phase diffusion",
+    "demonstrate phase-blind splitting and nonunique p"
+  ],
+  "result": {
+    "exact_expression": "spectrum L(p)={0,3p,7p,(3+p)x2,(3+3p)x2}; Rw=e^-3s Rv",
+    "approximation": "Rv(1)=0.3299920370849191; Rw(1)=0.016429336111197713",
+    "units": "dimensionless event parameter only",
+    "precision_and_error": "finite double-precision expm check; exact algebra separately checked",
+    "scope": "finite two-K4 M=2 source-admissible candidate only",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "sympy/Fraction exhaustive and SciPy expm",
+      "command_or_proof_path": "artifacts/20261115-chatgpt-multiface-7d4c/exact-candidate-v0.2/files/verify.py",
+      "source_revision": "2026-11-15 local exact scripts",
+      "actual_result": "PASS local",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent stdlib Fraction algorithm",
+      "command_or_proof_path": "artifacts/20261115-chatgpt-multiface-7d4c/exact-candidate-v0.2/files/replay_stdlib.py",
+      "source_revision": "2026-11-15 local replay",
+      "actual_result": "PASS local",
+      "review_relationship": "same-constructor independent method, not nonconstructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "zero admissible single-bit flips",
+    "two disconnected minimum-Hamming components",
+    "phase-blind p=1 also gives mode splitting",
+    "arbitrary alternative p(d) satisfies same gates",
+    "C_raw and L(p) do not commute globally",
+    "detached vertex changes uniform-vertex clock but not face spectrum"
+  ],
+  "limitations": [
+    "no native source selection",
+    "no physical time/energy/metric/k",
+    "source-specific G05/G06 remains open",
+    "independent nonconstructor review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261115-chatgpt-multiface-7d4c/exact-candidate-v0.2/manifest.json"
+  ],
+  "next_discriminant": "Source-selected pre-event seam/closure constitutive rule; measured readout and heldout tests"
+}
