@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "b-complex-coordinate-damping-audit-20261120",
+  "goal": "Audit the printed B-complex damping mask and PB5 shear projection",
+  "owned_paths": [
+    "tasks/b-complex-coordinate-damping-audit-20261120.json",
+    "sessions/pb5-shear-20261120",
+    "candidates/b-complex-coordinate-damping-audit",
+    "artifacts/pb5-shear-20261120"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}
