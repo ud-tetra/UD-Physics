@@ -1,0 +1,30 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261119-gpt6-forward-hinge-f1a7",
+  "run_id": "exact-001",
+  "created_at": "2026-11-19",
+  "evidence": "EXACT_CONDITIONAL",
+  "summary": "Forward-selection two-carrier symmetry gate and POC1 masked Hodge strict/tie audit; source-reconciled no-go scopes",
+  "command": "python3 files/replay_stdlib.py",
+  "command_execution": "EXECUTED_LOCALLY_2026-11-19_NOT_FRESH_GITHUB_CHECKOUT",
+  "source": {
+    "revision": "03722496f5b00e8f3f01b2400e4015eb65fdebc4",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/REPORT.md",
+      "sha256": "ff6983d271211c86b017ae4a6a103546a59c085e7bf50e91b35487d78a9b85e6",
+      "size_bytes": 12228
+    },
+    {
+      "path": "files/replay_stdlib.py",
+      "sha256": "62976bab47b7e5e39b7bdfa0653b26f50f2b71c9554987222bd3402b43048ce3",
+      "size_bytes": 2351
+    }
+  ],
+  "physical_promotion": 0,
+  "notes": "Source PDFs/manuscripts cited by external Library identity; not present in immutable run inputs. Full SymPy verifier/result JSON in user ZIP not mirrored here. Independent review NOT_RUN."
+}

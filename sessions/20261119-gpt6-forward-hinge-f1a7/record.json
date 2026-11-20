@@ -1,0 +1,54 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261119-gpt6-forward-hinge-f1a7",
+  "runtime": "GPT-6, GitHub connector, local Python + SymPy",
+  "task": "forward-selection-hinge-20261119-f1a7",
+  "goal": "Independent conditional forward-rule theorem, POC-1 tie verification, four-no-go source reconciliation",
+  "created_at": "2026-11-19",
+  "base_revision": "03722496f5b00e8f3f01b2400e4015eb65fdebc4",
+  "source_dirty_at_boot": false,
+  "status": "handoff_review",
+  "claims": {
+    "task": "forward-selection-hinge-20261119-f1a7",
+    "claim_ref": "refs/heads/claims/forward-selection-hinge-20261119-f1a7",
+    "claim_commit": "5578e4172c40a0b35ee17b239f7ec105df6babb2",
+    "claim_status": "held"
+  },
+  "checks": [
+    {
+      "command": "python verify.py",
+      "status": "PASS",
+      "scope": "local exact enumeration + symbolic matrix/spectral/Smith"
+    },
+    {
+      "command": "python replay_stdlib.py",
+      "status": "PASS",
+      "scope": "local separate-implementation exact arithmetic"
+    },
+    {
+      "command": "python3 scripts/validate.py",
+      "status": "NOT_RUN",
+      "reason": "connector-only checkout unavailable"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "status": "NOT_RUN",
+      "reason": "connector-only checkout unavailable"
+    }
+  ],
+  "finding": "Symmetric K4/two-cell toy admits 4/2 equivalent successors; action/kinetic tie persists at POC-1 hinge conditional on joint admission; ledger v0.85 G05/O09/Q176 scopes reconciled.",
+  "next_action": "Authenticate matched POC-1 event admission and find source-addressed pre-event receipt or boundary work; independent review of theorem and full source.",
+  "mathematical_profile": {
+    "coefficient_domain": "Z, Q, finite binary groups and unit real chain complex",
+    "exactness_or_precision_plan": "exact integer, rational, SymPy spectral matrices; no measured targets",
+    "applicable_methods": [
+      "S4 stabilizer orbit counting",
+      "finite-state enumeration",
+      "incidence and Hodge-generator algebra",
+      "Smith form",
+      "exact spectral factorization"
+    ],
+    "clock_metric_units_conventions": "native unit simplex metric, τ symbolic, open/closed skew gates, no SI clock/physical mapping; 192 exposure carrier not equated with raw-vertex binary toy"
+  }
+}
