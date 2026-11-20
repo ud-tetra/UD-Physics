@@ -6,8 +6,8 @@
   "question": "Can a tetrahedral packet information inversion produce observed spherical geometry in a nontrivial testable way?",
   "status": "PARKED",
   "evidence": [
-    "EXACT_CONDITIONAL",
-    "NO_GO_SCOPED",
+    "EXACT",
+    "CONDITIONAL",
     "OPEN"
   ],
   "assumptions": [
