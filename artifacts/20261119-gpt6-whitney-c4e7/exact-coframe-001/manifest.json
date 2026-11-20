@@ -1,0 +1,101 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261119-gpt6-whitney-c4e7",
+  "run_id": "exact-coframe-001",
+  "created_at": "2026-11-20T042427Z",
+  "evidence": "EXACT",
+  "summary": "signed Whitney S4 classification, D1 eigensubspace global coframe and Hodge/selection scoped no-go",
+  "command": "python verify.py && python replay_stdlib.py",
+  "command_execution": "EXECUTED_LOCALLY_ON_CAPTURED_CODE",
+  "source": {
+    "revision": "03722496f5b00e8f3f01b2400e4015eb65fdebc4",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "SOURCE_REGISTER.json",
+      "path": "inputs/001-SOURCE_REGISTER.json",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "1ffc82f9941979b4d2d34df59f52c9a2420bd5584ef1e68e5f0499726d4191cf",
+      "size_bytes": 2180
+    },
+    {
+      "input_id": "input-002",
+      "name": "verify.py",
+      "path": "inputs/002-verify.py",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "f2db229f31cdc34000ad0009bc2e2db47afcf6df9e5669177c68cd4d6ac375dd",
+      "size_bytes": 6936
+    },
+    {
+      "input_id": "input-003",
+      "name": "replay_stdlib.py",
+      "path": "inputs/003-replay_stdlib.py",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "3804a6cebb6424f91ea58223a05b16a676290487510a58595839604b9d0722cb",
+      "size_bytes": 4336
+    }
+  ],
+  "files": [
+    {
+      "path": "files/REPORT.md",
+      "sha256": "24721e7e744d4d009a57fe0bafd625e5b116d8321be3bf49369c1dac2d663cb3",
+      "size_bytes": 15354
+    },
+    {
+      "path": "files/BOOT_REPORT.md",
+      "sha256": "8018deb052733f781724ef0ab9802c1e2524d00ea23a5a6e188adef09dc386dc",
+      "size_bytes": 2149
+    },
+    {
+      "path": "files/README.md",
+      "sha256": "ea0ca104c264777d2ecc97e9af7f6105f7a6e2ed3f52521abcb56cc8f270cc0e",
+      "size_bytes": 790
+    },
+    {
+      "path": "files/SOURCE_REGISTER.json",
+      "sha256": "1ffc82f9941979b4d2d34df59f52c9a2420bd5584ef1e68e5f0499726d4191cf",
+      "size_bytes": 2180
+    },
+    {
+      "path": "files/MATHEMATICAL_RECEIPT.json",
+      "sha256": "3719d7adb2f905f8f1b4e74420b99055f774feffc987d5cd3d17069af741e1b1",
+      "size_bytes": 8810
+    },
+    {
+      "path": "files/verify.py",
+      "sha256": "f2db229f31cdc34000ad0009bc2e2db47afcf6df9e5669177c68cd4d6ac375dd",
+      "size_bytes": 6936
+    },
+    {
+      "path": "files/replay_stdlib.py",
+      "sha256": "3804a6cebb6424f91ea58223a05b16a676290487510a58595839604b9d0722cb",
+      "size_bytes": 4336
+    },
+    {
+      "path": "files/results.json",
+      "sha256": "3c300a95d5b28787296dbd050ff7a610568d913b733a4991e28ab5c7eb9397fb",
+      "size_bytes": 2260
+    },
+    {
+      "path": "files/replay_results.json",
+      "sha256": "f37b76ae5745e5aef03e08795e8ba6c09d898dc910d94d477ee074a3789b1237",
+      "size_bytes": 523
+    },
+    {
+      "path": "files/verify.log",
+      "sha256": "4a2ff6da6165a4e77b0c74162440ff172eb5fbb26be5977ef646524cb7663d7b",
+      "size_bytes": 616
+    },
+    {
+      "path": "files/replay.log",
+      "sha256": "6285d1f0c15da13436a1c31117ca8277322691ecbc2c9e9f044b9b3ea91aff2b",
+      "size_bytes": 518
+    }
+  ]
+}

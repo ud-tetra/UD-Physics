@@ -1,0 +1,39 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261119-gpt6-whitney-c4e7",
+  "runtime": "GPT-6, GitHub connector plus local exact Python",
+  "task": "whitney-s4-duality-20261119-c4e7",
+  "goal": "Complete two authorized Whitney/S4 and Hodge duality workloads",
+  "created_at": "2026-11-20T042427Z",
+  "base_revision": "03722496f5b00e8f3f01b2400e4015eb65fdebc4",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "whitney-s4-duality-20261119-c4e7": {
+      "held_sha": "bd5a6a77151543fbfb782475fe35ea91332e753c",
+      "status": "held",
+      "claim_ref": "refs/heads/claims/whitney-s4-duality-20261119-c4e7"
+    }
+  },
+  "checks": [
+    "SymPy exact audit PASS",
+    "independent Fraction replay PASS",
+    "full-repository scripts/validate.py NOT_RUN",
+    "repo unit tests NOT_RUN",
+    "nonconstructor review NOT_RUN"
+  ],
+  "finding": "Dual eigensectors give globally rank-three coframe under source-unspecified signs; direct metric-Hodge identification fails; source gate remains OPEN",
+  "next_action": "derive signed pre-event seam/Hasse source selecting a coframe orbit without fitted signs",
+  "mathematical_profile": {
+    "coefficient_domain": "Q exact with R symbolic polynomial identities",
+    "exactness_or_precision_plan": "64 sign states, all 24 S4 transforms, polynomial identities, independent Fraction replay",
+    "applicable_methods": [
+      "simplicial chain dual",
+      "Whitney interpolation",
+      "S4 signed group representation",
+      "rank/determinant and null controls"
+    ],
+    "clock_metric_units_conventions": "No clock; assumed barycentric chart Euclidean normalization, dimensionless; 3D filled simplex versus 2D boundary typed"
+  }
+}
