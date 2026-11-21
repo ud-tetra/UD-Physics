@@ -4,7 +4,7 @@
   "protocol_version": 2,
   "task": "b-complex-coordinate-damping-audit-20261120",
   "session": "pb5-shear-20261120",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-20T23:21:04.569Z",
   "base_revision": "03722496f5b00e8f3f01b2400e4015eb65fdebc4",
   "owned_paths": [
@@ -12,5 +12,9 @@
     "sessions/pb5-shear-20261120",
     "candidates/b-complex-coordinate-damping-audit",
     "artifacts/pb5-shear-20261120"
-  ]
+  ],
+  "released_at": "2026-11-21T01:21:38.134Z",
+  "released_from_sha": "193e441af6d676efb27b3ef41f65f7b28cb1538e",
+  "integration_pr": 456,
+  "integration_commit": "0c9c35871d93922f081054dcc4a7a00040c9d7e3"
 }
