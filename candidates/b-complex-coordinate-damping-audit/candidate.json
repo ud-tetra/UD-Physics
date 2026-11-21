@@ -1,0 +1,39 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "b-complex-coordinate-damping-audit",
+  "session_id": "pb5-shear-20261120",
+  "question": "What is the exact lossless dimension for the printed B-complex coordinate mask, and which edge-encoded shear components survive PB5 additive radial loss?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "assumptions": [
+    "Unit simplex coefficient metric and unit skew incidence flow",
+    "Positive radial face mass on PB5",
+    "Supplied pentagonal chart for shear preparations"
+  ],
+  "physical_mapping": "OPEN; Physical Promotion = 0",
+  "target_exposure": "Historical dimensions known before audit. No fitted choices or physical targets.",
+  "fitted_choices": [],
+  "sources": [
+    {
+      "source_id": "B_GEOMETRY",
+      "url_or_repo_path": "artifacts/pachsym-20261104-01/exact-001/files/README.md",
+      "version_or_commit": "03722496f5b00e8f3f01b2400e4015eb65fdebc4",
+      "section_or_object_id": "Old and new tetrahedral fillings",
+      "source_status": "pinned repository"
+    },
+    {
+      "source_id": "PRINTED_DAMPING",
+      "url_or_repo_path": "https://chatgpt.com/library?file_id=libfile_0b03fa1c6524819193bbdef197bb21b4&account_id=personal",
+      "version_or_commit": "Calculating the Square Root of 4_3(1).docx",
+      "section_or_object_id": "pp. 19–20",
+      "source_status": "historical working notes; coordinate-mask claim corrected"
+    }
+  ],
+  "baseline": "Reference B coordinate mask and PB5 radial Whitney mask",
+  "result": "B dark dimension 17 of 27. PB5 lossless grade-one projection retains five equatorial edges. STF rank two for full signed equivariance, or three with supplied cyclic orientation.",
+  "next_discriminant": "Recover a native shear preparation, or specify a cross-grade transfer with independent readout."
+}

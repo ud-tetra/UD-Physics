@@ -1,0 +1,27 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "pb5-shear-20261120",
+  "runtime": "Codex",
+  "task": "b-complex-coordinate-damping-audit-20261120",
+  "goal": "Correct the printed B-complex coordinate sink kernel and test PB5 shear retention",
+  "created_at": "2026-11-20T23:20:28.047808+00:00",
+  "base_revision": "03722496f5b00e8f3f01b2400e4015eb65fdebc4",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "b-complex-coordinate-damping-audit-20261120": {
+      "ref": "refs/heads/claims/b-complex-coordinate-damping-audit-20261120",
+      "sha": "193e441af6d676efb27b3ef41f65f7b28cb1538e",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "B mask leaves 17 lossless states. PB5 signed edge preparation retains two STF components under the full symmetry; a supplied oriented cycle retains three. Same-clock relay sqrt(5) transfer is obstructed.",
+  "next_action": "Review the published correction, then identify a native shear preparation or declare a new cross-grade transfer.",
+  "checkpoint_at": "2026-11-20T23:22:40.778947+00:00",
+  "checkpoint_source": {
+    "revision": "03722496f5b00e8f3f01b2400e4015eb65fdebc4",
+    "dirty": true
+  }
+}
