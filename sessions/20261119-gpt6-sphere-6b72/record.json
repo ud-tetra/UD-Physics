@@ -1,0 +1,39 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261119-gpt6-sphere-6b72",
+  "runtime": "GPT-6; local Python exact computation and GitHub connector write",
+  "task": "sphere-inversion-20261119-6b72",
+  "goal": "Test a source-separated spherical information-inversion candidate on tetrahedron shell with conventional simplicial-duality null",
+  "created_at": "2026-11-20T03:09:32+00:00",
+  "base_revision": "03722496f5b00e8f3f01b2400e4015eb65fdebc4",
+  "source_dirty_at_boot": true,
+  "status": "handoff",
+  "claims": {
+    "sphere-inversion-20261119-6b72": {
+      "status": "held",
+      "held_sha": "1a3ba3c0918a0e5b74afac19293f9869cc506e7e"
+    }
+  },
+  "checks": [
+    "primary local python3 verify.py PASS",
+    "independently written python3 replay_stdlib.py PASS (same constructor)",
+    "remote repository validate/tests NOT_RUN (no local checkout)",
+    "non-constructor mathematical review NOT_DONE"
+  ],
+  "finding": "K=boundary Delta3 is exact S2; signed complement gives orientation-twisted S4 duality. With supplied Euclidean metric, geometric primal-to-dual map projects to antipodal, not ambient spherical inversion. Null conventional tetra reproduces all; native UD readout/event law still absent.",
+  "next_action": "Source-derive orientation/grade-selective information inversion and metric/readout from UD carrier; design independent residual against ordinary duality. Keep claim held while PR is draft.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q, Z, Q(sqrt3); real Euclidean geometry assumed",
+    "exactness_or_precision_plan": "exact symbolic incidence, rank and 24 signed permutation cases with separate stdlib Fraction replay",
+    "applicable_methods": [
+      "simplicial chain complexes and Betti numbers",
+      "S4 representation and orientation twist",
+      "Euclidean inversion vs antipodal topology",
+      "baseline dual and hidden-fiber no-go"
+    ],
+    "clock_metric_units_conventions": "no clock, no physical unit map; unit circumradius Euclidean R3 only for geometric projection; increasing 0<1<2<3"
+  },
+  "checkpoint_at": "2026-11-20T03:09:32+00:00",
+  "physical_promotion": 0
+}
