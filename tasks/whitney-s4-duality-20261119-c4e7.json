@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "whitney-s4-duality-20261119-c4e7",
+  "goal": "Classify Whitney S4 rank-three coframes and typed Hodge dual versus signed complement with source-selected preparation test",
+  "owned_paths": [
+    "tasks/whitney-s4-duality-20261119-c4e7.json",
+    "sessions/20261119-gpt6-whitney-c4e7",
+    "candidates/whitney-s4-duality-c4e7",
+    "artifacts/20261119-gpt6-whitney-c4e7"
+  ],
+  "dependencies": [],
+  "status": "active"
+}

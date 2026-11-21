@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "whitney-s4-duality-c4e7",
+  "session_id": "20261119-gpt6-whitney-c4e7",
+  "question": "Does signed duality select an S4-covariant Whitney coframe from UD support/seam input?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Affine tetrahedron with Euclidean chart",
+    "Binary test signs \u00b11",
+    "D1 eigencondition as conditional preparation"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Exploratory geometric hypothesis; no measurement or fitted inputs",
+  "fitted_choices": [],
+  "sources": [
+    "UD PR #578",
+    "UD-Physics PR #454",
+    "UD JOP v2.5 \u00a74.5",
+    "Edge strain v0.1 \u00a7\u00a72\u20134,8\u20139"
+  ],
+  "baseline": "Ordinary Whitney finite element and signed simplicial complement",
+  "result": "16/64 nondegenerate sign cochains in D1 eigensectors; source-selection unproved; Hodge identification no-go",
+  "next_discriminant": "sourced signed seam/stock event selector and metric provenance",
+  "mathematical_receipts": [
+    "candidates/whitney-s4-duality-c4e7/mathematical_receipt.json"
+  ]
+}
