@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "forward-selection-hinge-20261119-f1a7",
+  "goal": "Prove conditional forward-selection and exact POC-1 idle-hinge counterexamples; reconcile four stated no-go results with v0.85/current sources",
+  "owned_paths": [
+    "tasks/forward-selection-hinge-20261119-f1a7.json",
+    "sessions/20261119-gpt6-forward-hinge-f1a7",
+    "candidates/forward-selection-hinge-20261119-f1a7",
+    "artifacts/20261119-gpt6-forward-hinge-f1a7"
+  ],
+  "dependencies": [
+    "source ledger v0.85 G05/O09/Q174-Q176",
+    "personal Library POC-1 v2.5 §4.5",
+    "PR #490 symmetry selector proof, source-bound"
+  ],
+  "status": "handoff_review"
+}

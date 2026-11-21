@@ -1,0 +1,175 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "UD_FORWARD_SELECTION_HINGE_20261119",
+  "session_id": "20261119-gpt6-forward-hinge-f1a7",
+  "candidate_id": "forward-selection-hinge-20261119-f1a7",
+  "question": "What uniquely follows from symmetry, admissibility and proposed kinetic action in two finite tetrahedron carriers?",
+  "evidence_labels": [
+    "EXACT_CONDITIONAL",
+    "NO-GO_SCOPED"
+  ],
+  "objects": [
+    {
+      "object_id": "C",
+      "symbol": "C",
+      "object_type": "real oriented simplex chain space",
+      "definition": "C0⊕C1⊕C2⊕C3 for filled K4",
+      "domain": "R15",
+      "codomain": "R15",
+      "coefficient_domain": "Q for exact checks, R for evolution",
+      "units": "dimensionless",
+      "basis_orientation": "increasing simplex orientation",
+      "metric_measure": "unit coefficient inner product",
+      "origin": "imported native carrier",
+      "normalization": "unit simplex"
+    },
+    {
+      "object_id": "A",
+      "symbol": "A",
+      "object_type": "skew Hodge operator",
+      "definition": "∂−∂ᵀ",
+      "domain": "R15",
+      "codomain": "R15",
+      "coefficient_domain": "Z entries",
+      "units": "per native parameter",
+      "basis_orientation": "increasing",
+      "origin": "imported",
+      "exact_expression": "A²=−4(I−P_H0)"
+    },
+    {
+      "object_id": "S",
+      "symbol": "S_kin",
+      "object_type": "candidate kinetic action",
+      "definition": "(1/2)∫_0^τ ||dot c||² ds",
+      "domain": "admitted-candidate paths",
+      "codomain": "R≥0",
+      "coefficient_domain": "R",
+      "units": "native squared-speed×native parameter",
+      "origin": "candidate from supplied audit",
+      "exact_expression": "ΔS=τ||PAc||²/2 if Pc=0"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "ledger",
+      "url_or_repo_path": "UD/captures/2026-10-21T151000Z-codex-exit03-recovery-98dc7b12/library_LEDGER_v0.85.json",
+      "version_or_commit": "UD@cef84ca5c996ec21b67247c74ee85c2c6c5dd995",
+      "section_or_object_id": "G05,Q35,O09,Q174-Q176",
+      "source_status": "recovered primary archive"
+    },
+    {
+      "source_id": "POC1",
+      "url_or_repo_path": "personal Library libfile_eb315486c110819199861a466b40fc3c",
+      "version_or_commit": "v2.5 (as supplied)",
+      "section_or_object_id": "§4.5",
+      "source_status": "readable to session; external reviewer access OPEN"
+    },
+    {
+      "source_id": "hinge",
+      "url_or_repo_path": "personal Library UD_POC1_IDLE_HINGE_ACTION_AUDIT_v0.1.md",
+      "version_or_commit": "v0.1 2026-11-19",
+      "section_or_object_id": "§2–3",
+      "source_status": "supplied candidate witness"
+    }
+  ],
+  "assumptions": [
+    "finite admitted paths nonempty",
+    "source pre-event admission must be independent of action",
+    "raw vertex toy distinct from 192 state exposure",
+    "unit metric and fixed τ",
+    "no physical time identification"
+  ],
+  "technique_plan": [
+    {
+      "technique": "finite symmetry stabilizers and exhaustive enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "proof of no unique equivariant successor"
+    },
+    {
+      "technique": "rational Hodge action",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "strict and tie kinetic cases"
+    },
+    {
+      "technique": "Smith normal form",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "scope undressed gauge collapse"
+    },
+    {
+      "technique": "spectral factorization",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify Q174-Q176 roots"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "K4 6/16 admitted; glued 6/32 admitted; 4 or 2 symmetric successors",
+    "reduced_expression": "conditional probabilities 1/4 and 1/2; ΔS=τ||PAc||²/2",
+    "factor_origins": [
+      "stabilizer transitivity",
+      "orthogonal projectors"
+    ],
+    "factorization": "Q176 supports squared frequencies 3,5 and 2,5",
+    "divisibility_gcd_lcm": "not applicable to physical clocks"
+  },
+  "clock_receipt": {
+    "clock_type": "formal Hodge parameter τ and unselected event hazard",
+    "physical_unit_map": null,
+    "period_claim": "no global finite recurrence on glued fixed generators"
+  },
+  "dynamics_readout": {
+    "state_space": "raw binary simplex-admitted toy and separate real chain C",
+    "generator_or_update": "candidate A and QAQ; stochastic rate λ NOT selected",
+    "initial_boundary_conditions": "source-given hinge vector states, no acquired event boundary",
+    "conservation_and_sources": "skew norm conservation under each generator; parity endpoint admission not sourced",
+    "projection_and_kernel": "observable endpoint quotient must be declared",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "SOURCE_GIVEN_TIE_EXPOSED_BEFORE_REPLAY",
+    "known_targets": [
+      "exact tie",
+      "strict τ/2"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "baseline": "identity/hold and constant λ alternatives"
+  },
+  "calculation_steps": [
+    "enumerate admissible states",
+    "compute automorphism stabilizer orbits",
+    "derive stationary-action observable endpoint criterion",
+    "compare A vs QAQ cyclic supports",
+    "exactly compute source spectral and gauge controls"
+  ],
+  "result": {
+    "exact_expression": "ΔS=τ||PAc||²/2 for Pc=0; endpoint unique iff |π_end(argmin S)|=1",
+    "scope": "finite declared toy and candidate Hodge hinge",
+    "physical_interpretation": "none"
+  },
+  "verification": [
+    {
+      "method": "exact SymPy+stdlib replay",
+      "command_or_proof_path": "artifacts/20261119-gpt6-forward-hinge-f1a7/exact-001/files/replay_stdlib.py",
+      "actual_result": "PASS locally; GH checkout not run",
+      "review_relationship": "constructor-context independent implementation"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "S4 symmetric nontrivial port",
+    "same trajectory/kinetic action with declared differing parity endpoint",
+    "arbitrary event rate λ under identical conditional transition probabilities",
+    "unverified No-Go 7.4 numbering",
+    "unsupported claimed radical √7"
+  ],
+  "limitations": [
+    "no joint source admission for hinge histories",
+    "independent nonconstructor review absent",
+    "physical clock/units absent",
+    "personal Library source may not be externally available",
+    "full SymPy verifier only in conversation ZIP"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261119-gpt6-forward-hinge-f1a7/exact-001/manifest.json"
+  ],
+  "next_discriminant": "authenticated pre-event source rule and branch-dependent work/receipt"
+}

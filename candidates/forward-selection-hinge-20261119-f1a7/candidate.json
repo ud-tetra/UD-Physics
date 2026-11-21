@@ -1,0 +1,35 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "forward-selection-hinge-20261119-f1a7",
+  "session_id": "20261119-gpt6-forward-hinge-f1a7",
+  "question": "Does native source plus action determine one admitted forward endpoint, even at POC-1 supported-coordinate-zero hinge?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT_CONDITIONAL",
+    "NO-GO_SCOPED",
+    "OPEN_GATED"
+  ],
+  "assumptions": [
+    "minimal raw vertex-triangle admissibility for toy successor sets",
+    "equivariant deterministic selector or invariant stochastic kernel",
+    "Hodge kinetic mask convention for hinge",
+    "both open/closed parity endpoints NOT authenticated as jointly admitted"
+  ],
+  "physical_mapping": "NONE; Physical Promotion=0",
+  "target_exposure": "Original hinge preparation and expected tie known from supplied user result; independent verification was a replay, not target-blind discovery",
+  "fitted_choices": [],
+  "sources": [
+    "UD v0.85 ledger Q35,G05,O09,Q174-Q176",
+    "UD PR #490 source-bound symmetry theorem (open, stacked)",
+    "POC-1 v2.5 §4.5 personal Library",
+    "edge-strain source audit v0.1 personal Library",
+    "UD PR #577"
+  ],
+  "baseline": "symmetric raw-K4, face-glued two-cell, strict/tie Hodge kinetic preps",
+  "result": "Deterministic symmetry obstruction; conditional symmetric neighbor probabilities 1/4 and 1/2; action tie means selected endpoint not unique if both are jointly admissible; admissibility not yet sourced",
+  "next_discriminant": "source-authenticated matching event pre-state, endpoint admission and distinguishable pre-event work receipt",
+  "mathematical_receipts": [
+    "candidates/forward-selection-hinge-20261119-f1a7/mathematical_receipt.json"
+  ]
+}
