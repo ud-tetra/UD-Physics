@@ -1,0 +1,27 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-codex-o14-binding",
+  "runtime": "Codex",
+  "task": "o14-bundle-binding",
+  "goal": "Check internal O14 v0.2 basis metadata binding",
+  "created_at": "2026-11-23T20:49:32.617906+00:00",
+  "base_revision": "e1a990a4a97d09321f3509c8c25cda6ebc09ab66",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "o14-bundle-binding": {
+      "ref": "refs/heads/claims/o14-bundle-binding",
+      "sha": "ce373c2c30bdb38574b6833a0e3faa706677db64",
+      "status": "held"
+    }
+  },
+  "checks": [],
+  "finding": "Internal metadata checker passes six synthetic CLI controls.",
+  "next_action": "Independent review. Physical labels and external generator provenance remain open.",
+  "checkpoint_at": "2026-11-23T20:49:47.967445+00:00",
+  "checkpoint_source": {
+    "revision": "e1a990a4a97d09321f3509c8c25cda6ebc09ab66",
+    "dirty": true
+  }
+}

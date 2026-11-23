@@ -1,0 +1,6 @@
+PASS canonical mock: expected exit 0
+PASS swapped modal pairs: expected exit 1
+PASS orphan output: expected exit 1
+PASS swapped selector rows: expected exit 1
+PASS swapped simplex rows: expected exit 1
+PASS coordinated relabeling: expected exit 0

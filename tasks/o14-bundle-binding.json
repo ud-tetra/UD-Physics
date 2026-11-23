@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "o14-bundle-binding",
+  "goal": "Check internal O14 v0.2 basis metadata binding",
+  "owned_paths": [
+    "scripts/check_o14_bundle_binding.py",
+    "sessions/20261123-codex-o14-binding",
+    "artifacts/20261123-codex-o14-binding",
+    "tasks/o14-bundle-binding.json"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}
