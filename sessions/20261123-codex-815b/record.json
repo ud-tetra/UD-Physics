@@ -1,0 +1,20 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-codex-815b",
+  "runtime": "Codex",
+  "task": "q171-harness-repair-20261123-815b",
+  "goal": "Submit a per-session proposal repairing the Q171 replay test fixture",
+  "created_at": "2026-11-23T15:59:52Z",
+  "base_revision": "0c9c35871d93922f081054dcc4a7a00040c9d7e3",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "q171-harness-repair-20261123-815b": "17249a06a22a738935e4edaf7e0e5cd6564a7653"
+  },
+  "checks": [
+    "Pinned PR #301 head 6606617f8274f435b42d28fefbd2786cf56142c4 plus patch: 8/8 replay tests, 481 records validated, 16/16 repository tests, git diff --check clean."
+  ],
+  "finding": "Read refined offsets from the nested cross-complex replay namespace. The frozen sign assertion evaluates and passes.",
+  "next_action": "The PR #301 owner can apply the patch at the pinned revision and rerun its dedicated suite. Source-custodian disposition on #338 is separate."
+}

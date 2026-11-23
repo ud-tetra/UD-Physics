@@ -1,0 +1,12 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "q171-harness-repair-20261123-815b",
+  "goal": "Submit a per-session proposal repairing the Q171 replay test fixture",
+  "owned_paths": [
+    "tasks/q171-harness-repair-20261123-815b.json",
+    "sessions/20261123-codex-815b/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
