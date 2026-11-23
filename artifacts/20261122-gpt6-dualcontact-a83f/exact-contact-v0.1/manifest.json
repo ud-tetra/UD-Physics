@@ -1,0 +1,76 @@
+{
+  "command": "python3 verify.py && python3 replay_stdlib.py",
+  "command_execution": "EXECUTED_LOCALLY_BEFORE_CAPTURE_NOT_BY_CAPTURE",
+  "created_at": "2026-11-23T02:01:47Z",
+  "evidence": "EXACT",
+  "files": [
+    {
+      "path": "files/REPORT.md",
+      "sha256": "9e5ba002e4ca952af1f899abdad12331e0014a2ef31f1c44d41223f1ed8772a3",
+      "size_bytes": 14339
+    },
+    {
+      "path": "files/results.json",
+      "sha256": "5a3c58809476136f427611e950ae732dee3107cc92858fe0b9eba3538387c85d",
+      "size_bytes": 13492
+    },
+    {
+      "path": "files/replay_results.json",
+      "sha256": "a29c4194cf385f407478abd6ba3937bea3f9329694f2a1b67f34d27378a339ba",
+      "size_bytes": 1062
+    },
+    {
+      "path": "files/verify.log",
+      "sha256": "d377f17f720d4d55ecb85bbe5b919f3def08beea0035f787dd7fb50ff6291dda",
+      "size_bytes": 1349
+    },
+    {
+      "path": "files/replay.log",
+      "sha256": "4f4ecf3701791e5d9d6d6da43ff3f24e7e4917f3eb2c47a7f023fe5c56532dae",
+      "size_bytes": 99
+    },
+    {
+      "path": "files/BOOT_REPORT.md",
+      "sha256": "a5d954d16251a7bb7b847a83ff05dbcf529533601c3131a51fe738780163eb30",
+      "size_bytes": 2061
+    }
+  ],
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "verify.py",
+      "path": "inputs/001-verify.py",
+      "sha256": "1d438ebc9afcd456a9287120b2c4309867446e69a57a49ebbc5ceb6cde5c2383",
+      "size_bytes": 7459,
+      "source_location": "repository",
+      "source_path": "experiments/dual-tetra-contact-20261122-a83f/verify.py"
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_stdlib.py",
+      "path": "inputs/002-replay_stdlib.py",
+      "sha256": "413233c468c7b28163119de2ee7c241b0c3928a4f9daf7aac3bdfbf6891173f9",
+      "size_bytes": 5430,
+      "source_location": "repository",
+      "source_path": "experiments/dual-tetra-contact-20261122-a83f/replay_stdlib.py"
+    },
+    {
+      "input_id": "input-003",
+      "name": "SOURCE_REGISTER.json",
+      "path": "inputs/003-SOURCE_REGISTER.json",
+      "sha256": "7fa3237c394d374f5bc15104e47caa359a6ed1bcbce4b08b0f1c939bcd071a5c",
+      "size_bytes": 2678,
+      "source_location": "repository",
+      "source_path": "candidates/dual-tetra-contact-20261122-a83f/SOURCE_REGISTER.json"
+    }
+  ],
+  "record_type": "run",
+  "run_id": "exact-contact-v0.1",
+  "schema_version": 2,
+  "session_id": "20261122-gpt6-dualcontact-a83f",
+  "source": {
+    "dirty": true,
+    "revision": "0c9c35871d93922f081054dcc4a7a00040c9d7e3"
+  },
+  "summary": "Exact rigid dual-tetrahedron intersection, signed D1 contact, generic no-contact theorem and illustrative isospectral source-gate controls"
+}
