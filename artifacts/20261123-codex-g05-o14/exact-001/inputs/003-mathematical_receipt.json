@@ -1,0 +1,195 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "g05-relay-o14-exact-control",
+  "session_id": "20261123-codex-g05-o14",
+  "candidate_id": null,
+  "question": "Can the prescribed whole-turn edits collide at equal elapsed time, and what measurement rows could supply O14?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "relay-control",
+      "symbol": "(n_A,n_B)",
+      "object_type": "integer winding pair",
+      "definition": "Extra positive turns on two separately prepared isolated rotation planes.",
+      "domain": "nonnegative integer turns; signed integer differences",
+      "codomain": "native time and O09 action",
+      "coefficient_domain": "integers, rationals and exact radicals",
+      "units": "dimensionless native clock and action",
+      "basis_orientation": "positive rotation on both planes",
+      "metric_measure": "unit modal metric",
+      "origin": "assumed",
+      "exact_expression": "q_test=n_A+n_B; I/pi=n_A/3+2*n_B/3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "note-11231155",
+        "timing-gate"
+      ],
+      "assumption_ids": [
+        "fixed-transfers"
+      ],
+      "dependency_ids": [],
+      "normalization": "O09 action divided by pi in replay"
+    },
+    {
+      "object_id": "O14-candidate-map",
+      "symbol": "A_map",
+      "object_type": "conditional physical action scale",
+      "definition": "Common scale of the physical canonical one-form pullback to the native active K4 state.",
+      "domain": "ideal seven-mode LC realization with independently assigned native support",
+      "codomain": "positive action in joule seconds",
+      "coefficient_domain": "positive reals",
+      "units": "J s",
+      "basis_orientation": "signed quadratures as in source LC model",
+      "metric_measure": "native Euclidean active subspace and physical LC energy form",
+      "origin": "assumed",
+      "exact_expression": "A_map=Phi_*^2/Z=E*T/(pi*a) under the ideal map",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "lc-candidate",
+        "joint-proof"
+      ],
+      "assumption_ids": [
+        "absolute-support"
+      ],
+      "dependency_ids": [
+        "O09",
+        "O10"
+      ],
+      "normalization": "a=norm(x)^2; rho=2"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "note-11231155",
+      "url_or_repo_path": "Provided research note 11231155",
+      "version_or_commit": "11231155",
+      "section_or_object_id": "staged relay",
+      "source_status": "scratch control"
+    },
+    {
+      "source_id": "timing-gate",
+      "url_or_repo_path": "experiments/pachner-timing-budget/SOURCE_GATE_v0.7.md",
+      "version_or_commit": "54c76f50f00f831409819d2ba11b55139261968a",
+      "section_or_object_id": "event anchor",
+      "source_status": "conditional"
+    },
+    {
+      "source_id": "joint-proof",
+      "url_or_repo_path": "experiments/g05-g06-joint-proof/README.md",
+      "version_or_commit": "54c76f50f00f831409819d2ba11b55139261968a",
+      "section_or_object_id": "Q136/O09 and O10/O14",
+      "source_status": "conditional"
+    },
+    {
+      "source_id": "lc-candidate",
+      "url_or_repo_path": "experiments/g0506-source-bridge-screen/README.md",
+      "version_or_commit": "54c76f50f00f831409819d2ba11b55139261968a",
+      "section_or_object_id": "seven-mode analogue",
+      "source_status": "candidate"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "fixed-transfers",
+      "statement": "Prescribed modal turns and fixed remaining durations and transitions."
+    },
+    {
+      "id": "absolute-support",
+      "statement": "O14 requires independently assigned native support and verified absolute map."
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "prime valuation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "strict irrationality"
+    },
+    {
+      "technique": "integer enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "finite control replay"
+    },
+    {
+      "technique": "row-span test",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "action exponent certificate"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "3^2 histories",
+    "reduced_expression": "9 histories, 5 pairs",
+    "factor_origins": [
+      "turn grid 0 to 2 per segment"
+    ],
+    "factorization": "v_5(5/3)=1 excludes rational period ratio",
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "native oriented continuous phase",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "rotate at the fixed mode frequency",
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": "2*pi/sqrt(3), 2*pi/sqrt(5)",
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "prior O14 proposals exposed but unused",
+    "known_targets": [
+      "historical Q288 proposal"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "nine prescribed histories",
+    "selection_criterion": "equal synthetic statistic with unequal action",
+    "baseline": "matched elapsed time with all other durations fixed"
+  },
+  "calculation_steps": [
+    "Enumerate equal synthetic statistic.",
+    "Prove irrational period ratio by valuation.",
+    "Add measured energy and period exponent rows under the ideal LC model."
+  ],
+  "result": {
+    "exact_expression": "Delta T=0 implies zero integer winding change; (1,2,-2)+(0,0,1)=(1,2,-1)",
+    "approximation": null,
+    "units": null,
+    "precision_and_error": null,
+    "scope": "Prescribed relay and conditional LC dimensional certificate",
+    "physical_interpretation": "HYPOTHESIS"
+  },
+  "verification": [
+    {
+      "method": "integer/fraction replay",
+      "command_or_proof_path": "python3 experiments/g05-relay-o14/audit.py",
+      "source_revision": "54c76f50f00f831409819d2ba11b55139261968a",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Equal q_test across (1,0) and (0,1) gives nonzero action difference."
+  ],
+  "limitations": [
+    "No actual Q136 receipts or first-entry replay.",
+    "No calibrated device, absolute support rule or O14 estimate."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261123-codex-g05-o14/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Source-admitted first-entry pair for G05 and independent support assignment for O14."
+}
