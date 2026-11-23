@@ -1,0 +1,361 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-WEIGHTED-ADMISSION-016",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Do source-native observation/admission/metric rules select a finite UD resolution floor, and what exact conditions on stage-dependent positive edge weights would yield saturation or convergence while preserving appropriate support currents?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "K4_RECURSION",
+      "symbol": "K_n",
+      "object_type": "centroid-refined oriented simplicial 3-balls",
+      "definition": "n recursive 1->4 K4 splits with fixed original four outer triangular faces",
+      "domain": "n∈Z≥0",
+      "codomain": "simplicial complexes",
+      "coefficient_domain": "Z chain incidences",
+      "units": "none",
+      "basis_orientation": "ascending oriented simplices, unique centroid birth labels",
+      "metric_measure": "graph observer separate",
+      "origin": "four-cell tetra source v1.0",
+      "exact_expression": "f=( (4^n+11)/3,(4^(n+1)+14)/3,2·4^n+2,4^n)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "FOURCELL"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "unit original graph edges"
+    },
+    {
+      "object_id": "GEN_WEIGHTS",
+      "symbol": "g_k",
+      "object_type": "hypothetical radial edge conductance sequence",
+      "definition": "all K4 graph edges born in generation k assigned common g_k>0, original six have weight1",
+      "domain": "positive real sequences indexed k≥1",
+      "codomain": "positive graph conductance coefficients, formal native type",
+      "coefficient_domain": "Q for tests,R in theorem",
+      "units": "none",
+      "basis_orientation": "unoriented edge pairs, S4 common per generation",
+      "metric_measure": "W=diag(w_edge)",
+      "origin": "CANDIDATE and not a Q177 volume-to-conductance map",
+      "exact_expression": "g_k=1 native unit; g_k=g1 r^(k-1) separate candidate family",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PACHNER",
+        "FOURCELL"
+      ],
+      "assumption_ids": [
+        "candidate_metric"
+      ],
+      "dependency_ids": [
+        "K4_RECURSION"
+      ],
+      "normalization": "no empirical target"
+    },
+    {
+      "object_id": "DN_PORT",
+      "symbol": "Lambda_n",
+      "object_type": "candidate dimensionless boundary Dirichlet-to-Neumann response",
+      "definition": "Schur complement of L=B1 W B1^T after holding original four vertices, minimizing internal graph energy",
+      "domain": "R^4 boundary vertex potentials",
+      "codomain": "R^4 boundary generalized response",
+      "coefficient_domain": "Q/R",
+      "units": "native graph response",
+      "basis_orientation": "original K4 vertices 0..3",
+      "metric_measure": "1/2 sum w_e*(Δx_edge)^2",
+      "origin": "pachner-boundary-observability development port v0.1",
+      "exact_expression": "Lambda_n=alpha_n (4I−11^T)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PACHNER"
+      ],
+      "assumption_ids": [
+        "candidate_metric",
+        "boundary_port"
+      ],
+      "dependency_ids": [
+        "GEN_WEIGHTS"
+      ],
+      "normalization": "outer six edges unit"
+    },
+    {
+      "object_id": "ALPHA",
+      "symbol": "alpha_n",
+      "object_type": "exact native boundary-response scalar",
+      "definition": "coefficient of original K4 clique response in Lambda_n",
+      "domain": "(g_1...g_n) positive weights",
+      "codomain": "R",
+      "coefficient_domain": "Q symbolic/R",
+      "units": "formal conductance",
+      "basis_orientation": "S4-invariant contrast representation on R4",
+      "metric_measure": "Schur complement",
+      "origin": "DERIVED v1.6",
+      "exact_expression": "1+(1/4)Σ_{k=1}^n(11/4)^(k−1)g_k; Δalpha=(11/4)^n g_(n+1)/4",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "candidate_metric"
+      ],
+      "dependency_ids": [
+        "DN_PORT"
+      ],
+      "normalization": "none"
+    },
+    {
+      "object_id": "WEIGHTED_CURRENT",
+      "symbol": "A_W,H_W",
+      "object_type": "changed incidence-local metric-skew vertex-edge generator",
+      "definition": "A_W=[[0,-B1W],[B1^T,0]], H_W=diag(I,W)",
+      "domain": "C0(K_n;R)⊕C1(K_n;R)",
+      "codomain": "same",
+      "coefficient_domain": "Q for test",
+      "units": "formal native evolution u not SI time",
+      "basis_orientation": "signed edge incidence B1",
+      "metric_measure": "H_W positive",
+      "origin": "constructed conditional extension, NOT unchanged Q169/Q166",
+      "exact_expression": "A_W^TH_W+H_WA_W=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [
+        "candidate_metric",
+        "changed_operator"
+      ],
+      "dependency_ids": [
+        "GEN_WEIGHTS"
+      ],
+      "normalization": "none"
+    },
+    {
+      "object_id": "ADM_STOP",
+      "symbol": "Adm_n",
+      "object_type": "physical/event admission or stop predicate",
+      "definition": "source rule selecting whether K_n undergoes 1→4, g_n, and physical readout threshold",
+      "domain": "full admissible packet state and history",
+      "codomain": "allow/stop and source sink receipt",
+      "coefficient_domain": "unspecified",
+      "units": "NONE",
+      "basis_orientation": "not defined",
+      "metric_measure": "not defined",
+      "origin": "OPEN_GATED by current sources",
+      "exact_expression": "none; Q173 mask is not this map",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER",
+        "TRANSPORT"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [
+        "K4_RECURSION"
+      ],
+      "normalization": "OPEN"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "FOURCELL",
+      "url_or_repo_path": "experiments/four-cell-tetrahedron/README.md",
+      "version_or_commit": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "section_or_object_id": "v1.0 centroid 1→4, child volume1/4 and recursive f vectors",
+      "source_status": "read-only accepted mathematical structure"
+    },
+    {
+      "source_id": "PACHNER",
+      "url_or_repo_path": "experiments/pachner-boundary-observability/README.md",
+      "version_or_commit": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "section_or_object_id": "v0.1 developmental unit-edge boundary port",
+      "source_status": "candidate mathematical readout, not physical measurement"
+    },
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "section_or_object_id": "P01–P06, Q165/Q166/Q169–Q171/Q173/Q177–Q179",
+      "source_status": "read-only frozen fixed-complex support/currents/masks/ownership; no sourced event trigger"
+    },
+    {
+      "source_id": "TRANSPORT",
+      "url_or_repo_path": "experiments/pachner-state-transport/README.md",
+      "version_or_commit": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "section_or_object_id": "v0.1 1→4 integral map fails unit top-stock isometry; weights are not Q177",
+      "source_status": "source-bound cross-complex no-go"
+    },
+    {
+      "source_id": "PCM",
+      "url_or_repo_path": "experiments/pachner-current-metric/README.md",
+      "version_or_commit": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "section_or_object_id": "v0.1 connected-Hasse positive diagonal skew metric scalar only",
+      "source_status": "scoped exact metric selection lemma"
+    },
+    {
+      "source_id": "PRIOR",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/OPERATIONAL_RESOLUTION_FLOOR_v1.5.md",
+      "version_or_commit": "37e6e8b4b5954455794afb58e5c93fefcb6a123e",
+      "section_or_object_id": "unit edge all-depth alpha=(6+(11/4)^n)/7",
+      "source_status": "prior scoped exact Discovery result"
+    },
+    {
+      "source_id": "CRL2",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_GOVERNANCE_CRL2_SUBDIVISION_v1.0.md",
+      "version_or_commit": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "section_or_object_id": "§§1–4 governance proposal, not physics",
+      "source_status": "proposal not physical law"
+    }
+  ],
+  "assumptions": [
+    "Original six edges retain unit weight at every level; every radial edge generated at level k receives the same positive g_k to preserve K4 S4",
+    "Weighted graph port is chosen and static; it does not imply physical instrumentation or a clock",
+    "For nonnegative g_k=0, disconnected zero-weight inner vertices require energy-minimization limit or component deletion rather than naive inverted Schur",
+    "Uniform child volume 1/4 is NOT an edge conductance derivation; quarter-decay proxy explicitly candidate",
+    "Fixed-complex weighted vertex-edge generator can conserve an H_W norm, but it is not Q169 with original unit coefficients",
+    "Cross-complex unit top-cell chain map changes Q165 squared stock1→4, requires new source sink/metric/actuator"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact graph incidence and Kron elimination",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive general all-depth response via five-node inner network recurrence"
+    },
+    {
+      "technique": "symbolic geometric-series convergence",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "derive r<4/11 threshold and exact limit"
+    },
+    {
+      "technique": "direct rational graph replay and signed S4 covariance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "check n0..3 for two weight laws, 24 relabelings each"
+    },
+    {
+      "technique": "metric-adjoint and incidence cut currents",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify conditional weighted H-skew and conserved native quadratic stock"
+    },
+    {
+      "technique": "source-comparison and no-go",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Q173 mask/Q177 ownership do not select g; unchanged Q169 diagonal H constant"
+    },
+    {
+      "technique": "absolute length or Planck calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "this mission tests native resolution only"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "four child copies; old-old edge multiplicity2, radial multiplicity3; star Schur factor1/4",
+    "reduced_expression": "w_parent=(11 w_child+g_parent)/4; alpha_n=1+Σ(11/4)^(k−1)g_k/4; threshold r<4/11",
+    "factor_origins": [
+      "geometric clique construction and child overlaps",
+      "candidate g_k sequence separate source input"
+    ],
+    "factorization": "11 prime,4=2², geometric proxy rho=11/16, limit9/5; not a Planck coefficient",
+    "divisibility_gcd_lcm": "N1=192 local count not n or conductance"
+  },
+  "clock_receipt": {
+    "clock_type": "refinement generation index n not physical time",
+    "modulus": null,
+    "residue_convention": "N/A",
+    "update_rule": "new radial edges conditionally added at each generation with chosen g_n",
+    "initial_phase": "not a clock phase",
+    "coupling": "chosen graph edge weights; no sourced event trigger",
+    "period_claim": "no event period; monotone response",
+    "physical_unit_map": "NONE"
+  },
+  "dynamics_readout": {
+    "state_space": "finite weighted K4 graph C0⊕C1 for alternative flow, and K4 full real chain for Q169 reference",
+    "generator_or_update": "A_W conditional H_W-skew, original A_K unchanged Q169 separate",
+    "initial_boundary_conditions": "four original vertex potentials held, interior minimized",
+    "conservation_and_sources": "within fixed graph weighted stock conserved, original Q165 cross-complex top stock changes1→4",
+    "projection_and_kernel": "boundary DN strict positivity for all g_n>0; Q171 extra internal distinctions persist",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "internal resolution question exposed, no empirical Planck coefficient or length used in derivation",
+    "known_targets": [
+      "192 finite local labels",
+      "v1.5 unweighted divergence",
+      "child volume quarter"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "candidate g_k=4^{-(k−1)} motivated by volume count but not a derived conductance law",
+      "epsilon=1/100 arbitrary observer control, not calibration"
+    ],
+    "search_domain_and_budget": "symbolic all n, direct n0..3 for two sequences, 8 tests, one independent five-node derivation",
+    "selection_criterion": "source-selected finite stop or exact/finite-precision saturation with conserved currents",
+    "baseline": "original Q169 unit weights and unit metric"
+  },
+  "calculation_steps": [
+    "Audit P01–P06 and Q165–Q179 plus current metric, Pachner transport, static observer sources",
+    "Define typed weight sequence g_k per edge generation and fixed original four-vertex port",
+    "Derive exact child overlap and Kron recursion w_parent=(11w_child+g)/4",
+    "Sum exactly to alpha_n=1+(1/4)Σ(11/4)^{k−1}g_k, prove positive increment",
+    "Derive geometric g1 r^{k−1} convergence iff r<4/11, linear critical, exponential supercritical",
+    "Use explicit quarter weight proxy and exact tolerance controls epsilon1/100 n9 adjacent/n12 tail; label candidate",
+    "Direct exact rational Schur n0..3 for native and proxy; independent weighted five-node symbolic test; 8 local regressions PASS",
+    "Prove H-skew conservation for changed vertex-edge generator and positive W, distinguish from Q169/166",
+    "Invoke connected-Hasse positive-diagonal metric uniqueness and Q165 top norm1→4 mismatch; no cross-complex source or admission rule"
+  ],
+  "result": {
+    "exact_expression": "alpha_n=1+1/4 Σ(11/4)^(k−1)g_k, delta_n=(11/4)^n g_(n+1)/4; g_k>0 gives no finite exact floor; g_k=g1 r^(k−1) converges iff r<4/11",
+    "approximation": null,
+    "units": "native dimensionless graph conductance and formal support, not meters",
+    "precision_and_error": "exact rational and symbolic calculation, arbitrary epsilon explicitly conditional",
+    "scope": "fixed four-vertex boundary port and chosen generation edge weights; NOT physical observer/termination theorem",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "direct exact generation-weighted K4 graphs",
+      "command_or_proof_path": "UD_K4_WEIGHTED_ADMISSION_GATE_v1.6.zip/weighted_refinement_v16.py",
+      "source_revision": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "actual_result": "PASS exact n0..3 response, 24 S4 boundary relabelings per level per weighting",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent five-node star elimination",
+      "command_or_proof_path": "UD_K4_WEIGHTED_ADMISSION_GATE_v1.6.zip/independent_weighted_kron_v16.py",
+      "source_revision": "same",
+      "actual_result": "PASS symbolic arbitrary g,w and connected-Hasse metric check",
+      "review_relationship": "same constructor independent derivation"
+    },
+    {
+      "method": "eight exact local regression tests",
+      "command_or_proof_path": "UD_K4_WEIGHTED_ADMISSION_GATE_v1.6.zip/test_weighted_refinement_v16.py",
+      "source_revision": "same",
+      "actual_result": "PASS 8/8, local exact SymPy tests",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "All positive g_k retain strict every-level boundary distinction even when response converges",
+    "Finite threshold epsilon=1/100 with quarter volume-proxy gives observer-relative n9 adjacent/n12 tail, not physical floor",
+    "Changing edge weights without changing original Q169 generator breaks original unit-metric current contract; new H_W needed",
+    "Q173 masks and Q177 cell-share factors do not select global refinement event, g_k or stopping rule",
+    "Source integral 1→4 top-cell chain map cannot conserve unchanged Q165 squared stock (1→4)",
+    "Even if boundary response saturates under modified observer, Q171 core-stock differences remain mathematically available"
+  ],
+  "limitations": [
+    "No sourced physical measurement algebra, event clock, admissibility threshold or length map",
+    "Quarter-volume-to-edge-conductance is explicitly hypothetical",
+    "Finite exact plateau at g=0 is observer-specific and may introduce disconnected zero-weight vertices",
+    "No cross-complex reservoir/source current; no physical correspondence",
+    "Non-constructor mathematical review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Recover a native cross-complex event trigger and dynamically conserved transfer with source-selected metric/readout threshold; if unavailable record source-selection blockade and retain weighted response theorem as optional mathematical branch."
+}

@@ -1,0 +1,96 @@
+{
+  "source": "full twisted 348D KleinxI simplex and v0.6 integral barycentric S, unit fine metric",
+  "metric": {
+    "fine": "I_348",
+    "coarse_G_diag": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      8,
+      8,
+      12,
+      12,
+      72
+    ]
+  },
+  "coarse_generator": "A_G=G^-1 S^T A_s S = D_c - G^-1 D_c^T G",
+  "metric_skew": true,
+  "conserved_stock": "y^T G y",
+  "incidence_pairs": 11,
+  "incidence_pair_currents": [
+    [
+      0,
+      2,
+      "-1"
+    ],
+    [
+      0,
+      3,
+      "-2"
+    ],
+    [
+      1,
+      2,
+      "1"
+    ],
+    [
+      1,
+      4,
+      "-2"
+    ],
+    [
+      2,
+      7,
+      "-4"
+    ],
+    [
+      3,
+      7,
+      "2"
+    ],
+    [
+      4,
+      7,
+      "-2"
+    ],
+    [
+      5,
+      8,
+      "2"
+    ],
+    [
+      6,
+      8,
+      "-2"
+    ],
+    [
+      9,
+      11,
+      "-12"
+    ],
+    [
+      10,
+      11,
+      "12"
+    ]
+  ],
+  "coarse_unit_generator_difference": {
+    "rank": 5,
+    "Frobenius_squared": "151/18"
+  },
+  "residual": {
+    "definition": "R=A_sS-SA_G=(I-Pi)A_sS",
+    "rank": 11,
+    "Frobenius_squared": "157",
+    "weighted_Hilbert_Schmidt_squared": "242/3",
+    "orthogonal_to_image": true
+  },
+  "exact_closure": false,
+  "physical_clock": "OPEN",
+  "physical_promotion": 0,
+  "status": "PASS_EXACT_CONDITIONAL"
+}

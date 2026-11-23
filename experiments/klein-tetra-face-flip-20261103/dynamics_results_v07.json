@@ -1,0 +1,26 @@
+{
+  "coarse_metric": "unit Euclidean in minimal 12-cell CW basis",
+  "simplicial_metric": "unit Euclidean in twisted 348-simplex chain basis",
+  "reverse_skew_error": {
+    "shape": [
+      12,
+      348
+    ],
+    "nonzero_count": 244,
+    "Frobenius_squared": "2842",
+    "rank_Q": 10
+  },
+  "forward_skew_error": {
+    "shape": [
+      348,
+      12
+    ],
+    "nonzero_count": 286,
+    "Frobenius_squared": "298",
+    "rank_Q": 11
+  },
+  "boundary_chain_intertwining": true,
+  "skew_generator_intertwining": false,
+  "physical_promotion": 0,
+  "status": "PASS_EXACT_NO_GO"
+}

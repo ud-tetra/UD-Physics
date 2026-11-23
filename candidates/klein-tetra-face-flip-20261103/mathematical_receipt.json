@@ -1,0 +1,256 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-001",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Can K4 tetrahedral face flipping produce Klein topology or orientation-transport holonomy without a new seam assumption?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "K4_SPHERE",
+      "symbol": "S2=boundary(Delta3)",
+      "object_type": "oriented simplicial 2-complex",
+      "definition": "K4 shell: 4 vertices,6 edges,4 triangular faces",
+      "domain": "finite simplicial complexes",
+      "codomain": null,
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "ascending oriented simplex vertices",
+      "metric_measure": "none",
+      "origin": "source native K4 carrier",
+      "exact_expression": "chi=2; H1=0; H2=Z",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "none"
+    },
+    {
+      "object_id": "KLEIN_DELTA",
+      "symbol": "K",
+      "object_type": "edge-glued 2-triangle Delta-complex",
+      "definition": "square ABCD, diagonal AC; AB=DC, AD=CB with orientation reversal on one opposite pair",
+      "domain": "finite Delta-complexes",
+      "codomain": null,
+      "coefficient_domain": "Z",
+      "units": "none",
+      "basis_orientation": "oriented triangles ABC and ACD, edge basis (h,v,x)",
+      "metric_measure": "none",
+      "origin": "candidate externally known topology",
+      "exact_expression": "B2=[[1,-1],[-1,-1],[-1,1]], chi=0, H1=Z+Z/2, H2=0",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "TOPOLOGY"
+      ],
+      "assumption_ids": [
+        "EDGE_GLUE"
+      ],
+      "dependency_ids": [],
+      "normalization": "no metric"
+    },
+    {
+      "object_id": "ORIENTATION_W1",
+      "symbol": "w1",
+      "object_type": "F2 orientation cocycle",
+      "definition": "w1(h)=1,w1(v)=0,w1(x)=1, modulo coboundary",
+      "domain": "C1(K;Z)",
+      "codomain": "F2",
+      "coefficient_domain": "F2",
+      "units": "none",
+      "basis_orientation": "edge basis (h,v,x)",
+      "metric_measure": "none",
+      "origin": "derived orientation character for candidate quotient",
+      "exact_expression": "w1*B2=0 mod2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "TOPOLOGY"
+      ],
+      "assumption_ids": [
+        "EDGE_GLUE"
+      ],
+      "dependency_ids": [
+        "KLEIN_DELTA"
+      ],
+      "normalization": "flip value one"
+    },
+    {
+      "object_id": "O2_HOLONOMY",
+      "symbol": "(F,R)",
+      "object_type": "candidate flat O2 group representation",
+      "definition": "F=diag(1,-1), R=quarter-turn matrix",
+      "domain": "pi1(K)",
+      "codomain": "O(2)",
+      "coefficient_domain": "Z matrices for exact fixture",
+      "units": "none",
+      "basis_orientation": "oriented local plane frames",
+      "metric_measure": "identity matrix",
+      "origin": "assumed candidate transport map",
+      "exact_expression": "FRF^-1 R=I",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "PHASE_FIXTURE"
+      ],
+      "dependency_ids": [
+        "ORIENTATION_W1"
+      ],
+      "normalization": "pi/2 chosen purely exact"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "section_or_object_id": "v1.0 §§1–3, signed S4 carrier",
+      "source_status": "integrated source-bound math"
+    },
+    {
+      "source_id": "LOOP",
+      "url_or_repo_path": "experiments/qpb1-loop-history/HISTORY_CONTRACT.md",
+      "version_or_commit": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "section_or_object_id": "Edgewise sign connection: triangle curvature -1, not flat",
+      "source_status": "integrated source warning"
+    },
+    {
+      "source_id": "TOPOLOGY",
+      "url_or_repo_path": "https://mathworld.wolfram.com/KleinBottle.html",
+      "version_or_commit": "accessed 2026-11-03",
+      "section_or_object_id": "Klein bottle as nonorientable chi=0 square quotient",
+      "source_status": "external mathematics comparison"
+    }
+  ],
+  "assumptions": [
+    "EDGE_GLUE: square-edge quotient is additional topology, not K4 unchanged shell",
+    "PHASE_FIXTURE: R quarter-turn pi/2 illustrative, no physical clock/coupling",
+    "Whole-face enumeration limited to pairing all 4 complete K4 triangular faces in 2 bijective pairs",
+    "No physical coframe/normal/inside-outside semantics inferred from topological orientation"
+  ],
+  "technique_plan": [
+    {
+      "technique": "integer Euler and group gluing enumeration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "108 K4 face-pair bijections and closed-manifold edge-incidence necessary condition"
+    },
+    {
+      "technique": "signed simplicial/Delta chains and homology",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "B1 B2=0, rank and Smith torsion of nonorientable surface"
+    },
+    {
+      "technique": "F2 orientation cocycle",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "test nontrivial w1 and twist-loop flip"
+    },
+    {
+      "technique": "finite matrix O2 holonomy",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "check reflection conjugates phase rotation to inverse"
+    },
+    {
+      "technique": "physical calibration",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "no physical bridge proposed"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "4-6+4=2,1-3+2=0;3*6*6=108; rank-two minors of B2 =(-2,0,-2)",
+    "reduced_expression": "chi_K=0, chi_K4=2; gcd minors=2",
+    "factor_origins": [
+      "tetrahedron 4 faces 3 pair partitions and 6 bijections per paired triangle",
+      "two-triangle Delta quotient edge/face count and torsion minors"
+    ],
+    "factorization": "108=2^2*3^3; gcd minors 2",
+    "divisibility_gcd_lcm": "Smith factors (1,2), H1 torsion Z/2"
+  },
+  "clock_receipt": {
+    "clock_type": "path composition, not a time clock",
+    "modulus": 2,
+    "residue_convention": "F2 orientation sign",
+    "update_rule": "epsilon_out=(-1)^(<w1,gamma>) epsilon_in",
+    "initial_phase": "chosen local orientation frame",
+    "coupling": "flat O2 representation of Klein loop group, angle free",
+    "period_claim": "two repetitions of a twist loop restore orientation; not temporal periodicity",
+    "physical_unit_map": "none"
+  },
+  "dynamics_readout": {
+    "state_space": "Klein orientation line local system or candidate framed O2 states",
+    "generator_or_update": "loop word transport U_gamma; face flatness conditional on gluing",
+    "initial_boundary_conditions": "closed two-dimensional quotient; orientation selected at basepoint",
+    "conservation_and_sources": "flat orientation homomorphism; no stock/current or physical energy law",
+    "projection_and_kernel": "w1: H1(K;F2)->F2; nontrivial twist class",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "Klein comparison explicitly exposed",
+    "known_targets": [
+      "Klein chi0 and nonorientability",
+      "desired tetrahedral face flip"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "new edge-gluing word to obtain Klein quotient",
+      "quarter turn test R(pi/2), nonunique"
+    ],
+    "search_domain_and_budget": "108 face-identification cases; full exact boundary rank/minors and one O2 group relation",
+    "selection_criterion": "manifold incidence, nonorientability/torsion, loop holonomy",
+    "baseline": "unchanged tetrahedral S2 and untwisted torus control"
+  },
+  "calculation_steps": [
+    "Enumerate 3 perfect matchings of 4 faces and 6^2 vertex bijections; count edge multiplicities of 2 representative faces",
+    "Show none has all 3 edge classes used twice",
+    "Construct Klein square with diagonal; compute B2 over Z and B1=0",
+    "Compute 2x2 minors (-2,0,-2), Smith factors (1,2), integral homology and Euler",
+    "Compare torus B2 columns opposite => H2=Z and H1=Z²",
+    "Check w1=(1,0,1) annihilates B2 mod2 and flips twist-loop frame",
+    "Check exact F R(pi/2) F^-1=R^-1 and Klein relation"
+  ],
+  "result": {
+    "exact_expression": "chi(K4)=2 vs chi(Klein)=0; no closed 2-manifold from 108 whole-face pairings; Klein H1=Z+Z2; w1 twist holonomy nontrivial",
+    "approximation": null,
+    "units": "none",
+    "precision_and_error": "exact integer enumeration and matrix algebra",
+    "scope": "fixed K4 boundary, whole-face bijections and separately assumed edge-glued two-triangle Delta-complex; not physical dynamics",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact enumeration and boundary matrices",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/audit.py",
+      "source_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "actual_result": "PASS local equivalent code: 108 exhaustively enumerated, exact minors and O2 relation",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "separate topology/matrix unit checks",
+      "command_or_proof_path": "python3 -m unittest discover -s experiments/klein-tetra-face-flip-20261103 -p test_klein.py -v",
+      "source_revision": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "actual_result": "PASS equivalent 4 local tests; committed script replay pending CI",
+      "review_relationship": "same constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "topology-preserving face flip cannot change chi from 2 to0",
+    "none of 108 whole-face pairings has valid closed-surface edge incidence",
+    "local nonflat triangle holonomy in QPB1 history is not a flat Klein orientation twist",
+    "chosen quarter-turn phase not forced by topology, no retention or matter prediction"
+  ],
+  "limitations": [
+    "Klein two-triangle Delta complex uses additional quotient not a simplicial K4 face mapping",
+    "No source-selected seam location/gluing in UD K4 network",
+    "No physical time, metric, mass or support-current map",
+    "Independent non-constructor review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Build a minimal finite tetrahedral patch network carrying a flat w1 nontrivial on a global loop, prove incidence-compatible lift to oriented double cover, and test transport holonomy vs contractible-loop curvature."
+}

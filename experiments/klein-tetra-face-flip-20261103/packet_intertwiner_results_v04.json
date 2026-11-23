@@ -1,0 +1,40 @@
+{
+  "even_seam_completion": [
+    3,
+    2,
+    1,
+    0
+  ],
+  "even_map": {
+    "degree0": [
+      "v0+v3",
+      "v1+v2"
+    ],
+    "degree1": "edge02-edge13",
+    "ranks": [
+      2,
+      1
+    ],
+    "gram0": "2I2",
+    "gram1": "[2]",
+    "boundary_compatible": true,
+    "S4_even_equivariant": true
+  },
+  "odd_completion": [
+    3,
+    2,
+    0,
+    1
+  ],
+  "odd_fixed_vertex_dim": 1,
+  "odd_rank_two_equivariant_inclusion_no_go": true,
+  "original_one_edge_inclusion_full_S4_equivariant": false,
+  "physical_promotion": 0,
+  "status": "PASS_EXACT",
+  "dynamics": {
+    "invariant_subspace": false,
+    "rank_leak": 2,
+    "squared_Frobenius": 8,
+    "Gram": "2I3"
+  }
+}

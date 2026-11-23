@@ -1,0 +1,69 @@
+{
+  "method": "independent Schreier CW group presentation",
+  "base": {
+    "cell_counts": [
+      1,
+      2,
+      1
+    ],
+    "relator": "h v h^-1 v",
+    "H1_Z": "Z+Z/2Z",
+    "H2_Z": "0"
+  },
+  "orientable_cover": {
+    "cell_counts": [
+      2,
+      4,
+      2
+    ],
+    "B1": [
+      [
+        -1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        -1,
+        0,
+        0
+      ]
+    ],
+    "B2": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_B1": 1,
+    "rank_B2": 1,
+    "Euler": 0,
+    "H1_Z": "Z^2",
+    "H2_Z": "Z",
+    "connected": true,
+    "no_H1_torsion": true
+  },
+  "orientation": {
+    "h": "sheet switch",
+    "v": "sheet preserve"
+  },
+  "torus_control": {
+    "relator": "h v h^-1 v^-1",
+    "w1": "zero"
+  },
+  "status": "PASS_EXACT",
+  "physical_promotion": 0
+}

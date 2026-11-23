@@ -1,0 +1,49 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "ktff-20261103-01",
+  "run_id": "cross-complex-017",
+  "created_at": "2026-11-06T00:09:28Z",
+  "evidence": "EXACT",
+  "summary": "Conditional exact K4 1-to-4 full Q165 norm defect, native two-mode post-event transfer, binary masked boundary nilpotency and Q171 signed-current direction gate. No event or physical promotion.",
+  "command": "python3 cross_complex_audit_v17.py; python3 mask_current_v17.py; python3 -m unittest discover -s . -p 'test_*v17.py' -v",
+  "command_execution": "EXECUTED_IN_LOCAL_CONSTRUCTOR_RUNTIME",
+  "source": {
+    "revision": "234f54471c32cc9ad4873cd8042103fa19795909",
+    "dirty": true
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/CERTIFICATE_v17.txt",
+      "sha256": "1d25c11c0ba40231b3efd757a089279fa2b037e0dbc441f70103b8f3c8c635f9",
+      "size_bytes": 1005
+    }
+  ],
+  "claim": {
+    "ref": "refs/heads/claims/klein-tetra-face-flip-20261103",
+    "sha": "667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4",
+    "status": "held"
+  },
+  "physical_promotion": 0,
+  "result_paths": [
+    "experiments/klein-tetra-face-flip-20261103/CROSS_COMPLEX_NATIVE_TRANSFER_v1.7.md",
+    "experiments/klein-tetra-face-flip-20261103/cross_complex_results_v17.json",
+    "candidates/klein-tetra-face-flip-20261103/mathematical_receipt_cross_complex_v1.7.json"
+  ],
+  "user_archive": {
+    "name": "UD_K4_CROSS_COMPLEX_ADMISSION_v1.7.zip",
+    "sha256": "1f4c8afb5fba580b3e5edf719deb61d772c8593f2fb07a19a21247ed3d5d7ae0",
+    "bytes": 15427
+  },
+  "verification": {
+    "local_exact_tests": "11/11 PASS",
+    "full_git_integration": "NOT_RUN",
+    "nonconstructor": "NOT_RUN"
+  },
+  "limitations": [
+    "No version-2 source input copies captured in this run: inputs array intentionally empty; exact source revision and paths declared in mathematical receipt.",
+    "Full standalone source and inputs are in user-visible verified ZIP, not this one-certificate immutable Git run.",
+    "The report's Q171 sign comparison is an unresolved typed convention gate, not an authorized ledger amendment."
+  ]
+}

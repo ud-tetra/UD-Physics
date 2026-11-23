@@ -1,0 +1,321 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-K4-OPERATIONAL-RESOLUTION-015",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Does the native 192-local-address K4 architecture produce a finite positive refinement depth beyond which recursive 1-to-4 geometries and equal-norm internal states become operationally indistinguishable, when the declared shell, unit-edge boundary, and Q171 core support readouts are checked in native units?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NO-GO",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "K_N",
+      "symbol": "K_n",
+      "object_type": "finite recursive centroid-refined tetrahedral simplicial 3-ball",
+      "definition": "n 1-to-4 splits inside every maximal tetrahedron; original boundary fixed",
+      "domain": "n in nonnegative integers",
+      "codomain": "finite 3D simplicial complexes",
+      "coefficient_domain": "Z oriented incidences",
+      "units": "combinatorial only",
+      "basis_orientation": "ascending vertex orders and centroid birth labels",
+      "metric_measure": "unit edge weights for separate graph observer",
+      "origin": "read-only four-cell v1.0",
+      "exact_expression": "f_n=((4^n+11)/3,(4^(n+1)+14)/3,2·4^n+2,4^n)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "FOURCELL"
+      ],
+      "assumption_ids": [
+        "CENTROID_RULE"
+      ],
+      "dependency_ids": [],
+      "normalization": "original edges retained with no duplication"
+    },
+    {
+      "object_id": "O_SHELL",
+      "symbol": "O_shell",
+      "object_type": "outer simplicial shell count and initial chain trace readout",
+      "definition": "original 4 vertices/6 edges/4 triangular faces",
+      "domain": "K_n",
+      "codomain": "Z^3",
+      "coefficient_domain": "Z",
+      "units": "counts",
+      "basis_orientation": "outer simplex set",
+      "metric_measure": "none",
+      "origin": "native boundary combinatorics",
+      "exact_expression": "(4,6,4) at every n",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "FOURCELL"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [
+        "K_N"
+      ],
+      "normalization": "none"
+    },
+    {
+      "object_id": "O_DN",
+      "symbol": "Lambda_n",
+      "object_type": "candidate static boundary Dirichlet-to-Neumann response",
+      "definition": "L=B1 B1T of unit-weight full 1-skeleton; eliminate interior vertices by Schur complement",
+      "domain": "R4 boundary vertex potentials",
+      "codomain": "R4 boundary response",
+      "coefficient_domain": "Q exact",
+      "units": "native squared amplitude per native graph coefficient",
+      "basis_orientation": "original four vertices 0..3",
+      "metric_measure": "unit-edge graph quadratic energy 1/2 Σ(x_i−x_j)^2",
+      "origin": "pachner-boundary-observability v0.1 development observer extended recursively",
+      "exact_expression": "Lambda_n=[(6+(11/4)^n)/7]*(4I−11T)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "PACHNER",
+        "FOURCELL"
+      ],
+      "assumption_ids": [
+        "UNIT_EDGES",
+        "BOUNDARY_PORT"
+      ],
+      "dependency_ids": [
+        "K_N"
+      ],
+      "normalization": "unit conductance on each distinct graph edge"
+    },
+    {
+      "object_id": "O_CORE",
+      "symbol": "S_tau_core",
+      "object_type": "local top-cell native core support readout",
+      "definition": "Q171 S_tau_core=c_(3,tau)^2 on graded real chain C3(K_n)",
+      "domain": "R^{4^n} top-cell amplitudes",
+      "codomain": "R_+^{4^n}",
+      "coefficient_domain": "R; fixture Q",
+      "units": "native squared chain amplitude",
+      "basis_orientation": "ascending tetrahedron cells",
+      "metric_measure": "unit chain coefficient metric",
+      "origin": "frozen Q171 core stock formula, recursive use conditional",
+      "exact_expression": "x=e_tau0 gives (1,0,0,0), y=(Σ4 e_tau)/2 gives (1/4,1/4,1/4,1/4)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [
+        "TOP_CORE_RECURSIVE_ADMISSION"
+      ],
+      "dependency_ids": [
+        "K_N"
+      ],
+      "normalization": "both total norms exactly 1"
+    },
+    {
+      "object_id": "CAP192",
+      "symbol": "N1",
+      "object_type": "finite local frame×parity address capacity",
+      "definition": "24 S4 frame labels times 8 opposite-edge parity labels",
+      "domain": "one declared K4 packet local address set",
+      "codomain": "Z cardinality",
+      "coefficient_domain": "Z",
+      "units": "address count, not meters/time",
+      "basis_orientation": "S4 and F2^3",
+      "metric_measure": "none",
+      "origin": "frozen coefficient ledger P01–P06",
+      "exact_expression": "N1=24×8=192; T_n=4^n independent count",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "LEDGER"
+      ],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "no physical clock"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "FOURCELL",
+      "url_or_repo_path": "experiments/four-cell-tetrahedron/README.md",
+      "version_or_commit": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "section_or_object_id": "v1.0 Definition and scope; Exact sharing, geometry and recursive counts",
+      "source_status": "native exact combinatorics and chosen metric"
+    },
+    {
+      "source_id": "PACHNER",
+      "url_or_repo_path": "experiments/pachner-boundary-observability/README.md",
+      "version_or_commit": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "section_or_object_id": "v0.1 Question and typed construction; 1→4 response 4→5",
+      "source_status": "development candidate boundary port, not accepted physical measurement"
+    },
+    {
+      "source_id": "LEDGER",
+      "url_or_repo_path": "sources/imports/2026-10-22/UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39.md",
+      "version_or_commit": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "section_or_object_id": "P01–P06 capacity192; Q170–Q171 top core stock; Q177–Q179 cell ownership",
+      "source_status": "frozen internal mathematics; physical admissibility OPEN"
+    },
+    {
+      "source_id": "EVENT",
+      "url_or_repo_path": "experiments/qpb1-native-events/EVENT_CONTRACT.md",
+      "version_or_commit": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "section_or_object_id": "v1.0 event observer added, physical time unspecified",
+      "source_status": "read-only boundary of physical claims"
+    },
+    {
+      "source_id": "KTFF09",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/K4_MULTILEVEL_METRIC_CLOCK_v0.9.md",
+      "version_or_commit": "5a697d922779d3f96e0811663938a0c7dc47a60b",
+      "section_or_object_id": "native Hodge generator nonintertwining under refinement",
+      "source_status": "prior Discovery limitation"
+    }
+  ],
+  "assumptions": [
+    "CENTROID_RULE: apply exactly the source tetrahedron centroid 1-to-4 construction to every top cell at each n; edges remain distinct if same vertex pair",
+    "UNIT_EDGES: each unique graph edge at each level contributes exactly one native quadratic weight to boundary vertex Laplacian; no geometric physical length weighting",
+    "BOUNDARY_PORT: outer four vertex potentials phi prescribed, interior vertex values set by minimizing 1/2 Σ edge differences squared; candidate source development observer",
+    "TOP_CORE_RECURSIVE_ADMISSION: use Q171 c3_tau² on each top cell at arbitrary finite level; no claim of physical access or dynamical persistence",
+    "Only native count and chain coefficients; no SI clock, Planck length or physical sensitivity threshold",
+    "All-observable operational equivalence cannot be decided until a complete physically admitted observable algebra is frozen"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact recursive simplicial graph generation",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "direct f-vectors and source 1-skeletons n=0..3"
+    },
+    {
+      "technique": "rational Schur complement Dirichlet-to-Neumann",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "direct exact 4x4 boundary response n=0..3"
+    },
+    {
+      "technique": "independent star/Kron renormalization",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove all-depth recurrence w_(n+1)=(11w_n+1)/4"
+    },
+    {
+      "technique": "full S4 boundary covariance",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "24 relabelings at four direct levels, and symbolic covariance"
+    },
+    {
+      "technique": "Q171 local core stock counterexample",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "same total native norm and shell trace, different local support for all n"
+    },
+    {
+      "technique": "finite packet label and recursion count typing",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "192 local addresses do not bound 4^n global tetrahedra"
+    },
+    {
+      "technique": "physical resolution threshold/metric",
+      "applicability": "N/A",
+      "purpose_or_na_reason": "not present in sources, intentionally no meters"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "V_n=(4^n+11)/3,E_n=(4^(n+1)+14)/3,F_n=2·4^n+2,T_n=4^n; old-old edge child incidence2, center-old edge child incidence3",
+    "reduced_expression": "w_(n+1)=(11w_n+1)/4; w_n=((11/4)^n−1)/7; alpha_n=(6+(11/4)^n)/7; alpha increment=(11/4)^n/4",
+    "factor_origins": [
+      "centroid has four corners, each old graph edge appears in two child tets, each radial in three",
+      "Schur eliminating four equal centroid radial edges gives 1/4 clique factor"
+    ],
+    "factorization": "11 prime, 4=2², 7 prime; no Planck correspondence",
+    "divisibility_gcd_lcm": "192=2^6·3, global T_n=4^n=2^(2n), not same typed count"
+  },
+  "clock_receipt": {
+    "clock_type": "refinement depth n, not time",
+    "modulus": null,
+    "residue_convention": "none",
+    "update_rule": "apply 1→4 to each top cell, observe changed static graph response",
+    "initial_phase": "no dynamical event preparation",
+    "coupling": "unit-edge graph effective conductance and local squared amplitude",
+    "period_claim": "none; strict monotone response, not a cyclic clock",
+    "physical_unit_map": "NONE"
+  },
+  "dynamics_readout": {
+    "state_space": "each finite K_n oriented real simplicial chains and auxiliary vertex graph Laplacian",
+    "generator_or_update": "static Schur response from B1B1T, plus chosen pure top 3-chain preparations; not source physical time flow",
+    "initial_boundary_conditions": "four original vertex potentials held; pure top states have zero shell amplitude",
+    "conservation_and_sources": "equal total native norm1 for two local top states; Q171 stock differs; no dynamical persistence",
+    "projection_and_kernel": "outer combinatorial shell constant; boundary response strictly injective in refinement depth",
+    "physical_mapping": "NONE"
+  },
+  "target_exposure": {
+    "status": "user asked whether geometry yields finite resolution floor; no Planck numerical target used for normalization or formula",
+    "known_targets": [
+      "finite local packet capacity192",
+      "prior v0.9 two-refinement frequency mismatch",
+      "prior boundary response first level 4→5"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "none; keep source unit edge graph weights and original four-vertex boundary readout fixed"
+    ],
+    "search_domain_and_budget": "all n via symbolic induction plus direct exact n=0,1,2,3, 24 S4 checks each, eight local regressions",
+    "selection_criterion": "existence of finite N where observables saturate identically at all n≥N",
+    "baseline": "unchanged outer shell geometry and zero internal amplitudes"
+  },
+  "calculation_steps": [
+    "Verify source all-depth simplex counts and outer shell fixed",
+    "Build exact graph Laplacian and rational Schur complement of interior for n=0..3 and compare Lambda=(1,5/4,31/16,245/64)(4I−11T)",
+    "Separate added-edge network of depth n; combine four child tetra effective cliques: old-old 2w and radial 1+3w",
+    "Eliminate central vertex, derive recursion w_(n+1)=2w+(1+3w)/4=(11w+1)/4",
+    "Solve w0=0 exactly, yield alpha=(6+(11/4)^n)/7 and positive delta=(11/4)^n/4 at all n",
+    "Independently verify same recurrence with symbolic five-node Kron matrix",
+    "Construct equal-norm one-child vs four-child pure top-grade chain states at each n≥1; Q171 core stock distinct, same shell amplitude",
+    "Check 192 local count is separate from arbitrary 4^n top cells, and report physical observer/finite sensitivity OPEN"
+  ],
+  "result": {
+    "exact_expression": "Lambda_n=(6+(11/4)^n)/7*(4I−11T) with strictly positive all-depth increment; Q171 core states distinguish at each n despite fixed shell and equal norm",
+    "approximation": null,
+    "units": "dimensionless native graph response and squared chain amplitude; no SI units",
+    "precision_and_error": "exact symbolic rational proof plus direct matrix n=0..3",
+    "scope": "source 1→4 topology, unit-edge candidate boundary port, conditionally admitted Q171 cell core support",
+    "physical_interpretation": "No physical minimum length claimed"
+  },
+  "verification": [
+    {
+      "method": "exact direct rational 4x4 response",
+      "command_or_proof_path": "UD_K4_OPERATIONAL_RESOLUTION_FLOOR_v1.5.zip/operational_resolution_v15.py",
+      "source_revision": "738b9d205fd9f9735a05d4976de70f1519474bff",
+      "actual_result": "PASS n=0..3 with exact S4 24 checks per level",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "independent symbolic five-node Kron elimination",
+      "command_or_proof_path": "UD_K4_OPERATIONAL_RESOLUTION_FLOOR_v1.5.zip/independent_kron_v15.py",
+      "source_revision": "same",
+      "actual_result": "PASS exact w recurrence and closed form without full simplex enumeration",
+      "review_relationship": "same constructor different derivation"
+    },
+    {
+      "method": "eight exact regression tests",
+      "command_or_proof_path": "UD_K4_OPERATIONAL_RESOLUTION_FLOOR_v1.5.zip/test_resolution_v15.py",
+      "source_revision": "same",
+      "actual_result": "PASS eight of eight local tests",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Identical outer tetrahedral combinatorics alone cannot distinguish internal refinements at any depth",
+    "Candidate boundary vertex response distinguishes every depth despite fixed shell, so no positive saturation floor under unit-edge port",
+    "At any n≥1 one-child vs uniform four-child top-chain states have identical shell trace and total squared norm but distinct Q171 local core support",
+    "Finite 192 local address alphabet cannot bound 4^n global cells; 4^4=256 already exceeds192 without contradiction",
+    "Source has no complete operational physical observable set, finite precision, physical energy source or termination rule; no universal physical floor verdict"
+  ],
+  "limitations": [
+    "The response port is a v0.1 developmental observer, not accepted physical instrumentation",
+    "Unit edges are not calibrated conductances or length/volume weighted physical action",
+    "Q171 recursive chain stock is mathematical, not guaranteed physically observable or dynamically stable",
+    "This rejects finite floor only under stated exact observables; alternate physical readout, weights, gauge quotient or termination could change the conclusion",
+    "No physical clock/Planck units or external calibration; non-constructor review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Establish source-selected physical/operational observation algebra and refinement-admission rule, or test alternative scale-dependent native edge weights under a frozen current and event contract before any physical minimum-resolution claim."
+}

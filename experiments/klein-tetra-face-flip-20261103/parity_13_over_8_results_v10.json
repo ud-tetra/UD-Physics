@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-05",
+  "evidence": "EXACT_CONDITIONAL_NO_GO",
+  "native_sources": [
+    "UD_COEFFICIENT_PROVENANCE_LEDGER_v0.39 P01-P06",
+    "parity-dynamics-gauge v0.1 raw XOR model explicitly illustrative",
+    "K4_MULTILEVEL_METRIC_CLOCK_v0.9 exact leakage"
+  ],
+  "theta": {
+    "cardinality": 8,
+    "S4_orbits": [
+      [
+        "000"
+      ],
+      [
+        "001",
+        "010",
+        "100"
+      ],
+      [
+        "011",
+        "101",
+        "110"
+      ],
+      [
+        "111"
+      ]
+    ],
+    "orbit_sizes": [
+      1,
+      3,
+      3,
+      1
+    ],
+    "induced_S3_size": 6,
+    "S4_checks": 24
+  },
+  "native_residual_norms_squared": {
+    "K0_to_K1": "13",
+    "K1_to_K2": "52",
+    "K0_to_K2": "151/4"
+  },
+  "projector_carriers": {
+    "native_real_K4": "NO_SOURCE_DEFINED_8_PROJECTORS",
+    "auxiliary_raw_l2_F2_10": "8 orthogonal rank-128 projectors, only after adding auxiliary counting metric",
+    "added_R8_tensor_C29": "8 orthogonal covariant coordinate projectors conditional on new fiber and isometric lift Jp"
+  },
+  "models": {
+    "uniform": {
+      "weights": "1/8 per state",
+      "sector_K0_to_K1": "13/8"
+    },
+    "strictly_positive_S4_invariant_nonuniform": {
+      "weights": {
+        "111": "1/4",
+        "000": "1/4",
+        "remaining_each": "1/12"
+      },
+      "sector_contributions": {
+        "111": "13/4",
+        "000": "13/4",
+        "remaining_each": "13/12"
+      }
+    },
+    "S4_invariant_singleton": {
+      "weights": {
+        "000": "1",
+        "other": "0"
+      },
+      "leakage": {
+        "000": "13",
+        "other": "0"
+      }
+    }
+  },
+  "normalization": {
+    "native_uniform_second_refinement": "13/2",
+    "native_uniform_composite": "151/32",
+    "per_four_K1_top_cells": "13/8",
+    "per_sixteen_composite_descendants": "151/512",
+    "fine_metric_times_two": "13/4",
+    "native_generator_gain_times_two": "13/2"
+  },
+  "verdict": {
+    "S4_forces_equal_weights": false,
+    "invariant_to_normalization": false,
+    "invariant_across_refinements_as_same_total_sector_readout": false,
+    "native_13_over_8_selection": false,
+    "Planck_bridge": false,
+    "physical_promotion": 0
+  },
+  "local_reproducibility": {
+    "status": "PASS",
+    "tests": 6,
+    "archive": "K4_PARITY_LEAKAGE_13_OVER_8_AUDIT_v1.0.zip",
+    "sha256": "fa693e0812e44c95101858015461ea80801e5e4e0bfd69393f92d9caafefe4c8",
+    "source_bytes_not_claimed_GitHub_identical": true,
+    "archive_bytes": 16976,
+    "included_self_contained_replay": true
+  }
+}

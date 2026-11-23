@@ -1,0 +1,54 @@
+{
+  "version": "v1.4",
+  "status": "EXACT_CONDITIONAL_AND_NATIVE_RANK_NO_GO",
+  "Gray_cycle": [
+    "000",
+    "100",
+    "110",
+    "010",
+    "011",
+    "111",
+    "101",
+    "001"
+  ],
+  "flip_schedule": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    1,
+    0,
+    2
+  ],
+  "one_opposite_pair_flip_per_step": true,
+  "Gray_cube": {
+    "directed_Hamiltonian_cycles": 12,
+    "undirected_Hamiltonian_cycles": 6,
+    "Boolean_successor_degree": 2
+  },
+  "frame_covariance": {
+    "effective_frame_states": 6,
+    "S4_full_frame_states": 24,
+    "raw_six_edge_states_per_frame": 64,
+    "full_microstate_count": 1536,
+    "S4_covariance_checks": 36864,
+    "eight_step_return": true
+  },
+  "raw_carrier_provenance": "illustrative edge-bit model, NOT native C15",
+  "native_projector_rank_obstruction": {
+    "projector_ranks": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "whole_sector_eight_cycle_under_invertible_real_operator": false,
+    "reason": "unique 1D harmonic cannot cyclically map into 2D subspace"
+  },
+  "physical_promotion": 0
+}

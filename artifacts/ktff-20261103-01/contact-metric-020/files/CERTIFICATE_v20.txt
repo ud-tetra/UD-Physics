@@ -1,0 +1,16 @@
+UD-Physics Discovery K4 cross-complex contact/metric v2.0
+Source main: 7ef45805563b47cbe1e2f34bb9e6e97ce5f5c962
+Issue 338: OPEN; source Q171 direction proposal NOT ACCEPTED
+Native 14-cone Gram: I14; old removed top Gram: 4bb^T
+Native shared acceleration mismatch spectrum: 3 once, -1 thirteen; squared Frobenius 22
+Best independent one-to-one cone contact weighted residual squared: 12
+Face Q173-like binary contact masks: 16; residual squared from 22 to 26
+Scalar clock rescale cannot cancel symmetric nonzero second-jet mismatch
+Changed rational non-Hasse Dstar: Dstar^2=0; Sstar chain and Astar intertwining
+Changed barycentric positive metric: PF=I15, PD1=D0P, F^THF=I15, AH F=F A0
+Changed metric H: 52 nonzero offdiagonal unordered pairs
+Changed AH: 50 directed entries differ from native, 12 new non-Hasse entries
+No source-selected intercomplex contact, metric, event, or physical clock
+Local exact tests: 14/14 PASS; independent reviewer: NOT_RUN
+Physical promotion: 0
+Archive SHA256: a8bf4b76dd692cb73534e67bc5d434050e4f9cdfb89e5a376d9296bd0ec238d4

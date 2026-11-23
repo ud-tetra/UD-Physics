@@ -1,0 +1,70 @@
+{
+  "version": "v1.9",
+  "status": "PASS_EXACT_CONDITIONAL_SCOPED_NO_GO",
+  "source_main": "b04652406b5579ca172564d0e3a6fe3aca75693a",
+  "claim": "667e2cfe3c1507a47e8f4dc1aa8766fec8d280c4",
+  "scope": {
+    "old_carrier": "K4 C15 graded (4,6,4,1)",
+    "refined_carrier": "K4 centroid K1 C29 graded (5,10,10,4)",
+    "metrics": "independent unit Euclidean",
+    "generator": "A_K=D_K-D_K^T",
+    "event": "CANDIDATE old top coefficient a=0, carrier switch not sourced",
+    "time": "formal u"
+  },
+  "Q171": {
+    "proposed_file": "Q171_DIRECTION_AMENDMENT_PROPOSAL_v0.39a.md",
+    "status": "SUBMITTED_FOR_SOURCE_REVIEW_NOT_ACCEPTED",
+    "outward_tetra_to_face": "+2B3(f,tau)c_f c_tau",
+    "inward_face_to_tetra": "-2B3(f,tau)c_f c_tau",
+    "top_stock_derivative": "-2 sum_f B3(f,tau)c_f c_tau",
+    "literal_frozen_source": "+2 sum_f B3(f,tau)c_f c_tau printed as top stock derivative",
+    "witness": "B3(012,0124)=-1, amplitudes1 gives native top gain+2 and literal Q171 -2"
+  },
+  "exact_interface": {
+    "old_original_shell_dim": 14,
+    "new_refined_born_dim": 15,
+    "old_state": "x_old=(z,0)",
+    "new_state": "x_new=T z",
+    "T": "F restricted to original14 lower-grade simplices",
+    "identity": "T^T A1 T=A0[shell,shell]",
+    "first_jet": "all 2^14 Q170 shell control volumes matched at event; new and removed channel stocks/currents vanish",
+    "new_cone_derivative_gram": "(N A1 T)^T(N A1 T)=I14",
+    "old_removed_top_derivative_gram": "(e^T A0 T)^T(e^T A0 T)=4 b b^T",
+    "second_shell_acceleration_difference": "T^T A1^2 T-(A0^2)[shell,shell]=4 b b^T-I14",
+    "spectrum": {
+      "3": 1,
+      "-1": 13
+    },
+    "rank": 14,
+    "no_nonzero_C2_shell_amplitude_match": true
+  },
+  "current_expansion": {
+    "old_removed_top_stock": "4 beta^2*u^2+O(u^3)",
+    "new_born_stock": "||z||^2*u^2+O(u^3)",
+    "old_initial_outgoing_cut_current_slope": "8 beta^2",
+    "new_initial_outgoing_cut_current_slope": "2||z||^2",
+    "prepared_b": {
+      "old_top": "sin^2(2u)",
+      "new_top": "sin^2(u)",
+      "old_current": "2 sin(4u)",
+      "new_current": "sin(2u)",
+      "old_slope": 8,
+      "new_slope": 2
+    },
+    "P13": {
+      "old_top": "zero forever",
+      "new_born": "||z||^2*u^2+O(u^3)"
+    }
+  },
+  "no_go": "Under fixed unit metrics, given F and A0,A1, a conservative instantaneous Q170 shell cut match cannot extend to C2 amplitude smoothness for any nonzero admitted state; physical event selection and time remain OPEN",
+  "verification": {
+    "exact_local_tests": "12/12 PASS",
+    "all_shell_subset_cuts": "16384 PASS for fixed nonzero rational fixture; symbolic block equality all states",
+    "independent_cone_enumeration": "PASS",
+    "archive": "UD_K4_Q170_INTERFACE_v1.9.zip",
+    "archive_sha256": "4650a66caf1016a7494348bb0aadbf1e7743f51e49400ccfa3813788f62f3704",
+    "archive_files": 12,
+    "nonconstructor": "NOT_RUN",
+    "physical_promotion": 0
+  }
+}

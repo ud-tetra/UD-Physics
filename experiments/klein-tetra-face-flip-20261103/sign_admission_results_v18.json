@@ -1,0 +1,95 @@
+{
+  "version": "v1.8",
+  "date": "2026-11-05",
+  "status": "PASS_EXACT_CONDITIONAL_AND_OPEN_SOURCE_CONVENTION",
+  "source_main_sha": "74fe8f61856792fda717f2fffe8d3ed9a6564da2",
+  "native_carriers": {
+    "old": "real C15 filled K4, A0=D0-D0^T",
+    "refined": "real C29 1-to-4 K4, A1=D1-D1^T",
+    "metrics": "independent H=I on each signed simplex basis",
+    "formal_parameter": "u, no SI time"
+  },
+  "current_convention": {
+    "face_gain": "J_face<-top=+2 B3(f,tau) c_face c_top",
+    "top_gain": "J_top<-face=-2 B3(f,tau) c_face c_top",
+    "paired_sum": "0",
+    "witness": {
+      "face": "012",
+      "tetra": "0124",
+      "B3": -1,
+      "amplitudes": [
+        1,
+        1
+      ],
+      "face_gain": -2,
+      "top_gain": 2,
+      "printed_Q171_if_identical_B3": -2
+    },
+    "source_status": "Q169 carrier exact; Q171 literal +B3 top derivative incompatible if same B3; proposed outward/inward alias requires amendment, not changed"
+  },
+  "instantaneous_admission": {
+    "stock_defect": "3 a^2",
+    "isometric_if_and_only_if": "a=0",
+    "codimension": 1,
+    "dimension": 14,
+    "S4_invariant": true
+  },
+  "old_dynamic_crossings": {
+    "a_of_u": "a cos(2u)-beta sin(2u)",
+    "beta": "<B3_old e_top /2,x>",
+    "nonzero_modal_pair_simple_roots": true,
+    "spacing": "pi/2 formal u",
+    "S_and_dS_at_root": [
+      0,
+      0
+    ],
+    "ddS_at_root": "8(a^2+beta^2)>0",
+    "candidate_gate": "S_top=0 AND ddS_top>0 AND first crossing selected",
+    "source_selected": false,
+    "prepared_unit_top_first_root": "pi/4",
+    "phase_controls_same_norm2": {
+      "(a,beta)=(1,1)": "pi/8",
+      "(a,beta)=(1,-1)": "3pi/8"
+    },
+    "null_a_beta_00": "S=dotS=ddotS=0, no simple crossing"
+  },
+  "old_invariant_subspace": {
+    "projector": "P13=I-ee^T-bb^T",
+    "rank": 13,
+    "isometry_under_F": true,
+    "old_A0_invariant": true,
+    "largest_linear_A0_invariant_subspace_with_zero_top": true,
+    "first_refined_leakage_gram": "R^T R=P13",
+    "transverse_leakage_on_subspace": "||R x||^2=||x||^2",
+    "derivative_intertwine_bound": "||(A1F-FA0)x||^2>=||x||^2 for x in im(P13)",
+    "existence_nonzero_intertwining": false
+  },
+  "counterexamples": {
+    "root_switch": {
+      "initial": "old x=e_top",
+      "first_root": "pi/4",
+      "old_state_at_root": "b",
+      "F_stock_jump": 0,
+      "switch_derivative_mismatch_norm_squared": 9
+    },
+    "top_null_pair": {
+      "state": "(e_012+e_013)/sqrt(2)",
+      "old_top_amplitude_and_derivative_always": 0,
+      "new_child_top_initial_derivative_norm_squared": 1
+    }
+  },
+  "checks": {
+    "local_constructor_tests": "13/13 PASS",
+    "independent_modal_proof": "PASS",
+    "S4_signed_permutations": 24,
+    "full_15_29_matrices": "PASS",
+    "nonconstructor": "NOT_RUN"
+  },
+  "archive": {
+    "name": "UD_K4_SIGN_ADMISSION_GATE_v1.8.zip",
+    "sha256": "5a660a3b739e09e4c4707e0b56ec80901ec777ea60d677a720c0a384f6885119",
+    "files": 10
+  },
+  "source_selected_cross_complex_trigger": false,
+  "physical_promotion": 0
+}

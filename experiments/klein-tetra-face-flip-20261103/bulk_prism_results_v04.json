@@ -1,0 +1,39 @@
+{
+  "model": "nonorientable Klein K x I from 2 triangular prisms, barycentric triangulation with face-quotient identifications",
+  "f_vector": [
+    18,
+    102,
+    156,
+    72
+  ],
+  "tetrahedra": 72,
+  "interior_triangles_paired_twice": 132,
+  "boundary_triangles_once": 24,
+  "boundary_component_f_vectors": [
+    [
+      6,
+      18,
+      12
+    ],
+    [
+      6,
+      18,
+      12
+    ]
+  ],
+  "Euler": 0,
+  "boundary_ranks_over_Q": [
+    17,
+    84,
+    72
+  ],
+  "ordinary_Betti_R": [
+    1,
+    1,
+    0,
+    0
+  ],
+  "boundary_squared_zero": true,
+  "physical_promotion": 0,
+  "status": "PASS_EXACT_CONDITIONAL"
+}

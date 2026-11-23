@@ -1,0 +1,30 @@
+{
+  "domain": "cellular twisted K x I, local orientation character rho(h)=-1",
+  "target": "cellular twisted K x full K4 packet chains",
+  "domain_dims": [
+    2,
+    5,
+    4,
+    1
+  ],
+  "target_dims": [
+    4,
+    14,
+    20,
+    15,
+    6,
+    1
+  ],
+  "graded_chain_map_ranks": [
+    2,
+    5,
+    4,
+    1
+  ],
+  "chain_map_exact": true,
+  "holonomy_rho_h_equivariant": true,
+  "interval_inclusion": "[0]->K4 vertex0, [1]->K4 vertex1, edge[01]->K4 edge[01]",
+  "not_checked": "explicit simplicial 72-tet to cellular CW matrix; skew flow/metric intertwining",
+  "physical_promotion": 0,
+  "status": "PASS_EXACT_CONDITIONAL"
+}

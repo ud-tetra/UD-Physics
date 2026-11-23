@@ -1,0 +1,264 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "KTFF-TWISTED-72-AND-KRYLOV-005",
+  "session_id": "ktff-20261103-01",
+  "candidate_id": "klein-tetra-face-flip-20261103",
+  "question": "Does the full 72-tetrahedral KxI seam admit a directly computed integral orientation-twisted boundary, a chain map to the 60D packet model, and a dynamically invariant native K4 framed observable?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "S72_RHO",
+      "symbol": "C_*(M;Zrho)",
+      "object_type": "twisted integral simplicial chain",
+      "definition": "anti-invariant chains of orientable double cover of 72-tetrahedron KxI with w1=(1,0,1)",
+      "domain": "Z^18 ⊕ Z^102 ⊕ Z^156 ⊕ Z^72",
+      "codomain": "same graded chain shifted -1",
+      "coefficient_domain": "Z, Q for ranks",
+      "units": "none",
+      "basis_orientation": "flag barycentric oriented simplices, chosen deck-sheet representatives",
+      "metric_measure": "no metric for integral boundary",
+      "origin": "new exact construction conditional on prior KxI gluing",
+      "exact_expression": "ranks 18,83,72; Smith d1=(1^17,2)",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "KTFF04"
+      ],
+      "assumption_ids": [
+        "new_Klein_gluing"
+      ],
+      "dependency_ids": [],
+      "normalization": "rho(h)=-1,rho(v)=+1,rho(x)=-1"
+    },
+    {
+      "object_id": "PHI_RATIONAL",
+      "symbol": "Phi",
+      "object_type": "noncanonical rational simplicial to cellular chain map",
+      "definition": "Phi_k=t_k h_k^T/(h_k^T h_k) in k=1,2, otherwise 0",
+      "domain": "C_*(M;Qrho)",
+      "codomain": "C_*(K;Qrho)⊗C_*(I;Q)",
+      "coefficient_domain": "Q",
+      "units": "none",
+      "basis_orientation": "harmonic generators under assumed unit coordinate metrics",
+      "metric_measure": "unit coordinate Euclidean on both chain spaces",
+      "origin": "new exact algebraic construction, not geometric subdivision retraction",
+      "exact_expression": "chain ranks 0,1,1,0; h1²=160 h2²=84; target t1²=t2²=2",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "KTFF04"
+      ],
+      "assumption_ids": [
+        "unit_harmonic_metric"
+      ],
+      "dependency_ids": [
+        "S72_RHO"
+      ],
+      "normalization": "rational norm of chosen harmonic generators"
+    },
+    {
+      "object_id": "KRYLOV_H",
+      "symbol": "H",
+      "object_type": "minimal native generator-invariant packet subspace",
+      "definition": "span_Q{F,A_K F,A_K² F} for even seam inclusion F",
+      "domain": "Q^15 / R^15",
+      "codomain": "invariant subspace",
+      "coefficient_domain": "Q exact matrices, R dynamics",
+      "units": "native modal coefficients",
+      "basis_orientation": "ascending K4 simplex basis",
+      "metric_measure": "source K4 H=I",
+      "origin": "exact derived conditional on even S4 choice",
+      "exact_expression": "dim H=5; A_K H subset H; H has one harmonic+four active dimensions",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "even_S4_completion"
+      ],
+      "dependency_ids": [],
+      "normalization": "orthogonal projector H(H^TH)^−1H^T"
+    },
+    {
+      "object_id": "FRAME_C",
+      "symbol": "C_gamma(x)",
+      "object_type": "candidate framed inner-product path readout",
+      "definition": "x^T U_gamma x on the selected H sector",
+      "domain": "H",
+      "codomain": "R",
+      "coefficient_domain": "R",
+      "units": "native squared amplitude",
+      "basis_orientation": "even K4 seam frame",
+      "metric_measure": "unit native K4 metric",
+      "origin": "defined candidate using existing metric",
+      "exact_expression": "twist=−||x||², null=+||x||²",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "QPB1"
+      ],
+      "assumption_ids": [
+        "external_frame_reference_not_sourced"
+      ],
+      "dependency_ids": [
+        "KRYLOV_H"
+      ],
+      "normalization": "none beyond source unit metric"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "QPB1",
+      "url_or_repo_path": "experiments/qpb1-local-generators/README.md",
+      "version_or_commit": "0eef9a3f77198810b35bee8d3ef578ebc3af403a",
+      "section_or_object_id": "v1.0 §§1–3 native signed K4 skew and S4",
+      "source_status": "read-only source K4 generator, not seam selection"
+    },
+    {
+      "source_id": "KTFF04",
+      "url_or_repo_path": "experiments/klein-tetra-face-flip-20261103/THREED_KLEIN_PACKET_SEAM_v0.4.md",
+      "version_or_commit": "bb8175e74325a5925e097c3dd79d0eea0ef96020",
+      "section_or_object_id": "72-tetra KleinxI gluing, cellular bridge, even S4 map and leakage",
+      "source_status": "prior conditional Discovery construction"
+    }
+  ],
+  "assumptions": [
+    "The 72-tet KxI nonorientable gluing is independently specified, not from source native K4 move",
+    "Orientation local coefficient seam w1=(1,0,1), deck anti-invariant chain basis sign assigned consistently",
+    "Unit-coordinate metric used only for the rational harmonic comparison; map nonlocal, noncanonical, not integral",
+    "Even K4 signed S4 completion is selected, not source forced; original 3D interval image chosen",
+    "Use QPB1 unit 15D metric for native generator, framed correlation; physical orientation reference and clock not established"
+  ],
+  "technique_plan": [
+    {
+      "technique": "two-sheet covering and anti-invariant integral chain",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "compute complete twisted simplicial boundary for all 72 tetrahedra"
+    },
+    {
+      "technique": "integer Smith normal form and rational rank",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "verify H0 Z/2 and real Betti (0,1,1,0)"
+    },
+    {
+      "technique": "exact rational harmonic linear map",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "provide explicit noncanonical simplicial-to-cellular chain morphism on H1/H2"
+    },
+    {
+      "technique": "Krylov closure and equivariant S4",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "find minimal A-invariant native K4 hull of earlier F"
+    },
+    {
+      "technique": "framed holonomy comparison",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "separate mathematical ± source-metric correlation from operational physics"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "2-fold cover (36,204,312,144), anti-invariant (18,102,156,72); ranks (18,83,72)",
+    "reduced_expression": "Betti_Q=(0,1,1,0), Smith d1=(1 repeated17,2); hull dimension 5; h1²=160 h2²=84",
+    "factor_origins": [
+      "KxI 72 tetrahedron cell quotient",
+      "orientation character signs across h,v,x",
+      "exact rational harmonic basis and K4 A³+4A=0"
+    ],
+    "factorization": "144=2*72; torsion factor 2 from twisted Smith d1",
+    "divisibility_gcd_lcm": "H0 has Z/2; chosen rational comparison kills torsion"
+  },
+  "clock_receipt": {
+    "clock_type": "CW seam path composition and formal native K4 u; no physical time",
+    "modulus": 2,
+    "residue_convention": "orientation seam h flips and two circuits restore",
+    "update_rule": "d_rho²=0, x'=A_K|H x on 5D invariant hull",
+    "initial_phase": "arbitrary x0 in selected H",
+    "coupling": "full K4 source A_K, even seam completion additionally assumed",
+    "period_claim": "topological orientation period2, active native rate 2 in formal u; not seconds",
+    "physical_unit_map": "OPEN"
+  },
+  "dynamics_readout": {
+    "state_space": "twisted 72-tetra KxI cellular+60D target Q chain; separately native 5D K4 hull H",
+    "generator_or_update": "72-tet twisted boundary, noncanonical rational Phi, native restricted K4 A_K|H",
+    "initial_boundary_conditions": "two Klein boundary components on 3D bulk; K4 hull initial x in H",
+    "conservation_and_sources": "skew K4 metric yields conserved ||x||²; no 72D physical support source law",
+    "projection_and_kernel": "twisted 72 over Q H1=H2=Q, Phi nonzero each; H0 integral torsion not mapped; framed ± inner product on native hull",
+    "physical_mapping": "none"
+  },
+  "target_exposure": {
+    "status": "Klein twist and need for full packet map known; no physical measurements",
+    "known_targets": [
+      "Klein orientation w1 and 3D bulk from earlier work",
+      "S4 even/odd ambiguity",
+      "earlier 3D interval subspace leakage"
+    ],
+    "fitted_parameters_or_formula_choices": [
+      "choose Q metric harmonic rank-one map instead of natural subdivision",
+      "choose even S4 vertex completion, unit metric from source"
+    ],
+    "search_domain_and_budget": "entire 72-simplex integer boundary and Smith d1; direct Q rank; invariant hull of rank3 F via powers 0,1,2 of A_K",
+    "selection_criterion": "twisted nilpotency/homology, homology chain map, minimal invariant hull and mathematical relative frame sign",
+    "baseline": "untwisted orientation and original 3D leaking interval image"
+  },
+  "calculation_steps": [
+    "Lift each of 72 tetrahedra into two deck sheets and glue by orientation character flip h,v,x=(1,0,1), produce 144-cover",
+    "Form anti-invariant deck-paired generators and exact signed twisted B1 18x102, B2 102x156, B3 156x72",
+    "Check products zero; ranks 18,83,72; Smith B1 1^17,2; H0 Z/2, Q-Betti (0,1,1,0)",
+    "Compute one harmonic vector in degrees1/2 of source and minimal cellular target under chosen unit metrics",
+    "Define Phi_k=t_k h_k^T/(h_k^T h_k), degrees1,2; Phi0=Phi3=0 and verify chain map; only rational homology equivalence",
+    "Form Krylov H=span(F,A F,A²F) and prove dim5, projectively invariant and minimal containing F",
+    "Check even signed S4 acts trivially on H; U_twist=-I5 versus U_null=+I5, framed correlations ±||x||²; no physical reference selected"
+  ],
+  "result": {
+    "exact_expression": "twisted 72 B²=0, ranks(18,83,72), H0 Z/2, Betti_Q(0,1,1,0); rational Phi ranks(0,1,1,0); minimal K4 A-invariant hull dim5 with framed sign ±",
+    "approximation": null,
+    "units": "native dimensionless except integer topology",
+    "precision_and_error": "exact integer Smith and rational SymPy",
+    "scope": "conditional KxI seam and chosen even K4 extension; harmonic chain comparison not integral geometric subdivision",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact double-cover anti-invariant integer boundaries and Smith",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/twisted_72_boundary_v05.py",
+      "source_revision": "fbb21d58a7662b737e4a2fb5276fefedc547412b",
+      "actual_result": "PASS locally equivalent exact computation, 72 tetra, H0 Smith Z/2",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "rational Hodge chain comparison",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/rational_comparison_v05.py",
+      "source_revision": "same",
+      "actual_result": "PASS local exact rational chain-morphism and harmonic isomorphism checks",
+      "review_relationship": "same constructor"
+    },
+    {
+      "method": "native K4 invariant hull",
+      "command_or_proof_path": "python3 experiments/klein-tetra-face-flip-20261103/invariant_hull_v05.py",
+      "source_revision": "same",
+      "actual_result": "PASS local exact rank5, projector commutator and framed correlation",
+      "review_relationship": "same constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Prior 3D interval image was not dynamically invariant: repaired only by expanding to the 5D Krylov hull, not by treating chain compatibility as dynamics",
+    "Constructed rational Phi kills integral H0 Z2 torsion and is nonlocal, so does NOT certify an integral geometric subdivision map",
+    "Twist framed correlation requires independently prepared orientation reference; squared norms/spectrum remain blind",
+    "Even S4 completion and seam geometry not uniquely selected by native sources"
+  ],
+  "limitations": [
+    "Integral local 72-tet-to-cellular geometric subdivision retraction and chain homotopy remain OPEN",
+    "Entire integral H1,H2 Smith quotients from 72 matrices not independently computed, though topology supports cellular equivalence",
+    "5D hull is source-native under chosen F, but its initial admission and seam branch are additional choices",
+    "Physical clock, framed measurement coupling, retention, energy and empirical bridge absent",
+    "Independent non-constructor review NOT_RUN"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Derive a local integral subdivision-to-CW map preserving H0 Z2 torsion, or prove no natural map under given seam/source assumptions; then source a physical reference for framed transport and test independent observables."
+}
