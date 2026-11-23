@@ -1,0 +1,58 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "junction-memory-001",
+  "session_id": "20261123-codex-6d91",
+  "candidate_id": "weighted-junction-memory-20261123-6d91",
+  "question": "Determine whether transverse refinement is a dissipative reservoir.",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "sources": [
+    {
+      "url_or_repo_path": "https://github.com/ud-tetra/UD/pull/610",
+      "source_status": "pinned in run report"
+    },
+    {
+      "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/458",
+      "source_status": "pinned in run report"
+    }
+  ],
+  "assumptions": [
+    "explicit cone topology",
+    "chosen W with unused row weights 1",
+    "no sink"
+  ],
+  "technique_plan": [
+    {
+      "technique": "weighted orthogonal projection and Schur complement",
+      "applicability": "APPLIED"
+    }
+  ],
+  "target_exposure": {
+    "status": "synthetic; no physical targets",
+    "fitted_parameters_or_formula_choices": []
+  },
+  "result": {
+    "exact_expression": "D=QAQ|im Q, alpha(D)=0, M(0)[0,0]=-7",
+    "scope": "finite undamped six-junction cone model",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact replay",
+      "command_or_proof_path": "artifacts/20261123-codex-6d91/junction-memory-001/files/replay.py",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "limitations": [
+    "native incidence authorization open",
+    "individual pole locations and residues not tabulated"
+  ],
+  "artifact_manifest_refs": [
+    "artifacts/20261123-codex-6d91/junction-memory-001/manifest.json"
+  ],
+  "next_discriminant": "Authenticate pre-event route throughput and closure data, and evaluate an independently observed matched-geometry event."
+}
