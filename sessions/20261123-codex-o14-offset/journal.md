@@ -19,3 +19,7 @@ Captured artifacts/20261123-codex-o14-offset/exact-001 (EXACT): LC offset schema
 Checkpoint (handoff): v0.2 distinguishes both offset spaces and checks N-dependent dimensions.
 
 Next: Review schema and checker before integration.
+
+## 2026-11-23T20:14:38.064Z
+
+Released the integrated task claim with marker `9480fcbf4ff29b0ec2caed9d998c97f5b0fbf535`.

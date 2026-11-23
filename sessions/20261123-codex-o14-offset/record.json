@@ -13,7 +13,9 @@
     "o14-offset-v02": {
       "ref": "refs/heads/claims/o14-offset-v02",
       "sha": "d9d9c713e78cbddd96e0208db034c015740b906d",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "9480fcbf4ff29b0ec2caed9d998c97f5b0fbf535",
+      "released_at": "2026-11-23T20:14:38.064Z"
     }
   },
   "checks": [],
