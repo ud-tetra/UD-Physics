@@ -8,8 +8,8 @@
   "base_revision": "0c9c35871d93922f081054dcc4a7a00040c9d7e3",
   "owned_paths": [
     "tasks/weighted-junction-memory-20261123-6d91.json",
-    "sessions/20261123-codex-6d91.json",
-    "journals/20261123-codex-6d91.md",
-    "candidates/weighted-junction-memory-20261123-6d91/"
+    "sessions/20261123-codex-6d91/",
+    "candidates/weighted-junction-memory-20261123-6d91/",
+    "artifacts/20261123-codex-6d91/"
   ]
 }
