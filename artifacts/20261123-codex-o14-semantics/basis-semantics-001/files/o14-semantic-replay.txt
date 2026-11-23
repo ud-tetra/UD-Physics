@@ -1,0 +1,5 @@
+PASS reference: CLI exit 0, PASS signed generator: 0
+PASS bundle basis: CLI exit 0, PASS harmonic overlap: 0
+PASS harmonic substitution: CLI exit 1, FAIL harmonic overlap: 1
+PASS quadrature reversal: CLI exit 1, FAIL signed generator: 5.6568542
+PASS wrong simplex order: CLI exit 1, Expected canonical ascending simplex row order
