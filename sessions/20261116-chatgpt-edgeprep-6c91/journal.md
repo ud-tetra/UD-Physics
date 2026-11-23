@@ -1,6 +1,0 @@
-# v0.6 edge-source selection journal
-Verified integrated base: 2ab32f5f28d0461dc4d35a389e814e8415cb58e8. Live held claim 743107f57497085d7b7a83e85fffe4dff5226d34. Separate branch discovery/edge-preparation-homogeneity-20261116-6c91/20261116-chatgpt-edgeprep-6c91.
-Source imports from recovered March packet/seam/face alphabet, plus v0.5.1 predecessor in UD draft PR #517. Prior A/B and observed fourth derivative exposed; no historical R4 was used to choose f or four/six sample ratios.
-Local calculations and independent replay PASS; 672-state unchanged predecessor v0.5.1 verifier rerun PASS. GitHub repo test/CI and nonconstructor review NOT_RUN.
-Result CONDITIONAL: phase stationary pi is NOT a packet burden; this additional identification and homogeneous local f are premises. Under them four-phase mu profile collapses to A; on six-phase cosine sample five laws differ, no unique native f. Empty stock and destructive-port controls expose missing preparation and sink rules.
-Physical promotion 0. G05/G06 unchanged. Full local ZIP available to original conversation; only report, replay, and March source inputs copied into Discovery run. Full original local verifier and logs omitted from GitHub, as documented.

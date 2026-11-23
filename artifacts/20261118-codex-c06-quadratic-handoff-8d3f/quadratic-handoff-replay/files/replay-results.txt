@@ -1,3 +1,0 @@
-729 exact sum/difference stock and inverse controls passed.
-676 positive-stock held and donor pairs passed.
-32 declared handoff eligibility combinations passed.
