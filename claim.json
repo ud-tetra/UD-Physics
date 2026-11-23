@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "dual-tetra-contact-20261122-a83f",
+  "session": "20261122-gpt6-dualcontact-a83f",
+  "status": "held",
+  "created_at": "2026-11-22T00:00:00Z",
+  "base_revision": "0c9c35871d93922f081054dcc4a7a00040c9d7e3",
+  "owned_paths": [
+    "tasks/dual-tetra-contact-20261122-a83f.json",
+    "sessions/20261122-gpt6-dualcontact-a83f/",
+    "candidates/dual-tetra-contact-20261122-a83f/",
+    "artifacts/20261122-gpt6-dualcontact-a83f/",
+    "experiments/dual-tetra-contact-20261122-a83f/"
+  ]
+}
