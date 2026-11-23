@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "g05-relay-o14",
+  "session": "20261123-codex-g05-o14",
+  "status": "held",
+  "created_at": "2026-11-23T17:58:31.945Z",
+  "base_revision": "54c76f50f00f831409819d2ba11b55139261968a",
+  "owned_paths": [
+    "experiments/g05-relay-o14",
+    "sessions/20261123-codex-g05-o14",
+    "artifacts/20261123-codex-g05-o14"
+  ]
+}
