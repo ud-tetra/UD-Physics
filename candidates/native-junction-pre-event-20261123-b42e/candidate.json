@@ -1,0 +1,92 @@
+{
+  "assumptions": [
+    "two concentric congruent regular Euclidean tetrahedra supplied as controls",
+    "fixed original UD state identical for Q=I and Qstar",
+    "same unit simplex metric and PR611 transfer for reserve obstruction",
+    "new metric family explicitly assumes full-column-rank supplied T"
+  ],
+  "baseline": "two disjoint filled tetra and prescribed fan of UD PR611",
+  "candidate_id": "native-junction-pre-event-20261123-b42e",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "fitted_choices": [],
+  "mathematical_receipts": [
+    "candidates/native-junction-pre-event-20261123-b42e/mathematical_receipt.json"
+  ],
+  "next_discriminant": "Native pre-event r_AB, junction coface selection, independent reserve/metric generator",
+  "physical_mapping": "OPEN",
+  "question": "Can source-pinned pre-event data select full 3D junction and reserve/metric?",
+  "record_type": "candidate",
+  "result": "NO_GO_SCOPED: different geometric f-vectors not factor through fixed tuple; zero reserve only vertex-only; metric family nonunique",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-native-junction-b42e",
+  "sources": [
+    {
+      "id": "scope",
+      "path": "docs/governance/UD-SCOPE-001-observable-domain-falsifiability.md",
+      "repo": "ud-tetra/UD",
+      "revision": "2e47d8718742cdd56ed81c41941b1cc3d42ad74b",
+      "scope": "governance",
+      "section": "Locked scope rules"
+    },
+    {
+      "blob": "93e2ca31eba625989087275a71c4857848e321c6",
+      "embedded_revision": "v0.43",
+      "id": "ledger",
+      "path": "captures/2026-10-21T151000Z-codex-exit03-recovery-98dc7b12/library_LEDGER_v0.85.json",
+      "repo": "ud-tetra/UD",
+      "revision": "2e47d8718742cdd56ed81c41941b1cc3d42ad74b",
+      "rows": [
+        "Q165",
+        "Q166",
+        "Q169",
+        "Q170",
+        "Q172",
+        "Q173",
+        "Q177",
+        "Q178",
+        "Q179",
+        "Q194",
+        "Q198",
+        "Q200",
+        "Q210"
+      ],
+      "scope": "fixed-complex Hasse and constitutive gap"
+    },
+    {
+      "id": "prior-full3d",
+      "repo": "ud-tetra/UD",
+      "revision": "ed7e860a0912d9480a19707be42771f155d0dee0",
+      "scope": "prescribed octahedral fan chain transfer, Gram and commutator",
+      "section": "report §§2–5",
+      "url": "https://github.com/ud-tetra/UD/pull/611"
+    },
+    {
+      "id": "prior-physics",
+      "repo": "ud-tetra/UD-Physics",
+      "revision": "2825f2e7e5c2f4a9d166b48dec73a3bb90bfda11",
+      "scope": "discovery 3D junction math",
+      "url": "https://github.com/ud-tetra/UD-Physics/pull/459"
+    },
+    {
+      "blob": "4a7ee4e2994d8903f9ae4e52e145f198684a5b3a",
+      "id": "Pachner-interface",
+      "path": "experiments/pachner-interface-defect/README.md",
+      "repo": "ud-tetra/UD-Physics",
+      "revision": "6401ef38d4190f26492a06160aff763ed89cdb59",
+      "scope": "conditional event receipt, no trigger"
+    },
+    {
+      "date": "2020-04-03",
+      "id": "External-lec",
+      "scope": "conceptual only, not physical evidence",
+      "title": "Dan Echegoyen Structure of Existence Video 3.1 narrated",
+      "url": "https://youtu.be/UDGeXvDRwgU"
+    }
+  ],
+  "status": "PARKED",
+  "target_exposure": "HYPOTHESIS_LED two exact external geometric controls, NO EMPIRICAL TARGET"
+}

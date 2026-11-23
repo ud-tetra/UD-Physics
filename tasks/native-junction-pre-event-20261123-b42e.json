@@ -1,0 +1,15 @@
+{
+  "dependencies": [],
+  "goal": "Test whether source-bound pre-event UD tuple predicts 3D junction geometry and pays stock before event",
+  "owned_paths": [
+    "tasks/native-junction-pre-event-20261123-b42e.json",
+    "sessions/20261123-gpt6-native-junction-b42e",
+    "candidates/native-junction-pre-event-20261123-b42e",
+    "experiments/native-junction-pre-event-20261123-b42e",
+    "artifacts/20261123-gpt6-native-junction-b42e"
+  ],
+  "record_type": "task",
+  "schema_version": 1,
+  "status": "complete",
+  "task_id": "native-junction-pre-event-20261123-b42e"
+}
