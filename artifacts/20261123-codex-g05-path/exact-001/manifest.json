@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261123-codex-g05-path",
+  "run_id": "exact-001",
+  "created_at": "2026-11-23T18:18:12.158643+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact all-pass Hodge, net and gross current control",
+  "command": "python3 experiments/g05-all-pass-path/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "54c76f50f00f831409819d2ba11b55139261968a",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/g05-all-pass-path/audit.py",
+      "sha256": "8584214ff03944a91ac005d45cf9de25dca0a151ec750c402c3f6f63de3be0a6",
+      "size_bytes": 2328
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/g05-all-pass-path/README.md",
+      "sha256": "3c91b124d4c4d7672a89db5739347cd7db1a4fd522818bbfb49e51f0d6214ce0",
+      "size_bytes": 4104
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/20261123-codex-g05-path/mathematical_receipt.json",
+      "sha256": "f24ae6e94e42a9d0d33c9fd4d9d8ff4ed2e055d194a4f2326c65724a562f714e",
+      "size_bytes": 4046
+    }
+  ],
+  "files": [
+    {
+      "path": "files/replay.txt",
+      "sha256": "3c0fd8dc861bd7f9039c1faed0b48ada96f6fc688d4b8b9e2c6453ac3648de49",
+      "size_bytes": 187
+    }
+  ]
+}

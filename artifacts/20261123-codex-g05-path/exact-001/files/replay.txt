@@ -1,0 +1,4 @@
+stock=1, turns=1: Hodge/pi=1, net=0, gross=4
+stock=3/2, turns=1: Hodge/pi=3/2, net=0, gross=6
+stock=1, turns=2: Hodge/pi=2, net=0, gross=8
+stock=3/2, turns=2: Hodge/pi=3, net=0, gross=12

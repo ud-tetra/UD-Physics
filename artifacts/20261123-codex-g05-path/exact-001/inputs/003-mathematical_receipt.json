@@ -1,0 +1,121 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "g05-all-pass-path",
+  "session_id": "20261123-codex-g05-path",
+  "candidate_id": null,
+  "question": "Which oriented path observables distinguish fixed-carrier all-pass histories?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "fixed-rotation-plane",
+      "symbol": "span(e,f)",
+      "object_type": "native real chain subspace",
+      "domain": "C_*(Delta^3;R)",
+      "codomain": "C_*(Delta^3;R)",
+      "coefficient_domain": "real with exact integer orientations",
+      "units": "native",
+      "basis_orientation": "ascending",
+      "metric_measure": "Euclidean coefficient metric",
+      "origin": "derived",
+      "exact_expression": "f=D3 e/2; Ae=2f; Af=-2e",
+      "normalization": "e,f unit vectors"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "hodge-port",
+      "url_or_repo_path": "experiments/g0506-hodge-port-calibration/README.md",
+      "version_or_commit": "54c76f50f00f831409819d2ba11b55139261968a",
+      "section_or_object_id": "section 1",
+      "source_status": "candidate transport"
+    },
+    {
+      "source_id": "historical-transport",
+      "url_or_repo_path": "experiments/g0506-transport-energy/README.md",
+      "version_or_commit": "54c76f50f00f831409819d2ba11b55139261968a",
+      "section_or_object_id": "Q136",
+      "source_status": "historical, conditional"
+    }
+  ],
+  "assumptions": [
+    "Fixed carrier, all-pass mask supplied throughout, no autonomous cut inferred.",
+    "Q171\u2013Q173 use v0.39a flow-incidence convention."
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact incidence and symbolic integration",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "check local current and signed action on the same path"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless native parameter",
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": "x'=Ax",
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": "pi for the angular frequency 2 carrier plane",
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "no empirical fitting",
+    "known_targets": [],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": null,
+    "selection_criterion": null,
+    "baseline": "net conservative current on a closed orbit"
+  },
+  "calculation_steps": [
+    "Build ascending signed boundaries.",
+    "Verify the two-dimensional invariant plane.",
+    "Integrate Hodge action and signed/absolute currents at one and two turns."
+  ],
+  "result": {
+    "exact_expression": "(Hodge,net,gross)=(pi*a*n,0,4*a*n)",
+    "approximation": null,
+    "units": null,
+    "precision_and_error": null,
+    "scope": "prescribed fixed all-pass epoch",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "symbolic SymPy replay",
+      "command_or_proof_path": "python3 experiments/g05-all-pass-path/audit.py",
+      "source_revision": "54c76f50f00f831409819d2ba11b55139261968a",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "Net face-to-cell flux vanishes despite nonzero signed Hodge integral."
+  ],
+  "limitations": [
+    "No native transport ratio, Q136 term attribution, or verified first-entry admission."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261123-codex-g05-path/exact-001/manifest.json"
+  ],
+  "next_discriminant": "Test source-defined directed ratios on complete admitted segments with a fixed mask."
+}
