@@ -1,0 +1,95 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "o14-lc-bundle-kminus",
+  "session_id": "20261123-codex-o14-bundle",
+  "candidate_id": null,
+  "question": "Can fixed Q169 produce modal exchange, and how does a driven path affect the integral?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [],
+  "sources": [
+    {
+      "source_id": "Q169",
+      "url_or_repo_path": "experiments/pachner-trigger-lift/README.md",
+      "version_or_commit": "6401ef38d4190f26492a06160aff763ed89cdb59",
+      "section_or_object_id": "Objects, rule, and event domain",
+      "source_status": "fixed Q169 plus candidate reserve guard"
+    }
+  ],
+  "assumptions": [
+    "Euclidean oriented simplicial basis",
+    "Prescribed drive for the control only"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact spectral projectors",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "prove individual stock conservation"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "no empirical fit",
+    "known_targets": [],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": null,
+    "selection_criterion": null,
+    "baseline": null
+  },
+  "calculation_steps": [
+    "Build signed boundaries",
+    "Compute spectrum and projectors",
+    "Integrate the prescribed stock differences"
+  ],
+  "result": {
+    "exact_expression": "Fixed Q169 conserves each sector stock. Driven histories split the two declared integrals.",
+    "approximation": null,
+    "units": null,
+    "precision_and_error": null,
+    "scope": "K-minus and prescribed driven control",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact SymPy replay and JSON Schema metaschema",
+      "command_or_proof_path": "python3 experiments/o14-lc-bundle/audit.py",
+      "source_revision": "6401ef38d4190f26492a06160aff763ed89cdb59",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [],
+  "limitations": [
+    "Native C06 admission, Q136 and device calibration remain open."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [],
+  "next_discriminant": "Supply an independently sourced exchange law and complete C06 guard receipts."
+}

@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261123-codex-o14-bundle",
+  "run_id": "exact-001",
+  "created_at": "2026-11-23T18:35:13.781360+00:00",
+  "evidence": "EXACT",
+  "summary": "LC schema and fixed versus driven K-minus control",
+  "command": "python3 experiments/o14-lc-bundle/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "6401ef38d4190f26492a06160aff763ed89cdb59",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/o14-lc-bundle/audit.py",
+      "sha256": "e7a5ddcc09befe591e7acf3ec8b9bffe7a00c1610087a0a870f64a49bfce6974",
+      "size_bytes": 2172
+    },
+    {
+      "input_id": "input-002",
+      "name": "LC_CALIBRATION_BUNDLE_SCHEMA_v0.1.json",
+      "path": "inputs/002-LC_CALIBRATION_BUNDLE_SCHEMA_v0.1.json",
+      "source_location": "repository",
+      "source_path": "experiments/o14-lc-bundle/LC_CALIBRATION_BUNDLE_SCHEMA_v0.1.json",
+      "sha256": "9f19c85b5dd0895fe9bce289ce25c9e7987c66c1e892331e617089d0526f0dd5",
+      "size_bytes": 12410
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/20261123-codex-o14-bundle/mathematical_receipt.json",
+      "sha256": "0406857ce150983aa3e18316af1ea57cd45a3c5029fd5f09232f239f634226f1",
+      "size_bytes": 2926
+    }
+  ],
+  "files": [
+    {
+      "path": "files/replay.txt",
+      "sha256": "802f65173028c856a08f932025d191573a0c7713b6513b0bba6b8687ef8518f7",
+      "size_bytes": 227
+    }
+  ]
+}
