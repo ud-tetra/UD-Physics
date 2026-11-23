@@ -1,0 +1,40 @@
+{
+  "base_revision": "6401ef38d4190f26492a06160aff763ed89cdb59",
+  "checks": [
+    "local SymPy exact PASS",
+    "separate stdlib Fraction algorithm PASS (same constructor)",
+    "local SHA256 manifest PASS",
+    "scripts/validate.py NOT_RUN (no full checkout)",
+    "python3 -m unittest discover -s tests -v NOT_RUN",
+    "nonconstructor science review PENDING"
+  ],
+  "claims": {
+    "native-junction-pre-event-20261123-b42e": {
+      "claim_ref": "claims/native-junction-pre-event-20261123-b42e",
+      "held_sha": "e1d57bfbbfd44ebc4cb07d3f03a7dc8dd877e516",
+      "status": "held"
+    }
+  },
+  "created_at": "2026-11-23T18:45:08Z",
+  "finding": "6 vs 12 overlap vertices on Q-blind same intrinsic state; zero-reserve unit metric only vertex inputs; post-event metric family nonunique",
+  "goal": "No target-informed Euclidean constructor: exact orientation and no-reserve controls",
+  "mathematical_profile": {
+    "applicable_methods": [
+      "typed provenance",
+      "convex polyhedral f-vectors",
+      "positive quadratic form",
+      "metric pullback and nonuniqueness"
+    ],
+    "clock_metric_units_conventions": "No physical clock or metric derivation; external dimensionless Euclidean reference; inherited unit chain metric",
+    "coefficient_domain": "Q geometrical control, R real chain amplitudes, F2^3 native theta",
+    "exactness_or_precision_plan": "exact halfspace intersections, two independent rational algorithms"
+  },
+  "next_action": "derive source-defined relative orientation/coface and reserve or metric plus generator; keep source gate open",
+  "record_type": "session",
+  "runtime": "ChatGPT GPT-6 constructor; local SymPy and separate stdlib replay; GitHub connector write",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-native-junction-b42e",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "task": "native-junction-pre-event-20261123-b42e"
+}
