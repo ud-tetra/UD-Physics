@@ -1,0 +1,31 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261123-codex-6d91",
+  "run_id": "junction-memory-001",
+  "evidence": "EXACT",
+  "summary": "Conditional lossless memory and exact benchmark controls",
+  "command": "python3 files/replay.py",
+  "source": {
+    "revision": "0c9c35871d93922f081054dcc4a7a00040c9d7e3",
+    "dirty": false
+  },
+  "inputs": [],
+  "files": [
+    {
+      "path": "files/REPORT.md",
+      "size_bytes": 4767,
+      "sha256": "b51128f697846e5ab81af0bfe71befa5ef4d34a179de94948e4d368e628cbf78"
+    },
+    {
+      "path": "files/replay.py",
+      "size_bytes": 4865,
+      "sha256": "929ac37b243e519ddb7a1080e14f571c3eb21a13757e4f722f83d3fbc8dfae4f"
+    },
+    {
+      "path": "files/replay-results.txt",
+      "size_bytes": 317,
+      "sha256": "98364e69332283421fa9d37d489d7f6f8a79036e56c7de8e9e52b722ec278c48"
+    }
+  ]
+}

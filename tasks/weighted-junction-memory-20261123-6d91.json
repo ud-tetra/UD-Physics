@@ -1,0 +1,14 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "weighted-junction-memory-20261123-6d91",
+  "goal": "Capture the conditional weighted junction and exact retained-memory audit",
+  "owned_paths": [
+    "tasks/weighted-junction-memory-20261123-6d91.json",
+    "sessions/20261123-codex-6d91/",
+    "candidates/weighted-junction-memory-20261123-6d91/",
+    "artifacts/20261123-codex-6d91/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}

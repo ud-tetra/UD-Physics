@@ -1,0 +1,29 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "weighted-junction-memory-20261123-6d91",
+  "session_id": "20261123-codex-6d91",
+  "question": "Can conditional junction refinement preserve stock and support an observable memory return?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "assumptions": [
+    "six prescribed point identifications",
+    "chosen diagonal metric",
+    "prepared unresolved data for the homogeneous memory equation"
+  ],
+  "physical_mapping": null,
+  "target_exposure": "Synthetic controls only",
+  "fitted_choices": [],
+  "sources": [
+    "https://github.com/ud-tetra/UD/pull/610",
+    "https://github.com/ud-tetra/UD-Physics/pull/458"
+  ],
+  "baseline": "UD-Physics #458 graph-only carrier",
+  "result": "Weighted skew-adjoint compression with zero transverse spectral abscissa and first-return entry -7",
+  "next_discriminant": "Authenticate pre-event route throughput and closure data, and evaluate an independently observed matched-geometry event.",
+  "physical_promotion": 0
+}
