@@ -1,0 +1,13 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "o14-offset-v02",
+  "goal": "Stage explicit LC offset domains",
+  "owned_paths": [
+    "experiments/o14-lc-offset-v02",
+    "sessions/20261123-codex-o14-offset",
+    "artifacts/20261123-codex-o14-offset"
+  ],
+  "dependencies": [],
+  "status": "planned"
+}

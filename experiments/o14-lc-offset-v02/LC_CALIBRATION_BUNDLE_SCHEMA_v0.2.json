@@ -1,0 +1,550 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.2"
+    },
+    "physical_promotion": {
+      "const": 0
+    },
+    "channel_map": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "session_id": {
+          "$ref": "#/$defs/label"
+        },
+        "device_id": {
+          "$ref": "#/$defs/label"
+        },
+        "channels": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/channel"
+          },
+          "minItems": 14
+        },
+        "acquisition": {
+          "$ref": "#/$defs/file"
+        }
+      },
+      "required": [
+        "session_id",
+        "device_id",
+        "channels",
+        "acquisition"
+      ]
+    },
+    "calibration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "model": {
+          "enum": [
+            "z=M(y-b)",
+            "z=My-b"
+          ]
+        },
+        "input_ids": {
+          "$ref": "#/$defs/ordered_labels"
+        },
+        "output_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/label"
+          },
+          "minItems": 14,
+          "maxItems": 14
+        },
+        "offset": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/number"
+          },
+          "minItems": 14
+        },
+        "readout_to_modal": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/number"
+            },
+            "minItems": 1
+          },
+          "minItems": 14,
+          "maxItems": 14
+        },
+        "operating_band_Hz": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "lower": {
+              "$ref": "#/$defs/positive"
+            },
+            "upper": {
+              "$ref": "#/$defs/positive"
+            }
+          },
+          "required": [
+            "lower",
+            "upper"
+          ]
+        },
+        "modes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mode"
+          },
+          "minItems": 7,
+          "maxItems": 7
+        },
+        "reference_flux": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "amplitude_Wb": {
+              "$ref": "#/$defs/positive"
+            },
+            "voltage_certificate": {
+              "$ref": "#/$defs/file"
+            },
+            "timebase_certificate": {
+              "$ref": "#/$defs/file"
+            },
+            "integration_record": {
+              "$ref": "#/$defs/file"
+            },
+            "reference_method": {
+              "$ref": "#/$defs/label"
+            },
+            "traceability_chain": {
+              "$ref": "#/$defs/file"
+            }
+          },
+          "required": [
+            "amplitude_Wb",
+            "voltage_certificate",
+            "timebase_certificate",
+            "integration_record",
+            "reference_method",
+            "traceability_chain"
+          ]
+        },
+        "covariance": {
+          "$ref": "#/$defs/joint_covariance"
+        },
+        "response_and_crosstalk": {
+          "$ref": "#/$defs/file"
+        },
+        "offset_space": {
+          "enum": [
+            "channel",
+            "modal"
+          ]
+        }
+      },
+      "required": [
+        "model",
+        "input_ids",
+        "output_ids",
+        "offset",
+        "readout_to_modal",
+        "operating_band_Hz",
+        "modes",
+        "reference_flux",
+        "covariance",
+        "response_and_crosstalk",
+        "offset_space"
+      ],
+      "oneOf": [
+        {
+          "properties": {
+            "offset_space": {
+              "const": "channel"
+            },
+            "model": {
+              "const": "z=M(y-b)"
+            }
+          }
+        },
+        {
+          "properties": {
+            "offset_space": {
+              "const": "modal"
+            },
+            "model": {
+              "const": "z=My-b"
+            },
+            "offset": {
+              "maxItems": 14
+            }
+          }
+        }
+      ]
+    },
+    "native_basis": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_commit": {
+          "$ref": "#/$defs/commit"
+        },
+        "simplices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/simplex"
+          },
+          "minItems": 15,
+          "maxItems": 15
+        },
+        "modal_pairs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pair"
+          },
+          "minItems": 7,
+          "maxItems": 7
+        },
+        "modal_to_full_chain_basis": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/number"
+            },
+            "minItems": 14,
+            "maxItems": 14
+          },
+          "minItems": 15,
+          "maxItems": 15
+        },
+        "vertex_selector": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/number"
+            },
+            "minItems": 15,
+            "maxItems": 15
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "edge_selector": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/number"
+            },
+            "minItems": 15,
+            "maxItems": 15
+          },
+          "minItems": 6,
+          "maxItems": 6
+        },
+        "signed_generator": {
+          "$ref": "#/$defs/file"
+        }
+      },
+      "required": [
+        "source_commit",
+        "simplices",
+        "modal_pairs",
+        "modal_to_full_chain_basis",
+        "vertex_selector",
+        "edge_selector",
+        "signed_generator"
+      ]
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tested_band_evidence": {
+          "$ref": "#/$defs/file"
+        },
+        "modal_rank": {
+          "const": 14
+        },
+        "minimum_singular_value": {
+          "$ref": "#/$defs/positive"
+        },
+        "rank_threshold": {
+          "$ref": "#/$defs/positive"
+        },
+        "normalization_for_rank": {
+          "$ref": "#/$defs/file"
+        },
+        "held_out_residuals": {
+          "$ref": "#/$defs/file"
+        },
+        "signed_period_s": {
+          "$ref": "#/$defs/positive"
+        },
+        "signed_period_record": {
+          "$ref": "#/$defs/file"
+        },
+        "absolute_support": {
+          "$ref": "#/$defs/positive"
+        },
+        "support_provenance": {
+          "$ref": "#/$defs/file"
+        },
+        "common_action_scale_test": {
+          "$ref": "#/$defs/file"
+        },
+        "freeze_and_decision_rule": {
+          "$ref": "#/$defs/file"
+        }
+      },
+      "required": [
+        "tested_band_evidence",
+        "modal_rank",
+        "minimum_singular_value",
+        "rank_threshold",
+        "normalization_for_rank",
+        "held_out_residuals",
+        "signed_period_s",
+        "signed_period_record",
+        "absolute_support",
+        "support_provenance",
+        "common_action_scale_test",
+        "freeze_and_decision_rule"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "physical_promotion",
+    "channel_map",
+    "calibration",
+    "native_basis",
+    "verification"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "O14 LC calibration bundle v0.2",
+  "description": "Candidate seven-mode filled tetrahedron LC calibration evidence. Schema acceptance is structural and requires separate semantic checks.",
+  "$defs": {
+    "number": {
+      "type": "number"
+    },
+    "positive": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "nonnegative": {
+      "type": "number",
+      "minimum": 0
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "uri": {
+          "$ref": "#/$defs/label"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "uri",
+        "sha256"
+      ]
+    },
+    "ordered_labels": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/label"
+      },
+      "minItems": 14,
+      "uniqueItems": true
+    },
+    "channel": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/label"
+        },
+        "quantity": {
+          "enum": [
+            "voltage",
+            "current"
+          ]
+        },
+        "si_unit": {
+          "enum": [
+            "V",
+            "A"
+          ]
+        },
+        "polarity": {
+          "enum": [
+            -1,
+            1
+          ]
+        },
+        "clock_id": {
+          "$ref": "#/$defs/label"
+        },
+        "phase_reference_id": {
+          "$ref": "#/$defs/label"
+        }
+      },
+      "required": [
+        "id",
+        "quantity",
+        "si_unit",
+        "polarity",
+        "clock_id",
+        "phase_reference_id"
+      ]
+    },
+    "mode": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mode_id": {
+          "$ref": "#/$defs/label"
+        },
+        "inductance_H": {
+          "$ref": "#/$defs/positive"
+        },
+        "capacitance_F": {
+          "$ref": "#/$defs/positive"
+        },
+        "operating_frequency_Hz": {
+          "$ref": "#/$defs/positive"
+        },
+        "certificate": {
+          "$ref": "#/$defs/file"
+        }
+      },
+      "required": [
+        "mode_id",
+        "inductance_H",
+        "capacitance_F",
+        "operating_frequency_Hz",
+        "certificate"
+      ]
+    },
+    "simplex": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/label"
+        },
+        "degree": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "ordered_vertices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/label"
+          },
+          "minItems": 1,
+          "maxItems": 4,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "degree",
+        "ordered_vertices"
+      ]
+    },
+    "pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mode_id": {
+          "$ref": "#/$defs/label"
+        },
+        "u_id": {
+          "$ref": "#/$defs/label"
+        },
+        "v_id": {
+          "$ref": "#/$defs/label"
+        }
+      },
+      "required": [
+        "mode_id",
+        "u_id",
+        "v_id"
+      ]
+    },
+    "joint_covariance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "$ref": "#/$defs/label"
+              },
+              "unit": {
+                "$ref": "#/$defs/label"
+              },
+              "transform": {
+                "enum": [
+                  "linear",
+                  "log"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "unit",
+              "transform"
+            ]
+          },
+          "minItems": 1
+        },
+        "matrix": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/number"
+            },
+            "minItems": 1
+          },
+          "minItems": 1
+        },
+        "provenance": {
+          "$ref": "#/$defs/file"
+        }
+      },
+      "required": [
+        "coordinates",
+        "matrix",
+        "provenance"
+      ]
+    }
+  },
+  "$comment": "Semantic checks: match the unique ordered channel IDs, M columns and b entries. Resolve channel units and polarity. Bind modal output IDs to the seven ordered (u,v) pairs, reconstruct all degrees of C*(Delta^3), and verify oriented basis/projector consistency and U^T U=I. Check ordered band endpoints and rank with a declared channel normalization and frozen singular-value threshold across the admitted band, using held-out preparations. Covariance must be square, symmetric, positive semidefinite, axis-ordered and include shared measurement/calibration cross-covariances. Verify hashes, certificates, signed full-state recurrence, independent absolute support, and common action scale evidence across modes. Presence of fields attests no physical qualification. Run experiments/o14-lc-offset-v02/validate_offsets.py to check offset and matrix input-axis lengths. Other semantic checks remain separate."
+}
