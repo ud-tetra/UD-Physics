@@ -1,0 +1,20 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "o14-native-basis",
+  "session": "20261123-codex-o14-native-basis",
+  "status": "held",
+  "created_at": "2026-11-23T20:14:50.286Z",
+  "base_revision": "94fbdd8f1c20411748aaadb875ff501e41821638",
+  "owned_paths": [
+    "experiments/o14-lc-bundle/K4_NATIVE_BASIS_U_REFERENCE_v0.1.json",
+    "experiments/o14-lc-bundle/verify_native_basis.py",
+    "experiments/o14-lc-bundle/README.md",
+    "experiments/o14-lc-offset-v02/validate_offsets.py",
+    "experiments/o14-lc-offset-v02/README.md",
+    "sessions/20261123-codex-o14-native-basis",
+    "artifacts/20261123-codex-o14-native-basis",
+    "tasks/o14-native-basis.json"
+  ]
+}
