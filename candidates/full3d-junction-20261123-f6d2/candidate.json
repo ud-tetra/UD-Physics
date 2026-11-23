@@ -1,0 +1,33 @@
+{
+  "assumptions": [
+    "externally specified regular tetrahedral Euclidean embedding",
+    "prescribed central octahedron fan and old/new 3D chain map",
+    "unit Euclidean coefficient metrics on each complex"
+  ],
+  "baseline": "ordinary Euclidean solid-overlap triangulation and six-midpoint point-gluing null",
+  "candidate_id": "full3d-junction-20261123-f6d2",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "fitted_choices": [],
+  "mathematical_receipts": [
+    "candidates/full3d-junction-20261123-f6d2/mathematical_receipt.json"
+  ],
+  "next_discriminant": "source-defined authenticated event and metric/reserve/lineage rule; held-out contrast versus zero-edge-contact but positive-volume overlap",
+  "physical_mapping": "OPEN / Physical Promotion 0",
+  "question": "Does full 3D canonical overlap and exact chain transfer follow natively from UD, and what obstruction remains?",
+  "record_type": "candidate",
+  "result": "EXACT condition: fan f=(15,42,44,16), Betti=(1,0,0,0), chain map T graded commutes, T3 Gram [[12,-8],[-8,12]] and stock gain nonnegative; NO-GO scoped for positive diagonal metric isometry and point-glued manifold",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-full3d-f6d2",
+  "sources": [
+    "UD source ledger v0.85 Q165–179/Q194/Q198/Q200/Q210",
+    "UD PR609/610",
+    "UD-Physics pachner interface audit",
+    "Echegoyen 2020 lecture conceptual-only"
+  ],
+  "status": "PARKED",
+  "target_exposure": "Exploratory known dual-tetrahedron overlap and prior contact controls, no empirical target fit"
+}
