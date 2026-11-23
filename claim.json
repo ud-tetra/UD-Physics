@@ -4,7 +4,7 @@
   "task": "full3d-junction-20261123-f6d2",
   "session": "20261123-gpt6-full3d-f6d2",
   "status": "held",
-  "created_at": "2026-11-23T02:25:00Z",
+  "created_at": "2026-11-23T02:29:48Z",
   "base_revision": "0c9c35871d93922f081054dcc4a7a00040c9d7e3",
   "owned_paths": [
     "tasks/full3d-junction-20261123-f6d2.json",
@@ -12,5 +12,7 @@
     "candidates/full3d-junction-20261123-f6d2/",
     "artifacts/20261123-gpt6-full3d-f6d2/",
     "experiments/full3d-junction-20261123-f6d2/"
-  ]
+  ],
+  "previous_claim_sha": "02d4f98b6f0b98af5a1c57c05d052231a00fa4ae",
+  "metadata_amendment": "Correct first held-claim placeholder timestamp to verified GitHub original claim commit UTC author date; scope and ownership unchanged"
 }
