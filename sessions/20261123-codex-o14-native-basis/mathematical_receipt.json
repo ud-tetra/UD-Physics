@@ -1,0 +1,118 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "O14-K4-native-basis-v0.1",
+  "session_id": "20261123-codex-o14-native-basis",
+  "candidate_id": null,
+  "question": "Can a reproducible reference and a bundle instance Gram test be supplied?",
+  "evidence_labels": [
+    "EXACT",
+    "NUMERICAL"
+  ],
+  "objects": [
+    {
+      "object_id": "O14-K4-U",
+      "symbol": "U",
+      "object_type": "linear isometry",
+      "definition": "Columns (e, Ae/2) for six edges and one top simplex.",
+      "domain": "R^14",
+      "codomain": "C_*(K4)",
+      "coefficient_domain": "Q for exact fixture",
+      "units": "dimensionless",
+      "basis_orientation": "degree then lexicographic, ascending",
+      "metric_measure": "Euclidean",
+      "origin": "derived",
+      "exact_expression": "[e1,Ae1/2,...,e7,Ae7/2]",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [],
+      "dependency_ids": [],
+      "normalization": "U^T U = I14"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "O14-schema",
+      "url_or_repo_path": "experiments/o14-lc-offset-v02/LC_CALIBRATION_BUNDLE_SCHEMA_v0.2.json",
+      "version_or_commit": "94fbdd8f1c20411748aaadb875ff501e41821638",
+      "section_or_object_id": "native_basis",
+      "source_status": "integrated schema"
+    }
+  ],
+  "assumptions": [
+    "Filled K4 with ascending orientations and Euclidean coefficient metric.",
+    "Numerical preflight uses the requested strict Frobenius threshold 1e-12."
+  ],
+  "technique_plan": [
+    {
+      "technique": "chain and Gram algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "Verify D²=0, the exact basis and signed rotation pairs."
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": null,
+    "reduced_expression": null,
+    "factor_origins": [],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "initial_boundary_conditions": null,
+    "conservation_and_sources": null,
+    "projection_and_kernel": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "NO_PHYSICAL_TARGET",
+    "known_targets": [],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": null,
+    "selection_criterion": "Use existing carrier and an explicit odd-degree seed convention.",
+    "baseline": null
+  },
+  "calculation_steps": [
+    "Take one coordinate vector from each odd-degree simplex.",
+    "Pair it with A times that vector divided by two.",
+    "Check the exact Gram, active projector and generator block relations.",
+    "Evaluate the actual bundle matrix through the CLI."
+  ],
+  "result": {
+    "exact_expression": "U^T U=I14, UU^T=I15-hh^T, AU=U direct_sum(7,[[0,-2],[2,0]])",
+    "approximation": null,
+    "units": "dimensionless",
+    "precision_and_error": null,
+    "scope": "Reference basis and numerical Gram preflight",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "exact rational replay and CLI controls",
+      "command_or_proof_path": "sessions/20261123-codex-o14-native-basis/replay_preflight.py",
+      "source_revision": "94fbdd8f1c20411748aaadb875ff501e41821638",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [],
+  "limitations": [
+    "The numerical check certifies column orthonormality to tolerance. Channel binding, modal orientation, generator compatibility and empirical O14 calibration remain separate."
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261123-codex-o14-native-basis/basis-001/manifest.json"
+  ],
+  "next_discriminant": "Run the numerical preflight on an independently supplied calibration bundle and verify its channel and generator bindings."
+}

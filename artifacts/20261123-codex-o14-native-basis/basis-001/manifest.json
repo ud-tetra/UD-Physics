@@ -1,0 +1,60 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261123-codex-o14-native-basis",
+  "run_id": "basis-001",
+  "created_at": "2026-11-23T20:16:39.340025+00:00",
+  "evidence": "EXACT",
+  "summary": "Exact K4 basis and synthetic v0.2 Gram preflight controls",
+  "command": "python3 experiments/o14-lc-bundle/verify_native_basis.py && python3 sessions/20261123-codex-o14-native-basis/replay_preflight.py && python3 experiments/o14-lc-offset-v02/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "6f01f6bf51a54d013983a7ebd1cfa0cc1af81475",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "verify_native_basis.py",
+      "path": "inputs/001-verify_native_basis.py",
+      "source_location": "repository",
+      "source_path": "experiments/o14-lc-bundle/verify_native_basis.py",
+      "sha256": "55c31719bd882cdc2d5b363b3c2a61aa4378636ef32c81051072a70d0fc14305",
+      "size_bytes": 3056
+    },
+    {
+      "input_id": "input-002",
+      "name": "K4_NATIVE_BASIS_U_REFERENCE_v0.1.json",
+      "path": "inputs/002-K4_NATIVE_BASIS_U_REFERENCE_v0.1.json",
+      "source_location": "repository",
+      "source_path": "experiments/o14-lc-bundle/K4_NATIVE_BASIS_U_REFERENCE_v0.1.json",
+      "sha256": "015eb01782207cfb81ca689f49fa16518cb5c2b85a23f00a89e63a188c3f65b1",
+      "size_bytes": 3265
+    },
+    {
+      "input_id": "input-003",
+      "name": "validate_offsets.py",
+      "path": "inputs/003-validate_offsets.py",
+      "source_location": "repository",
+      "source_path": "experiments/o14-lc-offset-v02/validate_offsets.py",
+      "sha256": "529ec33d1bcad9377cbb7e2e5c47c94105f1a888c140c761e5d07092f4c9d170",
+      "size_bytes": 2454
+    },
+    {
+      "input_id": "input-004",
+      "name": "replay_preflight.py",
+      "path": "inputs/004-replay_preflight.py",
+      "source_location": "repository",
+      "source_path": "sessions/20261123-codex-o14-native-basis/replay_preflight.py",
+      "sha256": "9daeb7d45bf864cc9a8d2ee2b039745b3bf6fea0dd42f1c63b61f42e44637df7",
+      "size_bytes": 2729
+    }
+  ],
+  "files": [
+    {
+      "path": "files/replay.txt",
+      "sha256": "11b1c7edb9b2e7d0af99a0b239c58e34de5abfc8f5922d1923dfd23caa9e264d",
+      "size_bytes": 504
+    }
+  ]
+}

@@ -7,7 +7,7 @@ Physical Promotion = 0. Version 0.2 follows the [review of PR #465](https://gith
 | channel | z = M(y − b) | N, where N is the number of ordered input IDs |
 | modal | z = My − b | Exactly 14 |
 
-Both use a 14-by-N readout matrix and allow N greater than 14. Draft 2020-12 checks the equation and offset-space pairing and the fixed modal length. Run the companion checker for the variable-length constraints on channel offsets and matrix rows.
+Both use a 14-by-N readout matrix and allow N greater than 14. Draft 2020-12 checks the equation and offset-space pairing and the fixed modal length. The companion checker validates the variable-length constraints and requires finite native-basis entries with ‖UᵀU − I₁₄‖_F < 10⁻¹². See the [exact reference basis](../o14-lc-bundle/K4_NATIVE_BASIS_U_REFERENCE_v0.1.json) for the replay convention.
 
 `python3 experiments/o14-lc-offset-v02/validate_offsets.py BUNDLE.json`
 
