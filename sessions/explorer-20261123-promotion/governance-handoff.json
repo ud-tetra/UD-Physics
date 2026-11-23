@@ -1,0 +1,10 @@
+{
+  "session": "explorer-20261123-promotion",
+  "task": "governance-promotion-clarification-20261123",
+  "base_revision": "da07202f1d248a1b9281a99d0a9d005c01cec4f5",
+  "claim_sha": "c9ded6e2fbdab60bf216250244c936dea469f54f",
+  "status": "handoff",
+  "scope": "Governance clarification only; no scientific results or promotion changes.",
+  "validation": "NOT_RUN — connector-only edits; repository validation and independent review required before integration.",
+  "next_action": "Review draft PR and reconcile version references before integration; claim remains held pending integration or explicit abandonment."
+}

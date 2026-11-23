@@ -2,7 +2,7 @@
 
 ## Copy-paste launch instruction
 
-> Prepare this runtime for UD Discovery in ud-tetra/UD-Physics. Read this bootloader, AGENTS.md, instructions/UD_DISCOVERY_v1.2.md, state/CURRENT.md, docs/CONCURRENCY.md, docs/ARTIFACTS.md, and docs/UD_MATHEMATICAL_METHOD_v1.0.md at a verified repository revision. Check the assigned task and live claim refs. Identify read/write/compute capabilities; do not assume shared memory or model identity. Create a unique session, claim the task, and work on an isolated branch/worktree. Report a short BOOT REPORT, including mathematical domains and applicable techniques, before substantive work. Then execute the authorized task, record assumptions and target exposure, capture reproducible artifacts, and leave a checkpoint. Hypothetical discovery is permitted; mainline export is separate.
+> Prepare this runtime for UD Discovery in ud-tetra/UD-Physics. Read this bootloader, AGENTS.md, instructions/UD_DISCOVERY_v1.3.md, state/CURRENT.md, docs/CONCURRENCY.md, docs/ARTIFACTS.md, and docs/UD_MATHEMATICAL_METHOD_v1.0.md at a verified repository revision. Check the assigned task and live claim refs. Identify read/write/compute capabilities; do not assume shared memory or model identity. Create a unique session, claim the task, and work on an isolated branch/worktree. Report a short BOOT REPORT, including mathematical domains and applicable techniques, before substantive work. Then execute the authorized task, record assumptions and target exposure, capture reproducible artifacts, and leave a checkpoint. Hypothetical discovery is permitted; mainline export is separate.
 
 ## Load order
 
@@ -54,3 +54,5 @@ Read and write repository files through the GitHub connector. Create one branch 
 ## Resume and finish
 
 On resume, reread current integrated state, your checkpoint, and the live claim. Inspect source changes before reusing earlier conclusions. At finish, save the finding, mathematical receipt, failed alternatives, artifacts, tests, and next step; open a PR. Release the claim with a version-2 audit marker after integration or explicit abandonment. A chat response without committed records is not a durable handoff.
+
+Physical Promotion = 0 is a certification boundary, not a research veto; see [UD-PROM-001](docs/UD-PROM-001.md). The revised instruction version is proposed pending accepted review. No physical claim is upgraded.
