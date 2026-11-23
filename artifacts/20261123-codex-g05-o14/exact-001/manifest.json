@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261123-codex-g05-o14",
+  "run_id": "exact-001",
+  "created_at": "2026-11-23T18:00:04.388948+00:00",
+  "evidence": "EXACT",
+  "summary": "Five synthetic collisions and the matched-time exclusion, plus the O14 exponent-row check",
+  "command": "python3 experiments/g05-relay-o14/audit.py",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "54c76f50f00f831409819d2ba11b55139261968a",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "audit.py",
+      "path": "inputs/001-audit.py",
+      "source_location": "repository",
+      "source_path": "experiments/g05-relay-o14/audit.py",
+      "sha256": "2d0852516092408ed49f16ae8aceab2d8dc5f7eda1597bf06eeca9dfc87917b5",
+      "size_bytes": 1250
+    },
+    {
+      "input_id": "input-002",
+      "name": "README.md",
+      "path": "inputs/002-README.md",
+      "source_location": "repository",
+      "source_path": "experiments/g05-relay-o14/README.md",
+      "sha256": "e0aa474ed99f2b279bf22551a241714c408d07fdfec5a2b4d84a71328227cd92",
+      "size_bytes": 5458
+    },
+    {
+      "input_id": "input-003",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/003-mathematical_receipt.json",
+      "source_location": "repository",
+      "source_path": "sessions/20261123-codex-g05-o14/mathematical_receipt.json",
+      "sha256": "e43fed4297bc71df67aec54fe9cc762b622367b5142e20752a2a6e7e3fdab15e",
+      "size_bytes": 6776
+    }
+  ],
+  "files": [
+    {
+      "path": "files/replay.txt",
+      "sha256": "47c306f6c0a3ebaa1da8e198350871b69b2c01798200145e4b59ac0d4e482c32",
+      "size_bytes": 293
+    }
+  ]
+}
