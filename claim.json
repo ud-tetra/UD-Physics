@@ -1,0 +1,15 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "o14-offset-v02",
+  "session": "20261123-codex-o14-offset",
+  "status": "held",
+  "created_at": "2026-11-23T19:04:26.314Z",
+  "base_revision": "ac392b788be905e9acebd506da7a74235b4ea2f7",
+  "owned_paths": [
+    "experiments/o14-lc-offset-v02",
+    "sessions/20261123-codex-o14-offset",
+    "artifacts/20261123-codex-o14-offset"
+  ]
+}
