@@ -4,12 +4,14 @@
   "protocol_version": 2,
   "task": "o14-lc-bundle",
   "session": "20261123-codex-o14-bundle",
-  "status": "held",
+  "status": "released",
   "created_at": "2026-11-23T18:34:02.103Z",
   "base_revision": "6401ef38d4190f26492a06160aff763ed89cdb59",
   "owned_paths": [
     "experiments/o14-lc-bundle",
     "sessions/20261123-codex-o14-bundle",
     "artifacts/20261123-codex-o14-bundle"
-  ]
+  ],
+  "released_at": "2026-11-23T20:14:35.461Z",
+  "released_from_sha": "2322f5d0249dd0ffd1f261ce26d8fd0a5fdd48d9"
 }
