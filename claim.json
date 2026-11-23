@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "publish-read-only-bootloader-20261123",
+  "session": "explorer-publication-20261123",
+  "status": "held",
+  "created_at": "2026-11-23T22:43:00Z",
+  "base_revision": "da07202f1d248a1b9281a99d0a9d005c01cec4f5",
+  "owned_paths": [
+    "read_only_bootloader.md",
+    "sessions/explorer-publication-20261123/"
+  ]
+}
