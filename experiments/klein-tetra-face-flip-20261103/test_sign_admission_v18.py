@@ -11,7 +11,9 @@ class SignAdmission(unittest.TestCase):
  def test_frozen_signed_B3(self):
   z=self.z
   self.assertEqual(z['sigma'],-1)
-  self.assertEqual(z['A1'][z['o1'][3]+z['to'],z['o1'][2]+z['fo']],1)
+  # The nested cross-complex replay owns the refined degree offsets.
+  offsets = z['z']['o1']
+  self.assertEqual(z['A1'][offsets[3] + z['to'], offsets[2] + z['fo']], 1)
  def test_exact_full_stock_defect(self):
   z=self.z;self.assertEqual(z['F'].T*z['F']-s.eye(15),3*z['e']*z['e'].T)
  def test_invariant_no_defect_rank(self):
