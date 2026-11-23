@@ -19,3 +19,9 @@ The [conditional Pachner reserve guard](../pachner-trigger-lift/README.md) can b
 ## Replay
 
 From the repository root, run `python3 experiments/o14-lc-bundle/audit.py` with SymPy and jsonschema installed. The replay checks the schema metaschema, the exact spectrum and commutation, and the two integral conventions.
+
+### Filled-tetrahedron basis reference
+
+[K4_NATIVE_BASIS_U_REFERENCE_v0.1.json](K4_NATIVE_BASIS_U_REFERENCE_v0.1.json) contains 15 oriented simplex rows and 14 columns. The columns are ordered pairs (e, Ae/2), one for each edge and the top cell, using the Euclidean coefficient metric and ascending orientations. The exact verifier checks the Gram matrix, the harmonic complement and the seven signed frequency-2 rotation blocks.
+
+Run python3 experiments/o14-lc-bundle/verify_native_basis.py from the repository root. The reference fixes a reproducible basis choice for replay. The v0.2 checker accepts other orthonormal bases. Bundle axis order, generator compatibility and calibrated channel binding require their own evidence.

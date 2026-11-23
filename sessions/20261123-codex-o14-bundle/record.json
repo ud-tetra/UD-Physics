@@ -13,7 +13,9 @@
     "o14-lc-bundle": {
       "ref": "refs/heads/claims/o14-lc-bundle",
       "sha": "2322f5d0249dd0ffd1f261ce26d8fd0a5fdd48d9",
-      "status": "held"
+      "status": "released",
+      "release_marker_sha": "1d9879dd4e60bd00a7af717f8bf49d944cd15530",
+      "released_at": "2026-11-23T20:14:35.461Z"
     }
   },
   "checks": [],
