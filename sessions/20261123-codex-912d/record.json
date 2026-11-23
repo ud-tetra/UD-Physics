@@ -1,0 +1,21 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-codex-912d",
+  "runtime": "Codex",
+  "task": "q171-ledger-amendment-20261123-912d",
+  "goal": "Record the approved Q171–Q173 flow-incidence convention as an append-only amendment",
+  "created_at": "2026-11-23T17:09:45Z",
+  "base_revision": "421f4d533e998efc9aa57b2cf926e7a9f596bf0e",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "q171-ledger-amendment-20261123-912d": "1ede7355ff120f5d19ecf047655d19924c3ed082"
+  },
+  "checks": [
+    "Q169 incidence sign and Q170 pair cancellation checked against the frozen source.",
+    "Exact PR #301 verification linked."
+  ],
+  "finding": "The authorized alias is documented in a separate append-only file.",
+  "next_action": "Review this documentation amendment against the explicit custodian scope and frozen v0.39 blob."
+}
