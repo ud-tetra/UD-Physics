@@ -1,0 +1,15 @@
+{
+  "dependencies": [],
+  "goal": "Construct and source-audit a full-dimensional interpacket junction with graded incidence, topological and stock controls",
+  "owned_paths": [
+    "tasks/full3d-junction-20261123-f6d2.json",
+    "sessions/20261123-gpt6-full3d-f6d2",
+    "candidates/full3d-junction-20261123-f6d2",
+    "experiments/full3d-junction-20261123-f6d2",
+    "artifacts/20261123-gpt6-full3d-f6d2"
+  ],
+  "record_type": "task",
+  "schema_version": 1,
+  "status": "parked",
+  "task_id": "full3d-junction-20261123-f6d2"
+}

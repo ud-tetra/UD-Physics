@@ -1,0 +1,85 @@
+{
+  "command": "python3 verify.py && python3 replay_stdlib.py",
+  "command_execution": "EXECUTED_BY_CONSTRUCTOR_AND_CAPTURED",
+  "created_at": "2026-11-23T02:32:55Z",
+  "evidence": "EXACT",
+  "files": [
+    {
+      "path": "files/BOOT_REPORT.md",
+      "sha256": "82199b26ffdec4cff3e6f32e34c88e1edc43c92ab4b6633ee23f90b2477ceab6",
+      "size_bytes": 1525
+    },
+    {
+      "path": "files/REPORT.md",
+      "sha256": "a48c8cceaf720c61e9b41f45bef144aba4804c78c07b277d6404c46ba7f82585",
+      "size_bytes": 13733
+    },
+    {
+      "path": "files/results.json",
+      "sha256": "2a47221ef297fdfa847477c8f27636ca087d2965a5a459c0c167fa1a0c369396",
+      "size_bytes": 2497
+    },
+    {
+      "path": "files/replay_results.json",
+      "sha256": "5e51347b9dc34f1edfa624b3b1a45a7d021de1ffd8c2cfbdbf23c0783fac3a58",
+      "size_bytes": 827
+    },
+    {
+      "path": "files/verify.log",
+      "sha256": "2a47221ef297fdfa847477c8f27636ca087d2965a5a459c0c167fa1a0c369396",
+      "size_bytes": 2497
+    },
+    {
+      "path": "files/replay.log",
+      "sha256": "5e51347b9dc34f1edfa624b3b1a45a7d021de1ffd8c2cfbdbf23c0783fac3a58",
+      "size_bytes": 827
+    }
+  ],
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "verify.py",
+      "path": "inputs/001-verify.py",
+      "sha256": "744e168b8d0b9dc2a944d67bd53f4bfa69873f74198744e35eec03da2395690a",
+      "size_bytes": 10988,
+      "source_location": "repository",
+      "source_path": "experiments/full3d-junction-20261123-f6d2/verify.py"
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay_stdlib.py",
+      "path": "inputs/002-replay_stdlib.py",
+      "sha256": "a1c40bf45e01630730d2f718cd7bd09341cc28186de01eabe2f8c4a7ea998212",
+      "size_bytes": 8126,
+      "source_location": "repository",
+      "source_path": "experiments/full3d-junction-20261123-f6d2/replay_stdlib.py"
+    },
+    {
+      "input_id": "input-003",
+      "name": "SOURCE_REGISTER.json",
+      "path": "inputs/003-SOURCE_REGISTER.json",
+      "sha256": "70b8ff68690c8036ffbd69ee36615b1a848897e40cfcbf1b013f208a43aa9ac2",
+      "size_bytes": 2502,
+      "source_location": "repository",
+      "source_path": "candidates/full3d-junction-20261123-f6d2/SOURCE_REGISTER.json"
+    },
+    {
+      "input_id": "input-004",
+      "name": "mathematical_receipt.json",
+      "path": "inputs/004-mathematical_receipt.json",
+      "sha256": "ff2bf0e3e692811523d3e44157500f3de67f7c89dbfebeeaef9a3165339a71ea",
+      "size_bytes": 11695,
+      "source_location": "repository",
+      "source_path": "candidates/full3d-junction-20261123-f6d2/mathematical_receipt.json"
+    }
+  ],
+  "record_type": "run",
+  "run_id": "full3d-geometry-v0_1",
+  "schema_version": 2,
+  "session_id": "20261123-gpt6-full3d-f6d2",
+  "source": {
+    "dirty": true,
+    "revision": "0c9c35871d93922f081054dcc4a7a00040c9d7e3"
+  },
+  "summary": "Independent explicit 3D fan vs nonmanifold point-quotient, chain-map/rank/stock source audit"
+}
