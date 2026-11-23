@@ -1,0 +1,16 @@
+{
+  "record_type": "claim",
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "o14-basis-semantics",
+  "session": "20261123-codex-o14-semantics",
+  "status": "held",
+  "created_at": "2026-11-23T20:40:48.460Z",
+  "base_revision": "e1a990a4a97d09321f3509c8c25cda6ebc09ab66",
+  "owned_paths": [
+    "scripts/check_basis_semantics.py",
+    "sessions/20261123-codex-o14-semantics",
+    "artifacts/20261123-codex-o14-semantics",
+    "tasks/o14-basis-semantics.json"
+  ]
+}
