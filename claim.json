@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "full3d-junction-20261123-f6d2",
+  "session": "20261123-gpt6-full3d-f6d2",
+  "status": "held",
+  "created_at": "2026-11-23T02:25:00Z",
+  "base_revision": "0c9c35871d93922f081054dcc4a7a00040c9d7e3",
+  "owned_paths": [
+    "tasks/full3d-junction-20261123-f6d2.json",
+    "sessions/20261123-gpt6-full3d-f6d2/",
+    "candidates/full3d-junction-20261123-f6d2/",
+    "artifacts/20261123-gpt6-full3d-f6d2/",
+    "experiments/full3d-junction-20261123-f6d2/"
+  ]
+}
