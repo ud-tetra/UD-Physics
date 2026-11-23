@@ -1,8 +1,0 @@
-filled [0, 0, 0] [0, 0, 0]
-hollow [1/48, 1/4, 0] [0, 0, 0]
-gamma=0 PASS packet_sha256=542019b3b4db4dc42b36ead0ee9fdd184ce6bbe251b97722d08d55d14304364f
-  matched_filled: 0.244449987
-  orthogonal_hollow: 0.252123732
-gamma=1/512 PASS packet_sha256=4c063db57351a590fdc34044f43e288db3d9498d8dcfad7bec579c7b912c5321
-  matched_filled: 0.242631725
-  orthogonal_hollow: 0.250152795
