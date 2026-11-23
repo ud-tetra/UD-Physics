@@ -1,0 +1,1189 @@
+{
+  "schema_version": "0.2",
+  "physical_promotion": 0,
+  "channel_map": {
+    "session_id": "MOCK-PR468-PREFLIGHT-ONLY",
+    "device_id": "NO-PHYSICAL-DEVICE",
+    "channels": [
+      {
+        "id": "mock-input-01",
+        "quantity": "voltage",
+        "si_unit": "V",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-02",
+        "quantity": "current",
+        "si_unit": "A",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-03",
+        "quantity": "voltage",
+        "si_unit": "V",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-04",
+        "quantity": "current",
+        "si_unit": "A",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-05",
+        "quantity": "voltage",
+        "si_unit": "V",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-06",
+        "quantity": "current",
+        "si_unit": "A",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-07",
+        "quantity": "voltage",
+        "si_unit": "V",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-08",
+        "quantity": "current",
+        "si_unit": "A",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-09",
+        "quantity": "voltage",
+        "si_unit": "V",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-10",
+        "quantity": "current",
+        "si_unit": "A",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-11",
+        "quantity": "voltage",
+        "si_unit": "V",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-12",
+        "quantity": "current",
+        "si_unit": "A",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-13",
+        "quantity": "voltage",
+        "si_unit": "V",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-14",
+        "quantity": "current",
+        "si_unit": "A",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-15",
+        "quantity": "voltage",
+        "si_unit": "V",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      },
+      {
+        "id": "mock-input-16",
+        "quantity": "current",
+        "si_unit": "A",
+        "polarity": 1,
+        "clock_id": "mock-clock",
+        "phase_reference_id": "mock-phase"
+      }
+    ],
+    "acquisition": {
+      "uri": "urn:synthetic:o14:no-measurement:acquisition",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "calibration": {
+    "input_ids": [
+      "mock-input-01",
+      "mock-input-02",
+      "mock-input-03",
+      "mock-input-04",
+      "mock-input-05",
+      "mock-input-06",
+      "mock-input-07",
+      "mock-input-08",
+      "mock-input-09",
+      "mock-input-10",
+      "mock-input-11",
+      "mock-input-12",
+      "mock-input-13",
+      "mock-input-14",
+      "mock-input-15",
+      "mock-input-16"
+    ],
+    "output_ids": [
+      "mock-mode-1-u",
+      "mock-mode-1-v",
+      "mock-mode-2-u",
+      "mock-mode-2-v",
+      "mock-mode-3-u",
+      "mock-mode-3-v",
+      "mock-mode-4-u",
+      "mock-mode-4-v",
+      "mock-mode-5-u",
+      "mock-mode-5-v",
+      "mock-mode-6-u",
+      "mock-mode-6-v",
+      "mock-mode-7-u",
+      "mock-mode-7-v"
+    ],
+    "readout_to_modal": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    ],
+    "operating_band_Hz": {
+      "lower": 1,
+      "upper": 3
+    },
+    "modes": [
+      {
+        "mode_id": "mock-mode-1",
+        "inductance_H": 1,
+        "capacitance_F": 1,
+        "operating_frequency_Hz": 2,
+        "certificate": {
+          "uri": "urn:synthetic:o14:no-measurement:mock-mode-1",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "mode_id": "mock-mode-2",
+        "inductance_H": 1,
+        "capacitance_F": 1,
+        "operating_frequency_Hz": 2,
+        "certificate": {
+          "uri": "urn:synthetic:o14:no-measurement:mock-mode-2",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "mode_id": "mock-mode-3",
+        "inductance_H": 1,
+        "capacitance_F": 1,
+        "operating_frequency_Hz": 2,
+        "certificate": {
+          "uri": "urn:synthetic:o14:no-measurement:mock-mode-3",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "mode_id": "mock-mode-4",
+        "inductance_H": 1,
+        "capacitance_F": 1,
+        "operating_frequency_Hz": 2,
+        "certificate": {
+          "uri": "urn:synthetic:o14:no-measurement:mock-mode-4",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "mode_id": "mock-mode-5",
+        "inductance_H": 1,
+        "capacitance_F": 1,
+        "operating_frequency_Hz": 2,
+        "certificate": {
+          "uri": "urn:synthetic:o14:no-measurement:mock-mode-5",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "mode_id": "mock-mode-6",
+        "inductance_H": 1,
+        "capacitance_F": 1,
+        "operating_frequency_Hz": 2,
+        "certificate": {
+          "uri": "urn:synthetic:o14:no-measurement:mock-mode-6",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "mode_id": "mock-mode-7",
+        "inductance_H": 1,
+        "capacitance_F": 1,
+        "operating_frequency_Hz": 2,
+        "certificate": {
+          "uri": "urn:synthetic:o14:no-measurement:mock-mode-7",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      }
+    ],
+    "reference_flux": {
+      "voltage_certificate": {
+        "uri": "urn:synthetic:o14:no-measurement:voltage_certificate",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "timebase_certificate": {
+        "uri": "urn:synthetic:o14:no-measurement:timebase_certificate",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "integration_record": {
+        "uri": "urn:synthetic:o14:no-measurement:integration_record",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "traceability_chain": {
+        "uri": "urn:synthetic:o14:no-measurement:traceability_chain",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "amplitude_Wb": 1,
+      "reference_method": "synthetic-placeholder"
+    },
+    "covariance": {
+      "coordinates": [
+        {
+          "id": "mock-coordinate",
+          "unit": "1",
+          "transform": "linear"
+        }
+      ],
+      "matrix": [
+        [
+          1
+        ]
+      ],
+      "provenance": {
+        "uri": "urn:synthetic:o14:no-measurement:covariance",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "response_and_crosstalk": {
+      "uri": "urn:synthetic:o14:no-measurement:crosstalk",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "offset_space": "channel",
+    "model": "z=M(y-b)",
+    "offset": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "native_basis": {
+    "source_commit": "848d4a25db540af03717c07c8f576bce855969c7",
+    "simplices": [
+      {
+        "id": "simplex-0",
+        "degree": 0,
+        "ordered_vertices": [
+          "0"
+        ]
+      },
+      {
+        "id": "simplex-1",
+        "degree": 0,
+        "ordered_vertices": [
+          "1"
+        ]
+      },
+      {
+        "id": "simplex-2",
+        "degree": 0,
+        "ordered_vertices": [
+          "2"
+        ]
+      },
+      {
+        "id": "simplex-3",
+        "degree": 0,
+        "ordered_vertices": [
+          "3"
+        ]
+      },
+      {
+        "id": "simplex-01",
+        "degree": 1,
+        "ordered_vertices": [
+          "0",
+          "1"
+        ]
+      },
+      {
+        "id": "simplex-02",
+        "degree": 1,
+        "ordered_vertices": [
+          "0",
+          "2"
+        ]
+      },
+      {
+        "id": "simplex-03",
+        "degree": 1,
+        "ordered_vertices": [
+          "0",
+          "3"
+        ]
+      },
+      {
+        "id": "simplex-12",
+        "degree": 1,
+        "ordered_vertices": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "id": "simplex-13",
+        "degree": 1,
+        "ordered_vertices": [
+          "1",
+          "3"
+        ]
+      },
+      {
+        "id": "simplex-23",
+        "degree": 1,
+        "ordered_vertices": [
+          "2",
+          "3"
+        ]
+      },
+      {
+        "id": "simplex-012",
+        "degree": 2,
+        "ordered_vertices": [
+          "0",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "id": "simplex-013",
+        "degree": 2,
+        "ordered_vertices": [
+          "0",
+          "1",
+          "3"
+        ]
+      },
+      {
+        "id": "simplex-023",
+        "degree": 2,
+        "ordered_vertices": [
+          "0",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "id": "simplex-123",
+        "degree": 2,
+        "ordered_vertices": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "id": "simplex-0123",
+        "degree": 3,
+        "ordered_vertices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    ],
+    "modal_pairs": [
+      {
+        "mode_id": "mock-mode-1",
+        "u_id": "mock-mode-1-u",
+        "v_id": "mock-mode-1-v"
+      },
+      {
+        "mode_id": "mock-mode-2",
+        "u_id": "mock-mode-2-u",
+        "v_id": "mock-mode-2-v"
+      },
+      {
+        "mode_id": "mock-mode-3",
+        "u_id": "mock-mode-3-u",
+        "v_id": "mock-mode-3-v"
+      },
+      {
+        "mode_id": "mock-mode-4",
+        "u_id": "mock-mode-4-u",
+        "v_id": "mock-mode-4-v"
+      },
+      {
+        "mode_id": "mock-mode-5",
+        "u_id": "mock-mode-5-u",
+        "v_id": "mock-mode-5-v"
+      },
+      {
+        "mode_id": "mock-mode-6",
+        "u_id": "mock-mode-6-u",
+        "v_id": "mock-mode-6-v"
+      },
+      {
+        "mode_id": "mock-mode-7",
+        "u_id": "mock-mode-7-u",
+        "v_id": "mock-mode-7-v"
+      }
+    ],
+    "modal_to_full_chain_basis": [
+      [
+        0,
+        -0.5,
+        0,
+        -0.5,
+        0,
+        -0.5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0.5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -0.5,
+        0,
+        -0.5,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0.5,
+        0,
+        0,
+        0,
+        0.5,
+        0,
+        0,
+        0,
+        -0.5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.5,
+        0,
+        0,
+        0,
+        0.5,
+        0,
+        0.5,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -0.5,
+        0,
+        0.5,
+        0,
+        0,
+        0,
+        -0.5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -0.5
+      ],
+      [
+        0,
+        -0.5,
+        0,
+        0,
+        0,
+        0.5,
+        0,
+        0,
+        0,
+        -0.5,
+        0,
+        0,
+        0,
+        0.5
+      ],
+      [
+        0,
+        0,
+        0,
+        -0.5,
+        0,
+        0.5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -0.5,
+        0,
+        -0.5
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -0.5,
+        0,
+        0.5,
+        0,
+        -0.5,
+        0,
+        0.5
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "vertex_selector": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "edge_selector": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "signed_generator": {
+      "uri": "urn:synthetic:o14:no-measurement:signed-generator",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "verification": {
+    "tested_band_evidence": {
+      "uri": "urn:synthetic:o14:no-measurement:tested_band_evidence",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "normalization_for_rank": {
+      "uri": "urn:synthetic:o14:no-measurement:normalization_for_rank",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "held_out_residuals": {
+      "uri": "urn:synthetic:o14:no-measurement:held_out_residuals",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "signed_period_record": {
+      "uri": "urn:synthetic:o14:no-measurement:signed_period_record",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "support_provenance": {
+      "uri": "urn:synthetic:o14:no-measurement:support_provenance",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "common_action_scale_test": {
+      "uri": "urn:synthetic:o14:no-measurement:common_action_scale_test",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "freeze_and_decision_rule": {
+      "uri": "urn:synthetic:o14:no-measurement:freeze_and_decision_rule",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "modal_rank": 14,
+    "minimum_singular_value": 1,
+    "rank_threshold": 0.1,
+    "signed_period_s": 1,
+    "absolute_support": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261123-codex-o14-binding",
+  "run_id": "binding-001",
+  "created_at": "2026-11-23T20:49:46.012202+00:00",
+  "evidence": "EXACT",
+  "summary": "Six CLI cases for internal v0.2 metadata binding",
+  "command": "python3 sessions/20261123-codex-o14-binding/replay.py artifacts/20261123-codex-o14-binding/binding-001/inputs/003-O14_MOCK_CHANNEL_OFFSET_V02.json",
+  "command_execution": "RECORDED_NOT_EXECUTED_BY_CAPTURE",
+  "source": {
+    "revision": "e1a990a4a97d09321f3509c8c25cda6ebc09ab66",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "input-001",
+      "name": "check_o14_bundle_binding.py",
+      "path": "inputs/001-check_o14_bundle_binding.py",
+      "source_location": "repository",
+      "source_path": "scripts/check_o14_bundle_binding.py",
+      "sha256": "721ee3f71f839b7625af969cfc80d39f0e79b956e78483f293a77194199501e2",
+      "size_bytes": 3158
+    },
+    {
+      "input_id": "input-002",
+      "name": "replay.py",
+      "path": "inputs/002-replay.py",
+      "source_location": "repository",
+      "source_path": "sessions/20261123-codex-o14-binding/replay.py",
+      "sha256": "2a903a74e7b969d9834f0c959f9cdd8164f6d381476bb0c7023794b0cb256cce",
+      "size_bytes": 2316
+    },
+    {
+      "input_id": "input-003",
+      "name": "O14_MOCK_CHANNEL_OFFSET_V02.json",
+      "path": "inputs/003-O14_MOCK_CHANNEL_OFFSET_V02.json",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "8c6e4cea1e4c3e850bf0c9d16b9b8d29c488a595e28b94639a406e31eec94368",
+      "size_bytes": 20416
+    }
+  ],
+  "files": [
+    {
+      "path": "files/replay.txt",
+      "sha256": "26ef69f99557015a3f456ebe39850a32f26091b35491f5b48ce60c332486af67",
+      "size_bytes": 247
+    }
+  ]
+}

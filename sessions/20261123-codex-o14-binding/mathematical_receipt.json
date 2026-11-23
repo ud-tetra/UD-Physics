@@ -1,0 +1,21 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "O14-bundle-binding",
+  "session_id": "20261123-codex-o14-binding",
+  "evidence_labels": ["EXACT"],
+  "question": "Can the canonical v0.2 bundle convention reject inconsistent row and column metadata?",
+  "sources": [
+    {"version_or_commit": "e1a990a4a97d09321f3509c8c25cda6ebc09ab66", "url_or_repo_path": "experiments/o14-lc-offset-v02/LC_CALIBRATION_BUNDLE_SCHEMA_v0.2.json"},
+    {"version_or_commit": "ec8df9103feb109e765b958ca29fd568a0962dff", "url_or_repo_path": "https://github.com/ud-tetra/UD-Physics/pull/469#pullrequestreview-6029241048"}
+  ],
+  "objects": [
+    {"symbol": "U", "domain": "R^14", "codomain": "C_*(K4)", "definition": "Canonical degree-then-lexicographic simplex rows and adjacent ordered (u,v) columns."},
+    {"symbol": "S_d", "definition": "Rows e_i^T for canonical simplex coordinates of grade d, d=0,1.", "coefficient_domain": "exact rational comparison"}
+  ],
+  "assumptions": ["The checker adopts the canonical order from the filled K4 fixture and the listed calibration mode order as the declared order."],
+  "target_exposure": {"status": "Synthetic mutations only. No physical target or fit."},
+  "result": {"scope": "Exact internal ID and coordinate-selector consistency. All four inconsistent mutations rejected."},
+  "limitations": ["Consistent coordinated relabeling passes. Channel identity and generator provenance require trusted external evidence."],
+  "artifact_manifest_refs": ["artifacts/20261123-codex-o14-binding/binding-001/manifest.json"],
+  "next_discriminant": "Independent review of the declared order and rejection cases."
+}
