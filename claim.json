@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "q171-ledger-amendment-20261123-912d",
+  "session": "20261123-codex-912d",
+  "status": "held",
+  "created_at": "2026-11-23T17:09:45Z",
+  "base_revision": "421f4d533e998efc9aa57b2cf926e7a9f596bf0e",
+  "owned_paths": [
+    "docs/UD_COEFFICIENT_PROVENANCE_LEDGER_AMENDMENT_v0.39a.md",
+    "tasks/q171-ledger-amendment-20261123-912d.json",
+    "sessions/20261123-codex-912d/"
+  ]
+}

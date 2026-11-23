@@ -1,2 +1,0 @@
-64 masks and 5248 pointwise potential controls passed.
-82 stationary and live two-copy sector controls passed.
