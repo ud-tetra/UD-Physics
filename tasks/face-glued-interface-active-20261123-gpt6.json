@@ -1,0 +1,13 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "face-glued-interface-active-20261123-gpt6",
+  "goal": "Find exact active localized invariant sector under native skew Hodge–Dirac on two face-sharing tetrahedra, independently of Pachner event selection",
+  "dependencies": [],
+  "owned_paths": [
+    "tasks/face-glued-interface-active-20261123-gpt6.json",
+    "sessions/20261123-gpt6-interface-active/",
+    "candidates/face-glued-interface-active-20261123-gpt6/"
+  ],
+  "status": "active"
+}

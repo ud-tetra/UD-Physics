@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-interface-active",
+  "runtime": "GPT-6 / local exact SymPy + GitHub connector",
+  "task": "face-glued-interface-active-20261123-gpt6",
+  "goal": "Construct two-tetra 23D incidence and test localized invariant with nonzero reciprocal exchange",
+  "created_at": "2026-11-24T02:40:00Z",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "face-glued-interface-active-20261123-gpt6": "fdbdf3ef541d2852fc3fec4d72c021a4d24cad89"
+  },
+  "checks": [
+    {
+      "name": "local exact SymPy",
+      "result": "PASS"
+    },
+    {
+      "name": "non-constructor review",
+      "result": "NOT_RUN"
+    }
+  ],
+  "finding": "Shared face e012 generates a rank-2 invariant active Hodge plane, stock travels to three shared-face edges and two top volumes; this is not hidden from boundary-edge observers.",
+  "next_action": "Test robust protection under perturbations and declared nonunit Whitney metric before interpreting defect physicality",
+  "mathematical_profile": {
+    "coefficient_domain": "R, exact integer signed incidence",
+    "exactness_or_precision_plan": "SymPy exact matrices/radicals",
+    "applicable_methods": [
+      "simplicial boundary",
+      "spectral factorization",
+      "signed automorphism representation",
+      "orthogonal invariant projector"
+    ],
+    "clock_metric_units_conventions": "unit coefficient norm; formal s; no physical time or units"
+  }
+}

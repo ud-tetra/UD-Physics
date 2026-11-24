@@ -1,0 +1,28 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "face-glued-interface-active-20261123-gpt6",
+  "session_id": "20261123-gpt6-interface-active",
+  "question": "Does the native 23D face-glued incidence operator contain a nontrivial localized, non-frozen invariant dynamics with reciprocal adjacent-top mixing?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "assumptions": [
+    "prescribed gluing along face [012]",
+    "unit simplex coefficient metric",
+    "unmasked skew Hodge Dirac A=D.T-D",
+    "formal evolution parameter s"
+  ],
+  "physical_mapping": "OPEN; no observable units or physically sourced interface",
+  "target_exposure": "Source-pinned face-glued null, no physical target",
+  "fitted_choices": [],
+  "sources": [
+    "UD-Physics main @80525f1 experiments/four-cell-tetrahedron/README.md v1.0 blob 697b5c...",
+    "UD-Physics main @80525f1 experiments/pachner-boundary-observability/README.md v0.1 blob a7aa4a19..."
+  ],
+  "baseline": "Unmasked simplicial skew Hodge-Dirac on fixed two-tetra complex, no masking or fitted coefficients",
+  "result": "Invariant plane span(v,Av), Av=-e01+e02-e12-e0123-e0124, A²v=-5v, projector commutes with A; stock distribution 1:3/5:2/5 at quarter cycle; full charpoly z(z²+3)^4(z²+5)^7, 12 signed automorphisms; boundary triangle invisible but boundary-edge visible",
+  "next_discriminant": "Perturb metrics, boundary ports and local geometry; derive protection law without defining projector from known eigenstate."
+}
