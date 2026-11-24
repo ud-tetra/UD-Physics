@@ -1,33 +1,25 @@
 {
-  "schema_version": 1,
+  "record_type": "run",
+  "schema_version": 2,
   "run_id": "gram16-v0_1",
   "session_id": "20261123-gpt6-level2-gram",
-  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
-  "claim_sha": "d21d3d76d2e60464787b5cd616667488989f14ca",
-  "source_refs": [
-    "four-cell-tetrahedron README v1.0 Git blob 697b5cb0207f01286e27eb8198fdb31fc129ae6e",
-    "UD-Physics PR #477 head f82620113a532ce88eb2408c2cab53e0efd410a2"
-  ],
+  "created_at": "2026-11-24T02:19:00Z",
+  "evidence": "EXACT",
+  "summary": "Exact 16-cell Gram and S4 spectrum under prescribed two-level Pachner refinement; sourced event admission remains open",
+  "command": "python3 candidates/pachner-level2-gram-20261123-gpt6/verify.py",
+  "command_execution": "LOCAL_CONSTRUCTOR_REPLAY; PUBLISHED_GITHUB_SCRIPT_NOT_FRESH_CHECKOUT_REPLAYED",
+  "source": {
+    "dirty": true,
+    "revision": "80525f1296a15f4a87f0efecc491679deec39b9b"
+  },
+  "inputs": [],
   "files": [
     {
-      "path": "candidates/pachner-level2-gram-20261123-gpt6/REPORT.md",
-      "git_blob_sha": "ddf508248583b4e5b93204093bf15abe3ba3b7bc",
-      "characters": 4436
-    },
-    {
-      "path": "candidates/pachner-level2-gram-20261123-gpt6/verify.py",
-      "git_blob_sha": "1e9968b3d4fe8a7f845208dcd29821133e2a9e5c",
-      "characters": 1831
-    },
-    {
-      "path": "artifacts/20261123-gpt6-level2-gram/gram16-v0_1/files/results.json",
-      "git_blob_sha": "fbf6e25e5940e6d453029fde6320e92a36a12a1d",
-      "characters": 765
+      "path": "files/results.json",
+      "sha256": "e805652d99ce80d7ba58189c5f4d9422df7f1ae80dc4a85c350c001753da61d7",
+      "size_bytes": 765
     }
   ],
-  "full_local_bundle_sha256": "458e8e9e192c80b9bc8ab0dcaeedc33a7ecdd27d4678cf5a1faaed20d8cb4a3e",
-  "local_bundle_independently_reconstructed_B3": true,
-  "published_script_note": "The GitHub script is an abbreviated combinatorial reduction; the downloadable standalone package contains independently constructed exact geometric signed-incidence code.",
-  "verification": "local exact SymPy PASS; fresh checkout published script NOT_RUN; independent non-constructor review NOT_RUN",
-  "physical_promotion": 0
+  "physical_promotion": 0,
+  "local_bundle_sha256": "458e8e9e192c80b9bc8ab0dcaeedc33a7ecdd27d4678cf5a1faaed20d8cb4a3e"
 }
