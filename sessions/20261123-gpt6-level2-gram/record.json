@@ -1,0 +1,18 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-level2-gram",
+  "task_id": "pachner-level2-gram-20261123-gpt6",
+  "status": "review pending; claim held",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "claim_sha": "d21d3d76d2e60464787b5cd616667488989f14ca",
+  "evidence": "independent rational-coordinate SymPy + exact abstract Gram and S4; local constructor PASS",
+  "not_run": [
+    "GitHub fresh checkout verifier",
+    "full Discovery integrity until CI available",
+    "non-constructor review",
+    "29->85 actuator replay"
+  ],
+  "finding": "G exact characteristic factorization; 2-mode face/top transfer from exterior seeded q with top internal support <= 4/7 initial total; born funding law OPEN",
+  "physical_promotion": 0
+}
