@@ -1,0 +1,51 @@
+{
+  "evidence": "EXACT_CONDITIONAL",
+  "source_f": [
+    4,
+    6,
+    4,
+    1
+  ],
+  "level1_f": [
+    5,
+    10,
+    10,
+    4
+  ],
+  "level2_f": [
+    9,
+    26,
+    34,
+    16
+  ],
+  "cochain_prolongation_shapes": [
+    [
+      5,
+      4
+    ],
+    [
+      10,
+      6
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      4,
+      1
+    ]
+  ],
+  "all_grades_mass_isometric": true,
+  "all_grades_coboundary_commute": true,
+  "unit_chain_top_gram": 4,
+  "level0_to1_centroid_whitney_generator_rank": 0,
+  "level0_to1_unit_generator_cochain_rank": 7,
+  "level0_to1_noncentroid_whitney_generator_rank": 4,
+  "level1_to2_centroid_whitney_generator_rank": 13,
+  "level1_to2_generator_nonzero_mass_premultiplied": 306,
+  "level2_complement_dim": 56,
+  "source_event_selector": "OPEN",
+  "physical_promotion": 0,
+  "nonconstructor_review": "NOT_RUN"
+}
