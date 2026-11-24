@@ -32,10 +32,14 @@
     {
       "check": "Independent non-constructor review",
       "status": "NOT_RUN"
+    },
+    {
+      "check": "v0.2 exact local SymPy assertions and Git blob equality",
+      "status": "PASS"
     }
   ],
-  "finding": "EXACT/CONDITIONAL, scoped no-go: ordinary single-field Whitney L2 metric fails independent additive packet-stock conservation at both supplied positive-volume overlaps. Native unit-metric chain T differs from Whitney cochain P; neither has a supplied constitutive selector. Cochain isometry and d-commutation do not ensure adjoint/generator intertwining.",
-  "next_action": "Test a source-tagged two-sheet Whitney complex and an explicitly local, metric-skew exchange generator; require independently sourced relative embedding/admission, overlap coupling and stock meaning before any physical bridge.",
+  "finding": "EXACT/CONDITIONAL, scoped no-go: ordinary single-field Whitney L2 metric fails independent additive packet-stock conservation at both supplied positive-volume overlaps. Native unit-metric chain T differs from Whitney cochain P; neither has a supplied constitutive selector. Cochain isometry and d-commutation do not ensure adjoint/generator intertwining.\nEXACT/CONDITIONAL: source-tagged top cochains give exact independent-stock isometry and local metric-skew exchange. At canonical overlap f=1/2, projected generator J/2, leakage Gram 3I/32, relative squared leakage 1/4. Exchange is swap-odd; real scalar diagonal swap-even exchange is zero. Geometry fixes overlap fraction but not coupling clock, sign, tags or native admission.",
+  "next_action": "Test a local swap-equivariant internal-phase (two-component per packet) exchange and derive a source-selected phase/connection; then include all-grade Whitney d and adjoint residual, intra-packet transport and causal propagation.",
   "mathematical_profile": {
     "coefficient_domain": "Q, exact rational Euclidean coordinates, real amplitudes",
     "exactness_or_precision_plan": "Exact halfspace intersections, determinants, mass integrals and matrix identities; decimals display only.",

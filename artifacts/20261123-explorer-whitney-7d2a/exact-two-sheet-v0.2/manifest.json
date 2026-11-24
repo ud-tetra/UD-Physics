@@ -1,0 +1,34 @@
+{
+  "record_type": "run",
+  "schema_version": 2,
+  "session_id": "20261123-explorer-whitney-7d2a",
+  "run_id": "exact-two-sheet-v0.2",
+  "created_at": "2026-11-24T01:01:00Z",
+  "evidence": "EXACT",
+  "summary": "EXACT/CONDITIONAL: source-tagged top cochains give exact independent-stock isometry and local metric-skew exchange. At canonical overlap f=1/2, projected generator J/2, leakage Gram 3I/32, relative squared leakage 1/4. Exchange is swap-odd; real scalar diagonal swap-even exchange is zero. Geometry fixes overlap fraction but not coupling clock, sign, tags or native admission.",
+  "command": "python /mnt/data/two_sheet/audit.py > /mnt/data/two_sheet/results.json",
+  "command_execution": "EXECUTED_LOCALLY_BEFORE_CAPTURE",
+  "source": {
+    "revision": "bcb1585224c2e0bb02bb2c1b1400b07600205527",
+    "dirty": true
+  },
+  "inputs": [
+    {
+      "input_id": "audit-py",
+      "name": "audit.py",
+      "path": "inputs/audit.py",
+      "source_location": "external",
+      "source_path": null,
+      "sha256": "4f1f52b776edb9b6df56b2cf24c4ce7b65dfb0acf98ed38dae98544186a4852f",
+      "size_bytes": 1917
+    }
+  ],
+  "files": [
+    {
+      "path": "files/results.json",
+      "sha256": "260f2d6e2176d3fec0fbf4478482405ac49142b8de4183734a8eacf0f66c42df",
+      "size_bytes": 578
+    }
+  ],
+  "physical_promotion": 0
+}

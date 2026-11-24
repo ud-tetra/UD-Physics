@@ -1,0 +1,17 @@
+{
+  "classification": "EXACT_CONDITIONAL / OPEN_CONSTITUTIVE_SOURCE",
+  "V": "8/3",
+  "overlap_fraction": "1/2",
+  "transfer_gram": "Matrix([[3/8, 0], [0, 3/8]])",
+  "exchange_rank": 16,
+  "projected_generator": "Matrix([[0, 1/2], [-1/2, 0]])",
+  "leakage_gram": "Matrix([[3/32, 0], [0, 3/32]])",
+  "relative_leakage_squared": "1/4",
+  "swap_odd": true,
+  "coordinate_permutations_checked": 6,
+  "exchange_fraction": "f*sin(tau)^2",
+  "canonical_fraction": "1/2",
+  "rotated_fraction": "1985862927391/3352261334400",
+  "full_packet_transfer": false,
+  "physical_promotion": 0
+}
