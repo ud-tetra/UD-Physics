@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "combined-reviewer-modeling-20261123",
+  "goal": "Align combined independent reviewer bootloader and manuscript-opening proposals to approved computational first mission; stage benchmark contract",
+  "status": "active",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "claim_sha": "0c32fedefd23809936676bff5fe968dac3cc2026",
+  "owned_paths": [
+    "tasks/combined-reviewer-modeling-20261123.json",
+    "sessions/20261123-gpt6-reviewer-modeling/",
+    "docs/reviewers/UD_COMBINED_COMPUTATIONAL_REVIEW_BOOT_v1.0.md",
+    "docs/proposals/UD_COMPUTATIONAL_MANUSCRIPT_OPENING_v0.1.md",
+    "docs/proposals/UD_BASELINE_BENCHMARK_PLAN_v0.1.md"
+  ],
+  "physical_promotion": 0,
+  "dependencies": []
+}
