@@ -1,0 +1,48 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-85d-gates",
+  "runtime": "GPT-6 container Python/SciPy + GitHub connector",
+  "task": "85d-local-gate-replay-20261123-gpt6",
+  "goal": "85D typed incidence modeling and local nonlinear gate screen",
+  "created_at": "2026-11-24T03:00:00Z",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "85d-local-gate-replay-20261123-gpt6": "e9d3063c4eedd9fdaaff62f51e0b83c7ce809201"
+  },
+  "checks": [
+    {
+      "name": "local 85D sign-corrected script replay",
+      "result": "PASS"
+    },
+    {
+      "name": "null matrix-exponential control",
+      "result": "PASS"
+    },
+    {
+      "name": "fresh checkout GitHub verifier",
+      "result": "NOT_RUN"
+    },
+    {
+      "name": "independent non-constructor review",
+      "result": "NOT_RUN"
+    }
+  ],
+  "finding": "Continuous degree-zero homogeneous coefficient must be constant; on fixed 85D exterior-only preparation 3 nonuniform normalized gates produce no internal top activation; unmasked null does.",
+  "next_action": "Independent source review and select candidate regular vector-field law only from native pre-event receipts; cannot infer event admission from post-event flow",
+  "mathematical_profile": {
+    "coefficient_domain": "real coefficients, exact signed integral incidence",
+    "exactness_or_precision_plan": "exact proof and approximate SciPy DOP853 2e-11 relative tolerance",
+    "applicable_methods": [
+      "boundary nilpotency",
+      "signed basis orientation",
+      "scale invariant function theorem",
+      "conservative skew ODE",
+      "numerical baseline",
+      "synthetic endpoint normalization"
+    ],
+    "clock_metric_units_conventions": "unit chain coefficient metric, formal s∈[0,2], no physical clock or units"
+  }
+}
