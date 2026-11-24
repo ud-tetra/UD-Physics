@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "run_id": "whitney-recursion-v0_1",
+  "session_id": "20261123-gpt6-pachner-birth",
+  "source_sha": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+  "claim_sha": "4de5d8287afb29d966d743b524acbfc5c328319d",
+  "source_blobs": [
+    "697b5cb0207f01286e27eb8198fdb31fc129ae6e",
+    "a7aa4a19f4da25ff94783053542c33f9aef188dc",
+    "0523255744e43cb3849730eb44d5faed5a505077"
+  ],
+  "files": [
+    {
+      "path": "candidates/pachner-vertex-birth-whitney-20261123-gpt6/REPORT.md",
+      "git_blob_sha": "f26afb52ee70f678d5398dfae8108b60f09ef0eb",
+      "chars": 6338
+    },
+    {
+      "path": "candidates/pachner-vertex-birth-whitney-20261123-gpt6/verify_whitney.py",
+      "git_blob_sha": "c2f0e0c96b8cd359a4b4b05485d36bbf871ef667",
+      "chars": 2202
+    },
+    {
+      "path": "artifacts/20261123-gpt6-pachner-birth/whitney-recursion-v0_1/files/results.json",
+      "git_blob_sha": "01ceb8abd9a63ead1c712573eeeeb3271d78926f",
+      "chars": 847
+    }
+  ],
+  "local_full_bundle_sha256": "386873e43b7d042bf8c746520fffbd5fddc6f97cf794f0b50073775d6c56ecc1",
+  "verification": "LOCAL SymPy exact PASS; published GitHub script has not been separately fresh-checkout replayed; repository CI and independent review NOT_RUN",
+  "physical_promotion": 0
+}
