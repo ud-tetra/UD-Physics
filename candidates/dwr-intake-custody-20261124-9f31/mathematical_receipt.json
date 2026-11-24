@@ -1,0 +1,127 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "dwr-intake-replay-v1",
+  "session_id": "20261124-explorer-dwr-custody-9f31",
+  "candidate_id": "dwr-intake-custody-20261124-9f31",
+  "question": "Does the supplied sensitivity script reproduce the submitted DWR benchmark?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "ratio",
+      "symbol": "rho4/rho3",
+      "object_type": "dimensionless scaling ratio",
+      "definition": "h_ratio^4 / h_ratio with h_ratio=(874/1985)^(1/3)",
+      "domain": "positive rational DOF counts",
+      "codomain": "positive real",
+      "coefficient_domain": "Q after cancellation",
+      "units": "dimensionless",
+      "basis_orientation": "N/A",
+      "metric_measure": "No measured estimator norm; assumed scaling",
+      "origin": "derived",
+      "exact_expression": "874/1985",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "submission"
+      ],
+      "assumption_ids": [
+        "scale"
+      ],
+      "dependency_ids": [],
+      "normalization": "as script"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "submission",
+      "url_or_repo_path": "https://github.com/UD-Tetra/UD-Physics/pull/480#issuecomment-7140293218",
+      "version_or_commit": "6c40e9e1ea3ee7fc658189146ab82f01ebcc1340",
+      "section_or_object_id": "Administrative intake plus subsequently user-supplied manifest/script code blocks; original external scratch bytes unavailable",
+      "source_status": "reported, not independently certified"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "scale",
+      "text": "Flux ~ h_ratio; adjoint error ~ h_ratio^4, DOF ratio proxy"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact ratio simplification",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "reconcile reported and computed sensitivity"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "((874/1985)^(1/3))^3",
+    "reduced_expression": "874/1985",
+    "factor_origins": [
+      "P3 874 DOF",
+      "P4 1985 DOF"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": null,
+    "generator_or_update": null,
+    "conservation_and_sources": null,
+    "physical_mapping": null
+  },
+  "target_exposure": {
+    "status": "reported values exposed; no fitting",
+    "known_targets": [
+      0.4871,
+      0.040665
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "one supplied script",
+    "selection_criterion": "reproduce reported results",
+    "baseline": "manifest"
+  },
+  "calculation_steps": [
+    "Replay script",
+    "Simplify sensitivity ratio",
+    "Compare byte counts and hash local reconstructed files"
+  ],
+  "result": {
+    "exact_expression": "874/1985",
+    "approximation": 0.4403022670025189,
+    "units": "dimensionless",
+    "precision_and_error": "exact rational; script numerical display",
+    "scope": "scaling only; not adjoint solution",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "local Python replay",
+      "command_or_proof_path": "artifacts/20261124-explorer-dwr-custody-9f31/submitted-dwr-sensitivity-v1/inputs/test_p3_p4_sensitivity.py",
+      "source_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+      "actual_result": "PASS execution / FAILED reported reproduction",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "0.4403 != 0.4871; 0.036766 != 0.040665"
+  ],
+  "limitations": [
+    "original bytes unavailable",
+    "PDE and adjoint source and certification not supplied"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261124-explorer-dwr-custody-9f31/submitted-dwr-sensitivity-v1/manifest.json"
+  ],
+  "next_discriminant": "Obtain original manifest and actual primal/dual FE solve source, inputs, raw residuals, bounds and output; reconcile byte counts, P3/P4 factors, stability constant and estimator assumptions before any independent certificate or EXIT-03 claim."
+}

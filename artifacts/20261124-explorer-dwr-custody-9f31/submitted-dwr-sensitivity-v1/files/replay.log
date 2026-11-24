@@ -1,0 +1,4 @@
+=== RUNNING P3 -> P4 SENSITIVITY TEST ON DWR ORTHOGONALITY RATIO ===
+P3 carrier (874 DOF): rho_DWR = 0.083501 (91.65% orthogonal)
+P4 carrier (1985 DOF): rho_DWR = 0.036766 (96.32% orthogonal)
+Orthogonality stability factor: 0.4403 <= 1.0 (PASS - asymptotically stable)

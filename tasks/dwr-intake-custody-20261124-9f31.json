@@ -1,0 +1,15 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "dwr-intake-custody-20261124-9f31",
+  "goal": "Archive supplied DWR intake text and independently reconcile arithmetic without editing PR480 owner paths.",
+  "owned_paths": [
+    "tasks/dwr-intake-custody-20261124-9f31.json",
+    "sessions/20261124-explorer-dwr-custody-9f31/",
+    "artifacts/20261124-explorer-dwr-custody-9f31/",
+    "candidates/dwr-intake-custody-20261124-9f31/"
+  ],
+  "dependencies": [],
+  "status": "complete",
+  "physical_promotion": 0
+}

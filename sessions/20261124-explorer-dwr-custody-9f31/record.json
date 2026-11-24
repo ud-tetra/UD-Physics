@@ -1,0 +1,55 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261124-explorer-dwr-custody-9f31",
+  "runtime": "GPT-6.2; local Python and GitHub connector",
+  "task": "dwr-intake-custody-20261124-9f31",
+  "goal": "Archive supplied DWR intake text and independently reconcile arithmetic without editing PR480 owner paths.",
+  "created_at": "2026-11-24T18:11:00Z",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "dwr-intake-custody-20261124-9f31": "c64ca040d97d7bc5448229b6015bd8d883224626"
+  },
+  "checks": [
+    {
+      "check": "Local sensitivity script execution",
+      "status": "PASS"
+    },
+    {
+      "check": "Manifest factor reproduction",
+      "status": "FAILED"
+    },
+    {
+      "check": "Local SHA-256 and created Git blob equality",
+      "status": "PASS"
+    },
+    {
+      "check": "Original external source file identity",
+      "status": "NOT_RUN"
+    },
+    {
+      "check": "Full repository validation and unittest",
+      "status": "NOT_RUN"
+    },
+    {
+      "check": "Independent non-constructor review",
+      "status": "NOT_RUN"
+    }
+  ],
+  "finding": "Submitted sensitivity script executes but does not reproduce the submitted manifest factors. Its algebra fixes sensitivity ratio at 874/1985 = 0.440302267..., not 0.4871. It extrapolates an assumed scaling law rather than solving P4. Pasted source byte counts differ from declared originals; actual reconstructed byte hashes and Git blob identity verified. Original-file custody and continuum certificate remain unverified.",
+  "next_action": "Obtain original manifest and actual primal/dual FE solve source, inputs, raw residuals, bounds and output; reconcile byte counts, P3/P4 factors, stability constant and estimator assumptions before any independent certificate or EXIT-03 claim.",
+  "mathematical_profile": {
+    "coefficient_domain": "rational arithmetic; script floating point",
+    "exactness_or_precision_plan": "Exact symbolic simplification of scaling ratio, decimal arithmetic and local replay",
+    "applicable_methods": [
+      "ratio algebra",
+      "byte custody",
+      "numerical replay"
+    ],
+    "clock_metric_units_conventions": "T=4 s as reported; no independently verified physical units or continuum estimator normalization"
+  },
+  "branch": "discovery/dwr-intake-custody-20261124-9f31/20261124-explorer-dwr-custody-9f31",
+  "physical_promotion": 0
+}
