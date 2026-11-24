@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "pachner-vertex-birth-whitney-20261123-gpt6",
+  "goal": "Native single-K4 vertex birth source gate and exact recursive Whitney cochain transfer",
+  "status": "HELD_RESEARCH",
+  "claim_ref": "refs/heads/claims/pachner-vertex-birth-whitney-20261123-gpt6",
+  "claim_sha": "4de5d8287afb29d966d743b524acbfc5c328319d",
+  "base_revision": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+  "owned_paths": [
+    "tasks/pachner-vertex-birth-whitney-20261123-gpt6.json",
+    "sessions/20261123-gpt6-pachner-birth/",
+    "candidates/pachner-vertex-birth-whitney-20261123-gpt6/",
+    "artifacts/20261123-gpt6-pachner-birth/"
+  ],
+  "physical_promotion": 0
+}

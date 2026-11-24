@@ -1,0 +1,14 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-pachner-birth",
+  "task_id": "pachner-vertex-birth-whitney-20261123-gpt6",
+  "base_revision": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+  "claim_sha": "4de5d8287afb29d966d743b524acbfc5c328319d",
+  "mode": "constructor exact; GitHub connector write",
+  "evidence": "local SymPy exact PASS; GitHub published checker not yet fresh checkout verified",
+  "finding": "all-grade Whitney cochain isometry; centroid generator rank0, offcenter rank4 and second-level rank13; event birth source OPEN",
+  "independent_review": "NOT_RUN",
+  "physical_promotion": 0,
+  "next": "Identify constitutive birth selector and born-mode initialization; confront repeated refinement instability"
+}
