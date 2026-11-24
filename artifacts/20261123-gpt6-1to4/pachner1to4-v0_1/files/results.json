@@ -1,0 +1,24 @@
+{
+  "verification": "local independent SymPy PASS",
+  "original_fvector": [
+    4,
+    6,
+    4,
+    1
+  ],
+  "post_fvector": [
+    5,
+    10,
+    10,
+    4
+  ],
+  "signed_S4_checks": 24,
+  "graded_chain_map": true,
+  "unit_chain_gram_top": 4,
+  "Whitney_top_cochain_mass": "3/8",
+  "boundary_nonconstant_eigenvalue_old": 4,
+  "boundary_nonconstant_eigenvalue_new": 5,
+  "center_initial_second_derivative": 1,
+  "source_event_gate": "OPEN",
+  "physical_promotion": 0
+}
