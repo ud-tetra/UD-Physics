@@ -1,0 +1,33 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "pachner-vertex-birth-whitney-20261123-gpt6",
+  "session_id": "20261123-gpt6-pachner-birth",
+  "status": "EXACT_CONDITIONAL_OPEN_EVENT_SOURCE",
+  "question": "Can native K4 recur by 1→4 vertex insertion without two-packet gluing while conserving meaningful cochain fields?",
+  "source_basis": [
+    "four-cell-tetrahedron v1.0",
+    "pachner-boundary-observability v0.1",
+    "pachner-state-transport v0.1",
+    "UD ledger v0.85 Q165/Q169/Q177-Q179"
+  ],
+  "geometry": "K4 Euclidean regular centroid 1→4; noncentroid and level2 controls",
+  "carrier": "graded Whitney cochains on one 3-ball",
+  "source_metric": "Euclidean Whitney forms, dimensionless coordinates",
+  "exact_findings": [
+    "d_new P=P d_old all grades",
+    "P.T M_new P=M_old all grades",
+    "unit chain top Gram 4",
+    "centroid weighted skew generator intertwines exactly on first 15→29 map",
+    "noncentroid weighted skew residual rank 4",
+    "centroid recursive 29→85 weighted skew residual rank 13"
+  ],
+  "blocked": [
+    "pre-event birth trigger",
+    "new-mode initial state source",
+    "native metric selection",
+    "generator update across events",
+    "physical clock and physical observable"
+  ],
+  "physical_promotion": 0
+}
