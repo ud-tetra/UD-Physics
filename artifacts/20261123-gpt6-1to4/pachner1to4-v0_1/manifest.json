@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-1to4",
+  "run_id": "pachner1to4-v0_1",
+  "source_base": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+  "local_scratch_zip_sha256": "69f8dd00dbfa998eaf6287092f4f04bf843e3cdd6a6245c2f810b308b5493fe8",
+  "source_paths": [
+    "experiments/four-cell-tetrahedron/README.md",
+    "experiments/pachner-boundary-observability/README.md",
+    "experiments/pachner-state-transport/README.md"
+  ],
+  "files": [
+    {
+      "path": "candidates/single-k4-1to4-recurrence-20261123-gpt6/REPORT.md",
+      "git_blob_sha": "80c2e309186c48f8cfba3e49215a7c6822193441",
+      "character_count": 3989
+    },
+    {
+      "path": "candidates/single-k4-1to4-recurrence-20261123-gpt6/verify.py",
+      "git_blob_sha": "b6d7e2dfaf0a534e6982dc92c2ca5669c11513c2",
+      "character_count": 2196
+    },
+    {
+      "path": "artifacts/20261123-gpt6-1to4/pachner1to4-v0_1/files/results.json",
+      "git_blob_sha": "a35195e844cf47daf014c2ee04be35a9f236a1a4",
+      "character_count": 469
+    }
+  ],
+  "verification": "local independent exact SymPy PASS; GitHub-published abridged replay not yet fresh-checkout executed",
+  "independent_review": "NOT_RUN",
+  "physical_promotion": 0
+}

@@ -1,0 +1,29 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "single-k4-1to4-recurrence-20261123-gpt6",
+  "status": "EXACT_CONDITIONAL_OPEN_CONSTITUTIVE_SOURCE",
+  "question": "Can 1→4 interior vertex insertion be a distinct K4 recurrence path rather than two-packet gluing?",
+  "source_refs": [
+    "four-cell-tetrahedron v1.0",
+    "pachner-boundary-observability v0.1",
+    "pachner-state-transport v0.1"
+  ],
+  "declared_geometry": "centroid interior vertex 4=(0,0,0) on regular tetra source",
+  "exact_results": [
+    "old f=(4,6,4,1), new=(5,10,10,4)",
+    "signed integral chain map commutes with boundary and S4",
+    "top-chain Gram 4, not isometry",
+    "top-cochain Whitney prolongation preserves mass 3/8",
+    "native full skew spectra change",
+    "unit graph boundary eigenvalue 4->5",
+    "post-event new center gets nonzero second derivative from old vertex excitation"
+  ],
+  "missing": [
+    "vertex birth/admission trigger",
+    "stock transfer on all chain grades",
+    "new vertex preparation and clock",
+    "physical correspondence"
+  ],
+  "physical_promotion": 0
+}
