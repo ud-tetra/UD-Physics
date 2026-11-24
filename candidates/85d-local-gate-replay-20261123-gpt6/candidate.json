@@ -1,0 +1,30 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "85d-local-gate-replay-20261123-gpt6",
+  "session_id": "20261123-gpt6-85d-gates",
+  "question": "Do native typed ports and regularity uniquely choose a nontrivial scale-free scalar gate, and do any of four fixed normalized gates activate 12 empty internal top cells on prescribed 85D geometry?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "NUMERICAL"
+  ],
+  "assumptions": [
+    "post-event 16-top second-generation Pachner mesh exists",
+    "unit metric all chain degrees and coherent top orientations",
+    "four user-proposed gates are candidate not native",
+    "formal observation interval 0..2 and exterior-only top preparation"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Prior 4/7 null bound and historical endpoint known; this is exploratory control, no coefficient fitting",
+  "fitted_choices": [],
+  "sources": [
+    "UD-Physics main 80525f1296a15f4a87f0efecc491679deec39b9b, four-cell-tetrahedron v1.0 blob 697b5cb0207f01286e27eb8198fdb31fc129ae6e",
+    "pachner-local-jump-current v0.1 blob 047db9ebafb0192fcf7bc72bf43506a3dee2c2ec",
+    "User-supplied read-only scratch definitions, not frozen native source"
+  ],
+  "baseline": "unmodified all-grade skew-Hodge-Dirac unit coefficient flow; null matrix exponential control",
+  "result": "Continuity+degree0 homogeneity force constant scalar g; null interior stock at s=1 1.246483, lower/higher/balanced 0; all conserve S=4. Higher nonlinearity transfers to faces without funding empty top coordinates.",
+  "next_discriminant": "Source-derived gate with nonzero necessary coupling axes and appropriate metric covariance; independent 29→85 admission and exact endpoint source reconstruction"
+}
