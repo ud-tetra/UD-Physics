@@ -1,0 +1,13 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "85d-local-gate-replay-20261123-gpt6",
+  "goal": "Prove normalized scale-invariance regularity constraint, type face/top ports and numerically screen four parameter-free incidence-local rules on full 85D carrier",
+  "dependencies": [],
+  "owned_paths": [
+    "tasks/85d-local-gate-replay-20261123-gpt6.json",
+    "sessions/20261123-gpt6-85d-gates/",
+    "candidates/85d-local-gate-replay-20261123-gpt6/"
+  ],
+  "status": "active"
+}
