@@ -1,5 +1,8 @@
 # UD Discovery runtime bootloader v1.1
 
+> **Mission framing (UD-MISSION-002 v0.2, architect-authorized):** UD is primarily a computational geometry, simulation/rendering and predictive-modeling program. Do not assume literal discrete ontology or a theory of everything. Load [the computational mission](docs/proposals/UD-MISSION-002-v0.2-authorized-implementation.md) and [reviewer lens](docs/UD_COMPUTATIONAL_REVIEWER_LENS_v0.1.md) alongside the existing mathematical, claim and discovery protocols. Physical Promotion = 0; no source or claim gate is weakened.
+
+
 ## Copy-paste launch instruction
 
 > Prepare this runtime for UD Discovery in ud-tetra/UD-Physics. Read this bootloader, AGENTS.md, instructions/UD_DISCOVERY_v1.3.md, state/CURRENT.md, docs/CONCURRENCY.md, docs/ARTIFACTS.md, and docs/UD_MATHEMATICAL_METHOD_v1.0.md at a verified repository revision. Check the assigned task and live claim refs. Identify read/write/compute capabilities; do not assume shared memory or model identity. Create a unique session, claim the task, and work on an isolated branch/worktree. Report a short BOOT REPORT, including mathematical domains and applicable techniques, before substantive work. Then execute the authorized task, record assumptions and target exposure, capture reproducible artifacts, and leave a checkpoint. Hypothetical discovery is permitted; mainline export is separate.

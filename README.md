@@ -1,10 +1,24 @@
-# UD Physics — What-if Discovery
+# UD-Physics — Computational Modeling and Discovery
+
+**We model the universe digitally. We do not assume the universe is digital.**
+
+UD-Physics explores computational geometry, discrete simulation, rendering, well-defined evolution, conservative transport and independently testable predictions. It is a discovery sandbox for a modeling architecture, **not** an assertion that reality literally consists of tetrahedral packets or a completed theory of everything.
+
+The computational framework is the primary research object; hypothetical physical correspondences and foundational ontology are separately labeled candidate studies. A finite model must be evaluated for mathematical correctness, numerical accuracy, stability, reproducibility, generalization, computational cost and comparison with conventional methods. Fitting remains permitted in this sandbox when explicitly reported.
+
+**Physical Promotion = 0.** Neither mathematical exactness nor a successful simulation certifies a physical law.
+
+Mission and reviewer claim boundary: [UD-MISSION-002 v0.2 — user-authorized computational-first doctrine](docs/proposals/UD-MISSION-002-v0.2-authorized-implementation.md). All earlier findings, freezes, scope guards and reproduction rules remain in force.
+
+---
+
+## Research sandbox and session boot
 
 A separate Unified Dynamics research sandbox for hypothetical bridge candidates and correlations to physical spacetime. Target-informed fitting, analogy, and speculative physical maps are permitted; assumptions and evidence remain explicit.
 
 ## Start any LLM session here
 
-Read [BOOTLOADER.md](BOOTLOADER.md), then [AGENTS.md](AGENTS.md) and the [Discovery instructions](instructions/UD_DISCOVERY_v1.2.md). Also load the [UD mathematical analysis protocol](docs/UD_MATHEMATICAL_METHOD_v1.0.md). Do not begin from remembered project state.
+Read [BOOTLOADER.md](BOOTLOADER.md), then [AGENTS.md](AGENTS.md) and the [Discovery instructions](instructions/UD_DISCOVERY_v1.3.md). Also load the [UD mathematical analysis protocol](docs/UD_MATHEMATICAL_METHOD_v1.0.md). Do not begin from remembered project state.
 
 Copy this into a new runtime:
 
