@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "run_id": "sixmode-v0_1",
+  "session_id": "20261123-gpt6-phase-p31",
+  "base_sha": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+  "source_refs": [
+    "UD-Physics PR #473 at 361aa2df2cc510e90a9b6e39825e63656127cdb0",
+    "AW5 native phase blob 5c088ce09f6aaf02217c3dc84af808e38bff7da1",
+    "UD PR #611 at ed7e860a0912d9480a19707be42771f155d0dee0"
+  ],
+  "files": [
+    {
+      "path": "candidates/native-phase-sixmode-lift-20261123-gpt6-p31/REPORT.md",
+      "git_blob_sha": "8782b0fb1697a920f72095782ec6564541e64f6c",
+      "character_count": 4121
+    },
+    {
+      "path": "candidates/native-phase-sixmode-lift-20261123-gpt6-p31/verify.py",
+      "git_blob_sha": "8b582edf2900a39dd9f34c119e7749dc73fda3e0",
+      "character_count": 2541
+    },
+    {
+      "path": "artifacts/20261123-gpt6-phase-p31/sixmode-v0_1/files/results.json",
+      "git_blob_sha": "65c7ff1163f208e20d766d5be7ab1573e7f23891",
+      "character_count": 480
+    }
+  ],
+  "local_zip_sha256": "d232c8ae42c1987dad1335be21e809119c4b6f332fe79c67f4069131c3ece071",
+  "verification": "LOCAL EXACT SYMPY PASS; published script not yet replayed in fresh checkout; non-constructor review NOT_RUN",
+  "physical_promotion": 0
+}
