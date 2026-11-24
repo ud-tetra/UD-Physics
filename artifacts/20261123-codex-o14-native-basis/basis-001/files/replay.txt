@@ -1,9 +1,0 @@
-PASS: exact K4 boundary, 14 orthonormal columns, harmonic complement, seven rotation blocks
-PASS: exact reference, preflight exit 0
-PASS: alternate orthonormal columns, preflight exit 0
-PASS: subthreshold Gram defect, preflight exit 0
-PASS: above-threshold Gram defect, preflight exit 1
-PASS: duplicate columns, preflight exit 1
-PASS: nonfinite entry, preflight exit 1
-PASS: schema metaschema and eight rejection controls across N=14 and N=16
-PASS: channel and modal forms both accepted at N=14 and N=16
