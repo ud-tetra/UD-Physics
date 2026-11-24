@@ -1,0 +1,17 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "native-edgeface-connection-20261123-gpt6-c91",
+  "goal": "Test a symmetry-equivariant native edge/face intercarrier coupling against stock, pre-event matching and geometry-selection gates.",
+  "status": "HELD_RESEARCH",
+  "owned_paths": [
+    "tasks/native-edgeface-connection-20261123-gpt6-c91.json",
+    "sessions/20261123-gpt6-edgeface-c91/",
+    "candidates/native-edgeface-connection-20261123-gpt6-c91/",
+    "artifacts/20261123-gpt6-edgeface-c91/"
+  ],
+  "source_revision": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+  "claim_ref": "refs/heads/claims/native-edgeface-connection-20261123-gpt6-c91",
+  "claim_sha": "daaea96c4a0113303f65c66c2b47c325784613d8",
+  "physical_promotion": 0
+}

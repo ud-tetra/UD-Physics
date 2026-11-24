@@ -1,0 +1,23 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "native-edgeface-connection-20261123-gpt6-c91",
+  "session_id": "20261123-gpt6-edgeface-c91",
+  "status": "CANDIDATE_OPEN_CONSTITUTIVE_SOURCE",
+  "question": "Can source-local edge/face amplitudes produce a covariant stock-preserving intercarrier interaction without importing face matching?",
+  "ansatz": "K_AB=(P1*xA)(P2*xB)^T+(P2*xA)(P1*xB)^T; rho=||xA||^2-||xB||^2; J=rho[[0,K],[-K^T,0]]",
+  "verified_scope": "576 independent S4 relabelings; skew/stock and exchange covariance; rank 4 example; no matching",
+  "assumed_choices": [
+    "rho stock difference as exchange-odd gate",
+    "unit normalization of J",
+    "formal s evolution"
+  ],
+  "target_exposure": "none empirical; PR #611 fan and prior matching no-go known",
+  "blocked_claims": [
+    "native junction selected",
+    "path pair derived",
+    "117D compatible dynamics",
+    "physical correspondence"
+  ],
+  "physical_promotion": 0
+}

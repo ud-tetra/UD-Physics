@@ -1,0 +1,15 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-edgeface-c91",
+  "task_id": "native-edgeface-connection-20261123-gpt6-c91",
+  "runtime": "GPT-6 connector + local exact SymPy",
+  "base_revision": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+  "claim_status": "held",
+  "claim_sha": "daaea96c4a0113303f65c66c2b47c325784613d8",
+  "mode": "development; constructor-only verification",
+  "result": "EXACT_CONDITIONAL / OPEN_NATIVE_SOURCE",
+  "verification": "local scratch PASS; GitHub reproduction not yet independently run",
+  "physical_promotion": 0,
+  "next": "Independent review; derive native interaction source/authorization, or test nontrivial matched histories."
+}

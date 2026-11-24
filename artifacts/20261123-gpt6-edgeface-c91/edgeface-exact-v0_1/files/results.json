@@ -1,0 +1,14 @@
+{
+  "S4_gauge_relabelings_checked": 576,
+  "source_metric_skew": true,
+  "S4xS4_equivariant": true,
+  "carrier_swap_covariant": true,
+  "nonzero_edge_face_velocity": true,
+  "equal_stock_symmetry_gate_zero": true,
+  "matching_orbit": 96,
+  "coupling_rank": 4,
+  "stock_difference": "-4",
+  "K_nonzero_count": 23,
+  "status": "EXACT_CONDITIONAL; candidate is not source-derived",
+  "physical_promotion": 0
+}
