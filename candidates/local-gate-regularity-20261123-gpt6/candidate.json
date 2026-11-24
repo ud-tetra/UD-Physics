@@ -1,0 +1,29 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "local-gate-regularity-20261123-gpt6",
+  "session_id": "20261123-gpt6-local-gate-regularity",
+  "question": "Is pairwise normalized intensity contrast a continuous, exchange-covariant local constitutive coefficient at zero state?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "assumptions": [
+    "real local amplitudes x and y",
+    "nonzero assumed dimensionless lambda",
+    "optionally exchangeable endpoints",
+    "formal unit-metric skew pair"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "Known hypothetical endpoint 13a²->4a² not used for gate derivation or scoring",
+  "fitted_choices": [],
+  "sources": [
+    "User scratch proposed normalized ratio gate",
+    "UD-Physics main @80525f1 Pachner local-jump-current blob 047db9...",
+    "UD-Physics draft PR #482 blob efc0d03..."
+  ],
+  "baseline": "constant coupling g=1 and local pairwise skew flow",
+  "result": "No continuous g at (0,0) for lambda nonzero, g not symmetric under typed exchange; F=gJz continuous and conserves radius in two-mode control",
+  "next_discriminant": "Explicit native port typing and full-carrier well-posed dynamics with source-selected coefficients"
+}
