@@ -1,0 +1,16 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "native-phase-sixmode-lift-20261123-gpt6-p31",
+  "status": "HELD_RESEARCH",
+  "goal": "Construct signed-S4-covariant native K4 W phase-to-daughter Whitney lift, test metric/locality and true source degree constraints",
+  "owned_paths": [
+    "tasks/native-phase-sixmode-lift-20261123-gpt6-p31.json",
+    "sessions/20261123-gpt6-phase-p31/",
+    "candidates/native-phase-sixmode-lift-20261123-gpt6-p31/",
+    "artifacts/20261123-gpt6-phase-p31/"
+  ],
+  "base_revision": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+  "claim_sha": "ae017554bb2e2f3840158bf05fb93b605f1a01d1",
+  "physical_promotion": 0
+}
