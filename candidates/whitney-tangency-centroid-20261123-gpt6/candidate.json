@@ -1,0 +1,29 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "whitney-tangency-centroid-20261123-gpt6",
+  "session_id": "20261123-gpt6-whitney-tangency",
+  "question": "Does exact centroid Whitney prolongation preserve the full reversible image under its own geometric Hodge Dirac generator?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "assumptions": [
+    "prescribed 1to4 centroid triangulation",
+    "Whitney cochain prolongation P by integration",
+    "exact positive-definite geometric Whitney mass M",
+    "generator A=d−M^−1 d^T M, formal clock"
+  ],
+  "physical_mapping": "OPEN; no physical time or observable",
+  "target_exposure": "No empirical targets; different prior unit-chain benchmark known",
+  "fitted_choices": [],
+  "sources": [
+    "UD-Physics PR #477 source report f26afb52ee70f678d5398dfae8108b60f09ef0eb",
+    "UD-Physics PR #485 unit-chain report 05b390f6b770b036f06d9912b32d4dc26301c8d8",
+    "UD-Physics main four-cell tetra report 697b5cb0207f01286e27eb8198fdb31fc129ae6e"
+  ],
+  "baseline": "Unit-chain boundary-fixed isometry T (PR #485) has rank 13 leakage; not same metric/operator",
+  "result": "Exact first centroid Whitney isometry P^T M_d P=M_o, A_d P=P A_o, [A_d,Pi]=0, rank L_W=0, all 15 image directions invariant; P3^T P3=1/4 vs Whitney top mass 3/8",
+  "next_discriminant": "Reproduce 29to85 second-gen Whitney rank 13 result and characterize maximal persistent subspace without assuming repetition"
+}
