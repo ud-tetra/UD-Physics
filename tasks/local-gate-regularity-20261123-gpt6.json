@@ -1,0 +1,13 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "local-gate-regularity-20261123-gpt6",
+  "goal": "Audit normalized pairwise state-dependent incidence gate for regularity and typed symmetry prior to native adoption",
+  "dependencies": [],
+  "owned_paths": [
+    "tasks/local-gate-regularity-20261123-gpt6.json",
+    "sessions/20261123-gpt6-local-gate-regularity/",
+    "candidates/local-gate-regularity-20261123-gpt6/"
+  ],
+  "status": "active"
+}

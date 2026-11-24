@@ -1,0 +1,35 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-local-gate-regularity",
+  "runtime": "GPT-6 exact SymPy/local and GitHub connector",
+  "task": "local-gate-regularity-20261123-gpt6",
+  "goal": "Exact zero-state and endpoint-swap control for assumed normalized gate",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "status": "handoff",
+  "claims": {
+    "local-gate-regularity-20261123-gpt6": "e50d898f88ec4ecfecd377c47d7c567833a82670"
+  },
+  "checks": [
+    {
+      "name": "local exact SymPy",
+      "status": "PASS"
+    },
+    {
+      "name": "independent review",
+      "status": "NOT_RUN"
+    }
+  ],
+  "finding": "Nonconstant homogeneous degree-zero gate has discontinuous coefficient at origin; same-pair skew vector field continuous and stock conserving, typed exchange symmetry remains a source condition.",
+  "next_action": "Identify native port action and source-selected smooth coupling before any full 85D reachability scoring",
+  "mathematical_profile": {
+    "coefficient_domain": "real amplitudes, symbolic lambda",
+    "exactness_or_precision_plan": "SymPy exact",
+    "applicable_methods": [
+      "limits",
+      "invariance and typed symmetry",
+      "quadratic conservation"
+    ],
+    "clock_metric_units_conventions": "unit coefficient metric, formal evolution, no physical unit"
+  }
+}
