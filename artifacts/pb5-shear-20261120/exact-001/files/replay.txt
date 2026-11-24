@@ -1,7 +1,0 @@
-B observer ranks: [4, 8, 9, 10] lossless: 17
-B lossless characteristic polynomial: z*(z**2 + 2)*(z**2 + 5)**7
-PB5 observer ranks: [11, 22] lossless: 21
-PB5 grade-one projection: five equatorial edge coefficients
-Signed quadratic-potential preparation: rank 2, Gram gain 5*sqrt(5)/8 + 25/8
-Cyclically oriented directional measurement: rank 3, Gram gains 5/6, 5/4, 5/4
-Same-clock nonzero sqrt(5) transfer: obstructed by PB5 spectrum
