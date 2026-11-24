@@ -1,0 +1,38 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "whitney-junction-audit-20261123-7d2a",
+  "goal": "Independent scratch audit of ordinary Whitney metric pullback at positive-volume tetrahedral junction, and generator compatibility counterexample; no changes to existing source owners or shared records.",
+  "owned_paths": [
+    "tasks/whitney-junction-audit-20261123-7d2a.json",
+    "sessions/20261123-explorer-whitney-7d2a/",
+    "artifacts/20261123-explorer-whitney-7d2a/",
+    "candidates/whitney-junction-audit-20261123-7d2a/"
+  ],
+  "dependencies": [],
+  "status": "complete",
+  "external_source_dependencies": [
+    {
+      "source_id": "fan",
+      "url_or_repo_path": "https://github.com/UD-Tetra/UD/pull/611",
+      "version_or_commit": "ed7e860a0912d9480a19707be42771f155d0dee0",
+      "section_or_object_id": "captures/2026-11-23T023255Z-chatgpt-full3d-f6d2/verify.py; transfer, fan and stock obstruction",
+      "source_status": "unmerged draft; read-only input"
+    },
+    {
+      "source_id": "pre-event",
+      "url_or_repo_path": "https://github.com/UD-Tetra/UD-Physics/pull/466",
+      "version_or_commit": "efe8eb68f81e02def98a9046edd221f8d87e6526",
+      "section_or_object_id": "Qstar, disjoint packet stock, source gate",
+      "source_status": "unmerged draft; read-only input"
+    },
+    {
+      "source_id": "mainline-companion",
+      "url_or_repo_path": "https://github.com/UD-Tetra/UD/pull/613",
+      "version_or_commit": "90154eb0bd3088f0c72c3eb61e63ea56ca701ce9",
+      "section_or_object_id": "Qstar exact rational matrix and source limitations",
+      "source_status": "unmerged draft; read-only input"
+    }
+  ],
+  "physical_promotion": 0
+}

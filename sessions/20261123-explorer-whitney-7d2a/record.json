@@ -1,0 +1,53 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-explorer-whitney-7d2a",
+  "runtime": "GPT-6.2; GitHub connector writes + local Python/SymPy compute; no authenticated full checkout",
+  "task": "whitney-junction-audit-20261123-7d2a",
+  "goal": "Independent scratch audit of ordinary Whitney metric pullback at positive-volume tetrahedral junction, and generator compatibility counterexample; no changes to existing source owners or shared records.",
+  "created_at": "2026-11-23T23:03:00Z",
+  "base_revision": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+  "source_dirty_at_boot": null,
+  "status": "handoff",
+  "claims": {
+    "whitney-junction-audit-20261123-7d2a": "38bce7659baf9da4d873f23061d83324d252afb4"
+  },
+  "checks": [
+    {
+      "check": "Local exact SymPy replay",
+      "status": "PASS"
+    },
+    {
+      "check": "Local-to-created Git blob equality for script and results",
+      "status": "PASS"
+    },
+    {
+      "check": "Full repository validator",
+      "status": "NOT_RUN"
+    },
+    {
+      "check": "Full unittest suite",
+      "status": "NOT_RUN"
+    },
+    {
+      "check": "Independent non-constructor review",
+      "status": "NOT_RUN"
+    }
+  ],
+  "finding": "EXACT/CONDITIONAL, scoped no-go: ordinary single-field Whitney L2 metric fails independent additive packet-stock conservation at both supplied positive-volume overlaps. Native unit-metric chain T differs from Whitney cochain P; neither has a supplied constitutive selector. Cochain isometry and d-commutation do not ensure adjoint/generator intertwining.",
+  "next_action": "Test a source-tagged two-sheet Whitney complex and an explicitly local, metric-skew exchange generator; require independently sourced relative embedding/admission, overlap coupling and stock meaning before any physical bridge.",
+  "mathematical_profile": {
+    "coefficient_domain": "Q, exact rational Euclidean coordinates, real amplitudes",
+    "exactness_or_precision_plan": "Exact halfspace intersections, determinants, mass integrals and matrix identities; decimals display only.",
+    "applicable_methods": [
+      "simplicial orientation",
+      "convex intersection",
+      "Whitney top-form mass",
+      "cochain prolongation and adjoints",
+      "exact rational counterexample"
+    ],
+    "clock_metric_units_conventions": "Unitless coordinate lengths; ordinary Euclidean L2 mass; no clock or physical energy mapping. Orient B relative to A as source vertex ordering."
+  },
+  "branch": "discovery/whitney-junction-audit-20261123-7d2a/20261123-explorer-whitney-7d2a",
+  "physical_promotion": 0
+}

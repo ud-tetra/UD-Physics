@@ -1,0 +1,60 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "whitney-junction-audit-20261123-7d2a",
+  "session_id": "20261123-explorer-whitney-7d2a",
+  "question": "Can ordinary Whitney mass synthesis make the supplied overlapping 3D junction transfer conserve independently additive packet stock and intertwine generators?",
+  "status": "PARKED",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "assumptions": [
+    "Supplied Euclidean tetrahedra and rotations",
+    "Pre-event independent additive Whitney norm",
+    "Post-event one shared Euclidean domain, summed fields, no labels or reserve",
+    "Fixed metric for continuous flow"
+  ],
+  "physical_mapping": "OPEN; no physical spacetime or energy map",
+  "target_exposure": "Source geometric controls and conservation target known; no empirical target or parameter fitting",
+  "fitted_choices": [],
+  "sources": [
+    {
+      "source_id": "fan",
+      "url_or_repo_path": "https://github.com/UD-Tetra/UD/pull/611",
+      "version_or_commit": "ed7e860a0912d9480a19707be42771f155d0dee0",
+      "section_or_object_id": "captures/2026-11-23T023255Z-chatgpt-full3d-f6d2/verify.py; transfer, fan and stock obstruction",
+      "source_status": "unmerged draft; read-only input"
+    },
+    {
+      "source_id": "pre-event",
+      "url_or_repo_path": "https://github.com/UD-Tetra/UD-Physics/pull/466",
+      "version_or_commit": "efe8eb68f81e02def98a9046edd221f8d87e6526",
+      "section_or_object_id": "Qstar, disjoint packet stock, source gate",
+      "source_status": "unmerged draft; read-only input"
+    },
+    {
+      "source_id": "mainline-companion",
+      "url_or_repo_path": "https://github.com/UD-Tetra/UD/pull/613",
+      "version_or_commit": "90154eb0bd3088f0c72c3eb61e63ea56ca701ce9",
+      "section_or_object_id": "Qstar exact rational matrix and source limitations",
+      "source_status": "unmerged draft; read-only input"
+    },
+    {
+      "source_id": "governance",
+      "url_or_repo_path": "docs/UD-PROM-001.md",
+      "version_or_commit": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+      "section_or_object_id": "Sections 1-6",
+      "source_status": "integrated; physical promotion 0"
+    }
+  ],
+  "baseline": "UD #611 unit coefficient chain metric; same-domain Whitney isometry",
+  "result": "EXACT/CONDITIONAL, scoped no-go: ordinary single-field Whitney L2 metric fails independent additive packet-stock conservation at both supplied positive-volume overlaps. Native unit-metric chain T differs from Whitney cochain P; neither has a supplied constitutive selector. Cochain isometry and d-commutation do not ensure adjoint/generator intertwining.",
+  "next_discriminant": "Test a source-tagged two-sheet Whitney complex and an explicitly local, metric-skew exchange generator; require independently sourced relative embedding/admission, overlap coupling and stock meaning before any physical bridge.",
+  "mathematical_receipts": [
+    "mathematical_receipt.json"
+  ],
+  "physical_promotion": 0
+}
