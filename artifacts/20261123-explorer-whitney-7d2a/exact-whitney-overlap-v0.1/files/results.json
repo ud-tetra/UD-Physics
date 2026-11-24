@@ -1,0 +1,52 @@
+{
+  "canonical": {
+    "f": [
+      6,
+      12,
+      8
+    ],
+    "facet_sizes": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "overlap_volume": "4/3",
+    "top_whitney_pre": "3/8",
+    "top_whitney_post_pullback": "Matrix([[3/8, -3/16], [-3/16, 3/8]])",
+    "defect_eigenvalues": [
+      "-3/16",
+      "3/16"
+    ]
+  },
+  "rotated": {
+    "f": [
+      12,
+      18,
+      8
+    ],
+    "facet_sizes": [
+      3,
+      3,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "overlap_volume": "1985862927391/1257098000400",
+    "top_whitney_pre": "3/8",
+    "top_whitney_post_pullback": "Matrix([[3/8, -1985862927391/8939363558400], [-1985862927391/8939363558400, 3/8]])",
+    "defect_eigenvalues": [
+      "-1985862927391/8939363558400",
+      "1985862927391/8939363558400"
+    ]
+  },
+  "chain_top_pullback": "Matrix([[60, -48], [-48, 60]])",
+  "adjoint_intertwining_counterexample": "Matrix([[-3], [2], [-3/2]])"
+}

@@ -1,0 +1,275 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "whitney-overlap-v0.1",
+  "session_id": "20261123-explorer-whitney-7d2a",
+  "candidate_id": "whitney-junction-audit-20261123-7d2a",
+  "question": "Can ordinary Whitney mass synthesis make the supplied overlapping 3D junction transfer conserve independently additive packet stock and intertwine generators?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "FAILED",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "geometry",
+      "symbol": "A,B,Q,O,V",
+      "object_type": "embedded oriented tetrahedra and overlap measure",
+      "definition": "A regular tetra, B=-QA, O=vol(A intersect B), V=8/3",
+      "domain": "Q^3 embedded in R^3",
+      "codomain": "Q volumes",
+      "coefficient_domain": "Q",
+      "units": "unitless geometric volume",
+      "basis_orientation": "ordered vertices as source",
+      "metric_measure": "Euclidean volume",
+      "origin": "assumed",
+      "exact_expression": "Q=I or Qstar=[[-61,-22,58],[62,-19,58],[-2,82,29]]/87",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "fan",
+        "pre-event",
+        "mainline-companion"
+      ],
+      "assumption_ids": [
+        "G"
+      ],
+      "dependency_ids": [],
+      "normalization": "V=8/3"
+    },
+    {
+      "object_id": "maps",
+      "symbol": "T,P",
+      "object_type": "chain subdivision and cochain prolongation",
+      "definition": "T signed chain copies; P integrates old Whitney forms on refined simplices; P3 volume-weighted",
+      "domain": "old packet direct sum",
+      "codomain": "common refined chain/cochain spaces respectively",
+      "coefficient_domain": "Q",
+      "units": "dimensionless coefficients in declared normalization",
+      "basis_orientation": "opposite top orientation",
+      "metric_measure": "Euclidean Whitney L2 mass for cochains",
+      "origin": "derived",
+      "exact_expression": "P3 signed v_cell/V; T3 signed 1",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "fan"
+      ],
+      "assumption_ids": [
+        "G",
+        "W"
+      ],
+      "dependency_ids": [
+        "geometry"
+      ],
+      "normalization": "top Whitney integral 1"
+    },
+    {
+      "object_id": "defect",
+      "symbol": "D",
+      "object_type": "quadratic support defect",
+      "definition": "P^T M_post P - M_pre on independent top states",
+      "domain": "R^2",
+      "codomain": "R^2",
+      "coefficient_domain": "Q",
+      "units": "inverse unitless volume",
+      "basis_orientation": "source ordered top basis",
+      "metric_measure": "M_pre=I/V; post one shared L2 domain",
+      "origin": "derived",
+      "exact_expression": "[[0,-O/V^2],[-O/V^2,0]]",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [
+        "fan",
+        "pre-event"
+      ],
+      "assumption_ids": [
+        "W",
+        "S"
+      ],
+      "dependency_ids": [
+        "geometry",
+        "maps"
+      ],
+      "normalization": "independent packet stock"
+    },
+    {
+      "object_id": "adjoint",
+      "symbol": "delta,A",
+      "object_type": "metric adjoint and skew generator",
+      "definition": "delta=M_low^-1 d^T M_high; A=d-delta",
+      "domain": "graded Whitney cochain space",
+      "codomain": "same",
+      "coefficient_domain": "Q for counterexample",
+      "units": "formal; no physical clock",
+      "basis_orientation": "interval left to right",
+      "metric_measure": "fixed SPD Whitney masses",
+      "origin": "derived",
+      "exact_expression": "delta_new P1-P0 delta_old=(-3,2,-3/2)^T at h=1/3",
+      "measured_value": null,
+      "uncertainty": null,
+      "source_refs": [],
+      "assumption_ids": [
+        "D"
+      ],
+      "dependency_ids": [
+        "maps"
+      ],
+      "normalization": "normalized Whitney basis"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "fan",
+      "url_or_repo_path": "https://github.com/UD-Tetra/UD/pull/611",
+      "version_or_commit": "ed7e860a0912d9480a19707be42771f155d0dee0",
+      "section_or_object_id": "captures/2026-11-23T023255Z-chatgpt-full3d-f6d2/verify.py; transfer, fan and stock obstruction",
+      "source_status": "unmerged draft; read-only input"
+    },
+    {
+      "source_id": "pre-event",
+      "url_or_repo_path": "https://github.com/UD-Tetra/UD-Physics/pull/466",
+      "version_or_commit": "efe8eb68f81e02def98a9046edd221f8d87e6526",
+      "section_or_object_id": "Qstar, disjoint packet stock, source gate",
+      "source_status": "unmerged draft; read-only input"
+    },
+    {
+      "source_id": "mainline-companion",
+      "url_or_repo_path": "https://github.com/UD-Tetra/UD/pull/613",
+      "version_or_commit": "90154eb0bd3088f0c72c3eb61e63ea56ca701ce9",
+      "section_or_object_id": "Qstar exact rational matrix and source limitations",
+      "source_status": "unmerged draft; read-only input"
+    },
+    {
+      "source_id": "governance",
+      "url_or_repo_path": "docs/UD-PROM-001.md",
+      "version_or_commit": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+      "section_or_object_id": "Sections 1-6",
+      "source_status": "integrated; physical promotion 0"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "G",
+      "text": "Supplied Euclidean tetrahedra and rotations"
+    },
+    {
+      "id": "W",
+      "text": "Pre-event independent additive Whitney norm"
+    },
+    {
+      "id": "S",
+      "text": "Post-event one shared Euclidean domain, summed fields, no labels or reserve"
+    },
+    {
+      "id": "D",
+      "text": "Fixed metric for continuous flow"
+    }
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational geometry and volume",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "separate two externally placed contact realizations"
+    },
+    {
+      "technique": "Whitney mass, cochain differential and adjoint",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "test conservation and dynamical implication"
+    },
+    {
+      "technique": "modular clocks and prime factorization",
+      "applicability": "NA",
+      "purpose_or_na_reason": "not relevant; no clock or integer periodic target"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "canonical 8 shared cells*1/6; 4 private cells*1/3 per source",
+    "reduced_expression": "O=4/3, V=8/3, cross=-3/16",
+    "factor_origins": [
+      "normalized top form 1/V",
+      "shared volume O"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": null,
+    "modulus": null,
+    "residue_convention": null,
+    "update_rule": null,
+    "initial_phase": null,
+    "coupling": null,
+    "period_claim": null,
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "old independent top amplitudes; interval cochain test",
+    "generator_or_update": "fixed-mass A=d-delta",
+    "initial_boundary_conditions": "none for static transfer; interval [0,1] with all nodal degrees included",
+    "conservation_and_sources": "quadratic support; zero reserve assumed",
+    "projection_and_kernel": "defect nonsingular on full top plane, isotropic lines a=0 or b=0; Galerkin adjoint only",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "Source geometric controls and conservation target known; no empirical target or parameter fitting",
+    "known_targets": [
+      "isometry and generator intertwining identities",
+      "canonical and rotated input shapes"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "two supplied orientations; exact interval control",
+    "selection_criterion": "zero exact defect on declared full domain",
+    "baseline": "UD #611 unit coefficient chain metric; same-domain Whitney isometry"
+  },
+  "calculation_steps": [
+    "Rational triple-plane intersection and facet-volume sum",
+    "Integrate normalized constant top forms and compare chain weights",
+    "Analytic zero-extension interface edge coboundary test",
+    "Exact interval mass and differential/adjoint matrices"
+  ],
+  "result": {
+    "exact_expression": "canonical defect +/-3/16; rotated +/-1985862927391/8939363558400; chain pullback [[60,-48],[-48,60]]; interval adjoint defect (-3,2,-3/2)^T",
+    "approximation": "rotated overlap 1.5797200590",
+    "units": "unitless model",
+    "precision_and_error": "rational exact",
+    "scope": "scoped no-go for independent top stock and ordinary single-field summed Whitney union; not all metrics, subspaces or events",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "SymPy exact script and assertions",
+      "command_or_proof_path": "artifacts/20261123-explorer-whitney-7d2a/exact-whitney-overlap-v0.1/inputs/audit.py",
+      "source_revision": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+      "actual_result": "PASS",
+      "review_relationship": "constructor; new implementation independent of draft source algorithm where stated"
+    },
+    {
+      "method": "analytic interface coboundary and projection proof",
+      "command_or_proof_path": "sessions/20261123-explorer-whitney-7d2a/REPORT.md",
+      "source_revision": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+      "actual_result": "DERIVED",
+      "review_relationship": "constructor"
+    },
+    {
+      "method": "non-constructor review and full repo tests",
+      "actual_result": "NOT_RUN",
+      "review_relationship": "pending"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "positive-volume overlap cross term",
+    "zero-extension cochain commutation failure at B-exclusive edge",
+    "isometric cochain inclusion fails adjoint intertwining at h=1/3"
+  ],
+  "limitations": [
+    "No all-grade rotated mesh or 3D metric-generator replay; top counterexample already disproves full isometry",
+    "No native relational selector, admission or physical stock map",
+    "No empirical target, promotion, or independent review"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261123-explorer-whitney-7d2a/exact-whitney-overlap-v0.1/manifest.json"
+  ],
+  "next_discriminant": "Test a source-tagged two-sheet Whitney complex and an explicitly local, metric-skew exchange generator; require independently sourced relative embedding/admission, overlap coupling and stock meaning before any physical bridge."
+}

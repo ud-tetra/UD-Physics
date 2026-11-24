@@ -1,0 +1,161 @@
+{
+  "receipt_schema_version": 1,
+  "calculation_id": "two-sheet-v0.2",
+  "session_id": "20261123-explorer-whitney-7d2a",
+  "candidate_id": "whitney-junction-audit-20261123-7d2a",
+  "question": "Can source-tagged local exchange conserve stock and preserve symmetry/coarse dynamics?",
+  "evidence_labels": [
+    "EXACT",
+    "CONDITIONAL",
+    "OPEN"
+  ],
+  "objects": [
+    {
+      "object_id": "metric",
+      "symbol": "H,P",
+      "object_type": "top cochain mass and prolongation",
+      "definition": "H=diag(M,M), M=diag(1/v), P=diag(v/V,v/V)",
+      "domain": "two old real top amplitudes",
+      "codomain": "24 tagged refined real amplitudes",
+      "coefficient_domain": "Q",
+      "units": "inverse stipulated volume for H",
+      "basis_orientation": "aligned ambient orientation",
+      "metric_measure": "Euclidean Whitney L2",
+      "origin": "derived under source tags",
+      "exact_expression": "P^T H P=3I/8",
+      "source_refs": [
+        "v0.1"
+      ],
+      "normalization": "V=8/3"
+    },
+    {
+      "object_id": "exchange",
+      "symbol": "A,D",
+      "object_type": "local skew generator",
+      "definition": "A=[[0,D],[-D,0]], D shared-cell selector",
+      "domain": "R^24",
+      "codomain": "R^24",
+      "coefficient_domain": "Q",
+      "units": "dimensionless tau rate",
+      "basis_orientation": "aligned sheets",
+      "metric_measure": "H",
+      "origin": "assumed",
+      "exact_expression": "A^T H+HA=0",
+      "source_refs": [
+        "v0.1"
+      ],
+      "normalization": "rate 1"
+    },
+    {
+      "object_id": "leakage",
+      "symbol": "K,E,f",
+      "object_type": "projected generator and orthogonal residual",
+      "definition": "K=P^dagger AP, E=AP-PK, f=O/V",
+      "domain": "R^2",
+      "codomain": "R^2 or R^24",
+      "coefficient_domain": "Q",
+      "units": "formal",
+      "basis_orientation": "aligned",
+      "metric_measure": "H",
+      "origin": "derived",
+      "exact_expression": "K=fJ; E^T H E=f(1-f)I/V",
+      "source_refs": [
+        "v0.1"
+      ],
+      "normalization": "unit rate"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "v0.1",
+      "url_or_repo_path": "sessions/20261123-explorer-whitney-7d2a/REPORT.md",
+      "version_or_commit": "bcb1585224c2e0bb02bb2c1b1400b07600205527",
+      "section_or_object_id": "geometry and source-tagged alternative",
+      "source_status": "unmerged draft"
+    }
+  ],
+  "assumptions": [
+    "separate sheet identity",
+    "given common-cell correspondence",
+    "constant normalized exchange rate",
+    "no intra-sheet evolution"
+  ],
+  "technique_plan": [
+    {
+      "technique": "exact rational matrix algebra",
+      "applicability": "APPLIED",
+      "purpose_or_na_reason": "isometry, skewness, projection, symmetry"
+    }
+  ],
+  "integer_fraction_receipt": {
+    "raw_count_expression": "8/6 divided by 8/3",
+    "reduced_expression": "f=1/2",
+    "factor_origins": [
+      "8 shared cells",
+      "cell volume 1/6",
+      "packet volume 8/3"
+    ],
+    "factorization": null,
+    "divisibility_gcd_lcm": null
+  },
+  "clock_receipt": {
+    "clock_type": "dimensionless continuous parameter",
+    "physical_unit_map": null
+  },
+  "dynamics_readout": {
+    "state_space": "R^24 top cochains",
+    "generator_or_update": "A",
+    "initial_boundary_conditions": "initial (p,0)",
+    "conservation_and_sources": "H norm exact",
+    "projection_and_kernel": "E orthogonal to im P",
+    "physical_mapping": "OPEN"
+  },
+  "target_exposure": {
+    "status": "known conservation and symmetry targets; no empirical fit",
+    "known_targets": [
+      "stock isometry",
+      "local skewness"
+    ],
+    "fitted_parameters_or_formula_choices": [],
+    "search_domain_and_budget": "one exchange model, two supplied overlap controls",
+    "selection_criterion": "exact identities",
+    "baseline": "v0.1 merged Whitney defect"
+  },
+  "calculation_steps": [
+    "assemble top mass and P",
+    "test A skew and swap",
+    "project A and compute residual",
+    "derive sin squared exchange"
+  ],
+  "result": {
+    "exact_expression": "EXACT/CONDITIONAL: source-tagged top cochains give exact independent-stock isometry and local metric-skew exchange. At canonical overlap f=1/2, projected generator J/2, leakage Gram 3I/32, relative squared leakage 1/4. Exchange is swap-odd; real scalar diagonal swap-even exchange is zero. Geometry fixes overlap fraction but not coupling clock, sign, tags or native admission.",
+    "approximation": "rotated f=0.5923950221",
+    "units": "unitless",
+    "precision_and_error": "exact rational for canonical",
+    "scope": "top-grade exchange-only conditional model",
+    "physical_interpretation": "NONE"
+  },
+  "verification": [
+    {
+      "method": "SymPy rational assertions",
+      "command_or_proof_path": "artifacts/20261123-explorer-whitney-7d2a/exact-two-sheet-v0.2/inputs/audit.py",
+      "source_revision": "bcb1585224c2e0bb02bb2c1b1400b07600205527",
+      "actual_result": "PASS",
+      "review_relationship": "constructor"
+    }
+  ],
+  "counterexamples_and_failures": [
+    "pure swap symmetry fails",
+    "coarse dynamics not invariant"
+  ],
+  "limitations": [
+    "not all-grade",
+    "rotated fraction analytic only",
+    "physical mapping open"
+  ],
+  "changed_dependencies": [],
+  "artifact_manifest_refs": [
+    "artifacts/20261123-explorer-whitney-7d2a/exact-two-sheet-v0.2/manifest.json"
+  ],
+  "next_discriminant": "Test a local swap-equivariant internal-phase (two-component per packet) exchange and derive a source-selected phase/connection; then include all-grade Whitney d and adjoint residual, intra-packet transport and causal propagation."
+}
