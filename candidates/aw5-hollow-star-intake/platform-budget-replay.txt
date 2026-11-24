@@ -1,6 +1,0 @@
-filled [0, 0, 0] [0, 0, 0]
-hollow [1/48, 1/4, 0] [0, 0, 0]
-filled: 47 states, maximum row and column degree 6
-hollow: 46 states, maximum row and column degree 6
-PASS: 1 ms/native, 32 ms window, 8 ksample/s, 1/1024 ms timing bound
-Half-budget per supported entry: 1/49152

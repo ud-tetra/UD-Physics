@@ -1,3 +1,0 @@
-PASS full generators intertwine with the same exact real face-output law.
-PASS exterior readout rank 22 in both carriers; positive spectral multiplicities 2,3,3,3.
-PASS common boundary incidence and exterior face rows imply identical matched traces.
