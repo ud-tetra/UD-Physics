@@ -1,0 +1,18 @@
+{
+  "status": "EXACT_CONDITIONAL",
+  "native_phase_rank": 6,
+  "daughter_top_dim": 12,
+  "daughter_phase_image_rank": 6,
+  "Whitney_isometry": "PASS",
+  "intertwiner": "PASS",
+  "S4_relabelings": 24,
+  "strict_cell_local_phase_rank": 8,
+  "native_supported_phase_rank": 6,
+  "extra_local_modes": 2,
+  "two_sheet_rank": 12,
+  "two_sheet_stock": "PASS",
+  "two_sheet_swap": "PASS",
+  "uniform_top_input_image": "ZERO",
+  "physical_promotion": 0,
+  "independent_review": "NOT_RUN"
+}
