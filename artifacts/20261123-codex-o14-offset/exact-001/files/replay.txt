@@ -1,2 +1,0 @@
-PASS: schema metaschema and eight rejection controls across N=14 and N=16
-PASS: channel and modal forms both accepted at N=14 and N=16

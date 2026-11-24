@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "combined-reviewer-modeling-20261123",
+  "session": "20261123-gpt6-reviewer-modeling",
+  "status": "held",
+  "created_at": "2026-11-23T20:07:00-06:00",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "owned_paths": [
+    "tasks/combined-reviewer-modeling-20261123.json",
+    "sessions/20261123-gpt6-reviewer-modeling/",
+    "docs/reviewers/UD_COMBINED_COMPUTATIONAL_REVIEW_BOOT_v1.0.md",
+    "docs/proposals/UD_COMPUTATIONAL_MANUSCRIPT_OPENING_v0.1.md",
+    "docs/proposals/UD_BASELINE_BENCHMARK_PLAN_v0.1.md"
+  ]
+}
