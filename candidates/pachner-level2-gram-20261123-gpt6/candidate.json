@@ -2,7 +2,7 @@
   "record_type": "candidate",
   "schema_version": 1,
   "candidate_id": "pachner-level2-gram-20261123-gpt6",
-  "status": "EXACT_CONDITIONAL_OPEN_CONSTITUTIVE_SOURCE",
+  "status": "ACTIVE",
   "question": "Can existing 16-cell shared-face incidence redistribute exterior-prepared support to internal top cells without a prescribed multi-stage actuator?",
   "assumptions": [
     "second-generation 1to4 16-cell triangulation already installed",
@@ -23,5 +23,20 @@
     "measured physical clock",
     "physical nuclear spectra"
   ],
-  "physical_promotion": 0
+  "physical_promotion": 0,
+  "session_id": "20261123-gpt6-level2-gram",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "No empirical targets; original 29→85 stage actuator known but not used for derivation",
+  "fitted_choices": [],
+  "sources": [
+    "UD-Physics four-cell-tetrahedron README v1.0 blob 697b5cb0207f01286e27eb8198fdb31fc129ae6e",
+    "UD-Physics draft PR #477 at f82620113a532ce88eb2408c2cab53e0efd410a2"
+  ],
+  "baseline": "Exact conventional simplicial incidence B3 and unmasked skew Hodge–Dirac on prescribed 16-cell complex",
+  "result": "Full Gram charpoly, S4 reduction and exterior-seeded interior top support <=4/7; native event remains OPEN",
+  "next_discriminant": "Verify a native source-selected 29→85 event and independently accounted funding/actuator"
 }
