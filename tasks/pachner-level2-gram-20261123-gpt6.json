@@ -1,0 +1,18 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "pachner-level2-gram-20261123-gpt6",
+  "goal": "Exact second-generation 16-top Gram, S4 spectrum, and native face-current internal funding check, independent of assumed actuator",
+  "status": "active",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "claim_ref": "refs/heads/claims/pachner-level2-gram-20261123-gpt6",
+  "claim_sha": "d21d3d76d2e60464787b5cd616667488989f14ca",
+  "owned_paths": [
+    "tasks/pachner-level2-gram-20261123-gpt6.json",
+    "sessions/20261123-gpt6-level2-gram/",
+    "candidates/pachner-level2-gram-20261123-gpt6/",
+    "artifacts/20261123-gpt6-level2-gram/"
+  ],
+  "physical_promotion": 0,
+  "dependencies": []
+}

@@ -1,0 +1,48 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-level2-gram",
+  "task_id": "pachner-level2-gram-20261123-gpt6",
+  "status": "handoff",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "claim_sha": "d21d3d76d2e60464787b5cd616667488989f14ca",
+  "evidence": "independent rational-coordinate SymPy + exact abstract Gram and S4; local constructor PASS",
+  "not_run": [
+    "GitHub fresh checkout verifier",
+    "full Discovery integrity until CI available",
+    "non-constructor review",
+    "29->85 actuator replay"
+  ],
+  "finding": "Exact signed B3 incidence, full Gram and S4 spectrum, conservative interior redistribution bounded by 4/7 of seeded stock; event law OPEN",
+  "physical_promotion": 0,
+  "task": "pachner-level2-gram-20261123-gpt6",
+  "goal": "Exact sixteen-cell second-generation incidence spectrum and conservative post-event redistribution",
+  "runtime": "GPT-6 connector + local exact SymPy",
+  "created_at": "2026-11-24T02:16:00Z",
+  "source_dirty_at_boot": false,
+  "claims": {
+    "pachner-level2-gram-20261123-gpt6": "d21d3d76d2e60464787b5cd616667488989f14ca"
+  },
+  "checks": [
+    {
+      "name": "constructor-sympy",
+      "status": "PASS"
+    },
+    {
+      "name": "external-independent-review",
+      "status": "NOT_RUN"
+    }
+  ],
+  "next_action": "Independent checkout replay and explicit 29→85 transition source gate; preserve Physical Promotion=0",
+  "mathematical_profile": {
+    "coefficient_domain": "real chain amplitudes; exact rational incidence",
+    "exactness_or_precision_plan": "SymPy integer/rational and symbolic radical exact",
+    "applicable_methods": [
+      "signed incidence",
+      "S4 representation characters",
+      "spectral factors",
+      "conserved face-top skew flow"
+    ],
+    "clock_metric_units_conventions": "unit top/face coefficient metric, formal s, no physical units"
+  }
+}
