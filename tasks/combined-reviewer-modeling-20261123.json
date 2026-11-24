@@ -13,5 +13,6 @@
     "docs/proposals/UD_COMPUTATIONAL_MANUSCRIPT_OPENING_v0.1.md",
     "docs/proposals/UD_BASELINE_BENCHMARK_PLAN_v0.1.md"
   ],
-  "physical_promotion": 0
+  "physical_promotion": 0,
+  "dependencies": []
 }
