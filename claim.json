@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "dwr-intake-custody-20261124-9f31",
+  "session": "20261124-explorer-dwr-custody-9f31",
+  "status": "held",
+  "created_at": "2026-11-24T18:11:00Z",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "owned_paths": [
+    "tasks/dwr-intake-custody-20261124-9f31.json",
+    "sessions/20261124-explorer-dwr-custody-9f31/",
+    "artifacts/20261124-explorer-dwr-custody-9f31/",
+    "candidates/dwr-intake-custody-20261124-9f31/"
+  ]
+}
