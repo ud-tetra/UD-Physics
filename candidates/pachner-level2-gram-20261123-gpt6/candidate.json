@@ -1,0 +1,27 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "pachner-level2-gram-20261123-gpt6",
+  "status": "EXACT_CONDITIONAL_OPEN_CONSTITUTIVE_SOURCE",
+  "question": "Can existing 16-cell shared-face incidence redistribute exterior-prepared support to internal top cells without a prescribed multi-stage actuator?",
+  "assumptions": [
+    "second-generation 1to4 16-cell triangulation already installed",
+    "coherently oriented top chains",
+    "unit coefficient face and top metrics, formal evolution",
+    "exterior-top-only or all-16-uniform initial state; zero face preparation"
+  ],
+  "exact_findings": [
+    "G=B3.T B3=4I-Adual",
+    "charpoly=(z-6)^3(z-4)^2(z²-5z+1)(z³-11z²+35z-26)^3",
+    "S4 module 2 trivial + 3 standard + [22] + [211]",
+    "interior seeded stock 12 y², y=(cos(ωminus s)-cos(ωplus s))/sqrt21",
+    "interior top fraction ≤4/7 of initial stock for exterior-only seed"
+  ],
+  "blocked": [
+    "original 29->85 vertex event admitted",
+    "third-generation autonomous event",
+    "measured physical clock",
+    "physical nuclear spectra"
+  ],
+  "physical_promotion": 0
+}
