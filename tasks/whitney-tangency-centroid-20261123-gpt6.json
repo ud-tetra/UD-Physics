@@ -1,0 +1,13 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "whitney-tangency-centroid-20261123-gpt6",
+  "goal": "Independently verify first-level Whitney cochain prolongation M-isometry, Hodge Dirac tangency, and comparison against unit chain 29x15 audit",
+  "owned_paths": [
+    "tasks/whitney-tangency-centroid-20261123-gpt6.json",
+    "sessions/20261123-gpt6-whitney-tangency/",
+    "candidates/whitney-tangency-centroid-20261123-gpt6/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}
