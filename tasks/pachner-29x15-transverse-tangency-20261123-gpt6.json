@@ -1,0 +1,13 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "pachner-29x15-transverse-tangency-20261123-gpt6",
+  "goal": "Test dynamical tangency of a boundary-fixed unit-stock 15-to-29 1-to-4 Pachner isometry and identify maximal invariant reverse-admissible preparations",
+  "owned_paths": [
+    "tasks/pachner-29x15-transverse-tangency-20261123-gpt6.json",
+    "sessions/20261123-gpt6-transverse-tangency/",
+    "candidates/pachner-29x15-transverse-tangency-20261123-gpt6/"
+  ],
+  "dependencies": [],
+  "status": "active"
+}

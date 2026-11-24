@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-transverse-tangency",
+  "runtime": "GPT-6 / container SymPy and GitHub connector",
+  "task": "pachner-29x15-transverse-tangency-20261123-gpt6",
+  "goal": "Compute exact 29x15 tangency L and its invariant kernel",
+  "created_at": "2026-11-24T03:25:00Z",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "pachner-29x15-transverse-tangency-20261123-gpt6": "941cc4c0d93eaf6384d8a72a6cf720d59aced555"
+  },
+  "checks": [
+    {
+      "name": "exact SymPy independent reconstruction",
+      "result": "PASS"
+    },
+    {
+      "name": "nonconstructor independent review",
+      "result": "NOT_RUN"
+    }
+  ],
+  "finding": "rank(L)=13; ker L is 2D dynamically invariant face/top oscillator; generic 15D image not invariant; T is explicit candidate not native selected birth",
+  "next_action": "Independent review and compare alternative physically justified T/Whitney adjoint without conflating chain versus stock maps",
+  "mathematical_profile": {
+    "coefficient_domain": "rational signed simplicial incidences, real unit chain metrics",
+    "exactness_or_precision_plan": "exact SymPy integer and rational operations",
+    "applicable_methods": [
+      "simplicial chain boundary",
+      "skew Hodge Dirac",
+      "orthogonal projection",
+      "rank and invariant subspace"
+    ],
+    "clock_metric_units_conventions": "formal s, unit chain metric, no physical clock or units"
+  }
+}
