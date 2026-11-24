@@ -1,0 +1,13 @@
+{
+  "record_type": "task",
+  "schema_version": 1,
+  "task_id": "nonlinear-incidence-robustness-20261123-gpt6",
+  "goal": "Test norm-conserving local nonlinear incidence and metric robustness of the face-glued active interface",
+  "dependencies": [],
+  "owned_paths": [
+    "tasks/nonlinear-incidence-robustness-20261123-gpt6.json",
+    "sessions/20261123-gpt6-nonlinear-robustness/",
+    "candidates/nonlinear-incidence-robustness-20261123-gpt6/"
+  ],
+  "status": "active"
+}

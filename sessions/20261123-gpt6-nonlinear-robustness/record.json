@@ -1,0 +1,38 @@
+{
+  "record_type": "session",
+  "schema_version": 1,
+  "session_id": "20261123-gpt6-nonlinear-robustness",
+  "runtime": "GPT-6 local SymPy and GitHub connector",
+  "task": "nonlinear-incidence-robustness-20261123-gpt6",
+  "goal": "Exact nonlinear invariant-breaking and grade-weight interface robustness",
+  "created_at": "2026-11-24T02:42:00Z",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "source_dirty_at_boot": false,
+  "status": "handoff",
+  "claims": {
+    "nonlinear-incidence-robustness-20261123-gpt6": "68b4506e60904055a053abc735afe4750973c967"
+  },
+  "checks": [
+    {
+      "name": "local SymPy exact",
+      "result": "PASS"
+    },
+    {
+      "name": "independent reviewer",
+      "result": "NOT_RUN"
+    }
+  ],
+  "finding": "state-dependent local skew Bdiag(1+κq²) breaks E_G while conserving support; pure self-gating prevents empty-cell funding; interface P not robust to uniform grade coupling r",
+  "next_action": "Derive source-selected weights and compare endpoints without fitted scheduling",
+  "mathematical_profile": {
+    "coefficient_domain": "integers/rationals with symbolic κ,r",
+    "exactness_or_precision_plan": "SymPy exact, no physical data",
+    "applicable_methods": [
+      "incidence",
+      "skew flow",
+      "commutator",
+      "conservation and invariant testing"
+    ],
+    "clock_metric_units_conventions": "unit coefficient metric; formal s, dimensionless coefficients"
+  }
+}

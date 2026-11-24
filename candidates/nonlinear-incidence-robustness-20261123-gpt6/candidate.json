@@ -1,0 +1,27 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "nonlinear-incidence-robustness-20261123-gpt6",
+  "session_id": "20261123-gpt6-nonlinear-robustness",
+  "question": "Can local state-only skew incidence change the fixed-generator weighted invariant and does the active interface mode survive symmetry-preserving weights?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "assumptions": [
+    "prescribed built 16-cell and separately built face-glued 23D complex",
+    "unit coefficient metric",
+    "candidate κ and grade ratio r not native sourced"
+  ],
+  "physical_mapping": "OPEN",
+  "target_exposure": "13a² vs 4a² user supplied; no endpoint calibration or fit applied",
+  "fitted_choices": [],
+  "sources": [
+    "UD-Physics main @80525f1 four-cell-tetrahedron v1.0 blob 697b5cb...",
+    "draft PRs #480 and #481 separately labeled"
+  ],
+  "baseline": "fixed unmasked incidence flow and unit-weight active projector",
+  "result": "S conserved, E_G derivative -18κ witness; exterior E_G''=24κ(κ+1); self-only g(0)=0 no activation; ||[A_r,P]||²_F=24(r-1)²/5",
+  "next_discriminant": "Choose generator coefficients by pre-event constitutive source and test exact original endpoints; perturb full Whitney metric"
+}
