@@ -1,0 +1,55 @@
+{
+  "verification": "constructor exact PASS",
+  "source_fvector": [
+    9,
+    26,
+    34,
+    16
+  ],
+  "B3_shape": [
+    34,
+    16
+  ],
+  "Gram_rank": 16,
+  "G_ones": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "characteristic_polynomial": "(z-6)^3(z-4)^2(z^2-5z+1)(z^3-11z^2+35z-26)^3",
+  "S4_module_multiplicities": {
+    "trivial": 2,
+    "standard": 3,
+    "two_dimensional": 1,
+    "sign_standard": 1,
+    "sign": 0
+  },
+  "G_symmetric": [
+    [
+      4,
+      -3
+    ],
+    [
+      -1,
+      1
+    ]
+  ],
+  "source_initial_stock": 4,
+  "interior_top_stock_upper_bound": "16/7",
+  "interior_top_fraction_upper_bound": "4/7",
+  "event_selector": "OPEN",
+  "physical_promotion": 0
+}
