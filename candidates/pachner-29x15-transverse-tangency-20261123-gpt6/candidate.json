@@ -1,0 +1,29 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "pachner-29x15-transverse-tangency-20261123-gpt6",
+  "session_id": "20261123-gpt6-transverse-tangency",
+  "question": "Does the canonical boundary-fixed unit-stock 1to4 embedding's image remain invariant under the unmasked full daughter Hodge Dirac?",
+  "status": "ACTIVE",
+  "evidence": [
+    "EXACT",
+    "CONDITIONAL"
+  ],
+  "assumptions": [
+    "prescribed centroid geometry 1to4",
+    "old vertices, edges, faces embedded by identity",
+    "parent top to signed half amplitude daughters",
+    "unit coefficient chain metric; unmasked skew Hodge Dirac"
+  ],
+  "physical_mapping": "OPEN; numerical simulation model only",
+  "target_exposure": "No empirical targets; source-conditioned structural question",
+  "fitted_choices": [],
+  "sources": [
+    "UD-Physics main@80525f1 experiments/four-cell-tetrahedron/README.md v1.0 blob 697b5cb0207f01286e27eb8198fdb31fc129ae6e",
+    "UD-Physics main@80525f1 experiments/pachner-state-transport/README.md v0.1 blob 0523255744e43cb3849730eb44d5faed5a505077",
+    "READ_ONLY specification v0.1 SHA f383f24911fc952754e2c4d342bceb3906f228499eeb017e8079f81c64605615"
+  ],
+  "baseline": "Unit chain metric full skew incidence A_D, boundary-fixed top norm isometric T",
+  "result": "T.T T=I; rank L=13, charpoly(L.T L)=lambda^2(lambda-1)^13; invariant 2-plane top and coherent exterior faces; generic departure from reverse image",
+  "next_discriminant": "Native source for T, modified Whitney metric and memory channels; verify event admission"
+}
