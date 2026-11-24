@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "whitney-junction-audit-20261123-7d2a",
+  "session": "20261123-explorer-whitney-7d2a",
+  "status": "held",
+  "created_at": "2026-11-23T23:03:00Z",
+  "base_revision": "ea93a86305925aced4ad9aa43b8bc7979f5b0f15",
+  "owned_paths": [
+    "tasks/whitney-junction-audit-20261123-7d2a.json",
+    "sessions/20261123-explorer-whitney-7d2a/",
+    "artifacts/20261123-explorer-whitney-7d2a/",
+    "candidates/whitney-junction-audit-20261123-7d2a/"
+  ]
+}
