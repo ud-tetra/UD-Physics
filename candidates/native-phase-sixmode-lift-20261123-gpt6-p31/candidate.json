@@ -1,0 +1,26 @@
+{
+  "record_type": "candidate",
+  "schema_version": 1,
+  "candidate_id": "native-phase-sixmode-lift-20261123-gpt6-p31",
+  "status": "CANDIDATE_OPEN_CONSTITUTIVE_SOURCE",
+  "assumptions": [
+    "externally prescribed canonical octahedral fan with 8 core + 4 private top cells per packet",
+    "two source-tagged sheets as declared in PR #473",
+    "Whitney H=diag(6I8,3I4)",
+    "opposite-octant four-cell orbit pairing"
+  ],
+  "calculation": "Phi=(sqrt(2/3)/4)*[Z.T;Y.T;0] maps native six-mode W to R12; J_W=[[0,-Q,0],[Q,0,0],[0,0,0]]; Q=I4-11.T/4",
+  "exact_checks": [
+    "Phi.T H Phi=P_W",
+    "Phi J_native=J_W Phi",
+    "24 signed S4 relabelings",
+    "J_W H-skew rank6",
+    "B_sheet swap-even H2-skew rank12",
+    "Phi e_top=0"
+  ],
+  "counterexamples": [
+    "strictly cellwise J_local acts on two modes not in native W",
+    "uniform top source has zero image"
+  ],
+  "physical_promotion": 0
+}
