@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "protocol_version": 2,
+  "task": "local-gate-regularity-20261123-gpt6",
+  "session": "20261123-gpt6-local-gate-regularity",
+  "status": "held",
+  "base_revision": "80525f1296a15f4a87f0efecc491679deec39b9b",
+  "owned_paths": [
+    "tasks/local-gate-regularity-20261123-gpt6.json",
+    "sessions/20261123-gpt6-local-gate-regularity/",
+    "candidates/local-gate-regularity-20261123-gpt6/"
+  ]
+}
